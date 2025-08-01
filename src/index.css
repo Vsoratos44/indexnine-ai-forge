@@ -30,11 +30,11 @@
     --background-light: 0 0% 98%;        /* Pure light background */
     --background-subtle: 234 15% 88%;    /* Subtle light background variant */
     
-    /* Typography System - Adaptive Contrast */
+    /* Typography System - High Contrast */
     --foreground: 0 0% 95%;              /* Light text for dark backgrounds */
     --foreground-muted: 0 0% 75%;        /* Muted light text */
-    --foreground-dark: 234 65% 15%;      /* Dark text for light backgrounds */
-    --foreground-dark-muted: 234 45% 35%; /* Muted dark text */
+    --foreground-dark: 234 65% 8%;       /* High contrast dark text for light backgrounds */
+    --foreground-dark-muted: 234 50% 25%; /* High contrast muted dark text */
     
     /* Card System - Consistent Dark Theme */
     --card: 234 45% 20%;

@@ -102,7 +102,7 @@ const InsightsCarousel = () => {
   };
 
   return (
-    <section className="py-24 lg:py-32 bg-card-dark relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-background-light relative overflow-hidden">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>
@@ -118,13 +118,13 @@ const InsightsCarousel = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-white mb-8 leading-tight tracking-tight font-montserrat">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-8 leading-tight tracking-tight font-montserrat">
             Our Success is Measured by the{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Value We Create
             </span>
           </h2>
-          <p className="text-xl text-foreground-white/80 max-w-3xl mx-auto font-light font-montserrat">
+          <p className="text-xl text-foreground-dark-muted max-w-3xl mx-auto font-light font-montserrat">
             Discover insights, strategies, and success stories that drive innovation and growth
           </p>
         </div>
@@ -145,7 +145,7 @@ const InsightsCarousel = () => {
                   <CarouselItem key={item.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
                     <div className="relative group h-full">
                       {/* Enhanced Glassmorphism Card */}
-                      <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg-dark border border-glass-border rounded-3xl p-8 shadow-glass-lg hover:shadow-glow transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 h-full flex flex-col">
+                      <div className="relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-3xl p-8 shadow-glass-lg hover:shadow-glow transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 h-full flex flex-col">
                         {/* Frosted Glass Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-brand-primary/5 rounded-3xl opacity-50"></div>
                         
@@ -158,12 +158,12 @@ const InsightsCarousel = () => {
                             <IconComponent className="w-4 h-4" />
                             {item.type}
                           </div>
-                          <div className="text-sm text-foreground-white/60 font-montserrat">{item.date}</div>
+                          <div className="text-sm text-foreground-dark-muted font-montserrat">{item.date}</div>
                         </div>
 
                         {/* Image Placeholder with Glassmorphism */}
-                        <div className="relative mb-6 rounded-2xl overflow-hidden bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 backdrop-blur-md border border-white/10 h-48 flex items-center justify-center">
-                          <div className="text-foreground-white/30 text-4xl">
+                        <div className="relative mb-6 rounded-2xl overflow-hidden bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 backdrop-blur-md border border-glass-border h-48 flex items-center justify-center">
+                          <div className="text-foreground-dark-muted text-4xl">
                             <IconComponent className="w-16 h-16" />
                           </div>
                           {/* CMS Image Overlay - Dynamic */}
@@ -172,20 +172,20 @@ const InsightsCarousel = () => {
 
                         {/* Content Body */}
                         <div className="relative flex-1 flex flex-col">
-                          <h3 className="text-xl lg:text-2xl font-bold text-foreground-white mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
+                          <h3 className="text-xl lg:text-2xl font-bold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
                             {item.title}
                           </h3>
-                          <p className="text-foreground-white/80 leading-relaxed mb-6 flex-1 font-montserrat">
+                          <p className="text-foreground-dark-muted leading-relaxed mb-6 flex-1 font-montserrat">
                             {item.description}
                           </p>
                           
                           {/* Meta Information */}
                           <div className="flex items-center justify-between mb-6">
                             {item.readTime && (
-                              <span className="text-sm text-foreground-white/60 font-montserrat">{item.readTime}</span>
+                              <span className="text-sm text-foreground-dark-muted font-montserrat">{item.readTime}</span>
                             )}
                             {item.category && (
-                              <span className="text-sm bg-white/10 text-foreground-white/80 px-2 py-1 rounded-full font-montserrat">
+                              <span className="text-sm bg-brand-primary/10 text-foreground-dark px-2 py-1 rounded-full font-montserrat">
                                 {item.category}
                               </span>
                             )}
@@ -194,7 +194,7 @@ const InsightsCarousel = () => {
                           {/* CTA Button */}
                           <Button 
                             variant="ghost" 
-                            className="relative text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-xl font-semibold group-hover:shadow-glow transition-all duration-300 font-montserrat"
+                            className="relative text-brand-primary hover:text-foreground-dark hover:bg-brand-primary/10 border border-brand-primary/30 rounded-xl font-semibold group-hover:shadow-glow transition-all duration-300 font-montserrat"
                           >
                             Read More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                           </Button>
@@ -207,8 +207,8 @@ const InsightsCarousel = () => {
             </CarouselContent>
             
             {/* Enhanced Glassmorphism Navigation */}
-            <CarouselPrevious className="left-4 backdrop-blur-md bg-white/10 border-white/20 text-white hover:bg-white/20 hover:text-brand-primary transition-all duration-300" />
-            <CarouselNext className="right-4 backdrop-blur-md bg-white/10 border-white/20 text-white hover:bg-white/20 hover:text-brand-primary transition-all duration-300" />
+            <CarouselPrevious className="left-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+            <CarouselNext className="right-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
           </Carousel>
 
           {/* View All CTA */}
@@ -216,7 +216,7 @@ const InsightsCarousel = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="backdrop-blur-md bg-white/10 border-white/20 text-white hover:bg-white/20 hover:text-brand-primary transition-all duration-300 px-8 py-4 rounded-2xl font-semibold text-lg font-montserrat"
+              className="backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300 px-8 py-4 rounded-2xl font-semibold text-lg font-montserrat"
             >
               View All Insights <ArrowRight className="w-5 h-5 ml-2" />
             </Button>

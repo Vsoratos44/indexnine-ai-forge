@@ -45,7 +45,7 @@ const ProductLifecycle = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 lg:mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight font-montserrat">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
             From Bold Idea to Market Leader,{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               We Engineer Your Success
@@ -58,7 +58,7 @@ const ProductLifecycle = () => {
           {phases.map((phase, index) => (
             <div 
               key={index}
-              className="relative overflow-hidden backdrop-blur-xl bg-white/5 border border-white/20 rounded-3xl p-8 lg:p-10 shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
+              className="relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-3xl p-8 lg:p-10 shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
               style={{animationDelay: `${index * 0.15}s`}}
             >
               {/* Inner glow effect */}
@@ -72,8 +72,8 @@ const ProductLifecycle = () => {
 
                 {/* Content */}
                 <div className="flex-1">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4 leading-tight font-montserrat">{phase.title}</h3>
-                  <p className="text-foreground-muted leading-relaxed text-base lg:text-lg font-light font-montserrat mb-6">{phase.description}</p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-foreground-dark mb-4 leading-tight font-montserrat">{phase.title}</h3>
+                  <p className="text-foreground-dark-muted leading-relaxed text-base lg:text-lg font-light font-montserrat mb-6">{phase.description}</p>
                   
                   {/* Client Example */}
                   <Link to={phase.caseStudyLink} className="text-sm font-semibold text-brand-primary hover:text-brand-primary-dark transition-colors font-montserrat underline">

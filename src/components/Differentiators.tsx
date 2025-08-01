@@ -24,7 +24,7 @@ const Differentiators = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-background-section relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-[28rem] h-[28rem] bg-brand-purple/15 rounded-full blur-3xl animate-float opacity-60"></div>
@@ -40,7 +40,7 @@ const Differentiators = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-white mb-8 leading-tight tracking-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-8 leading-tight tracking-tight">
             It's Not Just What We Do. It's How
           </h2>
           <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
@@ -54,7 +54,7 @@ const Differentiators = () => {
           {differentiators.map((diff, index) => (
             <div 
               key={index}
-              className="relative overflow-hidden backdrop-blur-xl bg-glass-bg-dark border border-glass-border rounded-3xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in group shadow-glass-lg"
+              className="relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-3xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in group shadow-glass-lg"
               style={{animationDelay: `${index * 0.15}s`}}
             >
               {/* Enhanced Glassmorphism Glow */}
@@ -65,12 +65,12 @@ const Differentiators = () => {
               
               {/* Icon Container with Enhanced Glass Effect */}
               <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                <diff.icon className="w-10 h-10 text-brand-primary group-hover:text-white transition-colors duration-300" />
+                <diff.icon className="w-10 h-10 text-brand-primary group-hover:text-brand-primary-dark transition-colors duration-300" />
               </div>
 
               {/* Content */}
-              <h3 className="relative text-2xl lg:text-3xl font-bold text-foreground-white mb-6 leading-tight font-montserrat">{diff.title}</h3>
-              <p className="relative text-foreground-white/85 leading-relaxed text-lg font-light font-montserrat">{diff.description}</p>
+              <h3 className="relative text-2xl lg:text-3xl font-bold text-foreground-dark mb-6 leading-tight font-montserrat">{diff.title}</h3>
+              <p className="relative text-foreground-dark-muted leading-relaxed text-lg font-light font-montserrat">{diff.description}</p>
             </div>
           ))}
         </div>
