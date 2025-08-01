@@ -13,57 +13,67 @@ const SocialProof = () => {
   const chartData = [110, 112, 125, 130, 150, 140, 160, 211];
 
   return (
-    <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
-      <div className="container mx-auto px-6 lg:px-8">
+    <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
+      {/* Background blur elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-1/6 w-96 h-96 bg-brand-purple/6 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Left side - Enhanced Chart visualization */}
+          {/* Left side - Chart with glassmorphism */}
           <div className="relative order-2 lg:order-1">
-            <div className="bg-gradient-stats rounded-3xl p-8 lg:p-12 relative overflow-hidden border border-border shadow-lg">
-              {/* Decorative background elements */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 rounded-full blur-2xl"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-brand-purple/5 rounded-full blur-xl"></div>
+            <div className="relative overflow-hidden backdrop-blur-xl bg-white/5 border border-white/20 rounded-3xl p-8 lg:p-12 shadow-glass hover:shadow-glass-lg transition-all duration-500">
+              {/* Inner glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl"></div>
               
               {/* Enhanced Bar Chart */}
               <div className="relative z-10">
-                <div className="flex items-end justify-center space-x-3 h-56 mb-8">
+                <div className="flex items-end justify-center space-x-2 lg:space-x-3 h-56 mb-8">
                   {chartData.map((height, index) => (
                     <div key={index} className="flex flex-col items-center">
                       <div 
-                        className="bg-gradient-primary rounded-t-2xl w-10 lg:w-12 animate-slide-up shadow-md transition-all duration-300 hover:scale-110"
+                        className="bg-gradient-to-t from-brand-primary to-brand-primary-light rounded-t-lg w-8 lg:w-10 animate-slide-up shadow-sm transition-all duration-300 hover:scale-110"
                         style={{ 
                           height: `${(height / 211) * 140}px`,
                           animationDelay: `${index * 0.15}s`
                         }}
                       ></div>
-                      <span className="text-xs lg:text-sm text-brand-primary font-semibold mt-3">{height}</span>
+                      <span className="text-xs lg:text-sm text-brand-primary font-semibold mt-2">{height}</span>
                     </div>
                   ))}
                 </div>
                 
-                {/* Main metric - Enhanced */}
+                {/* Main metric */}
                 <div className="text-center">
-                  <h3 className="text-5xl lg:text-6xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-3">
-                    $316M+
+                  <h3 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-3 font-montserrat">
+                    $3.4B+
                   </h3>
-                  <p className="text-foreground-muted font-semibold text-lg">In Supported Client Exits</p>
+                  <p className="text-foreground-muted font-medium text-base lg:text-lg font-montserrat">In Supported Client Exits</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right side - Enhanced Stats grid */}
+          {/* Right side - Stats grid with glassmorphism */}
           <div className="order-1 lg:order-2">
-            <div className="grid grid-cols-2 gap-6 lg:gap-8">
+            <div className="grid grid-cols-2 gap-4 lg:gap-6">
               {stats.map((stat, index) => (
                 <div 
                   key={index} 
-                  className="bg-background-card rounded-2xl p-6 lg:p-8 text-center shadow-md border border-border hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in"
+                  className="relative overflow-hidden backdrop-blur-xl bg-white/5 border border-white/20 rounded-2xl p-6 lg:p-8 text-center shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
-                  <h3 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 bg-gradient-primary bg-clip-text text-transparent font-montserrat">
-                    <CountUp end={stat.value} suffix={stat.suffix} />
-                  </h3>
-                  <p className="text-foreground-muted font-medium text-sm lg:text-base font-montserrat">{stat.label}</p>
+                  {/* Inner glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/3 via-transparent to-brand-purple/3 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground mb-2 font-montserrat">
+                      <CountUp end={stat.value} suffix={stat.suffix} />
+                    </h3>
+                    <p className="text-foreground-muted font-medium text-xs lg:text-sm font-montserrat">{stat.label}</p>
+                  </div>
                 </div>
               ))}
             </div>
