@@ -97,91 +97,116 @@ const PracticesStudios = () => {
             </div>
           </div>
 
-          {/* Right Visual - Enhanced AI Brain */}
+          {/* Right Visual - Dynamic Studio Images */}
           <div className="relative order-1 lg:order-2">
-            <div className="bg-gradient-to-br from-background-dark to-background-card-dark rounded-3xl p-8 lg:p-12 overflow-hidden relative shadow-xl border border-border transition-all duration-500">
-              {/* Background Glow */}
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl border border-glass-border group">
+              {/* Background Glow Effect */}
               <div className={`absolute inset-0 bg-gradient-to-br ${
                 activeStudio === 'innovation' 
-                  ? 'from-brand-primary/5 to-brand-accent/5' 
-                  : 'from-brand-purple/5 to-brand-primary/5'
-              } rounded-3xl transition-all duration-500`}></div>
+                  ? 'from-brand-primary/10 via-brand-accent/5 to-transparent' 
+                  : 'from-brand-purple/10 via-brand-primary/5 to-transparent'
+              } transition-all duration-500`}></div>
               
-              {/* AI Brain Visualization - Enhanced */}
-              <div className="relative z-10 flex justify-center items-center h-96">
-                <div className="relative">
-                  {/* Central Brain Core */}
-                  <div className={`w-40 h-32 ${
-                    activeStudio === 'innovation'
-                      ? 'bg-gradient-to-br from-brand-primary to-brand-accent'
-                      : 'bg-gradient-to-br from-brand-purple to-brand-primary'
-                  } rounded-full blur-sm opacity-90 animate-pulse shadow-glow transition-all duration-500`}></div>
-                  
-                  {/* Enhanced Neural Network */}
-                  <div className="absolute inset-0">
-                    {[...Array(16)].map((_, i) => (
-                      <div
-                        key={i}
-                        className={`absolute ${
-                          activeStudio === 'innovation'
-                            ? 'bg-gradient-to-r from-brand-primary/60 to-transparent'
-                            : 'bg-gradient-to-r from-brand-purple/60 to-transparent'
-                        } animate-pulse transition-all duration-500`}
-                        style={{
-                          width: '2px',
-                          height: `${60 + (i % 3) * 20}px`,
-                          left: '50%',
-                          top: '50%',
-                          transform: `rotate(${i * 22.5}deg) translateY(-40px)`,
-                          animationDelay: `${i * 0.08}s`,
-                          borderRadius: '1px'
-                        }}
-                      ></div>
-                    ))}
-                  </div>
-
-                  {/* Floating Data Nodes */}
-                  {[...Array(12)].map((_, i) => (
+              {/* Innovation Lab Image */}
+              <div className={`relative transition-all duration-700 transform ${
+                activeStudio === 'innovation' 
+                  ? 'opacity-100 scale-100 translate-x-0' 
+                  : 'opacity-0 scale-110 translate-x-8 absolute inset-0'
+              }`}>
+                <img 
+                  src="/lovable-uploads/3952bffe-50fc-4c11-a811-0bf718975cbf.png"
+                  alt="Innovation Lab - Futuristic Technology Environment"
+                  className="w-full h-96 lg:h-[500px] object-cover"
+                />
+                {/* Overlay for better text contrast */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background-dark/60 via-transparent to-transparent"></div>
+                
+                {/* Floating Animation Dots */}
+                <div className="absolute inset-0 pointer-events-none">
+                  {[...Array(8)].map((_, i) => (
                     <div
                       key={i}
-                      className={`absolute ${
-                        activeStudio === 'innovation'
-                          ? 'bg-gradient-to-br from-brand-primary to-brand-accent'
-                          : 'bg-gradient-to-br from-brand-purple to-brand-primary'
-                      } rounded-full animate-float shadow-md transition-all duration-500`}
+                      className="absolute bg-gradient-to-br from-brand-primary to-brand-accent rounded-full opacity-60 animate-float"
                       style={{
-                        width: `${8 + (i % 3) * 4}px`,
-                        height: `${8 + (i % 3) * 4}px`,
-                        left: `${30 + Math.cos(i * 30 * Math.PI / 180) * 120}px`,
-                        top: `${50 + Math.sin(i * 30 * Math.PI / 180) * 80}px`,
-                        animationDelay: `${i * 0.15}s`
+                        width: `${6 + (i % 3) * 3}px`,
+                        height: `${6 + (i % 3) * 3}px`,
+                        left: `${20 + (i % 4) * 20}%`,
+                        top: `${15 + (i % 3) * 25}%`,
+                        animationDelay: `${i * 0.3}s`,
+                        animationDuration: `${3 + (i % 2)}s`
                       }}
                     ></div>
                   ))}
-
-                  {/* Orbital Rings */}
-                  <div className={`absolute inset-0 border-2 ${
-                    activeStudio === 'innovation' ? 'border-brand-primary/20' : 'border-brand-purple/20'
-                  } rounded-full animate-spin transition-all duration-500`} style={{animationDuration: '20s', width: '200px', height: '160px', left: '50%', top: '50%', transform: 'translate(-50%, -50%)'}}></div>
-                  <div className={`absolute inset-0 border ${
-                    activeStudio === 'innovation' ? 'border-brand-accent/20' : 'border-brand-primary/20'
-                  } rounded-full animate-spin transition-all duration-500`} style={{animationDuration: '15s', animationDirection: 'reverse', width: '240px', height: '190px', left: '50%', top: '50%', transform: 'translate(-50%, -50%)'}}></div>
+                </div>
+              </div>
+              
+              {/* Enterprise Studio Image */}
+              <div className={`relative transition-all duration-700 transform ${
+                activeStudio === 'enterprise' 
+                  ? 'opacity-100 scale-100 translate-x-0' 
+                  : 'opacity-0 scale-110 -translate-x-8 absolute inset-0'
+              }`}>
+                <img 
+                  src="/lovable-uploads/49fd4939-c61d-43cb-9754-ebf56d833667.png"
+                  alt="Enterprise Studio - Command Center Environment"
+                  className="w-full h-96 lg:h-[500px] object-cover"
+                />
+                {/* Overlay for better text contrast */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background-dark/60 via-transparent to-transparent"></div>
+                
+                {/* Floating Animation Dots */}
+                <div className="absolute inset-0 pointer-events-none">
+                  {[...Array(6)].map((_, i) => (
+                    <div
+                      key={i}
+                      className="absolute bg-gradient-to-br from-brand-purple to-brand-primary rounded-full opacity-50 animate-float"
+                      style={{
+                        width: `${8 + (i % 2) * 4}px`,
+                        height: `${8 + (i % 2) * 4}px`,
+                        left: `${25 + (i % 3) * 25}%`,
+                        top: `${20 + (i % 2) * 30}%`,
+                        animationDelay: `${i * 0.4}s`,
+                        animationDuration: `${4 + (i % 2)}s`
+                      }}
+                    ></div>
+                  ))}
                 </div>
               </div>
 
-              {/* Enhanced Feature List */}
-              <div className="absolute bottom-6 right-6 bg-background-card/90 backdrop-blur-md rounded-2xl p-6 space-y-4 shadow-lg border border-border">
+              {/* Subtle Hover Effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+              {/* Enhanced Feature List - Positioned over image */}
+              <div className="absolute bottom-6 right-6 bg-background-dark/90 backdrop-blur-xl rounded-2xl p-6 space-y-4 shadow-2xl border border-white/20">
+                <div className="flex items-center space-x-2 mb-3">
+                  <div className={`w-3 h-3 ${
+                    activeStudio === 'innovation'
+                      ? 'bg-gradient-to-br from-brand-primary to-brand-accent'
+                      : 'bg-gradient-to-br from-brand-purple to-brand-primary'
+                  } rounded-full animate-pulse`}></div>
+                  <span className="text-xs font-bold text-white uppercase tracking-wide">
+                    {activeStudio === 'innovation' ? 'Innovation Lab' : 'Enterprise Studio'}
+                  </span>
+                </div>
                 {currentStudio.features.map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3 text-sm font-medium text-foreground font-montserrat">
-                    <div className={`w-3 h-3 ${
+                  <div key={index} className="flex items-center space-x-3 text-sm font-medium text-white font-montserrat">
+                    <div className={`w-2 h-2 ${
                       activeStudio === 'innovation'
-                        ? index % 2 === 0 ? 'bg-gradient-to-br from-brand-primary to-brand-accent' : 'bg-gradient-to-br from-brand-accent to-brand-primary'
-                        : index % 2 === 0 ? 'bg-gradient-to-br from-brand-purple to-brand-primary' : 'bg-gradient-to-br from-brand-primary to-brand-purple'
-                    } rounded-full shadow-sm`}></div>
+                        ? 'bg-brand-primary'
+                        : 'bg-brand-purple'
+                    } rounded-full shadow-sm animate-pulse`}
+                    style={{animationDelay: `${index * 0.2}s`}}></div>
                     <span>{feature}</span>
                   </div>
                 ))}
               </div>
+
+              {/* Animated Border Effect */}
+              <div className={`absolute inset-0 rounded-3xl border-2 ${
+                activeStudio === 'innovation'
+                  ? 'border-brand-primary/30'
+                  : 'border-brand-purple/30'
+              } opacity-0 group-hover:opacity-100 transition-all duration-500 animate-pulse`}></div>
             </div>
           </div>
         </div>
