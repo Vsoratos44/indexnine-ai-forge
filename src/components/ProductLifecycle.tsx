@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rocket, RefreshCw, TrendingUp, Settings } from 'lucide-react';
+import { Rocket, RefreshCw, TrendingUp, Settings, ArrowRight } from 'lucide-react';
 
 const ProductLifecycle = () => {
   const phases = [
@@ -47,10 +47,10 @@ const ProductLifecycle = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight font-montserrat">
             From Bold Idea to Market Leader,
           </h2>
-          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight font-montserrat">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               We Engineer Your Success
             </span>
@@ -70,21 +70,22 @@ const ProductLifecycle = () => {
               </div>
 
               {/* Content */}
-              <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">{phase.title}</h3>
-              <p className="text-foreground-muted mb-8 leading-relaxed text-lg font-light">{phase.description}</p>
+              <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight font-montserrat">{phase.title}</h3>
+              <p className="text-foreground-muted mb-8 leading-relaxed text-lg font-light font-montserrat">{phase.description}</p>
               
               {/* Client Example */}
               <div className="border-t border-border pt-6">
-                <span className="text-sm font-semibold text-brand-primary bg-brand-primary/10 px-3 py-2 rounded-full">
+                <span className="text-sm font-semibold text-brand-primary bg-brand-primary/10 px-3 py-2 rounded-full font-montserrat">
                   Client example: {phase.example}
                 </span>
               </div>
 
-              {/* Connecting Arrow for Desktop */}
+              {/* Centered Arrow for Desktop */}
               {index < phases.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-5 transform -translate-y-1/2">
-                  <div className="w-10 h-0.5 bg-gradient-to-r from-brand-primary to-brand-purple opacity-40"></div>
-                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-brand-purple border-t-2 border-b-2 border-t-transparent border-b-transparent opacity-40"></div>
+                <div className="hidden lg:flex absolute top-1/2 -right-8 transform -translate-y-1/2 items-center justify-center">
+                  <div className="w-6 h-6 bg-gradient-primary rounded-full flex items-center justify-center shadow-glow">
+                    <ArrowRight className="w-3 h-3 text-white" />
+                  </div>
                 </div>
               )}
             </div>

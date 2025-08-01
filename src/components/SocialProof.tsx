@@ -1,12 +1,13 @@
 import React from 'react';
+import CountUp from './CountUp';
 
 const SocialProof = () => {
   const stats = [
-    { value: "104+", label: "Solutions Delivered" },
-    { value: "220+", label: "Engineers and Designers" },
-    { value: "99+", label: "Successful Projects" },
-    { value: "6", label: "Studios" },
-    { value: "92%", label: "Client Retention" }
+    { value: 104, suffix: "+", label: "Solutions Delivered" },
+    { value: 220, suffix: "+", label: "Engineers and Designers" },
+    { value: 99, suffix: "+", label: "Successful Projects" },
+    { value: 6, suffix: "", label: "Studios" },
+    { value: 92, suffix: "%", label: "Client Retention" }
   ];
 
   const chartData = [110, 112, 125, 130, 150, 140, 160, 211];
@@ -59,10 +60,10 @@ const SocialProof = () => {
                   className="bg-background-card rounded-2xl p-6 lg:p-8 text-center shadow-md border border-border hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
-                  <h3 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 bg-gradient-primary bg-clip-text text-transparent">
-                    {stat.value}
+                  <h3 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 bg-gradient-primary bg-clip-text text-transparent font-montserrat">
+                    <CountUp end={stat.value} suffix={stat.suffix} />
                   </h3>
-                  <p className="text-foreground-muted font-medium text-sm lg:text-base">{stat.label}</p>
+                  <p className="text-foreground-muted font-medium text-sm lg:text-base font-montserrat">{stat.label}</p>
                 </div>
               ))}
             </div>
