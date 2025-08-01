@@ -34,7 +34,7 @@ import WhoWeAre from "./pages/about/WhoWeAre";
 import Careers from "./pages/about/Careers";
 
 // Events Platform Pages - Only user-facing features
-import EventsPlatform from "./pages/events/EventsPlatform";
+import Events from "./pages/events/Events";
 import RegistrationAndTicketing from "./pages/events/features/RegistrationAndTicketing";
 import OnSiteExperience from "./pages/events/features/OnSiteExperience";
 
@@ -77,7 +77,7 @@ const App = () => (
           <Route path="/about/careers" element={<Careers />} />
           
           {/* Events Platform Routes - User-facing only */}
-          <Route path="/events" element={<EventsPlatform />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/events/features/registration-and-ticketing" element={<RegistrationAndTicketing />} />
           <Route path="/events/features/on-site-experience" element={<OnSiteExperience />} />
           
