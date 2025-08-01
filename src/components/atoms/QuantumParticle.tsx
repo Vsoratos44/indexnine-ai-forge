@@ -31,9 +31,9 @@ const energyVariants = {
 
 const stateVariants = {
   superposition: 'bg-gradient-quantum-field animate-quantum-field',
-  entangled: 'bg-brand-quantum animate-neural-connect',
+  entangled: 'bg-brand-purple animate-neural-connect',
   collapsed: 'bg-brand-primary animate-neural-pulse',
-  coherent: 'bg-brand-matrix animate-holographic-shimmer'
+  coherent: 'bg-brand-accent animate-holographic-shimmer'
 };
 
 const sizeVariants = {
@@ -72,12 +72,12 @@ export const QuantumParticle: React.FC<QuantumParticleProps> = ({
       
       {/* Entanglement connection line */}
       {entangledWith && (
-        <div className="absolute top-1/2 left-1/2 w-20 h-px bg-brand-quantum opacity-30 animate-neural-connect transform -translate-y-1/2 origin-left" />
+        <div className="absolute top-1/2 left-1/2 w-20 h-px bg-brand-purple opacity-30 animate-neural-connect transform -translate-y-1/2 origin-left" />
       )}
       
       {/* Tunneling effect */}
       {tunneling && (
-        <div className="absolute inset-0 rounded-full border border-brand-quantum opacity-20 animate-neural-network-expansion" />
+        <div className="absolute inset-0 rounded-full border border-brand-purple opacity-20 animate-neural-network-expansion" />
       )}
     </div>
   );

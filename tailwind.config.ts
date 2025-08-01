@@ -42,10 +42,16 @@ export default {
 					'primary-glow': 'hsl(var(--brand-primary-glow))',
 					purple: 'hsl(var(--brand-purple))',
 					'purple-light': 'hsl(var(--brand-purple-light))',
+					'purple-dark': 'hsl(var(--brand-purple-dark))',
 					accent: 'hsl(var(--brand-accent))',
 					'accent-vivid': 'hsl(var(--brand-accent-vivid))',
-					matrix: 'hsl(var(--brand-matrix))',
-					quantum: 'hsl(var(--brand-quantum))'
+					dark: 'hsl(var(--brand-dark))',
+					darker: 'hsl(var(--brand-darker))'
+				},
+				background: {
+					DEFAULT: 'hsl(var(--background))',
+					dark: 'hsl(var(--background-dark))',
+					section: 'hsl(var(--background-section))'
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
@@ -72,9 +78,10 @@ export default {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-data': 'var(--gradient-data)',
-				'gradient-matrix': 'var(--gradient-matrix)',
+				'gradient-dark': 'var(--gradient-dark)',
 				'gradient-section': 'var(--gradient-section)',
 				'gradient-card': 'var(--gradient-card)',
+				'gradient-card-dark': 'var(--gradient-card-dark)',
 				'gradient-neural-glow': 'var(--gradient-neural-glow)',
 				'gradient-quantum-field': 'var(--gradient-quantum-field)'
 			},

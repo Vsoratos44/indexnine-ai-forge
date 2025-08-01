@@ -30,8 +30,8 @@ const buttonVariants = cva(
         // AI-First Neural Variants
         neural: "bg-gradient-primary text-foreground-white hover:shadow-glow transform hover:scale-105 before:absolute before:inset-0 before:bg-gradient-neural-glow before:opacity-0 hover:before:opacity-100 before:transition-neural",
         "neural-pulse": "bg-brand-primary text-foreground-white hover:bg-brand-primary-glow animate-neural-pulse hover:shadow-glow transform hover:scale-110",
-        "neural-matrix": "bg-gradient-matrix text-foreground hover:shadow-[0_0_30px_hsl(var(--brand-matrix))] transform hover:scale-105 animate-holographic-shimmer",
-        quantum: "bg-gradient-quantum-field text-foreground-white hover:shadow-[0_0_40px_hsl(var(--brand-quantum))] transform hover:scale-105 animate-quantum-field",
+        "neural-matrix": "bg-gradient-dark text-foreground-white hover:shadow-[0_0_30px_hsl(var(--brand-accent))] transform hover:scale-105 animate-holographic-shimmer",
+        quantum: "bg-gradient-quantum-field text-foreground-white hover:shadow-[0_0_40px_hsl(var(--brand-purple))] transform hover:scale-105 animate-quantum-field",
         
         // Interactive Data Variants
         "data-stream": "bg-gradient-data text-foreground-white hover:shadow-[0_0_30px_hsl(var(--brand-accent-vivid))] transform hover:scale-105 before:absolute before:inset-0 before:bg-gradient-data before:opacity-0 hover:before:opacity-20 before:transition-neural",

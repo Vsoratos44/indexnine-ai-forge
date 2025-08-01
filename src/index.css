@@ -11,21 +11,22 @@
     --brand-primary-dark: 236 72% 53%;   /* Deep processing blue */
     --brand-primary-glow: 239 90% 75%;   /* Glowing neural activation */
     --brand-purple: 262 83% 58%;         /* #8B5CF6 - AI accent purple */
-    --brand-purple-light: 250 100% 98%;  /* Light AI background */
-    --brand-accent: 217 91% 60%;         /* Data stream blue */
-    --brand-accent-vivid: 217 100% 65%;  /* Vivid accent for interactions */
-    --brand-matrix: 189 100% 80%;        /* Matrix cyan (#66E6FF) */
-    --brand-quantum: 280 100% 70%;       /* Quantum violet (#B366FF) */
+    --brand-purple-light: 262 83% 95%;   /* Very light purple background */
+    --brand-purple-dark: 262 83% 35%;    /* Dark purple for depth */
+    --brand-accent: 262 83% 45%;         /* Deep purple accent */
+    --brand-accent-vivid: 262 83% 55%;   /* Vivid purple for interactions */
+    --brand-dark: 234 50% 15%;           /* Soft black (#1A1B3A) */
+    --brand-darker: 234 65% 8%;          /* Deeper soft black (#0A0B1A) */
     
-    /* Neural Network Gradients */
-    --neural-primary: linear-gradient(135deg, hsl(239 84% 67%) 0%, hsl(262 83% 58%) 50%, hsl(280 100% 70%) 100%);
-    --neural-data: linear-gradient(90deg, hsl(189 100% 80%) 0%, hsl(217 91% 60%) 100%);
-    --neural-matrix: linear-gradient(45deg, hsl(189 100% 80%) 0%, hsl(239 84% 67%) 100%);
+    /* Neural Network Gradients - Dark Theme */
+    --neural-primary: linear-gradient(135deg, hsl(239 84% 67%) 0%, hsl(262 83% 58%) 50%, hsl(262 83% 35%) 100%);
+    --neural-data: linear-gradient(90deg, hsl(262 83% 45%) 0%, hsl(239 84% 67%) 100%);
+    --neural-dark: linear-gradient(45deg, hsl(234 50% 15%) 0%, hsl(262 83% 35%) 100%);
     
-    /* Sophisticated Backgrounds */
+    /* Sophisticated Dark Backgrounds */
     --background: 0 0% 100%;
     --background-dark: 234 65% 7%;       /* #0D1329 - Rich dark blue */
-    --background-section: 250 100% 98%;  /* #FAFAFF - Ultra light section */
+    --background-section: 234 50% 15%;   /* Dark section background */
     --background-hero: 234 65% 7%;       /* Hero dark background */
     --background-card: 0 0% 100%;        /* Pure white cards */
     --background-card-dark: 234 50% 11%; /* Dark card variant */
@@ -57,17 +58,18 @@
     --input: 220 13% 91%;
     --ring: 239 84% 67%;
     
-    /* Advanced AI-First Gradients */
+    /* Advanced AI-First Gradients - Dark Theme */
     --gradient-hero: linear-gradient(135deg, hsl(234 65% 7%) 0%, hsl(239 84% 15%) 30%, hsl(262 83% 20%) 70%, hsl(234 65% 7%) 100%);
     --gradient-primary: var(--neural-primary);
     --gradient-data: var(--neural-data);
-    --gradient-matrix: var(--neural-matrix);
-    --gradient-section: linear-gradient(135deg, hsl(250 100% 98%) 0%, hsl(239 100% 98%) 50%, hsl(250 100% 98%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(250 100% 99%) 100%);
-    --gradient-card-hover: linear-gradient(135deg, hsl(250 100% 99%) 0%, hsl(239 100% 98%) 100%);
+    --gradient-dark: var(--neural-dark);
+    --gradient-section: linear-gradient(135deg, hsl(234 50% 15%) 0%, hsl(262 83% 25%) 50%, hsl(234 50% 15%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(262 83% 98%) 100%);
+    --gradient-card-hover: linear-gradient(135deg, hsl(262 83% 98%) 0%, hsl(262 83% 95%) 100%);
+    --gradient-card-dark: linear-gradient(135deg, hsl(234 50% 15%) 0%, hsl(262 83% 25%) 100%);
     --gradient-stats: linear-gradient(135deg, hsl(239 84% 67% / 0.05) 0%, hsl(262 83% 58% / 0.05) 100%);
     --gradient-neural-glow: radial-gradient(ellipse at center, hsl(239 84% 67% / 0.3) 0%, transparent 70%);
-    --gradient-quantum-field: conic-gradient(from 0deg, hsl(239 84% 67%), hsl(262 83% 58%), hsl(280 100% 70%), hsl(189 100% 80%), hsl(239 84% 67%));
+    --gradient-quantum-field: conic-gradient(from 0deg, hsl(239 84% 67%), hsl(262 83% 58%), hsl(262 83% 35%), hsl(234 50% 15%), hsl(239 84% 67%));
     
     /* Sophisticated Shadows */
     --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
@@ -432,7 +434,7 @@
 
 .animate-holographic-shimmer {
   animation: holographic-shimmer 3s linear infinite;
-  background: linear-gradient(90deg, transparent, hsl(var(--brand-matrix) / 0.6), transparent);
+  background: linear-gradient(90deg, transparent, hsl(var(--brand-accent) / 0.6), transparent);
   background-size: 200% 100%;
 }
 

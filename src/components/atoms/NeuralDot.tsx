@@ -14,7 +14,7 @@ interface NeuralDotProps {
   /** Animation variant */
   variant?: 'pulse' | 'flow' | 'static' | 'quantum';
   /** Color theme */
-  color?: 'primary' | 'accent' | 'matrix' | 'quantum';
+  color?: 'primary' | 'accent' | 'dark' | 'purple';
   /** Animation delay in seconds */
   delay?: number;
   /** Enable glow effect */
@@ -32,8 +32,8 @@ const sizeVariants = {
 const colorVariants = {
   primary: 'bg-brand-primary',
   accent: 'bg-brand-accent-vivid',
-  matrix: 'bg-brand-matrix',
-  quantum: 'bg-brand-quantum'
+  dark: 'bg-brand-dark',
+  purple: 'bg-brand-purple'
 };
 
 const animationVariants = {
