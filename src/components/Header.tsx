@@ -91,6 +91,35 @@ const Header = () => {
                 </div>
               </div>
             </div>
+
+            <div className="relative group">
+              <button className="flex items-center space-x-1 text-foreground-white hover:text-brand-primary transition-colors duration-300">
+                <span>Events Platform</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="p-4 space-y-2">
+                  <Link to="/events" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                    Platform Overview
+                  </Link>
+                  <Link to="/events/features/website-and-branding" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                    Website & Branding
+                  </Link>
+                  <Link to="/events/features/registration-and-ticketing" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                    Registration & Ticketing
+                  </Link>
+                  <Link to="/events/features/guest-management" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                    Guest Management
+                  </Link>
+                  <Link to="/events/features/on-site-experience" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                    On-Site Experience
+                  </Link>
+                  <Link to="/events/features/analytics-and-integrations" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                    Analytics & Integrations
+                  </Link>
+                </div>
+              </div>
+            </div>
             
             <div className="relative group">
               <button className="flex items-center space-x-1 text-foreground-white hover:text-brand-primary transition-colors duration-300">
@@ -206,6 +235,39 @@ const Header = () => {
                   </Link>
                   <Link to="/insights/ebooks" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     eBooks
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Events Platform */}
+            <div>
+              <button 
+                onClick={() => toggleDropdown('events')}
+                className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground-white hover:text-brand-primary transition-colors"
+              >
+                Events Platform
+                <ChevronDown className={`w-5 h-5 transition-transform ${openDropdown === 'events' ? 'rotate-180' : ''}`} />
+              </button>
+              {openDropdown === 'events' && (
+                <div className="mt-4 pl-4 space-y-3">
+                  <Link to="/events" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                    Platform Overview
+                  </Link>
+                  <Link to="/events/features/website-and-branding" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                    Website & Branding
+                  </Link>
+                  <Link to="/events/features/registration-and-ticketing" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                    Registration & Ticketing
+                  </Link>
+                  <Link to="/events/features/guest-management" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                    Guest Management
+                  </Link>
+                  <Link to="/events/features/on-site-experience" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                    On-Site Experience
+                  </Link>
+                  <Link to="/events/features/analytics-and-integrations" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                    Analytics & Integrations
                   </Link>
                 </div>
               )}
