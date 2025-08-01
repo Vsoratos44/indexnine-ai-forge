@@ -5,7 +5,7 @@ import TypewriterText from './TypewriterText';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black">
+    <section className="relative h-[65vh] min-h-[600px] overflow-hidden bg-black">
       {/* Three.js Living Void Background */}
       <LivingVoidBackground />
 
