@@ -105,7 +105,7 @@ const Events = () => {
       <section className="relative pt-28 pb-16">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-brand-primary/70 via-brand-secondary/70 to-brand-accent/70 bg-clip-text text-transparent">
               IndexNine Events
             </h1>
             <p className="text-xl text-foreground-secondary max-w-3xl mx-auto">
