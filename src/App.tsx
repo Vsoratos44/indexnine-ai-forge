@@ -11,6 +11,12 @@ import CustomSoftware from "./pages/services/CustomSoftware";
 import AiMl from "./pages/services/AiMl";
 import DataEngineering from "./pages/services/DataEngineering";
 import QaEngineering from "./pages/services/QaEngineering";
+import ConsultingStrategy from "./pages/services/ConsultingStrategy";
+
+// Studio Pages
+import AiStudio from "./pages/studios/AiStudio";
+import DataEngineeringStudio from "./pages/studios/DataEngineering";
+import QualityEngineeringStudio from "./pages/studios/QualityEngineering";
 
 // Engagement Pages
 import Enterprise from "./pages/engagement/Enterprise";
@@ -54,6 +60,12 @@ const App = () => (
           <Route path="/services/ai-ml" element={<AiMl />} />
           <Route path="/services/data-engineering" element={<DataEngineering />} />
           <Route path="/services/qa-engineering" element={<QaEngineering />} />
+          <Route path="/services/consulting" element={<ConsultingStrategy />} />
+          
+          {/* Studio Routes */}
+          <Route path="/studios/ai" element={<AiStudio />} />
+          <Route path="/studios/data-engineering" element={<DataEngineeringStudio />} />
+          <Route path="/studios/quality-engineering" element={<QualityEngineeringStudio />} />
           
           {/* Engagement Model Routes */}
           <Route path="/engagement/enterprise" element={<Enterprise />} />

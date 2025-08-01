@@ -36,14 +36,17 @@ const Header = () => {
                   <Link to="/services/custom-software" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Custom Software Development
                   </Link>
-                  <Link to="/services/ai-ml" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                  <Link to="/studios/ai" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     AI & ML Development
                   </Link>
-                  <Link to="/services/data-engineering" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                  <Link to="/studios/data-engineering" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Data Engineering
                   </Link>
-                  <Link to="/services/qa-engineering" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                  <Link to="/studios/quality-engineering" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Quality Assurance Engineering
+                  </Link>
+                  <Link to="/services/consulting" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                    Consulting & Strategy
                   </Link>
                 </div>
               </div>
@@ -167,14 +170,17 @@ const Header = () => {
                   <Link to="/services/custom-software" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Custom Software Development
                   </Link>
-                  <Link to="/services/ai-ml" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/studios/ai" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     AI & ML Development
                   </Link>
-                  <Link to="/services/data-engineering" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/studios/data-engineering" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Data Engineering
                   </Link>
-                  <Link to="/services/qa-engineering" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/studios/quality-engineering" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Quality Assurance Engineering
+                  </Link>
+                  <Link to="/services/consulting" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                    Consulting & Strategy
                   </Link>
                 </div>
               )}
