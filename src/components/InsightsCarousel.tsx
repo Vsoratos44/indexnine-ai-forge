@@ -102,7 +102,7 @@ const InsightsCarousel = () => {
   };
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-hero relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-card-dark relative overflow-hidden">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>

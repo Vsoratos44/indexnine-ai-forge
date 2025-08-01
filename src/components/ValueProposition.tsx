@@ -2,7 +2,7 @@ import React from 'react';
 
 const ValueProposition = () => {
   return (
-    <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-gradient-neural-glow relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-1/4 w-64 h-64 bg-brand-primary/5 rounded-full blur-3xl"></div>
