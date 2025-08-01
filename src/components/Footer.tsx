@@ -54,10 +54,18 @@ const Footer = () => {
         </div>
 
         {/* Bottom Border */}
-        <div className="border-t border-white/10 mt-16 pt-8 text-center">
-          <p className="text-foreground-white/60 text-sm">
-            © 2024 IndexNine. All rights reserved. | Privacy Policy | Terms of Service
-          </p>
+        <div className="border-t border-white/10 mt-16 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-foreground-white/60 text-sm">
+              © 2024 IndexNine. All rights reserved. | Privacy Policy | Terms of Service
+            </p>
+            <a 
+              href="/cms/login" 
+              className="text-foreground-white/60 hover:text-brand-primary transition-colors text-sm border border-white/20 px-4 py-2 rounded-lg hover:border-brand-primary/50"
+            >
+              Employee Login
+            </a>
+          </div>
         </div>
       </div>
     </footer>

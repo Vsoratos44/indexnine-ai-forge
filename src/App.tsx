@@ -4,8 +4,15 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import { AuthProvider } from "./hooks/useAuth";
+import ProtectedRoute from "./components/cms/ProtectedRoute";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+
+// CMS Pages
+import CMSLogin from "./pages/cms/Login";
+import CMSDashboard from "./pages/cms/Dashboard";
+import ContentEditor from "./pages/cms/ContentEditor";
 
 // Service Pages
 import CustomSoftware from "./pages/services/CustomSoftware";
@@ -54,7 +61,8 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
+    <AuthProvider>
+      <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
@@ -105,11 +113,30 @@ const App = () => (
           <Route path="/events/features/registration-and-ticketing" element={<RegistrationAndTicketing />} />
           <Route path="/events/features/on-site-experience" element={<OnSiteExperience />} />
           
+          {/* CMS Routes */}
+          <Route path="/cms/login" element={<CMSLogin />} />
+          <Route path="/cms/dashboard" element={
+            <ProtectedRoute>
+              <CMSDashboard />
+            </ProtectedRoute>
+          } />
+          <Route path="/cms/content/new" element={
+            <ProtectedRoute>
+              <ContentEditor />
+            </ProtectedRoute>
+          } />
+          <Route path="/cms/content/edit/:id" element={
+            <ProtectedRoute>
+              <ContentEditor />
+            </ProtectedRoute>
+          } />
+          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
+    </AuthProvider>
   </QueryClientProvider>
 );
 
