@@ -38,7 +38,7 @@ const PracticesStudios = () => {
   const currentStudio = studioData[activeStudio];
 
   return (
-    <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-background-light relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-1/4 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl"></div>
@@ -77,10 +77,10 @@ const PracticesStudios = () => {
             <div className="relative min-h-[300px]">
               <div className="absolute -left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-brand-primary to-brand-accent rounded-full"></div>
               <div className="pl-12">
-                <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-6 leading-tight font-montserrat">
+                <h3 className="text-3xl lg:text-4xl font-bold text-foreground-dark mb-6 leading-tight font-montserrat">
                   {currentStudio.title}
                 </h3>
-                <p className="text-lg lg:text-xl text-foreground-muted mb-8 leading-relaxed font-light font-montserrat">
+                <p className="text-lg lg:text-xl text-foreground-dark-muted mb-8 leading-relaxed font-light font-montserrat">
                   {currentStudio.description}
                 </p>
                 <Button 

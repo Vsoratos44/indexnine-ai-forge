@@ -14,7 +14,7 @@ const SocialProof = () => {
   const chartData = [110, 112, 125, 130, 150, 140, 160, 211];
 
   return (
-    <section className="py-24 lg:py-32 bg-background-section relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-background-light relative overflow-hidden">
       {/* Background blur elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
@@ -25,7 +25,7 @@ const SocialProof = () => {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left side - Chart with glassmorphism */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 lg:p-12 shadow-glass hover:shadow-glass-lg transition-all duration-500">
+            <div className="relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-3xl p-8 lg:p-12 shadow-glass hover:shadow-glass-lg transition-all duration-500">
               {/* Inner glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl"></div>
               
@@ -49,10 +49,10 @@ const SocialProof = () => {
                 
                 {/* Main metric */}
                 <div className="text-center animate-scale-in" style={{animationDelay: '1.2s'}}>
-                  <h3 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-3 font-montserrat">
+                  <h3 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground-dark mb-3 font-montserrat">
                     $316M+
                   </h3>
-                  <p className="text-foreground-muted font-medium text-base lg:text-lg font-montserrat">In Supported Client Exits</p>
+                  <p className="text-foreground-dark-muted font-medium text-base lg:text-lg font-montserrat">In Supported Client Exits</p>
                 </div>
               </div>
             </div>
@@ -64,29 +64,29 @@ const SocialProof = () => {
               {stats.slice(0, 5).map((stat, index) => (
                 <div 
                   key={index} 
-                  className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-2xl p-6 lg:p-8 text-center shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
+                  className="relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-2xl p-6 lg:p-8 text-center shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
                   {/* Inner glow effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/3 via-transparent to-brand-purple/3 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
                   <div className="relative z-10">
-                    <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground mb-2 font-montserrat">
+                    <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground-dark mb-2 font-montserrat">
                       <CountUp end={stat.value} suffix={stat.suffix} />
                     </h3>
-                    <p className="text-foreground-muted font-medium text-xs lg:text-sm font-montserrat">{stat.label}</p>
+                    <p className="text-foreground-dark-muted font-medium text-xs lg:text-sm font-montserrat">{stat.label}</p>
                   </div>
                 </div>
               ))}
               
               {/* Client Retention - Full Width */}
-              <div className="lg:col-span-3 relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-2xl p-6 lg:p-8 text-center shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group" style={{animationDelay: '0.5s'}}>
+              <div className="lg:col-span-3 relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-2xl p-6 lg:p-8 text-center shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group" style={{animationDelay: '0.5s'}}>
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/3 via-transparent to-brand-purple/3 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground mb-2 font-montserrat">
+                  <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground-dark mb-2 font-montserrat">
                     <CountUp end={92} suffix="%" />
                   </h3>
-                  <p className="text-foreground-muted font-medium text-xs lg:text-sm font-montserrat">Client Retention</p>
+                  <p className="text-foreground-dark-muted font-medium text-xs lg:text-sm font-montserrat">Client Retention</p>
                 </div>
               </div>
             </div>

@@ -21,7 +21,7 @@ const ClientExperience = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
@@ -31,7 +31,7 @@ const ClientExperience = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-6 leading-tight tracking-tight">
             A World-Class{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Client Experience
@@ -55,8 +55,8 @@ const ClientExperience = () => {
               </div>
               
               {/* Content */}
-              <h3 className="relative text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight font-montserrat">{exp.title}</h3>
-              <p className="relative text-foreground-muted leading-relaxed text-lg font-light font-montserrat">{exp.description}</p>
+              <h3 className="relative text-2xl lg:text-3xl font-bold text-foreground-dark mb-6 leading-tight font-montserrat">{exp.title}</h3>
+              <p className="relative text-foreground-dark-muted leading-relaxed text-lg font-light font-montserrat">{exp.description}</p>
             </div>
           ))}
         </div>
