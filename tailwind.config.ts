@@ -56,6 +56,11 @@ export default {
 					foreground: 'hsl(var(--card-foreground))',
 					dark: 'hsl(var(--card-dark))',
 					'dark-foreground': 'hsl(var(--card-dark-foreground))'
+				},
+				glass: {
+					border: 'hsl(var(--glass-border))',
+					bg: 'hsl(var(--glass-bg))',
+					'bg-dark': 'hsl(var(--glass-bg-dark))'
 				}
 			},
 			backgroundImage: {
@@ -67,7 +72,9 @@ export default {
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'lg': 'var(--shadow-lg)',
-				'glow': 'var(--shadow-glow)'
+				'glow': 'var(--shadow-glow)',
+				'glass': 'var(--glass-shadow)',
+				'glass-lg': 'var(--glass-shadow-lg)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

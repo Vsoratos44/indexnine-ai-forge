@@ -54,20 +54,23 @@ const Differentiators = () => {
           {differentiators.map((diff, index) => (
             <div 
               key={index}
-              className="relative bg-background-card-dark/90 backdrop-blur-sm rounded-3xl p-8 lg:p-10 border border-white/10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in group shadow-xl"
+              className="relative overflow-hidden backdrop-blur-xl bg-glass-bg-dark border border-glass-border rounded-3xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in group shadow-glass-lg"
               style={{animationDelay: `${index * 0.15}s`}}
             >
-              {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              {/* Enhanced Glassmorphism Glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              {/* Icon Container */}
-              <div className="relative bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 rounded-2xl w-20 h-20 flex items-center justify-center mb-8 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+              {/* Frosted Glass Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-3xl opacity-50"></div>
+              
+              {/* Icon Container with Enhanced Glass Effect */}
+              <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                 <diff.icon className="w-10 h-10 text-brand-primary group-hover:text-white transition-colors duration-300" />
               </div>
 
               {/* Content */}
-              <h3 className="text-2xl lg:text-3xl font-bold text-foreground-white mb-6 leading-tight">{diff.title}</h3>
-              <p className="text-foreground-white/85 leading-relaxed text-lg font-light">{diff.description}</p>
+              <h3 className="relative text-2xl lg:text-3xl font-bold text-foreground-white mb-6 leading-tight font-montserrat">{diff.title}</h3>
+              <p className="relative text-foreground-white/85 leading-relaxed text-lg font-light font-montserrat">{diff.description}</p>
             </div>
           ))}
         </div>

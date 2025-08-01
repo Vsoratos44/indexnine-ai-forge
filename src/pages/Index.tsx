@@ -6,7 +6,7 @@ import ClientExperience from '@/components/ClientExperience';
 import ProductLifecycle from '@/components/ProductLifecycle';
 import PracticesStudios from '@/components/PracticesStudios';
 import Differentiators from '@/components/Differentiators';
-import Insights from '@/components/Insights';
+import InsightsCarousel from '@/components/InsightsCarousel';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -20,7 +20,7 @@ const Index = () => {
       <ProductLifecycle />
       <PracticesStudios />
       <Differentiators />
-      <Insights />
+      <InsightsCarousel />
       <Footer />
     </div>
   );

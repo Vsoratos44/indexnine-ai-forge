@@ -64,6 +64,13 @@
     --shadow-glow: 0 0 40px hsl(239 84% 67% / 0.3);
     --shadow-glow-purple: 0 0 40px hsl(262 83% 58% / 0.2);
     
+    /* Glassmorphism Effects */
+    --glass-border: hsl(239 84% 67% / 0.2);
+    --glass-bg: hsl(250 100% 99% / 0.8);
+    --glass-bg-dark: hsl(234 50% 11% / 0.8);
+    --glass-shadow: 0 8px 32px 0 hsl(239 84% 67% / 0.1);
+    --glass-shadow-lg: 0 16px 48px 0 hsl(239 84% 67% / 0.15);
+    
     /* Animation System */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s ease-out;

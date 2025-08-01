@@ -43,17 +43,20 @@ const ClientExperience = () => {
           {experiences.map((exp, index) => (
             <div 
               key={index} 
-              className="bg-background-card/90 backdrop-blur-sm rounded-3xl p-8 lg:p-10 shadow-lg border border-border hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in group"
+              className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 lg:p-10 shadow-glass hover:shadow-glass-lg transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in group"
               style={{animationDelay: `${index * 0.15}s`}}
             >
-              {/* Icon Container */}
-              <div className="bg-gradient-stats rounded-2xl w-20 h-20 flex items-center justify-center mb-8 shadow-md group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                <exp.icon className="w-10 h-10 text-brand-primary" />
+              {/* Glassmorphism Inner Glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              {/* Icon Container with Enhanced Glassmorphism */}
+              <div className="relative bg-gradient-to-br from-brand-primary/10 via-brand-primary/5 to-brand-purple/10 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/20 shadow-md group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                <exp.icon className="w-10 h-10 text-brand-primary group-hover:text-brand-primary-dark transition-colors duration-300" />
               </div>
               
               {/* Content */}
-              <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">{exp.title}</h3>
-              <p className="text-foreground-muted leading-relaxed text-lg font-light">{exp.description}</p>
+              <h3 className="relative text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight font-montserrat">{exp.title}</h3>
+              <p className="relative text-foreground-muted leading-relaxed text-lg font-light font-montserrat">{exp.description}</p>
             </div>
           ))}
         </div>
