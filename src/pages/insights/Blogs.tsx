@@ -5,47 +5,117 @@ import { Button } from '@/components/ui/button';
 import { Clock, User, ArrowRight } from 'lucide-react';
 
 const Blogs = () => {
+  /**
+   * Blog Posts Data Structure - CMS Ready
+   * SEO-optimized content with comprehensive metadata for better search visibility
+   * Each post designed for engagement and conversion optimization
+   */
   const blogPosts = [
     {
-      title: "The Future of AI in Enterprise Software Development",
-      excerpt: "Explore how artificial intelligence is transforming enterprise software development and what it means for businesses in 2025.",
-      author: "Sarah Chen",
+      id: "robot-framework-vs-playwright-automation",
+      title: "Robot Framework vs. Playwright: The Test Automation Showdown Your Business Can't Ignore",
+      excerpt: "In today's competitive landscape, cutting corners on QA isn't an option. Discover which modern test automation framework—Robot Framework or Playwright—is right for your business stage and team.",
+      author: "QA Engineering Team",
+      publishDate: "January 20, 2025",
+      readTime: "10 min read",
+      category: "Quality Assurance",
+      featured: true,
+      metaTitle: "Robot Framework vs Playwright: Which Test Automation Service is Right for You?",
+      metaDescription: "A deep dive into Robot Framework vs Playwright for enterprise-grade test automation. See which framework powers a better continuous testing and QA process.",
+      tags: ["Test Automation", "Robot Framework", "Playwright", "QA Process", "Continuous Testing"],
+      content: {
+        summary: "Comprehensive comparison of Robot Framework vs Playwright for modern test automation, including business impact analysis, framework selection criteria, and implementation strategies.",
+        sections: [
+          "At a Glance: Robot Framework vs. Playwright Comparison",
+          "Robot Framework: The Startup's Secret Weapon for Agile Quality",
+          "Playwright: The Enterprise Powerhouse for High-Velocity Teams",
+          "Don't Settle for Good Enough: A Partner in Quality Engineering"
+        ],
+        cta: {
+          primary: "Book a Free QA Consulting Session",
+          secondary: "Download Our QA Automation Framework eBook (PDF)"
+        }
+      }
+    },
+    {
+      id: "agentic-ai-enterprise-future",
+      title: "The Future Is Agentic. Is Your Enterprise Ready for What Comes Next?",
+      excerpt: "The enterprise technology landscape is buzzing with AI agents. Amazon's AgentCore toolkit signals a seismic shift toward autonomous systems. Learn strategic adoption with extreme caution.",
+      author: "AI Strategy Team",
       publishDate: "January 15, 2025",
       readTime: "8 min read",
       category: "AI & Technology",
-      featured: true
+      featured: false,
+      tags: ["AI Agents", "Enterprise Technology", "AWS AgentCore", "Digital Transformation"],
+      content: {
+        summary: "Strategic guide to enterprise AI agent adoption, covering Amazon's AgentCore toolkit, implementation frameworks, and risk management strategies.",
+        sections: [
+          "Beyond the Hype: What an Enterprise Agent Truly Means",
+          "AWS - Always a Powerful Accelerator, Never a Magic Bullet",
+          "The Indexnine Approach: Strategic AI Adoption"
+        ]
+      }
     },
     {
-      title: "Microservices vs Monolith: Making the Right Choice",
-      excerpt: "A comprehensive guide to choosing between microservices and monolithic architecture for your next project.",
-      author: "Michael Rodriguez",
+      id: "ai-assisted-software-engineering-cursor",
+      title: "Beyond Autocomplete: When AI Meets UI to Supercharge Software Engineering",
+      excerpt: "Discover how AI code generation tools like Cursor AI can accelerate React development. Learn our proven framework for AI-assisted engineering with measurable productivity gains.",
+      author: "Senior UI Architect",
       publishDate: "January 12, 2025",
       readTime: "12 min read",
-      category: "Architecture"
+      category: "Development Tools",
+      featured: false,
+      tags: ["Cursor AI", "React Development", "AI Tools", "Developer Productivity"],
+      content: {
+        summary: "Comprehensive guide to leveraging Cursor AI for React development, including proprietary frameworks, best practices, and real-world implementation lessons.",
+        sections: [
+          "Can AI Really Help Build UI?",
+          "The Good, the Glitchy, and the Fixable",
+          "Turning AI Tools into Tangible Business Velocity"
+        ]
+      }
     },
     {
-      title: "Building Scalable Data Pipelines in the Cloud",
-      excerpt: "Best practices for designing and implementing data pipelines that can handle enterprise-scale workloads.",
-      author: "David Kim",
+      id: "microservices-vs-monolith-decision-guide",
+      title: "Microservices vs Monolith: Making the Right Architectural Choice for Scale",
+      excerpt: "A comprehensive guide to choosing between microservices and monolithic architecture based on your business stage, team size, and technical requirements.",
+      author: "Architecture Team",
       publishDate: "January 10, 2025",
-      readTime: "10 min read",
-      category: "Data Engineering"
+      readTime: "11 min read",
+      category: "Architecture",
+      featured: false,
+      tags: ["Microservices", "Monolithic Architecture", "System Design", "Scalability"],
+      content: {
+        summary: "Strategic framework for architectural decision-making, covering when to choose microservices vs monoliths, migration strategies, and business impact considerations."
+      }
     },
     {
-      title: "Security-First Development: A Modern Approach",
-      excerpt: "How to integrate security considerations into every stage of the software development lifecycle.",
-      author: "Emily Thompson",
+      id: "modern-data-platforms-enterprise-guide",
+      title: "Building Modern Data Platforms: An Enterprise Architecture Guide",
+      excerpt: "Best practices for designing and implementing scalable data platforms that drive business intelligence and enable data-driven decision making across your organization.",
+      author: "Data Engineering Team",
       publishDate: "January 8, 2025",
-      readTime: "7 min read",
-      category: "Security"
+      readTime: "15 min read",
+      category: "Data Engineering",
+      featured: false,
+      tags: ["Data Platforms", "Cloud Architecture", "Business Intelligence", "Analytics"],
+      content: {
+        summary: "Complete guide to modern data platform architecture, covering cloud-native solutions, real-time processing, and enterprise security implementations."
+      }
     },
     {
-      title: "The ROI of Quality Assurance in Software Projects",
-      excerpt: "Understanding the financial impact of comprehensive QA processes and how they save money long-term.",
-      author: "James Wilson",
+      id: "security-first-development-practices",
+      title: "Security-First Development: Integrating DevSecOps from Day One",
+      excerpt: "How to integrate security considerations into every stage of the software development lifecycle, from initial architecture to production deployment.",
+      author: "Security Engineering Team",
       publishDate: "January 5, 2025",
       readTime: "9 min read",
-      category: "Quality Assurance"
+      category: "Security",
+      featured: false,
+      tags: ["DevSecOps", "Application Security", "Secure Development", "Compliance"],
+      content: {
+        summary: "Practical guide to implementing security-first development practices, including automated security testing, threat modeling, and compliance frameworks."
+      }
     }
   ];
 
