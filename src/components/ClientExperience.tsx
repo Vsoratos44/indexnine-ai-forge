@@ -21,7 +21,7 @@ const ClientExperience = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
+    <section data-section="client-experience" className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>

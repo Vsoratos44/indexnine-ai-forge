@@ -24,7 +24,7 @@ const Differentiators = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
+    <section data-section="differentiators" className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-[28rem] h-[28rem] bg-brand-purple/15 rounded-full blur-3xl animate-float opacity-60"></div>

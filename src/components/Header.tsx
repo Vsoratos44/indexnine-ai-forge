@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -6,11 +6,45 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [isLightSection, setIsLightSection] = useState(false);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   const toggleDropdown = (dropdown: string) => {
     setOpenDropdown(openDropdown === dropdown ? null : dropdown);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const sections = [
+        { element: document.querySelector('[data-section="hero"]'), isLight: false },
+        { element: document.querySelector('[data-section="value-proposition"]'), isLight: true },
+        { element: document.querySelector('[data-section="social-proof"]'), isLight: true },
+        { element: document.querySelector('[data-section="client-experience"]'), isLight: true },
+        { element: document.querySelector('[data-section="product-lifecycle"]'), isLight: false },
+        { element: document.querySelector('[data-section="practices-studios"]'), isLight: true },
+        { element: document.querySelector('[data-section="differentiators"]'), isLight: false },
+        { element: document.querySelector('[data-section="insights"]'), isLight: true },
+      ];
+
+      for (const section of sections) {
+        if (section.element) {
+          const rect = section.element.getBoundingClientRect();
+          const headerHeight = 80; // Header height
+          
+          if (rect.top <= headerHeight && rect.bottom >= headerHeight) {
+            setIsLightSection(section.isLight);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call once to set initial state
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background-dark/95 backdrop-blur-md border-b border-white/10">
@@ -21,13 +55,13 @@ const Header = () => {
             <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center">
               <div className="w-4 h-4 bg-white rounded-sm"></div>
             </div>
-            <span className="text-xl font-bold text-foreground-white">INDEXNINE</span>
+            <span className={`text-xl font-bold ${isLightSection ? 'text-foreground-dark' : 'text-foreground-white'}`}>INDEXNINE</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-foreground-white hover:text-brand-primary transition-colors duration-300">
+              <button className={`flex items-center space-x-1 ${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors duration-300`}>
                 <span>Services</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -55,7 +89,7 @@ const Header = () => {
             </div>
             
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-foreground-white hover:text-brand-primary transition-colors duration-300">
+              <button className={`flex items-center space-x-1 ${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors duration-300`}>
                 <span>Engagement Models</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -74,7 +108,7 @@ const Header = () => {
             </div>
             
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-foreground-white hover:text-brand-primary transition-colors duration-300">
+              <button className={`flex items-center space-x-1 ${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors duration-300`}>
                 <span>Insights</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -96,7 +130,7 @@ const Header = () => {
             </div>
 
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-foreground-white hover:text-brand-primary transition-colors duration-300">
+              <button className={`flex items-center space-x-1 ${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors duration-300`}>
                 <span>Events</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -117,14 +151,14 @@ const Header = () => {
               </div>
             </div>
             
-            <Link to="/about" className="text-foreground-white hover:text-brand-primary transition-colors duration-300">
+            <Link to="/about" className={`${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors duration-300`}>
               About Us
             </Link>
           </nav>
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-foreground-white hover:text-brand-primary transition-colors"
+            className={`md:hidden ${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors`}
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
           >
