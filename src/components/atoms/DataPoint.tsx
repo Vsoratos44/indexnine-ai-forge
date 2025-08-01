@@ -18,7 +18,7 @@ interface DataPointProps {
   /** Visual style */
   variant?: 'dot' | 'square' | 'diamond' | 'hexagon';
   /** Color theme */
-  color?: 'primary' | 'accent' | 'dark' | 'purple';
+  color?: 'primary' | 'accent' | 'matrix' | 'quantum';
   /** Animation speed multiplier */
   speed?: number;
   /** Enable trailing effect */
@@ -41,9 +41,9 @@ const shapeVariants = {
 
 const colorVariants = {
   primary: 'bg-brand-primary text-foreground-white',
-  accent: 'bg-brand-accent-vivid text-foreground-white',
-  dark: 'bg-brand-dark text-foreground-white',
-  purple: 'bg-brand-purple text-foreground-white'
+  accent: 'bg-brand-accent-vivid text-foreground',
+  matrix: 'bg-brand-matrix text-foreground',
+  quantum: 'bg-brand-quantum text-foreground-white'
 };
 
 const directionVariants = {

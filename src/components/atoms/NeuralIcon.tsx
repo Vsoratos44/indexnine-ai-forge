@@ -14,9 +14,9 @@ interface NeuralIconProps {
   /** Size variant */
   size?: 'sm' | 'md' | 'lg' | 'xl';
   /** Neural animation variant */
-  variant?: 'pulse' | 'connect' | 'quantum' | 'dark';
+  variant?: 'pulse' | 'connect' | 'quantum' | 'matrix';
   /** Icon color theme */
-  color?: 'primary' | 'accent' | 'dark' | 'purple';
+  color?: 'primary' | 'accent' | 'matrix' | 'quantum';
   /** Enable glow effect */
   glow?: boolean;
   className?: string;
@@ -32,15 +32,15 @@ const sizeVariants = {
 const colorVariants = {
   primary: 'text-brand-primary',
   accent: 'text-brand-accent-vivid',
-  dark: 'text-brand-dark',
-  purple: 'text-brand-purple'
+  matrix: 'text-brand-matrix',
+  quantum: 'text-brand-quantum'
 };
 
 const animationVariants = {
   pulse: 'animate-neural-pulse',
   connect: 'animate-neural-connect',
   quantum: 'animate-quantum-field',
-  dark: 'animate-pulse-slow'
+  matrix: 'animate-matrix-rain'
 };
 
 export const NeuralIcon: React.FC<NeuralIconProps> = ({
