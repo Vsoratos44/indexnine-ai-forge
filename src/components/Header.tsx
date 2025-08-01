@@ -31,7 +31,7 @@ const Header = () => {
                 <span>Services</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-64 backdrop-blur-xl bg-glass-bg border border-glass-border rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark/98 border border-brand-primary/30 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
                   <Link to="/services/custom-software" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Custom Software Development
@@ -57,7 +57,7 @@ const Header = () => {
                 <span>Engagement Models</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-64 backdrop-blur-xl bg-glass-bg border border-glass-border rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark/98 border border-brand-primary/30 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
                   <Link to="/engagement/dedicated-teams" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Dedicated Engineering Teams
@@ -74,7 +74,7 @@ const Header = () => {
                 <span>Insights</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-48 backdrop-blur-xl bg-glass-bg border border-glass-border rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+              <div className="absolute top-full left-0 mt-2 w-48 bg-background-dark/98 border border-brand-primary/30 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
                   <Link to="/case-studies" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Case Studies
@@ -94,7 +94,7 @@ const Header = () => {
                 <span>Events</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-               <div className="absolute top-full left-0 mt-2 w-64 backdrop-blur-xl bg-glass-bg border border-glass-border rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+               <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark/98 border border-brand-primary/30 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
                   <Link to="/events" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Events
