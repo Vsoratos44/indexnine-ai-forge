@@ -23,6 +23,12 @@ import CaseStudies from "./pages/insights/CaseStudies";
 import Blogs from "./pages/insights/Blogs";
 import Ebooks from "./pages/insights/Ebooks";
 
+// Individual Blog Posts
+import RobotFrameworkVsPlaywright from "./pages/insights/blog/RobotFrameworkVsPlaywright";
+
+// Individual Case Studies
+import GenesysModernization from "./pages/insights/case-study/GenesysModernization";
+
 // About Pages
 import WhoWeAre from "./pages/about/WhoWeAre";
 import Careers from "./pages/about/Careers";
@@ -59,6 +65,12 @@ const App = () => (
           <Route path="/insights/case-studies" element={<CaseStudies />} />
           <Route path="/insights/blogs" element={<Blogs />} />
           <Route path="/insights/ebooks" element={<Ebooks />} />
+          
+          {/* Individual Blog Post Routes */}
+          <Route path="/insights/blog/robot-framework-vs-playwright" element={<RobotFrameworkVsPlaywright />} />
+          
+          {/* Individual Case Study Routes */}
+          <Route path="/insights/case-study/genesys-modernization" element={<GenesysModernization />} />
           
           {/* About Routes */}
           <Route path="/about/who-we-are" element={<WhoWeAre />} />

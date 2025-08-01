@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -168,9 +169,11 @@ const Blogs = () => {
                   <span className="font-montserrat">{post.publishDate}</span>
                 </div>
                 
-                <Button variant="ghost" className="text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-xl">
-                  Read Full Article <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
+                <Link to="/insights/blog/robot-framework-vs-playwright">
+                  <Button variant="ghost" className="text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-xl">
+                    Read Full Article <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
