@@ -31,7 +31,7 @@ const Header = () => {
                 <span>Services</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark border border-white/20 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
                   <Link to="/services/custom-software" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Custom Software Development
@@ -57,7 +57,7 @@ const Header = () => {
                 <span>Engagement Models</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark border border-white/20 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
                   <Link to="/engagement/enterprise" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     For Enterprise
@@ -80,7 +80,7 @@ const Header = () => {
                 <span>Insights</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-background-dark/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className="absolute top-full left-0 mt-2 w-48 bg-background-dark border border-white/20 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
                   <Link to="/insights/case-studies" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Case Studies
@@ -100,7 +100,7 @@ const Header = () => {
                 <span>Events</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-               <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+               <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark border border-white/20 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
                   <Link to="/events" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Events
@@ -120,7 +120,7 @@ const Header = () => {
                 <span>About Us</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-background-dark/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className="absolute top-full left-0 mt-2 w-48 bg-background-dark border border-white/20 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
                   <Link to="/about/who-we-are" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Who We Are
