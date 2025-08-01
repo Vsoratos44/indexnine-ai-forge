@@ -114,22 +114,10 @@ const App = () => (
           <Route path="/events/features/on-site-experience" element={<OnSiteExperience />} />
           
           {/* CMS Routes */}
-          <Route path="/cms/login" element={<CMSLogin />} />
-          <Route path="/cms/dashboard" element={
-            <ProtectedRoute>
-              <CMSDashboard />
-            </ProtectedRoute>
-          } />
-          <Route path="/cms/content/new" element={
-            <ProtectedRoute>
-              <ContentEditor />
-            </ProtectedRoute>
-          } />
-          <Route path="/cms/content/edit/:id" element={
-            <ProtectedRoute>
-              <ContentEditor />
-            </ProtectedRoute>
-          } />
+          <Route path="/cms/login" element={<CMSDashboard />} />
+          <Route path="/cms/dashboard" element={<CMSDashboard />} />
+          <Route path="/cms/content/new" element={<ContentEditor />} />
+          <Route path="/cms/content/edit/:id" element={<ContentEditor />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
