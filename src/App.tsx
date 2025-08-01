@@ -34,6 +34,10 @@ import RobotFrameworkVsPlaywright from "./pages/insights/blog/RobotFrameworkVsPl
 
 // Individual Case Studies
 import GenesysModernization from "./pages/insights/case-study/GenesysModernization";
+import LaunchCaseStudy from "./pages/case-studies/Launch";
+import PivotCaseStudy from "./pages/case-studies/Pivot";
+import GrowCaseStudy from "./pages/case-studies/Grow";
+import MatureCaseStudy from "./pages/case-studies/Mature";
 
 // About Pages
 import About from "./pages/About";
@@ -83,6 +87,10 @@ const App = () => (
           <Route path="/insights/blog/robot-framework-vs-playwright" element={<RobotFrameworkVsPlaywright />} />
           
           {/* Individual Case Study Routes */}
+          <Route path="/case-studies/launch" element={<LaunchCaseStudy />} />
+          <Route path="/case-studies/pivot" element={<PivotCaseStudy />} />
+          <Route path="/case-studies/grow" element={<GrowCaseStudy />} />
+          <Route path="/case-studies/mature" element={<MatureCaseStudy />} />
           <Route path="/insights/case-study/genesys-modernization" element={<GenesysModernization />} />
           
           {/* About Routes */}

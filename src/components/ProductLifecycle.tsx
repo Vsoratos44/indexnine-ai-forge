@@ -1,5 +1,6 @@
 import React from 'react';
 import { Rocket, BarChart3, TrendingUp, Settings } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ProductLifecycle = () => {
   const phases = [
@@ -7,25 +8,29 @@ const ProductLifecycle = () => {
       icon: Rocket,
       title: "Launch",
       description: "Rapidly validate ideas and bring MVPs to market with our lean approach to product development.",
-      example: "HealthTech startup"
+      example: "HealthTech startup",
+      caseStudyLink: "/case-studies/launch"
     },
     {
       icon: BarChart3,
       title: "Pivot",
       description: "Quickly adapt to market feedback and evolve your product strategy with data-driven insights.",
-      example: "EdTech platform"
+      example: "EdTech platform",
+      caseStudyLink: "/case-studies/pivot"
     },
     {
       icon: TrendingUp,
       title: "Grow",
       description: "Scale your product infrastructure and features to support expanding user bases and use cases.",
-      example: "FinTech solution"
+      example: "FinTech solution",
+      caseStudyLink: "/case-studies/grow"
     },
     {
       icon: Settings,
       title: "Mature",
       description: "Optimize performance, security, and reliability as your product becomes business-critical.",
-      example: "Enterprise SaaS"
+      example: "Enterprise SaaS",
+      caseStudyLink: "/case-studies/mature"
     }
   ];
 
@@ -71,9 +76,9 @@ const ProductLifecycle = () => {
                   <p className="text-foreground-muted leading-relaxed text-base lg:text-lg font-light font-montserrat mb-6">{phase.description}</p>
                   
                   {/* Client Example */}
-                  <span className="text-sm font-semibold text-brand-primary font-montserrat">
+                  <Link to={phase.caseStudyLink} className="text-sm font-semibold text-brand-primary hover:text-brand-primary-dark transition-colors font-montserrat underline">
                     Client example: {phase.example}
-                  </span>
+                  </Link>
                 </div>
               </div>
             </div>
