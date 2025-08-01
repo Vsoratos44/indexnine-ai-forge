@@ -5,18 +5,18 @@ const ClientExperience = () => {
   const experiences = [
     {
       icon: Zap,
-      title: "Acceleration & Velocity",
-      description: "Welcome to the Future Learning Lab! Here, we explore innovative ideas and technologies that shape our world."
+      title: "🚀 Acceleration & Velocity",
+      description: "Our snap.mvp reusable code libraries and AI-powered workflows deliver with industry-leading velocity. We turn complex ideas into tangible progress in days, not months."
     },
     {
       icon: Eye,
-      title: "Radical Transparency",  
-      description: "Our Sprint Zero and Customer Experience App ensure complete visibility into progress, challenges, and outcomes throughout the development lifecycle."
+      title: "🔍 Radical Transparency",  
+      description: "Our Sprint Zero framework gives you a clear roadmap and budget before you commit. Our proprietary Customer Experience App provides an unparalleled, real-time view into project health, team performance, and delivery metrics—eliminating the 'black box' of outsourcing."
     },
     {
       icon: Users,
-      title: "A Founder's Mindset",
-      description: "We embrace outcome-based models that align our success with yours, creating a true partnership focused on delivering real business impact."
+      title: "🤝 A Founder's Mindset",
+      description: "We succeed when you succeed. We put 'skin in the game' with outcome-based and success-fee models, ensuring our goals are perfectly aligned with your business outcomes."
     }
   ];
 

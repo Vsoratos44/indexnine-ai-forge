@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import LivingVoidBackground from './LivingVoidBackground';
 import TypewriterText from './TypewriterText';
 
@@ -29,12 +30,16 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-            <Button variant="hero" size="xl" className="min-w-[280px]">
-              Schedule a Strategy Session
-            </Button>
-            <Button variant="hero-secondary" size="xl" className="min-w-[240px]">
-              Explore our Solutions
-            </Button>
+            <a href="#home-contact">
+              <Button variant="hero" size="xl" className="min-w-[280px]">
+                Schedule a Strategy Session
+              </Button>
+            </a>
+            <Link to="/services/custom-software">
+              <Button variant="hero-secondary" size="xl" className="min-w-[240px]">
+                Explore our Solutions
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

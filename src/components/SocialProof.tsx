@@ -4,9 +4,10 @@ import CountUp from './CountUp';
 const SocialProof = () => {
   const stats = [
     { value: 104, suffix: "+", label: "Solutions Delivered" },
-    { value: 220, suffix: "+", label: "Engineers and Designers" },
+    { value: 220, suffix: "+", label: "Engineers & Designers" },
     { value: 99, suffix: "+", label: "Successful Projects" },
-    { value: 6, suffix: "", label: "Studios" },
+    { value: 95, suffix: "+", label: "Customers Past & Present" },
+    { value: 6, suffix: "", label: "Core Studios" },
     { value: 92, suffix: "%", label: "Client Retention" }
   ];
 
@@ -49,7 +50,7 @@ const SocialProof = () => {
                 {/* Main metric */}
                 <div className="text-center animate-scale-in" style={{animationDelay: '1.2s'}}>
                   <h3 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-3 font-montserrat">
-                    <CountUp end={3.4} suffix="B+" duration={2500} />
+                    $316M+
                   </h3>
                   <p className="text-foreground-muted font-medium text-base lg:text-lg font-montserrat">In Supported Client Exits</p>
                 </div>
@@ -59,8 +60,8 @@ const SocialProof = () => {
 
           {/* Right side - Stats grid with glassmorphism */}
           <div className="order-1 lg:order-2">
-            <div className="grid grid-cols-2 gap-4 lg:gap-6">
-              {stats.map((stat, index) => (
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+              {stats.slice(0, 5).map((stat, index) => (
                 <div 
                   key={index} 
                   className="relative overflow-hidden backdrop-blur-xl bg-white/5 border border-white/20 rounded-2xl p-6 lg:p-8 text-center shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
@@ -77,6 +78,17 @@ const SocialProof = () => {
                   </div>
                 </div>
               ))}
+              
+              {/* Client Retention - Full Width */}
+              <div className="lg:col-span-3 relative overflow-hidden backdrop-blur-xl bg-white/5 border border-white/20 rounded-2xl p-6 lg:p-8 text-center shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group" style={{animationDelay: '0.5s'}}>
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/3 via-transparent to-brand-purple/3 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground mb-2 font-montserrat">
+                    <CountUp end={92} suffix="%" />
+                  </h3>
+                  <p className="text-foreground-muted font-medium text-xs lg:text-sm font-montserrat">Client Retention</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

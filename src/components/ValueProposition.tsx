@@ -13,14 +13,11 @@ const ValueProposition = () => {
         <div className="text-center max-w-6xl mx-auto">
           <div className="mb-16">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight">
-              Not Just Another IT Services Firm...
-            </h2>
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              Product Engineering Services for the{' '}
+              Not Just Another IT Services Firm... We Deliver{' '}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                AI-First Era
+                Product Engineering Services for the AI-First Era
               </span>
-            </h3>
+            </h2>
           </div>
           
           <div className="max-w-5xl mx-auto">
@@ -28,8 +25,8 @@ const ValueProposition = () => {
               In a market often defined by reactive order-takers, we were founded on a refusal to be just 
               another vendor. Our mission is to permanently challenge that stigma. We prove every day that a 
               globally-recognized, product-first engineering powerhouse can be built in India. We don't just 
-              take orders; we challenge assumptions, we innovate solutions, and we deliver outcomes that 
-              transform businesses.
+              take orders; we challenge assumptions, contribute to your product strategy, and build enduring value. 
+              We are the high-value, strategic partner you thought you couldn't find.
             </p>
           </div>
         </div>

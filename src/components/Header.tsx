@@ -59,18 +59,12 @@ const Header = () => {
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark border border-white/20 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
-                  <Link to="/engagement/enterprise" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
-                    For Enterprise
-                  </Link>
-                  <Link to="/engagement/innovation-lab" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
-                    For Startups (Innovation Lab)
-                  </Link>
                   <Link to="/engagement/dedicated-teams" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
-                    Dedicated Teams
+                    Dedicated Engineering Teams
                   </Link>
-                  <Link to="/engagement/outcome-based" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
-                    Outcome-Based
-                  </Link>
+                  <a href="#contact" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                    Project-Based Engagements
+                  </a>
                 </div>
               </div>
             </div>
@@ -82,13 +76,13 @@ const Header = () => {
               </button>
               <div className="absolute top-full left-0 mt-2 w-48 bg-background-dark border border-white/20 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
-                  <Link to="/insights/case-studies" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                  <Link to="/case-studies" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Case Studies
                   </Link>
-                  <Link to="/insights/blogs" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                  <Link to="/insights" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Blogs
                   </Link>
-                  <Link to="/insights/ebooks" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
+                  <Link to="/resources/ebooks" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     eBooks
                   </Link>
                 </div>
@@ -115,22 +109,9 @@ const Header = () => {
               </div>
             </div>
             
-            <div className="relative group">
-              <button className="flex items-center space-x-1 text-foreground-white hover:text-brand-primary transition-colors duration-300">
-                <span>About Us</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-background-dark border border-white/20 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                <div className="p-4 space-y-2">
-                  <Link to="/about/who-we-are" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
-                    Who We Are
-                  </Link>
-                  <Link to="/about/careers" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
-                    Careers
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <Link to="/about" className="text-foreground-white hover:text-brand-primary transition-colors duration-300">
+              About Us
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -145,7 +126,7 @@ const Header = () => {
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
             <Button variant="hero" size="default">
-              Contact Us
+              Scope a Project
             </Button>
           </div>
         </div>
@@ -195,20 +176,14 @@ const Header = () => {
                 Engagement Models
                 <ChevronDown className={`w-5 h-5 transition-transform ${openDropdown === 'engagement' ? 'rotate-180' : ''}`} />
               </button>
-              {openDropdown === 'engagement' && (
+               {openDropdown === 'engagement' && (
                 <div className="mt-4 pl-4 space-y-3">
-                  <Link to="/engagement/enterprise" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
-                    For Enterprise
-                  </Link>
-                  <Link to="/engagement/innovation-lab" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
-                    For Startups (Innovation Lab)
-                  </Link>
                   <Link to="/engagement/dedicated-teams" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
-                    Dedicated Teams
+                    Dedicated Engineering Teams
                   </Link>
-                  <Link to="/engagement/outcome-based" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
-                    Outcome-Based
-                  </Link>
+                  <a href="#contact" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                    Project-Based Engagements
+                  </a>
                 </div>
               )}
             </div>
@@ -224,13 +199,13 @@ const Header = () => {
               </button>
               {openDropdown === 'insights' && (
                 <div className="mt-4 pl-4 space-y-3">
-                  <Link to="/insights/case-studies" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/case-studies" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Case Studies
                   </Link>
-                  <Link to="/insights/blogs" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/insights" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Blogs
                   </Link>
-                  <Link to="/insights/ebooks" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/resources/ebooks" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     eBooks
                   </Link>
                 </div>
@@ -262,30 +237,14 @@ const Header = () => {
             </div>
 
             {/* About Us */}
-            <div>
-              <button 
-                onClick={() => toggleDropdown('about')}
-                className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground-white hover:text-brand-primary transition-colors"
-              >
-                About Us
-                <ChevronDown className={`w-5 h-5 transition-transform ${openDropdown === 'about' ? 'rotate-180' : ''}`} />
-              </button>
-              {openDropdown === 'about' && (
-                <div className="mt-4 pl-4 space-y-3">
-                  <Link to="/about/who-we-are" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
-                    Who We Are
-                  </Link>
-                  <Link to="/about/careers" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
-                    Careers
-                  </Link>
-                </div>
-              )}
-            </div>
+            <Link to="/about" className="block text-lg font-semibold text-foreground-white hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+              About Us
+            </Link>
 
             {/* Mobile CTA */}
             <div className="pt-6 border-t border-white/10">
               <Button variant="hero" size="default" className="w-full">
-                Contact Us
+                Scope a Project
               </Button>
             </div>
           </div>

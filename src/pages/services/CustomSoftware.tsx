@@ -19,13 +19,13 @@ const CustomSoftware = () => {
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-white mb-8 leading-tight font-montserrat">
-              Custom Software <span className="bg-gradient-primary bg-clip-text text-transparent">Development</span>
+              End-to-End <span className="bg-gradient-primary bg-clip-text text-transparent">Custom Software Development</span>
             </h1>
             <p className="text-xl text-foreground-white/80 mb-12 leading-relaxed font-montserrat">
-              Transform your business with tailored software solutions that perfectly align with your unique requirements and goals.
+              We build scalable, secure, and high-performance web and mobile applications engineered for growth. Our full-stack development capabilities deliver custom solutions that perfectly align with your unique requirements and business goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl">Start Your Project</Button>
+              <Button variant="hero" size="xl">Scope Your Project</Button>
               <Button variant="hero-secondary" size="xl">View Case Studies</Button>
             </div>
           </div>
@@ -36,20 +36,20 @@ const CustomSoftware = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-foreground mb-6 font-montserrat">Our Development Expertise</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-6 font-montserrat">Our Full-Stack Development Capabilities</h2>
             <p className="text-xl text-foreground-muted max-w-3xl mx-auto font-montserrat">
-              We build scalable, secure, and innovative software solutions using cutting-edge technologies.
+              We build scalable, secure, and innovative software solutions using cutting-edge technologies and industry best practices.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: Code, title: "Web Applications", description: "Modern, responsive web applications using React, Vue, and Angular frameworks." },
-              { icon: Cpu, title: "Backend Systems", description: "Robust APIs and microservices architecture for scalable performance." },
-              { icon: Database, title: "Database Design", description: "Optimized database solutions for efficient data management and retrieval." },
-              { icon: Shield, title: "Security-First", description: "Built-in security measures and compliance with industry standards." },
-              { icon: Zap, title: "Performance", description: "High-performance applications optimized for speed and efficiency." },
-              { icon: Users, title: "User Experience", description: "Intuitive interfaces designed for exceptional user experiences." }
+              { icon: Code, title: "Web Development", description: "Modern, responsive web applications using React, Vue, and Angular frameworks with performance optimization." },
+              { icon: Cpu, title: "Mobile Development", description: "Native and cross-platform mobile apps for iOS and Android using React Native and Flutter." },
+              { icon: Database, title: "Backend Engineering", description: "Robust APIs and microservices architecture with Node.js, Python, and Java for scalable performance." },
+              { icon: Shield, title: "DevOps & Cloud", description: "Cloud-native deployment, CI/CD pipelines, and infrastructure automation on AWS, Azure, and GCP." },
+              { icon: Zap, title: "AI/ML Integration", description: "Embedding artificial intelligence and machine learning capabilities into your applications." },
+              { icon: Users, title: "Quality Assurance", description: "Comprehensive testing strategies including automated testing, performance testing, and security audits." }
             ].map((service, index) => (
               <div key={index} className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
                 <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center mb-6">

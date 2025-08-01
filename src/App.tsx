@@ -36,6 +36,7 @@ import RobotFrameworkVsPlaywright from "./pages/insights/blog/RobotFrameworkVsPl
 import GenesysModernization from "./pages/insights/case-study/GenesysModernization";
 
 // About Pages
+import About from "./pages/About";
 import WhoWeAre from "./pages/about/WhoWeAre";
 import Careers from "./pages/about/Careers";
 
@@ -74,9 +75,9 @@ const App = () => (
           <Route path="/engagement/outcome-based" element={<OutcomeBased />} />
           
           {/* Insights Routes */}
-          <Route path="/insights/case-studies" element={<CaseStudies />} />
-          <Route path="/insights/blogs" element={<Blogs />} />
-          <Route path="/insights/ebooks" element={<Ebooks />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/insights" element={<Blogs />} />
+          <Route path="/resources/ebooks" element={<Ebooks />} />
           
           {/* Individual Blog Post Routes */}
           <Route path="/insights/blog/robot-framework-vs-playwright" element={<RobotFrameworkVsPlaywright />} />
@@ -85,6 +86,7 @@ const App = () => (
           <Route path="/insights/case-study/genesys-modernization" element={<GenesysModernization />} />
           
           {/* About Routes */}
+          <Route path="/about" element={<About />} />
           <Route path="/about/who-we-are" element={<WhoWeAre />} />
           <Route path="/about/careers" element={<Careers />} />
           
