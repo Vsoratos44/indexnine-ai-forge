@@ -27,13 +27,10 @@ import Ebooks from "./pages/insights/Ebooks";
 import WhoWeAre from "./pages/about/WhoWeAre";
 import Careers from "./pages/about/Careers";
 
-// Events Platform Pages
+// Events Platform Pages - Only user-facing features
 import EventsPlatform from "./pages/events/EventsPlatform";
-import WebsiteAndBranding from "./pages/events/features/WebsiteAndBranding";
 import RegistrationAndTicketing from "./pages/events/features/RegistrationAndTicketing";
-import GuestManagement from "./pages/events/features/GuestManagement";
 import OnSiteExperience from "./pages/events/features/OnSiteExperience";
-import AnalyticsAndIntegrations from "./pages/events/features/AnalyticsAndIntegrations";
 
 const queryClient = new QueryClient();
 
@@ -67,13 +64,10 @@ const App = () => (
           <Route path="/about/who-we-are" element={<WhoWeAre />} />
           <Route path="/about/careers" element={<Careers />} />
           
-          {/* Events Platform Routes */}
+          {/* Events Platform Routes - User-facing only */}
           <Route path="/events" element={<EventsPlatform />} />
-          <Route path="/events/features/website-and-branding" element={<WebsiteAndBranding />} />
           <Route path="/events/features/registration-and-ticketing" element={<RegistrationAndTicketing />} />
-          <Route path="/events/features/guest-management" element={<GuestManagement />} />
           <Route path="/events/features/on-site-experience" element={<OnSiteExperience />} />
-          <Route path="/events/features/analytics-and-integrations" element={<AnalyticsAndIntegrations />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

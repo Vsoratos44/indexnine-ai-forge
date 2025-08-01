@@ -52,47 +52,47 @@ interface UseCase {
 }
 
 const EventsPlatform = () => {
-  // CMS-Ready Data Structures - These would be pulled from Strapi in production
-  const platformFeatures: PlatformFeature[] = [
-    {
-      id: 'website-branding',
-      title: 'Event Website Builder & Branding',
-      description: 'Drag-and-drop website builder with custom templates, white-labeling, and privacy controls for exclusive corporate events.',
-      icon: <Globe className="w-6 h-6" />,
-      link: '/events/features/website-and-branding',
-      highlights: ['Custom Templates', 'White-Label Branding', 'Privacy Controls']
-    },
+  /**
+   * Events Platform Architecture - Microservices Design
+   * Separates user-facing features from backend admin functionality
+   * All components designed for CMS/CRM integration and scalability
+   */
+  
+  // User-facing features visible to event attendees
+  const userFeatures: PlatformFeature[] = [
     {
       id: 'registration-ticketing',
       title: 'Registration & Ticketing',
-      description: 'Flexible forms, multi-tier ticketing, integrated payments, and advanced features like conditional logic and waitlisting.',
+      description: 'Streamlined registration experience with integrated payment processing, multi-tier ticketing, and real-time capacity management.',
       icon: <Calendar className="w-6 h-6" />,
       link: '/events/features/registration-and-ticketing',
-      highlights: ['Custom Forms', 'Stripe Integration', 'Waitlist Management']
-    },
-    {
-      id: 'guest-management',
-      title: 'Guest Management & Communications',
-      description: 'CRM integration, automated email campaigns, guest segmentation, and branded communication workflows.',
-      icon: <Users className="w-6 h-6" />,
-      link: '/events/features/guest-management',
-      highlights: ['CRM Integration', 'Email Automation', 'Guest Segmentation']
+      highlights: ['Multi-tier Tickets', 'Stripe Integration', 'Waitlist Management', 'Mobile Optimized']
     },
     {
       id: 'onsite-experience',
-      title: 'On-Site Experience & Check-in',
-      description: 'QR code check-in, mobile apps, seating chart management, and real-time attendance tracking.',
+      title: 'On-Site Experience',
+      description: 'Seamless check-in process with QR codes, interactive features, and real-time event updates for attendees.',
       icon: <Settings className="w-6 h-6" />,
       link: '/events/features/on-site-experience',
-      highlights: ['QR Code Check-in', 'Seating Charts', 'Real-time Tracking']
-    },
+      highlights: ['QR Code Check-in', 'Real-time Updates', 'Interactive Features', 'Self-service Kiosks']
+    }
+  ];
+
+  // Backend admin capabilities (not exposed to end users)
+  const adminCapabilities = [
     {
-      id: 'analytics-integrations',
-      title: 'Analytics & Integrations',
-      description: 'Comprehensive dashboards, Zapier connectivity to 4000+ apps, and advanced tracking capabilities.',
-      icon: <BarChart3 className="w-6 h-6" />,
-      link: '/events/features/analytics-and-integrations',
-      highlights: ['Dashboard Analytics', 'Zapier Integration', 'Multi-platform Tracking']
+      id: 'event-management',
+      title: 'Event Management Console',
+      description: 'Comprehensive backend for creating, configuring, and publishing events',
+      microservices: [
+        { name: 'Event Creation Service', endpoint: '/api/events/create', cmsIntegration: true },
+        { name: 'Brand Management Service', endpoint: '/api/branding/customize', crmIntegration: true },
+        { name: 'Guest List Service', endpoint: '/api/guests/manage', crmIntegration: true },
+        { name: 'Communications Service', endpoint: '/api/communications/send', cmsIntegration: true },
+        { name: 'Analytics Service', endpoint: '/api/analytics/generate', crmIntegration: true }
+      ],
+      crmIntegrations: ['Salesforce', 'HubSpot', 'Marketo', 'Pipedrive'],
+      cmsIntegrations: ['Strapi', 'Contentful', 'Sanity']
     }
   ];
 
@@ -220,16 +220,16 @@ const EventsPlatform = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              An End-to-End Solution for Any Event
+              User-Facing Event Features
             </h2>
             <p className="text-lg text-foreground-secondary max-w-2xl mx-auto">
-              Discover the comprehensive feature set that makes this platform a complete 
-              event management solution for enterprises and organizations of all sizes.
+              The core attendee experience - streamlined registration and seamless on-site interaction.
+              Backend event management is handled through our comprehensive admin console.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {platformFeatures.map((feature, index) => (
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {userFeatures.map((feature, index) => (
               <Card 
                 key={feature.id} 
                 className="group bg-glass-light border-glass backdrop-blur-lg hover:bg-glass-medium transition-all duration-300 transform hover:scale-105"
@@ -261,6 +261,60 @@ const EventsPlatform = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          
+          {/* Backend Admin Architecture Info */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <Card className="bg-glass-light border-glass backdrop-blur-lg">
+              <CardContent className="p-8">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-semibold mb-4">Backend Event Management Console</h3>
+                  <p className="text-foreground-secondary">
+                    Comprehensive admin interface for event creation, branding, guest management, and analytics - 
+                    all connected to your CMS and CRM via microservices architecture.
+                  </p>
+                </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-brand-primary">CMS Integrations</h4>
+                    <ul className="space-y-1 text-sm text-foreground-tertiary">
+                      {adminCapabilities[0].cmsIntegrations.map((cms, idx) => (
+                        <li key={idx} className="flex items-center">
+                          <ArrowRight className="w-3 h-3 mr-2 text-brand-primary" />
+                          {cms}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-brand-primary">CRM Integrations</h4>
+                    <ul className="space-y-1 text-sm text-foreground-tertiary">
+                      {adminCapabilities[0].crmIntegrations.map((crm, idx) => (
+                        <li key={idx} className="flex items-center">
+                          <ArrowRight className="w-3 h-3 mr-2 text-brand-primary" />
+                          {crm}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-6 pt-6 border-t border-glass-border">
+                  <h4 className="font-semibold mb-3 text-brand-primary">Microservices Architecture</h4>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {adminCapabilities[0].microservices.map((service, idx) => (
+                      <div key={idx} className="bg-glass-medium rounded-lg p-3">
+                        <div className="font-medium text-sm">{service.name}</div>
+                        <div className="text-xs text-foreground-tertiary font-mono">{service.endpoint}</div>
+                        <div className="flex gap-2 mt-1">
+                          {service.cmsIntegration && <span className="text-xs bg-brand-primary/20 text-brand-primary px-2 py-0.5 rounded">CMS</span>}
+                          {service.crmIntegration && <span className="text-xs bg-brand-purple/20 text-brand-purple px-2 py-0.5 rounded">CRM</span>}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

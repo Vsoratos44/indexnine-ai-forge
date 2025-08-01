@@ -102,20 +102,11 @@ const Header = () => {
                   <Link to="/events" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Platform Overview
                   </Link>
-                  <Link to="/events/features/website-and-branding" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
-                    Website & Branding
-                  </Link>
                   <Link to="/events/features/registration-and-ticketing" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Registration & Ticketing
                   </Link>
-                  <Link to="/events/features/guest-management" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
-                    Guest Management
-                  </Link>
                   <Link to="/events/features/on-site-experience" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     On-Site Experience
-                  </Link>
-                  <Link to="/events/features/analytics-and-integrations" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
-                    Analytics & Integrations
                   </Link>
                 </div>
               </div>
@@ -254,20 +245,11 @@ const Header = () => {
                   <Link to="/events" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Platform Overview
                   </Link>
-                  <Link to="/events/features/website-and-branding" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
-                    Website & Branding
-                  </Link>
                   <Link to="/events/features/registration-and-ticketing" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Registration & Ticketing
                   </Link>
-                  <Link to="/events/features/guest-management" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
-                    Guest Management
-                  </Link>
                   <Link to="/events/features/on-site-experience" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     On-Site Experience
-                  </Link>
-                  <Link to="/events/features/analytics-and-integrations" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
-                    Analytics & Integrations
                   </Link>
                 </div>
               )}
