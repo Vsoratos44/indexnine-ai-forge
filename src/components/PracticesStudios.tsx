@@ -38,7 +38,7 @@ const PracticesStudios = () => {
   const currentStudio = studioData[activeStudio];
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-quantum-field relative overflow-hidden">
+    <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-1/4 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl"></div>
@@ -56,7 +56,7 @@ const PracticesStudios = () => {
                 className={`px-6 py-3 rounded-2xl font-semibold transition-all duration-300 font-montserrat ${
                   activeStudio === 'innovation'
                     ? 'bg-brand-primary text-white shadow-glow'
-                    : 'bg-white/10 text-foreground hover:bg-white/20'
+                    : 'bg-background-subtle text-foreground hover:bg-background-card'
                 }`}
               >
                 Innovation Lab
@@ -66,7 +66,7 @@ const PracticesStudios = () => {
                 className={`px-6 py-3 rounded-2xl font-semibold transition-all duration-300 font-montserrat ${
                   activeStudio === 'enterprise'
                     ? 'bg-brand-purple text-white shadow-glow'
-                    : 'bg-white/10 text-foreground hover:bg-white/20'
+                    : 'bg-background-subtle text-foreground hover:bg-background-card'
                 }`}
               >
                 Enterprise Studio
@@ -166,19 +166,19 @@ const PracticesStudios = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-30"></div>
 
               {/* Enhanced Feature List - Positioned over image */}
-              <div className="absolute bottom-6 right-6 bg-background-dark/90 backdrop-blur-xl rounded-2xl p-6 space-y-4 shadow-2xl border border-white/20 z-40">
+              <div className="absolute bottom-6 right-6 bg-background/90 backdrop-blur-xl rounded-2xl p-6 space-y-4 shadow-2xl border border-glass-border z-40">
                 <div className="flex items-center space-x-2 mb-3">
                   <div className={`w-3 h-3 rounded-full animate-pulse ${
                     activeStudio === 'innovation'
                       ? 'bg-gradient-to-br from-brand-primary to-brand-accent'
                       : 'bg-gradient-to-br from-brand-purple to-brand-primary'
                   }`}></div>
-                  <span className="text-xs font-bold text-white uppercase tracking-wide">
+                  <span className="text-xs font-bold text-foreground uppercase tracking-wide">
                     {activeStudio === 'innovation' ? 'Innovation Lab' : 'Enterprise Studio'}
                   </span>
                 </div>
                 {currentStudio.features.map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3 text-sm font-medium text-white font-montserrat">
+                  <div key={index} className="flex items-center space-x-3 text-sm font-medium text-foreground font-montserrat">
                     <div className={`w-2 h-2 rounded-full shadow-sm animate-pulse ${
                       activeStudio === 'innovation'
                         ? 'bg-brand-primary'

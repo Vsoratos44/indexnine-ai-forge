@@ -28,24 +28,27 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: {
 					DEFAULT: 'hsl(var(--background))',
-					dark: 'hsl(var(--background-dark))',
-					section: 'hsl(var(--background-section))'
+					section: 'hsl(var(--background-section))',
+					card: 'hsl(var(--background-card))',
+					light: 'hsl(var(--background-light))',
+					subtle: 'hsl(var(--background-subtle))'
 				},
 				foreground: {
 					DEFAULT: 'hsl(var(--foreground))',
-					light: 'hsl(var(--foreground-light))',
-					white: 'hsl(var(--foreground-white))'
+					muted: 'hsl(var(--foreground-muted))',
+					dark: 'hsl(var(--foreground-dark))',
+					'dark-muted': 'hsl(var(--foreground-dark-muted))'
 				},
 				brand: {
 					primary: 'hsl(var(--brand-primary))',
 					'primary-dark': 'hsl(var(--brand-primary-dark))',
 					'primary-glow': 'hsl(var(--brand-primary-glow))',
 					purple: 'hsl(var(--brand-purple))',
-					'purple-light': 'hsl(var(--brand-purple-light))',
+					'purple-dark': 'hsl(var(--brand-purple-dark))',
+					dark: 'hsl(var(--brand-dark))',
+					darker: 'hsl(var(--brand-darker))',
 					accent: 'hsl(var(--brand-accent))',
-					'accent-vivid': 'hsl(var(--brand-accent-vivid))',
-					matrix: 'hsl(var(--brand-matrix))',
-					quantum: 'hsl(var(--brand-quantum))'
+					'accent-dark': 'hsl(var(--brand-accent-dark))'
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
@@ -59,8 +62,8 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))',
-					dark: 'hsl(var(--card-dark))',
-					'dark-foreground': 'hsl(var(--card-dark-foreground))'
+					light: 'hsl(var(--card-light))',
+					'light-foreground': 'hsl(var(--card-light-foreground))'
 				},
 				glass: {
 					border: 'hsl(var(--glass-border))',
