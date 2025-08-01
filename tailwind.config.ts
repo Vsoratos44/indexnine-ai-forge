@@ -39,8 +39,13 @@ export default {
 				brand: {
 					primary: 'hsl(var(--brand-primary))',
 					'primary-dark': 'hsl(var(--brand-primary-dark))',
+					'primary-glow': 'hsl(var(--brand-primary-glow))',
 					purple: 'hsl(var(--brand-purple))',
-					'purple-light': 'hsl(var(--brand-purple-light))'
+					'purple-light': 'hsl(var(--brand-purple-light))',
+					accent: 'hsl(var(--brand-accent))',
+					'accent-vivid': 'hsl(var(--brand-accent-vivid))',
+					matrix: 'hsl(var(--brand-matrix))',
+					quantum: 'hsl(var(--brand-quantum))'
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
@@ -66,8 +71,12 @@ export default {
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-data': 'var(--gradient-data)',
+				'gradient-matrix': 'var(--gradient-matrix)',
 				'gradient-section': 'var(--gradient-section)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-neural-glow': 'var(--gradient-neural-glow)',
+				'gradient-quantum-field': 'var(--gradient-quantum-field)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
@@ -126,11 +135,21 @@ export default {
 				'energy-sweep-3': 'energy-sweep-3 8s linear infinite',
 				'float-data': 'float-data 12s ease-in-out infinite',
 				'central-glow': 'central-glow 8s ease-in-out infinite',
-				'pulse-slow': 'pulse-slow 4s ease-in-out infinite'
+				'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
+				'neural-pulse': 'neural-pulse var(--neural-pulse-duration) ease-in-out infinite',
+				'neural-flow': 'neural-flow var(--neural-flow-duration) linear infinite',
+				'neural-connect': 'neural-connect var(--neural-connect-duration) ease-in-out infinite',
+				'data-stream': 'data-stream 12s linear infinite',
+				'quantum-field': 'quantum-field 20s linear infinite',
+				'matrix-rain': 'matrix-rain 8s linear infinite',
+				'holographic-shimmer': 'holographic-shimmer 3s linear infinite',
+				'neural-network-expansion': 'neural-network-expansion 4s ease-out infinite'
 			},
 			transitionProperty: {
 				'smooth': 'var(--transition-smooth)',
-				'fast': 'var(--transition-fast)'
+				'fast': 'var(--transition-fast)',
+				'neural': 'var(--transition-neural)',
+				'quantum': 'var(--transition-quantum)'
 			}
 		}
 	},

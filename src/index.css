@@ -2,16 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* IndexNine Design System - Premium AI Consulting Brand - Figma Exact Match */
+/* IndexNine Design System - AI-First Enterprise Architecture */
 
 @layer base {
   :root {
-    /* Brand Colors - Exact Figma Match */
-    --brand-primary: 239 84% 67%;        /* #6366F1 - Main brand blue */
-    --brand-primary-dark: 236 72% 53%;   /* Darker blue for hovers */
-    --brand-purple: 262 83% 58%;         /* #8B5CF6 - Purple accent */
-    --brand-purple-light: 250 100% 98%;  /* Very light purple background */
-    --brand-accent: 217 91% 60%;         /* Secondary blue accent */
+    /* AI-First Brand Colors - Neural Network Inspired */
+    --brand-primary: 239 84% 67%;        /* #6366F1 - Core neural blue */
+    --brand-primary-dark: 236 72% 53%;   /* Deep processing blue */
+    --brand-primary-glow: 239 90% 75%;   /* Glowing neural activation */
+    --brand-purple: 262 83% 58%;         /* #8B5CF6 - AI accent purple */
+    --brand-purple-light: 250 100% 98%;  /* Light AI background */
+    --brand-accent: 217 91% 60%;         /* Data stream blue */
+    --brand-accent-vivid: 217 100% 65%;  /* Vivid accent for interactions */
+    --brand-matrix: 189 100% 80%;        /* Matrix cyan (#66E6FF) */
+    --brand-quantum: 280 100% 70%;       /* Quantum violet (#B366FF) */
+    
+    /* Neural Network Gradients */
+    --neural-primary: linear-gradient(135deg, hsl(239 84% 67%) 0%, hsl(262 83% 58%) 50%, hsl(280 100% 70%) 100%);
+    --neural-data: linear-gradient(90deg, hsl(189 100% 80%) 0%, hsl(217 91% 60%) 100%);
+    --neural-matrix: linear-gradient(45deg, hsl(189 100% 80%) 0%, hsl(239 84% 67%) 100%);
     
     /* Sophisticated Backgrounds */
     --background: 0 0% 100%;
@@ -48,13 +57,17 @@
     --input: 220 13% 91%;
     --ring: 239 84% 67%;
     
-    /* Advanced Gradients - Figma Exact */
+    /* Advanced AI-First Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(234 65% 7%) 0%, hsl(239 84% 15%) 30%, hsl(262 83% 20%) 70%, hsl(234 65% 7%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(239 84% 67%) 0%, hsl(262 83% 58%) 100%);
+    --gradient-primary: var(--neural-primary);
+    --gradient-data: var(--neural-data);
+    --gradient-matrix: var(--neural-matrix);
     --gradient-section: linear-gradient(135deg, hsl(250 100% 98%) 0%, hsl(239 100% 98%) 50%, hsl(250 100% 98%) 100%);
     --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(250 100% 99%) 100%);
     --gradient-card-hover: linear-gradient(135deg, hsl(250 100% 99%) 0%, hsl(239 100% 98%) 100%);
     --gradient-stats: linear-gradient(135deg, hsl(239 84% 67% / 0.05) 0%, hsl(262 83% 58% / 0.05) 100%);
+    --gradient-neural-glow: radial-gradient(ellipse at center, hsl(239 84% 67% / 0.3) 0%, transparent 70%);
+    --gradient-quantum-field: conic-gradient(from 0deg, hsl(239 84% 67%), hsl(262 83% 58%), hsl(280 100% 70%), hsl(189 100% 80%), hsl(239 84% 67%));
     
     /* Sophisticated Shadows */
     --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
@@ -71,10 +84,17 @@
     --glass-shadow: 0 8px 32px 0 hsl(239 84% 67% / 0.1);
     --glass-shadow-lg: 0 16px 48px 0 hsl(239 84% 67% / 0.15);
     
-    /* Animation System */
+    /* Advanced Animation System - Performance Optimized */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s ease-out;
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-neural: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-quantum: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    /* Neural Network Animation Timings */
+    --neural-pulse-duration: 3s;
+    --neural-flow-duration: 8s;
+    --neural-connect-duration: 2s;
     
     /* Spacing & Layout */
     --radius: 1rem;
@@ -207,6 +227,123 @@
   50% { opacity: 0.6; }
 }
 
+/* Advanced Neural Network Animations - AI-First */
+@keyframes neural-pulse {
+  0%, 100% { 
+    opacity: 0.6; 
+    transform: scale(1); 
+    filter: hue-rotate(0deg);
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.05); 
+    filter: hue-rotate(30deg);
+  }
+}
+
+@keyframes neural-flow {
+  0% { 
+    transform: translateX(-100%) scaleX(0); 
+    opacity: 0; 
+  }
+  20% { 
+    transform: translateX(-50%) scaleX(1); 
+    opacity: 0.8; 
+  }
+  80% { 
+    transform: translateX(50%) scaleX(1); 
+    opacity: 0.8; 
+  }
+  100% { 
+    transform: translateX(100%) scaleX(0); 
+    opacity: 0; 
+  }
+}
+
+@keyframes neural-connect {
+  0% { 
+    stroke-dashoffset: 100; 
+    opacity: 0.3; 
+  }
+  50% { 
+    stroke-dashoffset: 0; 
+    opacity: 1; 
+  }
+  100% { 
+    stroke-dashoffset: -100; 
+    opacity: 0.3; 
+  }
+}
+
+@keyframes data-stream {
+  0% { 
+    transform: translateY(100vh) scale(0.8); 
+    opacity: 0; 
+  }
+  10% { 
+    opacity: 0.6; 
+  }
+  90% { 
+    opacity: 0.6; 
+  }
+  100% { 
+    transform: translateY(-100vh) scale(1.2); 
+    opacity: 0; 
+  }
+}
+
+@keyframes quantum-field {
+  0% { 
+    transform: rotate(0deg) scale(1); 
+    filter: hue-rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg) scale(1.1); 
+    filter: hue-rotate(360deg); 
+  }
+}
+
+@keyframes matrix-rain {
+  0% { 
+    transform: translateY(-100%); 
+    opacity: 0; 
+  }
+  10% { 
+    opacity: 1; 
+  }
+  90% { 
+    opacity: 1; 
+  }
+  100% { 
+    transform: translateY(100vh); 
+    opacity: 0; 
+  }
+}
+
+@keyframes holographic-shimmer {
+  0% { 
+    background-position: -200% center; 
+  }
+  100% { 
+    background-position: 200% center; 
+  }
+}
+
+@keyframes neural-network-expansion {
+  0% { 
+    transform: scale(0) rotate(0deg); 
+    opacity: 0; 
+  }
+  50% { 
+    transform: scale(1) rotate(180deg); 
+    opacity: 0.8; 
+  }
+  100% { 
+    transform: scale(1.2) rotate(360deg); 
+    opacity: 0; 
+  }
+}
+
 /* Animation Classes */
 .animate-ambient-pulse {
   animation: ambient-pulse 6s ease-in-out infinite;
@@ -265,6 +402,42 @@
 
 .animate-pulse-slow {
   animation: pulse-slow 4s ease-in-out infinite;
+}
+
+/* Advanced Neural Animation Classes */
+.animate-neural-pulse {
+  animation: neural-pulse var(--neural-pulse-duration) ease-in-out infinite;
+}
+
+.animate-neural-flow {
+  animation: neural-flow var(--neural-flow-duration) linear infinite;
+}
+
+.animate-neural-connect {
+  animation: neural-connect var(--neural-connect-duration) ease-in-out infinite;
+  stroke-dasharray: 10 5;
+}
+
+.animate-data-stream {
+  animation: data-stream 12s linear infinite;
+}
+
+.animate-quantum-field {
+  animation: quantum-field 20s linear infinite;
+}
+
+.animate-matrix-rain {
+  animation: matrix-rain 8s linear infinite;
+}
+
+.animate-holographic-shimmer {
+  animation: holographic-shimmer 3s linear infinite;
+  background: linear-gradient(90deg, transparent, hsl(var(--brand-matrix) / 0.6), transparent);
+  background-size: 200% 100%;
+}
+
+.animate-neural-network-expansion {
+  animation: neural-network-expansion 4s ease-out infinite;
 }
 
 @layer base {
