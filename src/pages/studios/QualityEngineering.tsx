@@ -4,32 +4,39 @@ import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Settings, Zap, Target, Award } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LivingVoidBackground from '@/components/LivingVoidBackground';
 
 const QualityEngineering = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background-dark">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-28 pb-16 bg-gradient-to-b from-background to-secondary/20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
+      <section className="relative h-[65vh] min-h-[600px] overflow-hidden bg-background-dark">
+        {/* Three.js Living Void Background */}
+        <LivingVoidBackground />
+
+        {/* Content - Precisely positioned */}
+        <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
+          <div className="max-w-5xl mx-auto text-center lg:text-left">
             <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-brand-purple/10 text-brand-purple rounded-full text-sm font-medium">
-                IndexNine QAE Studio
+              <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
+                IndexNine QAE
               </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              Beyond Testing: <span className="text-brand-purple">QA Automation</span> and Maturity in Practice
+            <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground-white mb-8 leading-[0.9] tracking-tight animate-fade-in">
+              Beyond Testing: <br />
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Engineering Quality</span><br />
+              for Mission-Critical Software
             </h1>
-            <p className="text-xl text-foreground-secondary mb-8 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl lg:text-2xl text-foreground-white/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
               Our enterprise-grade quality engineering and test automation services help startups and SMBs deliver flawless products with speed and confidence.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="min-w-[220px]">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+              <Button variant="hero" size="xl" className="min-w-[280px]">
                 Get Your APQ Roadmap
               </Button>
-              <Button variant="outline" size="lg" className="min-w-[180px]">
+              <Button variant="hero-secondary" size="xl" className="min-w-[240px]">
                 See Our Impact
               </Button>
             </div>
@@ -82,14 +89,14 @@ const QualityEngineering = () => {
       </section>
 
       {/* The Quality Dilemma Section */}
-      <section className="py-16">
+      <section className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
               The Quality Dilemma: Balancing Speed, Cost, and Reliability
             </h2>
-            <p className="text-lg text-foreground-secondary mb-12 max-w-3xl mx-auto">
-              Startups and SMBs are under constant pressure to innovate faster while maintaining quality. Traditional QA approaches often force you to choose between speed and reliability. Our outcome-driven automation approach eliminates this trade-off.
+            <p className="text-lg text-foreground-light mb-12 max-w-3xl mx-auto">
+              Startups and SMBs are under constant pressure to innovate faster. But when quality assurance becomes a bottleneck, you face a difficult choice: slow down releases, or ship buggy products? Both options lead to rising technical debt, frustrated customers, and a compromised competitive edge.
             </p>
           </div>
         </div>
