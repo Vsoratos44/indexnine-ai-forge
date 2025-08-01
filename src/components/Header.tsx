@@ -16,27 +16,36 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const sections = [
-        { element: document.querySelector('[data-section="hero"]'), isLight: false },
-        { element: document.querySelector('[data-section="value-proposition"]'), isLight: true },
-        { element: document.querySelector('[data-section="social-proof"]'), isLight: true },
-        { element: document.querySelector('[data-section="client-experience"]'), isLight: true },
-        { element: document.querySelector('[data-section="product-lifecycle"]'), isLight: false },
-        { element: document.querySelector('[data-section="practices-studios"]'), isLight: true },
-        { element: document.querySelector('[data-section="differentiators"]'), isLight: false },
-        { element: document.querySelector('[data-section="insights"]'), isLight: true },
-      ];
-
-      for (const section of sections) {
-        if (section.element) {
-          const rect = section.element.getBoundingClientRect();
-          const headerHeight = 80; // Header height
+      const headerHeight = 80;
+      
+      // Get the element that's currently under the header
+      const elementFromPoint = document.elementFromPoint(window.innerWidth / 2, headerHeight + 10);
+      
+      if (elementFromPoint) {
+        const section = elementFromPoint.closest('[data-section]');
+        if (section) {
+          const sectionType = section.getAttribute('data-section');
           
-          if (rect.top <= headerHeight && rect.bottom >= headerHeight) {
-            setIsLightSection(section.isLight);
-            break;
-          }
+          // Define which sections have light backgrounds
+          const lightSections = [
+            'value-proposition', 
+            'social-proof', 
+            'client-experience', 
+            'practices-studios', 
+            'insights'
+          ];
+          
+          setIsLightSection(lightSections.includes(sectionType || ''));
         }
+      }
+      
+      // Fallback: check scroll position against known section positions
+      if (scrollY < 100) {
+        setIsLightSection(false); // Hero is dark
+      } else if (scrollY > 600 && scrollY < 1200) {
+        setIsLightSection(true); // Value prop section
+      } else if (scrollY > 1200 && scrollY < 1800) {
+        setIsLightSection(true); // Social proof section
       }
     };
 
@@ -55,13 +64,13 @@ const Header = () => {
             <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center">
               <div className="w-4 h-4 bg-white rounded-sm"></div>
             </div>
-            <span className={`text-xl font-bold ${isLightSection ? 'text-foreground-dark' : 'text-foreground-white'}`}>INDEXNINE</span>
+            <span className={`text-xl font-bold transition-colors duration-300 ${isLightSection ? 'text-gray-900' : 'text-foreground-white'}`}>INDEXNINE</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <div className="relative group">
-              <button className={`flex items-center space-x-1 ${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors duration-300`}>
+              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}>
                 <span>Services</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -89,7 +98,7 @@ const Header = () => {
             </div>
             
             <div className="relative group">
-              <button className={`flex items-center space-x-1 ${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors duration-300`}>
+              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}>
                 <span>Engagement Models</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -108,7 +117,7 @@ const Header = () => {
             </div>
             
             <div className="relative group">
-              <button className={`flex items-center space-x-1 ${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors duration-300`}>
+              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}>
                 <span>Insights</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -130,7 +139,7 @@ const Header = () => {
             </div>
 
             <div className="relative group">
-              <button className={`flex items-center space-x-1 ${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors duration-300`}>
+              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}>
                 <span>Events</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -151,14 +160,14 @@ const Header = () => {
               </div>
             </div>
             
-            <Link to="/about" className={`${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors duration-300`}>
+            <Link to="/about" className={`transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}>
               About Us
             </Link>
           </nav>
 
           {/* Mobile Menu Button */}
           <button 
-            className={`md:hidden ${isLightSection ? 'text-foreground-dark hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'} transition-colors`}
+            className={`md:hidden transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
           >
