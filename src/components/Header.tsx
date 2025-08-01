@@ -94,13 +94,13 @@ const Header = () => {
 
             <div className="relative group">
               <button className="flex items-center space-x-1 text-foreground-white hover:text-brand-primary transition-colors duration-300">
-                <span>Events Platform</span>
+                <span>Events</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+               <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-glass-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="p-4 space-y-2">
                   <Link to="/events" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
-                    Platform Overview
+                    Events
                   </Link>
                   <Link to="/events/features/registration-and-ticketing" className="block px-4 py-3 text-foreground-white hover:text-brand-primary hover:bg-white/5 rounded-lg transition-colors">
                     Registration & Ticketing
@@ -237,13 +237,13 @@ const Header = () => {
                 onClick={() => toggleDropdown('events')}
                 className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground-white hover:text-brand-primary transition-colors"
               >
-                Events Platform
+                Events
                 <ChevronDown className={`w-5 h-5 transition-transform ${openDropdown === 'events' ? 'rotate-180' : ''}`} />
               </button>
               {openDropdown === 'events' && (
                 <div className="mt-4 pl-4 space-y-3">
                   <Link to="/events" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
-                    Platform Overview
+                    Events
                   </Link>
                   <Link to="/events/features/registration-and-ticketing" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Registration & Ticketing
