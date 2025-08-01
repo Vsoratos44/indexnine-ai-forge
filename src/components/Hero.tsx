@@ -3,62 +3,134 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-hero overflow-hidden">
-      {/* Sophisticated Background Elements - Figma Match */}
-      <div className="absolute inset-0">
-        {/* Large floating orbs with precise positioning */}
-        <div className="absolute top-[15%] right-[20%] w-[32rem] h-[32rem] bg-brand-purple/15 rounded-full blur-3xl animate-float opacity-60"></div>
-        <div className="absolute bottom-[20%] left-[15%] w-[28rem] h-[28rem] bg-brand-primary/20 rounded-full blur-3xl animate-float opacity-70" style={{animationDelay: '1.2s'}}></div>
-        <div className="absolute top-[40%] right-[45%] w-[20rem] h-[20rem] bg-brand-accent/10 rounded-full blur-2xl animate-float" style={{animationDelay: '2s'}}></div>
+    <section className="relative min-h-screen overflow-hidden bg-black">
+      {/* The Living Void Background - Pure Black Base */}
+      <div className="absolute inset-0 bg-black">
         
-        {/* Flowing Wave Graphics - Enhanced */}
-        <div className="absolute inset-0 opacity-20">
-          <svg className="w-full h-full" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Edge Glow - Cool Violet */}
+        <div className="absolute inset-0 opacity-60">
+          <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-[#5E5EFF] opacity-30 animate-pulse-slow"></div>
+        </div>
+
+        {/* Ambient Energy Pulse from Bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-1/3">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#7D88FF] via-[#1D2150] to-transparent opacity-10 animate-ambient-pulse"></div>
+        </div>
+
+        {/* Particle Field - 150-200 Microscopic Stars */}
+        <div className="absolute inset-0 animate-slow-zoom">
+          {/* Layer 1 - Close particles */}
+          {[...Array(50)].map((_, i) => (
+            <div
+              key={`close-${i}`}
+              className="absolute w-1 h-1 bg-white rounded-full shadow-sm animate-twinkle opacity-60"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 8}s`,
+                animationDuration: `${2 + Math.random() * 4}s`,
+                filter: `hue-rotate(${Math.random() * 60}deg)`
+              }}
+            ></div>
+          ))}
+          
+          {/* Layer 2 - Medium particles */}
+          {[...Array(80)].map((_, i) => (
+            <div
+              key={`medium-${i}`}
+              className="absolute w-0.5 h-0.5 bg-cyan-100 rounded-full shadow-sm animate-twinkle opacity-40"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 8}s`,
+                animationDuration: `${3 + Math.random() * 6}s`
+              }}
+            ></div>
+          ))}
+          
+          {/* Layer 3 - Distant particles */}
+          {[...Array(70)].map((_, i) => (
+            <div
+              key={`distant-${i}`}
+              className="absolute w-px h-px bg-cyan-50 rounded-full animate-twinkle opacity-20"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 8}s`,
+                animationDuration: `${4 + Math.random() * 8}s`
+              }}
+            ></div>
+          ))}
+        </div>
+
+        {/* Grid Lines - Indigo Blue Connecting Particles */}
+        <div className="absolute inset-0 opacity-30 animate-grid-emerge">
+          <svg className="w-full h-full" viewBox="0 0 1920 1080" fill="none">
             <defs>
-              <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="hsl(239, 84%, 67%)" stopOpacity="0.4"/>
-                <stop offset="50%" stopColor="hsl(262, 83%, 58%)" stopOpacity="0.2"/>
-                <stop offset="100%" stopColor="hsl(217, 91%, 60%)" stopOpacity="0.1"/>
-              </linearGradient>
-              <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="hsl(262, 83%, 58%)" stopOpacity="0.3"/>
-                <stop offset="50%" stopColor="hsl(217, 91%, 60%)" stopOpacity="0.2"/>
-                <stop offset="100%" stopColor="hsl(239, 84%, 67%)" stopOpacity="0.1"/>
-              </linearGradient>
-              <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="hsl(217, 91%, 60%)" stopOpacity="0.2"/>
-                <stop offset="100%" stopColor="hsl(239, 84%, 67%)" stopOpacity="0.05"/>
+              <pattern id="grid-pattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+                <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#1D2150" strokeWidth="1" opacity="0.4"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid-pattern)" className="animate-grid-wave"/>
+          </svg>
+        </div>
+
+        {/* Dynamic Mesh - Translucent White to Soft Aqua */}
+        <div className="absolute inset-0 opacity-40 animate-mesh-flow">
+          <svg className="w-full h-full" viewBox="0 0 1920 1080" fill="none">
+            <defs>
+              <linearGradient id="meshGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#E6F7FF" stopOpacity="0.6"/>
+                <stop offset="50%" stopColor="#ffffff" stopOpacity="0.3"/>
+                <stop offset="100%" stopColor="#E6F7FF" stopOpacity="0.1"/>
               </linearGradient>
             </defs>
-            
             <path 
-              d="M-100 450 Q360 350 720 450 T1540 450 V900 H-100 Z" 
-              fill="url(#waveGradient1)"
-              className="animate-pulse"
+              d="M0,540 Q480,500 960,540 T1920,540" 
+              stroke="url(#meshGradient)" 
+              strokeWidth="2" 
+              fill="none"
+              className="animate-wave-flow"
             />
             <path 
-              d="M-100 500 Q320 400 640 500 T1540 500 V900 H-100 Z" 
-              fill="url(#waveGradient2)"
-              className="animate-pulse"
-              style={{animationDelay: '0.7s'}}
-            />
-            <path 
-              d="M-100 550 Q280 450 560 550 T1540 550 V900 H-100 Z" 
-              fill="url(#waveGradient3)"
-              className="animate-pulse"
-              style={{animationDelay: '1.4s'}}
+              d="M0,580 Q480,620 960,580 T1920,580" 
+              stroke="url(#meshGradient)" 
+              strokeWidth="1.5" 
+              fill="none"
+              className="animate-wave-flow-delay"
             />
           </svg>
         </div>
 
-        {/* Subtle grid pattern overlay */}
-        <div className="absolute inset-0 opacity-5" style={{
-          backgroundImage: `radial-gradient(circle at 50% 50%, hsl(239 84% 67%) 1px, transparent 1px)`,
-          backgroundSize: '40px 40px'
-        }}></div>
+        {/* Energy Pulses - Diagonal Sweeps */}
+        <div className="absolute inset-0">
+          <div className="absolute w-full h-0.5 bg-gradient-to-r from-transparent via-[#7D88FF] to-[#CCD1FF] opacity-20 animate-energy-sweep-1" style={{top: '30%', transform: 'rotate(-15deg)'}}></div>
+          <div className="absolute w-full h-0.5 bg-gradient-to-r from-transparent via-[#7D88FF] to-[#CCD1FF] opacity-15 animate-energy-sweep-2" style={{top: '50%', transform: 'rotate(-15deg)'}}></div>
+          <div className="absolute w-full h-0.5 bg-gradient-to-r from-transparent via-[#7D88FF] to-[#CCD1FF] opacity-10 animate-energy-sweep-3" style={{top: '70%', transform: 'rotate(-15deg)'}}></div>
+        </div>
+
+        {/* Floating Data Points */}
+        {[...Array(12)].map((_, i) => (
+          <div
+            key={`data-point-${i}`}
+            className="absolute w-1.5 h-1.5 bg-[#9FAAFF] rounded-full opacity-40 animate-float-data"
+            style={{
+              left: `${10 + Math.random() * 80}%`,
+              top: `${10 + Math.random() * 80}%`,
+              animationDelay: `${Math.random() * 8}s`,
+              animationDuration: `${8 + Math.random() * 4}s`
+            }}
+          ></div>
+        ))}
+
+        {/* Central Radial Glow */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-96 h-96 bg-[#9FAAFF] rounded-full opacity-5 blur-3xl animate-central-glow"></div>
+        </div>
+
       </div>
 
-      {/* Content - Precisely positioned like Figma */}
+      {/* Content - Precisely positioned */}
       <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
         <div className="max-w-5xl mx-auto text-center lg:text-left">
           <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] font-bold text-foreground-white mb-8 leading-[0.9] tracking-tight animate-fade-in">

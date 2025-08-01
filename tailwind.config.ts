@@ -102,7 +102,20 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out',
 				'scale-in': 'scale-in 0.5s ease-out',
 				'slide-up': 'slide-up 0.6s ease-out',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'ambient-pulse': 'ambient-pulse 6s ease-in-out infinite',
+				'twinkle': 'twinkle 4s ease-in-out infinite',
+				'slow-zoom': 'slow-zoom 8s linear infinite',
+				'grid-emerge': 'grid-emerge 8s ease-out infinite',
+				'grid-wave': 'grid-wave 4s ease-in-out infinite',
+				'mesh-flow': 'mesh-flow 6s ease-in-out infinite',
+				'wave-flow': 'wave-flow 8s ease-in-out infinite',
+				'energy-sweep-1': 'energy-sweep-1 8s linear infinite',
+				'energy-sweep-2': 'energy-sweep-2 8s linear infinite',
+				'energy-sweep-3': 'energy-sweep-3 8s linear infinite',
+				'float-data': 'float-data 12s ease-in-out infinite',
+				'central-glow': 'central-glow 8s ease-in-out infinite',
+				'pulse-slow': 'pulse-slow 4s ease-in-out infinite'
 			},
 			transitionProperty: {
 				'smooth': 'var(--transition-smooth)',
