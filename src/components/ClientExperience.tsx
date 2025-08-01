@@ -10,7 +10,7 @@ const ClientExperience = () => {
     },
     {
       icon: Eye,
-      title: "Radical Transparency",
+      title: "Radical Transparency",  
       description: "Our Sprint Zero and Customer Experience App ensure complete visibility into progress, challenges, and outcomes throughout the development lifecycle."
     },
     {
@@ -21,16 +21,17 @@ const ClientExperience = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-section relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-1/4 w-32 h-32 bg-brand-primary rounded-full blur-2xl"></div>
-        <div className="absolute bottom-10 right-1/4 w-40 h-40 bg-brand-purple rounded-full blur-2xl"></div>
+    <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
+      {/* Enhanced Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-1/6 w-96 h-96 bg-brand-purple/6 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-accent/5 rounded-full blur-2xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight">
             A World-Class{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Client Experience
@@ -38,19 +39,21 @@ const ClientExperience = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto">
           {experiences.map((exp, index) => (
             <div 
               key={index} 
-              className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-soft hover:shadow-lg transition-all duration-300 transform hover:scale-105 animate-fade-in"
-              style={{animationDelay: `${index * 0.2}s`}}
+              className="bg-background-card/90 backdrop-blur-sm rounded-3xl p-8 lg:p-10 shadow-lg border border-border hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in group"
+              style={{animationDelay: `${index * 0.15}s`}}
             >
-              <div className="bg-brand-purple-light rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
-                <exp.icon className="w-8 h-8 text-brand-primary" />
+              {/* Icon Container */}
+              <div className="bg-gradient-stats rounded-2xl w-20 h-20 flex items-center justify-center mb-8 shadow-md group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                <exp.icon className="w-10 h-10 text-brand-primary" />
               </div>
               
-              <h3 className="text-xl font-bold text-foreground mb-4">{exp.title}</h3>
-              <p className="text-foreground-light leading-relaxed">{exp.description}</p>
+              {/* Content */}
+              <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">{exp.title}</h3>
+              <p className="text-foreground-muted leading-relaxed text-lg font-light">{exp.description}</p>
             </div>
           ))}
         </div>

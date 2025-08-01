@@ -4,64 +4,84 @@ import { Button } from '@/components/ui/button';
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-gradient-hero overflow-hidden">
-      {/* Animated Background Elements */}
+      {/* Sophisticated Background Elements - Figma Match */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-brand-purple/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-brand-primary/20 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
+        {/* Large floating orbs with precise positioning */}
+        <div className="absolute top-[15%] right-[20%] w-[32rem] h-[32rem] bg-brand-purple/15 rounded-full blur-3xl animate-float opacity-60"></div>
+        <div className="absolute bottom-[20%] left-[15%] w-[28rem] h-[28rem] bg-brand-primary/20 rounded-full blur-3xl animate-float opacity-70" style={{animationDelay: '1.2s'}}></div>
+        <div className="absolute top-[40%] right-[45%] w-[20rem] h-[20rem] bg-brand-accent/10 rounded-full blur-2xl animate-float" style={{animationDelay: '2s'}}></div>
         
-        {/* Flowing Wave Graphics */}
-        <div className="absolute inset-0 opacity-30">
-          <svg className="w-full h-full" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Flowing Wave Graphics - Enhanced */}
+        <div className="absolute inset-0 opacity-20">
+          <svg className="w-full h-full" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="hsl(239, 84%, 67%)" stopOpacity="0.4"/>
+                <stop offset="50%" stopColor="hsl(262, 83%, 58%)" stopOpacity="0.2"/>
+                <stop offset="100%" stopColor="hsl(217, 91%, 60%)" stopOpacity="0.1"/>
+              </linearGradient>
+              <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="hsl(262, 83%, 58%)" stopOpacity="0.3"/>
+                <stop offset="50%" stopColor="hsl(217, 91%, 60%)" stopOpacity="0.2"/>
+                <stop offset="100%" stopColor="hsl(239, 84%, 67%)" stopOpacity="0.1"/>
+              </linearGradient>
+              <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="hsl(217, 91%, 60%)" stopOpacity="0.2"/>
+                <stop offset="100%" stopColor="hsl(239, 84%, 67%)" stopOpacity="0.05"/>
+              </linearGradient>
+            </defs>
+            
             <path 
-              d="M-100 400 Q300 300 600 400 T1300 400 V800 H-100 Z" 
+              d="M-100 450 Q360 350 720 450 T1540 450 V900 H-100 Z" 
               fill="url(#waveGradient1)"
               className="animate-pulse"
             />
             <path 
-              d="M-100 450 Q250 350 550 450 T1300 450 V800 H-100 Z" 
+              d="M-100 500 Q320 400 640 500 T1540 500 V900 H-100 Z" 
               fill="url(#waveGradient2)"
               className="animate-pulse"
-              style={{animationDelay: '0.5s'}}
+              style={{animationDelay: '0.7s'}}
             />
-            <defs>
-              <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="hsl(249, 78%, 62%)" stopOpacity="0.3"/>
-                <stop offset="100%" stopColor="hsl(262, 83%, 58%)" stopOpacity="0.1"/>
-              </linearGradient>
-              <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="hsl(262, 83%, 58%)" stopOpacity="0.2"/>
-                <stop offset="100%" stopColor="hsl(249, 78%, 62%)" stopOpacity="0.1"/>
-              </linearGradient>
-            </defs>
+            <path 
+              d="M-100 550 Q280 450 560 550 T1540 550 V900 H-100 Z" 
+              fill="url(#waveGradient3)"
+              className="animate-pulse"
+              style={{animationDelay: '1.4s'}}
+            />
           </svg>
         </div>
+
+        {/* Subtle grid pattern overlay */}
+        <div className="absolute inset-0 opacity-5" style={{
+          backgroundImage: `radial-gradient(circle at 50% 50%, hsl(239 84% 67%) 1px, transparent 1px)`,
+          backgroundSize: '40px 40px'
+        }}></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pt-32 pb-20">
-        <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground-white mb-8 leading-tight animate-fade-in">
+      {/* Content - Precisely positioned like Figma */}
+      <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
+        <div className="max-w-5xl mx-auto text-center lg:text-left">
+          <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] font-bold text-foreground-white mb-8 leading-[0.9] tracking-tight animate-fade-in">
             Product Innovation &{' '}
-            <br className="hidden md:block" />
-            Software{' '}
+            <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Engineering
+              Software Engineering
             </span>
             <br />
             Excellence
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground-white/80 mb-12 max-w-3xl leading-relaxed animate-slide-up">
-            Your strategic partner for: modernizing your critical system & infrastructure, 
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground-white/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
+            Your strategic partner for modernizing critical systems & infrastructure, 
             launching new digital revenue streams, and embedding AI to drive impactful, 
             positive business outcomes.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 animate-scale-in">
-            <Button variant="hero" size="xl">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+            <Button variant="hero" size="xl" className="min-w-[280px]">
               Schedule a Strategy Session
             </Button>
-            <Button variant="hero-secondary" size="xl">
+            <Button variant="hero-secondary" size="xl" className="min-w-[240px]">
               Explore our Solutions
             </Button>
           </div>

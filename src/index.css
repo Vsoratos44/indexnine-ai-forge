@@ -2,63 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-/* IndexNine Design System - Premium AI Consulting Brand */
+/* IndexNine Design System - Premium AI Consulting Brand - Figma Exact Match */
 
 @layer base {
   :root {
-    /* Brand Colors - IndexNine Design System */
-    --brand-primary: 249 78% 62%;        /* #6366F1 - Primary blue */
-    --brand-primary-dark: 243 75% 59%;   /* #5855F6 - Darker blue */
+    /* Brand Colors - Exact Figma Match */
+    --brand-primary: 239 84% 67%;        /* #6366F1 - Main brand blue */
+    --brand-primary-dark: 236 72% 53%;   /* Darker blue for hovers */
     --brand-purple: 262 83% 58%;         /* #8B5CF6 - Purple accent */
-    --brand-purple-light: 262 90% 85%;   /* Light purple for backgrounds */
+    --brand-purple-light: 250 100% 98%;  /* Very light purple background */
+    --brand-accent: 217 91% 60%;         /* Secondary blue accent */
     
-    /* Backgrounds */
+    /* Sophisticated Backgrounds */
     --background: 0 0% 100%;
-    --background-dark: 222 84% 5%;       /* #0F172A - Dark blue-gray */
-    --background-section: 231 95% 97%;   /* #F8FAFF - Light section bg */
-    --background-gradient: 245 58% 51%;  /* Gradient start */
+    --background-dark: 234 65% 7%;       /* #0D1329 - Rich dark blue */
+    --background-section: 250 100% 98%;  /* #FAFAFF - Ultra light section */
+    --background-hero: 234 65% 7%;       /* Hero dark background */
+    --background-card: 0 0% 100%;        /* Pure white cards */
+    --background-card-dark: 234 50% 11%; /* Dark card variant */
     
-    /* Typography */
-    --foreground: 222 84% 5%;            /* Dark text */
-    --foreground-light: 215 20% 65%;     /* Muted text */
-    --foreground-white: 0 0% 100%;       /* White text */
+    /* Typography System */
+    --foreground: 234 65% 7%;            /* Primary dark text */
+    --foreground-light: 215 16% 47%;     /* Muted text #6B7280 */
+    --foreground-white: 0 0% 100%;       /* Pure white text */
+    --foreground-muted: 215 14% 34%;     /* Secondary text */
     
-    /* Card & UI Elements */
+    /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 222 84% 5%;
-    --card-dark: 220 39% 11%;            /* Dark cards */
+    --card-foreground: 234 65% 7%;
+    --card-dark: 234 50% 11%;
     --card-dark-foreground: 0 0% 100%;
+    --card-border: 214 32% 91%;
     
     /* Interactive Elements */
-    --primary: 249 78% 62%;              /* Primary button */
+    --primary: 239 84% 67%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 243 75% 59%;
+    --primary-hover: 236 72% 53%;
     
-    --secondary: 231 95% 97%;
-    --secondary-foreground: 222 84% 5%;
+    --secondary: 250 100% 98%;
+    --secondary-foreground: 234 65% 7%;
     
-    /* Borders & Inputs */
-    --border: 214 32% 91%;
-    --border-dark: 217 33% 18%;
-    --input: 214 32% 91%;
-    --ring: 249 78% 62%;
+    /* Borders & Form Elements */
+    --border: 220 13% 91%;               /* #E5E7EB */
+    --border-dark: 234 50% 20%;
+    --input: 220 13% 91%;
+    --ring: 239 84% 67%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(222 84% 5%) 0%, hsl(243 75% 15%) 50%, hsl(262 83% 25%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(249 78% 62%) 0%, hsl(262 83% 58%) 100%);
-    --gradient-section: linear-gradient(135deg, hsl(231 95% 97%) 0%, hsl(262 90% 97%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(220 39% 11%) 0%, hsl(243 75% 15%) 100%);
+    /* Advanced Gradients - Figma Exact */
+    --gradient-hero: linear-gradient(135deg, hsl(234 65% 7%) 0%, hsl(239 84% 15%) 30%, hsl(262 83% 20%) 70%, hsl(234 65% 7%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(239 84% 67%) 0%, hsl(262 83% 58%) 100%);
+    --gradient-section: linear-gradient(135deg, hsl(250 100% 98%) 0%, hsl(239 100% 98%) 50%, hsl(250 100% 98%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(250 100% 99%) 100%);
+    --gradient-card-hover: linear-gradient(135deg, hsl(250 100% 99%) 0%, hsl(239 100% 98%) 100%);
+    --gradient-stats: linear-gradient(135deg, hsl(239 84% 67% / 0.05) 0%, hsl(262 83% 58% / 0.05) 100%);
     
-    /* Shadows */
-    --shadow-soft: 0 4px 6px -1px hsl(222 84% 5% / 0.1), 0 2px 4px -1px hsl(222 84% 5% / 0.06);
-    --shadow-lg: 0 20px 25px -5px hsl(222 84% 5% / 0.1), 0 10px 10px -5px hsl(222 84% 5% / 0.04);
-    --shadow-glow: 0 0 40px hsl(249 78% 62% / 0.3);
+    /* Sophisticated Shadows */
+    --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 8px 10px -6px hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 0 40px hsl(239 84% 67% / 0.3);
+    --shadow-glow-purple: 0 0 40px hsl(262 83% 58% / 0.2);
     
-    /* Animations */
+    /* Animation System */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s ease-out;
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     
-    --radius: 0.75rem;
+    /* Spacing & Layout */
+    --radius: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-xl: 2rem;
+    --container-padding: 1.5rem;
+    --section-padding: 5rem;
+    
+    /* Typography Scale */
+    --text-hero: clamp(3rem, 8vw, 5rem);
+    --text-h1: clamp(2.5rem, 6vw, 4rem);
+    --text-h2: clamp(2rem, 4vw, 3rem);
+    --text-h3: clamp(1.5rem, 3vw, 2rem);
+    --text-body: clamp(1rem, 2vw, 1.125rem);
+    --text-small: clamp(0.875rem, 1.5vw, 1rem);
   }
 
   .dark {
