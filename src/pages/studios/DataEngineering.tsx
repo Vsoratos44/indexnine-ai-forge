@@ -1,36 +1,42 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Database, Cloud, Shield, CheckCircle, Award } from 'lucide-react';
+import { Database, Cloud, Shield, BarChart3, CheckCircle } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LivingVoidBackground from '@/components/LivingVoidBackground';
 
 const DataEngineering = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background-dark">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-28 pb-16 bg-gradient-to-b from-background to-secondary/20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
+      <section className="relative h-[65vh] min-h-[600px] overflow-hidden bg-background-dark">
+        {/* Three.js Living Void Background */}
+        <LivingVoidBackground />
+
+        {/* Content - Precisely positioned */}
+        <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
+          <div className="max-w-5xl mx-auto text-center lg:text-left">
             <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-brand-purple/10 text-brand-purple rounded-full text-sm font-medium">
-                IndexNine Data Studio
+              <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
+                IndexNine Data
               </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              Unlock <span className="text-brand-purple">Modern Analytics</span>
+            <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground-white mb-8 leading-[0.9] tracking-tight animate-fade-in">
+              Unlock Modern <br />
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Analytics</span>
             </h1>
-            <p className="text-xl text-foreground-secondary mb-8 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl lg:text-2xl text-foreground-white/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
               We design and build intelligent data platforms that drive clarity, efficiency, and growth. Turn your data into your most valuable asset.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="min-w-[220px]">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+              <Button variant="hero" size="xl" className="min-w-[280px]">
                 Build Your Data Roadmap
               </Button>
-              <Button variant="outline" size="lg" className="min-w-[180px]">
-                See Our Blueprint
+              <Button variant="hero-secondary" size="xl" className="min-w-[240px]">
+                See Our Solutions
               </Button>
             </div>
           </div>
@@ -38,7 +44,7 @@ const DataEngineering = () => {
       </section>
 
       {/* Data Blueprint Section */}
-      <section id="data-blueprint" className="py-16 bg-background-dark text-foreground-white">
+      <section id="data-blueprint" className="py-20 bg-background-dark text-foreground-white">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -46,178 +52,234 @@ const DataEngineering = () => {
                 Our Blueprint for an AI-Ready Data Foundation
               </h2>
               <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
-                Our proven 3-step methodology transforms your data into a strategic competitive advantage.
+                We transform your data from a fragmented resource into a strategic asset with a proven, three-step methodology that delivers results.
               </p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  step: "01",
-                  title: "Build a Unified Data Foundation",
-                  description: "Integrate disparate data sources into a single, coherent platform that eliminates silos and ensures data consistency across your organization."
-                },
-                {
-                  step: "02", 
-                  title: "Enhance Data Quality & Context",
-                  description: "Implement automated data quality checks, enrichment processes, and contextual metadata to ensure your data is trustworthy and actionable."
-                },
-                {
-                  step: "03",
-                  title: "Establish Robust Governance", 
-                  description: "Create frameworks for data security, compliance, and lifecycle management that scale with your business growth."
-                }
-              ].map((item) => (
-                <div key={item.step} className="text-center">
-                  <div className="w-16 h-16 bg-brand-purple rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-white font-bold text-lg">{item.step}</span>
+              <Card className="p-8 bg-background-card-dark border-border-dark text-center">
+                <CardContent className="p-0">
+                  <div className="w-16 h-16 bg-brand-primary rounded-lg flex items-center justify-center mx-auto mb-6">
+                    <span className="text-white font-bold text-2xl">1</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground-white">{item.title}</h3>
-                  <p className="text-foreground-white/80">{item.description}</p>
-                </div>
-              ))}
+                  <h3 className="text-xl font-bold mb-4 text-foreground-white">Build a Unified Data Foundation</h3>
+                  <p className="text-foreground-white/80">
+                    We centralize your disparate data sources into a scalable, cloud-native data platform, creating a single source of truth to break down silos.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="p-8 bg-background-card-dark border-border-dark text-center">
+                <CardContent className="p-0">
+                  <div className="w-16 h-16 bg-brand-purple rounded-lg flex items-center justify-center mx-auto mb-6">
+                    <span className="text-white font-bold text-2xl">2</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-foreground-white">Enhance Data Quality & Context</h3>
+                  <p className="text-foreground-white/80">
+                    Our intelligent data integration pipelines clean, validate, and enrich your data with business context, making it ready for reliable AI consumption.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="p-8 bg-background-card-dark border-border-dark text-center">
+                <CardContent className="p-0">
+                  <div className="w-16 h-16 bg-brand-accent rounded-lg flex items-center justify-center mx-auto mb-6">
+                    <span className="text-white font-bold text-2xl">3</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-foreground-white">Establish Robust Governance</h3>
+                  <p className="text-foreground-white/80">
+                    We implement comprehensive data governance, quality checks, and security frameworks to ensure your data is accurate, compliant, and secure.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
       </section>
 
       {/* The Data Problem Section */}
-      <section className="py-16">
+      <section className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
               Is Your Data Working For You, or Against You?
             </h2>
-            <p className="text-lg text-foreground-secondary mb-12 max-w-3xl mx-auto">
-              Many businesses have mountains of data but struggle to extract meaningful insights. Disconnected systems, poor data quality, and lack of governance turn your data into a liability instead of an asset. We fix that.
+            <p className="text-lg text-foreground-light mb-12 max-w-3xl mx-auto">
+              Many businesses have mountains of data but struggle to turn it into an actionable intelligence platform. Legacy systems, data silos, and poor data quality create a significant gap between data investment and business value, with 85% of AI projects failing to deliver results due to inadequately prepared data.
             </p>
           </div>
         </div>
       </section>
 
       {/* Solutions in Action Section */}
-      <section id="data-solutions" className="py-16 bg-secondary/30">
+      <section id="data-solutions" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 Solutions in Action
               </h2>
-              <p className="text-lg text-foreground-secondary max-w-3xl mx-auto">
-                See how we've transformed data challenges into competitive advantages for our clients.
+              <p className="text-lg text-foreground-light max-w-3xl mx-auto">
+                From legacy platform modernization to building AI-ready data lakes, we deliver measurable results.
               </p>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-8">
-              <Card className="p-8">
-                <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">
-                    From Legacy Chaos to Cloud-Native Clarity
-                  </h3>
-                  <p className="text-foreground-secondary mb-6">
-                    SP+ (a Fortune 500 parking solutions company) was struggling with fragmented data across multiple legacy systems. We built a unified cloud-native data platform that consolidated 15+ data sources, enabling real-time analytics and AI-powered optimization across their 4,000+ locations.
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-brand-purple" />
-                    <span className="text-sm text-foreground-secondary">15+ legacy systems unified</span>
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              {/* Legacy Modernization */}
+              <div className="space-y-8">
+                <div className="bg-brand-primary rounded-2xl p-8 lg:p-12 flex items-center justify-center text-white">
+                  <div className="text-center">
+                    <h3 className="text-3xl font-bold mb-2">Legacy Modernization</h3>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
               
-              <Card className="p-8">
-                <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">
-                    From Scattered Silos to a Single Source of Truth
-                  </h3>
-                  <p className="text-foreground-secondary mb-6">
-                    Great Place to Work needed to consolidate employee survey data from multiple regions and platforms. We created an intelligent data lake that processes millions of survey responses in real-time, powering their global workplace analytics and certification platform.
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-brand-purple" />
-                    <span className="text-sm text-foreground-secondary">Real-time processing of millions of data points</span>
+              <div className="space-y-6">
+                <div className="mb-6">
+                  <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
+                    LEGACY SYSTEM MODERNIZATION
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground">From Legacy Chaos to Cloud-Native Clarity</h3>
+                <p className="text-foreground-light mb-6">
+                  A North American parking operations leader was struggling with legacy systems unable to process 15B+ annual records in real-time. We engineered a seamless migration to a modern data platform on AWS and Snowflake.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-6">
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-primary mb-2">72%</div>
+                      <p className="text-sm text-foreground-light">Increase in Booking Efficiency</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-primary mb-2">35%</div>
+                      <p className="text-sm text-foreground-light">Annual Infrastructure Savings</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12">
+              <div className="space-y-6 lg:order-2">
+                <div className="mb-6">
+                  <span className="inline-block px-6 py-3 bg-brand-purple/10 text-brand-purple rounded-full text-sm font-medium border border-brand-purple/20">
+                    AI-READY DATA LAKES
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground">From Scattered Silos to a Single Source of Truth</h3>
+                <p className="text-foreground-light mb-6">
+                  A global workplace culture leader needed to unify 15+ years of fragmented data to power AI-driven decision-making. We built a unified Snowflake data lake and integrated Cortex AI for NLP-based analytics.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-6">
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-purple mb-2">96x</div>
+                      <p className="text-sm text-foreground-light">Faster Data Preparation</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-purple mb-2">48</div>
+                      <p className="text-sm text-foreground-light">Report Latency (Hours)</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              
+              <div className="space-y-8 lg:order-1">
+                <div className="bg-brand-purple rounded-2xl p-8 lg:p-12 flex items-center justify-center text-white">
+                  <div className="text-center">
+                    <h3 className="text-3xl font-bold mb-2">AI-Ready Data Lake</h3>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Data Services Section */}
-      <section id="data-services" className="py-16">
+      <section id="data-services" className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
                 Our Data Engineering Services
               </h2>
-              <p className="text-lg text-foreground-secondary max-w-3xl mx-auto">
-                End-to-end data platform development that scales with your business.
+              <p className="text-lg text-foreground-light max-w-3xl mx-auto mb-12">
+                We offer end-to-end services to build, modernize, and optimize your entire data ecosystem, ensuring it is scalable, efficient, and AI-ready.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                {
-                  icon: <Database className="h-8 w-8" />,
-                  title: "Data Integration & Transformation",
-                  description: "ETL/ELT pipelines that seamlessly connect and transform data from any source into actionable insights."
-                },
-                {
-                  icon: <Cloud className="h-8 w-8" />,
-                  title: "Data Platform Architecture", 
-                  description: "Cloud-native platforms built for scale, performance, and reliability using modern data stack technologies."
-                },
-                {
-                  icon: <Shield className="h-8 w-8" />,
-                  title: "Data Platform Modernization",
-                  description: "Migrate from legacy systems to modern, AI-ready platforms without disrupting business operations."
-                },
-                {
-                  icon: <CheckCircle className="h-8 w-8" />,
-                  title: "Performance Optimization",
-                  description: "Optimize existing data platforms for speed, cost-efficiency, and scalability."
-                }
-              ].map((service) => (
-                <Card key={service.title} className="p-6">
-                  <CardContent className="p-0">
-                    <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-4 text-brand-purple">
-                      {service.icon}
-                    </div>
-                    <h3 className="text-xl font-bold mb-3 text-foreground">{service.title}</h3>
-                    <p className="text-foreground-secondary">{service.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <h3 className="text-lg font-bold mb-4 text-foreground">Data Integration & Transformation</h3>
+                  <p className="text-foreground-light text-sm">
+                    Building intelligent data pipelines and real-time processing to break down silos and create a single source of truth.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <h3 className="text-lg font-bold mb-4 text-foreground">Data Platform Architecture</h3>
+                  <p className="text-foreground-light text-sm">
+                    Designing scalable and robust data lake and data warehouse architectures on platforms like Snowflake, AWS, and Azure.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <h3 className="text-lg font-bold mb-4 text-foreground">Data Platform Modernization</h3>
+                  <p className="text-foreground-light text-sm">
+                    Strategic migration from on-premise or cloud-to-cloud with end-to-end architectural assessment and execution.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <h3 className="text-lg font-bold mb-4 text-foreground">Performance Optimization</h3>
+                  <p className="text-foreground-light text-sm">
+                    Assessing your data workflows to identify bottlenecks and executing projects to improve speed and reduce cost.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
       </section>
 
       {/* Partnership Section */}
-      <section id="data-partnership" className="py-16 bg-secondary/30">
+      <section id="data-partnership" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="mb-6">
-                  <span className="inline-block px-4 py-2 bg-brand-purple/10 text-brand-purple rounded-full text-sm font-medium">
-                    Snowflake AI Data Cloud Partner
+                  <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
+                    SNOWFLAKE AI DATA CLOUD PARTNER
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                   Certified Expertise, Platform-Agnostic Strategy
                 </h2>
-                <p className="text-lg text-foreground-secondary mb-8">
+                <p className="text-lg text-foreground-light mb-8">
                   As a Snowflake Growth Partner, we have deep, certified expertise in building and optimizing solutions on the AI Data Cloud. But our approach is always platform-agnostic. We help you leverage the full power of modern data platforms—including AWS and Azure—to find the right-fit solution that meets your unique business needs without vendor lock-in.
                 </p>
               </div>
               
-              <div className="text-center">
-                <div className="w-32 h-32 bg-white rounded-lg shadow-lg flex items-center justify-center mx-auto mb-6">
-                  <Award className="h-16 w-16 text-brand-purple" />
+              <div className="bg-background-dark rounded-2xl p-12 flex items-center justify-center">
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-foreground-white mb-2">SNOWFLAKE PARTNER</h3>
+                  <div className="w-16 h-16 bg-brand-primary rounded-lg mx-auto"></div>
                 </div>
-                <p className="text-sm text-foreground-secondary">Snowflake Growth Partner</p>
               </div>
             </div>
           </div>
@@ -225,16 +287,17 @@ const DataEngineering = () => {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-16 bg-brand-purple text-white">
-        <div className="container mx-auto px-6">
+      <section className="relative py-20 overflow-hidden bg-background-dark">
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/10 to-brand-purple/10"></div>
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-white">
               Ready to Unlock the Power of Your Data?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
-              Let's discuss how our data engineering expertise can transform your data into a strategic competitive advantage.
+            <p className="text-xl mb-8 text-foreground-white/85">
+              Let's build your data roadmap. Schedule a complimentary consultation to discuss how our data engineering services can transform your business.
             </p>
-            <Button variant="secondary" size="lg" className="min-w-[220px]">
+            <Button variant="hero" size="xl" className="min-w-[280px]">
               Build Your Data Roadmap
             </Button>
           </div>
