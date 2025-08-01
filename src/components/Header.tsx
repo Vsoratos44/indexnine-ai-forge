@@ -66,22 +66,22 @@ const Header = () => {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {/* Backdrop overlay */}
-              <div className="fixed inset-0 bg-black/50 backdrop-blur-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark border border-brand-primary/50 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+              <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
-                  <Link to="/services/custom-software" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/services/custom-software" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Custom Software Development
                   </Link>
-                  <Link to="/studios/ai" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/studios/ai" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     AI & ML Development
                   </Link>
-                  <Link to="/studios/data-engineering" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/studios/data-engineering" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Data Engineering
                   </Link>
-                  <Link to="/studios/quality-engineering" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/studios/quality-engineering" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Quality Assurance Engineering
                   </Link>
-                  <Link to="/services/consulting" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/services/consulting" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Consulting & Strategy
                   </Link>
                 </div>
@@ -94,13 +94,13 @@ const Header = () => {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {/* Backdrop overlay */}
-              <div className="fixed inset-0 bg-black/50 backdrop-blur-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark border border-brand-primary/50 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+              <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
-                  <Link to="/engagement/dedicated-teams" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/engagement/dedicated-teams" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Dedicated Engineering Teams
                   </Link>
-                  <a href="#contact" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <a href="#contact" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Project-Based Engagements
                   </a>
                 </div>
@@ -113,16 +113,16 @@ const Header = () => {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {/* Backdrop overlay */}
-              <div className="fixed inset-0 bg-black/50 backdrop-blur-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-background-dark border border-brand-primary/50 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+              <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
+              <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
-                  <Link to="/case-studies" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/case-studies" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Case Studies
                   </Link>
-                  <Link to="/insights" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/insights" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Blogs
                   </Link>
-                  <Link to="/resources/ebooks" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/resources/ebooks" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     eBooks
                   </Link>
                 </div>
@@ -135,16 +135,16 @@ const Header = () => {
                 <ChevronDown className="w-4 h-4" />
               </button>
               {/* Backdrop overlay */}
-              <div className="fixed inset-0 bg-black/50 backdrop-blur-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-background-dark border border-brand-primary/50 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+              <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
-                  <Link to="/events" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/events" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Events
                   </Link>
-                  <Link to="/events/features/registration-and-ticketing" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/events/features/registration-and-ticketing" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Registration & Ticketing
                   </Link>
-                  <Link to="/events/features/on-site-experience" className="block px-4 py-3 text-foreground hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                  <Link to="/events/features/on-site-experience" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     On-Site Experience
                   </Link>
                 </div>
