@@ -104,7 +104,7 @@ const DataEngineering = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
               Is Your Data Working For You, or Against You?
             </h2>
-            <p className="text-lg text-foreground-light mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto">
               Many businesses have mountains of data but struggle to turn it into an actionable intelligence platform. Legacy systems, data silos, and poor data quality create a significant gap between data investment and business value, with 85% of AI projects failing to deliver results due to inadequately prepared data.
             </p>
           </div>
@@ -119,7 +119,7 @@ const DataEngineering = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 Solutions in Action
               </h2>
-              <p className="text-lg text-foreground-light max-w-3xl mx-auto">
+              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
                 From legacy platform modernization to building AI-ready data lakes, we deliver measurable results.
               </p>
             </div>
@@ -141,7 +141,7 @@ const DataEngineering = () => {
                   </span>
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">From Legacy Chaos to Cloud-Native Clarity</h3>
-                <p className="text-foreground-light mb-6">
+                <p className="text-foreground-dark-muted mb-6">
                   A North American parking operations leader was struggling with legacy systems unable to process 15B+ annual records in real-time. We engineered a seamless migration to a modern data platform on AWS and Snowflake.
                 </p>
                 
@@ -149,13 +149,13 @@ const DataEngineering = () => {
                   <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="text-3xl font-bold text-brand-primary mb-2">72%</div>
-                      <p className="text-sm text-foreground-light">Increase in Booking Efficiency</p>
+                      <p className="text-sm text-foreground-dark-muted">Increase in Booking Efficiency</p>
                     </CardContent>
                   </Card>
                   <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="text-3xl font-bold text-brand-primary mb-2">35%</div>
-                      <p className="text-sm text-foreground-light">Annual Infrastructure Savings</p>
+                      <p className="text-sm text-foreground-dark-muted">Annual Infrastructure Savings</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -170,7 +170,7 @@ const DataEngineering = () => {
                   </span>
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">From Scattered Silos to a Single Source of Truth</h3>
-                <p className="text-foreground-light mb-6">
+                <p className="text-foreground-dark-muted mb-6">
                   A global workplace culture leader needed to unify 15+ years of fragmented data to power AI-driven decision-making. We built a unified Snowflake data lake and integrated Cortex AI for NLP-based analytics.
                 </p>
                 
@@ -178,13 +178,13 @@ const DataEngineering = () => {
                   <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="text-3xl font-bold text-brand-purple mb-2">96x</div>
-                      <p className="text-sm text-foreground-light">Faster Data Preparation</p>
+                      <p className="text-sm text-foreground-dark-muted">Faster Data Preparation</p>
                     </CardContent>
                   </Card>
                   <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="text-3xl font-bold text-brand-purple mb-2">48</div>
-                      <p className="text-sm text-foreground-light">Report Latency (Hours)</p>
+                      <p className="text-sm text-foreground-dark-muted">Report Latency (Hours)</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -210,7 +210,7 @@ const DataEngineering = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
                 Our Data Engineering Services
               </h2>
-              <p className="text-lg text-foreground-light max-w-3xl mx-auto mb-12">
+              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto mb-12">
                 We offer end-to-end services to build, modernize, and optimize your entire data ecosystem, ensuring it is scalable, efficient, and AI-ready.
               </p>
             </div>
@@ -219,7 +219,7 @@ const DataEngineering = () => {
               <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-4 text-foreground">Data Integration & Transformation</h3>
-                  <p className="text-foreground-light text-sm">
+                  <p className="text-foreground-dark-muted text-sm">
                     Building intelligent data pipelines and real-time processing to break down silos and create a single source of truth.
                   </p>
                 </CardContent>
@@ -228,7 +228,7 @@ const DataEngineering = () => {
               <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-4 text-foreground">Data Platform Architecture</h3>
-                  <p className="text-foreground-light text-sm">
+                  <p className="text-foreground-dark-muted text-sm">
                     Designing scalable and robust data lake and data warehouse architectures on platforms like Snowflake, AWS, and Azure.
                   </p>
                 </CardContent>
@@ -237,7 +237,7 @@ const DataEngineering = () => {
               <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-4 text-foreground">Data Platform Modernization</h3>
-                  <p className="text-foreground-light text-sm">
+                  <p className="text-foreground-dark-muted text-sm">
                     Strategic migration from on-premise or cloud-to-cloud with end-to-end architectural assessment and execution.
                   </p>
                 </CardContent>
@@ -246,7 +246,7 @@ const DataEngineering = () => {
               <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-4 text-foreground">Performance Optimization</h3>
-                  <p className="text-foreground-light text-sm">
+                  <p className="text-foreground-dark-muted text-sm">
                     Assessing your data workflows to identify bottlenecks and executing projects to improve speed and reduce cost.
                   </p>
                 </CardContent>
@@ -270,7 +270,7 @@ const DataEngineering = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                   Certified Expertise, Platform-Agnostic Strategy
                 </h2>
-                <p className="text-lg text-foreground-light mb-8">
+                <p className="text-lg text-foreground-dark-muted mb-8">
                   As a Snowflake Growth Partner, we have deep, certified expertise in building and optimizing solutions on the AI Data Cloud. But our approach is always platform-agnostic. We help you leverage the full power of modern data platforms—including AWS and Azure—to find the right-fit solution that meets your unique business needs without vendor lock-in.
                 </p>
               </div>

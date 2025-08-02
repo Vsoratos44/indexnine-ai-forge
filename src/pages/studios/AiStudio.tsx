@@ -50,7 +50,7 @@ const AiStudio = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
               The AI Dilemma: Potential vs. Reality
             </h2>
-            <p className="text-lg text-foreground-light mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto">
               AI promises to revolutionize business, but most initiatives fail to deliver meaningful ROI. The gap between potential and reality often comes down to strategy, readiness, and execution. We bridge that gap.
             </p>
           </div>
@@ -65,7 +65,7 @@ const AiStudio = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 Clarity Before Code: Our AI Consulting Practice
               </h2>
-              <p className="text-lg text-foreground-light max-w-3xl mx-auto">
+              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
                 We help you discover and de-risk your AI opportunities before investing in development. Our structured approach ensures your AI initiatives deliver measurable business value.
               </p>
             </div>
@@ -74,21 +74,21 @@ const AiStudio = () => {
               <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-2xl font-bold mb-4 text-foreground">Standard AI Audit</h3>
-                  <p className="text-foreground-light mb-6">
+                  <p className="text-foreground-dark-muted mb-6">
                     4-Week Assessment: Comprehensive evaluation of your AI readiness, potential opportunities, and strategic roadmap development.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-light">Business context analysis and strategy alignment</span>
+                      <span className="text-foreground-dark-muted">Business context analysis and strategy alignment</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-light">Asset inventory and opportunity identification</span>
+                      <span className="text-foreground-dark-muted">Asset inventory and opportunity identification</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-light">Prioritized AI roadmap with ROI projections</span>
+                      <span className="text-foreground-dark-muted">Prioritized AI roadmap with ROI projections</span>
                     </li>
                   </ul>
                   <Button variant="outline" className="w-full">
@@ -100,21 +100,21 @@ const AiStudio = () => {
               <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-2xl font-bold mb-4 text-foreground">Pro AI Audit</h3>
-                  <p className="text-foreground-light mb-6">
+                  <p className="text-foreground-dark-muted mb-6">
                     8-Week Deep-Dive: Extended assessment including proof-of-concept development and detailed implementation planning.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-light">Everything in Standard Audit</span>
+                      <span className="text-foreground-dark-muted">Everything in Standard Audit</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-light">Working proof-of-concept development</span>
+                      <span className="text-foreground-dark-muted">Working proof-of-concept development</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-light">Detailed technical architecture and governance framework</span>
+                      <span className="text-foreground-dark-muted">Detailed technical architecture and governance framework</span>
                     </li>
                   </ul>
                   <Button variant="default" className="w-full">
@@ -135,7 +135,7 @@ const AiStudio = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 Our AI P2R Assessment Framework
               </h2>
-              <p className="text-lg text-foreground-light max-w-3xl mx-auto">
+              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
                 We evaluate your organization across three critical dimensions to determine your AI transformation path.
               </p>
             </div>
@@ -147,7 +147,7 @@ const AiStudio = () => {
                     <Target className="h-8 w-8 text-brand-primary" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-foreground">AI Potential Score</h3>
-                  <p className="text-foreground-light">
+                  <p className="text-foreground-dark-muted">
                     Evaluates the strategic value and business impact potential of AI initiatives within your specific context and industry.
                   </p>
                 </CardContent>
@@ -159,7 +159,7 @@ const AiStudio = () => {
                     <Brain className="h-8 w-8 text-brand-primary" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-foreground">AI Readiness Score</h3>
-                  <p className="text-foreground-light">
+                  <p className="text-foreground-dark-muted">
                     Assesses your organization's data maturity, technical infrastructure, and cultural readiness for AI adoption.
                   </p>
                 </CardContent>
@@ -171,7 +171,7 @@ const AiStudio = () => {
                     <Shield className="h-8 w-8 text-brand-primary" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-foreground">AI Risk Score</h3>
-                  <p className="text-foreground-light">
+                  <p className="text-foreground-dark-muted">
                     Identifies potential risks including ethical concerns, regulatory compliance, and implementation challenges.
                   </p>
                 </CardContent>
@@ -250,10 +250,10 @@ const AiStudio = () => {
             
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-lg text-foreground-light mb-6">
+                <p className="text-lg text-foreground-dark-muted mb-6">
                   A global sports organization was struggling to manage real-time social media content during live events. Their team of 15 content creators was overwhelmed by the volume and speed required for effective fan engagement.
                 </p>
-                <p className="text-lg text-foreground-light mb-8">
+                <p className="text-lg text-foreground-dark-muted mb-8">
                   We developed an AI-powered content generation system that automatically creates, optimizes, and publishes social media content in real-time based on live event data, reducing their content team requirements by 66% while maintaining high engagement rates.
                 </p>
               </div>
@@ -262,13 +262,13 @@ const AiStudio = () => {
                 <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                   <CardContent className="p-0">
                     <div className="text-3xl font-bold text-brand-primary mb-2">66%</div>
-                    <p className="text-sm text-foreground-light">Reduction in Team Size for Live Content</p>
+                    <p className="text-sm text-foreground-dark-muted">Reduction in Team Size for Live Content</p>
                   </CardContent>
                 </Card>
                 <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                   <CardContent className="p-0">
                     <div className="text-3xl font-bold text-brand-primary mb-2">15s</div>
-                    <p className="text-sm text-foreground-light">to Generate & Publish</p>
+                    <p className="text-sm text-foreground-dark-muted">to Generate & Publish</p>
                   </CardContent>
                 </Card>
               </div>
