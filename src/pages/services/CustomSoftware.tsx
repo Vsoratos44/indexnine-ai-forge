@@ -18,10 +18,10 @@ const CustomSoftware = () => {
         
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-white mb-8 leading-tight font-montserrat">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight font-montserrat">
               End-to-End <span className="bg-gradient-primary bg-clip-text text-transparent">Custom Software Development</span>
             </h1>
-            <p className="text-xl text-foreground-white/80 mb-12 leading-relaxed font-montserrat">
+            <p className="text-xl text-foreground/85 mb-12 leading-relaxed font-montserrat">
               We build scalable, secure, and high-performance web and mobile applications engineered for growth. Our full-stack development capabilities deliver custom solutions that perfectly align with your unique requirements and business goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -36,8 +36,8 @@ const CustomSoftware = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-foreground mb-6 font-montserrat">Our Full-Stack Development Capabilities</h2>
-            <p className="text-xl text-foreground-muted max-w-3xl mx-auto font-montserrat">
+            <h2 className="text-4xl font-bold text-foreground-dark mb-6 font-montserrat">Our Full-Stack Development Capabilities</h2>
+            <p className="text-xl text-foreground-dark-muted max-w-3xl mx-auto font-montserrat">
               We build scalable, secure, and innovative software solutions using cutting-edge technologies and industry best practices.
             </p>
           </div>
@@ -55,8 +55,8 @@ const CustomSoftware = () => {
                 <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">{service.title}</h3>
-                <p className="text-foreground-muted leading-relaxed font-montserrat">{service.description}</p>
+                <h3 className="text-2xl font-bold text-foreground-dark mb-4 font-montserrat">{service.title}</h3>
+                <p className="text-foreground-dark-muted leading-relaxed font-montserrat">{service.description}</p>
               </div>
             ))}
           </div>
@@ -66,10 +66,10 @@ const CustomSoftware = () => {
       {/* CTA Section */}
       <section className="py-24 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-foreground-white mb-8 font-montserrat">
+          <h2 className="text-4xl font-bold text-foreground mb-8 font-montserrat">
             Ready to Build Your Custom Solution?
           </h2>
-          <p className="text-xl text-foreground-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
+          <p className="text-xl text-foreground/85 mb-12 max-w-2xl mx-auto font-montserrat">
             Let's discuss your project requirements and create a solution that drives your business forward.
           </p>
           <Button variant="hero" size="xl">Get Started Today</Button>

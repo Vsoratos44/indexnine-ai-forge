@@ -353,16 +353,16 @@ const QualityEngineering = () => {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-16 bg-brand-purple text-white">
+      <section className="py-16 bg-background-dark">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
               Ready to Transform Your QA Process?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl mb-8 text-foreground/85">
               Stop choosing between speed and quality. Let's build an automation strategy that delivers both.
             </p>
-            <Button variant="secondary" size="lg" className="min-w-[250px]">
+            <Button variant="hero" size="xl" className="min-w-[250px]">
               Book Your APQ Roadmap Session
             </Button>
           </div>
