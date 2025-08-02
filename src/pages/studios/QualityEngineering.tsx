@@ -24,12 +24,12 @@ const QualityEngineering = () => {
                 IndexNine QAE
               </span>
             </div>
-            <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground-white mb-8 leading-[0.9] tracking-tight animate-fade-in">
+            <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in">
               Beyond Testing: <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">Engineering Quality</span><br />
               for Mission-Critical Software
             </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl text-foreground-white/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
+            <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
               Our enterprise-grade quality engineering and test automation services help startups and SMBs deliver flawless products with speed and confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
@@ -45,14 +45,14 @@ const QualityEngineering = () => {
       </section>
 
       {/* QAE Blueprint Section */}
-      <section id="qae-solution" className="py-16 bg-background-dark text-foreground-white">
+      <section id="qae-solution" className="py-16 bg-background-dark text-foreground">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 The Outcome-Driven Automation Blueprint
               </h2>
-              <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
+              <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
                 Our proven methodology delivers measurable quality improvements without sacrificing velocity.
               </p>
             </div>
@@ -79,8 +79,8 @@ const QualityEngineering = () => {
                   <div className="w-16 h-16 bg-brand-purple rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-white font-bold text-lg">{item.step}</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground-white">{item.title}</h3>
-                  <p className="text-foreground-white/80">{item.description}</p>
+                  <h3 className="text-xl font-bold mb-4 text-foreground">{item.title}</h3>
+                  <p className="text-foreground/80">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -92,7 +92,7 @@ const QualityEngineering = () => {
       <section className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
               The Quality Dilemma: Balancing Speed, Cost, and Reliability
             </h2>
             <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto">
@@ -111,7 +111,7 @@ const QualityEngineering = () => {
                 Case Study: Outcome-Based Automation
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground-dark">
               Enabling Velocity for a High-Growth FinTech
             </h2>
             
@@ -149,7 +149,7 @@ const QualityEngineering = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
                 Our Proprietary Automation Platforms
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
@@ -163,7 +163,7 @@ const QualityEngineering = () => {
                   <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
                     <Zap className="h-8 w-8 text-brand-purple" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">snap.automate</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">snap.automate</h3>
                   <p className="text-foreground-dark-muted mb-6">
                     Our flagship automation platform that provides intelligent test orchestration, AI-powered maintenance, and comprehensive reporting. Designed for rapid deployment and maximum coverage.
                   </p>
@@ -189,7 +189,7 @@ const QualityEngineering = () => {
                   <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
                     <Target className="h-8 w-8 text-brand-purple" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">snap.atomicqa</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">snap.atomicqa</h3>
                   <p className="text-foreground-dark-muted mb-6">
                     Specialized platform for component-level testing and continuous quality assurance. Perfect for teams practicing shift-left methodologies and micro-service architectures.
                   </p>
@@ -219,7 +219,7 @@ const QualityEngineering = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
                 Enterprise QA Engineering Services
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
@@ -230,7 +230,7 @@ const QualityEngineering = () => {
             <div className="grid lg:grid-cols-2 gap-8">
               <Card className="p-8">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">Sprint 0: Automation Kickstart</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">Sprint 0: Automation Kickstart</h3>
                   <p className="text-foreground-dark-muted mb-6">
                     2-week rapid assessment and framework setup that gets your automation initiative off the ground with clear ROI projections and immediate wins.
                   </p>
@@ -256,7 +256,7 @@ const QualityEngineering = () => {
               
               <Card className="p-8">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">Agile Product Quality (APQ) Roadmap</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">Agile Product Quality (APQ) Roadmap</h3>
                   <p className="text-foreground-dark-muted mb-6">
                     Comprehensive 4-week engagement that creates a strategic quality roadmap aligned with your product development lifecycle and business objectives.
                   </p>
@@ -289,7 +289,7 @@ const QualityEngineering = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
                 The Right Tool for the Job: Robot Framework vs. Playwright
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
@@ -301,9 +301,9 @@ const QualityEngineering = () => {
               <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
                 <thead>
                   <tr className="bg-secondary/50">
-                    <th className="text-left p-4 font-semibold text-foreground">Feature</th>
-                    <th className="text-center p-4 font-semibold text-foreground">Robot Framework</th>
-                    <th className="text-center p-4 font-semibold text-foreground">Playwright</th>
+                    <th className="text-left p-4 font-semibold text-foreground-dark">Feature</th>
+                    <th className="text-center p-4 font-semibold text-foreground-dark">Robot Framework</th>
+                    <th className="text-center p-4 font-semibold text-foreground-dark">Playwright</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -340,7 +340,7 @@ const QualityEngineering = () => {
                     }
                   ].map((row, index) => (
                     <tr key={index} className="border-t border-border">
-                      <td className="p-4 font-medium text-foreground">{row.feature}</td>
+                      <td className="p-4 font-medium text-foreground-dark">{row.feature}</td>
                       <td className="p-4 text-center text-foreground-dark-muted">{row.robot}</td>
                       <td className="p-4 text-center text-foreground-dark-muted">{row.playwright}</td>
                     </tr>

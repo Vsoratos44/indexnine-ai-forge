@@ -77,10 +77,10 @@ const Careers = () => {
         
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-white mb-8 leading-tight font-montserrat">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight font-montserrat">
               Join Our <span className="bg-gradient-primary bg-clip-text text-transparent">Team</span>
             </h1>
-            <p className="text-xl text-foreground-white/80 mb-12 leading-relaxed font-montserrat">
+            <p className="text-xl text-foreground/80 mb-12 leading-relaxed font-montserrat">
               Be part of a dynamic team that's shaping the future of technology. We're looking for passionate individuals who want to make a real impact.
             </p>
             <Button variant="hero" size="xl">View Open Positions</Button>
@@ -173,10 +173,10 @@ const Careers = () => {
       {/* CTA Section */}
       <section className="py-24 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-foreground-white mb-8 font-montserrat">
+          <h2 className="text-4xl font-bold text-foreground mb-8 font-montserrat">
             Don't See the Right Role?
           </h2>
-          <p className="text-xl text-foreground-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
+          <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
             We're always looking for exceptional talent. Send us your resume and let us know how you'd like to contribute to our mission.
           </p>
           <Button variant="hero" size="xl">Send Your Resume</Button>

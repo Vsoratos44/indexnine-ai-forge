@@ -28,12 +28,12 @@ const MatureCaseStudy = () => {
               </span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-white mb-8 leading-tight tracking-tight animate-fade-in font-montserrat">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight animate-fade-in font-montserrat">
               Enterprise SaaS: <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">Mission-Critical Optimization</span>
             </h1>
             
-            <p className="text-lg sm:text-xl lg:text-2xl text-foreground-white/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
+            <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
               How we optimized performance, security, and reliability for an enterprise SaaS platform that became business-critical for Fortune 500 companies.
             </p>
           </div>
@@ -146,10 +146,10 @@ const MatureCaseStudy = () => {
       {/* CTA Section */}
       <section className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground-white mb-8 font-montserrat">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
             Ready to Optimize Your Platform?
           </h2>
-          <p className="text-xl text-foreground-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
+          <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
             Let's help you achieve enterprise-grade performance, security, and reliability.
           </p>
           <Button variant="hero" size="xl">Optimize Your System</Button>

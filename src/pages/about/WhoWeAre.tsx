@@ -48,10 +48,10 @@ const WhoWeAre = () => {
         
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-white mb-8 leading-tight font-montserrat">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight font-montserrat">
               Who <span className="bg-gradient-primary bg-clip-text text-transparent">We Are</span>
             </h1>
-            <p className="text-xl text-foreground-white/80 mb-12 leading-relaxed font-montserrat">
+            <p className="text-xl text-foreground/80 mb-12 leading-relaxed font-montserrat">
               We are IndexNine, a team of passionate technologists, innovators, and problem-solvers dedicated to transforming businesses through cutting-edge software solutions.
             </p>
           </div>
@@ -109,14 +109,14 @@ const WhoWeAre = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
             <div className="text-center lg:text-left">
-              <h3 className="text-3xl font-bold text-foreground-white mb-6 font-montserrat">Our Mission</h3>
-              <p className="text-xl text-foreground-white/80 leading-relaxed font-montserrat">
+              <h3 className="text-3xl font-bold text-foreground mb-6 font-montserrat">Our Mission</h3>
+              <p className="text-xl text-foreground/80 leading-relaxed font-montserrat">
                 To empower businesses through innovative technology solutions that drive growth, efficiency, and competitive advantage in an ever-evolving digital landscape.
               </p>
             </div>
             <div className="text-center lg:text-left">
-              <h3 className="text-3xl font-bold text-foreground-white mb-6 font-montserrat">Our Vision</h3>
-              <p className="text-xl text-foreground-white/80 leading-relaxed font-montserrat">
+              <h3 className="text-3xl font-bold text-foreground mb-6 font-montserrat">Our Vision</h3>
+              <p className="text-xl text-foreground/80 leading-relaxed font-montserrat">
                 To be the global leader in transformative technology solutions, recognized for our innovation, expertise, and unwavering commitment to client success.
               </p>
             </div>

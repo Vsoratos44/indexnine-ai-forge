@@ -24,11 +24,11 @@ const AiStudio = () => {
                 IndexNine AI Studio
               </span>
             </div>
-            <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground-white mb-8 leading-[0.9] tracking-tight animate-fade-in">
+            <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in">
               AI-Powered Business <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">Transformation</span>
             </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl text-foreground-white/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
+            <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
               We provide strategic AI consulting and end-to-end AI product development to help you navigate complexity, drive efficiency, and unlock new revenue streams.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
@@ -47,7 +47,7 @@ const AiStudio = () => {
       <section className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
               The AI Dilemma: Potential vs. Reality
             </h2>
             <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto">
@@ -62,7 +62,7 @@ const AiStudio = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
                 Clarity Before Code: Our AI Consulting Practice
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
@@ -73,7 +73,7 @@ const AiStudio = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">Standard AI Audit</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">Standard AI Audit</h3>
                   <p className="text-foreground-dark-muted mb-6">
                     4-Week Assessment: Comprehensive evaluation of your AI readiness, potential opportunities, and strategic roadmap development.
                   </p>
@@ -99,7 +99,7 @@ const AiStudio = () => {
               
               <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">Pro AI Audit</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">Pro AI Audit</h3>
                   <p className="text-foreground-dark-muted mb-6">
                     8-Week Deep-Dive: Extended assessment including proof-of-concept development and detailed implementation planning.
                   </p>
@@ -132,7 +132,7 @@ const AiStudio = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
                 Our AI P2R Assessment Framework
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
@@ -146,7 +146,7 @@ const AiStudio = () => {
                   <div className="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Target className="h-8 w-8 text-brand-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">AI Potential Score</h3>
+                  <h3 className="text-xl font-bold mb-4 text-foreground-dark">AI Potential Score</h3>
                   <p className="text-foreground-dark-muted">
                     Evaluates the strategic value and business impact potential of AI initiatives within your specific context and industry.
                   </p>
@@ -158,7 +158,7 @@ const AiStudio = () => {
                   <div className="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Brain className="h-8 w-8 text-brand-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">AI Readiness Score</h3>
+                  <h3 className="text-xl font-bold mb-4 text-foreground-dark">AI Readiness Score</h3>
                   <p className="text-foreground-dark-muted">
                     Assesses your organization's data maturity, technical infrastructure, and cultural readiness for AI adoption.
                   </p>
@@ -170,7 +170,7 @@ const AiStudio = () => {
                   <div className="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Shield className="h-8 w-8 text-brand-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">AI Risk Score</h3>
+                  <h3 className="text-xl font-bold mb-4 text-foreground-dark">AI Risk Score</h3>
                   <p className="text-foreground-dark-muted">
                     Identifies potential risks including ethical concerns, regulatory compliance, and implementation challenges.
                   </p>
@@ -186,10 +186,10 @@ const AiStudio = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 How Our AI Audit Works
               </h2>
-              <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
+              <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
                 Our proven 5-step methodology ensures comprehensive evaluation and actionable insights.
               </p>
             </div>
@@ -226,8 +226,8 @@ const AiStudio = () => {
                   <div className="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white font-bold text-lg">{item.step}</span>
                   </div>
-                  <h3 className="text-lg font-bold mb-3 text-foreground-white">{item.title}</h3>
-                  <p className="text-sm text-foreground-white/80">{item.description}</p>
+                  <h3 className="text-lg font-bold mb-3 text-foreground">{item.title}</h3>
+                  <p className="text-sm text-foreground/80">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -244,7 +244,7 @@ const AiStudio = () => {
                 Case Study: AI-Powered Automation
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground-dark">
               Automating Social Media Content for a Global Sports Leader
             </h2>
             
@@ -281,7 +281,7 @@ const AiStudio = () => {
       <section className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-foreground-dark">
               Our Applied AI Services
             </h2>
             
@@ -296,7 +296,7 @@ const AiStudio = () => {
               ].map((service) => (
                 <Card key={service} className="p-6 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-0">
-                    <h3 className="font-semibold text-foreground">{service}</h3>
+                    <h3 className="font-semibold text-foreground-dark">{service}</h3>
                   </CardContent>
                 </Card>
               ))}
@@ -310,10 +310,10 @@ const AiStudio = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/10 to-brand-purple/10"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
               Ready to Start Your AI Transformation?
             </h2>
-            <p className="text-xl mb-8 text-foreground-white/85">
+            <p className="text-xl mb-8 text-foreground/85">
               Let's discuss how our AI expertise can accelerate your business growth and drive meaningful outcomes.
             </p>
             <Button variant="hero" size="xl" className="min-w-[280px]">

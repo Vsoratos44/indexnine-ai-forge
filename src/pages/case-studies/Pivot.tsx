@@ -28,12 +28,12 @@ const PivotCaseStudy = () => {
               </span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-white mb-8 leading-tight tracking-tight animate-fade-in font-montserrat">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight animate-fade-in font-montserrat">
               EdTech Platform: <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">Strategic Pivot to Success</span>
             </h1>
             
-            <p className="text-lg sm:text-xl lg:text-2xl text-foreground-white/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
+            <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
               How we helped an EdTech platform quickly adapt to market feedback and evolve their product strategy with data-driven insights.
             </p>
           </div>
@@ -146,10 +146,10 @@ const PivotCaseStudy = () => {
       {/* CTA Section */}
       <section className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground-white mb-8 font-montserrat">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
             Need to Pivot Your Strategy?
           </h2>
-          <p className="text-xl text-foreground-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
+          <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
             Let's help you navigate market changes with data-driven insights and strategic product evolution.
           </p>
           <Button variant="hero" size="xl">Explore Pivot Solutions</Button>

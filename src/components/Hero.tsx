@@ -13,7 +13,7 @@ const Hero = () => {
       {/* Content - Precisely positioned */}
       <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
         <div className="max-w-5xl mx-auto text-center lg:text-left">
-          <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] font-bold text-foreground-white mb-8 leading-[0.9] tracking-tight animate-fade-in font-montserrat">
+          <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in font-montserrat">
             Product Innovation &{' '}
             <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -23,7 +23,7 @@ const Hero = () => {
             <TypewriterText />
           </h1>
           
-          <p className="text-lg sm:text-xl lg:text-2xl text-foreground-white/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
             Your strategic partner for modernizing critical systems & infrastructure, 
             launching new digital revenue streams, and embedding AI to drive impactful, 
             positive business outcomes.
