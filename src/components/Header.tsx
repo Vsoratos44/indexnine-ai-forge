@@ -190,7 +190,7 @@ const Header = () => {
       {isMobileMenuOpen && (
         <>
           {console.log('Rendering mobile menu, isMobileMenuOpen:', isMobileMenuOpen)}
-          <div className="md:hidden fixed top-20 left-0 right-0 bottom-0 bg-red-500 z-50 overflow-y-auto">
+          <div className="fixed inset-0 top-20 bg-red-500 z-[60] overflow-y-auto block">
           <div className="container mx-auto px-6 py-8 space-y-6">
             
             {/* Services */}
