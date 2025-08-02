@@ -203,7 +203,10 @@ const Header = () => {
             <span className="text-xl font-bold text-white">INDEXNINE</span>
           </Link>
           <button 
-            onClick={toggleMobileMenu}
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              setOpenDropdown(null);
+            }}
             className="text-white hover:text-brand-primary transition-colors p-2"
             aria-label="Close mobile menu"
           >
