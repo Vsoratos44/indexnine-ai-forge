@@ -58,7 +58,7 @@ const AiStudio = () => {
       </section>
 
       {/* AI Consulting Section */}
-      <section id="ai-consulting" className="py-20 bg-background">
+      <section id="ai-consulting" className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -236,7 +236,7 @@ const AiStudio = () => {
       </section>
 
       {/* AI Case Study Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="mb-6">
@@ -278,7 +278,7 @@ const AiStudio = () => {
       </section>
 
       {/* AI Services Section */}
-      <section className="py-20 bg-background-section">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-foreground-dark">

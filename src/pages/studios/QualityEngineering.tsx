@@ -49,7 +49,7 @@ const QualityEngineering = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 The Outcome-Driven Automation Blueprint
               </h2>
               <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
@@ -145,7 +145,7 @@ const QualityEngineering = () => {
       </section>
 
       {/* Platforms Section */}
-      <section id="qae-platforms" className="py-16">
+      <section id="qae-platforms" className="py-16 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -285,7 +285,7 @@ const QualityEngineering = () => {
       </section>
 
       {/* Frameworks Comparison Section */}
-      <section id="qae-frameworks" className="py-16">
+      <section id="qae-frameworks" className="py-16 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">

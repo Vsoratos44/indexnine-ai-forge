@@ -112,7 +112,7 @@ const DataEngineering = () => {
       </section>
 
       {/* Solutions in Action Section */}
-      <section id="data-solutions" className="py-20 bg-background">
+      <section id="data-solutions" className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -203,7 +203,7 @@ const DataEngineering = () => {
       </section>
 
       {/* Data Services Section */}
-      <section id="data-services" className="py-20 bg-background-section">
+      <section id="data-services" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -257,7 +257,7 @@ const DataEngineering = () => {
       </section>
 
       {/* Partnership Section */}
-      <section id="data-partnership" className="py-20 bg-background">
+      <section id="data-partnership" className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
