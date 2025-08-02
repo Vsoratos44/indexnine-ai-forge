@@ -8,7 +8,10 @@ const Header = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [isLightSection, setIsLightSection] = useState(false);
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMobileMenu = () => {
+    console.log('Mobile menu toggle clicked, current state:', isMobileMenuOpen);
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   const toggleDropdown = (dropdown: string) => {
     setOpenDropdown(openDropdown === dropdown ? null : dropdown);
   };
@@ -185,7 +188,9 @@ const Header = () => {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed top-20 left-0 right-0 bottom-0 bg-background z-40 overflow-y-auto">
+        <>
+          {console.log('Rendering mobile menu, isMobileMenuOpen:', isMobileMenuOpen)}
+          <div className="md:hidden fixed top-20 left-0 right-0 bottom-0 bg-red-500 z-50 overflow-y-auto">
           <div className="container mx-auto px-6 py-8 space-y-6">
             
             {/* Services */}
@@ -299,7 +304,8 @@ const Header = () => {
               </Button>
             </div>
           </div>
-        </div>
+          </div>
+        </>
       )}
     </header>
   );
