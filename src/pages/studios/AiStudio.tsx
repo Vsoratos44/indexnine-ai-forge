@@ -8,11 +8,11 @@ import LivingVoidBackground from '@/components/LivingVoidBackground';
 
 const AiStudio = () => {
   return (
-    <div className="min-h-screen bg-background-dark">
+    <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[65vh] min-h-[600px] overflow-hidden bg-background-dark">
+      <section className="relative h-[65vh] min-h-[600px] overflow-hidden bg-gradient-hero">
         {/* Three.js Living Void Background */}
         <LivingVoidBackground />
 
@@ -182,7 +182,7 @@ const AiStudio = () => {
       </section>
 
       {/* Audit Process Section */}
-      <section id="ai-framework" className="py-16 bg-background-dark text-foreground-white">
+      <section id="ai-framework" className="py-16 bg-gradient-hero">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -306,7 +306,7 @@ const AiStudio = () => {
       </section>
 
       {/* CTA Banner */}
-      <section className="relative py-20 overflow-hidden bg-background-dark">
+      <section className="relative py-20 overflow-hidden bg-gradient-hero">
         <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/10 to-brand-purple/10"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">

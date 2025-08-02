@@ -17,7 +17,7 @@ const ConsultingStrategy = () => {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
               Strategic Technology & <span className="text-brand-purple">AI Consulting</span>
             </h1>
-            <p className="text-xl text-foreground-secondary mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-foreground-muted mb-8 max-w-3xl mx-auto font-montserrat">
               We provide expert consulting to align your technology and AI strategy with business objectives, ensuring every investment drives measurable value and competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -40,7 +40,7 @@ const ConsultingStrategy = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 From Strategy to Execution
               </h2>
-              <p className="text-lg text-foreground-secondary max-w-3xl mx-auto">
+              <p className="text-lg text-foreground-muted max-w-3xl mx-auto font-montserrat">
                 Our consulting services bridge the gap between business vision and technical implementation. We help you make informed decisions about technology investments, AI adoption, and digital transformation initiatives.
               </p>
             </div>
@@ -52,7 +52,7 @@ const ConsultingStrategy = () => {
                     <Lightbulb className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-foreground">Strategic Planning</h3>
-                  <p className="text-foreground-secondary">
+                  <p className="text-foreground-muted font-montserrat">
                     Develop comprehensive technology roadmaps aligned with your business goals and market opportunities.
                   </p>
                 </CardContent>
@@ -64,7 +64,7 @@ const ConsultingStrategy = () => {
                     <Target className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-foreground">Risk Assessment</h3>
-                  <p className="text-foreground-secondary">
+                  <p className="text-foreground-muted font-montserrat">
                     Identify and mitigate technical, operational, and strategic risks before they impact your business.
                   </p>
                 </CardContent>
@@ -76,7 +76,7 @@ const ConsultingStrategy = () => {
                     <Rocket className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-foreground">Implementation Support</h3>
-                  <p className="text-foreground-secondary">
+                  <p className="text-foreground-muted font-montserrat">
                     Guide execution with hands-on support, ensuring strategies translate into successful outcomes.
                   </p>
                 </CardContent>
@@ -94,7 +94,7 @@ const ConsultingStrategy = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 Our Consulting Services
               </h2>
-              <p className="text-lg text-foreground-secondary max-w-3xl mx-auto">
+              <p className="text-lg text-foreground-muted max-w-3xl mx-auto font-montserrat">
                 Comprehensive consulting across all aspects of technology strategy and implementation.
               </p>
             </div>
@@ -106,21 +106,21 @@ const ConsultingStrategy = () => {
                     <TrendingUp className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-foreground">Digital Transformation Strategy</h3>
-                  <p className="text-foreground-secondary mb-6">
+                  <p className="text-foreground-muted mb-6 font-montserrat">
                     Develop comprehensive digital transformation roadmaps that modernize your operations, enhance customer experience, and create new revenue streams.
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">Current state assessment and gap analysis</span>
+                      <span className="text-foreground-muted font-montserrat">Current state assessment and gap analysis</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">Technology stack evaluation and recommendations</span>
+                      <span className="text-foreground-muted font-montserrat">Technology stack evaluation and recommendations</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">Phased implementation roadmap with ROI projections</span>
+                      <span className="text-foreground-muted font-montserrat">Phased implementation roadmap with ROI projections</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -132,21 +132,21 @@ const ConsultingStrategy = () => {
                     <Lightbulb className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-foreground">AI Strategy & Implementation</h3>
-                  <p className="text-foreground-secondary mb-6">
+                  <p className="text-foreground-muted mb-6 font-montserrat">
                     Navigate the AI landscape with strategic guidance on where and how to implement AI for maximum business impact and competitive advantage.
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">AI opportunity assessment and prioritization</span>
+                      <span className="text-foreground-muted font-montserrat">AI opportunity assessment and prioritization</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">Data readiness evaluation and improvement plan</span>
+                      <span className="text-foreground-muted font-montserrat">Data readiness evaluation and improvement plan</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">AI governance framework and risk management</span>
+                      <span className="text-foreground-muted font-montserrat">AI governance framework and risk management</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -158,21 +158,21 @@ const ConsultingStrategy = () => {
                     <Users className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-foreground">Technology Due Diligence</h3>
-                  <p className="text-foreground-secondary mb-6">
+                  <p className="text-foreground-muted mb-6 font-montserrat">
                     Comprehensive technical assessments for M&A, investment decisions, and strategic partnerships to minimize risk and maximize value.
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">Technical architecture and code quality assessment</span>
+                      <span className="text-foreground-muted font-montserrat">Technical architecture and code quality assessment</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">Scalability and security evaluation</span>
+                      <span className="text-foreground-muted font-montserrat">Scalability and security evaluation</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">Technical debt assessment and remediation plan</span>
+                      <span className="text-foreground-muted font-montserrat">Technical debt assessment and remediation plan</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -184,21 +184,21 @@ const ConsultingStrategy = () => {
                     <Target className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-foreground">Product Strategy & Innovation</h3>
-                  <p className="text-foreground-secondary mb-6">
+                  <p className="text-foreground-muted mb-6 font-montserrat">
                     Strategic guidance on product development, market positioning, and innovation strategies that leverage emerging technologies.
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">Market analysis and competitive positioning</span>
+                      <span className="text-foreground-muted font-montserrat">Market analysis and competitive positioning</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">Product roadmap development and prioritization</span>
+                      <span className="text-foreground-muted font-montserrat">Product roadmap development and prioritization</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-secondary">Innovation framework and process design</span>
+                      <span className="text-foreground-muted font-montserrat">Innovation framework and process design</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -216,7 +216,7 @@ const ConsultingStrategy = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 Flexible Engagement Models
               </h2>
-              <p className="text-lg text-foreground-secondary max-w-3xl mx-auto">
+              <p className="text-lg text-foreground-muted max-w-3xl mx-auto font-montserrat">
                 Choose the consulting approach that best fits your needs and timeline.
               </p>
             </div>
@@ -226,7 +226,7 @@ const ConsultingStrategy = () => {
                 <CardContent className="p-0">
                   <h3 className="text-xl font-bold mb-4 text-foreground">Strategy Sprint</h3>
                   <p className="text-3xl font-bold text-brand-purple mb-4">2-4 Weeks</p>
-                  <p className="text-foreground-secondary mb-6">
+                  <p className="text-foreground-muted mb-6 font-montserrat">
                     Rapid strategic assessment and roadmap development for specific initiatives or challenges.
                   </p>
                   <Button variant="outline" className="w-full">
@@ -242,7 +242,7 @@ const ConsultingStrategy = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-foreground">Strategic Partnership</h3>
                   <p className="text-3xl font-bold text-brand-purple mb-4">3-6 Months</p>
-                  <p className="text-foreground-secondary mb-6">
+                  <p className="text-foreground-muted mb-6 font-montserrat">
                     Comprehensive consulting engagement with hands-on implementation support and ongoing guidance.
                   </p>
                   <Button className="w-full">
@@ -255,7 +255,7 @@ const ConsultingStrategy = () => {
                 <CardContent className="p-0">
                   <h3 className="text-xl font-bold mb-4 text-foreground">Advisory Retainer</h3>
                   <p className="text-3xl font-bold text-brand-purple mb-4">Ongoing</p>
-                  <p className="text-foreground-secondary mb-6">
+                  <p className="text-foreground-muted mb-6 font-montserrat">
                     Continuous strategic guidance and support as your trusted technology advisor.
                   </p>
                   <Button variant="outline" className="w-full">
@@ -275,7 +275,7 @@ const ConsultingStrategy = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
               Why Choose IndexNine Consulting?
             </h2>
-            <p className="text-lg text-foreground-secondary mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-foreground-muted mb-12 max-w-3xl mx-auto font-montserrat">
               We combine deep technical expertise with business acumen to deliver consulting that drives real results.
             </p>
             
@@ -283,7 +283,7 @@ const ConsultingStrategy = () => {
               <Card className="p-6 text-left">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-3 text-foreground">✅ Practitioner-Led Insights</h3>
-                  <p className="text-foreground-secondary">
+                  <p className="text-foreground-muted font-montserrat">
                     Our consultants are active practitioners who build and deploy the technologies they recommend.
                   </p>
                 </CardContent>
@@ -292,7 +292,7 @@ const ConsultingStrategy = () => {
               <Card className="p-6 text-left">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-3 text-foreground">✅ Implementation Ready</h3>
-                  <p className="text-foreground-secondary">
+                  <p className="text-foreground-muted font-montserrat">
                     We don't just provide strategies - we can execute them with our engineering teams.
                   </p>
                 </CardContent>
@@ -301,7 +301,7 @@ const ConsultingStrategy = () => {
               <Card className="p-6 text-left">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-3 text-foreground">✅ ROI-Focused Approach</h3>
-                  <p className="text-foreground-secondary">
+                  <p className="text-foreground-muted font-montserrat">
                     Every recommendation is backed by clear business value and measurable outcomes.
                   </p>
                 </CardContent>
@@ -310,7 +310,7 @@ const ConsultingStrategy = () => {
               <Card className="p-6 text-left">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-3 text-foreground">✅ Future-Proof Solutions</h3>
-                  <p className="text-foreground-secondary">
+                  <p className="text-foreground-muted font-montserrat">
                     We help you build strategies that adapt and scale with emerging technologies.
                   </p>
                 </CardContent>

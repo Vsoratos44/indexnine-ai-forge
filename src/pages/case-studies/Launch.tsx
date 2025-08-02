@@ -8,11 +8,11 @@ import { Link } from 'react-router-dom';
 
 const LaunchCaseStudy = () => {
   return (
-    <div className="min-h-screen bg-background-dark">
+    <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[65vh] min-h-[600px] overflow-hidden bg-background-dark">
+      <section className="relative h-[65vh] min-h-[600px] overflow-hidden bg-gradient-hero">
         <LivingVoidBackground />
         
         <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">

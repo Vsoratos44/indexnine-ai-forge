@@ -97,7 +97,7 @@ const Events = () => {
   });
 
   return (
-    <div className="min-h-screen bg-background-dark text-foreground-white relative overflow-hidden">
+    <div className="min-h-screen bg-background relative overflow-hidden">
       <LivingVoidBackground />
       <Header />
 
@@ -105,10 +105,10 @@ const Events = () => {
       <section className="relative pt-28 pb-16">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-brand-purple">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground font-montserrat">
               IndexNine Events
             </h1>
-            <p className="text-xl text-foreground-secondary max-w-3xl mx-auto">
+            <p className="text-xl text-foreground-muted max-w-3xl mx-auto font-montserrat">
               Join us at exclusive technology events, workshops, and networking sessions designed for engineering leaders and tech innovators.
             </p>
           </div>
@@ -170,10 +170,10 @@ const Events = () => {
             {/* Events List */}
             <div className="lg:col-span-2">
               <div className="mb-6">
-                <h2 className="text-2xl font-bold mb-2">
+                <h2 className="text-2xl font-bold mb-2 text-foreground font-montserrat">
                   {filteredEvents.length} Events in Your Area
                 </h2>
-                <p className="text-foreground-secondary">
+                <p className="text-foreground-muted font-montserrat">
                   Discover upcoming IndexNine events and join our tech community
                 </p>
               </div>
@@ -199,7 +199,7 @@ const Events = () => {
                               <span className="inline-block px-3 py-1 bg-brand-primary/20 text-brand-primary text-xs font-semibold rounded-full mb-2">
                                 {event.status}
                               </span>
-                              <h3 className="text-xl font-semibold mb-2 hover:text-brand-primary transition-colors">
+                              <h3 className="text-xl font-semibold mb-2 text-foreground hover:text-brand-primary transition-colors font-montserrat">
                                 {event.title}
                               </h3>
                             </div>
@@ -211,22 +211,22 @@ const Events = () => {
                             </div>
                           </div>
                           
-                          <div className="space-y-2 mb-4">
-                            <div className="flex items-center text-foreground-secondary">
-                              <Calendar className="w-4 h-4 mr-2" />
-                              <span>{event.date} • {event.time}</span>
+                            <div className="space-y-2 mb-4">
+                              <div className="flex items-center text-foreground-muted">
+                                <Calendar className="w-4 h-4 mr-2" />
+                                <span className="font-montserrat">{event.date} • {event.time}</span>
+                              </div>
+                              <div className="flex items-center text-foreground-muted">
+                                <MapPin className="w-4 h-4 mr-2" />
+                                <span className="font-montserrat">{event.location}</span>
+                              </div>
+                              <div className="flex items-center text-foreground-muted">
+                                <Users className="w-4 h-4 mr-2" />
+                                <span className="font-montserrat">{event.attendees} attending</span>
+                              </div>
                             </div>
-                            <div className="flex items-center text-foreground-secondary">
-                              <MapPin className="w-4 h-4 mr-2" />
-                              <span>{event.location}</span>
-                            </div>
-                            <div className="flex items-center text-foreground-secondary">
-                              <Users className="w-4 h-4 mr-2" />
-                              <span>{event.attendees} attending</span>
-                            </div>
-                          </div>
                           
-                          <p className="text-foreground-tertiary mb-4 leading-relaxed">
+                          <p className="text-foreground-muted mb-4 leading-relaxed font-montserrat">
                             {event.description}
                           </p>
                           
