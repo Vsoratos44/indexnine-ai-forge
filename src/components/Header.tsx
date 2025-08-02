@@ -185,7 +185,7 @@ const Header = () => {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed top-20 left-0 right-0 bg-background-dark/95 backdrop-blur-lg border-b border-white/10 z-40">
+        <div className="md:hidden fixed top-20 left-0 right-0 bottom-0 bg-background z-40 overflow-y-auto">
           <div className="container mx-auto px-6 py-8 space-y-6">
             
             {/* Services */}
