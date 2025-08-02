@@ -64,13 +64,13 @@ const Header = () => {
             <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center">
               <div className="w-4 h-4 bg-white rounded-sm"></div>
             </div>
-            <span className={`text-xl font-bold transition-colors duration-300 ${isLightSection ? 'text-gray-900' : 'text-foreground-white'}`}>INDEXNINE</span>
+            <span className={`text-xl font-bold transition-colors duration-300 ${isLightSection ? 'text-gray-900' : 'text-foreground'}`}>INDEXNINE</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <div className="relative group">
-              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}>
+              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground hover:text-brand-primary'}`}>
                 <span>Services</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -98,7 +98,7 @@ const Header = () => {
             </div>
             
             <div className="relative group">
-              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}>
+              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground hover:text-brand-primary'}`}>
                 <span>Engagement Models</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -117,7 +117,7 @@ const Header = () => {
             </div>
             
             <div className="relative group">
-              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}>
+              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground hover:text-brand-primary'}`}>
                 <span>Insights</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -139,7 +139,7 @@ const Header = () => {
             </div>
 
             <div className="relative group">
-              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}>
+              <button className={`flex items-center space-x-1 transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground hover:text-brand-primary'}`}>
                 <span>Events</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -160,14 +160,14 @@ const Header = () => {
               </div>
             </div>
             
-            <Link to="/about" className={`transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}>
+            <Link to="/about" className={`transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground hover:text-brand-primary'}`}>
               About Us
             </Link>
           </nav>
 
           {/* Mobile Menu Button */}
           <button 
-            className={`md:hidden transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground-white hover:text-brand-primary'}`}
+            className={`md:hidden transition-colors duration-300 ${isLightSection ? 'text-gray-900 hover:text-brand-primary' : 'text-foreground hover:text-brand-primary'}`}
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
           >
@@ -192,26 +192,26 @@ const Header = () => {
             <div>
               <button 
                 onClick={() => toggleDropdown('services')}
-                className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground-white hover:text-brand-primary transition-colors"
+                className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground hover:text-brand-primary transition-colors"
               >
                 Services
                 <ChevronDown className={`w-5 h-5 transition-transform ${openDropdown === 'services' ? 'rotate-180' : ''}`} />
               </button>
               {openDropdown === 'services' && (
                 <div className="mt-4 pl-4 space-y-3">
-                  <Link to="/services/custom-software" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/services/custom-software" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Custom Software Development
                   </Link>
-                  <Link to="/studios/ai" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/studios/ai" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     AI & ML Development
                   </Link>
-                  <Link to="/studios/data-engineering" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/studios/data-engineering" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Data Engineering
                   </Link>
-                  <Link to="/studios/quality-engineering" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/studios/quality-engineering" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Quality Assurance Engineering
                   </Link>
-                  <Link to="/services/consulting" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/services/consulting" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Consulting & Strategy
                   </Link>
                 </div>
@@ -222,17 +222,17 @@ const Header = () => {
             <div>
               <button 
                 onClick={() => toggleDropdown('engagement')}
-                className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground-white hover:text-brand-primary transition-colors"
+                className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground hover:text-brand-primary transition-colors"
               >
                 Engagement Models
                 <ChevronDown className={`w-5 h-5 transition-transform ${openDropdown === 'engagement' ? 'rotate-180' : ''}`} />
               </button>
                {openDropdown === 'engagement' && (
                 <div className="mt-4 pl-4 space-y-3">
-                  <Link to="/engagement/dedicated-teams" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/engagement/dedicated-teams" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Dedicated Engineering Teams
                   </Link>
-                  <a href="#contact" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <a href="#contact" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Project-Based Engagements
                   </a>
                 </div>
@@ -243,20 +243,20 @@ const Header = () => {
             <div>
               <button 
                 onClick={() => toggleDropdown('insights')}
-                className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground-white hover:text-brand-primary transition-colors"
+                className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground hover:text-brand-primary transition-colors"
               >
                 Insights
                 <ChevronDown className={`w-5 h-5 transition-transform ${openDropdown === 'insights' ? 'rotate-180' : ''}`} />
               </button>
               {openDropdown === 'insights' && (
                 <div className="mt-4 pl-4 space-y-3">
-                  <Link to="/case-studies" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/case-studies" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Case Studies
                   </Link>
-                  <Link to="/insights" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/insights" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Blogs
                   </Link>
-                  <Link to="/resources/ebooks" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/resources/ebooks" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     eBooks
                   </Link>
                 </div>
@@ -267,20 +267,20 @@ const Header = () => {
             <div>
               <button 
                 onClick={() => toggleDropdown('events')}
-                className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground-white hover:text-brand-primary transition-colors"
+                className="flex items-center justify-between w-full text-left text-lg font-semibold text-foreground hover:text-brand-primary transition-colors"
               >
                 Events
                 <ChevronDown className={`w-5 h-5 transition-transform ${openDropdown === 'events' ? 'rotate-180' : ''}`} />
               </button>
               {openDropdown === 'events' && (
                 <div className="mt-4 pl-4 space-y-3">
-                  <Link to="/events" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/events" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Events
                   </Link>
-                  <Link to="/events/features/registration-and-ticketing" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/events/features/registration-and-ticketing" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     Registration & Ticketing
                   </Link>
-                  <Link to="/events/features/on-site-experience" className="block py-2 text-foreground-white/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+                  <Link to="/events/features/on-site-experience" className="block py-2 text-foreground/80 hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
                     On-Site Experience
                   </Link>
                 </div>
@@ -288,7 +288,7 @@ const Header = () => {
             </div>
 
             {/* About Us */}
-            <Link to="/about" className="block text-lg font-semibold text-foreground-white hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
+            <Link to="/about" className="block text-lg font-semibold text-foreground hover:text-brand-primary transition-colors" onClick={toggleMobileMenu}>
               About Us
             </Link>
 
