@@ -31,6 +31,7 @@ import Enterprise from "./pages/engagement/Enterprise";
 import InnovationLab from "./pages/engagement/InnovationLab";
 import DedicatedTeams from "./pages/engagement/DedicatedTeams";
 import OutcomeBased from "./pages/engagement/OutcomeBased";
+import ProjectBased from "./pages/engagement/ProjectBased";
 
 // Insights Pages
 import CaseStudies from "./pages/insights/CaseStudies";
@@ -87,6 +88,7 @@ const App = () => (
           <Route path="/engagement/innovation-lab" element={<InnovationLab />} />
           <Route path="/engagement/dedicated-teams" element={<DedicatedTeams />} />
           <Route path="/engagement/outcome-based" element={<OutcomeBased />} />
+          <Route path="/engagement/project-based" element={<ProjectBased />} />
           
           {/* Insights Routes */}
           <Route path="/case-studies" element={<CaseStudies />} />
