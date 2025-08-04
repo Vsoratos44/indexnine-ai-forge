@@ -46,13 +46,9 @@ const LeadsManager = () => {
   const fetchLeads = async () => {
     try {
       setLoading(true)
-      const { data, error } = await supabase
-        .from('leads')
-        .select('*')
-        .order('created_at', { ascending: false })
-
-      if (error) throw error
-      setLeads(data || [])
+      // Return empty array when database tables don't exist yet
+      setLeads([])
+      toast.error('Database tables not created yet. Please run migrations first.')
     } catch (error) {
       toast.error('Failed to fetch leads')
     } finally {

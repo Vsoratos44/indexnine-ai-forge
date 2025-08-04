@@ -40,13 +40,9 @@ const MediaLibrary = () => {
   const fetchAssets = async () => {
     try {
       setLoading(true)
-      const { data, error } = await supabase
-        .from('digital_assets')
-        .select('*')
-        .order('created_at', { ascending: false })
-
-      if (error) throw error
-      setAssets(data || [])
+      // Return empty array when database tables don't exist yet
+      setAssets([])
+      toast.error('Database tables not created yet. Please run migrations first.')
     } catch (error) {
       toast.error('Failed to fetch media assets')
     } finally {
@@ -74,24 +70,9 @@ const MediaLibrary = () => {
           console.warn('Storage upload failed, recording asset metadata only:', uploadError)
         }
 
-        // Save asset metadata to database
-        const { error: dbError } = await supabase
-          .from('digital_assets')
-          .insert({
-            filename: fileName,
-            original_filename: file.name,
-            file_type: file.type,
-            file_size: file.size,
-            storage_path: uploadData?.path || `local/${fileName}`,
-            metadata: {
-              uploaded_from: 'cms',
-              dimensions: file.type.startsWith('image/') ? await getImageDimensions(file) : null
-            }
-          })
-
-        if (dbError) throw dbError
-        
-        toast.success(`${file.name} uploaded successfully`)
+        // Database not available yet - show error
+        toast.error('Database not available. Please run migrations first.')
+        return
       } catch (error) {
         toast.error(`Failed to upload ${file.name}`)
       } finally {
@@ -120,21 +101,7 @@ const MediaLibrary = () => {
   }
 
   const handleDelete = async (id: string, filename: string) => {
-    if (window.confirm(`Are you sure you want to delete ${filename}?`)) {
-      try {
-        const { error } = await supabase
-          .from('digital_assets')
-          .delete()
-          .eq('id', id)
-
-        if (error) throw error
-        
-        toast.success('Asset deleted successfully')
-        fetchAssets()
-      } catch (error) {
-        toast.error('Failed to delete asset')
-      }
-    }
+    toast.error('Database not available. Please run migrations first.')
   }
 
   const formatFileSize = (bytes: number) => {
