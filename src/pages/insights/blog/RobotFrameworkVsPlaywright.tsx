@@ -153,34 +153,34 @@ const RobotFrameworkVsPlaywright = () => {
                 <section id="comparison-table" className="mb-16">
                   <h2 className="text-3xl font-bold text-foreground mb-6 font-montserrat">At a Glance: Robot Framework vs. Playwright Comparison</h2>
                   <div className="overflow-x-auto">
-                    <table className="w-full border border-glass-border rounded-xl overflow-hidden">
-                      <thead className="bg-gradient-card">
+                    <table className="w-full border border-glass-border rounded-xl overflow-hidden bg-background-card-light">
+                      <thead className="bg-brand-primary/10">
                         <tr>
-                          <th className="text-left p-4 font-montserrat text-foreground">Feature</th>
-                          <th className="text-left p-4 font-montserrat text-foreground">Robot Framework</th>
-                          <th className="text-left p-4 font-montserrat text-foreground">Playwright</th>
+                          <th className="text-left p-4 font-montserrat text-foreground-dark">Feature</th>
+                          <th className="text-left p-4 font-montserrat text-foreground-dark">Robot Framework</th>
+                          <th className="text-left p-4 font-montserrat text-foreground-dark">Playwright</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody className="bg-background-card-light">
                         <tr className="border-t border-glass-border">
-                          <td className="p-4 font-medium text-foreground">Ideal Use Case</td>
-                          <td className="p-4 text-foreground-muted">Startups (Seed-Series A), MVPs, teams needing broad testing capabilities (Web, API, Mobile)</td>
-                          <td className="p-4 text-foreground-muted">Scale-ups (Series B+), complex web apps, teams demanding high-velocity and parallel execution</td>
+                          <td className="p-4 font-medium text-foreground-dark">Ideal Use Case</td>
+                          <td className="p-4 text-foreground-dark-muted">Startups (Seed-Series A), MVPs, teams needing broad testing capabilities (Web, API, Mobile)</td>
+                          <td className="p-4 text-foreground-dark-muted">Scale-ups (Series B+), complex web apps, teams demanding high-velocity and parallel execution</td>
                         </tr>
-                        <tr className="border-t border-glass-border bg-background/50">
-                          <td className="p-4 font-medium text-foreground">Key Strength</td>
-                          <td className="p-4 text-foreground-muted">Readability & Accessibility: Keyword-driven syntax is easy for technical and non-technical staff to understand</td>
-                          <td className="p-4 text-foreground-muted">Speed & Reliability: Modern architecture with auto-waits and web-first assertions minimizes flaky tests</td>
+                        <tr className="border-t border-glass-border bg-background-card-light/80">
+                          <td className="p-4 font-medium text-foreground-dark">Key Strength</td>
+                          <td className="p-4 text-foreground-dark-muted">Readability & Accessibility: Keyword-driven syntax is easy for technical and non-technical staff to understand</td>
+                          <td className="p-4 text-foreground-dark-muted">Speed & Reliability: Modern architecture with auto-waits and web-first assertions minimizes flaky tests</td>
                         </tr>
                         <tr className="border-t border-glass-border">
-                          <td className="p-4 font-medium text-foreground">Ecosystem</td>
-                          <td className="p-4 text-foreground-muted">Python-based, with a massive ecosystem of libraries for any task, including a wrapper for Playwright itself</td>
-                          <td className="p-4 text-foreground-muted">Native support for TypeScript, JavaScript, Python, Java, and .NET, fitting seamlessly into developer workflows</td>
+                          <td className="p-4 font-medium text-foreground-dark">Ecosystem</td>
+                          <td className="p-4 text-foreground-dark-muted">Python-based, with a massive ecosystem of libraries for any task, including a wrapper for Playwright itself</td>
+                          <td className="p-4 text-foreground-dark-muted">Native support for TypeScript, JavaScript, Python, Java, and .NET, fitting seamlessly into developer workflows</td>
                         </tr>
-                        <tr className="border-t border-glass-border bg-background/50">
-                          <td className="p-4 font-medium text-foreground">Best For...</td>
-                          <td className="p-4 text-foreground-muted">Teams aiming to democratize test creation, implement Test-Driven Development (TDD), and require a gentle learning curve</td>
-                          <td className="p-4 text-foreground-muted">Developer-centric teams focused on efficiency, deep debugging (Trace Viewer), and continuous testing of modern, complex web applications</td>
+                        <tr className="border-t border-glass-border bg-background-card-light/80">
+                          <td className="p-4 font-medium text-foreground-dark">Best For...</td>
+                          <td className="p-4 text-foreground-dark-muted">Teams aiming to democratize test creation, implement Test-Driven Development (TDD), and require a gentle learning curve</td>
+                          <td className="p-4 text-foreground-dark-muted">Developer-centric teams focused on efficiency, deep debugging (Trace Viewer), and continuous testing of modern, complex web applications</td>
                         </tr>
                       </tbody>
                     </table>

@@ -73,22 +73,22 @@ const AiStudio = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">Standard AI Audit</h3>
-                  <p className="text-foreground-dark-muted mb-6">
+                  <h3 className="text-2xl font-bold mb-4 text-foreground">Standard AI Audit</h3>
+                  <p className="text-foreground/80 mb-6">
                     4-Week Assessment: Comprehensive evaluation of your AI readiness, potential opportunities, and strategic roadmap development.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Business context analysis and strategy alignment</span>
+                      <span className="text-foreground/80">Business context analysis and strategy alignment</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Asset inventory and opportunity identification</span>
+                      <span className="text-foreground/80">Asset inventory and opportunity identification</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Prioritized AI roadmap with ROI projections</span>
+                      <span className="text-foreground/80">Prioritized AI roadmap with ROI projections</span>
                     </li>
                   </ul>
                   <Button variant="outline" className="w-full">
@@ -99,22 +99,22 @@ const AiStudio = () => {
               
               <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">Pro AI Audit</h3>
-                  <p className="text-foreground-dark-muted mb-6">
+                  <h3 className="text-2xl font-bold mb-4 text-foreground">Pro AI Audit</h3>
+                  <p className="text-foreground/80 mb-6">
                     8-Week Deep-Dive: Extended assessment including proof-of-concept development and detailed implementation planning.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Everything in Standard Audit</span>
+                      <span className="text-foreground/80">Everything in Standard Audit</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Working proof-of-concept development</span>
+                      <span className="text-foreground/80">Working proof-of-concept development</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Detailed technical architecture and governance framework</span>
+                      <span className="text-foreground/80">Detailed technical architecture and governance framework</span>
                     </li>
                   </ul>
                   <Button variant="default" className="w-full">
@@ -146,8 +146,8 @@ const AiStudio = () => {
                   <div className="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Target className="h-8 w-8 text-brand-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground-dark">AI Potential Score</h3>
-                  <p className="text-foreground-dark-muted">
+                  <h3 className="text-xl font-bold mb-4 text-foreground">AI Potential Score</h3>
+                  <p className="text-foreground/80">
                     Evaluates the strategic value and business impact potential of AI initiatives within your specific context and industry.
                   </p>
                 </CardContent>
@@ -158,8 +158,8 @@ const AiStudio = () => {
                   <div className="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Brain className="h-8 w-8 text-brand-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground-dark">AI Readiness Score</h3>
-                  <p className="text-foreground-dark-muted">
+                  <h3 className="text-xl font-bold mb-4 text-foreground">AI Readiness Score</h3>
+                  <p className="text-foreground/80">
                     Assesses your organization's data maturity, technical infrastructure, and cultural readiness for AI adoption.
                   </p>
                 </CardContent>
@@ -170,8 +170,8 @@ const AiStudio = () => {
                   <div className="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Shield className="h-8 w-8 text-brand-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground-dark">AI Risk Score</h3>
-                  <p className="text-foreground-dark-muted">
+                  <h3 className="text-xl font-bold mb-4 text-foreground">AI Risk Score</h3>
+                  <p className="text-foreground/80">
                     Identifies potential risks including ethical concerns, regulatory compliance, and implementation challenges.
                   </p>
                 </CardContent>
@@ -262,13 +262,13 @@ const AiStudio = () => {
                 <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                   <CardContent className="p-0">
                     <div className="text-3xl font-bold text-brand-primary mb-2">66%</div>
-                    <p className="text-sm text-foreground-dark-muted">Reduction in Team Size for Live Content</p>
+                    <p className="text-sm text-foreground/80">Reduction in Team Size for Live Content</p>
                   </CardContent>
                 </Card>
                 <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                   <CardContent className="p-0">
                     <div className="text-3xl font-bold text-brand-primary mb-2">15s</div>
-                    <p className="text-sm text-foreground-dark-muted">to Generate & Publish</p>
+                    <p className="text-sm text-foreground/80">to Generate & Publish</p>
                   </CardContent>
                 </Card>
               </div>
@@ -296,7 +296,7 @@ const AiStudio = () => {
               ].map((service) => (
                 <Card key={service} className="p-6 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-0">
-                    <h3 className="font-semibold text-foreground-dark">{service}</h3>
+                    <h3 className="font-semibold text-foreground">{service}</h3>
                   </CardContent>
                 </Card>
               ))}

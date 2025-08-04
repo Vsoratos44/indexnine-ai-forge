@@ -146,18 +146,18 @@ const DataEngineering = () => {
                 </p>
                 
                 <div className="grid grid-cols-2 gap-6">
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-primary mb-2">72%</div>
-                      <p className="text-sm text-foreground-dark-muted">Increase in Booking Efficiency</p>
-                    </CardContent>
-                  </Card>
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-primary mb-2">35%</div>
-                      <p className="text-sm text-foreground-dark-muted">Annual Infrastructure Savings</p>
-                    </CardContent>
-                  </Card>
+                <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                  <CardContent className="p-0">
+                    <div className="text-3xl font-bold text-brand-primary mb-2">72%</div>
+                    <p className="text-sm text-foreground/80">Increase in Booking Efficiency</p>
+                  </CardContent>
+                </Card>
+                <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                  <CardContent className="p-0">
+                    <div className="text-3xl font-bold text-brand-primary mb-2">35%</div>
+                    <p className="text-sm text-foreground/80">Annual Infrastructure Savings</p>
+                  </CardContent>
+                </Card>
                 </div>
               </div>
             </div>
@@ -175,18 +175,18 @@ const DataEngineering = () => {
                 </p>
                 
                 <div className="grid grid-cols-2 gap-6">
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-purple mb-2">96x</div>
-                      <p className="text-sm text-foreground-dark-muted">Faster Data Preparation</p>
-                    </CardContent>
-                  </Card>
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-purple mb-2">48</div>
-                      <p className="text-sm text-foreground-dark-muted">Report Latency (Hours)</p>
-                    </CardContent>
-                  </Card>
+                <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                  <CardContent className="p-0">
+                    <div className="text-3xl font-bold text-brand-purple mb-2">96x</div>
+                    <p className="text-sm text-foreground/80">Faster Data Preparation</p>
+                  </CardContent>
+                </Card>
+                <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                  <CardContent className="p-0">
+                    <div className="text-3xl font-bold text-brand-purple mb-2">48</div>
+                    <p className="text-sm text-foreground/80">Report Latency (Hours)</p>
+                  </CardContent>
+                </Card>
                 </div>
               </div>
               
@@ -216,7 +216,7 @@ const DataEngineering = () => {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-4 text-foreground-dark">Data Integration & Transformation</h3>
                   <p className="text-foreground-dark-muted text-sm">
@@ -225,7 +225,7 @@ const DataEngineering = () => {
                 </CardContent>
               </Card>
               
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-4 text-foreground-dark">Data Platform Architecture</h3>
                   <p className="text-foreground-dark-muted text-sm">
@@ -234,7 +234,7 @@ const DataEngineering = () => {
                 </CardContent>
               </Card>
               
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-4 text-foreground-dark">Data Platform Modernization</h3>
                   <p className="text-foreground-dark-muted text-sm">
@@ -243,7 +243,7 @@ const DataEngineering = () => {
                 </CardContent>
               </Card>
               
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-lg font-bold mb-4 text-foreground-dark">Performance Optimization</h3>
                   <p className="text-foreground-dark-muted text-sm">

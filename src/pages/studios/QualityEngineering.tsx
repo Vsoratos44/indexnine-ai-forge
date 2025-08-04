@@ -126,16 +126,16 @@ const QualityEngineering = () => {
               </div>
               
               <div className="grid grid-cols-2 gap-6">
-                <Card className="p-6 text-center">
+                <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                   <CardContent className="p-0">
                     <div className="text-3xl font-bold text-brand-purple mb-2">97%</div>
-                    <p className="text-sm text-foreground-dark-muted">Reduction in Execution Time (5 days to 30 mins)</p>
+                    <p className="text-sm text-foreground/80">Reduction in Execution Time (5 days to 30 mins)</p>
                   </CardContent>
                 </Card>
-                <Card className="p-6 text-center">
+                <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                   <CardContent className="p-0">
                     <div className="text-3xl font-bold text-brand-purple mb-2">100%</div>
-                    <p className="text-sm text-foreground-dark-muted">Success Fee Achieved</p>
+                    <p className="text-sm text-foreground/80">Success Fee Achieved</p>
                   </CardContent>
                 </Card>
               </div>
@@ -158,53 +158,53 @@ const QualityEngineering = () => {
             </div>
             
             <div className="grid lg:grid-cols-2 gap-8">
-              <Card className="p-8">
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
                     <Zap className="h-8 w-8 text-brand-purple" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">snap.automate</h3>
-                  <p className="text-foreground-dark-muted mb-6">
+                  <h3 className="text-2xl font-bold mb-4 text-foreground">snap.automate</h3>
+                  <p className="text-foreground/80 mb-6">
                     Our flagship automation platform that provides intelligent test orchestration, AI-powered maintenance, and comprehensive reporting. Designed for rapid deployment and maximum coverage.
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">AI-assisted test creation and maintenance</span>
+                      <span className="text-foreground/80">AI-assisted test creation and maintenance</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Intelligent test orchestration and optimization</span>
+                      <span className="text-foreground/80">Intelligent test orchestration and optimization</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Real-time insights and actionable reports</span>
+                      <span className="text-foreground/80">Real-time insights and actionable reports</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
               
-              <Card className="p-8">
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
                     <Target className="h-8 w-8 text-brand-purple" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">snap.atomicqa</h3>
-                  <p className="text-foreground-dark-muted mb-6">
+                  <h3 className="text-2xl font-bold mb-4 text-foreground">snap.atomicqa</h3>
+                  <p className="text-foreground/80 mb-6">
                     Specialized platform for component-level testing and continuous quality assurance. Perfect for teams practicing shift-left methodologies and micro-service architectures.
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Component-level test automation</span>
+                      <span className="text-foreground/80">Component-level test automation</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Continuous integration and deployment support</span>
+                      <span className="text-foreground/80">Continuous integration and deployment support</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Micro-service testing capabilities</span>
+                      <span className="text-foreground/80">Micro-service testing capabilities</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -228,7 +228,7 @@ const QualityEngineering = () => {
             </div>
             
             <div className="grid lg:grid-cols-2 gap-8">
-              <Card className="p-8">
+              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-2xl font-bold mb-4 text-foreground-dark">Sprint 0: Automation Kickstart</h3>
                   <p className="text-foreground-dark-muted mb-6">
@@ -254,7 +254,7 @@ const QualityEngineering = () => {
                 </CardContent>
               </Card>
               
-              <Card className="p-8">
+              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-2xl font-bold mb-4 text-foreground-dark">Agile Product Quality (APQ) Roadmap</h3>
                   <p className="text-foreground-dark-muted mb-6">
@@ -298,15 +298,15 @@ const QualityEngineering = () => {
             </div>
             
             <div className="overflow-x-auto">
-              <table className="w-full border-collapse bg-card rounded-lg overflow-hidden">
+              <table className="w-full border-collapse bg-background-card-light rounded-lg overflow-hidden border border-glass-border">
                 <thead>
-                  <tr className="bg-secondary/50">
+                  <tr className="bg-brand-primary/10">
                     <th className="text-left p-4 font-semibold text-foreground-dark">Feature</th>
                     <th className="text-center p-4 font-semibold text-foreground-dark">Robot Framework</th>
                     <th className="text-center p-4 font-semibold text-foreground-dark">Playwright</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="bg-background-card-light">
                   {[
                     {
                       feature: "Learning Curve",
@@ -339,7 +339,7 @@ const QualityEngineering = () => {
                       playwright: "Good - Developer-friendly reports"
                     }
                   ].map((row, index) => (
-                    <tr key={index} className="border-t border-border">
+                    <tr key={index} className="border-t border-glass-border">
                       <td className="p-4 font-medium text-foreground-dark">{row.feature}</td>
                       <td className="p-4 text-center text-foreground-dark-muted">{row.robot}</td>
                       <td className="p-4 text-center text-foreground-dark-muted">{row.playwright}</td>
