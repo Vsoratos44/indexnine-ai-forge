@@ -19,6 +19,9 @@ import {
   Globe
 } from 'lucide-react'
 import { toast } from 'sonner'
+import AnalyticsDashboard from '@/components/cms/AnalyticsDashboard'
+import ContentManager from '@/components/cms/ContentManager'
+import MediaLibrary from '@/components/cms/MediaLibrary'
 
 const Dashboard = () => {
   // const { user, signOut } = useAuth() // Disabled for now
@@ -126,120 +129,15 @@ const Dashboard = () => {
           </TabsList>
 
           <TabsContent value="overview" className="space-y-8">
-            {/* Stats Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {stats.map((stat, index) => (
-                <Card key={index} className="bg-background-dark/80 backdrop-blur-md border border-white/10 shadow-glow">
-                  <CardContent className="p-6">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm font-medium text-foreground-white/60">{stat.label}</p>
-                        <p className="text-3xl font-bold text-foreground-white">{stat.value}</p>
-                      </div>
-                      <stat.icon className="w-8 h-8 text-brand-primary" />
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            {/* Recent Activity */}
-            <Card className="bg-background-dark/80 backdrop-blur-md border border-white/10 shadow-glow">
-              <CardHeader>
-                <CardTitle className="text-foreground-white">Recent Activity</CardTitle>
-                <CardDescription className="text-foreground-white/60">Latest content updates and changes</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {contentItems.slice(0, 3).map((item) => (
-                    <div key={item.id} className="flex items-center justify-between p-4 border border-white/10 rounded-lg bg-background-dark/40">
-                      <div>
-                        <h4 className="font-medium text-foreground-white">{item.title}</h4>
-                        <p className="text-sm text-foreground-white/60">Modified {item.lastModified}</p>
-                      </div>
-                      <Badge variant={item.status === 'published' ? 'default' : 'secondary'}>
-                        {item.status}
-                      </Badge>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <AnalyticsDashboard />
           </TabsContent>
 
           <TabsContent value="content" className="space-y-8">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="text-2xl font-bold text-foreground-white">Content Management</h2>
-                <p className="text-foreground-white/60">Manage all website content components</p>
-              </div>
-              <Link to="/cms/content/new">
-                <Button className="bg-brand-primary hover:bg-brand-primary-dark">
-                  <Plus className="w-4 h-4 mr-2" />
-                  Add Content
-                </Button>
-              </Link>
-            </div>
-
-            <div className="grid gap-6">
-              {contentItems.map((item) => (
-                <Card key={item.id} className="bg-background-dark/80 backdrop-blur-md border border-white/10 shadow-glow">
-                  <CardContent className="p-6">
-                    <div className="flex items-start justify-between">
-                      <div className="flex-1">
-                        <div className="flex items-center space-x-3 mb-2">
-                          <h3 className="text-lg font-semibold text-foreground-white">{item.title}</h3>
-                          <Badge variant={item.status === 'published' ? 'default' : 'secondary'} className="bg-brand-primary text-white">
-                            {item.status}
-                          </Badge>
-                        </div>
-                        <p className="text-foreground-white/70 mb-2">{item.description}</p>
-                        <p className="text-sm text-foreground-white/60">
-                          Component: <code className="bg-background-dark/60 px-2 py-1 rounded text-brand-primary">{item.component}</code>
-                        </p>
-                        <p className="text-sm text-foreground-white/60">Last modified: {item.lastModified}</p>
-                      </div>
-                      <div className="flex space-x-2">
-                        <Link to={`/cms/content/edit/${item.id}`}>
-                          <Button variant="outline" size="sm" className="border-white/20 text-foreground-white hover:bg-brand-primary/20">
-                            <Edit className="w-4 h-4 mr-2" />
-                            Edit
-                          </Button>
-                        </Link>
-                        <Button variant="outline" size="sm" className="border-white/20 text-foreground-white hover:bg-brand-primary/20">
-                          <Eye className="w-4 h-4 mr-2" />
-                          Preview
-                        </Button>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            <ContentManager />
           </TabsContent>
 
           <TabsContent value="media" className="space-y-8">
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="text-2xl font-bold text-foreground-white">Media Library</h2>
-                <p className="text-foreground-white/60">Manage images, videos, and documents</p>
-              </div>
-              <Button className="bg-brand-primary hover:bg-brand-primary-dark">
-                <Plus className="w-4 h-4 mr-2" />
-                Upload Media
-              </Button>
-            </div>
-
-            <Card className="bg-background-dark/80 backdrop-blur-md border border-white/10 shadow-glow">
-              <CardContent className="p-6">
-                <div className="text-center py-12">
-                  <Image className="w-16 h-16 text-foreground-white/40 mx-auto mb-4" />
-                  <h3 className="text-lg font-medium text-foreground-white mb-2">Media Library</h3>
-                  <p className="text-foreground-white/60 mb-4">Upload and manage your digital assets</p>
-                  <Button variant="outline" className="border-white/20 text-foreground-white hover:bg-brand-primary/20">Browse Files</Button>
-                </div>
-              </CardContent>
-            </Card>
+            <MediaLibrary />
           </TabsContent>
 
           <TabsContent value="settings" className="space-y-8">

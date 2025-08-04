@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -9,10 +9,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Switch } from '@/components/ui/switch'
 import { ArrowLeft, Save, Eye, Globe } from 'lucide-react'
 import { toast } from 'sonner'
+import { useContent } from '@/hooks/useContent'
 
 const ContentEditor = () => {
   const { id } = useParams()
   const navigate = useNavigate()
+  const { content, createContent, updateContent, loading } = useContent()
   
   const [formData, setFormData] = useState({
     title: '',
@@ -23,6 +25,22 @@ const ContentEditor = () => {
   })
   
   const [isLoading, setIsLoading] = useState(false)
+
+  // Load existing content if editing
+  useEffect(() => {
+    if (id && content.length > 0) {
+      const existingContent = content.find(item => item.id === id)
+      if (existingContent) {
+        setFormData({
+          title: existingContent.title,
+          slug: existingContent.slug,
+          component_type: existingContent.component_type,
+          content_data: existingContent.content_data,
+          published: existingContent.published
+        })
+      }
+    }
+  }, [id, content])
 
   const componentTypes = [
     { value: 'Hero', label: 'Hero Section' },
@@ -56,14 +74,33 @@ const ContentEditor = () => {
   const handleSave = async () => {
     setIsLoading(true)
     
-    // Simulate save
-    setTimeout(() => {
-      toast.success(id ? 'Content updated successfully!' : 'Content created successfully!')
-      setIsLoading(false)
-      if (!id) {
+    try {
+      if (id) {
+        // Update existing content
+        const { error } = await updateContent(id, formData)
+        if (error) {
+          toast.error(`Failed to update content: ${error}`)
+          return
+        }
+        toast.success('Content updated successfully!')
+      } else {
+        // Create new content
+        const { error } = await createContent({
+          ...formData,
+          created_by: 'current-user' // This should be the actual user ID
+        })
+        if (error) {
+          toast.error(`Failed to create content: ${error}`)
+          return
+        }
+        toast.success('Content created successfully!')
         navigate('/cms/dashboard')
       }
-    }, 1000)
+    } catch (error) {
+      toast.error('An unexpected error occurred')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const renderContentFields = () => {
