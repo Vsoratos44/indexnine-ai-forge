@@ -13,23 +13,23 @@ const InnovationLab = () => {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <LivingVoidBackground />
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 font-montserrat">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 font-montserrat leading-tight">
               Where Visionaries{' '}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Build the Future
               </span>
             </h1>
-            <p className="text-xl sm:text-2xl text-foreground-muted mb-12 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground-muted mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto px-4">
               The Indexnine Innovation Lab is an accelerated product development engine designed for one purpose: to turn your groundbreaking idea into a market-ready MVP with unprecedented speed and precision. Stop dreaming, start building.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button variant="hero" size="lg">
+            <div className="flex flex-col gap-4 sm:gap-6 justify-center px-4">
+              <Button variant="hero" size="lg" className="w-full sm:w-auto">
                 Bring Your Vision to Life
               </Button>
-              <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10">
-                See how we launched an MVP in 8 weeks <ArrowRight className="ml-2 h-5 w-5" />
+              <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 w-full sm:w-auto text-sm sm:text-base">
+                See how we launched an MVP in 8 weeks <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
             </div>
           </div>
@@ -37,16 +37,16 @@ const InnovationLab = () => {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-24 bg-gradient-section">
-        <div className="container mx-auto px-6 lg:px-8">
+      <section className="py-16 sm:py-20 lg:py-24 bg-gradient-section">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-8 font-montserrat">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground-dark mb-6 sm:mb-8 font-montserrat leading-tight">
               You Have the Vision. We Have the{' '}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Blueprint for Reality
               </span>
             </h2>
-            <div className="text-lg text-foreground-dark-muted leading-relaxed space-y-6">
+            <div className="text-base sm:text-lg text-foreground-dark-muted leading-relaxed space-y-4 sm:space-y-6 px-4">
               <p>
                 Every disruptive product starts with a "what if?" But the journey from concept to code is fraught with risk, delays, and budget overruns. The traditional development process is too slow for today's market. The Innovation Lab was created to solve this.
               </p>
@@ -59,33 +59,33 @@ const InnovationLab = () => {
       </section>
 
       {/* Our Studios Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 font-montserrat">
+      <section className="py-16 sm:py-20 lg:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6 font-montserrat leading-tight">
               An Integrated Ecosystem for{' '}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Rapid Innovation
               </span>
             </h2>
-            <p className="text-xl text-foreground-muted max-w-4xl mx-auto">
+            <p className="text-lg sm:text-xl text-foreground-muted max-w-4xl mx-auto px-4">
               Our three specialized studios work in concert, providing a seamless path from initial strategy to a fully functional product.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Discovery Studio */}
-            <div className="group p-8 rounded-2xl bg-card border border-border hover:border-brand-primary/50 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Lightbulb className="w-8 h-8 text-white" />
+            <div className="group p-6 sm:p-8 rounded-2xl bg-card border border-border hover:border-brand-primary/50 transition-all duration-300">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+                <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">The Discovery Studio: De-Risking Your Vision</h3>
-              <p className="text-foreground-muted mb-6 leading-relaxed">
-                Great products aren't just built; they're validated. Our Discovery Studio is a structured, intensive process—our Sprint 0—where we map your business goals to a technical strategy. We define your core user journeys, prioritize features for a Minimum Viable Product, and create a comprehensive product roadmap.
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-foreground mb-3 sm:mb-4 leading-tight">The Discovery Studio: De-Risking Your Vision</h3>
+              <p className="text-sm sm:text-base text-foreground-muted mb-4 sm:mb-6 leading-relaxed">
+                Great products aren't just built; they're validated. Our Discovery Studio is a structured, intensive process—our Sprint 0—where we map your business goals to a technical strategy.
               </p>
               <div className="space-y-2">
-                <h4 className="font-semibold text-foreground">Offerings:</h4>
-                <ul className="text-sm text-foreground-muted space-y-1">
+                <h4 className="font-semibold text-foreground text-sm sm:text-base">Offerings:</h4>
+                <ul className="text-xs sm:text-sm text-foreground-muted space-y-1">
                   <li>• Product Roadmapping</li>
                   <li>• Feature Prioritization</li>
                   <li>• Market & Technical Feasibility</li>

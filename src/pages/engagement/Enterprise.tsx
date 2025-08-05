@@ -13,23 +13,23 @@ const Enterprise = () => {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <LivingVoidBackground />
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 font-montserrat">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 font-montserrat leading-tight">
               Engineer Resilience.{' '}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Modernize for Tomorrow
               </span>
             </h1>
-            <p className="text-xl sm:text-2xl text-foreground-muted mb-12 leading-relaxed max-w-3xl mx-auto">
-              The Indexnine Enterprise Studio is your strategic partner for transforming mission-critical systems. We help you eliminate technical debt, scale with confidence, and embed a culture of engineering excellence to secure your long-term success.
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground-muted mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto px-4">
+              The Indexnine Enterprise Studio is your strategic partner for transforming mission-critical systems. We help you eliminate technical debt, scale with confidence, and embed a culture of engineering excellence.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button variant="hero" size="lg">
+            <div className="flex flex-col gap-4 sm:gap-6 justify-center px-4">
+              <Button variant="hero" size="lg" className="w-full sm:w-auto">
                 Schedule a Modernization Assessment
               </Button>
-              <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10">
-                Explore our AI Risk Audit Framework <ArrowRight className="ml-2 h-5 w-5" />
+              <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 w-full sm:w-auto text-sm sm:text-base">
+                Explore our AI Risk Audit Framework <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
             </div>
           </div>
