@@ -151,7 +151,7 @@ const Enterprise = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
               <Settings className="w-16 h-16 text-brand-primary mx-auto mb-6" />
               <p className="text-lg text-foreground-dark-muted leading-relaxed">
-                Technology is only half the battle. The true differentiator for long-term success is a mature, repeatable process. For all our enterprise engagements, especially long-term partnerships like Application Management Services (AMS), we focus on instilling a culture of process maturity. We establish clear communication cadences, robust project management frameworks, and risk mitigation strategies to ensure predictable outcomes, transparent collaboration, and continuous improvement across your organization.
+                Technology is only half the battle. The true differentiator for long-term success is a mature, repeatable process. For all our enterprise engagements, we focus on instilling a culture of process maturity. We establish clear communication cadences, robust project management frameworks, and risk mitigation strategies to ensure predictable outcomes, transparent collaboration, and continuous improvement across your organization.
               </p>
             </div>
           </div>
