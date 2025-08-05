@@ -14,7 +14,7 @@
  * CMS Integration: All content is designed for easy backend management
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, QrCode, MapPin, Smartphone, Monitor, Users, CheckCircle, Star, Clock } from 'lucide-react';
@@ -24,6 +24,7 @@ import Footer from '@/components/Footer';
 import LivingVoidBackground from '@/components/LivingVoidBackground';
 
 const OnSiteExperience = () => {
+  const [selectedEventId, setSelectedEventId] = useState('550e8400-e29b-41d4-a716-446655440000'); // Default event ID
   const coreFeatures = [
     {
       title: 'QR Code Check-In System',
