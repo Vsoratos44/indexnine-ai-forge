@@ -49,10 +49,10 @@ const ProjectBased = () => {
       <section className="py-24 bg-gradient-section">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-8 font-montserrat">
               Your Success is Our Success: <span className="bg-gradient-primary bg-clip-text text-transparent">The Outcome-Based Engagement Model</span>
             </h2>
-            <div className="max-w-4xl mx-auto space-y-6 text-lg text-foreground-muted leading-relaxed font-montserrat">
+            <div className="max-w-4xl mx-auto space-y-6 text-lg text-foreground-dark-muted leading-relaxed font-montserrat">
               <p>
                 For too long, the traditional consulting model has been broken. You pay for effort, not for results. We're changing that. Our engagement philosophy is built on a foundation of shared risk and shared reward. We are so confident in our ability to deliver that we predicate our fees on the successful outcomes we generate for your business.
               </p>
@@ -158,10 +158,10 @@ const ProjectBased = () => {
       <section className="py-24 bg-gradient-section">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-6 font-montserrat">
               From Complex Challenges to <span className="bg-gradient-primary bg-clip-text text-transparent">Proven Success</span>
             </h2>
-            <p className="text-xl text-foreground-muted max-w-4xl mx-auto font-montserrat">
+            <p className="text-xl text-foreground-dark-muted max-w-4xl mx-auto font-montserrat">
               We have a track record of delivering transformative results for our clients. Here are just a few examples of the challenges we've solved:
             </p>
           </div>
@@ -219,7 +219,7 @@ const ProjectBased = () => {
             </div>
 
             <div className="text-center mt-8">
-              <p className="text-foreground-muted italic font-montserrat">
+              <p className="text-foreground-dark-muted italic font-montserrat">
                 (We have a deep backlog of case studies that further demonstrate our expertise in Product Engineering, Staff Augmentation, AI, and Tech Strategy with clients like Genysis, Airworks, Annotates, CygeniQ, JustTransform, and Onphase/Docuphase.)
               </p>
             </div>
