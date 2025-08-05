@@ -13,7 +13,7 @@ const Hero = () => {
       {/* Content - Precisely positioned */}
       <div className="relative z-10 container mx-auto px-6 lg:px-8 py-24 flex items-center min-h-full">
         <div className="max-w-5xl mx-auto text-center lg:text-left">
-          <h1 className="text-[46pt] font-bold text-foreground mb-6 leading-[0.9] tracking-tight animate-fade-in font-montserrat">
+          <h1 className="text-[52pt] font-bold text-foreground mb-6 leading-[0.9] tracking-tight animate-fade-in font-montserrat">
             Product Innovation{' '}
             <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
