@@ -4,7 +4,7 @@ import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { useContent } from '@/hooks/useContent';
-import { OrganizationSchema, WebPageSchema } from '@/components/SEOStructuredData';
+import { OrganizationSchema, WebPageSchema, LocalBusinessSchema, VideoObjectSchema } from '@/components/SEOStructuredData';
 
 // Lazy load heavy components that are below the fold
 const ValueProposition = lazy(() => import('@/components/ValueProposition'));
@@ -51,9 +51,18 @@ const Index = () => {
     <div className="min-h-screen">
       <OrganizationSchema />
       <WebPageSchema 
-        title="Leading Technology Consulting & Software Development"
-        description="Transform your ideas into enduring reality with our AI-forward engineering excellence and product mindset"
+        title="B2B Product Engineering and AI Consulting Services | IndexNine"
+        description="Indexnine offers best-in-class product engineering and custom software development for startups and enterprises. Find out what we can do for you today."
         url="https://yoursite.lovable.app/"
+      />
+      <LocalBusinessSchema />
+      <VideoObjectSchema
+        name="IndexNine Technologies Hero Video"
+        description="Discover how IndexNine Technologies delivers exceptional product engineering and AI consulting services"
+        thumbnailUrl="https://yoursite.lovable.app/video-thumbnails/hero-thumbnail.jpg"
+        uploadDate="2024-01-01T00:00:00Z"
+        duration="60"
+        contentUrl="https://yoursite.lovable.app/videos/intro.mp4"
       />
       
       {/* Above-the-fold content - always load immediately */}

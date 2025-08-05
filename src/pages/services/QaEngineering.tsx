@@ -2,11 +2,27 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { TestTube, Shield, Zap, Target, CheckCircle, Cog } from 'lucide-react';
 
 const QaEngineering = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceSchema 
+        name="QA Engineering Services"
+        description="Comprehensive quality assurance and testing solutions for reliable, bug-free software delivery"
+        serviceType="Quality Assurance"
+      />
+      <WebPageSchema 
+        title="QA Engineering Services - Ensure Software Quality & Reliability"
+        description="Deliver flawless software with our comprehensive QA engineering services including automated testing, performance testing, and quality processes"
+        url="https://yoursite.lovable.app/services/qa-engineering"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'Services', url: 'https://yoursite.lovable.app/services' },
+        { name: 'QA Engineering', url: 'https://yoursite.lovable.app/services/qa-engineering' }
+      ]} />
       <Header />
       
       {/* Hero Section */}

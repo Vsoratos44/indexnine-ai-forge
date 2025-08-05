@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { Brain, Target, Shield, CheckCircle } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -9,6 +10,21 @@ import LivingVoidBackground from '@/components/LivingVoidBackground';
 const AiStudio = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceSchema 
+        name="AI Studio - Specialized AI Development Services"
+        description="Expert AI development studio offering machine learning, deep learning, and AI solution development services"
+        serviceType="AI Development"
+      />
+      <WebPageSchema 
+        title="AI Studio - Expert AI & Machine Learning Development"
+        description="Transform your business with cutting-edge AI solutions from our specialized AI development studio. Custom ML models, AI applications, and intelligent automation"
+        url="https://yoursite.lovable.app/studios/ai-studio"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'Studios', url: 'https://yoursite.lovable.app/studios' },
+        { name: 'AI Studio', url: 'https://yoursite.lovable.app/studios/ai-studio' }
+      ]} />
       <Header />
       
       {/* Hero Section */}

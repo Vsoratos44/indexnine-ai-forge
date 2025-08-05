@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { Clock, User, ArrowRight } from 'lucide-react';
 
 const Blogs = () => {
@@ -122,6 +123,16 @@ const Blogs = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <WebPageSchema 
+        title="Technology Insights & Engineering Blog | IndexNine"
+        description="Read the latest insights on product engineering, AI development, quality assurance, and technology trends from IndexNine's expert team"
+        url="https://yoursite.lovable.app/insights/blogs"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'Insights', url: 'https://yoursite.lovable.app/insights' },
+        { name: 'Blog', url: 'https://yoursite.lovable.app/insights/blogs' }
+      ]} />
       <Header />
       
       {/* Hero Section */}

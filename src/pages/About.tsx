@@ -2,11 +2,22 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { WebPageSchema, BreadcrumbSchema, LocalBusinessSchema } from '@/components/SEOStructuredData';
 import LivingVoidBackground from '@/components/LivingVoidBackground';
 
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <WebPageSchema 
+        title="About IndexNine Technologies - Our Story & Mission"
+        description="Learn about IndexNine Technologies, our mission to deliver exceptional product engineering solutions, and our commitment to excellence in AI and software development"
+        url="https://yoursite.lovable.app/about"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'About', url: 'https://yoursite.lovable.app/about' }
+      ]} />
+      <LocalBusinessSchema />
       <Header />
       
       {/* Hero Section */}

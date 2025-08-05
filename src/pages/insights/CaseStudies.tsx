@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { Target, TrendingUp, Clock, Users, Download, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 
 const CaseStudies = () => {
@@ -232,6 +233,16 @@ const CaseStudies = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <WebPageSchema 
+        title="Client Success Stories & Case Studies | IndexNine"
+        description="Explore real-world examples of how IndexNine transforms businesses through innovative product engineering and AI solutions"
+        url="https://yoursite.lovable.app/insights/case-studies"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'Insights', url: 'https://yoursite.lovable.app/insights' },
+        { name: 'Case Studies', url: 'https://yoursite.lovable.app/insights/case-studies' }
+      ]} />
       <Header />
       
       {/* Hero Section */}

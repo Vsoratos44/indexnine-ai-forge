@@ -2,9 +2,13 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { JobPostingSchema, BreadcrumbSchema, WebPageSchema } from '@/components/SEOStructuredData';
 import { MapPin, Clock, Users, Zap, Heart, Award } from 'lucide-react';
 
 const Careers = () => {
+  const currentDate = new Date().toISOString();
+  const validThrough = new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toISOString(); // 90 days from now
+  
   const openPositions = [
     {
       title: "Senior Full-Stack Developer",
@@ -66,6 +70,27 @@ const Careers = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <WebPageSchema
+        title="Careers at IndexNine Technologies - Join Our Team"
+        description="Explore exciting career opportunities at IndexNine Technologies. Join our team of engineers and innovators building the future of technology."
+        url="https://yoursite.lovable.app/about/careers"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'About', url: 'https://yoursite.lovable.app/about' },
+        { name: 'Careers', url: 'https://yoursite.lovable.app/about/careers' }
+      ]} />
+      {openPositions.map((job, index) => (
+        <JobPostingSchema
+          key={index}
+          title={job.title}
+          description={job.description}
+          location={job.location}
+          employmentType={job.type}
+          datePosted={currentDate}
+          validThrough={validThrough}
+        />
+      ))}
       <Header />
       
       {/* Hero Section */}

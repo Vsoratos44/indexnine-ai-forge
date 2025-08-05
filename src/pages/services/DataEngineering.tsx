@@ -2,11 +2,27 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { Database, Cloud, Workflow, BarChart, Shield, Zap } from 'lucide-react';
 
 const DataEngineering = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceSchema 
+        name="Data Engineering Services"
+        description="Build robust data pipelines, warehouses, and analytics solutions for data-driven decision making"
+        serviceType="Data Engineering"
+      />
+      <WebPageSchema 
+        title="Data Engineering Services - Build Scalable Data Infrastructure"
+        description="Transform your data into actionable insights with our comprehensive data engineering solutions including pipelines, warehouses, and analytics"
+        url="https://yoursite.lovable.app/services/data-engineering"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'Services', url: 'https://yoursite.lovable.app/services' },
+        { name: 'Data Engineering', url: 'https://yoursite.lovable.app/services/data-engineering' }
+      ]} />
       <Header />
       
       {/* Hero Section */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { Lightbulb, Target, Rocket, CheckCircle, Users, TrendingUp } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -8,6 +9,21 @@ import Footer from '@/components/Footer';
 const ConsultingStrategy = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceSchema 
+        name="Technology Consulting & Strategy Services"
+        description="Strategic technology consulting to accelerate digital transformation and drive business growth"
+        serviceType="Technology Consulting"
+      />
+      <WebPageSchema 
+        title="Technology Consulting & Strategy Services - Drive Digital Transformation"
+        description="Accelerate your digital transformation with our strategic technology consulting services. Expert guidance for technology roadmaps and business growth"
+        url="https://yoursite.lovable.app/services/consulting-strategy"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'Services', url: 'https://yoursite.lovable.app/services' },
+        { name: 'Consulting & Strategy', url: 'https://yoursite.lovable.app/services/consulting-strategy' }
+      ]} />
       <Header />
       
       {/* Hero Section */}
