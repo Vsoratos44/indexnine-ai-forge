@@ -55,7 +55,6 @@ import Careers from "./pages/about/Careers";
 
 // Events Platform Pages - Only user-facing features
 import Events from "./pages/events/Events";
-import RegistrationAndTicketing from "./pages/events/features/RegistrationAndTicketing";
 import OnSiteExperience from "./pages/events/features/OnSiteExperience";
 
 const queryClient = new QueryClient();
@@ -112,7 +111,6 @@ const App = () => (
           
           {/* Events Platform Routes - User-facing only */}
           <Route path="/events" element={<Events />} />
-          <Route path="/events/features/registration-and-ticketing" element={<RegistrationAndTicketing />} />
           <Route path="/events/features/on-site-experience" element={<OnSiteExperience />} />
           
           {/* CMS Routes */}

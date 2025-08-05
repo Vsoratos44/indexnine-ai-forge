@@ -255,6 +255,184 @@ export type Database = {
         }
         Relationships: []
       }
+      event_form_fields: {
+        Row: {
+          conditional_logic: Json | null
+          created_at: string
+          event_id: string
+          field_label: string
+          field_name: string
+          field_type: string
+          id: string
+          options: Json | null
+          order_position: number | null
+          required: boolean | null
+        }
+        Insert: {
+          conditional_logic?: Json | null
+          created_at?: string
+          event_id: string
+          field_label: string
+          field_name: string
+          field_type: string
+          id?: string
+          options?: Json | null
+          order_position?: number | null
+          required?: boolean | null
+        }
+        Update: {
+          conditional_logic?: Json | null
+          created_at?: string
+          event_id?: string
+          field_label?: string
+          field_name?: string
+          field_type?: string
+          id?: string
+          options?: Json | null
+          order_position?: number | null
+          required?: boolean | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "event_form_fields_event_id_fkey"
+            columns: ["event_id"]
+            isOneToOne: false
+            referencedRelation: "events"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      event_registrations: {
+        Row: {
+          amount_paid: number | null
+          attendee_email: string
+          attendee_name: string
+          checked_in: boolean | null
+          checked_in_at: string | null
+          company_name: string | null
+          created_at: string
+          event_id: string
+          id: string
+          industry: string | null
+          job_title: string | null
+          payment_status: string | null
+          phone: string | null
+          promo_code: string | null
+          qr_code: string | null
+          registration_data: Json | null
+          registration_status: string | null
+          updated_at: string
+          waitlist_position: number | null
+          waitlisted: boolean | null
+        }
+        Insert: {
+          amount_paid?: number | null
+          attendee_email: string
+          attendee_name: string
+          checked_in?: boolean | null
+          checked_in_at?: string | null
+          company_name?: string | null
+          created_at?: string
+          event_id: string
+          id?: string
+          industry?: string | null
+          job_title?: string | null
+          payment_status?: string | null
+          phone?: string | null
+          promo_code?: string | null
+          qr_code?: string | null
+          registration_data?: Json | null
+          registration_status?: string | null
+          updated_at?: string
+          waitlist_position?: number | null
+          waitlisted?: boolean | null
+        }
+        Update: {
+          amount_paid?: number | null
+          attendee_email?: string
+          attendee_name?: string
+          checked_in?: boolean | null
+          checked_in_at?: string | null
+          company_name?: string | null
+          created_at?: string
+          event_id?: string
+          id?: string
+          industry?: string | null
+          job_title?: string | null
+          payment_status?: string | null
+          phone?: string | null
+          promo_code?: string | null
+          qr_code?: string | null
+          registration_data?: Json | null
+          registration_status?: string | null
+          updated_at?: string
+          waitlist_position?: number | null
+          waitlisted?: boolean | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "event_registrations_event_id_fkey"
+            columns: ["event_id"]
+            isOneToOne: false
+            referencedRelation: "events"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      events: {
+        Row: {
+          capacity: number | null
+          category: string | null
+          created_at: string
+          date: string
+          description: string | null
+          id: string
+          image_url: string | null
+          location: string
+          organizer_email: string | null
+          price: number | null
+          registration_open: boolean | null
+          requires_approval: boolean | null
+          time: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          capacity?: number | null
+          category?: string | null
+          created_at?: string
+          date: string
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          location: string
+          organizer_email?: string | null
+          price?: number | null
+          registration_open?: boolean | null
+          requires_approval?: boolean | null
+          time: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          capacity?: number | null
+          category?: string | null
+          created_at?: string
+          date?: string
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          location?: string
+          organizer_email?: string | null
+          price?: number | null
+          registration_open?: boolean | null
+          requires_approval?: boolean | null
+          time?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       intent_signals: {
         Row: {
           created_at: string
@@ -411,6 +589,56 @@ export type Database = {
             columns: ["visitor_id"]
             isOneToOne: false
             referencedRelation: "website_visitors"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      promo_codes: {
+        Row: {
+          active: boolean | null
+          code: string
+          created_at: string
+          discount_type: string | null
+          discount_value: number | null
+          event_id: string
+          id: string
+          usage_limit: number | null
+          used_count: number | null
+          valid_from: string | null
+          valid_until: string | null
+        }
+        Insert: {
+          active?: boolean | null
+          code: string
+          created_at?: string
+          discount_type?: string | null
+          discount_value?: number | null
+          event_id: string
+          id?: string
+          usage_limit?: number | null
+          used_count?: number | null
+          valid_from?: string | null
+          valid_until?: string | null
+        }
+        Update: {
+          active?: boolean | null
+          code?: string
+          created_at?: string
+          discount_type?: string | null
+          discount_value?: number | null
+          event_id?: string
+          id?: string
+          usage_limit?: number | null
+          used_count?: number | null
+          valid_from?: string | null
+          valid_until?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "promo_codes_event_id_fkey"
+            columns: ["event_id"]
+            isOneToOne: false
+            referencedRelation: "events"
             referencedColumns: ["id"]
           },
         ]
