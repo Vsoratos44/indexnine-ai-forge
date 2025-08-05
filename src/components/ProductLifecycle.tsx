@@ -40,7 +40,7 @@ const ProductLifecycle = () => {
   ];
 
   return (
-    <section data-section="product-lifecycle" className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
+    <section data-section="product-lifecycle" className="py-16 sm:py-20 lg:py-24 xl:py-32 bg-gradient-section relative overflow-hidden">
       {/* Background blur elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
@@ -48,53 +48,62 @@ const ProductLifecycle = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-accent/5 rounded-full blur-2xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16 lg:mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground-dark mb-4 sm:mb-6 leading-tight tracking-tight font-montserrat">
             Product Lifecycle:{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Every Step Counts
             </span>
           </h2>
-          <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto px-4">
             Our product engineering services are purpose-built to meet your specific needs at each phase of the product lifecycle. along with case studies to show you exactly what we mean.
           </p>
         </div>
 
-        {/* 2x2 Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+        {/* 2x2 Grid Layout - Single column on mobile, 2 columns on md+ */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
           {phases.map((phase, index) => (
             <div 
               key={index}
-              className="relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-3xl p-8 lg:p-10 shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
+              className="relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
               style={{animationDelay: `${index * 0.15}s`}}
             >
               {/* Inner glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/3 via-transparent to-brand-purple/3 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/3 via-transparent to-brand-purple/3 rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              <div className="relative z-10 flex items-start space-x-6">
-                {/* Icon Container */}
-                <div className="flex-shrink-0 bg-gradient-to-br from-brand-primary/10 via-brand-primary/5 to-brand-purple/10 backdrop-blur-md rounded-2xl w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center border border-brand-primary/20 shadow-md group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                  <phase.icon className="w-8 h-8 lg:w-10 lg:h-10 text-brand-primary group-hover:text-brand-primary-dark transition-colors duration-300" />
+              <div className="relative z-10">
+                {/* Icon and Title Section */}
+                <div className="flex items-start space-x-4 sm:space-x-6 mb-4 sm:mb-6">
+                  {/* Icon Container */}
+                  <div className="flex-shrink-0 bg-gradient-to-br from-brand-primary/10 via-brand-primary/5 to-brand-purple/10 backdrop-blur-md rounded-xl sm:rounded-2xl w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center border border-brand-primary/20 shadow-md group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                    <phase.icon className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-brand-primary group-hover:text-brand-primary-dark transition-colors duration-300" />
+                  </div>
+
+                  {/* Title Section */}
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground-dark mb-1 sm:mb-2 leading-tight font-montserrat">{phase.title}</h3>
+                    <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-brand-primary mb-3 sm:mb-4 font-montserrat">{phase.subtitle}</h4>
+                  </div>
                 </div>
 
                 {/* Content */}
-                <div className="flex-1">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-foreground-dark mb-2 leading-tight font-montserrat">{phase.title}</h3>
-                  <h4 className="text-lg lg:text-xl font-semibold text-brand-primary mb-4 font-montserrat">{phase.subtitle}</h4>
-                  <p className="text-foreground-dark-muted leading-relaxed text-base lg:text-lg font-light font-montserrat mb-6">{phase.description}</p>
+                <div className="space-y-4">
+                  <p className="text-foreground-dark-muted leading-relaxed text-sm sm:text-base lg:text-lg font-light font-montserrat">{phase.description}</p>
                   
                   {/* Client Example */}
-                  <p className="text-sm text-foreground-dark-muted leading-relaxed font-montserrat mb-4">
+                  <p className="text-xs sm:text-sm text-foreground-dark-muted leading-relaxed font-montserrat">
                     {phase.example}
                   </p>
                   
                   {/* Case Study Button */}
-                  <Link to={phase.caseStudyLink}>
-                    <Button variant="outline" size="sm" className="text-brand-primary border-brand-primary/30 hover:bg-brand-primary/10">
-                      Check out the full case study here
-                    </Button>
-                  </Link>
+                  <div className="pt-2">
+                    <Link to={phase.caseStudyLink}>
+                      <Button variant="outline" size="sm" className="w-full sm:w-auto text-brand-primary border-brand-primary/30 hover:bg-brand-primary/10 text-xs sm:text-sm">
+                        Check out the full case study here
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
