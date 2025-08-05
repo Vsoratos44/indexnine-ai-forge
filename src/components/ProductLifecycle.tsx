@@ -1,6 +1,7 @@
 import React from 'react';
 import { Rocket, BarChart3, TrendingUp, Settings } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Button } from './ui/button';
 
 const ProductLifecycle = () => {
   const phases = [
@@ -9,23 +10,23 @@ const ProductLifecycle = () => {
       title: "Launch",
       subtitle: "Excellence from Day One",
       description: "We help founders and innovators turn bold ideas into viable, market-ready products.",
-      example: "We built a complex AI research agent to disrupt the high-cost philanthropic consulting market. We didn't just build an MVP; we built the foundation for a scalable platform by prioritizing high-value ROI from the start. Check out the full case study here.",
+      example: "We built a complex AI research agent to disrupt the high-cost philanthropic consulting market.",
       caseStudyLink: "/case-studies/launch"
     },
     {
       icon: BarChart3,
       title: "Pivot",
       subtitle: "Finding Product-Market Fit",
-      description: "When the market speaks, we listen. We partner with companies to provide data-backed insights at critical inflection points and turn potential roadblocks into opportunities.",
-      example: "We helped a security client pivot from a simple auditing tool to a full-fledged provisioning product. Check out the full case study here.",
+      description: "When the market speaks, we listen. We partner with companies to provide data-backed insights at critical inflection points.",
+      example: "We helped a security client pivot from a simple auditing tool to a full-fledged provisioning product.",
       caseStudyLink: "/case-studies/pivot"
     },
     {
       icon: TrendingUp,
       title: "Grow",
       subtitle: "Creating Revenue Streams with AI",
-      description: "We help successful products evolve into dominant platforms. By leveraging custom AI models, we identify new opportunities in your existing assets. Industry veterans lead our AI consulting services with the rare expertise needed to identify where AI can enhance your operations.",
-      example: "For a gaming industry client, we developed Cricket LLM, an AI agent designed to deliver a nimble and scalable revenue stream. Check out the full case study here.",
+      description: "We help successful products evolve into dominant platforms. By leveraging custom AI models, we identify new opportunities in your existing assets.",
+      example: "For a gaming industry client, we developed Cricket LLM, an AI agent designed to deliver a nimble and scalable revenue stream.",
       caseStudyLink: "/case-studies/grow"
     },
     {
@@ -33,7 +34,7 @@ const ProductLifecycle = () => {
       title: "Mature",
       subtitle: "Modernizing for Scale and Efficiency",
       description: "Technical debt is an issue that even industry-leading companies can struggle with. We specialize in the complex challenge of legacy system modernization.",
-      example: "Our client needed a complete rearchitecture of a 16-year-old, mission-critical system that was actively integrated with 178 e-commerce platforms. By ensuring scalable, efficient, and reliable growth, we delivered long-term cost savings and enabled our client to avoid short-term obstacles. Check out the full case study here.",
+      example: "Our client needed a complete rearchitecture of a 16-year-old, mission-critical system that was actively integrated with 178 e-commerce platforms.",
       caseStudyLink: "/case-studies/mature"
     }
   ];
@@ -84,9 +85,16 @@ const ProductLifecycle = () => {
                   <p className="text-foreground-dark-muted leading-relaxed text-base lg:text-lg font-light font-montserrat mb-6">{phase.description}</p>
                   
                   {/* Client Example */}
-                  <p className="text-sm text-foreground-dark-muted leading-relaxed font-montserrat">
+                  <p className="text-sm text-foreground-dark-muted leading-relaxed font-montserrat mb-4">
                     {phase.example}
                   </p>
+                  
+                  {/* Case Study Button */}
+                  <Link to={phase.caseStudyLink}>
+                    <Button variant="outline" size="sm" className="text-brand-primary border-brand-primary/30 hover:bg-brand-primary/10">
+                      Check out the full case study here
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
