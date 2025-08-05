@@ -9,11 +9,14 @@ import { AuthProvider } from "./hooks/useAuth";
 import Index from "./pages/Index"; // Keep homepage immediate
 import NotFound from "./pages/NotFound"; // Keep 404 immediate
 
+console.log('App.tsx loading...');
+
 // Lazy load all other pages to reduce initial bundle size
 const CMSLogin = lazy(() => import("./pages/cms/Login"));
 const CMSDashboard = lazy(() => import("./pages/cms/Dashboard"));
 const ContentEditor = lazy(() => import("./pages/cms/ContentEditor"));
-const EventManagement = lazy(() => import("./pages/cms/EventManagement").then(module => ({ default: module.EventManagement })));
+// Fix EventManagement import - it's a named export
+const EventManagement = lazy(() => import("./pages/cms/EventManagement").then(m => ({ default: m.EventManagement })));
 
 // Service Pages - Lazy loaded
 const CustomSoftware = lazy(() => import("./pages/services/CustomSoftware"));
@@ -79,7 +82,9 @@ const queryClient = new QueryClient({
   },
 });
 
-const App = () => (
+const App = () => {
+  console.log('App component rendering...');
+  return (
   <QueryClientProvider client={queryClient}>
     <AuthProvider>
       <TooltipProvider>
@@ -151,6 +156,7 @@ const App = () => (
       </TooltipProvider>
     </AuthProvider>
   </QueryClientProvider>
-);
+  );
+};
 
 export default App;

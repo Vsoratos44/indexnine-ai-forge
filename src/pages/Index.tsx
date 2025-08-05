@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { useOptimizedContent } from '@/hooks/useOptimizedContent';
+import { useContent } from '@/hooks/useContent';
 import { OrganizationSchema, WebPageSchema } from '@/components/SEOStructuredData';
 
 // Lazy load heavy components that are below the fold
@@ -24,44 +24,28 @@ const SectionLoader = () => (
 );
 
 const Index = () => {
-  const { content, loading, hasContent, fetchContent } = useOptimizedContent();
+  console.log('Index page loading...');
+  const { content, loading } = useContent();
   const [useDynamicContent, setUseDynamicContent] = useState(false);
-  const [contentRequested, setContentRequested] = useState(false);
-
-  // Only fetch content when user scrolls or after initial load completes
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!contentRequested && window.scrollY > 100) {
-        setContentRequested(true);
-        fetchContent();
-      }
-    };
-
-    // Also try to fetch after a delay to avoid blocking initial render
-    const delayedFetch = setTimeout(() => {
-      if (!contentRequested) {
-        setContentRequested(true);
-        fetchContent();
-      }
-    }, 2000);
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      clearTimeout(delayedFetch);
-    };
-  }, [contentRequested, fetchContent]);
 
   // Check if we should use dynamic content
   useEffect(() => {
-    if (hasContent && content.some(item => item.published)) {
+    if (content.length > 0 && content.some(item => item.published)) {
       setUseDynamicContent(true);
     }
-  }, [hasContent, content]);
+  }, [content]);
 
-  // Don't show loading state on initial render - show static content immediately
-  const showStaticContent = !useDynamicContent || !hasContent;
+  // Show loading state only if actually loading
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-hero flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand-primary mx-auto mb-4"></div>
+          <p className="text-foreground-white/60">Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen">
@@ -77,7 +61,7 @@ const Index = () => {
       <Hero />
 
       {/* Content Strategy: Show static content by default, replace with dynamic if available */}
-      {useDynamicContent && hasContent ? (
+      {useDynamicContent && content.length > 0 ? (
         <Suspense fallback={<SectionLoader />}>
           <DynamicContentRenderer contentItems={content} />
         </Suspense>
