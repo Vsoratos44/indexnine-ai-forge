@@ -7,8 +7,11 @@ const PracticesStudios = () => {
   const studioData = {
     innovation: {
       title: "The Innovation Lab",
-      description: "Our specialized team for rapid prototyping, emerging technologies, and disruptive solutions. Perfect for startups and innovation initiatives within larger organizations.",
-      buttonText: "Explore Innovation lab",
+      subtitle: "For Startups and High-Growth Ventures",
+      description: "Designed for startups, this is where speed, agility, and product-market fit are paramount. Innovation Lab clients leverage our Sprint Zero methodology to stress-test ideas, optimize frameworks, and build scalable products.",
+      additionalText: "We provide the design services and agile development teams needed to quickly turn your vision into a funded, market-ready reality.",
+      buttonText: "Explore Innovation Lab",
+      linkUrl: "/engagement-models/innovation-lab/",
       features: [
         "Rapid MVP development",
         "AI/ML integration", 
@@ -21,8 +24,11 @@ const PracticesStudios = () => {
     },
     enterprise: {
       title: "The Enterprise Studio", 
-      description: "Enterprise-grade solutions with focus on scalability, security, and integration. Built for organizations requiring mission-critical software systems.",
-      buttonText: "Book a consultation",
+      subtitle: "For Enterprise SMBs and F1000",
+      description: "Built for businesses that require scale, security, and process excellence, The Enterprise Studio provides the maturity and rigor needed for mission-critical product development. With a focus on complex digital transformation consulting and enterprise software development, enterprise businesses enjoy first-in-class quality at an unparalleled rate.",
+      additionalText: "",
+      buttonText: "Explore Enterprise Studio",
+      linkUrl: "/engagement-models/enterprise-studio/",
       features: [
         "Enterprise scalability",
         "Security & compliance",
@@ -46,6 +52,18 @@ const PracticesStudios = () => {
       </div>
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16 lg:mb-20">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
+            Innovation & Enterprise:{' '}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Our Practices
+            </span>
+          </h2>
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
+            Our shift to meet the maturation needs of our clients required a new depth of specialization. To meet this, we've organized our bases of expertise in two dedicated practices.
+          </p>
+        </div>
+        
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left Content - Enhanced */}
           <div className="space-y-16 order-2 lg:order-1">
@@ -77,12 +95,20 @@ const PracticesStudios = () => {
             <div className="relative min-h-[300px]">
               <div className="absolute -left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-brand-primary to-brand-accent rounded-full"></div>
               <div className="pl-12">
-                <h3 className="text-3xl lg:text-4xl font-bold text-foreground-dark mb-6 leading-tight font-montserrat">
+                <h3 className="text-3xl lg:text-4xl font-bold text-foreground-dark mb-2 leading-tight font-montserrat">
                   {currentStudio.title}
                 </h3>
-                <p className="text-lg lg:text-xl text-foreground-dark-muted mb-8 leading-relaxed font-light font-montserrat">
+                <h4 className="text-lg lg:text-xl font-semibold text-brand-primary mb-6 font-montserrat">
+                  {currentStudio.subtitle}
+                </h4>
+                <p className="text-lg lg:text-xl text-foreground-dark-muted mb-6 leading-relaxed font-light font-montserrat">
                   {currentStudio.description}
                 </p>
+                {currentStudio.additionalText && (
+                  <p className="text-base lg:text-lg text-foreground-dark-muted mb-8 leading-relaxed font-light font-montserrat">
+                    {currentStudio.additionalText}
+                  </p>
+                )}
                 <Button 
                   variant={activeStudio === 'innovation' ? 'outline' : 'hero'} 
                   size="lg" 

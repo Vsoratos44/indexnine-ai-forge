@@ -6,19 +6,19 @@ const Differentiators = () => {
     {
       icon: Shield,
       title: "PE-Backed Stability & Security",
-      description: "Backed by leading private equity investors, we provide the financial stability and security that ensures long-term partnership reliability.",
+      description: "We're a private-equity backed software company, a crucial differentiator that establishes long-term vision with the stability to make strategic investments in our own excellence. We've heavily invested in robust support functions and a dedicated studios model.",
       gradient: "from-blue-500 to-cyan-500"
     },
     {
       icon: Code,
       title: "Full Stack Product Engineers",
-      description: "Our engineers aren't just coders – they're product thinkers who understand business goals and can translate it into technical solutions.",
+      description: "Great people and curated talent rise to the top. That's why we're obsessed with cultivating \"3X Engineers\". An IndexNine engineer possesses a deep and diverse technical skillset, a true product mindset that empowers them to question, investigate, and innovate, along with the confidence to contribute ideas and communicate with clients as a peer and teammate.",
       gradient: "from-purple-500 to-pink-500"
     },
     {
       icon: Sparkles,
-      title: "AI Forward Innovation",
-      description: "We integrate AI capabilities into every solution we build, ensuring your products are future-proof and leverage the latest advancements.",
+      title: "AI-Forward Innovation",
+      description: "We are an AI-first company inside and out. This isn't just about offering AI consultation; it's about embedding AI innovation in the fabric of our operations. We use AI to accelerate and optimize our delivery.",
       gradient: "from-violet-500 to-purple-500"
     }
   ];
@@ -41,13 +41,13 @@ const Differentiators = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-8 leading-tight tracking-tight">
-            It's Not Just What We Do. It's How
-          </h2>
-          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              We Win Together
+              How We Win Together.
             </span>
-          </h3>
+          </h2>
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
+            Our Secret Sauce
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto">

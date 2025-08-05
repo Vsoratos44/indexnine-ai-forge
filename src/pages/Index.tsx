@@ -102,12 +102,12 @@ const Index = () => {
       <section id="home-contact" className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-            Ready to transform your idea into an enduring reality?
+            Ready to make your vision a reality?
           </h2>
           <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
-            Let's discuss how our product mindset and AI-forward engineering excellence can accelerate your growth. Schedule a complimentary, no-obligation strategy call with our experts today.
+            Thinking about what's next for your business? Let's talk. Schedule a free strategy session with our product engineering experts and discover what Indexnine can do for you today.
           </p>
-          <Button variant="hero" size="xl">Let's Build Together</Button>
+          <Button variant="hero" size="xl">Let's Get Started</Button>
         </div>
       </section>
       

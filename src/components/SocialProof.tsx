@@ -4,9 +4,8 @@ import CountUp from './CountUp';
 const SocialProof = () => {
   const stats = [
     { value: 104, suffix: "+", label: "Solutions Delivered" },
-    { value: 220, suffix: "+", label: "Engineers & Designers" },
-    { value: 99, suffix: "+", label: "Successful Projects" },
-    { value: 95, suffix: "+", label: "Customers Past & Present" },
+    { value: 220, suffix: "+", label: "Engineers and Designers" },
+    { value: 95, suffix: "+", label: "Customers" },
     { value: 6, suffix: "", label: "Core Studios" },
     { value: 92, suffix: "%", label: "Client Retention" }
   ];
@@ -22,6 +21,15 @@ const SocialProof = () => {
       </div>
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16 lg:mb-20">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
+            Client Outcomes
+          </h2>
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
+            Our success isn't measured by the volume of code written; our success is measured in the value we create for our clients.
+          </p>
+        </div>
+        
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left side - Chart with glassmorphism */}
           <div className="relative order-2 lg:order-1">

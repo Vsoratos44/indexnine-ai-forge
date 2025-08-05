@@ -21,57 +21,35 @@ const InsightsCarousel = () => {
     {
       id: '1',
       type: 'eBooks',
-      title: 'AI-Driven Product Development',
-      description: 'A comprehensive guide to integrating artificial intelligence into your product development lifecycle for maximum efficiency and innovation.',
+      title: 'The CXO\'s Guide to Building AI Products',
+      description: 'A comprehensive guide for executive leaders on strategic AI product development and implementation.',
       date: 'January 15, 2025',
       readTime: '45 min read',
-      category: 'AI & Innovation',
+      category: 'AI Strategy',
       image: '/api/placeholder/400/300',
-      link: '/ebooks/ai-driven-development'
+      link: '/ebooks/cxo-guide-ai-products'
     },
     {
       id: '2',
       type: 'Blogs',
-      title: 'The Future of Enterprise Software',
-      description: 'Exploring emerging trends and technologies that will shape enterprise software development in the next decade.',
+      title: 'The Modern Analytics Platform: A Blueprint for Your Data Strategy',
+      description: 'Essential patterns and architecture for building scalable, modern analytics platforms that drive business value.',
       date: 'January 12, 2025',
-      readTime: '8 min read',
-      category: 'Enterprise',
+      readTime: '12 min read',
+      category: 'Data Strategy',
       image: '/api/placeholder/400/300',
-      link: '/blog/future-enterprise-software'
+      link: '/blog/modern-analytics-platform'
     },
     {
       id: '3',
-      type: 'Case Studies',
-      title: 'FinTech Startup: 10x Growth',
-      description: 'How we helped a fintech startup scale their platform to handle 10x user growth while maintaining 99.9% uptime.',
-      date: 'January 10, 2025',
-      readTime: '12 min read',
-      category: 'Success Story',
-      image: '/api/placeholder/400/300',
-      link: '/case-studies/fintech-growth'
-    },
-    {
-      id: '4',
-      type: 'eBooks',
-      title: 'Digital Transformation Playbook',
-      description: 'A step-by-step guide for enterprises looking to modernize their technology stack and processes.',
-      date: 'January 8, 2025',
-      readTime: '60 min read',
-      category: 'Digital Transformation',
-      image: '/api/placeholder/400/300',
-      link: '/ebooks/digital-transformation'
-    },
-    {
-      id: '5',
       type: 'Blogs',
-      title: 'Microservices Best Practices',
-      description: 'Essential patterns and practices for building scalable, maintainable microservices architectures.',
-      date: 'January 5, 2025',
+      title: 'Beyond Testing: A Leader\'s Guide to True Quality Engineering',
+      description: 'How modern QE practices go beyond traditional testing to embed quality throughout the product development lifecycle.',
+      date: 'January 10, 2025',
       readTime: '10 min read',
-      category: 'Architecture',
+      category: 'Quality Engineering',
       image: '/api/placeholder/400/300',
-      link: '/blog/microservices-best-practices'
+      link: '/blog/beyond-testing-quality-engineering'
     }
   ];
 
@@ -119,13 +97,12 @@ const InsightsCarousel = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-8 leading-tight tracking-tight font-montserrat">
-            Our Success is Measured by the{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Value We Create
+              Insights That Shape Products
             </span>
           </h2>
           <p className="text-xl text-foreground-dark-muted max-w-3xl mx-auto font-light font-montserrat">
-            Discover insights, strategies, and success stories that drive innovation and growth
+            Our work at the forefront of product engineering and AI consulting offers a unique perspective. We're committed to sharing what we learn with leaders navigating the complex landscape of digital innovation. Explore our thought leadership to gain actionable insights for your product journey.
           </p>
         </div>
 
@@ -218,7 +195,7 @@ const InsightsCarousel = () => {
               size="lg"
               className="backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300 px-8 py-4 rounded-2xl font-semibold text-lg font-montserrat"
             >
-              View All Insights <ArrowRight className="w-5 h-5 ml-2" />
+              Explore All Our Insights <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
         </div>

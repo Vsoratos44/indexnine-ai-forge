@@ -5,18 +5,18 @@ const ClientExperience = () => {
   const experiences = [
     {
       icon: Zap,
-      title: "🚀 Acceleration & Velocity",
-      description: "Our snap.mvp reusable code libraries and AI-powered workflows deliver with industry-leading velocity. We turn complex ideas into tangible progress in days, not months."
+      title: "Acceleration",
+      description: "We know that time is the most valuable resource to any operation, that's why we focus on delivering excellence fast. Our code libraries and AI-first development dramatically accelerate delivery without sacrificing quality."
     },
     {
       icon: Eye,
-      title: "🔍 Radical Transparency",  
-      description: "Our Sprint Zero framework gives you a clear roadmap and budget before you commit. Our proprietary Customer Experience App provides an unparalleled, real-time view into project health, team performance, and delivery metrics—eliminating the 'black box' of outsourcing."
+      title: "Radical Transparency",  
+      description: "We eliminate the \"black box\" fear that plagues offshore engagements. Our process begins with Sprint Zero, our comprehensive discovery and design process that provides you with a technical roadmap, precise budget, and delivery timeline before any long-term commitment is made."
     },
     {
       icon: Users,
-      title: "🤝 A Founder's Mindset",
-      description: "We succeed when you succeed. We put 'skin in the game' with outcome-based and success-fee models, ensuring our goals are perfectly aligned with your business outcomes."
+      title: "The Founder Mindset",
+      description: "We believe in having skin in the game. For select projects, we offer outcome-based engagement models that tie our success directly to yours. We've tackled complex regression testing challenges on a \"success fee\" basis. We can create a customized business model of tiered engagement costs based on delivered results."
     }
   ];
 
@@ -32,11 +32,14 @@ const ClientExperience = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-6 leading-tight tracking-tight">
-            A World-Class{' '}
+            Client Experience: Working with{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Client Experience
+              Indexnine
             </span>
           </h2>
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
+            How we deliver is as important as what we deliver. Our engagement models are built on three pillars to eliminate the disappointingly common frustrations of outsourcing across the industry.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto">
