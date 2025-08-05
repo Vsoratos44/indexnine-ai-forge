@@ -17,8 +17,9 @@ const Hero = () => {
             Product Innovation.{' '}
             <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Software Engineering Excellence.
+              Software Engineering{' '}
             </span>
+            <TypewriterText />
           </h1>
           
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">

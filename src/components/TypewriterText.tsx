@@ -41,9 +41,9 @@ const TypewriterText = () => {
   }, [currentText, isDeleting, isPaused, currentWordIndex, words]);
 
   return (
-    <span className="relative">
+    <span className="relative text-foreground">
       {currentText}
-      <span className="animate-pulse">|</span>
+      <span className="animate-pulse text-foreground">|</span>
     </span>
   );
 };
