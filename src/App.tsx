@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import CMSLogin from "./pages/cms/Login";
 import CMSDashboard from "./pages/cms/Dashboard";
 import ContentEditor from "./pages/cms/ContentEditor";
+import { EventManagement } from "./pages/cms/EventManagement";
 
 // Service Pages
 import CustomSoftware from "./pages/services/CustomSoftware";
@@ -118,6 +119,7 @@ const App = () => (
           {/* CMS Routes */}
           <Route path="/cms/login" element={<CMSDashboard />} />
           <Route path="/cms/dashboard" element={<CMSDashboard />} />
+          <Route path="/cms/events/:eventId" element={<EventManagement />} />
           <Route path="/cms/content/new" element={<ContentEditor />} />
           <Route path="/cms/content/edit/:id" element={<ContentEditor />} />
           

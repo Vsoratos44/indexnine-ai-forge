@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -18,6 +19,7 @@ interface Event {
 }
 
 export const EventsManager: React.FC = () => {
+  const navigate = useNavigate();
   const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -94,7 +96,12 @@ export const EventsManager: React.FC = () => {
                   </Badge>
                 </div>
                 <div className="pt-3 border-t">
-                  <Button variant="outline" size="sm" className="w-full">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="w-full"
+                    onClick={() => navigate(`/cms/events/${event.id}`)}
+                  >
                     <Settings className="h-4 w-4 mr-2" />
                     Manage Event
                   </Button>
