@@ -12,6 +12,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { useContent } from '@/hooks/useContent';
 import DynamicContentRenderer from '@/components/cms/DynamicContentRenderer';
+import { OrganizationSchema, WebPageSchema } from '@/components/SEOStructuredData';
 
 const Index = () => {
   const { content, loading } = useContent();
@@ -40,6 +41,12 @@ const Index = () => {
   if (useDynamicContent) {
     return (
       <div className="min-h-screen">
+        <OrganizationSchema />
+        <WebPageSchema 
+          title="Leading Technology Consulting & Software Development"
+          description="Transform your ideas into enduring reality with our AI-forward engineering excellence and product mindset"
+          url="https://yoursite.lovable.app/"
+        />
         <Header />
         <DynamicContentRenderer contentItems={content} />
         
@@ -62,6 +69,12 @@ const Index = () => {
   // Fallback to static content
   return (
     <div className="min-h-screen">
+      <OrganizationSchema />
+      <WebPageSchema 
+        title="Leading Technology Consulting & Software Development"
+        description="Transform your ideas into enduring reality with our AI-forward engineering excellence and product mindset"
+        url="https://yoursite.lovable.app/"
+      />
       <Header />
       <Hero />
       <ValueProposition />

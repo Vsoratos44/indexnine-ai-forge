@@ -1,13 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { Breadcrumbs } from '@/components/ui/breadcrumbs';
+import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { Code, Cpu, Database, Shield, Zap, Users } from 'lucide-react';
 
 const CustomSoftware = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceSchema 
+        name="Custom Software Development"
+        description="End-to-end custom software development for web and mobile applications"
+        serviceType="Software Development"
+      />
+      <WebPageSchema 
+        title="Custom Software Development Services"
+        description="Scalable, secure, and high-performance web and mobile applications engineered for growth"
+        url="https://yoursite.lovable.app/services/custom-software"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'Services', url: 'https://yoursite.lovable.app/services' },
+        { name: 'Custom Software Development', url: 'https://yoursite.lovable.app/services/custom-software' }
+      ]} />
       <Header />
+      
+      <div className="container mx-auto px-6 lg:px-8 pt-32">
+        <Breadcrumbs />
+      </div>
       
       {/* Hero Section */}
       <section className="pt-32 pb-24 bg-gradient-hero relative overflow-hidden">
@@ -59,6 +81,27 @@ const CustomSoftware = () => {
                 <p className="text-foreground-dark-muted leading-relaxed font-montserrat">{service.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 lg:px-8">
+          <h3 className="text-2xl font-bold text-foreground mb-8 font-montserrat">Related Services</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link to="/services/ai-ml" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
+              <h4 className="font-semibold text-foreground mb-2">AI & ML Development</h4>
+              <p className="text-foreground-muted text-sm">Integrate AI capabilities into your custom software</p>
+            </Link>
+            <Link to="/services/qa-engineering" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
+              <h4 className="font-semibold text-foreground mb-2">QA Engineering</h4>
+              <p className="text-foreground-muted text-sm">Comprehensive testing for your software solutions</p>
+            </Link>
+            <Link to="/insights/case-study/genesys-modernization" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
+              <h4 className="font-semibold text-foreground mb-2">Success Story</h4>
+              <p className="text-foreground-muted text-sm">See how we modernized Genesys applications</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,13 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { Breadcrumbs } from '@/components/ui/breadcrumbs';
+import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { Brain, Bot, ChartBar, Eye, Lightbulb, Target } from 'lucide-react';
 
 const AiMl = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceSchema 
+        name="AI & ML Development"
+        description="Custom AI and machine learning solutions for business automation and intelligence"
+        serviceType="Software Development"
+      />
+      <WebPageSchema 
+        title="AI & ML Development Services"
+        description="Harness artificial intelligence and machine learning to revolutionize your business processes"
+        url="https://yoursite.lovable.app/services/ai-ml"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'Services', url: 'https://yoursite.lovable.app/services' },
+        { name: 'AI & ML Development', url: 'https://yoursite.lovable.app/services/ai-ml' }
+      ]} />
       <Header />
+      
+      <div className="container mx-auto px-6 lg:px-8 pt-32">
+        <Breadcrumbs />
+      </div>
       
       {/* Hero Section */}
       <section className="pt-32 pb-24 bg-gradient-hero relative overflow-hidden">
@@ -59,6 +81,27 @@ const AiMl = () => {
                 <p className="text-foreground-muted leading-relaxed font-montserrat">{service.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 lg:px-8">
+          <h3 className="text-2xl font-bold text-foreground mb-8 font-montserrat">Related Services</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link to="/services/custom-software" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
+              <h4 className="font-semibold text-foreground mb-2">Custom Software Development</h4>
+              <p className="text-foreground-muted text-sm">End-to-end software solutions with AI integration</p>
+            </Link>
+            <Link to="/services/data-engineering" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
+              <h4 className="font-semibold text-foreground mb-2">Data Engineering</h4>
+              <p className="text-foreground-muted text-sm">Data pipelines and analytics for AI models</p>
+            </Link>
+            <Link to="/studios/ai-studio" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
+              <h4 className="font-semibold text-foreground mb-2">AI Studio</h4>
+              <p className="text-foreground-muted text-sm">Specialized AI development studio</p>
+            </Link>
           </div>
         </div>
       </section>

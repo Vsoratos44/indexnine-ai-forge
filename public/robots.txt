@@ -1,14 +1,18 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://yoursite.lovable.app/sitemap.xml
+
+# Disallow CMS admin areas
+Disallow: /cms/
+Disallow: /events/admin-console
+
+# Allow all other pages for SEO
+Allow: /services/
+Allow: /studios/
+Allow: /engagement/
+Allow: /insights/
+Allow: /case-studies/
+Allow: /about/
+Allow: /events/
