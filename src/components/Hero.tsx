@@ -1,14 +1,14 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import VideoBackground from './VideoBackground';
+import OptimizedVideoBackground from './OptimizedVideoBackground';
 import TypewriterText from './TypewriterText';
 
 const Hero = () => {
   return (
     <section data-section="hero" className="relative h-[65vh] min-h-[600px] overflow-hidden bg-black">
-      {/* Video Background */}
-      <VideoBackground />
+      {/* Optimized Video Background */}
+      <OptimizedVideoBackground />
 
       {/* Content - Precisely positioned */}
       <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">

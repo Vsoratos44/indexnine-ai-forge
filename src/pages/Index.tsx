@@ -1,72 +1,68 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import ValueProposition from '@/components/ValueProposition';
-import SocialProof from '@/components/SocialProof';
-import ClientExperience from '@/components/ClientExperience';
-import ProductLifecycle from '@/components/ProductLifecycle';
-import PracticesStudios from '@/components/PracticesStudios';
-import Differentiators from '@/components/Differentiators';
-import InsightsCarousel from '@/components/InsightsCarousel';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { useContent } from '@/hooks/useContent';
-import DynamicContentRenderer from '@/components/cms/DynamicContentRenderer';
+import { useOptimizedContent } from '@/hooks/useOptimizedContent';
 import { OrganizationSchema, WebPageSchema } from '@/components/SEOStructuredData';
 
-const Index = () => {
-  const { content, loading } = useContent();
-  const [useDynamicContent, setUseDynamicContent] = useState(false);
+// Lazy load heavy components that are below the fold
+const ValueProposition = lazy(() => import('@/components/ValueProposition'));
+const SocialProof = lazy(() => import('@/components/SocialProof'));
+const ClientExperience = lazy(() => import('@/components/ClientExperience'));
+const ProductLifecycle = lazy(() => import('@/components/ProductLifecycle'));
+const PracticesStudios = lazy(() => import('@/components/PracticesStudios'));
+const Differentiators = lazy(() => import('@/components/Differentiators'));
+const InsightsCarousel = lazy(() => import('@/components/InsightsCarousel'));
+const DynamicContentRenderer = lazy(() => import('@/components/cms/DynamicContentRenderer'));
 
-  // Check if we have CMS content and at least one published item
+// Minimal loading component
+const SectionLoader = () => (
+  <div className="min-h-[200px] flex items-center justify-center">
+    <div className="animate-pulse bg-gradient-hero/20 rounded-lg h-32 w-full"></div>
+  </div>
+);
+
+const Index = () => {
+  const { content, loading, hasContent, fetchContent } = useOptimizedContent();
+  const [useDynamicContent, setUseDynamicContent] = useState(false);
+  const [contentRequested, setContentRequested] = useState(false);
+
+  // Only fetch content when user scrolls or after initial load completes
   useEffect(() => {
-    if (content.length > 0 && content.some(item => item.published)) {
+    const handleScroll = () => {
+      if (!contentRequested && window.scrollY > 100) {
+        setContentRequested(true);
+        fetchContent();
+      }
+    };
+
+    // Also try to fetch after a delay to avoid blocking initial render
+    const delayedFetch = setTimeout(() => {
+      if (!contentRequested) {
+        setContentRequested(true);
+        fetchContent();
+      }
+    }, 2000);
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(delayedFetch);
+    };
+  }, [contentRequested, fetchContent]);
+
+  // Check if we should use dynamic content
+  useEffect(() => {
+    if (hasContent && content.some(item => item.published)) {
       setUseDynamicContent(true);
     }
-  }, [content]);
+  }, [hasContent, content]);
 
-  // Show loading state
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gradient-hero flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-primary mx-auto mb-4"></div>
-          <p className="text-foreground-white">Loading content...</p>
-        </div>
-      </div>
-    );
-  }
+  // Don't show loading state on initial render - show static content immediately
+  const showStaticContent = !useDynamicContent || !hasContent;
 
-  // Use dynamic content from CMS if available, otherwise fallback to static content
-  if (useDynamicContent) {
-    return (
-      <div className="min-h-screen">
-        <OrganizationSchema />
-        <WebPageSchema 
-          title="Leading Technology Consulting & Software Development"
-          description="Transform your ideas into enduring reality with our AI-forward engineering excellence and product mindset"
-          url="https://yoursite.lovable.app/"
-        />
-        <Header />
-        <DynamicContentRenderer contentItems={content} />
-        
-        {/* Global CTA Banner - Always show this */}
-        <section id="home-contact" className="py-24 lg:py-32 bg-gradient-hero">
-          <div className="container mx-auto px-6 lg:px-8 text-center">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-              Ready to transform your idea into an enduring reality?
-            </h2>
-            <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
-              Let's discuss how our product mindset and AI-forward engineering excellence can accelerate your growth. Schedule a complimentary, no-obligation strategy call with our experts today.
-            </p>
-            <Button variant="hero" size="xl">Let's Build Together</Button>
-          </div>
-        </section>
-      </div>
-    );
-  }
-
-  // Fallback to static content
   return (
     <div className="min-h-screen">
       <OrganizationSchema />
@@ -75,15 +71,48 @@ const Index = () => {
         description="Transform your ideas into enduring reality with our AI-forward engineering excellence and product mindset"
         url="https://yoursite.lovable.app/"
       />
+      
+      {/* Above-the-fold content - always load immediately */}
       <Header />
       <Hero />
-      <ValueProposition />
-      <SocialProof />
-      <ClientExperience />
-      <ProductLifecycle />
-      <PracticesStudios />
-      <Differentiators />
-      <InsightsCarousel />
+
+      {/* Content Strategy: Show static content by default, replace with dynamic if available */}
+      {useDynamicContent && hasContent ? (
+        <Suspense fallback={<SectionLoader />}>
+          <DynamicContentRenderer contentItems={content} />
+        </Suspense>
+      ) : (
+        <>
+          {/* Below-the-fold static content - lazy loaded */}
+          <Suspense fallback={<SectionLoader />}>
+            <ValueProposition />
+          </Suspense>
+          
+          <Suspense fallback={<SectionLoader />}>
+            <SocialProof />
+          </Suspense>
+          
+          <Suspense fallback={<SectionLoader />}>
+            <ClientExperience />
+          </Suspense>
+          
+          <Suspense fallback={<SectionLoader />}>
+            <ProductLifecycle />
+          </Suspense>
+          
+          <Suspense fallback={<SectionLoader />}>
+            <PracticesStudios />
+          </Suspense>
+          
+          <Suspense fallback={<SectionLoader />}>
+            <Differentiators />
+          </Suspense>
+          
+          <Suspense fallback={<SectionLoader />}>
+            <InsightsCarousel />
+          </Suspense>
+        </>
+      )}
       
       {/* Global CTA Banner */}
       <section id="home-contact" className="py-24 lg:py-32 bg-gradient-hero">
