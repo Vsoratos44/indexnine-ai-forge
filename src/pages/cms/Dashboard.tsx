@@ -22,6 +22,7 @@ import { toast } from 'sonner'
 import AnalyticsDashboard from '@/components/cms/AnalyticsDashboard'
 import ContentManager from '@/components/cms/ContentManager'
 import MediaLibrary from '@/components/cms/MediaLibrary'
+import { EventsManager } from '@/components/cms/EventsManager'
 
 const Dashboard = () => {
   // const { user, signOut } = useAuth() // Disabled for now
@@ -121,15 +122,20 @@ const Dashboard = () => {
 
       <div className="container mx-auto px-6 py-8">
         <Tabs defaultValue="overview" className="space-y-8">
-          <TabsList className="grid w-full grid-cols-4 bg-background-dark/50 backdrop-blur-md border border-white/10">
+          <TabsList className="grid w-full grid-cols-5 bg-background-dark/50 backdrop-blur-md border border-white/10">
             <TabsTrigger value="overview" className="text-foreground-white data-[state=active]:bg-brand-primary data-[state=active]:text-white">Overview</TabsTrigger>
             <TabsTrigger value="content" className="text-foreground-white data-[state=active]:bg-brand-primary data-[state=active]:text-white">Content</TabsTrigger>
+            <TabsTrigger value="events" className="text-foreground-white data-[state=active]:bg-brand-primary data-[state=active]:text-white">Events</TabsTrigger>
             <TabsTrigger value="media" className="text-foreground-white data-[state=active]:bg-brand-primary data-[state=active]:text-white">Media</TabsTrigger>
             <TabsTrigger value="settings" className="text-foreground-white data-[state=active]:bg-brand-primary data-[state=active]:text-white">Settings</TabsTrigger>
           </TabsList>
 
           <TabsContent value="overview" className="space-y-8">
             <AnalyticsDashboard />
+          </TabsContent>
+
+          <TabsContent value="events" className="space-y-8">
+            <EventsManager />
           </TabsContent>
 
           <TabsContent value="content" className="space-y-8">

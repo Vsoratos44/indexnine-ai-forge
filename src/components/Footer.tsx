@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -59,12 +60,20 @@ const Footer = () => {
             <p className="text-foreground-white/60 text-sm">
               © 2024 IndexNine. All rights reserved. | Privacy Policy | Terms of Service
             </p>
-            <a 
-              href="/cms/dashboard" 
-              className="text-foreground-white/60 hover:text-brand-primary transition-colors text-sm border border-white/20 px-4 py-2 rounded-lg hover:border-brand-primary/50"
-            >
-              Employee Login
-            </a>
+            <div className="flex space-x-4">
+              <Link 
+                to="/events/mobile-app" 
+                className="text-foreground-white/60 hover:text-brand-primary transition-colors text-sm border border-white/20 px-4 py-2 rounded-lg hover:border-brand-primary/50"
+              >
+                Events Mobile App
+              </Link>
+              <Link 
+                to="/cms/dashboard" 
+                className="text-foreground-white/60 hover:text-brand-primary transition-colors text-sm border border-white/20 px-4 py-2 rounded-lg hover:border-brand-primary/50"
+              >
+                Employee Login
+              </Link>
+            </div>
           </div>
         </div>
       </div>

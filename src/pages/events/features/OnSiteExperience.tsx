@@ -1,27 +1,16 @@
-/**
- * On-Site Experience Feature Page
- * 
- * This page showcases the seamless on-site experience and check-in capabilities
- * of the RSVPify Event Management Platform. It demonstrates how enterprises can
- * manage complex event logistics with QR codes, seating management, and real-time tracking.
- * 
- * Key Features Highlighted:
- * - QR code-based check-in system with mobile apps
- * - Drag-and-drop seating chart management
- * - Real-time attendance tracking and analytics
- * - Self-service check-in kiosks for large events
- * 
- * CMS Integration: All content is designed for easy backend management
- */
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { ArrowRight, QrCode, MapPin, Smartphone, Monitor, Users, CheckCircle, Star, Clock } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { QrCode, Users, BarChart3, MapPin, Settings, ArrowRight, Star, CheckCircle, Globe, Monitor, Smartphone, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LivingVoidBackground from '@/components/LivingVoidBackground';
+import { QRCodeCheckIn } from '@/components/events/QRCodeCheckIn';
+import { SeatingChartManager } from '@/components/events/SeatingChartManager';
+import { EventAnalytics } from '@/components/events/EventAnalytics';
 
 const OnSiteExperience = () => {
   const [selectedEventId, setSelectedEventId] = useState('550e8400-e29b-41d4-a716-446655440000'); // Default event ID

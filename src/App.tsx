@@ -32,6 +32,7 @@ import InnovationLab from "./pages/engagement/InnovationLab";
 import DedicatedTeams from "./pages/engagement/DedicatedTeams";
 import OutcomeBased from "./pages/engagement/OutcomeBased";
 import ProjectBased from "./pages/engagement/ProjectBased";
+import EventsMobileApp from "./pages/events/EventsMobileApp";
 
 // Insights Pages
 import CaseStudies from "./pages/insights/CaseStudies";
@@ -111,6 +112,7 @@ const App = () => (
           
           {/* Events Platform Routes - User-facing only */}
           <Route path="/events" element={<Events />} />
+          <Route path="/events/mobile-app" element={<EventsMobileApp />} />
           <Route path="/events/features/on-site-experience" element={<OnSiteExperience />} />
           
           {/* CMS Routes */}
