@@ -14,11 +14,12 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-32 flex items-center min-h-full">
         <div className="max-w-5xl mx-auto text-center lg:text-left">
           <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in font-montserrat">
-            Product Innovation.{' '}
+            Product Innovation{' '}
             <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Software Engineering{' '}
+              Software Engineering
             </span>
+            <br />
             <TypewriterText />
           </h1>
           
