@@ -129,6 +129,20 @@ export function EventRegistrationForm({ event, onRegistrationComplete, onClose }
     }
   };
 
+  // Check if event has seating chart
+  const checkSeatingChart = async () => {
+    try {
+      const { data } = await supabase
+        .from('seating_charts')
+        .select('id, total_capacity')
+        .eq('event_id', event.id)
+        .single();
+      return data;
+    } catch (error) {
+      return null;
+    }
+  };
+
   const generateQRCode = (registrationId: string) => {
     // Generate a QR code data string
     const qrData = {
@@ -248,6 +262,39 @@ export function EventRegistrationForm({ event, onRegistrationComplete, onClose }
         status: 'new',
         notes: `Registered for ${event.title}`
       });
+
+      // Check if event has seating chart and auto-assign if needed
+      if (!isWaitlisted) {
+        const seatingChart = await checkSeatingChart();
+        if (seatingChart && formData.special_requirements.toLowerCase().includes('vip')) {
+          // Auto-assign VIP guests to premium tables
+          const { data: tables } = await supabase
+            .from('seating_charts')
+            .select('layout_data')
+            .eq('id', seatingChart.id)
+            .single();
+          
+          if (tables?.layout_data) {
+            const layoutData = typeof tables.layout_data === 'string' 
+              ? JSON.parse(tables.layout_data) 
+              : tables.layout_data;
+            
+            const vipTable = layoutData.tables?.find((table: any) => 
+              table.name.toLowerCase().includes('vip') || table.name.toLowerCase().includes('head')
+            );
+            
+            if (vipTable) {
+              await supabase.from('seating_assignments').insert({
+                event_id: event.id,
+                registration_id: registration.id,
+                table_id: vipTable.id,
+                table_name: vipTable.name,
+                special_requirements: { vip: true, auto_assigned: true }
+              });
+            }
+          }
+        }
+      }
 
       if (currentPrice > 0 && !isWaitlisted) {
         // For paid events, redirect to payment

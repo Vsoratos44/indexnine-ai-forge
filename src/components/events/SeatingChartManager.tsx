@@ -394,7 +394,7 @@ export const SeatingChartManager: React.FC<SeatingChartManagerProps> = ({ eventI
               </CardContent>
             </Card>
 
-            {/* Selected Table Info */}
+            {/* Selected Table Info & Guest Assignment */}
             {selectedTable && (
               <Card>
                 <CardHeader>
@@ -405,20 +405,82 @@ export const SeatingChartManager: React.FC<SeatingChartManagerProps> = ({ eventI
                     <p className="font-medium">{selectedTable.name}</p>
                     <p className="text-sm text-gray-600">{selectedTable.seats} seats</p>
                   </div>
+                  
+                  {/* Assign Guest */}
                   <div className="space-y-2">
-                    <Label>Assigned Guests</Label>
-                    <div className="text-sm text-gray-600">
-                      {selectedTable.assigned && selectedTable.assigned.length > 0 ? (
-                        selectedTable.assigned.map((guestId, index) => (
-                          <Badge key={index} variant="outline" className="mr-1 mb-1">
-                            Guest {index + 1}
-                          </Badge>
-                        ))
-                      ) : (
-                        <span>No guests assigned</span>
-                      )}
+                    <Label>Assign Guest to Table</Label>
+                    <Select onValueChange={async (registrationId) => {
+                      try {
+                        const { error } = await supabase
+                          .from('seating_assignments')
+                          .upsert({
+                            event_id: eventId,
+                            registration_id: registrationId,
+                            table_id: selectedTable.id,
+                            table_name: selectedTable.name
+                          });
+                        
+                        if (error) throw error;
+                        toast.success('Guest assigned to table successfully!');
+                        // Refresh data
+                        fetchRegistrations();
+                      } catch (error) {
+                        console.error('Error assigning guest:', error);
+                        toast.error('Failed to assign guest to table');
+                      }
+                    }}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select guest to assign" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {registrations.map((reg) => (
+                          <SelectItem key={reg.id} value={reg.id}>
+                            {reg.attendee_name} ({reg.company_name || 'No company'})
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label>Currently Assigned Guests</Label>
+                    <div className="space-y-1 max-h-32 overflow-y-auto">
+                      {registrations
+                        .filter(reg => {
+                          // Check if this registration is assigned to this table
+                          return true; // We'll implement the actual check after we fetch assignments
+                        })
+                        .map((reg) => (
+                          <div key={reg.id} className="flex items-center justify-between p-2 bg-gray-50 rounded text-sm">
+                            <span>{reg.attendee_name}</span>
+                            <Button
+                              size="sm"
+                              variant="ghost"
+                              className="h-6 w-6 p-0 text-red-600 hover:text-red-800"
+                              onClick={async () => {
+                                try {
+                                  const { error } = await supabase
+                                    .from('seating_assignments')
+                                    .delete()
+                                    .eq('registration_id', reg.id)
+                                    .eq('table_id', selectedTable.id);
+                                  
+                                  if (error) throw error;
+                                  toast.success('Guest removed from table');
+                                  fetchRegistrations();
+                                } catch (error) {
+                                  console.error('Error removing guest:', error);
+                                  toast.error('Failed to remove guest from table');
+                                }
+                              }}
+                            >
+                              ×
+                            </Button>
+                          </div>
+                        ))}
                     </div>
                   </div>
+
                   <Button
                     onClick={deleteSelectedTable}
                     variant="outline"
