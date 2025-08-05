@@ -6,14 +6,14 @@ import TypewriterText from './TypewriterText';
 
 const Hero = () => {
   return (
-    <section data-section="hero" className="relative h-[75vh] min-h-[700px] overflow-hidden bg-black">
+    <section data-section="hero" className="relative h-[80vh] min-h-[750px] overflow-hidden bg-black">
       {/* Dynamic Video Background */}
       <VideoBackground />
 
       {/* Content - Precisely positioned */}
-      <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-32 flex items-center min-h-full">
+      <div className="relative z-10 container mx-auto px-6 lg:px-8 py-24 flex items-center min-h-full">
         <div className="max-w-5xl mx-auto text-center lg:text-left">
-          <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in font-montserrat">
+          <h1 className="text-[3.375rem] sm:text-[4.375rem] lg:text-[5.375rem] xl:text-[5.875rem] font-bold text-foreground mb-6 leading-[0.9] tracking-tight animate-fade-in font-montserrat">
             Product Innovation{' '}
             <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -23,7 +23,7 @@ const Hero = () => {
             <TypewriterText />
           </h1>
           
-          <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-8 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
             The industry leader in infrastructure modernization, launching digital revenue streams, and AI integration. We don't just build software; we engineer products, platforms, and AI-powered solutions that define market leaders.
           </p>
 
