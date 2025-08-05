@@ -110,6 +110,12 @@ const Header = () => {
               <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
               <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                 <div className="p-4 space-y-2">
+                  <Link to="/engagement/innovation-lab" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                    Innovation Lab
+                  </Link>
+                  <Link to="/engagement/enterprise" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
+                    Enterprise Studio
+                  </Link>
                   <Link to="/engagement/dedicated-teams" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Dedicated Engineering Teams
                   </Link>
@@ -279,6 +285,20 @@ const Header = () => {
               </button>
               {openDropdown === 'engagement' && (
                 <div className="pl-4 space-y-3 border-l-2 border-brand-primary/30">
+                  <Link 
+                    to="/engagement/innovation-lab" 
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    Innovation Lab
+                  </Link>
+                  <Link 
+                    to="/engagement/enterprise" 
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    Enterprise Studio
+                  </Link>
                   <Link 
                     to="/engagement/dedicated-teams" 
                     className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
