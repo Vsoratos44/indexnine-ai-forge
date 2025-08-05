@@ -1,14 +1,14 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import LivingVoidBackground from './LivingVoidBackground';
+import VideoBackground from './VideoBackground';
 import TypewriterText from './TypewriterText';
 
 const Hero = () => {
   return (
     <section data-section="hero" className="relative h-[65vh] min-h-[600px] overflow-hidden bg-black">
-      {/* Three.js Living Void Background */}
-      <LivingVoidBackground />
+      {/* Video Background */}
+      <VideoBackground />
 
       {/* Content - Precisely positioned */}
       <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
