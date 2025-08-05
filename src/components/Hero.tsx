@@ -6,12 +6,12 @@ import TypewriterText from './TypewriterText';
 
 const Hero = () => {
   return (
-    <section data-section="hero" className="relative h-[65vh] min-h-[600px] overflow-hidden bg-black">
+    <section data-section="hero" className="relative h-[75vh] min-h-[700px] overflow-hidden bg-black">
       {/* Dynamic Video Background */}
       <VideoBackground />
 
       {/* Content - Precisely positioned */}
-      <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
+      <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-32 flex items-center min-h-full">
         <div className="max-w-5xl mx-auto text-center lg:text-left">
           <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in font-montserrat">
             Product Innovation.{' '}
@@ -25,14 +25,14 @@ const Hero = () => {
             The industry leader in infrastructure modernization, launching digital revenue streams, and AI integration. We don't just build software; we engineer products, platforms, and AI-powered solutions that define market leaders.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in mt-4">
             <a href="#home-contact">
-              <Button variant="hero" size="xl" className="min-w-[280px]">
+              <Button variant="hero" size="xl" className="min-w-[280px] h-14">
                 Schedule a Strategy Session
               </Button>
             </a>
             <Link to="/services/custom-software">
-              <Button variant="hero-secondary" size="xl" className="min-w-[240px]">
+              <Button variant="hero-secondary" size="xl" className="min-w-[240px] h-14">
                 Get a custom solution
               </Button>
             </Link>
