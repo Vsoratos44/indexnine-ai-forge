@@ -59,6 +59,39 @@ export type Database = {
           },
         ]
       }
+      check_in_logs: {
+        Row: {
+          check_in_method: string | null
+          checked_in_at: string
+          checked_in_by: string | null
+          device_info: Json | null
+          event_id: string
+          id: string
+          location: string | null
+          registration_id: string
+        }
+        Insert: {
+          check_in_method?: string | null
+          checked_in_at?: string
+          checked_in_by?: string | null
+          device_info?: Json | null
+          event_id: string
+          id?: string
+          location?: string | null
+          registration_id: string
+        }
+        Update: {
+          check_in_method?: string | null
+          checked_in_at?: string
+          checked_in_by?: string | null
+          device_info?: Json | null
+          event_id?: string
+          id?: string
+          location?: string | null
+          registration_id?: string
+        }
+        Relationships: []
+      }
       cms_settings: {
         Row: {
           description: string | null
@@ -255,6 +288,42 @@ export type Database = {
         }
         Relationships: []
       }
+      event_analytics: {
+        Row: {
+          attendance_rate: number | null
+          avg_check_in_time: number | null
+          current_capacity: number | null
+          event_id: string
+          id: string
+          metrics: Json | null
+          snapshot_time: string
+          total_checked_in: number | null
+          total_registered: number | null
+        }
+        Insert: {
+          attendance_rate?: number | null
+          avg_check_in_time?: number | null
+          current_capacity?: number | null
+          event_id: string
+          id?: string
+          metrics?: Json | null
+          snapshot_time?: string
+          total_checked_in?: number | null
+          total_registered?: number | null
+        }
+        Update: {
+          attendance_rate?: number | null
+          avg_check_in_time?: number | null
+          current_capacity?: number | null
+          event_id?: string
+          id?: string
+          metrics?: Json | null
+          snapshot_time?: string
+          total_checked_in?: number | null
+          total_registered?: number | null
+        }
+        Relationships: []
+      }
       event_form_fields: {
         Row: {
           conditional_logic: Json | null
@@ -378,6 +447,42 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      event_staff: {
+        Row: {
+          active: boolean | null
+          created_at: string
+          email: string
+          event_id: string
+          id: string
+          name: string
+          permissions: Json | null
+          role: string
+          user_id: string | null
+        }
+        Insert: {
+          active?: boolean | null
+          created_at?: string
+          email: string
+          event_id: string
+          id?: string
+          name: string
+          permissions?: Json | null
+          role?: string
+          user_id?: string | null
+        }
+        Update: {
+          active?: boolean | null
+          created_at?: string
+          email?: string
+          event_id?: string
+          id?: string
+          name?: string
+          permissions?: Json | null
+          role?: string
+          user_id?: string | null
+        }
+        Relationships: []
       }
       events: {
         Row: {
@@ -643,6 +748,72 @@ export type Database = {
           },
         ]
       }
+      seating_assignments: {
+        Row: {
+          assigned_at: string
+          assigned_by: string | null
+          event_id: string
+          id: string
+          registration_id: string
+          seat_number: string | null
+          special_requirements: Json | null
+          table_id: string | null
+          table_name: string | null
+        }
+        Insert: {
+          assigned_at?: string
+          assigned_by?: string | null
+          event_id: string
+          id?: string
+          registration_id: string
+          seat_number?: string | null
+          special_requirements?: Json | null
+          table_id?: string | null
+          table_name?: string | null
+        }
+        Update: {
+          assigned_at?: string
+          assigned_by?: string | null
+          event_id?: string
+          id?: string
+          registration_id?: string
+          seat_number?: string | null
+          special_requirements?: Json | null
+          table_id?: string | null
+          table_name?: string | null
+        }
+        Relationships: []
+      }
+      seating_charts: {
+        Row: {
+          created_at: string
+          event_id: string
+          id: string
+          layout_data: Json
+          name: string
+          total_capacity: number | null
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          event_id: string
+          id?: string
+          layout_data?: Json
+          name: string
+          total_capacity?: number | null
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          event_id?: string
+          id?: string
+          layout_data?: Json
+          name?: string
+          total_capacity?: number | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
       website_visitors: {
         Row: {
           browser: string | null
@@ -714,7 +885,10 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      update_event_analytics: {
+        Args: { event_uuid: string }
+        Returns: undefined
+      }
     }
     Enums: {
       [_ in never]: never
