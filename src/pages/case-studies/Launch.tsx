@@ -29,12 +29,12 @@ const LaunchCaseStudy = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight animate-fade-in font-montserrat">
-              HealthTech Startup: <br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent">From MVP to Market Leader</span>
+              Annotate: <br />
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Launching AI-Powered Disruption in Philanthropic Finance</span>
             </h1>
             
             <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
-              How we helped a HealthTech startup rapidly validate their idea and bring their MVP to market using our lean approach to product development.
+              Taking a bold idea of democratized financial research from launch to market-ready MVP.
             </p>
           </div>
         </div>
@@ -50,23 +50,23 @@ const LaunchCaseStudy = () => {
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-              The Challenge
+              A Market Ripe for Disruption
             </h2>
             <p className="text-lg text-foreground-muted leading-relaxed mb-8">
-              A healthcare startup approached us with a revolutionary idea for patient care management but faced significant challenges:
+              In the upper echelons of philanthropic contributions, making informed decisions is a surprisingly expensive and archaic process. The founder of Annotate saw fundamental flaws in this model:
             </p>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Limited funding and tight timeline to prove market viability</span>
+                <span className="text-foreground-muted">Inaccessible: High costs limited important due diligence to the ultra-wealthy</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Complex regulatory requirements in healthcare industry</span>
+                <span className="text-foreground-muted">Inefficient: Slow, manual methodology neglecting modern technology</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Need for rapid prototyping and user feedback integration</span>
+                <span className="text-foreground-muted">Unscalable: Dependent on limited bandwidth of human consultants</span>
               </li>
             </ul>
           </div>
@@ -78,24 +78,24 @@ const LaunchCaseStudy = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-              Our Launch Strategy
+              A Disciplined Launch Process for a Disruptive MVP
             </h2>
             <p className="text-lg text-foreground-muted leading-relaxed mb-12">
-              We implemented our proven Launch methodology to rapidly validate ideas and bring the MVP to market:
+              Annotate came to Indexnine with the vision. Our job was to translate that vision into a viable, scalable, and market-ready product:
             </p>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">Sprint Zero Framework</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">Sprint Zero - De-Risking the Vision</h3>
                 <p className="text-foreground-muted leading-relaxed">
-                  Conducted comprehensive discovery and validation workshops to define core features and technical architecture before development.
+                  Intensive workshops to validate core problems, map user journeys, define MVP scope, and architect the technical solution using RAG architecture.
                 </p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">Lean Development</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">Engineering an AI Research Agent</h3>
                 <p className="text-foreground-muted leading-relaxed">
-                  Built the MVP using our snap.mvp framework, focusing on core user journeys while maintaining compliance requirements.
+                  Built a sophisticated multi-stage data pipeline with intelligent data ingestion, advanced entity extraction, and unified vectorization.
                 </p>
               </div>
             </div>
@@ -108,34 +108,34 @@ const LaunchCaseStudy = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-12 font-montserrat">
-              Results That Matter
+              The Results
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">12 Weeks</h3>
-                <p className="text-foreground-muted">From Concept to Market</p>
+                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">99%</h3>
+                <p className="text-foreground-muted">Cost Reduction for End-Users</p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">$2.5M</h3>
-                <p className="text-foreground-muted">Series A Funding Raised</p>
+                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">$500</h3>
+                <p className="text-foreground-muted">vs $20K-$50K Traditional Cost</p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">10,000+</h3>
-                <p className="text-foreground-muted">Active Users in 6 Months</p>
+                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">MVP</h3>
+                <p className="text-foreground-muted">Market-Ready Launch</p>
               </div>
             </div>
             
             <div className="text-left">
-              <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Key Achievements:</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Key Outcomes:</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "Successfully validated product-market fit with healthcare providers",
-                  "Achieved HIPAA compliance certification within development timeline",
-                  "Secured strategic partnerships with major healthcare networks",
-                  "Built scalable architecture supporting 50,000+ concurrent users"
+                  "Market-Ready MVP: Functional AI-powered platform validated core business model",
+                  "Complex Data Problem Solved: Robust pipeline for diverse data types",
+                  "Created a Reliable Tech Moat: Proprietary AI engine as core IP",
+                  "Platform for Disruption: Democratized access to philanthropic research"
                 ].map((achievement, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-brand-primary mt-0.5 flex-shrink-0" />
@@ -152,10 +152,10 @@ const LaunchCaseStudy = () => {
       <section className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-            Ready to Launch Your Idea?
+            Ready to Make Your Vision a Reality?
           </h2>
           <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
-            Let's help you rapidly validate and bring your MVP to market with our proven Launch methodology.
+            We provide the strategic discipline, deep technical expertise, and agile execution needed to launch transformative products.
           </p>
           <Button variant="hero" size="xl">Start Your Launch Journey</Button>
         </div>
