@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const VideoBackground = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const video1Ref = useRef<HTMLVideoElement>(null);
+  const video2Ref = useRef<HTMLVideoElement>(null);
+  const [activeVideo, setActiveVideo] = useState<1 | 2>(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   
   const videos = [
     '/videos/Lets_try_this_202508011021.mp4',
@@ -10,46 +12,78 @@ const VideoBackground = () => {
   ];
 
   useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
+    const video1 = video1Ref.current;
+    const video2 = video2Ref.current;
+    
+    if (!video1 || !video2) return;
 
-    const handleVideoEnd = () => {
-      if (currentVideoIndex === 0) {
-        // Move to second video after first one ends
-        setCurrentVideoIndex(1);
-      } else {
-        // Loop the second video
-        video.currentTime = 0;
-        video.play();
-      }
+    // Preload both videos
+    video1.load();
+    video2.load();
+
+    const handleVideo1End = () => {
+      setIsTransitioning(true);
+      
+      // Start second video and fade transition
+      video2.currentTime = 0;
+      video2.play().then(() => {
+        setTimeout(() => {
+          setActiveVideo(2);
+          setIsTransitioning(false);
+        }, 300); // Match transition duration
+      });
     };
 
-    video.addEventListener('ended', handleVideoEnd);
+    const handleVideo2End = () => {
+      // Seamlessly restart the second video for looping
+      video2.currentTime = 0;
+      video2.play();
+    };
+
+    // Set up event listeners
+    video1.addEventListener('ended', handleVideo1End);
+    video2.addEventListener('ended', handleVideo2End);
     
-    // Start playing the current video
-    video.load();
-    video.play().catch(console.error);
+    // Start the first video
+    video1.play().catch(console.error);
 
     return () => {
-      video.removeEventListener('ended', handleVideoEnd);
+      video1.removeEventListener('ended', handleVideo1End);
+      video2.removeEventListener('ended', handleVideo2End);
     };
-  }, [currentVideoIndex]);
+  }, []);
 
   return (
     <div className="absolute inset-0 w-full h-full overflow-hidden">
+      {/* First Video */}
       <video
-        ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover"
+        ref={video1Ref}
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+          activeVideo === 1 && !isTransitioning ? 'opacity-100' : 'opacity-0'
+        }`}
         muted
         playsInline
-        preload="metadata"
-        key={currentVideoIndex}
+        preload="auto"
       >
-        <source src={videos[currentVideoIndex]} type="video/mp4" />
-        Your browser does not support the video tag.
+        <source src={videos[0]} type="video/mp4" />
       </video>
+
+      {/* Second Video */}
+      <video
+        ref={video2Ref}
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+          activeVideo === 2 ? 'opacity-100' : 'opacity-0'
+        }`}
+        muted
+        playsInline
+        preload="auto"
+        loop
+      >
+        <source src={videos[1]} type="video/mp4" />
+      </video>
+
       {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/40 z-10" />
     </div>
   );
 };
