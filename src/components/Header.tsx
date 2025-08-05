@@ -160,9 +160,6 @@ const Header = () => {
                   <Link to="/events" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     Events
                   </Link>
-                  <Link to="/events/features/registration-and-ticketing" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
-                    Registration & Ticketing
-                  </Link>
                   <Link to="/events/features/on-site-experience" className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200">
                     On-Site Experience
                   </Link>
@@ -370,13 +367,6 @@ const Header = () => {
                     onClick={toggleMobileMenu}
                   >
                     Events
-                  </Link>
-                  <Link 
-                    to="/events/features/registration-and-ticketing" 
-                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
-                    onClick={toggleMobileMenu}
-                  >
-                    Registration & Ticketing
                   </Link>
                   <Link 
                     to="/events/features/on-site-experience" 
