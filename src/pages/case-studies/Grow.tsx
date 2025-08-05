@@ -29,12 +29,12 @@ const GrowCaseStudy = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight animate-fade-in font-montserrat">
-              FinTech Solution: <br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent">Scaling for Global Success</span>
+              Sports Interactive: <br />
+              <span className="bg-gradient-primary bg-clip-text text-transparent">AI-Powered Fan Engagement in Real Time</span>
             </h1>
             
             <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
-              How we scaled a FinTech product's infrastructure and features to support expanding user bases and use cases across multiple markets.
+              Unlocking a new level of scalability and solving a technical Gordian knot through automated content creation.
             </p>
           </div>
         </div>
@@ -45,23 +45,26 @@ const GrowCaseStudy = () => {
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-              The Growth Challenge
+              High Stakes, High Pressure, High Speed
             </h2>
             <p className="text-lg text-foreground-muted leading-relaxed mb-8">
-              A successful FinTech platform needed to scale rapidly to meet growing demand and expand internationally:
+              In sports media, an industry estimated to reach $1.19 billion by 2030, the game on the field isn't the battle. The real clash happens in the digital arena, on the timelines of millions of fans demanding instant analysis, reactions, and opportunities for engagement. For Sports Interactive, a premier digital agency managing content for top-tier sports leagues and teams, victory in this arena is its core business.
+            </p>
+            <p className="text-lg text-foreground-muted leading-relaxed mb-8">
+              Their most critical and time-sensitive operation revolved around live-tweeting during matches. The formula for success was brutal: when a pivotal moment happened—an interception, a game-changing play, a buzzer beater—a creative, on-brand, and factually accurate tweet had to hit the timeline within twenty seconds. Any longer and the moment's lost.
             </p>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Exponential user growth causing performance bottlenecks</span>
+                <span className="text-foreground-muted">High operational costs with six-person "war room" during every match</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Complex regulatory compliance across multiple jurisdictions</span>
+                <span className="text-foreground-muted">Unsustainable scaling model tied to headcount growth</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Need for advanced features while maintaining system stability</span>
+                <span className="text-foreground-muted">Three years of failed internal automation attempts</span>
               </li>
             </ul>
           </div>
@@ -73,24 +76,24 @@ const GrowCaseStudy = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-              Scalable Growth Architecture
+              Content Automation Powered By AI
             </h2>
             <p className="text-lg text-foreground-muted leading-relaxed mb-12">
-              We implemented enterprise-grade infrastructure and advanced features to support global scaling:
+              Our Applied AI and Discovery studios initiated the engagement with a rapid, targeted assessment. We mapped their content workflow to identify bottlenecks and quantify the business impact. Our Agentic AI pod architected a bespoke, low-latency AI engine.
             </p>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">Microservices Architecture</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">Real-Time Data Ingestion</h3>
                 <p className="text-foreground-muted leading-relaxed">
-                  Migrated from monolithic to microservices architecture, enabling independent scaling and improved fault tolerance.
+                  Built a high-throughput, event-driven pipeline capable of consuming live sports data feeds with sub-second latency.
                 </p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">Global Infrastructure</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">Cricket LLM Engine</h3>
                 <p className="text-foreground-muted leading-relaxed">
-                  Deployed multi-region cloud infrastructure with automated compliance frameworks for different regulatory requirements.
+                  Engineered a proprietary model with dynamic prompt engineering, multi-layered validation, and fine-tuning on sports commentary and client's historical content.
                 </p>
               </div>
             </div>
@@ -103,34 +106,34 @@ const GrowCaseStudy = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-12 font-montserrat">
-              Exponential Growth Results
+              Transforming a Cost Center Into a Growth Engine
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">10M+</h3>
-                <p className="text-foreground-muted">Active Users Supported</p>
+                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">90%</h3>
+                <p className="text-foreground-muted">Reduction in Operational Costs</p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">25</h3>
-                <p className="text-foreground-muted">Countries Expanded To</p>
+                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">15s</h3>
+                <p className="text-foreground-muted">Tweet Generation Time</p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">99.99%</h3>
-                <p className="text-foreground-muted">System Uptime Achieved</p>
+                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">2 Months</h3>
+                <p className="text-foreground-muted">Solution Delivery Time</p>
               </div>
             </div>
             
             <div className="text-left">
-              <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Growth Achievements:</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Key Outcomes:</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "Scaled to process $2B+ in monthly transaction volume",
-                  "Achieved SOC 2 Type II and PCI DSS compliance globally",
-                  "Reduced infrastructure costs by 40% while improving performance",
-                  "Built real-time fraud detection system with 99.8% accuracy"
+                  "Comprehensive Success: Total automation of in-match tweet generation",
+                  "Exceeded Expectations: Generated content in under 15 seconds",
+                  "Solved Quickly: Complex 3-year challenge resolved in 2 months",
+                  "Proven Scalability: Foundational platform for multi-sport expansion"
                 ].map((achievement, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-brand-primary mt-0.5 flex-shrink-0" />
@@ -147,12 +150,12 @@ const GrowCaseStudy = () => {
       <section className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-            Ready to Scale Your Success?
+            Ready to Automate, Scale, and Lead with AI?
           </h2>
           <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
-            Let's help you build the infrastructure and features needed to support explosive growth.
+            We're ready to help transform your most complex AI challenges into major growth opportunities.
           </p>
-          <Button variant="hero" size="xl">Plan Your Growth Strategy</Button>
+          <Button variant="hero" size="xl">Get Started</Button>
         </div>
       </section>
 
