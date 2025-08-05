@@ -12,9 +12,13 @@ import NotFound from "./pages/NotFound"; // Keep 404 immediate
 console.log('App.tsx loading...');
 
 // Lazy load all other pages to reduce initial bundle size
-const CMSLogin = lazy(() => import("./pages/cms/Login"));
+const CMSAuth = lazy(() => import("./pages/cms/Auth"));
 const CMSDashboard = lazy(() => import("./pages/cms/Dashboard"));
 const ContentEditor = lazy(() => import("./pages/cms/ContentEditor"));
+const CMSArticles = lazy(() => import("./pages/cms/Articles"));
+const CMSUsers = lazy(() => import("./pages/cms/Users"));
+const MediaLibrary = lazy(() => import("./pages/cms/MediaLibrary"));
+const Categories = lazy(() => import("./pages/cms/Categories"));
 // Fix EventManagement import - it's a named export
 const EventManagement = lazy(() => import("./pages/cms/EventManagement").then(m => ({ default: m.EventManagement })));
 
@@ -142,8 +146,12 @@ const App = () => {
               <Route path="/events/features/on-site-experience" element={<OnSiteExperience />} />
               
               {/* CMS Routes - Lazy loaded */}
-              <Route path="/cms/login" element={<CMSDashboard />} />
+              <Route path="/cms/auth" element={<CMSAuth />} />
               <Route path="/cms/dashboard" element={<CMSDashboard />} />
+              <Route path="/cms/articles" element={<CMSArticles />} />
+              <Route path="/cms/users" element={<CMSUsers />} />
+              <Route path="/cms/media" element={<MediaLibrary />} />
+              <Route path="/cms/categories" element={<Categories />} />
               <Route path="/cms/events/:eventId" element={<EventManagement />} />
               <Route path="/cms/content/new" element={<ContentEditor />} />
               <Route path="/cms/content/edit/:id" element={<ContentEditor />} />

@@ -23,7 +23,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
   }
 
   if (!user) {
-    return <Navigate to="/cms/login" replace />
+    return <Navigate to="/cms/auth" replace />
   }
 
   return <>{children}</>
