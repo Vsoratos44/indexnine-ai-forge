@@ -92,6 +92,161 @@ export type Database = {
         }
         Relationships: []
       }
+      cms_articles: {
+        Row: {
+          author: string | null
+          category: string | null
+          content: string | null
+          created_at: string | null
+          excerpt: string | null
+          featured: boolean | null
+          featured_image_url: string | null
+          id: string
+          publish_date: string | null
+          seo_description: string | null
+          seo_title: string | null
+          status: string | null
+          tags: string[] | null
+          title: string
+          updated_at: string | null
+          user_id: string | null
+          views: number | null
+        }
+        Insert: {
+          author?: string | null
+          category?: string | null
+          content?: string | null
+          created_at?: string | null
+          excerpt?: string | null
+          featured?: boolean | null
+          featured_image_url?: string | null
+          id?: string
+          publish_date?: string | null
+          seo_description?: string | null
+          seo_title?: string | null
+          status?: string | null
+          tags?: string[] | null
+          title: string
+          updated_at?: string | null
+          user_id?: string | null
+          views?: number | null
+        }
+        Update: {
+          author?: string | null
+          category?: string | null
+          content?: string | null
+          created_at?: string | null
+          excerpt?: string | null
+          featured?: boolean | null
+          featured_image_url?: string | null
+          id?: string
+          publish_date?: string | null
+          seo_description?: string | null
+          seo_title?: string | null
+          status?: string | null
+          tags?: string[] | null
+          title?: string
+          updated_at?: string | null
+          user_id?: string | null
+          views?: number | null
+        }
+        Relationships: []
+      }
+      cms_categories: {
+        Row: {
+          article_count: number | null
+          color: string | null
+          created_at: string | null
+          description: string | null
+          id: string
+          name: string
+          parent_id: string | null
+          slug: string
+          updated_at: string | null
+          user_id: string | null
+        }
+        Insert: {
+          article_count?: number | null
+          color?: string | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          name: string
+          parent_id?: string | null
+          slug: string
+          updated_at?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          article_count?: number | null
+          color?: string | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          name?: string
+          parent_id?: string | null
+          slug?: string
+          updated_at?: string | null
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "cms_categories_parent_id_fkey"
+            columns: ["parent_id"]
+            isOneToOne: false
+            referencedRelation: "cms_categories"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      cms_media: {
+        Row: {
+          alt_text: string | null
+          caption: string | null
+          created_at: string | null
+          file_size: number
+          file_type: string
+          filename: string
+          folder: string | null
+          id: string
+          original_name: string
+          tags: string[] | null
+          updated_at: string | null
+          url: string
+          user_id: string | null
+        }
+        Insert: {
+          alt_text?: string | null
+          caption?: string | null
+          created_at?: string | null
+          file_size: number
+          file_type: string
+          filename: string
+          folder?: string | null
+          id?: string
+          original_name: string
+          tags?: string[] | null
+          updated_at?: string | null
+          url: string
+          user_id?: string | null
+        }
+        Update: {
+          alt_text?: string | null
+          caption?: string | null
+          created_at?: string | null
+          file_size?: number
+          file_type?: string
+          filename?: string
+          folder?: string | null
+          id?: string
+          original_name?: string
+          tags?: string[] | null
+          updated_at?: string | null
+          url?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       cms_settings: {
         Row: {
           description: string | null
@@ -116,6 +271,45 @@ export type Database = {
           updated_at?: string
           updated_by?: string | null
           value?: Json
+        }
+        Relationships: []
+      }
+      cms_users: {
+        Row: {
+          avatar_url: string | null
+          created_at: string | null
+          email: string
+          id: string
+          last_login: string | null
+          name: string
+          role: string | null
+          status: string | null
+          updated_at: string | null
+          user_id: string | null
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string | null
+          email: string
+          id?: string
+          last_login?: string | null
+          name: string
+          role?: string | null
+          status?: string | null
+          updated_at?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string | null
+          email?: string
+          id?: string
+          last_login?: string | null
+          name?: string
+          role?: string | null
+          status?: string | null
+          updated_at?: string | null
+          user_id?: string | null
         }
         Relationships: []
       }
@@ -885,6 +1079,20 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      get_personalized_articles: {
+        Args: { user_role?: string; user_tags?: string[]; limit_count?: number }
+        Returns: {
+          id: string
+          title: string
+          excerpt: string
+          category: string
+          author: string
+          publish_date: string
+          views: number
+          featured: boolean
+          tags: string[]
+        }[]
+      }
       update_event_analytics: {
         Args: { event_uuid: string }
         Returns: undefined
