@@ -61,6 +61,75 @@ const RobotFrameworkVsPlaywright = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
+      {/* Enhanced SEO: Article, FAQ, and Breadcrumb schema for better AI/generative search visibility */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Robot Framework vs. Playwright: The Test Automation Showdown Your Business Can\'t Ignore',
+            description: 'Compare Robot Framework and Playwright for test automation. Learn which tool is right for your business with practical insights from QA engineering experts.',
+            url: 'https://yoursite.lovable.app/insights/blog/robot-framework-vs-playwright',
+            datePublished: '2025-01-20T00:00:00Z',
+            dateModified: '2025-01-20T00:00:00Z',
+            author: {
+              '@type': 'Organization',
+              name: 'IndexNine Technologies QA Engineering Team'
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'IndexNine Technologies',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://yoursite.lovable.app/logo.png'
+              }
+            },
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://yoursite.lovable.app/insights/blog/robot-framework-vs-playwright'
+            },
+            wordCount: 2500,
+            timeRequired: 'PT10M'
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://yoursite.lovable.app/'
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Insights',
+                item: 'https://yoursite.lovable.app/insights'
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Blogs',
+                item: 'https://yoursite.lovable.app/insights/blogs'
+              },
+              {
+                '@type': 'ListItem',
+                position: 4,
+                name: 'Robot Framework vs Playwright',
+                item: 'https://yoursite.lovable.app/insights/blog/robot-framework-vs-playwright'
+              }
+            ]
+          })
+        }}
+      />
+
       <div className="flex">
         {/* Sidebar */}
         <ContentSidebar

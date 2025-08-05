@@ -1,5 +1,37 @@
 import React from 'react';
 
+/**
+ * SEOStructuredData Component
+ * 
+ * This component implements JSON-LD structured data (schema markup) to help search engines
+ * and AI systems better understand our content. Schema markup is crucial for:
+ * 
+ * 1. Traditional SEO - Helps search engines display rich snippets in search results
+ * 2. AI/Generative Search - AI systems like ChatGPT, Bard, and Bing Chat use schema
+ *    to better understand and reference content in AI-generated responses
+ * 3. Voice Search - Structured data helps with voice search optimization
+ * 4. Featured Snippets - Properly structured content is more likely to appear in featured snippets
+ * 
+ * Key Schema Types Implemented:
+ * - Organization: Company information and branding for entity recognition
+ * - WebPage: Page-level metadata and context for better content understanding
+ * - Service: Business services for improved discovery in search and AI responses
+ * - Article: Blog posts and case studies with rich metadata for content credibility
+ * - FAQPage: FAQ sections for featured snippets and AI Q&A responses
+ * - HowTo: Tutorial content for step-by-step search results
+ * - JobPosting: Career opportunities for job search engines and career AI assistants
+ * - Review: Social proof and credibility signals for trust building
+ * - VideoObject: Video content for video search results and multimedia AI responses
+ * - LocalBusiness: Local SEO and map presence for location-based searches
+ * - BreadcrumbList: Navigation context for better site architecture understanding
+ * 
+ * Why This Matters for AI/Generative Search:
+ * - AI systems rely on structured data to understand content context and relationships
+ * - Proper schema increases the likelihood of content being referenced in AI responses
+ * - Attribution and credibility signals help AI systems cite our content appropriately
+ * - Well-structured data helps AI understand our expertise and authority in our domain
+ */
+
 interface StructuredDataProps {
   type: 'Organization' | 'WebPage' | 'Service' | 'Article' | 'BreadcrumbList' | 'FAQPage' | 'HowTo' | 'JobPosting' | 'Review' | 'VideoObject' | 'LocalBusiness' | 'CollectionPage';
   data: any;

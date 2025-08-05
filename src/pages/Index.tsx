@@ -49,6 +49,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      {/* Enhanced SEO: Organization + LocalBusiness + VideoObject schema for comprehensive homepage visibility */}
+      {/* These schemas help AI systems understand our company, services, and multimedia content */}
       <OrganizationSchema />
       <WebPageSchema 
         title="B2B Product Engineering and AI Consulting Services | IndexNine"
@@ -56,6 +58,7 @@ const Index = () => {
         url="https://yoursite.lovable.app/"
       />
       <LocalBusinessSchema />
+      {/* VideoObject schema helps AI understand our hero video content for multimedia responses */}
       <VideoObjectSchema
         name="IndexNine Technologies Hero Video"
         description="Discover how IndexNine Technologies delivers exceptional product engineering and AI consulting services"

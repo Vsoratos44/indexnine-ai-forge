@@ -70,6 +70,7 @@ const Careers = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Enhanced SEO: JobPosting schema for job search engines and AI career assistants */}
       <WebPageSchema
         title="Careers at IndexNine Technologies - Join Our Team"
         description="Explore exciting career opportunities at IndexNine Technologies. Join our team of engineers and innovators building the future of technology."
@@ -80,6 +81,7 @@ const Careers = () => {
         { name: 'About', url: 'https://yoursite.lovable.app/about' },
         { name: 'Careers', url: 'https://yoursite.lovable.app/about/careers' }
       ]} />
+      {/* JobPosting schema helps AI career assistants and job search engines understand our openings */}
       {openPositions.map((job, index) => (
         <JobPostingSchema
           key={index}

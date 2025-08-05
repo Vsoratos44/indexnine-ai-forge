@@ -61,6 +61,102 @@ const GenesysModernization = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
+      {/* Enhanced SEO: Article, Review, and Breadcrumb schema for case study credibility and AI visibility */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Genesys - A Mission-Critical Modernization of a Legacy E-commerce Platform',
+            description: 'How IndexNine\'s expertise in product modernization and event-driven architecture rescued a mission-critical integration hub from collapse, ensuring business continuity for thousands of merchants.',
+            url: 'https://yoursite.lovable.app/insights/case-study/genesys-modernization',
+            datePublished: '2024-12-01T00:00:00Z',
+            dateModified: '2024-12-01T00:00:00Z',
+            author: {
+              '@type': 'Organization',
+              name: 'IndexNine Technologies'
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'IndexNine Technologies',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://yoursite.lovable.app/logo.png'
+              }
+            },
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://yoursite.lovable.app/insights/case-study/genesys-modernization'
+            },
+            about: {
+              '@type': 'Service',
+              name: 'Product Modernization Services',
+              description: 'Enterprise-grade product modernization and legacy system transformation'
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Review',
+            itemReviewed: {
+              '@type': 'Service',
+              name: 'Product Modernization Services by IndexNine Technologies'
+            },
+            reviewRating: {
+              '@type': 'Rating',
+              ratingValue: 5,
+              bestRating: 5
+            },
+            reviewBody: 'IndexNine\'s product modernization expertise transformed our legacy platform, achieving near-100% uptime and future-proofing our infrastructure with zero downtime migration.',
+            author: {
+              '@type': 'Organization',
+              name: 'Genesys E-commerce Platform'
+            },
+            datePublished: '2024-12-01T00:00:00Z'
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://yoursite.lovable.app/'
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Insights',
+                item: 'https://yoursite.lovable.app/insights'
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Case Studies',
+                item: 'https://yoursite.lovable.app/insights/case-studies'
+              },
+              {
+                '@type': 'ListItem',
+                position: 4,
+                name: 'Genesys Modernization',
+                item: 'https://yoursite.lovable.app/insights/case-study/genesys-modernization'
+              }
+            ]
+          })
+        }}
+      />
+
       <div className="flex">
         {/* Sidebar */}
         <ContentSidebar
