@@ -21,17 +21,23 @@ const VideoBackground = () => {
     video1.load();
     video2.load();
 
-    const handleVideo1End = () => {
-      setIsTransitioning(true);
+    const handleVideo1TimeUpdate = () => {
+      const currentTime = video1.currentTime;
+      const duration = video1.duration;
       
-      // Start second video and fade transition
-      video2.currentTime = 0;
-      video2.play().then(() => {
-        setTimeout(() => {
-          setActiveVideo(2);
-          setIsTransitioning(false);
-        }, 300); // Match transition duration
-      });
+      // Start transition 1 second before video1 ends
+      if (duration && currentTime >= duration - 1 && !isTransitioning && activeVideo === 1) {
+        setIsTransitioning(true);
+        
+        // Start second video and begin fade transition
+        video2.currentTime = 0;
+        video2.play().then(() => {
+          setTimeout(() => {
+            setActiveVideo(2);
+            setIsTransitioning(false);
+          }, 500); // Smooth transition duration
+        });
+      }
     };
 
     const handleVideo2End = () => {
@@ -41,24 +47,24 @@ const VideoBackground = () => {
     };
 
     // Set up event listeners
-    video1.addEventListener('ended', handleVideo1End);
+    video1.addEventListener('timeupdate', handleVideo1TimeUpdate);
     video2.addEventListener('ended', handleVideo2End);
     
     // Start the first video
     video1.play().catch(console.error);
 
     return () => {
-      video1.removeEventListener('ended', handleVideo1End);
+      video1.removeEventListener('timeupdate', handleVideo1TimeUpdate);
       video2.removeEventListener('ended', handleVideo2End);
     };
-  }, []);
+  }, [activeVideo, isTransitioning]);
 
   return (
     <div className="absolute inset-0 w-full h-full overflow-hidden">
       {/* First Video */}
       <video
         ref={video1Ref}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
           activeVideo === 1 && !isTransitioning ? 'opacity-100' : 'opacity-0'
         }`}
         muted
@@ -71,7 +77,7 @@ const VideoBackground = () => {
       {/* Second Video */}
       <video
         ref={video2Ref}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
           activeVideo === 2 ? 'opacity-100' : 'opacity-0'
         }`}
         muted
