@@ -1,41 +1,57 @@
-import React from 'react';
-import { Rocket, BarChart3, TrendingUp, Settings } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import styles from "../assets/css/stylesheet.module.css";
+
+import MatureIcon from "../assets/images/mature.svg";
+import PivotIcon from "../assets/images/pivot.svg";
+import LaunchIcon from "../assets/images/launch.svg";
+import GrowIcon from "../assets/images/grow.svg";
 
 const ProductLifecycle = () => {
   const phases = [
     {
-      icon: Rocket,
+      icon: <img src={LaunchIcon} alt="Launch" className="w-20 h-20" />,
       title: "Launch",
-      description: "Rapidly validate ideas and bring MVPs to market with our lean approach to product development.",
+      description:
+        "Rapidly validate ideas and bring MVPs to market with our lean approach to product development.",
       example: "HealthTech startup",
-      caseStudyLink: "/case-studies/launch"
+      caseStudyLink: "/case-studies/launch",
+      borderStyle: "bord-rb",
     },
     {
-      icon: BarChart3,
+      icon: <img src={PivotIcon} alt="Pivot" className="w-20 h-20" />,
       title: "Pivot",
-      description: "Quickly adapt to market feedback and evolve your product strategy with data-driven insights.",
+      description:
+        "Quickly adapt to market feedback and evolve your product strategy with data-driven insights.",
       example: "EdTech platform",
-      caseStudyLink: "/case-studies/pivot"
+      caseStudyLink: "/case-studies/pivot",
+      borderStyle: "bord-lb",
     },
     {
-      icon: TrendingUp,
+      icon: <img src={GrowIcon} alt="Grow" className="w-20 h-20" />,
       title: "Grow",
-      description: "Scale your product infrastructure and features to support expanding user bases and use cases.",
+      description:
+        "Scale your product infrastructure and features to support expanding user bases and use cases.",
       example: "FinTech solution",
-      caseStudyLink: "/case-studies/grow"
+      caseStudyLink: "/case-studies/grow",
+      borderStyle: "bord-rt",
     },
     {
-      icon: Settings,
+      icon: <img src={MatureIcon} alt="Mature" className="w-20 h-20" />,
       title: "Mature",
-      description: "Optimize performance, security, and reliability as your product becomes business-critical.",
+      description:
+        "Optimize performance, security, and reliability as your product becomes business-critical.",
       example: "Enterprise SaaS",
-      caseStudyLink: "/case-studies/mature"
-    }
+      caseStudyLink: "/case-studies/mature",
+      borderStyle: "bord-lt",
+    },
   ];
 
   return (
-    <section data-section="product-lifecycle" className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
+    <section
+      data-section="product-lifecycle"
+      className={`py-24 lg:py-32 bg-[#fff] relative overflow-hidden ${styles.sectionBgRadial}`}
+    >
       {/* Background blur elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
@@ -43,10 +59,12 @@ const ProductLifecycle = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-accent/5 rounded-full blur-2xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+      <div className={`container mx-auto px-6 lg:px-8 relative z-10 `}>
         <div className="text-center mb-16 lg:mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
-            From Bold Idea to Market Leader,{' '}
+          <h2
+            className={`text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat`}
+          >
+            From Bold Idea to Market Leader,{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               We Engineer Your Success
             </span>
@@ -54,29 +72,37 @@ const ProductLifecycle = () => {
         </div>
 
         {/* 2x2 Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto }`}
+        >
           {phases.map((phase, index) => (
-            <div 
+            <div
               key={index}
-              className="relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-3xl p-8 lg:p-10 shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
-              style={{animationDelay: `${index * 0.15}s`}}
+              className={`relative overflow-hidden  rounded-2xl p-1 transition-all duration-500 hover:scale-105 animate-fade-in group ${
+                styles[phase.borderStyle]
+              }`}
+              style={{ animationDelay: `${index * 0.15}s` }}
             >
-              {/* Inner glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/3 via-transparent to-brand-purple/3 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
-              <div className="relative z-10 flex items-start space-x-6">
+              <div className="relative z-10 flex items-center space-x-6 p-8 lg-p-10 bg-[#fff] rounded-2xl h-full">
                 {/* Icon Container */}
-                <div className="flex-shrink-0 bg-gradient-to-br from-brand-primary/10 via-brand-primary/5 to-brand-purple/10 backdrop-blur-md rounded-2xl w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center border border-brand-primary/20 shadow-md group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                  <phase.icon className="w-8 h-8 lg:w-10 lg:h-10 text-brand-primary group-hover:text-brand-primary-dark transition-colors duration-300" />
+                <div className="relative rounded-2xl w-20 h-20 flex items-center justify-center mb-8 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                  {phase.icon}
                 </div>
 
                 {/* Content */}
                 <div className="flex-1">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-foreground-dark mb-4 leading-tight font-montserrat">{phase.title}</h3>
-                  <p className="text-foreground-dark-muted leading-relaxed text-base lg:text-lg font-light font-montserrat mb-6">{phase.description}</p>
-                  
+                  <h3 className="text-2xl lg:text-3xl font-semibold text-foreground-dark mb-2 leading-tight font-montserrat">
+                    {phase.title}
+                  </h3>
+                  <p className="text-foreground-dark-muted leading-relaxed text-base font-light font-montserrat mb-2">
+                    {phase.description}
+                  </p>
+
                   {/* Client Example */}
-                  <Link to={phase.caseStudyLink} className="text-sm font-semibold text-brand-primary hover:text-brand-primary-dark transition-colors font-montserrat underline">
+                  <Link
+                    to={phase.caseStudyLink}
+                    className="text-sm font-semibold text-brand-primary hover:text-brand-primary-dark transition-colors font-montserrat "
+                  >
                     Client example: {phase.example}
                   </Link>
                 </div>

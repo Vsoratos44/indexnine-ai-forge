@@ -54,3 +54,66 @@ header .fixed.inset-0 {
   background: url(./../images/full-earth.webp) center center no-repeat;
   background-size: 70%;
 }
+
+.sectionBgRadial {
+  background: url(./../images/offers-bg.svg) no-repeat;
+  background-size: contain;
+  background-position: center 100px;
+}
+
+.bord-rb {
+  background: #ffffff00;
+  background: linear-gradient(
+    155deg,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(207, 200, 254, 1) 84%,
+    rgba(168, 165, 250, 1) 92%,
+    rgba(122, 138, 245, 1) 100%
+  );
+}
+.bord-lb {
+  background: #ffffff00;
+  background: linear-gradient(
+    -155deg,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(207, 200, 254, 1) 84%,
+    rgba(168, 165, 250, 1) 92%,
+    rgba(122, 138, 245, 1) 100%
+  );
+}
+.bord-rt {
+  background: #ffffff00;
+  background: linear-gradient(
+    25deg,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(207, 200, 254, 1) 84%,
+    rgba(168, 165, 250, 1) 92%,
+    rgba(122, 138, 245, 1) 100%
+  );
+}
+.bord-lt {
+  background: #ffffff00;
+  background: linear-gradient(
+    -25deg,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(207, 200, 254, 1) 84%,
+    rgba(168, 165, 250, 1) 92%,
+    rgba(122, 138, 245, 1) 100%
+  );
+}
+
+@media only screen and (max-width: 768px) {
+  .bord-rb,
+  .bord-lb,
+  .bord-rt,
+  .bord-lt {
+    background: #ffffff00;
+    background: linear-gradient(
+      25deg,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(207, 200, 254, 1) 84%,
+      rgba(168, 165, 250, 1) 92%,
+      rgba(122, 138, 245, 1) 100%
+    );
+  }
+}

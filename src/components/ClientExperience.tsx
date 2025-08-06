@@ -1,5 +1,4 @@
 import React from "react";
-import { Zap, Eye, Users } from "lucide-react";
 import styles from "../assets/css/stylesheet.module.css";
 import VelocityIcon from "../assets/images/accel-velocity.svg";
 import RadialIcon from "../assets/images/radical-transpncy.svg";
@@ -69,7 +68,7 @@ const ClientExperience = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-8xl mx-auto">
           {experiences.map((exp, index) => (
             <div
               key={index}
