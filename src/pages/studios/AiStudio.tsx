@@ -293,6 +293,97 @@ const AiStudio = () => {
         </div>
       </section>
 
+      {/* AI Solutions in Action Section */}
+      <section className="py-20 bg-background-section">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+                AI Solutions in Action
+              </h2>
+              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
+                Real-world applications delivering measurable impact across industries.
+              </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              {/* AI Teaching Assistant */}
+              <div className="space-y-8">
+                <div className="bg-brand-primary rounded-2xl p-8 lg:p-12 flex items-center justify-center text-white">
+                  <div className="text-center">
+                    <h3 className="text-3xl font-bold mb-2">AI Teaching Assistant</h3>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="mb-6">
+                  <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
+                    INTELLIGENT PERSONALIZED LEARNING
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground-dark">AI Teaching Assistant</h3>
+                <p className="text-foreground-dark-muted mb-6">
+                  An intelligent teaching assistant that helps educators create personalized learning experiences for students, improving test performance by providing targeted feedback and customized lesson plans.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-6">
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-primary mb-2">94%</div>
+                      <p className="text-sm text-foreground/80">User Satisfaction</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-primary mb-2">61%</div>
+                      <p className="text-sm text-foreground/80">Performance Improvement</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12">
+              <div className="space-y-6 lg:order-2">
+                <div className="mb-6">
+                  <span className="inline-block px-6 py-3 bg-brand-purple/10 text-brand-purple rounded-full text-sm font-medium border border-brand-purple/20">
+                    AI-POWERED AUTOMATION
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground-dark">Video Analysis</h3>
+                <p className="text-foreground-dark-muted mb-6">
+                  An advanced computer vision platform that automatically analyzes and categorizes video content, enabling instant content moderation and intelligent recommendations for streaming platforms.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-6">
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-purple mb-2">300%</div>
+                      <p className="text-sm text-foreground/80">ROI Increase</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-purple mb-2">2.3M</div>
+                      <p className="text-sm text-foreground/80">Hours Processed Monthly</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              
+              <div className="space-y-8 lg:order-1">
+                <div className="bg-brand-purple rounded-2xl p-8 lg:p-12 flex items-center justify-center text-white">
+                  <div className="text-center">
+                    <h3 className="text-3xl font-bold mb-2">Video Analysis</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* AI Services Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">

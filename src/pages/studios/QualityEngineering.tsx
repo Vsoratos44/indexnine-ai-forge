@@ -144,8 +144,99 @@ const QualityEngineering = () => {
         </div>
       </section>
 
+      {/* QAE Solutions in Action Section */}
+      <section id="qae-solutions" className="py-20 bg-background-section">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+                QAE Solutions in Action
+              </h2>
+              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
+                Real-world automation solutions delivering unprecedented quality improvements.
+              </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              {/* snap.automate */}
+              <div className="space-y-8">
+                <div className="bg-brand-purple rounded-2xl p-8 lg:p-12 flex items-center justify-center text-white">
+                  <div className="text-center">
+                    <h3 className="text-3xl font-bold mb-2">snap.automate</h3>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="mb-6">
+                  <span className="inline-block px-6 py-3 bg-brand-purple/10 text-brand-purple rounded-full text-sm font-medium border border-brand-purple/20">
+                    INTELLIGENT TEST ORCHESTRATION
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground-dark">snap.automate</h3>
+                <p className="text-foreground-dark-muted mb-6">
+                  Our flagship automation platform that provides intelligent test orchestration, AI-powered maintenance, and comprehensive reporting. Designed for rapid deployment and maximum coverage.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-6">
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-purple mb-2">97%</div>
+                      <p className="text-sm text-foreground/80">Reduction in Execution Time</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-purple mb-2">40%</div>
+                      <p className="text-sm text-foreground/80">Improved Test Coverage</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12">
+              <div className="space-y-6 lg:order-2">
+                <div className="mb-6">
+                  <span className="inline-block px-6 py-3 bg-brand-accent/10 text-brand-accent rounded-full text-sm font-medium border border-brand-accent/20">
+                    COMPONENT-LEVEL TESTING
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground-dark">snap.atomicqa</h3>
+                <p className="text-foreground-dark-muted mb-6">
+                  Specialized platform for component-level testing and continuous quality assurance. Perfect for teams practicing shift-left methodologies and micro-service architectures.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-6">
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-accent mb-2">100%</div>
+                      <p className="text-sm text-foreground/80">Success Fee Achieved</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
+                    <CardContent className="p-0">
+                      <div className="text-3xl font-bold text-brand-accent mb-2">30</div>
+                      <p className="text-sm text-foreground/80">Minutes Testing Time</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              
+              <div className="space-y-8 lg:order-1">
+                <div className="bg-brand-accent rounded-2xl p-8 lg:p-12 flex items-center justify-center text-white">
+                  <div className="text-center">
+                    <h3 className="text-3xl font-bold mb-2">snap.atomicqa</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Platforms Section */}
-      <section id="qae-platforms" className="py-16 bg-background-section">
+      <section id="qae-platforms" className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
