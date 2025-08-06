@@ -144,162 +144,139 @@ const QualityEngineering = () => {
         </div>
       </section>
 
-      {/* QAE Solutions in Action Section */}
+      {/* QAE Solutions in Action & Proprietary Automation Platforms */}
       <section id="qae-solutions" className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-20">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
                 QAE Solutions in Action
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                Real-world automation solutions delivering unprecedented quality improvements.
+                Powered by our proprietary automation platforms, purpose-built internally to accelerate implementation and maximize ROI.
               </p>
             </div>
-            
-            <div className="grid lg:grid-cols-2 gap-12 mb-16">
-              {/* snap.automate */}
-              <div className="space-y-8">
-                <div className="bg-brand-purple rounded-2xl p-8 lg:p-12 flex items-center justify-center text-white">
-                  <div className="text-center">
-                    <h3 className="text-3xl font-bold mb-2">snap.automate</h3>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="space-y-6">
-                <div className="mb-6">
-                  <span className="inline-block px-6 py-3 bg-brand-purple/10 text-brand-purple rounded-full text-sm font-medium border border-brand-purple/20">
-                    INTELLIGENT TEST ORCHESTRATION
-                  </span>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground-dark">snap.automate</h3>
-                <p className="text-foreground-dark-muted mb-6">
-                  Our flagship automation platform that provides intelligent test orchestration, AI-powered maintenance, and comprehensive reporting. Designed for rapid deployment and maximum coverage.
-                </p>
-                
-                <div className="grid grid-cols-2 gap-6">
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-purple mb-2">97%</div>
-                      <p className="text-sm text-foreground/80">Reduction in Execution Time</p>
-                    </CardContent>
-                  </Card>
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-purple mb-2">40%</div>
-                      <p className="text-sm text-foreground/80">Improved Test Coverage</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-            </div>
-            
-            <div className="grid lg:grid-cols-2 gap-12">
-              <div className="space-y-6 lg:order-2">
-                <div className="mb-6">
-                  <span className="inline-block px-6 py-3 bg-brand-accent/10 text-brand-accent rounded-full text-sm font-medium border border-brand-accent/20">
-                    COMPONENT-LEVEL TESTING
-                  </span>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground-dark">snap.atomicqa</h3>
-                <p className="text-foreground-dark-muted mb-6">
-                  Specialized platform for component-level testing and continuous quality assurance. Perfect for teams practicing shift-left methodologies and micro-service architectures.
-                </p>
-                
-                <div className="grid grid-cols-2 gap-6">
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-accent mb-2">100%</div>
-                      <p className="text-sm text-foreground/80">Success Fee Achieved</p>
-                    </CardContent>
-                  </Card>
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-accent mb-2">30</div>
-                      <p className="text-sm text-foreground/80">Minutes Testing Time</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-              
-              <div className="space-y-8 lg:order-1">
-                <div className="bg-brand-accent rounded-2xl p-8 lg:p-12 flex items-center justify-center text-white">
-                  <div className="text-center">
-                    <h3 className="text-3xl font-bold mb-2">snap.atomicqa</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Platforms Section */}
-      <section id="qae-platforms" className="py-16 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-                Our Proprietary Automation Platforms
-              </h2>
-              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                Purpose-built tools that accelerate implementation and maximize ROI.
-              </p>
+            {/* Proprietary Automation Platforms */}
+            <div className="mb-20">
+              <div className="text-center mb-16">
+                <h3 className="text-2xl font-bold text-foreground-dark mb-4">Our Proprietary Automation Platforms</h3>
+                <p className="text-lg text-foreground-dark-muted max-w-2xl mx-auto">
+                  Purpose-built tools that accelerate implementation and maximize ROI.
+                </p>
+              </div>
+
+              <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-0">
+                    <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
+                      <Zap className="h-8 w-8 text-brand-purple" />
+                    </div>
+                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">snap.automate</h4>
+                    <p className="text-foreground-dark-muted mb-6">
+                      Our flagship automation platform that provides intelligent test orchestration, AI-powered maintenance, and comprehensive reporting. Designed for rapid deployment and maximum coverage.
+                    </p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                        <span className="text-foreground-dark-muted">AI-assisted test creation and maintenance</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                        <span className="text-foreground-dark-muted">Intelligent test orchestration and optimization</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                        <span className="text-foreground-dark-muted">Real-time insights and actionable reports</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-0">
+                    <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
+                      <Target className="h-8 w-8 text-brand-purple" />
+                    </div>
+                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">snap.atomicqa</h4>
+                    <p className="text-foreground-dark-muted mb-6">
+                      Specialized platform for component-level testing and continuous quality assurance. Perfect for teams practicing shift-left methodologies and micro-service architectures.
+                    </p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                        <span className="text-foreground-dark-muted">Component-level test automation</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                        <span className="text-foreground-dark-muted">Continuous integration and deployment support</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                        <span className="text-foreground-dark-muted">Micro-service testing capabilities</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
-            
-            <div className="grid lg:grid-cols-2 gap-8">
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
-                    <Zap className="h-8 w-8 text-brand-purple" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">snap.automate</h3>
-                  <p className="text-foreground/80 mb-6">
-                    Our flagship automation platform that provides intelligent test orchestration, AI-powered maintenance, and comprehensive reporting. Designed for rapid deployment and maximum coverage.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground/80">AI-assisted test creation and maintenance</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground/80">Intelligent test orchestration and optimization</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground/80">Real-time insights and actionable reports</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-              
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
-                    <Target className="h-8 w-8 text-brand-purple" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">snap.atomicqa</h3>
-                  <p className="text-foreground/80 mb-6">
-                    Specialized platform for component-level testing and continuous quality assurance. Perfect for teams practicing shift-left methodologies and micro-service architectures.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground/80">Component-level test automation</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground/80">Continuous integration and deployment support</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground/80">Micro-service testing capabilities</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+
+            {/* Real-world Applications */}
+            <div>
+              <div className="text-center mb-16">
+                <h3 className="text-2xl font-bold text-foreground-dark mb-4">Real-World Applications</h3>
+                <p className="text-lg text-foreground-dark-muted max-w-2xl mx-auto">
+                  How our proprietary platforms deliver measurable results across different scenarios.
+                </p>
+              </div>
+
+              <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-0">
+                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">E-commerce Platform Testing</h4>
+                    <p className="text-foreground-dark-muted mb-6">
+                      Comprehensive testing strategy for a high-traffic retail platform using snap.automate, ensuring seamless user experience during peak shopping periods.
+                    </p>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
+                        <span className="text-foreground-dark font-medium">99.9% uptime achieved</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
+                        <span className="text-foreground-dark font-medium">40% faster test execution</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
+                        <span className="text-foreground-dark font-medium">60% reduction in production bugs</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-0">
+                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">Financial Services Automation</h4>
+                    <p className="text-foreground-dark-muted mb-6">
+                      End-to-end automation suite using snap.atomicqa for a fintech application, covering security, performance, and regulatory compliance testing.
+                    </p>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
+                        <span className="text-foreground-dark font-medium">100% regulatory compliance</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
+                        <span className="text-foreground-dark font-medium">50% faster release cycles</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
+                        <span className="text-foreground-dark font-medium">Zero security incidents</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
