@@ -80,7 +80,7 @@ const CustomSoftware = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-semibold text-[#fff] text-foreground-dark mb-6 font-montserrat">
+            <h2 className="text-4xl font-semibold text-foreground-light mb-6 font-montserrat">
               Our Full-Stack Development Capabilities
             </h2>
             <p className="text-xl text-foreground-light-muted max-w-3xl mx-auto font-montserrat">

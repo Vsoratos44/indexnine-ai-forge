@@ -300,10 +300,10 @@ const QualityEngineering = () => {
               <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-0">
-                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">
+                    <h4 className="text-2xl font-bold mb-4 text-foreground-light">
                       E-commerce Platform Testing
                     </h4>
-                    <p className="text-foreground-dark-muted mb-6">
+                    <p className="text-foreground-light-muted mb-6">
                       Comprehensive testing strategy for a high-traffic retail
                       platform using snap.automate, ensuring seamless user
                       experience during peak shopping periods.
@@ -311,19 +311,19 @@ const QualityEngineering = () => {
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">
+                        <span className="text-foreground-light font-medium">
                           99.9% uptime achieved
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">
+                        <span className="text-foreground-light font-medium">
                           40% faster test execution
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">
+                        <span className="text-foreground-light font-medium">
                           60% reduction in production bugs
                         </span>
                       </div>
@@ -333,10 +333,10 @@ const QualityEngineering = () => {
 
                 <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-0">
-                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">
+                    <h4 className="text-2xl font-bold mb-4 text-foreground-light">
                       Financial Services Automation
                     </h4>
-                    <p className="text-foreground-dark-muted mb-6">
+                    <p className="text-foreground-light-muted mb-6">
                       End-to-end automation suite using snap.atomicqa for a
                       fintech application, covering security, performance, and
                       regulatory compliance testing.
@@ -344,19 +344,19 @@ const QualityEngineering = () => {
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">
+                        <span className="text-foreground-light font-medium">
                           100% regulatory compliance
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">
+                        <span className="text-foreground-light font-medium">
                           50% faster release cycles
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">
+                        <span className="text-foreground-light font-medium">
                           Zero security incidents
                         </span>
                       </div>
