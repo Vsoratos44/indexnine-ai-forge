@@ -79,7 +79,7 @@ const SocialProof = () => {
                 </div>
               </div>
             </div> */}
-            <img src="./src/assets/images/about-info.svg" />
+            <img src="/src/assets/images/about-info.svg" alt="About Info" className="w-full h-auto" />
           </div>
 
           {/* Right side - Stats grid with glassmorphism */}
