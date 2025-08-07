@@ -1,6 +1,6 @@
 import React from "react";
 import CountUp from "./CountUp";
-import StatsImg from "../assets/images/about-info.svg";
+import aboutInfoSvg from "@/assets/images/about-info.svg";
 
 const SocialProof = () => {
   const stats = [
@@ -17,7 +17,7 @@ const SocialProof = () => {
   return (
     <section
       data-section="social-proof"
-      className="pb-24 lg:pb-32 pt-8 lg:pt-12  bg-[#fff] relative overflow-hidden"
+      className="py-24 lg:py-32 bg-[#fff] relative overflow-hidden"
     >
       {/* Background blur elements */}
       <div className="absolute inset-0 ">
@@ -27,7 +27,7 @@ const SocialProof = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 lg:mb-20">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
             Client Outcomes
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
@@ -81,7 +81,11 @@ const SocialProof = () => {
                 </div>
               </div>
             </div> */}
-            <img src={StatsImg} />
+            <img
+              src={aboutInfoSvg}
+              alt="Client success metrics and analytics chart"
+              className="w-full h-auto max-w-md mx-auto"
+            />
           </div>
 
           {/* Right side - Stats grid with glassmorphism */}
