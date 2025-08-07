@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "./CountUp";
+import StatsImg from "../assets/images/about-info.svg";
 
 const SocialProof = () => {
   const stats = [
@@ -26,14 +27,15 @@ const SocialProof = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 lg:mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
             Client Outcomes
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
-            Our success isn't measured by the volume of code written; our success is measured in the value we create for our clients.
+            Our success isn't measured by the volume of code written; our
+            success is measured in the value we create for our clients.
           </p>
         </div>
-        
+
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left side - Chart with glassmorphism */}
           <div className="relative order-2 lg:order-1">
@@ -79,7 +81,7 @@ const SocialProof = () => {
                 </div>
               </div>
             </div> */}
-            <img src="./src/assets/images/about-info.svg" />
+            <img src={StatsImg} />
           </div>
 
           {/* Right side - Stats grid with glassmorphism */}

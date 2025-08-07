@@ -92,17 +92,19 @@ const ProductLifecycle = () => {
           {phases.map((phase, index) => (
             <div
               key={index}
-              className="relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
+              className={`relative overflow-hidden  rounded-2xl p-1 transition-all duration-500 hover:scale-105 animate-fade-in group ${
+                styles[phase.borderStyle]
+              }`}
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               {/* Inner glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/3 via-transparent to-brand-purple/3 rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              <div className="relative z-10">
+              <div className="elative z-10 p-8 lg-p-10 bg-[#fff] rounded-2xl h-full bg-[#fff]">
                 {/* Icon and Title Section */}
                 <div className="flex items-start space-x-4 sm:space-x-6 mb-4 sm:mb-6">
                   {/* Icon Container */}
-                  <div className="flex-shrink-0 bg-gradient-to-br from-brand-primary/10 via-brand-primary/5 to-brand-purple/10 backdrop-blur-md rounded-xl sm:rounded-2xl w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center border border-brand-primary/20 shadow-md group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                  <div className="relative rounded-2xl w-20 h-20 flex items-center justify-center mb-8 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                     {phase.icon}
                   </div>
 
@@ -119,9 +121,9 @@ const ProductLifecycle = () => {
 
                 {/* Content */}
                 <div className="flex-1">
-                  <h3 className="text-2xl lg:text-3xl font-semibold text-foreground-dark mb-2 leading-tight font-montserrat">
+                  {/* <h3 className="text-2xl lg:text-3xl font-semibold text-foreground-dark mb-2 leading-tight font-montserrat">
                     {phase.title}
-                  </h3>
+                  </h3> */}
                   <p className="text-foreground-dark-muted leading-relaxed text-base font-light font-montserrat mb-2">
                     {phase.description}
                   </p>
@@ -137,7 +139,7 @@ const ProductLifecycle = () => {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="w-full sm:w-auto text-brand-primary border-brand-primary/30 hover:bg-brand-primary/10 text-xs sm:text-sm"
+                        className="w-full sm:w-auto text-brand-primary border-brand-primary/30 hover:bg-brand-primary text-xs sm:text-sm rounded-full"
                       >
                         Check out the full case study here
                       </Button>
