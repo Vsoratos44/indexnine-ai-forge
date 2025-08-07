@@ -2,34 +2,22 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const PracticesStudios = () => {
-  const [activeStudio, setActiveStudio] = useState<"innovation" | "enterprise">(
-    "innovation"
-  );
+  const [activeStudio, setActiveStudio] = useState<"innovation" | "enterprise">("innovation");
 
   const studioData = {
     innovation: {
       title: "The Innovation Lab",
       subtitle: "For Startups and High-Growth Ventures",
-      description:
-        "Designed for startups, this is where speed, agility, and product-market fit are paramount. Innovation Lab clients leverage our Sprint Zero methodology to stress-test ideas, optimize frameworks, and build scalable products.",
+      description: "Designed for startups, this is where speed, agility, and product-market fit are paramount. Innovation Lab clients leverage our Sprint Zero methodology to stress-test ideas, optimize frameworks, and build scalable products.",
       buttonText: "Explore Innovation Lab",
-      features: [
-        "Rapid MVP development",
-        "AI/ML integration",
-        "Emerging tech exploration",
-      ],
+      features: ["Rapid MVP development", "AI/ML integration", "Emerging tech exploration"]
     },
     enterprise: {
-      title: "The Enterprise Studio",
+      title: "The Enterprise Studio", 
       subtitle: "For Enterprise SMBs and F1000",
-      description:
-        "Built for businesses that require scale, security, and process excellence, The Enterprise Studio provides the maturity and rigor needed for mission-critical product development.",
+      description: "Built for businesses that require scale, security, and process excellence, The Enterprise Studio provides the maturity and rigor needed for mission-critical product development.",
       buttonText: "Explore Enterprise Studio",
-      features: [
-        "Enterprise scalability",
-        "Security & compliance",
-        "Mission-critical systems",
-      ],
+      features: ["Enterprise scalability", "Security & compliance", "Mission-critical systems"]
     },
   };
 
@@ -40,18 +28,16 @@ const PracticesStudios = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 font-montserrat">
-            Innovation & Enterprise:{" "}
+            Innovation & Enterprise:{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Our Practices
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-foreground/80 max-w-4xl mx-auto">
-            Our shift to meet the maturation needs of our clients required a new
-            depth of specialization. To meet this, we've organized our bases of
-            expertise in two dedicated practices.
+            Our shift to meet the maturation needs of our clients required a new depth of specialization. To meet this, we've organized our bases of expertise in two dedicated practices.
           </p>
         </div>
-
+        
         {/* Studio Selector */}
         <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 mb-12">
           <button
@@ -87,25 +73,19 @@ const PracticesStudios = () => {
           <p className="text-base sm:text-lg text-foreground/80 mb-6 leading-relaxed">
             {currentStudio.description}
           </p>
-
+          
           {/* Features */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-6">
             {currentStudio.features.map((feature, index) => (
               <div key={index} className="flex items-center space-x-2">
-                <div
-                  className={`w-2 h-2 rounded-full ${
-                    activeStudio === "innovation"
-                      ? "bg-primary"
-                      : "bg-purple-500"
-                  }`}
-                ></div>
-                <span className="text-sm sm:text-base text-foreground/80">
-                  {feature}
-                </span>
+                <div className={`w-2 h-2 rounded-full ${
+                  activeStudio === "innovation" ? "bg-primary" : "bg-purple-500"
+                }`}></div>
+                <span className="text-sm sm:text-base text-foreground/80">{feature}</span>
               </div>
             ))}
           </div>
-
+          
           <Button variant="outline" size="lg" className="font-montserrat">
             {currentStudio.buttonText}
           </Button>

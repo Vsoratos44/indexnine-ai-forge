@@ -1,86 +1,59 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const VideoBackground = () => {
-  const video1Ref = useRef<HTMLVideoElement>(null);
-  const video2Ref = useRef<HTMLVideoElement>(null);
-  const [activeVideo, setActiveVideo] = useState<1 | 2>(1);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  
-  const videos = [
-    '/videos/Lets_try_this_202508011021.mp4',
-    '/videos/Scene_description_the_202508011021.mp4'
-  ];
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    const video1 = video1Ref.current;
-    const video2 = video2Ref.current;
-    
-    if (!video1 || !video2) return;
+    const video = videoRef.current;
+    if (!video) return;
 
-    // Preload both videos
-    video1.load();
-    video2.load();
-
-    const handleVideo1End = () => {
-      setIsTransitioning(true);
-      
-      // Start second video and fade transition
-      video2.currentTime = 0;
-      video2.play().then(() => {
-        setTimeout(() => {
-          setActiveVideo(2);
-          setIsTransitioning(false);
-        }, 300); // Match transition duration
+    const handleCanPlay = () => {
+      setVideoLoaded(true);
+      video.play().catch((error) => {
+        console.warn('Video autoplay failed:', error);
+        setHasError(true);
       });
     };
 
-    const handleVideo2End = () => {
-      // Seamlessly restart the second video for looping
-      video2.currentTime = 0;
-      video2.play();
+    const handleError = () => {
+      console.warn('Video failed to load');
+      setHasError(true);
     };
 
-    // Set up event listeners
-    video1.addEventListener('ended', handleVideo1End);
-    video2.addEventListener('ended', handleVideo2End);
+    video.addEventListener('canplay', handleCanPlay);
+    video.addEventListener('error', handleError);
     
-    // Start the first video
-    video1.play().catch(console.error);
+    // Try to load the video
+    video.load();
 
     return () => {
-      video1.removeEventListener('ended', handleVideo1End);
-      video2.removeEventListener('ended', handleVideo2End);
+      video.removeEventListener('canplay', handleCanPlay);
+      video.removeEventListener('error', handleError);
     };
   }, []);
 
   return (
     <div className="absolute inset-0 w-full h-full overflow-hidden">
-      {/* First Video */}
+      {/* Main Video */}
       <video
-        ref={video1Ref}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
-          activeVideo === 1 && !isTransitioning ? 'opacity-100' : 'opacity-0'
-        }`}
+        ref={videoRef}
+        className="absolute inset-0 w-full h-full object-cover"
         muted
         playsInline
-        preload="auto"
+        loop
+        preload="metadata"
+        poster="/videos/poster-frame.jpg"
       >
-        <source src={videos[0]} type="video/mp4" />
+        <source src="/videos/Lets_try_this_202508011021.mp4" type="video/mp4" />
+        <source src="/videos/Scene_description_the_202508011021.mp4" type="video/mp4" />
       </video>
 
-      {/* Second Video */}
-      <video
-        ref={video2Ref}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
-          activeVideo === 2 ? 'opacity-100' : 'opacity-0'
-        }`}
-        muted
-        playsInline
-        preload="auto"
-        loop
-      >
-        <source src={videos[1]} type="video/mp4" />
-      </video>
+      {/* Fallback gradient background if video fails */}
+      {(hasError || !videoLoaded) && (
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-primary/10" />
+      )}
 
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/40 z-10" />

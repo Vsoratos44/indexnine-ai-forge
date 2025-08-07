@@ -31,11 +31,10 @@ const SocialProof = () => {
             Client Outcomes
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
-            Our success isn't measured by the volume of code written; our
-            success is measured in the value we create for our clients.
+            Our success isn't measured by the volume of code written; our success is measured in the value we create for our clients.
           </p>
         </div>
-
+        
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left side - Chart with glassmorphism */}
           <div className="relative order-2 lg:order-1">
@@ -81,9 +80,9 @@ const SocialProof = () => {
                 </div>
               </div>
             </div> */}
-            <img
-              src={aboutInfoSvg}
-              alt="Client success metrics and analytics chart"
+            <img 
+              src={aboutInfoSvg} 
+              alt="Client success metrics and analytics chart" 
               className="w-full h-auto max-w-md mx-auto"
             />
           </div>
