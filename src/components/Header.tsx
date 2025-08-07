@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import LogoWhite from "../assets/images/i9logo-logo-wht.svg";
+import LogoBlack from "../assets/images/i9logo-logo-blk.svg";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -80,17 +82,9 @@ const Header = () => {
               }`}
             >
               {isLightSection ? (
-                <img
-                  src="./src/assets/images/i9logo-logo-blk.svg"
-                  alt="IndexNine"
-                  className="h-8"
-                />
+                <img src={LogoBlack} alt="IndexNine" className="h-8" />
               ) : (
-                <img
-                  src="./src/assets/images/i9logo-logo-wht.svg"
-                  alt="IndexNine"
-                  className="h-8"
-                />
+                <img src={LogoWhite} alt="IndexNine" className="h-8" />
               )}
             </span>
           </Link>
