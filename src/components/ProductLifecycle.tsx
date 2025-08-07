@@ -1,46 +1,66 @@
-import React from 'react';
-import { Rocket, BarChart3, TrendingUp, Settings } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { Button } from './ui/button';
+import React from "react";
+import { Link } from "react-router-dom";
+import styles from "../assets/css/stylesheet.module.css";
+
+import MatureIcon from "../assets/images/mature.svg";
+import PivotIcon from "../assets/images/pivot.svg";
+import LaunchIcon from "../assets/images/launch.svg";
+import GrowIcon from "../assets/images/grow.svg";
+import { Button } from "./ui/button";
 
 const ProductLifecycle = () => {
   const phases = [
     {
-      icon: Rocket,
+      icon: <img src={LaunchIcon} alt="Launch" className="w-20 h-20" />,
       title: "Launch",
       subtitle: "Excellence from Day One",
-      description: "We help founders and innovators turn bold ideas into viable, market-ready products.",
-      example: "We built a complex AI research agent to disrupt the high-cost philanthropic consulting market.",
-      caseStudyLink: "/case-studies/launch"
+      description:
+        "We help founders and innovators turn bold ideas into viable, market-ready products.",
+      example:
+        "We built a complex AI research agent to disrupt the high-cost philanthropic consulting market.",
+      caseStudyLink: "/case-studies/launch",
+      borderStyle: "bord-rb",
     },
     {
-      icon: BarChart3,
+      icon: <img src={PivotIcon} alt="Pivot" className="w-20 h-20" />,
       title: "Pivot",
       subtitle: "Finding Product-Market Fit",
-      description: "When the market speaks, we listen. We partner with companies to provide data-backed insights at critical inflection points.",
-      example: "We helped a security client pivot from a simple auditing tool to a full-fledged provisioning product.",
-      caseStudyLink: "/case-studies/pivot"
+      description:
+        "When the market speaks, we listen. We partner with companies to provide data-backed insights at critical inflection points.",
+      example:
+        "We helped a security client pivot from a simple auditing tool to a full-fledged provisioning product.",
+      caseStudyLink: "/case-studies/pivot",
+      borderStyle: "bord-lb",
     },
     {
-      icon: TrendingUp,
+      icon: <img src={GrowIcon} alt="Grow" className="w-20 h-20" />,
       title: "Grow",
       subtitle: "Creating Revenue Streams with AI",
-      description: "We help successful products evolve into dominant platforms. By leveraging custom AI models, we identify new opportunities in your existing assets.",
-      example: "For a gaming industry client, we developed Cricket LLM, an AI agent designed to deliver a nimble and scalable revenue stream.",
-      caseStudyLink: "/case-studies/grow"
+      description:
+        "We help successful products evolve into dominant platforms. By leveraging custom AI models, we identify new opportunities in your existing assets.",
+      example:
+        "For a gaming industry client, we developed Cricket LLM, an AI agent designed to deliver a nimble and scalable revenue stream.",
+      caseStudyLink: "/case-studies/grow",
+      borderStyle: "bord-rt",
     },
     {
-      icon: Settings,
+      icon: <img src={MatureIcon} alt="Mature" className="w-20 h-20" />,
       title: "Mature",
       subtitle: "Modernizing for Scale and Efficiency",
-      description: "Technical debt is an issue that even industry-leading companies can struggle with. We specialize in the complex challenge of legacy system modernization.",
-      example: "Our client needed a complete rearchitecture of a 16-year-old, mission-critical system that was actively integrated with 178 e-commerce platforms.",
-      caseStudyLink: "/case-studies/mature"
-    }
+      description:
+        "Technical debt is an issue that even industry-leading companies can struggle with. We specialize in the complex challenge of legacy system modernization.",
+      example:
+        "Our client needed a complete rearchitecture of a 16-year-old, mission-critical system that was actively integrated with 178 e-commerce platforms.",
+      caseStudyLink: "/case-studies/mature",
+      borderStyle: "bord-lt",
+    },
   ];
 
   return (
-    <section data-section="product-lifecycle" className="py-16 sm:py-20 lg:py-24 xl:py-32 bg-gradient-section relative overflow-hidden">
+    <section
+      data-section="product-lifecycle"
+      className={`py-24 lg:py-32 bg-[#fff] relative overflow-hidden ${styles.sectionBgRadial}`}
+    >
       {/* Background blur elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
@@ -48,58 +68,77 @@ const ProductLifecycle = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-accent/5 rounded-full blur-2xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground-dark mb-4 sm:mb-6 leading-tight tracking-tight font-montserrat">
-            Product Lifecycle:{' '}
+      <div className={`container mx-auto px-6 lg:px-8 relative z-10 `}>
+        <div className="text-center mb-16 lg:mb-20">
+          <h2
+            className={`text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat`}
+          >
+            Product Lifecycle:{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Every Step Counts
             </span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto px-4">
-            Our product engineering services are purpose-built to meet your specific needs at each phase of the product lifecycle. along with case studies to show you exactly what we mean.
+            Our product engineering services are purpose-built to meet your
+            specific needs at each phase of the product lifecycle. along with
+            case studies to show you exactly what we mean.
           </p>
         </div>
 
-        {/* 2x2 Grid Layout - Single column on mobile, 2 columns on md+ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
+        {/* 2x2 Grid Layout */}
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto }`}
+        >
           {phases.map((phase, index) => (
-            <div 
+            <div
               key={index}
               className="relative overflow-hidden backdrop-blur-xl bg-gradient-card-light border border-glass-border rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-glass hover:shadow-glass-lg transition-all duration-500 hover:scale-105 animate-fade-in group"
-              style={{animationDelay: `${index * 0.15}s`}}
+              style={{ animationDelay: `${index * 0.15}s` }}
             >
               {/* Inner glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/3 via-transparent to-brand-purple/3 rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
+
               <div className="relative z-10">
                 {/* Icon and Title Section */}
                 <div className="flex items-start space-x-4 sm:space-x-6 mb-4 sm:mb-6">
                   {/* Icon Container */}
                   <div className="flex-shrink-0 bg-gradient-to-br from-brand-primary/10 via-brand-primary/5 to-brand-purple/10 backdrop-blur-md rounded-xl sm:rounded-2xl w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center border border-brand-primary/20 shadow-md group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                    <phase.icon className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-brand-primary group-hover:text-brand-primary-dark transition-colors duration-300" />
+                    {phase.icon}
                   </div>
 
                   {/* Title Section */}
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground-dark mb-1 sm:mb-2 leading-tight font-montserrat">{phase.title}</h3>
-                    <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-brand-primary mb-3 sm:mb-4 font-montserrat">{phase.subtitle}</h4>
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground-dark mb-1 sm:mb-2 leading-tight font-montserrat">
+                      {phase.title}
+                    </h3>
+                    <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-brand-primary mb-3 sm:mb-4 font-montserrat">
+                      {phase.subtitle}
+                    </h4>
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="space-y-4">
-                  <p className="text-foreground-dark-muted leading-relaxed text-sm sm:text-base lg:text-lg font-light font-montserrat">{phase.description}</p>
-                  
+                <div className="flex-1">
+                  <h3 className="text-2xl lg:text-3xl font-semibold text-foreground-dark mb-2 leading-tight font-montserrat">
+                    {phase.title}
+                  </h3>
+                  <p className="text-foreground-dark-muted leading-relaxed text-base font-light font-montserrat mb-2">
+                    {phase.description}
+                  </p>
+
                   {/* Client Example */}
                   <p className="text-xs sm:text-sm text-foreground-dark-muted leading-relaxed font-montserrat">
                     {phase.example}
                   </p>
-                  
+
                   {/* Case Study Button */}
                   <div className="pt-2">
                     <Link to={phase.caseStudyLink}>
-                      <Button variant="outline" size="sm" className="w-full sm:w-auto text-brand-primary border-brand-primary/30 hover:bg-brand-primary/10 text-xs sm:text-sm">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="w-full sm:w-auto text-brand-primary border-brand-primary/30 hover:bg-brand-primary/10 text-xs sm:text-sm"
+                      >
                         Check out the full case study here
                       </Button>
                     </Link>

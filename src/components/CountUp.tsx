@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 
 interface CountUpProps {
   end: number;
@@ -6,8 +6,12 @@ interface CountUpProps {
   suffix?: string;
 }
 
-const CountUp: React.FC<CountUpProps> = ({ end, duration = 2000, suffix = '' }) => {
-  const [count, setCount] = useState(0);
+const CountUp: React.FC<CountUpProps> = ({
+  end,
+  duration = 2000,
+  suffix = "",
+}) => {
+  const [displayValue, setDisplayValue] = useState("0" + suffix);
   const [hasStarted, setHasStarted] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
@@ -16,27 +20,27 @@ const CountUp: React.FC<CountUpProps> = ({ end, duration = 2000, suffix = '' }) 
       ([entry]) => {
         if (entry.isIntersecting && !hasStarted) {
           setHasStarted(true);
-          
+
           const startTime = Date.now();
-          const startValue = 0;
-          const endValue = end;
-          
           const animate = () => {
             const currentTime = Date.now();
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            
+
             // Easing function for smooth animation
             const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-            const currentValue = Math.floor(startValue + (endValue - startValue) * easeOutQuart);
-            
-            setCount(currentValue);
-            
+            const currentValue = Math.floor(end * easeOutQuart);
+
+            setDisplayValue(currentValue.toString() + suffix);
+
             if (progress < 1) {
               requestAnimationFrame(animate);
+            } else {
+              // Ensure the final value is exact
+              setDisplayValue(end.toString() + suffix);
             }
           };
-          
+
           requestAnimationFrame(animate);
         }
       },
@@ -48,13 +52,9 @@ const CountUp: React.FC<CountUpProps> = ({ end, duration = 2000, suffix = '' }) 
     }
 
     return () => observer.disconnect();
-  }, [end, duration, hasStarted]);
+  }, [end, duration, suffix, hasStarted]);
 
-  return (
-    <div ref={elementRef}>
-      {count}{suffix}
-    </div>
-  );
+  return <div ref={elementRef}>{displayValue}</div>;
 };
 
 export default CountUp;
