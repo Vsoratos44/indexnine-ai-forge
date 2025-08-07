@@ -14,8 +14,10 @@ const PracticesStudios = () => {
     innovation: {
       title: "The Innovation Lab",
       subtitle: "For Startups and High-Growth Ventures",
-      description: "Designed for startups, this is where speed, agility, and product-market fit are paramount. Innovation Lab clients leverage our Sprint Zero methodology to stress-test ideas, optimize frameworks, and build scalable products.",
-      additionalText: "We provide the design services and agile development teams needed to quickly turn your vision into a funded, market-ready reality.",
+      description:
+        "Designed for startups, this is where speed, agility, and product-market fit are paramount. Innovation Lab clients leverage our Sprint Zero methodology to stress-test ideas, optimize frameworks, and build scalable products.",
+      additionalText:
+        "We provide the design services and agile development teams needed to quickly turn your vision into a funded, market-ready reality.",
       buttonText: "Explore Innovation Lab",
       linkUrl: "/engagement-models/innovation-lab/",
       features: [
@@ -29,9 +31,10 @@ const PracticesStudios = () => {
       },
     },
     enterprise: {
-      title: "The Enterprise Studio", 
+      title: "The Enterprise Studio",
       subtitle: "For Enterprise SMBs and F1000",
-      description: "Built for businesses that require scale, security, and process excellence, The Enterprise Studio provides the maturity and rigor needed for mission-critical product development. With a focus on complex digital transformation consulting and enterprise software development, enterprise businesses enjoy first-in-class quality at an unparalleled rate.",
+      description:
+        "Built for businesses that require scale, security, and process excellence, The Enterprise Studio provides the maturity and rigor needed for mission-critical product development. With a focus on complex digital transformation consulting and enterprise software development, enterprise businesses enjoy first-in-class quality at an unparalleled rate.",
       additionalText: "",
       buttonText: "Explore Enterprise Studio",
       linkUrl: "/engagement-models/enterprise-studio/",
@@ -62,18 +65,20 @@ const PracticesStudios = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 lg:mb-20">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
-            Innovation & Enterprise:{' '}
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat">
+            Innovation & Enterprise:{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Our Practices
             </span>
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
-            Our shift to meet the maturation needs of our clients required a new depth of specialization. To meet this, we've organized our bases of expertise in two dedicated practices.
+            Our shift to meet the maturation needs of our clients required a new
+            depth of specialization. To meet this, we've organized our bases of
+            expertise in two dedicated practices.
           </p>
         </div>
-        
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-top">
           {/* Left Content - Enhanced */}
           <div className="space-y-8 order-2 lg:order-1">
             {/* Studio Selector */}
@@ -104,9 +109,9 @@ const PracticesStudios = () => {
             <div className="relative min-h-[220px]">
               <div className="absolute  top-0 bottom-0 w-1 bg-gradient-to-b from-brand-primary to-brand-accent rounded-0"></div>
               <div className="pl-12">
-                <h3 className="text-3xl lg:text-4xl font-bold text-foreground-dark mb-2 leading-tight font-montserrat">
+                {/* <h3 className="text-3xl lg:text-4xl font-bold text-foreground-dark mb-2 leading-tight font-montserrat">
                   {currentStudio.title}
-                </h3>
+                </h3> */}
                 <h4 className="text-lg lg:text-xl font-semibold text-brand-primary mb-6 font-montserrat">
                   {currentStudio.subtitle}
                 </h4>
@@ -118,12 +123,14 @@ const PracticesStudios = () => {
                     {currentStudio.additionalText}
                   </p>
                 )}
-                <Button 
-                  variant={activeStudio === 'innovation' ? 'outline' : 'outline'} 
-                  size="lg" 
-                  className={activeStudio === 'innovation' 
-                    ? "border-2 rounded-full border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white font-montserrat"
-                    : "border-2 rounded-full border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white font-montserrat"
+                <Button
+                  variant={
+                    activeStudio === "innovation" ? "outline" : "outline"
+                  }
+                  className={
+                    activeStudio === "innovation"
+                      ? "border-2 rounded-full border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white font-montserrat"
+                      : "border-2 rounded-full border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white font-montserrat"
                   }
                 >
                   {currentStudio.buttonText}
@@ -134,7 +141,7 @@ const PracticesStudios = () => {
 
           {/* Right Visual - Dynamic Studio Images */}
           <div
-            className={`relative order-1 lg:order-2 pl-12 pb-24 lg:pb-32 ${styles.tabsBg}`}
+            className={`relative order-1 lg:order-2 pl-12 pb-32 lg:pb-40 ${styles.tabsBg}`}
           >
             <div className="relative rounded-2xl shadow-2xl border border-glass-border group h-[400px]">
               {/* Background Glow Effect */}
