@@ -39,10 +39,10 @@ const PracticesStudios = () => {
         </div>
         
         {/* Studio Selector */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 mb-12">
           <button
             onClick={() => setActiveStudio("innovation")}
-            className={`px-8 py-4 text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 ${
+            className={`px-6 py-3 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
               activeStudio === "innovation"
                 ? "border-primary text-foreground bg-primary/5"
                 : "border-muted text-muted-foreground hover:text-foreground"
@@ -52,7 +52,7 @@ const PracticesStudios = () => {
           </button>
           <button
             onClick={() => setActiveStudio("enterprise")}
-            className={`px-8 py-4 text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 ${
+            className={`px-6 py-3 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
               activeStudio === "enterprise"
                 ? "border-primary text-foreground bg-primary/5"
                 : "border-muted text-muted-foreground hover:text-foreground"
@@ -63,25 +63,25 @@ const PracticesStudios = () => {
         </div>
 
         {/* Active Studio Content */}
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 font-montserrat">
+        <div className="max-w-4xl mx-auto text-center px-4">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 font-montserrat">
             {currentStudio.title}
           </h3>
-          <h4 className="text-lg lg:text-xl font-semibold text-primary mb-6 font-montserrat">
+          <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-primary mb-4 font-montserrat">
             {currentStudio.subtitle}
           </h4>
-          <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg text-foreground/80 mb-6 leading-relaxed">
             {currentStudio.description}
           </p>
           
           {/* Features */}
-          <div className="flex flex-wrap justify-center gap-6 mb-8">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-6">
             {currentStudio.features.map((feature, index) => (
               <div key={index} className="flex items-center space-x-2">
                 <div className={`w-2 h-2 rounded-full ${
                   activeStudio === "innovation" ? "bg-primary" : "bg-purple-500"
                 }`}></div>
-                <span className="text-foreground/80">{feature}</span>
+                <span className="text-sm sm:text-base text-foreground/80">{feature}</span>
               </div>
             ))}
           </div>
