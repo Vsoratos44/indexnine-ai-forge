@@ -4,7 +4,6 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import LogoWhite from "../assets/images/i9logo-logo-wht.svg";
 import LogoBlack from "../assets/images/i9logo-logo-blk.svg";
-import styles from "../assets/css/stylesheet.module.css";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -66,7 +65,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={styles[isLightSection ? "fixedtop" : "stacktop"]}>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background-dark/95 backdrop-blur-md border-b border-white/10">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -283,11 +282,7 @@ const Header = () => {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Button
-              variant="hero"
-              size="default"
-              className={`rounded-full ${styles["btn-primary"]}`}
-            >
+            <Button variant="hero" size="default">
               Scope a Project
             </Button>
           </div>

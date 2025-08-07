@@ -7,6 +7,7 @@ const SocialProof = () => {
     { value: 104, suffix: "+", label: "Solutions Delivered" },
     { value: 220, suffix: "+", label: "Engineers and Designers" },
     { value: 95, suffix: "+", label: "Customers" },
+    { value: 6, suffix: "", label: "Core Studios" },
     { value: 92, suffix: "%", label: "Client Retention" },
   ];
 
