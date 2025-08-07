@@ -1,16 +1,16 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle, Settings, Zap, Target, Award } from 'lucide-react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import LivingVoidBackground from '@/components/LivingVoidBackground';
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle, Settings, Zap, Target, Award } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import LivingVoidBackground from "@/components/LivingVoidBackground";
 
 const QualityEngineering = () => {
   return (
     <div className="min-h-screen bg-background-dark">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative h-[65vh] min-h-[600px] overflow-hidden bg-background-dark">
         {/* Three.js Living Void Background */}
@@ -26,17 +26,26 @@ const QualityEngineering = () => {
             </div>
             <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in">
               Beyond Testing: <br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent">Engineering Quality</span><br />
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                Engineering Quality
+              </span>
+              <br />
               for Mission-Critical Software
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
-              Our enterprise-grade quality engineering and test automation services help startups and SMBs deliver flawless products with speed and confidence.
+              Our enterprise-grade quality engineering and test automation
+              services help startups and SMBs deliver flawless products with
+              speed and confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
               <Button variant="hero" size="xl" className="min-w-[280px]">
                 Get Your APQ Roadmap
               </Button>
-              <Button variant="hero-secondary" size="xl" className="min-w-[240px]">
+              <Button
+                variant="hero-secondary"
+                size="xl"
+                className="min-w-[240px]"
+              >
                 See Our Impact
               </Button>
             </div>
@@ -45,7 +54,10 @@ const QualityEngineering = () => {
       </section>
 
       {/* QAE Blueprint Section */}
-      <section id="qae-solution" className="py-16 bg-background-dark text-foreground">
+      <section
+        id="qae-solution"
+        className="py-16 bg-background-dark text-foreground"
+      >
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -53,33 +65,41 @@ const QualityEngineering = () => {
                 The Outcome-Driven Automation Blueprint
               </h2>
               <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-                Our proven methodology delivers measurable quality improvements without sacrificing velocity.
+                Our proven methodology delivers measurable quality improvements
+                without sacrificing velocity.
               </p>
             </div>
-            
+
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
                   step: "01",
                   title: "BUILD an AI-Assisted Foundation",
-                  description: "Establish robust test frameworks powered by AI to accelerate test creation and maintenance while ensuring comprehensive coverage."
+                  description:
+                    "Establish robust test frameworks powered by AI to accelerate test creation and maintenance while ensuring comprehensive coverage.",
                 },
                 {
-                  step: "02", 
+                  step: "02",
                   title: "ADOPT Shift-Left Principles",
-                  description: "Integrate quality practices early in the development cycle, enabling faster feedback loops and reducing costly late-stage defects."
+                  description:
+                    "Integrate quality practices early in the development cycle, enabling faster feedback loops and reducing costly late-stage defects.",
                 },
                 {
                   step: "03",
-                  title: "DEPLOY Smart & Efficiently", 
-                  description: "Implement intelligent test orchestration that optimizes execution time, resource usage, and provides actionable insights."
-                }
+                  title: "DEPLOY Smart & Efficiently",
+                  description:
+                    "Implement intelligent test orchestration that optimizes execution time, resource usage, and provides actionable insights.",
+                },
               ].map((item) => (
                 <div key={item.step} className="text-center">
                   <div className="w-16 h-16 bg-brand-purple rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-white font-bold text-lg">{item.step}</span>
+                    <span className="text-white font-bold text-lg">
+                      {item.step}
+                    </span>
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">{item.title}</h3>
+                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                    {item.title}
+                  </h3>
                   <p className="text-foreground/80">{item.description}</p>
                 </div>
               ))}
@@ -96,14 +116,18 @@ const QualityEngineering = () => {
               The Quality Dilemma: Balancing Speed, Cost, and Reliability
             </h2>
             <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto">
-              Startups and SMBs are under constant pressure to innovate faster. But when quality assurance becomes a bottleneck, you face a difficult choice: slow down releases, or ship buggy products? Both options lead to rising technical debt, frustrated customers, and a compromised competitive edge.
+              Startups and SMBs are under constant pressure to innovate faster.
+              But when quality assurance becomes a bottleneck, you face a
+              difficult choice: slow down releases, or ship buggy products? Both
+              options lead to rising technical debt, frustrated customers, and a
+              compromised competitive edge.
             </p>
           </div>
         </div>
       </section>
 
       {/* QAE Case Study Section */}
-      <section id="qae-case-study" className="py-16 bg-secondary/30">
+      <section id="qae-case-study" className="py-16 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="mb-6">
@@ -114,28 +138,43 @@ const QualityEngineering = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground-dark">
               Enabling Velocity for a High-Growth FinTech
             </h2>
-            
+
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-lg text-foreground-dark-muted mb-6">
-                  A rapidly growing FinTech company was spending 5 days on regression testing for each release, slowing their deployment cycle and increasing time-to-market. Manual testing was becoming a bottleneck as their product complexity grew.
+                  A rapidly growing FinTech company was spending 5 days on
+                  regression testing for each release, slowing their deployment
+                  cycle and increasing time-to-market. Manual testing was
+                  becoming a bottleneck as their product complexity grew.
                 </p>
                 <p className="text-lg text-foreground-dark-muted mb-8">
-                  We implemented our snap.automate platform with intelligent test orchestration, reducing their regression testing from 5 days to 30 minutes while improving test coverage by 40%. The project was delivered on a 100% success fee basis, ensuring risk-free value delivery.
+                  We implemented our snap.automate platform with intelligent
+                  test orchestration, reducing their regression testing from 5
+                  days to 30 minutes while improving test coverage by 40%. The
+                  project was delivered on a 100% success fee basis, ensuring
+                  risk-free value delivery.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-6">
                 <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                   <CardContent className="p-0">
-                    <div className="text-3xl font-bold text-brand-purple mb-2">97%</div>
-                    <p className="text-sm text-foreground/80">Reduction in Execution Time (5 days to 30 mins)</p>
+                    <div className="text-3xl font-bold text-brand-purple mb-2">
+                      97%
+                    </div>
+                    <p className="text-sm text-foreground/80">
+                      Reduction in Execution Time (5 days to 30 mins)
+                    </p>
                   </CardContent>
                 </Card>
                 <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                   <CardContent className="p-0">
-                    <div className="text-3xl font-bold text-brand-purple mb-2">100%</div>
-                    <p className="text-sm text-foreground/80">Success Fee Achieved</p>
+                    <div className="text-3xl font-bold text-brand-purple mb-2">
+                      100%
+                    </div>
+                    <p className="text-sm text-foreground/80">
+                      Success Fee Achieved
+                    </p>
                   </CardContent>
                 </Card>
               </div>
@@ -153,16 +192,20 @@ const QualityEngineering = () => {
                 QAE Solutions in Action
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                Powered by our proprietary automation platforms, purpose-built internally to accelerate implementation and maximize ROI.
+                Powered by our proprietary automation platforms, purpose-built
+                internally to accelerate implementation and maximize ROI.
               </p>
             </div>
 
             {/* Proprietary Automation Platforms */}
             <div className="mb-20">
               <div className="text-center mb-16">
-                <h3 className="text-2xl font-bold text-foreground-dark mb-4">Our Proprietary Automation Platforms</h3>
+                <h3 className="text-2xl font-bold text-foreground-dark mb-4">
+                  Our Proprietary Automation Platforms
+                </h3>
                 <p className="text-lg text-foreground-dark-muted max-w-2xl mx-auto">
-                  Purpose-built tools that accelerate implementation and maximize ROI.
+                  Purpose-built tools that accelerate implementation and
+                  maximize ROI.
                 </p>
               </div>
 
@@ -172,22 +215,33 @@ const QualityEngineering = () => {
                     <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
                       <Zap className="h-8 w-8 text-brand-purple" />
                     </div>
-                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">snap.automate</h4>
-                    <p className="text-foreground-dark-muted mb-6">
-                      Our flagship automation platform that provides intelligent test orchestration, AI-powered maintenance, and comprehensive reporting. Designed for rapid deployment and maximum coverage.
+                    <h4 className="text-2xl font-bold mb-4 text-foreground-light">
+                      snap.automate
+                    </h4>
+                    <p className="text-foreground-light-muted mb-6">
+                      Our flagship automation platform that provides intelligent
+                      test orchestration, AI-powered maintenance, and
+                      comprehensive reporting. Designed for rapid deployment and
+                      maximum coverage.
                     </p>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                        <span className="text-foreground-dark-muted">AI-assisted test creation and maintenance</span>
+                        <span className="text-foreground-light-muted">
+                          AI-assisted test creation and maintenance
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                        <span className="text-foreground-dark-muted">Intelligent test orchestration and optimization</span>
+                        <span className="text-foreground-light-muted">
+                          Intelligent test orchestration and optimization
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                        <span className="text-foreground-dark-muted">Real-time insights and actionable reports</span>
+                        <span className="text-foreground-light-muted">
+                          Real-time insights and actionable reports
+                        </span>
                       </li>
                     </ul>
                   </CardContent>
@@ -198,22 +252,32 @@ const QualityEngineering = () => {
                     <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
                       <Target className="h-8 w-8 text-brand-purple" />
                     </div>
-                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">snap.atomicqa</h4>
-                    <p className="text-foreground-dark-muted mb-6">
-                      Specialized platform for component-level testing and continuous quality assurance. Perfect for teams practicing shift-left methodologies and micro-service architectures.
+                    <h4 className="text-2xl font-bold mb-4 text-foreground-light">
+                      snap.atomicqa
+                    </h4>
+                    <p className="text-foreground-light-muted mb-6">
+                      Specialized platform for component-level testing and
+                      continuous quality assurance. Perfect for teams practicing
+                      shift-left methodologies and micro-service architectures.
                     </p>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                        <span className="text-foreground-dark-muted">Component-level test automation</span>
+                        <span className="text-foreground-light-muted">
+                          Component-level test automation
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                        <span className="text-foreground-dark-muted">Continuous integration and deployment support</span>
+                        <span className="text-foreground-light-muted">
+                          Continuous integration and deployment support
+                        </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                        <span className="text-foreground-dark-muted">Micro-service testing capabilities</span>
+                        <span className="text-foreground-light-muted">
+                          Micro-service testing capabilities
+                        </span>
                       </li>
                     </ul>
                   </CardContent>
@@ -224,31 +288,44 @@ const QualityEngineering = () => {
             {/* Real-world Applications */}
             <div>
               <div className="text-center mb-16">
-                <h3 className="text-2xl font-bold text-foreground-dark mb-4">Real-World Applications</h3>
+                <h3 className="text-2xl font-bold text-foreground-dark mb-4">
+                  Real-World Applications
+                </h3>
                 <p className="text-lg text-foreground-dark-muted max-w-2xl mx-auto">
-                  How our proprietary platforms deliver measurable results across different scenarios.
+                  How our proprietary platforms deliver measurable results
+                  across different scenarios.
                 </p>
               </div>
 
               <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-0">
-                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">E-commerce Platform Testing</h4>
+                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">
+                      E-commerce Platform Testing
+                    </h4>
                     <p className="text-foreground-dark-muted mb-6">
-                      Comprehensive testing strategy for a high-traffic retail platform using snap.automate, ensuring seamless user experience during peak shopping periods.
+                      Comprehensive testing strategy for a high-traffic retail
+                      platform using snap.automate, ensuring seamless user
+                      experience during peak shopping periods.
                     </p>
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">99.9% uptime achieved</span>
+                        <span className="text-foreground-dark font-medium">
+                          99.9% uptime achieved
+                        </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">40% faster test execution</span>
+                        <span className="text-foreground-dark font-medium">
+                          40% faster test execution
+                        </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">60% reduction in production bugs</span>
+                        <span className="text-foreground-dark font-medium">
+                          60% reduction in production bugs
+                        </span>
                       </div>
                     </div>
                   </CardContent>
@@ -256,22 +333,32 @@ const QualityEngineering = () => {
 
                 <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-0">
-                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">Financial Services Automation</h4>
+                    <h4 className="text-2xl font-bold mb-4 text-foreground-dark">
+                      Financial Services Automation
+                    </h4>
                     <p className="text-foreground-dark-muted mb-6">
-                      End-to-end automation suite using snap.atomicqa for a fintech application, covering security, performance, and regulatory compliance testing.
+                      End-to-end automation suite using snap.atomicqa for a
+                      fintech application, covering security, performance, and
+                      regulatory compliance testing.
                     </p>
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">100% regulatory compliance</span>
+                        <span className="text-foreground-dark font-medium">
+                          100% regulatory compliance
+                        </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">50% faster release cycles</span>
+                        <span className="text-foreground-dark font-medium">
+                          50% faster release cycles
+                        </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <CheckCircle className="w-5 h-5 text-brand-purple flex-shrink-0" />
-                        <span className="text-foreground-dark font-medium">Zero security incidents</span>
+                        <span className="text-foreground-dark font-medium">
+                          Zero security incidents
+                        </span>
                       </div>
                     </div>
                   </CardContent>
@@ -283,7 +370,7 @@ const QualityEngineering = () => {
       </section>
 
       {/* QAE Consulting Section */}
-      <section id="qae-consulting" className="py-16 bg-secondary/30">
+      <section id="qae-consulting" className="py-16 bg-secondary/100">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -291,60 +378,77 @@ const QualityEngineering = () => {
                 Enterprise QA Engineering Services
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                Strategic consulting services that transform your quality practices.
+                Strategic consulting services that transform your quality
+                practices.
               </p>
             </div>
-            
+
             <div className="grid lg:grid-cols-2 gap-8">
               <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">Sprint 0: Automation Kickstart</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">
+                    Sprint 0: Automation Kickstart
+                  </h3>
                   <p className="text-foreground-dark-muted mb-6">
-                    2-week rapid assessment and framework setup that gets your automation initiative off the ground with clear ROI projections and immediate wins.
+                    2-week rapid assessment and framework setup that gets your
+                    automation initiative off the ground with clear ROI
+                    projections and immediate wins.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Current state assessment and gap analysis</span>
+                      <span className="text-foreground-dark-muted">
+                        Current state assessment and gap analysis
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Framework setup and initial test creation</span>
+                      <span className="text-foreground-dark-muted">
+                        Framework setup and initial test creation
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Team training and knowledge transfer</span>
+                      <span className="text-foreground-dark-muted">
+                        Team training and knowledge transfer
+                      </span>
                     </li>
                   </ul>
-                  <Button variant="outline" className="w-full">
-                    Learn More
-                  </Button>
+                  <Button className="w-full rounded-full">Learn More</Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">Agile Product Quality (APQ) Roadmap</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">
+                    Agile Product Quality (APQ) Roadmap
+                  </h3>
                   <p className="text-foreground-dark-muted mb-6">
-                    Comprehensive 4-week engagement that creates a strategic quality roadmap aligned with your product development lifecycle and business objectives.
+                    Comprehensive 4-week engagement that creates a strategic
+                    quality roadmap aligned with your product development
+                    lifecycle and business objectives.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Quality maturity assessment and benchmarking</span>
+                      <span className="text-foreground-dark-muted">
+                        Quality maturity assessment and benchmarking
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">Strategic roadmap with phased implementation</span>
+                      <span className="text-foreground-dark-muted">
+                        Strategic roadmap with phased implementation
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">ROI projections and success metrics</span>
+                      <span className="text-foreground-dark-muted">
+                        ROI projections and success metrics
+                      </span>
                     </li>
                   </ul>
-                  <Button className="w-full">
-                    Get Started
-                  </Button>
+                  <Button className="w-full rounded-full">Get Started</Button>
                 </CardContent>
               </Card>
             </div>
@@ -361,17 +465,25 @@ const QualityEngineering = () => {
                 The Right Tool for the Job: Robot Framework vs. Playwright
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                Choosing a test automation framework is a strategic decision that impacts long-term success. We help you make the right choice based on your specific needs.
+                Choosing a test automation framework is a strategic decision
+                that impacts long-term success. We help you make the right
+                choice based on your specific needs.
               </p>
             </div>
-            
+
             <div className="overflow-x-auto">
               <table className="w-full border-collapse bg-background-card-light rounded-lg overflow-hidden border border-glass-border">
                 <thead>
                   <tr className="bg-brand-primary/10">
-                    <th className="text-left p-4 font-semibold text-foreground-dark">Feature</th>
-                    <th className="text-center p-4 font-semibold text-foreground-dark">Robot Framework</th>
-                    <th className="text-center p-4 font-semibold text-foreground-dark">Playwright</th>
+                    <th className="text-left p-4 font-semibold text-foreground-dark">
+                      Feature
+                    </th>
+                    <th className="text-center p-4 font-semibold text-foreground-dark">
+                      Robot Framework
+                    </th>
+                    <th className="text-center p-4 font-semibold text-foreground-dark">
+                      Playwright
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="bg-background-card-light">
@@ -379,38 +491,46 @@ const QualityEngineering = () => {
                     {
                       feature: "Learning Curve",
                       robot: "Low - Keyword-driven, business-friendly",
-                      playwright: "Medium - Requires JavaScript/TypeScript knowledge"
+                      playwright:
+                        "Medium - Requires JavaScript/TypeScript knowledge",
                     },
                     {
                       feature: "Team Collaboration",
-                      robot: "Excellent - Non-technical team members can contribute",
-                      playwright: "Good - Developer-focused"
+                      robot:
+                        "Excellent - Non-technical team members can contribute",
+                      playwright: "Good - Developer-focused",
                     },
                     {
                       feature: "Performance",
                       robot: "Good - Suitable for most use cases",
-                      playwright: "Excellent - Modern, fast execution"
+                      playwright: "Excellent - Modern, fast execution",
                     },
                     {
                       feature: "Browser Support",
                       robot: "Good - Multiple browser support",
-                      playwright: "Excellent - Native modern browser support"
+                      playwright: "Excellent - Native modern browser support",
                     },
                     {
                       feature: "Maintenance",
                       robot: "Easy - Readable, maintainable tests",
-                      playwright: "Medium - Requires technical expertise"
+                      playwright: "Medium - Requires technical expertise",
                     },
                     {
                       feature: "Reporting",
                       robot: "Excellent - Rich, detailed reports",
-                      playwright: "Good - Developer-friendly reports"
-                    }
+                      playwright: "Good - Developer-friendly reports",
+                    },
                   ].map((row, index) => (
                     <tr key={index} className="border-t border-glass-border">
-                      <td className="p-4 font-medium text-foreground-dark">{row.feature}</td>
-                      <td className="p-4 text-center text-foreground-dark-muted">{row.robot}</td>
-                      <td className="p-4 text-center text-foreground-dark-muted">{row.playwright}</td>
+                      <td className="p-4 font-medium text-foreground-dark">
+                        {row.feature}
+                      </td>
+                      <td className="p-4 text-center text-foreground-dark-muted">
+                        {row.robot}
+                      </td>
+                      <td className="p-4 text-center text-foreground-dark-muted">
+                        {row.playwright}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -428,9 +548,10 @@ const QualityEngineering = () => {
               Ready to Transform Your QA Process?
             </h2>
             <p className="text-xl mb-8 text-foreground/85">
-              Stop choosing between speed and quality. Let's build an automation strategy that delivers both.
+              Stop choosing between speed and quality. Let's build an automation
+              strategy that delivers both.
             </p>
-            <Button variant="hero" size="xl" className="min-w-[250px]">
+            <Button variant="hero" size="xl" className="min-w-[250px] ">
               Book Your APQ Roadmap Session
             </Button>
           </div>

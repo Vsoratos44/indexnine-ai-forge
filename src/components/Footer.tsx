@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
 
+import Gptw from "../assets/images/gptw.webp";
+import Iso from "../assets/images/iso.svg";
+import Logo from "../assets/images/i9logo-logo-wht.svg";
+
 const Footer = () => {
   useEffect(() => {
     const script = document.createElement("script");
@@ -25,11 +29,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-8">
               <span className="text-2xl font-bold text-foreground-white">
-                <img
-                  src="./src/assets/images/i9logo-logo-wht.svg"
-                  alt="IndexNine"
-                  className="h-8"
-                />
+                <img src={Logo} alt="IndexNine" className="h-8" />
               </span>
             </div>
             <p className="text-foreground-white/85 leading-relaxed max-w-lg text-lg font-light mb-8">
@@ -94,19 +94,11 @@ const Footer = () => {
           <div className="md:col-span-2 flex items-center gap-4"></div>
           <div className="md:col-span-2 flex items-center gap-4">
             <a href="https://indexnine.com/careers/">
-              <img
-                src="./src/assets/images/gptw.webp"
-                alt="GPTW"
-                className="h-24"
-              />
+              <img src={Gptw} alt="GPTW" className="h-24" />
             </a>
 
             <a href="https://indexnine.com/careers/">
-              <img
-                src="./src/assets/images/iso.svg"
-                alt="ISO"
-                className="h-12"
-              />
+              <img src={Iso} alt="ISO" className="h-12" />
             </a>
             <div className="min-w-[220px]">
               <div
