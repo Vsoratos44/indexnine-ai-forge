@@ -1,20 +1,27 @@
-import React, { useState, useEffect, Suspense, lazy } from 'react';
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
-import { useContent } from '@/hooks/useContent';
-import { OrganizationSchema, WebPageSchema, LocalBusinessSchema, VideoObjectSchema } from '@/components/SEOStructuredData';
+import React, { useState, useEffect, Suspense, lazy } from "react";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { useContent } from "@/hooks/useContent";
+import {
+  OrganizationSchema,
+  WebPageSchema,
+  LocalBusinessSchema,
+  VideoObjectSchema,
+} from "@/components/SEOStructuredData";
 
 // Lazy load heavy components that are below the fold
-const ValueProposition = lazy(() => import('@/components/ValueProposition'));
-const SocialProof = lazy(() => import('@/components/SocialProof'));
-const ClientExperience = lazy(() => import('@/components/ClientExperience'));
-const ProductLifecycle = lazy(() => import('@/components/ProductLifecycle'));
-const PracticesStudios = lazy(() => import('@/components/PracticesStudios'));
-const Differentiators = lazy(() => import('@/components/Differentiators'));
-const InsightsCarousel = lazy(() => import('@/components/InsightsCarousel'));
-const DynamicContentRenderer = lazy(() => import('@/components/cms/DynamicContentRenderer'));
+const ValueProposition = lazy(() => import("@/components/ValueProposition"));
+const SocialProof = lazy(() => import("@/components/SocialProof"));
+const ClientExperience = lazy(() => import("@/components/ClientExperience"));
+const ProductLifecycle = lazy(() => import("@/components/ProductLifecycle"));
+const PracticesStudios = lazy(() => import("@/components/PracticesStudios"));
+const Differentiators = lazy(() => import("@/components/Differentiators"));
+const InsightsCarousel = lazy(() => import("@/components/InsightsCarousel"));
+const DynamicContentRenderer = lazy(
+  () => import("@/components/cms/DynamicContentRenderer")
+);
 
 // Minimal loading component
 const SectionLoader = () => (
@@ -24,13 +31,13 @@ const SectionLoader = () => (
 );
 
 const Index = () => {
-  console.log('Index page loading...');
+  console.log("Index page loading...");
   const { content, loading } = useContent();
   const [useDynamicContent, setUseDynamicContent] = useState(false);
 
   // Check if we should use dynamic content
   useEffect(() => {
-    if (content.length > 0 && content.some(item => item.published)) {
+    if (content.length > 0 && content.some((item) => item.published)) {
       setUseDynamicContent(true);
     }
   }, [content]);
@@ -52,7 +59,7 @@ const Index = () => {
       {/* Enhanced SEO: Organization + LocalBusiness + VideoObject schema for comprehensive homepage visibility */}
       {/* These schemas help AI systems understand our company, services, and multimedia content */}
       <OrganizationSchema />
-      <WebPageSchema 
+      <WebPageSchema
         title="B2B Product Engineering and AI Consulting Services | IndexNine"
         description="Indexnine offers best-in-class product engineering and custom software development for startups and enterprises. Find out what we can do for you today."
         url="https://yoursite.lovable.app/"
@@ -67,7 +74,7 @@ const Index = () => {
         duration="60"
         contentUrl="https://yoursite.lovable.app/videos/intro.mp4"
       />
-      
+
       {/* Above-the-fold content - always load immediately */}
       <Header />
       <Hero />
@@ -83,44 +90,47 @@ const Index = () => {
           <Suspense fallback={<SectionLoader />}>
             <ValueProposition />
           </Suspense>
-          
+
           <Suspense fallback={<SectionLoader />}>
             <SocialProof />
           </Suspense>
-          
+
           <Suspense fallback={<SectionLoader />}>
             <ClientExperience />
           </Suspense>
-          
+
           <Suspense fallback={<SectionLoader />}>
             <ProductLifecycle />
           </Suspense>
-          
+
           <Suspense fallback={<SectionLoader />}>
             <PracticesStudios />
           </Suspense>
-          
+
           <Suspense fallback={<SectionLoader />}>
             <Differentiators />
           </Suspense>
-          
+
           <Suspense fallback={<SectionLoader />}>
             <InsightsCarousel />
           </Suspense>
         </>
       )}
-      
+
       {/* Global CTA Banner */}
       <section id="home-contact" className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-8 font-montserrat">
-                    Ready to make your vision a reality?
-
+            Ready to make your vision a reality?
           </h2>
           <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
-            Thinking about what's next for your business? Let's talk. Schedule a free strategy session with our product engineering experts and discover what Indexnine can do for you today.
+            Thinking about what's next for your business? Let's talk. Schedule a
+            free strategy session with our product engineering experts and
+            discover what Indexnine can do for you today.
           </p>
-          <Button variant="hero" size="xl">Let's Get Started</Button>
+          <Button variant="hero" size="xl" className="rounded-full">
+            Let's Get Started
+          </Button>
         </div>
       </section>
 
