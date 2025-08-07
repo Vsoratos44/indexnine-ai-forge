@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "./CountUp";
+import aboutInfoSvg from "@/assets/images/about-info.svg";
 
 const SocialProof = () => {
   const stats = [
@@ -80,7 +81,7 @@ const SocialProof = () => {
               </div>
             </div> */}
             <img 
-              src="/src/assets/images/about-info.svg" 
+              src={aboutInfoSvg} 
               alt="Client success metrics and analytics chart" 
               className="w-full h-auto max-w-md mx-auto"
             />
