@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,48 +8,74 @@ const Footer = () => {
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-brand-purple/5 rounded-full blur-3xl"></div>
       </div>
-      
+
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-4 gap-12 lg:gap-16">
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-8">
-              <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center shadow-glow">
-                <div className="w-5 h-5 bg-white rounded-sm"></div>
-              </div>
-              <span className="text-2xl font-bold text-foreground-white">INDEXNINE</span>
+              <img
+                src="./src/assets/images/i9logo-logo-wht.svg"
+                alt="IndexNine"
+                className="h-8"
+              />
             </div>
             <p className="text-foreground-white/85 leading-relaxed max-w-lg text-lg font-light mb-8">
-              We are a strategic partner for modern businesses, helping them build innovative products, modernize legacy systems, and leverage AI to drive positive business outcomes.
+              We are a strategic partner for modern businesses, helping them
+              build innovative products, modernize legacy systems, and leverage
+              AI to drive positive business outcomes.
             </p>
             <div className="flex space-x-4">
               <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-primary transition-colors duration-300 cursor-pointer">
-                <span className="text-foreground-white text-sm font-semibold">in</span>
+                <span className="text-foreground-white text-sm font-semibold">
+                  in
+                </span>
               </div>
               <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-primary transition-colors duration-300 cursor-pointer">
-                <span className="text-foreground-white text-sm font-semibold">𝕏</span>
+                <span className="text-foreground-white text-sm font-semibold">
+                  𝕏
+                </span>
               </div>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-foreground-white font-bold text-lg mb-8">Services</h4>
+            <h4 className="text-foreground-white font-bold text-lg mb-8">
+              Services
+            </h4>
             <ul className="space-y-4 text-foreground-white/80">
-              <li className="hover:text-brand-primary transition-colors cursor-pointer">Custom Software Development</li>
-              <li className="hover:text-brand-primary transition-colors cursor-pointer">AI & ML Development</li>
-              <li className="hover:text-brand-primary transition-colors cursor-pointer">Data Engineering</li>
-              <li className="hover:text-brand-primary transition-colors cursor-pointer">Quality Assurance Engineering</li>
+              <li className="hover:text-brand-primary transition-colors cursor-pointer">
+                Custom Software Development
+              </li>
+              <li className="hover:text-brand-primary transition-colors cursor-pointer">
+                AI & ML Development
+              </li>
+              <li className="hover:text-brand-primary transition-colors cursor-pointer">
+                Data Engineering
+              </li>
+              <li className="hover:text-brand-primary transition-colors cursor-pointer">
+                Quality Assurance Engineering
+              </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-foreground-white font-bold text-lg mb-8">Contact</h4>
+            <h4 className="text-foreground-white font-bold text-lg mb-8">
+              Contact
+            </h4>
             <div className="space-y-4 text-foreground-white/80">
-              <p className="leading-relaxed">12th Floor, Sadanand Business Center, Pashan Hwy Side Rd, Mahalunge, Pune, Maharashtra 411045</p>
-              <p className="hover:text-brand-primary transition-colors cursor-pointer">+91 987 654 3210</p>
-              <p className="hover:text-brand-primary transition-colors cursor-pointer">info@indexnine.com</p>
+              <p className="leading-relaxed">
+                12th Floor, Sadanand Business Center, Pashan Hwy Side Rd,
+                Mahalunge, Pune, Maharashtra 411045
+              </p>
+              <p className="hover:text-brand-primary transition-colors cursor-pointer">
+                +91 987 654 3210
+              </p>
+              <p className="hover:text-brand-primary transition-colors cursor-pointer">
+                info@indexnine.com
+              </p>
             </div>
           </div>
         </div>
@@ -58,17 +84,18 @@ const Footer = () => {
         <div className="border-t border-white/10 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-foreground-white/60 text-sm">
-              © 2024 IndexNine. All rights reserved. | Privacy Policy | Terms of Service
+              © 2024 IndexNine. All rights reserved. | Privacy Policy | Terms of
+              Service
             </p>
             <div className="flex space-x-4">
-              <Link 
-                to="/events/mobile-app" 
+              <Link
+                to="/events/mobile-app"
                 className="text-foreground-white/60 hover:text-brand-primary transition-colors text-sm border border-white/20 px-4 py-2 rounded-lg hover:border-brand-primary/50"
               >
                 Events Mobile App
               </Link>
-              <Link 
-                to="/cms/dashboard" 
+              <Link
+                to="/cms/dashboard"
                 className="text-foreground-white/60 hover:text-brand-primary transition-colors text-sm border border-white/20 px-4 py-2 rounded-lg hover:border-brand-primary/50"
               >
                 Employee Login
