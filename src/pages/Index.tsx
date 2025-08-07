@@ -26,7 +26,7 @@ const Index = () => {
       {/* Global CTA Banner */}
       <section id="home-contact" className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-semibold text-foreground mb-8 font-montserrat">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-8 font-montserrat">
             Ready to transform your idea into an enduring reality?
           </h2>
           <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
