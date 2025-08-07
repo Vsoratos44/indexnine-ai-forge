@@ -282,7 +282,7 @@ const Header = () => {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="default">
+            <Button variant="hero" size="default" className="rounded-full">
               Scope a Project
             </Button>
           </div>
