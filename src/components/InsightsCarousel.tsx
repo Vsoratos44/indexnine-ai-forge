@@ -26,38 +26,42 @@ const InsightsCarousel = () => {
   // CMS-ready data structure - can be replaced with API call
   const carouselItems: CarouselItem[] = [
     {
-      id: '1',
-      type: 'eBooks',
-      title: 'The CXO\'s Guide to Building AI Products',
-      description: 'A comprehensive guide for executive leaders on strategic AI product development and implementation.',
-      date: 'January 15, 2025',
-      readTime: '45 min read',
-      category: 'AI Strategy',
-      image: '/api/placeholder/400/300',
-      link: '/ebooks/cxo-guide-ai-products'
+      id: "1",
+      type: "eBooks",
+      title: "The CXO's Guide to Building AI Products",
+      description:
+        "A comprehensive guide for executive leaders on strategic AI product development and implementation.",
+      date: "January 15, 2025",
+      readTime: "45 min read",
+      category: "AI Strategy",
+      image: "/api/placeholder/400/300",
+      link: "/ebooks/cxo-guide-ai-products",
     },
     {
-      id: '2',
-      type: 'Blogs',
-      title: 'The Modern Analytics Platform: A Blueprint for Your Data Strategy',
-      description: 'Essential patterns and architecture for building scalable, modern analytics platforms that drive business value.',
-      date: 'January 12, 2025',
-      readTime: '12 min read',
-      category: 'Data Strategy',
-      image: '/api/placeholder/400/300',
-      link: '/blog/modern-analytics-platform'
+      id: "2",
+      type: "Blogs",
+      title:
+        "The Modern Analytics Platform: A Blueprint for Your Data Strategy",
+      description:
+        "Essential patterns and architecture for building scalable, modern analytics platforms that drive business value.",
+      date: "January 12, 2025",
+      readTime: "12 min read",
+      category: "Data Strategy",
+      image: "/api/placeholder/400/300",
+      link: "/blog/modern-analytics-platform",
     },
     {
-      id: '3',
-      type: 'Blogs',
-      title: 'Beyond Testing: A Leader\'s Guide to True Quality Engineering',
-      description: 'How modern QE practices go beyond traditional testing to embed quality throughout the product development lifecycle.',
-      date: 'January 10, 2025',
-      readTime: '10 min read',
-      category: 'Quality Engineering',
-      image: '/api/placeholder/400/300',
-      link: '/blog/beyond-testing-quality-engineering'
-    }
+      id: "3",
+      type: "Blogs",
+      title: "Beyond Testing: A Leader's Guide to True Quality Engineering",
+      description:
+        "How modern QE practices go beyond traditional testing to embed quality throughout the product development lifecycle.",
+      date: "January 10, 2025",
+      readTime: "10 min read",
+      category: "Quality Engineering",
+      image: "/api/placeholder/400/300",
+      link: "/blog/beyond-testing-quality-engineering",
+    },
   ];
 
   const getIcon = (type: string) => {
@@ -110,15 +114,19 @@ const InsightsCarousel = () => {
         ></div>
       </div>
 
-      <div className="container-full mx-auto px-0 lg:px-0 relative z-10">
+      <div className="container mx-auto px-0 lg:px-0 relative z-10">
         <div className="container text-center mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 leading-tight tracking-tight font-montserrat">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-            Insights That Shape Products
+              Insights That Shape Products
             </span>
           </h2>
           <p className="text-xl text-foreground-dark-muted max-w-3xl mx-auto font-light font-montserrat">
-            Our work at the forefront of product engineering and AI consulting offers a unique perspective. We're committed to sharing what we learn with leaders navigating the complex landscape of digital innovation. Explore our thought leadership to gain actionable insights for your product journey.
+            Our work at the forefront of product engineering and AI consulting
+            offers a unique perspective. We're committed to sharing what we
+            learn with leaders navigating the complex landscape of digital
+            innovation. Explore our thought leadership to gain actionable
+            insights for your product journey.
           </p>
         </div>
 
@@ -137,7 +145,7 @@ const InsightsCarousel = () => {
                 return (
                   <CarouselItem
                     key={item.id}
-                    className="px-4 py-10 sm:basis-1/1 md:basis-1/2 lg:basis-1/4"
+                    className="px-4 py-10 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
                   >
                     <div className="relative group h-full">
                       {/* Enhanced Glassmorphism Card */}
