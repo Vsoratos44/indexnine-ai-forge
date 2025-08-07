@@ -61,6 +61,16 @@ header .fixed.inset-0 {
   background-position: center 100px;
 }
 
+.tabsBg {
+  background: url(./../images/accordn-bg.svg) no-repeat;
+  background-position: left 100px;
+}
+.sectionBg {
+  background: url(./../images/section-bg2.webp) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .bord-rb {
   background: #ffffff00;
   background: linear-gradient(

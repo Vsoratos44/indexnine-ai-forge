@@ -50,7 +50,8 @@ const ProductLifecycle = () => {
   return (
     <section
       data-section="product-lifecycle"
-      className={`py-24 lg:py-32 bg-[#fff] relative overflow-hidden ${styles.sectionBgRadial}`}
+      className=
+      {`py-24 lg:py-32 bg-[#fff] relative overflow-hidden ${styles.sectionBgRadial}`}
     >
       {/* Background blur elements */}
       <div className="absolute inset-0">
