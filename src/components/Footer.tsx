@@ -1,7 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 
 const Footer = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://widget.clutch.co/static/js/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <footer className="bg-background-dark py-20 lg:py-24 relative overflow-hidden">
       <div className="absolute inset-0">
@@ -14,11 +24,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-8">
-              <img
-                src="./src/assets/images/i9logo-logo-wht.svg"
-                alt="IndexNine"
-                className="h-8"
-              />
+              <span className="text-2xl font-bold text-foreground-white">
+                <img
+                  src="./src/assets/images/i9logo-logo-wht.svg"
+                  alt="IndexNine"
+                  className="h-8"
+                />
+              </span>
             </div>
             <p className="text-foreground-white/85 leading-relaxed max-w-lg text-lg font-light mb-8">
               We are a strategic partner for modern businesses, helping them
@@ -78,29 +90,54 @@ const Footer = () => {
               </p>
             </div>
           </div>
+
+          <div className="md:col-span-2 flex items-center gap-4"></div>
+          <div className="md:col-span-2 flex items-center gap-4">
+            <a href="https://indexnine.com/careers/">
+              <img
+                src="./src/assets/images/gptw.webp"
+                alt="GPTW"
+                className="h-24"
+              />
+            </a>
+
+            <a href="https://indexnine.com/careers/">
+              <img
+                src="./src/assets/images/iso.svg"
+                alt="ISO"
+                className="h-12"
+              />
+            </a>
+            <div className="min-w-[220px]">
+              <div
+                className="clutch-widget"
+                data-url="https://widget.clutch.co"
+                data-widget-type="14"
+                data-height="50"
+                data-nofollow="false"
+                data-expandifr="true"
+                data-primary-color="#505dfd"
+                data-header-color="#00010a"
+                data-clutchcompany-id="2249150"
+              ></div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Border */}
         <div className="border-t border-white/10 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-foreground-white/60 text-sm">
-              © 2024 IndexNine. All rights reserved. | Privacy Policy | Terms of
+              © 2025 IndexNine. All rights reserved. | Privacy Policy | Terms of
               Service
             </p>
-            <div className="flex space-x-4">
-              <Link
-                to="/events/mobile-app"
-                className="text-foreground-white/60 hover:text-brand-primary transition-colors text-sm border border-white/20 px-4 py-2 rounded-lg hover:border-brand-primary/50"
-              >
-                Events Mobile App
-              </Link>
-              <Link
-                to="/cms/dashboard"
-                className="text-foreground-white/60 hover:text-brand-primary transition-colors text-sm border border-white/20 px-4 py-2 rounded-lg hover:border-brand-primary/50"
-              >
-                Employee Login
-              </Link>
-            </div>
+            {/* Optional Login link */}
+            {/* <a
+              href="/cms/dashboard"
+              className="text-foreground-white/60 hover:text-brand-primary transition-colors text-sm border border-white/20 px-4 py-2 rounded-lg hover:border-brand-primary/50"
+            >
+              Employee Login
+            </a> */}
           </div>
         </div>
       </div>
