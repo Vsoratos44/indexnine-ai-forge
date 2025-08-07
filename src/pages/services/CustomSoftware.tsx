@@ -1,54 +1,76 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
-import { Breadcrumbs } from '@/components/ui/breadcrumbs';
-import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
-import { Code, Cpu, Database, Shield, Zap, Users } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import {
+  ServiceSchema,
+  WebPageSchema,
+  BreadcrumbSchema,
+} from "@/components/SEOStructuredData";
+import { Code, Cpu, Database, Shield, Zap, Users } from "lucide-react";
 
 const CustomSoftware = () => {
   return (
     <div className="min-h-screen bg-background">
-      <ServiceSchema 
+      <ServiceSchema
         name="Custom Software Development"
         description="End-to-end custom software development for web and mobile applications"
         serviceType="Software Development"
       />
-      <WebPageSchema 
+      <WebPageSchema
         title="Custom Software Development Services"
         description="Scalable, secure, and high-performance web and mobile applications engineered for growth"
         url="https://yoursite.lovable.app/services/custom-software"
       />
-      <BreadcrumbSchema items={[
-        { name: 'Home', url: 'https://yoursite.lovable.app/' },
-        { name: 'Services', url: 'https://yoursite.lovable.app/services' },
-        { name: 'Custom Software Development', url: 'https://yoursite.lovable.app/services/custom-software' }
-      ]} />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://yoursite.lovable.app/" },
+          { name: "Services", url: "https://yoursite.lovable.app/services" },
+          {
+            name: "Custom Software Development",
+            url: "https://yoursite.lovable.app/services/custom-software",
+          },
+        ]}
+      />
       <Header />
-      
+
       <div className="container mx-auto px-6 lg:px-8 pt-32">
         <Breadcrumbs />
       </div>
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-24 bg-gradient-hero relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-1/4 right-1/6 w-80 h-80 bg-brand-purple/6 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+          <div
+            className="absolute bottom-1/4 right-1/6 w-80 h-80 bg-brand-purple/6 rounded-full blur-3xl animate-float"
+            style={{ animationDelay: "2s" }}
+          ></div>
         </div>
-        
+
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight font-montserrat">
-              End-to-End <span className="bg-gradient-primary bg-clip-text text-transparent">Custom Software Development</span>
+              End-to-End{" "}
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                Custom Software Development
+              </span>
             </h1>
             <p className="text-xl text-foreground/85 mb-12 leading-relaxed font-montserrat">
-              We build scalable, secure, and high-performance web and mobile applications engineered for growth. Our full-stack development capabilities deliver custom solutions that perfectly align with your unique requirements and business goals.
+              We build scalable, secure, and high-performance web and mobile
+              applications engineered for growth. Our full-stack development
+              capabilities deliver custom solutions that perfectly align with
+              your unique requirements and business goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl">Scope Your Project</Button>
-              <Button variant="hero-secondary" size="xl">View Case Studies</Button>
+              <Button variant="hero" size="xl">
+                Scope Your Project
+              </Button>
+              <Button variant="hero-secondary" size="xl">
+                View Case Studies
+              </Button>
             </div>
           </div>
         </div>
@@ -58,27 +80,67 @@ const CustomSoftware = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-foreground-dark mb-6 font-montserrat">Our Full-Stack Development Capabilities</h2>
-            <p className="text-xl text-foreground-dark-muted max-w-3xl mx-auto font-montserrat">
-              We build scalable, secure, and innovative software solutions using cutting-edge technologies and industry best practices.
+            <h2 className="text-4xl font-semibold text-foreground-light mb-6 font-montserrat">
+              Our Full-Stack Development Capabilities
+            </h2>
+            <p className="text-xl text-foreground-light-muted max-w-3xl mx-auto font-montserrat">
+              We build scalable, secure, and innovative software solutions using
+              cutting-edge technologies and industry best practices.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: Code, title: "Web Development", description: "Modern, responsive web applications using React, Vue, and Angular frameworks with performance optimization." },
-              { icon: Cpu, title: "Mobile Development", description: "Native and cross-platform mobile apps for iOS and Android using React Native and Flutter." },
-              { icon: Database, title: "Backend Engineering", description: "Robust APIs and microservices architecture with Node.js, Python, and Java for scalable performance." },
-              { icon: Shield, title: "DevOps & Cloud", description: "Cloud-native deployment, CI/CD pipelines, and infrastructure automation on AWS, Azure, and GCP." },
-              { icon: Zap, title: "AI/ML Integration", description: "Embedding artificial intelligence and machine learning capabilities into your applications." },
-              { icon: Users, title: "Quality Assurance", description: "Comprehensive testing strategies including automated testing, performance testing, and security audits." }
+              {
+                icon: Code,
+                title: "Web Development",
+                description:
+                  "Modern, responsive web applications using React, Vue, and Angular frameworks with performance optimization.",
+              },
+              {
+                icon: Cpu,
+                title: "Mobile Development",
+                description:
+                  "Native and cross-platform mobile apps for iOS and Android using React Native and Flutter.",
+              },
+              {
+                icon: Database,
+                title: "Backend Engineering",
+                description:
+                  "Robust APIs and microservices architecture with Node.js, Python, and Java for scalable performance.",
+              },
+              {
+                icon: Shield,
+                title: "DevOps & Cloud",
+                description:
+                  "Cloud-native deployment, CI/CD pipelines, and infrastructure automation on AWS, Azure, and GCP.",
+              },
+              {
+                icon: Zap,
+                title: "AI/ML Integration",
+                description:
+                  "Embedding artificial intelligence and machine learning capabilities into your applications.",
+              },
+              {
+                icon: Users,
+                title: "Quality Assurance",
+                description:
+                  "Comprehensive testing strategies including automated testing, performance testing, and security audits.",
+              },
             ].map((service, index) => (
-              <div key={index} className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+              <div
+                key={index}
+                className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105"
+              >
                 <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground-dark mb-4 font-montserrat">{service.title}</h3>
-                <p className="text-foreground-dark-muted leading-relaxed font-montserrat">{service.description}</p>
+                <h3 className="text-2xl font-semibold text-foreground-light mb-4 font-montserrat">
+                  {service.title}
+                </h3>
+                <p className="text-foreground-light-muted leading-relaxed font-montserrat">
+                  {service.description}
+                </p>
               </div>
             ))}
           </div>
@@ -88,19 +150,42 @@ const CustomSoftware = () => {
       {/* Related Services */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
-          <h3 className="text-2xl font-bold text-foreground mb-8 font-montserrat">Related Services</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-8 font-montserrat">
+            Related Services
+          </h3>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link to="/services/ai-ml" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
-              <h4 className="font-semibold text-foreground mb-2">AI & ML Development</h4>
-              <p className="text-foreground-muted text-sm">Integrate AI capabilities into your custom software</p>
+            <Link
+              to="/services/ai-ml"
+              className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all"
+            >
+              <h4 className="font-semibold text-foreground mb-2">
+                AI & ML Development
+              </h4>
+              <p className="text-foreground-muted text-sm">
+                Integrate AI capabilities into your custom software
+              </p>
             </Link>
-            <Link to="/services/qa-engineering" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
-              <h4 className="font-semibold text-foreground mb-2">QA Engineering</h4>
-              <p className="text-foreground-muted text-sm">Comprehensive testing for your software solutions</p>
+            <Link
+              to="/services/qa-engineering"
+              className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all"
+            >
+              <h4 className="font-semibold text-foreground mb-2">
+                QA Engineering
+              </h4>
+              <p className="text-foreground-muted text-sm">
+                Comprehensive testing for your software solutions
+              </p>
             </Link>
-            <Link to="/insights/case-study/genesys-modernization" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
-              <h4 className="font-semibold text-foreground mb-2">Success Story</h4>
-              <p className="text-foreground-muted text-sm">See how we modernized Genesys applications</p>
+            <Link
+              to="/insights/case-study/genesys-modernization"
+              className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all"
+            >
+              <h4 className="font-semibold text-foreground mb-2">
+                Success Story
+              </h4>
+              <p className="text-foreground-muted text-sm">
+                See how we modernized Genesys applications
+              </p>
             </Link>
           </div>
         </div>
@@ -113,9 +198,12 @@ const CustomSoftware = () => {
             Ready to Build Your Custom Solution?
           </h2>
           <p className="text-xl text-foreground/85 mb-12 max-w-2xl mx-auto font-montserrat">
-            Let's discuss your project requirements and create a solution that drives your business forward.
+            Let's discuss your project requirements and create a solution that
+            drives your business forward.
           </p>
-          <Button variant="hero" size="xl">Get Started Today</Button>
+          <Button variant="hero" size="xl" className="">
+            Get Started Today
+          </Button>
         </div>
       </section>
 
