@@ -155,7 +155,7 @@ const CustomSoftware = () => {
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             <Link
-              to="/services/ai-ml"
+              to="/studios/ai"
               className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all"
             >
               <h4 className="font-semibold text-foreground mb-2">
@@ -166,7 +166,7 @@ const CustomSoftware = () => {
               </p>
             </Link>
             <Link
-              to="/services/qa-engineering"
+              to="/studios/quality-engineering"
               className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all"
             >
               <h4 className="font-semibold text-foreground mb-2">
