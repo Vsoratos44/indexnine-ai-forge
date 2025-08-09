@@ -85,9 +85,9 @@ const QualityEngineering = () => {
                 IndexNine QAE
               </span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight tracking-tight animate-fade-in">
               Beyond Testing: <br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
                 Engineering Quality
               </span>
               <br />
