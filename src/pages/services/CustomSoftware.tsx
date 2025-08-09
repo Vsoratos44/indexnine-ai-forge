@@ -92,19 +92,26 @@ const CustomSoftware = () => {
               <span className="text-brand-primary font-semibold">End-to-End Engineering</span>
             </div>
             <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in">
-              We Build Software That Drives{" "}
+              We Build Software That Drives <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Business Outcomes
               </span>
             </h1>
-            <p className="text-xl text-foreground/85 mb-12 leading-relaxed font-montserrat">
+            
+            <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
               We go beyond simply writing code. We engineer scalable, secure, and high-performance web and mobile applications that solve your most complex challenges and create new competitive advantages. Our full-stack development capabilities deliver custom solutions that are architected for growth.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl">
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+              <Button 
+                variant="hero" 
+                size="xl"
+                className="min-w-[280px]"
+                onClick={() => document.getElementById('scoping-session')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Scope Your Project
               </Button>
-              <Button variant="hero-secondary" size="xl">
+              <Button variant="hero-secondary" size="xl" className="min-w-[240px]">
                 View Our Work
               </Button>
             </div>
