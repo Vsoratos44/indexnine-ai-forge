@@ -112,22 +112,6 @@ const QualityEngineering = () => {
         </div>
       </section>
 
-      {/* Client Logo Bar */}
-      <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg text-muted-foreground mb-8 font-medium">
-              Trusted by innovators to safeguard their most critical applications
-            </p>
-            <div className="flex justify-center items-center gap-8 md:gap-12 opacity-60 hover:opacity-80 transition-opacity">
-              <div className="text-2xl font-bold text-muted-foreground">FinTech Leader</div>
-              <div className="text-2xl font-bold text-muted-foreground">E-commerce Platform</div>
-              <div className="text-2xl font-bold text-muted-foreground">SaaS Provider</div>
-              <div className="text-2xl font-bold text-muted-foreground">HealthTech</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Quality Dilemma Section */}
       <section className="py-20 bg-muted/10">
