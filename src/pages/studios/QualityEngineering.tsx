@@ -73,12 +73,12 @@ const QualityEngineering = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-[65vh] min-h-[600px] overflow-hidden bg-background-dark">
+      <section className="relative min-h-[600px] overflow-hidden bg-background-dark">
         {/* Three.js Living Void Background */}
         <LivingVoidBackground />
 
         {/* Content - Precisely positioned */}
-        <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
+        <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-16">
           <div className="max-w-5xl mx-auto text-center lg:text-left">
             <div className="mb-6">
               <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
@@ -112,9 +112,8 @@ const QualityEngineering = () => {
         </div>
       </section>
 
-
       {/* Quality Dilemma Section */}
-      <section className="py-20 bg-muted/10">
+      <section className="py-16 bg-muted/10">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
