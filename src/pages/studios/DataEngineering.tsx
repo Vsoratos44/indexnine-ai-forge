@@ -199,8 +199,8 @@ const DataEngineering = () => {
               Our <strong>Data Foundation Roadmap</strong> is a fixed-scope, 4 to 6-week strategic engagement designed to give you a comprehensive, actionable plan for modernizing your data infrastructure.
             </p>
             
-            <div className="bg-background-card-light rounded-2xl p-8 mb-8 text-left">
-              <h4 className="text-xl font-bold text-foreground-dark mb-6">Key Deliverables Include:</h4>
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-8 text-left border border-white/10">
+              <h4 className="text-xl font-bold text-foreground-white mb-6">Key Deliverables Include:</h4>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
                   "Current State Analysis & Architecture Audit",
@@ -211,7 +211,7 @@ const DataEngineering = () => {
                 ].map((deliverable, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-brand-primary flex-shrink-0" />
-                    <span className="text-foreground-dark">{deliverable}</span>
+                    <span className="text-foreground-white/80">{deliverable}</span>
                   </div>
                 ))}
               </div>
