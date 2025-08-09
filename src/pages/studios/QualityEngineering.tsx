@@ -85,7 +85,7 @@ const QualityEngineering = () => {
                 IndexNine QAE
               </span>
             </div>
-            <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight animate-fade-in">
               Beyond Testing: <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Engineering Quality
@@ -93,7 +93,7 @@ const QualityEngineering = () => {
               <br />
               for Mission-Critical Software
             </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
+            <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 max-w-4xl leading-relaxed font-light animate-slide-up">
               We deliver enterprise-grade quality engineering and outcome-driven test automation to help startups and enterprises alike ship reliable products faster and with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
