@@ -192,10 +192,10 @@ const DataEngineering = () => {
       <section id="data-roadmap" className="py-20 bg-gradient-to-br from-brand-primary/5 to-brand-purple/5 border-y border-border">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-white">
               Your Blueprint for Data-Driven Success
             </h2>
-            <p className="text-lg text-foreground-dark-muted mb-8">
+            <p className="text-lg text-foreground-white/80 mb-8">
               Our <strong>Data Foundation Roadmap</strong> is a fixed-scope, 4 to 6-week strategic engagement designed to give you a comprehensive, actionable plan for modernizing your data infrastructure.
             </p>
             
@@ -217,7 +217,7 @@ const DataEngineering = () => {
               </div>
             </div>
             
-            <div className="text-xl font-semibold text-foreground-dark mb-8">
+            <div className="text-xl font-semibold text-foreground-white mb-8">
               Investment: Starting at $30,000
             </div>
             
