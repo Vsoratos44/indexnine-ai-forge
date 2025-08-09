@@ -73,12 +73,12 @@ const QualityEngineering = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[600px] overflow-hidden bg-background-dark">
+      <section className="relative min-h-[400px] md:min-h-[500px] overflow-hidden bg-background-dark">
         {/* Three.js Living Void Background */}
         <LivingVoidBackground />
 
         {/* Content - Precisely positioned */}
-        <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-16">
+        <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-24 md:pt-32 pb-8 md:pb-16">
           <div className="max-w-5xl mx-auto text-center lg:text-left">
             <div className="mb-6">
               <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
