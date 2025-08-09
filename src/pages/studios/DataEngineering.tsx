@@ -5,10 +5,26 @@ import { Database, Cloud, Shield, BarChart3, CheckCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
+import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from "@/components/SEOStructuredData";
 
 const DataEngineering = () => {
   return (
     <div className="min-h-screen bg-background-dark">
+      <ServiceSchema 
+        name="Data Engineering Studio"
+        description="Transform your data into actionable insights with our comprehensive data engineering solutions including AI-ready platforms, data lakes, and intelligent analytics"
+        serviceType="Data Engineering"
+      />
+      <WebPageSchema 
+        title="Data Engineering Studio - Unlock Modern Analytics"
+        description="Design and build intelligent data platforms that drive clarity, efficiency, and growth. Expert data engineering services for AI-ready infrastructure"
+        url="https://yoursite.lovable.app/studios/data-engineering"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: 'https://yoursite.lovable.app/' },
+        { name: 'Studios', url: 'https://yoursite.lovable.app/studios' },
+        { name: 'Data Engineering', url: 'https://yoursite.lovable.app/studios/data-engineering' }
+      ]} />
       <Header />
 
       {/* Hero Section */}
