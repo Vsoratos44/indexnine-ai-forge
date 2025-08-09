@@ -93,7 +93,7 @@ const QualityEngineering = () => {
               <br />
               for Mission-Critical Software
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 max-w-4xl leading-relaxed font-light animate-slide-up">
+            <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-8 max-w-4xl leading-relaxed font-light animate-slide-up">
               We deliver enterprise-grade quality engineering and outcome-driven test automation to help startups and enterprises alike ship reliable products faster and with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
@@ -116,14 +116,14 @@ const QualityEngineering = () => {
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg text-foreground-dark mb-8 font-medium">
+            <p className="text-lg text-muted-foreground mb-8 font-medium">
               Trusted by innovators to safeguard their most critical applications
             </p>
             <div className="flex justify-center items-center gap-8 md:gap-12 opacity-60 hover:opacity-80 transition-opacity">
-              <div className="text-2xl font-bold text-foreground-dark">FinTech Leader</div>
-              <div className="text-2xl font-bold text-foreground-dark">E-commerce Platform</div>
-              <div className="text-2xl font-bold text-foreground-dark">SaaS Provider</div>
-              <div className="text-2xl font-bold text-foreground-dark">HealthTech</div>
+              <div className="text-2xl font-bold text-muted-foreground">FinTech Leader</div>
+              <div className="text-2xl font-bold text-muted-foreground">E-commerce Platform</div>
+              <div className="text-2xl font-bold text-muted-foreground">SaaS Provider</div>
+              <div className="text-2xl font-bold text-muted-foreground">HealthTech</div>
             </div>
           </div>
         </div>
