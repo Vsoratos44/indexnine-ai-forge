@@ -1,14 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Settings, Zap, Target, Award } from "lucide-react";
+import { CheckCircle, Settings, Zap, Target, Award, Plus, Minus } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
+import { SEOStructuredData, OrganizationSchema, WebPageSchema, ServiceSchema, BreadcrumbSchema } from "@/components/SEOStructuredData";
 
 const QualityEngineering = () => {
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index);
+  };
+
+  const faqData = [
+    {
+      question: "How does this integrate with our existing development team?",
+      answer: "Our model is collaborative. We work within your existing agile process, integrating directly with your developers in their environment (e.g., GitHub, Jira). Our goal is to empower your team by building systems they can own and extend long-term."
+    },
+    {
+      question: "What is the typical ROI on a test automation project?",
+      answer: "ROI is measured in several ways: reduced manual testing hours, decreased bug-fixing costs (by catching them earlier), and increased development velocity. During an APQ Roadmap, we build a specific ROI model based on your metrics to justify the investment."
+    },
+    {
+      question: "How long does it take to see results from test automation?",
+      answer: "With our Sprint 0 approach, you'll see working automation within 2 weeks. Measurable ROI typically appears within 3-6 months as the automated tests accumulate saved hours and prevent costly production bugs."
+    },
+    {
+      question: "Do you support legacy systems and older technologies?",
+      answer: "Yes. Our platforms are designed to work with both modern and legacy systems. We often help companies bridge the gap between old and new technology stacks while maintaining comprehensive test coverage."
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background-dark">
+      {/* SEO Head Elements */}
+      <title>Quality Engineering & Test Automation | IndexNine QE Studio</title>
+      <meta name="description" content="Move beyond testing to engineered quality. IndexNine delivers outcome-driven test automation and strategic quality engineering to help you release mission-critical software with speed and confidence." />
+      <link rel="canonical" href="https://www.indexnine.com/studios/quality-engineering" />
+      
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="Quality Engineering & Test Automation | IndexNine QE Studio" />
+      <meta property="og:description" content="Build reliable, mission-critical software faster with our strategic test automation and quality engineering services." />
+      <meta property="og:image" content="https://www.indexnine.com/images/og-quality-engineering.png" />
+      <meta property="og:url" content="https://www.indexnine.com/studios/quality-engineering" />
+      <meta property="og:type" content="website" />
+      
+      {/* Twitter Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Quality Engineering & Test Automation | IndexNine QE Studio" />
+      <meta name="twitter:description" content="Build reliable, mission-critical software faster with our strategic test automation and quality engineering services." />
+      <meta name="twitter:image" content="https://www.indexnine.com/images/twitter-quality-engineering.png" />
+
+      {/* Structured Data */}
+      <ServiceSchema 
+        name="Enterprise Quality Engineering and Test Automation"
+        description="IndexNine's Quality Engineering Studio provides strategic services including test automation, performance testing, and Agile Product Quality (APQ) roadmaps to ensure the reliability of mission-critical software."
+        serviceType="Quality Engineering"
+      />
+      
+      <BreadcrumbSchema 
+        items={[
+          { name: "Studios", url: "https://www.indexnine.com/studios" },
+          { name: "Quality Engineering", url: "https://www.indexnine.com/studios/quality-engineering" }
+        ]}
+      />
+
       <Header />
 
       {/* Hero Section */}
@@ -33,9 +94,7 @@ const QualityEngineering = () => {
               for Mission-Critical Software
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
-              Our enterprise-grade quality engineering and test automation
-              services help startups and SMBs deliver flawless products with
-              speed and confidence.
+              We deliver enterprise-grade quality engineering and outcome-driven test automation to help startups and enterprises alike ship reliable products faster and with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
               <Button variant="hero" size="xl" className="min-w-[280px]">
@@ -53,6 +112,37 @@ const QualityEngineering = () => {
         </div>
       </section>
 
+      {/* Client Logo Bar */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-lg text-foreground-dark mb-8 font-medium">
+              Trusted by innovators to safeguard their most critical applications
+            </p>
+            <div className="flex justify-center items-center gap-8 md:gap-12 opacity-60 hover:opacity-80 transition-opacity">
+              <div className="text-2xl font-bold text-foreground-dark">FinTech Leader</div>
+              <div className="text-2xl font-bold text-foreground-dark">E-commerce Platform</div>
+              <div className="text-2xl font-bold text-foreground-dark">SaaS Provider</div>
+              <div className="text-2xl font-bold text-foreground-dark">HealthTech</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quality Dilemma Section */}
+      <section className="py-20 bg-muted/10">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+              The Quality Dilemma: Balancing Speed, Cost, and Reliability
+            </h2>
+            <p className="text-lg text-foreground-dark/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+              In a competitive market, pressure to innovate has never been higher. Development teams are forced to move faster, but without a modern approach to quality, this leads to brittle tests, rising bug counts, and eroded customer trust. Manual testing can't keep up, and traditional automation often creates more maintenance overhead than it saves.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* QAE Blueprint Section */}
       <section
         id="qae-solution"
@@ -65,8 +155,7 @@ const QualityEngineering = () => {
                 The Outcome-Driven Automation Blueprint
               </h2>
               <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-                Our proven methodology delivers measurable quality improvements
-                without sacrificing velocity.
+                Our philosophy is that quality isn't a phase, it's a measurable outcome. We transform your QE practice from a cost center into a strategic enabler of speed and reliability with our proven, three-step methodology.
               </p>
             </div>
 
@@ -76,19 +165,19 @@ const QualityEngineering = () => {
                   step: "01",
                   title: "BUILD an AI-Assisted Foundation",
                   description:
-                    "Establish robust test frameworks powered by AI to accelerate test creation and maintenance while ensuring comprehensive coverage.",
+                    "We establish a scalable, low-maintenance test automation framework using modern tools and AI-powered test generation, creating a resilient foundation that grows with your product.",
                 },
                 {
                   step: "02",
                   title: "ADOPT Shift-Left Principles",
                   description:
-                    "Integrate quality practices early in the development cycle, enabling faster feedback loops and reducing costly late-stage defects.",
+                    "We integrate quality checks early in the development lifecycle ('shifting left'), enabling your developers to catch and fix bugs faster, reducing downstream costs and delays.",
                 },
                 {
                   step: "03",
                   title: "DEPLOY Smart & Efficiently",
                   description:
-                    "Implement intelligent test orchestration that optimizes execution time, resource usage, and provides actionable insights.",
+                    "We implement intelligent test selection and parallel execution strategies, ensuring fast, targeted feedback from your CI/CD pipeline so you can deploy to production with confidence.",
                 },
               ].map((item) => (
                 <div key={item.step} className="text-center">
@@ -108,24 +197,6 @@ const QualityEngineering = () => {
         </div>
       </section>
 
-      {/* The Quality Dilemma Section */}
-      <section className="py-20 bg-background-section">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-              The Quality Dilemma: Balancing Speed, Cost, and Reliability
-            </h2>
-            <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto">
-              Startups and SMBs are under constant pressure to innovate faster.
-              But when quality assurance becomes a bottleneck, you face a
-              difficult choice: slow down releases, or ship buggy products? Both
-              options lead to rising technical debt, frustrated customers, and a
-              compromised competitive edge.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* QAE Case Study Section */}
       <section id="qae-case-study" className="py-16 bg-secondary">
         <div className="container mx-auto px-6">
@@ -141,19 +212,13 @@ const QualityEngineering = () => {
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-lg text-foreground-dark-muted mb-6">
-                  A rapidly growing FinTech company was spending 5 days on
-                  regression testing for each release, slowing their deployment
-                  cycle and increasing time-to-market. Manual testing was
-                  becoming a bottleneck as their product complexity grew.
+                <p className="text-lg text-foreground-dark/80 mb-6">
+                  A rapidly scaling FinTech client was crippled by a 5-day manual regression testing cycle, blocking their ability to release new features. We implemented a comprehensive test automation suite using Robot Framework, tied to a 100% success-fee engagement model.
                 </p>
-                <p className="text-lg text-foreground-dark-muted mb-8">
-                  We implemented our snap.automate platform with intelligent
-                  test orchestration, reducing their regression testing from 5
-                  days to 30 minutes while improving test coverage by 40%. The
-                  project was delivered on a 100% success fee basis, ensuring
-                  risk-free value delivery.
-                </p>
+                <blockquote className="border-l-4 border-brand-primary pl-6 mb-8 italic text-lg text-foreground-dark/90">
+                  <p className="mb-3">"IndexNine didn't just meet our expectations; they shattered them. Reducing our regression time to 30 minutes has fundamentally changed how we build and ship product. They are true partners in quality."</p>
+                  <footer className="text-sm text-foreground-dark/70 font-medium">— CTO, FinTech Client</footer>
+                </blockquote>
               </div>
 
               <div className="grid grid-cols-2 gap-6">
@@ -201,11 +266,10 @@ const QualityEngineering = () => {
             <div className="mb-20">
               <div className="text-center mb-16">
                 <h3 className="text-2xl font-bold text-foreground-dark mb-4">
-                  Our Proprietary Automation Platforms
+                  Our Proprietary Automation Accelerators
                 </h3>
-                <p className="text-lg text-foreground-dark-muted max-w-2xl mx-auto">
-                  Purpose-built tools that accelerate implementation and
-                  maximize ROI.
+                <p className="text-lg text-foreground-dark/80 max-w-2xl mx-auto">
+                  We augment our strategic services with proprietary platforms designed to accelerate results and provide unparalleled visibility into your application's quality.
                 </p>
               </div>
 
@@ -219,10 +283,7 @@ const QualityEngineering = () => {
                       snap.automate
                     </h4>
                     <p className="text-foreground-light-muted mb-6">
-                      Our flagship automation platform that provides intelligent
-                      test orchestration, AI-powered maintenance, and
-                      comprehensive reporting. Designed for rapid deployment and
-                      maximum coverage.
+                      Our flagship, AI-assisted test automation platform that enables rapid script creation, self-healing tests, and comprehensive reporting dashboards for end-to-end testing.
                     </p>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
@@ -256,9 +317,7 @@ const QualityEngineering = () => {
                       snap.atomicqa
                     </h4>
                     <p className="text-foreground-light-muted mb-6">
-                      Specialized platform for component-level testing and
-                      continuous quality assurance. Perfect for teams practicing
-                      shift-left methodologies and micro-service architectures.
+                      A component-level testing platform designed for 'shift-left'. It allows developers to test individual components and APIs in isolation, catching bugs at the earliest possible stage.
                     </p>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
@@ -375,11 +434,10 @@ const QualityEngineering = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-                Enterprise QA Engineering Services
+                Our Strategic QE Services
               </h2>
-              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                Strategic consulting services that transform your quality
-                practices.
+              <p className="text-lg text-foreground-dark/80 max-w-3xl mx-auto">
+                We offer tangible, fixed-scope engagements designed to deliver immediate value and provide a clear path to modernizing your quality engineering practices.
               </p>
             </div>
 
@@ -389,32 +447,38 @@ const QualityEngineering = () => {
                   <h3 className="text-2xl font-bold mb-4 text-foreground-dark">
                     Sprint 0: Automation Kickstart
                   </h3>
-                  <p className="text-foreground-dark-muted mb-6">
-                    2-week rapid assessment and framework setup that gets your
-                    automation initiative off the ground with clear ROI
-                    projections and immediate wins.
+                  <p className="text-foreground-dark/80 mb-6">
+                    A 2-week intensive engagement to build and deliver a working Proof-of-Concept for your most critical user flow.
                   </p>
+                  <h4 className="font-semibold text-foreground-dark mb-3">Deliverables:</h4>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">
-                        Current state assessment and gap analysis
+                      <span className="text-foreground-dark/80">
+                        Working automated test suite for one key feature
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">
-                        Framework setup and initial test creation
+                      <span className="text-foreground-dark/80">
+                        Setup of a modern test framework (e.g., Playwright)
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">
-                        Team training and knowledge transfer
+                      <span className="text-foreground-dark/80">
+                        Integration into your CI/CD pipeline
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground-dark/80">
+                        Live demo and team handoff
                       </span>
                     </li>
                   </ul>
-                  <Button className="w-full rounded-full">Learn More</Button>
+                  <div className="text-lg font-semibold text-brand-primary mb-4">Investment: Starting at $15,000</div>
+                  <Button className="w-full rounded-full">Kickstart Your Automation</Button>
                 </CardContent>
               </Card>
 
@@ -423,32 +487,38 @@ const QualityEngineering = () => {
                   <h3 className="text-2xl font-bold mb-4 text-foreground-dark">
                     Agile Product Quality (APQ) Roadmap
                   </h3>
-                  <p className="text-foreground-dark-muted mb-6">
-                    Comprehensive 4-week engagement that creates a strategic
-                    quality roadmap aligned with your product development
-                    lifecycle and business objectives.
+                  <p className="text-foreground-dark/80 mb-6">
+                    A 4-week strategic assessment to analyze your entire SDLC and deliver a comprehensive roadmap for achieving elite-level quality and velocity.
                   </p>
+                  <h4 className="font-semibold text-foreground-dark mb-3">Deliverables:</h4>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">
-                        Quality maturity assessment and benchmarking
+                      <span className="text-foreground-dark/80">
+                        Full QE process and tooling audit
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">
-                        Strategic roadmap with phased implementation
+                      <span className="text-foreground-dark/80">
+                        Risk analysis and test coverage gap identification
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark-muted">
-                        ROI projections and success metrics
+                      <span className="text-foreground-dark/80">
+                        Prioritized automation strategy
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground-dark/80">
+                        Detailed implementation plan with ROI projections
                       </span>
                     </li>
                   </ul>
-                  <Button className="w-full rounded-full">Get Started</Button>
+                  <div className="text-lg font-semibold text-brand-primary mb-4">Investment: Starting at $30,000</div>
+                  <Button className="w-full rounded-full">Build My APQ Roadmap</Button>
                 </CardContent>
               </Card>
             </div>
@@ -540,20 +610,97 @@ const QualityEngineering = () => {
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="py-16 bg-background-dark">
+      {/* FAQ Section */}
+      <section className="py-20 bg-muted/10">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-              Ready to Transform Your QA Process?
-            </h2>
-            <p className="text-xl mb-8 text-foreground/85">
-              Stop choosing between speed and quality. Let's build an automation
-              strategy that delivers both.
-            </p>
-            <Button variant="hero" size="xl" className="min-w-[250px] ">
-              Book Your APQ Roadmap Session
-            </Button>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+                Your Quality Engineering Questions, Answered
+              </h2>
+            </div>
+            
+            <div className="space-y-4">
+              {faqData.map((faq, index) => (
+                <div key={index} className="border border-border rounded-lg bg-background-card-light">
+                  <button
+                    onClick={() => toggleFAQ(index)}
+                    className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-muted/20 transition-colors"
+                    aria-expanded={openFAQ === index}
+                  >
+                    <span className="font-semibold text-foreground-dark pr-4">{faq.question}</span>
+                    {openFAQ === index ? (
+                      <Minus className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                    ) : (
+                      <Plus className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                    )}
+                  </button>
+                  {openFAQ === index && (
+                    <div className="px-6 pb-4">
+                      <p className="text-foreground-dark/80 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section with Form */}
+      <section id="contact" className="py-20 bg-background-dark">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                  Ready to Transform Your QA Process?
+                </h2>
+                <p className="text-xl mb-8 text-foreground/85 leading-relaxed">
+                  Let's discuss your quality challenges and build a value-driven roadmap to accelerate your releases and build more reliable software. Schedule a complimentary, no-obligation call with a senior QE architect today.
+                </p>
+              </div>
+              
+              <div className="bg-muted/5 p-8 rounded-lg border border-border">
+                <form className="space-y-6" action="/submit-qe-lead" method="POST">
+                  <div>
+                    <Label htmlFor="name" className="text-foreground">Full Name</Label>
+                    <Input 
+                      type="text" 
+                      id="name" 
+                      name="name" 
+                      required 
+                      className="mt-2 bg-background-card-light border-border text-foreground"
+                    />
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="email" className="text-foreground">Work Email</Label>
+                    <Input 
+                      type="email" 
+                      id="email" 
+                      name="email" 
+                      required 
+                      className="mt-2 bg-background-card-light border-border text-foreground"
+                    />
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="challenge" className="text-foreground">What is your primary quality challenge?</Label>
+                    <Textarea 
+                      id="challenge" 
+                      name="challenge" 
+                      rows={4}
+                      className="mt-2 bg-background-card-light border-border text-foreground"
+                    />
+                  </div>
+                  
+                  <Button type="submit" className="w-full" size="lg">
+                    Book My APQ Roadmap Session
+                  </Button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
