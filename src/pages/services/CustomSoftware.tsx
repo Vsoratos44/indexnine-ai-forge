@@ -9,6 +9,7 @@ import {
   WebPageSchema,
   BreadcrumbSchema,
 } from "@/components/SEOStructuredData";
+import LivingVoidBackground from "@/components/LivingVoidBackground";
 import { 
   Code, 
   Cpu, 
@@ -80,21 +81,17 @@ const CustomSoftware = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-24 bg-gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>
-          <div
-            className="absolute bottom-1/4 right-1/6 w-80 h-80 bg-brand-purple/6 rounded-full blur-3xl animate-float"
-            style={{ animationDelay: "2s" }}
-          ></div>
-        </div>
+      <section className="relative h-[80vh] min-h-[600px] overflow-hidden bg-gradient-hero">
+        {/* Three.js Living Void Background */}
+        <LivingVoidBackground />
 
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+        {/* Content - Precisely positioned */}
+        <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
+          <div className="max-w-5xl mx-auto text-center lg:text-left">
             <div className="inline-block bg-gradient-to-r from-brand-primary/10 to-brand-accent/10 backdrop-blur-sm border border-brand-primary/20 rounded-full px-6 py-2 mb-8">
               <span className="text-brand-primary font-semibold">End-to-End Engineering</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight font-montserrat">
+            <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in">
               We Build Software That Drives{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Business Outcomes
