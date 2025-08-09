@@ -6,7 +6,7 @@ import {
   WebPageSchema,
   BreadcrumbSchema,
 } from "@/components/SEOStructuredData";
-import { Brain, Target, Shield, CheckCircle } from "lucide-react";
+import { Brain, Target, Shield, CheckCircle, Play } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
@@ -15,22 +15,21 @@ const AiStudio = () => {
   return (
     <div className="min-h-screen bg-background">
       <ServiceSchema
-        name="AI Studio - Specialized AI Development Services"
-        description="Expert AI development studio offering machine learning, deep learning, and AI solution development services"
+        name="AI Strategy & Custom Solutions | IndexNine AI Studio"
+        description="Go from AI potential to business reality. IndexNine's AI Studio provides strategic consulting, readiness assessments (P2R Score), and end-to-end development of custom AI/ML solutions that deliver measurable ROI."
         serviceType="AI Development"
       />
       <WebPageSchema
-        title="AI Studio - Expert AI & Machine Learning Development"
-        description="Transform your business with cutting-edge AI solutions from our specialized AI development studio. Custom ML models, AI applications, and intelligent automation"
-        url="https://yoursite.lovable.app/studios/ai-studio"
+        title="AI Strategy & Custom Solutions | IndexNine AI Studio"
+        description="We partner with you to develop and deploy custom AI solutions that solve real business problems and deliver transformative results."
+        url="https://indexnine.com/studios/ai"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app/" },
-          { name: "Studios", url: "https://yoursite.lovable.app/studios" },
+          { name: "Studios", url: "https://indexnine.com/studios" },
           {
             name: "AI Studio",
-            url: "https://yoursite.lovable.app/studios/ai-studio",
+            url: "https://indexnine.com/studios/ai",
           },
         ]}
       />
@@ -46,31 +45,49 @@ const AiStudio = () => {
           <div className="max-w-5xl mx-auto text-center lg:text-left">
             <div className="mb-6">
               <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
-                IndexNine AI Studio
+                AI & ML Engineering Studio
               </span>
             </div>
             <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] font-bold text-foreground mb-8 leading-[0.9] tracking-tight animate-fade-in">
               AI-Powered Business <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Transformation
+                Transformation.
               </span>
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up">
-              We provide strategic AI consulting and end-to-end AI product
-              development to help you navigate complexity, drive efficiency, and
-              unlock new revenue streams.
+              We architect and build intelligent systems that drive measurable growth. Through strategic AI consulting and end-to-end product development, we help you navigate complexity, unlock efficiency, and create new competitive advantages.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button variant="hero" size="xl" className="min-w-[280px]">
-                Work with an AI Consultant
+              <Button variant="hero" size="xl" className="min-w-[280px]" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                Book Your AI Strategy Call
               </Button>
               <Button
                 variant="hero-secondary"
                 size="xl"
                 className="min-w-[240px]"
+                onClick={() => document.getElementById('p2r-framework')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Get Your AI P2R Score
+                Discover Your AI P2R Score
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Logo Bar */}
+      <section className="py-16 bg-background-section">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto text-center">
+            <p className="text-lg text-foreground-dark mb-12 font-medium">
+              Pioneering AI solutions for brands that define the future
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-60">
+              {/* Placeholder for client logos */}
+              <div className="h-12 bg-gradient-to-r from-brand-primary/20 to-brand-secondary/20 rounded-lg"></div>
+              <div className="h-12 bg-gradient-to-r from-brand-secondary/20 to-brand-accent/20 rounded-lg"></div>
+              <div className="h-12 bg-gradient-to-r from-brand-accent/20 to-brand-primary/20 rounded-lg"></div>
+              <div className="h-12 bg-gradient-to-r from-brand-primary/20 to-brand-secondary/20 rounded-lg"></div>
+              <div className="h-12 bg-gradient-to-r from-brand-secondary/20 to-brand-accent/20 rounded-lg"></div>
             </div>
           </div>
         </div>
@@ -81,14 +98,65 @@ const AiStudio = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-              The AI Dilemma: Potential vs. Reality
+              The AI Dilemma: Bridging Potential and Profitability
             </h2>
             <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto">
-              AI promises to revolutionize business, but most initiatives fail
-              to deliver meaningful ROI. The gap between potential and reality
-              often comes down to strategy, readiness, and execution. We bridge
-              that gap.
+              AI promises to revolutionize industries, yet Gartner reports over 85% of AI projects fail to deliver their intended ROI. This isn't a technology problem; it's a strategy problem. The gap between potential and reality stems from a lack of data readiness, unclear business cases, and poor execution. <strong>We were founded to bridge that gap.</strong>
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Philosophy Section */}
+      <section className="py-20 bg-gradient-hero">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-white">
+                Clarity Before Code
+              </h2>
+              <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
+                Our core philosophy is simple: we de-risk your investment by ensuring every line of code is tied to a clear, measurable business outcome. Technology is the tool, not the goal.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Target className="h-8 w-8 text-brand-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                  Strategy First, Technology Second
+                </h3>
+                <p className="text-foreground-white/80">
+                  We begin by immersing ourselves in your business context. Our Illuminate discovery sessions map your challenges to viable AI opportunities, ensuring technology serves the strategy.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Brain className="h-8 w-8 text-brand-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                  De-Risk Through Discovery
+                </h3>
+                <p className="text-foreground-white/80">
+                  Every AI project begins with our structured assessment framework. We validate assumptions, identify constraints, and build consensus before writing a single line of code.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Shield className="h-8 w-8 text-brand-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                  Measurable Business Impact
+                </h3>
+                <p className="text-foreground-white/80">
+                  Our success is measured in business outcomes, not technical achievements. We establish clear KPIs and track ROI from day one through deployment and beyond.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -99,12 +167,10 @@ const AiStudio = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-                Clarity Before Code: Our AI Consulting Practice
+                Our AI Audit & Strategy Practice
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                We help you discover and de-risk your AI opportunities before
-                investing in development. Our structured approach ensures your
-                AI initiatives deliver measurable business value.
+                Don't invest in a solution until you've validated the problem. Our structured audits are the first step in our "Clarity Before Code" process, designed to provide a comprehensive, data-backed plan for your AI journey.
               </p>
             </div>
 
@@ -114,69 +180,100 @@ const AiStudio = () => {
                   <h3 className="text-2xl font-bold mb-4 text-foreground">
                     Standard AI Audit
                   </h3>
+                  <p className="text-base text-foreground/70 mb-2">4-Week Assessment</p>
                   <p className="text-foreground/80 mb-6">
-                    4-Week Assessment: Comprehensive evaluation of your AI
-                    readiness, potential opportunities, and strategic roadmap
-                    development.
+                    An accelerated assessment to align AI potential with your core business strategy.
                   </p>
+                  
+                  <h4 className="font-semibold text-foreground mb-3">Deliverables:</h4>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground/80">
-                        Business context analysis and strategy alignment
+                        Business Context Analysis
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground/80">
-                        Asset inventory and opportunity identification
+                        Asset & Data Inventory
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground/80">
-                        Prioritized AI roadmap with ROI projections
+                        Prioritized AI Roadmap with ROI
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground/80">
+                        Executive Summary
                       </span>
                     </li>
                   </ul>
-                  <Button variant="outline" className="w-full">
-                    Learn More
+                  
+                  <p className="text-sm text-foreground/70 mb-4">
+                    <strong>Ideal For:</strong> Teams seeking to validate initial AI concepts and secure internal buy-in.
+                  </p>
+                  
+                  <div className="text-xl font-bold text-brand-primary mb-4">Starting at $25,000</div>
+                  
+                  <Button variant="outline" className="w-full" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                    Scope Your Audit
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative">
+                <div className="absolute -top-3 -right-3 bg-brand-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                  Most Popular
+                </div>
                 <CardContent className="p-0">
                   <h3 className="text-2xl font-bold mb-4 text-foreground">
                     Pro AI Audit
                   </h3>
+                  <p className="text-base text-foreground/70 mb-2">8-Week Deep-Dive</p>
                   <p className="text-foreground/80 mb-6">
-                    8-Week Deep-Dive: Extended assessment including
-                    proof-of-concept development and detailed implementation
-                    planning.
+                    A comprehensive deep-dive for organizations ready to commit to a transformational AI initiative.
                   </p>
+                  
+                  <h4 className="font-semibold text-foreground mb-3">Deliverables:</h4>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground/80">
-                        Everything in Standard Audit
+                        Everything in Standard, plus:
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground/80">
-                        Working proof-of-concept development
+                        <strong>Working Proof-of-Concept (PoC)</strong>
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
                       <span className="text-foreground/80">
-                        Detailed technical architecture and governance framework
+                        Detailed Technical Architecture
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground/80">
+                        Data Governance Framework
                       </span>
                     </li>
                   </ul>
-                  <Button variant="default" className="w-full">
-                    Get Started
+                  
+                  <p className="text-sm text-foreground/70 mb-4">
+                    <strong>Ideal For:</strong> Organizations planning a significant AI investment and requiring a de-risked, shovel-ready project plan.
+                  </p>
+                  
+                  <div className="text-xl font-bold text-brand-primary mb-4">Starting at $60,000</div>
+                  
+                  <Button variant="default" className="w-full" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                    Start Your Deep-Dive
                   </Button>
                 </CardContent>
               </Card>
@@ -186,64 +283,54 @@ const AiStudio = () => {
       </section>
 
       {/* P2R Framework Section */}
-      <section id="ai-p2r-framework" className="py-20 bg-background-section">
+      <section id="p2r-framework" className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-                Our AI P2R Assessment Framework
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-white">
+                Our Proprietary AI P2R™ Assessment Framework
               </h2>
-              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                We evaluate your organization across three critical dimensions
-                to determine your AI transformation path.
+              <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
+                Your AI journey is unique. Our proprietary <strong>Potential-to-Reality (P2R)™</strong> framework evaluates your organization across three critical dimensions. The output is your <strong>P2R Score</strong>—a clear, actionable benchmark that defines your optimal path to AI-driven transformation.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-8 text-center bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Target className="h-8 w-8 text-brand-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    AI Potential Score
-                  </h3>
-                  <p className="text-foreground/80">
-                    Evaluates the strategic value and business impact potential
-                    of AI initiatives within your specific context and industry.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Target className="h-8 w-8 text-brand-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                  AI Potential Score
+                </h3>
+                <p className="text-foreground-white/80">
+                  We analyze your market position, business processes, and strategic goals to quantify the potential impact of AI. This isn't about hype; it's a rigorous evaluation of where AI can create the most value.
+                </p>
+              </div>
 
-              <Card className="p-8 text-center bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Brain className="h-8 w-8 text-brand-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    AI Readiness Score
-                  </h3>
-                  <p className="text-foreground/80">
-                    Assesses your organization's data maturity, technical
-                    infrastructure, and cultural readiness for AI adoption.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Brain className="h-8 w-8 text-brand-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                  AI Readiness Score
+                </h3>
+                <p className="text-foreground-white/80">
+                  An idea is only as good as your ability to execute it. We assess your data maturity, technical infrastructure, talent, and organizational culture to identify your strengths and critical gaps for successful AI adoption.
+                </p>
+              </div>
 
-              <Card className="p-8 text-center bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Shield className="h-8 w-8 text-brand-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    AI Risk Score
-                  </h3>
-                  <p className="text-foreground/80">
-                    Identifies potential risks including ethical concerns,
-                    regulatory compliance, and implementation challenges.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Shield className="h-8 w-8 text-brand-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                  AI Risk Score
+                </h3>
+                <p className="text-foreground-white/80">
+                  We proactively identify and score potential hurdles. This includes evaluating ethical considerations, regulatory compliance (like GDPR/CCPA), data privacy, model bias, and the change management required for success.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -315,175 +402,75 @@ const AiStudio = () => {
         </div>
       </section>
 
-      {/* AI Case Study Section */}
+      {/* Case Study Section with Video */}
       <section className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="mb-6">
-              <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
-                Case Study: AI-Powered Automation
-              </span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground-dark">
-              Automating Social Media Content for a Global Sports Leader
-            </h2>
-
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <p className="text-lg text-foreground-dark-muted mb-6">
-                  A global sports organization was struggling to manage
-                  real-time social media content during live events. Their team
-                  of 15 content creators was overwhelmed by the volume and speed
-                  required for effective fan engagement.
-                </p>
-                <p className="text-lg text-foreground-dark-muted mb-8">
-                  We developed an AI-powered content generation system that
-                  automatically creates, optimizes, and publishes social media
-                  content in real-time based on live event data, reducing their
-                  content team requirements by 66% while maintaining high
-                  engagement rates.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-2 gap-6">
-                <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                  <CardContent className="p-0">
-                    <div className="text-3xl font-bold text-brand-primary mb-2">
-                      66%
+              <div className="relative">
+                <div className="aspect-video bg-gradient-hero rounded-xl overflow-hidden relative group cursor-pointer">
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <Play className="w-6 h-6 text-background-dark ml-1" />
                     </div>
-                    <p className="text-sm text-foreground/80">
-                      Reduction in Team Size for Live Content
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                  <CardContent className="p-0">
-                    <div className="text-3xl font-bold text-brand-primary mb-2">
-                      15s
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="bg-black/60 backdrop-blur-sm rounded-lg p-3">
+                      <p className="text-white text-sm font-medium">Video case study: AI-powered content automation for a global sports leader</p>
                     </div>
-                    <p className="text-sm text-foreground/80">
-                      to Generate & Publish
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* AI Solutions in Action Section */}
-      <section className="py-20 bg-background-section">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-                AI Solutions in Action
-              </h2>
-              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                Real-world applications delivering measurable impact across
-                industries.
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-12 mb-16">
-              {/* AI Teaching Assistant */}
-              <div className="space-y-8">
-                <div className="bg-brand-primary rounded-2xl p-8 lg:p-12 flex items-center justify-center text-white">
-                  <div className="text-center">
-                    <h3 className="text-3xl font-bold mb-2">
-                      AI Teaching Assistant
-                    </h3>
                   </div>
                 </div>
               </div>
-
-              <div className="space-y-6">
+              
+              <div>
                 <div className="mb-6">
                   <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
-                    INTELLIGENT PERSONALIZED LEARNING
+                    Client Success Story
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground-dark">
-                  AI Teaching Assistant
-                </h3>
-                <p className="text-foreground-dark-muted mb-6">
-                  An intelligent teaching assistant that helps educators create
-                  personalized learning experiences for students, improving test
-                  performance by providing targeted feedback and customized
-                  lesson plans.
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+                  Automating 30,000 Social Media Assets for a Global Sports Leader
+                </h2>
+                
+                <p className="text-lg text-foreground-dark-muted mb-4">
+                  <strong>The Challenge:</strong> Our client's marketing team was spending thousands of hours manually creating and publishing social media graphics for every game, leading to burnout and missed opportunities.
+                </p>
+                
+                <p className="text-lg text-foreground-dark-muted mb-8">
+                  <strong>The IndexNine Solution:</strong> We developed a bespoke Generative AI system that integrated with their live data feeds and DAM. The AI automatically generates, captions, and tags brand-compliant graphics, ready for one-click publishing.
                 </p>
 
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-2 gap-6 mb-8">
                   <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="text-3xl font-bold text-brand-primary mb-2">
-                        94%
+                        66%
                       </div>
                       <p className="text-sm text-foreground/80">
-                        User Satisfaction
+                        Reduction in Manual Content Creation
                       </p>
                     </CardContent>
                   </Card>
                   <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="text-3xl font-bold text-brand-primary mb-2">
-                        61%
+                        15s
                       </div>
                       <p className="text-sm text-foreground/80">
-                        Performance Improvement
+                        From Data to Published Asset
                       </p>
                     </CardContent>
                   </Card>
                 </div>
-              </div>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-12">
-              <div className="space-y-6 lg:order-2">
-                <div className="mb-6">
-                  <span className="inline-block px-6 py-3 bg-brand-purple/10 text-brand-purple rounded-full text-sm font-medium border border-brand-purple/20">
-                    AI-POWERED AUTOMATION
-                  </span>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground-dark">
-                  Video Analysis
-                </h3>
-                <p className="text-foreground-dark-muted mb-6">
-                  An advanced computer vision platform that automatically
-                  analyzes and categorizes video content, enabling instant
-                  content moderation and intelligent recommendations for
-                  streaming platforms.
-                </p>
-
-                <div className="grid grid-cols-2 gap-6">
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-purple mb-2">
-                        300%
-                      </div>
-                      <p className="text-sm text-foreground/80">ROI Increase</p>
-                    </CardContent>
-                  </Card>
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-purple mb-2">
-                        2.3M
-                      </div>
-                      <p className="text-sm text-foreground/80">
-                        Hours Processed Monthly
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-
-              <div className="space-y-8 lg:order-1">
-                <div className="bg-brand-purple rounded-2xl p-8 lg:p-12 flex items-center justify-center text-white">
-                  <div className="text-center">
-                    <h3 className="text-3xl font-bold mb-2">Video Analysis</h3>
-                  </div>
-                </div>
+                
+                <blockquote className="bg-background-card-light p-6 rounded-xl border-l-4 border-brand-primary">
+                  <p className="text-foreground-dark italic mb-3">
+                    "IndexNine didn't just build us a tool; they revolutionized our content workflow. We're engaging fans faster and more efficiently than we ever thought possible."
+                  </p>
+                  <footer className="text-foreground-dark-muted font-medium">
+                    — VP of Digital Marketing, Global Sports Leader
+                  </footer>
+                </blockquote>
               </div>
             </div>
           </div>
@@ -491,51 +478,251 @@ const AiStudio = () => {
       </section>
 
       {/* AI Services Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background-section">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-foreground-light">
-              Our Applied AI Services
-            </h2>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+                Our Applied AI Development Services
+              </h2>
+              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
+                From strategic advisory to full-stack implementation, our services cover the entire AI lifecycle. We specialize in building robust, scalable, and secure AI solutions.
+              </p>
+            </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                "Generative AI Solutions",
-                "AI Product Development",
-                "Enterprise AI Solutions",
-                "Machine Learning Development",
-                "Natural Language Processing",
-                "Computer Vision Development",
-              ].map((service) => (
-                <Card
-                  key={service}
-                  className="p-6 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  <CardContent className="p-0">
-                    <h3 className="font-semibold text-foreground">{service}</h3>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                    Generative AI Solutions
+                  </h3>
+                  <p className="text-foreground/80 mb-4">
+                    We build custom LLM applications, content automation engines, and intelligent chatbots that enhance creativity and efficiency.
+                  </p>
+                  <p className="text-sm text-brand-primary font-medium">
+                    Use Cases: Automated Content Creation, Code Generation, Advanced Customer Support
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                    Computer Vision & Analytics
+                  </h3>
+                  <p className="text-foreground/80 mb-4">
+                    Custom image recognition, video analysis, and real-time monitoring systems for operational excellence and safety.
+                  </p>
+                  <p className="text-sm text-brand-primary font-medium">
+                    Use Cases: Quality Control, Security Monitoring, Process Automation
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                    Predictive Analytics & ML
+                  </h3>
+                  <p className="text-foreground/80 mb-4">
+                    Machine learning models for forecasting, risk assessment, and intelligent decision-making systems.
+                  </p>
+                  <p className="text-sm text-brand-primary font-medium">
+                    Use Cases: Demand Forecasting, Risk Management, Personalization
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                    Natural Language Processing
+                  </h3>
+                  <p className="text-foreground/80 mb-4">
+                    Text analysis, sentiment monitoring, and intelligent document processing to unlock insights from unstructured data.
+                  </p>
+                  <p className="text-sm text-brand-primary font-medium">
+                    Use Cases: Document Intelligence, Sentiment Analysis, Knowledge Extraction
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                    Intelligent Automation
+                  </h3>
+                  <p className="text-foreground/80 mb-4">
+                    AI-powered workflow automation that adapts to changing conditions and makes intelligent decisions.
+                  </p>
+                  <p className="text-sm text-brand-primary font-medium">
+                    Use Cases: Process Optimization, Intelligent Routing, Adaptive Systems
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-0">
+                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                    AI Strategy & Consulting
+                  </h3>
+                  <p className="text-foreground/80 mb-4">
+                    Strategic guidance, technology roadmaps, and organizational change management for successful AI adoption.
+                  </p>
+                  <p className="text-sm text-brand-primary font-medium">
+                    Use Cases: AI Readiness Assessment, Technology Selection, Change Management
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="relative py-20 overflow-hidden bg-gradient-hero">
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/10 to-brand-purple/10"></div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-              Ready to Start Your AI Transformation?
-            </h2>
-            <p className="text-xl mb-8 text-foreground/85">
-              Let's discuss how our AI expertise can accelerate your business
-              growth and drive meaningful outcomes.
-            </p>
-            <Button variant="hero" size="xl" className="min-w-[280px] ">
-              Work with an AI Consultant
-            </Button>
+      {/* FAQ Section */}
+      <section className="py-20 bg-background-section">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+                Your AI Questions, Answered
+              </h2>
+            </div>
+            
+            <div className="space-y-6">
+              <details className="group bg-gradient-card border-card-border rounded-lg p-6">
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground">
+                  What if our data isn't clean or "AI-ready"?
+                  <span className="transform transition-transform group-open:rotate-180">
+                    ▼
+                  </span>
+                </summary>
+                <div className="mt-4 text-foreground/80">
+                  <p>This is the most common starting point. Our AI Readiness assessment is specifically designed to evaluate your data maturity. We often partner with our Data Engineering Studio to provide a clear plan for data cleansing, aggregation, and governance as a foundational part of any AI project.</p>
+                </div>
+              </details>
+              
+              <details className="group bg-gradient-card border-card-border rounded-lg p-6">
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground">
+                  How do you ensure AI projects deliver ROI?
+                  <span className="transform transition-transform group-open:rotate-180">
+                    ▼
+                  </span>
+                </summary>
+                <div className="mt-4 text-foreground/80">
+                  <p>Our "Clarity Before Code" approach means we never start development without a clear business case and measurable success criteria. We establish KPIs upfront, validate assumptions through proof-of-concept development, and maintain regular check-ins to ensure we're on track to deliver promised outcomes.</p>
+                </div>
+              </details>
+              
+              <details className="group bg-gradient-card border-card-border rounded-lg p-6">
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground">
+                  Do you work with specific AI technologies or platforms?
+                  <span className="transform transition-transform group-open:rotate-180">
+                    ▼
+                  </span>
+                </summary>
+                <div className="mt-4 text-foreground/80">
+                  <p>We're platform-agnostic and choose technologies based on your specific needs, not vendor relationships. Our team has deep expertise across cloud platforms (AWS, Azure, GCP), AI frameworks (TensorFlow, PyTorch, Hugging Face), and enterprise tools. We select the best fit for your environment and goals.</p>
+                </div>
+              </details>
+              
+              <details className="group bg-gradient-card border-card-border rounded-lg p-6">
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground">
+                  How long does a typical AI project take?
+                  <span className="transform transition-transform group-open:rotate-180">
+                    ▼
+                  </span>
+                </summary>
+                <div className="mt-4 text-foreground/80">
+                  <p>It varies significantly based on complexity and scope. Our AI audits take 4-8 weeks. Proof-of-concept development typically runs 8-12 weeks. Full production deployment can range from 3-12 months depending on integration requirements, data preparation needs, and organizational readiness.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA & Contact Form */}
+      <section id="contact" className="py-20 bg-gradient-hero">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-white">
+                  Ready to Move from AI Potential to Reality?
+                </h2>
+                <p className="text-lg text-foreground-white/80 mb-8">
+                  An AI strategy without an execution plan is just a theory. Let's discuss your specific challenges and build a pragmatic, value-driven roadmap for your AI transformation. The first call is a no-obligation strategy session with one of our senior AI consultants.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-brand-primary" />
+                    <span className="text-foreground-white/80">No-obligation initial consultation</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-brand-primary" />
+                    <span className="text-foreground-white/80">Senior AI consultant, not a sales rep</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-brand-primary" />
+                    <span className="text-foreground-white/80">Response within one business day</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <form className="space-y-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-foreground-white mb-2">
+                      Full Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-foreground-white placeholder-white/60 focus:outline-none focus:border-brand-primary"
+                      placeholder="Your full name"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-foreground-white mb-2">
+                      Work Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-foreground-white placeholder-white/60 focus:outline-none focus:border-brand-primary"
+                      placeholder="your.email@company.com"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="challenge" className="block text-sm font-medium text-foreground-white mb-2">
+                      What is your primary business challenge?
+                    </label>
+                    <textarea
+                      id="challenge"
+                      name="challenge"
+                      rows={4}
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-foreground-white placeholder-white/60 focus:outline-none focus:border-brand-primary resize-none"
+                      placeholder="Tell us about the business challenge you're looking to solve with AI..."
+                    />
+                  </div>
+                  
+                  <Button type="submit" variant="hero" size="xl" className="w-full">
+                    Schedule My Free Strategy Call
+                  </Button>
+                  
+                  <p className="text-center text-sm text-foreground-white/60">
+                    We'll respond within one business day. We respect your privacy.
+                  </p>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
