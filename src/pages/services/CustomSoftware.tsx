@@ -150,8 +150,8 @@ const CustomSoftware = () => {
               {
                 icon: Lightbulb,
                 number: "01",
-                title: "Illuminate: Strategy & Discovery",
-                description: "We begin with our Illuminate sessions to validate assumptions, define user personas, map functionality, and create a strategic roadmap with a clear business case."
+                title: "Sprint Zero: Strategy & Discovery",
+                description: "We begin with our Sprint Zero sessions to validate assumptions, define user personas, map functionality, and create a strategic roadmap with a clear business case."
               },
               {
                 icon: PenTool,
