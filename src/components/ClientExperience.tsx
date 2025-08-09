@@ -64,7 +64,7 @@ const ClientExperience = () => {
             A World-Class 
             Client Experience: Working with
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Indexnine
+              {" "}Indexnine
             </span>
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
