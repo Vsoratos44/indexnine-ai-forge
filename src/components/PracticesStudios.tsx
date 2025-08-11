@@ -28,9 +28,9 @@ const PracticesStudios = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 font-montserrat">
-            Innovation & Enterprise:{' '}
+            Our Practices:{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Our Practices
+              The Innovation Lab & Enterprise Studio
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-foreground/80 max-w-4xl mx-auto">
