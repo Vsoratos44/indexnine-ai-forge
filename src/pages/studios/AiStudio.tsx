@@ -337,7 +337,7 @@ const AiStudio = () => {
       </section>
 
       {/* Audit Process Section */}
-      <section id="ai-framework" className="py-16 bg-gradient-hero">
+      <section id="ai-framework" className="py-16 bg-background-dark">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
