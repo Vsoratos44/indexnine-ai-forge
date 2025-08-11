@@ -74,24 +74,6 @@ const AiStudio = () => {
         </div>
       </section>
 
-      {/* Client Logo Bar */}
-      <section className="py-16 bg-background-section">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto text-center">
-            <p className="text-lg text-foreground-dark mb-12 font-medium">
-              Pioneering AI solutions for brands that define the future
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-60">
-              {/* Placeholder for client logos */}
-              <div className="h-12 bg-gradient-to-r from-brand-primary/20 to-brand-secondary/20 rounded-lg"></div>
-              <div className="h-12 bg-gradient-to-r from-brand-secondary/20 to-brand-accent/20 rounded-lg"></div>
-              <div className="h-12 bg-gradient-to-r from-brand-accent/20 to-brand-primary/20 rounded-lg"></div>
-              <div className="h-12 bg-gradient-to-r from-brand-primary/20 to-brand-secondary/20 rounded-lg"></div>
-              <div className="h-12 bg-gradient-to-r from-brand-secondary/20 to-brand-accent/20 rounded-lg"></div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* The AI Dilemma Section */}
       <section className="py-20 bg-background-section">
