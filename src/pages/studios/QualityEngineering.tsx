@@ -163,16 +163,18 @@ const QualityEngineering = () => {
                     "We implement intelligent test selection and parallel execution strategies, ensuring fast, targeted feedback from your CI/CD pipeline so you can deploy to production with confidence.",
                 },
               ].map((item) => (
-                <div key={item.step} className="text-center">
-                  <div className="w-16 h-16 bg-brand-purple rounded-full flex items-center justify-center mx-auto mb-6">
+                <div key={item.step} className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                  <div className="relative w-16 h-16 bg-brand-purple rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-white font-bold text-lg">
                       {item.step}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                  <h3 className="relative text-xl font-bold mb-4 text-foreground">
                     {item.title}
                   </h3>
-                  <p className="text-foreground/80">{item.description}</p>
+                  <p className="relative text-foreground/80">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -525,69 +527,73 @@ const QualityEngineering = () => {
             </div>
 
             <div className="overflow-x-auto">
-              <table className="w-full border-collapse bg-background-card-light rounded-lg overflow-hidden border border-glass-border">
-                <thead>
-                  <tr className="bg-brand-primary/10">
-                    <th className="text-left p-4 font-semibold text-foreground-dark">
-                      Feature
-                    </th>
-                    <th className="text-center p-4 font-semibold text-foreground-dark">
-                      Robot Framework
-                    </th>
-                    <th className="text-center p-4 font-semibold text-foreground-dark">
-                      Playwright
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="bg-background-card-light">
-                  {[
-                    {
-                      feature: "Learning Curve",
-                      robot: "Low - Keyword-driven, business-friendly",
-                      playwright:
-                        "Medium - Requires JavaScript/TypeScript knowledge",
-                    },
-                    {
-                      feature: "Team Collaboration",
-                      robot:
-                        "Excellent - Non-technical team members can contribute",
-                      playwright: "Good - Developer-focused",
-                    },
-                    {
-                      feature: "Performance",
-                      robot: "Good - Suitable for most use cases",
-                      playwright: "Excellent - Modern, fast execution",
-                    },
-                    {
-                      feature: "Browser Support",
-                      robot: "Good - Multiple browser support",
-                      playwright: "Excellent - Native modern browser support",
-                    },
-                    {
-                      feature: "Maintenance",
-                      robot: "Easy - Readable, maintainable tests",
-                      playwright: "Medium - Requires technical expertise",
-                    },
-                    {
-                      feature: "Reporting",
-                      robot: "Excellent - Rich, detailed reports",
-                      playwright: "Good - Developer-friendly reports",
-                    },
-                  ].map((row, index) => (
-                    <tr key={index} className="border-t border-glass-border">
-                      <td className="p-4 font-medium text-foreground-dark">
-                        {row.feature}
-                      </td>
-                      <td className="p-4 text-center text-foreground-dark-muted">
-                        {row.robot}
-                      </td>
-                      <td className="p-4 text-center text-foreground-dark-muted">
-                        {row.playwright}
-                      </td>
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl hover:shadow-glass-sm transition-all duration-500 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                <table className="relative w-full border-collapse rounded-lg overflow-hidden">
+                  <thead>
+                    <tr className="bg-brand-primary/10">
+                      <th className="text-left p-4 font-semibold text-foreground-dark border-b border-black">
+                        Feature
+                      </th>
+                      <th className="text-center p-4 font-semibold text-foreground-dark border-b border-l border-black">
+                        Robot Framework
+                      </th>
+                      <th className="text-center p-4 font-semibold text-foreground-dark border-b border-l border-black">
+                        Playwright
+                      </th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {[
+                      {
+                        feature: "Learning Curve",
+                        robot: "Low - Keyword-driven, business-friendly",
+                        playwright:
+                          "Medium - Requires JavaScript/TypeScript knowledge",
+                      },
+                      {
+                        feature: "Team Collaboration",
+                        robot:
+                          "Excellent - Non-technical team members can contribute",
+                        playwright: "Good - Developer-focused",
+                      },
+                      {
+                        feature: "Performance",
+                        robot: "Good - Suitable for most use cases",
+                        playwright: "Excellent - Modern, fast execution",
+                      },
+                      {
+                        feature: "Browser Support",
+                        robot: "Good - Multiple browser support",
+                        playwright: "Excellent - Native modern browser support",
+                      },
+                      {
+                        feature: "Maintenance",
+                        robot: "Easy - Readable, maintainable tests",
+                        playwright: "Medium - Requires technical expertise",
+                      },
+                      {
+                        feature: "Reporting",
+                        robot: "Excellent - Rich, detailed reports",
+                        playwright: "Good - Developer-friendly reports",
+                      },
+                    ].map((row, index) => (
+                      <tr key={index} className="border-b border-black">
+                        <td className="p-4 font-medium text-foreground-dark">
+                          {row.feature}
+                        </td>
+                        <td className="p-4 text-center text-foreground-dark-muted border-l border-black">
+                          {row.robot}
+                        </td>
+                        <td className="p-4 text-center text-foreground-dark-muted border-l border-black">
+                          {row.playwright}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

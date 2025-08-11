@@ -136,53 +136,53 @@ const DataEngineering = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-8 bg-background-card-dark border-border-dark text-center">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-primary rounded-lg flex items-center justify-center mx-auto mb-6">
-                    <span className="text-white font-bold text-2xl">1</span>
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Build a Unified Data Foundation
-                  </h3>
-                  <p className="text-foreground/80">
-                    We centralize your disparate data sources into a scalable,
-                    cloud-native data platform, creating a single source of
-                    truth to break down silos.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                <div className="relative w-16 h-16 bg-brand-primary rounded-lg flex items-center justify-center mx-auto mb-6">
+                  <span className="text-white font-bold text-2xl">1</span>
+                </div>
+                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                  Build a Unified Data Foundation
+                </h3>
+                <p className="relative text-foreground/80">
+                  We centralize your disparate data sources into a scalable,
+                  cloud-native data platform, creating a single source of
+                  truth to break down silos.
+                </p>
+              </div>
 
-              <Card className="p-8 bg-background-card-dark border-border-dark text-center">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-purple rounded-lg flex items-center justify-center mx-auto mb-6">
-                    <span className="text-white font-bold text-2xl">2</span>
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Enhance Data Quality & Context
-                  </h3>
-                  <p className="text-foreground/80">
-                    Our intelligent data integration pipelines clean, validate,
-                    and enrich your data with business context, making it ready
-                    for reliable AI consumption.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                <div className="relative w-16 h-16 bg-brand-purple rounded-lg flex items-center justify-center mx-auto mb-6">
+                  <span className="text-white font-bold text-2xl">2</span>
+                </div>
+                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                  Enhance Data Quality & Context
+                </h3>
+                <p className="relative text-foreground/80">
+                  Our intelligent data integration pipelines clean, validate,
+                  and enrich your data with business context, making it ready
+                  for reliable AI consumption.
+                </p>
+              </div>
 
-              <Card className="p-8 bg-background-card-dark border-border-dark text-center">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-accent rounded-lg flex items-center justify-center mx-auto mb-6">
-                    <span className="text-white font-bold text-2xl">3</span>
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Establish Robust Governance
-                  </h3>
-                  <p className="text-foreground/80">
-                    We implement comprehensive data governance, quality checks,
-                    and security frameworks to ensure your data is accurate,
-                    compliant, and secure.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                <div className="relative w-16 h-16 bg-brand-accent rounded-lg flex items-center justify-center mx-auto mb-6">
+                  <span className="text-white font-bold text-2xl">3</span>
+                </div>
+                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                  Establish Robust Governance
+                </h3>
+                <p className="relative text-foreground/80">
+                  We implement comprehensive data governance, quality checks,
+                  and security frameworks to ensure your data is accurate,
+                  compliant, and secure.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -384,53 +384,53 @@ const DataEngineering = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <h3 className="text-lg font-bold mb-4 text-foreground-light">
-                    Data Integration & Transformation
-                  </h3>
-                  <p className="text-foreground-light-muted text-sm">
-                    Building intelligent data pipelines and real-time processing
-                    to break down silos and create a single source of truth.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                <h3 className="relative text-lg font-bold mb-4 text-foreground-light">
+                  Data Integration & Transformation
+                </h3>
+                <p className="relative text-foreground-light-muted text-sm">
+                  Building intelligent data pipelines and real-time processing
+                  to break down silos and create a single source of truth.
+                </p>
+              </div>
 
-              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <h3 className="text-lg font-bold mb-4 text-foreground-light">
-                    Data Platform Architecture
-                  </h3>
-                  <p className="text-foreground-light-muted text-sm">
-                    Designing scalable and robust data lake and data warehouse
-                    architectures on platforms like Snowflake, AWS, and Azure.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                <h3 className="relative text-lg font-bold mb-4 text-foreground-light">
+                  Data Platform Architecture
+                </h3>
+                <p className="relative text-foreground-light-muted text-sm">
+                  Designing scalable and robust data lake and data warehouse
+                  architectures on platforms like Snowflake, AWS, and Azure.
+                </p>
+              </div>
 
-              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <h3 className="text-lg font-bold mb-4 text-foreground-light">
-                    Data Platform Modernization
-                  </h3>
-                  <p className="text-foreground-light-muted text-sm">
-                    Strategic migration from on-premise or cloud-to-cloud with
-                    end-to-end architectural assessment and execution.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                <h3 className="relative text-lg font-bold mb-4 text-foreground-light">
+                  Data Platform Modernization
+                </h3>
+                <p className="relative text-foreground-light-muted text-sm">
+                  Strategic migration from on-premise or cloud-to-cloud with
+                  end-to-end architectural assessment and execution.
+                </p>
+              </div>
 
-              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <h3 className="text-lg font-bold mb-4 text-foreground-light">
-                    Performance Optimization
-                  </h3>
-                  <p className="text-foreground-light-muted text-sm">
-                    Assessing your data workflows to identify bottlenecks and
-                    executing projects to improve speed and reduce cost.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                <h3 className="relative text-lg font-bold mb-4 text-foreground-light">
+                  Performance Optimization
+                </h3>
+                <p className="relative text-foreground-light-muted text-sm">
+                  Assessing your data workflows to identify bottlenecks and
+                  executing projects to improve speed and reduce cost.
+                </p>
+              </div>
             </div>
           </div>
         </div>

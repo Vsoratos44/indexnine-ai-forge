@@ -103,38 +103,41 @@ const AiStudio = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Target className="h-8 w-8 text-brand-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                <h3 className="relative text-xl font-bold mb-4 text-foreground-white">
                   Strategy First, Technology Second
                 </h3>
-                <p className="text-foreground-white/80">
+                <p className="relative text-foreground-white/80">
                   We begin by immersing ourselves in your business context. Our Illuminate discovery sessions map your challenges to viable AI opportunities, ensuring technology serves the strategy.
                 </p>
               </div>
               
-              <div className="text-center">
-                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Brain className="h-8 w-8 text-brand-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                <h3 className="relative text-xl font-bold mb-4 text-foreground-white">
                   De-Risk Through Discovery
                 </h3>
-                <p className="text-foreground-white/80">
+                <p className="relative text-foreground-white/80">
                   Every AI project begins with our structured assessment framework. We validate assumptions, identify constraints, and build consensus before writing a single line of code.
                 </p>
               </div>
               
-              <div className="text-center">
-                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Shield className="h-8 w-8 text-brand-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                <h3 className="relative text-xl font-bold mb-4 text-foreground-white">
                   Measurable Business Impact
                 </h3>
-                <p className="text-foreground-white/80">
+                <p className="relative text-foreground-white/80">
                   Our success is measured in business outcomes, not technical achievements. We establish clear KPIs and track ROI from day one through deployment and beyond.
                 </p>
               </div>
@@ -278,38 +281,41 @@ const AiStudio = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Target className="h-8 w-8 text-brand-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                <h3 className="relative text-xl font-bold mb-4 text-foreground-white">
                   AI Potential Score
                 </h3>
-                <p className="text-foreground-white/80">
+                <p className="relative text-foreground-white/80">
                   We analyze your market position, business processes, and strategic goals to quantify the potential impact of AI. This isn't about hype; it's a rigorous evaluation of where AI can create the most value.
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Brain className="h-8 w-8 text-brand-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                <h3 className="relative text-xl font-bold mb-4 text-foreground-white">
                   AI Readiness Score
                 </h3>
-                <p className="text-foreground-white/80">
+                <p className="relative text-foreground-white/80">
                   An idea is only as good as your ability to execute it. We assess your data maturity, technical infrastructure, talent, and organizational culture to identify your strengths and critical gaps for successful AI adoption.
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Shield className="h-8 w-8 text-brand-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-foreground-white">
+                <h3 className="relative text-xl font-bold mb-4 text-foreground-white">
                   AI Risk Score
                 </h3>
-                <p className="text-foreground-white/80">
+                <p className="relative text-foreground-white/80">
                   We proactively identify and score potential hurdles. This includes evaluating ethical considerations, regulatory compliance (like GDPR/CCPA), data privacy, model bias, and the change management required for success.
                 </p>
               </div>
@@ -473,89 +479,83 @@ const AiStudio = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Generative AI Solutions
-                  </h3>
-                  <p className="text-foreground/80 mb-4">
-                    We build custom LLM applications, content automation engines, and intelligent chatbots that enhance creativity and efficiency.
-                  </p>
-                  <p className="text-sm text-brand-primary font-medium">
-                    Use Cases: Automated Content Creation, Code Generation, Advanced Customer Support
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                  Generative AI Solutions
+                </h3>
+                <p className="relative text-foreground/80 mb-4">
+                  We build custom LLM applications, content automation engines, and intelligent chatbots that enhance creativity and efficiency.
+                </p>
+                <p className="relative text-sm text-brand-primary font-medium">
+                  Use Cases: Automated Content Creation, Code Generation, Advanced Customer Support
+                </p>
+              </div>
               
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Computer Vision & Analytics
-                  </h3>
-                  <p className="text-foreground/80 mb-4">
-                    Custom image recognition, video analysis, and real-time monitoring systems for operational excellence and safety.
-                  </p>
-                  <p className="text-sm text-brand-primary font-medium">
-                    Use Cases: Quality Control, Security Monitoring, Process Automation
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                  Computer Vision & Analytics
+                </h3>
+                <p className="relative text-foreground/80 mb-4">
+                  Custom image recognition, video analysis, and real-time monitoring systems for operational excellence and safety.
+                </p>
+                <p className="relative text-sm text-brand-primary font-medium">
+                  Use Cases: Quality Control, Security Monitoring, Process Automation
+                </p>
+              </div>
               
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Predictive Analytics & ML
-                  </h3>
-                  <p className="text-foreground/80 mb-4">
-                    Machine learning models for forecasting, risk assessment, and intelligent decision-making systems.
-                  </p>
-                  <p className="text-sm text-brand-primary font-medium">
-                    Use Cases: Demand Forecasting, Risk Management, Personalization
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                  Predictive Analytics & ML
+                </h3>
+                <p className="relative text-foreground/80 mb-4">
+                  Machine learning models for forecasting, risk assessment, and intelligent decision-making systems.
+                </p>
+                <p className="relative text-sm text-brand-primary font-medium">
+                  Use Cases: Demand Forecasting, Risk Management, Personalization
+                </p>
+              </div>
               
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Natural Language Processing
-                  </h3>
-                  <p className="text-foreground/80 mb-4">
-                    Text analysis, sentiment monitoring, and intelligent document processing to unlock insights from unstructured data.
-                  </p>
-                  <p className="text-sm text-brand-primary font-medium">
-                    Use Cases: Document Intelligence, Sentiment Analysis, Knowledge Extraction
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                  Natural Language Processing
+                </h3>
+                <p className="relative text-foreground/80 mb-4">
+                  Text analysis, sentiment monitoring, and intelligent document processing to unlock insights from unstructured data.
+                </p>
+                <p className="relative text-sm text-brand-primary font-medium">
+                  Use Cases: Document Intelligence, Sentiment Analysis, Knowledge Extraction
+                </p>
+              </div>
               
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Intelligent Automation
-                  </h3>
-                  <p className="text-foreground/80 mb-4">
-                    AI-powered workflow automation that adapts to changing conditions and makes intelligent decisions.
-                  </p>
-                  <p className="text-sm text-brand-primary font-medium">
-                    Use Cases: Process Optimization, Intelligent Routing, Adaptive Systems
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                  Intelligent Automation
+                </h3>
+                <p className="relative text-foreground/80 mb-4">
+                  AI-powered workflow automation that adapts to changing conditions and makes intelligent decisions.
+                </p>
+                <p className="relative text-sm text-brand-primary font-medium">
+                  Use Cases: Process Optimization, Intelligent Routing, Adaptive Systems
+                </p>
+              </div>
               
-              <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-0">
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    AI Strategy & Consulting
-                  </h3>
-                  <p className="text-foreground/80 mb-4">
-                    Strategic guidance, technology roadmaps, and organizational change management for successful AI adoption.
-                  </p>
-                  <p className="text-sm text-brand-primary font-medium">
-                    Use Cases: AI Readiness Assessment, Technology Selection, Change Management
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                  AI Strategy & Consulting
+                </h3>
+                <p className="relative text-foreground/80 mb-4">
+                  Strategic guidance, technology roadmaps, and organizational change management for successful AI adoption.
+                </p>
+                <p className="relative text-sm text-brand-primary font-medium">
+                  Use Cases: AI Readiness Assessment, Technology Selection, Change Management
+                </p>
+              </div>
             </div>
           </div>
         </div>
