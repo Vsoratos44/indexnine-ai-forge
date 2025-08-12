@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { CardGlass } from "@/components/ui/CardGlass";
 import { Users, Clock, Shield, Target, Zap, CheckCircle } from "lucide-react";
 
 const DedicatedTeams = () => {
@@ -44,7 +45,7 @@ const DedicatedTeams = () => {
       </section>
 
       {/* Team Features */}
-      <section className="py-24 bg-background-light">
+      <section className="py-24 bg-background-section">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-bold text-foreground-dark mb-6 font-montserrat">
@@ -95,10 +96,7 @@ const DedicatedTeams = () => {
                   "Established processes and best practices for efficient collaboration.",
               },
             ].map((benefit, index) => (
-              <div
-                key={index}
-                className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105"
-              >
+<CardGlass className="p-8" key={index}>
                 <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
                   <benefit.icon className="w-8 h-8 text-white" />
                 </div>
@@ -108,7 +106,7 @@ const DedicatedTeams = () => {
                 <p className="text-foreground-muted leading-relaxed font-montserrat">
                   {benefit.description}
                 </p>
-              </div>
+              </CardGlass>
             ))}
           </div>
         </div>

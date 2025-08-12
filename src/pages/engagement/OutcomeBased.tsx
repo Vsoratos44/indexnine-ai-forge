@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { CardGlass } from "@/components/ui/CardGlass";
 import { Target, TrendingUp, Handshake, Shield, Zap, CheckCircle } from 'lucide-react';
 
 const OutcomeBased = () => {
@@ -51,13 +52,13 @@ const OutcomeBased = () => {
               { icon: Zap, title: "Agile Adaptation", description: "Flexible approach that adapts based on real-world results and feedback." },
               { icon: CheckCircle, title: "Proven Metrics", description: "Established KPIs and measurement frameworks for transparent tracking." }
             ].map((advantage, index) => (
-              <div key={index} className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+<CardGlass className="p-8" key={index}>
                 <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
                   <advantage.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">{advantage.title}</h3>
                 <p className="text-foreground-muted leading-relaxed font-montserrat">{advantage.description}</p>
-              </div>
+              </CardGlass>
             ))}
           </div>
         </div>

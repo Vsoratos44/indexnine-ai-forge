@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { CardGlass } from "@/components/ui/CardGlass";
 import {
   Handshake,
   Zap,
@@ -129,7 +130,7 @@ const ProjectBased = () => {
                   for complex, end-to-end software development projects.
                 </p>
               </div>
-              <div className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border">
+<CardGlass className="p-8">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Target className="w-5 h-5 text-brand-primary" />
@@ -150,7 +151,7 @@ const ProjectBased = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </CardGlass>
             </div>
 
             {/* Specialty Services */}

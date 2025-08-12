@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { CardGlass } from "@/components/ui/CardGlass";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import {
   ServiceSchema,
@@ -237,10 +238,7 @@ const CustomSoftware = () => {
                 description: "Backed by our QE Studio, we ensure your software is flawless with test automation, performance, and security audits."
               }
             ].map((service, index) => (
-              <div
-                key={index}
-                className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105"
-              >
+<CardGlass className="p-8" key={index}>
                 <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
@@ -250,7 +248,7 @@ const CustomSoftware = () => {
                 <p className="text-foreground/70 leading-relaxed font-montserrat">
                   {service.description}
                 </p>
-              </div>
+              </CardGlass>
             ))}
           </div>
         </div>
