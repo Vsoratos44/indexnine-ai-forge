@@ -71,10 +71,10 @@ const ProductLifecycle = () => {
       <div className={`container mx-auto px-6 lg:px-8 relative z-10 `}>
         <div className="text-center mb-16 lg:mb-20">
           <h2
-            className={`text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-tight tracking-tight font-montserrat`}
+            className={`text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-[1.4] font-montserrat`}
           >
             Product Lifecycle:{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
+            <span className="text-brand-primary leading-[1.4]">
               Every Step Counts
             </span>
           </h2>

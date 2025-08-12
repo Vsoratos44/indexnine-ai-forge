@@ -4,7 +4,7 @@ const ValueProposition = () => {
   return (
     <section
       data-section="value-proposition"
-      className="py-16 md:py-20 lg:py-28 relative overflow-hidden bg-background-section border-t border-border/20"
+      className="py-16 md:pt-20 lg:pt-28 relative overflow-hidden bg-[#fff] border-t border-border/20"
     >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-30">
@@ -13,16 +13,28 @@ const ValueProposition = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl relative z-10">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground-dark mb-12 leading-tight">
-            <span className="text-brand-primary">Product Engineering Services</span> for the AI Era.
+        <div className="text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-12 max-w-3xl mx-auto leading-[1.4]">
+            <span className="text-brand-primary leading-[1.4]">
+              Product Engineering Services
+            </span>{" "}
+            for the AI Era.
           </h2>
 
           <div className="max-w-5xl mx-auto">
             <p className="text-lg text-foreground-dark-muted leading-relaxed font-light">
-              Indexnine was founded not just to achieve excellence, but to model it. For years, the industry has been plagued by a perception problem—a belief that offshore partners lack proactive, strategic thinking. We exist to permanently challenge that stigma.
-              <br /><br />
-              When the stakes are high and you need best-in-class delivery, we're there. We don't churn out solutions; we offer full cycle product development that doesn't compromise on speed or quality. Whether you're working on minimum viable product development or navigating a digital transformation, we can create a solution tailored to you.
+              Indexnine was founded not just to achieve excellence, but to model
+              it. For years, the industry has been plagued by a perception
+              problem—a belief that offshore partners lack proactive, strategic
+              thinking. We exist to permanently challenge that stigma.
+              <br />
+              <br />
+              When the stakes are high and you need best-in-class delivery,
+              we're there. We don't churn out solutions; we offer full cycle
+              product development that doesn't compromise on speed or quality.
+              Whether you're working on minimum viable product development or
+              navigating a digital transformation, we can create a solution
+              tailored to you.
             </p>
           </div>
         </div>

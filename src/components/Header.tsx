@@ -78,8 +78,8 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 py-3">
-          <div className="bg-foreground/5 backdrop-blur-md border border-border/40 rounded-2xl px-6 py-3 shadow-md">
+        <div className="container mx-auto px-4 md:px-0 lg:px-0 py-3">
+          <div className="bg-[#00000050] backdrop-blur-md border border-border/40 rounded-2xl px-6 py-4 shadow-md">
             <div className="flex items-center justify-between h-12">
               {/* Logo */}
               <Link
@@ -101,165 +101,165 @@ const Header = () => {
 
               {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center space-x-8">
-            <div className="relative group">
-              <button
-                className={`flex items-center space-x-1 transition-colors duration-300 ${
-                  isLightSection
-                    ? "text-gray-900 hover:text-brand-primary"
-                    : "text-foreground hover:text-brand-primary"
-                }`}
-              >
-                <span>Services</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              {/* Backdrop overlay */}
-              <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                <div className="p-4 space-y-2">
-                  <Link
-                    to="/services/custom-software"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                <div className="relative group">
+                  <button
+                    className={`flex items-center space-x-1 transition-colors duration-300 ${
+                      isLightSection
+                        ? "text-gray-900 hover:text-brand-primary"
+                        : "text-foreground hover:text-brand-primary"
+                    }`}
                   >
-                    Custom Software Development
-                  </Link>
-                  <Link
-                    to="/studios/ai"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                  >
-                    AI & ML Development
-                  </Link>
-                  <Link
-                    to="/studios/data-engineering"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                  >
-                    Data Engineering
-                  </Link>
-                  <Link
-                    to="/studios/quality-engineering"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                  >
-                    Quality Assurance Engineering
-                  </Link>
-                  <Link
-                    to="/services/consulting"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                  >
-                    Consulting & Strategy
-                  </Link>
+                    <span>Services</span>
+                    <ChevronDown className="w-4 h-4" />
+                  </button>
+                  {/* Backdrop overlay */}
+                  {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
+                  <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                    <div className="p-4 space-y-2">
+                      <Link
+                        to="/services/custom-software"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Custom Software Development
+                      </Link>
+                      <Link
+                        to="/studios/ai"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        AI & ML Development
+                      </Link>
+                      <Link
+                        to="/studios/data-engineering"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Data Engineering
+                      </Link>
+                      <Link
+                        to="/studios/quality-engineering"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Quality Assurance Engineering
+                      </Link>
+                      <Link
+                        to="/services/consulting"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Consulting & Strategy
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="relative group">
-              <button
-                className={`flex items-center space-x-1 transition-colors duration-300 ${
-                  isLightSection
-                    ? "text-gray-900 hover:text-brand-primary"
-                    : "text-foreground hover:text-brand-primary"
-                }`}
-              >
-                <span>Engagement Models</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              {/* Backdrop overlay */}
-              <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                <div className="p-4 space-y-2">
-                  <Link
-                    to="/engagement/innovation-lab"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                <div className="relative group">
+                  <button
+                    className={`flex items-center space-x-1 transition-colors duration-300 ${
+                      isLightSection
+                        ? "text-gray-900 hover:text-brand-primary"
+                        : "text-foreground hover:text-brand-primary"
+                    }`}
                   >
-                    Innovation Lab
-                  </Link>
-                  <Link
-                    to="/engagement/enterprise"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                  >
-                    Enterprise Studio
-                  </Link>
-                  <Link
-                    to="/engagement/dedicated-teams"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                  >
-                    Dedicated Engineering Teams
-                  </Link>
-                  <Link
-                    to="/engagement/project-based"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                  >
-                    Project-Based Engagements
-                  </Link>
+                    <span>Engagement Models</span>
+                    <ChevronDown className="w-4 h-4" />
+                  </button>
+                  {/* Backdrop overlay */}
+                  {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
+                  <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                    <div className="p-4 space-y-2">
+                      <Link
+                        to="/engagement/innovation-lab"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Innovation Lab
+                      </Link>
+                      <Link
+                        to="/engagement/enterprise"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Enterprise Studio
+                      </Link>
+                      <Link
+                        to="/engagement/dedicated-teams"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Dedicated Engineering Teams
+                      </Link>
+                      <Link
+                        to="/engagement/project-based"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Project-Based Engagements
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="relative group">
-              <button
-                className={`flex items-center space-x-1 transition-colors duration-300 ${
-                  isLightSection
-                    ? "text-gray-900 hover:text-brand-primary"
-                    : "text-foreground hover:text-brand-primary"
-                }`}
-              >
-                <span>Insights</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              {/* Backdrop overlay */}
-              <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                <div className="p-4 space-y-2">
-                  <Link
-                    to="/case-studies"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                <div className="relative group">
+                  <button
+                    className={`flex items-center space-x-1 transition-colors duration-300 ${
+                      isLightSection
+                        ? "text-gray-900 hover:text-brand-primary"
+                        : "text-foreground hover:text-brand-primary"
+                    }`}
                   >
-                    Case Studies
-                  </Link>
-                  <Link
-                    to="/insights"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                  >
-                    Blogs
-                  </Link>
-                  <Link
-                    to="/resources/ebooks"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                  >
-                    eBooks
-                  </Link>
+                    <span>Insights</span>
+                    <ChevronDown className="w-4 h-4" />
+                  </button>
+                  {/* Backdrop overlay */}
+                  {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                    <div className="p-4 space-y-2">
+                      <Link
+                        to="/case-studies"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Case Studies
+                      </Link>
+                      <Link
+                        to="/insights"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Blogs
+                      </Link>
+                      <Link
+                        to="/resources/ebooks"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        eBooks
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="relative group">
-              <button
-                className={`flex items-center space-x-1 transition-colors duration-300 ${
-                  isLightSection
-                    ? "text-gray-900 hover:text-brand-primary"
-                    : "text-foreground hover:text-brand-primary"
-                }`}
-              >
-                <span>Events</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              {/* Backdrop overlay */}
-              <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                <div className="p-4 space-y-2">
-                  <Link
-                    to="/events"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                <div className="relative group">
+                  <button
+                    className={`flex items-center space-x-1 transition-colors duration-300 ${
+                      isLightSection
+                        ? "text-gray-900 hover:text-brand-primary"
+                        : "text-foreground hover:text-brand-primary"
+                    }`}
                   >
-                    Events
-                  </Link>
-                  <Link
-                    to="/events/features/on-site-experience"
-                    className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                  >
-                    On-Site Experience
-                  </Link>
+                    <span>Events</span>
+                    <ChevronDown className="w-4 h-4" />
+                  </button>
+                  {/* Backdrop overlay */}
+                  {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
+                  <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                    <div className="p-4 space-y-2">
+                      <Link
+                        to="/events"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        Events
+                      </Link>
+                      <Link
+                        to="/events/features/on-site-experience"
+                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                      >
+                        On-Site Experience
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
                 <Link
                   to="/about"
@@ -292,7 +292,11 @@ const Header = () => {
 
               {/* Desktop CTA Button */}
               <div className="hidden md:block">
-                <Button variant="default" size="default" className="rounded-full">
+                <Button
+                  variant="default"
+                  size="default"
+                  className="rounded-full"
+                >
                   Scope a Project
                 </Button>
               </div>
