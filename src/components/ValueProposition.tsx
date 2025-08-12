@@ -8,13 +8,10 @@ const ValueProposition = () => {
       style={{
         backgroundImage: `linear-gradient(
           to bottom,
-          hsl(0 0% 0%) 0%,
-          hsl(0 0% 0%) 10%,
-          hsl(var(--brand-primary-dark)) 18%,
-          hsl(var(--primary)) 28%,
-          hsl(var(--primary)) 32%,
-          hsl(var(--background-section)) 40%,
-          hsl(var(--background-section)) 70%,
+          hsl(var(--background-hero)) 0%,
+          hsl(var(--background-hero)) 6%,
+          hsl(var(--background-section)) 12%,
+          hsl(var(--background-section)) 75%,
           hsl(var(--background-light)) 100%
         )`
       }}
