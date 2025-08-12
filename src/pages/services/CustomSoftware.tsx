@@ -120,7 +120,7 @@ const CustomSoftware = () => {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-24 bg-background-section">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8 font-montserrat">
@@ -258,7 +258,7 @@ const CustomSoftware = () => {
       </section>
 
       {/* Strategic Scoping Session */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-24 bg-background-section">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-card backdrop-blur-xl rounded-3xl p-12 shadow-glass-lg border border-glass-border">
@@ -342,8 +342,7 @@ const CustomSoftware = () => {
         </div>
       </section>
 
-      {/* Related Services - Preserving existing studio links */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-24 bg-background-section">
         <div className="container mx-auto px-6 lg:px-8">
           <h3 className="text-2xl font-bold text-foreground mb-8 font-montserrat">
             Related Services
@@ -351,7 +350,7 @@ const CustomSoftware = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <Link
               to="/studios/ai"
-              className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all bg-gradient-card backdrop-blur-xl"
+              className="p-6 border border-glass-border rounded-3xl hover:shadow-glass-lg transition-all bg-gradient-card backdrop-blur-xl"
             >
               <h4 className="font-semibold text-foreground mb-2">
                 AI & ML Development
@@ -362,7 +361,7 @@ const CustomSoftware = () => {
             </Link>
             <Link
               to="/studios/quality-engineering"
-              className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all bg-gradient-card backdrop-blur-xl"
+              className="p-6 border border-glass-border rounded-3xl hover:shadow-glass-lg transition-all bg-gradient-card backdrop-blur-xl"
             >
               <h4 className="font-semibold text-foreground mb-2">
                 QA Engineering
@@ -373,7 +372,7 @@ const CustomSoftware = () => {
             </Link>
             <Link
               to="/insights/case-study/genesys-modernization"
-              className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all bg-gradient-card backdrop-blur-xl"
+              className="p-6 border border-glass-border rounded-3xl hover:shadow-glass-lg transition-all bg-gradient-card backdrop-blur-xl"
             >
               <h4 className="font-semibold text-foreground mb-2">
                 Success Story

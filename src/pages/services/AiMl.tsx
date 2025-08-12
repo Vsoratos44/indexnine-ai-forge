@@ -90,15 +90,15 @@ const AiMl = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <h3 className="text-2xl font-bold text-foreground mb-8 font-montserrat">Related Services</h3>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link to="/services/custom-software" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
+            <Link to="/services/custom-software" className="p-6 bg-gradient-card backdrop-blur-xl border border-glass-border rounded-3xl hover:shadow-glass-lg transition-all">
               <h4 className="font-semibold text-foreground mb-2">Custom Software Development</h4>
               <p className="text-foreground-muted text-sm">End-to-end software solutions with AI integration</p>
             </Link>
-            <Link to="/services/data-engineering" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
+            <Link to="/services/data-engineering" className="p-6 bg-gradient-card backdrop-blur-xl border border-glass-border rounded-3xl hover:shadow-glass-lg transition-all">
               <h4 className="font-semibold text-foreground mb-2">Data Engineering</h4>
               <p className="text-foreground-muted text-sm">Data pipelines and analytics for AI models</p>
             </Link>
-            <Link to="/studios/ai-studio" className="p-6 border border-glass-border rounded-xl hover:shadow-glass-lg transition-all">
+            <Link to="/studios/ai-studio" className="p-6 bg-gradient-card backdrop-blur-xl border border-glass-border rounded-3xl hover:shadow-glass-lg transition-all">
               <h4 className="font-semibold text-foreground mb-2">AI Studio</h4>
               <p className="text-foreground-muted text-sm">Specialized AI development studio</p>
             </Link>

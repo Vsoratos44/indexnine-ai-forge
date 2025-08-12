@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Button } from '@/components/ui/button';
 import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { Database, Cloud, Workflow, BarChart, Shield, Zap } from 'lucide-react';
@@ -24,6 +25,10 @@ const DataEngineering = () => {
         { name: 'Data Engineering', url: 'https://yoursite.lovable.app/services/data-engineering' }
       ]} />
       <Header />
+      
+      <div className="container mx-auto px-6 lg:px-8 pt-32">
+        <Breadcrumbs />
+      </div>
       
       {/* Hero Section */}
       <section className="pt-32 pb-24 bg-gradient-hero relative overflow-hidden">

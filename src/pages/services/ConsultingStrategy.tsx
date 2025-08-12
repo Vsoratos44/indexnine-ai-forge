@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 
 const ConsultingStrategy = () => {
   return (
@@ -42,13 +43,17 @@ const ConsultingStrategy = () => {
       />
       <Header />
 
+      <div className="container mx-auto px-6 lg:px-8 pt-32">
+        <Breadcrumbs />
+      </div>
+
       {/* Hero Section */}
       <section className="relative pt-28 pb-16 bg-gradient-to-b from-background to-secondary/20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
               Strategic Technology &{" "}
-              <span className="text-brand-purple">AI Consulting</span>
+              <span className="bg-gradient-primary bg-clip-text text-transparent">AI Consulting</span>
             </h1>
             <p className="text-xl text-foreground-muted mb-8 max-w-3xl mx-auto font-montserrat">
               We provide expert consulting to align your technology and AI
@@ -68,7 +73,7 @@ const ConsultingStrategy = () => {
       </section>
 
       {/* Overview Section */}
-      <section className="py-16">
+      <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -84,9 +89,9 @@ const ConsultingStrategy = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-8 text-center">
+              <Card className="p-8 text-center bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Lightbulb className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-foreground">
@@ -99,9 +104,9 @@ const ConsultingStrategy = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-8 text-center">
+              <Card className="p-8 text-center bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Target className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-foreground">
@@ -114,9 +119,9 @@ const ConsultingStrategy = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-8 text-center">
+              <Card className="p-8 text-center bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Rocket className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-foreground">
@@ -134,7 +139,7 @@ const ConsultingStrategy = () => {
       </section>
 
       {/* Consulting Services Section */}
-      <section className="py-16 bg-secondary">
+      <section className="py-24 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -148,7 +153,7 @@ const ConsultingStrategy = () => {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8">
-              <Card className="p-8">
+              <Card className="p-8 bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-0">
                   <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
                     <TrendingUp className="h-8 w-8 text-brand-purple" />
@@ -184,7 +189,7 @@ const ConsultingStrategy = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-8">
+              <Card className="p-8 bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-0">
                   <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
                     <Lightbulb className="h-8 w-8 text-brand-purple" />
@@ -220,7 +225,7 @@ const ConsultingStrategy = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-8">
+              <Card className="p-8 bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-0">
                   <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
                     <Users className="h-8 w-8 text-brand-purple" />
@@ -256,7 +261,7 @@ const ConsultingStrategy = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-8">
+              <Card className="p-8 bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-0">
                   <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
                     <Target className="h-8 w-8 text-brand-purple" />
@@ -297,7 +302,7 @@ const ConsultingStrategy = () => {
       </section>
 
       {/* Engagement Models Section */}
-      <section className="py-16">
+      <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -311,7 +316,7 @@ const ConsultingStrategy = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-8 text-center">
+              <Card className="p-8 text-center bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-xl font-bold mb-4 text-foreground">
                     Strategy Sprint
@@ -329,7 +334,7 @@ const ConsultingStrategy = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-8 text-center border-brand-purple border-2">
+              <Card className="p-8 text-center bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-0">
                   <div className="inline-block px-3 py-1 bg-brand-purple text-white text-sm rounded-full mb-4">
                     Most Popular
@@ -348,7 +353,7 @@ const ConsultingStrategy = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-8 text-center">
+              <Card className="p-8 text-center bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-0">
                   <h3 className="text-xl font-bold mb-4 text-foreground">
                     Advisory Retainer
@@ -371,7 +376,7 @@ const ConsultingStrategy = () => {
       </section>
 
       {/* Why Choose Our Consulting Section */}
-      <section className="py-16 bg-secondary">
+      <section className="py-24 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
