@@ -28,12 +28,12 @@ const MatureCaseStudy = () => {
               </span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight tracking-tight animate-fade-in font-montserrat">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight animate-fade-in font-montserrat">
               Mission-Critical Modernization <br />
               <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">for E-commerce</span>
             </h1>
             
-            <p className="text-lg sm:text-xl lg:text-2xl text-white/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
+            <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
               Product modernization and event-driven architecture for a new era of an E-commerce giant.
             </p>
           </div>
@@ -62,7 +62,7 @@ const MatureCaseStudy = () => {
       <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
               The Challenge: A Platform on the Brink of Collapse
             </h2>
             <p className="text-lg text-foreground-muted leading-relaxed mb-8">
@@ -73,17 +73,20 @@ const MatureCaseStudy = () => {
             </p>
             
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass">
-                <h4 className="text-lg font-semibold text-foreground mb-2 font-montserrat">Legacy System</h4>
-                <p className="text-foreground-muted text-sm">16-year-old PHP monolith struggling with daily failures</p>
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass transition-all duration-500 transform group hover:scale-105 hover:shadow-glass-lg hover:border-brand-primary/30">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h4 className="relative text-lg font-semibold text-foreground mb-2 font-montserrat">Legacy System</h4>
+                <p className="relative text-foreground-muted text-sm">16-year-old PHP monolith struggling with daily failures</p>
               </div>
-              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass">
-                <h4 className="text-lg font-semibold text-foreground mb-2 font-montserrat">178 Integrations</h4>
-                <p className="text-foreground-muted text-sm">Fragile connections to e-commerce platforms causing system-wide crashes</p>
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass transition-all duration-500 transform group hover:scale-105 hover:shadow-glass-lg hover:border-brand-primary/30">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h4 className="relative text-lg font-semibold text-foreground mb-2 font-montserrat">178 Integrations</h4>
+                <p className="relative text-foreground-muted text-sm">Fragile connections to e-commerce platforms causing system-wide crashes</p>
               </div>
-              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass">
-                <h4 className="text-lg font-semibold text-foreground mb-2 font-montserrat">Daily Crashes</h4>
-                <p className="text-foreground-muted text-sm">Peak-time failures during critical inventory update periods</p>
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass transition-all duration-500 transform group hover:scale-105 hover:shadow-glass-lg hover:border-brand-primary/30">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h4 className="relative text-lg font-semibold text-foreground mb-2 font-montserrat">Daily Crashes</h4>
+                <p className="relative text-foreground-muted text-sm">Peak-time failures during critical inventory update periods</p>
               </div>
             </div>
           </div>
@@ -94,7 +97,7 @@ const MatureCaseStudy = () => {
       <section className="py-24 lg:py-32 bg-gradient-section">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-8 font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
               Our Solution: Architecting Stability with an Event-Driven Integration Hub
             </h2>
             <p className="text-lg text-foreground-dark leading-relaxed mb-12">
@@ -113,28 +116,28 @@ const MatureCaseStudy = () => {
                 <h3 className="text-2xl font-bold text-foreground-dark mb-6 font-montserrat">Phase 2: Building a Resilient, Scalable Hub</h3>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                    <h4 className="text-xl font-bold text-foreground-dark mb-4 font-montserrat">Asynchronous Message Queues</h4>
+                    <h4 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">Asynchronous Message Queues</h4>
                     <p className="text-foreground-dark leading-relaxed">
                       High-throughput message queueing system to ingest millions of events per minute without system overload.
                     </p>
                   </div>
                   
                   <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                    <h4 className="text-xl font-bold text-foreground-dark mb-4 font-montserrat">Canonical Data Model</h4>
+                    <h4 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">Canonical Data Model</h4>
                     <p className="text-foreground-dark leading-relaxed">
                       Standardized data format eliminating the need for the core to understand 178 different message types.
                     </p>
                   </div>
                   
                   <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                    <h4 className="text-xl font-bold text-foreground-dark mb-4 font-montserrat">Microservices for Transformation</h4>
+                    <h4 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">Microservices for Transformation</h4>
                     <p className="text-foreground-dark leading-relaxed">
                       Independent services for each platform transformation, isolating changes and eliminating system-wide risk.
                     </p>
                   </div>
                   
                   <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                    <h4 className="text-xl font-bold text-foreground-dark mb-4 font-montserrat">Zero-Downtime Rollout</h4>
+                    <h4 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">Zero-Downtime Rollout</h4>
                     <p className="text-foreground-dark leading-relaxed">
                       Channel-by-channel migration strategy ensuring uninterrupted business continuity throughout the project.
                     </p>
@@ -155,16 +158,18 @@ const MatureCaseStudy = () => {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">100%</h3>
-                <p className="text-foreground-muted font-semibold">Uptime Achieved</p>
-                <p className="text-sm text-foreground-muted mt-2">Eliminated daily crashes and system failures</p>
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center transition-all duration-500 transform group hover:scale-105 hover:shadow-glass-lg hover:border-brand-primary/30">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h3 className="relative text-4xl font-bold text-brand-primary mb-2 font-montserrat">100%</h3>
+                <p className="relative text-foreground-muted font-semibold">Uptime Achieved</p>
+                <p className="relative text-sm text-foreground-muted mt-2">Eliminated daily crashes and system failures</p>
               </div>
               
-              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">178</h3>
-                <p className="text-foreground-muted font-semibold">Integrations Migrated</p>
-                <p className="text-sm text-foreground-muted mt-2">Zero-downtime migration of all e-commerce connections</p>
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center transition-all duration-500 transform group hover:scale-105 hover:shadow-glass-lg hover:border-brand-primary/30">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <h3 className="relative text-4xl font-bold text-brand-primary mb-2 font-montserrat">178</h3>
+                <p className="relative text-foreground-muted font-semibold">Integrations Migrated</p>
+                <p className="relative text-sm text-foreground-muted mt-2">Zero-downtime migration of all e-commerce connections</p>
               </div>
             </div>
             
@@ -192,7 +197,7 @@ const MatureCaseStudy = () => {
       <section className="py-24 lg:py-32 bg-gradient-section">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-8 font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
               Why It Worked
             </h2>
             <p className="text-lg text-foreground-dark leading-relaxed mb-8">
@@ -201,21 +206,21 @@ const MatureCaseStudy = () => {
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h3 className="text-xl font-bold text-foreground-dark mb-4 font-montserrat">In-Depth Architectural Expertise</h3>
+                <h3 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">In-Depth Architectural Expertise</h3>
                 <p className="text-foreground-dark leading-relaxed">
                   This problem required the kind of deep understanding of event-driven systems, microservices, and complex data transformations that Indexnine cultivates in our talent pool.
                 </p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h3 className="text-xl font-bold text-foreground-dark mb-4 font-montserrat">Disciplined and De-risked</h3>
+                <h3 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">Disciplined and De-risked</h3>
                 <p className="text-foreground-dark leading-relaxed">
                   Our phased, channel-by-channel migration strategy was essential for a project of this risk profile. Understanding the needs of our client, we prioritized stability and business continuity without compromising on engineering excellence.
                 </p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h3 className="text-xl font-bold text-foreground-dark mb-4 font-montserrat">A True Partnership Approach</h3>
+                <h3 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">A True Partnership Approach</h3>
                 <p className="text-foreground-dark leading-relaxed">
                   We embedded ourselves within the client's team, working as a single, unified unit to tackle this immense challenge. Our transparent communication and shared sense of ownership were key to navigating the project's complexities.
                 </p>
