@@ -83,7 +83,6 @@ const VideoBackground = () => {
         poster="/videos/poster-frame.jpg"
       >
         <source src="/videos/Lets_try_this_202508011021.mp4" type="video/mp4" />
-        <source src="/videos/Scene_description_the_202508011021.mp4" type="video/mp4" />
       </video>
 
       {/* Looping Video (starts after first ends) */}
@@ -96,7 +95,7 @@ const VideoBackground = () => {
         preload="auto"
         poster="/videos/poster-frame.jpg"
       >
-        <source src="/videos/intro.mp4" type="video/mp4" />
+        <source src="/videos/Scene_description_the_202508011021.mp4" type="video/mp4" />
       </video>
 
       {/* Fallback gradient background if video fails */}
