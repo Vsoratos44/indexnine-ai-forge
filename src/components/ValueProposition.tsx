@@ -6,11 +6,15 @@ const ValueProposition = () => {
       data-section="value-proposition"
       className="py-24 lg:py-32 relative overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(to bottom,
-          hsl(var(--background-hero)) 0%,
-          hsl(var(--background-hero)) 10%,
-          hsl(var(--primary)) 20%,
+        backgroundImage: `linear-gradient(
+          to bottom,
+          hsl(0 0% 0%) 0%,
+          hsl(0 0% 0%) 10%,
+          hsl(var(--brand-primary-dark)) 18%,
+          hsl(var(--primary)) 28%,
+          hsl(var(--primary)) 32%,
           hsl(var(--background-section)) 40%,
+          hsl(var(--background-section)) 70%,
           hsl(var(--background-light)) 100%
         )`
       }}
