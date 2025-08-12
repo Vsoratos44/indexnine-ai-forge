@@ -52,6 +52,7 @@ const Header = () => {
             const lightSections = [
               "social-proof",
               "client-experience",
+              "product-lifecycle",
               "practices-studios",
               "insights",
             ];
