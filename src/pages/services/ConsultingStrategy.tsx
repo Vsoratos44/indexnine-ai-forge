@@ -92,50 +92,44 @@ const ConsultingStrategy = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-8 text-center bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Lightbulb className="h-8 w-8 text-brand-purple" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Strategic Planning
-                  </h3>
-                  <p className="text-foreground-muted font-montserrat">
-                    Develop comprehensive technology roadmaps aligned with your
-                    business goals and market opportunities.
-                  </p>
-                </CardContent>
-              </Card>
+              <CardGlass className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Lightbulb className="h-8 w-8 text-brand-purple" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-foreground">
+                  Strategic Planning
+                </h3>
+                <p className="text-foreground-muted font-montserrat">
+                  Develop comprehensive technology roadmaps aligned with your
+                  business goals and market opportunities.
+                </p>
+              </CardGlass>
 
-              <Card className="p-8 text-center bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Target className="h-8 w-8 text-brand-purple" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Risk Assessment
-                  </h3>
-                  <p className="text-foreground-muted font-montserrat">
-                    Identify and mitigate technical, operational, and strategic
-                    risks before they impact your business.
-                  </p>
-                </CardContent>
-              </Card>
+              <CardGlass className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Target className="h-8 w-8 text-brand-purple" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-foreground">
+                  Risk Assessment
+                </h3>
+                <p className="text-foreground-muted font-montserrat">
+                  Identify and mitigate technical, operational, and strategic
+                  risks before they impact your business.
+                </p>
+              </CardGlass>
 
-              <Card className="p-8 text-center bg-gradient-card backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Rocket className="h-8 w-8 text-brand-purple" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">
-                    Implementation Support
-                  </h3>
-                  <p className="text-foreground-muted font-montserrat">
-                    Guide execution with hands-on support, ensuring strategies
-                    translate into successful outcomes.
-                  </p>
-                </CardContent>
-              </Card>
+              <CardGlass className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Rocket className="h-8 w-8 text-brand-purple" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-foreground">
+                  Implementation Support
+                </h3>
+                <p className="text-foreground-muted font-montserrat">
+                  Guide execution with hands-on support, ensuring strategies
+                  translate into successful outcomes.
+                </p>
+              </CardGlass>
             </div>
           </div>
         </div>

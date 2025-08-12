@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { CardGlass } from "@/components/ui/CardGlass";
+import { Section } from "@/components/ui/section";
 import {
   ArrowRight,
   Shield,
@@ -52,34 +54,31 @@ const Enterprise = () => {
         </div>
       </section>
 
-      {/* Introduction Section */}
-      <section className="py-24 bg-gradient-section">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-8 font-montserrat">
-              Your Technology is Your Business.{" "}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Is It Ready for the Future?
-              </span>
-            </h2>
-            <div className="text-lg text-foreground-dark-muted leading-relaxed space-y-6">
-              <p>
-                In the enterprise world, the systems that brought you success
-                can become the anchors that hold you back. Technical debt slows
-                innovation, legacy platforms create security risks, and
-                inefficient processes burn resources.
-              </p>
-              <p>
-                The Enterprise Studio is designed to address these challenges
-                head-on. We provide the strategic consulting, deep technical
-                expertise, and proven frameworks necessary to modernize your
-                technology, optimize your processes, and ensure your engineering
-                organization is a powerful engine for growth.
-              </p>
-            </div>
+      <Section variant="light" containerSize="6xl">
+        <div className="text-center">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-8 font-montserrat">
+            Your Technology is Your Business.{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Is It Ready for the Future?
+            </span>
+          </h2>
+          <div className="text-lg text-foreground-dark-muted leading-relaxed space-y-6">
+            <p>
+              In the enterprise world, the systems that brought you success
+              can become the anchors that hold you back. Technical debt slows
+              innovation, legacy platforms create security risks, and
+              inefficient processes burn resources.
+            </p>
+            <p>
+              The Enterprise Studio is designed to address these challenges
+              head-on. We provide the strategic consulting, deep technical
+              expertise, and proven frameworks necessary to modernize your
+              technology, optimize your processes, and ensure your engineering
+              organization is a powerful engine for growth.
+            </p>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Our Enterprise Offerings Section */}
       <section className="py-24">
@@ -98,8 +97,7 @@ const Enterprise = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Product Modernization */}
-            <div className="group p-8 rounded-2xl bg-card border border-border hover:border-brand-primary/50 transition-all duration-300">
+            <CardGlass className="group">
               <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <RefreshCw className="w-8 h-8 text-white" />
               </div>
@@ -121,10 +119,9 @@ const Enterprise = () => {
                   <li>• Technology Stack Upgrades</li>
                 </ul>
               </div>
-            </div>
+            </CardGlass>
 
-            {/* QAE & Automation */}
-            <div className="group p-8 rounded-2xl bg-card border border-border hover:border-brand-primary/50 transition-all duration-300">
+            <CardGlass className="group">
               <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Shield className="w-8 h-8 text-white" />
               </div>
@@ -147,10 +144,9 @@ const Enterprise = () => {
                   <li>• Security Testing</li>
                 </ul>
               </div>
-            </div>
+            </CardGlass>
 
-            {/* AI Audit & Risk Management */}
-            <div className="group p-8 rounded-2xl bg-card border border-border hover:border-brand-primary/50 transition-all duration-300">
+            <CardGlass className="group">
               <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Eye className="w-8 h-8 text-white" />
               </div>
@@ -172,108 +168,102 @@ const Enterprise = () => {
                   <li>• AI Governance & Risk Audit</li>
                 </ul>
               </div>
-            </div>
+            </CardGlass>
           </div>
         </div>
       </section>
 
-      {/* Process Maturity & AMS Section */}
-      <section className="py-24 bg-gradient-section">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-6 font-montserrat">
-              The Indexnine Difference:{" "}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                A Culture of Process Maturity
-              </span>
-            </h2>
-          </div>
-
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-white backdrop-blur-sm rounded-2xl p-8 mb-8">
-              <Settings className="w-16 h-16 text-brand-primary mx-auto mb-6" />
-              <p className="text-lg text-foreground-dark-muted leading-relaxed">
-                Technology is only half the battle. The true differentiator for
-                long-term success is a mature, repeatable process. For all our
-                enterprise engagements, we focus on instilling a culture of
-                process maturity. We establish clear communication cadences,
-                robust project management frameworks, and risk mitigation
-                strategies to ensure predictable outcomes, transparent
-                collaboration, and continuous improvement across your
-                organization.
-              </p>
-            </div>
-          </div>
+      <Section variant="light" containerSize="6xl">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-6 font-montserrat">
+            The Indexnine Difference:{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              A Culture of Process Maturity
+            </span>
+          </h2>
         </div>
-      </section>
 
-      {/* Supporting Content Section */}
-      <section className="py-24 bg-[#fff]">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-6 font-montserrat">
-              Engineering Transformation{" "}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                in Action
-              </span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="group p-8 rounded-2xl bg-card border border-border hover:border-brand-primary/50 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-6">
-                <RefreshCw className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-4">
-                From Monolith to Market Leader: Modernizing an Enterprise
-                Insurance Platform
-              </h3>
-              <p className="text-foreground-muted mb-6">
-                Learn how we re-architected a critical legacy system, reducing
-                latency by 60% and enabling the rapid launch of new product
-                lines.
-              </p>
-              <Button variant="outline" size="sm">
-                Read the Case Study
-              </Button>
-            </div>
-
-            <div className="group p-8 rounded-2xl bg-card border border-border hover:border-brand-primary/50 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-6">
-                <Shield className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-4">
-                Achieving 95% Test Automation for a Global Logistics Provider
-              </h3>
-              <p className="text-foreground-muted mb-6">
-                Discover our process for building a comprehensive QA automation
-                suite that cut regression testing time from two weeks to four
-                hours.
-              </p>
-              <Button variant="outline" size="sm">
-                Read the Case Study
-              </Button>
-            </div>
-
-            <div className="group p-8 rounded-2xl bg-card border border-border hover:border-brand-primary/50 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-6">
-                <Eye className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-4">
-                The CTO's Guide to AI Risk Management
-              </h3>
-              <p className="text-foreground-muted mb-6">
-                A framework for assessing and mitigating the technical,
-                operational, and ethical risks of implementing AI solutions in
-                the enterprise.
-              </p>
-              <Button variant="outline" size="sm">
-                Download the Whitepaper
-              </Button>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <CardGlass variant="light" className="mb-8">
+            <Settings className="w-16 h-16 text-brand-primary mx-auto mb-6" />
+            <p className="text-lg text-foreground-dark-muted leading-relaxed">
+              Technology is only half the battle. The true differentiator for
+              long-term success is a mature, repeatable process. For all our
+              enterprise engagements, we focus on instilling a culture of
+              process maturity. We establish clear communication cadences,
+              robust project management frameworks, and risk mitigation
+              strategies to ensure predictable outcomes, transparent
+              collaboration, and continuous improvement across your
+              organization.
+            </p>
+          </CardGlass>
         </div>
-      </section>
+      </Section>
+
+      <Section variant="alternate" containerSize="6xl">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-6 font-montserrat">
+            Engineering Transformation{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              in Action
+            </span>
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          <CardGlass className="group">
+            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-6">
+              <RefreshCw className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-foreground mb-4">
+              From Monolith to Market Leader: Modernizing an Enterprise
+              Insurance Platform
+            </h3>
+            <p className="text-foreground-muted mb-6">
+              Learn how we re-architected a critical legacy system, reducing
+              latency by 60% and enabling the rapid launch of new product
+              lines.
+            </p>
+            <Button variant="outline" size="sm">
+              Read the Case Study
+            </Button>
+          </CardGlass>
+
+          <CardGlass className="group">
+            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-6">
+              <Shield className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-foreground mb-4">
+              Achieving 95% Test Automation for a Global Logistics Provider
+            </h3>
+            <p className="text-foreground-muted mb-6">
+              Discover our process for building a comprehensive QA automation
+              suite that cut regression testing time from two weeks to four
+              hours.
+            </p>
+            <Button variant="outline" size="sm">
+              Read the Case Study
+            </Button>
+          </CardGlass>
+
+          <CardGlass className="group">
+            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-6">
+              <Eye className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-foreground mb-4">
+              The CTO's Guide to AI Risk Management
+            </h3>
+            <p className="text-foreground-muted mb-6">
+              A framework for assessing and mitigating the technical,
+              operational, and ethical risks of implementing AI solutions in
+              the enterprise.
+            </p>
+            <Button variant="outline" size="sm">
+              Download the Whitepaper
+            </Button>
+          </CardGlass>
+        </div>
+      </Section>
 
       {/* Final CTA Section */}
       <section className="py-24 bg-background-dark">
