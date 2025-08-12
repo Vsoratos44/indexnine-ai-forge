@@ -4,7 +4,7 @@ const ValueProposition = () => {
   return (
     <section
       data-section="value-proposition"
-      className="py-24 lg:py-32 bg-[#fff] relative overflow-hidden"
+      className="py-24 lg:py-32 bg-background-section relative overflow-hidden"
     >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-30">
