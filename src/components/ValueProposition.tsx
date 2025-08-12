@@ -4,7 +4,16 @@ const ValueProposition = () => {
   return (
     <section
       data-section="value-proposition"
-      className="py-24 lg:py-32 relative overflow-hidden bg-gradient-to-b from-background via-background to-background-section"
+      className="py-24 lg:py-32 relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(to bottom,
+          hsl(var(--background-hero)) 0%,
+          hsl(var(--background-hero)) 10%,
+          hsl(var(--primary)) 20%,
+          hsl(var(--background-section)) 40%,
+          hsl(var(--background-light)) 100%
+        )`
+      }}
     >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-30">
