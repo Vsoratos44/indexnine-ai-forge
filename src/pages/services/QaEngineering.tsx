@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Button } from '@/components/ui/button';
+import { CardGlass } from '@/components/ui/CardGlass';
 import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { TestTube, Shield, Zap, Target, CheckCircle, Cog } from 'lucide-react';
 import ServiceVideoBackground from '@/components/ServiceVideoBackground';
