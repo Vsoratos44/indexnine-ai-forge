@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -90,9 +91,11 @@ const PracticesStudios = () => {
               ))}
             </div>
             
-            <Button variant="outline" size="lg" className="font-montserrat">
-              {currentStudio.buttonText}
-            </Button>
+            <Link to={activeStudio === "innovation" ? "/engagement/innovation-lab" : "/engagement/enterprise"}>
+              <Button variant="outline" size="lg" className="font-montserrat">
+                {currentStudio.buttonText}
+              </Button>
+            </Link>
           </div>
 
           {/* Right-side image */}

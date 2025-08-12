@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -252,75 +253,79 @@ const ProjectBased = () => {
 
           <div className="space-y-8">
             {/* Sports Interactive Case Study */}
-            <div className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
-              <div className="flex items-start space-x-6">
-                <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center">
-                  <Zap className="w-8 h-8 text-white" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">
-                    Case Study Highlight 1: Sports Interactive
-                  </h3>
-                  <div className="space-y-3 text-foreground-muted font-montserrat">
-                    <p>
-                      <strong className="text-foreground">Challenge:</strong> A
-                      top-tier sports media agency was struggling to automate
-                      real-time fan engagement, a critical but costly and
-                      unscalable manual process.
-                    </p>
-                    <p>
-                      <strong className="text-foreground">Solution:</strong> We
-                      engineered a bespoke, low-latency AI engine that automated
-                      the entire workflow, from data ingestion to content
-                      generation.
-                    </p>
-                    <p>
-                      <strong className="text-foreground">Outcome:</strong>{" "}
-                      Eliminated a six-person operations team, delivered live
-                      social media content in under 15 seconds, and created a
-                      scalable platform for future growth.
-                    </p>
+            <Link to="/insights/case-studies#annotate" className="block">
+              <div className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
+                <div className="flex items-start space-x-6">
+                  <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center">
+                    <Zap className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">
+                      Case Study Highlight 1: Sports Interactive
+                    </h3>
+                    <div className="space-y-3 text-foreground-muted font-montserrat">
+                      <p>
+                        <strong className="text-foreground">Challenge:</strong> A
+                        top-tier sports media agency was struggling to automate
+                        real-time fan engagement, a critical but costly and
+                        unscalable manual process.
+                      </p>
+                      <p>
+                        <strong className="text-foreground">Solution:</strong> We
+                        engineered a bespoke, low-latency AI engine that automated
+                        the entire workflow, from data ingestion to content
+                        generation.
+                      </p>
+                      <p>
+                        <strong className="text-foreground">Outcome:</strong>{" "}
+                        Eliminated a six-person operations team, delivered live
+                        social media content in under 15 seconds, and created a
+                        scalable platform for future growth.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Genesis Case Study */}
-            <div className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
-              <div className="flex items-start space-x-6">
-                <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center">
-                  <TrendingUp className="w-8 h-8 text-white" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">
-                    Case Study Highlight 2: Genesis
-                  </h3>
-                  <div className="space-y-3 text-foreground-muted font-montserrat">
-                    <p>
-                      <strong className="text-foreground">Challenge:</strong> An
-                      urgent client need required the rapid deployment of a
-                      skilled, five-person team to accelerate a critical project
-                      timeline.
-                    </p>
-                    <p>
-                      <strong className="text-foreground">Solution:</strong> We
-                      sourced and deployed a full team immediately, bypassing
-                      the lengthy hiring process that would have stalled the
-                      project.
-                    </p>
-                    <p>
-                      <strong className="text-foreground">Outcome:</strong> The
-                      project was accelerated, and the client was able to meet
-                      their market deadlines, demonstrating our ability to
-                      deliver not just technology, but also talent, at speed.
-                    </p>
+            <Link to="/insights/case-studies#genesys" className="block">
+              <div className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
+                <div className="flex items-start space-x-6">
+                  <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center">
+                    <TrendingUp className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">
+                      Case Study Highlight 2: Genesis
+                    </h3>
+                    <div className="space-y-3 text-foreground-muted font-montserrat">
+                      <p>
+                        <strong className="text-foreground">Challenge:</strong> An
+                        urgent client need required the rapid deployment of a
+                        skilled, five-person team to accelerate a critical project
+                        timeline.
+                      </p>
+                      <p>
+                        <strong className="text-foreground">Solution:</strong> We
+                        sourced and deployed a full team immediately, bypassing
+                        the lengthy hiring process that would have stalled the
+                        project.
+                      </p>
+                      <p>
+                        <strong className="text-foreground">Outcome:</strong> The
+                        project was accelerated, and the client was able to meet
+                        their market deadlines, demonstrating our ability to
+                        deliver not just technology, but also talent, at speed.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* GPTW Case Study */}
-            <div className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+            <div className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
               <div className="flex items-start space-x-6">
                 <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center">
                   <Target className="w-8 h-8 text-white" />
