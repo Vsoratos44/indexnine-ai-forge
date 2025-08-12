@@ -407,7 +407,7 @@ const AiStudio = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                <h3 className="relative text-xl font-bold mb-4 text-brand-primary">
                   Generative AI Solutions
                 </h3>
                 <p className="relative text-foreground-dark mb-4">
@@ -420,7 +420,7 @@ const AiStudio = () => {
               
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                <h3 className="relative text-xl font-bold mb-4 text-brand-primary">
                   Computer Vision & Analytics
                 </h3>
                 <p className="relative text-foreground-dark mb-4">
@@ -433,7 +433,7 @@ const AiStudio = () => {
               
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                <h3 className="relative text-xl font-bold mb-4 text-brand-primary">
                   Predictive Analytics & ML
                 </h3>
                 <p className="relative text-foreground-dark mb-4">
@@ -446,7 +446,7 @@ const AiStudio = () => {
               
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                <h3 className="relative text-xl font-bold mb-4 text-brand-primary">
                   Natural Language Processing
                 </h3>
                 <p className="relative text-foreground-dark mb-4">
@@ -459,7 +459,7 @@ const AiStudio = () => {
               
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                <h3 className="relative text-xl font-bold mb-4 text-brand-primary">
                   Intelligent Automation
                 </h3>
                 <p className="relative text-foreground-dark mb-4">
@@ -472,7 +472,7 @@ const AiStudio = () => {
               
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <h3 className="relative text-xl font-bold mb-4 text-foreground">
+                <h3 className="relative text-xl font-bold mb-4 text-brand-primary">
                   AI Strategy & Consulting
                 </h3>
                 <p className="relative text-foreground-dark mb-4">
