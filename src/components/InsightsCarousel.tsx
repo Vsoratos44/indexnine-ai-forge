@@ -93,7 +93,7 @@ const InsightsCarousel = () => {
   return (
     <section
       data-section="insights"
-      className="py-24 lg:py-32 bg-background-light relative overflow-hidden"
+      className="pb-4 pt-24 lg:pt-32 bg-[#fff] relative overflow-hidden"
     >
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
@@ -117,7 +117,7 @@ const InsightsCarousel = () => {
       <div className="container mx-auto px-0 lg:px-0 relative z-10">
         <div className="container text-center mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 leading-tight tracking-tight font-montserrat">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
+            <span className="text-brand-primary">
               Insights That Shape Products
             </span>
           </h2>
@@ -227,9 +227,9 @@ const InsightsCarousel = () => {
           {/* View All CTA */}
           <div className="text-center mt-16">
             <Button
-              variant="outline"
+              variant="hero-secondary"
               size="lg"
-              className={`min-w-[280px] rounded-full ${styles["btn-primary"]} `}
+              className={`min-w-[280px] text-brand-primary border-brand-primary/30 hover:bg-brand-primary rounded-full `}
             >
               Explore All Our Insights <ArrowRight className="w-5 h-5 ml-2" />
             </Button>

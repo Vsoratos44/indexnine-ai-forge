@@ -56,10 +56,8 @@ const Differentiators = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground-dark mb-8 leading-tight tracking-tight">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              How We Win Together.
-            </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 leading-tight tracking-tight">
+            <span className="text-brand-primary">How We Win Together.</span>
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-light-muted leading-relaxed font-light max-w-4xl mx-auto">
             Our Secret Sauce

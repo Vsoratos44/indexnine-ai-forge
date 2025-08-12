@@ -8,7 +8,8 @@
   :root {
     /* AI-First Brand Colors - Dark Purple & Soft Black Theme */
     --brand-primary: 237 98% 65%; /* #505dfd - Deep purple primary */
-    --brand-primary-dark: 260 80% 45%; /* Darker purple for depth */
+    --brand-primary-dark: 262 83% 58%; /* #8B5CF6 - Deep purple primary */
+    /*--brand-primary-dark: 260 80% 45%;  Darker purple for depth */
     --brand-primary-glow: 262 90% 65%; /* Subtle purple glow */
     --brand-purple: 262 83% 58%; /* Main purple accent */
     --brand-purple-dark: 260 70% 35%; /* Dark purple for backgrounds */
