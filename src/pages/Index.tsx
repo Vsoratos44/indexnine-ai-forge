@@ -2,6 +2,7 @@ import React, { useState, useEffect, Suspense, lazy } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import CTABanner from "@/components/CTABanner";
 import { Button } from "@/components/ui/button";
 import { useContent } from "@/hooks/useContent";
 import {
@@ -118,21 +119,7 @@ const Index = () => {
       )}
 
       {/* Global CTA Banner */}
-      <section id="home-contact" className="py-24 lg:py-32 bg-gradient-hero">
-        <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-8 font-montserrat">
-            Ready to make your vision a reality?
-          </h2>
-          <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
-            Thinking about what's next for your business? Let's talk. Schedule a
-            free strategy session with our product engineering experts and
-            discover what Indexnine can do for you today.
-          </p>
-          <Button variant="hero" size="xl" className="rounded-full">
-            Let's Get Started
-          </Button>
-        </div>
-      </section>
+      <CTABanner />
 
       <Footer />
     </div>

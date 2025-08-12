@@ -30,6 +30,9 @@
     --background-light: 0 0% 98%;        /* Pure light background */
     --background-subtle: 234 15% 88%;    /* Subtle light background variant */
     
+    /* Section alternating backgrounds */
+    --background-alternate: 0 0% 100%;    /* Pure white for alternating */
+    
     /* Typography System - High Contrast */
     --foreground: 0 0% 95%;              /* Light text for dark backgrounds */
     --foreground-muted: 0 0% 75%;        /* Muted light text */
@@ -60,6 +63,7 @@
     /* Advanced Balanced Theme Gradients */
     --gradient-hero: var(--neural-dark);
     --gradient-primary: var(--neural-primary);
+    --gradient-subtle: linear-gradient(135deg, hsl(262 83% 58% / 0.05) 0%, hsl(260 80% 45% / 0.02) 50%, hsl(262 83% 58% / 0.05) 100%);
     --gradient-section: linear-gradient(135deg, hsl(234 30% 92%) 0%, hsl(234 25% 95%) 100%);
     --gradient-card: linear-gradient(135deg, hsl(234 45% 20%) 0%, hsl(234 40% 25%) 100%);
     --gradient-card-light: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(234 30% 96%) 100%);

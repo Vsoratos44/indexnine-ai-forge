@@ -16,15 +16,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        // Core System Variants
-        default: "bg-brand-primary text-foreground-white hover:bg-brand-primary-dark hover:shadow-glow transform hover:scale-105",
-        secondary: "bg-background-section text-foreground border border-border hover:bg-background hover:shadow-soft",
+        // Core System Variants - New gradient primary and subtle outline
+        default: "bg-gradient-to-r from-brand-primary to-brand-accent text-white hover:shadow-lg hover:scale-105 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-primary/50",
+        secondary: "border border-border/40 text-foreground-dark bg-background-alternate hover:bg-background-section hover:shadow-sm transition-all duration-200",
         outline: "border border-foreground-white text-foreground-white hover:bg-foreground-white hover:text-foreground",
         ghost: "text-foreground-white hover:bg-foreground-white/10",
         link: "text-brand-primary underline-offset-4 hover:underline hover:text-brand-primary-dark",
         
         // Hero Section Variants
-        hero: "bg-brand-primary text-foreground-white hover:bg-brand-primary-dark hover:shadow-glow transform hover:scale-105 shadow-lg",
+        hero: "bg-gradient-to-r from-brand-primary to-brand-accent text-white hover:shadow-lg hover:scale-105 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-primary/50",
         "hero-secondary": "border-2 border-foreground-white text-foreground-white hover:bg-foreground-white hover:text-foreground transform hover:scale-105",
         
         // AI-First Neural Variants

@@ -17,22 +17,22 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-background-dark py-20 lg:py-24 relative overflow-hidden">
+    <footer className="bg-background-dark py-28 lg:py-32 relative overflow-hidden border-t border-white/10">
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-brand-purple/5 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="grid md:grid-cols-4 gap-12 lg:gap-16">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl relative z-10">
+        <div className="grid md:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
-          <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-8">
+          <div className="md:col-span-1">
+            <div className="flex items-center space-x-3 mb-6">
               <span className="text-2xl font-bold text-foreground-white">
                 <img src={Logo} alt="IndexNine" className="h-8" />
               </span>
             </div>
-            <p className="text-foreground-white/85 leading-relaxed max-w-lg text-lg font-light mb-8">
+            <p className="text-foreground-white/85 leading-relaxed text-base font-light mb-6">
               We are a strategic partner for modern businesses, helping them
               build innovative products, modernize legacy systems, and leverage
               AI to drive positive business outcomes.
@@ -53,10 +53,10 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-foreground-white font-bold text-lg mb-8">
+            <h4 className="text-foreground-white font-bold text-lg mb-6">
               Services
             </h4>
-            <ul className="space-y-4 text-foreground-white/80">
+            <ul className="space-y-3 text-foreground-white/80">
               <li className="hover:text-brand-primary transition-colors cursor-pointer">
                 Custom Software Development
               </li>
@@ -74,10 +74,10 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-foreground-white font-bold text-lg mb-8">
+            <h4 className="text-foreground-white font-bold text-lg mb-6">
               Contact
             </h4>
-            <div className="space-y-4 text-foreground-white/80">
+            <div className="space-y-3 text-foreground-white/80">
               <p className="leading-relaxed">
                 12th Floor, Sadanand Business Center, Pashan Hwy Side Rd,
                 Mahalunge, Pune, Maharashtra 411045
@@ -91,27 +91,31 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="md:col-span-2 flex items-center gap-4"></div>
-          <div className="md:col-span-2 flex items-center gap-4">
-            <a href="https://indexnine.com/careers/">
-              <img src={Gptw} alt="GPTW" className="h-24" />
-            </a>
-
-            <a href="https://indexnine.com/careers/">
-              <img src={Iso} alt="ISO" className="h-12" />
-            </a>
-            <div className="min-w-[220px]">
-              <div
-                className="clutch-widget"
-                data-url="https://widget.clutch.co"
-                data-widget-type="14"
-                data-height="50"
-                data-nofollow="false"
-                data-expandifr="true"
-                data-primary-color="#505dfd"
-                data-header-color="#00010a"
-                data-clutchcompany-id="2249150"
-              ></div>
+          {/* Partners */}
+          <div>
+            <h4 className="text-foreground-white font-bold text-lg mb-6">
+              Partners
+            </h4>
+            <div className="space-y-4">
+              <a href="https://indexnine.com/careers/">
+                <img src={Gptw} alt="GPTW" className="h-16" />
+              </a>
+              <a href="https://indexnine.com/careers/">
+                <img src={Iso} alt="ISO" className="h-10" />
+              </a>
+              <div className="min-w-[200px]">
+                <div
+                  className="clutch-widget"
+                  data-url="https://widget.clutch.co"
+                  data-widget-type="14"
+                  data-height="50"
+                  data-nofollow="false"
+                  data-expandifr="true"
+                  data-primary-color="#505dfd"
+                  data-header-color="#00010a"
+                  data-clutchcompany-id="2249150"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
@@ -123,13 +127,6 @@ const Footer = () => {
               © 2025 IndexNine. All rights reserved. | Privacy Policy | Terms of
               Service
             </p>
-            {/* Optional Login link */}
-            {/* <a
-              href="/cms/dashboard"
-              className="text-foreground-white/60 hover:text-brand-primary transition-colors text-sm border border-white/20 px-4 py-2 rounded-lg hover:border-brand-primary/50"
-            >
-              Employee Login
-            </a> */}
           </div>
         </div>
       </div>

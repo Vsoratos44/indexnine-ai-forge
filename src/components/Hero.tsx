@@ -16,15 +16,15 @@ const Hero = () => {
 
       {/* Content - Precisely positioned */}
       <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
-        <div className="mx-auto text-center lg:text-left">
-          <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-8 leading-[1.2] tracking-tight animate-fade-in font-montserrat">
+        <div className="max-w-3xl mx-auto text-center lg:text-left lg:mx-0">
+          <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.1] tracking-tight animate-fade-in font-montserrat">
             Product Innovation & <br />
             Software Engineering
             <br />
             <TypewriterText />
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/85 mb-6 sm:mb-8 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat px-2 sm:px-0">
+          <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat">
             The industry leader in infrastructure modernization, launching
             digital revenue streams, and AI integration. We don't just build
             software; we engineer products, platforms, and AI-powered solutions
@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
             <a href="#home-contact">
               <Button
-                variant="hero"
+                variant="default"
                 size="xl"
                 className={`min-w-[280px] rounded-full ${styles["btn-primary"]} `}
               >
