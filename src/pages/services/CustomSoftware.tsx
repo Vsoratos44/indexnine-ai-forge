@@ -9,7 +9,7 @@ import {
   WebPageSchema,
   BreadcrumbSchema,
 } from "@/components/SEOStructuredData";
-import LivingVoidBackground from "@/components/LivingVoidBackground";
+import ServiceVideoBackground from "@/components/ServiceVideoBackground";
 import { 
   Code, 
   Cpu, 
@@ -81,9 +81,8 @@ const CustomSoftware = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[80vh] min-h-[600px] overflow-hidden bg-gradient-hero">
-        {/* Three.js Living Void Background */}
-        <LivingVoidBackground />
+      <section className="relative min-h-[90vh] overflow-hidden bg-black">
+        <ServiceVideoBackground />
 
         {/* Content - Precisely positioned */}
         <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">

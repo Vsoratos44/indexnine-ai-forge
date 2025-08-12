@@ -17,6 +17,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import ServiceVideoBackground from "@/components/ServiceVideoBackground";
 
 const ConsultingStrategy = () => {
   return (
@@ -48,14 +49,15 @@ const ConsultingStrategy = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative pt-28 pb-16 bg-gradient-to-b from-background to-secondary/20">
-        <div className="container mx-auto px-6">
+      <section className="relative min-h-[90vh] overflow-hidden bg-black">
+        <ServiceVideoBackground />
+        <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
               Strategic Technology &{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">AI Consulting</span>
             </h1>
-            <p className="text-xl text-foreground-muted mb-8 max-w-3xl mx-auto font-montserrat">
+            <p className="text-xl text-foreground/85 mb-8 max-w-3xl mx-auto font-montserrat">
               We provide expert consulting to align your technology and AI
               strategy with business objectives, ensuring every investment
               drives measurable value and competitive advantage.

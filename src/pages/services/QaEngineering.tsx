@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Button } from '@/components/ui/button';
 import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { TestTube, Shield, Zap, Target, CheckCircle, Cog } from 'lucide-react';
+import ServiceVideoBackground from '@/components/ServiceVideoBackground';
 
 const QaEngineering = () => {
   return (
@@ -31,11 +32,8 @@ const QaEngineering = () => {
       </div>
       
       {/* Hero Section */}
-      <section className="pt-32 pb-24 bg-gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-1/4 right-1/6 w-80 h-80 bg-brand-purple/6 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
-        </div>
+      <section className="relative min-h-[90vh] overflow-hidden bg-black">
+        <ServiceVideoBackground />
         
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
