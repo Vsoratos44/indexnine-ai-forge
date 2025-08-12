@@ -50,7 +50,7 @@ const ProductLifecycle = () => {
       description:
         "Technical debt is an issue that even industry-leading companies can struggle with. We specialize in the complex challenge of legacy system modernization.",
       example:
-        "Our client needed a complete rearchitecture of a 16-year-old, mission-critical system that was actively integrated with 178 e-commerce platforms.",
+        "We modernized a 16-year-old e-commerce integration platform serving thousands of merchants, eliminating daily crashes through event-driven architecture.",
       caseStudyLink: "/case-studies/mature",
       borderStyle: "bord-lt",
     },

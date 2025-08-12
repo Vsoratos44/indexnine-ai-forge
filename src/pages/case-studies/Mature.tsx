@@ -17,81 +17,129 @@ const MatureCaseStudy = () => {
         
         <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
           <div className="max-w-5xl mx-auto">
-            <Link to="/" className="inline-flex items-center text-brand-primary hover:text-brand-primary-dark transition-colors mb-8">
+            <Link to="/" className="inline-flex items-center text-white/80 hover:text-white transition-colors mb-8">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Homepage
             </Link>
             
             <div className="mb-6">
-              <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
-                Case Study: Maturity Phase
+              <span className="inline-block px-6 py-3 bg-white/10 text-white rounded-full text-sm font-medium border border-white/20 backdrop-blur-sm">
+                Case Study: Genesys
               </span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight animate-fade-in font-montserrat">
-              Enterprise SaaS: <br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent">Mission-Critical Optimization</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight tracking-tight animate-fade-in font-montserrat">
+              Mission-Critical Modernization <br />
+              <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">for E-commerce</span>
             </h1>
             
-            <p className="text-lg sm:text-xl lg:text-2xl text-foreground/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
-              How we optimized performance, security, and reliability for an enterprise SaaS platform that became business-critical for Fortune 500 companies.
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/85 mb-12 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
+              Product modernization and event-driven architecture for a new era of an E-commerce giant.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Info Section */}
+      <section className="py-16 bg-gradient-section relative overflow-hidden">
+        <div className="container mx-auto px-6 lg:px-8 relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-2 font-montserrat">Client</h3>
+                <p className="text-foreground-muted">Genesys</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-2 font-montserrat">Industry</h3>
+                <p className="text-foreground-muted">E-commerce Technology, SaaS</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Challenge Section */}
-      <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
+      <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-              Enterprise-Grade Requirements
+              The Challenge: A Platform on the Brink of Collapse
             </h2>
             <p className="text-lg text-foreground-muted leading-relaxed mb-8">
-              A mature SaaS platform serving Fortune 500 clients needed enterprise-grade optimization:
+              For thousands of merchants across India, Genesys's platform was their lifeline to the world of e-commerce. The platform was an integration engine, connecting sellers on platforms like Amazon, Myntra, and Flipkart, and managing a constant flow of inventory updates, orders, and transactions. The problem? The engine was over 16 years old, built on legacy PHP, and was, in the words of our CEO, "bursting at the seams."
             </p>
-            <ul className="space-y-4">
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Zero-downtime requirements for business-critical operations</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Advanced security and compliance frameworks needed</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Legacy technical debt impacting performance and scalability</span>
-              </li>
-            </ul>
+            <p className="text-lg text-foreground-muted leading-relaxed mb-8">
+              The platform's core architectural flaw was a tightly-coupled, monolithic design. With 178 different e-commerce integrations, the system was incredibly fragile. Every time one of those partners made a change to their API—an almost daily occurrence—it sent a shockwave through the entire system, causing it to crash. These failures happened most often at night, the peak period for inventory updates, causing further disruption. Suffice it to say, the infrastructure needed an update.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass">
+                <h4 className="text-lg font-semibold text-foreground mb-2 font-montserrat">Legacy System</h4>
+                <p className="text-foreground-muted text-sm">16-year-old PHP monolith struggling with daily failures</p>
+              </div>
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass">
+                <h4 className="text-lg font-semibold text-foreground mb-2 font-montserrat">178 Integrations</h4>
+                <p className="text-foreground-muted text-sm">Fragile connections to e-commerce platforms causing system-wide crashes</p>
+              </div>
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass">
+                <h4 className="text-lg font-semibold text-foreground mb-2 font-montserrat">Daily Crashes</h4>
+                <p className="text-foreground-muted text-sm">Peak-time failures during critical inventory update periods</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Solution Section */}
-      <section className="py-24 lg:py-32 bg-background">
+      <section className="py-24 lg:py-32 bg-gradient-section">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-              Enterprise Optimization Strategy
+              Our Solution: Architecting Stability with an Event-Driven Integration Hub
             </h2>
             <p className="text-lg text-foreground-muted leading-relaxed mb-12">
-              We implemented comprehensive optimization across performance, security, and reliability:
+              As a product modernization challenge, it required a solution as much about risk reduction as technical execution. A simple "lift and shift" or rewrite was untenable. We needed new system architecture that could be introduced piece by piece, protecting the core from the chaos of its surrounding external environment.
             </p>
             
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">Technical Debt Resolution</h3>
-                <p className="text-foreground-muted leading-relaxed">
-                  Systematic refactoring of legacy code while maintaining 100% uptime through advanced deployment strategies.
+            <div className="space-y-12">
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Phase 1: Event-Driven Architecture</h3>
+                <p className="text-foreground-muted leading-relaxed mb-6">
+                  Our Engineering and Applied AI studios determined that the optimal path forward would be to introduce a new architectural pattern: an event-driven integration hub. Instead of having all 178 integrations communicating directly with the legacy core, we would build a modern, robust hub – essentially a clearing house – that would sit in the operational center.
                 </p>
               </div>
               
-              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">Security Hardening</h3>
-                <p className="text-foreground-muted leading-relaxed">
-                  Implemented enterprise security frameworks including zero-trust architecture and advanced threat detection.
-                </p>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Phase 2: Building a Resilient, Scalable Hub</h3>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
+                    <h4 className="text-xl font-bold text-foreground mb-4 font-montserrat">Asynchronous Message Queues</h4>
+                    <p className="text-foreground-muted leading-relaxed">
+                      High-throughput message queueing system to ingest millions of events per minute without system overload.
+                    </p>
+                  </div>
+                  
+                  <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
+                    <h4 className="text-xl font-bold text-foreground mb-4 font-montserrat">Canonical Data Model</h4>
+                    <p className="text-foreground-muted leading-relaxed">
+                      Standardized data format eliminating the need for the core to understand 178 different message types.
+                    </p>
+                  </div>
+                  
+                  <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
+                    <h4 className="text-xl font-bold text-foreground mb-4 font-montserrat">Microservices for Transformation</h4>
+                    <p className="text-foreground-muted leading-relaxed">
+                      Independent services for each platform transformation, isolating changes and eliminating system-wide risk.
+                    </p>
+                  </div>
+                  
+                  <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
+                    <h4 className="text-xl font-bold text-foreground mb-4 font-montserrat">Zero-Downtime Rollout</h4>
+                    <p className="text-foreground-muted leading-relaxed">
+                      Channel-by-channel migration strategy ensuring uninterrupted business continuity throughout the project.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -99,44 +147,78 @@ const MatureCaseStudy = () => {
       </section>
 
       {/* Results Section */}
-      <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
+      <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-12 font-montserrat">
-              Enterprise Excellence Delivered
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-12 font-montserrat text-center">
+              The Results: A Foundation for Future Growth
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">99.99%</h3>
-                <p className="text-foreground-muted">Uptime SLA Achieved</p>
+                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">100%</h3>
+                <p className="text-foreground-muted font-semibold">Uptime Achieved</p>
+                <p className="text-sm text-foreground-muted mt-2">Eliminated daily crashes and system failures</p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">75%</h3>
-                <p className="text-foreground-muted">Performance Improvement</p>
-              </div>
-              
-              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
-                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">Zero</h3>
-                <p className="text-foreground-muted">Security Incidents</p>
+                <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">178</h3>
+                <p className="text-foreground-muted font-semibold">Integrations Migrated</p>
+                <p className="text-sm text-foreground-muted mt-2">Zero-downtime migration of all e-commerce connections</p>
               </div>
             </div>
             
             <div className="text-left">
-              <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Maturity Achievements:</h3>
-              <div className="grid md:grid-cols-2 gap-4">
+              <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Key Outcomes:</h3>
+              <div className="space-y-4">
                 {[
-                  "Achieved SOC 2 Type II, ISO 27001, and FedRAMP certifications",
-                  "Reduced response times by 75% through intelligent caching",
-                  "Implemented comprehensive disaster recovery with 15-minute RTO",
-                  "Built advanced monitoring and alerting system with predictive analytics"
-                ].map((achievement, index) => (
+                  "Seamless continuity of operations: Our solution transformed a failing system into a fully operational one (with no downtime!), ensuring operational stability and preventing significant revenue loss for the client and their thousands of merchants.",
+                  "Achieved Near-100% Uptime: The new event-driven architecture eliminated the daily crashes, dramatically increasing the platform's reliability and performance.",
+                  "Future-Proofed: Replacing a brittle, monolithic structure with modern architecture made the system faster, smoother, and safer to add new e-commerce integrations in the future while opening up a new frontier of scalability.",
+                  "Zero-Downtime Migration: Our team modernized a core piece of live infrastructure without disrupting ongoing business operations."
+                ].map((outcome, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground-muted">{achievement}</span>
+                    <span className="text-foreground-muted">{outcome}</span>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why It Worked Section */}
+      <section className="py-24 lg:py-32 bg-gradient-section">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
+              Why It Worked
+            </h2>
+            <p className="text-lg text-foreground-muted leading-relaxed mb-8">
+              The success of the Genesys engagement was a direct result of our engineering practices and strategic mindset.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
+                <h3 className="text-xl font-bold text-foreground mb-4 font-montserrat">In-Depth Architectural Expertise</h3>
+                <p className="text-foreground-muted leading-relaxed">
+                  This problem required the kind of deep understanding of event-driven systems, microservices, and complex data transformations that Indexnine cultivates in our talent pool.
+                </p>
+              </div>
+              
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
+                <h3 className="text-xl font-bold text-foreground mb-4 font-montserrat">Disciplined and De-risked</h3>
+                <p className="text-foreground-muted leading-relaxed">
+                  Our phased, channel-by-channel migration strategy was essential for a project of this risk profile. Understanding the needs of our client, we prioritized stability and business continuity without compromising on engineering excellence.
+                </p>
+              </div>
+              
+              <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
+                <h3 className="text-xl font-bold text-foreground mb-4 font-montserrat">A True Partnership Approach</h3>
+                <p className="text-foreground-muted leading-relaxed">
+                  We embedded ourselves within the client's team, working as a single, unified unit to tackle this immense challenge. Our transparent communication and shared sense of ownership were key to navigating the project's complexities.
+                </p>
               </div>
             </div>
           </div>
@@ -146,13 +228,13 @@ const MatureCaseStudy = () => {
       {/* CTA Section */}
       <section className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
-            Ready to Optimize Your Platform?
+          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8 font-montserrat">
+            Interested in taking your business to new heights?
           </h2>
-          <p className="text-xl text-foreground/80 mb-12 max-w-2xl mx-auto font-montserrat">
-            Let's help you achieve enterprise-grade performance, security, and reliability.
+          <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
+            So are we. The Genesys story is a testament to our product modernization capabilities.
           </p>
-          <Button variant="hero" size="xl">Optimize Your System</Button>
+          <Button variant="hero" size="xl">Get started today</Button>
         </div>
       </section>
 
