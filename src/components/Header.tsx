@@ -21,45 +21,55 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
       const headerHeight = 80;
 
-      // Get the element that's currently under the header
+      // Find the element currently under the header
       const elementFromPoint = document.elementFromPoint(
         window.innerWidth / 2,
         headerHeight + 10
       );
+
+      let light = false;
 
       if (elementFromPoint) {
         const section = elementFromPoint.closest("[data-section]");
         if (section) {
           const sectionType = section.getAttribute("data-section");
 
-          // Define which sections have light backgrounds
-          const lightSections = [
-            "value-proposition",
-            "social-proof",
-            "client-experience",
-            "practices-studios",
-            "insights",
-          ];
+          if (sectionType === "value-proposition") {
+            // Keep header white over most of the Value Prop gradient,
+            // switch to dark text only near the very bottom (white area)
+            const vp = section as HTMLElement;
+            const vpRect = vp.getBoundingClientRect();
+            const vpTop = window.scrollY + vpRect.top;
+            const vpHeight = vpRect.height || vp.offsetHeight || 1;
+            const headerY = window.scrollY + headerHeight + 10;
+            const progress = (headerY - vpTop) / vpHeight; // 0 at top, 1 at bottom
 
-          setIsLightSection(lightSections.includes(sectionType || ""));
+            light = progress >= 0.9; // turn dark text when ~last 10% (near white)
+          } else {
+            // Sections that should use dark text (light backgrounds)
+            const lightSections = [
+              "social-proof",
+              "client-experience",
+              "practices-studios",
+              "insights",
+            ];
+            light = lightSections.includes(sectionType || "");
+          }
         }
       }
 
-      // Fallback: check scroll position against known section positions
-      if (scrollY < 100) {
-        setIsLightSection(false); // Hero is dark
-      } else if (scrollY > 600 && scrollY < 1200) {
-        setIsLightSection(true); // Value prop section
-      } else if (scrollY > 1200 && scrollY < 1800) {
-        setIsLightSection(true); // Social proof section
+      // Fallbacks
+      if (window.scrollY < 100) {
+        light = false; // Hero is dark
       }
+
+      setIsLightSection(light);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Call once to set initial state
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // Initialize state
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
