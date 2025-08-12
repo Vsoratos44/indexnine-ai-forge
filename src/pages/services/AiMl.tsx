@@ -7,6 +7,7 @@ import { Breadcrumbs } from '@/components/ui/breadcrumbs';
 import { ServiceSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import { Brain, Bot, ChartBar, Eye, Lightbulb, Target } from 'lucide-react';
 import ServiceVideoBackground from '@/components/ServiceVideoBackground';
+import { CardGlass } from '@/components/ui/CardGlass';
 
 const AiMl = () => {
   return (
@@ -56,7 +57,7 @@ const AiMl = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-foreground mb-6 font-montserrat">AI & ML Solutions</h2>
+            <h2 className="heading-h2 text-foreground mb-6">AI & ML Solutions</h2>
             <p className="text-xl text-foreground-muted max-w-3xl mx-auto font-montserrat">
               From machine learning models to intelligent automation, we deliver AI solutions that drive real business value.
             </p>
@@ -71,13 +72,13 @@ const AiMl = () => {
               { icon: Lightbulb, title: "Natural Language Processing", description: "Text analysis, sentiment analysis, and conversational AI solutions." },
               { icon: Target, title: "AI Strategy Consulting", description: "Strategic guidance on AI adoption and implementation roadmaps." }
             ].map((service, index) => (
-              <div key={index} className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+              <CardGlass key={index} className="relative transform hover:scale-105">
                 <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">{service.title}</h3>
-                <p className="text-foreground-muted leading-relaxed font-montserrat">{service.description}</p>
-              </div>
+                <h3 className="heading-h3 text-foreground mb-4">{service.title}</h3>
+                <p className="text-foreground-muted leading-relaxed">{service.description}</p>
+              </CardGlass>
             ))}
           </div>
         </div>

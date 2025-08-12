@@ -55,8 +55,8 @@ const QaEngineering = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-foreground mb-6 font-montserrat">QA Engineering Services</h2>
-            <p className="text-xl text-foreground-muted max-w-3xl mx-auto font-montserrat">
+            <h2 className="heading-h2 text-foreground mb-6">QA Engineering Services</h2>
+            <p className="text-xl text-foreground-muted max-w-3xl mx-auto">
               Comprehensive quality assurance solutions to deliver flawless software experiences.
             </p>
           </div>
@@ -70,13 +70,13 @@ const QaEngineering = () => {
               { icon: CheckCircle, title: "Test Strategy", description: "Comprehensive test planning and strategy development for optimal coverage." },
               { icon: Cog, title: "CI/CD Integration", description: "Seamless integration of testing into continuous integration and deployment pipelines." }
             ].map((service, index) => (
-              <div key={index} className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+              <CardGlass key={index} className="relative transform hover:scale-105">
                 <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat">{service.title}</h3>
-                <p className="text-foreground-muted leading-relaxed font-montserrat">{service.description}</p>
-              </div>
+                <h3 className="heading-h3 text-foreground mb-4">{service.title}</h3>
+                <p className="text-foreground-muted leading-relaxed">{service.description}</p>
+              </CardGlass>
             ))}
           </div>
         </div>

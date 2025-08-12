@@ -26,13 +26,14 @@ export default {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
-				background: {
-					DEFAULT: 'hsl(var(--background))',
-					section: 'hsl(var(--background-section))',
-					card: 'hsl(var(--background-card))',
-					light: 'hsl(var(--background-light))',
-					subtle: 'hsl(var(--background-subtle))'
-				},
+					background: {
+						DEFAULT: 'hsl(var(--background))',
+						section: 'hsl(var(--background-section))',
+						card: 'hsl(var(--background-card))',
+						light: 'hsl(var(--background-light))',
+						alternate: 'hsl(var(--background-alternate))',
+						subtle: 'hsl(var(--background-subtle))'
+					},
 				foreground: {
 					DEFAULT: 'hsl(var(--foreground))',
 					muted: 'hsl(var(--foreground-muted))',
@@ -65,11 +66,12 @@ export default {
 					light: 'hsl(var(--card-light))',
 					'light-foreground': 'hsl(var(--card-light-foreground))'
 				},
-				glass: {
-					border: 'hsl(var(--glass-border))',
-					bg: 'hsl(var(--glass-bg))',
-					'bg-dark': 'hsl(var(--glass-bg-dark))'
-				}
+					glass: {
+						border: 'hsl(var(--glass-border))',
+						bg: 'hsl(var(--glass-bg))',
+						'bg-dark': 'hsl(var(--glass-bg-dark))',
+						'bg-light': 'hsl(var(--glass-bg-light))'
+					}
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
