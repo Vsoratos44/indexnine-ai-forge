@@ -410,7 +410,7 @@ const AiStudio = () => {
                 <h3 className="relative text-xl font-bold mb-4 text-foreground">
                   Generative AI Solutions
                 </h3>
-                <p className="relative text-foreground/80 mb-4">
+                <p className="relative text-foreground-dark mb-4">
                   We build custom LLM applications, content automation engines, and intelligent chatbots that enhance creativity and efficiency.
                 </p>
                 <p className="relative text-sm text-brand-primary font-medium">
@@ -423,7 +423,7 @@ const AiStudio = () => {
                 <h3 className="relative text-xl font-bold mb-4 text-foreground">
                   Computer Vision & Analytics
                 </h3>
-                <p className="relative text-foreground/80 mb-4">
+                <p className="relative text-foreground-dark mb-4">
                   Custom image recognition, video analysis, and real-time monitoring systems for operational excellence and safety.
                 </p>
                 <p className="relative text-sm text-brand-primary font-medium">
@@ -436,7 +436,7 @@ const AiStudio = () => {
                 <h3 className="relative text-xl font-bold mb-4 text-foreground">
                   Predictive Analytics & ML
                 </h3>
-                <p className="relative text-foreground/80 mb-4">
+                <p className="relative text-foreground-dark mb-4">
                   Machine learning models for forecasting, risk assessment, and intelligent decision-making systems.
                 </p>
                 <p className="relative text-sm text-brand-primary font-medium">
@@ -449,7 +449,7 @@ const AiStudio = () => {
                 <h3 className="relative text-xl font-bold mb-4 text-foreground">
                   Natural Language Processing
                 </h3>
-                <p className="relative text-foreground/80 mb-4">
+                <p className="relative text-foreground-dark mb-4">
                   Text analysis, sentiment monitoring, and intelligent document processing to unlock insights from unstructured data.
                 </p>
                 <p className="relative text-sm text-brand-primary font-medium">
@@ -462,7 +462,7 @@ const AiStudio = () => {
                 <h3 className="relative text-xl font-bold mb-4 text-foreground">
                   Intelligent Automation
                 </h3>
-                <p className="relative text-foreground/80 mb-4">
+                <p className="relative text-foreground-dark mb-4">
                   AI-powered workflow automation that adapts to changing conditions and makes intelligent decisions.
                 </p>
                 <p className="relative text-sm text-brand-primary font-medium">
@@ -475,7 +475,7 @@ const AiStudio = () => {
                 <h3 className="relative text-xl font-bold mb-4 text-foreground">
                   AI Strategy & Consulting
                 </h3>
-                <p className="relative text-foreground/80 mb-4">
+                <p className="relative text-foreground-dark mb-4">
                   Strategic guidance, technology roadmaps, and organizational change management for successful AI adoption.
                 </p>
                 <p className="relative text-sm text-brand-primary font-medium">

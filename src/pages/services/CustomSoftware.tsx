@@ -85,8 +85,8 @@ const CustomSoftware = () => {
         <ServiceVideoBackground />
 
         {/* Content - Precisely positioned */}
-        <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-32 pb-24">
-          <div className="max-w-5xl mx-auto text-center lg:text-left">
+        <div className="relative z-10 container mx-auto px-6 lg:px-8 pt-48 pb-24">
+          <div className="max-w-5xl mx-auto text-center lg:text-left lg:mx-0">
             <div className="inline-block bg-gradient-to-r from-brand-primary/10 to-brand-accent/10 backdrop-blur-sm border border-brand-primary/20 rounded-full px-6 py-2 mb-8">
               <span className="text-brand-primary font-semibold">End-to-End Engineering</span>
             </div>
@@ -125,7 +125,7 @@ const CustomSoftware = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8 font-montserrat">
               Clarity Before Code: Our Commitment to Your Success
             </h2>
-            <p className="text-xl text-foreground/80 leading-relaxed font-montserrat">
+            <p className="text-xl text-foreground-dark leading-relaxed font-montserrat">
               A successful software project is built on a foundation of shared understanding. Our core philosophy ensures that every feature we build, every line of code we write, and every system we deploy is directly tied to a validated business need and a measurable outcome. We mitigate risk and guarantee value by architecting for your business goals first.
             </p>
           </div>
@@ -172,7 +172,7 @@ const CustomSoftware = () => {
               }
             ].map((step, index) => (
               <div key={index} className="relative group">
-                <div className="bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500">
+                <div className="bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 h-full">
                   <div className="flex items-center mb-6">
                     <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-12 h-12 flex items-center justify-center mr-4">
                       <step.icon className="w-6 h-6 text-white" />
