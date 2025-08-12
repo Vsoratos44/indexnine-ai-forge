@@ -6,7 +6,7 @@ import {
   WebPageSchema,
   BreadcrumbSchema,
 } from "@/components/SEOStructuredData";
-import { Brain, Target, Shield, CheckCircle, Play } from "lucide-react";
+import { Brain, Target, Shield, CheckCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
@@ -390,80 +390,6 @@ const AiStudio = () => {
         </div>
       </section>
 
-      {/* Case Study Section with Video */}
-      <section className="py-20 bg-background-section">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="relative">
-                <div className="aspect-video bg-gradient-hero rounded-xl overflow-hidden relative group cursor-pointer">
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <Play className="w-6 h-6 text-background-dark ml-1" />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div className="bg-black/60 backdrop-blur-sm rounded-lg p-3">
-                      <p className="text-white text-sm font-medium">Video case study: AI-powered content automation for a global sports leader</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <div className="mb-6">
-                  <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
-                    Client Success Story
-                  </span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-                  Automating 30,000 Social Media Assets for a Global Sports Leader
-                </h2>
-                
-                <p className="text-lg text-foreground-dark-muted mb-4">
-                  <strong>The Challenge:</strong> Our client's marketing team was spending thousands of hours manually creating and publishing social media graphics for every game, leading to burnout and missed opportunities.
-                </p>
-                
-                <p className="text-lg text-foreground-dark-muted mb-8">
-                  <strong>The IndexNine Solution:</strong> We developed a bespoke Generative AI system that integrated with their live data feeds and DAM. The AI automatically generates, captions, and tags brand-compliant graphics, ready for one-click publishing.
-                </p>
-
-                <div className="grid grid-cols-2 gap-6 mb-8">
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-primary mb-2">
-                        66%
-                      </div>
-                      <p className="text-sm text-foreground/80">
-                        Reduction in Manual Content Creation
-                      </p>
-                    </CardContent>
-                  </Card>
-                  <Card className="p-6 text-center bg-gradient-card border-card-border shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-bold text-brand-primary mb-2">
-                        15s
-                      </div>
-                      <p className="text-sm text-foreground/80">
-                        From Data to Published Asset
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-                
-                <blockquote className="bg-background-card-light p-6 rounded-xl border-l-4 border-brand-primary">
-                  <p className="text-foreground-dark italic mb-3">
-                    "IndexNine didn't just build us a tool; they revolutionized our content workflow. We're engaging fans faster and more efficiently than we ever thought possible."
-                  </p>
-                  <footer className="text-foreground-dark-muted font-medium">
-                    — VP of Digital Marketing, Global Sports Leader
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* AI Services Section */}
       <section className="py-20 bg-background-section">
