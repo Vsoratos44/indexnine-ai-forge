@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import ImgInnLab from "../assets/images/inno-lab.webp";
-import ImgEntStd from "../assets/images/enterprise-studio.webp";
 
 const PracticesStudios = () => {
   const [activeStudio, setActiveStudio] = useState<"innovation" | "enterprise">(
@@ -96,9 +94,9 @@ const PracticesStudios = () => {
             />
 
             {/* Features */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mb-6">
+            <div className="flex flex-wrap justify-center lg:justify-start mb-6">
               {currentStudio.features.map((feature, index) => (
-                <div key={index} className="flex items-center space-x-2">
+                <div key={index} className="flex items-center space-x-2 mr-4">
                   <div
                     className={`w-2 h-2 rounded-full ${
                       activeStudio === "innovation"
@@ -135,7 +133,11 @@ const PracticesStudios = () => {
               className="rounded-xl overflow-hidden border border-border bg-muted"
             >
               <img
-                src={activeStudio === "innovation" ? ImgInnLab : ImgEntStd}
+                src={
+                  activeStudio === "innovation"
+                    ? "/lovable-uploads/3952bffe-50fc-4c11-a811-0bf718975cbf.png"
+                    : "/lovable-uploads/49fd4939-c61d-43cb-9754-ebf56d833667.png"
+                }
                 alt={
                   activeStudio === "innovation"
                     ? "Innovation Lab visual - Indexnine"
