@@ -15,7 +15,7 @@ const PracticesStudios = () => {
       title: "The Innovation Lab",
       subtitle: "For Startups and High-Growth Ventures",
       description:
-        "Designed for startups, this is where speed, agility, and product-market fit are paramount. Innovation Lab clients leverage our Sprint Zero methodology to stress-test ideas, optimize frameworks, and build scalable products.",
+        "Designed for startups, this is where speed, agility, and product-market fit are paramount. Innovation Lab clients leverage our Sprint Zero methodology to stress-test ideas, optimize frameworks, and build scalable products. <br><br> We provide the design services and agile development teams needed to quickly turn your vision into a funded, market-ready reality. ",
       buttonText: "Explore Innovation Lab",
       features: [
         "Rapid MVP development",
@@ -27,7 +27,7 @@ const PracticesStudios = () => {
       title: "The Enterprise Studio",
       subtitle: "For Enterprise SMBs and F1000",
       description:
-        "Built for businesses that require scale, security, and process excellence, The Enterprise Studio provides the maturity and rigor needed for mission-critical product development.",
+        "Built for businesses that require scale, security, and process excellence, The Enterprise Studio provides the maturity and rigor needed for mission-critical product development. With a focus on complex digital transformation consulting and enterprise software development, enterprise businesses enjoy first-in-class quality at an unparalleled rate.",
       buttonText: "Explore Enterprise Studio",
       features: [
         "Enterprise scalability",
@@ -81,17 +81,19 @@ const PracticesStudios = () => {
         </div>
 
         {/* Active Studio Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 items-center max-w-6xl mx-auto px-4">
-          <div className="lg:col-span-3 text-center lg:text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-6 gap-12 items-start max-w-8xl mx-auto ">
+          <div className="lg:col-span-3 text-center lg:text-left pt-3">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-3 font-montserrat">
               {currentStudio.title}
             </h3>
             <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-primary mb-4 font-montserrat">
               {currentStudio.subtitle}
             </h4>
-            <p className="text-base sm:text-lg  mb-6 leading-relaxed">
-              {currentStudio.description}
-            </p>
+
+            <div
+              className="text-base sm:text-lg mb-6 leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: currentStudio.description }}
+            />
 
             {/* Features */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mb-6">

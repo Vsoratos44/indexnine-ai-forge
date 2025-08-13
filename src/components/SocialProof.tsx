@@ -84,7 +84,7 @@ const SocialProof = () => {
             <img
               src={aboutInfoSvg}
               alt="Client success metrics and analytics chart"
-              className="w-full h-auto max-w-lg mx-auto"
+              className="w-full h-auto max-w-xl mx-auto"
             />
           </div>
 

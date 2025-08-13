@@ -7,16 +7,10 @@ import MindsetIcon from "../assets/images/founder-mindset.svg";
 const ClientExperience = () => {
   const experiences = [
     {
-      icon: (
-        <img
-          src={VelocityIcon}
-          alt="Acceleration & Velocity"
-          className="w-20 h-20"
-        />
-      ),
-      title: "Acceleration & Velocity",
+      icon: <img src={VelocityIcon} alt="Acceleration" className="w-20 h-20" />,
+      title: "Acceleration",
       description:
-        "Our snap.mvp reusable code libraries and AI-powered workflows deliver with industry-leading velocity. We turn complex ideas into tangible progress in days, not months.",
+        "We know that time is the most valuable resource to any operation, that’s why we focus on delivering excellence fast. Our code libraries and AI-first development dramatically accelerate delivery without sacrificing quality.",
     },
     {
       icon: (
@@ -28,7 +22,7 @@ const ClientExperience = () => {
       ),
       title: "Radical Transparency",
       description:
-        "Our Sprint Zero framework gives you a clear roadmap and budget before you commit. Our proprietary Customer Experience App provides an unparalleled, real-time view into project health, team performance, and delivery metrics—eliminating the 'black box' of outsourcing.",
+        "We eliminate the 'black box' fear that plagues offshore engagements. Our process begins with Sprint Zero, our comprehensive discovery and design process that provides you with a technical roadmap, precise budget, and delivery timeline before any long-term commitment is made.",
     },
     {
       icon: (
@@ -40,7 +34,7 @@ const ClientExperience = () => {
       ),
       title: "A Founder's Mindset",
       description:
-        "We succeed when you succeed. We put 'skin in the game' with outcome-based and success-fee models, ensuring our goals are perfectly aligned with your business outcomes.",
+        "We believe in having skin in the game. For select projects, we offer outcome-based engagement models that tie our success directly to yours. We’ve tackled complex regression testing challenges on a 'success fee' basis. We can create a customized business model of tiered engagement costs based on delivered results",
     },
   ];
 
@@ -71,7 +65,7 @@ const ClientExperience = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-8xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8  max-w-8xl mx-auto">
           {experiences.map((exp, index) => (
             <div
               key={index}
@@ -82,7 +76,7 @@ const ClientExperience = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               {/* Icon Container */}
-              <div className="relative rounded-2xl w-20 h-20 flex items-center justify-center mb-8 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+              <div className="relative rounded-2xl w-20 h-20 flex items-center justify-center mb-8 transition-all duration-300 group-hover:scale-110">
                 {exp.icon}
               </div>
 
