@@ -9,6 +9,15 @@ const Footer = () => {
     const script = document.createElement("script");
     script.src = "https://widget.clutch.co/static/js/widget.js";
     script.async = true;
+
+    // Append the script AFTER widget placeholder is in DOM
+    script.onload = () => {
+      if (window.Clutch) {
+        // Sometimes Clutch attaches init to window
+        window.Clutch.init?.();
+      }
+    };
+
     document.body.appendChild(script);
 
     return () => {
@@ -97,13 +106,13 @@ const Footer = () => {
               Partners
             </h4>
             <div className="space-y-4">
-              <a href="https://indexnine.com/careers/">
+              <a href="https://www.greatplacetowork.in/great/company/indexnine-technologies-private-limited">
                 <img src={Gptw} alt="GPTW" className="h-16" />
               </a>
               <a href="https://indexnine.com/careers/">
                 <img src={Iso} alt="ISO" className="h-10" />
               </a>
-              <div className="min-w-[200px]">
+              <div className="min-w-[200px] min-h-[50px]">
                 <div
                   className="clutch-widget"
                   data-url="https://widget.clutch.co"
