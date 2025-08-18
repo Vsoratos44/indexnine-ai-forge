@@ -72,6 +72,12 @@ header .fixed.inset-0 {
   background-position: center;
   background-size: cover;
 }
+.sectionBgAI {
+  background-image: url(./../images/section-bg-ai.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
 
 .bord-rb {
   background: #ffffff00;

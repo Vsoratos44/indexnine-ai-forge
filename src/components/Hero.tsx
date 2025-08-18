@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Content - Precisely positioned */}
       <div className="relative z-10 container mx-auto px-6 pt-52 pb-24">
         <div className="max-w-3xl mx-auto text-center lg:text-left lg:mx-0">
-          <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-medium text-foreground mb-6 leading-[1.25]  animate-fade-in font-montserrat">
+          <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25]  animate-fade-in font-montserrat">
             Product Innovation & <br />
             Software Engineering
             <br />
