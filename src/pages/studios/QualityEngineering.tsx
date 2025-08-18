@@ -116,10 +116,10 @@ const QualityEngineering = () => {
       <section className="py-12 bg-background-alternate">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
               The Quality Dilemma: Balancing Speed, Cost, and Reliability
             </h2>
-            <p className="text-lg text-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-foreground-dark mb-8 max-w-3xl mx-auto leading-relaxed">
               In a competitive market, pressure to innovate has never been higher. Development teams are forced to move faster, but without a modern approach to quality, this leads to brittle tests, rising bug counts, and eroded customer trust. Manual testing can't keep up, and traditional automation often creates more maintenance overhead than it saves.
             </p>
           </div>
@@ -197,12 +197,12 @@ const QualityEngineering = () => {
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-lg text-foreground/80 mb-6">
+                <p className="text-lg text-foreground-dark mb-6">
                   A rapidly scaling FinTech client was crippled by a 5-day manual regression testing cycle, blocking their ability to release new features. We implemented a comprehensive test automation suite using Robot Framework, tied to a 100% success-fee engagement model.
                 </p>
-                <blockquote className="border-l-4 border-brand-primary pl-6 mb-8 italic text-lg text-foreground/90">
+                <blockquote className="border-l-4 border-brand-primary pl-6 mb-8 italic text-lg text-foreground-dark">
                   <p className="mb-3">"IndexNine didn't just meet our expectations; they shattered them. Reducing our regression time to 30 minutes has fundamentally changed how we build and ship product. They are true partners in quality."</p>
-                  <footer className="text-sm text-foreground/70 font-medium">— CTO, FinTech Client</footer>
+                  <footer className="text-sm text-foreground-dark/70 font-medium">— CTO, FinTech Client</footer>
                 </blockquote>
               </div>
 
@@ -614,7 +614,7 @@ const QualityEngineering = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-muted">
                 Your Quality Engineering Questions, Answered
               </h2>
             </div>
@@ -627,7 +627,7 @@ const QualityEngineering = () => {
                     className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-muted/20 transition-colors"
                     aria-expanded={openFAQ === index}
                   >
-                    <span className="font-semibold text-foreground-dark pr-4">{faq.question}</span>
+                    <span className="font-semibold text-foreground-muted pr-4">{faq.question}</span>
                     {openFAQ === index ? (
                       <Minus className="h-5 w-5 text-brand-primary flex-shrink-0" />
                     ) : (
@@ -636,7 +636,7 @@ const QualityEngineering = () => {
                   </button>
                   {openFAQ === index && (
                     <div className="px-6 pb-4">
-                      <p className="text-foreground-dark/80 leading-relaxed">{faq.answer}</p>
+                      <p className="text-foreground-muted leading-relaxed">{faq.answer}</p>
                     </div>
                   )}
                 </div>
