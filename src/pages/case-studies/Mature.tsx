@@ -82,14 +82,14 @@ const MatureCaseStudy = () => {
             <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
               Our Solution: Architecting Stability with an Event-Driven Integration Hub
             </h2>
-            <p className="text-lg text-foreground-dark leading-relaxed mb-12">
+            <p className="text-lg text-foreground-muted leading-relaxed mb-12">
               As a product modernization challenge, it required a solution as much about risk reduction as technical execution. A simple "lift and shift" or rewrite was untenable. We needed new system architecture that could be introduced piece by piece, protecting the core from the chaos of its surrounding external environment.
             </p>
             
             <div className="space-y-12">
               <div>
                 <h3 className="text-2xl font-bold text-foreground-dark mb-6 font-montserrat">Phase 1: Event-Driven Architecture</h3>
-                <p className="text-foreground-dark leading-relaxed mb-6">
+                <p className="text-foreground-muted leading-relaxed mb-6">
                   Our Engineering and Applied AI studios determined that the optimal path forward would be to introduce a new architectural pattern: an event-driven integration hub. Instead of having all 178 integrations communicating directly with the legacy core, we would build a modern, robust hub – essentially a clearing house – that would sit in the operational center.
                 </p>
               </div>
@@ -99,28 +99,28 @@ const MatureCaseStudy = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
                     <h4 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">Asynchronous Message Queues</h4>
-                    <p className="text-foreground-dark leading-relaxed">
+                    <p className="text-foreground-muted leading-relaxed">
                       High-throughput message queueing system to ingest millions of events per minute without system overload.
                     </p>
                   </div>
                   
                   <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
                     <h4 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">Canonical Data Model</h4>
-                    <p className="text-foreground-dark leading-relaxed">
+                    <p className="text-foreground-muted leading-relaxed">
                       Standardized data format eliminating the need for the core to understand 178 different message types.
                     </p>
                   </div>
                   
                   <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
                     <h4 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">Microservices for Transformation</h4>
-                    <p className="text-foreground-dark leading-relaxed">
+                    <p className="text-foreground-muted leading-relaxed">
                       Independent services for each platform transformation, isolating changes and eliminating system-wide risk.
                     </p>
                   </div>
                   
                   <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
                     <h4 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">Zero-Downtime Rollout</h4>
-                    <p className="text-foreground-dark leading-relaxed">
+                    <p className="text-foreground-muted leading-relaxed">
                       Channel-by-channel migration strategy ensuring uninterrupted business continuity throughout the project.
                     </p>
                   </div>
@@ -182,28 +182,28 @@ const MatureCaseStudy = () => {
             <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
               Why It Worked
             </h2>
-            <p className="text-lg text-foreground-dark leading-relaxed mb-8">
+            <p className="text-lg text-foreground-muted leading-relaxed mb-8">
               The success of the Genesys engagement was a direct result of our engineering practices and strategic mindset.
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
                 <h3 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">In-Depth Architectural Expertise</h3>
-                <p className="text-foreground-dark leading-relaxed">
+                <p className="text-foreground-muted leading-relaxed">
                   This problem required the kind of deep understanding of event-driven systems, microservices, and complex data transformations that Indexnine cultivates in our talent pool.
                 </p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
                 <h3 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">Disciplined and De-risked</h3>
-                <p className="text-foreground-dark leading-relaxed">
+                <p className="text-foreground-muted leading-relaxed">
                   Our phased, channel-by-channel migration strategy was essential for a project of this risk profile. Understanding the needs of our client, we prioritized stability and business continuity without compromising on engineering excellence.
                 </p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
                 <h3 className="text-xl font-bold text-brand-primary-dark mb-4 font-montserrat">A True Partnership Approach</h3>
-                <p className="text-foreground-dark leading-relaxed">
+                <p className="text-foreground-muted leading-relaxed">
                   We embedded ourselves within the client's team, working as a single, unified unit to tackle this immense challenge. Our transparent communication and shared sense of ownership were key to navigating the project's complexities.
                 </p>
               </div>
