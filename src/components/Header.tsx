@@ -209,13 +209,13 @@ const Header = () => {
                   <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                     <div className="p-4 space-y-2">
                       <Link
-                        to="/case-studies"
+                        to="/insights/case-studies"
                         className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
                       >
                         Case Studies
                       </Link>
                       <Link
-                        to="/insights"
+                        to="/insights/blogs"
                         className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
                       >
                         Blogs
@@ -462,14 +462,14 @@ const Header = () => {
               {openDropdown === "insights" && (
                 <div className="pl-4 space-y-3 border-l-2 border-brand-primary/30">
                   <Link
-                    to="/case-studies"
+                    to="/insights/case-studies"
                     className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
                     onClick={toggleMobileMenu}
                   >
                     Case Studies
                   </Link>
                   <Link
-                    to="/insights"
+                    to="/insights/blogs"
                     className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
                     onClick={toggleMobileMenu}
                   >
