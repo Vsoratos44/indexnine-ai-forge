@@ -189,7 +189,7 @@ const AiStudio = () => {
         className={`py-24 lg:py-32 relative bg-[#fff] overflow-hidden ${styles.sectionBgAI}`}
       >
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-8xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
                 Our AI Audit & Strategy Practice
@@ -272,17 +272,17 @@ const AiStudio = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-8 bg-[#00000090] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative">
-                <div className="absolute -top-3 -right-3 bg-brand-primary text-white px-3 py-1 rounded-full text-sm font-medium">
-                  Most Popular
-                </div>
+              <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">
+                  <div className="flex items-center gap-4 mb-6">
+                    <img className="relative w-12 h-12" src={ProAudit} alt="" />
+                    <div className="backdrop-blur-md px-3 py-1 rounded-full text-sm font-medium border border-black-500 ml-auto">
+                      8 Weeks
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-4 text-foreground">
                     Pro AI Audit
                   </h3>
-                  <p className="text-base text-foreground/70 mb-2">
-                    8-Week Deep-Dive
-                  </p>
                   <p className="text-foreground/80 mb-6">
                     A comprehensive deep-dive for organizations ready to commit
                     to a transformational AI initiative.
@@ -324,13 +324,13 @@ const AiStudio = () => {
                     shovel-ready project plan.
                   </p>
 
-                  <div className="text-xl font-bold text-brand-primary mb-4">
+                  <div className="text-xl font-semibold text-brand-primary mb-4">
                     Starting at $60,000
                   </div>
 
                   <Button
                     variant="default"
-                    className="w-full"
+                    className="w-full rounded-full"
                     onClick={() =>
                       document
                         .getElementById("contact")
@@ -347,12 +347,17 @@ const AiStudio = () => {
       </section>
 
       {/* P2R Framework Section */}
-      <section id="p2r-framework" className="py-20 bg-gradient-hero">
+      <section
+        id="p2r-framework"
+        className={`py-24 lg:py-32 relative  overflow-hidden ${styles.sectionBg}`}
+      >
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-8xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-white">
-                Our Proprietary AI P2R™ Assessment Framework
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                <span className="leading-[1.4]">
+                  Our Proprietary AI P2R™ Assessment Framework
+                </span>
               </h2>
               <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
                 Your AI journey is unique. Our proprietary{" "}
@@ -364,12 +369,17 @@ const AiStudio = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
+                {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
+                {/* Enhanced Glassmorphism Glow */}
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                {/* Frosted Glass Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+
+                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                   <Target className="h-8 w-8 text-brand-primary" />
                 </div>
-                <h3 className="relative text-xl font-bold mb-4 text-foreground-white">
+                <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
                   AI Potential Score
                 </h3>
                 <p className="relative text-foreground-white/80">
@@ -380,12 +390,17 @@ const AiStudio = () => {
                 </p>
               </div>
 
-              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
+                {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
+                {/* Enhanced Glassmorphism Glow */}
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                {/* Frosted Glass Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+
+                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                   <Brain className="h-8 w-8 text-brand-primary" />
                 </div>
-                <h3 className="relative text-xl font-bold mb-4 text-foreground-white">
+                <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
                   AI Readiness Score
                 </h3>
                 <p className="relative text-foreground-white/80">
@@ -396,12 +411,17 @@ const AiStudio = () => {
                 </p>
               </div>
 
-              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative w-16 h-16 bg-brand-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
+                {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
+                {/* Enhanced Glassmorphism Glow */}
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                {/* Frosted Glass Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+
+                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                   <Shield className="h-8 w-8 text-brand-primary" />
                 </div>
-                <h3 className="relative text-xl font-bold mb-4 text-foreground-white">
+                <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
                   AI Risk Score
                 </h3>
                 <p className="relative text-foreground-white/80">
@@ -417,12 +437,12 @@ const AiStudio = () => {
       </section>
 
       {/* Audit Process Section */}
-      <section id="ai-framework" className="py-16 bg-background-dark">
+      <section id="ai-framework" className="pb-24 lg:pb-32 bg-background-dark">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-8xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                How Our AI Audit Works
+              <h2 className="text-3xl lg:text-4xl font-semibold mb-6 text-foreground-white">
+                <span className="leading-[1.24]">How Our AI Audit Works</span>
               </h2>
               <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
                 Our proven 5-step methodology ensures comprehensive evaluation
@@ -464,17 +484,21 @@ const AiStudio = () => {
                 },
               ].map((item) => (
                 <div key={item.step} className="text-center">
-                  <div className="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-brand-primary rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
                     <span className="text-white font-bold text-lg">
                       {item.step}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold mb-3 text-foreground">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-foreground/80">
-                    {item.description}
-                  </p>
+                  <div className={`${styles.borderBox1}`}>
+                    <div className={`p-3 pt-10 ${styles.borderBoxInr1}`}>
+                      <h3 className="text-lg font-medium mb-3 text-foreground">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-foreground/80">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -483,11 +507,11 @@ const AiStudio = () => {
       </section>
 
       {/* AI Services Section */}
-      <section className="py-20 bg-background-section">
+      <section className="py-2y lg:py-32 bg-background-section">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-8xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
                 Our Applied AI Development Services
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
@@ -594,24 +618,27 @@ const AiStudio = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-background-section">
+      <section className="pb-24 lg:pb-32 bg-background-section">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-                Your AI Questions, Answered
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+                Your AI Questions,{" "}
+                <span className="text-brand-primary leading-[1.4]">
+                  Answered
+                </span>
               </h2>
             </div>
 
-            <div className="space-y-6">
-              <details className="group bg-gradient-card border-card-border rounded-lg p-6">
-                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground">
+            <div className="space-y-6 rounded-2xl p-8 bg-[#fff]">
+              <details className="group border-b pb-4">
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground-dark">
                   What if our data isn't clean or "AI-ready"?
                   <span className="transform transition-transform group-open:rotate-180">
                     ▼
                   </span>
                 </summary>
-                <div className="mt-4 text-foreground/80">
+                <div className="mt-4 text-foreground-dark/80">
                   <p>
                     This is the most common starting point. Our AI Readiness
                     assessment is specifically designed to evaluate your data
@@ -622,14 +649,14 @@ const AiStudio = () => {
                 </div>
               </details>
 
-              <details className="group bg-gradient-card border-card-border rounded-lg p-6">
-                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground">
+              <details className="group border-b pb-4">
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground-dark">
                   How do you ensure AI projects deliver ROI?
                   <span className="transform transition-transform group-open:rotate-180">
                     ▼
                   </span>
                 </summary>
-                <div className="mt-4 text-foreground/80">
+                <div className="mt-4 text-foreground-dark/80">
                   <p>
                     Our "Clarity Before Code" approach means we never start
                     development without a clear business case and measurable
@@ -641,14 +668,14 @@ const AiStudio = () => {
                 </div>
               </details>
 
-              <details className="group bg-gradient-card border-card-border rounded-lg p-6">
-                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground">
+              <details className="group border-b pb-4">
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground-dark">
                   Do you work with specific AI technologies or platforms?
                   <span className="transform transition-transform group-open:rotate-180">
                     ▼
                   </span>
                 </summary>
-                <div className="mt-4 text-foreground/80">
+                <div className="mt-4 text-foreground-dark/80">
                   <p>
                     We're platform-agnostic and choose technologies based on
                     your specific needs, not vendor relationships. Our team has
@@ -660,14 +687,14 @@ const AiStudio = () => {
                 </div>
               </details>
 
-              <details className="group bg-gradient-card border-card-border rounded-lg p-6">
-                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground">
+              <details className="group">
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground-dark">
                   How long does a typical AI project take?
                   <span className="transform transition-transform group-open:rotate-180">
                     ▼
                   </span>
                 </summary>
-                <div className="mt-4 text-foreground/80">
+                <div className="mt-4 text-foreground-dark/80">
                   <p>
                     It varies significantly based on complexity and scope. Our
                     AI audits take 4-8 weeks. Proof-of-concept development
@@ -684,13 +711,15 @@ const AiStudio = () => {
       </section>
 
       {/* Final CTA & Contact Form */}
-      <section id="contact" className="py-20 bg-gradient-hero">
+      <section id="contact" className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-white">
-                  Ready to Move from AI Potential to Reality?
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                  <span className="leading-[1.4]">
+                    Ready to Move from AI Potential to Reality?
+                  </span>
                 </h2>
                 <p className="text-lg text-foreground-white/80 mb-8">
                   An AI strategy without an execution plan is just a theory.
@@ -777,7 +806,7 @@ const AiStudio = () => {
                     type="submit"
                     variant="hero"
                     size="xl"
-                    className="w-full"
+                    className="w-full rounded-full"
                   >
                     Schedule My Free Strategy Call
                   </Button>
