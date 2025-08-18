@@ -201,7 +201,7 @@ const CaseStudies = () => {
   const handleDownloadPDF = (studyId: string, studyTitle: string) => {
     // Create a simple PDF download link - in production this would generate actual PDFs
     const element = document.createElement('a');
-    element.href = `/case-studies/${studyId}.pdf`;
+    element.href = `/insights/case-studies/${studyId}.pdf`;
     element.download = `${studyTitle.replace(/[^a-zA-Z0-9]/g, '_')}_Case_Study.pdf`;
     document.body.appendChild(element);
     element.click();
