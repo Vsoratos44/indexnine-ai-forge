@@ -63,27 +63,27 @@ const PivotCaseStudy = () => {
       <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
               The Paradox of Visibility in a Sprawling Digital Estate
             </h2>
             
-            <p className="text-lg text-foreground-muted leading-relaxed mb-8">
+            <p className="text-lg text-foreground-dark leading-relaxed mb-8">
               The IT landscape is chaotic; applications and data are distributed across hundreds of SaaS platforms, multiple cloud providers, and countless homegrown systems. For a Chief Information Security Officer (CISO), this creates a nightmare scenario for managing who has access to what.
             </p>
             
-            <p className="text-lg text-foreground-muted leading-relaxed mb-8">
+            <p className="text-lg text-foreground-dark leading-relaxed mb-8">
               Zilla Security was founded to solve this problem with an auditing tool that could connect to this fragmented digital estate and give CISOs a unified view of all user permissions. The product was a success, quickly acquiring 100+ customers, including major enterprises like United Airlines.
             </p>
 
             <div className="backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 mb-8">
               <h3 className="text-2xl font-bold text-brand-primary mb-4 font-montserrat">The Critical Feedback</h3>
-              <p className="text-lg text-foreground-muted leading-relaxed italic">
+              <p className="text-lg text-foreground-dark leading-relaxed italic">
                 "This is great, you've shown me that I have security issues. Now, how do I fix them?"
               </p>
               <p className="text-sm text-foreground/60 mt-2">— Consistent customer feedback across 100+ enterprise clients</p>
             </div>
 
-            <p className="text-lg text-foreground-muted leading-relaxed">
+            <p className="text-lg text-foreground-dark leading-relaxed">
               Zilla found itself at a strategic inflection point. They had a product that could show customers their security problems, but now needed to offer security solutions. This customer friction could prove a roadblock to continued growth and a potential threat to the company's long-term viability.
             </p>
           </div>
@@ -175,34 +175,34 @@ const PivotCaseStudy = () => {
       <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-12 text-center font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-12 text-center font-montserrat">
               The Value of Excellence
             </h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               <div className="backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 text-center">
                 <h3 className="text-3xl font-bold text-brand-primary mb-2 font-montserrat">$165M+</h3>
-                <p className="text-foreground-muted text-sm">Acquisition Value</p>
+                <p className="text-foreground-dark text-sm">Acquisition Value</p>
               </div>
               
               <div className="backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 text-center">
                 <h3 className="text-3xl font-bold text-brand-primary mb-2 font-montserrat">100+</h3>
-                <p className="text-foreground-muted text-sm">Enterprise Customers</p>
+                <p className="text-foreground-dark text-sm">Enterprise Customers</p>
               </div>
               
               <div className="backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 text-center">
                 <h3 className="text-3xl font-bold text-brand-primary mb-2 font-montserrat">Mission-Critical</h3>
-                <p className="text-foreground-muted text-sm">Platform Status</p>
+                <p className="text-foreground-dark text-sm">Platform Status</p>
               </div>
               
               <div className="backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 text-center">
                 <h3 className="text-3xl font-bold text-brand-primary mb-2 font-montserrat">IGA</h3>
-                <p className="text-foreground-muted text-sm">Full Platform Evolution</p>
+                <p className="text-foreground-dark text-sm">Full Platform Evolution</p>
               </div>
             </div>
             
             <div className="text-left">
-              <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Transformation Outcomes:</h3>
+              <h3 className="text-2xl font-bold text-brand-primary-dark mb-6 font-montserrat">Transformation Outcomes:</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
                   "Transformed from supplemental visibility tool into indispensable core operational system",
@@ -212,7 +212,7 @@ const PivotCaseStudy = () => {
                 ].map((achievement, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground-muted">{achievement}</span>
+                    <span className="text-foreground-dark">{achievement}</span>
                   </div>
                 ))}
               </div>
@@ -223,19 +223,19 @@ const PivotCaseStudy = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-brand-primary mb-2">Product-centric Development</h4>
-                  <p className="text-sm text-foreground-muted">Strategic importance of customer feedback informed our vision for the client's pivot.</p>
+                  <p className="text-sm text-foreground-dark">Strategic importance of customer feedback informed our vision for the client's pivot.</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-brand-primary mb-2">Deep Engineering Expertise</h4>
-                  <p className="text-sm text-foreground-muted">Industry veterans with expertise in API integration, microservices, and enterprise security.</p>
+                  <p className="text-sm text-foreground-dark">Industry veterans with expertise in API integration, microservices, and enterprise security.</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-brand-primary mb-2">Lifecycle Partnership</h4>
-                  <p className="text-sm text-foreground-muted">Engagement spanned from critical Pivot phase into ongoing Mature phase success.</p>
+                  <p className="text-sm text-foreground-dark">Engagement spanned from critical Pivot phase into ongoing Mature phase success.</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-brand-primary mb-2">Founder's Mindset</h4>
-                  <p className="text-sm text-foreground-muted">Approached with urgency and ownership, understanding this pivot was a defining moment.</p>
+                  <p className="text-sm text-foreground-dark">Approached with urgency and ownership, understanding this pivot was a defining moment.</p>
                 </div>
               </div>
             </div>
