@@ -47,15 +47,15 @@ const LaunchCaseStudy = () => {
             <div className="grid md:grid-cols-2 gap-12 mb-12">
               <div>
                 <h3 className="text-xl font-semibold text-brand-primary-dark mb-4 font-montserrat">Client</h3>
-                <p className="text-foreground-dark mb-6">Annotate (Anonymized), a visionary FinTech startup.</p>
+                <p className="text-foreground-muted mb-6">Annotate (Anonymized), a visionary FinTech startup.</p>
                 <h3 className="text-xl font-semibold text-brand-primary-dark mb-4 font-montserrat">Industry</h3>
-                <p className="text-foreground-dark">Wealth Management, Philanthropy</p>
+                <p className="text-foreground-muted">Wealth Management, Philanthropy</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-brand-primary-dark mb-4 font-montserrat">Challenge</h3>
-                <p className="text-foreground-dark mb-6">The process for prospective donors to access reliable research on charitable organizations was controlled by expensive consultants, creating a bottleneck in the market. Annotate wanted to build a platform that could disrupt this model by delivering the same, or better, insights at a fraction of the cost.</p>
+                <p className="text-foreground-muted mb-6">The process for prospective donors to access reliable research on charitable organizations was controlled by expensive consultants, creating a bottleneck in the market. Annotate wanted to build a platform that could disrupt this model by delivering the same, or better, insights at a fraction of the cost.</p>
                 <h3 className="text-xl font-semibold text-brand-primary-dark mb-4 font-montserrat">Solution</h3>
-                <p className="text-foreground-dark">A strategic engagement with Indexnine's Launch services, starting with our proprietary Sprint Zero framework to define the MVP, followed by the rapid development of a sophisticated AI research agent built on retrieval-augmented generation (RAG) architecture.</p>
+                <p className="text-foreground-muted">A strategic engagement with Indexnine's Launch services, starting with our proprietary Sprint Zero framework to define the MVP, followed by the rapid development of a sophisticated AI research agent built on retrieval-augmented generation (RAG) architecture.</p>
               </div>
             </div>
             
@@ -69,7 +69,7 @@ const LaunchCaseStudy = () => {
               ].map((outcome, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground-dark">{outcome}</span>
+                  <span className="text-foreground-muted">{outcome}</span>
                 </div>
               ))}
             </div>
@@ -174,15 +174,15 @@ const LaunchCaseStudy = () => {
                 </p>
                 <div className="bg-gradient-section rounded-3xl p-8 mb-8">
                   <h4 className="text-xl font-bold text-foreground mb-4 font-montserrat">The Heterogeneous Data Problem</h4>
-                  <p className="text-foreground-muted mb-4">The AI needed to understand both:</p>
+                  <p className="text-foreground-dark mb-4">The AI needed to understand both:</p>
                   <ul className="space-y-2">
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-foreground-muted"><strong>Structured Data:</strong> Clean, numerical data like IRS Form 990 tax filings, detailing an NGO's financials, expenses, and executive compensation.</span>
+                      <span className="text-foreground-dark"><strong>Structured Data:</strong> Clean, numerical data like IRS Form 990 tax filings, detailing an NGO's financials, expenses, and executive compensation.</span>
                     </li>
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-foreground-muted"><strong>Unstructured Data:</strong> Dense, narrative-heavy text from NGO annual reports, press releases, and websites.</span>
+                      <span className="text-foreground-dark"><strong>Unstructured Data:</strong> Dense, narrative-heavy text from NGO annual reports, press releases, and websites.</span>
                     </li>
                   </ul>
                 </div>
