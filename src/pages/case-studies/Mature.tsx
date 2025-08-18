@@ -57,17 +57,17 @@ const MatureCaseStudy = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass transition-all duration-500 transform group hover:scale-105 hover:shadow-glass-lg hover:border-brand-primary/30">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <h4 className="relative text-lg font-semibold text-foreground mb-2 font-montserrat">Legacy System</h4>
+                <h4 className="relative text-lg font-semibold text-brand-primary-dark mb-2 font-montserrat">Legacy System</h4>
                 <p className="relative text-foreground-dark text-sm">16-year-old PHP monolith struggling with daily failures</p>
               </div>
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass transition-all duration-500 transform group hover:scale-105 hover:shadow-glass-lg hover:border-brand-primary/30">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <h4 className="relative text-lg font-semibold text-foreground mb-2 font-montserrat">178 Integrations</h4>
+                <h4 className="relative text-lg font-semibold text-brand-primary-dark mb-2 font-montserrat">178 Integrations</h4>
                 <p className="relative text-foreground-dark text-sm">Fragile connections to e-commerce platforms causing system-wide crashes</p>
               </div>
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-6 shadow-glass transition-all duration-500 transform group hover:scale-105 hover:shadow-glass-lg hover:border-brand-primary/30">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <h4 className="relative text-lg font-semibold text-foreground mb-2 font-montserrat">Daily Crashes</h4>
+                <h4 className="relative text-lg font-semibold text-brand-primary-dark mb-2 font-montserrat">Daily Crashes</h4>
                 <p className="relative text-foreground-dark text-sm">Peak-time failures during critical inventory update periods</p>
               </div>
             </div>
