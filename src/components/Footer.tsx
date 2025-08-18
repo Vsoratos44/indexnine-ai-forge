@@ -12,9 +12,9 @@ const Footer = () => {
 
     // Append the script AFTER widget placeholder is in DOM
     script.onload = () => {
-      if (window.Clutch) {
+      if ((window as any).Clutch) {
         // Sometimes Clutch attaches init to window
-        window.Clutch.init?.();
+        (window as any).Clutch.init?.();
       }
     };
 

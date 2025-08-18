@@ -47,24 +47,24 @@ const GrowCaseStudy = () => {
             <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
               High Stakes, High Pressure, High Speed
             </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-8">
+            <p className="text-lg text-foreground-dark leading-relaxed mb-8">
               In sports media, an industry estimated to reach $1.19 billion by 2030, the game on the field isn't the battle. The real clash happens in the digital arena, on the timelines of millions of fans demanding instant analysis, reactions, and opportunities for engagement. For Sports Interactive, a premier digital agency managing content for top-tier sports leagues and teams, victory in this arena is its core business.
             </p>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-8">
+            <p className="text-lg text-foreground-dark leading-relaxed mb-8">
               Their most critical and time-sensitive operation revolved around live-tweeting during matches. The formula for success was brutal: when a pivotal moment happened—an interception, a game-changing play, a buzzer beater—a creative, on-brand, and factually accurate tweet had to hit the timeline within twenty seconds. Any longer and the moment's lost.
             </p>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">High operational costs with six-person "war room" during every match</span>
+                <span className="text-foreground-dark">High operational costs with six-person "war room" during every match</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Unsustainable scaling model tied to headcount growth</span>
+                <span className="text-foreground-dark">Unsustainable scaling model tied to headcount growth</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Three years of failed internal automation attempts</span>
+                <span className="text-foreground-dark">Three years of failed internal automation attempts</span>
               </li>
             </ul>
           </div>
