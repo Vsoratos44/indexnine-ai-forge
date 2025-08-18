@@ -105,29 +105,29 @@ const GrowCaseStudy = () => {
       <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-12 font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-12 font-montserrat">
               Transforming a Cost Center Into a Growth Engine
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
                 <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">90%</h3>
-                <p className="text-foreground-muted">Reduction in Operational Costs</p>
+                <p className="text-foreground-dark">Reduction in Operational Costs</p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
                 <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">15s</h3>
-                <p className="text-foreground-muted">Tweet Generation Time</p>
+                <p className="text-foreground-dark">Tweet Generation Time</p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
                 <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">2 Months</h3>
-                <p className="text-foreground-muted">Solution Delivery Time</p>
+                <p className="text-foreground-dark">Solution Delivery Time</p>
               </div>
             </div>
             
             <div className="text-left">
-              <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Key Outcomes:</h3>
+              <h3 className="text-2xl font-bold text-brand-primary-dark mb-6 font-montserrat">Key Outcomes:</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
                   "Comprehensive Success: Total automation of in-match tweet generation",
@@ -137,7 +137,7 @@ const GrowCaseStudy = () => {
                 ].map((achievement, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground-muted">{achievement}</span>
+                    <span className="text-foreground-dark">{achievement}</span>
                   </div>
                 ))}
               </div>
