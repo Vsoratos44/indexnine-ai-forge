@@ -226,30 +226,40 @@ const RobotFrameworkVsPlaywright = () => {
                       <thead className="bg-brand-primary/10">
                         <tr>
                           <th className="text-left p-4 font-montserrat text-foreground-dark">Feature</th>
-                          <th className="text-left p-4 font-montserrat text-foreground-dark">Robot Framework</th>
-                          <th className="text-left p-4 font-montserrat text-foreground-dark">Playwright</th>
+                          <th className="text-center p-4 font-montserrat text-foreground-dark">Robot Framework</th>
+                          <th className="text-center p-4 font-montserrat text-foreground-dark">Playwright</th>
                         </tr>
                       </thead>
                       <tbody className="bg-background-card-light">
                         <tr className="border-t border-glass-border">
-                          <td className="p-4 font-medium text-foreground-dark">Ideal Use Case</td>
-                          <td className="p-4 text-foreground-dark-muted">Startups (Seed-Series A), MVPs, teams needing broad testing capabilities (Web, API, Mobile)</td>
-                          <td className="p-4 text-foreground-dark-muted">Scale-ups (Series B+), complex web apps, teams demanding high-velocity and parallel execution</td>
+                          <td className="p-4 font-medium text-foreground-dark">Learning Curve</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Low - Keyword-driven, business-friendly</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Medium - Requires JavaScript/TypeScript knowledge</td>
                         </tr>
                         <tr className="border-t border-glass-border bg-background-card-light/80">
-                          <td className="p-4 font-medium text-foreground-dark">Key Strength</td>
-                          <td className="p-4 text-foreground-dark-muted">Readability & Accessibility: Keyword-driven syntax is easy for technical and non-technical staff to understand</td>
-                          <td className="p-4 text-foreground-dark-muted">Speed & Reliability: Modern architecture with auto-waits and web-first assertions minimizes flaky tests</td>
+                          <td className="p-4 font-medium text-foreground-dark">Team Collaboration</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Excellent - Non-technical team members can contribute</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Good - Developer-focused</td>
                         </tr>
                         <tr className="border-t border-glass-border">
-                          <td className="p-4 font-medium text-foreground-dark">Ecosystem</td>
-                          <td className="p-4 text-foreground-dark-muted">Python-based, with a massive ecosystem of libraries for any task, including a wrapper for Playwright itself</td>
-                          <td className="p-4 text-foreground-dark-muted">Native support for TypeScript, JavaScript, Python, Java, and .NET, fitting seamlessly into developer workflows</td>
+                          <td className="p-4 font-medium text-foreground-dark">Performance</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Good - Suitable for most use cases</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Excellent - Modern, fast execution</td>
                         </tr>
                         <tr className="border-t border-glass-border bg-background-card-light/80">
-                          <td className="p-4 font-medium text-foreground-dark">Best For...</td>
-                          <td className="p-4 text-foreground-dark-muted">Teams aiming to democratize test creation, implement Test-Driven Development (TDD), and require a gentle learning curve</td>
-                          <td className="p-4 text-foreground-dark-muted">Developer-centric teams focused on efficiency, deep debugging (Trace Viewer), and continuous testing of modern, complex web applications</td>
+                          <td className="p-4 font-medium text-foreground-dark">Browser Support</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Good - Multiple browser support</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Excellent - Native modern browser support</td>
+                        </tr>
+                        <tr className="border-t border-glass-border">
+                          <td className="p-4 font-medium text-foreground-dark">Maintenance</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Easy - Readable, maintainable tests</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Medium - Requires technical expertise</td>
+                        </tr>
+                        <tr className="border-t border-glass-border bg-background-card-light/80">
+                          <td className="p-4 font-medium text-foreground-dark">Reporting</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Excellent - Rich, detailed reports</td>
+                          <td className="p-4 text-center text-foreground-dark-muted">Good - Developer-friendly reports</td>
                         </tr>
                       </tbody>
                     </table>
@@ -458,6 +468,35 @@ const RobotFrameworkVsPlaywright = () => {
                         executed by Playwright's powerful and reliable automation engine.
                       </p>
                     </div>
+                  </div>
+                </section>
+
+                <section id="faq" className="mb-16">
+                  <h2 className="text-3xl font-bold text-foreground mb-6 font-montserrat">Your Quality Engineering Questions, Answered</h2>
+                  <div className="space-y-4">
+                    {[
+                      {
+                        question: "How does this integrate with our existing development team?",
+                        answer: "Our model is collaborative. We work within your existing agile process, integrating directly with your developers in their environment (e.g., GitHub, Jira). Our goal is to empower your team by building systems they can own and extend long-term."
+                      },
+                      {
+                        question: "What is the typical ROI on a test automation project?",
+                        answer: "ROI is measured in several ways: reduced manual testing hours, decreased bug-fixing costs (by catching them earlier), and increased development velocity. During an APQ Roadmap, we build a specific ROI model based on your metrics to justify the investment."
+                      },
+                      {
+                        question: "How long does it take to see results from test automation?",
+                        answer: "With our Sprint 0 approach, you'll see working automation within 2 weeks. Measurable ROI typically appears within 3-6 months as the automated tests accumulate saved hours and prevent costly production bugs."
+                      },
+                      {
+                        question: "Do you support legacy systems and older technologies?",
+                        answer: "Yes. Our platforms are designed to work with both modern and legacy systems. We often help companies bridge the gap between old and new technology stacks while maintaining comprehensive test coverage."
+                      }
+                    ].map((faq, index) => (
+                      <div key={index} className="bg-gradient-card backdrop-blur-xl rounded-xl p-6 border border-glass-border">
+                        <h4 className="text-lg font-semibold text-foreground mb-3 font-montserrat">{faq.question}</h4>
+                        <p className="text-foreground-muted leading-relaxed">{faq.answer}</p>
+                      </div>
+                    ))}
                   </div>
                 </section>
 
