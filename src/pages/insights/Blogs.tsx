@@ -180,7 +180,7 @@ const Blogs = () => {
                   <span className="font-montserrat">{post.publishDate}</span>
                 </div>
                 
-                <Link to="/insights/blog/robot-framework-vs-playwright">
+                <Link to={`/insights/blogs/${post.id}`}>
                   <Button variant="ghost" className="text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-xl">
                     Read Full Article <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
@@ -221,9 +221,11 @@ const Blogs = () => {
                   </div>
                 </div>
                 
-                <Button variant="ghost" className="w-full text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-xl">
-                  Read More <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
+                <Link to={`/insights/blogs/${post.id}`}>
+                  <Button variant="ghost" className="w-full text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-xl">
+                    Read More <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
               </div>
             ))}
           </div>

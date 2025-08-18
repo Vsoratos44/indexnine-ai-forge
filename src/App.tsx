@@ -47,6 +47,7 @@ const CaseStudies = lazy(() => import("./pages/insights/CaseStudies"));
 const Blogs = lazy(() => import("./pages/insights/Blogs"));
 const Ebooks = lazy(() => import("./pages/insights/Ebooks"));
 const RobotFrameworkVsPlaywright = lazy(() => import("./pages/insights/blog/RobotFrameworkVsPlaywright"));
+const BlogPost = lazy(() => import("./pages/insights/blog/BlogPost"));
 
 // Case Study Pages - Lazy loaded
 const GenesysModernization = lazy(() => import("./pages/insights/case-study/GenesysModernization"));
@@ -123,10 +124,12 @@ const App = () => {
               {/* Insights Routes - Lazy loaded */}
               <Route path="/case-studies" element={<CaseStudies />} />
               <Route path="/insights" element={<Blogs />} />
+              <Route path="/insights/blogs" element={<Blogs />} />
               <Route path="/resources/ebooks" element={<Ebooks />} />
               
               {/* Individual Blog Post Routes - Lazy loaded */}
               <Route path="/insights/blog/robot-framework-vs-playwright" element={<RobotFrameworkVsPlaywright />} />
+              <Route path="/insights/blogs/:slug" element={<BlogPost />} />
               
               {/* Individual Case Study Routes - Lazy loaded */}
               <Route path="/case-studies/launch" element={<LaunchCaseStudy />} />
