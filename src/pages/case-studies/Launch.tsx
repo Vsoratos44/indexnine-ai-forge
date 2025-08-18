@@ -49,24 +49,24 @@ const LaunchCaseStudy = () => {
 
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
               A Market Ripe for Disruption
             </h2>
-            <p className="text-lg text-foreground-muted leading-relaxed mb-8">
+            <p className="text-lg text-foreground-dark leading-relaxed mb-8">
               In the upper echelons of philanthropic contributions, making informed decisions is a surprisingly expensive and archaic process. The founder of Annotate saw fundamental flaws in this model:
             </p>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Inaccessible: High costs limited important due diligence to the ultra-wealthy</span>
+                <span className="text-foreground-dark">Inaccessible: High costs limited important due diligence to the ultra-wealthy</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Inefficient: Slow, manual methodology neglecting modern technology</span>
+                <span className="text-foreground-dark">Inefficient: Slow, manual methodology neglecting modern technology</span>
               </li>
               <li className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-brand-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span className="text-foreground-muted">Unscalable: Dependent on limited bandwidth of human consultants</span>
+                <span className="text-foreground-dark">Unscalable: Dependent on limited bandwidth of human consultants</span>
               </li>
             </ul>
           </div>
@@ -107,29 +107,29 @@ const LaunchCaseStudy = () => {
       <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-12 font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-12 font-montserrat">
               The Results
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
                 <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">99%</h3>
-                <p className="text-foreground-muted">Cost Reduction for End-Users</p>
+                <p className="text-foreground-dark">Cost Reduction for End-Users</p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
                 <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">$500</h3>
-                <p className="text-foreground-muted">vs $20K-$50K Traditional Cost</p>
+                <p className="text-foreground-dark">vs $20K-$50K Traditional Cost</p>
               </div>
               
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass text-center">
                 <h3 className="text-4xl font-bold text-brand-primary mb-2 font-montserrat">MVP</h3>
-                <p className="text-foreground-muted">Market-Ready Launch</p>
+                <p className="text-foreground-dark">Market-Ready Launch</p>
               </div>
             </div>
             
             <div className="text-left">
-              <h3 className="text-2xl font-bold text-foreground mb-6 font-montserrat">Key Outcomes:</h3>
+              <h3 className="text-2xl font-bold text-brand-primary-dark mb-6 font-montserrat">Key Outcomes:</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
                   "Market-Ready MVP: Functional AI-powered platform validated core business model",
@@ -139,7 +139,7 @@ const LaunchCaseStudy = () => {
                 ].map((achievement, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-brand-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground-muted">{achievement}</span>
+                    <span className="text-foreground-dark">{achievement}</span>
                   </div>
                 ))}
               </div>
