@@ -44,7 +44,7 @@ const GrowCaseStudy = () => {
       <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 font-montserrat">
+            <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
               High Stakes, High Pressure, High Speed
             </h2>
             <p className="text-lg text-foreground-dark leading-relaxed mb-8">
