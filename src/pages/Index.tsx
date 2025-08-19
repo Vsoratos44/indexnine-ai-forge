@@ -14,12 +14,13 @@ import {
 
 // Lazy load heavy components that are below the fold
 const ValueProposition = lazy(() => import("@/components/ValueProposition"));
-const SocialProof = lazy(() => import("@/components/SocialProof"));
+const SocialProofNew = lazy(() => import("@/components/SocialProofNew"));
 const ClientExperience = lazy(() => import("@/components/ClientExperience"));
 const ProductLifecycle = lazy(() => import("@/components/ProductLifecycle"));
 const PracticesStudios = lazy(() => import("@/components/PracticesStudios"));
 const Differentiators = lazy(() => import("@/components/Differentiators"));
 const InsightsCarousel = lazy(() => import("@/components/InsightsCarousel"));
+const ValueCreation = lazy(() => import("@/components/ValueCreation"));
 const DynamicContentRenderer = lazy(
   () => import("@/components/cms/DynamicContentRenderer")
 );
@@ -93,7 +94,7 @@ const Index = () => {
           </Suspense>
 
           <Suspense fallback={<SectionLoader />}>
-            <SocialProof />
+            <SocialProofNew />
           </Suspense>
 
           <Suspense fallback={<SectionLoader />}>
@@ -114,6 +115,10 @@ const Index = () => {
 
           <Suspense fallback={<SectionLoader />}>
             <InsightsCarousel />
+          </Suspense>
+
+          <Suspense fallback={<SectionLoader />}>
+            <ValueCreation />
           </Suspense>
         </>
       )}

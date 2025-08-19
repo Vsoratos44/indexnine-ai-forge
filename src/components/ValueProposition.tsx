@@ -4,13 +4,8 @@ const ValueProposition = () => {
   return (
     <section
       data-section="value-proposition"
-      className="py-16 md:pt-20 lg:pt-28 relative overflow-hidden bg-[#fff] border-t border-border/20"
+      className="py-16 md:pt-20 lg:pt-28 relative overflow-hidden bg-white"
     >
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-1/4 w-64 h-64 bg-brand-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-brand-purple/5 rounded-full blur-3xl"></div>
-      </div>
 
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl relative z-10">
         <div className="text-center">

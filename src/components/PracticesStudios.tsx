@@ -55,23 +55,23 @@ const PracticesStudios = () => {
         </div>
 
         {/* Studio Selector */}
-        <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 mb-12">
+        <div className="flex justify-center gap-4 mb-12">
           <button
             onClick={() => setActiveStudio("innovation")}
-            className={`px-6 py-3 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
+            className={`px-8 py-3 text-lg font-semibold rounded-full transition-all duration-300 font-montserrat ${
               activeStudio === "innovation"
-                ? "border-brand-primary text-brand-primary"
-                : "border-foreground-dark/20 text-foreground-dark/40 hover:text-brand-primary"
+                ? "bg-brand-primary text-white"
+                : "bg-gray-100 text-foreground-dark hover:bg-brand-primary/10"
             }`}
           >
             Innovation Lab
           </button>
           <button
             onClick={() => setActiveStudio("enterprise")}
-            className={`px-6 py-3 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
+            className={`px-8 py-3 text-lg font-semibold rounded-full transition-all duration-300 font-montserrat ${
               activeStudio === "enterprise"
-                ? "border-primary text-brand-primary"
-                : "border-foreground-dark/20 text-foreground-dark/40 hover:text-brand-primary"
+                ? "bg-brand-primary text-white"
+                : "bg-gray-100 text-foreground-dark hover:bg-brand-primary/10"
             }`}
           >
             Enterprise Studio
