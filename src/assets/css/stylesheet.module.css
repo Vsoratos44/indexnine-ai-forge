@@ -69,7 +69,7 @@ header .fixed.inset-0 {
 }
 .sectionBg {
   background: url(./../images/section-bg2.webp) no-repeat;
-  background-position: center;
+  background-position: center -60px;
   background-size: cover;
 }
 .sectionBgAI {

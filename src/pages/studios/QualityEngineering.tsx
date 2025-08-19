@@ -26,6 +26,7 @@ import {
   BreadcrumbSchema,
 } from "@/components/SEOStructuredData";
 import QuoteIcon from "../../assets/images/quote.svg";
+import styles from "../../assets/css/stylesheet.module.css";
 
 const QualityEngineering = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -212,173 +213,178 @@ const QualityEngineering = () => {
           </div>
         </div>
       </section>
-
-      {/* QAE Blueprint Section */}
-      <section id="qae-solution" className="pb-24 lg:pb-32 bg-[#fff]">
-        <div className="container mx-auto px-6">
-          <div className="max-w-8xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-                The Outcome-Driven Automation Blueprint
-              </h2>
-              <p className="text-lg text-foreground-dark/80 max-w-3xl mx-auto">
-                Our philosophy is that quality isn't a phase, it's a measurable
-                outcome. We transform your QE practice from a cost center into a
-                strategic enabler of speed and reliability with our proven,
-                three-step methodology.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-              {[
-                {
-                  step: "01",
-                  title: "BUILD an AI-Assisted Foundation",
-                  description:
-                    "We establish a scalable, low-maintenance test automation framework using modern tools and AI-powered test generation, creating a resilient foundation that grows with your product.",
-                },
-                {
-                  step: "02",
-                  title: "ADOPT Shift-Left Principles",
-                  description:
-                    "We integrate quality checks early in the development lifecycle ('shifting left'), enabling your developers to catch and fix bugs faster, reducing downstream costs and delays.",
-                },
-                {
-                  step: "03",
-                  title: "DEPLOY Smart & Efficiently",
-                  description:
-                    "We implement intelligent test selection and parallel execution strategies, ensuring fast, targeted feedback from your CI/CD pipeline so you can deploy to production with confidence.",
-                },
-              ].map((item) => (
-                <div
-                  key={item.step}
-                  className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                  <div className="relative w-20 h-20 border border-brand-purple rounded-xl flex items-center justify-center ml-0 mb-6">
-                    <span className="text-brand-purple font-bold text-2xl">
-                      {item.step}
-                    </span>
-                  </div>
-                  <h3 className="relative text-xl font-bold mb-4 text-foreground-dark">
-                    {item.title}
-                  </h3>
-                  <p className="relative text-foreground-dark/80">
-                    {item.description}
+      <div className="bg-gradient-to-t from-[#fff] via-[#AAB0FF] to-[#fff] text-foreground">
+        <div className={` ${styles.sectionBgData}`}>
+          {/* QAE Blueprint Section */}
+          <section id="qae-solution" className="pb-24 lg:pb-32">
+            <div className="container mx-auto px-6">
+              <div className="max-w-8xl mx-auto">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+                    The Outcome-Driven Automation Blueprint
+                  </h2>
+                  <p className="text-lg text-foreground-dark/80 max-w-3xl mx-auto">
+                    Our philosophy is that quality isn't a phase, it's a
+                    measurable outcome. We transform your QE practice from a
+                    cost center into a strategic enabler of speed and
+                    reliability with our proven, three-step methodology.
                   </p>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* QAE Case Study Section */}
-      <section id="qae-case-study" className="pb-24 lg:pb-32 bg-[#fff] ">
-        <div className="container mx-auto">
-          <div className="max-w-4xl bg-[#fff] shadow-lg p-8 rounded-3xl mx-auto border border-[#00000010]">
-            <div className="mb-6">
-              <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
-                Case Study: Outcome-Based Automation
-              </span>
-            </div>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-foreground-dark">
-              Enabling Velocity for a High-Growth B2B Travel Platform
-            </h2>
-
-            <div className="">
-              <div>
-                <p className="text-lg text-foreground-dark mb-6">
-                  A rapidly scaling B2B Travel Platform client was crippled by a
-                  5-day manual regression testing cycle, blocking their ability
-                  to release new features. We implemented a comprehensive test
-                  automation suite using Robot Framework, tied to a 100%
-                  success-fee engagement model.
-                </p>
-                <div className="grid grid-cols-2 gap-6">
-                  <Card className="p-6 text-center bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-semibold text-white mb-2">
-                        97%
-                      </div>
-                      <p className="text-sm text-foreground/80">
-                        Reduction in Execution Time (5 days to 30 mins)
-                      </p>
-                    </CardContent>
-                  </Card>
-                  <Card className="p-6 text-center bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] shadow-lg">
-                    <CardContent className="p-0">
-                      <div className="text-3xl font-semibold text-white mb-2">
-                        100%
-                      </div>
-                      <p className="text-sm text-foreground/80">
-                        Success Fee Achieved
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                <blockquote className="bg-[#F1F2FF] flex rounded-xl mt-12">
-                  <div className="relative w-24 h-24 md:w-36 md:h-36  mx-6">
-                    <img src={QuoteIcon} alt="" />
-                  </div>
-                  <div className="p-8">
-                    <p className="text-foreground-dark mb-2">
-                      "IndexNine didn't just meet our expectations; they
-                      shattered them. Reducing our regression time to 30 minutes
-                      has fundamentally changed how we build and ship product.
-                      They are true partners in quality."
-                    </p>
-                    <span className="text-sm text-foreground-dark/70 font-medium">
-                      — CTO, Tripjack
-                    </span>
-                  </div>
-                </blockquote>
-                <div className="mt-6">
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    asChild
-                    className="rounded-full border-brand-purple"
-                  >
-                    <Link
-                      to="/insights/case-studies/tripjack"
-                      className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple transition-all duration-500 transform hover:scale-105"
+                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                  {[
+                    {
+                      step: "01",
+                      title: "BUILD an AI-Assisted Foundation",
+                      description:
+                        "We establish a scalable, low-maintenance test automation framework using modern tools and AI-powered test generation, creating a resilient foundation that grows with your product.",
+                    },
+                    {
+                      step: "02",
+                      title: "ADOPT Shift-Left Principles",
+                      description:
+                        "We integrate quality checks early in the development lifecycle ('shifting left'), enabling your developers to catch and fix bugs faster, reducing downstream costs and delays.",
+                    },
+                    {
+                      step: "03",
+                      title: "DEPLOY Smart & Efficiently",
+                      description:
+                        "We implement intelligent test selection and parallel execution strategies, ensuring fast, targeted feedback from your CI/CD pipeline so you can deploy to production with confidence.",
+                    },
+                  ].map((item) => (
+                    <div
+                      key={item.step}
+                      className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] bg-[#ffffff59] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left"
                     >
-                      Read Full Tripjack Case Study
-                      <ArrowRight className="h-4 w-4" />
-                    </Link>
-                  </Button>
+                      <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                      <div className="relative w-20 h-20 border border-brand-purple rounded-xl flex items-center justify-center ml-0 mb-6">
+                        <span className="text-brand-purple font-bold text-2xl">
+                          {item.step}
+                        </span>
+                      </div>
+                      <h3 className="relative text-xl font-bold mb-4 text-foreground-dark">
+                        {item.title}
+                      </h3>
+                      <p className="relative text-foreground-dark/80">
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
+          {/* QAE Case Study Section */}
+          <section id="qae-case-study" className="pb-24 lg:pb-32">
+            <div className="container mx-auto">
+              <div className="max-w-4xl bg-[#fff] p-8 rounded-3xl mx-auto ">
+                <div className="mb-6">
+                  <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
+                    Case Study: Outcome-Based Automation
+                  </span>
+                </div>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-foreground-dark">
+                  Enabling Velocity for a High-Growth B2B Travel Platform
+                </h2>
+
+                <div className="">
+                  <div>
+                    <p className="text-lg text-foreground-dark mb-6">
+                      A rapidly scaling B2B Travel Platform client was crippled
+                      by a 5-day manual regression testing cycle, blocking their
+                      ability to release new features. We implemented a
+                      comprehensive test automation suite using Robot Framework,
+                      tied to a 100% success-fee engagement model.
+                    </p>
+                    <div className="grid grid-cols-2 gap-6">
+                      <Card className="p-6 text-center bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] shadow-lg">
+                        <CardContent className="p-0">
+                          <div className="text-3xl font-semibold text-white mb-2">
+                            97%
+                          </div>
+                          <p className="text-sm text-foreground/80">
+                            Reduction in Execution Time (5 days to 30 mins)
+                          </p>
+                        </CardContent>
+                      </Card>
+                      <Card className="p-6 text-center bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] shadow-lg">
+                        <CardContent className="p-0">
+                          <div className="text-3xl font-semibold text-white mb-2">
+                            100%
+                          </div>
+                          <p className="text-sm text-foreground/80">
+                            Success Fee Achieved
+                          </p>
+                        </CardContent>
+                      </Card>
+                    </div>
+
+                    <blockquote className="bg-[#F1F2FF] flex rounded-xl mt-12">
+                      <div className="relative w-24 h-24 md:w-36 md:h-36  mx-6">
+                        <img src={QuoteIcon} alt="" />
+                      </div>
+                      <div className="p-8">
+                        <p className="text-foreground-dark mb-2">
+                          "IndexNine didn't just meet our expectations; they
+                          shattered them. Reducing our regression time to 30
+                          minutes has fundamentally changed how we build and
+                          ship product. They are true partners in quality."
+                        </p>
+                        <span className="text-sm text-foreground-dark/70 font-medium">
+                          — CTO, Tripjack
+                        </span>
+                      </div>
+                    </blockquote>
+                    <div className="mt-6">
+                      <Button
+                        variant="outline"
+                        size="lg"
+                        asChild
+                        className="rounded-full border-brand-purple"
+                      >
+                        <Link
+                          to="/insights/case-studies/tripjack"
+                          className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple transition-all duration-500 transform hover:scale-105"
+                        >
+                          Read Full Tripjack Case Study
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
       {/* QAE Solutions in Action & Proprietary Automation Platforms */}
-      <section id="qae-solutions" className="py-20 bg-background-section">
+      <section
+        id="qae-solutions"
+        className={`py-24 lg:py-32 relative  overflow-hidden ${styles.sectionBg}`}
+      >
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-20">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-                QAE Solutions in Action
+          <div className="max-w-8xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                <span className="leading-[1.4]">QAE Solutions in Action</span>
               </h2>
-              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
+              <p className="text-lg text-foreground-light-muted max-w-4xl mx-auto">
                 Powered by our proprietary automation platforms, purpose-built
                 internally to accelerate implementation and maximize ROI.
               </p>
             </div>
 
             {/* Proprietary Automation Platforms */}
-            <div className="mb-20">
-              <div className="text-center mb-16">
-                <h3 className="text-2xl font-bold text-foreground-dark mb-4">
+            <div className="mb-16">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-semibold text-foreground mb-4">
                   Our Proprietary Automation Accelerators
                 </h3>
-                <p className="text-lg text-foreground-dark/80 max-w-2xl mx-auto">
+                <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
                   We augment our strategic services with proprietary platforms
                   designed to accelerate results and provide unparalleled
                   visibility into your application's quality.
@@ -386,12 +392,12 @@ const QualityEngineering = () => {
               </div>
 
               <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
                   <CardContent className="p-0">
-                    <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
+                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                       <Zap className="h-8 w-8 text-brand-purple" />
                     </div>
-                    <h4 className="text-2xl font-bold mb-4 text-foreground-light">
+                    <h4 className="text-2xl font-semibold mb-4 text-foreground-light">
                       snap.automate
                     </h4>
                     <p className="text-foreground-light-muted mb-6">
@@ -422,12 +428,12 @@ const QualityEngineering = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
                   <CardContent className="p-0">
-                    <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mb-6">
+                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                       <Target className="h-8 w-8 text-brand-purple" />
                     </div>
-                    <h4 className="text-2xl font-bold mb-4 text-foreground-light">
+                    <h4 className="text-2xl font-semibold mb-4 text-foreground-light">
                       snap.atomicqa
                     </h4>
                     <p className="text-foreground-light-muted mb-6">
@@ -462,21 +468,21 @@ const QualityEngineering = () => {
             </div>
 
             {/* Real-world Applications */}
-            <div>
-              <div className="text-center mb-16">
-                <h3 className="text-2xl font-bold text-foreground-dark mb-4">
+            <div className="pt-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-semibold text-foreground my-4">
                   Real-World Applications
                 </h3>
-                <p className="text-lg text-foreground-dark-muted max-w-2xl mx-auto">
+                <p className="text-lg text-foreground-muted max-w-2xl mx-auto">
                   How our proprietary platforms deliver measurable results
                   across different scenarios.
                 </p>
               </div>
 
               <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
                   <CardContent className="p-0">
-                    <h4 className="text-2xl font-bold mb-4 text-foreground-light">
+                    <h4 className="text-2xl font-semibold mb-4 text-foreground-light">
                       E-commerce Platform Testing
                     </h4>
                     <p className="text-foreground-light-muted mb-6">
@@ -507,9 +513,9 @@ const QualityEngineering = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="p-8 bg-gradient-card border-card-border shadow-lg hover:shadow-xl transition-all duration-300">
+                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
                   <CardContent className="p-0">
-                    <h4 className="text-2xl font-bold mb-4 text-foreground-light">
+                    <h4 className="text-2xl font-semibold mb-4 text-foreground-light">
                       Financial Services Automation
                     </h4>
                     <p className="text-foreground-light-muted mb-6">
@@ -546,11 +552,14 @@ const QualityEngineering = () => {
       </section>
 
       {/* QAE Consulting Section */}
-      <section id="qae-consulting" className="py-16 bg-secondary/100">
+      <section
+        id="qae-consulting"
+        className="py-24 lg:py-32 bg-[#fff] relative overflow-hidden"
+      >
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
                 Our Strategic QE Services
               </h2>
               <p className="text-lg text-foreground-dark/80 max-w-3xl mx-auto">
@@ -560,10 +569,10 @@ const QualityEngineering = () => {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
-              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">
+                  <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
                     Sprint 0: Automation Kickstart
                   </h3>
                   <p className="text-foreground-dark/80 mb-6">
@@ -608,41 +617,41 @@ const QualityEngineering = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-8 bg-background-card-light border-border shadow-lg hover:shadow-xl transition-all duration-300">
+              <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground-dark">
+                  <h3 className="text-2xl font-semibold mb-4 text-foreground">
                     Agile Product Quality (APQ) Roadmap
                   </h3>
-                  <p className="text-foreground-dark/80 mb-6">
+                  <p className="text-foreground/80 mb-6">
                     A 4-week strategic assessment to analyze your entire SDLC
                     and deliver a comprehensive roadmap for achieving
                     elite-level quality and velocity.
                   </p>
-                  <h4 className="font-semibold text-foreground-dark mb-3">
+                  <h4 className="font-semibold text-foreground mb-3">
                     Deliverables:
                   </h4>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark/80">
+                      <span className="text-foreground/80">
                         Full QE process and tooling audit
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark/80">
+                      <span className="text-foreground/80">
                         Risk analysis and test coverage gap identification
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark/80">
+                      <span className="text-foreground/80">
                         Prioritized automation strategy
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground-dark/80">
+                      <span className="text-foreground/80">
                         Detailed implementation plan with ROI projections
                       </span>
                     </li>
@@ -661,21 +670,27 @@ const QualityEngineering = () => {
       </section>
 
       {/* Frameworks Comparison Section */}
-      <section id="qae-frameworks" className="py-16 bg-background-section">
+      <section
+        id="qae-frameworks"
+        className="pb-24 lg:pb-32 relative bg-[#fff] overflow-hidden"
+      >
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-                The Right Tool for the Job: Robot Framework vs. Playwright
+              <h2 className="text-6xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+                The Right Tool for the Job: <br />
+                <span className="text-brand-primary leading-[1.25]">
+                  Robot Framework vs. Playwright
+                </span>
               </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-lg text-foreground-dark-muted max-w-6xl mx-auto">
                 In today's competitive landscape, the pressure to balance
                 quality, velocity, and cost is relentless. Cutting corners on
                 Quality Assurance (QA) isn't an option when your product's
                 reputation is on the line, but slow release cycles and rising
                 technical debt can sink you before you find product-market fit.
               </p>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-4">
+              <p className="text-lg text-foreground-dark-muted max-w-6xl mx-auto mt-4">
                 The good news? The days of wrestling with the flaky tests and
                 cross-browser nightmares of legacy frameworks are over. Two
                 modern titans have emerged to address these pains: Robot
@@ -685,7 +700,7 @@ const QualityEngineering = () => {
                 which tool is better—it's which tool is right for your business,
                 your team, and your growth stage.
               </p>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-4">
+              <p className="text-lg text-foreground-dark-muted max-w-6xl mx-auto mt-4">
                 At Indexnine, we know it's never just about the tool; it's about
                 a tailored QA process improvement strategy and flawless
                 execution. Through our Sprint 0 discovery process and Agile
@@ -702,13 +717,13 @@ const QualityEngineering = () => {
                 <table className="relative w-full border-collapse rounded-lg overflow-hidden">
                   <thead>
                     <tr className="bg-brand-primary/10">
-                      <th className="text-left p-4 font-semibold text-foreground-dark border-b border-black">
+                      <th className="text-left p-4 font-semibold text-foreground-dark">
                         Feature
                       </th>
-                      <th className="text-center p-4 font-semibold text-foreground-dark border-b border-l border-black">
+                      <th className="text-center p-4 font-semibold text-foreground-dark">
                         Robot Framework
                       </th>
-                      <th className="text-center p-4 font-semibold text-foreground-dark border-b border-l border-black">
+                      <th className="text-center p-4 font-semibold text-foreground-dark">
                         Playwright
                       </th>
                     </tr>
@@ -748,14 +763,19 @@ const QualityEngineering = () => {
                         playwright: "Good - Developer-friendly reports",
                       },
                     ].map((row, index) => (
-                      <tr key={index} className="border-b border-black">
+                      <tr
+                        key={index}
+                        className={
+                          index % 2 === 0 ? "bg-white" : "bg-[#f8f8f8]"
+                        }
+                      >
                         <td className="p-4 font-medium text-foreground-dark">
                           {row.feature}
                         </td>
-                        <td className="p-4 text-center text-foreground-dark-muted border-l border-black">
+                        <td className="p-4 text-center text-foreground-dark-muted">
                           {row.robot}
                         </td>
-                        <td className="p-4 text-center text-foreground-dark-muted border-l border-black">
+                        <td className="p-4 text-center text-foreground-dark-muted">
                           {row.playwright}
                         </td>
                       </tr>
@@ -768,7 +788,7 @@ const QualityEngineering = () => {
               <Button
                 variant="hero"
                 asChild
-                className="inline-flex items-center gap-2"
+                className="inline-flex items-center gap-2 rounded-full"
               >
                 <a
                   href="/insights/blogs/robot-framework-vs-playwright-automation"
@@ -795,10 +815,10 @@ const QualityEngineering = () => {
             {/* Robot Framework Section */}
             <div className="grid lg:grid-cols-2 gap-12 mt-16">
               <div>
-                <h3 className="text-2xl font-bold mb-6 text-foreground-dark">
+                <h3 className="text-2xl font-semibold mb-6 text-foreground-dark">
                   Robot Framework: The Startup's Secret Weapon
                 </h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-foreground-dark-muted mb-6">
                   For early-stage startups, agility and resourcefulness are
                   everything. You need to iterate on your MVP quickly without an
                   army of dedicated QA engineers. This is where Robot Framework
@@ -811,10 +831,10 @@ const QualityEngineering = () => {
                     </h4>
                     <div className="space-y-4">
                       <div>
-                        <h5 className="font-semibold text-foreground-dark mb-2">
+                        <h5 className="font-semibold text-brand-purple mb-2">
                           Human-Readable Syntax
                         </h5>
-                        <p className="text-muted-foreground">
+                        <p className="text-foreground-dark-muted">
                           Its keyword-driven approach is a game-changer. Test
                           cases double as living documentation that product
                           managers and developers can understand, ideal for
@@ -822,10 +842,10 @@ const QualityEngineering = () => {
                         </p>
                       </div>
                       <div>
-                        <h5 className="font-semibold text-foreground-dark mb-2">
+                        <h5 className="font-semibold text-brand-purple mb-2">
                           Powerful & Extensible Ecosystem
                         </h5>
-                        <p className="text-muted-foreground">
+                        <p className="text-foreground-dark-muted">
                           Built on Python, Robot Framework boasts a rich library
                           ecosystem that can handle web, API testing, and mobile
                           testing, ensuring you can cover all your bases with
@@ -833,10 +853,10 @@ const QualityEngineering = () => {
                         </p>
                       </div>
                       <div>
-                        <h5 className="font-semibold text-foreground-dark mb-2">
+                        <h5 className="font-semibold text-brand-purple mb-2">
                           Cost-Effective & Quick to Ramp Up
                         </h5>
-                        <p className="text-muted-foreground">
+                        <p className="text-foreground-dark-muted">
                           As an open-source tool with a gentle learning curve,
                           it allows your existing team to become productive
                           faster, reducing the need to hire expensive,
@@ -846,7 +866,7 @@ const QualityEngineering = () => {
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground mt-6">
+                <p className="text-foreground-dark-muted mt-6">
                   For our startup clients, our agile product quality assessment
                   often points to Robot Framework when the goal is to establish
                   a scalable, keyword-driven architecture that the whole team
@@ -858,10 +878,10 @@ const QualityEngineering = () => {
 
               {/* Playwright Section */}
               <div>
-                <h3 className="text-2xl font-bold mb-6 text-foreground-dark">
+                <h3 className="text-2xl font-semibold mb-6 text-foreground-dark">
                   Playwright: The Enterprise Powerhouse
                 </h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-foreground-dark-muted mb-6">
                   As your startup hits a growth spurt, the game changes. Complex
                   applications, multiple teams, and the demand for a flawless
                   user experience require a framework that is exceptionally
@@ -913,120 +933,140 @@ const QualityEngineering = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Partner Section */}
-            <div className="text-center mt-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
-                Don't Settle for "Good Enough": A Partner in Quality Engineering
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-                Choosing not to leverage modern test automation services is
-                actively costing your business—in slower releases, developer
-                frustration, higher bug-fixing expenses, and lost customers. But
-                a powerful tool is only as good as the artisan wielding it.
-              </p>
-              <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-                Before a single line of code is written, our Sprint 0 process
-                lays the critical groundwork. We dive deep to understand your
-                product, workflows, and business goals to build an automation
-                strategy that is technically sound and perfectly aligned with
-                your objectives.
-              </p>
-              <div className="max-w-3xl mx-auto mb-8">
-                <h3 className="text-xl font-semibold mb-6 text-foreground-dark">
-                  This is how we execute:
-                </h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-foreground-dark mb-2">
-                      Strategize
-                    </h4>
-                    <p className="text-muted-foreground">
-                      Through our APQ assessment, we tailor the right
-                      framework—be it Robot, Playwright, or a hybrid—to your
-                      specific needs.
-                    </p>
+      <div className="pb-24 lg:pb-32 bg-gradient-to-b from-[#fff] via-[#F1F2FF] to-[#fff] relative overflow-hidden">
+        {/* Partner Section */}
+        <div className="text-center">
+          <h2 className="text-6xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+            Don't Settle for "Good Enough":
+            <br />
+            <span className="text-brand-primary leading-[1.25]">
+              A Partner in Quality Engineering
+            </span>
+          </h2>
+          <p className="text-lg text-foreground-dark-muted mb-8 max-w-6xl mx-auto leading-relaxed">
+            Choosing not to leverage modern test automation services is actively
+            costing your business—in slower releases, developer frustration,
+            higher bug-fixing expenses, and lost customers. But a powerful tool
+            is only as good as the artisan wielding it.
+          </p>
+          <p className="text-lg text-foreground-dark-muted mb-8 max-w-6xl mx-auto leading-relaxed">
+            Before a single line of code is written, our Sprint 0 process lays
+            the critical groundwork. We dive deep to understand your product,
+            workflows, and business goals to build an automation strategy that
+            is technically sound and perfectly aligned with your objectives.
+          </p>
+          <div className="max-w-6xl mx-auto mb-8">
+            <h3 className="text-xl font-semibold mb-6 text-foreground-dark">
+              This is how we execute:
+            </h3>
+
+            <div className="grid md:grid-cols-3 gap-6 ">
+              <Card className="relative  bg-gradient-card-light border border-[#00039] rounded-2xl p-6 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
+                <CardContent className="p-0 text-left">
+                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                    <Zap className="h-8 w-8 text-brand-purple" />
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground-dark mb-2">
-                      Execute
-                    </h4>
-                    <p className="text-muted-foreground">
-                      We build efficient, maintainable automation suites and
-                      integrate them into your DevOps lifecycle, aiming for over
-                      90% automation.
-                    </p>
+                  <h4 className="text-2xl font-semibold mb-4 text-foreground-dark">
+                    Strategize
+                  </h4>
+                  <p className="text-foreground-dark-muted">
+                    Through our APQ assessment, we tailor the right framework—be
+                    it Robot, Playwright, or a hybrid—to your specific needs.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="relative  bg-gradient-card-light border border-[#00039] rounded-2xl p-6 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
+                <CardContent className="p-0 text-left">
+                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                    <Zap className="h-8 w-8 text-brand-purple" />
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground-dark mb-2">
-                      Empower
-                    </h4>
-                    <p className="text-muted-foreground">
-                      We ensure your team can confidently manage and scale your
-                      QA efforts for the long term.
-                    </p>
+                  <h4 className="text-2xl font-semibold mb-4 text-foreground-dark">
+                    Execute
+                  </h4>
+                  <p className="text-foreground-dark-muted">
+                    We build efficient, maintainable automation suites and
+                    integrate them into your DevOps lifecycle, aiming for over
+                    90% automation.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="relative  bg-gradient-card-light border border-[#00039] rounded-2xl p-6 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
+                <CardContent className="p-0 text-left">
+                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                    <Zap className="h-8 w-8 text-brand-purple" />
                   </div>
-                </div>
+                  <h4 className="text-2xl font-semibold mb-4 text-foreground-dark">
+                    Empower
+                  </h4>
+                  <p className="text-foreground-dark-muted">
+                    We ensure your team can confidently manage and scale your QA
+                    efforts for the long term.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+        {/* FAQ Section */}
+        <section className="py-20 bg-muted/10">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-6xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+                  Your Quality Engineering Questions, Answered
+                </h2>
+              </div>
+
+              <div className="space-y-0 rounded-3xl bg-[#F1F2FF] p-8">
+                {faqData.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="border-b border-border  bg-background-card-light"
+                  >
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full  py-4 text-left flex justify-between items-center hover:bg-muted/20  transition-colors"
+                      aria-expanded={openFAQ === index}
+                    >
+                      <span className="font-semibold text-foreground-dark pr-4">
+                        {faq.question}
+                      </span>
+                      {openFAQ === index ? (
+                        <Minus className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                      ) : (
+                        <Plus className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                      )}
+                    </button>
+                    {openFAQ === index && (
+                      <div className="pb-4">
+                        <p className="text-foreground-dark-muted leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-muted/10">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-muted">
-                Your Quality Engineering Questions, Answered
-              </h2>
-            </div>
-
-            <div className="space-y-4">
-              {faqData.map((faq, index) => (
-                <div
-                  key={index}
-                  className="border border-border rounded-lg bg-background-card-light"
-                >
-                  <button
-                    onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-muted/20 transition-colors"
-                    aria-expanded={openFAQ === index}
-                  >
-                    <span className="font-semibold text-foreground-muted pr-4">
-                      {faq.question}
-                    </span>
-                    {openFAQ === index ? (
-                      <Minus className="h-5 w-5 text-brand-primary flex-shrink-0" />
-                    ) : (
-                      <Plus className="h-5 w-5 text-brand-primary flex-shrink-0" />
-                    )}
-                  </button>
-                  {openFAQ === index && (
-                    <div className="px-6 pb-4">
-                      <p className="text-foreground-muted leading-relaxed">
-                        {faq.answer}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
+        </section>
+      </div>
       {/* Final CTA Section with Form */}
-      <section id="contact" className="py-20 bg-background-dark">
+      <section id="contact" className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                  Ready to Transform Your QA Process?
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                  <span className="leading-[1.4]">
+                    Ready to Transform Your QA Process?
+                  </span>
                 </h2>
-                <p className="text-xl mb-8 text-foreground/85 leading-relaxed">
+                <p className="text-lg text-foreground-white/80 mb-8 leading-relaxed">
                   Let's discuss your quality challenges and build a value-driven
                   roadmap to accelerate your releases and build more reliable
                   software. Schedule a complimentary, no-obligation call with a
@@ -1034,14 +1074,17 @@ const QualityEngineering = () => {
                 </p>
               </div>
 
-              <div className="bg-muted/5 p-8 rounded-lg border border-border">
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <form
                   className="space-y-6"
                   action="/submit-qe-lead"
                   method="POST"
                 >
                   <div>
-                    <Label htmlFor="name" className="text-foreground">
+                    <Label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-foreground-white mb-2"
+                    >
                       Full Name
                     </Label>
                     <Input
@@ -1049,12 +1092,15 @@ const QualityEngineering = () => {
                       id="name"
                       name="name"
                       required
-                      className="mt-2 bg-background-card-light border-border text-foreground"
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-foreground-white placeholder-white/60 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary"
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="email" className="text-foreground">
+                    <Label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-foreground-white mb-2"
+                    >
                       Work Email
                     </Label>
                     <Input
@@ -1062,23 +1108,30 @@ const QualityEngineering = () => {
                       id="email"
                       name="email"
                       required
-                      className="mt-2 bg-background-card-light border-border text-foreground"
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-foreground-white placeholder-white/60 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary"
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="challenge" className="text-foreground">
+                    <Label
+                      htmlFor="challenge"
+                      className="block text-sm font-medium text-foreground-white mb-2"
+                    >
                       What is your primary quality challenge?
                     </Label>
                     <Textarea
                       id="challenge"
                       name="challenge"
                       rows={4}
-                      className="mt-2 bg-background-card-light border-border text-foreground"
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-foreground-white placeholder-white/60 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary resize-none"
                     />
                   </div>
 
-                  <Button type="submit" className="w-full" size="lg">
+                  <Button
+                    type="submit"
+                    className="w-full rounded-full transition hover:brightness-110"
+                    size="xl"
+                  >
                     Book My APQ Roadmap Session
                   </Button>
                 </form>
