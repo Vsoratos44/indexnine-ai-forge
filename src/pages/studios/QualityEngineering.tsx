@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Settings, Zap, Target, Award, Plus, Minus } from "lucide-react";
+import { CheckCircle, Settings, Zap, Target, Award, Plus, Minus, ArrowRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -113,13 +114,13 @@ const QualityEngineering = () => {
       </section>
 
       {/* Quality Dilemma Section */}
-      <section className="py-12 bg-gray-100">
+      <section className="py-12 bg-background-alternate">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
               The Quality Dilemma: Balancing Speed, Cost, and Reliability
             </h2>
-            <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-foreground-dark mb-8 max-w-3xl mx-auto leading-relaxed">
               In a competitive market, pressure to innovate has never been higher. Development teams are forced to move faster, but without a modern approach to quality, this leads to brittle tests, rising bug counts, and eroded customer trust. Manual testing can't keep up, and traditional automation often creates more maintenance overhead than it saves.
             </p>
           </div>
@@ -183,7 +184,7 @@ const QualityEngineering = () => {
       </section>
 
       {/* QAE Case Study Section */}
-      <section id="qae-case-study" className="py-16 bg-secondary">
+      <section id="qae-case-study" className="py-16 bg-background-alternate">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="mb-6">
@@ -191,19 +192,27 @@ const QualityEngineering = () => {
                 Case Study: Outcome-Based Automation
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground-dark">
-              Enabling Velocity for a High-Growth FinTech
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-brand-purple">
+              Enabling Velocity for a High-Growth B2B Travel Platform
             </h2>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-lg text-foreground-dark/80 mb-6">
-                  A rapidly scaling FinTech client was crippled by a 5-day manual regression testing cycle, blocking their ability to release new features. We implemented a comprehensive test automation suite using Robot Framework, tied to a 100% success-fee engagement model.
+                <p className="text-lg text-foreground-dark mb-6">
+                  A rapidly scaling B2B Travel Platform client was crippled by a 5-day manual regression testing cycle, blocking their ability to release new features. We implemented a comprehensive test automation suite using Robot Framework, tied to a 100% success-fee engagement model.
                 </p>
-                <blockquote className="border-l-4 border-brand-primary pl-6 mb-8 italic text-lg text-foreground-dark/90">
+                <blockquote className="border-l-4 border-brand-primary pl-6 mb-6 italic text-lg text-foreground-dark">
                   <p className="mb-3">"IndexNine didn't just meet our expectations; they shattered them. Reducing our regression time to 30 minutes has fundamentally changed how we build and ship product. They are true partners in quality."</p>
-                  <footer className="text-sm text-foreground-dark/70 font-medium">— CTO, FinTech Client</footer>
+                  <footer className="text-sm text-foreground-dark/70 font-medium">— CTO, Tripjack</footer>
                 </blockquote>
+                <div className="mt-6">
+                  <Button variant="outline" size="lg" asChild>
+                    <Link to="/insights/case-studies/tripjack" className="inline-flex items-center gap-2">
+                      Read Full Tripjack Case Study
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
               </div>
 
               <div className="grid grid-cols-2 gap-6">
@@ -595,6 +604,16 @@ const QualityEngineering = () => {
                 </table>
               </div>
             </div>
+            <div className="text-center mt-8">
+              <Button variant="hero" asChild className="inline-flex items-center gap-2">
+                <a href="/insights/blogs/robot-framework-vs-playwright-automation" className="no-underline">
+                  Read Full Comparison Blog
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -604,7 +623,7 @@ const QualityEngineering = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-muted">
                 Your Quality Engineering Questions, Answered
               </h2>
             </div>
@@ -617,7 +636,7 @@ const QualityEngineering = () => {
                     className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-muted/20 transition-colors"
                     aria-expanded={openFAQ === index}
                   >
-                    <span className="font-semibold text-foreground-dark pr-4">{faq.question}</span>
+                    <span className="font-semibold text-foreground-muted pr-4">{faq.question}</span>
                     {openFAQ === index ? (
                       <Minus className="h-5 w-5 text-brand-primary flex-shrink-0" />
                     ) : (
@@ -626,7 +645,7 @@ const QualityEngineering = () => {
                   </button>
                   {openFAQ === index && (
                     <div className="px-6 pb-4">
-                      <p className="text-foreground-dark/80 leading-relaxed">{faq.answer}</p>
+                      <p className="text-foreground-muted leading-relaxed">{faq.answer}</p>
                     </div>
                   )}
                 </div>

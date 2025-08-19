@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
-import { Target, TrendingUp, Clock, Users, Download, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import { Target, TrendingUp, Clock, Users, Download, ExternalLink, ChevronDown, ChevronUp, ArrowRight } from 'lucide-react';
 
 const CaseStudies = () => {
   const [expandedStudy, setExpandedStudy] = useState<string | null>(null);
@@ -16,7 +16,7 @@ const CaseStudies = () => {
    */
   const caseStudies = [
     {
-      id: "annotate",
+      id: "launch",
       title: "Annotate - Launching AI-Powered Disruption in Philanthropic Finance",
       subtitle: "Taking a bold idea of democratized financial research from launch to market-ready MVP.",
       client: "Annotate (Anonymized)",
@@ -52,7 +52,7 @@ const CaseStudies = () => {
       }
     },
     {
-      id: "zilla",
+      id: "pivot",
       title: "Zilla Security - Engineering the Perfect Pivot",
       subtitle: "Indexnine's strategic product engineering transformed a niche auditing tool into a mission-critical identity platform.",
       client: "Zilla Security",
@@ -88,7 +88,7 @@ const CaseStudies = () => {
       }
     },
     {
-      id: "spplus",
+      id: "grow",
       title: "SP+ - Driving a $2M+ ROI Through Cloud Modernization",
       subtitle: "How Indexnine's Cloud and Data Engineering Expertise Transformed a Legacy System into a Revenue-Generating Platform.",
       client: "SP+ (SPPLUS)",
@@ -103,9 +103,9 @@ const CaseStudies = () => {
       ],
       duration: "6 months",
       teamSize: "10 engineers",
-      category: "data",
+      category: "grow",
       serviceType: "Data Engineering",
-      homePageLink: "/#data-engineering", // Links to data section on homepage
+      homePageLink: "/#grow", // Links to grow section on homepage
       serviceLink: "/services/data-engineering",
       detailedContent: {
         challenge: "SP+ was trapped by legacy infrastructure with exorbitant costs, data silos, and inability to innovate. The inflexible nature of the legacy system made it difficult to develop new features or leverage their unique data.",
@@ -123,7 +123,7 @@ const CaseStudies = () => {
       }
     },
     {
-      id: "genesys",
+      id: "mature",
       title: "Genesys - A Mission-Critical Modernization of a Legacy E-commerce Platform",
       subtitle: "How Indexnine's Expertise in Product Modernization and Event-Driven Architecture Rescued a Mission-Critical Integration Hub from Collapse.",
       client: "Genesys",
@@ -138,9 +138,9 @@ const CaseStudies = () => {
       ],
       duration: "18 months",
       teamSize: "12 engineers",
-      category: "modernization",
+      category: "mature",
       serviceType: "Custom Software",
-      homePageLink: "/#modernization",
+      homePageLink: "/#mature",
       serviceLink: "/services/custom-software",
       detailedContent: {
         challenge: "For thousands of merchants across India, Genesys's platform was their lifeline to the world of e-commerce. The platform was an integration engine, connecting sellers on platforms like Amazon, Myntra, and Flipkart. The problem? This mission-critical engine was 16 years old, built on legacy PHP, and experiencing daily crashes during peak inventory update periods.",
@@ -158,37 +158,108 @@ const CaseStudies = () => {
       }
     },
     {
-      id: "tripjack",
-      title: "TripJack - Engineering the Platform for Next-Generation Travel",
-      subtitle: "How Indexnine's Expertise in Microservices and API Integration Reduced Time-to-Market by 75%, Powering TripJack's Expansion into New B2B2C Revenue Streams.",
-      client: "TripJack",
-      industry: "Travel & Tourism, E-commerce, SaaS",
-      challenge: "As a high-growth platform, TripJack's monolithic architecture and manual integration processes were creating significant operational drag. The lengthy, multi-month timeline required to onboard new airline suppliers was a major bottleneck, hindering their ability to expand their product offerings and react to market changes.",
-      solution: "A strategic Grow and Product Modernization engagement. Indexnine architected and built a modern, event-driven, microservices-based integration hub to streamline supplier onboarding. In parallel, we developed their new flagship B2B2C platform, enabling them to enter the direct-to-consumer market for the first time.",
+      id: "edtech-pivot",
+      title: "EdTech Platform - Strategic Pivot to Success",
+      subtitle: "How we helped an EdTech platform quickly adapt to market feedback and evolve their product strategy with data-driven insights.",
+      client: "EdTech Platform (K-12 Education)",
+      industry: "Education Technology, K-12 Learning",
+      challenge: "An EdTech platform struggling with low user engagement and changing market demands following the shift to remote learning.",
+      solution: "Data-driven pivot strategy including user behavior analysis, product repositioning, and rapid feature development to meet new market needs.",
       results: [
-        "75% Faster Time-to-Market: Reduced airline supplier onboarding from 3+ months to 3 weeks",
-        "New B2B2C Revenue Channel Launched: Successfully delivered scalable, user-centric B2C platform",
-        "Massively Improved Operational Efficiency: Replaced manual integration with automated, scalable architecture",
-        "Future-Proofed for Industry Evolution: Modern API-first architecture for rapid partner onboarding"
+        "300% Increase in User Engagement: Dramatically improved platform adoption and daily active users",
+        "Market Leadership Position: Became the go-to solution for hybrid learning environments",
+        "Secured $15M Funding: Successful Series A round based on improved metrics and market fit",
+        "6-Month Time to Market: Rapid development and deployment of new core features"
       ],
-      duration: "14 months",
-      teamSize: "10 engineers",
-      category: "growth",
+      duration: "6 months",
+      teamSize: "8 engineers",
+      category: "pivot",
       serviceType: "Custom Software",
-      homePageLink: "/#growth",
+      homePageLink: "/#pivot",
       serviceLink: "/services/custom-software",
       detailedContent: {
-        challenge: "TripJack had established itself as a dominant force in India's B2B travel market, but their monolithic architecture was struggling to keep pace with business ambitions. The integration bottleneck was taking 3-4 months per new NDC airline, and they needed a B2C platform to capture higher margins.",
+        challenge: "The EdTech platform had been successful in traditional classroom settings, but the sudden shift to remote and hybrid learning exposed critical gaps in their product offering. User engagement was declining, and competitors were rapidly capturing market share.",
         approach: [
-          "Modernizing the Core with an Event-Driven Integration Hub",
-          "Building the B2B2C Platform for New Revenue Stream",
-          "Parallel Execution for Maximum Velocity"
+          "User Behavior Analysis and Market Research",
+          "Data-Driven Product Repositioning",
+          "Rapid Feature Development and Testing"
         ],
-        technicalDetails: "Built decoupled supplier-specific microservices, canonical data model for travel, and asynchronous processing with message queues. Created modern, user-centric UI/UX with scalable cloud-native architecture and secure payment gateway integration.",
+        technicalDetails: "Implemented comprehensive analytics tracking, A/B testing framework, and rapid development cycles to quickly adapt to changing market needs and user feedback.",
         whyItWorked: [
-          "Deep Domain and Technical Expertise in travel technology",
-          "Strategic, Outcome-Centric Approach beyond tactical requests",
-          "Parallel Execution with coordinated engineering pods"
+          "Data-Driven Decision Making with comprehensive user research",
+          "Agile Development Process with rapid iteration cycles",
+          "Strategic Product Expertise in education technology"
+        ]
+      }
+    },
+    {
+      id: "tripjack",
+      title: "Tripjack - Enabling Velocity for a High-Growth B2B Travel Platform",
+      subtitle: "How IndexNine's Quality Engineering delivered 97% faster testing and transformed release velocity.",
+      client: "Tripjack",
+      industry: "Travel Technology, B2B Platform",
+      challenge: "A rapidly scaling B2B Travel Platform was crippled by a 5-day manual regression testing cycle, blocking their ability to release new features and respond to market demands.",
+      solution: "IndexNine implemented a comprehensive test automation suite using Robot Framework, tied to a 100% success-fee engagement model focused on measurable outcomes.",
+      results: [
+        "97% Reduction in Testing Time: From 5 days to 30 minutes for regression testing",
+        "100% Success Fee Achieved: Delivered on all measurable quality metrics",
+        "Zero Production Incidents: Comprehensive test coverage prevented critical bugs",
+        "Accelerated Release Velocity: Enabled weekly releases vs. monthly cycles"
+      ],
+      duration: "4 months",
+      teamSize: "6 engineers",
+      category: "quality-engineering",
+      serviceType: "Quality Engineering",
+      homePageLink: "/#quality",
+      serviceLink: "/studios/quality-engineering",
+      detailedContent: {
+        challenge: "Tripjack's rapid growth was being constrained by their manual testing processes. Every release required a 5-day regression testing cycle that involved multiple team members manually testing core travel booking flows. This bottleneck was preventing them from responding quickly to market opportunities and customer feedback.",
+        approach: [
+          "Comprehensive Test Strategy Assessment",
+          "Robot Framework Implementation with AI-Assisted Test Generation",
+          "CI/CD Pipeline Integration and Optimization"
+        ],
+        technicalDetails: "Built a comprehensive test automation suite using Robot Framework with intelligent test selection, parallel execution capabilities, and integrated reporting dashboards for real-time quality insights.",
+        whyItWorked: [
+          "Outcome-Driven Engagement Model with success-fee alignment",
+          "Deep Quality Engineering Expertise in travel domain",
+          "Modern Test Automation Frameworks with AI assistance",
+          "Collaborative Partnership Approach with embedded QE team"
+        ]
+      }
+    },
+    {
+      id: "enterprise-saas-optimization",
+      title: "Enterprise SaaS - Mission-Critical Optimization",
+      subtitle: "How we optimized performance, security, and reliability for an enterprise SaaS platform serving Fortune 500 companies.",
+      client: "Enterprise SaaS Platform Provider (Fortune 500)",
+      industry: "Enterprise Software, Cloud Services",
+      challenge: "An enterprise SaaS platform experiencing performance bottlenecks, security vulnerabilities, and scalability issues that threatened their Fortune 500 client relationships.",
+      solution: "Comprehensive platform optimization including performance tuning, security hardening, and architectural improvements to meet enterprise-grade requirements.",
+      results: [
+        "99.99% Uptime Achieved: Eliminated service interruptions and delivered enterprise-grade reliability",
+        "400% Performance Improvement: Dramatically reduced response times and increased throughput",
+        "Zero Security Incidents: Implemented comprehensive security measures with continuous monitoring",
+        "SOC 2 Certification: Successfully achieved compliance with enterprise security standards"
+      ],
+      duration: "12 months",
+      teamSize: "15 engineers",
+      category: "optimization",
+      serviceType: "Custom Software",
+      homePageLink: "/#optimization",
+      serviceLink: "/services/custom-software",
+      detailedContent: {
+        challenge: "The client's SaaS platform had grown rapidly but was struggling to meet the stringent requirements of enterprise customers. Performance issues, security concerns, and compliance gaps were threatening their most valuable client relationships.",
+        approach: [
+          "Performance Optimization and Database Tuning",
+          "Security Hardening and Compliance Implementation",
+          "Infrastructure Scaling and Monitoring"
+        ],
+        technicalDetails: "Implemented comprehensive optimization strategy including database query optimization, Redis caching, security audits, and enterprise-grade monitoring systems.",
+        whyItWorked: [
+          "Deep Enterprise Expertise in scalable architectures",
+          "Comprehensive Security Knowledge with compliance experience",
+          "Performance Engineering Specialization"
         ]
       }
     }
@@ -281,153 +352,42 @@ const CaseStudies = () => {
         </div>
       </section>
 
-      {/* Case Studies Detailed Grid */}
-      <section className="py-24 bg-background">
+      {/* Case Studies Grid */}
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-1 gap-16 max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-4 font-montserrat">Featured Case Studies</h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {caseStudies.map((study, index) => (
-              <article key={study.id} className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-10 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500" id={study.id}>
-                {/* Header Section */}
-                <div className="mb-8">
-                  <div className="flex flex-wrap items-center gap-4 mb-6">
-                    <span className="text-sm bg-brand-primary/10 text-brand-primary px-3 py-1 rounded-full font-montserrat">
-                      {study.industry}
-                    </span>
-                    <span className="text-sm bg-brand-purple/10 text-brand-purple px-3 py-1 rounded-full font-montserrat">
-                      {study.serviceType}
-                    </span>
-                    <Link to={study.homePageLink} className="text-sm text-brand-primary hover:text-brand-primary/80 flex items-center gap-1 font-montserrat">
-                      <ExternalLink className="w-3 h-3" />
-                      View on Homepage
-                    </Link>
-                  </div>
-                  
-                  <h2 className="text-4xl font-bold text-foreground mb-4 font-montserrat">{study.title}</h2>
-                  <p className="text-xl text-foreground-muted mb-6 font-montserrat italic">{study.subtitle}</p>
-                  
-                  <div className="flex flex-wrap gap-4">
-                    <button
-                      onClick={() => handleDownloadPDF(study.id, study.title)}
-                      className="flex items-center gap-2 text-brand-primary hover:text-brand-primary/80 font-montserrat"
-                    >
-                      <Download className="w-4 h-4" />
-                      Download PDF
-                    </button>
-                    <Link to={study.serviceLink} className="flex items-center gap-2 text-brand-purple hover:text-brand-purple/80 font-montserrat">
-                      <ExternalLink className="w-4 h-4" />
-                      Learn About {study.serviceType}
-                    </Link>
-                  </div>
+              <div key={study.id} className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+                <div className="mb-4">
+                  <span className="text-sm bg-brand-purple/10 text-brand-purple px-3 py-1 rounded-full font-montserrat">
+                    {study.category.charAt(0).toUpperCase() + study.category.slice(1)}
+                  </span>
                 </div>
-
-                {/* Main Content Grid */}
-                <div className="grid lg:grid-cols-3 gap-8">
-                  {/* Challenge & Solution */}
-                  <div className="lg:col-span-2 space-y-8">
+                
+                <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat leading-tight">{study.title}</h3>
+                <p className="text-foreground-muted mb-6 leading-relaxed font-montserrat">{study.subtitle}</p>
+                
+                <div className="mb-6">
+                  <div className="grid grid-cols-2 gap-4 text-sm text-foreground-muted">
                     <div>
-                      <h3 className="text-2xl font-semibold text-foreground mb-4 font-montserrat">The Challenge</h3>
-                      <p className="text-foreground-muted font-montserrat leading-relaxed">{study.challenge}</p>
+                      <span className="font-semibold">Industry:</span> {study.industry}
                     </div>
-                    
                     <div>
-                      <h3 className="text-2xl font-semibold text-foreground mb-4 font-montserrat">Our Solution</h3>
-                      <p className="text-foreground-muted font-montserrat leading-relaxed">{study.solution}</p>
-                    </div>
-
-                    {/* Results Section */}
-                    <div>
-                      <h3 className="text-2xl font-semibold text-foreground mb-6 font-montserrat">Key Outcomes</h3>
-                      <div className="grid sm:grid-cols-2 gap-4">
-                        {study.results.map((result, idx) => (
-                          <div key={idx} className="flex items-start gap-3 p-4 bg-glass-light rounded-2xl border border-glass-border">
-                            <Target className="w-5 h-5 text-brand-primary mt-1 flex-shrink-0" />
-                            <span className="text-foreground-muted font-montserrat text-sm leading-relaxed">{result}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Metrics Sidebar */}
-                  <div className="space-y-6">
-                    <div className="bg-glass-light rounded-2xl p-6 border border-glass-border">
-                      <h4 className="text-lg font-semibold text-foreground mb-4 font-montserrat">Project Metrics</h4>
-                      <div className="space-y-4">
-                        <div className="text-center">
-                          <Clock className="w-8 h-8 text-brand-primary mx-auto mb-2" />
-                          <div className="text-2xl font-bold text-foreground font-montserrat">{study.duration}</div>
-                          <div className="text-sm text-foreground-muted font-montserrat">Timeline</div>
-                        </div>
-                        <div className="text-center">
-                          <Users className="w-8 h-8 text-brand-primary mx-auto mb-2" />
-                          <div className="text-2xl font-bold text-foreground font-montserrat">{study.teamSize}</div>
-                          <div className="text-sm text-foreground-muted font-montserrat">Team Size</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Service CTA */}
-                    <div className="bg-gradient-card rounded-2xl p-6 border border-glass-border text-center">
-                      <h4 className="text-lg font-semibold text-foreground mb-3 font-montserrat">Need Similar Results?</h4>
-                      <p className="text-sm text-foreground-muted mb-4 font-montserrat">Let's discuss your {study.serviceType.toLowerCase()} needs</p>
-                      <Link to={study.serviceLink}>
-                        <Button variant={getServiceCTA(study.serviceType).variant} size="sm" className="w-full">
-                          {getServiceCTA(study.serviceType).text}
-                        </Button>
-                      </Link>
+                      <span className="font-semibold">Duration:</span> {study.duration}
                     </div>
                   </div>
                 </div>
-
-                {/* Expandable Detailed Content */}
-                <div className="mt-8 pt-8 border-t border-glass-border">
-                  <button
-                    onClick={() => setExpandedStudy(expandedStudy === study.id ? null : study.id)}
-                    className="flex items-center gap-2 text-brand-primary hover:text-brand-primary/80 font-montserrat font-semibold"
-                  >
-                    {expandedStudy === study.id ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-                    {expandedStudy === study.id ? 'Hide' : 'Show'} Detailed Implementation
-                  </button>
-                  
-                  {expandedStudy === study.id && (
-                    <div className="mt-6 space-y-6 animate-in slide-in-from-top duration-300">
-                      <div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3 font-montserrat">Deep Dive: The Challenge</h4>
-                        <p className="text-foreground-muted font-montserrat leading-relaxed">{study.detailedContent.challenge}</p>
-                      </div>
-                      
-                      <div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3 font-montserrat">Our Approach</h4>
-                        <ul className="space-y-2">
-                          {study.detailedContent.approach.map((step, idx) => (
-                            <li key={idx} className="flex items-start gap-3">
-                              <TrendingUp className="w-4 h-4 text-brand-primary mt-1 flex-shrink-0" />
-                              <span className="text-foreground-muted font-montserrat">{step}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3 font-montserrat">Technical Implementation</h4>
-                        <p className="text-foreground-muted font-montserrat leading-relaxed">{study.detailedContent.technicalDetails}</p>
-                      </div>
-                      
-                      <div>
-                        <h4 className="text-lg font-semibold text-foreground mb-3 font-montserrat">Why It Worked</h4>
-                        <ul className="space-y-2">
-                          {study.detailedContent.whyItWorked.map((reason, idx) => (
-                            <li key={idx} className="flex items-start gap-3">
-                              <Target className="w-4 h-4 text-brand-primary mt-1 flex-shrink-0" />
-                              <span className="text-foreground-muted font-montserrat">{reason}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </article>
+                
+                <Link to={`/insights/case-studies/${study.id}`}>
+                  <Button variant="ghost" className="w-full text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-xl">
+                    Read Case Study <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
+              </div>
             ))}
           </div>
         </div>
