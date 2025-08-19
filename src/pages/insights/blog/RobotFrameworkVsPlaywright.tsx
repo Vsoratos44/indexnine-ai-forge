@@ -150,7 +150,7 @@ const RobotFrameworkVsPlaywright = () => {
       <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-5xl mx-auto">
-            <div className="space-y-6 text-lg text-foreground-dark leading-relaxed mb-8">
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed mb-8">
               <p>
                 In today's competitive landscape, the pressure to balance quality, velocity, and cost is relentless. 
                 Cutting corners on Quality Assurance (QA) isn't an option when your product's reputation is on the line, 
@@ -238,7 +238,7 @@ const RobotFrameworkVsPlaywright = () => {
             <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
               Robot Framework: The Startup's Secret Weapon for Agile Quality
             </h2>
-            <p className="text-lg text-foreground-dark leading-relaxed mb-12">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-12">
               For early-stage startups, agility and resourcefulness are everything. You need to iterate on your 
               MVP quickly without an army of dedicated QA engineers. This is where Robot Framework shines.
             </p>
@@ -247,28 +247,28 @@ const RobotFrameworkVsPlaywright = () => {
             <div className="space-y-6 mb-8">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
                 <h4 className="text-xl font-semibold text-foreground mb-4 font-montserrat">Human-Readable Syntax</h4>
-                <p className="text-foreground-dark leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   Its keyword-driven approach is a game-changer. Test cases double as living documentation that 
                   product managers and developers can understand, ideal for fostering collaboration.
                 </p>
               </div>
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
                 <h4 className="text-xl font-semibold text-foreground mb-4 font-montserrat">Powerful & Extensible Ecosystem</h4>
-                <p className="text-foreground-dark leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   Built on Python, Robot Framework boasts a rich library ecosystem that can handle web, API testing, 
                   and mobile testing, ensuring you can cover all your bases with one tool.
                 </p>
               </div>
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
                 <h4 className="text-xl font-semibold text-foreground mb-4 font-montserrat">Cost-Effective & Quick to Ramp Up</h4>
-                <p className="text-foreground-dark leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   As an open-source tool with a gentle learning curve, it allows your existing team to become 
                   productive faster, reducing the need to hire expensive, specialized automation engineers from day one.
                 </p>
               </div>
             </div>
             
-            <p className="text-foreground-dark leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed">
               For our startup clients, our agile product quality assessment often points to Robot Framework when 
               the goal is to establish a scalable, keyword-driven architecture that the whole team can maintain. 
               The business outcome? Your core regression suite is automated in record time, freeing your team to 
@@ -299,7 +299,7 @@ const RobotFrameworkVsPlaywright = () => {
             <h3 className="text-2xl font-bold text-brand-primary-dark mb-6 font-montserrat">Why Playwright is the Go-To for Scaling Enterprises</h3>
             <div className="space-y-6 mb-8">
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h4 className="text-xl font-semibold text-foreground mb-4 font-montserrat">Blazing Speed & Ironclad Reliability</h4>
+                <h4 className="text-xl font-semibold text-brand-purple mb-4 font-montserrat">Blazing Speed & Ironclad Reliability</h4>
                 <p className="text-foreground-dark leading-relaxed">
                   Playwright's modern architecture was built to combat flaky tests. Its intelligent auto-waits and 
                   web-first assertions, which automatically retry until conditions are met, drastically improve test 
@@ -307,14 +307,14 @@ const RobotFrameworkVsPlaywright = () => {
                 </p>
               </div>
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h4 className="text-xl font-semibold text-foreground mb-4 font-montserrat">True Cross-Browser Mastery</h4>
+                <h4 className="text-xl font-semibold text-brand-purple mb-4 font-montserrat">True Cross-Browser Mastery</h4>
                 <p className="text-foreground-dark leading-relaxed">
                   Test reliably on Chromium, WebKit (Safari), and Firefox with a single, consistent API. This is 
                   critical for ensuring a consistent user experience.
                 </p>
               </div>
               <div className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                <h4 className="text-xl font-semibold text-foreground mb-4 font-montserrat">Developer-Centric Features</h4>
+                <h4 className="text-xl font-semibold text-brand-purple mb-4 font-montserrat">Developer-Centric Features</h4>
                 <p className="text-foreground-dark leading-relaxed">
                   With first-class support for TypeScript, JavaScript, and Python, Playwright meets your developers 
                   where they are. Tools like the Playwright Inspector, Codegen, and the Trace Viewer empower engineers 
@@ -427,7 +427,7 @@ const RobotFrameworkVsPlaywright = () => {
                 }
               ].map((faq, index) => (
                 <div key={index} className="relative overflow-hidden backdrop-blur-xl bg-glass-bg border border-glass-border rounded-3xl p-8 shadow-glass">
-                  <h3 className="text-xl font-semibold text-foreground mb-4 font-montserrat">{faq.question}</h3>
+                  <h3 className="text-xl font-semibold text-brand-purple mb-4 font-montserrat">{faq.question}</h3>
                   <p className="text-foreground-dark leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
