@@ -254,7 +254,7 @@ const ProjectBased = () => {
 
           <div className="space-y-8">
             {/* Sports Interactive Case Study */}
-            <Link to="/insights/case-studies#annotate" className="block">
+            <Link to="/insights/case-studies/launch" className="block">
               <div className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                 <div className="flex items-start space-x-6">
                   <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center">
@@ -290,7 +290,7 @@ const ProjectBased = () => {
             </Link>
 
             {/* Genesis Case Study */}
-            <Link to="/insights/case-studies#genesys" className="block">
+            <Link to="/insights/case-studies/mature" className="block">
               <div className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                 <div className="flex items-start space-x-6">
                   <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-2xl w-16 h-16 flex items-center justify-center">
