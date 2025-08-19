@@ -55,6 +55,8 @@ const LaunchCaseStudy = lazy(() => import("./pages/insights/case-studies/Launch"
 const PivotCaseStudy = lazy(() => import("./pages/insights/case-studies/Pivot"));
 const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/Grow"));
 const MatureCaseStudy = lazy(() => import("./pages/insights/case-studies/Mature"));
+const EdTechPivotCaseStudy = lazy(() => import("./pages/insights/case-studies/EdTechPivot"));
+const EnterpriseSaasOptimizationCaseStudy = lazy(() => import("./pages/insights/case-studies/EnterpriseSaasOptimization"));
 
 // About Pages - Lazy loaded
 const About = lazy(() => import("./pages/About"));
@@ -136,6 +138,8 @@ const App = () => {
               <Route path="/insights/case-studies/pivot" element={<PivotCaseStudy />} />
               <Route path="/insights/case-studies/grow" element={<GrowCaseStudy />} />
               <Route path="/insights/case-studies/mature" element={<MatureCaseStudy />} />
+              <Route path="/insights/case-studies/edtech-pivot" element={<EdTechPivotCaseStudy />} />
+              <Route path="/insights/case-studies/enterprise-saas-optimization" element={<EnterpriseSaasOptimizationCaseStudy />} />
               <Route path="/insights/case-study/genesys-modernization" element={<GenesysModernization />} />
               
               {/* Legacy case study redirects */}
