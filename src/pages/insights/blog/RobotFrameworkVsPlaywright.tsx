@@ -339,7 +339,7 @@ const RobotFrameworkVsPlaywright = () => {
             <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
               Don't Settle for "Good Enough": A Partner in Quality Engineering
             </h2>
-            <div className="space-y-6 text-lg text-foreground-dark leading-relaxed mb-12">
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed mb-12">
               <p>
                 Choosing not to leverage modern test automation services is actively costing your business—in slower 
                 releases, developer frustration, higher bug-fixing expenses, and lost customers. But a powerful tool 
@@ -359,7 +359,7 @@ const RobotFrameworkVsPlaywright = () => {
                   <CheckCircle className="w-6 h-6 text-brand-primary mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="text-xl font-semibold text-foreground mb-2 font-montserrat">Strategize</h4>
-                    <p className="text-foreground-dark leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed">
                       Through our APQ assessment, we tailor the right framework—be it Robot, Playwright, or a hybrid—to your specific needs.
                     </p>
                   </div>
@@ -368,7 +368,7 @@ const RobotFrameworkVsPlaywright = () => {
                   <CheckCircle className="w-6 h-6 text-brand-primary mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="text-xl font-semibold text-foreground mb-2 font-montserrat">Execute</h4>
-                    <p className="text-foreground-dark leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed">
                       We build efficient, maintainable automation suites and integrate them into your DevOps lifecycle, aiming for over 90% automation.
                     </p>
                   </div>
@@ -377,7 +377,7 @@ const RobotFrameworkVsPlaywright = () => {
                   <CheckCircle className="w-6 h-6 text-brand-primary mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="text-xl font-semibold text-foreground mb-2 font-montserrat">Empower</h4>
-                    <p className="text-foreground-dark leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed">
                       We ensure your team can confidently manage and scale your QA efforts for the long term.
                     </p>
                   </div>
