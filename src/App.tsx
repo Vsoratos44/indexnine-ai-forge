@@ -131,7 +131,7 @@ const App = () => {
               <Route path="/resources/ebooks" element={<Ebooks />} />
               
               {/* Individual Blog Post Routes - Lazy loaded */}
-              <Route path="/insights/blog/robot-framework-vs-playwright" element={<RobotFrameworkVsPlaywright />} />
+              <Route path="/insights/blogs/robot-framework-vs-playwright-automation" element={<RobotFrameworkVsPlaywright />} />
               <Route path="/insights/blog/agentic-ai-enterprise-future" element={<BlogPost />} />
               <Route path="/insights/blog/ai-assisted-software-engineering-cursor" element={<BlogPost />} />
               <Route path="/insights/blog/microservices-vs-monolith-decision-guide" element={<BlogPost />} />
