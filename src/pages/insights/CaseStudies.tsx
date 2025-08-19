@@ -16,7 +16,7 @@ const CaseStudies = () => {
    */
   const caseStudies = [
     {
-      id: "annotate",
+      id: "launch",
       title: "Annotate - Launching AI-Powered Disruption in Philanthropic Finance",
       subtitle: "Taking a bold idea of democratized financial research from launch to market-ready MVP.",
       client: "Annotate (Anonymized)",
@@ -52,7 +52,7 @@ const CaseStudies = () => {
       }
     },
     {
-      id: "zilla",
+      id: "pivot",
       title: "Zilla Security - Engineering the Perfect Pivot",
       subtitle: "Indexnine's strategic product engineering transformed a niche auditing tool into a mission-critical identity platform.",
       client: "Zilla Security",
@@ -88,7 +88,7 @@ const CaseStudies = () => {
       }
     },
     {
-      id: "spplus",
+      id: "grow",
       title: "SP+ - Driving a $2M+ ROI Through Cloud Modernization",
       subtitle: "How Indexnine's Cloud and Data Engineering Expertise Transformed a Legacy System into a Revenue-Generating Platform.",
       client: "SP+ (SPPLUS)",
@@ -103,9 +103,9 @@ const CaseStudies = () => {
       ],
       duration: "6 months",
       teamSize: "10 engineers",
-      category: "data",
+      category: "grow",
       serviceType: "Data Engineering",
-      homePageLink: "/#data-engineering", // Links to data section on homepage
+      homePageLink: "/#grow", // Links to grow section on homepage
       serviceLink: "/services/data-engineering",
       detailedContent: {
         challenge: "SP+ was trapped by legacy infrastructure with exorbitant costs, data silos, and inability to innovate. The inflexible nature of the legacy system made it difficult to develop new features or leverage their unique data.",
@@ -123,7 +123,7 @@ const CaseStudies = () => {
       }
     },
     {
-      id: "genesys",
+      id: "mature",
       title: "Genesys - A Mission-Critical Modernization of a Legacy E-commerce Platform",
       subtitle: "How Indexnine's Expertise in Product Modernization and Event-Driven Architecture Rescued a Mission-Critical Integration Hub from Collapse.",
       client: "Genesys",
@@ -138,9 +138,9 @@ const CaseStudies = () => {
       ],
       duration: "18 months",
       teamSize: "12 engineers",
-      category: "modernization",
+      category: "mature",
       serviceType: "Custom Software",
-      homePageLink: "/#modernization",
+      homePageLink: "/#mature",
       serviceLink: "/services/custom-software",
       detailedContent: {
         challenge: "For thousands of merchants across India, Genesys's platform was their lifeline to the world of e-commerce. The platform was an integration engine, connecting sellers on platforms like Amazon, Myntra, and Flipkart. The problem? This mission-critical engine was 16 years old, built on legacy PHP, and experiencing daily crashes during peak inventory update periods.",
@@ -154,41 +154,6 @@ const CaseStudies = () => {
           "Deep Architectural Expertise in event-driven systems",
           "Disciplined, Risk-Averse Process with phased migration",
           "True Partnership Approach with embedded team collaboration"
-        ]
-      }
-    },
-    {
-      id: "tripjack",
-      title: "TripJack - Engineering the Platform for Next-Generation Travel",
-      subtitle: "How Indexnine's Expertise in Microservices and API Integration Reduced Time-to-Market by 75%, Powering TripJack's Expansion into New B2B2C Revenue Streams.",
-      client: "TripJack",
-      industry: "Travel & Tourism, E-commerce, SaaS",
-      challenge: "As a high-growth platform, TripJack's monolithic architecture and manual integration processes were creating significant operational drag. The lengthy, multi-month timeline required to onboard new airline suppliers was a major bottleneck, hindering their ability to expand their product offerings and react to market changes.",
-      solution: "A strategic Grow and Product Modernization engagement. Indexnine architected and built a modern, event-driven, microservices-based integration hub to streamline supplier onboarding. In parallel, we developed their new flagship B2B2C platform, enabling them to enter the direct-to-consumer market for the first time.",
-      results: [
-        "75% Faster Time-to-Market: Reduced airline supplier onboarding from 3+ months to 3 weeks",
-        "New B2B2C Revenue Channel Launched: Successfully delivered scalable, user-centric B2C platform",
-        "Massively Improved Operational Efficiency: Replaced manual integration with automated, scalable architecture",
-        "Future-Proofed for Industry Evolution: Modern API-first architecture for rapid partner onboarding"
-      ],
-      duration: "14 months",
-      teamSize: "10 engineers",
-      category: "growth",
-      serviceType: "Custom Software",
-      homePageLink: "/#growth",
-      serviceLink: "/services/custom-software",
-      detailedContent: {
-        challenge: "TripJack had established itself as a dominant force in India's B2B travel market, but their monolithic architecture was struggling to keep pace with business ambitions. The integration bottleneck was taking 3-4 months per new NDC airline, and they needed a B2C platform to capture higher margins.",
-        approach: [
-          "Modernizing the Core with an Event-Driven Integration Hub",
-          "Building the B2B2C Platform for New Revenue Stream",
-          "Parallel Execution for Maximum Velocity"
-        ],
-        technicalDetails: "Built decoupled supplier-specific microservices, canonical data model for travel, and asynchronous processing with message queues. Created modern, user-centric UI/UX with scalable cloud-native architecture and secure payment gateway integration.",
-        whyItWorked: [
-          "Deep Domain and Technical Expertise in travel technology",
-          "Strategic, Outcome-Centric Approach beyond tactical requests",
-          "Parallel Execution with coordinated engineering pods"
         ]
       }
     }
