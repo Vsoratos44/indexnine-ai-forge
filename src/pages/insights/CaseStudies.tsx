@@ -193,6 +193,42 @@ const CaseStudies = () => {
       }
     },
     {
+      id: "tripjack",
+      title: "Tripjack - Enabling Velocity for a High-Growth B2B Travel Platform",
+      subtitle: "How IndexNine's Quality Engineering delivered 97% faster testing and transformed release velocity.",
+      client: "Tripjack",
+      industry: "Travel Technology, B2B Platform",
+      challenge: "A rapidly scaling B2B Travel Platform was crippled by a 5-day manual regression testing cycle, blocking their ability to release new features and respond to market demands.",
+      solution: "IndexNine implemented a comprehensive test automation suite using Robot Framework, tied to a 100% success-fee engagement model focused on measurable outcomes.",
+      results: [
+        "97% Reduction in Testing Time: From 5 days to 30 minutes for regression testing",
+        "100% Success Fee Achieved: Delivered on all measurable quality metrics",
+        "Zero Production Incidents: Comprehensive test coverage prevented critical bugs",
+        "Accelerated Release Velocity: Enabled weekly releases vs. monthly cycles"
+      ],
+      duration: "4 months",
+      teamSize: "6 engineers",
+      category: "quality-engineering",
+      serviceType: "Quality Engineering",
+      homePageLink: "/#quality",
+      serviceLink: "/studios/quality-engineering",
+      detailedContent: {
+        challenge: "Tripjack's rapid growth was being constrained by their manual testing processes. Every release required a 5-day regression testing cycle that involved multiple team members manually testing core travel booking flows. This bottleneck was preventing them from responding quickly to market opportunities and customer feedback.",
+        approach: [
+          "Comprehensive Test Strategy Assessment",
+          "Robot Framework Implementation with AI-Assisted Test Generation",
+          "CI/CD Pipeline Integration and Optimization"
+        ],
+        technicalDetails: "Built a comprehensive test automation suite using Robot Framework with intelligent test selection, parallel execution capabilities, and integrated reporting dashboards for real-time quality insights.",
+        whyItWorked: [
+          "Outcome-Driven Engagement Model with success-fee alignment",
+          "Deep Quality Engineering Expertise in travel domain",
+          "Modern Test Automation Frameworks with AI assistance",
+          "Collaborative Partnership Approach with embedded QE team"
+        ]
+      }
+    },
+    {
       id: "enterprise-saas-optimization",
       title: "Enterprise SaaS - Mission-Critical Optimization",
       subtitle: "How we optimized performance, security, and reliability for an enterprise SaaS platform serving Fortune 500 companies.",

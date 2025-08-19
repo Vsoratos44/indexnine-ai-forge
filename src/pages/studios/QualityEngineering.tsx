@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Settings, Zap, Target, Award, Plus, Minus } from "lucide-react";
+import { CheckCircle, Settings, Zap, Target, Award, Plus, Minus, ArrowRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -191,19 +192,27 @@ const QualityEngineering = () => {
                 Case Study: Outcome-Based Automation
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
-              Enabling Velocity for a High-Growth FinTech
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-brand-purple">
+              Enabling Velocity for a High-Growth B2B Travel Platform
             </h2>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-lg text-foreground-dark mb-6">
-                  A rapidly scaling FinTech client was crippled by a 5-day manual regression testing cycle, blocking their ability to release new features. We implemented a comprehensive test automation suite using Robot Framework, tied to a 100% success-fee engagement model.
+                  A rapidly scaling B2B Travel Platform client was crippled by a 5-day manual regression testing cycle, blocking their ability to release new features. We implemented a comprehensive test automation suite using Robot Framework, tied to a 100% success-fee engagement model.
                 </p>
-                <blockquote className="border-l-4 border-brand-primary pl-6 mb-8 italic text-lg text-foreground-dark">
+                <blockquote className="border-l-4 border-brand-primary pl-6 mb-6 italic text-lg text-foreground-dark">
                   <p className="mb-3">"IndexNine didn't just meet our expectations; they shattered them. Reducing our regression time to 30 minutes has fundamentally changed how we build and ship product. They are true partners in quality."</p>
-                  <footer className="text-sm text-foreground-dark/70 font-medium">— CTO, FinTech Client</footer>
+                  <footer className="text-sm text-foreground-dark/70 font-medium">— CTO, Tripjack</footer>
                 </blockquote>
+                <div className="mt-6">
+                  <Button variant="outline" size="lg" asChild>
+                    <Link to="/insights/case-studies/tripjack" className="inline-flex items-center gap-2">
+                      Read Full Tripjack Case Study
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
               </div>
 
               <div className="grid grid-cols-2 gap-6">

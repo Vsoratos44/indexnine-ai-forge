@@ -143,9 +143,10 @@ const App = () => {
               <Route path="/insights/case-studies/pivot" element={<PivotCaseStudy />} />
               <Route path="/insights/case-studies/grow" element={<GrowCaseStudy />} />
               <Route path="/insights/case-studies/mature" element={<MatureCaseStudy />} />
-              <Route path="/insights/case-studies/edtech-pivot" element={<EdTechPivotCaseStudy />} />
-              <Route path="/insights/case-studies/enterprise-saas-optimization" element={<EnterpriseSaasOptimizationCaseStudy />} />
-              <Route path="/insights/case-study/genesys-modernization" element={<GenesysModernization />} />
+               <Route path="/insights/case-studies/edtech-pivot" element={<EdTechPivotCaseStudy />} />
+               <Route path="/insights/case-studies/enterprise-saas-optimization" element={<EnterpriseSaasOptimizationCaseStudy />} />
+               <Route path="/insights/case-studies/tripjack" element={<BlogPost />} />
+               <Route path="/insights/case-study/genesys-modernization" element={<GenesysModernization />} />
               
               {/* Legacy case study redirects */}
               <Route path="/case-studies" element={<CaseStudies />} />
