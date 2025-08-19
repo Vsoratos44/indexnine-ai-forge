@@ -20,6 +20,22 @@ const QualityEngineering = () => {
 
   const faqData = [
     {
+      question: "Can you use Robot Framework and Playwright together?",
+      answer: "Yes. Robot Framework can use Playwright's engine directly through its modern Browser library. This is a popular and powerful combination that offers Robot's simple syntax with Playwright's speed and reliability."
+    },
+    {
+      question: "Is Playwright better than Robot Framework for enterprise QA?",
+      answer: "Playwright is often preferred for larger, developer-heavy enterprise teams due to its raw speed, native multi-language support, and advanced debugging features. However, Robot Framework's readability and extensibility make it a highly viable and scalable enterprise solution as well, especially in Python-centric environments."
+    },
+    {
+      question: "What are the main differences between Robot Framework and Playwright?",
+      answer: "The main differences are in their philosophy and primary user. Robot Framework uses a keyword-driven syntax designed for accessibility and collaboration. Playwright is a developer-first tool with a traditional coding syntax in multiple languages, built for maximum speed and efficiency within engineering workflows."
+    },
+    {
+      question: "Can you integrate Robot Framework with Playwright for hybrid testing?",
+      answer: "Absolutely. Integrating Robot Framework with the Playwright-based Browser library is an advanced strategy for hybrid testing. It allows you to write simple, maintainable test cases that are executed by Playwright's powerful and reliable automation engine."
+    },
+    {
       question: "How does this integrate with our existing development team?",
       answer: "Our model is collaborative. We work within your existing agile process, integrating directly with your developers in their environment (e.g., GitHub, Jira). Our goal is to empower your team by building systems they can own and extend long-term."
     },
@@ -528,10 +544,14 @@ const QualityEngineering = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
                 The Right Tool for the Job: Robot Framework vs. Playwright
               </h2>
-              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                Choosing a test automation framework is a strategic decision
-                that impacts long-term success. We help you make the right
-                choice based on your specific needs.
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                In today's competitive landscape, the pressure to balance quality, velocity, and cost is relentless. Cutting corners on Quality Assurance (QA) isn't an option when your product's reputation is on the line, but slow release cycles and rising technical debt can sink you before you find product-market fit.
+              </p>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-4">
+                The good news? The days of wrestling with the flaky tests and cross-browser nightmares of legacy frameworks are over. Two modern titans have emerged to address these pains: Robot Framework and Playwright. They deliver the speed, reliability, and developer-friendliness that modern quality engineering services have been missing. But the critical question isn't just which tool is better—it's which tool is right for your business, your team, and your growth stage.
+              </p>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-4">
+                At Indexnine, we know it's never just about the tool; it's about a tailored QA process improvement strategy and flawless execution. Through our Sprint 0 discovery process and Agile Product Quality (APQ) Roadmap, we help you build an outcome-based automation strategy that turns QA from a bottleneck into a velocity enabler.
               </p>
             </div>
 
@@ -613,6 +633,95 @@ const QualityEngineering = () => {
                   </svg>
                 </a>
               </Button>
+            </div>
+
+            {/* Robot Framework Section */}
+            <div className="grid lg:grid-cols-2 gap-12 mt-16">
+              <div>
+                <h3 className="text-2xl font-bold mb-6 text-foreground-dark">Robot Framework: The Startup's Secret Weapon</h3>
+                <p className="text-muted-foreground mb-6">
+                  For early-stage startups, agility and resourcefulness are everything. You need to iterate on your MVP quickly without an army of dedicated QA engineers. This is where Robot Framework shines.
+                </p>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-xl font-semibold mb-3 text-foreground-dark">Why Robot Framework is a Founder's Best Friend</h4>
+                    <div className="space-y-4">
+                      <div>
+                        <h5 className="font-semibold text-foreground-dark mb-2">Human-Readable Syntax</h5>
+                        <p className="text-muted-foreground">Its keyword-driven approach is a game-changer. Test cases double as living documentation that product managers and developers can understand, ideal for fostering collaboration.</p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-foreground-dark mb-2">Powerful & Extensible Ecosystem</h5>
+                        <p className="text-muted-foreground">Built on Python, Robot Framework boasts a rich library ecosystem that can handle web, API testing, and mobile testing, ensuring you can cover all your bases with one tool.</p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-foreground-dark mb-2">Cost-Effective & Quick to Ramp Up</h5>
+                        <p className="text-muted-foreground">As an open-source tool with a gentle learning curve, it allows your existing team to become productive faster, reducing the need to hire expensive, specialized automation engineers from day one.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mt-6">
+                  For our startup clients, our agile product quality assessment often points to Robot Framework when the goal is to establish a scalable, keyword-driven architecture that the whole team can maintain. The business outcome? Your core regression suite is automated in record time, freeing your team to focus on innovation while increasing confidence in every release.
+                </p>
+              </div>
+
+              {/* Playwright Section */}
+              <div>
+                <h3 className="text-2xl font-bold mb-6 text-foreground-dark">Playwright: The Enterprise Powerhouse</h3>
+                <p className="text-muted-foreground mb-6">
+                  As your startup hits a growth spurt, the game changes. Complex applications, multiple teams, and the demand for a flawless user experience require a framework that is exceptionally robust and fast.
+                </p>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-xl font-semibold mb-3 text-foreground-dark">Why Playwright is the Go-To for Scaling Enterprises</h4>
+                    <div className="space-y-4">
+                      <div>
+                        <h5 className="font-semibold text-brand-purple mb-2">Blazing Speed & Ironclad Reliability</h5>
+                        <p className="text-foreground-dark-muted">Playwright's modern architecture was built to combat flaky tests. Its intelligent auto-waits and web-first assertions, which automatically retry until conditions are met, drastically improve test stability and execution speed.</p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-brand-purple mb-2">True Cross-Browser Mastery</h5>
+                        <p className="text-foreground-dark-muted">Test reliably on Chromium, WebKit (Safari), and Firefox with a single, consistent API. This is critical for ensuring a consistent user experience.</p>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-brand-purple mb-2">Developer-Centric Features</h5>
+                        <p className="text-foreground-dark-muted">With first-class support for TypeScript, JavaScript, and Python, Playwright meets your developers where they are. Tools like the Playwright Inspector, Codegen, and the Trace Viewer empower engineers to write, debug, and maintain complex tests with unparalleled efficiency.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Partner Section */}
+            <div className="text-center mt-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground-dark">
+                Don't Settle for "Good Enough": A Partner in Quality Engineering
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
+                Choosing not to leverage modern test automation services is actively costing your business—in slower releases, developer frustration, higher bug-fixing expenses, and lost customers. But a powerful tool is only as good as the artisan wielding it.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
+                Before a single line of code is written, our Sprint 0 process lays the critical groundwork. We dive deep to understand your product, workflows, and business goals to build an automation strategy that is technically sound and perfectly aligned with your objectives.
+              </p>
+              <div className="max-w-3xl mx-auto mb-8">
+                <h3 className="text-xl font-semibold mb-6 text-foreground-dark">This is how we execute:</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-foreground-dark mb-2">Strategize</h4>
+                    <p className="text-muted-foreground">Through our APQ assessment, we tailor the right framework—be it Robot, Playwright, or a hybrid—to your specific needs.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground-dark mb-2">Execute</h4>
+                    <p className="text-muted-foreground">We build efficient, maintainable automation suites and integrate them into your DevOps lifecycle, aiming for over 90% automation.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground-dark mb-2">Empower</h4>
+                    <p className="text-muted-foreground">We ensure your team can confidently manage and scale your QA efforts for the long term.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
