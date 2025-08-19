@@ -16,6 +16,7 @@ import { Brain, Target, Shield, CheckCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
+import CasesCarousel from "@/components/CasesCarousel";
 
 const AiStudio = () => {
   return (
@@ -507,7 +508,7 @@ const AiStudio = () => {
       </section>
 
       {/* AI Services Section */}
-      <section className="py-2y lg:py-32 bg-background-section">
+      <section className="py-2y lg:py-32 bg-[#efeff6]">
         <div className="container mx-auto px-6">
           <div className="max-w-8xl mx-auto">
             <div className="text-center mb-16">
@@ -520,8 +521,8 @@ const AiStudio = () => {
                 building robust, scalable, and secure AI solutions.
               </p>
             </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
+            <CasesCarousel />
+            {/* <div className="grid md:grid-cols-3 gap-8">
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <h3 className="relative text-xl font-bold mb-4 text-brand-primary">
@@ -612,13 +613,13 @@ const AiStudio = () => {
                   Change Management
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="pb-24 lg:pb-32 bg-background-section">
+      <section className="pb-24 lg:pb-32 bg-gradient-to-t from-[#fff] to-[#efeff6]">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
