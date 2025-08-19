@@ -78,8 +78,21 @@ header .fixed.inset-0 {
   background-position: center top;
   background-size: cover;
 }
+.sectionBgData {
+  background-image: url(./../images/section-bg-data.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+}
+.sectionBgData2 {
+  background-image: url(./../images/section-bg-data2.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+}
 
-.bord-rb {
+.bord-rb,
+.bordRb {
   background: #ffffff00;
   background: linear-gradient(
     155deg,
