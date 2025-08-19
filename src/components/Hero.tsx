@@ -15,12 +15,13 @@ const Hero = () => {
       <VideoBackground />
 
       {/* Content - Precisely positioned */}
-      <div className="relative z-10 container mx-auto px-6 pt-40 pb-24">
+      <div className="relative z-10 container mx-auto px-6 pt-52 pb-24">
         <div className="max-w-3xl mx-auto text-center lg:text-left lg:mx-0">
           <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-medium text-foreground mb-6 leading-[1.25]  animate-fade-in font-montserrat">
             Product Innovation & <br />
-            Software Engineering <br />
-            <span className="text-brand-purple">Excellence</span>
+            Software Engineering
+            <br />
+            <TypewriterText />
           </h1>
 
           <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat">

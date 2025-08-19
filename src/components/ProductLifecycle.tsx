@@ -110,7 +110,7 @@ const ProductLifecycle = () => {
 
                   {/* Title Section */}
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground-dark mb-1 sm:mb-2 leading-tight font-montserrat">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground-dark mb-1 sm:mb-2 leading-tight font-montserrat">
                       {phase.title}
                     </h3>
                     <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-brand-primary mb-3 sm:mb-4 font-montserrat">
