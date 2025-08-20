@@ -937,7 +937,7 @@ const QualityEngineering = () => {
         </div>
       </section>
 
-      <div className="pb-24 lg:pb-32 bg-gradient-to-b from-[#fff] via-[#F1F2FF] to-[#fff] relative overflow-hidden">
+      <div className="pb-24 lg:pb-32 bg-gradient-to-b from-[#fff] via-[#F1F2FF] to-[#F1F2FF] relative overflow-hidden">
         {/* Partner Section */}
         <div className="text-center">
           <h2 className="text-6xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
@@ -1021,7 +1021,7 @@ const QualityEngineering = () => {
                 </h2>
               </div>
 
-              <div className="space-y-0 rounded-3xl bg-[#F1F2FF] p-8">
+              <div className="space-y-0 rounded-3xl bg-[#fff] p-8">
                 {faqData.map((faq, index) => (
                   <div
                     key={index}
