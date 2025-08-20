@@ -68,6 +68,9 @@ const Careers = lazy(() => import("./pages/about/Careers"));
 const Events = lazy(() => import("./pages/events/Events"));
 const OnSiteExperience = lazy(() => import("./pages/events/features/OnSiteExperience"));
 
+// Test Pages - Lazy loaded
+const HomepageTest = lazy(() => import("./pages/test/HomepageTest"));
+
 // Optimized loading component
 const PageLoader = () => (
   <div className="min-h-screen bg-gradient-hero flex items-center justify-center">
@@ -176,6 +179,9 @@ const App = () => {
               <Route path="/cms/events/:eventId" element={<EventManagement />} />
               <Route path="/cms/content/new" element={<ContentEditor />} />
               <Route path="/cms/content/edit/:id" element={<ContentEditor />} />
+              
+              {/* Test Routes - Lazy loaded */}
+              <Route path="/test/homepage" element={<HomepageTest />} />
               
               {/* 404 - Load immediately */}
               <Route path="*" element={<NotFound />} />
