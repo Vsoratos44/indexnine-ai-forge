@@ -43,13 +43,13 @@ const AiStudio = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] overflow-hidden bg-black">
+      <section className="relative min-h-[75vh] overflow-hidden bg-black">
         {/* Three.js Living Void Background */}
         <LivingVoidBackground />
 
         {/* Content - Precisely positioned */}
         <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
-          <div className="max-w-3xl mx-auto text-center lg:text-left ml-0">
+          <div className="max-w-3xl mx-auto text-center">
             <div className="mb-6">
               <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
                 AI & ML Engineering Studio
@@ -67,7 +67,7 @@ const AiStudio = () => {
               development, we help you navigate complexity, unlock efficiency,
               and create new competitive advantages.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
               <Button
                 variant="default"
                 size="xl"
@@ -101,7 +101,7 @@ const AiStudio = () => {
       <section className="py-24 lg:py-32 bg-[#fff]">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl lg:text-3xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
               The AI Dilemma:{" "}
               <span className="text-brand-primary leading-[1.25]">
                 Bridging Potential and Profitability
@@ -109,7 +109,7 @@ const AiStudio = () => {
             </h2>
             <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto">
               AI promises to revolutionize industries, yet Gartner reports over
-              85% of AI projects fail to deliver their intended ROI. This isn't
+              65% of AI projects fail to deliver their intended ROI. This isn't
               a technology problem; it's a strategy problem. The gap between
               potential and reality stems from a lack of data readiness, unclear
               business cases, and poor execution.{" "}
