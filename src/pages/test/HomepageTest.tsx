@@ -1,8 +1,8 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
-import CTABanner from "@/components/CTABanner";
+import Header from "@/components/test/Header";
+import Hero from "@/components/test/Hero";
+import Footer from "@/components/test/Footer";
+import CTABanner from "@/components/test/CTABanner";
 import { Button } from "@/components/ui/button";
 import { useContent } from "@/hooks/useContent";
 import {
@@ -12,16 +12,16 @@ import {
   VideoObjectSchema,
 } from "@/components/SEOStructuredData";
 
-// Lazy load heavy components that are below the fold
-const ValueProposition = lazy(() => import("@/components/ValueProposition"));
-const SocialProof = lazy(() => import("@/components/SocialProof"));
-const ClientExperience = lazy(() => import("@/components/ClientExperience"));
-const ProductLifecycle = lazy(() => import("@/components/ProductLifecycle"));
-const PracticesStudios = lazy(() => import("@/components/PracticesStudios"));
-const Differentiators = lazy(() => import("@/components/Differentiators"));
-const InsightsCarousel = lazy(() => import("@/components/InsightsCarousel"));
+// Lazy load heavy components that are below the fold - using test versions
+const ValueProposition = lazy(() => import("@/components/test/ValueProposition"));
+const SocialProof = lazy(() => import("@/components/test/SocialProof"));
+const ClientExperience = lazy(() => import("@/components/test/ClientExperience"));
+const ProductLifecycle = lazy(() => import("@/components/test/ProductLifecycle"));
+const PracticesStudios = lazy(() => import("@/components/test/PracticesStudios"));
+const Differentiators = lazy(() => import("@/components/test/Differentiators"));
+const InsightsCarousel = lazy(() => import("@/components/test/InsightsCarousel"));
 const DynamicContentRenderer = lazy(
-  () => import("@/components/cms/DynamicContentRenderer")
+  () => import("@/components/test/cms/DynamicContentRenderer")
 );
 
 // Minimal loading component
