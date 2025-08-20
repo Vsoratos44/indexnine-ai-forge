@@ -68,7 +68,7 @@ const InnovationLab = () => {
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
             You Have the Vision. We Have the{" "}
-            <span className="text-brand-primary leading-[1.55]">
+            <span className="text-brand-primary leading-[1.35]">
               Blueprint for Reality
             </span>
           </h2>
