@@ -135,7 +135,7 @@ const AiStudio = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative w-20 h-20 mb-6">
                   <img src={VelocityIcon} alt="" />
@@ -150,7 +150,7 @@ const AiStudio = () => {
                 </p>
               </div>
 
-              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative w-20 h-20 mb-6">
                   <img src={VelocityIcon} />
@@ -165,7 +165,7 @@ const AiStudio = () => {
                 </p>
               </div>
 
-              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative w-20 h-20 mb-6">
                   <img src={VelocityIcon} />
@@ -187,7 +187,7 @@ const AiStudio = () => {
       {/* AI Consulting Section */}
       <section
         id="ai-consulting"
-        className={`py-24 lg:py-32 relative bg-[#fff] overflow-hidden ${styles.sectionBgAI}`}
+        className={`pb-24 lg:pb-32 relative bg-[#fff] overflow-hidden ${styles.sectionBgAI}`}
       >
         <div className="container mx-auto px-6">
           <div className="max-w-8xl mx-auto">

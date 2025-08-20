@@ -213,7 +213,7 @@ const QualityEngineering = () => {
           </div>
         </div>
       </section>
-      <div className="bg-gradient-to-t from-[#fff] via-[#AAB0FF] to-[#fff] text-foreground">
+      <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
         <div className={` ${styles.sectionBgData}`}>
           {/* QAE Blueprint Section */}
           <section id="qae-solution" className="pb-24 lg:pb-32">
@@ -254,7 +254,7 @@ const QualityEngineering = () => {
                   ].map((item) => (
                     <div
                       key={item.step}
-                      className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] bg-[#ffffff59] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left"
+                      className="relative overflow-hidden bg-gradient-card-light border border-[#00000019] bg-[#ffffff59] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left"
                     >
                       <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

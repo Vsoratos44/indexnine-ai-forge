@@ -316,7 +316,7 @@ const ConsultingStrategy = () => {
         </div>
       </section>
 
-      <div className="bg-gradient-to-t from-[#fff] via-[#AAB0FF] to-[#fff] text-foreground">
+      <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
         <div className={` ${styles.sectionBgData}`}>
           {/* Engagement Models Section */}
           <section className="pb-24 lg:pb-32">
