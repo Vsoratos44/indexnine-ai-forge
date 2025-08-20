@@ -25,7 +25,8 @@ const ProjectBased = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-24 bg-gradient-hero relative overflow-hidden">
+      <section className="relative min-h-[85vh] overflow-hidden bg-black">
+        {/* Background Orbs */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>
           <div
@@ -34,25 +35,33 @@ const ProjectBased = () => {
           ></div>
         </div>
 
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground-white mb-8 leading-tight font-montserrat">
+        <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
+          <div className="max-w-4xl mx-auto text-center lg:text-left ml-0">
+            <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25] animate-fade-in font-montserrat">
               Your Vision, Delivered. Your Success,{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Guaranteed.
               </span>
             </h1>
-            <p className="text-xl text-foreground-white/80 mb-12 leading-relaxed font-montserrat max-w-4xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
               We don't just build software. We build businesses. Our
               project-based engagements are designed to solve your most complex
               challenges and deliver tangible outcomes, because we believe in
               tying our success directly to yours.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+              <Button
+                variant="hero"
+                size="lg"
+                className="min-w-[280px] rounded-full"
+              >
                 Scope a Project
               </Button>
-              <Button variant="hero-secondary" size="xl">
+              <Button
+                variant="hero-secondary"
+                size="lg"
+                className="min-w-[280px] rounded-full"
+              >
                 Schedule a Strategy Session
               </Button>
             </div>
@@ -130,7 +139,7 @@ const ProjectBased = () => {
                   for complex, end-to-end software development projects.
                 </p>
               </div>
-<CardGlass className="p-8">
+              <CardGlass className="p-8">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Target className="w-5 h-5 text-brand-primary" />
@@ -266,16 +275,16 @@ const ProjectBased = () => {
                     </h3>
                     <div className="space-y-3 text-foreground-muted font-montserrat">
                       <p>
-                        <strong className="text-foreground">Challenge:</strong> A
-                        top-tier sports media agency was struggling to automate
-                        real-time fan engagement, a critical but costly and
-                        unscalable manual process.
+                        <strong className="text-foreground">Challenge:</strong>{" "}
+                        A top-tier sports media agency was struggling to
+                        automate real-time fan engagement, a critical but costly
+                        and unscalable manual process.
                       </p>
                       <p>
-                        <strong className="text-foreground">Solution:</strong> We
-                        engineered a bespoke, low-latency AI engine that automated
-                        the entire workflow, from data ingestion to content
-                        generation.
+                        <strong className="text-foreground">Solution:</strong>{" "}
+                        We engineered a bespoke, low-latency AI engine that
+                        automated the entire workflow, from data ingestion to
+                        content generation.
                       </p>
                       <p>
                         <strong className="text-foreground">Outcome:</strong>{" "}
@@ -302,22 +311,23 @@ const ProjectBased = () => {
                     </h3>
                     <div className="space-y-3 text-foreground-muted font-montserrat">
                       <p>
-                        <strong className="text-foreground">Challenge:</strong> An
-                        urgent client need required the rapid deployment of a
-                        skilled, five-person team to accelerate a critical project
-                        timeline.
+                        <strong className="text-foreground">Challenge:</strong>{" "}
+                        An urgent client need required the rapid deployment of a
+                        skilled, five-person team to accelerate a critical
+                        project timeline.
                       </p>
                       <p>
-                        <strong className="text-foreground">Solution:</strong> We
-                        sourced and deployed a full team immediately, bypassing
-                        the lengthy hiring process that would have stalled the
-                        project.
+                        <strong className="text-foreground">Solution:</strong>{" "}
+                        We sourced and deployed a full team immediately,
+                        bypassing the lengthy hiring process that would have
+                        stalled the project.
                       </p>
                       <p>
-                        <strong className="text-foreground">Outcome:</strong> The
-                        project was accelerated, and the client was able to meet
-                        their market deadlines, demonstrating our ability to
-                        deliver not just technology, but also talent, at speed.
+                        <strong className="text-foreground">Outcome:</strong>{" "}
+                        The project was accelerated, and the client was able to
+                        meet their market deadlines, demonstrating our ability
+                        to deliver not just technology, but also talent, at
+                        speed.
                       </p>
                     </div>
                   </div>

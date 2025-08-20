@@ -68,7 +68,7 @@ const InnovationLab = () => {
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
             You Have the Vision. We Have the{" "}
-            <span className="text-brand-primary leading-[1.25]">
+            <span className="text-brand-primary leading-[1.55]">
               Blueprint for Reality
             </span>
           </h2>
@@ -97,7 +97,7 @@ const InnovationLab = () => {
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
               An Integrated Ecosystem for{" "}
-              <span className="text-brand-primary leading-[1.25]">
+              <span className="text-brand-primary leading-[1.35]">
                 Rapid Innovation
               </span>
             </h2>
@@ -311,7 +311,6 @@ const InnovationLab = () => {
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
             <span className="leading-[1.4]">
-              {" "}
               Let's Build What's Next. Together.
             </span>
           </h2>
