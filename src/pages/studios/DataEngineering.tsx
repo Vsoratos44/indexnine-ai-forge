@@ -88,7 +88,7 @@ const DataEngineering = () => {
       {/* Data Problem Section */}
       <section className="pt-24 lg:pt-32 bg-[#fff]">
         <div className="container mx-auto px-6">
-          <div className="max-w-8xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl lg:text-3xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
                 Is Your Data Working For You, or Against You?
@@ -146,7 +146,7 @@ const DataEngineering = () => {
                     <div className="relative w-20 h-20 ml-0 mb-6">
                       <img src={VelocityIcon} alt="" />
                     </div>
-                    <h3 className="relative text-xl font-bold mb-4 text-foreground-dark">
+                    <h3 className="relative text-xl font-semibold mb-4 text-foreground-dark">
                       Build a Unified Data Foundation
                     </h3>
                     <p className="relative text-foreground-dark/80">
@@ -162,7 +162,7 @@ const DataEngineering = () => {
                     <div className="relative w-20 h-20 ml-0 mb-6">
                       <img src={VelocityIcon} alt="" />
                     </div>
-                    <h3 className="relative text-xl font-bold mb-4 text-foreground-dark">
+                    <h3 className="relative text-xl font-semibold mb-4 text-foreground-dark">
                       Enhance Data Quality & Context
                     </h3>
                     <p className="relative text-foreground-dark/80">
@@ -178,7 +178,7 @@ const DataEngineering = () => {
                     <div className="relative w-20 h-20 ml-0 mb-6">
                       <img src={VelocityIcon} alt="" />
                     </div>
-                    <h3 className="relative text-xl font-bold mb-4 text-foreground-dark">
+                    <h3 className="relative text-xl font-semibold mb-4 text-foreground-dark">
                       Establish Robust Governance
                     </h3>
                     <p className="relative text-foreground-dark/80">
@@ -194,8 +194,8 @@ const DataEngineering = () => {
 
           {/* Data Foundation Roadmap Section */}
           <section id="data-roadmap" className="pt-24">
-            <div className="container mx-auto grid md:grid-cols-2 gap-4">
-              <div className="max-w-4xl mx-auto text-left">
+            <div className="container mx-auto max-w-6xl  grid md:grid-cols-2 gap-4">
+              <div className="max-w-3xl text-left">
                 <h2 className="pt-4 text-2xl md:text-3xl font-semibold mb-6 text-foreground-dark">
                   Your Blueprint for Data-Driven Success
                 </h2>
@@ -216,13 +216,13 @@ const DataEngineering = () => {
                   Investment: Starting at $30,000
                 </div>
               </div>
-              <div className="max-w-4xl mx-auto text-center">
+              <div className="max-w-3xl text-center">
                 <div className={`rounded-2xl p-1 text-left ${styles.bordRb}`}>
-                  <div className="bg-[#fff] rounded-2xl py-6 px-8">
+                  <div className="bg-gradient-to-b from-[transparent] to-[#ffffff] rounded-2xl p-8 md:p-12">
                     <h4 className="text-xl font-semibold text-foreground-dark mb-6">
                       Key Deliverables Include:
                     </h4>
-                    <div className="grid md:grid-cols-2 gap-4">
+                    <div className="grid gap-4">
                       {[
                         "Current State Analysis & Architecture Audit",
                         "Future State Cloud-Native Blueprint",

@@ -288,7 +288,10 @@ const CustomSoftware = () => {
                   "Backed by our QE Studio, we ensure your software is flawless with test automation, performance, and security audits.",
               },
             ].map((service, index) => (
-              <CardGlass className="p-8" key={index}>
+              <div
+                className="relative overflow-hidden bg-gradient-card-light border border-[#00039] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full bg-[#ffffff75]"
+                key={index}
+              >
                 <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                   <service.icon className="w-8 h-8 text-brand-primary" />
                 </div>
@@ -298,7 +301,7 @@ const CustomSoftware = () => {
                 <p className="text-foreground-dark/70 leading-relaxed font-montserrat">
                   {service.description}
                 </p>
-              </CardGlass>
+              </div>
             ))}
           </div>
         </div>

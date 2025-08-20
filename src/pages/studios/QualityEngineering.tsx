@@ -347,7 +347,7 @@ const QualityEngineering = () => {
                       >
                         <Link
                           to="/insights/case-studies/tripjack"
-                          className="inline-flex items-center gap-2 text-brand-purple hover:text-brand-purple transition-all duration-500 transform hover:scale-105"
+                          className="inline-flex items-center gap-2 text-brand-purple hover:text-foreground-dark transition-all duration-500 transform hover:scale-105"
                         >
                           Read Full Tripjack Case Study
                           <ArrowRight className="h-4 w-4" />
@@ -813,9 +813,9 @@ const QualityEngineering = () => {
             </div>
 
             {/* Robot Framework Section */}
-            <div className="grid lg:grid-cols-2 gap-12 mt-16">
-              <div>
-                <h3 className="text-2xl font-semibold mb-6 text-foreground-dark">
+            <div className="grid lg:grid-cols-2 mt-16 rounded-3xl bg-brand-primary/10 ">
+              <div className="p-10 border-r-0 lg:border-r-4 border-[#fff] border-dashed w-full">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground-dark">
                   Robot Framework: The Startup's Secret Weapon
                 </h3>
                 <p className="text-foreground-dark-muted mb-6">
@@ -877,8 +877,8 @@ const QualityEngineering = () => {
               </div>
 
               {/* Playwright Section */}
-              <div>
-                <h3 className="text-2xl font-semibold mb-6 text-foreground-dark">
+              <div className="p-10 w-full">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground-dark">
                   Playwright: The Enterprise Powerhouse
                 </h3>
                 <p className="text-foreground-dark-muted mb-6">
