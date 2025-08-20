@@ -26,6 +26,7 @@ import {
   ChevronDown,
   ChevronUp,
 } from "lucide-react";
+import styles from "../../assets/css/stylesheet.module.css";
 
 const CustomSoftware = () => {
   const [expandedFaq, setExpandedFaq] = React.useState<number | null>(null);
@@ -141,7 +142,7 @@ const CustomSoftware = () => {
       <section className="py-24 lg:py-32 bg-[#fff]">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+            <h2 className="text-2xl lg:text-3xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
               <span className="leading-[1.25]">Clarity Before Code:</span>
               <br />
               <span className="text-brand-primary leading-[1.25]">
@@ -161,8 +162,10 @@ const CustomSoftware = () => {
       </section>
 
       {/* Lifecycle Process Section */}
-      <section className="pb-24 lg:pb-32 bg-[#fff]">
-        <div className="container mx-auto px-6 lg:px-8">
+      <section
+        className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden ${styles.sectionBgRadial2}`}
+      >
+        <div className="container mx-auto px-6 lg:px-8 max-w-6xl">
           <div className="text-center mb-20">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
               <span className="leading-[1.25]">From Concept to Scale:</span>
@@ -178,7 +181,7 @@ const CustomSoftware = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
             {[
               {
                 icon: Lightbulb,
@@ -210,7 +213,7 @@ const CustomSoftware = () => {
               },
             ].map((step, index) => (
               <div key={index} className="relative group">
-                <div className="relative overflow-hidden bg-gradient-card-light border border-[#00039] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                <div className="relative overflow-hidden bg-gradient-card-light border border-[#00039] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full bg-[#ffffff75]">
                   <div className="flex items-center mb-6">
                     <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                       <step.icon className="w-8 h-8 text-brand-primary" />
