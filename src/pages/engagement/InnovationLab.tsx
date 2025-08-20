@@ -190,114 +190,137 @@ const InnovationLab = () => {
           </div>
         </div>
       </section>
-
-      <Section variant="light" containerSize="6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-6 font-montserrat">
-            Our Secret Weapon:{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Snap.MVP.Deploy.Cloud
-            </span>
-          </h2>
-        </div>
-
-        <div className="max-w-4xl mx-auto text-center">
-          <CardGlass variant="light" className="mb-8">
-            <Zap className="w-16 h-16 text-brand-primary mx-auto mb-6" />
-            <p className="text-lg text-foreground-dark-muted leading-relaxed mb-8">
-              How do we launch so fast? We've automated the foundation.
-              Snap.MVP.Deploy.Cloud is our proprietary accelerator that deploys
-              a secure, scalable, and production-ready cloud environment on AWS,
-              GCP, or Azure in about 10 minutes. While others spend weeks on
-              manual setup, we spend the first week of our engagement building
-              your actual product. This single accelerator dramatically reduces
-              time-to-market and eliminates foundational risk.
-            </p>
-            <Button
-              variant="outline"
-              className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white rounded-full"
-            >
-              Learn More About Snap.MVP
-            </Button>
-          </CardGlass>
-        </div>
-      </Section>
-
-      <Section variant="alternate" containerSize="6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground-dark mb-6 font-montserrat">
-            Proof, Not{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Promises
-            </span>
-          </h2>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          <CardGlass className="group">
-            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-6">
-              <Rocket className="w-6 h-6 text-white" />
+      <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
+        <div className={` ${styles.sectionBgData}`}>
+          <Section containerSize="6xl" className="bg-transparent  lg:pt-0 pt-0">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                Our Secret Weapon:{" "}
+                <span className="text-brand-primary leading-[1.35]">
+                  Snap.MVP.Deploy.Cloud
+                </span>
+              </h2>
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-4">
-              FinTech Startup Launches Secure MVP in 8 Weeks
-            </h3>
-            <p className="text-foreground-muted mb-6">
-              See how we partnered with a visionary founder to go from a napkin
-              sketch to a fully functional, secure FinTech platform, ready for
-              its seed round.
-            </p>
-            <Button variant="outline" size="sm">
-              Read the Case Study
-            </Button>
-          </CardGlass>
 
-          <CardGlass className="group">
-            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-6">
-              <Zap className="w-6 h-6 text-white" />
+            <div className="max-w-4xl mx-auto text-center">
+              <CardGlass variant="light" className="mb-8">
+                <Zap className="w-16 h-16 text-brand-primary mx-auto mb-6" />
+                <p className="text-lg text-foreground-dark-muted leading-relaxed mb-8">
+                  How do we launch so fast? We've automated the foundation.
+                  Snap.MVP.Deploy.Cloud is our proprietary accelerator that
+                  deploys a secure, scalable, and production-ready cloud
+                  environment on AWS, GCP, or Azure in about 10 minutes. While
+                  others spend weeks on manual setup, we spend the first week of
+                  our engagement building your actual product. This single
+                  accelerator dramatically reduces time-to-market and eliminates
+                  foundational risk.
+                </p>
+                <Button
+                  variant="outline"
+                  className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white rounded-full"
+                >
+                  Learn More About Snap.MVP
+                </Button>
+              </CardGlass>
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-4">
-              Weeks to Minutes: How We Deploy Production-Ready Cloud
-              Infrastructure
-            </h3>
-            <p className="text-foreground-muted mb-6">
-              A deep dive into the technology and philosophy behind our
-              game-changing deployment accelerator.
-            </p>
-            <Button variant="outline" size="sm">
-              Read the Blog Post
-            </Button>
-          </CardGlass>
+          </Section>
 
-          <CardGlass className="group">
-            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-6">
-              <Brain className="w-6 h-6 text-white" />
+          <Section
+            variant="alternate"
+            containerSize="6xl"
+            className="bg-transparent lg:pt-0 pt-0"
+          >
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                Proof, Not{" "}
+                <span className="text-brand-primary leading-[1.25]">
+                  Promises
+                </span>
+              </h2>
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-4">
-              AI-Assisted React Development: From Design to Dashboard
-            </h3>
-            <p className="text-foreground-muted mb-6">
-              Explore how our UI architects leverage AI tools to build complex
-              interfaces with incredible speed and quality.
-            </p>
-            <Button variant="outline" size="sm">
-              Read the Blog Post
-            </Button>
-          </CardGlass>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <CardGlass className="group">
+                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                  <Rocket className="w-8 h-8 text-brand-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground-dark mb-4">
+                  FinTech Startup Launches Secure MVP in 8 Weeks
+                </h3>
+                <p className="text-foreground-dark-muted mb-6">
+                  See how we partnered with a visionary founder to go from a
+                  napkin sketch to a fully functional, secure FinTech platform,
+                  ready for its seed round.
+                </p>
+                <Button
+                  variant="hero-secondary"
+                  size="sm"
+                  className="rounded-full text-foreground-dark hover:text-brand-primary hover:border-brand-primary"
+                >
+                  Read the Case Study
+                </Button>
+              </CardGlass>
+
+              <CardGlass className="group">
+                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                  <Zap className="w-8 h-8 text-brand-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground-dark mb-4">
+                  Weeks to Minutes: How We Deploy Production-Ready Cloud
+                  Infrastructure
+                </h3>
+                <p className="text-foreground-dark-muted mb-6">
+                  A deep dive into the technology and philosophy behind our
+                  game-changing deployment accelerator.
+                </p>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="rounded-full text-foreground-dark hover:text-brand-primary hover:border-brand-primary"
+                >
+                  Read the Blog Post
+                </Button>
+              </CardGlass>
+
+              <CardGlass className="group">
+                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                  <Brain className="w-8 h-8 text-brand-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground-dark mb-4">
+                  AI-Assisted React Development: From Design to Dashboard
+                </h3>
+                <p className="text-foreground-dark-muted mb-6">
+                  Explore how our UI architects leverage AI tools to build
+                  complex interfaces with incredible speed and quality.
+                </p>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="rounded-full text-foreground-dark hover:text-brand-primary hover:border-brand-primary"
+                >
+                  Read the Blog Post
+                </Button>
+              </CardGlass>
+            </div>
+          </Section>
         </div>
-      </Section>
+      </div>
 
       {/* Final CTA Section */}
-      <section className="py-24 bg-background-dark">
+      <section className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 font-montserrat">
-            Let's Build What's Next. Together.
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+            <span className="leading-[1.4]">
+              {" "}
+              Let's Build What's Next. Together.
+            </span>
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Your vision deserves more than just a team of coders. It deserves a
             dedicated engineering partner obsessed with turning your idea into a
             market-defining success.
           </p>
-          <Button variant="hero" size="lg" className="">
+          <Button variant="hero" size="lg" className="rounded-full">
             Book Your Free Discovery Session
           </Button>
         </div>
