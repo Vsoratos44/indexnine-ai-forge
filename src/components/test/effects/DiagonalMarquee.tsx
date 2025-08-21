@@ -18,43 +18,44 @@ const DiagonalMarquee = () => {
     offset: ['start end', 'end start'],
   });
 
-  // Transform scroll progress to horizontal movement
-  const x = useTransform(scrollYProgress, [0, 1], ['-25%', '25%']);
+  // Transform scroll progress to more dramatic horizontal movement
+  const x = useTransform(scrollYProgress, [0, 1], ['-60%', '60%']);
 
   return (
-    <section ref={targetRef} className="relative min-h-[60vh] bg-background-light">
+    <section ref={targetRef} className="relative min-h-[70vh] bg-background-light">
       {/* Content area with white background on top left */}
       <div className="relative z-20 container mx-auto px-6 lg:px-8 py-16">
         <div className="max-w-2xl">
           <h2 className="heading-h2 text-foreground-dark mb-6 leading-tight">
-            The Summit is Within <span className="test-neon-purple">Reach</span>.
+            The Summit is Within <span className="bg-gradient-to-r from-brand-purple via-brand-primary to-brand-cyan bg-clip-text text-transparent font-bold">Reach</span>.
           </h2>
           <p className="text-lg sm:text-xl text-foreground-dark-muted leading-relaxed font-light">
-            A path is defined by its destination. Our success is measured by the <span className="test-neon-cyan">tangible, market-defining outcomes</span> we deliver for our clients.
+            A path is defined by its destination. Our success is measured by the <span className="bg-gradient-to-r from-brand-cyan via-brand-primary to-brand-purple bg-clip-text text-transparent font-semibold">tangible, market-defining outcomes</span> we deliver for our clients.
           </p>
         </div>
       </div>
 
-      {/* Diagonal dark section with marquee - 35 degree angle from top right to bottom left */}
+      {/* Diagonal dark section with marquee - dramatic angle from top right to bottom left (right side ~3 inches higher) */}
       <div 
-        className="absolute inset-0 bg-background-dark"
+        className="absolute inset-0 bg-gradient-to-br from-background-dark via-background-dark/95 to-background-dark/90"
         style={{ 
-          clipPath: 'polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%)'
+          clipPath: 'polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%)',
+          background: 'linear-gradient(135deg, hsl(var(--background-dark)), hsl(var(--background-dark)/0.95), hsl(var(--brand-purple)/0.1))'
         }}
       >
         <div className="sticky top-0 left-0 h-full w-full overflow-hidden">
           {/* Scrolling marquee */}
           <motion.div 
             style={{ x }} 
-            className="absolute inset-0 flex items-center justify-center gap-16 whitespace-nowrap"
+            className="absolute inset-0 flex items-center justify-center gap-20 whitespace-nowrap"
           >
             {/* Render stats twice for seamless loop */}
             {[...stats, ...stats].map((stat, index) => (
-              <div key={index} className="text-center">
-                <p className="text-4xl md:text-6xl xl:text-7xl font-bold text-brand-primary font-satoshi">
+              <div key={index} className="text-center transform hover:scale-105 transition-transform duration-300">
+                <p className="text-5xl md:text-7xl xl:text-8xl font-bold font-satoshi bg-gradient-to-r from-brand-purple via-brand-primary to-brand-cyan bg-clip-text text-transparent animate-pulse">
                   {stat.value}
                 </p>
-                <p className="text-sm md:text-base text-foreground-light-muted uppercase tracking-widest font-light mt-2">
+                <p className="text-sm md:text-lg text-foreground-light uppercase tracking-[0.2em] font-light mt-3 opacity-80">
                   {stat.label}
                 </p>
               </div>
@@ -62,10 +63,11 @@ const DiagonalMarquee = () => {
           </motion.div>
         </div>
 
-        {/* Atmospheric effects for dark area */}
-        <div className="absolute inset-0 opacity-40">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-brand-primary/20 rounded-full blur-3xl animate-pulse-slow"></div>
-          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-brand-cyan/15 rounded-full blur-3xl animate-luminous-drift"></div>
+        {/* Enhanced atmospheric effects for dark area */}
+        <div className="absolute inset-0 opacity-60">
+          <div className="absolute top-1/3 right-1/3 w-[500px] h-[500px] bg-gradient-to-r from-brand-purple/30 to-brand-primary/20 rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute bottom-1/3 left-1/3 w-[400px] h-[400px] bg-gradient-to-r from-brand-cyan/25 to-brand-purple/15 rounded-full blur-3xl animate-luminous-drift"></div>
+          <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] bg-gradient-to-r from-brand-primary/20 to-brand-cyan/20 rounded-full blur-2xl animate-pulse opacity-50"></div>
         </div>
       </div>
     </section>
