@@ -28,10 +28,10 @@ const DiagonalMarquee = () => {
       {/* Content area with white background on top left */}
       <div className="relative z-20 container mx-auto px-6 lg:px-8 py-16">
         <div className="max-w-2xl">
-          <h2 className="heading-h2 text-foreground-dark mb-6 leading-tight">
+          <h2 className="heading-h2 text-foreground-light mb-6 leading-tight">
             The Summit is Within <span className="bg-gradient-to-r from-brand-purple via-brand-primary to-brand-cyan bg-clip-text text-transparent font-bold">Reach</span>.
           </h2>
-          <p className="text-lg sm:text-xl text-foreground-dark-muted leading-relaxed font-light">
+          <p className="text-lg sm:text-xl text-foreground-light leading-relaxed font-light">
             A path is defined by its destination. Our success is measured by the <span className="bg-gradient-to-r from-brand-cyan via-brand-primary to-brand-purple bg-clip-text text-transparent font-semibold">tangible, market-defining outcomes</span> we deliver for our clients.
           </p>
         </div>
