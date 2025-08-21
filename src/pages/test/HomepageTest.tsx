@@ -61,8 +61,8 @@ const HomepageTest = () => {
       {/* These schemas help AI systems understand our company, services, and multimedia content */}
       <OrganizationSchema />
       <WebPageSchema
-        title="B2B Product Engineering and AI Consulting Services | IndexNine - Test"
-        description="Indexnine offers best-in-class product engineering and custom software development for startups and enterprises. Find out what we can do for you today."
+        title="Product Engineering & AI that Charts Your Path to Market Leadership | IndexNine - Test"
+        description="You have the ambition. We provide the path. IndexNine transforms complexity into performance with elite product engineering, custom software, and AI solutions that define market leaders."
         url="https://yoursite.lovable.app/test/homepage"
       />
       <LocalBusinessSchema />

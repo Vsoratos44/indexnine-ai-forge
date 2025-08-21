@@ -11,21 +11,21 @@ const PracticesStudios = () => {
   const studioData = {
     innovation: {
       title: "The Innovation Lab",
-      subtitle: "For Startups and High-Growth Ventures",
+      subtitle: "For ambitious ventures charting new territory.",
       description:
-        "Designed for startups, this is where speed, agility, and product-market fit are paramount. Innovation Lab clients leverage our Sprint Zero methodology to stress-test ideas, optimize frameworks, and build scalable products. <br><br> We provide the design services and agile development teams needed to quickly turn your vision into a funded, market-ready reality. ",
+        "Designed for startups where speed and product-market fit are paramount. We provide the agile development and design services to quickly turn your vision into a funded, market-ready reality.",
       buttonText: "Explore Innovation Lab",
       features: [
         "Rapid MVP development",
-        "AI/ML integration",
+        "AI/ML integration",  
         "Emerging tech exploration",
       ],
     },
     enterprise: {
-      title: "The Enterprise Studio",
-      subtitle: "For Enterprise SMBs and F1000",
+      title: "The Enterprise Studio", 
+      subtitle: "For market leaders navigating at scale.",
       description:
-        "Built for businesses that require scale, security, and process excellence, The Enterprise Studio provides the maturity and rigor needed for mission-critical product development. With a focus on complex digital transformation consulting and enterprise software development, enterprise businesses enjoy first-in-class quality at an unparalleled rate.",
+        "Built for businesses requiring security, scale, and process excellence. We provide the mature, rigorous engineering needed for mission-critical transformations and enterprise platform development.",
       buttonText: "Explore Enterprise Studio",
       features: [
         "Enterprise scalability",
@@ -42,15 +42,10 @@ const PracticesStudios = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 font-montserrat leading-[1.4] max-w-[90%] mx-auto">
-            Our Practices:{" "}
-            <span className="text-brand-primary leading-[1.4]">
-              The Innovation Lab & Enterprise Studio
-            </span>
+            Specialized Guides for Your Unique Terrain.
           </h2>
           <p className="text-lg sm:text-xl text-foreground-dark-muted max-w-4xl mx-auto">
-            Our shift to meet the maturation needs of our clients required a new
-            depth of specialization. To meet this, we've organized our bases of
-            expertise in two dedicated practices.
+            The path to the pinnacle looks different for every company. To provide the specialized expertise your journey demands, we've organized our teams into two dedicated practices.
           </p>
         </div>
 

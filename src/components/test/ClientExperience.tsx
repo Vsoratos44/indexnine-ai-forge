@@ -7,34 +7,34 @@ import MindsetIcon from "../../assets/images/founder-mindset.svg";
 const ClientExperience = () => {
   const experiences = [
     {
-      icon: <img src={VelocityIcon} alt="Acceleration" className="w-20 h-20" />,
+      icon: <img src={VelocityIcon} alt="Rocket Ship" className="w-20 h-20" />,
       title: "Acceleration",
       description:
-        "We know that time is the most valuable resource to any operation, that's why we focus on delivering excellence fast. Our code libraries and AI-first development dramatically accelerate delivery without sacrificing quality.",
+        "We know time is the most valuable resource on any journey. We focus on delivering excellence, fast. Our code libraries and AI-first development methodologies create immediate and sustained momentum, accelerating your path to market without sacrificing quality.",
     },
     {
       icon: (
         <img
           src={RadialIcon}
-          alt="Radical Transparency"
+          alt="Magnifying Glass"
           className="w-20 h-20"
         />
       ),
-      title: "Radical Transparency",
+      title: "Clarity",
       description:
-        "We eliminate the 'black box' fear that plagues offshore engagements. Our process begins with Sprint Zero, our comprehensive discovery and design process that provides you with a technical roadmap, precise budget, and delivery timeline before any long-term commitment is made.",
+        "We eliminate the \"black box\" from development by providing the map before the journey begins. Our Sprint Zero process delivers a comprehensive technical roadmap, precise budget, and delivery timeline, giving you total clarity before any long-term commitment.",
     },
     {
       icon: (
         <img
           src={MindsetIcon}
-          alt="A Founder's Mindset"
+          alt="Handshake"
           className="w-20 h-20"
         />
       ),
-      title: "A Founder's Mindset",
+      title: "The Founder's Mindset",
       description:
-        "We believe in having skin in the game. For select projects, we offer outcome-based engagement models that tie our success directly to yours. We've tackled complex regression testing challenges on a 'success fee' basis. We can create a customized business model of tiered engagement costs based on delivered results",
+        "We believe the best guides have skin in the game. For select projects, we offer outcome-based models that tie our success directly to yours. Your business outcomes are our primary objective, ensuring we reach the summit together.",
     },
   ];
 
@@ -55,13 +55,10 @@ const ClientExperience = () => {
       >
         <div className="text-center mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-[1.4]">
-            A World-Class Client Experience: Working with
-            <span className="text-brand-primary leading-[1.4]"> Indexnine</span>
+            Your Journey, Guided by Our Principles.
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
-            How we deliver is as important as what we deliver. Our engagement
-            models are built on three pillars to eliminate the disappointingly
-            common frustrations of outsourcing across the industry.
+            How we navigate to the destination is as critical as where we're going. Our entire engagement models are built on three pillars designed to eliminate uncertainty and clear the fog that plagues typical development projects.
           </p>
         </div>
 

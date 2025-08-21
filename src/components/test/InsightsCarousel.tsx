@@ -117,16 +117,10 @@ const InsightsCarousel = () => {
       <div className="container mx-auto px-0 lg:px-0 relative z-10">
         <div className="container text-center mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 leading-tight tracking-tight font-montserrat">
-            <span className="text-brand-primary">
-              Insights That Shape Products
-            </span>
+            Dispatches from the Forefront.
           </h2>
           <p className="text-xl text-foreground-dark-muted max-w-3xl mx-auto font-light font-montserrat">
-            Our work at the forefront of product engineering and AI consulting
-            offers a unique perspective. We're committed to sharing what we
-            learn with leaders navigating the complex landscape of digital
-            innovation. Explore our thought leadership to gain actionable
-            insights for your product journey.
+            The best guides have navigated the terrain before. We share our learnings from the forefront of product engineering and AI to help you better understand the landscape ahead. Explore our thought leadership for actionable insights to inform your journey.
           </p>
         </div>
 

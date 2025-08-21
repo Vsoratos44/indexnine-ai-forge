@@ -17,18 +17,16 @@ const Hero = () => {
       {/* Content - Precisely positioned */}
       <div className="relative z-10 container mx-auto px-6 pt-52 pb-24">
         <div className="max-w-3xl mx-auto text-center lg:text-left lg:mx-0">
-          <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25]  animate-fade-in font-montserrat">
-            Product Innovation & <br />
-            Software Engineering
-            <br />
-            <TypewriterText />
+          <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25] animate-fade-in font-montserrat">
+            Where Ambition Finds Its Path
           </h1>
 
-          <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat">
-            The industry leader in infrastructure modernization, launching
-            digital revenue streams, and AI integration. We don't just build
-            software; we engineer products, platforms, and AI-powered solutions
-            that define market leaders.
+          <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-4 leading-relaxed font-light animate-slide-up font-montserrat">
+            In a landscape of overwhelming complexity, we engineer the clarity you need to lead. We build the products, platforms, and AI-powered solutions that transform market potential into your market-defining advantage.
+          </p>
+
+          <p className="text-sm sm:text-base text-foreground/70 mb-8 italic animate-slide-up font-montserrat" style={{animationDelay: "0.2s"}}>
+            Where ambition finds its path.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
@@ -38,7 +36,7 @@ const Hero = () => {
                 size="xl"
                 className={`min-w-[280px] rounded-full ${styles["btn-primary"]} `}
               >
-                Schedule a Strategy Session
+                Chart Your Path
               </Button>
             </a>
             <Link to="/services/custom-software">
@@ -47,7 +45,7 @@ const Hero = () => {
                 size="xl"
                 className="min-w-[240px] rounded-full"
               >
-                Explore our Solutions
+                Explore Our Solutions
               </Button>
             </Link>
           </div>

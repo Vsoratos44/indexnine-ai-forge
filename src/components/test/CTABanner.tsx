@@ -11,15 +11,13 @@ const CTABanner = () => {
       >
         <div className="bg-[#fff] rounded-[1rem] p-12">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-4 font-semibold">
-            Ready to Transform Your{" "}
-            <span className="text-brand-primary">Business</span>?
+            Your Ambition Has a Starting Point.
           </h2>
           <p className="text-lg text-foreground-dark-muted mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can help you build innovative products and
-            scale your engineering capabilities.
+            The path from complexity to clarity begins with a single conversation. Let's discuss your vision, map your challenges, and chart the course to your market-defining destination.
           </p>
           <Button variant="default" size="lg" className="rounded-full">
-            Start Your Project Today
+            Schedule Your Strategy Session
           </Button>
         </div>
       </div>

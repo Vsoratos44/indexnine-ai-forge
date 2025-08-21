@@ -6,23 +6,23 @@ const Differentiators = () => {
   const differentiators = [
     {
       icon: Shield,
-      title: "PE-Backed Stability & Security",
+      title: "A Foundation of Stability",
       description:
-        "We're a private-equity backed software company, a crucial differentiator that establishes long-term vision with the stability to make strategic investments in our own excellence. We've heavily invested in robust support functions and a dedicated studios model.",
+        "As a private-equity-backed firm, we have the stability and long-term vision to invest in excellence. This foundation allows us to build dedicated studios and robust support functions that serve you for the entire journey.",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       icon: Code,
-      title: "Full Stack Product Engineers",
+      title: "Elite Navigators",
       description:
-        "Great people and curated talent rise to the top. That's why we're obsessed with cultivating \"3X Engineers\". An IndexNine engineer possesses a deep and diverse technical skillset, a true product mindset that empowers them to question, investigate, and innovate, along with the confidence to contribute ideas and communicate with clients as a peer and teammate.",
+        "We are obsessed with cultivating \"3X Engineers\"—talent that can see the whole map. An IndexNine engineer combines deep technical skill with a product mindset, empowering them to innovate, investigate, and communicate as a true strategic partner.",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       icon: Sparkles,
-      title: "AI-Forward Innovation",
+      title: "An AI-Powered Map",
       description:
-        "We are an AI-first company inside and out. This isn't just about offering AI consultation; it's about embedding AI innovation in the fabric of our operations. We use AI to accelerate and optimize our delivery.",
+        "We are an AI-first company, inside and out. We don't just offer AI as a service; we embed it in our own operations, using it as a tool to accelerate delivery, optimize our path, and build you a smarter solution.",
       gradient: "from-violet-500 to-purple-500",
     },
   ];
@@ -57,10 +57,10 @@ const Differentiators = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 leading-tight tracking-tight">
-            <span className="text-brand-primary">How We Win Together.</span>
+            The IndexNine Compass.
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-light-muted leading-relaxed font-light max-w-4xl mx-auto">
-            Our Secret Sauce
+            What makes us the right guide for your ambition? It's the principles and assets that orient everything we do.
           </p>
         </div>
 

@@ -15,26 +15,18 @@ const ValueProposition = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl relative z-10">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-12 max-w-3xl mx-auto leading-[1.4]">
-            <span className="text-brand-primary leading-[1.4]">
-              Product Engineering Services
-            </span>{" "}
-            for the AI Era.
+            We Saw a Need for a Better Guide.
           </h2>
 
           <div className="max-w-5xl mx-auto">
             <p className="text-lg text-foreground-dark-muted leading-relaxed font-light">
-              Indexnine was founded not just to achieve excellence, but to model
-              it. For years, the industry has been plagued by a perception
-              problem—a belief that offshore partners lack proactive, strategic
-              thinking. We exist to permanently challenge that stigma.
+              The industry was full of vendors but starved for true partners. For years, leaders have navigated the fog of outsourcing—enduring opaque processes, reactive partners, and a frustrating lack of strategic ownership.
               <br />
               <br />
-              When the stakes are high and you need best-in-class delivery,
-              we're there. We don't churn out solutions; we offer full cycle
-              product development that doesn't compromise on speed or quality.
-              Whether you're working on minimum viable product development or
-              navigating a digital transformation, we can create a solution
-              tailored to you.
+              Indexnine was founded to be the strategic partner the industry was missing.
+              <br />
+              <br />
+              We exist to guide high-stakes ventures with a proactive, strategic mindset. We provide full-cycle product development that moves beyond simple execution to deliver a clear, decisive path forward from MVP validation to enterprise-wide transformation.
             </p>
           </div>
         </div>

@@ -4,9 +4,9 @@ import aboutInfoSvg from "@/assets/images/about-info.svg";
 
 const SocialProof = () => {
   const stats = [
-    { value: 0, suffix: "", label: "", hideCount: true }, // blank card
-    { value: 104, suffix: "+", label: "Solutions Delivered" },
+    { value: 316, suffix: "M+", label: "in Supported Client Exits" }, 
     { value: 220, suffix: "+", label: "Engineers and Designers" },
+    { value: 104, suffix: "+", label: "Solutions Delivered" },
     { value: 95, suffix: "+", label: "Customers" },
     { value: 6, suffix: "", label: "Core Studios" },
     { value: 92, suffix: "%", label: "Client Retention" },
@@ -28,11 +28,10 @@ const SocialProof = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-8 lg:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.4]">
-            Client Outcomes
+            The Summit is Within Reach.
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
-            Our success isn't measured by the volume of code written; our
-            success is measured in the value we create for our clients.
+            A path is defined by its destination. Our success is measured by the tangible, market-defining outcomes we deliver for our clients.
           </p>
         </div>
 
@@ -98,13 +97,9 @@ const SocialProof = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="relative z-10">
-                    <h3 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground-dark mb-2 font-montserrat">
-                      {index === 0 ? (
-                        ""
-                      ) : (
-                        <CountUp end={stat.value} suffix={stat.suffix} />
-                      )}
-                    </h3>
+                     <h3 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground-dark mb-2 font-montserrat">
+                       <CountUp end={stat.value} suffix={stat.suffix} />
+                     </h3>
                     <p className="text-foreground-dark-muted font-light text-sm lg:text-lg font-montserrat">
                       {stat.label}
                     </p>
