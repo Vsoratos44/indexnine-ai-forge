@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, FileText, Target } from "lucide-react";
+import CtaButton from "./CtaButton";
 import styles from "../../assets/css/stylesheet.module.css";
 
 interface CarouselItem {
@@ -118,12 +119,15 @@ const InsightsCarousel = () => {
 
       <div className="container mx-auto px-0 lg:px-0 relative z-10">
         <div className="container text-center mb-20">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold test-neon-purple mb-8 leading-tight tracking-tight font-montserrat">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-purple mb-8 leading-tight tracking-tight font-montserrat">
             Dispatches from the <span className="test-neon-cyan">Forefront</span>.
           </h2>
-          <p className="text-xl text-foreground-dark-muted max-w-3xl mx-auto font-light font-montserrat">
+          <p className="text-xl text-foreground-light max-w-3xl mx-auto font-light font-montserrat mb-8">
             The best guides have navigated the terrain before. We share our learnings from the forefront of product engineering and AI to help you better understand the landscape ahead. Explore our thought leadership for actionable insights to inform your journey.
           </p>
+          <div className="flex justify-center">
+            <CtaButton>Sharpen Your Edge</CtaButton>
+          </div>
         </div>
 
       {/* Enhanced Glassmorphism Carousel Container */}

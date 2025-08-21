@@ -1,4 +1,5 @@
 import React from "react";
+import CtaButton from "./CtaButton";
 
 const ValueProposition = () => {
   return (
@@ -21,20 +22,23 @@ const ValueProposition = () => {
 
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl relative z-10">
         <div className="text-center">
-          <h2 className="heading-h2 text-foreground-dark mb-12 max-w-4xl mx-auto leading-[1.3] animate-fade-in">
+          <h2 className="heading-h2 text-brand-cyan mb-12 max-w-4xl mx-auto leading-[1.3] animate-fade-in">
             We Saw a Need for a <span className="test-neon-purple">Better Guide</span>.
           </h2>
 
-          <div className="max-w-5xl mx-auto animate-slide-up">
-            <p className="text-lg text-foreground-dark-muted leading-relaxed font-light">
-              The industry was full of vendors but starved for <span className="test-neon-cyan">true partners</span>. For years, leaders have navigated the fog of outsourcing—enduring opaque processes, reactive partners, and a frustrating lack of strategic ownership.
+          <div className="max-w-5xl mx-auto animate-slide-up mb-8">
+            <p className="text-lg text-foreground-dark leading-relaxed font-light">
+              The industry was full of vendors but starved for <span className="bg-gradient-to-r from-brand-purple via-brand-primary to-brand-cyan bg-clip-text text-transparent font-semibold">true partners</span>. For years, leaders have navigated the fog of outsourcing—enduring opaque processes, reactive partners, and a frustrating lack of strategic ownership.
               <br />
               <br />
-              <span className="test-neon-purple font-semibold">Indexnine was founded to be the strategic partner the industry was missing.</span>
+              <span className="bg-gradient-to-r from-brand-cyan via-brand-primary to-brand-purple bg-clip-text text-transparent font-semibold">Indexnine was founded to be the strategic partner the industry was missing.</span>
               <br />
               <br />
-              We exist to guide high-stakes ventures with a proactive, strategic mindset. We provide <span className="test-neon-cyan">full-cycle product development</span> that moves beyond simple execution to deliver a clear, decisive path forward from MVP validation to enterprise-wide transformation.
+              We exist to guide high-stakes ventures with a proactive, strategic mindset. We provide <span className="bg-gradient-to-r from-brand-purple via-brand-primary to-brand-cyan bg-clip-text text-transparent font-semibold">full-cycle product development</span> that moves beyond simple execution to deliver a clear, decisive path forward from MVP validation to enterprise-wide transformation.
             </p>
+          </div>
+          <div className="flex justify-center">
+            <CtaButton>Define Your Strategy</CtaButton>
           </div>
         </div>
       </div>

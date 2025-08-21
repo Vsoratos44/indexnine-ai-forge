@@ -770,3 +770,147 @@
 .test-bright-cyan {
   color: hsl(180 100% 70%) !important;
 }
+
+/* Electric Clarity Effects - Test Homepage Only */
+.test-electric-text {
+  color: transparent !important;
+  background: linear-gradient(90deg, hsl(127, 100%, 50%), hsl(180, 100%, 60%)) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  filter: drop-shadow(0 0 8px hsl(127, 100%, 50% / 0.3)) !important;
+}
+
+.test-electric-glow {
+  text-shadow: 0 0 10px hsl(127, 100%, 50% / 0.5), 0 0 20px hsl(127, 100%, 50% / 0.3), 0 0 30px hsl(127, 100%, 50% / 0.1) !important;
+}
+
+.test-data-text {
+  font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+  color: transparent !important;
+  background: linear-gradient(90deg, hsl(127, 100%, 50%), hsl(262, 83%, 58%)) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* ClickUp-inspired enhancements for test homepage */
+@keyframes aurora-drift {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(50px, -30px) rotate(120deg); }
+  66% { transform: translate(-30px, 50px) rotate(240deg); }
+}
+
+.animate-aurora-drift {
+  animation: aurora-drift 15s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { 
+    box-shadow: 0 0 20px hsl(262 83% 58% / 0.5), 0 0 40px hsl(180 100% 60% / 0.3);
+  }
+  50% { 
+    box-shadow: 0 0 30px hsl(262 83% 58% / 0.8), 0 0 60px hsl(180 100% 60% / 0.5);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* Enhanced glass morphism for test components */
+.glass-card-enhanced {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Electric Clarity Keyframes - Test Homepage Only */
+@keyframes electricShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes cosmicDrift {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+@keyframes cosmicPulse {
+  0%, 100% { 
+    opacity: 0.6; 
+    transform: scale(1); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.1); 
+  }
+}
+
+@keyframes dataMatrix {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes electricSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes luminousDrift {
+  0%, 100% { 
+    transform: translate(0, 0) rotate(0deg); 
+    opacity: 0.6;
+  }
+  33% { 
+    transform: translate(50px, -30px) rotate(120deg); 
+    opacity: 0.8;
+  }
+  66% { 
+    transform: translate(-30px, 50px) rotate(240deg); 
+    opacity: 0.4;
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% { 
+    opacity: 0.8; 
+    transform: scale(1); 
+    box-shadow: 0 0 20px hsl(127, 100%, 50% / 0.3), 0 0 40px hsl(180, 100%, 60% / 0.2);
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.05); 
+    box-shadow: 0 0 30px hsl(127, 100%, 50% / 0.6), 0 0 60px hsl(180, 100%, 60% / 0.4);
+  }
+}
+
+/* Electric Clarity Animation Classes - Test Homepage Only */
+.animate-electric-shimmer {
+  animation: electricShimmer 20s ease-in-out infinite;
+}
+
+.animate-cosmic-drift {
+  animation: cosmicDrift 30s linear infinite;
+}
+
+.animate-cosmic-pulse {
+  animation: cosmicPulse 25s ease-in-out infinite;
+}
+
+.animate-data-matrix {
+  animation: dataMatrix 40s linear infinite;
+}
+
+.animate-electric-spin {
+  animation: electricSpin 4s linear infinite;
+}
+
+.animate-luminous-drift {
+  animation: luminousDrift 8s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 2s ease-in-out infinite;
+}
