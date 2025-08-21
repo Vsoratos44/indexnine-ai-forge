@@ -97,7 +97,7 @@ const ProductLifecycle = () => {
                   </div>
 
                   <div className="flex-1 min-w-0">
-                    <h3 className="heading-h3 text-foreground-dark mb-2 leading-tight">
+                    <h3 className="heading-h3 text-highlight-on-light mb-2 leading-tight">
                       {phase.title}
                     </h3>
                     <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-luminous-on-light mb-4">

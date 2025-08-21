@@ -58,7 +58,7 @@ const ClientExperience = () => {
                 </div>
               </div>
 
-              <h3 className="heading-h3 text-center text-foreground-dark mb-6 group-hover:text-luminous-on-light transition-colors duration-500">
+              <h3 className="heading-h3 text-center text-highlight-on-light mb-6 group-hover:text-luminous-on-light transition-colors duration-500">
                 {experience.title}
               </h3>
               <p className="text-foreground-dark-muted leading-relaxed text-center font-light">
