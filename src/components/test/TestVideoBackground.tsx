@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const VideoBackground = () => {
+const TestVideoBackground = () => {
   const firstVideoRef = useRef<HTMLVideoElement>(null);
   const loopVideoRef = useRef<HTMLVideoElement>(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -72,7 +72,7 @@ const VideoBackground = () => {
 
   return (
     <div className="absolute inset-0 w-full h-full overflow-hidden">
-      {/* Initial Video (plays once) */}
+      {/* Initial Video (plays once) - Test Homepage Version */}
       <video
         ref={firstVideoRef}
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${showLoop ? 'opacity-0' : 'opacity-100'}`}
@@ -82,7 +82,7 @@ const VideoBackground = () => {
         preload="metadata"
         poster="/videos/poster-frame.jpg"
       >
-        <source src="/videos/Lets_try_this_202508011021.mp4" type="video/mp4" />
+        <source src="/lovable-uploads/Video_Revision_For_Text_Readability.mp4" type="video/mp4" />
       </video>
 
       {/* Looping Video (starts after first ends) */}
@@ -109,4 +109,4 @@ const VideoBackground = () => {
   );
 };
 
-export default VideoBackground;
+export default TestVideoBackground;

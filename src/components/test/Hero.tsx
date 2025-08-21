@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import CtaButton from "./CtaButton";
-import VideoBackground from "../VideoBackground";
+import TestVideoBackground from "./TestVideoBackground";
 import DynamicMeshBackground from "../effects/DynamicMeshBackground";
 import ParticleField from "../effects/ParticleField";
 import ScrollTrigger from "../effects/ScrollTriggerAnimations";
@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="absolute inset-0">
               <DynamicMeshBackground intensity={0.5} />
               <ParticleField particleCount={40} />
-              <VideoBackground />
+              <TestVideoBackground />
               {/* Electric gradient overlay */}
               <div className="absolute inset-0 bg-gradient-luminous animate-electric-shimmer opacity-20"></div>
             </div>
