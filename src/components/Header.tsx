@@ -4,11 +4,13 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import LogoWhite from "../assets/images/i9logo-logo-wht.svg";
 import LogoBlack from "../assets/images/i9logo-logo-blk.svg";
+import { ChevronRight } from "lucide-react";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [isLightSection, setIsLightSection] = useState(false);
+  const [scrolledHeaderToVh, setScrolledHeaderToVh] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -21,6 +23,9 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      const triggerPoint = window.innerHeight * 0.2;
+      setScrolledHeaderToVh(window.scrollY > triggerPoint);
+
       const headerHeight = 80;
 
       // Find the element currently under the header
@@ -79,7 +84,14 @@ const Header = () => {
     <>
       <header className="fixed top-0 left-0 right-0 z-50">
         <div className="container mx-auto px-4 md:px-0 lg:px-0 py-3">
-          <div className="bg-[#00000050] backdrop-blur-md border border-border/40 rounded-2xl px-6 py-4 shadow-md">
+          <div
+            className={`border px-6 py-4 rounded-2xl transition-colors duration-500
+    ${
+      scrolledHeaderToVh
+        ? "bg-[#00000050] backdrop-blur-md border-border/40 shadow-md"
+        : "bg-[#00000000] border-transparent"
+    }`}
+          >
             <div className="flex items-center justify-between h-12">
               {/* Logo */}
               <Link
@@ -116,6 +128,24 @@ const Header = () => {
                   {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                     <div className="p-4 space-y-2">
+                      {/* <a
+                        href="#"
+                        className="group inline-flex items-center space-x-1 text-sm font-medium text-gray-800"
+                      >
+                        <ChevronRight className="transform transition-transform duration-300 group-hover:ease-in-out group-hover:translate-x-1" />
+                        <span className="transform transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+                          OURA 101
+                        </span>
+                      </a>
+                      <a
+                        href="#"
+                        className="group inline-flex items-center space-x-2 text-lg font-medium text-gray-800"
+                      >
+                        <ChevronRight className="transform transition-transform duration-300 ease-in-out hover:translate-x-1" />
+                        <span className="transform transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+                          OURA 101
+                        </span>
+                      </a> */}
                       <Link
                         to="/services/custom-software"
                         className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
