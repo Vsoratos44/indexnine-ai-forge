@@ -40,34 +40,34 @@ const ElectricBentoCard: React.FC<ElectricBentoCardProps> = ({
         '--hover-scale': hoverScale
       } as React.CSSProperties & { [key: string]: string | number }}
     >
-      {/* Electric border animation */}
+      {/* Rotating radar fill */}
       <div 
         className={`absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none ${isHovered ? 'opacity-100' : ''}`}
         style={{
           background: `conic-gradient(
             from 0deg at 50% 50%,
             transparent 0deg,
-            ${glowColor} 40deg,
-            transparent 80deg,
-            hsl(180, 100%, 60%) 160deg,
-            transparent 200deg,
-            hsl(262, 83%, 58%) 280deg,
-            transparent 320deg,
-            ${glowColor} 360deg
+            hsl(127, 70%, 35%) 30deg,
+            hsl(127, 60%, 25%) 60deg,
+            transparent 90deg,
+            transparent 270deg,
+            hsl(180, 50%, 30%) 300deg,
+            hsl(262, 40%, 35%) 330deg,
+            transparent 360deg
           )`,
           borderRadius: 'inherit',
-          animation: isHovered ? 'electricSpin 4s linear infinite' : 'none'
+          animation: isHovered ? 'electricSpin 6s linear infinite' : 'none'
         }}
       />
       
-      {/* Inner glow layer */}
+      {/* Subtle inner glow */}
       <div 
-        className={`absolute inset-[1px] opacity-0 transition-opacity duration-700 pointer-events-none ${isHovered ? 'opacity-40' : ''}`}
+        className={`absolute inset-0 opacity-0 transition-opacity duration-700 pointer-events-none ${isHovered ? 'opacity-20' : ''}`}
         style={{
           background: `radial-gradient(
             circle at center,
-            ${glowColor}20 0%,
-            transparent 70%
+            hsl(127, 50%, 20%) 0%,
+            transparent 60%
           )`,
           borderRadius: 'inherit'
         }}
