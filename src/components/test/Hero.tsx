@@ -3,38 +3,49 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import VideoBackground from "../VideoBackground";
 import TypewriterText from "../TypewriterText";
+import DynamicMeshBackground from "../effects/DynamicMeshBackground";
+import ParticleField from "../effects/ParticleField";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const Hero = () => {
   return (
     <section
       data-section="hero"
-      className="relative min-h-[90vh] overflow-hidden bg-black"
+      className="relative min-h-[90vh] overflow-hidden bg-gradient-to-br from-brand-darker via-brand-dark to-brand-purple-dark noise-overlay"
     >
-      {/* Three.js Living Void Background */}
-      <VideoBackground />
+      {/* Enhanced Multi-layered Background */}
+      <div className="absolute inset-0">
+        <DynamicMeshBackground intensity={0.7} />
+        <ParticleField particleCount={60} />
+        <VideoBackground />
+        {/* Luminous gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-luminous animate-mesh-shift opacity-40"></div>
+      </div>
 
-      {/* Content - Precisely positioned */}
+      {/* Content - Enhanced with Glass Morphism */}
       <div className="relative z-10 container mx-auto px-6 pt-52 pb-24">
-        <div className="max-w-3xl mx-auto text-center lg:text-left lg:mx-0">
-          <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25] animate-fade-in font-montserrat">
-            Where Ambition Finds Its Path
+        <div className="max-w-4xl mx-auto text-center lg:text-left lg:mx-0">
+          <h1 className="heading-h1 text-[2.8rem] sm:text-[3.5rem] lg:text-[5rem] xl:text-[5.5rem] mb-6 leading-[1.1] animate-fade-in font-satoshi">
+            Where Ambition Finds <span className="text-highlight">Its Path</span>
           </h1>
 
-          <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-4 leading-relaxed font-light animate-slide-up font-montserrat">
-            In a landscape of overwhelming complexity, we engineer the clarity you need to lead. We build the products, platforms, and AI-powered solutions that transform market potential into your market-defining advantage.
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground/90 mb-4 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
+            In a landscape of overwhelming complexity, we engineer the <span className="text-luminous">clarity</span> you need to lead. 
+            We build the products, platforms, and AI-powered solutions that transform market potential into your <span className="text-highlight">market-defining advantage</span>.
           </p>
 
-          <p className="text-sm sm:text-base text-foreground/70 mb-8 italic animate-slide-up font-montserrat" style={{animationDelay: "0.2s"}}>
+          <p className="text-base sm:text-lg text-foreground/75 mb-8 italic animate-slide-up font-montserrat glow-cyan" 
+             style={{animationDelay: "0.3s"}}>
             Where ambition finds its path.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start animate-scale-in" 
+               style={{animationDelay: "0.5s"}}>
             <a href="#home-contact">
               <Button
                 variant="default"
                 size="xl"
-                className={`min-w-[280px] rounded-full ${styles["btn-primary"]} `}
+                className={`min-w-[280px] rounded-full glass-hover glow-pulse ${styles["btn-primary"]}`}
               >
                 Chart Your Path
               </Button>
@@ -43,7 +54,7 @@ const Hero = () => {
               <Button
                 variant="hero-secondary"
                 size="xl"
-                className="min-w-[240px] rounded-full"
+                className="min-w-[240px] rounded-full glass-card border-brand-cyan/30 text-brand-cyan hover:shadow-glow transition-all duration-500"
               >
                 Explore Our Solutions
               </Button>

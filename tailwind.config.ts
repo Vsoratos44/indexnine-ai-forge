@@ -19,8 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sans': ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				'sans': ['Satoshi', 'Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 				'montserrat': ['Montserrat', 'sans-serif'],
+				'satoshi': ['Satoshi', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -116,18 +117,42 @@ export default {
 					'0%': { transform: 'translateY(20px)', opacity: '0' },
 					'100%': { transform: 'translateY(0)', opacity: '1' }
 				},
+				'slide-up-stagger': {
+					'0%': { transform: 'translateY(30px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
+				},
 				'float': {
 					'0%, 100%': { transform: 'translateY(0px)' },
 					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow-pulse': {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(93, 109, 252, 0.3)' },
+					'50%': { boxShadow: '0 0 40px rgba(93, 109, 252, 0.6), 0 0 60px rgba(0, 255, 255, 0.3)' }
+				},
+				'mesh-shift': {
+					'0%': { transform: 'translateX(0) translateY(0)' },
+					'25%': { transform: 'translateX(20px) translateY(-10px)' },
+					'50%': { transform: 'translateX(-15px) translateY(15px)' },
+					'75%': { transform: 'translateX(10px) translateY(-20px)' },
+					'100%': { transform: 'translateX(0) translateY(0)' }
+				},
+				'luminous-drift': {
+					'0%, 100%': { transform: 'translateY(0px) translateX(0px)', opacity: '0.6' },
+					'33%': { transform: 'translateY(-15px) translateX(10px)', opacity: '1' },
+					'66%': { transform: 'translateY(10px) translateX(-8px)', opacity: '0.8' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.6s ease-out',
-				'scale-in': 'scale-in 0.5s ease-out',
-				'slide-up': 'slide-up 0.6s ease-out',
-				'float': 'float 3s ease-in-out infinite',
+				'fade-in': 'fade-in 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
+				'scale-in': 'scale-in 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
+				'slide-up': 'slide-up 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
+				'slide-up-stagger': 'slide-up-stagger 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
+				'float': 'float 6s ease-in-out infinite',
+				'glow-pulse': 'glow-pulse 4s ease-in-out infinite',
+				'mesh-shift': 'mesh-shift 20s ease-in-out infinite',
+				'luminous-drift': 'luminous-drift 8s ease-in-out infinite',
 				'ambient-pulse': 'ambient-pulse 6s ease-in-out infinite',
 				'twinkle': 'twinkle 4s ease-in-out infinite',
 				'slow-zoom': 'slow-zoom 8s linear infinite',

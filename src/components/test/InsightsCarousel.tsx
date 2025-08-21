@@ -124,8 +124,8 @@ const InsightsCarousel = () => {
           </p>
         </div>
 
-        {/* Enhanced Glassmorphism Carousel Container */}
-        <div className="relative w-full mx-auto ">
+      {/* Enhanced Glassmorphism Carousel Container */}
+        <div className="relative w-full mx-auto">
           <Carousel
             className="w-full"
             opts={{
@@ -143,12 +143,9 @@ const InsightsCarousel = () => {
                   >
                     <div className="relative group h-full">
                       {/* Enhanced Glassmorphism Card */}
-                      <div className="relative overflow-hidden  bg-[#fff] border-[.75rem] border-glass-border rounded-3xl p-6  hover:shadow-glow transition-all duration-500 transform group-hover:scale-101 group-hover:-translate-y-2 h-full flex flex-col">
-                        {/* Frosted Glass Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-brand-primary/5 rounded-2xl opacity-50"></div>
-
+                      <div className="relative overflow-hidden glass-card-light glass-hover rounded-3xl p-6 h-full flex flex-col noise-overlay">
                         {/* Dynamic Glow Effect */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/4 via-transparent to-brand-cyan/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
                         {/* Content Header */}
                         <div className="relative flex items-start justify-between mb-6">
@@ -165,42 +162,41 @@ const InsightsCarousel = () => {
                           </div>
                         </div>
 
-                        {/* Image Placeholder with Glassmorphism */}
-                        <div className="relative mb-6 rounded-2xl overflow-hidden bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 backdrop-blur-md border border-glass-border h-48 flex items-center justify-center">
+                        {/* Enhanced Image Placeholder */}
+                        <div className="relative mb-6 rounded-2xl overflow-hidden glass-card h-48 flex items-center justify-center group-hover:animate-glow-pulse">
                           <div className="text-foreground-dark-muted text-4xl">
-                            <IconComponent className="w-16 h-16" />
+                            <IconComponent className="w-16 h-16 glow-primary" />
                           </div>
-                          {/* CMS Image Overlay - Dynamic */}
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                          <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/10 to-transparent"></div>
                         </div>
 
                         {/* Content Body */}
                         <div className="relative flex-1 flex flex-col">
-                          <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
+                          <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-satoshi group-hover:text-luminous transition-colors duration-500">
                             {item.title}
                           </h3>
-                          <p className="text-foreground-dark-muted leading-relaxed mb-6 flex-1 font-montserrat">
+                          <p className="text-foreground-dark-muted leading-relaxed mb-6 flex-1 font-light">
                             {item.description}
                           </p>
 
                           {/* Meta Information */}
                           <div className="flex items-center justify-between mb-6">
                             {item.readTime && (
-                              <span className="text-sm text-foreground-dark-muted font-montserrat">
+                              <span className="text-sm text-foreground-dark-muted">
                                 {item.readTime}
                               </span>
                             )}
                             {item.category && (
-                              <span className="text-sm bg-brand-primary/10 text-foreground-dark px-2 py-1 rounded-full font-montserrat">
+                              <span className="text-sm glass-card text-brand-primary px-3 py-1 rounded-full">
                                 {item.category}
                               </span>
                             )}
                           </div>
 
-                          {/* CTA Button */}
+                          {/* Enhanced CTA Button */}
                           <Button
                             variant="ghost"
-                            className="relative text-brand-primary hover:text-foreground-dark hover:bg-brand-primary/10 border border-brand-primary/30 rounded-full font-semibold group-hover:shadow-glow transition-all duration-300 font-montserrat"
+                            className="relative text-brand-primary hover:text-brand-cyan glass-card hover:shadow-glow border border-brand-primary/30 rounded-full font-semibold transition-all duration-500"
                           >
                             Read More{" "}
                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -213,17 +209,17 @@ const InsightsCarousel = () => {
               })}
             </CarouselContent>
 
-            {/* Enhanced Glassmorphism Navigation */}
-            <CarouselPrevious className="left-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
-            <CarouselNext className="right-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+            {/* Enhanced Navigation */}
+            <CarouselPrevious className="left-4 glass-card border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+            <CarouselNext className="right-4 glass-card border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
           </Carousel>
 
-          {/* View All CTA */}
+          {/* Enhanced View All CTA */}
           <div className="text-center mt-16">
             <Button
               variant="hero-secondary"
               size="lg"
-              className={`min-w-[280px] text-brand-primary border-brand-primary/30 hover:bg-brand-primary rounded-full `}
+              className="min-w-[280px] text-brand-primary border-brand-primary/30 hover:bg-brand-primary glass-hover rounded-full"
             >
               Explore All Our Insights <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
