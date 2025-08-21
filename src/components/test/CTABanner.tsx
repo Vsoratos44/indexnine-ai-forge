@@ -21,7 +21,7 @@ const CTABanner = () => {
               </h2>
             </EnhancedScrollReveal>
             <EnhancedScrollReveal direction="up" delay={600}>
-              <p className="text-lg text-foreground-light mb-8 max-w-2xl mx-auto font-light">
+              <p className="text-lg text-foreground-dark mb-8 max-w-2xl mx-auto font-light">
                 The summit is not a destination—it's a vantage point for the next peak. 
                 Ready to begin the ascent that defines your legacy?
               </p>
