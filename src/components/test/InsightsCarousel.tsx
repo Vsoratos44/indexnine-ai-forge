@@ -122,7 +122,7 @@ const InsightsCarousel = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-purple mb-8 leading-tight tracking-tight font-montserrat">
             Dispatches from the <span className="test-neon-cyan">Forefront</span>.
           </h2>
-          <p className="text-xl text-foreground-light max-w-3xl mx-auto font-light font-montserrat mb-8">
+          <p className="text-xl text-foreground-dark max-w-3xl mx-auto font-light font-montserrat mb-8">
             The best guides have navigated the terrain before. We share our learnings from the forefront of product engineering and AI to help you better understand the landscape ahead. Explore our thought leadership for actionable insights to inform your journey.
           </p>
           <div className="flex justify-center">
