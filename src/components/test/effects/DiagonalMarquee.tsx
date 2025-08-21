@@ -40,10 +40,10 @@ const DiagonalMarquee = () => {
       {/* Diagonal marquee container - rotated to create true diagonal effect */}
       <div className="absolute inset-0 overflow-hidden">
         <div 
-          className="absolute w-[150%] h-[150%] -top-[25%] -left-[25%] bg-gradient-to-br from-background-dark via-background-dark/95 to-background-dark/90"
+          className="absolute w-[150%] h-[150%] -top-[25%] -left-[25%] bg-gradient-to-br from-slate-900 via-gray-900 to-black"
           style={{ 
             transform: 'rotate(-15deg)',
-            background: 'linear-gradient(135deg, hsl(var(--background-dark)), hsl(var(--background-dark)/0.95), hsl(var(--brand-purple)/0.1))'
+            background: 'linear-gradient(135deg, hsl(220, 13%, 8%), hsl(220, 13%, 5%), hsl(var(--brand-purple)/0.05))'
           }}
         >
           <div className="sticky top-0 left-0 h-full w-full overflow-hidden">
