@@ -82,7 +82,7 @@ const VideoBackground = () => {
         preload="metadata"
         poster="/videos/poster-frame.jpg"
       >
-        <source src="/lovable-uploads/IndexNine_Brand_Identity_Video_Brief.mp4" type="video/mp4" />
+        <source src="/lovable-uploads/Video_Revision_For_Text_Readability.mp4" type="video/mp4" />
       </video>
 
       {/* Looping Video (starts after first ends) */}
