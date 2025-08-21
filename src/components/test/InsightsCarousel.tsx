@@ -23,6 +23,7 @@ interface CarouselItem {
 }
 
 const InsightsCarousel = () => {
+  console.log("InsightsCarousel component loading...");
   // CMS-ready data structure - can be replaced with API call
   const carouselItems: CarouselItem[] = [
     {

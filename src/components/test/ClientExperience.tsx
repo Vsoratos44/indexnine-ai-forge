@@ -4,6 +4,7 @@ import AnimatedPath from "../effects/AnimatedPath";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const ClientExperience = () => {
+  console.log("ClientExperience component loading...");
   const experiences = [
     {
       Icon: RocketLuminous,

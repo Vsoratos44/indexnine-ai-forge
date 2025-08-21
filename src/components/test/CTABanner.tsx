@@ -5,6 +5,7 @@ import ScrollTrigger from "../effects/ScrollTriggerAnimations";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const CTABanner = () => {
+  console.log("CTABanner component loading...");
   return (
     <Section variant="alternate" containerSize="6xl">
       <ScrollTrigger animation="scaleIn">
