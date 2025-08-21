@@ -43,20 +43,20 @@ const Hero = () => {
           <div className="relative z-20 container mx-auto px-6 pt-52 pb-24">
             <div className="max-w-4xl mx-auto text-center lg:text-left lg:mx-0">
               <ScrollTrigger>
-                  <h1 className="heading-h1 text-[2.8rem] sm:text-[3.5rem] lg:text-[5rem] xl:text-[5.5rem] mb-6 leading-[1.1] font-satoshi">
-                    Where Ambition Finds <span className="test-electric-text">Its Path</span>
+                  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-signal-green to-cyber-teal">
+                    Where Ambition Finds <span className="text-arcane-purple">Its Path</span>
                   </h1>
               </ScrollTrigger>
 
               <ScrollTrigger delay={200}>
-                  <p className="text-lg sm:text-xl lg:text-2xl text-foreground/90 mb-4 leading-relaxed font-light font-montserrat max-w-4xl">
-                    In a landscape of overwhelming complexity, we engineer the <span className="test-electric-glow">clarity</span> you need to lead. 
-                    We build the products, platforms, and AI-powered solutions that transform market potential into your <span className="test-electric-text">market-defining advantage</span>.
+                  <p className="text-lg sm:text-xl lg:text-2xl text-light-slate mb-4 leading-relaxed font-light font-montserrat max-w-4xl">
+                    In a landscape of overwhelming complexity, we engineer the <span className="text-signal-green font-semibold">clarity</span> you need to lead. 
+                    We build the products, platforms, and AI-powered solutions that transform market potential into your <span className="text-cyber-teal font-semibold">market-defining advantage</span>.
                   </p>
               </ScrollTrigger>
 
               <ScrollTrigger delay={300}>
-                <p className="text-base sm:text-lg text-foreground/75 mb-8 italic font-montserrat test-electric-glow">
+                <p className="text-base sm:text-lg text-dark-slate mb-8 italic font-montserrat">
                   <AnimatedText>Where ambition finds its path.</AnimatedText>
                 </p>
               </ScrollTrigger>

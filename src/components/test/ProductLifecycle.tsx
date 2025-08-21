@@ -7,6 +7,7 @@ import StickyScrollLayout from "./effects/StickyScrollLayout";
 import EnhancedScrollReveal from "./effects/EnhancedScrollReveal";
 import AngularSection from "./effects/AngularSection";
 import LivingGradientBackground from "./effects/LivingGradientBackground";
+import CtaButton from "./ui/CtaButton";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const ProductLifecycle = () => {
@@ -78,11 +79,11 @@ const ProductLifecycle = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <ScrollTrigger>
           <div className="text-center mb-16 lg:mb-20">
-            <h2 className="heading-h2 text-foreground mb-6 leading-[1.3]">
-              A Partner for Every Stage of the <span className="test-electric-text">Ascent</span>.
+            <h2 className="heading-h2 text-arcane-purple mb-6 leading-[1.3]">
+              A Partner for Every Stage of the <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyber-teal to-signal-green">Ascent</span>.
             </h2>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/80 leading-relaxed font-light max-w-4xl mx-auto px-4">
-              Your path to the pinnacle isn't a single leap; it's a journey with distinct stages. We provide the <span className="test-electric-glow">specialized engineering and strategic guidance</span> you need at every critical waypoint.
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-light-slate leading-relaxed font-light max-w-4xl mx-auto px-4">
+              Your path to the pinnacle isn't a single leap; it's a journey with distinct stages. We provide the <span className="text-signal-green font-semibold">specialized engineering and strategic guidance</span> you need at every critical waypoint.
             </p>
           </div>
         </ScrollTrigger>
@@ -92,10 +93,10 @@ const ProductLifecycle = () => {
           stickyContent={
             <div className="p-8 lg:p-12">
               <EnhancedScrollReveal direction="scale" delay={200}>
-                <h3 className="heading-h2 text-foreground mb-6 test-electric-text">
+                <h3 className="heading-h2 text-cyber-teal mb-6 test-electric-text">
                   Navigate Every Stage
                 </h3>
-                <p className="text-lg text-foreground/80 leading-relaxed font-light mb-8">
+                <p className="text-lg text-light-slate leading-relaxed font-light mb-8">
                   From initial launch to market dominance, we're your trusted partner at every waypoint of the journey.
                 </p>
                 <div className="w-full h-64 glass-card rounded-2xl flex items-center justify-center border border-green-500/20 animate-glow-pulse">
@@ -103,7 +104,7 @@ const ProductLifecycle = () => {
                     <div className="w-20 h-20 mx-auto mb-4 glass-card rounded-xl flex items-center justify-center border border-cyan-500/30">
                       <AbstractLifecycleVisual type="launch" className="w-16 h-16" />
                     </div>
-                    <p className="text-sm text-foreground/70 test-data-text">Guidance at Every Phase</p>
+                    <p className="text-sm text-dark-slate test-data-text">Guidance at Every Phase</p>
                   </div>
                 </div>
               </EnhancedScrollReveal>
@@ -140,25 +141,19 @@ const ProductLifecycle = () => {
 
                     {/* Enhanced Content */}
                     <div className="flex-1 flex flex-col">
-                      <p className="text-foreground/80 leading-relaxed text-base font-light mb-4">
+                      <p className="text-light-slate leading-relaxed text-base font-light mb-4">
                         {phase.description}
                       </p>
 
-                      <p className="text-foreground/70 leading-relaxed text-base font-light mb-6 italic">
+                      <p className="text-dark-slate leading-relaxed text-base font-light mb-6 italic">
                         {phase.example}
                       </p>
 
                       {/* Enhanced CTA Button */}
                       <div className="mt-auto">
-                        <Link to={phase.caseStudyLink}>
-                          <Button
-                            variant="luminous-secondary"
-                            size="sm"
-                            className="w-full sm:w-auto group-hover:scale-105 hover:animate-glow-pulse"
-                          >
-                            Check out the full case study here
-                          </Button>
-                        </Link>
+                        <CtaButton>
+                          Check out the full case study here
+                        </CtaButton>
                       </div>
                     </div>
                   </div>
