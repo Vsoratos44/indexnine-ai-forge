@@ -1,17 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "../../assets/css/stylesheet.module.css";
-
-import MatureIcon from "../../assets/images/mature.svg";
-import PivotIcon from "../../assets/images/pivot.svg";
-import LaunchIcon from "../../assets/images/launch.svg";
-import GrowIcon from "../../assets/images/grow.svg";
 import { Button } from "../ui/button";
+import { AbstractLifecycleVisual } from "../effects/AbstractLifecycleVisuals";
+import ScrollTrigger from "../effects/ScrollTriggerAnimations";
+import styles from "../../assets/css/stylesheet.module.css";
 
 const ProductLifecycle = () => {
   const phases = [
     {
-      icon: <img src={LaunchIcon} alt="Launch" className="w-20 h-20" />,
+      type: "launch" as const,
       title: "Launch",
       subtitle: "Charting the First Course",
       description:
@@ -22,7 +19,7 @@ const ProductLifecycle = () => {
       borderStyle: "bord-rb",
     },
     {
-      icon: <img src={PivotIcon} alt="Pivot" className="w-20 h-20" />,
+      type: "pivot" as const,
       title: "Pivot",
       subtitle: "Recalibrating the Route",
       description:
@@ -33,7 +30,7 @@ const ProductLifecycle = () => {
       borderStyle: "bord-lb",
     },
     {
-      icon: <img src={GrowIcon} alt="Grow" className="w-20 h-20" />,
+      type: "grow" as const,
       title: "Grow",
       subtitle: "Scaling the Summit",
       description:
@@ -44,7 +41,7 @@ const ProductLifecycle = () => {
       borderStyle: "bord-rt",
     },
     {
-      icon: <img src={MatureIcon} alt="Mature" className="w-20 h-20" />,
+      type: "mature" as const,
       title: "Mature",
       subtitle: "Fortifying the Pinnacle",
       description:
@@ -59,82 +56,73 @@ const ProductLifecycle = () => {
   return (
     <section
       data-section="product-lifecycle"
-      className={`py-24 lg:py-32 bg-[#fff] relative overflow-hidden ${styles.sectionBgRadial}`}
+      className={`py-24 lg:py-32 bg-background-light relative overflow-hidden ${styles.sectionBgRadial} noise-overlay`}
     >
-      {/* Background blur elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-1/6 w-96 h-96 bg-brand-purple/6 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-accent/5 rounded-full blur-2xl"></div>
+      {/* Enhanced Atmospheric Background */}
+      <div className="absolute inset-0 opacity-50">
+        <div className="absolute top-20 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-luminous-drift"></div>
+        <div className="absolute bottom-20 right-1/6 w-80 h-80 bg-brand-cyan/6 rounded-full blur-3xl animate-luminous-drift" style={{ animationDelay: "3s" }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-purple/5 rounded-full blur-2xl animate-pulse-slow"></div>
       </div>
 
-      <div className={`container mx-auto px-6 lg:px-8 relative z-10 `}>
-        <div className="text-center mb-16 lg:mb-20">
-          <h2
-            className={`text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-[1.4] font-montserrat`}
-          >
-            A Partner for Every Stage of the Ascent.
-          </h2>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto px-4">
-            Your path to the pinnacle isn't a single leap; it's a journey with distinct stages. We provide the specialized engineering and strategic guidance you need at every critical waypoint.
-          </p>
-        </div>
+      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+        <ScrollTrigger>
+          <div className="text-center mb-16 lg:mb-20">
+            <h2 className="heading-h2 text-foreground-dark mb-6 leading-[1.3]">
+              A Partner for Every Stage of the <span className="text-highlight">Ascent</span>.
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto px-4">
+              Your path to the pinnacle isn't a single leap; it's a journey with distinct stages. We provide the <span className="text-luminous">specialized engineering and strategic guidance</span> you need at every critical waypoint.
+            </p>
+          </div>
+        </ScrollTrigger>
 
-        {/* 2x2 Grid Layout */}
-        <div
-          className={`grid grid-cols-1 md:grid-cols-2 gap-4 max-w-8xl mx-auto }`}
-        >
+        {/* Enhanced 2x2 Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
           {phases.map((phase, index) => (
-            <div
+            <ScrollTrigger
               key={index}
-              className={`relative overflow-hidden  rounded-2xl p-1 animate-fade-in group ${
-                styles[phase.borderStyle]
-              }`}
-              style={{ animationDelay: `${index * 0.15}s` }}
+              delay={index * 200}
+              animation="scaleIn"
+              className={`relative glass-card-light glass-hover rounded-3xl p-1 group ${styles[phase.borderStyle]} noise-overlay`}
             >
-              {/* Inner glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/3 via-transparent to-brand-purple/3 rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              {/* Enhanced Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/4 via-transparent to-brand-cyan/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-              <div className="elative z-10 p-8 lg-p-10 bg-[#fff] rounded-2xl h-full bg-[#fff] flex flex-col">
-                {/* Icon and Title Section */}
-                <div className="flex items-start space-x-4 sm:space-x-6 mb-4">
-                  {/* Icon Container */}
-                  <div className="relative rounded-2xl w-20 h-20 flex items-center justify-center group-hover:shadow-glow transition-all duration-300 group-hover:scale-105">
-                    {phase.icon}
+              <div className="relative z-10 p-8 lg:p-10 bg-background-light rounded-3xl h-full flex flex-col">
+                {/* Enhanced Icon and Title Section */}
+                <div className="flex items-start space-x-6 mb-6">
+                  <div className="relative w-20 h-20 flex items-center justify-center glass-card rounded-2xl group-hover:animate-glow-pulse">
+                    <AbstractLifecycleVisual type={phase.type} className="w-16 h-16" />
                   </div>
 
-                  {/* Title Section */}
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground-dark mb-1 sm:mb-2 leading-tight font-montserrat">
+                    <h3 className="heading-h3 text-foreground-dark mb-2 leading-tight">
                       {phase.title}
                     </h3>
-                    <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-brand-primary mb-3 sm:mb-4 font-montserrat">
+                    <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-luminous mb-4">
                       {phase.subtitle}
                     </h4>
                   </div>
                 </div>
 
-                {/* Content */}
+                {/* Enhanced Content */}
                 <div className="flex-1 flex flex-col">
-                  {/* <h3 className="text-2xl lg:text-3xl font-semibold text-foreground-dark mb-2 leading-tight font-montserrat">
-                    {phase.title}
-                  </h3> */}
-                  <p className="text-foreground-dark-muted leading-compact text-base font-light font-montserrat mb-3">
+                  <p className="text-foreground-dark-muted leading-relaxed text-base font-light mb-4">
                     {phase.description}
                   </p>
 
-                  {/* Client Example */}
-                  <p className="text-foreground-dark-muted leading-compact text-base font-light font-montserrat mb-2">
+                  <p className="text-foreground-dark-muted leading-relaxed text-base font-light mb-6">
                     {phase.example}
                   </p>
 
-                  {/* Case Study Button */}
-                  <div className="pt-2 mt-auto">
+                  {/* Enhanced CTA Button */}
+                  <div className="mt-auto">
                     <Link to={phase.caseStudyLink}>
                       <Button
-                        variant="outline"
+                        variant="luminous-secondary"
                         size="sm"
-                        className="w-full sm:w-auto text-brand-primary border-brand-primary/30 hover:bg-brand-primary text-xs sm:text-sm rounded-full group-hover:scale-105"
+                        className="w-full sm:w-auto group-hover:scale-105"
                       >
                         Check out the full case study here
                       </Button>
@@ -142,7 +130,7 @@ const ProductLifecycle = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollTrigger>
           ))}
         </div>
       </div>

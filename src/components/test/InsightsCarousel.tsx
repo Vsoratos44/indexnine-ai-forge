@@ -104,14 +104,15 @@ const InsightsCarousel = () => {
         ></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-accent/5 rounded-full blur-2xl animate-pulse-slow"></div>
 
-        {/* Animated Grid Pattern */}
-        <div
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: `radial-gradient(circle at 50% 50%, hsl(239 84% 67%) 1px, transparent 1px)`,
-            backgroundSize: "80px 80px",
-          }}
-        ></div>
+      /* Enhanced Grid Pattern with animation */
+      <div
+        className="absolute inset-0 opacity-8"
+        style={{
+          backgroundImage: `radial-gradient(circle at 50% 50%, hsl(262 83% 58%) 1px, transparent 1px)`,
+          backgroundSize: "80px 80px",
+          animation: "mesh-shift 30s linear infinite"
+        }}
+      ></div>
       </div>
 
       <div className="container mx-auto px-0 lg:px-0 relative z-10">

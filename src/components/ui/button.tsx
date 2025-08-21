@@ -12,39 +12,35 @@ import { cn } from "@/lib/utils"
  */
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold transition-neural focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 relative overflow-hidden",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 relative overflow-hidden",
   {
     variants: {
       variant: {
-        // Core System Variants - New gradient primary and subtle outline
-        default: "bg-gradient-to-r from-brand-primary to-brand-accent text-white hover:shadow-lg hover:scale-105 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-primary/50",
-        secondary: "border border-border/40 text-foreground-dark bg-background-alternate hover:bg-background-section hover:shadow-sm transition-all duration-200",
-        outline: "border border-foreground-white text-foreground-white hover:bg-foreground-white hover:text-foreground",
-        ghost: "text-foreground-white hover:bg-foreground-white/10",
-        link: "text-brand-primary underline-offset-4 hover:underline hover:text-brand-primary-dark",
+        // Enhanced Core Variants with Luminous Effects
+        default: "glass-card-light text-brand-primary hover:text-brand-cyan hover:shadow-glow hover:scale-105 glow-primary border border-brand-primary/30",
+        secondary: "glass-card border border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/10 hover:border-brand-primary/40 hover:shadow-glow",
+        outline: "border-2 border-brand-primary/40 text-brand-primary hover:bg-brand-primary/10 hover:border-brand-primary hover:shadow-glow hover:scale-105",
+        ghost: "text-brand-primary hover:bg-brand-primary/10 hover:text-brand-cyan",
+        link: "text-brand-primary underline-offset-4 hover:underline hover:text-brand-cyan glow-cyan",
         
-        // Hero Section Variants
-        hero: "bg-gradient-to-r from-brand-primary to-brand-accent text-white hover:shadow-lg hover:scale-105 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-brand-primary/50",
-        "hero-secondary": "border-2 border-foreground-white text-foreground-white hover:bg-foreground-white hover:text-foreground transform hover:scale-105",
+        // Hero Section Enhanced Variants
+        hero: "glass-card bg-gradient-to-r from-brand-primary to-brand-purple text-white hover:shadow-glow hover:scale-105 glow-primary border border-brand-primary/30",
+        "hero-secondary": "glass-card border-2 border-brand-cyan/40 text-brand-cyan hover:bg-brand-cyan/10 hover:text-brand-cyan hover:shadow-glow hover:scale-105 glow-cyan",
         
-        // AI-First Neural Variants
-        neural: "bg-gradient-primary text-foreground-white hover:shadow-glow transform hover:scale-105 before:absolute before:inset-0 before:bg-gradient-neural-glow before:opacity-0 hover:before:opacity-100 before:transition-neural",
-        "neural-pulse": "bg-brand-primary text-foreground-white hover:bg-brand-primary-glow animate-neural-pulse hover:shadow-glow transform hover:scale-110",
-        "neural-matrix": "bg-gradient-matrix text-foreground hover:shadow-[0_0_30px_hsl(var(--brand-matrix))] transform hover:scale-105 animate-holographic-shimmer",
-        quantum: "bg-gradient-quantum-field text-foreground-white hover:shadow-[0_0_40px_hsl(var(--brand-quantum))] transform hover:scale-105 animate-quantum-field",
+        // Premium Luminous Variants
+        "luminous-primary": "glass-card bg-gradient-to-r from-brand-primary via-brand-purple to-brand-cyan text-white hover:shadow-glow hover:scale-110 glow-primary animate-glow-pulse",
+        "luminous-secondary": "glass-card border-2 border-brand-cyan/50 text-brand-cyan hover:bg-brand-cyan/15 hover:border-brand-cyan hover:shadow-glow hover:scale-105 glow-cyan",
+        "luminous-ghost": "glass-card-light text-brand-primary hover:bg-gradient-to-r hover:from-brand-primary/10 hover:to-brand-cyan/10 hover:text-brand-cyan hover:shadow-glow",
         
-        // Interactive Data Variants
-        "data-stream": "bg-gradient-data text-foreground-white hover:shadow-[0_0_30px_hsl(var(--brand-accent-vivid))] transform hover:scale-105 before:absolute before:inset-0 before:bg-gradient-data before:opacity-0 hover:before:opacity-20 before:transition-neural",
-        
-        // Enterprise Variants
-        enterprise: "bg-card border-2 border-brand-primary/30 text-foreground hover:bg-brand-primary/5 hover:border-brand-primary hover:shadow-glass-lg transform hover:scale-105",
-        "enterprise-cta": "bg-brand-primary text-foreground-white hover:bg-brand-primary-dark hover:shadow-glow transform hover:scale-110 shadow-lg border border-brand-primary-glow/50"
+        // Enterprise & CTA Variants  
+        enterprise: "glass-card border-2 border-brand-purple/30 text-brand-purple hover:bg-brand-purple/10 hover:border-brand-purple hover:shadow-glow hover:scale-105",
+        "enterprise-cta": "glass-card bg-gradient-to-r from-brand-purple to-brand-primary text-white hover:shadow-glow hover:scale-110 border border-brand-purple/30 glow-primary"
       },
       size: {
-        default: "h-12 px-6 py-3",
-        sm: "h-10 px-4 py-2 text-sm",
+        default: "h-12 px-6 py-3 text-sm",
+        sm: "h-10 px-4 py-2 text-xs",
         lg: "h-14 px-8 py-4 text-base",
-        xl: "h-16 px-10 py-5 text-lg",
+        xl: "h-16 px-10 py-5 text-lg font-semibold",
         icon: "h-12 w-12",
         "icon-sm": "h-8 w-8",
         "icon-lg": "h-16 w-16"
@@ -53,7 +49,7 @@ const buttonVariants = cva(
         none: "",
         soft: "hover:shadow-soft",
         medium: "hover:shadow-glow",
-        intense: "hover:shadow-[0_0_50px_hsl(var(--brand-primary-glow))]"
+        intense: "hover:shadow-glow-purple hover:animate-glow-pulse"
       }
     },
     defaultVariants: {
