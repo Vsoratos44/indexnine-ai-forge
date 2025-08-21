@@ -753,3 +753,20 @@
   opacity: 0.03;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
+
+/* Test Homepage Specific Color Classes */
+.test-neon-purple {
+  color: hsl(262 83% 58%) !important;
+}
+
+.test-neon-cyan {
+  color: hsl(180 100% 60%) !important;
+}
+
+.test-bright-purple {
+  color: hsl(262 90% 75%) !important;
+}
+
+.test-bright-cyan {
+  color: hsl(180 100% 70%) !important;
+}

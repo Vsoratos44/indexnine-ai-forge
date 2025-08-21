@@ -13,10 +13,10 @@ const CTABanner = () => {
           
           <div className="bg-background-light rounded-2xl p-12 relative z-10">
             <h2 className="heading-h2 text-foreground-dark mb-4">
-              Your Ambition Has a <span className="text-highlight-on-light">Starting Point</span>.
+              Your Ambition Has a <span className="test-neon-purple">Starting Point</span>.
             </h2>
             <p className="text-lg text-foreground-dark-muted mb-8 max-w-2xl mx-auto font-light">
-              The path from complexity to clarity begins with a single conversation. Let's discuss your vision, map your challenges, and <span className="text-luminous-on-light">chart the course</span> to your market-defining destination.
+              The path from complexity to clarity begins with a single conversation. Let's discuss your vision, map your challenges, and <span className="test-neon-cyan">chart the course</span> to your market-defining destination.
             </p>
             <Button 
               variant="luminous-primary" 

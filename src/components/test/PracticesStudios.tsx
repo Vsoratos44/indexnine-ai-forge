@@ -41,8 +41,8 @@ const PracticesStudios = () => {
     <section className="pb-24 lg:pb-32 bg-[#fff] text-foreground-dark">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-highlight-on-light mb-6 font-montserrat leading-[1.4] max-w-[90%] mx-auto">
-            Specialized Guides for Your <span className="text-luminous-on-light">Unique Terrain</span>.
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold test-neon-purple mb-6 font-montserrat leading-[1.4] max-w-[90%] mx-auto">
+            Specialized Guides for Your <span className="test-neon-cyan">Unique Terrain</span>.
           </h2>
           <p className="text-lg sm:text-xl text-foreground-dark-muted max-w-4xl mx-auto">
             The path to the pinnacle looks different for every company. To provide the specialized expertise your journey demands, we've organized our teams into two dedicated practices.
@@ -76,10 +76,10 @@ const PracticesStudios = () => {
         {/* Active Studio Content */}
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-12 items-start max-w-8xl mx-auto ">
           <div className="lg:col-span-3 text-center lg:text-left pt-3">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-highlight-on-light mb-3 font-montserrat">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold test-neon-purple mb-3 font-montserrat">
               {currentStudio.title}
             </h3>
-            <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-luminous-on-light mb-4 font-montserrat">
+            <h4 className="text-base sm:text-lg lg:text-xl font-semibold test-neon-cyan mb-4 font-montserrat">
               {currentStudio.subtitle}
             </h4>
 
