@@ -21,9 +21,9 @@
 
     /* Context-Aware Accent Colors */
     --text-highlight-light: 262 90% 75%; /* Brighter purple for dark backgrounds */
-    --text-highlight-dark: 262 95% 55%; /* Vibrant neon purple for light backgrounds */
+    --text-highlight-dark: 262 83% 58%; /* Bright neon purple for light backgrounds */
     --text-luminous-light: 180 100% 70%; /* Brighter cyan for dark backgrounds */
-    --text-luminous-dark: 200 100% 50%; /* Vibrant neon blue for light backgrounds */
+    --text-luminous-dark: 180 100% 60%; /* Bright neon cyan for light backgrounds */
 
     /* Neural Network Gradients - Dark Purple Theme */
     --neural-primary: linear-gradient(
