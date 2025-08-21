@@ -288,7 +288,7 @@ const Blogs = () => {
         </div>
 
         {/* Blog Posts Grid */}
-        <section className="py-24 lg:py-32 bg-transparent">
+        <section className="max-w-6xl mx-auto lg:pt-32 bg-transparent">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.4]">
