@@ -28,16 +28,16 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 pt-52 pb-24">
         <div className="max-w-4xl mx-auto text-center lg:text-left lg:mx-0">
           <ScrollTrigger>
-            <h1 className="heading-h1 text-[2.8rem] sm:text-[3.5rem] lg:text-[5rem] xl:text-[5.5rem] mb-6 leading-[1.1] font-satoshi">
-              Where Ambition Finds <TextHighlight variant="gradient">Its Path</TextHighlight>
-            </h1>
+              <h1 className="heading-h1 text-[2.8rem] sm:text-[3.5rem] lg:text-[5rem] xl:text-[5.5rem] mb-6 leading-[1.1] font-satoshi">
+                Where Ambition Finds <TextHighlight variant="gradient" className="text-highlight-on-dark">Its Path</TextHighlight>
+              </h1>
           </ScrollTrigger>
 
           <ScrollTrigger delay={200}>
-            <p className="text-lg sm:text-xl lg:text-2xl text-foreground/90 mb-4 leading-relaxed font-light font-montserrat max-w-4xl">
-              In a landscape of overwhelming complexity, we engineer the <TextHighlight variant="luminous">clarity</TextHighlight> you need to lead. 
-              We build the products, platforms, and AI-powered solutions that transform market potential into your <TextHighlight variant="gradient">market-defining advantage</TextHighlight>.
-            </p>
+              <p className="text-lg sm:text-xl lg:text-2xl text-foreground/90 mb-4 leading-relaxed font-light font-montserrat max-w-4xl">
+                In a landscape of overwhelming complexity, we engineer the <TextHighlight variant="luminous" className="text-luminous-on-dark">clarity</TextHighlight> you need to lead. 
+                We build the products, platforms, and AI-powered solutions that transform market potential into your <TextHighlight variant="gradient" className="text-highlight-on-dark">market-defining advantage</TextHighlight>.
+              </p>
           </ScrollTrigger>
 
           <ScrollTrigger delay={300}>
