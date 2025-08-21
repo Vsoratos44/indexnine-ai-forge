@@ -69,10 +69,10 @@ const ProductLifecycle = () => {
         <ScrollTrigger>
           <div className="text-center mb-16 lg:mb-20">
             <h2 className="heading-h2 text-foreground-dark mb-6 leading-[1.3]">
-              A Partner for Every Stage of the <span className="text-highlight">Ascent</span>.
+              A Partner for Every Stage of the <span className="text-highlight-on-light">Ascent</span>.
             </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto px-4">
-              Your path to the pinnacle isn't a single leap; it's a journey with distinct stages. We provide the <span className="text-luminous">specialized engineering and strategic guidance</span> you need at every critical waypoint.
+              Your path to the pinnacle isn't a single leap; it's a journey with distinct stages. We provide the <span className="text-luminous-on-light">specialized engineering and strategic guidance</span> you need at every critical waypoint.
             </p>
           </div>
         </ScrollTrigger>
@@ -100,7 +100,7 @@ const ProductLifecycle = () => {
                     <h3 className="heading-h3 text-foreground-dark mb-2 leading-tight">
                       {phase.title}
                     </h3>
-                    <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-luminous mb-4">
+                    <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-luminous-on-light mb-4">
                       {phase.subtitle}
                     </h4>
                   </div>

@@ -40,7 +40,7 @@ const ClientExperience = () => {
       <div className={`container mx-auto px-6 lg:px-8 relative z-10 py-24 lg:py-32 ${styles["globe"]}`}>
         <div className="text-center mb-20">
           <h2 className="heading-h2 text-foreground-dark mb-6 animate-fade-in">
-            Your Journey, Guided by Our <span className="text-highlight">Principles</span>.
+            Your Journey, Guided by Our <span className="text-highlight-on-light">Principles</span>.
           </h2>
           <p className="text-lg sm:text-xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto animate-slide-up">
             How we navigate to the destination is as critical as where we're going. Our entire engagement models are built on three pillars designed to eliminate uncertainty and clear the fog that plagues typical development projects.
@@ -58,7 +58,7 @@ const ClientExperience = () => {
                 </div>
               </div>
 
-              <h3 className="heading-h3 text-center text-foreground-dark mb-6 group-hover:text-luminous transition-colors duration-500">
+              <h3 className="heading-h3 text-center text-foreground-dark mb-6 group-hover:text-luminous-on-light transition-colors duration-500">
                 {experience.title}
               </h3>
               <p className="text-foreground-dark-muted leading-relaxed text-center font-light">

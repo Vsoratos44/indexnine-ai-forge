@@ -173,7 +173,7 @@ const InsightsCarousel = () => {
 
                         {/* Content Body */}
                         <div className="relative flex-1 flex flex-col">
-                          <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-satoshi group-hover:text-luminous transition-colors duration-500">
+                          <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-satoshi group-hover:text-luminous-on-light transition-colors duration-500">
                             {item.title}
                           </h3>
                           <p className="text-foreground-dark-muted leading-relaxed mb-6 flex-1 font-light">

@@ -29,10 +29,10 @@ const SocialProof = () => {
         <ScrollTrigger>
           <div className="text-center mb-16">
             <h2 className="heading-h2 text-foreground-dark mb-8 leading-tight">
-              The Summit is Within <span className="text-highlight">Reach</span>.
+              The Summit is Within <span className="text-highlight-on-light">Reach</span>.
             </h2>
             <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
-              A path is defined by its destination. Our success is measured by the <span className="text-luminous">tangible, market-defining outcomes</span> we deliver for our clients.
+              A path is defined by its destination. Our success is measured by the <span className="text-luminous-on-light">tangible, market-defining outcomes</span> we deliver for our clients.
             </p>
           </div>
         </ScrollTrigger>

@@ -56,11 +56,11 @@ const Differentiators = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="heading-h2 text-foreground-dark mb-8 leading-tight animate-fade-in">
-            The IndexNine <span className="text-highlight">Compass</span>.
+          <h2 className="heading-h2 text-foreground mb-8 leading-tight animate-fade-in">
+            The IndexNine <span className="text-highlight-on-dark">Compass</span>.
           </h2>
-          <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto animate-slide-up">
-            What makes us the right guide for your ambition? It's the <span className="text-luminous">principles and assets</span> that orient everything we do.
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground-muted leading-relaxed font-light max-w-4xl mx-auto animate-slide-up">
+            What makes us the right guide for your ambition? It's the <span className="text-luminous-on-dark">principles and assets</span> that orient everything we do.
           </p>
         </div>
 
@@ -82,10 +82,10 @@ const Differentiators = () => {
               </div>
 
               {/* Content */}
-              <h3 className="heading-h3 text-center text-foreground-dark mb-6 leading-tight group-hover:text-luminous transition-colors duration-500">
+              <h3 className="heading-h3 text-center text-foreground mb-6 leading-tight group-hover:text-luminous-on-dark transition-colors duration-500">
                 {diff.title}
               </h3>
-              <p className="text-foreground-dark-muted leading-relaxed text-center font-light">
+              <p className="text-foreground-muted leading-relaxed text-center font-light">
                 {diff.description}
               </p>
             </div>

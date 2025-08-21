@@ -19,6 +19,12 @@
     --brand-cyan: 180 100% 60%; /* Luminous cyan accent */
     --brand-matrix: 127 100% 50%; /* Matrix green for tech effects */
 
+    /* Context-Aware Accent Colors */
+    --text-highlight-light: 262 90% 75%; /* Brighter purple for dark backgrounds */
+    --text-highlight-dark: 262 90% 35%; /* Darker neon purple for light backgrounds */
+    --text-luminous-light: 180 100% 70%; /* Brighter cyan for dark backgrounds */
+    --text-luminous-dark: 220 90% 40%; /* Darker neon blue for light backgrounds */
+
     /* Neural Network Gradients - Dark Purple Theme */
     --neural-primary: linear-gradient(
       135deg,

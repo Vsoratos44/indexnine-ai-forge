@@ -50,7 +50,14 @@ export default {
 					dark: 'hsl(var(--brand-dark))',
 					darker: 'hsl(var(--brand-darker))',
 					accent: 'hsl(var(--brand-accent))',
-					'accent-dark': 'hsl(var(--brand-accent-dark))'
+					'accent-dark': 'hsl(var(--brand-accent-dark))',
+					cyan: 'hsl(var(--brand-cyan))'
+				},
+				text: {
+					'highlight-on-light': 'hsl(var(--text-highlight-dark))',
+					'highlight-on-dark': 'hsl(var(--text-highlight-light))',
+					'luminous-on-light': 'hsl(var(--text-luminous-dark))',
+					'luminous-on-dark': 'hsl(var(--text-luminous-light))'
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
