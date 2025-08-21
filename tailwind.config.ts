@@ -79,14 +79,7 @@ export default {
 						bg: 'hsl(var(--glass-bg))',
 						'bg-dark': 'hsl(var(--glass-bg-dark))',
 						'bg-light': 'hsl(var(--glass-bg-light))'
-					},
-				// Electric Clarity Palette
-				'deep-navy': '#0a0a14',
-				'signal-green': '#00f5a3',
-				'arcane-purple': '#5841d8',
-				'cyber-teal': '#22d3ee',
-				'light-slate': '#a8b2d1',
-				'dark-slate': '#8892b0',
+					}
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
@@ -97,13 +90,6 @@ export default {
 				'gradient-card': 'var(--gradient-card)',
 				'gradient-neural-glow': 'var(--gradient-neural-glow)',
 				'gradient-quantum-field': 'var(--gradient-quantum-field)'
-			},
-			backgroundSize: {
-				'200': '200% auto',
-			},
-			backgroundPosition: {
-				'pos-0': '0% 0%',
-				'pos-100': '100% 0%',
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',

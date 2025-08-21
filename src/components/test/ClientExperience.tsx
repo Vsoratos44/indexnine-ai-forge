@@ -4,7 +4,6 @@ import AnimatedPath from "../effects/AnimatedPath";
 import ElectricBentoCard from "./effects/ElectricBentoCard";
 import AngularSection from "./effects/AngularSection";
 import EnhancedScrollReveal from "./effects/EnhancedScrollReveal";
-import CtaButton from "./ui/CtaButton";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const ClientExperience = () => {
@@ -46,18 +45,18 @@ const ClientExperience = () => {
       <div className={`container mx-auto px-6 lg:px-8 relative z-10 py-24 lg:py-32 ${styles["globe"]}`}>
         <div className="text-center mb-20">
           <EnhancedScrollReveal direction="fade" delay={100}>
-            <h2 className="heading-h2 text-cyber-teal mb-6">
-              Your Journey, Guided by Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-signal-green to-arcane-purple">Principles</span>.
+            <h2 className="heading-h2 text-foreground mb-6">
+              Your Journey, Guided by Our <span className="test-electric-text">Principles</span>.
             </h2>
           </EnhancedScrollReveal>
           <EnhancedScrollReveal direction="up" delay={300}>
-            <p className="text-lg sm:text-xl text-light-slate leading-relaxed font-light max-w-4xl mx-auto">
-              How we navigate to the destination is as critical as where we're going. Our entire engagement models are built on three pillars designed to eliminate uncertainty and clear the <span className="text-signal-green font-semibold">fog</span> that plagues typical development projects.
+            <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed font-light max-w-4xl mx-auto">
+              How we navigate to the destination is as critical as where we're going. Our entire engagement models are built on three pillars designed to eliminate uncertainty and clear the <span className="test-electric-glow">fog</span> that plagues typical development projects.
             </p>
           </EnhancedScrollReveal>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {experiences.map((experience, index) => (
             <ElectricBentoCard 
               key={index}
@@ -78,18 +77,12 @@ const ClientExperience = () => {
                 <h3 className="heading-h3 text-center test-electric-text mb-6 group-hover:test-electric-glow transition-all duration-500">
                   {experience.title}
                 </h3>
-                <p className="text-light-slate leading-relaxed text-center font-light">
+                <p className="text-foreground/80 leading-relaxed text-center font-light">
                   {experience.description}
                 </p>
               </div>
             </ElectricBentoCard>
           ))}
-        </div>
-
-        <div className="text-center mt-16">
-          <EnhancedScrollReveal direction="up" delay={600}>
-            <CtaButton>See Our Process</CtaButton>
-          </EnhancedScrollReveal>
         </div>
       </div>
     </AngularSection>
