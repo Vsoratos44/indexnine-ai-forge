@@ -4,6 +4,7 @@ import AnimatedPath from "../effects/AnimatedPath";
 import ElectricBentoCard from "./effects/ElectricBentoCard";
 import AngularSection from "./effects/AngularSection";
 import EnhancedScrollReveal from "./effects/EnhancedScrollReveal";
+import CtaButton from "./CtaButton";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const ClientExperience = () => {
@@ -45,14 +46,17 @@ const ClientExperience = () => {
       <div className={`container mx-auto px-6 lg:px-8 relative z-10 py-24 lg:py-32 ${styles["globe"]}`}>
         <div className="text-center mb-20">
           <EnhancedScrollReveal direction="fade" delay={100}>
-            <h2 className="heading-h2 text-foreground mb-6">
+            <h2 className="heading-h2 text-brand-purple mb-6">
               Your Journey, Guided by Our <span className="test-electric-text">Principles</span>.
             </h2>
           </EnhancedScrollReveal>
           <EnhancedScrollReveal direction="up" delay={300}>
-            <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed font-light max-w-4xl mx-auto">
+            <p className="text-lg sm:text-xl text-foreground-light leading-relaxed font-light max-w-4xl mx-auto mb-8">
               How we navigate to the destination is as critical as where we're going. Our entire engagement models are built on three pillars designed to eliminate uncertainty and clear the <span className="test-electric-glow">fog</span> that plagues typical development projects.
             </p>
+            <div className="flex justify-center">
+              <CtaButton>Explore Our Process</CtaButton>
+            </div>
           </EnhancedScrollReveal>
         </div>
 

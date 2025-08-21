@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import CtaButton from "./CtaButton";
 
 const PracticesStudios = () => {
   const [activeStudio, setActiveStudio] = useState<"innovation" | "enterprise">(
@@ -41,12 +42,15 @@ const PracticesStudios = () => {
     <section className="pb-24 lg:pb-32 bg-[#fff] text-foreground-dark">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold test-neon-purple mb-6 font-montserrat leading-[1.4] max-w-[90%] mx-auto">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-purple mb-6 font-montserrat leading-[1.4] max-w-[90%] mx-auto">
             Specialized Guides for Your <span className="test-neon-cyan">Unique Terrain</span>.
           </h2>
-          <p className="text-lg sm:text-xl text-foreground-dark-muted max-w-4xl mx-auto">
+          <p className="text-lg sm:text-xl text-foreground-dark max-w-4xl mx-auto mb-8">
             The path to the pinnacle looks different for every company. To provide the specialized expertise your journey demands, we've organized our teams into two dedicated practices.
           </p>
+          <div className="flex justify-center">
+            <CtaButton>Find Your Fit</CtaButton>
+          </div>
         </div>
 
         {/* Studio Selector */}

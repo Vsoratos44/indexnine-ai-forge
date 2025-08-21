@@ -7,6 +7,7 @@ import StickyScrollLayout from "./effects/StickyScrollLayout";
 import EnhancedScrollReveal from "./effects/EnhancedScrollReveal";
 import AngularSection from "./effects/AngularSection";
 import LivingGradientBackground from "./effects/LivingGradientBackground";
+import CtaButton from "./CtaButton";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const ProductLifecycle = () => {
@@ -78,12 +79,15 @@ const ProductLifecycle = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <ScrollTrigger>
           <div className="text-center mb-16 lg:mb-20">
-            <h2 className="heading-h2 text-foreground mb-6 leading-[1.3]">
+            <h2 className="heading-h2 text-brand-cyan mb-6 leading-[1.3]">
               A Partner for Every Stage of the <span className="test-electric-text">Ascent</span>.
             </h2>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/80 leading-relaxed font-light max-w-4xl mx-auto px-4">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground-light leading-relaxed font-light max-w-4xl mx-auto px-4 mb-8">
               Your path to the pinnacle isn't a single leap; it's a journey with distinct stages. We provide the <span className="test-electric-glow">specialized engineering and strategic guidance</span> you need at every critical waypoint.
             </p>
+            <div className="flex justify-center">
+              <CtaButton>View Our Victories</CtaButton>
+            </div>
           </div>
         </ScrollTrigger>
 

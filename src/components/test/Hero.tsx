@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import CtaButton from "./CtaButton";
 import VideoBackground from "../VideoBackground";
 import DynamicMeshBackground from "../effects/DynamicMeshBackground";
 import ParticleField from "../effects/ParticleField";
