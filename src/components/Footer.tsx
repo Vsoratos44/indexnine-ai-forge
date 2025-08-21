@@ -62,7 +62,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-foreground-white font-bold text-lg mb-6">
+            <h4 className="text-foreground-white font-semibold text-lg mb-6">
               Services
             </h4>
             <ul className="space-y-3 text-foreground-white/80">
@@ -83,7 +83,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-foreground-white font-bold text-lg mb-6">
+            <h4 className="text-foreground-white font-semibold text-lg mb-6">
               Contact
             </h4>
             <div className="space-y-3 text-foreground-white/80">
@@ -92,17 +92,17 @@ const Footer = () => {
                 Mahalunge, Pune, Maharashtra 411045
               </p>
               <p className="hover:text-brand-primary transition-colors cursor-pointer">
-                +91 987 654 3210
+                +91 00000 00000
               </p>
               <p className="hover:text-brand-primary transition-colors cursor-pointer">
-                info@indexnine.com
+                <a href="mailto:sales@indexnine.com">sales@indexnine.com</a>
               </p>
             </div>
           </div>
 
           {/* Partners */}
           <div>
-            <h4 className="text-foreground-white font-bold text-lg mb-6">
+            <h4 className="text-foreground-white font-semibold text-lg mb-6">
               Partners
             </h4>
             <div className="space-y-4">
@@ -134,7 +134,13 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-foreground-white/60 text-sm">
               © 2025 IndexNine. All rights reserved. | Privacy Policy | Terms of
-              Service | <a href="/test/homepage" className="hover:text-brand-primary transition-colors">Homepage Test</a>
+              Service |{" "}
+              <a
+                href="/test/homepage"
+                className="hover:text-brand-primary transition-colors"
+              >
+                Homepage Test
+              </a>
             </p>
           </div>
         </div>
