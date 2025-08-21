@@ -64,14 +64,24 @@ const ElectricPathSVG: React.FC<ElectricPathSVGProps> = ({ className = '' }) => 
           r="1"
           fill="hsl(127, 100%, 50%)"
           filter="url(#electric-glow)"
+          animate={{
+            opacity: [0, 1, 0],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
           style={{
-            opacity,
-            offsetDistance: useTransform(scrollYProgress, [0, 1], ['0%', '100%']),
-            offsetPath: 'path("M 50 20 C 30 80, 70 120, 45 180 C 20 220, 80 260, 55 320 C 35 360, 75 380, 50 400")',
-            offsetRotate: '0deg'
+            opacity
           }}
         >
           <animate attributeName="r" values="0.5;2;0.5" dur="2s" repeatCount="indefinite"/>
+          <animateMotion 
+            dur="4s" 
+            repeatCount="indefinite"
+            path="M 50 20 C 30 80, 70 120, 45 180 C 20 220, 80 260, 55 320 C 35 360, 75 380, 50 400"
+          />
         </motion.circle>
       </svg>
     </div>
