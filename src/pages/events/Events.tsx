@@ -348,7 +348,7 @@ const Events = () => {
               </div>
 
               {filteredEvents.length === 0 && (
-                <Card className="bg-glass-light border-glass backdrop-blur-lg">
+                <Card className="c border-glass backdrop-blur-lg">
                   <CardContent className="p-12 text-center">
                     <AlertCircle className="w-12 h-12 text-foreground-muted mx-auto mb-4" />
                     <h3 className="text-xl font-semibold mb-2">No Events Found</h3>

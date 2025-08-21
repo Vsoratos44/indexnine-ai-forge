@@ -8,7 +8,10 @@ import {
   BreadcrumbSchema,
 } from "@/components/SEOStructuredData";
 import { Clock, User, ArrowRight } from "lucide-react";
+import styles from "../../assets/css/stylesheet.module.css";
+
 import blogImg from "@/assets/images/blog-img.webp";
+import blogImg2 from "@/assets/images/blog-img2.webp";
 
 const Blogs = () => {
   /**
@@ -19,6 +22,7 @@ const Blogs = () => {
   const blogPosts = [
     {
       id: "robot-framework-vs-playwright-automation",
+      img: blogImg2,
       title:
         "Robot Framework vs. Playwright: The Test Automation Showdown Your Business Can't Ignore",
       excerpt:
@@ -56,6 +60,7 @@ const Blogs = () => {
     },
     {
       id: "agentic-ai-enterprise-future",
+      img: blogImg2,
       title:
         "The Future Is Agentic. Is Your Enterprise Ready for What Comes Next?",
       excerpt:
@@ -83,6 +88,7 @@ const Blogs = () => {
     },
     {
       id: "ai-assisted-software-engineering-cursor",
+      img: blogImg2,
       title:
         "Beyond Autocomplete: When AI Meets UI to Supercharge Software Engineering",
       excerpt:
@@ -110,6 +116,7 @@ const Blogs = () => {
     },
     {
       id: "microservices-vs-monolith-decision-guide",
+      img: blogImg2,
       title:
         "Microservices vs Monolith: Making the Right Architectural Choice for Scale",
       excerpt:
@@ -132,6 +139,7 @@ const Blogs = () => {
     },
     {
       id: "modern-data-platforms-enterprise-guide",
+      img: blogImg2,
       title: "Building Modern Data Platforms: An Enterprise Architecture Guide",
       excerpt:
         "Best practices for designing and implementing scalable data platforms that drive business intelligence and enable data-driven decision making across your organization.",
@@ -153,6 +161,7 @@ const Blogs = () => {
     },
     {
       id: "security-first-development-practices",
+      img: blogImg2,
       title: "Security-First Development: Integrating DevSecOps from Day One",
       excerpt:
         "How to integrate security considerations into every stage of the software development lifecycle, from initial architecture to production deployment.",
@@ -215,126 +224,142 @@ const Blogs = () => {
           </div>
         </div>
       </section>
+      <div
+        className={`pb-24 lg:pb-32 relative bg-[#fff] overflow-hidden ${styles.blogBg}`}
+      >
+        <div className="bg-glass-light border-glass backdrop-blur-md">
+          {/* Featured Post */}
+          {blogPosts
+            .filter((post) => post.featured)
+            .map((post, index) => (
+              <section key={index} className="py-24 lg:py-32 ">
+                <div className="container">
+                  <div className="max-w-8xl mx-auto grid md:grid-cols-3 gap-12">
+                    <div className="col-span-2">
+                      <div className="mb-4">
+                        <span className="text-sm border border-brand-primary/40 text-brand-primary px-3 py-2 rounded-full font-montserrat">
+                          Featured Post
+                        </span>
+                      </div>
+                      <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 font-montserrat">
+                        <span className="leading-[1.3]">{post.title}</span>
+                      </h2>
+                      <p className="text-xl text-foreground-dark-muted mb-8 leading-relaxed font-montserrat">
+                        {post.excerpt}
+                      </p>
 
-      {/* Featured Post */}
-      {blogPosts
-        .filter((post) => post.featured)
-        .map((post, index) => (
-          <section key={index} className="py-24 lg:py-32 bg-[#fff]">
-            <div className="container">
-              <div className="max-w-8xl mx-auto grid md:grid-cols-3 gap-12">
-                <div className="col-span-2">
-                  <div className="mb-4">
-                    <span className="text-sm border border-brand-primary/39 text-brand-primary px-3 py-2 rounded-full font-montserrat">
-                      Featured Post
-                    </span>
-                  </div>
-                  <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 font-montserrat">
-                    <span className="leading-[1.3]">{post.title}</span>
-                  </h2>
-                  <p className="text-xl text-foreground-dark-muted mb-8 leading-relaxed font-montserrat">
-                    {post.excerpt}
-                  </p>
+                      <div className="flex items-center gap-6 mb-8 text-sm text-foreground-dark-muted/80">
+                        <div className="flex items-center gap-2">
+                          <User className="w-4 h-4" />
+                          <span className="font-montserrat">{post.author}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Clock className="w-4 h-4" />
+                          <span className="font-montserrat">
+                            {post.readTime}
+                          </span>
+                        </div>
+                        <span className="font-montserrat">
+                          {post.publishDate}
+                        </span>
+                      </div>
 
-                  <div className="flex items-center gap-6 mb-8 text-sm text-foreground-dark-muted/80">
-                    <div className="flex items-center gap-2">
-                      <User className="w-4 h-4" />
-                      <span className="font-montserrat">{post.author}</span>
+                      <Link to={`/insights/blogs/${post.id}`}>
+                        <Button
+                          variant="ghost"
+                          className="text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-full"
+                        >
+                          Read Full Article{" "}
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Button>
+                      </Link>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4" />
-                      <span className="font-montserrat">{post.readTime}</span>
+                    <div className=" w-auto">
+                      <img
+                        src={blogImg}
+                        alt="Blogs"
+                        className="w-full h-auto max-w-md mx-auto"
+                      />
                     </div>
-                    <span className="font-montserrat">{post.publishDate}</span>
                   </div>
-
-                  <Link to={`/insights/blogs/${post.id}`}>
-                    <Button
-                      variant="ghost"
-                      className="text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-full"
-                    >
-                      Read Full Article <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </Link>
                 </div>
-                <div className=" w-auto">
-                  <img
-                    src={blogImg}
-                    alt="Blogs"
-                    className="w-full h-auto max-w-md mx-auto"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-        ))}
-
-      {/* Blog Posts Grid */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4 font-montserrat">
-              Latest Posts
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {blogPosts
-              .filter((post) => !post.featured)
-              .map((post, index) => (
-                <div
-                  key={index}
-                  className="relative bg-gradient-card backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105"
-                >
-                  <div className="mb-4">
-                    <span className="text-sm bg-brand-purple/10 text-brand-purple px-3 py-1 rounded-full font-montserrat">
-                      {post.category}
-                    </span>
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-foreground mb-4 font-montserrat leading-tight">
-                    {post.title}
-                  </h3>
-                  <p className="text-foreground-muted mb-6 leading-relaxed font-montserrat">
-                    {post.excerpt}
-                  </p>
-
-                  <div className="flex items-center gap-4 mb-6 text-sm text-foreground-muted">
-                    <div className="flex items-center gap-2">
-                      <User className="w-4 h-4" />
-                      <span className="font-montserrat">{post.author}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4" />
-                      <span className="font-montserrat">{post.readTime}</span>
-                    </div>
-                  </div>
-
-                  <Link to={`/insights/blogs/${post.id}`}>
-                    <Button
-                      variant="ghost"
-                      className="w-full text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-xl"
-                    >
-                      Read More <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </Link>
-                </div>
-              ))}
-          </div>
+              </section>
+            ))}
         </div>
-      </section>
 
+        {/* Blog Posts Grid */}
+        <section className="py-24 lg:py-32 bg-transparent">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.4]">
+                Latest Posts
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {blogPosts
+                .filter((post) => !post.featured)
+                .map((post, index) => (
+                  <div
+                    key={index}
+                    className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105"
+                  >
+                    <div className="mb-4">
+                      <img
+                        src={post.img}
+                        alt={post.id}
+                        className="rounded-lg w-full"
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <span className="text-sm bg-brand-purple/10 text-brand-purple px-3 py-1 rounded-full font-montserrat">
+                        {post.category}
+                      </span>
+                    </div>
+
+                    <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat leading-tight">
+                      {post.title}
+                    </h3>
+                    <p className="text-foreground-dark-muted mb-6 leading-relaxed font-montserrat">
+                      {post.excerpt}
+                    </p>
+
+                    <div className="flex items-center gap-4 mb-6 text-sm text-foreground-dark-muted/80">
+                      <div className="flex items-center gap-2">
+                        <User className="w-4 h-4" />
+                        <span className="font-montserrat">{post.author}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Clock className="w-4 h-4" />
+                        <span className="font-montserrat">{post.readTime}</span>
+                      </div>
+                    </div>
+
+                    <Link to={`/insights/blogs/${post.id}`}>
+                      <Button
+                        variant="ghost"
+                        className="w-full text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-full"
+                      >
+                        Read More <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
+                  </div>
+                ))}
+            </div>
+          </div>
+        </section>
+      </div>
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-hero">
+      <section className="py-24 lg:py-32 bg-gradient-hero">
         <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-foreground-white mb-8 font-montserrat">
-            Want to Share Your Insights?
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+            <span className="leading-[1.4]">Want to Share Your Insights?</span>
           </h2>
-          <p className="text-xl text-foreground-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
+          <p className="text-xl text-foreground-white/80 mb-12 font-montserrat">
             Join our community of thought leaders and share your expertise with
             fellow technology professionals.
           </p>
-          <Button variant="hero" size="xl">
+          <Button variant="hero" size="xl" className="rounded-full">
             Contribute
           </Button>
         </div>
