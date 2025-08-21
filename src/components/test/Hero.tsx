@@ -7,22 +7,27 @@ import ParticleField from "../effects/ParticleField";
 import ScrollTrigger from "../effects/ScrollTriggerAnimations";
 import { TextHighlight, AnimatedText } from "../enhanced/TextHighlight";
 import { HoverMagnet } from "../effects/MicroInteractions";
+import AuroraBackground from "./effects/AuroraBackground";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const Hero = () => {
   return (
-    <section
-      data-section="hero"
-      className="relative min-h-[90vh] overflow-hidden bg-gradient-to-br from-brand-darker via-brand-dark to-brand-purple-dark noise-overlay"
+    <AuroraBackground 
+      className="min-h-[90vh] bg-gradient-to-br from-brand-darker via-brand-dark to-brand-purple-dark noise-overlay"
+      intensity={0.2}
     >
-      {/* Enhanced Multi-layered Background */}
-      <div className="absolute inset-0">
-        <DynamicMeshBackground intensity={0.7} />
-        <ParticleField particleCount={60} />
-        <VideoBackground />
-        {/* Luminous gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-luminous animate-mesh-shift opacity-40"></div>
-      </div>
+      <section
+        data-section="hero"
+        className="relative min-h-[90vh] overflow-hidden"
+      >
+        {/* Enhanced Multi-layered Background */}
+        <div className="absolute inset-0">
+          <DynamicMeshBackground intensity={0.7} />
+          <ParticleField particleCount={60} />
+          <VideoBackground />
+          {/* Luminous gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-luminous animate-mesh-shift opacity-40"></div>
+        </div>
 
       {/* Content - Enhanced with Glass Morphism */}
       <div className="relative z-10 container mx-auto px-6 pt-52 pb-24">
@@ -75,7 +80,8 @@ const Hero = () => {
           </ScrollTrigger>
         </div>
       </div>
-    </section>
+      </section>
+    </AuroraBackground>
   );
 };
 

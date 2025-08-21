@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { AbstractLifecycleVisual } from "../effects/AbstractLifecycleVisuals";
 import ScrollTrigger from "../effects/ScrollTriggerAnimations";
+import StickyScrollLayout from "./effects/StickyScrollLayout";
+import EnhancedScrollReveal from "./effects/EnhancedScrollReveal";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const ProductLifecycle = () => {
@@ -77,62 +79,89 @@ const ProductLifecycle = () => {
           </div>
         </ScrollTrigger>
 
-        {/* Enhanced 2x2 Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
-          {phases.map((phase, index) => (
-            <ScrollTrigger
-              key={index}
-              delay={index * 200}
-              animation="scaleIn"
-              className={`relative glass-card-light glass-hover rounded-3xl p-1 group ${styles[phase.borderStyle]} noise-overlay`}
-            >
-              {/* Enhanced Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/4 via-transparent to-brand-cyan/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-
-              <div className="relative z-10 p-8 lg:p-10 bg-background-light rounded-3xl h-full flex flex-col">
-                {/* Enhanced Icon and Title Section */}
-                <div className="flex items-start space-x-6 mb-6">
-                  <div className="relative w-20 h-20 flex items-center justify-center glass-card rounded-2xl group-hover:animate-glow-pulse">
-                    <AbstractLifecycleVisual type={phase.type} className="w-16 h-16" />
-                  </div>
-
-                  <div className="flex-1 min-w-0">
-                    <h3 className="heading-h3 test-neon-purple mb-2 leading-tight">
-                      {phase.title}
-                    </h3>
-                    <h4 className="text-base sm:text-lg lg:text-xl font-semibold test-neon-cyan mb-4">
-                      {phase.subtitle}
-                    </h4>
+        {/* Sticky Scroll Layout */}
+        <StickyScrollLayout
+          stickyContent={
+            <div className="p-8 lg:p-12">
+              <EnhancedScrollReveal direction="scale" delay={200}>
+                <h3 className="heading-h2 text-foreground-dark mb-6 test-neon-purple">
+                  Navigate Every Stage
+                </h3>
+                <p className="text-lg text-foreground-dark-muted leading-relaxed font-light mb-8">
+                  From initial launch to market dominance, we're your trusted partner at every waypoint of the journey.
+                </p>
+                <div className="w-full h-64 glass-card rounded-2xl flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-20 h-20 mx-auto mb-4 glass-card rounded-xl flex items-center justify-center">
+                      <AbstractLifecycleVisual type="launch" className="w-16 h-16" />
+                    </div>
+                    <p className="text-sm text-foreground-dark-muted">Guidance at Every Phase</p>
                   </div>
                 </div>
+              </EnhancedScrollReveal>
+            </div>
+          }
+          scrollingContent={
+            <div className="space-y-12">
+              {phases.map((phase, index) => (
+                <EnhancedScrollReveal
+                  key={index}
+                  direction="up"
+                  delay={index * 100}
+                  className={`relative glass-card-light glass-hover rounded-3xl p-1 group ${styles[phase.borderStyle]} noise-overlay`}
+                >
+                  {/* Enhanced Glow Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/4 via-transparent to-brand-cyan/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-                {/* Enhanced Content */}
-                <div className="flex-1 flex flex-col">
-                  <p className="text-foreground-dark-muted leading-relaxed text-base font-light mb-4">
-                    {phase.description}
-                  </p>
+                  <div className="relative z-10 p-8 lg:p-10 bg-background-light rounded-3xl h-full flex flex-col">
+                    {/* Enhanced Icon and Title Section */}
+                    <div className="flex items-start space-x-6 mb-6">
+                      <div className="relative w-20 h-20 flex items-center justify-center glass-card rounded-2xl group-hover:animate-glow-pulse">
+                        <AbstractLifecycleVisual type={phase.type} className="w-16 h-16" />
+                      </div>
 
-                  <p className="text-foreground-dark-muted leading-relaxed text-base font-light mb-6">
-                    {phase.example}
-                  </p>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="heading-h3 test-neon-purple mb-2 leading-tight">
+                          {phase.title}
+                        </h3>
+                        <h4 className="text-base sm:text-lg lg:text-xl font-semibold test-neon-cyan mb-4">
+                          {phase.subtitle}
+                        </h4>
+                      </div>
+                    </div>
 
-                  {/* Enhanced CTA Button */}
-                  <div className="mt-auto">
-                    <Link to={phase.caseStudyLink}>
-                      <Button
-                        variant="luminous-secondary"
-                        size="sm"
-                        className="w-full sm:w-auto group-hover:scale-105"
-                      >
-                        Check out the full case study here
-                      </Button>
-                    </Link>
+                    {/* Enhanced Content */}
+                    <div className="flex-1 flex flex-col">
+                      <p className="text-foreground-dark-muted leading-relaxed text-base font-light mb-4">
+                        {phase.description}
+                      </p>
+
+                      <p className="text-foreground-dark-muted leading-relaxed text-base font-light mb-6">
+                        {phase.example}
+                      </p>
+
+                      {/* Enhanced CTA Button */}
+                      <div className="mt-auto">
+                        <Link to={phase.caseStudyLink}>
+                          <Button
+                            variant="luminous-secondary"
+                            size="sm"
+                            className="w-full sm:w-auto group-hover:scale-105"
+                          >
+                            Check out the full case study here
+                          </Button>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </ScrollTrigger>
-          ))}
-        </div>
+                </EnhancedScrollReveal>
+              ))}
+            </div>
+          }
+          containerClassName="max-w-7xl mx-auto"
+          stickyClassName="h-screen flex items-center"
+          scrollingClassName=""
+        />
       </div>
     </section>
   );
