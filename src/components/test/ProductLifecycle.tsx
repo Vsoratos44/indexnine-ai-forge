@@ -5,6 +5,8 @@ import { AbstractLifecycleVisual } from "../effects/AbstractLifecycleVisuals";
 import ScrollTrigger from "../effects/ScrollTriggerAnimations";
 import StickyScrollLayout from "./effects/StickyScrollLayout";
 import EnhancedScrollReveal from "./effects/EnhancedScrollReveal";
+import AngularSection from "./effects/AngularSection";
+import LivingGradientBackground from "./effects/LivingGradientBackground";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const ProductLifecycle = () => {
@@ -56,46 +58,52 @@ const ProductLifecycle = () => {
   ];
 
   return (
-    <section
-      data-section="product-lifecycle"
-      className={`py-24 lg:py-32 bg-background-light relative overflow-hidden ${styles.sectionBgRadial} noise-overlay`}
+    <LivingGradientBackground 
+      variant="cosmic"
+      className="py-24 lg:py-32 relative overflow-hidden noise-overlay"
     >
-      {/* Enhanced Atmospheric Background */}
-      <div className="absolute inset-0 opacity-50">
-        <div className="absolute top-20 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-luminous-drift"></div>
-        <div className="absolute bottom-20 right-1/6 w-80 h-80 bg-brand-cyan/6 rounded-full blur-3xl animate-luminous-drift" style={{ animationDelay: "3s" }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-purple/5 rounded-full blur-2xl animate-pulse-slow"></div>
-      </div>
+      <AngularSection
+        clipDirection="top-left"
+        gradientType="cosmic"
+        className="absolute inset-0 opacity-60"
+      >
+        {/* Enhanced Electric Background Effects */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-1/6 w-96 h-96 bg-gradient-to-r from-transparent via-purple-500/8 to-transparent rounded-full blur-3xl animate-cosmic-pulse"></div>
+          <div className="absolute bottom-20 right-1/6 w-80 h-80 bg-gradient-to-r from-transparent via-cyan-500/6 to-transparent rounded-full blur-3xl animate-cosmic-pulse" style={{ animationDelay: "3s" }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-transparent via-green-500/5 to-transparent rounded-full blur-2xl animate-data-matrix"></div>
+        </div>
+      </AngularSection>
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <ScrollTrigger>
           <div className="text-center mb-16 lg:mb-20">
-            <h2 className="heading-h2 text-foreground-dark mb-6 leading-[1.3]">
-              A Partner for Every Stage of the <span className="test-neon-purple">Ascent</span>.
+            <h2 className="heading-h2 text-foreground mb-6 leading-[1.3]">
+              A Partner for Every Stage of the <span className="test-electric-text">Ascent</span>.
             </h2>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto px-4">
-              Your path to the pinnacle isn't a single leap; it's a journey with distinct stages. We provide the <span className="test-neon-cyan">specialized engineering and strategic guidance</span> you need at every critical waypoint.
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/80 leading-relaxed font-light max-w-4xl mx-auto px-4">
+              Your path to the pinnacle isn't a single leap; it's a journey with distinct stages. We provide the <span className="test-electric-glow">specialized engineering and strategic guidance</span> you need at every critical waypoint.
             </p>
           </div>
         </ScrollTrigger>
 
-        {/* Sticky Scroll Layout */}
+        {/* Sticky Scroll Layout with Electric Effects */}
         <StickyScrollLayout
           stickyContent={
             <div className="p-8 lg:p-12">
               <EnhancedScrollReveal direction="scale" delay={200}>
-                <h3 className="heading-h2 text-foreground-dark mb-6 test-neon-purple">
+                <h3 className="heading-h2 text-foreground mb-6 test-electric-text">
                   Navigate Every Stage
                 </h3>
-                <p className="text-lg text-foreground-dark-muted leading-relaxed font-light mb-8">
+                <p className="text-lg text-foreground/80 leading-relaxed font-light mb-8">
                   From initial launch to market dominance, we're your trusted partner at every waypoint of the journey.
                 </p>
-                <div className="w-full h-64 glass-card rounded-2xl flex items-center justify-center">
+                <div className="w-full h-64 glass-card rounded-2xl flex items-center justify-center border border-green-500/20 animate-glow-pulse">
                   <div className="text-center">
-                    <div className="w-20 h-20 mx-auto mb-4 glass-card rounded-xl flex items-center justify-center">
+                    <div className="w-20 h-20 mx-auto mb-4 glass-card rounded-xl flex items-center justify-center border border-cyan-500/30">
                       <AbstractLifecycleVisual type="launch" className="w-16 h-16" />
                     </div>
-                    <p className="text-sm text-foreground-dark-muted">Guidance at Every Phase</p>
+                    <p className="text-sm text-foreground/70 test-data-text">Guidance at Every Phase</p>
                   </div>
                 </div>
               </EnhancedScrollReveal>
@@ -108,23 +116,23 @@ const ProductLifecycle = () => {
                   key={index}
                   direction="up"
                   delay={index * 100}
-                  className={`relative glass-card-light glass-hover rounded-3xl p-1 group ${styles[phase.borderStyle]} noise-overlay`}
+                  className={`relative glass-card-light glass-hover rounded-3xl p-1 group ${styles[phase.borderStyle]} noise-overlay border border-green-500/10`}
                 >
-                  {/* Enhanced Glow Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/4 via-transparent to-brand-cyan/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  {/* Enhanced Electric Glow Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/4 via-transparent to-cyan-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-                  <div className="relative z-10 p-8 lg:p-10 bg-background-light rounded-3xl h-full flex flex-col">
+                  <div className="relative z-10 p-8 lg:p-10 bg-background/80 rounded-3xl h-full flex flex-col backdrop-blur-sm border border-white/5">
                     {/* Enhanced Icon and Title Section */}
                     <div className="flex items-start space-x-6 mb-6">
-                      <div className="relative w-20 h-20 flex items-center justify-center glass-card rounded-2xl group-hover:animate-glow-pulse">
+                      <div className="relative w-20 h-20 flex items-center justify-center glass-card rounded-2xl group-hover:animate-glow-pulse border border-purple-500/20">
                         <AbstractLifecycleVisual type={phase.type} className="w-16 h-16" />
                       </div>
 
                       <div className="flex-1 min-w-0">
-                        <h3 className="heading-h3 test-neon-purple mb-2 leading-tight">
+                        <h3 className="heading-h3 test-electric-text mb-2 leading-tight">
                           {phase.title}
                         </h3>
-                        <h4 className="text-base sm:text-lg lg:text-xl font-semibold test-neon-cyan mb-4">
+                        <h4 className="text-base sm:text-lg lg:text-xl font-semibold test-electric-glow mb-4">
                           {phase.subtitle}
                         </h4>
                       </div>
@@ -132,11 +140,11 @@ const ProductLifecycle = () => {
 
                     {/* Enhanced Content */}
                     <div className="flex-1 flex flex-col">
-                      <p className="text-foreground-dark-muted leading-relaxed text-base font-light mb-4">
+                      <p className="text-foreground/80 leading-relaxed text-base font-light mb-4">
                         {phase.description}
                       </p>
 
-                      <p className="text-foreground-dark-muted leading-relaxed text-base font-light mb-6">
+                      <p className="text-foreground/70 leading-relaxed text-base font-light mb-6 italic">
                         {phase.example}
                       </p>
 
@@ -146,7 +154,7 @@ const ProductLifecycle = () => {
                           <Button
                             variant="luminous-secondary"
                             size="sm"
-                            className="w-full sm:w-auto group-hover:scale-105"
+                            className="w-full sm:w-auto group-hover:scale-105 hover:animate-glow-pulse"
                           >
                             Check out the full case study here
                           </Button>
@@ -163,7 +171,7 @@ const ProductLifecycle = () => {
           scrollingClassName=""
         />
       </div>
-    </section>
+    </LivingGradientBackground>
   );
 };
 
