@@ -128,7 +128,7 @@ const Header = () => {
                   {/* Backdrop overlay */}
                   {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
                   <div className="absolute top-full left-0 mt-2 w-72 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                    <div className="p-4">
+                    <div className="px-5 py-4">
                       <Link
                         to="/services/custom-software"
                         className={`${styles.navLink}`}
@@ -174,7 +174,7 @@ const Header = () => {
                   {/* Backdrop overlay */}
                   {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
                   <div className="absolute top-full left-0 mt-2 w-72 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                    <div className="p-4">
+                    <div className="px-5 py-4">
                       <Link
                         to="/engagement/innovation-lab"
                         className={`${styles.navLink}`}
@@ -217,7 +217,7 @@ const Header = () => {
                   {/* Backdrop overlay */}
                   {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
                   <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                    <div className="p-4">
+                    <div className="px-5 py-4">
                       <Link
                         to="/insights/case-studies"
                         className={`${styles.navLink}`}
@@ -254,7 +254,7 @@ const Header = () => {
                   {/* Backdrop overlay */}
                   {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                    <div className="p-4">
+                    <div className="px-5 py-4">
                       <Link to="/events" className={`${styles.navLink}`}>
                         Events
                       </Link>

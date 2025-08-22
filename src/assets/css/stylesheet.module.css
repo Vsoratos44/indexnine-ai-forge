@@ -182,10 +182,10 @@ header .fixed.inset-0 {
   text-decoration: none;
   /* NEW: Add a transition for a smooth return on mouseout */
   transition: transform 0.3s ease;
-  padding: 6px 0;
+  padding: 8px 0;
   color: #070a22;
-  line-height: 1.1;
-  font-size: 0.875rem;
+  line-height: 1.125;
+  font-size: 0.9rem;
 }
 
 /* Arrow element */
