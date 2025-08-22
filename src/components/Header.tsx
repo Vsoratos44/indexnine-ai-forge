@@ -4,6 +4,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import LogoWhite from "../assets/images/i9logo-logo-wht.svg";
 import LogoBlack from "../assets/images/i9logo-logo-blk.svg";
+import styles from "../assets/css/stylesheet.module.css";
 import { ChevronRight } from "lucide-react";
 
 const Header = () => {
@@ -126,53 +127,32 @@ const Header = () => {
                   </button>
                   {/* Backdrop overlay */}
                   {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                    <div className="p-4 space-y-2">
-                      {/* <a
-                        href="#"
-                        className="group inline-flex items-center space-x-1 text-sm font-medium text-gray-800"
-                      >
-                        <ChevronRight className="transform transition-transform duration-300 group-hover:ease-in-out group-hover:translate-x-1" />
-                        <span className="transform transition-transform duration-300 ease-in-out group-hover:translate-x-1">
-                          OURA 101
-                        </span>
-                      </a>
-                      <a
-                        href="#"
-                        className="group inline-flex items-center space-x-2 text-lg font-medium text-gray-800"
-                      >
-                        <ChevronRight className="transform transition-transform duration-300 ease-in-out hover:translate-x-1" />
-                        <span className="transform transition-transform duration-300 ease-in-out group-hover:translate-x-1">
-                          OURA 101
-                        </span>
-                      </a> */}
+                  <div className="absolute top-full left-0 mt-2 w-72 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                    <div className="p-4">
                       <Link
                         to="/services/custom-software"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         Custom Software Development
                       </Link>
-                      <Link
-                        to="/studios/ai"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                      >
+                      <Link to="/studios/ai" className={`${styles.navLink}`}>
                         AI & ML Development
                       </Link>
                       <Link
                         to="/studios/data-engineering"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         Data Engineering
                       </Link>
                       <Link
                         to="/studios/quality-engineering"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         Quality Assurance Engineering
                       </Link>
                       <Link
                         to="/services/consulting"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         Consulting & Strategy
                       </Link>
@@ -193,29 +173,29 @@ const Header = () => {
                   </button>
                   {/* Backdrop overlay */}
                   {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                    <div className="p-4 space-y-2">
+                  <div className="absolute top-full left-0 mt-2 w-72 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                    <div className="p-4">
                       <Link
                         to="/engagement/innovation-lab"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         Innovation Lab
                       </Link>
                       <Link
                         to="/engagement/enterprise"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         Enterprise Studio
                       </Link>
                       <Link
                         to="/engagement/dedicated-teams"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         Dedicated Engineering Teams
                       </Link>
                       <Link
                         to="/engagement/project-based"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         Project-Based Engagements
                       </Link>
@@ -237,22 +217,22 @@ const Header = () => {
                   {/* Backdrop overlay */}
                   {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
                   <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                    <div className="p-4 space-y-2">
+                    <div className="p-4">
                       <Link
                         to="/insights/case-studies"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         Case Studies
                       </Link>
                       <Link
                         to="/insights/blogs"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         Blogs
                       </Link>
                       <Link
                         to="/resources/ebooks"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         eBooks
                       </Link>
@@ -274,16 +254,13 @@ const Header = () => {
                   {/* Backdrop overlay */}
                   {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
-                    <div className="p-4 space-y-2">
-                      <Link
-                        to="/events"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
-                      >
+                    <div className="p-4">
+                      <Link to="/events" className={`${styles.navLink}`}>
                         Events
                       </Link>
                       <Link
                         to="/events/features/on-site-experience"
-                        className="block px-4 py-3 text-gray-800 hover:text-brand-primary hover:bg-brand-primary/10 rounded-lg transition-all duration-200"
+                        className={`${styles.navLink}`}
                       >
                         On-Site Experience
                       </Link>
