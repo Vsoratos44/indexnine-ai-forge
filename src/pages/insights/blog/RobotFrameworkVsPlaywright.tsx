@@ -174,12 +174,18 @@ const RobotFrameworkVsPlaywright = () => {
       <div className="bg-gradient-to-b from-white via-white to-[#F0F4FF]">
         <div className="container grid md:grid-cols-3 gap-12 bg-transparent">
           <div className="text-foreground-dark">TOC</div>
+
           <div className="col-span-2 w-full">
             {/* Introduction Section */}
-            <section className="py-24 lg:py-32 bg-[#fff] relative overflow-hidden">
-              <div className="container mx-auto px-6 lg:px-8 relative z-10">
-                <div className="max-w-5xl mx-auto">
-                  <div className="space-y-6 text-lg text-muted-foreground leading-relaxed mb-8">
+            <section className="relative overflow-hidden">
+              <div className="container relative z-10">
+                <div className="max-w-5xl mx-auto pb-8 ">
+                  <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed mb-8">
+                    <h4 className="font-semibold text-xl ">
+                      A deep dive into Robot Framework vs Playwright for
+                      enterprise-grade test automation. See which framework
+                      powers a better continuous testing andQA process.
+                    </h4>
                     <p>
                       In today's competitive landscape, the pressure to balance
                       quality, velocity, and cost is relentless. Cutting corners
@@ -209,35 +215,67 @@ const RobotFrameworkVsPlaywright = () => {
                     </p>
                   </div>
 
-                  <div className="bg-brand-primary/5 border border-brand-primary/20 rounded-xl p-8 my-12">
-                    <Button
-                      variant="hero"
-                      className="w-full max-w-md mx-auto block"
-                    >
-                      <Download className="w-4 h-4 mr-2" />
-                      Download Our QA Automation Framework eBook (PDF)
-                    </Button>
-                  </div>
+                  <Button
+                    type="submit"
+                    className=" rounded-full transition hover:scale-100"
+                    size="xl"
+                  >
+                    <Download className="w-4 h-4 mr-2" />
+                    Download Our QA Automation Framework eBook (PDF)
+                  </Button>
                 </div>
               </div>
             </section>
 
             {/* Comparison Table Section */}
-            <section className="py-24 lg:py-32 bg-gradient-section relative overflow-hidden">
-              <div className="absolute inset-0">
-                <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-20 right-1/6 w-96 h-96 bg-brand-purple/6 rounded-full blur-3xl"></div>
-              </div>
-
-              <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <section className="py-12 lg:py-16 relative overflow-hidden">
+              <div className="container text-lg text-foreground-dark-muted leading-relaxed ">
                 <div className="max-w-5xl mx-auto">
-                  <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-12 font-montserrat text-center">
-                    At a Glance: Robot Framework vs. Playwright Comparison
-                  </h2>
-
-                  <div className="overflow-x-auto">
-                    <table className="w-full border border-glass-border rounded-3xl overflow-hidden bg-glass-bg/50 backdrop-blur-xl shadow-glass">
-                      <thead className="bg-brand-primary/10">
+                  <div className="space-y-6">
+                    <h4 className="font-semibold text-xl text-foreground-dark">
+                      The hidden costs of point solutions
+                    </h4>
+                    <p>
+                      Point solutions promised to solve specific problems
+                      exceptionally well. A dedicated CRM for sales. A
+                      specialized tool for email marketing. A focused platform
+                      for customer support. But as businesses adopted more of
+                      these "best-in-class" tools, an unexpected problem
+                      emerged: the connections between them became the weakest
+                      links.
+                    </p>
+                    <p>
+                      Data silos emerged overnight. Customer information lived
+                      in multiple places, often contradicting itself. Teams
+                      spent hours manually transferring data between systems.
+                      Worse, the big picture— the unified view of customer
+                      relationships and business performance—disappeared
+                      entirely.
+                    </p>
+                    <p>
+                      The financial impact is eye-opening. Companies now spend
+                      an average of $9,643 per employee annually on SaaS
+                      applications⁴, with over 50% of licenses going unused for
+                      more than 90 days⁵. Perhaps most telling: only 45% of
+                      purchased applications are regularly used by employees3.
+                      This means businesses are not just paying for hundreds of
+                      tools—they're paying for hundreds of tools that sit idle
+                      while teams struggle with the complexity of managing what
+                      they do use.{" "}
+                    </p>
+                    <div className="bg-foreground-dark/5 p-8 text-md ">
+                      Businesses found themselves managing their tools instead
+                      of growing their companies.
+                    </div>
+                  </div>
+                  <div className="space-y-6 mt-16">
+                    <h4 className="font-semibold text-xl text-foreground-dark mb-8">
+                      At a Glance: Robot Framework vs. Playwright Comparison
+                    </h4>
+                  </div>
+                  <div className="overflow-x-auto bg-[#fff]">
+                    <table className="w-full border border-glass-border rounded-3xl overflow-hidden bg-glass-bg/50 backdrop-blur-xl ">
+                      <thead className="bg-foreground-dark/5">
                         <tr>
                           <th className="text-left p-6 font-montserrat text-foreground-dark font-semibold">
                             Feature
@@ -251,7 +289,7 @@ const RobotFrameworkVsPlaywright = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-t border-glass-border">
+                        <tr className="border-t border-glass-border-light">
                           <td className="p-6 font-medium text-foreground-dark">
                             Ideal Use Case
                           </td>
@@ -264,7 +302,7 @@ const RobotFrameworkVsPlaywright = () => {
                             demanding high-velocity and parallel execution.
                           </td>
                         </tr>
-                        <tr className="border-t border-glass-border bg-glass-bg/30">
+                        <tr className="border-t border-glass-border-light bg-glass-bg/30">
                           <td className="p-6 font-medium text-foreground-dark">
                             Key Strength
                           </td>
@@ -279,7 +317,7 @@ const RobotFrameworkVsPlaywright = () => {
                             tests.
                           </td>
                         </tr>
-                        <tr className="border-t border-glass-border">
+                        <tr className="border-t border-glass-border-light">
                           <td className="p-6 font-medium text-foreground-dark">
                             Ecosystem
                           </td>
@@ -294,7 +332,7 @@ const RobotFrameworkVsPlaywright = () => {
                             workflows.
                           </td>
                         </tr>
-                        <tr className="border-t border-glass-border bg-glass-bg/30">
+                        <tr className="border-t border-glass-border-light bg-glass-bg/30">
                           <td className="p-6 font-medium text-foreground-dark">
                             Best For...
                           </td>
@@ -317,7 +355,7 @@ const RobotFrameworkVsPlaywright = () => {
             </section>
 
             {/* Robot Framework Section */}
-            <section className="py-24 lg:py-32 bg-background relative overflow-hidden">
+            <section className="py-24 lg:py-32 bg-[#fff] relative overflow-hidden">
               <div className="container mx-auto px-6 lg:px-8 relative z-10">
                 <div className="max-w-5xl mx-auto">
                   <h2 className="text-4xl sm:text-5xl font-bold text-brand-primary-dark mb-8 font-montserrat">
