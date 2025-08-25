@@ -173,17 +173,13 @@ const QualityEngineering = () => {
               reliable products faster and with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button
-                variant="hero"
-                size="xl"
-                className="min-w-[280px] rounded-full"
-              >
+              <Button variant="btnPrimary" size="xl" className="min-w-[280px] ">
                 Get Your APQ Roadmap
               </Button>
               <Button
-                variant="hero-secondary"
+                variant="btnSecondary"
                 size="xl"
-                className="min-w-[240px]  rounded-full"
+                className="min-w-[240px]  "
               >
                 See Our Impact
               </Button>
@@ -339,16 +335,8 @@ const QualityEngineering = () => {
                       </div>
                     </blockquote>
                     <div className="mt-6">
-                      <Button
-                        variant="outline"
-                        size="lg"
-                        asChild
-                        className="rounded-full border-brand-purple"
-                      >
-                        <Link
-                          to="/insights/case-studies/tripjack"
-                          className="inline-flex items-center gap-2 text-brand-purple hover:text-foreground-dark transition-all duration-500 transform hover:scale-105"
-                        >
+                      <Button variant="btnPrimary" size="lg" asChild>
+                        <Link to="/insights/case-studies/tripjack">
                           Read Full Tripjack Case Study
                           <ArrowRight className="h-4 w-4" />
                         </Link>
@@ -611,7 +599,7 @@ const QualityEngineering = () => {
                   <div className="text-lg font-semibold text-brand-primary mb-4">
                     Investment: Starting at $15,000
                   </div>
-                  <Button className="w-full rounded-full">
+                  <Button className="w-full" variant="btnPrimary">
                     Kickstart Your Automation
                   </Button>
                 </CardContent>
@@ -659,7 +647,7 @@ const QualityEngineering = () => {
                   <div className="text-lg font-semibold text-brand-primary mb-4">
                     Investment: Starting at $30,000
                   </div>
-                  <Button className="w-full rounded-full">
+                  <Button className="w-full " variant="btnSecondary">
                     Build My APQ Roadmap
                   </Button>
                 </CardContent>
@@ -775,11 +763,7 @@ const QualityEngineering = () => {
               </div>
             </div>
             <div className="text-center mt-8">
-              <Button
-                variant="hero"
-                asChild
-                className="inline-flex items-center gap-2 rounded-full"
-              >
+              <Button variant="btnPrimary" asChild>
                 <a
                   href="/insights/blogs/robot-framework-vs-playwright-automation"
                   className="no-underline"
@@ -995,11 +979,7 @@ const QualityEngineering = () => {
                     />
                   </div>
 
-                  <Button
-                    type="submit"
-                    className="w-full rounded-full transition hover:brightness-110"
-                    size="xl"
-                  >
+                  <Button type="submit" size="lg" variant="btnSecondary">
                     Book My APQ Roadmap Session
                   </Button>
                 </form>

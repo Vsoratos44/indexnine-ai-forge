@@ -243,11 +243,7 @@ const RobotFrameworkVsPlaywright = () => {
                   Join our community of thought leaders and share your expertise
                   with fellow technology professionals.
                 </p>
-                <Button
-                  type="submit"
-                  className="px-16 rounded-full transition hover:scale-100"
-                  size="lg"
-                >
+                <Button type="submit" size="lg" variant="btnSecondary">
                   Continue
                 </Button>
               </div>
@@ -294,11 +290,7 @@ const RobotFrameworkVsPlaywright = () => {
                     </p>
                   </div>
 
-                  <Button
-                    type="submit"
-                    className=" rounded-full transition hover:scale-100"
-                    size="xl"
-                  >
+                  <Button type="submit" size="lg" variant="btnPrimary">
                     <Download className="w-4 h-4 mr-2" />
                     Download Our QA Automation Framework eBook (PDF)
                   </Button>
@@ -650,7 +642,7 @@ const RobotFrameworkVsPlaywright = () => {
                     </div>
 
                     <div className="mt-8 pt-8 border-t border-glass-border-light">
-                      <Button variant="hero" className="w-full rounded-full">
+                      <Button variant="btnPrimary" className="w-full">
                         Book a Free QA Consulting Session to Build Your
                         Automation Strategy
                       </Button>
@@ -732,7 +724,7 @@ const RobotFrameworkVsPlaywright = () => {
             fellow technology professionals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="xl" className="rounded-full">
+            <Button variant="btnSecondary" size="lg">
               Contribute
             </Button>
           </div>

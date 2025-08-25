@@ -72,17 +72,13 @@ const ConsultingStrategy = () => {
               drives measurable value and competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button
-                variant="hero"
-                size="lg"
-                className="min-w-[220px] rounded-full"
-              >
+              <Button variant="btnPrimary" size="lg" className="min-w-[220px]">
                 Book a Consultation
               </Button>
               <Button
-                variant="hero-secondary"
+                variant="btnSecondary"
                 size="lg"
-                className="min-w-[200px] rounded-full"
+                className="min-w-[200px]"
               >
                 Download Strategy Guide
               </Button>
@@ -345,10 +341,7 @@ const ConsultingStrategy = () => {
                         Rapid strategic assessment and roadmap development for
                         specific initiatives or challenges.
                       </p>
-                      <Button
-                        variant="hero-secondary"
-                        className="w-full rounded-full hover:text-foreground-dark"
-                      >
+                      <Button variant="btnPrimary" className="w-full">
                         Learn More
                       </Button>
                     </CardContent>
@@ -369,7 +362,7 @@ const ConsultingStrategy = () => {
                         Comprehensive consulting engagement with hands-on
                         implementation support and ongoing guidance.
                       </p>
-                      <Button className="w-full rounded-full">
+                      <Button className="w-full" variant="btnSecondary">
                         Get Started
                       </Button>
                     </CardContent>
@@ -387,10 +380,7 @@ const ConsultingStrategy = () => {
                         Continuous strategic guidance and support as your
                         trusted technology advisor.
                       </p>
-                      <Button
-                        variant="hero-secondary"
-                        className="w-full rounded-full hover:text-foreground-dark"
-                      >
+                      <Button variant="btnPrimary" className="w-full">
                         Learn More
                       </Button>
                     </CardContent>
@@ -479,11 +469,7 @@ const ConsultingStrategy = () => {
               Let's discuss how our strategic consulting can accelerate your
               digital transformation and competitive advantage.
             </p>
-            <Button
-              variant="hero"
-              size="lg"
-              className="min-w-[220px] rounded-full"
-            >
+            <Button variant="btnSecondary" size="lg" className="min-w-[220px]">
               Book a Consultation
             </Button>
           </div>

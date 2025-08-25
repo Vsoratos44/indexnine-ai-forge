@@ -34,18 +34,18 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
             <a href="#home-contact">
               <Button
-                variant="default"
+                variant="btnPrimary"
                 size="xl"
-                className={`min-w-[280px] rounded-full ${styles["btn-primary"]} `}
+                className={`min-w-[280px]`}
               >
                 Schedule a Strategy Session
               </Button>
             </a>
             <Link to="/services/custom-software">
               <Button
-                variant="hero-secondary"
+                variant="btnSecondary"
                 size="xl"
-                className="min-w-[240px] rounded-full"
+                className="min-w-[240px]"
               >
                 Explore our Solutions
               </Button>

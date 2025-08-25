@@ -136,10 +136,10 @@ const BlogPost = () => {
             <h3 class="text-2xl font-semibold text-foreground mb-4">Ready to Explore AI Agents?</h3>
             <p class="text-foreground-muted mb-6">Let our AI Strategy team help you assess your readiness for agentic AI and develop a tailored implementation roadmap.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <button class="bg-white text-brand-primary px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors">
+              <button class="bg-gradient-to-r from-[#505CFD] to-brand-purple text-white hover:bg-gradient-to-r hover:from-brand-purple hover:to-[#505CFD] rounded-full px-8 py-2">
                 Schedule AI Strategy Session
               </button>
-              <button class="border border-white/30 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
+              <button class="bg-[#000] border border-[#fff] text-white rounded-full hover:border-brand-purple hover:text-brand-purple px-8 py-2">
                 Download AI Readiness Guide
               </button>
             </div>
@@ -210,10 +210,10 @@ const BlogPost = () => {
               Learn how to integrate AI tools effectively into your development workflow with our proven methodology.
             </p>
             <div class="space-y-4 ">
-              <button class="bg-white text-brand-primary px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors">
+              <button class="bg-gradient-to-r from-[#505CFD] to-brand-purple text-white hover:bg-gradient-to-r hover:from-brand-purple hover:to-[#505CFD] rounded-full px-8 py-2">
                 Book Development Consultation
               </button>
-              <button class="border border-white/30 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
+              <button class="bg-[#000] border border-[#fff] text-white rounded-full hover:border-brand-purple hover:text-brand-purple px-8 py-2">
                 Download AI Development Guide
               </button>
             </div>
@@ -285,10 +285,10 @@ const BlogPost = () => {
               Our architecture team can help you make the right choice based on your specific business context and technical requirements.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <button class="bg-white text-brand-primary px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors">
+              <button class="bg-gradient-to-r from-[#505CFD] to-brand-purple text-white hover:bg-gradient-to-r hover:from-brand-purple hover:to-[#505CFD] rounded-full px-8 py-2">
                 Schedule Architecture Review
               </button>
-              <button class="border border-white/30 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
+              <button class="bg-[#000] border border-[#fff] text-white rounded-full hover:border-brand-purple hover:text-brand-purple px-8 py-2">
                 Download Architecture Guide
               </button>
             </div>
@@ -359,10 +359,10 @@ const BlogPost = () => {
             Our data engineering experts can help you design and implement a modern data platform tailored to your business needs.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button class="bg-white text-brand-primary px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors">
+            <button class="bg-gradient-to-r from-[#505CFD] to-brand-purple text-white hover:bg-gradient-to-r hover:from-brand-purple hover:to-[#505CFD] rounded-full px-8 py-2">
               Book Data Strategy Session
             </button>
-            <button class="border border-white/30 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
+            <button class="bg-[#000] border border-[#fff] text-white rounded-full hover:border-brand-purple hover:text-brand-purple px-8 py-2">
               Download Platform Blueprint
             </button>
           </div>
@@ -433,10 +433,10 @@ const BlogPost = () => {
               Let our security experts help you implement DevSecOps practices that protect your applications without slowing down development.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <button class="bg-white text-brand-primary px-8 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors">
+              <button class="bg-gradient-to-r from-[#505CFD] to-brand-purple text-white hover:bg-gradient-to-r hover:from-brand-purple hover:to-[#505CFD] rounded-full px-8 py-2">
                 Schedule Security Assessment
               </button>
-              <button class="border border-white/30 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
+              <button class="bg-[#000] border border-[#fff] text-white rounded-full hover:border-brand-purple hover:text-brand-purple px-8 py-2">
                 Download DevSecOps Guide
               </button>
             </div>
@@ -580,11 +580,7 @@ const BlogPost = () => {
                     Join our community of thought leaders and share your
                     expertise with fellow technology professionals.
                   </p>
-                  <Button
-                    type="submit"
-                    className="px-16 rounded-full transition hover:scale-100"
-                    size="lg"
-                  >
+                  <Button type="submit" size="lg" variant="btnSecondary">
                     Continue
                   </Button>
                 </div>
@@ -616,7 +612,7 @@ const BlogPost = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/insights/blogs">
-              <Button variant="hero" size="xl" className="rounded-full">
+              <Button variant="btnSecondary" size="lg">
                 View All Blog Posts
               </Button>
             </Link>

@@ -265,10 +265,7 @@ const Blogs = () => {
                       </div>
 
                       <Link to={`/insights/blogs/${post.id}`}>
-                        <Button
-                          variant="ghost"
-                          className="text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-full"
-                        >
+                        <Button variant="btnPrimary">
                           Read Full Article{" "}
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
@@ -336,10 +333,7 @@ const Blogs = () => {
                     </div>
 
                     <Link to={`/insights/blogs/${post.id}`}>
-                      <Button
-                        variant="ghost"
-                        className="w-full text-brand-primary hover:text-white hover:bg-brand-primary/20 border border-brand-primary/30 rounded-full"
-                      >
+                      <Button variant="btnLink" size="link">
                         Read More <ArrowRight className="w-4 h-4 ml-2" />
                       </Button>
                     </Link>

@@ -39,20 +39,15 @@ const Enterprise = () => {
               engineering excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button
-                variant="hero"
-                size="lg"
-                className="min-w-[280px] rounded-full"
-              >
+              <Button variant="btnPrimary" size="xl" className="min-w-[280px]">
                 Schedule a Modernization Assessment
               </Button>
               <Button
-                variant="hero-secondary"
-                size="lg"
-                className="min-w-[280px] rounded-full"
+                variant="btnSecondary"
+                size="xl"
+                className="min-w-[280px]"
               >
                 Explore our AI Risk Audit Framework{" "}
-                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
             </div>
           </div>
@@ -250,12 +245,9 @@ const Enterprise = () => {
                   latency by 60% and enabling the rapid launch of new product
                   lines.
                 </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="rounded-full text-foreground-dark hover:text-brand-primary hover:border-brand-primary"
-                >
-                  Read the Case Study
+                <Button variant="btnLink" size="link">
+                  Read the Case Study{" "}
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </CardGlass>
 
@@ -271,12 +263,9 @@ const Enterprise = () => {
                   automation suite that cut regression testing time from two
                   weeks to four hours.
                 </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="rounded-full text-foreground-dark hover:text-brand-primary hover:border-brand-primary"
-                >
-                  Read the Case Study
+                <Button variant="btnLink" size="link">
+                  Read the Case Study{" "}
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </CardGlass>
 
@@ -292,12 +281,9 @@ const Enterprise = () => {
                   operational, and ethical risks of implementing AI solutions in
                   the enterprise.
                 </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="rounded-full text-foreground-dark hover:text-brand-primary hover:border-brand-primary"
-                >
-                  Download the Whitepaper
+                <Button variant="btnLink" size="link">
+                  Download the Whitepaper{" "}
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </CardGlass>
             </div>
@@ -318,7 +304,7 @@ const Enterprise = () => {
             greatest competitive advantage. Schedule a complimentary,
             no-obligation assessment with our enterprise architects today.
           </p>
-          <Button variant="hero" size="lg" className="rounded-full">
+          <Button variant="btnSecondary" size="lg">
             Schedule Your Modernization Assessment
           </Button>
         </div>
