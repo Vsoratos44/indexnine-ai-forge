@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -14,8 +14,45 @@ import {
 import { Link } from "react-router-dom";
 import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
 import blogImg2 from "@/assets/images/blog-img2.webp";
+import styles from "../../../assets/css/stylesheet.module.css";
+
+const leftNavLinks = [
+  { href: "#intro", label: "Introduction" },
+  { href: "#hiddenCost", label: "The hidden costs" },
+  { href: "#glance", label: "At a Glance" },
+  { href: "#robotFramework", label: "Robot Framework" },
+  { href: "#playwright", label: "Playwright" },
+  { href: "#qa", label: "Quality Engineering" },
+  { href: "#faqs", label: "Frequently Asked Questions" },
+];
 
 const RobotFrameworkVsPlaywright = () => {
+  const [selected, setSelected] = useState("#intro");
+
+  useEffect(() => {
+    const sections = leftNavLinks.map((link) =>
+      document.querySelector(link.href)
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setSelected(`#${entry.target.id}`);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -60% 0px", threshold: 0 }
+    );
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+    return () => {
+      sections.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -125,7 +162,7 @@ const RobotFrameworkVsPlaywright = () => {
         {/* <LivingVoidBackground /> */}
         {/* <img src={BlogDetsilsBg} alt="" className="absolute left-0" /> */}
 
-        <div className="relative z-10 container mx-auto pt-36 pb-24">
+        <div className="relative z-10 container mx-auto pt-36">
           <div className="max-w-7xl mx-auto text-center lg:text-left ml-0">
             <div className="flex items-center">
               <Link
@@ -172,9 +209,49 @@ const RobotFrameworkVsPlaywright = () => {
         </div>
       </section>
       <div className="bg-gradient-to-b from-white via-white to-[#F0F4FF]">
-        <div className="container grid md:grid-cols-3 gap-12 bg-transparent">
+        <a id="intro"></a>
+        <div className="container grid md:grid-cols-3 gap-12 bg-transparent pt-24">
           <div className="text-foreground-dark">
-            <div className="sticky top-[120px]">Introduction</div>
+            <div className="sticky top-[120px]">
+              <ul className="space-y-2">
+                {leftNavLinks.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      onClick={() => setSelected(link.href)}
+                      className={`inline-blockpy-2 rounded transition 
+                              ${
+                                selected === link.href
+                                  ? "text-brand-purple font-semibold"
+                                  : "text-gray-700"
+                              }
+                              hover:text-brand-purple
+                            `}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <div
+                className={`p-8 mt-8 text-center text-white ${styles.sideCardBg}`}
+              >
+                <h3 className="text-3xl font-bold">
+                  Want to Share Your Insights?
+                </h3>
+                <p className="text-xl py-8">
+                  Join our community of thought leaders and share your expertise
+                  with fellow technology professionals.
+                </p>
+                <Button
+                  type="submit"
+                  className="px-16 rounded-full transition hover:scale-100"
+                  size="lg"
+                >
+                  Continue
+                </Button>
+              </div>
+            </div>
           </div>
 
           <div className="col-span-2 w-full">
@@ -230,7 +307,9 @@ const RobotFrameworkVsPlaywright = () => {
             </section>
 
             {/* Comparison Table Section */}
-            <section className="py-16 relative overflow-hidden">
+            <a id="hiddenCost"></a>
+
+            <section className="pt-24 pb-16 relative overflow-hidden">
               <div className="container text-lg text-foreground-dark-muted leading-relaxed ">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
@@ -265,10 +344,12 @@ const RobotFrameworkVsPlaywright = () => {
                       while teams struggle with the complexity of managing what
                       they do use.{" "}
                     </p>
+
                     <div className="bg-foreground-dark/5 p-8 text-md ">
                       Businesses found themselves managing their tools instead
                       of growing their companies.
                     </div>
+                    <a id="glance"></a>
                   </div>
                   <div className="space-y-6 mt-24">
                     <h4 className="font-semibold text-2xl text-foreground-dark mb-8">
@@ -351,6 +432,7 @@ const RobotFrameworkVsPlaywright = () => {
                         </tr>
                       </tbody>
                     </table>
+                    <a id="robotFramework"></a>
                   </div>
                 </div>
               </div>
@@ -420,11 +502,13 @@ const RobotFrameworkVsPlaywright = () => {
                       </div>
                     </div>
                   </div>
+                  <a id="playwright"></a>
                 </div>
               </div>
             </section>
 
             {/* Playwright Section */}
+
             <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow-hidden">
               <div className="container mx-auto px-6 lg:px-8 relative z-10">
                 <div className="max-w-5xl mx-auto">
@@ -490,6 +574,7 @@ const RobotFrameworkVsPlaywright = () => {
                       </div>
                     </div>
                   </div>
+                  <a id="qa"></a>
                 </div>
               </div>
             </section>
@@ -571,6 +656,7 @@ const RobotFrameworkVsPlaywright = () => {
                       </Button>
                     </div>
                   </div>
+                  <a id="faqs"></a>
                 </div>
               </div>
             </section>
