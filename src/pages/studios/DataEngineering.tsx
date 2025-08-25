@@ -66,17 +66,13 @@ const DataEngineering = () => {
               valuable asset.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button
-                variant="hero"
-                size="xl"
-                className="min-w-[280px] rounded-full"
-              >
+              <Button variant="btnPrimary" size="xl" className="min-w-[280px]">
                 Build Your Data Roadmap
               </Button>
               <Button
-                variant="hero-secondary"
+                variant="btnSecondary"
                 size="xl"
-                className="min-w-[240px] rounded-full"
+                className="min-w-[240px]"
               >
                 See Our Solutions
               </Button>
@@ -206,9 +202,9 @@ const DataEngineering = () => {
                   infrastructure.
                 </p>
                 <Button
-                  variant="hero"
-                  size="xl"
-                  className="min-w-[280px] rounded-full mb-4"
+                  variant="btnPrimary"
+                  size="lg"
+                  className="min-w-[280px] mb-4"
                 >
                   Scope Your Roadmap
                 </Button>

@@ -40,20 +40,15 @@ const InnovationLab = () => {
               Stop dreaming, start building.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button
-                variant="hero"
-                size="lg"
-                className="min-w-[280px] rounded-full"
-              >
+              <Button variant="btnPrimary" size="xl" className="min-w-[280px]">
                 Bring Your Vision to Life
               </Button>
               <Button
-                variant="hero-secondary"
-                size="lg"
-                className="min-w-[280px] rounded-full"
+                variant="btnSecondary"
+                size="xl"
+                className="min-w-[280px]"
               >
                 See how we launched an MVP in 8 weeks{" "}
-                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
             </div>
           </div>
@@ -215,10 +210,7 @@ const InnovationLab = () => {
                   accelerator dramatically reduces time-to-market and eliminates
                   foundational risk.
                 </p>
-                <Button
-                  variant="outline"
-                  className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white rounded-full"
-                >
+                <Button variant="btnPrimary" size="lg">
                   Learn More About Snap.MVP
                 </Button>
               </CardGlass>
@@ -252,12 +244,9 @@ const InnovationLab = () => {
                   napkin sketch to a fully functional, secure FinTech platform,
                   ready for its seed round.
                 </p>
-                <Button
-                  variant="hero-secondary"
-                  size="sm"
-                  className="rounded-full text-foreground-dark hover:text-brand-primary hover:border-brand-primary"
-                >
-                  Read the Case Study
+                <Button variant="btnLink" size="link">
+                  Read the Case Study{" "}
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </CardGlass>
 
@@ -273,12 +262,9 @@ const InnovationLab = () => {
                   A deep dive into the technology and philosophy behind our
                   game-changing deployment accelerator.
                 </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="rounded-full text-foreground-dark hover:text-brand-primary hover:border-brand-primary"
-                >
-                  Read the Blog Post
+                <Button variant="btnLink" size="link">
+                  Read the Blog Post{" "}
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </CardGlass>
 
@@ -293,12 +279,9 @@ const InnovationLab = () => {
                   Explore how our UI architects leverage AI tools to build
                   complex interfaces with incredible speed and quality.
                 </p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="rounded-full text-foreground-dark hover:text-brand-primary hover:border-brand-primary"
-                >
-                  Read the Blog Post
+                <Button variant="btnLink" size="link">
+                  Read the Blog Post{" "}
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </CardGlass>
             </div>
@@ -319,7 +302,7 @@ const InnovationLab = () => {
             dedicated engineering partner obsessed with turning your idea into a
             market-defining success.
           </p>
-          <Button variant="hero" size="lg" className="rounded-full">
+          <Button variant="btnSecondary" size="lg">
             Book Your Free Discovery Session
           </Button>
         </div>

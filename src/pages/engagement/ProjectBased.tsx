@@ -51,17 +51,13 @@ const ProjectBased = () => {
               tying our success directly to yours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button
-                variant="hero"
-                size="lg"
-                className="min-w-[280px] rounded-full"
-              >
+              <Button variant="btnPrimary" size="xl" className="min-w-[280px]">
                 Scope a Project
               </Button>
               <Button
-                variant="hero-secondary"
-                size="lg"
-                className="min-w-[280px] rounded-full"
+                variant="btnSecondary"
+                size="xl"
+                className="min-w-[280px]"
               >
                 Schedule a Strategy Session
               </Button>
@@ -486,10 +482,10 @@ const ProjectBased = () => {
             you are? Let's talk.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="xl" className="rounded-full">
+            <Button variant="btnSecondary" size="lg">
               Contact Us
             </Button>
-            <Button variant="hero" size="xl" className="rounded-full">
+            <Button variant="btnSecondary" size="lg">
               Schedule a Strategy Session
             </Button>
           </div>

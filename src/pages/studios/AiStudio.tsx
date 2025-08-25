@@ -49,7 +49,7 @@ const AiStudio = () => {
 
         {/* Content - Precisely positioned */}
         <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center lg:text-left ml-0">
             <div className="mb-6">
               <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
                 AI & ML Engineering Studio
@@ -67,11 +67,11 @@ const AiStudio = () => {
               development, we help you navigate complexity, unlock efficiency,
               and create new competitive advantages.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
               <Button
-                variant="default"
+                variant="btnPrimary"
                 size="xl"
-                className={`min-w-[280px] rounded-full ${styles["btn-primary"]} `}
+                className={`min-w-[280px]`}
                 onClick={() =>
                   document
                     .getElementById("contact")
@@ -81,9 +81,9 @@ const AiStudio = () => {
                 Book Your AI Strategy Call
               </Button>
               <Button
-                variant="hero-secondary"
+                variant="btnSecondary"
                 size="xl"
-                className="min-w-[240px] rounded-full"
+                className="min-w-[240px]"
                 onClick={() =>
                   document
                     .getElementById("p2r-framework")
@@ -260,8 +260,8 @@ const AiStudio = () => {
                   </div>
 
                   <Button
-                    variant="default"
-                    className="w-full rounded-full bg-foreground-dark"
+                    variant="btnPrimary"
+                    className="w-full"
                     onClick={() =>
                       document
                         .getElementById("contact")
@@ -330,7 +330,7 @@ const AiStudio = () => {
                   </div>
 
                   <Button
-                    variant="default"
+                    variant="btnSecondary"
                     className="w-full rounded-full"
                     onClick={() =>
                       document
@@ -805,9 +805,9 @@ const AiStudio = () => {
 
                   <Button
                     type="submit"
-                    variant="hero"
-                    size="xl"
-                    className="w-full rounded-full"
+                    variant="btnSecondary"
+                    size="lg"
+                    className="w-full"
                   >
                     Schedule My Free Strategy Call
                   </Button>

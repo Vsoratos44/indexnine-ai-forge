@@ -115,9 +115,9 @@ const CustomSoftware = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
               <Button
-                variant="hero"
+                variant="btnPrimary"
                 size="xl"
-                className="min-w-[280px] rounded-full"
+                className="min-w-[280px]"
                 onClick={() =>
                   document
                     .getElementById("scoping-session")
@@ -127,9 +127,9 @@ const CustomSoftware = () => {
                 Scope Your Project
               </Button>
               <Button
-                variant="hero-secondary"
+                variant="btnSecondary"
                 size="xl"
-                className="min-w-[240px] rounded-full"
+                className="min-w-[240px]"
               >
                 View Our Work
               </Button>
@@ -357,7 +357,7 @@ const CustomSoftware = () => {
                       Starting at $10,000
                     </p>
                   </div>
-                  <Button variant="hero" className="rounded-full">
+                  <Button variant="btnSecondary" className="rounded-full">
                     Plan Your Scoping Session
                   </Button>
                 </div>
@@ -541,11 +541,7 @@ const CustomSoftware = () => {
                     placeholder="Tell us about your project..."
                   />
                 </div>
-                <Button
-                  variant="hero"
-                  size="xl"
-                  className="w-full rounded-full"
-                >
+                <Button variant="btnSecondary" size="lg" className="w-full">
                   Schedule My Free Consultation
                 </Button>
                 <p className="text-center text-sm text-foreground-white/60">

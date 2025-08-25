@@ -188,13 +188,13 @@ const CasesCarousel = () => {
                             {item.usecase}
                           </p>
 
-                          <Button
-                            variant="ghost"
-                            className="relative text-brand-primary hover:text-foreground-dark hover:bg-brand-primary/10 border border-brand-primary/30 rounded-full font-semibold group-hover:shadow-glow transition-all duration-300 font-montserrat"
-                          >
-                            Read More{" "}
-                            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                          </Button>
+                          <div className="text-left">
+                            {" "}
+                            <Button variant="btnLink" size="link">
+                              Read More{" "}
+                              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                            </Button>
+                          </div>
                         </div>
                       </div>
                     </div>
