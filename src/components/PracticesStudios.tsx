@@ -116,11 +116,7 @@ const PracticesStudios = () => {
                   : "/engagement/enterprise"
               }
             >
-              <Button
-                variant="hero-secondary"
-                size="lg"
-                className="text-brand-primary border-brand-primary/30 hover:bg-brand-primary rounded-full "
-              >
+              <Button variant="btnPrimary" size="lg">
                 {currentStudio.buttonText}
               </Button>
             </Link>

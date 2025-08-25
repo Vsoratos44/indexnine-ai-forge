@@ -7,6 +7,7 @@ import PivotIcon from "../assets/images/pivot.svg";
 import LaunchIcon from "../assets/images/launch.svg";
 import GrowIcon from "../assets/images/grow.svg";
 import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 const ProductLifecycle = () => {
   const phases = [
@@ -136,12 +137,9 @@ const ProductLifecycle = () => {
                   {/* Case Study Button */}
                   <div className="pt-2 mt-auto">
                     <Link to={phase.caseStudyLink}>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="w-full sm:w-auto text-brand-primary border-brand-primary/30 hover:bg-brand-primary text-xs sm:text-sm rounded-full group-hover:scale-105"
-                      >
-                        Check out the full case study here
+                      <Button variant="btnLink" size="link">
+                        Check out the full case study here{" "}
+                        <ArrowRight className="w-5 h-5 ml-2" />
                       </Button>
                     </Link>
                   </div>

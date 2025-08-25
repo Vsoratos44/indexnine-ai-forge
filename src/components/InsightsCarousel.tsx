@@ -204,13 +204,12 @@ const InsightsCarousel = () => {
                           </div>
 
                           {/* CTA Button */}
-                          <Button
-                            variant="ghost"
-                            className="relative text-brand-primary hover:text-foreground-dark hover:bg-brand-primary/10 border border-brand-primary/30 rounded-full font-semibold group-hover:shadow-glow transition-all duration-300 font-montserrat"
-                          >
-                            Read More{" "}
-                            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                          </Button>
+                          <div className="text-left">
+                            <Button variant="btnLink" size="link">
+                              Read More{" "}
+                              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                            </Button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -226,11 +225,7 @@ const InsightsCarousel = () => {
 
           {/* View All CTA */}
           <div className="text-center mt-16">
-            <Button
-              variant="hero-secondary"
-              size="lg"
-              className={`min-w-[280px] text-brand-primary border-brand-primary/30 hover:bg-brand-primary rounded-full `}
-            >
+            <Button variant="btnPrimary" size="lg">
               Explore All Our Insights <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>

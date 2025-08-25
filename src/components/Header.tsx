@@ -300,7 +300,7 @@ const Header = () => {
               {/* Desktop CTA Button */}
               <div className="hidden md:block">
                 <Button
-                  variant="default"
+                  variant="btnPrimary"
                   size="default"
                   className="rounded-full"
                 >

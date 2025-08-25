@@ -18,7 +18,7 @@ const CTABanner = () => {
             Let's discuss how we can help you build innovative products and
             scale your engineering capabilities.
           </p>
-          <Button variant="default" size="lg" className="rounded-full">
+          <Button variant="btnPrimary" size="lg">
             Start Your Project Today
           </Button>
         </div>
