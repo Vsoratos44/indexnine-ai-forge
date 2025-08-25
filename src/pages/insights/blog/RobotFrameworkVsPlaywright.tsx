@@ -212,7 +212,7 @@ const RobotFrameworkVsPlaywright = () => {
         <a id="intro"></a>
         <div className="container grid md:grid-cols-3 gap-12 bg-transparent pt-24">
           <div className="text-foreground-dark">
-            <div className="sticky top-[120px]">
+            <div className="sticky top-[120px] pb-8">
               <ul className="space-y-2">
                 {leftNavLinks.map((link) => (
                   <li key={link.href}>
@@ -234,7 +234,7 @@ const RobotFrameworkVsPlaywright = () => {
                 ))}
               </ul>
               <div
-                className={`p-8 mt-8 text-center text-white ${styles.sideCardBg}`}
+                className={`p-8 my-8 text-center text-white ${styles.sideCardBg}`}
               >
                 <h3 className="text-3xl font-bold">
                   Want to Share Your Insights?
@@ -722,7 +722,7 @@ const RobotFrameworkVsPlaywright = () => {
         </div>
       </div>
       {/* CTA Section */}
-      <section className="py-24 lg:py-32 bg-gradient-hero">
+      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
             <span className="leading-[1.4]">Want to Share Your Insights?</span>

@@ -221,6 +221,12 @@ header .fixed.inset-0 {
   background-position: center top;
   background-size: 100%;
 }
+.ctaBg {
+  background-image: url(./../images/cta-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+}
 
 @keyframes pulseArrow {
   0% {
