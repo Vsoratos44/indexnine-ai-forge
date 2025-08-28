@@ -37,7 +37,6 @@ const Hero = () => {
               <SplineInspiredBackground intensity={0.8} className="z-50" />
               <DynamicMeshBackground intensity={0.3} />
               <ParticleField particleCount={20} />
-              <TestVideoBackground />
               {/* Electric gradient overlay */}
               <div className="absolute inset-0 bg-gradient-luminous animate-electric-shimmer opacity-10"></div>
             </div>
