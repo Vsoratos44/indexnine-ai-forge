@@ -34,7 +34,7 @@ const Hero = () => {
           >
             {/* Enhanced Multi-layered Background with Spline-inspired interaction */}
             <div className="absolute inset-0">
-              <SplineInspiredBackground intensity={0.8} className="z-10" />
+              <SplineInspiredBackground intensity={0.8} className="z-50" />
               <DynamicMeshBackground intensity={0.3} />
               <ParticleField particleCount={20} />
               <TestVideoBackground />
