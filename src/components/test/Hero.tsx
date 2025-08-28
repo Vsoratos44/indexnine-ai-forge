@@ -11,6 +11,7 @@ import { HoverMagnet } from "../effects/MicroInteractions";
 import AuroraBackground from "./effects/AuroraBackground";
 import LivingGradientBackground from "./effects/LivingGradientBackground";
 import ElectricPathSVG from "./effects/ElectricPathSVG";
+import SplineInspiredBackground from "./effects/SplineInspiredBackground";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const Hero = () => {
@@ -31,13 +32,14 @@ const Hero = () => {
             data-section="hero"
             className="relative min-h-[90vh] overflow-hidden"
           >
-            {/* Enhanced Multi-layered Background */}
+            {/* Enhanced Multi-layered Background with Spline-inspired interaction */}
             <div className="absolute inset-0">
-              <DynamicMeshBackground intensity={0.5} />
-              <ParticleField particleCount={40} />
+              <SplineInspiredBackground intensity={0.8} className="z-10" />
+              <DynamicMeshBackground intensity={0.3} />
+              <ParticleField particleCount={20} />
               <TestVideoBackground />
               {/* Electric gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-luminous animate-electric-shimmer opacity-20"></div>
+              <div className="absolute inset-0 bg-gradient-luminous animate-electric-shimmer opacity-10"></div>
             </div>
 
           {/* Content - Enhanced with Electric Effects */}
