@@ -20,6 +20,8 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import ServiceVideoBackground from "@/components/ServiceVideoBackground";
 import styles from "../../assets/css/stylesheet.module.css";
+import introImg from "@/assets/images/str-section-img.png";
+import blogImg from "@/assets/images/blog-img2.webp";
 
 const ConsultingStrategy = () => {
   return (
@@ -88,86 +90,114 @@ const ConsultingStrategy = () => {
       </section>
 
       {/* Overview Section */}
-      <section className="py-24 lg:py-32 bg-[#fff]">
+      <section className={` ${styles.strBg1} pt-24 lg:pt-32 bg-[#fff]`}>
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+          <div className="max-w-8xl mx-auto grid grid-cols-6">
+            <div className="text-left mb-12 col-span-4">
+              <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 font-montserrat">
                 From Strategy to Execution
               </h2>
-              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto font-montserrat">
+              <p className="text-lg text-foreground-dark-muted  mx-auto font-montserrat pr-16">
                 Our consulting services bridge the gap between business vision
                 and technical implementation. We help you make informed
                 decisions about technology investments, AI adoption, and digital
                 transformation initiatives.
               </p>
+              <img
+                src={introImg}
+                alt=""
+                className="max-w-[75%] -my-16  -mx-16"
+              />
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <CardGlass className="text">
-                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                  <Lightbulb className="h-8 w-8 text-brand-purple" />
+            <div className="ml-8 col-span-2 mt-16">
+              <div className="grid md:grid-rows-3 gap-16">
+                <div className="text flex">
+                  <div>
+                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Lightbulb className="h-8 w-8 text-brand-purple" />
+                    </div>
+                  </div>
+                  <div className="pl-4">
+                    <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
+                      Strategic Planning
+                    </h3>
+                    <p className="text-foreground-dark-muted font-montserrat">
+                      Develop comprehensive technology roadmaps aligned with
+                      your business goals and market opportunities.
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground-dark">
-                  Strategic Planning
-                </h3>
-                <p className="text-foreground-dark-muted font-montserrat">
-                  Develop comprehensive technology roadmaps aligned with your
-                  business goals and market opportunities.
-                </p>
-              </CardGlass>
 
-              <CardGlass className="text">
-                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                  <Target className="h-8 w-8 text-brand-purple" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground-dark">
-                  Risk Assessment
-                </h3>
-                <p className="text-foreground-dark-muted font-montserrat">
-                  Identify and mitigate technical, operational, and strategic
-                  risks before they impact your business.
-                </p>
-              </CardGlass>
+                <div className="text flex">
+                  {/* Icon Section */}
+                  <div>
+                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Target className="h-8 w-8 text-brand-purple" />
+                    </div>
+                  </div>
 
-              <CardGlass className="text">
-                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                  <Rocket className="h-8 w-8 text-brand-purple" />
+                  {/* Text Section */}
+                  <div className="pl-4">
+                    <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
+                      Risk Assessment
+                    </h3>
+                    <p className="text-foreground-dark-muted font-montserrat">
+                      Identify and mitigate technical, operational, and
+                      strategic risks before they impact your business.
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground-dark">
-                  Implementation Support
-                </h3>
-                <p className="text-foreground-dark-muted font-montserrat">
-                  Guide execution with hands-on support, ensuring strategies
-                  translate into successful outcomes.
-                </p>
-              </CardGlass>
+
+                <div className="text flex">
+                  {/* Icon Section */}
+                  <div>
+                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Rocket className="h-8 w-8 text-brand-purple" />
+                    </div>
+                  </div>
+
+                  {/* Text Section */}
+                  <div className="pl-4">
+                    <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
+                      Implementation Support
+                    </h3>
+                    <p className="text-foreground-dark-muted font-montserrat">
+                      Guide execution with hands-on support, ensuring strategies
+                      translate into successful outcomes.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div className="text-center pt-24 lg:pt-32">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+            Our Consulting Services
+          </h2>
+          <p className="text-lg text-foreground-dark-muted max-w-6xl mx-auto font-montserrat">
+            Comprehensive consulting across all aspects of technology strategy
+            and implementation.
+          </p>
         </div>
       </section>
 
       {/* Consulting Services Section */}
       <section
-        className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden ${styles.sectionBgRadial2}`}
+        className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden ${styles.strBg2}`}
       >
-        <div className="container mx-auto px-6">
-          <div className="max-w-8xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-                Our Consulting Services
-              </h2>
-              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto font-montserrat">
-                Comprehensive consulting across all aspects of technology
-                strategy and implementation.
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8">
-              <Card className="p-8 bg-gradient-card-light backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300 bg-[#ffffff75]">
+        <div className="container mx-auto pt-24">
+          <div className="max-w-6xl mx-auto rounded-tl-3xl  rounded-tr-3xl  bg-[#fff] p-8 mx-auto">
+            <div className="grid lg:grid-cols-2 gap-y-16 gap-x-8">
+              <Card className="border-0 shadow-none bg-[#ffffff]">
                 <CardContent className="p-0">
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                    <TrendingUp className="h-8 w-8 text-brand-purple" />
+                  <div className="text-left">
+                    <img
+                      src={blogImg}
+                      alt="Blogs"
+                      className="w-full h-auto max-w-md mb-4"
+                    />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
                     Digital Transformation Strategy
@@ -200,10 +230,14 @@ const ConsultingStrategy = () => {
                 </CardContent>
               </Card>
 
-              <Card className="group p-8 bg-gradient-card-light backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300 bg-[#ffffff75]">
+              <Card className="border-0 shadow-none bg-[#ffffff]">
                 <CardContent className="p-0">
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                    <Lightbulb className="h-8 w-8 text-brand-purple" />
+                  <div className="text-left">
+                    <img
+                      src={blogImg}
+                      alt="Blogs"
+                      className="w-full h-auto max-w-md mb-4"
+                    />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
                     AI Strategy & Implementation
@@ -236,10 +270,14 @@ const ConsultingStrategy = () => {
                 </CardContent>
               </Card>
 
-              <Card className="group p-8 bg-gradient-card-light backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300 bg-[#ffffff75]">
+              <Card className="border-0 shadow-none bg-[#ffffff]">
                 <CardContent className="p-0">
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                    <Users className="h-8 w-8 text-brand-purple" />
+                  <div className="text-left">
+                    <img
+                      src={blogImg}
+                      alt="Blogs"
+                      className="w-full h-auto max-w-md mb-4"
+                    />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
                     Technology Due Diligence
@@ -272,10 +310,14 @@ const ConsultingStrategy = () => {
                 </CardContent>
               </Card>
 
-              <Card className="group p-8 bg-gradient-card-light backdrop-blur-xl rounded-3xl border border-glass-border shadow-glass-lg hover:shadow-glow transition-all duration-300 bg-[#ffffff75]">
+              <Card className="border-0 shadow-none bg-[#ffffff]">
                 <CardContent className="p-0">
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                    <Target className="h-8 w-8 text-brand-purple" />
+                  <div className="text-left">
+                    <img
+                      src={blogImg}
+                      alt="Blogs"
+                      className="w-full h-auto max-w-md mb-4"
+                    />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
                     Product Strategy & Innovation
@@ -312,8 +354,10 @@ const ConsultingStrategy = () => {
         </div>
       </section>
 
-      <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
-        <div className={` ${styles.sectionBgData}`}>
+      <div
+        className={`text-foreground relative overflow-hidden bg-[#EFF4FE] ${styles.strBg3}`}
+      >
+        <div>
           {/* Engagement Models Section */}
           <section className="pb-24 lg:pb-32">
             <div className="container mx-auto px-6">
@@ -393,63 +437,76 @@ const ConsultingStrategy = () => {
           {/* Why Choose Our Consulting Section */}
           <section className="pb-24 lg:pb-32">
             <div className="container mx-auto px-6">
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-                  Why Choose IndexNine Consulting?
-                </h2>
-                <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto font-montserrat">
-                  We combine deep technical expertise with business acumen to
-                  deliver consulting that drives real results.
-                </p>
+              <div className="max-w-6xl mx-auto text-center">
+                <div className="bg-gradient-hero p-12 rounded-3xl">
+                  <h2 className="text-3xl lg:text-4xl font-semibold text-foreground mb-6 font-montserrat">
+                    Why Choose IndexNine Consulting?
+                  </h2>
+                  <p className="text-lg text-foreground-muted mb-12 max-w-3xl mx-auto font-montserrat">
+                    We combine deep technical expertise with business acumen to
+                    deliver consulting that drives real results.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-16">
+                    <Card className=" text-left bg-transpoarent border-0">
+                      <CardContent className="p-0">
+                        <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center">
+                          <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center mr-4 border border-white/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                            <CheckCircle className="h-8 w-8 text-white mt-0.5 flex-shrink-0" />
+                          </div>{" "}
+                          Practitioner-Led Insights
+                        </h3>
+                        <p className="text-foreground-muted font-montserrat">
+                          Our consultants are active practitioners who build and
+                          deploy the technologies they recommend.
+                        </p>
+                      </CardContent>
+                    </Card>
 
-                <div className="grid md:grid-cols-2 gap-8">
-                  <Card className="p-6 text-left bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark">
-                    <CardContent className="p-0">
-                      <h3 className="text-lg font-semibold mb-3 text-foreground-text">
-                        ✅ Practitioner-Led Insights
-                      </h3>
-                      <p className="text-foreground-dark-muted font-montserrat">
-                        Our consultants are active practitioners who build and
-                        deploy the technologies they recommend.
-                      </p>
-                    </CardContent>
-                  </Card>
+                    <Card className=" text-left bg-transpoarent border-0">
+                      <CardContent className="p-0">
+                        <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center">
+                          <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center mr-4 border border-white/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                            <CheckCircle className="h-8 w-8 text-white mt-0.5 flex-shrink-0" />
+                          </div>{" "}
+                          Implementation Ready
+                        </h3>
+                        <p className="text-foreground-muted font-montserrat">
+                          We don't just provide strategies - we can execute them
+                          with our engineering teams.
+                        </p>
+                      </CardContent>
+                    </Card>
 
-                  <Card className="p-6 text-left bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark">
-                    <CardContent className="p-0">
-                      <h3 className="text-lg font-semibold mb-3 text-foreground-text">
-                        ✅ Implementation Ready
-                      </h3>
-                      <p className="text-foreground-dark-muted font-montserrat">
-                        We don't just provide strategies - we can execute them
-                        with our engineering teams.
-                      </p>
-                    </CardContent>
-                  </Card>
+                    <Card className=" text-left bg-transpoarent border-0">
+                      <CardContent className="p-0">
+                        <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center">
+                          <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center mr-4 border border-white/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                            <CheckCircle className="h-8 w-8 text-white mt-0.5 flex-shrink-0" />
+                          </div>{" "}
+                          ROI-Focused Approach
+                        </h3>
+                        <p className="text-foreground-muted font-montserrat">
+                          Every recommendation is backed by clear business value
+                          and measurable outcomes.
+                        </p>
+                      </CardContent>
+                    </Card>
 
-                  <Card className="p-6 text-left bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark">
-                    <CardContent className="p-0">
-                      <h3 className="text-lg font-semibold mb-3 text-foreground-text">
-                        ✅ ROI-Focused Approach
-                      </h3>
-                      <p className="text-foreground-dark-muted font-montserrat">
-                        Every recommendation is backed by clear business value
-                        and measurable outcomes.
-                      </p>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="p-6 text-left bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark">
-                    <CardContent className="p-0">
-                      <h3 className="text-lg font-semibold mb-3 text-foreground-text">
-                        ✅ Future-Proof Solutions
-                      </h3>
-                      <p className="text-foreground-dark-muted font-montserrat">
-                        We help you build strategies that adapt and scale with
-                        emerging technologies.
-                      </p>
-                    </CardContent>
-                  </Card>
+                    <Card className=" text-left bg-transpoarent border-0">
+                      <CardContent className="p-0">
+                        <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center">
+                          <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center mr-4 border border-white/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                            <CheckCircle className="h-8 w-8 text-white mt-0.5 flex-shrink-0" />
+                          </div>{" "}
+                          Future-Proof Solutions
+                        </h3>
+                        <p className="text-foreground-muted font-montserrat">
+                          We help you build strategies that adapt and scale with
+                          emerging technologies.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </div>
               </div>
             </div>
@@ -457,7 +514,7 @@ const ConsultingStrategy = () => {
         </div>
       </div>
       {/* CTA Banner */}
-      <section className="py-24 lg:py-32 bg-gradient-hero text-white">
+      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
