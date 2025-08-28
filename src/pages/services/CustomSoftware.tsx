@@ -311,7 +311,9 @@ const CustomSoftware = () => {
       <section className="pb-24 lg:pb-32 bg-[#fff]">
         <div className="container ">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-card backdrop-blur-xl rounded-3xl p-12 shadow-glass-lg border border-glass-border">
+            <div
+              className={`rounded-3xl p-12 shadow-glass-lg border border-glass-border ${styles.middleCardBg}`}
+            >
               <div className="text-left mb-8">
                 <h2 className="text-3xl sm:text-2xl font-semibold text-foreground mb-6 font-montserrat">
                   Start with a Strategic Scoping Session
@@ -475,7 +477,7 @@ const CustomSoftware = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-24 lg:py-32 bg-gradient-hero">
+      <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
         <div className="container max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

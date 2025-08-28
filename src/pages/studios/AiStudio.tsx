@@ -712,7 +712,10 @@ const AiStudio = () => {
       </section>
 
       {/* Final CTA & Contact Form */}
-      <section id="contact" className="py-24 lg:py-32 bg-gradient-hero">
+      <section
+        id="contact"
+        className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}
+      >
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">

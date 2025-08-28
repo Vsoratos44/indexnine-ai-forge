@@ -234,7 +234,7 @@ const RobotFrameworkVsPlaywright = () => {
                 ))}
               </ul>
               <div
-                className={`p-8 my-8 text-center text-white ${styles.sideCardBg}`}
+                className={`px-8 py-12 rounded-2xl my-8 text-center text-white ${styles.sideCardBg}`}
               >
                 <h3 className="text-3xl font-bold">
                   Want to Share Your Insights?

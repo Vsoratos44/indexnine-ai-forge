@@ -571,7 +571,7 @@ const BlogPost = () => {
             <div className="text-foreground-dark">
               <div className="sticky top-[120px] pb-8">
                 <div
-                  className={`p-8 my-8 text-center text-white ${styles.sideCardBg}`}
+                  className={`px-8 py-12 my-8 text-center rounded-2xl text-white ${styles.sideCardBg}`}
                 >
                   <h3 className="text-3xl font-bold">
                     Want to Share Your Insights?

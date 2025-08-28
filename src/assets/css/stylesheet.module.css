@@ -239,11 +239,17 @@ header .fixed.inset-0 {
   background-position: center top;
   background-size: 100%;
 }
+.middleCardBg {
+  background-image: url(./../images/middle-card-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .ctaBg {
   background-image: url(./../images/cta-bg.webp);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100%;
+  background-size: cover;
 }
 
 @keyframes pulseArrow {

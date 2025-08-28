@@ -11,6 +11,7 @@ import {
 } from "@/components/SEOStructuredData";
 import { TestTube, Shield, Zap, Target, CheckCircle, Cog } from "lucide-react";
 import ServiceVideoBackground from "@/components/ServiceVideoBackground";
+import styles from "../../assets/css/stylesheet.module.css";
 
 const QaEngineering = () => {
   return (
@@ -141,7 +142,7 @@ const QaEngineering = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-hero">
+      <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-foreground-white mb-8 font-montserrat">
             Deliver Quality Software with Confidence

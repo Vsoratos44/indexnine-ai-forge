@@ -292,7 +292,7 @@ const Enterprise = () => {
       </div>
 
       {/* Final CTA Section */}
-      <section className="py-24 lg:py-32 bg-gradient-hero">
+      <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center max-w-6xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
             <span className="leading-[1.4]">
