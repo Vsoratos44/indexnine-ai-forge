@@ -352,7 +352,7 @@ const QualityEngineering = () => {
       {/* QAE Solutions in Action & Proprietary Automation Platforms */}
       <section
         id="qae-solutions"
-        className={`py-24 lg:py-32 relative  overflow-hidden ${styles.sectionBg}`}
+        className={`py-24 lg:py-32 relative  overflow-hidden ${styles.pageDarkBg}`}
       >
         <div className="container mx-auto px-6">
           <div className="max-w-8xl mx-auto">
@@ -380,7 +380,7 @@ const QualityEngineering = () => {
               </div>
 
               <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
+                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                   <CardContent className="p-0">
                     <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                       <Zap className="h-8 w-8 text-brand-purple" />
@@ -416,7 +416,7 @@ const QualityEngineering = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
+                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                   <CardContent className="p-0">
                     <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                       <Target className="h-8 w-8 text-brand-purple" />
@@ -468,7 +468,7 @@ const QualityEngineering = () => {
               </div>
 
               <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
+                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                   <CardContent className="p-0">
                     <h4 className="text-2xl font-semibold mb-4 text-foreground-light">
                       E-commerce Platform Testing
@@ -501,7 +501,7 @@ const QualityEngineering = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
+                <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                   <CardContent className="p-0">
                     <h4 className="text-2xl font-semibold mb-4 text-foreground-light">
                       Financial Services Automation

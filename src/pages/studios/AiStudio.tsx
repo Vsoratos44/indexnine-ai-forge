@@ -347,165 +347,173 @@ const AiStudio = () => {
         </div>
       </section>
 
-      {/* P2R Framework Section */}
-      <section
-        id="p2r-framework"
-        className={`py-24 lg:py-32 relative  overflow-hidden ${styles.sectionBg}`}
-      >
-        <div className="container mx-auto px-6">
-          <div className="max-w-8xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-                <span className="leading-[1.4]">
-                  Our Proprietary AI P2R™ Assessment Framework
-                </span>
-              </h2>
-              <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
-                Your AI journey is unique. Our proprietary{" "}
-                <strong>Potential-to-Reality (P2R)™</strong> framework evaluates
-                your organization across three critical dimensions. The output
-                is your <strong>P2R Score</strong>—a clear, actionable benchmark
-                that defines your optimal path to AI-driven transformation.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
-                {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
-                {/* Enhanced Glassmorphism Glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                {/* Frosted Glass Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
-
-                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                  <Target className="h-8 w-8 text-brand-primary" />
-                </div>
-                <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
-                  AI Potential Score
-                </h3>
-                <p className="relative text-foreground-white/80">
-                  We analyze your market position, business processes, and
-                  strategic goals to quantify the potential impact of AI. This
-                  isn't about hype; it's a rigorous evaluation of where AI can
-                  create the most value.
+      <div className={`${styles.pageDarkBg}`}>
+        {/* P2R Framework Section */}
+        <section
+          id="p2r-framework"
+          className={`py-24 lg:py-32 relative  overflow-hidden bg-transparent`}
+        >
+          <div className="container mx-auto px-6">
+            <div className="max-w-8xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                  <span className="leading-[1.4]">
+                    Our Proprietary AI P2R™ Assessment Framework
+                  </span>
+                </h2>
+                <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
+                  Your AI journey is unique. Our proprietary{" "}
+                  <strong>Potential-to-Reality (P2R)™</strong> framework
+                  evaluates your organization across three critical dimensions.
+                  The output is your <strong>P2R Score</strong>—a clear,
+                  actionable benchmark that defines your optimal path to
+                  AI-driven transformation.
                 </p>
               </div>
 
-              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
-                {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
-                {/* Enhanced Glassmorphism Glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                {/* Frosted Glass Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 ">
+                  {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
+                  {/* Enhanced Glassmorphism Glow */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  {/* Frosted Glass Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
 
-                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                  <Brain className="h-8 w-8 text-brand-primary" />
+                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                    <Target className="h-8 w-8 text-brand-primary" />
+                  </div>
+                  <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
+                    AI Potential Score
+                  </h3>
+                  <p className="relative text-foreground-white/80">
+                    We analyze your market position, business processes, and
+                    strategic goals to quantify the potential impact of AI. This
+                    isn't about hype; it's a rigorous evaluation of where AI can
+                    create the most value.
+                  </p>
                 </div>
-                <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
-                  AI Readiness Score
-                </h3>
-                <p className="relative text-foreground-white/80">
-                  An idea is only as good as your ability to execute it. We
-                  assess your data maturity, technical infrastructure, talent,
-                  and organizational culture to identify your strengths and
-                  critical gaps for successful AI adoption.
-                </p>
-              </div>
 
-              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
-                {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
-                {/* Enhanced Glassmorphism Glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                {/* Frosted Glass Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 ">
+                  {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
+                  {/* Enhanced Glassmorphism Glow */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  {/* Frosted Glass Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
 
-                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                  <Shield className="h-8 w-8 text-brand-primary" />
+                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                    <Brain className="h-8 w-8 text-brand-primary" />
+                  </div>
+                  <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
+                    AI Readiness Score
+                  </h3>
+                  <p className="relative text-foreground-white/80">
+                    An idea is only as good as your ability to execute it. We
+                    assess your data maturity, technical infrastructure, talent,
+                    and organizational culture to identify your strengths and
+                    critical gaps for successful AI adoption.
+                  </p>
                 </div>
-                <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
-                  AI Risk Score
-                </h3>
-                <p className="relative text-foreground-white/80">
-                  We proactively identify and score potential hurdles. This
-                  includes evaluating ethical considerations, regulatory
-                  compliance (like GDPR/CCPA), data privacy, model bias, and the
-                  change management required for success.
-                </p>
+
+                <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 ">
+                  {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
+                  {/* Enhanced Glassmorphism Glow */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  {/* Frosted Glass Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+
+                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                    <Shield className="h-8 w-8 text-brand-primary" />
+                  </div>
+                  <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
+                    AI Risk Score
+                  </h3>
+                  <p className="relative text-foreground-white/80">
+                    We proactively identify and score potential hurdles. This
+                    includes evaluating ethical considerations, regulatory
+                    compliance (like GDPR/CCPA), data privacy, model bias, and
+                    the change management required for success.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Audit Process Section */}
-      <section id="ai-framework" className="pb-24 lg:pb-32 bg-background-dark">
-        <div className="container mx-auto px-6">
-          <div className="max-w-8xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-semibold mb-6 text-foreground-white">
-                <span className="leading-[1.24]">How Our AI Audit Works</span>
-              </h2>
-              <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-                Our proven 5-step methodology ensures comprehensive evaluation
-                and actionable insights.
-              </p>
-            </div>
+        {/* Audit Process Section */}
+        <section
+          id="ai-framework"
+          className="pb-24 lg:pb-32 bg-background-dark"
+        >
+          <div className="container mx-auto px-6">
+            <div className="max-w-8xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl lg:text-4xl font-semibold mb-6 text-foreground-white">
+                  <span className="leading-[1.24]">How Our AI Audit Works</span>
+                </h2>
+                <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
+                  Our proven 5-step methodology ensures comprehensive evaluation
+                  and actionable insights.
+                </p>
+              </div>
 
-            <div className="grid md:grid-cols-5 gap-8">
-              {[
-                {
-                  step: "01",
-                  title: "Business Context & Strategy",
-                  description:
-                    "Understanding your business goals, challenges, and strategic priorities.",
-                },
-                {
-                  step: "02",
-                  title: "Build Business Asset Inventory",
-                  description:
-                    "Cataloging your data assets, systems, and existing capabilities.",
-                },
-                {
-                  step: "03",
-                  title: "Identify & Prioritize Opportunities",
-                  description:
-                    "Mapping AI opportunities to business value and feasibility.",
-                },
-                {
-                  step: "04",
-                  title: "Roadmap Creation",
-                  description:
-                    "Developing a phased implementation plan with clear milestones.",
-                },
-                {
-                  step: "05",
-                  title: "Governance & Sustainability",
-                  description:
-                    "Establishing frameworks for ethical AI and long-term success.",
-                },
-              ].map((item) => (
-                <div key={item.step} className="text-center">
-                  <div className="w-16 h-16 bg-brand-primary rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
-                    <span className="text-white font-bold text-lg">
-                      {item.step}
-                    </span>
-                  </div>
-                  <div className={`${styles.borderBox1}`}>
-                    <div className={`p-3 pt-10 ${styles.borderBoxInr1}`}>
-                      <h3 className="text-lg font-medium mb-3 text-foreground">
-                        {item.title}
-                      </h3>
-                      <p className="text-sm text-foreground/80">
-                        {item.description}
-                      </p>
+              <div className="grid md:grid-cols-5 gap-8">
+                {[
+                  {
+                    step: "01",
+                    title: "Business Context & Strategy",
+                    description:
+                      "Understanding your business goals, challenges, and strategic priorities.",
+                  },
+                  {
+                    step: "02",
+                    title: "Build Business Asset Inventory",
+                    description:
+                      "Cataloging your data assets, systems, and existing capabilities.",
+                  },
+                  {
+                    step: "03",
+                    title: "Identify & Prioritize Opportunities",
+                    description:
+                      "Mapping AI opportunities to business value and feasibility.",
+                  },
+                  {
+                    step: "04",
+                    title: "Roadmap Creation",
+                    description:
+                      "Developing a phased implementation plan with clear milestones.",
+                  },
+                  {
+                    step: "05",
+                    title: "Governance & Sustainability",
+                    description:
+                      "Establishing frameworks for ethical AI and long-term success.",
+                  },
+                ].map((item) => (
+                  <div key={item.step} className="text-center">
+                    <div className="w-16 h-16 bg-brand-primary rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
+                      <span className="text-white font-bold text-lg">
+                        {item.step}
+                      </span>
+                    </div>
+                    <div
+                      className={`bg-brand-purple/20 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 h-full rounded-tl-2xl rounded-tr-2xl`}
+                    >
+                      <div className={`p-3 pt-10 bg-transparent`}>
+                        <h3 className="text-lg font-medium mb-3 text-foreground">
+                          {item.title}
+                        </h3>
+                        <p className="text-sm text-foreground/80">
+                          {item.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* AI Services Section */}
       <section className="py-2y lg:py-32 bg-[#efeff6]">

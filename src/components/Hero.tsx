@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       data-section="hero"
-      className="relative min-h-[90vh] overflow-hidden bg-black"
+      className="relative min-h-[780px] overflow-hidden bg-black"
     >
       {/* Three.js Living Void Background */}
       <VideoBackground />

@@ -60,7 +60,7 @@ const ProductLifecycle = () => {
   return (
     <section
       data-section="product-lifecycle"
-      className={`py-24 lg:py-32 bg-[#fff] relative overflow-hidden ${styles.sectionBgRadial}`}
+      className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden `}
     >
       {/* Background blur elements */}
       <div className="absolute inset-0">
@@ -88,7 +88,7 @@ const ProductLifecycle = () => {
 
         {/* 2x2 Grid Layout */}
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 gap-4 max-w-8xl mx-auto }`}
+          className={`grid grid-cols-1 md:grid-cols-2 gap-4 max-w-8xl mx-auto ${styles.sectionBgRadial}`}
         >
           {phases.map((phase, index) => (
             <div

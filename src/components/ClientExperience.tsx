@@ -53,7 +53,7 @@ const ClientExperience = () => {
       <div
         className={`container mx-auto px-6 lg:px-8 relative z-10  py-24 lg:py-32 ${styles["globe"]}`}
       >
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-[1.4]">
             A World-Class Client Experience: Working with
             <span className="text-brand-primary leading-[1.4]"> Indexnine</span>
@@ -65,7 +65,7 @@ const ClientExperience = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8  max-w-8xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6  max-w-8xl mx-auto">
           {experiences.map((exp, index) => (
             <div
               key={index}
