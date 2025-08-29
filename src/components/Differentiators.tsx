@@ -30,7 +30,7 @@ const Differentiators = () => {
   return (
     <section
       data-section="differentiators"
-      className={`py-24 lg:py-32 relative overflow-hidden ${styles.sectionBg}`}
+      className={`py-24 lg:py-32 relative overflow-hidden ${styles.pageDarkBg}`}
     >
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0">
@@ -57,18 +57,18 @@ const Differentiators = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 leading-tight tracking-tight">
-            <span className="text-brand-primary">How We Win Together.</span>
+            <span className="text-white">How We Win Together.</span>
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-light-muted leading-relaxed font-light max-w-4xl mx-auto">
             Our Secret Sauce
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 lg:gap-8 max-w-8xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 lg:gap-6 max-w-8xl mx-auto">
           {differentiators.map((diff, index) => (
             <div
               key={index}
-              className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group "
+              className="relative overflow-hidden  border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 "
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               {/* Enhanced Glassmorphism Glow */}

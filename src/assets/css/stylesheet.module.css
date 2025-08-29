@@ -60,14 +60,18 @@ header .fixed.inset-0 {
 .sectionBgRadial {
   background: url(./../images/offers-bg.svg) no-repeat;
   background-size: contain;
-  background-position: center bottom;
+  background-position: center;
 }
 .sectionBgRadial2 {
   background: url(./../images/offers-bg.svg) no-repeat;
   background-size: contain;
   background-position: center 85%;
 }
-
+.pageDarkBg {
+  background: url(./../images/page-dark-bg.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .tabsBg {
   background: url(./../images/accordn-bg.svg) no-repeat;
   background-position: left 100px;
