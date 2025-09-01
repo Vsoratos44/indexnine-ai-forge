@@ -161,7 +161,7 @@ const CasesCarousel = () => {
                 return (
                   <CarouselItem
                     key={item.id}
-                    className="px-4 py-10 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                    className="px-3 py-10 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
                   >
                     <div className="relative group h-full">
                       <div className="relative overflow-hidden bg-[#fff] border-[.75rem] border-glass-border rounded-3xl p-6 hover:shadow-glow transition-all duration-500 transform group-hover:scale-101 group-hover:-translate-y-2 h-full flex flex-col">

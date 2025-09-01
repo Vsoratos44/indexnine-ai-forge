@@ -12,7 +12,14 @@ import {
   WebPageSchema,
   BreadcrumbSchema,
 } from "@/components/SEOStructuredData";
-import { Brain, Target, Shield, CheckCircle } from "lucide-react";
+import {
+  Brain,
+  Target,
+  Shield,
+  CheckCircle,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
@@ -43,7 +50,7 @@ const AiStudio = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[75vh] overflow-hidden bg-black">
+      <section className="relative min-h-[780px] overflow-hidden bg-black">
         {/* Three.js Living Void Background */}
         <LivingVoidBackground />
 
@@ -100,14 +107,14 @@ const AiStudio = () => {
       {/* The AI Dilemma Section */}
       <section className="py-24 lg:py-32 bg-[#fff]">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
               The AI Dilemma:{" "}
               <span className="text-brand-primary leading-[1.25]">
                 Bridging Potential and Profitability
               </span>
             </h2>
-            <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-foreground-dark-muted mb-12 max-w-6xl mb-0 mx-auto">
               AI promises to revolutionize industries, yet Gartner reports over
               65% of AI projects fail to deliver their intended ROI. This isn't
               a technology problem; it's a strategy problem. The gap between
@@ -134,7 +141,7 @@ const AiStudio = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative w-20 h-20 mb-6">
@@ -203,9 +210,9 @@ const AiStudio = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark">
-                <CardContent className="p-0">
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
+                <CardContent className="p-0 h-full">
                   <div className="flex items-center gap-4 mb-6">
                     <img className="relative w-12 h-12" src={StdAudit} alt="" />
                     <div className="backdrop-blur-md px-3 py-1 rounded-full text-sm font-medium border border-black-500 ml-auto">
@@ -258,23 +265,22 @@ const AiStudio = () => {
                   <div className="text-xl font-semibold text-brand-primary mb-4">
                     Starting at $25,000
                   </div>
-
-                  <Button
-                    variant="btnPrimary"
-                    className="w-full"
-                    onClick={() =>
-                      document
-                        .getElementById("contact")
-                        ?.scrollIntoView({ behavior: "smooth" })
-                    }
-                  >
-                    Scope Your Audit
-                  </Button>
                 </CardContent>
+                <Button
+                  variant="btnPrimary"
+                  className="w-full"
+                  onClick={() =>
+                    document
+                      .getElementById("contact")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Scope Your Audit
+                </Button>
               </Card>
 
-              <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative">
-                <CardContent className="p-0">
+              <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative flex flex-col">
+                <CardContent className="p-0 h-full">
                   <div className="flex items-center gap-4 mb-6">
                     <img className="relative w-12 h-12" src={ProAudit} alt="" />
                     <div className="backdrop-blur-md px-3 py-1 rounded-full text-sm font-medium border border-black-500 ml-auto">
@@ -328,19 +334,18 @@ const AiStudio = () => {
                   <div className="text-xl font-semibold text-brand-primary mb-4">
                     Starting at $60,000
                   </div>
-
-                  <Button
-                    variant="btnSecondary"
-                    className="w-full rounded-full"
-                    onClick={() =>
-                      document
-                        .getElementById("contact")
-                        ?.scrollIntoView({ behavior: "smooth" })
-                    }
-                  >
-                    Start Your Deep-Dive
-                  </Button>
                 </CardContent>
+                <Button
+                  variant="btnSecondary"
+                  className="w-full rounded-full"
+                  onClick={() =>
+                    document
+                      .getElementById("contact")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Start Your Deep-Dive
+                </Button>
               </Card>
             </div>
           </div>
@@ -371,7 +376,7 @@ const AiStudio = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-3 gap-6">
                 <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 ">
                   {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
                   {/* Enhanced Glassmorphism Glow */}
@@ -456,7 +461,7 @@ const AiStudio = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-5 gap-8">
+              <div className="grid md:grid-cols-5 gap-6">
                 {[
                   {
                     step: "01",
@@ -516,7 +521,7 @@ const AiStudio = () => {
       </div>
 
       {/* AI Services Section */}
-      <section className="py-2y lg:py-32 bg-[#efeff6]">
+      <section className="py-24 lg:py-32 bg-[#efeff6]">
         <div className="container mx-auto px-6">
           <div className="max-w-8xl mx-auto">
             <div className="text-center mb-16">
@@ -644,7 +649,7 @@ const AiStudio = () => {
                 <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground-dark">
                   What if our data isn't clean or "AI-ready"?
                   <span className="transform transition-transform group-open:rotate-180">
-                    ▼
+                    <ChevronDown className="w-5 h-5 " />
                   </span>
                 </summary>
                 <div className="mt-4 text-foreground-dark/80">
@@ -662,7 +667,7 @@ const AiStudio = () => {
                 <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground-dark">
                   How do you ensure AI projects deliver ROI?
                   <span className="transform transition-transform group-open:rotate-180">
-                    ▼
+                    <ChevronDown className="w-5 h-5 " />
                   </span>
                 </summary>
                 <div className="mt-4 text-foreground-dark/80">
@@ -681,7 +686,7 @@ const AiStudio = () => {
                 <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground-dark">
                   Do you work with specific AI technologies or platforms?
                   <span className="transform transition-transform group-open:rotate-180">
-                    ▼
+                    <ChevronDown className="w-5 h-5 " />
                   </span>
                 </summary>
                 <div className="mt-4 text-foreground-dark/80">
@@ -700,7 +705,7 @@ const AiStudio = () => {
                 <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-foreground-dark">
                   How long does a typical AI project take?
                   <span className="transform transition-transform group-open:rotate-180">
-                    ▼
+                    <ChevronDown className="w-5 h-5 " />
                   </span>
                 </summary>
                 <div className="mt-4 text-foreground-dark/80">

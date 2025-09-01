@@ -42,7 +42,7 @@ const DataEngineering = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] overflow-hidden bg-background-dark">
+      <section className="relative min-h-[780px] overflow-hidden bg-background-dark">
         {/* Three.js Living Void Background */}
         <LivingVoidBackground />
 
@@ -135,7 +135,7 @@ const DataEngineering = () => {
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-3 gap-6">
                   <div className="relative overflow-hidden bg-[#ffffff75] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
                     <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>

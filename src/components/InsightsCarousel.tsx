@@ -145,7 +145,7 @@ const InsightsCarousel = () => {
                 return (
                   <CarouselItem
                     key={item.id}
-                    className="px-4 py-10 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                    className="px-3 py-10 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
                   >
                     <div className="relative group h-full">
                       {/* Enhanced Glassmorphism Card */}

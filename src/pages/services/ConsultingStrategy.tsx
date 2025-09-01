@@ -53,7 +53,7 @@ const ConsultingStrategy = () => {
       </div> */}
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] overflow-hidden bg-black">
+      <section className="relative min-h-[780px] overflow-hidden bg-black">
         <ServiceVideoBackground />
         <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
           <div className="max-w-6xl mx-auto text-center lg:text-left ml-0">
@@ -372,9 +372,9 @@ const ConsultingStrategy = () => {
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
-                  <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark">
-                    <CardContent className="p-0">
+                <div className="grid md:grid-cols-3 gap-6">
+                  <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
+                    <CardContent className="p-0  h-full">
                       <h3 className="text-xl font-semibold mb-4 text-foreground-dark">
                         Strategy Sprint
                       </h3>
@@ -385,14 +385,14 @@ const ConsultingStrategy = () => {
                         Rapid strategic assessment and roadmap development for
                         specific initiatives or challenges.
                       </p>
-                      <Button variant="btnPrimary" className="w-full">
-                        Learn More
-                      </Button>
                     </CardContent>
+                    <Button variant="btnPrimary" className="w-full">
+                      Learn More
+                    </Button>
                   </Card>
 
-                  <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative">
-                    <CardContent className="p-0">
+                  <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative flex flex-col">
+                    <CardContent className="p-0 h-full">
                       <div className="inline-block px-3 py-1 bg-brand-purple text-white text-sm rounded-full mb-4">
                         Most Popular
                       </div>
@@ -406,14 +406,14 @@ const ConsultingStrategy = () => {
                         Comprehensive consulting engagement with hands-on
                         implementation support and ongoing guidance.
                       </p>
-                      <Button className="w-full" variant="btnSecondary">
-                        Get Started
-                      </Button>
                     </CardContent>
+                    <Button className="w-full" variant="btnSecondary">
+                      Get Started
+                    </Button>
                   </Card>
 
-                  <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark">
-                    <CardContent className="p-0">
+                  <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
+                    <CardContent className="p-0 h-full">
                       <h3 className="text-xl font-semibold mb-4 text-foreground-dark">
                         Advisory Retainer
                       </h3>
@@ -424,10 +424,10 @@ const ConsultingStrategy = () => {
                         Continuous strategic guidance and support as your
                         trusted technology advisor.
                       </p>
-                      <Button variant="btnPrimary" className="w-full">
-                        Learn More
-                      </Button>
                     </CardContent>
+                    <Button variant="btnPrimary" className="w-full">
+                      Learn More
+                    </Button>
                   </Card>
                 </div>
               </div>
@@ -438,7 +438,8 @@ const ConsultingStrategy = () => {
           <section className="pb-24 lg:pb-32">
             <div className="container mx-auto px-6">
               <div className="max-w-6xl mx-auto text-center">
-                <div className="bg-gradient-hero p-12 rounded-3xl">
+                <div className={`p-12 rounded-3xl ${styles.middleCardBg}`}>
+                  {" "}
                   <h2 className="text-3xl lg:text-4xl font-semibold text-foreground mb-6 font-montserrat">
                     Why Choose IndexNine Consulting?
                   </h2>

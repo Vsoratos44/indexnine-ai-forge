@@ -200,7 +200,7 @@ const Blogs = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[55vh] overflow-hidden bg-black">
+      <section className="relative min-h-[480px] overflow-hidden bg-black">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>
           <div
@@ -293,7 +293,7 @@ const Blogs = () => {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
               {blogPosts
                 .filter((post) => !post.featured)
                 .map((post, index) => (
