@@ -12,7 +12,7 @@ const DedicatedTeams = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] overflow-hidden bg-black">
+      <section className="relative min-h-[680px] overflow-hidden bg-black">
         {/* Background Orbs */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>
@@ -63,7 +63,7 @@ const DedicatedTeams = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 icon: Users,

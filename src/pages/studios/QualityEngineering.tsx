@@ -11,6 +11,8 @@ import {
   Plus,
   Minus,
   ArrowRight,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -147,7 +149,7 @@ const QualityEngineering = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] overflow-hidden bg-black">
+      <section className="relative min-h-[780px] overflow-hidden bg-black">
         {/* Three.js Living Void Background */}
         <LivingVoidBackground />
 
@@ -161,7 +163,7 @@ const QualityEngineering = () => {
             </div>
             <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25]  animate-fade-in font-montserrat">
               Beyond Testing: <br />
-              <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent ">
                 Engineering Quality
               </span>
               <br />
@@ -198,7 +200,7 @@ const QualityEngineering = () => {
                 Balancing Speed, Cost, and Reliability
               </span>
             </h2>
-            <p className="text-lg text-foreground-dark mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-foreground-dark mb-0 max-w-3xl mx-auto leading-relaxed">
               In a competitive market, pressure to innovate has never been
               higher. Development teams are forced to move faster, but without a
               modern approach to quality, this leads to brittle tests, rising
@@ -212,12 +214,14 @@ const QualityEngineering = () => {
       <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
         <div className={` ${styles.sectionBgData}`}>
           {/* QAE Blueprint Section */}
-          <section id="qae-solution" className="pb-24 lg:pb-32">
+          <section id="qae-solution" className="pb-16 lg:pb-24">
             <div className="container mx-auto px-6">
               <div className="max-w-8xl mx-auto">
                 <div className="text-center mb-12">
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-                    The Outcome-Driven Automation Blueprint
+                    <span className="leading-[1.25]">
+                      The Outcome-Driven Automation Blueprint
+                    </span>
                   </h2>
                   <p className="text-lg text-foreground-dark/80 max-w-3xl mx-auto">
                     Our philosophy is that quality isn't a phase, it's a
@@ -227,7 +231,7 @@ const QualityEngineering = () => {
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                   {[
                     {
                       step: "01",
@@ -379,7 +383,7 @@ const QualityEngineering = () => {
                 </p>
               </div>
 
-              <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
                 <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                   <CardContent className="p-0">
                     <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
@@ -467,7 +471,7 @@ const QualityEngineering = () => {
                 </p>
               </div>
 
-              <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
                 <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                   <CardContent className="p-0">
                     <h4 className="text-2xl font-semibold mb-4 text-foreground-light">
@@ -557,9 +561,9 @@ const QualityEngineering = () => {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark">
-                <CardContent className="p-0">
+            <div className="grid lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
+                <CardContent className="p-0 h-full">
                   <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
                     Sprint 0: Automation Kickstart
                   </h3>
@@ -599,14 +603,14 @@ const QualityEngineering = () => {
                   <div className="text-lg font-semibold text-brand-primary mb-4">
                     Investment: Starting at $15,000
                   </div>
-                  <Button className="w-full" variant="btnPrimary">
-                    Kickstart Your Automation
-                  </Button>
                 </CardContent>
+                <Button className="w-full" variant="btnPrimary">
+                  Kickstart Your Automation
+                </Button>
               </Card>
 
-              <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative">
-                <CardContent className="p-0">
+              <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative flex flex-col">
+                <CardContent className="p-0 h-full">
                   <h3 className="text-2xl font-semibold mb-4 text-foreground">
                     Agile Product Quality (APQ) Roadmap
                   </h3>
@@ -647,10 +651,10 @@ const QualityEngineering = () => {
                   <div className="text-lg font-semibold text-brand-primary mb-4">
                     Investment: Starting at $30,000
                   </div>
-                  <Button className="w-full " variant="btnSecondary">
-                    Build My APQ Roadmap
-                  </Button>
                 </CardContent>
+                <Button className="w-full " variant="btnSecondary">
+                  Build My APQ Roadmap
+                </Button>
               </Card>
             </div>
           </div>
@@ -665,11 +669,11 @@ const QualityEngineering = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-6xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-                The Right Tool for the Job: <br />
-                <span className="text-brand-primary leading-[1.25]">
+              <h2 className="text-6xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark leading-[1.25]">
+                The Right Tool for the Job:
+                <div className="text-brand-primary leading-[1.25]">
                   Robot Framework vs. Playwright
-                </span>
+                </div>
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-6xl mx-auto">
                 In today's competitive landscape, the pressure to balance
@@ -864,20 +868,22 @@ const QualityEngineering = () => {
           </div>
         </div>
         {/* FAQ Section */}
-        <section className="py-20 bg-muted/10">
+        <section className="pt-16 lg:pt-24 bg-muted/10">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-6xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-                  Your Quality Engineering Questions, Answered
+                <h2 className="text-6xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                  <span className="leading-[1.25]">
+                    Your Quality Engineering Questions, Answered
+                  </span>
                 </h2>
               </div>
 
-              <div className="space-y-0 rounded-3xl bg-[#fff] p-8">
+              <div className="space-y-0 rounded-3xl bg-[#fff] px-8 py-4">
                 {faqData.map((faq, index) => (
                   <div
                     key={index}
-                    className="border-b border-border  bg-background-card-light"
+                    className="border-b border-border last:border-b-0 bg-background-card-light"
                   >
                     <button
                       onClick={() => toggleFAQ(index)}
@@ -888,9 +894,9 @@ const QualityEngineering = () => {
                         {faq.question}
                       </span>
                       {openFAQ === index ? (
-                        <Minus className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                        <ChevronUp className="h-5 w-5 text-[#000] flex-shrink-0" />
                       ) : (
-                        <Plus className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                        <ChevronDown className="h-5 w-5 text-[#000] flex-shrink-0" />
                       )}
                     </button>
                     {openFAQ === index && (

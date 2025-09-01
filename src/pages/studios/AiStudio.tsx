@@ -107,14 +107,14 @@ const AiStudio = () => {
       {/* The AI Dilemma Section */}
       <section className="py-24 lg:py-32 bg-[#fff]">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
               The AI Dilemma:{" "}
               <span className="text-brand-primary leading-[1.25]">
                 Bridging Potential and Profitability
               </span>
             </h2>
-            <p className="text-lg text-foreground-dark-muted mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-foreground-dark-muted mb-12 max-w-6xl mb-0 mx-auto">
               AI promises to revolutionize industries, yet Gartner reports over
               65% of AI projects fail to deliver their intended ROI. This isn't
               a technology problem; it's a strategy problem. The gap between
@@ -211,8 +211,8 @@ const AiStudio = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark">
-                <CardContent className="p-0">
+              <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
+                <CardContent className="p-0 h-full">
                   <div className="flex items-center gap-4 mb-6">
                     <img className="relative w-12 h-12" src={StdAudit} alt="" />
                     <div className="backdrop-blur-md px-3 py-1 rounded-full text-sm font-medium border border-black-500 ml-auto">
@@ -265,23 +265,22 @@ const AiStudio = () => {
                   <div className="text-xl font-semibold text-brand-primary mb-4">
                     Starting at $25,000
                   </div>
-
-                  <Button
-                    variant="btnPrimary"
-                    className="w-full"
-                    onClick={() =>
-                      document
-                        .getElementById("contact")
-                        ?.scrollIntoView({ behavior: "smooth" })
-                    }
-                  >
-                    Scope Your Audit
-                  </Button>
                 </CardContent>
+                <Button
+                  variant="btnPrimary"
+                  className="w-full"
+                  onClick={() =>
+                    document
+                      .getElementById("contact")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Scope Your Audit
+                </Button>
               </Card>
 
-              <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative">
-                <CardContent className="p-0">
+              <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative flex flex-col">
+                <CardContent className="p-0 h-full">
                   <div className="flex items-center gap-4 mb-6">
                     <img className="relative w-12 h-12" src={ProAudit} alt="" />
                     <div className="backdrop-blur-md px-3 py-1 rounded-full text-sm font-medium border border-black-500 ml-auto">
@@ -335,19 +334,18 @@ const AiStudio = () => {
                   <div className="text-xl font-semibold text-brand-primary mb-4">
                     Starting at $60,000
                   </div>
-
-                  <Button
-                    variant="btnSecondary"
-                    className="w-full rounded-full"
-                    onClick={() =>
-                      document
-                        .getElementById("contact")
-                        ?.scrollIntoView({ behavior: "smooth" })
-                    }
-                  >
-                    Start Your Deep-Dive
-                  </Button>
                 </CardContent>
+                <Button
+                  variant="btnSecondary"
+                  className="w-full rounded-full"
+                  onClick={() =>
+                    document
+                      .getElementById("contact")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Start Your Deep-Dive
+                </Button>
               </Card>
             </div>
           </div>

@@ -23,7 +23,7 @@ const InnovationLab = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] overflow-hidden bg-black">
+      <section className="relative min-h-[680px] overflow-hidden bg-black">
         <LivingVoidBackground />
         <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
           <div className="max-w-4xl mx-auto text-center lg:text-left ml-0">
@@ -102,7 +102,7 @@ const InnovationLab = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <CardGlass className="group p-6 sm:p-8">
               <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                 <Lightbulb className="w-8 h-8 text-brand-primary" />
@@ -231,7 +231,7 @@ const InnovationLab = () => {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               <CardGlass className="group">
                 <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                   <Rocket className="w-8 h-8 text-brand-primary" />
