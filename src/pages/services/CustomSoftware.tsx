@@ -309,7 +309,7 @@ const CustomSoftware = () => {
       </section>
 
       <section
-        className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden ${styles.strBg2}`}
+        className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden bg-gradient-to-r from-[#fcfcfc] to-[#fefbfc]`}
       >
         {/* Strategic Scoping Session */}
         <section className="pb-24 lg:pb-32 bg-transparent">
