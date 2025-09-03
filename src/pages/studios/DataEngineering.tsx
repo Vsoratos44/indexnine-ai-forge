@@ -5,6 +5,7 @@ import { Database, Cloud, Shield, BarChart3, CheckCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
+import { useSEO } from "@/hooks/useSEO";
 import styles from "../../assets/css/stylesheet.module.css";
 
 import VelocityIcon from "../../assets/images/accel-velocity.svg";
@@ -17,6 +18,15 @@ import {
 } from "@/components/SEOStructuredData";
 
 const DataEngineering = () => {
+  // Implement SEO for Data Engineering page
+  useSEO({
+    title: "Data Engineering & Platform Modernization | IndexNine Data Studio",
+    description: "Build an AI-ready data foundation. We design and implement modern data platforms using Snowflake and more to unlock analytics, drive efficiency, and prepare your data for what's next.",
+    canonicalUrl: "https://indexnine.com/studios/data-engineering",
+    keywords: "data engineering, Snowflake, data platform modernization, analytics, AI-ready data, data architecture",
+    ogImage: "https://indexnine.com/images/data-engineering-og.jpg"
+  });
+
   return (
     <div className="min-h-screen bg-background-dark">
       <ServiceSchema

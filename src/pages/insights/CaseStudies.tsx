@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { useSEO } from "@/hooks/useSEO";
 import {
   WebPageSchema,
   BreadcrumbSchema,
@@ -358,6 +359,15 @@ const CaseStudies = () => {
       }
     );
   };
+
+  // Implement comprehensive SEO for Case Studies page
+  useSEO({
+    title: "Client Success Stories & Case Studies | IndexNine",
+    description: "Explore real-world examples of how IndexNine transforms businesses through innovative product engineering and AI solutions",
+    canonicalUrl: "https://indexnine.com/insights/case-studies",
+    keywords: "case studies, client success stories, software transformation, product engineering results, enterprise solutions",
+    ogImage: "https://indexnine.com/images/case-studies-og.jpg"
+  });
 
   return (
     <div className="min-h-screen bg-background">
