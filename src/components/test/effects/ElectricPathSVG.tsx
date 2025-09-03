@@ -30,11 +30,11 @@ const ElectricPathSVG: React.FC<ElectricPathSVGProps> = ({ className = '' }) => 
           </filter>
           
           <linearGradient id="electric-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="hsl(127, 100%, 50%)" stopOpacity="0.8">
+            <stop offset="0%" stopColor="hsl(var(--brand-matrix))" stopOpacity="0.8">
               <animate attributeName="stop-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
             </stop>
-            <stop offset="50%" stopColor="hsl(180, 100%, 60%)" stopOpacity="1"/>
-            <stop offset="100%" stopColor="hsl(262, 83%, 58%)" stopOpacity="0.6">
+            <stop offset="50%" stopColor="hsl(var(--brand-cyan))" stopOpacity="1"/>
+            <stop offset="100%" stopColor="hsl(var(--brand-primary-dark))" stopOpacity="0.6">
               <animate attributeName="stop-opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
             </stop>
           </linearGradient>
@@ -62,7 +62,7 @@ const ElectricPathSVG: React.FC<ElectricPathSVGProps> = ({ className = '' }) => 
         {/* Animated particles along the path */}
         <motion.circle
           r="1"
-          fill="hsl(127, 100%, 50%)"
+          fill="hsl(var(--brand-matrix))"
           filter="url(#electric-glow)"
           animate={{
             opacity: [0, 1, 0],
