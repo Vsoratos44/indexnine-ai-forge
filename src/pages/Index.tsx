@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import CTABanner from "@/components/CTABanner";
 import { Button } from "@/components/ui/button";
 import { useContent } from "@/hooks/useContent";
-import ElectricPathSVG from "@/components/test/effects/ElectricPathSVG";
 import {
   OrganizationSchema,
   WebPageSchema,
@@ -58,9 +57,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Electric Path SVG Animation - spans entire page */}
-      <ElectricPathSVG />
-
       {/* Enhanced SEO: Organization + LocalBusiness + VideoObject schema for comprehensive homepage visibility */}
       {/* These schemas help AI systems understand our company, services, and multimedia content */}
       <OrganizationSchema />
