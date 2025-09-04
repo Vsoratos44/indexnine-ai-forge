@@ -362,11 +362,11 @@ const CaseStudies = () => {
 
   // Implement comprehensive SEO for Case Studies page
   useSEO({
-    title: "Client Success Stories & Case Studies | IndexNine",
-    description: "Explore real-world examples of how IndexNine transforms businesses through innovative product engineering and AI solutions",
-    canonicalUrl: "https://indexnine.com/insights/case-studies",
-    keywords: "case studies, client success stories, software transformation, product engineering results, enterprise solutions",
-    ogImage: "https://indexnine.com/images/case-studies-og.jpg"
+    title: "Enterprise Software Development Case Studies | Product Engineering Success Stories | IndexNine",
+    description: "Real-world case studies showcasing enterprise software development, product engineering, AI implementation, and digital transformation success stories. Proven results in custom software development, quality engineering, and data modernization projects.",
+    canonicalUrl: "https://www.indexnine.com/insights/case-studies",
+    keywords: "enterprise software development case studies, product engineering success stories, AI implementation case studies, digital transformation projects, custom software development examples, quality engineering case studies, data modernization success stories, legacy system modernization cases, enterprise AI consulting results, B2B software development case studies, product lifecycle engineering examples, test automation success stories",
+    ogImage: "https://www.indexnine.com/images/case-studies-og.jpg"
   });
 
   return (

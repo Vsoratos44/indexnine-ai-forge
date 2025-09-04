@@ -85,10 +85,14 @@ const QualityEngineering = () => {
   return (
     <div className="min-h-screen bg-background-dark">
       {/* SEO Head Elements */}
-      <title>Quality Engineering & Test Automation | IndexNine QE Studio</title>
+      <title>Quality Engineering Services & Test Automation Solutions | Enterprise QA Testing | IndexNine</title>
       <meta
         name="description"
-        content="Move beyond testing to engineered quality. IndexNine delivers outcome-driven test automation and strategic quality engineering to help you release mission-critical software with speed and confidence."
+        content="Leading quality engineering and test automation services for enterprises. Strategic QA testing, automated testing solutions, performance testing, and quality assurance consulting. Transform your software testing with outcome-driven quality engineering."
+      />
+      <meta
+        name="keywords"
+        content="quality engineering services, test automation solutions, enterprise QA testing, automated testing services, performance testing, quality assurance consulting, software testing automation, QE consulting, continuous testing, test strategy consulting, quality engineering framework, enterprise testing solutions, QA automation services, test automation framework development, software quality assurance"
       />
       <link
         rel="canonical"
@@ -98,11 +102,11 @@ const QualityEngineering = () => {
       {/* Open Graph Meta Tags */}
       <meta
         property="og:title"
-        content="Quality Engineering & Test Automation | IndexNine QE Studio"
+        content="Enterprise Quality Engineering Services & Test Automation Solutions | IndexNine"
       />
       <meta
         property="og:description"
-        content="Build reliable, mission-critical software faster with our strategic test automation and quality engineering services."
+        content="Transform your software testing with strategic quality engineering, test automation solutions, and outcome-driven QA services for mission-critical enterprise software."
       />
       <meta
         property="og:image"
@@ -118,11 +122,11 @@ const QualityEngineering = () => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
-        content="Quality Engineering & Test Automation | IndexNine QE Studio"
+        content="Quality Engineering Services & Test Automation Solutions | IndexNine"
       />
       <meta
         name="twitter:description"
-        content="Build reliable, mission-critical software faster with our strategic test automation and quality engineering services."
+        content="Enterprise quality engineering and test automation services for reliable, mission-critical software development and deployment."
       />
       <meta
         name="twitter:image"

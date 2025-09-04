@@ -20,11 +20,11 @@ import {
 const DataEngineering = () => {
   // Implement SEO for Data Engineering page
   useSEO({
-    title: "Data Engineering & Platform Modernization | IndexNine Data Studio",
-    description: "Build an AI-ready data foundation. We design and implement modern data platforms using Snowflake and more to unlock analytics, drive efficiency, and prepare your data for what's next.",
-    canonicalUrl: "https://indexnine.com/studios/data-engineering",
-    keywords: "data engineering, Snowflake, data platform modernization, analytics, AI-ready data, data architecture",
-    ogImage: "https://indexnine.com/images/data-engineering-og.jpg"
+    title: "Data Engineering Services & Platform Modernization | Enterprise Data Solutions | IndexNine",
+    description: "Leading data engineering services for enterprises. Platform modernization, data infrastructure solutions, AI-ready data platforms, ETL pipelines, and legacy system data modernization. Transform your data architecture with expert data engineering consulting.",
+    canonicalUrl: "https://www.indexnine.com/studios/data-engineering",
+    keywords: "data engineering services, platform modernization, enterprise data solutions, data infrastructure consulting, AI-ready data platforms, ETL pipeline development, data warehouse modernization, legacy system modernization, data architecture services, cloud data migration, big data engineering, data analytics platform, enterprise data strategy, data pipeline automation, modern data stack",
+    ogImage: "https://www.indexnine.com/images/og-data-engineering.png"
   });
 
   return (

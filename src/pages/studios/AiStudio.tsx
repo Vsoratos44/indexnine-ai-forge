@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { useSEO } from "@/hooks/useSEO";
 import styles from "../../assets/css/stylesheet.module.css";
 import aiChangeManagementImg from "../../assets/images/ai-change-management.webp";
 
@@ -28,16 +29,25 @@ import LivingVoidBackground from "@/components/LivingVoidBackground";
 import CasesCarousel from "@/components/CasesCarousel";
 
 const AiStudio = () => {
+  // Implement comprehensive SEO for AI Studio page
+  useSEO({
+    title: "AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine",
+    description: "Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services.",
+    canonicalUrl: "https://www.indexnine.com/studios/ai",
+    keywords: "AI consulting services, machine learning solutions, enterprise AI implementation, AI strategy consulting, custom AI development, generative AI solutions, AI change management, ML engineering, artificial intelligence consulting, AI transformation services, enterprise machine learning, AI implementation framework, legacy system AI integration, conversational AI development, AI automation solutions",
+    ogImage: "https://www.indexnine.com/images/og-ai-studio.png"
+  });
+
   return (
     <div className="min-h-screen bg-background">
-      {/* <ServiceSchema
+      <ServiceSchema
         name="AI Strategy & Custom Solutions | IndexNine AI Studio"
         description="Go from AI potential to business reality. IndexNine's AI Studio provides strategic consulting, readiness assessments (P2R Score), and end-to-end development of custom AI/ML solutions that deliver measurable ROI."
         serviceType="AI Development"
       />
       <WebPageSchema
-        title="AI Strategy & Custom Solutions | IndexNine AI Studio"
-        description="We partner with you to develop and deploy custom AI solutions that solve real business problems and deliver transformative results."
+        title="AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine"
+        description="Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services."
         url="https://indexnine.com/studios/ai"
       />
       <BreadcrumbSchema
@@ -48,7 +58,7 @@ const AiStudio = () => {
             url: "https://indexnine.com/studios/ai",
           },
         ]}
-      /> */}
+      />
       <Header />
 
       {/* Hero Section */}

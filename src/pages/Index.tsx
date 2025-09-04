@@ -61,8 +61,8 @@ const Index = () => {
       {/* These schemas help AI systems understand our company, services, and multimedia content */}
       <OrganizationSchema />
       <WebPageSchema
-        title="B2B Product Engineering and AI Consulting Services | IndexNine"
-        description="Indexnine offers best-in-class product engineering and custom software development for startups and enterprises. Find out what we can do for you today."
+        title="Enterprise Product Engineering & AI Consulting Services | Custom Software Development | IndexNine"
+        description="Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions. Transform your legacy systems with expert product lifecycle engineering."
         url="https://yoursite.lovable.app/"
       />
       <LocalBusinessSchema />
