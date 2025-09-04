@@ -2,6 +2,12 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { useSEO } from '@/hooks/useSEO';
+import {
+  WebPageSchema,
+  BreadcrumbSchema,
+  ArticleSchema,
+} from '@/components/SEOStructuredData';
 import { BookOpen, Download, Clock, Star } from 'lucide-react';
 
 const Ebooks = () => {
@@ -45,8 +51,45 @@ const Ebooks = () => {
     }
   ];
 
+  // Implement comprehensive SEO for Ebooks page
+  useSEO({
+    title: "Technology eBooks & Guides | AI, Cloud Computing, Digital Transformation | IndexNine",
+    description: "Download free expert eBooks on AI development, cloud migration, digital transformation, and software architecture. Comprehensive guides with real-world examples and best practices from IndexNine experts.",
+    canonicalUrl: "https://www.indexnine.com/insights/ebooks",
+    keywords: "technology ebooks, AI guides, cloud computing, digital transformation, software architecture, free downloads, tech resources",
+    ogImage: "https://www.indexnine.com/images/ebooks-og.jpg",
+  });
+
   return (
     <div className="min-h-screen bg-background">
+      {/* SEO Structured Data */}
+      <WebPageSchema
+        title="Technology eBooks & Guides | IndexNine"
+        description="Download free expert eBooks on AI development, cloud migration, digital transformation, and software architecture."
+        url="https://www.indexnine.com/insights/ebooks"
+      />
+      
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://www.indexnine.com" },
+          { name: "Insights", url: "https://www.indexnine.com/insights" },
+          {
+            name: "eBooks",
+            url: "https://www.indexnine.com/insights/ebooks",
+          },
+        ]}
+      />
+
+      <ArticleSchema
+        title="Technology eBooks & Expert Guides"
+        description="Comprehensive collection of technology eBooks covering AI development, cloud migration, digital transformation, and software architecture with real-world examples."
+        author="IndexNine Expert Team"
+        datePublished="2024-01-15"
+        dateModified="2024-09-04"
+        url="https://www.indexnine.com/insights/ebooks"
+        image="https://www.indexnine.com/images/ebooks-hero.jpg"
+      />
+
       <Header />
       
       {/* Hero Section */}

@@ -1,14 +1,57 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { useSEO } from '@/hooks/useSEO';
+import {
+  WebPageSchema,
+  BreadcrumbSchema,
+  ArticleSchema,
+} from '@/components/SEOStructuredData';
+import { CheckCircle, ArrowLeft } from 'lucide-react';
 import LivingVoidBackground from '@/components/LivingVoidBackground';
-import { ArrowLeft, CheckCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const EnterpriseSaasOptimization = () => {
+  // Implement comprehensive SEO
+  useSEO({
+    title: "Enterprise SaaS Platform Optimization Case Study | Performance & Security | IndexNine",
+    description: "Discover how IndexNine optimized an enterprise SaaS platform achieving 99.9% uptime, 40% performance improvement, and SOC 2 Type II compliance through systematic optimization strategies.",
+    canonicalUrl: "https://www.indexnine.com/insights/case-studies/enterprise-saas-optimization",
+    keywords: "enterprise SaaS, performance optimization, security hardening, SOC 2 compliance, uptime improvement, platform optimization",
+    ogImage: "https://www.indexnine.com/images/case-studies/enterprise-saas.jpg",
+  });
+
   return (
     <div className="min-h-screen bg-background">
+      {/* SEO Structured Data */}
+      <WebPageSchema
+        title="Enterprise SaaS Platform Optimization Case Study | IndexNine"
+        description="Comprehensive case study showcasing how systematic optimization strategies helped an enterprise SaaS platform achieve 99.99% uptime and 400% performance improvement."
+        url="https://www.indexnine.com/insights/case-studies/enterprise-saas-optimization"
+      />
+      
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://www.indexnine.com" },
+          { name: "Insights", url: "https://www.indexnine.com/insights" },
+          { name: "Case Studies", url: "https://www.indexnine.com/insights/case-studies" },
+          { name: "Enterprise SaaS Optimization", url: "https://www.indexnine.com/insights/case-studies/enterprise-saas-optimization" },
+        ]}
+      />
+
+      <ArticleSchema
+        title="Enterprise SaaS Platform Optimization: Mission-Critical Success"
+        description="Detailed case study of how IndexNine optimized an enterprise SaaS platform through comprehensive performance tuning, security hardening, and compliance achievement, resulting in 99.99% uptime and SOC 2 certification."
+        author="IndexNine Case Study Team"
+        datePublished="2024-03-20"
+        dateModified="2024-09-04"
+        url="https://www.indexnine.com/insights/case-studies/enterprise-saas-optimization"
+        image="https://www.indexnine.com/images/case-studies/enterprise-saas-hero.jpg"
+        wordCount={1150}
+        readingTime="6 min read"
+      />
+
       <Header />
       
       {/* Hero Section */}

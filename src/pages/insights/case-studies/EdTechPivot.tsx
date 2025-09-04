@@ -1,14 +1,57 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { useSEO } from '@/hooks/useSEO';
+import {
+  WebPageSchema,
+  BreadcrumbSchema,
+  ArticleSchema,
+} from '@/components/SEOStructuredData';
+import { CheckCircle, ArrowLeft } from 'lucide-react';
 import LivingVoidBackground from '@/components/LivingVoidBackground';
-import { ArrowLeft, CheckCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const EdTechPivotCaseStudy = () => {
+  // Implement comprehensive SEO
+  useSEO({
+    title: "EdTech Platform Strategic Pivot Case Study | Data-Driven Product Strategy | IndexNine",
+    description: "How IndexNine helped an EdTech platform successfully pivot with data-driven insights, achieving 300% user engagement increase and securing $2M funding through strategic repositioning.",
+    canonicalUrl: "https://www.indexnine.com/insights/case-studies/edtech-pivot",
+    keywords: "EdTech pivot, product strategy, data-driven decisions, user engagement, market repositioning, startup success",
+    ogImage: "https://www.indexnine.com/images/case-studies/edtech-pivot.jpg",
+  });
+
   return (
     <div className="min-h-screen bg-background">
+      {/* SEO Structured Data */}
+      <WebPageSchema
+        title="EdTech Platform Strategic Pivot Case Study | IndexNine"
+        description="Comprehensive case study showcasing how data-driven pivot strategy helped an EdTech platform achieve remarkable growth and secure significant funding."
+        url="https://www.indexnine.com/insights/case-studies/edtech-pivot"
+      />
+      
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://www.indexnine.com" },
+          { name: "Insights", url: "https://www.indexnine.com/insights" },
+          { name: "Case Studies", url: "https://www.indexnine.com/insights/case-studies" },
+          { name: "EdTech Pivot", url: "https://www.indexnine.com/insights/case-studies/edtech-pivot" },
+        ]}
+      />
+
+      <ArticleSchema
+        title="EdTech Platform Strategic Pivot: A Data-Driven Success Story"
+        description="Detailed case study of how IndexNine helped an EdTech platform successfully pivot their product strategy using data-driven insights, resulting in 300% increased user engagement and $15M funding."
+        author="IndexNine Case Study Team"
+        datePublished="2024-02-15"
+        dateModified="2024-09-04"
+        url="https://www.indexnine.com/insights/case-studies/edtech-pivot"
+        image="https://www.indexnine.com/images/case-studies/edtech-pivot-hero.jpg"
+        wordCount={1200}
+        readingTime="6 min read"
+      />
+
       <Header />
       
       {/* Hero Section */}
