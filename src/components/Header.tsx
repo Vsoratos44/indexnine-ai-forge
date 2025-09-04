@@ -89,8 +89,8 @@ const Header = () => {
             className={`border px-6 py-4 rounded-2xl transition-colors duration-500
     ${
       scrolledHeaderToVh
-        ? "bg-[#00000050] backdrop-blur-md border-border/40 shadow-md"
-        : "bg-[#00000000] border-transparent"
+        ? "bg-[#00000050] backdrop-blur-md border-border/40 shadow-lg"
+        : "bg-[#00000050] border-transparent backdrop-blur-md border-border/40 shadow-md"
     }`}
           >
             <div className="flex items-center justify-between h-12">
@@ -240,7 +240,7 @@ const Header = () => {
                   </div>
                 </div>
 
-                <div className="relative group">
+                {/* <div className="relative group">
                   <button
                     className={`flex items-center space-x-1 transition-colors duration-300 ${
                       isLightSection
@@ -251,8 +251,6 @@ const Header = () => {
                     <span>Events</span>
                     <ChevronDown className="w-4 h-4" />
                   </button>
-                  {/* Backdrop overlay */}
-                  {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
                     <div className="px-5 py-4">
                       <Link to="/events" className={`${styles.navLink}`}>
@@ -266,7 +264,7 @@ const Header = () => {
                       </Link>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <Link
                   to="/about"
@@ -494,7 +492,7 @@ const Header = () => {
             </div>
 
             {/* Events */}
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <button
                 onClick={() => toggleDropdown("events")}
                 className="flex items-center justify-between w-full text-left text-lg font-semibold text-white hover:text-brand-primary transition-colors"
@@ -524,7 +522,7 @@ const Header = () => {
                   </Link>
                 </div>
               )}
-            </div>
+            </div> */}
 
             {/* About Us */}
             <Link

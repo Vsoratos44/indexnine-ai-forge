@@ -123,6 +123,12 @@ header .fixed.inset-0 {
   background-position: center top;
   background-size: 100%;
 }
+.sectionBgCase {
+  background-image: url(./../images/case-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
 
 .bord-rb,
 .bordRb {
@@ -245,6 +251,12 @@ header .fixed.inset-0 {
 }
 .middleCardBg {
   background-image: url(./../images/middle-card-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.middleCardBg2 {
+  background-image: url(./../images/case-card-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
