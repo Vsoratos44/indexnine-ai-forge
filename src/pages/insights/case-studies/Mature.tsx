@@ -5,10 +5,47 @@ import { Button } from '@/components/ui/button';
 import LivingVoidBackground from '@/components/LivingVoidBackground';
 import { ArrowLeft, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useSEO } from '@/hooks/useSEO';
+import { SEOStructuredData, ArticleSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 
 const MatureCaseStudy = () => {
+  // SEO Configuration
+  useSEO({
+    title: "Genesys E-commerce Platform Modernization Case Study - Mission-Critical System Transformation | Indexnine",
+    description: "Learn how Indexnine modernized Genesys's 16-year-old legacy e-commerce platform, achieving 100% uptime and zero-downtime migration of 178 integrations through event-driven architecture.",
+    keywords: "platform modernization, legacy system migration, event-driven architecture, e-commerce platform, zero-downtime migration, system reliability, enterprise modernization, PHP modernization",
+    canonicalUrl: "https://indexnine.ai/insights/case-studies/mature",
+    ogImage: "https://indexnine.ai/images/case-studies/mature-og.jpg",
+    ogType: "article"
+  });
+
   return (
     <div className="min-h-screen bg-background">
+      {/* SEO Structured Data */}
+      <ArticleSchema
+        title="Mission-Critical Modernization: Genesys E-commerce Platform"
+        description="Product modernization and event-driven architecture transformation for a mature e-commerce platform serving thousands of merchants."
+        author="Indexnine"
+        datePublished="2024-01-30"
+        dateModified="2024-01-30"
+        image="https://indexnine.ai/images/case-studies/mature-hero.jpg"
+        url="https://indexnine.ai/insights/case-studies/mature"
+      />
+      
+      <WebPageSchema
+        title="Mature Case Study: Genesys Platform Modernization"
+        description="Legacy platform modernization case study showcasing event-driven architecture and zero-downtime migration success"
+        url="https://indexnine.ai/insights/case-studies/mature"
+      />
+      
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://indexnine.ai" },
+          { name: "Insights", url: "https://indexnine.ai/insights" },
+          { name: "Case Studies", url: "https://indexnine.ai/insights/case-studies" },
+          { name: "Mature Phase", url: "https://indexnine.ai/insights/case-studies/mature" }
+        ]}
+      />
       <Header />
       
       {/* Hero Section */}

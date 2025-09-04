@@ -5,10 +5,47 @@ import { Button } from '@/components/ui/button';
 import LivingVoidBackground from '@/components/LivingVoidBackground';
 import { ArrowLeft, CheckCircle, Zap, Brain, Target, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useSEO } from '@/hooks/useSEO';
+import { SEOStructuredData, ArticleSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 
 const GrowCaseStudy = () => {
+  // SEO Configuration
+  useSEO({
+    title: "Sports Interactive AI Growth Case Study - Real-Time Fan Engagement Automation | Indexnine",
+    description: "Discover how Indexnine's Cricket LLM transformed Sports Interactive's operations, automating content generation in 15 seconds and reducing operational costs by 90% through AI-powered fan engagement.",
+    keywords: "AI automation, sports media technology, real-time content generation, fan engagement, Cricket LLM, operational cost reduction, scalable AI solutions, sports technology",
+    canonicalUrl: "https://indexnine.ai/insights/case-studies/grow",
+    ogImage: "https://indexnine.ai/images/case-studies/grow-og.jpg",
+    ogType: "article"
+  });
+
   return (
     <div className="min-h-screen bg-background">
+      {/* SEO Structured Data */}
+      <ArticleSchema
+        title="Sports Interactive: AI-Powered Fan Engagement in Real Time"
+        description="Unlocking a new level of scalability and solving a technical Gordian knot through automated content creation with Cricket LLM."
+        author="Indexnine"
+        datePublished="2024-01-25"
+        dateModified="2024-01-25"
+        image="https://indexnine.ai/images/case-studies/grow-hero.jpg"
+        url="https://indexnine.ai/insights/case-studies/grow"
+      />
+      
+      <WebPageSchema
+        title="Growth Case Study: Sports Interactive AI Automation"
+        description="AI-powered growth case study showcasing real-time content automation and operational transformation in sports media"
+        url="https://indexnine.ai/insights/case-studies/grow"
+      />
+      
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://indexnine.ai" },
+          { name: "Insights", url: "https://indexnine.ai/insights" },
+          { name: "Case Studies", url: "https://indexnine.ai/insights/case-studies" },
+          { name: "Growth Phase", url: "https://indexnine.ai/insights/case-studies/grow" }
+        ]}
+      />
       <Header />
       
       {/* Hero Section */}

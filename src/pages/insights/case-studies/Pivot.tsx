@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
+import { useSEO } from '@/hooks/useSEO';
+import { SEOStructuredData, ArticleSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
 import {
   ArrowLeft,
   CheckCircle,
@@ -31,6 +33,16 @@ const leftNavLinks = [
 
 const PivotCaseStudy = () => {
   const [selected, setSelected] = useState("#intro1");
+  
+  // SEO Configuration
+  useSEO({
+    title: "Zilla Security Pivot Case Study - Engineering the Perfect Product Pivot | Indexnine",
+    description: "Learn how Indexnine transformed Zilla Security from a passive auditing tool into a mission-critical IGA platform, enabling a successful $165M+ acquisition through strategic product pivoting.",
+    keywords: "product pivot, identity governance, cybersecurity platform, enterprise software, IGA solution, product transformation, acquisition success, security automation",
+    canonicalUrl: "https://indexnine.ai/insights/case-studies/pivot",
+    ogImage: "https://indexnine.ai/images/case-studies/pivot-og.jpg",
+    ogType: "article"
+  });
   useEffect(() => {
     const sections = leftNavLinks.map((link) =>
       document.querySelector(link.href)
@@ -57,6 +69,31 @@ const PivotCaseStudy = () => {
 
   return (
     <div className="min-h-screen bg-white relative  bg-[#fff] bg-no-repeat">
+      {/* SEO Structured Data */}
+      <ArticleSchema
+        title="Zilla Security: Engineering the Perfect Pivot"
+        description="Indexnine's strategic product engineering transformed a niche auditing tool into a mission-critical identity platform, creating exponential enterprise value."
+        author="Indexnine"
+        datePublished="2024-01-20"
+        dateModified="2024-01-20"
+        image="https://indexnine.ai/images/case-studies/pivot-hero.jpg"
+        url="https://indexnine.ai/insights/case-studies/pivot"
+      />
+      
+      <WebPageSchema
+        title="Pivot Case Study: Zilla Security Platform Transformation"
+        description="Strategic product pivot case study showcasing enterprise platform transformation and successful acquisition outcome"
+        url="https://indexnine.ai/insights/case-studies/pivot"
+      />
+      
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://indexnine.ai" },
+          { name: "Insights", url: "https://indexnine.ai/insights" },
+          { name: "Case Studies", url: "https://indexnine.ai/insights/case-studies" },
+          { name: "Pivot Phase", url: "https://indexnine.ai/insights/case-studies/pivot" }
+        ]}
+      />
       <Header />
       {/* Hero Section */}
       <a id="intro1"></a>
