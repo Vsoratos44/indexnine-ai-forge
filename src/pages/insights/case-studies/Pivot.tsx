@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
+import ElectricPathSVG from "@/components/test/effects/ElectricPathSVG";
 import {
   ArrowLeft,
   CheckCircle,
@@ -58,6 +59,11 @@ const PivotCaseStudy = () => {
   return (
     <div className="min-h-screen bg-white relative  bg-[#fff] bg-no-repeat">
       <Header />
+      
+      {/* Electric Path SVG - positioned on the left side */}
+      <div className="hidden lg:block fixed left-0 top-0 w-1/6 h-full z-10 pointer-events-none">
+        <ElectricPathSVG />
+      </div>
       {/* Hero Section */}
       <a id="intro1"></a>
       <div className={`bg-transparent pt-32 ${styles.sectionBgCase}`}>
