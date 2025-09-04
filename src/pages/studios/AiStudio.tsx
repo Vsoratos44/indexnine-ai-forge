@@ -1,7 +1,9 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import styles from "../../assets/css/stylesheet.module.css";
+import aiChangeManagementImg from "../../assets/images/ai-change-management.webp";
 
 import VelocityIcon from "../../assets/images/accel-velocity.svg";
 import StdAudit from "../../assets/images/std-audit.svg";
@@ -535,21 +537,30 @@ const AiStudio = () => {
               </p>
             </div>
             <CasesCarousel />
-            {/* <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="mb-6">
+                  <img 
+                    src={aiChangeManagementImg} 
+                    alt="AI change management and digital transformation" 
+                    className="w-full h-40 object-cover rounded-lg"
+                  />
+                </div>
                 <h3 className="relative text-xl font-bold mb-4 text-brand-primary">
-                  Generative AI Solutions
+                  AI Change Management
                 </h3>
                 <p className="relative text-foreground-dark mb-4">
-                  We build custom LLM applications, content automation engines,
-                  and intelligent chatbots that enhance creativity and
-                  efficiency.
+                  Strategic frameworks for legacy organizations to navigate AI adoption. We transform resistance into enthusiasm through purposeful modernization.
                 </p>
-                <p className="relative text-sm text-brand-primary font-medium">
-                  Use Cases: Automated Content Creation, Code Generation,
-                  Advanced Customer Support
+                <p className="relative text-sm text-brand-primary font-medium mb-4">
+                  Use Cases: Legacy System Modernization, Change Management, AI Enablement Framework
                 </p>
+                <Link to="/insights/blogs/ai-change-management-playbook">
+                  <Button variant="btnLink" size="sm" className="p-0 h-auto text-brand-primary font-medium">
+                    Read Our AI Change Management Playbook →
+                  </Button>
+                </Link>
               </div>
 
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
@@ -626,7 +637,7 @@ const AiStudio = () => {
                   Change Management
                 </p>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
