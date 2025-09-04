@@ -47,6 +47,7 @@ const CaseStudies = lazy(() => import("./pages/insights/CaseStudies"));
 const Blogs = lazy(() => import("./pages/insights/Blogs"));
 const Ebooks = lazy(() => import("./pages/insights/Ebooks"));
 const RobotFrameworkVsPlaywright = lazy(() => import("./pages/insights/blog/RobotFrameworkVsPlaywright"));
+const AiChangeManagementPlaybook = lazy(() => import("./pages/insights/blog/AiChangeManagementPlaybook"));
 const BlogPost = lazy(() => import("./pages/insights/blog/BlogPost"));
 
 // Case Study Pages - Lazy loaded
@@ -135,6 +136,7 @@ const App = () => {
               
               {/* Individual Blog Post Routes - Lazy loaded */}
               <Route path="/insights/blogs/robot-framework-vs-playwright-automation" element={<RobotFrameworkVsPlaywright />} />
+              <Route path="/insights/blogs/ai-change-management-playbook" element={<AiChangeManagementPlaybook />} />
               <Route path="/insights/blog/agentic-ai-enterprise-future" element={<BlogPost />} />
               <Route path="/insights/blog/ai-assisted-software-engineering-cursor" element={<BlogPost />} />
               <Route path="/insights/blog/microservices-vs-monolith-decision-guide" element={<BlogPost />} />

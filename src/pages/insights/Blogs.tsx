@@ -22,6 +22,45 @@ const Blogs = () => {
    */
   const blogPosts = [
     {
+      id: "ai-change-management-playbook",
+      img: blogImg2,
+      title:
+        "The AI Change Management Playbook: Modernizing Legacy Systems with Purpose",
+      excerpt:
+        "AI adoption is more than a technical challenge; it's a human one. Discover a strategic framework for change management, data modernization, and identifying high-impact AI initiatives in legacy organizations.",
+      author: "AI Strategy Team",
+      publishDate: "January 25, 2025",
+      readTime: "12 min read",
+      category: "AI Strategy",
+      featured: true,
+      metaTitle:
+        "The AI Change Management Playbook: Modernizing Legacy Systems with Purpose",
+      metaDescription:
+        "AI adoption is more than a technical challenge; it's a human one. Discover a strategic framework for change management, data modernization, and identifying high-impact AI initiatives in legacy organizations.",
+      tags: [
+        "AI Change Management",
+        "Legacy System Modernization",
+        "AI Adoption Strategy",
+        "Data Modernization",
+        "AI Enablement Framework",
+      ],
+      content: {
+        summary:
+          "Strategic guide to AI adoption for legacy organizations, covering change management, data modernization, and the AI Enablement framework for sustainable transformation.",
+        sections: [
+          "The Modernization Mandate: Beyond the Hype",
+          "Why AI Projects Fail: The Human and Data Disconnect",
+          "The AI Enablement Framework: Our Strategic Approach to Change",
+          "A Case Study in Purposeful Modernization",
+          "The Tangible Business Outcomes of Strategic AI Enablement",
+        ],
+        cta: {
+          primary: "Schedule an AI Enablement Strategy Session",
+          secondary: "Download AI Enablement Framework Guide (PDF)",
+        },
+      },
+    },
+    {
       id: "robot-framework-vs-playwright-automation",
       img: blogImg2,
       title:
@@ -32,7 +71,7 @@ const Blogs = () => {
       publishDate: "January 20, 2025",
       readTime: "10 min read",
       category: "Quality Assurance",
-      featured: true,
+      featured: false,
       metaTitle:
         "Robot Framework vs Playwright: Which Test Automation Service is Right for You?",
       metaDescription:
