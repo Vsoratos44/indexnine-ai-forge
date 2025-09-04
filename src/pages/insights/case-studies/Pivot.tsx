@@ -56,7 +56,7 @@ const PivotCaseStudy = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white relative  overflow-hidden bg-[#fff] bg-no-repeat">
+    <div className="min-h-screen bg-white relative  bg-[#fff] bg-no-repeat">
       <Header />
       {/* Hero Section */}
       <a id="intro1"></a>
@@ -256,7 +256,7 @@ const PivotCaseStudy = () => {
                             <span className="text-white">Modernization</span>
                           </div>
                         </div>
-                        <a id="challange2"></a>
+                        <a id="challange2" className="absolute mt-[100px]"></a>
                       </div>
                     </div>
                   </div>
