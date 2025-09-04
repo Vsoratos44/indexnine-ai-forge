@@ -59,11 +59,6 @@ const PivotCaseStudy = () => {
   return (
     <div className="min-h-screen bg-white relative  bg-[#fff] bg-no-repeat">
       <Header />
-      
-      {/* Electric Path SVG - positioned on the left side */}
-      <div className="hidden lg:block fixed left-0 top-0 w-1/6 h-full z-10 pointer-events-none">
-        <ElectricPathSVG />
-      </div>
       {/* Hero Section */}
       <a id="intro1"></a>
       <div className={`bg-transparent pt-32 ${styles.sectionBgCase}`}>
@@ -90,28 +85,14 @@ const PivotCaseStudy = () => {
                   </li>
                 ))}
               </ul>
-              <div
-                className={`px-8 my-8 py-12 text-center rounded-2xl text-white ${styles.sideCardBg}`}
-              >
-                <h3 className="text-3xl font-bold">
-                  Want to Share Your Insights?
-                </h3>
-                <p className="text-xl py-8">
-                  Join our community of thought leaders and share your expertise
-                  with fellow technology professionals.
-                </p>
-                <Button type="submit" size="lg" variant="btnSecondary">
-                  Continue
-                </Button>
+              <div className="my-8 relative h-96">
+                <ElectricPathSVG />
               </div>
             </div>
           </div>
           <div className="col-span-2">
             <section
-              className="min-h-[1024px] bg-[#fff] relative  bg-[#fff] bg-cover bg-center bg-no-repeat rounded-2xl shadow-2xl flex mb-12"
-              style={{
-                backgroundImage: `url(${CaseImg})`,
-              }}
+              className="min-h-[1024px] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative rounded-2xl shadow-2xl flex mb-12"
             >
               {/* <LivingVoidBackground /> */}
 
