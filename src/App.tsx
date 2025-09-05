@@ -72,6 +72,7 @@ const OnSiteExperience = lazy(() => import("./pages/events/features/OnSiteExperi
 
 // Test Pages - Lazy loaded
 const HomepageTest = lazy(() => import("./pages/test/HomepageTest"));
+const DesignStudio = lazy(() => import("./pages/test/DesignStudio"));
 
 // Optimized loading component
 const PageLoader = () => (
@@ -185,6 +186,7 @@ const App = () => {
               
               {/* Test Routes - Lazy loaded */}
               <Route path="/test/homepage" element={<HomepageTest />} />
+              <Route path="/test/studios/design" element={<DesignStudio />} />
               
               {/* 404 - Load immediately */}
               <Route path="*" element={<NotFound />} />
