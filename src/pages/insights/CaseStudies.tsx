@@ -195,6 +195,47 @@ const CaseStudies = () => {
       },
     },
     {
+      id: "cygeniq",
+      title: "CygenIQ - Engineering a First-Mover Advantage in AI Security",
+      subtitle:
+        "A strategic MVP launch for a visionary startup, engineering a first-of-its-kind platform and delivering a fundable, high-fidelity interactive prototype in record time.",
+      client: "CygenIQ",
+      industry: "Cybersecurity (AI Security)",
+      challenge:
+        "Visionary founders needed to move from a validated idea to a functional, high-fidelity prototype to secure their next round of funding and begin development. This required a strategic partner who could deliver enterprise-grade design and engineering with extreme velocity.",
+      solution:
+        "A comprehensive Launch engagement, beginning with our proprietary Sprint Zero framework to de-risk the vision, followed by the rapid, parallel development of the core AI engine by our Agentic AI Pod and a CISO-centric interactive prototype by our Design Studio.",
+      results: [
+        "Market-Ready MVP Delivered: Successfully launched a fully functional, enterprise-grade platform, enabling CygenIQ to engage with early adopters",
+        "Accelerated Seed Funding by 25%: High-fidelity interactive prototype delivered in just six weeks provided clear, buildable plan",
+        "First-Mover Advantage Secured: Accelerated process allowed CygenIQ to get to market faster than competitors",
+        "Zero Ambiguity in Developer Handoff: Detailed blueprint eliminated uncertainty, allowing engineering team to execute with precision",
+      ],
+      duration: "6 weeks",
+      teamSize: "5 engineers",
+      category: "launch",
+      serviceType: "Custom Software",
+      homePageLink: "/#launch",
+      serviceLink: "/services/custom-software",
+      detailedContent: {
+        challenge:
+          "The proliferation of generative AI in the enterprise has created a paradigm shift, unlocking unprecedented productivity. However, it has also opened a new, insidious, and largely undefended attack surface. Traditional cybersecurity tools are fundamentally blind to the threats posed by Large Language Models (LLMs). CySecurity founders saw this as a market-defining opportunity to build a first-of-its-kind platform that could effectively 'police other AIs'.",
+        approach: [
+          "Sprint Zero - De-Risking the Vision and Charting the Course",
+          "Design Studio - Engineering Clarity for the CISO",
+          "Agentic AI Pod - Engineering the Core Security Engine",
+        ],
+        technicalDetails:
+          "Architected sophisticated proto-agentic system with high-throughput log ingestion pipeline, ML-based anomaly detection models, and automated incident reporting with comprehensive risk scoring and remediation recommendations.",
+        whyItWorked: [
+          "Sprint Zero Framework for strategic de-risking and fundable planning",
+          "Integrated Specialized Studios with seamless Design and AI Pod collaboration",
+          "Agentic AI Pod Model with elite 3X Engineers",
+          "True Founder's Mindset with strategic partnership approach",
+        ],
+      },
+    },
+    {
       id: "edtech-pivot",
       title: "EdTech Platform - Strategic Pivot to Success",
       subtitle:
