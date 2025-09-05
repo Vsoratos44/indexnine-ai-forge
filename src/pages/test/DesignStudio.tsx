@@ -135,7 +135,7 @@ const DesignStudio = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 The Design Disconnect: <span className="text-gradient">Bridging Vision and Reality</span>
               </h2>
-              <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
+              <p className="text-lg md:text-xl text-foreground-dark leading-relaxed">
                 Great products are born from great design, but the path is filled with disconnects. Traditional design 
                 studios often lack deep engineering context, delivering beautiful mockups that are difficult to build. 
                 Internal teams can be too close to the product, missing the forest for the trees. This gap between 
@@ -234,7 +234,7 @@ const DesignStudio = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 The Velocity Suite: <span className="text-gradient">Design Offerings for Every Stage</span>
               </h2>
-              <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-foreground-dark max-w-3xl mx-auto">
                 From launching a new venture to modernizing an enterprise platform, our core offerings are 
                 built to deliver measurable impact.
               </p>
@@ -424,7 +424,7 @@ const DesignStudio = () => {
                   <AccordionTrigger className="text-left text-lg font-medium">
                     What if I only have an idea?
                   </AccordionTrigger>
-                  <AccordionContent className="text-foreground/80">
+                  <AccordionContent className="text-foreground-dark">
                     That's our specialty. Our Product Launch (0 to MVP) offering is designed to take your concept 
                     through brainstorming, wireframing, and prototyping to create a tangible, validated product vision.
                   </AccordionContent>
@@ -434,7 +434,7 @@ const DesignStudio = () => {
                   <AccordionTrigger className="text-left text-lg font-medium">
                     How do you ensure your designs are technically feasible?
                   </AccordionTrigger>
-                  <AccordionContent className="text-foreground/80">
+                  <AccordionContent className="text-foreground-dark">
                     Our "Engineering in our DNA" philosophy is key. Our designers work closely with solution architects 
                     from day one. We use our snap.design system to build with components that are designed for scalability 
                     and reusability, ensuring a seamless handoff to developers.
@@ -445,7 +445,7 @@ const DesignStudio = () => {
                   <AccordionTrigger className="text-left text-lg font-medium">
                     What makes your AI-powered process different?
                   </AccordionTrigger>
-                  <AccordionContent className="text-foreground/80">
+                  <AccordionContent className="text-foreground-dark">
                     We use AI as an accelerator, not a crutch. Our designers leverage AI tools to automate repetitive 
                     tasks and generate initial concepts, freeing them to focus on the high-value strategic work of UX 
                     problem-solving and creating a polished, unique visual identity.
@@ -456,7 +456,7 @@ const DesignStudio = () => {
                   <AccordionTrigger className="text-left text-lg font-medium">
                     How do you measure the ROI of a UX Refresh?
                   </AccordionTrigger>
-                  <AccordionContent className="text-foreground/80">
+                  <AccordionContent className="text-foreground-dark">
                     We tie design changes to key business metrics. Before we start, we benchmark your current state 
                     (e.g., conversion rates, user satisfaction scores, support ticket volume). The success of the 
                     refresh is measured by the positive movement of those KPIs after the new design is launched.
