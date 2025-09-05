@@ -128,19 +128,32 @@ const DesignStudio = () => {
       </Section>
 
       {/* The Design Disconnect Section */}
-      <Section variant="alternate">
+      <Section className="py-16 md:pt-20 lg:pt-28 relative overflow-hidden bg-background-light border-t border-border/20 noise-overlay">
+        {/* Enhanced Atmospheric Background */}
+        <div className="absolute inset-0 opacity-40">
+          <div className="absolute top-20 left-1/4 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl animate-luminous-drift"></div>
+          <div 
+            className="absolute bottom-20 right-1/4 w-96 h-96 bg-brand-cyan/6 rounded-full blur-3xl animate-luminous-drift"
+            style={{ animationDelay: "3s" }}
+          ></div>
+          <div 
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-purple/5 rounded-full blur-2xl animate-pulse-slow"
+            style={{ animationDelay: "1.5s" }}
+          ></div>
+        </div>
+        
         <Suspense fallback={<SectionLoader />}>
           <EnhancedScrollReveal direction="up">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                The Design Disconnect: <span className="text-gradient">Bridging Vision and Reality</span>
+            <div className="max-w-4xl mx-auto text-center relative z-10">
+              <h2 className="text-4xl md:text-5xl font-bold text-brand-cyan mb-6">
+                The Design Disconnect: <span className="test-neon-purple">Bridging Vision and Reality</span>
               </h2>
               <p className="text-lg md:text-xl text-foreground-dark leading-relaxed">
                 Great products are born from great design, but the path is filled with disconnects. Traditional design 
                 studios often lack deep engineering context, delivering beautiful mockups that are difficult to build. 
                 Internal teams can be too close to the product, missing the forest for the trees. This gap between 
                 vision and feasible execution is where products stall and technical debt begins. 
-                <strong className="text-brand-primary"> We were founded to eliminate that gap.</strong>
+                <strong className="bg-gradient-to-r from-brand-purple via-brand-primary to-brand-cyan bg-clip-text text-transparent"> We were founded to eliminate that gap.</strong>
               </p>
             </div>
           </EnhancedScrollReveal>
@@ -148,78 +161,94 @@ const DesignStudio = () => {
       </Section>
 
       {/* The IndexNine Philosophy Section */}
-      <Section>
+      <Section className="py-24 lg:py-32 relative overflow-hidden bg-[#fff] text-foreground-dark">
+        {/* Enhanced Electric Background Effects */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-1/6 w-96 h-96 bg-gradient-to-r from-transparent via-purple-500/8 to-transparent rounded-full blur-3xl animate-cosmic-pulse"></div>
+          <div className="absolute bottom-20 right-1/6 w-80 h-80 bg-gradient-to-r from-transparent via-cyan-500/6 to-transparent rounded-full blur-3xl animate-cosmic-pulse" style={{ animationDelay: "3s" }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-transparent via-green-500/5 to-transparent rounded-full blur-2xl animate-data-matrix"></div>
+        </div>
+        
         <Suspense fallback={<SectionLoader />}>
           <EnhancedScrollReveal direction="up">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Our <span className="text-gradient">Design Philosophy</span>
+            <div className="text-center mb-16 relative z-10">
+              <h2 className="text-4xl md:text-5xl font-bold text-brand-purple mb-6">
+                Our <span className="test-neon-cyan">Design Philosophy</span>
               </h2>
-              <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-foreground-dark max-w-3xl mx-auto">
                 Our approach is built on a foundation that marries creativity with pragmatism, ensuring every 
                 design decision is a step toward a successful product.
               </p>
             </div>
           </EnhancedScrollReveal>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 relative z-10">
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={200}>
-                <Card className="text-center h-full">
-                  <CardHeader>
-                    <div className="mx-auto mb-4 w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
-                      <Zap className="h-8 w-8 text-white" />
-                    </div>
-                    <CardTitle className="text-2xl mb-4">Velocity by Design</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base">
-                      We believe speed is a feature. By using AI accelerators like snap.design and snap.brain, 
-                      we dramatically shorten the time from ideation to interactive prototype, giving you critical 
-                      market feedback faster.
-                    </CardDescription>
-                  </CardContent>
-                </Card>
+                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-purple-500/10">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/4 via-transparent to-cyan-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  <Card className="text-center h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                    <CardHeader>
+                      <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-purple-500/20">
+                        <Zap className="h-8 w-8 text-white" />
+                      </div>
+                      <CardTitle className="text-2xl mb-4 test-electric-text">Velocity by Design</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-base text-foreground-dark">
+                        We believe speed is a feature. By using AI accelerators like snap.design and snap.brain, 
+                        we dramatically shorten the time from ideation to interactive prototype, giving you critical 
+                        market feedback faster.
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </div>
               </EnhancedScrollReveal>
             </Suspense>
 
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={400}>
-                <Card className="text-center h-full">
-                  <CardHeader>
-                    <div className="mx-auto mb-4 w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center">
-                      <Wrench className="h-8 w-8 text-white" />
-                    </div>
-                    <CardTitle className="text-2xl mb-4">Engineering in our DNA</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base">
-                      We are visual engineers. Our designers think in terms of components, scalability, and 
-                      technical feasibility from day one. This ensures we hand off designs that your engineering 
-                      team can actually build, minimizing rework and accelerating the development lifecycle.
-                    </CardDescription>
-                  </CardContent>
-                </Card>
+                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-cyan-500/10">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/4 via-transparent to-blue-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  <Card className="text-center h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                    <CardHeader>
+                      <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-cyan-500/20">
+                        <Wrench className="h-8 w-8 text-white" />
+                      </div>
+                      <CardTitle className="text-2xl mb-4 test-electric-glow">Engineering in our DNA</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-base text-foreground-dark">
+                        We are visual engineers. Our designers think in terms of components, scalability, and 
+                        technical feasibility from day one. This ensures we hand off designs that your engineering 
+                        team can actually build, minimizing rework and accelerating the development lifecycle.
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </div>
               </EnhancedScrollReveal>
             </Suspense>
 
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={600}>
-                <Card className="text-center h-full">
-                  <CardHeader>
-                    <div className="mx-auto mb-4 w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center">
-                      <Handshake className="h-8 w-8 text-white" />
-                    </div>
-                    <CardTitle className="text-2xl mb-4">Partnership in Practice</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base">
-                      We begin every engagement with our Sprint 0 for Refresh, a collaborative 2-6 week process 
-                      designed to de-risk your investment. We define the problem, iterate on solutions, and deliver 
-                      a finalized design with clear specifications, ensuring complete alignment on business outcomes.
-                    </CardDescription>
-                  </CardContent>
-                </Card>
+                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-green-500/10">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/4 via-transparent to-emerald-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  <Card className="text-center h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                    <CardHeader>
+                      <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-green-500/20">
+                        <Handshake className="h-8 w-8 text-white" />
+                      </div>
+                      <CardTitle className="text-2xl mb-4 test-neon-purple">Partnership in Practice</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-base text-foreground-dark">
+                        We begin every engagement with our Sprint 0 for Refresh, a collaborative 2-6 week process 
+                        designed to de-risk your investment. We define the problem, iterate on solutions, and deliver 
+                        a finalized design with clear specifications, ensuring complete alignment on business outcomes.
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                </div>
               </EnhancedScrollReveal>
             </Suspense>
           </div>
@@ -227,12 +256,25 @@ const DesignStudio = () => {
       </Section>
 
       {/* Core Offerings Section */}
-      <Section variant="alternate">
+      <Section className="py-16 md:pt-20 lg:pt-28 relative overflow-hidden bg-background-light border-t border-border/20 noise-overlay">
+        {/* Enhanced Atmospheric Background */}
+        <div className="absolute inset-0 opacity-40">
+          <div className="absolute top-20 left-1/4 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl animate-luminous-drift"></div>
+          <div 
+            className="absolute bottom-20 right-1/4 w-96 h-96 bg-brand-cyan/6 rounded-full blur-3xl animate-luminous-drift"
+            style={{ animationDelay: "3s" }}
+          ></div>
+          <div 
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-purple/5 rounded-full blur-2xl animate-pulse-slow"
+            style={{ animationDelay: "1.5s" }}
+          ></div>
+        </div>
+        
         <Suspense fallback={<SectionLoader />}>
           <EnhancedScrollReveal direction="up">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                The Velocity Suite: <span className="text-gradient">Design Offerings for Every Stage</span>
+            <div className="text-center mb-16 relative z-10">
+              <h2 className="text-4xl md:text-5xl font-bold text-brand-cyan mb-6">
+                The Velocity Suite: <span className="test-neon-purple">Design Offerings for Every Stage</span>
               </h2>
               <p className="text-lg md:text-xl text-foreground-dark max-w-3xl mx-auto">
                 From launching a new venture to modernizing an enterprise platform, our core offerings are 
@@ -241,88 +283,97 @@ const DesignStudio = () => {
             </div>
           </EnhancedScrollReveal>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8 relative z-10">
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={200}>
-                <Card className="h-full">
-                  <CardHeader>
-                    <div className="mb-4 w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
-                      <Rocket className="h-8 w-8 text-white" />
-                    </div>
-                    <CardTitle className="text-2xl mb-4">Product Launch (0 to MVP)</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <CardDescription className="text-base">
-                      We partner with funded startups to transform bold ideas into viable, market-ready products. 
-                      We bring mature processes to de-risk the journey from concept to a high-fidelity, interactive 
-                      prototype that's ready to build and fundraise against.
-                    </CardDescription>
-                    <div>
-                      <p className="text-sm font-medium text-foreground/70 mb-2">Ideal For:</p>
-                      <p className="text-sm text-foreground/60">Funded startups needing to launch a scalable MVP quickly.</p>
-                    </div>
-                    <Button className="w-full">
-                      Launch Your Product
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </CardContent>
-                </Card>
+                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-purple-500/10">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/4 via-transparent to-pink-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  <Card className="h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                    <CardHeader>
+                      <div className="mb-4 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-purple-500/20">
+                        <Rocket className="h-8 w-8 text-white" />
+                      </div>
+                      <CardTitle className="text-2xl mb-4 test-electric-text">Product Launch (0 to MVP)</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <CardDescription className="text-base text-foreground-dark">
+                        We partner with funded startups to transform bold ideas into viable, market-ready products. 
+                        We bring mature processes to de-risk the journey from concept to a high-fidelity, interactive 
+                        prototype that's ready to build and fundraise against.
+                      </CardDescription>
+                      <div>
+                        <p className="text-sm font-medium text-foreground-dark/70 mb-2">Ideal For:</p>
+                        <p className="text-sm text-foreground-dark/60">Funded startups needing to launch a scalable MVP quickly.</p>
+                      </div>
+                      <Button className="w-full group-hover:scale-105 hover:animate-glow-pulse">
+                        Launch Your Product
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </div>
               </EnhancedScrollReveal>
             </Suspense>
 
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={400}>
-                <Card className="h-full">
-                  <CardHeader>
-                    <div className="mb-4 w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center">
-                      <RefreshCw className="h-8 w-8 text-white" />
-                    </div>
-                    <CardTitle className="text-2xl mb-4">Product Modernization (UX Refresh)</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <CardDescription className="text-base">
-                      We breathe new life into existing applications. Our UX Refresh process enhances usability, 
-                      updates interfaces to modern standards, and optimizes user flows to reduce churn, increase 
-                      engagement, and boost customer satisfaction.
-                    </CardDescription>
-                    <div>
-                      <p className="text-sm font-medium text-foreground/70 mb-2">Ideal For:</p>
-                      <p className="text-sm text-foreground/60">Established products with 5+ years of technical debt or declining user engagement.</p>
-                    </div>
-                    <Button className="w-full">
-                      Modernize Your Platform
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </CardContent>
-                </Card>
+                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-cyan-500/10">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/4 via-transparent to-blue-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  <Card className="h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                    <CardHeader>
+                      <div className="mb-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-cyan-500/20">
+                        <RefreshCw className="h-8 w-8 text-white" />
+                      </div>
+                      <CardTitle className="text-2xl mb-4 test-electric-glow">Product Modernization (UX Refresh)</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <CardDescription className="text-base text-foreground-dark">
+                        We breathe new life into existing applications. Our UX Refresh process enhances usability, 
+                        updates interfaces to modern standards, and optimizes user flows to reduce churn, increase 
+                        engagement, and boost customer satisfaction.
+                      </CardDescription>
+                      <div>
+                        <p className="text-sm font-medium text-foreground-dark/70 mb-2">Ideal For:</p>
+                        <p className="text-sm text-foreground-dark/60">Established products with 5+ years of technical debt or declining user engagement.</p>
+                      </div>
+                      <Button className="w-full group-hover:scale-105 hover:animate-glow-pulse">
+                        Modernize Your Platform
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </div>
               </EnhancedScrollReveal>
             </Suspense>
 
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={600}>
-                <Card className="h-full">
-                  <CardHeader>
-                    <div className="mb-4 w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center">
-                      <Brain className="h-8 w-8 text-white" />
-                    </div>
-                    <CardTitle className="text-2xl mb-4">Agentic AI Design</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <CardDescription className="text-base">
-                      We specialize in designing the next generation of intelligent interfaces. From AI copilots 
-                      and agentic workflows to complex data visualizations, we create intuitive user experiences 
-                      for AI-native products that are both powerful and easy to use.
-                    </CardDescription>
-                    <div>
-                      <p className="text-sm font-medium text-foreground/70 mb-2">Ideal For:</p>
-                      <p className="text-sm text-foreground/60">Companies building or integrating generative AI and complex ML models.</p>
-                    </div>
-                    <Button className="w-full">
-                      Design Your AI Experience
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </CardContent>
-                </Card>
+                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-green-500/10">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/4 via-transparent to-emerald-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                  <Card className="h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                    <CardHeader>
+                      <div className="mb-4 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-green-500/20">
+                        <Brain className="h-8 w-8 text-white" />
+                      </div>
+                      <CardTitle className="text-2xl mb-4 test-neon-purple">Agentic AI Design</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <CardDescription className="text-base text-foreground-dark">
+                        We specialize in designing the next generation of intelligent interfaces. From AI copilots 
+                        and agentic workflows to complex data visualizations, we create intuitive user experiences 
+                        for AI-native products that are both powerful and easy to use.
+                      </CardDescription>
+                      <div>
+                        <p className="text-sm font-medium text-foreground-dark/70 mb-2">Ideal For:</p>
+                        <p className="text-sm text-foreground-dark/60">Companies building or integrating generative AI and complex ML models.</p>
+                      </div>
+                      <Button className="w-full group-hover:scale-105 hover:animate-glow-pulse">
+                        Design Your AI Experience
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </div>
               </EnhancedScrollReveal>
             </Suspense>
           </div>
@@ -409,13 +460,20 @@ const DesignStudio = () => {
       </Section>
 
       {/* FAQ Section */}
-      <Section variant="alternate">
+      <Section className="py-24 lg:py-32 relative overflow-hidden bg-[#fff] text-foreground-dark">
+        {/* Enhanced Electric Background Effects */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-1/6 w-96 h-96 bg-gradient-to-r from-transparent via-purple-500/8 to-transparent rounded-full blur-3xl animate-cosmic-pulse"></div>
+          <div className="absolute bottom-20 right-1/6 w-80 h-80 bg-gradient-to-r from-transparent via-cyan-500/6 to-transparent rounded-full blur-3xl animate-cosmic-pulse" style={{ animationDelay: "3s" }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-transparent via-green-500/5 to-transparent rounded-full blur-2xl animate-data-matrix"></div>
+        </div>
+        
         <Suspense fallback={<SectionLoader />}>
           <EnhancedScrollReveal direction="up">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto relative z-10">
               <div className="text-center mb-12">
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                  Your Design Questions, <span className="text-gradient">Answered</span>
+                <h2 className="text-4xl md:text-5xl font-bold text-brand-purple mb-6">
+                  Your Design Questions, <span className="test-neon-cyan">Answered</span>
                 </h2>
               </div>
 
