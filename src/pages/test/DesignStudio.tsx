@@ -128,7 +128,7 @@ const DesignStudio = () => {
       </Section>
 
       {/* The Design Disconnect Section */}
-      <Section className="py-16 md:pt-20 lg:pt-28 relative overflow-hidden bg-background-light border-t border-border/20 noise-overlay">
+      <Section className="py-16 md:pt-20 lg:pt-28 relative overflow-hidden bg-background-light border-t border-border/20">
         {/* Enhanced Atmospheric Background */}
         <div className="absolute inset-0 opacity-40">
           <div className="absolute top-20 left-1/4 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl animate-luminous-drift"></div>
@@ -146,7 +146,7 @@ const DesignStudio = () => {
           <EnhancedScrollReveal direction="up">
             <div className="max-w-4xl mx-auto text-center relative z-10">
               <h2 className="text-4xl md:text-5xl font-bold text-brand-cyan mb-6">
-                The Design Disconnect: <span className="test-neon-purple">Bridging Vision and Reality</span>
+                The Design Disconnect: <span className="bg-gradient-to-r from-brand-purple via-brand-primary to-brand-cyan bg-clip-text text-transparent">Bridging Vision and Reality</span>
               </h2>
               <p className="text-lg md:text-xl text-foreground-dark leading-relaxed">
                 Great products are born from great design, but the path is filled with disconnects. Traditional design 
@@ -164,16 +164,16 @@ const DesignStudio = () => {
       <Section className="py-24 lg:py-32 relative overflow-hidden bg-[#fff] text-foreground-dark">
         {/* Enhanced Electric Background Effects */}
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-20 left-1/6 w-96 h-96 bg-gradient-to-r from-transparent via-purple-500/8 to-transparent rounded-full blur-3xl animate-cosmic-pulse"></div>
-          <div className="absolute bottom-20 right-1/6 w-80 h-80 bg-gradient-to-r from-transparent via-cyan-500/6 to-transparent rounded-full blur-3xl animate-cosmic-pulse" style={{ animationDelay: "3s" }}></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-transparent via-green-500/5 to-transparent rounded-full blur-2xl animate-data-matrix"></div>
+          <div className="absolute top-20 left-1/6 w-96 h-96 bg-brand-purple/8 rounded-full blur-3xl animate-mesh-shift"></div>
+          <div className="absolute bottom-20 right-1/6 w-80 h-80 bg-brand-cyan/6 rounded-full blur-3xl animate-mesh-shift" style={{ animationDelay: "3s" }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-primary/5 rounded-full blur-2xl animate-float"></div>
         </div>
         
         <Suspense fallback={<SectionLoader />}>
           <EnhancedScrollReveal direction="up">
             <div className="text-center mb-16 relative z-10">
               <h2 className="text-4xl md:text-5xl font-bold text-brand-purple mb-6">
-                Our <span className="test-neon-cyan">Design Philosophy</span>
+                Our <span className="bg-gradient-to-r from-brand-cyan via-brand-primary to-brand-purple bg-clip-text text-transparent">Design Philosophy</span>
               </h2>
               <p className="text-lg md:text-xl text-foreground-dark max-w-3xl mx-auto">
                 Our approach is built on a foundation that marries creativity with pragmatism, ensuring every 
@@ -185,14 +185,14 @@ const DesignStudio = () => {
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={200}>
-                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-purple-500/10">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/4 via-transparent to-cyan-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                  <Card className="text-center h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-purple/20 via-transparent to-brand-primary/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl"></div>
+                  <Card className="text-center h-full relative z-10 bg-white/80 border border-brand-purple/20 backdrop-blur-sm rounded-3xl shadow-glass hover:shadow-glow transition-all duration-300">
                     <CardHeader>
-                      <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-purple-500/20">
+                      <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-purple-500/20 transition-transform duration-300 group-hover:scale-110">
                         <Zap className="h-8 w-8 text-white" />
                       </div>
-                      <CardTitle className="text-2xl mb-4 test-electric-text">Velocity by Design</CardTitle>
+                      <CardTitle className="text-2xl mb-4 bg-gradient-to-r from-brand-purple to-brand-primary bg-clip-text text-transparent font-bold">Velocity by Design</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <CardDescription className="text-base text-foreground-dark">
@@ -208,14 +208,14 @@ const DesignStudio = () => {
 
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={400}>
-                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-cyan-500/10">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/4 via-transparent to-blue-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                  <Card className="text-center h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-cyan/20 via-transparent to-brand-primary/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl"></div>
+                  <Card className="text-center h-full relative z-10 bg-white/80 border border-brand-cyan/20 backdrop-blur-sm rounded-3xl shadow-glass hover:shadow-glow transition-all duration-300">
                     <CardHeader>
-                      <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-cyan-500/20">
+                      <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-cyan-500/20 transition-transform duration-300 group-hover:scale-110">
                         <Wrench className="h-8 w-8 text-white" />
                       </div>
-                      <CardTitle className="text-2xl mb-4 test-electric-glow">Engineering in our DNA</CardTitle>
+                      <CardTitle className="text-2xl mb-4 bg-gradient-to-r from-brand-cyan to-brand-primary bg-clip-text text-transparent font-bold">Engineering in our DNA</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <CardDescription className="text-base text-foreground-dark">
@@ -231,14 +231,14 @@ const DesignStudio = () => {
 
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={600}>
-                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-green-500/10">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/4 via-transparent to-emerald-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                  <Card className="text-center h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-transparent to-brand-purple/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl"></div>
+                  <Card className="text-center h-full relative z-10 bg-white/80 border border-brand-primary/20 backdrop-blur-sm rounded-3xl shadow-glass hover:shadow-glow transition-all duration-300">
                     <CardHeader>
-                      <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-green-500/20">
+                      <div className="mx-auto mb-4 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-green-500/20 transition-transform duration-300 group-hover:scale-110">
                         <Handshake className="h-8 w-8 text-white" />
                       </div>
-                      <CardTitle className="text-2xl mb-4 test-neon-purple">Partnership in Practice</CardTitle>
+                      <CardTitle className="text-2xl mb-4 bg-gradient-to-r from-brand-primary to-brand-purple bg-clip-text text-transparent font-bold">Partnership in Practice</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <CardDescription className="text-base text-foreground-dark">
@@ -256,7 +256,7 @@ const DesignStudio = () => {
       </Section>
 
       {/* Core Offerings Section */}
-      <Section className="py-16 md:pt-20 lg:pt-28 relative overflow-hidden bg-background-light border-t border-border/20 noise-overlay">
+      <Section className="py-16 md:pt-20 lg:pt-28 relative overflow-hidden bg-background-light border-t border-border/20">
         {/* Enhanced Atmospheric Background */}
         <div className="absolute inset-0 opacity-40">
           <div className="absolute top-20 left-1/4 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl animate-luminous-drift"></div>
@@ -274,7 +274,7 @@ const DesignStudio = () => {
           <EnhancedScrollReveal direction="up">
             <div className="text-center mb-16 relative z-10">
               <h2 className="text-4xl md:text-5xl font-bold text-brand-cyan mb-6">
-                The Velocity Suite: <span className="test-neon-purple">Design Offerings for Every Stage</span>
+                The Velocity Suite: <span className="bg-gradient-to-r from-brand-purple via-brand-primary to-brand-cyan bg-clip-text text-transparent">Design Offerings for Every Stage</span>
               </h2>
               <p className="text-lg md:text-xl text-foreground-dark max-w-3xl mx-auto">
                 From launching a new venture to modernizing an enterprise platform, our core offerings are 
@@ -286,14 +286,14 @@ const DesignStudio = () => {
           <div className="grid lg:grid-cols-3 gap-8 relative z-10">
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={200}>
-                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-purple-500/10">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/4 via-transparent to-pink-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                  <Card className="h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-purple/20 via-transparent to-brand-primary/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl"></div>
+                  <Card className="h-full relative z-10 bg-white/80 border border-brand-purple/20 backdrop-blur-sm rounded-3xl shadow-glass hover:shadow-glow transition-all duration-300">
                     <CardHeader>
-                      <div className="mb-4 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-purple-500/20">
+                      <div className="mb-4 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-purple-500/20 transition-transform duration-300 group-hover:scale-110">
                         <Rocket className="h-8 w-8 text-white" />
                       </div>
-                      <CardTitle className="text-2xl mb-4 test-electric-text">Product Launch (0 to MVP)</CardTitle>
+                      <CardTitle className="text-2xl mb-4 bg-gradient-to-r from-brand-purple to-brand-primary bg-clip-text text-transparent font-bold">Product Launch (0 to MVP)</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <CardDescription className="text-base text-foreground-dark">
@@ -305,7 +305,7 @@ const DesignStudio = () => {
                         <p className="text-sm font-medium text-foreground-dark/70 mb-2">Ideal For:</p>
                         <p className="text-sm text-foreground-dark/60">Funded startups needing to launch a scalable MVP quickly.</p>
                       </div>
-                      <Button className="w-full group-hover:scale-105 hover:animate-glow-pulse">
+                      <Button className="w-full group-hover:scale-105 transition-transform duration-300">
                         Launch Your Product
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
@@ -317,14 +317,14 @@ const DesignStudio = () => {
 
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={400}>
-                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-cyan-500/10">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/4 via-transparent to-blue-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                  <Card className="h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-cyan/20 via-transparent to-brand-primary/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl"></div>
+                  <Card className="h-full relative z-10 bg-white/80 border border-brand-cyan/20 backdrop-blur-sm rounded-3xl shadow-glass hover:shadow-glow transition-all duration-300">
                     <CardHeader>
-                      <div className="mb-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-cyan-500/20">
+                      <div className="mb-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-cyan-500/20 transition-transform duration-300 group-hover:scale-110">
                         <RefreshCw className="h-8 w-8 text-white" />
                       </div>
-                      <CardTitle className="text-2xl mb-4 test-electric-glow">Product Modernization (UX Refresh)</CardTitle>
+                      <CardTitle className="text-2xl mb-4 bg-gradient-to-r from-brand-cyan to-brand-primary bg-clip-text text-transparent font-bold">Product Modernization (UX Refresh)</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <CardDescription className="text-base text-foreground-dark">
@@ -336,7 +336,7 @@ const DesignStudio = () => {
                         <p className="text-sm font-medium text-foreground-dark/70 mb-2">Ideal For:</p>
                         <p className="text-sm text-foreground-dark/60">Established products with 5+ years of technical debt or declining user engagement.</p>
                       </div>
-                      <Button className="w-full group-hover:scale-105 hover:animate-glow-pulse">
+                      <Button className="w-full group-hover:scale-105 transition-transform duration-300">
                         Modernize Your Platform
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
@@ -348,14 +348,14 @@ const DesignStudio = () => {
 
             <Suspense fallback={<SectionLoader />}>
               <EnhancedScrollReveal direction="up" delay={600}>
-                <div className="relative glass-card-light glass-hover rounded-3xl p-1 group noise-overlay border border-green-500/10">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/4 via-transparent to-emerald-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                  <Card className="h-full relative z-10 bg-background/80 border-none backdrop-blur-sm">
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-transparent to-brand-purple/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl"></div>
+                  <Card className="h-full relative z-10 bg-white/80 border border-brand-primary/20 backdrop-blur-sm rounded-3xl shadow-glass hover:shadow-glow transition-all duration-300">
                     <CardHeader>
-                      <div className="mb-4 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-green-500/20">
+                      <div className="mb-4 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center group-hover:animate-glow-pulse shadow-lg shadow-green-500/20 transition-transform duration-300 group-hover:scale-110">
                         <Brain className="h-8 w-8 text-white" />
                       </div>
-                      <CardTitle className="text-2xl mb-4 test-neon-purple">Agentic AI Design</CardTitle>
+                      <CardTitle className="text-2xl mb-4 bg-gradient-to-r from-brand-primary to-brand-purple bg-clip-text text-transparent font-bold">Agentic AI Design</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <CardDescription className="text-base text-foreground-dark">
@@ -367,7 +367,7 @@ const DesignStudio = () => {
                         <p className="text-sm font-medium text-foreground-dark/70 mb-2">Ideal For:</p>
                         <p className="text-sm text-foreground-dark/60">Companies building or integrating generative AI and complex ML models.</p>
                       </div>
-                      <Button className="w-full group-hover:scale-105 hover:animate-glow-pulse">
+                      <Button className="w-full group-hover:scale-105 transition-transform duration-300">
                         Design Your AI Experience
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
@@ -461,11 +461,11 @@ const DesignStudio = () => {
 
       {/* FAQ Section */}
       <Section className="py-24 lg:py-32 relative overflow-hidden bg-[#fff] text-foreground-dark">
-        {/* Enhanced Electric Background Effects */}
+        {/* Enhanced Background Effects */}
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-20 left-1/6 w-96 h-96 bg-gradient-to-r from-transparent via-purple-500/8 to-transparent rounded-full blur-3xl animate-cosmic-pulse"></div>
-          <div className="absolute bottom-20 right-1/6 w-80 h-80 bg-gradient-to-r from-transparent via-cyan-500/6 to-transparent rounded-full blur-3xl animate-cosmic-pulse" style={{ animationDelay: "3s" }}></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-transparent via-green-500/5 to-transparent rounded-full blur-2xl animate-data-matrix"></div>
+          <div className="absolute top-20 left-1/6 w-96 h-96 bg-brand-purple/8 rounded-full blur-3xl animate-mesh-shift"></div>
+          <div className="absolute bottom-20 right-1/6 w-80 h-80 bg-brand-cyan/6 rounded-full blur-3xl animate-mesh-shift" style={{ animationDelay: "3s" }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-primary/5 rounded-full blur-2xl animate-float"></div>
         </div>
         
         <Suspense fallback={<SectionLoader />}>
@@ -473,7 +473,7 @@ const DesignStudio = () => {
             <div className="max-w-4xl mx-auto relative z-10">
               <div className="text-center mb-12">
                 <h2 className="text-4xl md:text-5xl font-bold text-brand-purple mb-6">
-                  Your Design Questions, <span className="test-neon-cyan">Answered</span>
+                  Your Design Questions, <span className="bg-gradient-to-r from-brand-cyan via-brand-primary to-brand-purple bg-clip-text text-transparent">Answered</span>
                 </h2>
               </div>
 
