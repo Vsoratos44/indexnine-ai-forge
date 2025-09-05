@@ -71,7 +71,7 @@ const DesignStudio = () => {
       <Header />
 
       {/* Hero Section */}
-      <Section className="relative overflow-hidden min-h-screen flex items-center bg-black" noPadding>
+      <Section className="relative overflow-hidden min-h-screen flex items-center" noPadding>
         {/* Video Background */}
         <Suspense fallback={<div className="absolute inset-0 bg-gradient-hero" />}>
           <OptimizedVideoBackground 
@@ -128,402 +128,399 @@ const DesignStudio = () => {
       </Section>
 
       {/* The Design Disconnect Section */}
-      <section className="py-24 lg:py-32 bg-[#fff]">
-        <div className="container mx-auto px-6">
-          <Suspense fallback={<SectionLoader />}>
-            <EnhancedScrollReveal direction="up">
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground-dark mb-6">
-                  The Design Disconnect: <span className="bg-gradient-primary bg-clip-text text-transparent">Bridging Vision and Reality</span>
-                </h2>
-                <p className="text-lg md:text-xl text-foreground-dark/80 leading-relaxed">
-                  Great products are born from great design, but the path is filled with disconnects. Traditional design 
-                  studios often lack deep engineering context, delivering beautiful mockups that are difficult to build. 
-                  Internal teams can be too close to the product, missing the forest for the trees. This gap between 
-                  vision and feasible execution is where products stall and technical debt begins. 
-                  <strong className="text-brand-primary"> We were founded to eliminate that gap.</strong>
-                </p>
-              </div>
-            </EnhancedScrollReveal>
-          </Suspense>
-        </div>
-      </section>
+      <Section variant="alternate">
+        <Suspense fallback={<SectionLoader />}>
+          <EnhancedScrollReveal direction="up">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                The Design Disconnect: <span className="text-gradient">Bridging Vision and Reality</span>
+              </h2>
+              <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
+                Great products are born from great design, but the path is filled with disconnects. Traditional design 
+                studios often lack deep engineering context, delivering beautiful mockups that are difficult to build. 
+                Internal teams can be too close to the product, missing the forest for the trees. This gap between 
+                vision and feasible execution is where products stall and technical debt begins. 
+                <strong className="text-brand-primary"> We were founded to eliminate that gap.</strong>
+              </p>
+            </div>
+          </EnhancedScrollReveal>
+        </Suspense>
+      </Section>
 
       {/* The IndexNine Philosophy Section */}
-      <section className="pb-24 lg:pb-32 bg-[#fff]">
-        <div className="container mx-auto px-6">
-          <Suspense fallback={<SectionLoader />}>
-            <EnhancedScrollReveal direction="up">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground-dark mb-6">
-                  Our <span className="bg-gradient-primary bg-clip-text text-transparent">Design Philosophy</span>
-                </h2>
-                <p className="text-lg md:text-xl text-foreground-dark/80 max-w-3xl mx-auto">
-                  Our approach is built on a foundation that marries creativity with pragmatism, ensuring every 
-                  design decision is a step toward a successful product.
-                </p>
-              </div>
-            </EnhancedScrollReveal>
+      <Section>
+        <Suspense fallback={<SectionLoader />}>
+          <EnhancedScrollReveal direction="up">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Our <span className="text-gradient">Design Philosophy</span>
+              </h2>
+              <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
+                Our approach is built on a foundation that marries creativity with pragmatism, ensuring every 
+                design decision is a step toward a successful product.
+              </p>
+            </div>
+          </EnhancedScrollReveal>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <Suspense fallback={<SectionLoader />}>
-                <EnhancedScrollReveal direction="up" delay={200}>
-                  <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
-                    <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative mx-auto mb-4 w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
+          <div className="grid md:grid-cols-3 gap-8">
+            <Suspense fallback={<SectionLoader />}>
+              <EnhancedScrollReveal direction="up" delay={200}>
+                <Card className="text-center h-full">
+                  <CardHeader>
+                    <div className="mx-auto mb-4 w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
                       <Zap className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="relative text-2xl font-semibold mb-4 text-foreground-dark">Velocity by Design</h3>
-                    <p className="relative text-foreground-dark/80">
+                    <CardTitle className="text-2xl mb-4">Velocity by Design</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base">
                       We believe speed is a feature. By using AI accelerators like snap.design and snap.brain, 
                       we dramatically shorten the time from ideation to interactive prototype, giving you critical 
                       market feedback faster.
-                    </p>
-                  </div>
-                </EnhancedScrollReveal>
-              </Suspense>
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </EnhancedScrollReveal>
+            </Suspense>
 
-              <Suspense fallback={<SectionLoader />}>
-                <EnhancedScrollReveal direction="up" delay={400}>
-                  <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
-                    <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative mx-auto mb-4 w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center">
+            <Suspense fallback={<SectionLoader />}>
+              <EnhancedScrollReveal direction="up" delay={400}>
+                <Card className="text-center h-full">
+                  <CardHeader>
+                    <div className="mx-auto mb-4 w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center">
                       <Wrench className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="relative text-2xl font-semibold mb-4 text-foreground-dark">Engineering in our DNA</h3>
-                    <p className="relative text-foreground-dark/80">
+                    <CardTitle className="text-2xl mb-4">Engineering in our DNA</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base">
                       We are visual engineers. Our designers think in terms of components, scalability, and 
                       technical feasibility from day one. This ensures we hand off designs that your engineering 
                       team can actually build, minimizing rework and accelerating the development lifecycle.
-                    </p>
-                  </div>
-                </EnhancedScrollReveal>
-              </Suspense>
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </EnhancedScrollReveal>
+            </Suspense>
 
-              <Suspense fallback={<SectionLoader />}>
-                <EnhancedScrollReveal direction="up" delay={600}>
-                  <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-center">
-                    <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative mx-auto mb-4 w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center">
+            <Suspense fallback={<SectionLoader />}>
+              <EnhancedScrollReveal direction="up" delay={600}>
+                <Card className="text-center h-full">
+                  <CardHeader>
+                    <div className="mx-auto mb-4 w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center">
                       <Handshake className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="relative text-2xl font-semibold mb-4 text-foreground-dark">Partnership in Practice</h3>
-                    <p className="relative text-foreground-dark/80">
+                    <CardTitle className="text-2xl mb-4">Partnership in Practice</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base">
                       We begin every engagement with our Sprint 0 for Refresh, a collaborative 2-6 week process 
                       designed to de-risk your investment. We define the problem, iterate on solutions, and deliver 
                       a finalized design with clear specifications, ensuring complete alignment on business outcomes.
-                    </p>
-                  </div>
-                </EnhancedScrollReveal>
-              </Suspense>
-            </div>
-          </Suspense>
-        </div>
-      </section>
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </EnhancedScrollReveal>
+            </Suspense>
+          </div>
+        </Suspense>
+      </Section>
 
       {/* Core Offerings Section */}
-      <section className="py-24 lg:py-32 bg-[#fff]">
-        <div className="container mx-auto px-6">
-          <Suspense fallback={<SectionLoader />}>
-            <EnhancedScrollReveal direction="up">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground-dark mb-6">
-                  The Velocity Suite: <span className="bg-gradient-primary bg-clip-text text-transparent">Design Offerings for Every Stage</span>
-                </h2>
-                <p className="text-lg md:text-xl text-foreground-dark/80 max-w-3xl mx-auto">
-                  From launching a new venture to modernizing an enterprise platform, our core offerings are 
-                  built to deliver measurable impact.
-                </p>
-              </div>
-            </EnhancedScrollReveal>
+      <Section variant="alternate">
+        <Suspense fallback={<SectionLoader />}>
+          <EnhancedScrollReveal direction="up">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                The Velocity Suite: <span className="text-gradient">Design Offerings for Every Stage</span>
+              </h2>
+              <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
+                From launching a new venture to modernizing an enterprise platform, our core offerings are 
+                built to deliver measurable impact.
+              </p>
+            </div>
+          </EnhancedScrollReveal>
 
-            <div className="grid lg:grid-cols-3 gap-8">
-              <Suspense fallback={<SectionLoader />}>
-                <EnhancedScrollReveal direction="up" delay={200}>
-                  <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark h-full flex flex-col">
-                    <CardContent className="p-0 h-full">
-                      <div className="mb-4 w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
-                        <Rocket className="h-8 w-8 text-white" />
-                      </div>
-                      <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">Product Launch (0 to MVP)</h3>
-                      
-                      <p className="text-foreground-dark/80 mb-6">
-                        We partner with funded startups to transform bold ideas into viable, market-ready products. 
-                        We bring mature processes to de-risk the journey from concept to a high-fidelity, interactive 
-                        prototype that's ready to build and fundraise against.
-                      </p>
-                      
-                      <div className="mb-6">
-                        <p className="text-sm font-medium text-foreground-dark/70 mb-2">Ideal For:</p>
-                        <p className="text-sm text-foreground-dark/60">Funded startups needing to launch a scalable MVP quickly.</p>
-                      </div>
-                    </CardContent>
-                    <Button className="w-full mt-auto">
+          <div className="grid lg:grid-cols-3 gap-8">
+            <Suspense fallback={<SectionLoader />}>
+              <EnhancedScrollReveal direction="up" delay={200}>
+                <Card className="h-full">
+                  <CardHeader>
+                    <div className="mb-4 w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center">
+                      <Rocket className="h-8 w-8 text-white" />
+                    </div>
+                    <CardTitle className="text-2xl mb-4">Product Launch (0 to MVP)</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <CardDescription className="text-base">
+                      We partner with funded startups to transform bold ideas into viable, market-ready products. 
+                      We bring mature processes to de-risk the journey from concept to a high-fidelity, interactive 
+                      prototype that's ready to build and fundraise against.
+                    </CardDescription>
+                    <div>
+                      <p className="text-sm font-medium text-foreground/70 mb-2">Ideal For:</p>
+                      <p className="text-sm text-foreground/60">Funded startups needing to launch a scalable MVP quickly.</p>
+                    </div>
+                    <Button className="w-full">
                       Launch Your Product
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
-                  </Card>
-                </EnhancedScrollReveal>
-              </Suspense>
+                  </CardContent>
+                </Card>
+              </EnhancedScrollReveal>
+            </Suspense>
 
-              <Suspense fallback={<SectionLoader />}>
-                <EnhancedScrollReveal direction="up" delay={400}>
-                  <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark h-full flex flex-col">
-                    <CardContent className="p-0 h-full">
-                      <div className="mb-4 w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center">
-                        <RefreshCw className="h-8 w-8 text-white" />
-                      </div>
-                      <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">Product Modernization (UX Refresh)</h3>
-                      
-                      <p className="text-foreground-dark/80 mb-6">
-                        We breathe new life into existing applications. Our UX Refresh process enhances usability, 
-                        updates interfaces to modern standards, and optimizes user flows to reduce churn, increase 
-                        engagement, and boost customer satisfaction.
-                      </p>
-                      
-                      <div className="mb-6">
-                        <p className="text-sm font-medium text-foreground-dark/70 mb-2">Ideal For:</p>
-                        <p className="text-sm text-foreground-dark/60">Established products with 5+ years of technical debt or declining user engagement.</p>
-                      </div>
-                    </CardContent>
-                    <Button className="w-full mt-auto">
+            <Suspense fallback={<SectionLoader />}>
+              <EnhancedScrollReveal direction="up" delay={400}>
+                <Card className="h-full">
+                  <CardHeader>
+                    <div className="mb-4 w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center">
+                      <RefreshCw className="h-8 w-8 text-white" />
+                    </div>
+                    <CardTitle className="text-2xl mb-4">Product Modernization (UX Refresh)</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <CardDescription className="text-base">
+                      We breathe new life into existing applications. Our UX Refresh process enhances usability, 
+                      updates interfaces to modern standards, and optimizes user flows to reduce churn, increase 
+                      engagement, and boost customer satisfaction.
+                    </CardDescription>
+                    <div>
+                      <p className="text-sm font-medium text-foreground/70 mb-2">Ideal For:</p>
+                      <p className="text-sm text-foreground/60">Established products with 5+ years of technical debt or declining user engagement.</p>
+                    </div>
+                    <Button className="w-full">
                       Modernize Your Platform
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
-                  </Card>
-                </EnhancedScrollReveal>
-              </Suspense>
+                  </CardContent>
+                </Card>
+              </EnhancedScrollReveal>
+            </Suspense>
 
-              <Suspense fallback={<SectionLoader />}>
-                <EnhancedScrollReveal direction="up" delay={600}>
-                  <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative h-full flex flex-col">
-                    <CardContent className="p-0 h-full">
-                      <div className="mb-4 w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center">
-                        <Brain className="h-8 w-8 text-white" />
-                      </div>
-                      <h3 className="text-2xl font-semibold mb-4 text-foreground">Agentic AI Design</h3>
-                      
-                      <p className="text-foreground/80 mb-6">
-                        We specialize in designing the next generation of intelligent interfaces. From AI copilots 
-                        and agentic workflows to complex data visualizations, we create intuitive user experiences 
-                        for AI-native products that are both powerful and easy to use.
-                      </p>
-                      
-                      <div className="mb-6">
-                        <p className="text-sm font-medium text-foreground/70 mb-2">Ideal For:</p>
-                        <p className="text-sm text-foreground/60">Companies building or integrating generative AI and complex ML models.</p>
-                      </div>
-                    </CardContent>
-                    <Button variant="btnSecondary" className="w-full mt-auto">
+            <Suspense fallback={<SectionLoader />}>
+              <EnhancedScrollReveal direction="up" delay={600}>
+                <Card className="h-full">
+                  <CardHeader>
+                    <div className="mb-4 w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center">
+                      <Brain className="h-8 w-8 text-white" />
+                    </div>
+                    <CardTitle className="text-2xl mb-4">Agentic AI Design</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <CardDescription className="text-base">
+                      We specialize in designing the next generation of intelligent interfaces. From AI copilots 
+                      and agentic workflows to complex data visualizations, we create intuitive user experiences 
+                      for AI-native products that are both powerful and easy to use.
+                    </CardDescription>
+                    <div>
+                      <p className="text-sm font-medium text-foreground/70 mb-2">Ideal For:</p>
+                      <p className="text-sm text-foreground/60">Companies building or integrating generative AI and complex ML models.</p>
+                    </div>
+                    <Button className="w-full">
                       Design Your AI Experience
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
-                  </Card>
-                </EnhancedScrollReveal>
-              </Suspense>
-            </div>
-          </Suspense>
-        </div>
-      </section>
-
-      {/* Featured Case Study Section */}
-      <section className="py-24 lg:py-32 bg-[#fff]">
-        <div className="container mx-auto px-6">
-          <Suspense fallback={<SectionLoader />}>
-            <EnhancedScrollReveal direction="up">
-              <div className="max-w-6xl mx-auto">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
-                  <div>
-                    <Badge variant="outline" className="mb-6 text-brand-primary border-brand-primary/50">
-                      Client Success Story
-                    </Badge>
-                    <h2 className="text-3xl md:text-4xl font-bold text-foreground-dark mb-6">
-                      Building a Market-Ready MVP for <span className="bg-gradient-primary bg-clip-text text-transparent">Cygeniq in Record Time</span>
-                    </h2>
-                    
-                    <div className="space-y-6">
-                      <div>
-                        <h3 className="text-xl font-semibold text-foreground-dark mb-3">The Challenge:</h3>
-                        <p className="text-foreground-dark/80">
-                          Cygeniq needed to move from a validated idea to a functional, high-fidelity prototype 
-                          to secure its next round of funding and begin development. They needed a partner who could 
-                          deliver speed without sacrificing quality.
-                        </p>
-                      </div>
-
-                      <div>
-                        <h3 className="text-xl font-semibold text-foreground-dark mb-3">The IndexNine Solution:</h3>
-                        <p className="text-foreground-dark/80">
-                          Leveraging our Sprint 0 process, our visual engineers worked in lockstep with the Cygeniq 
-                          founders. We rapidly iterated through wireframes to high-fidelity designs in Figma, building 
-                          an interactive prototype that validated the user journey and provided a clear blueprint for 
-                          the engineering team.
-                        </p>
-                      </div>
-
-                      <div>
-                        <h3 className="text-xl font-semibold text-foreground-dark mb-3">The Results:</h3>
-                        <div className="grid sm:grid-cols-3 gap-4">
-                          <div className="text-center p-4 bg-gradient-primary/10 rounded-lg">
-                            <div className="text-2xl font-bold text-brand-primary">6 Weeks</div>
-                            <div className="text-sm text-foreground-dark/70">from kickoff to complete interactive prototype</div>
-                          </div>
-                          <div className="text-center p-4 bg-gradient-secondary/10 rounded-lg">
-                            <div className="text-2xl font-bold text-brand-secondary">25%</div>
-                            <div className="text-sm text-foreground-dark/70">Faster path to securing seed funding</div>
-                          </div>
-                          <div className="text-center p-4 bg-gradient-accent/10 rounded-lg">
-                            <div className="text-2xl font-bold text-brand-accent">Zero</div>
-                            <div className="text-sm text-foreground-dark/70">ambiguity in developer handoff</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="bg-background-secondary/50 p-6 rounded-lg border-l-4 border-brand-primary">
-                        <p className="text-foreground-dark/80 italic">
-                          "IndexNine's velocity and product mindset were game-changers. They didn't just give us designs; 
-                          they gave us a clear, buildable plan that got investors excited and our developers moving."
-                        </p>
-                        <p className="text-sm text-foreground-dark/60 mt-2">- Founder, Cygeniq</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="relative">
-                    <div className="aspect-video bg-gradient-hero rounded-2xl flex items-center justify-center">
-                      <div className="text-center text-foreground-white/80">
-                        <div className="w-20 h-20 bg-foreground-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <div className="w-0 h-0 border-l-[15px] border-l-foreground-white/80 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent ml-1"></div>
-                        </div>
-                        <p className="text-lg">Cygeniq Case Study Video</p>
-                        <p className="text-sm opacity-70">High-quality image or short video</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </EnhancedScrollReveal>
-          </Suspense>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-24 lg:py-32 bg-[#fff]">
-        <div className="container mx-auto px-6">
-          <Suspense fallback={<SectionLoader />}>
-            <EnhancedScrollReveal direction="up">
-              <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-12">
-                  <h2 className="text-4xl md:text-5xl font-bold text-foreground-dark mb-6">
-                    Your Design Questions, <span className="bg-gradient-primary bg-clip-text text-transparent">Answered</span>
-                  </h2>
-                </div>
-
-                <Accordion type="single" collapsible className="space-y-4">
-                  <AccordionItem value="idea" className="border border-border/20 rounded-lg px-6">
-                    <AccordionTrigger className="text-left text-lg font-medium text-foreground-dark">
-                      What if I only have an idea?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-foreground-dark/80">
-                      That's our specialty. Our Product Launch (0 to MVP) offering is designed to take your concept 
-                      through brainstorming, wireframing, and prototyping to create a tangible, validated product vision.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="feasible" className="border border-border/20 rounded-lg px-6">
-                    <AccordionTrigger className="text-left text-lg font-medium text-foreground-dark">
-                      How do you ensure your designs are technically feasible?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-foreground-dark/80">
-                      Our "Engineering in our DNA" philosophy is key. Our designers work closely with solution architects 
-                      from day one. We use our snap.design system to build with components that are designed for scalability 
-                      and reusability, ensuring a seamless handoff to developers.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="ai-process" className="border border-border/20 rounded-lg px-6">
-                    <AccordionTrigger className="text-left text-lg font-medium text-foreground-dark">
-                      What makes your AI-powered process different?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-foreground-dark/80">
-                      We use AI as an accelerator, not a crutch. Our designers leverage AI tools to automate repetitive 
-                      tasks and generate initial concepts, freeing them to focus on the high-value strategic work of UX 
-                      problem-solving and creating a polished, unique visual identity.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="roi" className="border border-border/20 rounded-lg px-6">
-                    <AccordionTrigger className="text-left text-lg font-medium text-foreground-dark">
-                      How do you measure the ROI of a UX Refresh?
-                    </AccordionTrigger>
-                    <AccordionContent className="text-foreground-dark/80">
-                      We tie design changes to key business metrics. Before we start, we benchmark your current state 
-                      (e.g., conversion rates, user satisfaction scores, support ticket volume). The success of the 
-                      refresh is measured by the positive movement of those KPIs after the new design is launched.
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </div>
-            </EnhancedScrollReveal>
-          </Suspense>
-        </div>
-      </section>
-
-      {/* Final CTA & Lead Capture Section */}
-      <section className="py-24 lg:py-32 bg-[#fff]">
-        <div className="container mx-auto px-6">
-          <Suspense fallback={<SectionLoader />}>
-            <EnhancedScrollReveal direction="up">
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground-dark mb-6">
-                  Ready to Accelerate <span className="bg-gradient-primary bg-clip-text text-transparent">Your Vision?</span>
-                </h2>
-                <p className="text-lg md:text-xl text-foreground-dark/80 mb-12">
-                  Let's talk about what's next for your product. Schedule a no-obligation strategy session with our 
-                  senior product design experts and discover how Velocity Design can make your vision a reality.
-                </p>
-
-                <Card className="max-w-2xl mx-auto bg-[#fff] border-card-border shadow-lg">
-                  <CardHeader>
-                    <CardTitle className="text-2xl text-foreground-dark">Get Your Free Strategy Session</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="fullName" className="text-foreground-dark">Full Name</Label>
-                        <Input id="fullName" placeholder="Enter your full name" />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="workEmail" className="text-foreground-dark">Work Email</Label>
-                        <Input id="workEmail" type="email" placeholder="Enter your work email" />
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="company" className="text-foreground-dark">Company</Label>
-                      <Input id="company" placeholder="Enter your company name" />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="challenge" className="text-foreground-dark">What's your primary design challenge?</Label>
-                      <Textarea 
-                        id="challenge" 
-                        placeholder="Tell us about your design needs and challenges..."
-                        rows={4}
-                      />
-                    </div>
-                    
-                    <Button size="lg" className="w-full text-lg">
-                      Schedule My Free Strategy Call
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
                   </CardContent>
                 </Card>
+              </EnhancedScrollReveal>
+            </Suspense>
+          </div>
+        </Suspense>
+      </Section>
+
+      {/* Featured Case Study Section */}
+      <Section>
+        <Suspense fallback={<SectionLoader />}>
+          <EnhancedScrollReveal direction="up">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <Badge variant="outline" className="mb-6 text-brand-primary border-brand-primary/50">
+                    Client Success Story
+                  </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Building a Market-Ready MVP for <span className="text-gradient">Cygeniq in Record Time</span>
+              </h2>
+                  
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-3">The Challenge:</h3>
+                      <p className="text-foreground/80">
+                        Cygeniq needed to move from a validated idea to a functional, high-fidelity prototype 
+                        to secure its next round of funding and begin development. They needed a partner who could 
+                        deliver speed without sacrificing quality.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-3">The IndexNine Solution:</h3>
+                      <p className="text-foreground/80">
+                        Leveraging our Sprint 0 process, our visual engineers worked in lockstep with the Cygeniq 
+                        founders. We rapidly iterated through wireframes to high-fidelity designs in Figma, building 
+                        an interactive prototype that validated the user journey and provided a clear blueprint for 
+                        the engineering team.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-3">The Results:</h3>
+                      <div className="grid sm:grid-cols-3 gap-4">
+                        <div className="text-center p-4 bg-gradient-primary/10 rounded-lg">
+                          <div className="text-2xl font-bold text-brand-primary">6 Weeks</div>
+                          <div className="text-sm text-foreground/70">from kickoff to complete interactive prototype</div>
+                        </div>
+                        <div className="text-center p-4 bg-gradient-secondary/10 rounded-lg">
+                          <div className="text-2xl font-bold text-brand-secondary">25%</div>
+                          <div className="text-sm text-foreground/70">Faster path to securing seed funding</div>
+                        </div>
+                        <div className="text-center p-4 bg-gradient-accent/10 rounded-lg">
+                          <div className="text-2xl font-bold text-brand-accent">Zero</div>
+                          <div className="text-sm text-foreground/70">ambiguity in developer handoff</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-background-secondary/50 p-6 rounded-lg border-l-4 border-brand-primary">
+                      <p className="text-foreground/80 italic">
+                        "IndexNine's velocity and product mindset were game-changers. They didn't just give us designs; 
+                        they gave us a clear, buildable plan that got investors excited and our developers moving."
+                      </p>
+                      <p className="text-sm text-foreground/60 mt-2">- Founder, Cygeniq</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="relative">
+                  <div className="aspect-video bg-gradient-hero rounded-2xl flex items-center justify-center">
+                    <div className="text-center text-foreground-white/80">
+                      <div className="w-20 h-20 bg-foreground-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div className="w-0 h-0 border-l-[15px] border-l-foreground-white/80 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent ml-1"></div>
+                      </div>
+                      <p className="text-lg">Cygeniq Case Study Video</p>
+                      <p className="text-sm opacity-70">High-quality image or short video</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </EnhancedScrollReveal>
-          </Suspense>
-        </div>
-      </section>
+            </div>
+          </EnhancedScrollReveal>
+        </Suspense>
+      </Section>
+
+      {/* FAQ Section */}
+      <Section variant="alternate">
+        <Suspense fallback={<SectionLoader />}>
+          <EnhancedScrollReveal direction="up">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                  Your Design Questions, <span className="text-gradient">Answered</span>
+                </h2>
+              </div>
+
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem value="idea" className="border border-border/20 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-medium">
+                    What if I only have an idea?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-foreground/80">
+                    That's our specialty. Our Product Launch (0 to MVP) offering is designed to take your concept 
+                    through brainstorming, wireframing, and prototyping to create a tangible, validated product vision.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="feasible" className="border border-border/20 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-medium">
+                    How do you ensure your designs are technically feasible?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-foreground/80">
+                    Our "Engineering in our DNA" philosophy is key. Our designers work closely with solution architects 
+                    from day one. We use our snap.design system to build with components that are designed for scalability 
+                    and reusability, ensuring a seamless handoff to developers.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="ai-process" className="border border-border/20 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-medium">
+                    What makes your AI-powered process different?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-foreground/80">
+                    We use AI as an accelerator, not a crutch. Our designers leverage AI tools to automate repetitive 
+                    tasks and generate initial concepts, freeing them to focus on the high-value strategic work of UX 
+                    problem-solving and creating a polished, unique visual identity.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="roi" className="border border-border/20 rounded-lg px-6">
+                  <AccordionTrigger className="text-left text-lg font-medium">
+                    How do you measure the ROI of a UX Refresh?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-foreground/80">
+                    We tie design changes to key business metrics. Before we start, we benchmark your current state 
+                    (e.g., conversion rates, user satisfaction scores, support ticket volume). The success of the 
+                    refresh is measured by the positive movement of those KPIs after the new design is launched.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </EnhancedScrollReveal>
+        </Suspense>
+      </Section>
+
+      {/* Final CTA & Lead Capture Section */}
+      <Section>
+        <Suspense fallback={<SectionLoader />}>
+          <EnhancedScrollReveal direction="up">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Ready to Accelerate <span className="text-gradient">Your Vision?</span>
+              </h2>
+              <p className="text-lg md:text-xl text-foreground/80 mb-12">
+                Let's talk about what's next for your product. Schedule a no-obligation strategy session with our 
+                senior product design experts and discover how Velocity Design can make your vision a reality.
+              </p>
+
+              <Card className="max-w-2xl mx-auto">
+                <CardHeader>
+                  <CardTitle className="text-2xl">Get Your Free Strategy Session</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="fullName">Full Name</Label>
+                      <Input id="fullName" placeholder="Enter your full name" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="workEmail">Work Email</Label>
+                      <Input id="workEmail" type="email" placeholder="Enter your work email" />
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="company">Company</Label>
+                    <Input id="company" placeholder="Enter your company name" />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="challenge">What's your primary design challenge?</Label>
+                    <Textarea 
+                      id="challenge" 
+                      placeholder="Tell us about your design needs and challenges..."
+                      rows={4}
+                    />
+                  </div>
+                  
+                  <Button size="lg" className="w-full text-lg">
+                    Schedule My Free Strategy Call
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </EnhancedScrollReveal>
+        </Suspense>
+      </Section>
 
       {/* Global CTA Banner */}
       <CTABanner />
