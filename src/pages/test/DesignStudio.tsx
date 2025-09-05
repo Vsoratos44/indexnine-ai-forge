@@ -24,7 +24,7 @@ import {
 } from "@/components/SEOStructuredData";
 
 // Lazy load heavy background component
-const SplineInspiredBackground = lazy(() => import("@/components/test/effects/SplineInspiredBackground"));
+const OptimizedVideoBackground = lazy(() => import("@/components/OptimizedVideoBackground"));
 const EnhancedScrollReveal = lazy(() => import("@/components/test/effects/EnhancedScrollReveal"));
 
 // Minimal loading component
@@ -72,9 +72,13 @@ const DesignStudio = () => {
 
       {/* Hero Section */}
       <Section className="relative overflow-hidden min-h-screen flex items-center" noPadding>
-        {/* Dynamic Background */}
+        {/* Video Background */}
         <Suspense fallback={<div className="absolute inset-0 bg-gradient-hero" />}>
-          <SplineInspiredBackground className="absolute inset-0" intensity={0.8} />
+          <OptimizedVideoBackground 
+            videoSrc="/lovable-uploads/Video_Revision_For_Text_Readability.mp4"
+            className="absolute inset-0"
+            overlay="dark"
+          />
         </Suspense>
         
         {/* Hero Content */}
@@ -335,15 +339,15 @@ const DesignStudio = () => {
                   <Badge variant="outline" className="mb-6 text-brand-primary border-brand-primary/50">
                     Client Success Story
                   </Badge>
-                  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                    Building a Market-Ready MVP for <span className="text-gradient">Phygienic in Record Time</span>
-                  </h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Building a Market-Ready MVP for <span className="text-gradient">Cygeniq in Record Time</span>
+              </h2>
                   
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-xl font-semibold text-foreground mb-3">The Challenge:</h3>
                       <p className="text-foreground/80">
-                        Phygienic needed to move from a validated idea to a functional, high-fidelity prototype 
+                        Cygeniq needed to move from a validated idea to a functional, high-fidelity prototype 
                         to secure its next round of funding and begin development. They needed a partner who could 
                         deliver speed without sacrificing quality.
                       </p>
@@ -352,7 +356,7 @@ const DesignStudio = () => {
                     <div>
                       <h3 className="text-xl font-semibold text-foreground mb-3">The IndexNine Solution:</h3>
                       <p className="text-foreground/80">
-                        Leveraging our Sprint 0 process, our visual engineers worked in lockstep with the Phygienic 
+                        Leveraging our Sprint 0 process, our visual engineers worked in lockstep with the Cygeniq 
                         founders. We rapidly iterated through wireframes to high-fidelity designs in Figma, building 
                         an interactive prototype that validated the user journey and provided a clear blueprint for 
                         the engineering team.
@@ -393,7 +397,7 @@ const DesignStudio = () => {
                       <div className="w-20 h-20 bg-foreground-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                         <div className="w-0 h-0 border-l-[15px] border-l-foreground-white/80 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent ml-1"></div>
                       </div>
-                      <p className="text-lg">Phygienic Case Study Video</p>
+                      <p className="text-lg">Cygeniq Case Study Video</p>
                       <p className="text-sm opacity-70">High-quality image or short video</p>
                     </div>
                   </div>

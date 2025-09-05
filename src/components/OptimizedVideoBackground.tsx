@@ -1,6 +1,18 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 
-const OptimizedVideoBackground = () => {
+interface OptimizedVideoBackgroundProps {
+  videoSrc?: string;
+  className?: string;
+  overlay?: 'light' | 'dark' | 'none';
+  posterSrc?: string;
+}
+
+const OptimizedVideoBackground: React.FC<OptimizedVideoBackgroundProps> = ({ 
+  videoSrc = "/videos/intro.mp4", 
+  className = "absolute inset-0 w-full h-full overflow-hidden",
+  overlay = "dark",
+  posterSrc = "/videos/poster-frame.jpg"
+}) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -41,7 +53,7 @@ const OptimizedVideoBackground = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0 w-full h-full overflow-hidden">
+    <div className={className}>
       {/* Optimized single video with poster */}
       <video
         ref={videoRef}
@@ -49,11 +61,11 @@ const OptimizedVideoBackground = () => {
         muted
         playsInline
         loop
-        poster="/videos/poster-frame.jpg" // Add a poster frame for instant display
+        poster={posterSrc}
         preload="none" // Don't preload until needed
         onLoadedData={handleLoadedData}
       >
-        <source src="/videos/intro.mp4" type="video/mp4" />
+        <source src={videoSrc} type="video/mp4" />
       </video>
 
       {/* Fallback gradient for slow connections */}
@@ -61,8 +73,12 @@ const OptimizedVideoBackground = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-brand-primary via-brand-secondary to-brand-accent opacity-80" />
       )}
 
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      {/* Conditional overlay for better text readability */}
+      {overlay !== 'none' && (
+        <div className={`absolute inset-0 z-10 ${
+          overlay === 'dark' ? 'bg-black/50' : 'bg-white/30'
+        }`} />
+      )}
     </div>
   );
 };
