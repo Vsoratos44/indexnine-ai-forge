@@ -57,6 +57,7 @@ const LaunchCaseStudy = lazy(() => import("./pages/insights/case-studies/Launch"
 const PivotCaseStudy = lazy(() => import("./pages/insights/case-studies/Pivot"));
 const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/Grow"));
 const MatureCaseStudy = lazy(() => import("./pages/insights/case-studies/Mature"));
+const CygeniqCaseStudy = lazy(() => import("./pages/insights/case-studies/Cygeniq"));
 const EdTechPivotCaseStudy = lazy(() => import("./pages/insights/case-studies/EdTechPivot"));
 const EnterpriseSaasOptimizationCaseStudy = lazy(() => import("./pages/insights/case-studies/EnterpriseSaasOptimization"));
 const TripjackCaseStudy = lazy(() => import("./pages/insights/case-studies/Tripjack"));
@@ -147,10 +148,11 @@ const App = () => {
               <Route path="/insights/blogs/:slug" element={<BlogPost />} />
               
               {/* Individual Case Study Routes - Lazy loaded */}
-              <Route path="/insights/case-studies/launch" element={<LaunchCaseStudy />} />
-              <Route path="/insights/case-studies/pivot" element={<PivotCaseStudy />} />
-              <Route path="/insights/case-studies/grow" element={<GrowCaseStudy />} />
-              <Route path="/insights/case-studies/mature" element={<MatureCaseStudy />} />
+               <Route path="/insights/case-studies/launch" element={<LaunchCaseStudy />} />
+               <Route path="/insights/case-studies/pivot" element={<PivotCaseStudy />} />
+               <Route path="/insights/case-studies/grow" element={<GrowCaseStudy />} />
+               <Route path="/insights/case-studies/mature" element={<MatureCaseStudy />} />
+               <Route path="/insights/case-studies/cygeniq" element={<CygeniqCaseStudy />} />
                <Route path="/insights/case-studies/edtech-pivot" element={<EdTechPivotCaseStudy />} />
                <Route path="/insights/case-studies/enterprise-saas-optimization" element={<EnterpriseSaasOptimizationCaseStudy />} />
                <Route path="/insights/case-studies/tripjack" element={<TripjackCaseStudy />} />
