@@ -3,8 +3,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
-import { useSEO } from '@/hooks/useSEO';
-import { SEOStructuredData, ArticleSchema, WebPageSchema, BreadcrumbSchema } from '@/components/SEOStructuredData';
+import { useSEO } from "@/hooks/useSEO";
+import {
+  SEOStructuredData,
+  ArticleSchema,
+  WebPageSchema,
+  BreadcrumbSchema,
+} from "@/components/SEOStructuredData";
 import {
   ArrowLeft,
   CheckCircle,
@@ -18,30 +23,39 @@ import {
   Settings,
   RefreshCcw,
   QuoteIcon,
+  Boxes,
+  Rocket,
+  Workflow,
+  Handshake,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import styles from "../../../assets/css/stylesheet.module.css";
 import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
 import CaseImg from "@/assets/images/case-img.webp";
+import CaseInrImg from "@/assets/images/case-details-img.webp";
 
 const leftNavLinks = [
   { href: "#intro1", label: "Introduction" },
-  { href: "#challange1", label: "Challange 1" },
-  { href: "#challange2", label: "Challange 2" },
+  { href: "#challange1", label: "Identifying critical security gaps" },
+  { href: "#challange2", label: "The Paradox of Visibility" },
   { href: "#value", label: "Value of Excellence" },
+  { href: "#whyWorked", label: "Why It Worked" },
 ];
 
 const PivotCaseStudy = () => {
   const [selected, setSelected] = useState("#intro1");
-  
+
   // SEO Configuration
   useSEO({
-    title: "Zilla Security Pivot Case Study - Engineering the Perfect Product Pivot | Indexnine",
-    description: "Learn how Indexnine transformed Zilla Security from a passive auditing tool into a mission-critical IGA platform, enabling a successful $165M+ acquisition through strategic product pivoting.",
-    keywords: "product pivot, identity governance, cybersecurity platform, enterprise software, IGA solution, product transformation, acquisition success, security automation",
+    title:
+      "Zilla Security Pivot Case Study - Engineering the Perfect Product Pivot | Indexnine",
+    description:
+      "Learn how Indexnine transformed Zilla Security from a passive auditing tool into a mission-critical IGA platform, enabling a successful $165M+ acquisition through strategic product pivoting.",
+    keywords:
+      "product pivot, identity governance, cybersecurity platform, enterprise software, IGA solution, product transformation, acquisition success, security automation",
     canonicalUrl: "https://indexnine.ai/insights/case-studies/pivot",
     ogImage: "https://indexnine.ai/images/case-studies/pivot-og.jpg",
-    ogType: "article"
+    ogType: "article",
   });
   useEffect(() => {
     const sections = leftNavLinks.map((link) =>
@@ -67,6 +81,13 @@ const PivotCaseStudy = () => {
     };
   }, []);
 
+  const exlnceIcons = [
+    <Boxes className="w-5 h-5 text-brand-primary m-auto " />,
+    <Rocket className="w-5 h-5 text-brand-primary m-auto " />,
+    <Workflow className="w-5 h-5 text-brand-primary m-auto " />,
+    <Handshake className="w-5 h-5 text-brand-primary m-auto " />,
+  ];
+
   return (
     <div className="min-h-screen bg-white relative  bg-[#fff] bg-no-repeat">
       {/* SEO Structured Data */}
@@ -79,28 +100,34 @@ const PivotCaseStudy = () => {
         image="https://indexnine.ai/images/case-studies/pivot-hero.jpg"
         url="https://indexnine.ai/insights/case-studies/pivot"
       />
-      
+
       <WebPageSchema
         title="Pivot Case Study: Zilla Security Platform Transformation"
         description="Strategic product pivot case study showcasing enterprise platform transformation and successful acquisition outcome"
         url="https://indexnine.ai/insights/case-studies/pivot"
       />
-      
+
       <BreadcrumbSchema
         items={[
           { name: "Home", url: "https://indexnine.ai" },
           { name: "Insights", url: "https://indexnine.ai/insights" },
-          { name: "Case Studies", url: "https://indexnine.ai/insights/case-studies" },
-          { name: "Pivot Phase", url: "https://indexnine.ai/insights/case-studies/pivot" }
+          {
+            name: "Case Studies",
+            url: "https://indexnine.ai/insights/case-studies",
+          },
+          {
+            name: "Pivot Phase",
+            url: "https://indexnine.ai/insights/case-studies/pivot",
+          },
         ]}
       />
       <Header />
       {/* Hero Section */}
       <a id="intro1"></a>
-      <div className={`bg-transparent pt-32 ${styles.sectionBgCase}`}>
+      <div className={`bg-transparent pt-32 ${styles.sectionBgCase} `}>
         <div className="container grid md:grid-cols-3 gap-12">
           <div className="text-foreground-dark">
-            <div className="sticky top-[120px] pb-8">
+            <div className="sticky top-[128px] pb-8">
               <ul className="space-y-2">
                 {leftNavLinks.map((link) => (
                   <li key={link.href}>
@@ -122,7 +149,7 @@ const PivotCaseStudy = () => {
                 ))}
               </ul>
               <div
-                className={`px-8 my-8 py-12 text-center rounded-2xl text-white ${styles.sideCardBg}`}
+                className={`px-8 mt-8 mb-4 py-12 text-center rounded-2xl text-white ${styles.sideCardBg}`}
               >
                 <h3 className="text-3xl font-bold">
                   Want to Share Your Insights?
@@ -139,7 +166,7 @@ const PivotCaseStudy = () => {
           </div>
           <div className="col-span-2">
             <section
-              className="min-h-[1024px] bg-[#fff] relative  bg-[#fff] bg-cover bg-center bg-no-repeat rounded-2xl shadow-2xl flex mb-12"
+              className="min-h-[1024px] bg-[#fff] relative  bg-[#fff] bg-contain bg-top bg-no-repeat rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl bg-fixed"
               style={{
                 backgroundImage: `url(${CaseImg})`,
               }}
@@ -158,13 +185,13 @@ const PivotCaseStudy = () => {
 
                   <div className="mb-6">
                     <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
-                      <span className="text-[#1ECBE1] text-xs mr-2">
+                      <span className="text-brand-primary text-xs mr-2">
                         Client
                       </span>{" "}
                       Zilla
                     </span>
                     <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
-                      <span className="text-[#1ECBE1] text-xs mr-2">
+                      <span className="text-brand-primary text-xs mr-2">
                         Industry
                       </span>{" "}
                       Cybersecurity
@@ -176,11 +203,11 @@ const PivotCaseStudy = () => {
                       <span className="leading-[1.05]">
                         Zilla&nbsp;Security:
                       </span>
-                      <span className="bg-gradient-primary bg-clip-text text-[#25FF8A] leading-[1.05]">
+                      <span className="bg-gradient-primary bg-clip-text text-[#505cfd] leading-[1.05]">
                         Engineering the Perfect Pivot
                       </span>
                     </h1>
-                    <p className="text-xl sm:text-lg text-foreground/100 mb-0 max-w-4xl leading-relaxed font-light animate-slide-up font-montserrat">
+                    <p className="text-xl sm:text-lg text-foreground/100 mb-0 max-w-4xl leading-relaxed font-regular animate-slide-up font-montserrat">
                       Indexnine's strategic product engineering transformed a
                       niche auditing tool into a mission-critical identity
                       platform, creating exponential enterprise value.
@@ -199,7 +226,7 @@ const PivotCaseStudy = () => {
                 <div className="max-w-6xl mx-auto">
                   <div className="">
                     <div>
-                      <h3 className="text-lg font-semibold text-[#1ECBE1] mb-4 font-montserrat">
+                      <h3 className="text-lg font-semibold text-white mb-4 font-montserrat">
                         Challenge
                       </h3>
                       <p className="text-white mb-6">
@@ -224,8 +251,8 @@ const PivotCaseStudy = () => {
                           >
                             <div className="flex items-center space-x-3 mb-3">
                               <div className="mr-2">
-                                <span className="flex w-12 h-12 rounded-full bg-[#1ECBE1]/10 ">
-                                  <ArrowRightLeft className="w-5 h-5 text-[#25FF8A] m-auto" />
+                                <span className="flex w-12 h-12 rounded-full bg-[#2E348233] ">
+                                  <ArrowRightLeft className="w-5 h-5 text-white m-auto" />
                                 </span>
                               </div>
                               Passive → Active
@@ -248,7 +275,7 @@ const PivotCaseStudy = () => {
                 <div className="max-w-6xl mx-auto">
                   <div className="">
                     <div>
-                      <h3 className="text-lg font-semibold text-[#1ECBE1] mb-4 font-montserrat">
+                      <h3 className="text-lg font-semibold text-white mb-4 font-montserrat">
                         Solution
                       </h3>
                       <p className="text-white mb-6">
@@ -261,24 +288,24 @@ const PivotCaseStudy = () => {
                       <div className="grid grid-cols md:grid-cols-4  gap-6 ">
                         <div className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full ">
                           <div className="flex items-center gap-4 flex-col">
-                            <span className="flex w-12 h-12 rounded-full bg-[#1ECBE1]/10 ">
-                              <Lock className="w-5 h-5 text-[#25FF8A] m-auto" />
+                            <span className="flex w-12 h-12 rounded-full bg-[#2E348233] ">
+                              <Lock className="w-5 h-5 text-white m-auto" />
                             </span>
                             <span className="text-white">Secure</span>
                           </div>
                         </div>
                         <div className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full ">
                           <div className="flex items-center gap-4 flex-col">
-                            <span className="flex w-12 h-12 rounded-full bg-[#1ECBE1]/10 ">
-                              <Scale className="w-5 h-5 text-[#25FF8A] m-auto" />
+                            <span className="flex w-12 h-12 rounded-full bg-[#2E348233] ">
+                              <Scale className="w-5 h-5 text-white m-auto" />
                             </span>
                             <span className="text-white">Scalable</span>
                           </div>
                         </div>
                         <div className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full ">
                           <div className="flex items-center gap-4 flex-col">
-                            <span className="flex w-12 h-12 rounded-full bg-[#1ECBE1]/10 ">
-                              <Settings className="w-5 h-5 text-[#25FF8A] m-auto" />
+                            <span className="flex w-12 h-12 rounded-full bg-[#2E348233] ">
+                              <Settings className="w-5 h-5 text-white m-auto" />
                             </span>
                             <span className="text-white">
                               Provisioning Engine
@@ -287,8 +314,8 @@ const PivotCaseStudy = () => {
                         </div>
                         <div className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full ">
                           <div className="flex items-center gap-4 flex-col">
-                            <span className="flex w-12 h-12 rounded-full bg-[#1ECBE1]/10 ">
-                              <RefreshCcw className="w-5 h-5 text-[#25FF8A] m-auto" />
+                            <span className="flex w-12 h-12 rounded-full bg-[#2E348233] ">
+                              <RefreshCcw className="w-5 h-5 text-white m-auto" />
                             </span>
                             <span className="text-white">Modernization</span>
                           </div>
@@ -311,6 +338,11 @@ const PivotCaseStudy = () => {
                     The Paradox of Visibility in a Sprawling Digital Estate
                   </h2>
 
+                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
+                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
+                      <img src={CaseInrImg} className="w-full h-full" />
+                    </div>
+                  </div>
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
                     The IT landscape is a chaotic one; applications and data are
                     no longer confined exclusively to a secure, on-premise data
@@ -376,7 +408,7 @@ const PivotCaseStudy = () => {
             </section>
 
             {/* Solution Section */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl mb-12 shadow-inner  shadow-4xl">
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl mb-12 shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
                   <h3 className="text-lg font-semibold text-brand-primary-dark  mb-4 font-montserrat">
@@ -398,8 +430,8 @@ const PivotCaseStudy = () => {
                     {/* Phase 1 */}
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
-                        <span className="flex w-10 h-10 rounded-full bg-[#25FF8A] ">
-                          <span className="font-bold text-foreground-dark m-auto">
+                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD] ">
+                          <span className="font-bold text-foreground m-auto">
                             1
                           </span>
                         </span>
@@ -425,8 +457,8 @@ const PivotCaseStudy = () => {
                     {/* Phase 2 */}
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
-                        <span className="flex w-10 h-10 rounded-full bg-[#25FF8A] ">
-                          <span className="font-bold text-foreground-dark m-auto">
+                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD] ">
+                          <span className="font-bold text-foreground m-auto">
                             2
                           </span>
                         </span>
@@ -501,8 +533,8 @@ const PivotCaseStudy = () => {
                     {/* Phase 3 */}
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
-                        <span className="flex w-10 h-10 rounded-full bg-[#25FF8A] ">
-                          <span className="font-bold text-foreground-dark m-auto">
+                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD] ">
+                          <span className="font-bold text-foreground m-auto">
                             3
                           </span>
                         </span>
@@ -562,54 +594,60 @@ const PivotCaseStudy = () => {
                   <h2 className="text-2xl font-bold text-foreground-dark mb-12 text-center font-montserrat">
                     The Value of Excellence
                   </h2>
-
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    <div className="bg-gradient-to-r from-[#25FF8A10] to-[#1ECBE110]  rounded-xl py-4 px-1  text-center border border-[#1ECBE120]">
-                      <h3 className="text-3xl font-bold text-[#25FF8A] mb-2 font-montserrat">
+                    <div
+                      className={`rounded-xl py-4 px-1  text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
                         $165M+
                       </h3>
-                      <p className="text-foreground-dark text-xs mb-0">
+                      <p className="text-foreground text-xs mb-0">
                         Acquisition Value
                       </p>
-                      <span className="inline-block w-12 h-1 rounded-sm bg-[#25FF8A]"></span>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
 
-                    <div className="bg-gradient-to-r from-[#1ECBE110] to-[#00000000]  rounded-xl py-4 px-1 text-center border border-[#1ECBE120]">
-                      <h3 className="text-3xl font-bold text-[#1ECBE1] mb-2 font-montserrat">
+                    <div
+                      className={`rounded-xl py-4 px-1  text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
                         100+
                       </h3>
-                      <p className="text-foreground-dark text-xs mb-0">
+                      <p className="text-foreground text-xs mb-0">
                         Enterprise Customers
                       </p>
-                      <span className="inline-block w-12 h-1 rounded-sm bg-[#1ECBE1]"></span>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
 
-                    <div className="bg-gradient-to-r from-[#25FF8A10] to-[#1ECBE110]  rounded-xl py-4 px-1  text-center border border-[#1ECBE120]">
-                      <h3 className="text-3xl font-bold text-[#25FF8A] mb-2 font-montserrat">
+                    <div
+                      className={`rounded-xl py-4 px-1  text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
                         Mission
                       </h3>
-                      <p className="text-foreground-dark text-xs mb-0">
+                      <p className="text-foreground text-xs mb-0">
                         Critical Status
                       </p>
-                      <span className="inline-block w-12 h-1 rounded-sm bg-[#25FF8A]"></span>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
 
-                    <div className="bg-gradient-to-r from-[#1ECBE110] to-[#00000000]  rounded-xl py-4 px-1 text-center border border-[#1ECBE120]">
-                      <h3 className="text-3xl font-bold text-[#1ECBE1] mb-2 font-montserrat">
+                    <div
+                      className={`rounded-xl py-4 px-1  text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
                         IGA
                       </h3>
-                      <p className="text-foreground-dark text-xs mb-0">
+                      <p className="text-foreground text-xs mb-0">
                         Platform Evolution
                       </p>
-                      <span className="inline-block w-12 h-1 rounded-sm bg-[#1ECBE1]"></span>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
                   </div>
-
                   <div className="mb-12">
                     <h3 className="text-xl font-bold text-foreground-dark mb-6 font-montserrat text-center">
                       Excellence Values Delivered
                       <br />
-                      <span className="inline-block w-24 h-1 rounded-sm bg-gradient-to-r from-[#1ECBE1] via-[#25FF8A] to-[#1ECBE1]"></span>
+                      <span className="inline-block w-24 h-1 rounded-sm bg-gradient-to-r  from-brand-purple/50 via-[#505CFD80] to-brand-purple/50 "></span>
                     </h3>
 
                     <div className="grid md:grid-cols-2 gap-6">
@@ -620,14 +658,14 @@ const PivotCaseStudy = () => {
                         "Enabled a $165M+ Acquisition: The strategic pivot from auditing to provisioning was the single most critical factor in Zilla's acquisition. We didn't just build a feature; we helped build the core asset that created exponential enterprise value.",
                       ].map((result, index) => (
                         <div className="mb-4">
-                          <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-[#1ECBE1] via-[#25FF8A] to-[#1ECBE1] mb-2"></span>
+                          <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50 mb-2"></span>
 
                           <div
                             key={index}
                             className="flex flex-col text-center"
                           >
-                            <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#1ECBE120] via-[#25FF8A20] to-[#1ECBE120] mb-2">
-                              <CheckCircle className="w-5 h-5 text-[#1ECBE1] m-auto " />
+                            <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
+                              {exlnceIcons[index]}
                             </span>
                             <span className="text-foreground-dark">
                               {result}
@@ -637,11 +675,30 @@ const PivotCaseStudy = () => {
                       ))}
                     </div>
                   </div>
+                  <div
+                    className={`p-8 bg-background relative md:mr-[-6rem] rounded-xl mb-6 ${styles.middleCardBg2}`}
+                  >
+                    <p className="text-lg text-foreground text-center font-medium">
+                      Our partnership with Zilla Security exemplifies how
+                      strategic product engineering can transform market
+                      positioning, create exponential value, and deliver
+                      outcomes that exceed expectations.
+                    </p>
+                    <a id="whyWorked"></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* ehy worked Section */}
+            <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
+              <div className="container mx-auto px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto">
                   <div className="mb-0">
                     <h3 className="text-xl font-bold text-foreground-dark mb-6 font-montserrat text-center">
                       Why It Worked
                       <br />
-                      <span className="inline-block w-24 h-1 rounded-sm bg-gradient-to-r from-[#1ECBE1] via-[#25FF8A] to-[#1ECBE1]"></span>
+                      <span className="inline-block w-24 h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50"></span>
                     </h3>
                     <p className="text-md text-foreground-dark-muted text-center mb-8">
                       The Zilla Security story is a quintessential example of
@@ -656,14 +713,14 @@ const PivotCaseStudy = () => {
                         "A Founder's Mindset : We approached the problem with the same sense of urgency  and ownership as the client's leadership team. We understood that the success of this pivot was a defining moment for the company, and we would deliver nothing less than excellence for it.",
                       ].map((result, index) => (
                         <div className="mb-4">
-                          <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-[#1ECBE1] via-[#25FF8A] to-[#1ECBE1] mb-2"></span>
+                          <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50 mb-2"></span>
 
                           <div
                             key={index}
                             className="flex flex-col text-center"
                           >
-                            <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#1ECBE120] via-[#25FF8A20] to-[#1ECBE120] mb-2">
-                              <CheckCircle className="w-5 h-5 text-[#1ECBE1] m-auto " />
+                            <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
+                              <CheckCircle className="w-5 h-5 text-[#8389DC] m-auto " />
                             </span>
                             <span className="text-foreground-dark">
                               {result}
