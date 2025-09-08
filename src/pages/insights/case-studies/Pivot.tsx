@@ -639,8 +639,6 @@ const PivotCaseStudy = () => {
                   <div className="mb-12">
                     <h3 className="text-xl font-bold text-foreground-dark mb-6 font-montserrat text-center">
                       Excellence Values Delivered
-                      <br />
-                      <span className="inline-block w-24 h-1 rounded-sm bg-gradient-to-r  from-brand-purple/50 via-[#505CFD80] to-brand-purple/50 "></span>
                     </h3>
 
                     <div className="grid md:grid-cols-2 gap-6">

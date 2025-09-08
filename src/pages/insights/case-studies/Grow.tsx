@@ -47,12 +47,15 @@ const GrowCaseStudy = () => {
 
   // SEO Configuration
   useSEO({
-    title: "Sports Interactive AI Growth Case Study - Real-Time Fan Engagement Automation | Indexnine",
-    description: "Discover how Indexnine's Cricket LLM transformed Sports Interactive's operations, automating content generation in 15 seconds and reducing operational costs by 90% through AI-powered fan engagement.",
-    keywords: "AI automation, sports media technology, real-time content generation, fan engagement, Cricket LLM, operational cost reduction, scalable AI solutions, sports technology",
+    title:
+      "Sports Interactive AI Growth Case Study - Real-Time Fan Engagement Automation | Indexnine",
+    description:
+      "Discover how Indexnine's Cricket LLM transformed Sports Interactive's operations, automating content generation in 15 seconds and reducing operational costs by 90% through AI-powered fan engagement.",
+    keywords:
+      "AI automation, sports media technology, real-time content generation, fan engagement, Cricket LLM, operational cost reduction, scalable AI solutions, sports technology",
     canonicalUrl: "https://indexnine.ai/insights/case-studies/grow",
     ogImage: "https://indexnine.ai/images/case-studies/grow-og.jpg",
-    ogType: "article"
+    ogType: "article",
   });
 
   useEffect(() => {
@@ -102,12 +105,18 @@ const GrowCaseStudy = () => {
         items={[
           { name: "Home", url: "https://indexnine.ai" },
           { name: "Insights", url: "https://indexnine.ai/insights" },
-          { name: "Case Studies", url: "https://indexnine.ai/insights/case-studies" },
-          { name: "Growth Phase", url: "https://indexnine.ai/insights/case-studies/grow" }
+          {
+            name: "Case Studies",
+            url: "https://indexnine.ai/insights/case-studies",
+          },
+          {
+            name: "Growth Phase",
+            url: "https://indexnine.ai/insights/case-studies/grow",
+          },
         ]}
       />
       <Header />
-      
+
       {/* Hero Section */}
       <a id="intro1"></a>
       <div className={`bg-transparent pt-32 ${styles.sectionBgCase}`}>
@@ -170,7 +179,7 @@ const GrowCaseStudy = () => {
                   </div>
 
                   <div className="inline-block p-8 bg-black/20 shadow-md text-white rounded-xl text-sm font-medium border border-white/30 backdrop-blur-sm">
-                    <h1 className="text-4xl sm:text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat md:flex gap-4 items-center">
+                    <h1 className="text-4xl sm:text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat md:flex gap-4 items-start">
                       <span className="leading-[1.05]">
                         Sports Interactive:
                       </span>
@@ -179,7 +188,9 @@ const GrowCaseStudy = () => {
                       </span>
                     </h1>
                     <p className="text-xl sm:text-lg text-foreground/100 mb-0 max-w-4xl leading-relaxed font-regular animate-slide-up font-montserrat">
-                      Unlocking a new level of scalability and solving a technical Gordian knot through automated content creation with Cricket LLM.
+                      Unlocking a new level of scalability and solving a
+                      technical Gordian knot through automated content creation
+                      with Cricket LLM.
                     </p>
                     <a id="challenge1"></a>
                   </div>
@@ -198,9 +209,14 @@ const GrowCaseStudy = () => {
                       Challenge
                     </h3>
                     <p className="text-white mb-6">
-                      Sports Interactive needed to transform their content creation process from a manual, time-intensive operation to an automated, real-time system that could generate personalized fan engagement content in seconds rather than hours, while maintaining editorial quality and brand voice.
+                      Sports Interactive needed to transform their content
+                      creation process from a manual, time-intensive operation
+                      to an automated, real-time system that could generate
+                      personalized fan engagement content in seconds rather than
+                      hours, while maintaining editorial quality and brand
+                      voice.
                     </p>
-                    
+
                     <div className="grid md:grid-cols-4 gap-6">
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
@@ -239,41 +255,9 @@ const GrowCaseStudy = () => {
                 </div>
               </div>
             </section>
-
-            {/* Detailed Challenge Section */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
-              <div className="mx-auto relative z-10">
-                <div className="max-w-8xl mx-auto">
-                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Challenge
-                  </h3>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                    The Real-Time Content Generation Bottleneck
-                  </h2>
-
-                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
-                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
-                      <img src={CaseInrImg} className="w-full h-full" />
-                    </div>
-                  </div>
-                  
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    Sports Interactive faced a critical scalability challenge in their content operations. As a leading sports media company, they needed to generate thousands of pieces of personalized content daily to engage their growing fan base across multiple sports and regions. Their existing manual process required content creators to spend hours crafting individual pieces, creating a significant bottleneck that limited their ability to scale.
-                  </p>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The challenge was particularly acute during peak sporting events when fan engagement was highest, but content demands were most intensive. Traditional content management systems couldn't handle the real-time nature of sports content, where information becomes stale within minutes, and personalization requirements varied dramatically across different audience segments.
-                  </p>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    Beyond speed, Sports Interactive needed to maintain editorial quality and brand consistency while scaling content production by 10x. The solution required understanding complex sports data, player statistics, historical context, and fan preferences to create content that felt authentically human-written while being generated automatically.
-                  </p>
-                  <a id="solution1" className="absolute mt-[100px]"></a>
-                </div>
-              </div>
-            </section>
-
-            <section className="p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl" style={{backgroundImage: `url(${BlogDetailsBg})`}}>
+            <section
+              className={`p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl ${styles.middleCardBg2}`}
+            >
               <div className="relative z-10">
                 <div className="max-w-6xl mx-auto">
                   <div>
@@ -281,9 +265,13 @@ const GrowCaseStudy = () => {
                       Solution
                     </h3>
                     <p className="text-white mb-6">
-                      Indexnine developed Cricket LLM, a specialized AI model trained on sports data and content patterns that could generate contextually relevant, personalized fan engagement content in real-time, reducing production time from hours to seconds.
+                      Indexnine developed Cricket LLM, a specialized AI model
+                      trained on sports data and content patterns that could
+                      generate contextually relevant, personalized fan
+                      engagement content in real-time, reducing production time
+                      from hours to seconds.
                     </p>
-                    
+
                     <div className="grid md:grid-cols-4 gap-6">
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
@@ -298,7 +286,9 @@ const GrowCaseStudy = () => {
                           <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
                             <Zap className="w-5 h-5 text-white m-auto" />
                           </span>
-                          <span className="text-white">Real-Time Processing</span>
+                          <span className="text-white">
+                            Real-Time Processing
+                          </span>
                         </div>
                       </div>
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
@@ -306,7 +296,9 @@ const GrowCaseStudy = () => {
                           <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
                             <Users className="w-5 h-5 text-white m-auto" />
                           </span>
-                          <span className="text-white">Personalization Engine</span>
+                          <span className="text-white">
+                            Personalization Engine
+                          </span>
                         </div>
                       </div>
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
@@ -323,6 +315,56 @@ const GrowCaseStudy = () => {
               </div>
             </section>
 
+            {/* Detailed Challenge Section */}
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
+              <div className="mx-auto relative z-10">
+                <div className="max-w-8xl mx-auto">
+                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
+                    Challenge
+                  </h3>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                    The Real-Time Content Generation Bottleneck
+                  </h2>
+
+                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
+                    <img src={CaseInrImg} className="w-full h-full" />
+                  </div>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    Sports Interactive faced a critical scalability challenge in
+                    their content operations. As a leading sports media company,
+                    they needed to generate thousands of pieces of personalized
+                    content daily to engage their growing fan base across
+                    multiple sports and regions. Their existing manual process
+                    required content creators to spend hours crafting individual
+                    pieces, creating a significant bottleneck that limited their
+                    ability to scale.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The challenge was particularly acute during peak sporting
+                    events when fan engagement was highest, but content demands
+                    were most intensive. Traditional content management systems
+                    couldn't handle the real-time nature of sports content,
+                    where information becomes stale within minutes, and
+                    personalization requirements varied dramatically across
+                    different audience segments.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    Beyond speed, Sports Interactive needed to maintain
+                    editorial quality and brand consistency while scaling
+                    content production by 10x. The solution required
+                    understanding complex sports data, player statistics,
+                    historical context, and fan preferences to create content
+                    that felt authentically human-written while being generated
+                    automatically.
+                  </p>
+                  <a id="solution1" className="absolute mt-[100px]"></a>
+                </div>
+              </div>
+            </section>
+
             {/* Technical Implementation Section - Replace with detailed phases */}
             <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl mb-12 shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
@@ -335,7 +377,11 @@ const GrowCaseStudy = () => {
                   </h2>
 
                   <p className="text-lg text-foreground-dark leading-relaxed mb-12">
-                    Sports Interactive's challenge required a complete transformation of their content operations. This was about creating an AI system that could understand the nuances of sports content while generating personalized fan engagement at unprecedented scale and speed.
+                    Sports Interactive's challenge required a complete
+                    transformation of their content operations. This was about
+                    creating an AI system that could understand the nuances of
+                    sports content while generating personalized fan engagement
+                    at unprecedented scale and speed.
                   </p>
 
                   <div className="space-y-12">
@@ -343,7 +389,9 @@ const GrowCaseStudy = () => {
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
                         <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
-                          <span className="font-bold text-foreground m-auto">1</span>
+                          <span className="font-bold text-foreground m-auto">
+                            1
+                          </span>
                         </span>
                       </div>
                       <div className="md:col-span-11 backdrop-blur-xl bg-[#ffffff] border border-glass-border rounded-2xl p-6">
@@ -351,7 +399,13 @@ const GrowCaseStudy = () => {
                           Phase 1: Sports Data Analysis & Model Training
                         </h3>
                         <p className="text-foreground-dark-muted leading-relaxed">
-                          We began by analyzing Sports Interactive's existing content patterns, fan engagement data, and sports databases to understand the complex relationships between sports events, player statistics, and fan preferences. This foundational research informed the design of Cricket LLM's training datasets and content generation algorithms.
+                          We began by analyzing Sports Interactive's existing
+                          content patterns, fan engagement data, and sports
+                          databases to understand the complex relationships
+                          between sports events, player statistics, and fan
+                          preferences. This foundational research informed the
+                          design of Cricket LLM's training datasets and content
+                          generation algorithms.
                         </p>
                       </div>
                     </div>
@@ -360,15 +414,21 @@ const GrowCaseStudy = () => {
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
                         <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
-                          <span className="font-bold text-foreground m-auto">2</span>
+                          <span className="font-bold text-foreground m-auto">
+                            2
+                          </span>
                         </span>
                       </div>
                       <div className="md:col-span-11 backdrop-blur-xl bg-glass-bg/10 border border-glass-border rounded-2xl p-6">
                         <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
-                          Phase 2: Cricket LLM Development & Real-Time Integration
+                          Phase 2: Cricket LLM Development & Real-Time
+                          Integration
                         </h3>
                         <p className="text-foreground-dark leading-relaxed mb-6">
-                          The core of the solution was developing Cricket LLM, a specialized language model trained specifically on sports content, terminology, and fan engagement patterns. We engineered:
+                          The core of the solution was developing Cricket LLM, a
+                          specialized language model trained specifically on
+                          sports content, terminology, and fan engagement
+                          patterns. We engineered:
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-6">
@@ -377,7 +437,11 @@ const GrowCaseStudy = () => {
                               Custom Sports LLM
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Trained Cricket LLM on millions of sports articles, match reports, and fan interactions to understand sports context, terminology, and the emotional language that resonates with different fan segments.
+                              Trained Cricket LLM on millions of sports
+                              articles, match reports, and fan interactions to
+                              understand sports context, terminology, and the
+                              emotional language that resonates with different
+                              fan segments.
                             </p>
                           </div>
                           <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
@@ -385,7 +449,10 @@ const GrowCaseStudy = () => {
                               Real-Time Data Integration
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Built robust data pipelines that could ingest live match data, player statistics, and social media sentiment in real-time to ensure generated content was always current and contextually relevant.
+                              Built robust data pipelines that could ingest live
+                              match data, player statistics, and social media
+                              sentiment in real-time to ensure generated content
+                              was always current and contextually relevant.
                             </p>
                           </div>
                           <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
@@ -393,7 +460,10 @@ const GrowCaseStudy = () => {
                               Personalization Engine
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Developed algorithms that could adapt content tone, complexity, and focus based on individual fan preferences, team loyalties, and engagement history to maximize relevance and engagement.
+                              Developed algorithms that could adapt content
+                              tone, complexity, and focus based on individual
+                              fan preferences, team loyalties, and engagement
+                              history to maximize relevance and engagement.
                             </p>
                           </div>
                           <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
@@ -401,7 +471,11 @@ const GrowCaseStudy = () => {
                               Quality Assurance System
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Implemented multi-layer quality checks including factual accuracy validation, brand voice consistency, and automated editorial review to maintain Sports Interactive's content standards at scale.
+                              Implemented multi-layer quality checks including
+                              factual accuracy validation, brand voice
+                              consistency, and automated editorial review to
+                              maintain Sports Interactive's content standards at
+                              scale.
                             </p>
                           </div>
                         </div>
@@ -412,7 +486,9 @@ const GrowCaseStudy = () => {
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
                         <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
-                          <span className="font-bold text-foreground m-auto">3</span>
+                          <span className="font-bold text-foreground m-auto">
+                            3
+                          </span>
                         </span>
                       </div>
                       <div className="md:col-span-11 backdrop-blur-xl bg-glass-bg/10 border border-glass-border rounded-2xl p-6">
@@ -420,7 +496,10 @@ const GrowCaseStudy = () => {
                           Phase 3: Deployment & Operational Scaling
                         </h3>
                         <p className="text-foreground-dark-muted leading-relaxed mb-6">
-                          The final phase focused on deploying Cricket LLM into Sports Interactive's production environment and optimizing for massive scale during peak sporting events when fan engagement reaches its highest levels.
+                          The final phase focused on deploying Cricket LLM into
+                          Sports Interactive's production environment and
+                          optimizing for massive scale during peak sporting
+                          events when fan engagement reaches its highest levels.
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-6">
@@ -429,7 +508,11 @@ const GrowCaseStudy = () => {
                               Load Testing & Optimization
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Conducted extensive load testing to ensure the system could handle millions of simultaneous content generation requests during peak events like World Cup matches without performance degradation.
+                              Conducted extensive load testing to ensure the
+                              system could handle millions of simultaneous
+                              content generation requests during peak events
+                              like World Cup matches without performance
+                              degradation.
                             </p>
                           </div>
                           <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
@@ -437,7 +520,10 @@ const GrowCaseStudy = () => {
                               Continuous Learning Implementation
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Established feedback loops that allowed Cricket LLM to continuously improve based on fan engagement metrics, ensuring the system became more effective over time.
+                              Established feedback loops that allowed Cricket
+                              LLM to continuously improve based on fan
+                              engagement metrics, ensuring the system became
+                              more effective over time.
                             </p>
                           </div>
                         </div>
@@ -457,27 +543,56 @@ const GrowCaseStudy = () => {
                     Transforming Sports Media Operations
                   </h2>
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
-                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">90%</h3>
-                      <p className="text-foreground text-xs mb-0">Cost Reduction</p>
+                    <div
+                      className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
+                        90%
+                      </h3>
+                      <p className="text-foreground text-xs mb-0">
+                        Cost Reduction
+                      </p>
                     </div>
-                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
-                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">15sec</h3>
-                      <p className="text-foreground text-xs mb-0">Generation Time</p>
+                    <div
+                      className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
+                        15sec
+                      </h3>
+                      <p className="text-foreground text-xs mb-0">
+                        Generation Time
+                      </p>
                     </div>
-                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
-                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">10x</h3>
-                      <p className="text-foreground text-xs mb-0">Content Volume</p>
+                    <div
+                      className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
+                        10x
+                      </h3>
+                      <p className="text-foreground text-xs mb-0">
+                        Content Volume
+                      </p>
                     </div>
-                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
-                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">24/7</h3>
-                      <p className="text-foreground text-xs mb-0">Real-Time Operations</p>
+                    <div
+                      className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
+                        24/7
+                      </h3>
+                      <p className="text-foreground text-xs mb-0">
+                        Real-Time Operations
+                      </p>
                     </div>
                   </div>
 
                   <div className="text-center mb-8">
                     <p className="text-foreground-dark leading-relaxed mb-6">
-                      Cricket LLM successfully automated content generation across multiple sports categories, reducing operational costs by 90% while increasing content volume by 10x. The system generated personalized fan engagement content in 15 seconds compared to the previous 2-4 hours required for manual creation.
+                      Cricket LLM successfully automated content generation
+                      across multiple sports categories, reducing operational
+                      costs by 90% while increasing content volume by 10x. The
+                      system generated personalized fan engagement content in 15
+                      seconds compared to the previous 2-4 hours required for
+                      manual creation.
                     </p>
                     <a id="whyWorked"></a>
                   </div>
@@ -487,7 +602,7 @@ const GrowCaseStudy = () => {
 
             <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl p-8 shadow-glass border border-glass-border backdrop-blur-xl mb-12">
               <div className="relative z-10">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                <h2 className="text-2xl font-bold text-foreground-dark mb-2 text-center font-montserrat">
                   Why It Worked
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -501,7 +616,10 @@ const GrowCaseStudy = () => {
                       </h4>
                     </div>
                     <p className="text-foreground-muted leading-relaxed mb-6">
-                      Cricket LLM was specifically trained on sports content and data patterns, giving it deep understanding of sports terminology, context, and fan expectations that generic AI models lack.
+                      Cricket LLM was specifically trained on sports content and
+                      data patterns, giving it deep understanding of sports
+                      terminology, context, and fan expectations that generic AI
+                      models lack.
                     </p>
                   </div>
                   <div>
@@ -514,7 +632,10 @@ const GrowCaseStudy = () => {
                       </h4>
                     </div>
                     <p className="text-foreground-muted leading-relaxed mb-6">
-                      The system's ability to process live sports data and generate content in real-time gave Sports Interactive a significant advantage in the time-sensitive sports media environment.
+                      The system's ability to process live sports data and
+                      generate content in real-time gave Sports Interactive a
+                      significant advantage in the time-sensitive sports media
+                      environment.
                     </p>
                   </div>
                   <div>
@@ -527,7 +648,9 @@ const GrowCaseStudy = () => {
                       </h4>
                     </div>
                     <p className="text-foreground-muted leading-relaxed mb-6">
-                      Advanced personalization algorithms enabled content tailored to individual fan preferences while maintaining operational efficiency at massive scale.
+                      Advanced personalization algorithms enabled content
+                      tailored to individual fan preferences while maintaining
+                      operational efficiency at massive scale.
                     </p>
                   </div>
                   <div>
@@ -540,7 +663,9 @@ const GrowCaseStudy = () => {
                       </h4>
                     </div>
                     <p className="text-foreground-muted leading-relaxed mb-6">
-                      Automated quality checks and editorial oversight ensured that increased content volume didn't compromise the brand's editorial standards and reputation.
+                      Automated quality checks and editorial oversight ensured
+                      that increased content volume didn't compromise the
+                      brand's editorial standards and reputation.
                     </p>
                   </div>
                 </div>
@@ -557,7 +682,11 @@ const GrowCaseStudy = () => {
                       Solution
                     </h3>
                     <p className="text-white mb-6">
-                      One of our Agentic AI pods developed a bespoke, low-latency, AI-powered content generation engine (called "Cricket LLM") that enables interactive fan engagement in real time without compromising performance under increased workloads during game time.
+                      One of our Agentic AI pods developed a bespoke,
+                      low-latency, AI-powered content generation engine (called
+                      "Cricket LLM") that enables interactive fan engagement in
+                      real time without compromising performance under increased
+                      workloads during game time.
                     </p>
                     <div className="grid grid-cols md:grid-cols-4 gap-6">
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
@@ -611,11 +740,21 @@ const GrowCaseStudy = () => {
                   </h2>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    Sports Interactive had built a successful B2B platform providing content solutions to sports media companies. However, they faced a critical scaling challenge: generating high-quality, contextually relevant social media content during live sporting events required significant manual effort and couldn't scale to handle multiple simultaneous events.
+                    Sports Interactive had built a successful B2B platform
+                    providing content solutions to sports media companies.
+                    However, they faced a critical scaling challenge: generating
+                    high-quality, contextually relevant social media content
+                    during live sporting events required significant manual
+                    effort and couldn't scale to handle multiple simultaneous
+                    events.
                   </p>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The existing process required content creators to watch games live, understand context, and manually craft engaging posts. This approach was expensive, slow, and couldn't meet the real-time demands of modern sports media engagement where timing is everything for fan interaction.
+                    The existing process required content creators to watch
+                    games live, understand context, and manually craft engaging
+                    posts. This approach was expensive, slow, and couldn't meet
+                    the real-time demands of modern sports media engagement
+                    where timing is everything for fan interaction.
                   </p>
                   <a id="results" className="absolute mt-[100px]"></a>
                 </div>
@@ -633,7 +772,12 @@ const GrowCaseStudy = () => {
                   </h2>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The Cricket LLM solution delivered unprecedented efficiency gains, reducing content generation time from minutes to seconds while maintaining quality and context awareness. This breakthrough enabled Sports Interactive to scale their services exponentially and offer real-time engagement solutions to multiple clients simultaneously.
+                    The Cricket LLM solution delivered unprecedented efficiency
+                    gains, reducing content generation time from minutes to
+                    seconds while maintaining quality and context awareness.
+                    This breakthrough enabled Sports Interactive to scale their
+                    services exponentially and offer real-time engagement
+                    solutions to multiple clients simultaneously.
                   </p>
                   <a id="whyWorked" className="absolute mt-[100px]"></a>
                 </div>
@@ -651,7 +795,9 @@ const GrowCaseStudy = () => {
                       Studio Model Excellence
                     </h4>
                     <p className="text-foreground-muted leading-relaxed mb-6">
-                      Our specialized Agentic AI Pod brought deep expertise in real-time AI systems and sports domain knowledge to create a truly optimized solution.
+                      Our specialized Agentic AI Pod brought deep expertise in
+                      real-time AI systems and sports domain knowledge to create
+                      a truly optimized solution.
                     </p>
                   </div>
                   <div>
@@ -659,7 +805,9 @@ const GrowCaseStudy = () => {
                       Founder's Mindset
                     </h4>
                     <p className="text-foreground-muted leading-relaxed mb-6">
-                      We approached the challenge with the urgency and innovation of founders, rapidly iterating and deploying solutions to meet critical business needs.
+                      We approached the challenge with the urgency and
+                      innovation of founders, rapidly iterating and deploying
+                      solutions to meet critical business needs.
                     </p>
                   </div>
                 </div>
@@ -671,16 +819,21 @@ const GrowCaseStudy = () => {
                 Ready to Scale with AI?
               </h2>
               <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-                Unlock exponential growth through intelligent automation. Let's build your competitive advantage.
+                Unlock exponential growth through intelligent automation. Let's
+                build your competitive advantage.
               </p>
-              <Button size="lg" variant="secondary" className="text-brand-primary">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="text-brand-primary"
+              >
                 Get Started
               </Button>
             </section>
           </div>
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );

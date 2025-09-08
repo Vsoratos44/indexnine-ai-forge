@@ -46,12 +46,15 @@ const LaunchCaseStudy = () => {
 
   // SEO Configuration
   useSEO({
-    title: "Annotate FinTech Launch Case Study - AI-Powered Philanthropic Finance Disruption | Indexnine",
-    description: "Discover how Indexnine launched Annotate's AI-powered platform that disrupted philanthropic finance research, reducing costs by 99% from $50K to $500 per report through strategic MVP development.",
-    keywords: "fintech launch, AI platform development, philanthropic finance, MVP development, cost reduction, startup launch strategy, RAG architecture, AI research agent",
+    title:
+      "Annotate FinTech Launch Case Study - AI-Powered Philanthropic Finance Disruption | Indexnine",
+    description:
+      "Discover how Indexnine launched Annotate's AI-powered platform that disrupted philanthropic finance research, reducing costs by 99% from $50K to $500 per report through strategic MVP development.",
+    keywords:
+      "fintech launch, AI platform development, philanthropic finance, MVP development, cost reduction, startup launch strategy, RAG architecture, AI research agent",
     canonicalUrl: "https://indexnine.ai/insights/case-studies/launch",
     ogImage: "https://indexnine.ai/images/case-studies/launch-og.jpg",
-    ogType: "article"
+    ogType: "article",
   });
 
   useEffect(() => {
@@ -101,12 +104,18 @@ const LaunchCaseStudy = () => {
         items={[
           { name: "Home", url: "https://indexnine.ai" },
           { name: "Insights", url: "https://indexnine.ai/insights" },
-          { name: "Case Studies", url: "https://indexnine.ai/insights/case-studies" },
-          { name: "Launch Phase", url: "https://indexnine.ai/insights/case-studies/launch" }
+          {
+            name: "Case Studies",
+            url: "https://indexnine.ai/insights/case-studies",
+          },
+          {
+            name: "Launch Phase",
+            url: "https://indexnine.ai/insights/case-studies/launch",
+          },
         ]}
       />
       <Header />
-      
+
       {/* Hero Section */}
       <a id="intro1"></a>
       <div className={`bg-transparent pt-32 ${styles.sectionBgCase}`}>
@@ -169,16 +178,16 @@ const LaunchCaseStudy = () => {
                   </div>
 
                   <div className="inline-block p-8 bg-black/20 shadow-md text-white rounded-xl text-sm font-medium border border-white/30 backdrop-blur-sm">
-                    <h1 className="text-4xl sm:text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat md:flex gap-4 items-center">
-                      <span className="leading-[1.05]">
-                        Annotate:
-                      </span>
+                    <h1 className="text-4xl sm:text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat md:flex gap-4 items-start">
+                      <span className="leading-[1.05]">Annotate:</span>
                       <span className="bg-gradient-primary bg-clip-text text-[#505cfd] leading-[1.05]">
                         Launching AI-Powered Disruption in Philanthropic Finance
                       </span>
                     </h1>
                     <p className="text-xl sm:text-lg text-foreground/100 mb-0 max-w-4xl leading-relaxed font-regular animate-slide-up font-montserrat">
-                      Taking a bold idea of democratized financial research from launch to market-ready MVP through strategic product development and AI implementation.
+                      Taking a bold idea of democratized financial research from
+                      launch to market-ready MVP through strategic product
+                      development and AI implementation.
                     </p>
                     <a id="challenge1"></a>
                   </div>
@@ -197,14 +206,19 @@ const LaunchCaseStudy = () => {
                       Challenge
                     </h3>
                     <p className="text-white mb-6">
-                      The process for prospective donors to access reliable research on charitable organizations was controlled by expensive consultants, creating a bottleneck in the market. Annotate wanted to build a platform that could disrupt this model by delivering the same, or better, insights at a fraction of the cost.
+                      The process for prospective donors to access reliable
+                      research on charitable organizations was controlled by
+                      expensive consultants, creating a bottleneck in the
+                      market. Annotate wanted to build a platform that could
+                      disrupt this model by delivering the same, or better,
+                      insights at a fraction of the cost.
                     </p>
                     <div className="grid grid-cols md:grid-cols-2 gap-6">
                       {[
                         "Market-Ready MVP Launched: Successfully delivering a functional, AI-powered platform validated the core business model and enabled the client to execute on an aggressive GTM strategy.",
                         "99% Cost Reduction for End-Users: The platform was designed to deliver research reports for approximately $500, a dramatic reduction from industry-standard consultant fees ranging from $20,000 to $50,000.",
                         "Complex Data Problem Solved: By engineering a robust data pipeline capable of ingesting and synthesizing highly diverse data types into reliable, trustworthy insights.",
-                        "Created a Reliable Tech Moat: We built a proprietary AI engine that now serves as the client's core intellectual property and a major competitive advantage."
+                        "Created a Reliable Tech Moat: We built a proprietary AI engine that now serves as the client's core intellectual property and a major competitive advantage.",
                       ].map((outcome, index) => (
                         <div
                           key={index}
@@ -212,8 +226,8 @@ const LaunchCaseStudy = () => {
                         >
                           <div className="flex items-center space-x-3 mb-3">
                             <div className="mr-2">
-                              <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                                <Rocket className="w-5 h-5 text-white m-auto" />
+                              <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                                <Rocket className="w-6 h-6 text-white m-auto" />
                               </span>
                             </div>
                             Launch Success
@@ -239,37 +253,41 @@ const LaunchCaseStudy = () => {
                       Solution
                     </h3>
                     <p className="text-white mb-6">
-                      A strategic engagement with Indexnine's Launch services, starting with our proprietary Sprint Zero framework to define the MVP, followed by the rapid development of a sophisticated AI research agent built on retrieval-augmented generation (RAG) architecture.
+                      A strategic engagement with Indexnine's Launch services,
+                      starting with our proprietary Sprint Zero framework to
+                      define the MVP, followed by the rapid development of a
+                      sophisticated AI research agent built on
+                      retrieval-augmented generation (RAG) architecture.
                     </p>
                     <div className="grid grid-cols md:grid-cols-4 gap-6">
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl py-6 px-2 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Target className="w-5 h-5 text-white m-auto" />
+                          <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                            <Target className="w-6 h-6 text-white m-auto" />
                           </span>
                           <span className="text-white">Sprint Zero</span>
                         </div>
                       </div>
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl py-6 px-2 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Settings className="w-5 h-5 text-white m-auto" />
+                          <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                            <Settings className="w-6 h-6 text-white m-auto" />
                           </span>
                           <span className="text-white">RAG Architecture</span>
                         </div>
                       </div>
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Workflow className="w-5 h-5 text-white m-auto" />
+                          <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                            <Workflow className="w-6 h-6 text-white m-auto" />
                           </span>
                           <span className="text-white">AI Research Agent</span>
                         </div>
                       </div>
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl py-6 px-2 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Scale className="w-5 h-5 text-white m-auto" />
+                          <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                            <Scale className="w-6 h-6 text-white m-auto" />
                           </span>
                           <span className="text-white">Scalable Platform</span>
                         </div>
@@ -293,27 +311,48 @@ const LaunchCaseStudy = () => {
                   </h2>
 
                   <div className="bg-[#4A2424] mt-12 mb-8 flex">
-                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
-                      <img src={CaseInrImg} className="w-full h-full" />
-                    </div>
+                    <img src={CaseInrImg} className="w-full h-full" />
                   </div>
-                  
+
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    In the upper echelons of philanthropic contributions, making informed decisions is a surprisingly expensive and archaic process. An individual or family looking to donate major funding to a charitable cause would typically hire a specialized consultant. The consultant would then spend weeks or months manually conducting research, analyzing financial statements, and compiling a detailed report. This service alone would cost tens of thousands of dollars.
+                    In the upper echelons of philanthropic contributions, making
+                    informed decisions is a surprisingly expensive and archaic
+                    process. An individual or family looking to donate major
+                    funding to a charitable cause would typically hire a
+                    specialized consultant. The consultant would then spend
+                    weeks or months manually conducting research, analyzing
+                    financial statements, and compiling a detailed report. This
+                    service alone would cost tens of thousands of dollars.
                   </p>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The founder of Annotate, a veteran in the field of philanthropic wealth management, saw fundamental flaws to address in this model: it was inaccessible, inefficient, and unscalable. Annotate's vision was to disrupt this entire ecosystem by building a platform that could do what a team of consultants did, but faster, more efficiently, and at a price point—around $500 per report—that would democratize access to critical philanthropic intelligence.
+                    The founder of Annotate, a veteran in the field of
+                    philanthropic wealth management, saw fundamental flaws to
+                    address in this model: it was inaccessible, inefficient, and
+                    unscalable. Annotate's vision was to disrupt this entire
+                    ecosystem by building a platform that could do what a team
+                    of consultants did, but faster, more efficiently, and at a
+                    price point—around $500 per report—that would democratize
+                    access to critical philanthropic intelligence.
                   </p>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The challenge wasn't just about cost reduction—it was about creating a scalable solution that could process massive amounts of heterogeneous data from various sources, including IRS filings, financial statements, news articles, and social media, then synthesize this information into actionable insights that matched or exceeded the quality of human-generated reports.
+                    The challenge wasn't just about cost reduction—it was about
+                    creating a scalable solution that could process massive
+                    amounts of heterogeneous data from various sources,
+                    including IRS filings, financial statements, news articles,
+                    and social media, then synthesize this information into
+                    actionable insights that matched or exceeded the quality of
+                    human-generated reports.
                   </p>
                 </div>
               </div>
             </section>
-
-            <section className="p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl" style={{backgroundImage: `url(${BlogDetailsBg})`}}>
+            {/* 
+            <section
+              className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative shadow-inner shadow-white shadow-4xl rounded-bl-2xl rounded-br-2xl"
+              style={{ backgroundImage: `url(${BlogDetailsBg})` }}
+            >
               <div className="relative z-10">
                 <div className="max-w-6xl mx-auto">
                   <div>
@@ -321,38 +360,42 @@ const LaunchCaseStudy = () => {
                       Solution
                     </h3>
                     <p className="text-white mb-6">
-                      Indexnine implemented a comprehensive Sprint Zero framework followed by rapid MVP development, leveraging advanced RAG architecture and AI research agents to create a scalable, market-ready platform that democratized philanthropic research.
+                      Indexnine implemented a comprehensive Sprint Zero
+                      framework followed by rapid MVP development, leveraging
+                      advanced RAG architecture and AI research agents to create
+                      a scalable, market-ready platform that democratized
+                      philanthropic research.
                     </p>
-                    
+
                     <div className="grid md:grid-cols-4 gap-6">
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Rocket className="w-5 h-5 text-white m-auto" />
+                          <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                            <Rocket className="w-6 h-6 text-white m-auto" />
                           </span>
                           <span className="text-white">Sprint Zero</span>
                         </div>
                       </div>
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Brain className="w-5 h-5 text-white m-auto" />
+                          <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                            <Brain className="w-6 h-6 text-white m-auto" />
                           </span>
                           <span className="text-white">AI Engine</span>
                         </div>
                       </div>
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Settings className="w-5 h-5 text-white m-auto" />
+                          <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                            <Settings className="w-6 h-6 text-white m-auto" />
                           </span>
                           <span className="text-white">RAG Architecture</span>
                         </div>
                       </div>
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Scale className="w-5 h-5 text-white m-auto" />
+                          <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                            <Scale className="w-6 h-6 text-white m-auto" />
                           </span>
                           <span className="text-white">Scalable Platform</span>
                         </div>
@@ -361,7 +404,7 @@ const LaunchCaseStudy = () => {
                   </div>
                 </div>
               </div>
-            </section>
+            </section> */}
 
             {/* Solution Section with Detailed Phases */}
             <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl mb-12 shadow-inner shadow-white shadow-4xl">
@@ -375,15 +418,21 @@ const LaunchCaseStudy = () => {
                   </h2>
 
                   <p className="text-lg text-foreground-dark leading-relaxed mb-12">
-                    The client's challenge was a perfect match for Indexnine's core capabilities. This wasn't just about building software; it was about engineering a market disruptor that could democratize access to critical philanthropic intelligence through advanced AI and data processing.
+                    The client's challenge was a perfect match for Indexnine's
+                    core capabilities. This wasn't just about building software;
+                    it was about engineering a market disruptor that could
+                    democratize access to critical philanthropic intelligence
+                    through advanced AI and data processing.
                   </p>
 
                   <div className="space-y-12">
                     {/* Phase 1 */}
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
-                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
-                          <span className="font-bold text-foreground m-auto">1</span>
+                        <span className="flex w-12 h-12 rounded-full bg-[#505DFD] ">
+                          <span className="font-light text-xl text-foreground m-auto">
+                            1
+                          </span>
                         </span>
                       </div>
                       <div className="md:col-span-11 backdrop-blur-xl bg-[#ffffff] border border-glass-border rounded-2xl p-6">
@@ -391,7 +440,13 @@ const LaunchCaseStudy = () => {
                           Phase 1: Sprint Zero Framework
                         </h3>
                         <p className="text-foreground-dark-muted leading-relaxed">
-                          Our engagement began with comprehensive Sprint Zero workshops to validate the market opportunity and technical feasibility. We worked closely with Annotate's leadership to understand the philanthropic research landscape, identify key data sources, and define the MVP scope that would deliver maximum market impact with optimal resource efficiency.
+                          Our engagement began with comprehensive Sprint Zero
+                          workshops to validate the market opportunity and
+                          technical feasibility. We worked closely with
+                          Annotate's leadership to understand the philanthropic
+                          research landscape, identify key data sources, and
+                          define the MVP scope that would deliver maximum market
+                          impact with optimal resource efficiency.
                         </p>
                       </div>
                     </div>
@@ -399,8 +454,10 @@ const LaunchCaseStudy = () => {
                     {/* Phase 2 */}
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
-                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
-                          <span className="font-bold text-foreground m-auto">2</span>
+                        <span className="flex w-12 h-12 rounded-full bg-[#505DFD] ">
+                          <span className="font-light text-xl text-foreground m-auto">
+                            2
+                          </span>
                         </span>
                       </div>
                       <div className="md:col-span-11 backdrop-blur-xl bg-glass-bg/10 border border-glass-border rounded-2xl p-6">
@@ -408,7 +465,11 @@ const LaunchCaseStudy = () => {
                           Phase 2: RAG Architecture & AI Research Engine
                         </h3>
                         <p className="text-foreground-dark leading-relaxed mb-6">
-                          Building a system that could analyze charitable organizations required sophisticated AI capabilities that could process heterogeneous data from multiple sources and synthesize actionable insights. We architected and implemented:
+                          Building a system that could analyze charitable
+                          organizations required sophisticated AI capabilities
+                          that could process heterogeneous data from multiple
+                          sources and synthesize actionable insights. We
+                          architected and implemented:
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-6">
@@ -417,7 +478,11 @@ const LaunchCaseStudy = () => {
                               Advanced RAG Architecture
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Implemented retrieval-augmented generation system that could ingest and process IRS filings, financial statements, news articles, and social media data to create comprehensive organizational profiles.
+                              Implemented retrieval-augmented generation system
+                              that could ingest and process IRS filings,
+                              financial statements, news articles, and social
+                              media data to create comprehensive organizational
+                              profiles.
                             </p>
                           </div>
                           <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
@@ -425,7 +490,11 @@ const LaunchCaseStudy = () => {
                               AI Research Agents
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Developed specialized AI agents trained on philanthropic analysis patterns that could evaluate organizational effectiveness, financial health, and impact measurement with consultant-level accuracy.
+                              Developed specialized AI agents trained on
+                              philanthropic analysis patterns that could
+                              evaluate organizational effectiveness, financial
+                              health, and impact measurement with
+                              consultant-level accuracy.
                             </p>
                           </div>
                           <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
@@ -433,7 +502,10 @@ const LaunchCaseStudy = () => {
                               Data Pipeline Engineering
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Built scalable data processing infrastructure that could handle real-time analysis of hundreds of data sources while maintaining data quality and consistency across all organizational assessments.
+                              Built scalable data processing infrastructure that
+                              could handle real-time analysis of hundreds of
+                              data sources while maintaining data quality and
+                              consistency across all organizational assessments.
                             </p>
                           </div>
                           <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
@@ -441,7 +513,10 @@ const LaunchCaseStudy = () => {
                               Quality Assurance Framework
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Implemented comprehensive validation systems that ensured AI-generated reports met the quality standards expected by high-net-worth donors and their advisors.
+                              Implemented comprehensive validation systems that
+                              ensured AI-generated reports met the quality
+                              standards expected by high-net-worth donors and
+                              their advisors.
                             </p>
                           </div>
                         </div>
@@ -451,8 +526,10 @@ const LaunchCaseStudy = () => {
                     {/* Phase 3 */}
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
-                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
-                          <span className="font-bold text-foreground m-auto">3</span>
+                        <span className="flex w-12 h-12 rounded-full bg-[#505DFD] ">
+                          <span className="font-light text-xl text-foreground m-auto">
+                            3
+                          </span>
                         </span>
                       </div>
                       <div className="md:col-span-11 backdrop-blur-xl bg-glass-bg/10 border border-glass-border rounded-2xl p-6">
@@ -460,7 +537,11 @@ const LaunchCaseStudy = () => {
                           Phase 3: Platform Launch & Market Validation
                         </h3>
                         <p className="text-foreground-dark-muted leading-relaxed mb-6">
-                          With the core platform developed, we focused on market launch strategy and continuous refinement based on real user feedback. This phase included comprehensive testing, user onboarding optimization, and performance tuning to ensure market readiness.
+                          With the core platform developed, we focused on market
+                          launch strategy and continuous refinement based on
+                          real user feedback. This phase included comprehensive
+                          testing, user onboarding optimization, and performance
+                          tuning to ensure market readiness.
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-6">
@@ -469,7 +550,10 @@ const LaunchCaseStudy = () => {
                               User Experience Optimization
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Refined the platform interface based on beta user feedback to ensure intuitive navigation and clear presentation of complex analytical insights for non-technical users.
+                              Refined the platform interface based on beta user
+                              feedback to ensure intuitive navigation and clear
+                              presentation of complex analytical insights for
+                              non-technical users.
                             </p>
                           </div>
                           <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
@@ -477,7 +561,10 @@ const LaunchCaseStudy = () => {
                               Performance & Scalability
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              Optimized system architecture to handle increasing user demand while maintaining sub-minute report generation times, ensuring consistent user experience as the platform scales.
+                              Optimized system architecture to handle increasing
+                              user demand while maintaining sub-minute report
+                              generation times, ensuring consistent user
+                              experience as the platform scales.
                             </p>
                           </div>
                         </div>
@@ -497,27 +584,60 @@ const LaunchCaseStudy = () => {
                     Delivering Exponential Value Through AI Innovation
                   </h2>
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
-                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">99%</h3>
-                      <p className="text-foreground text-xs mb-0">Cost Reduction</p>
+                    <div
+                      className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
+                        99%
+                      </h3>
+                      <p className="text-foreground text-xs mb-0">
+                        Cost Reduction
+                      </p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
-                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
-                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">$500</h3>
-                      <p className="text-foreground text-xs mb-0">Per Report Cost</p>
+                    <div
+                      className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
+                        $500
+                      </h3>
+                      <p className="text-foreground text-xs mb-0">
+                        Per Report Cost
+                      </p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
-                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
-                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">6</h3>
-                      <p className="text-foreground text-xs mb-0">Week Delivery</p>
+                    <div
+                      className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
+                        6
+                      </h3>
+                      <p className="text-foreground text-xs mb-0">
+                        Week Delivery
+                      </p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
-                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
-                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">100+</h3>
-                      <p className="text-foreground text-xs mb-0">Data Sources</p>
+                    <div
+                      className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+                    >
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
+                        100+
+                      </h3>
+                      <p className="text-foreground text-xs mb-0">
+                        Data Sources
+                      </p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
                   </div>
 
                   <div className="text-center mb-8">
                     <p className="text-foreground-dark leading-relaxed mb-6">
-                      The platform successfully delivered a 99% cost reduction in philanthropic research, reducing report costs from $50,000 to $500 while maintaining consultant-level quality. The AI-powered system democratized access to critical philanthropic intelligence for donors of all sizes.
+                      The platform successfully delivered a 99% cost reduction
+                      in philanthropic research, reducing report costs from
+                      $50,000 to $500 while maintaining consultant-level
+                      quality. The AI-powered system democratized access to
+                      critical philanthropic intelligence for donors of all
+                      sizes.
                     </p>
                     <a id="whyWorked"></a>
                   </div>
@@ -528,11 +648,12 @@ const LaunchCaseStudy = () => {
             {/* Why It Worked Section - Enhanced */}
             <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl p-8 shadow-glass border border-glass-border backdrop-blur-xl mb-12">
               <div className="relative z-10">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                <h2 className="text-2xl font-bold text-foreground-dark mb-2 text-center font-montserrat">
                   Why It Worked
                 </h2>
-                <p className="text-foreground-dark leading-relaxed mb-8">
-                  The success of this project was a reflection of our core values and differentiators in action.
+                <p className="text-foreground-dark text-center mb-8">
+                  The success of this project was a reflection of our core
+                  values and differentiators in action.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -545,8 +666,8 @@ const LaunchCaseStudy = () => {
                     <div key={index} className="mb-4">
                       <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50 mb-2"></span>
                       <div className="flex flex-col text-center">
-                        <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
-                          <CheckCircle className="w-5 h-5 text-[#8389DC] m-auto" />
+                        <span className="mx-auto flex w-14 h-14 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
+                          <CheckCircle className="w-6 h-6 text-[#8389DC] m-auto" />
                         </span>
                         <span className="text-foreground-dark">{result}</span>
                       </div>
@@ -566,12 +687,18 @@ const LaunchCaseStudy = () => {
             <span className="leading-[1.4]">Ready to Launch Your Vision?</span>
           </h2>
           <p className="text-xl text-foreground/80 mb-8 max-w-3xl mx-auto font-montserrat">
-            Partner with Indexnine to transform your innovative idea into a market-ready platform that creates real impact. Our proven Sprint Zero framework and AI expertise ensure your launch delivers maximum value.
+            Partner with Indexnine to transform your innovative idea into a
+            market-ready platform that creates real impact. Our proven Sprint
+            Zero framework and AI expertise ensure your launch delivers maximum
+            value.
           </p>
           <p className="text-lg text-foreground/70 mb-12 max-w-xl mx-auto font-montserrat">
-            Want to disrupt your industry with AI? So do we. Set up a free consultation with Indexnine today.
+            Want to disrupt your industry with AI? So do we. Set up a free
+            consultation with Indexnine today.
           </p>
-          <Button variant="btnSecondary" size="lg">Get Started</Button>
+          <Button variant="btnSecondary" size="lg">
+            Get Started
+          </Button>
         </div>
       </section>
       <div className="bg-background">
