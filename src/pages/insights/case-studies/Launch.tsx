@@ -309,7 +309,7 @@ const LaunchCaseStudy = () => {
             </section>
 
             {/* Detailed Challenge Section */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative mb-4 rounded-2xl shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
                   <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
@@ -377,7 +377,7 @@ const LaunchCaseStudy = () => {
             </section>
 
             {/* Solution Section with Detailed Phases */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl mb-12 shadow-inner shadow-white shadow-4xl">
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative  rounded-2xl mb-12 shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
                   <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
@@ -613,7 +613,7 @@ const LaunchCaseStudy = () => {
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-6">
-                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6 col-span-2">
                             <h4 className="font-semibold text-foreground-dark mb-2">
                               Successfully Launched MVP
                             </h4>
@@ -627,7 +627,7 @@ const LaunchCaseStudy = () => {
                               product-market fit.
                             </p>
                           </div>
-                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6 col-span-2">
                             <h4 className="font-semibold text-foreground-dark mb-2">
                               Created a Platform for Disruption
                             </h4>
