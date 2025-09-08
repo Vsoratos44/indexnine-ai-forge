@@ -130,7 +130,7 @@ const Blogs = () => {
       id: "ai-assisted-software-engineering-cursor",
       img: blogImg2,
       title:
-        "Beyond Autocomplete: When AI Meets UI to Supercharge Software Engineering",
+        "Beyond Autocomplete: When AI Meets UI to Supercharge Software Engineering with Cursor AI",
       excerpt:
         "Discover how AI code generation tools like Cursor AI can accelerate React development. Learn our proven framework for AI-assisted engineering with measurable productivity gains.",
       author: "Senior UI Architect",

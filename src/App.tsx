@@ -141,7 +141,7 @@ const App = () => {
               <Route path="/insights/blogs/robot-framework-vs-playwright-automation" element={<RobotFrameworkVsPlaywright />} />
               <Route path="/insights/blogs/ai-change-management-playbook" element={<AiChangeManagementPlaybook />} />
               <Route path="/insights/blogs/agentic-ai-enterprise-future" element={<AgenticAiEnterpriseFuture />} />
-              <Route path="/insights/blog/ai-assisted-software-engineering-cursor" element={<BlogPost />} />
+              <Route path="/insights/blogs/ai-assisted-software-engineering-cursor" element={<BlogPost />} />
               <Route path="/insights/blog/microservices-vs-monolith-decision-guide" element={<BlogPost />} />
               <Route path="/insights/blog/modern-data-platforms-enterprise-guide" element={<BlogPost />} />
               <Route path="/insights/blog/security-first-development-practices" element={<BlogPost />} />
