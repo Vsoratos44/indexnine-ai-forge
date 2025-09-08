@@ -88,6 +88,13 @@ const PivotCaseStudy = () => {
     <Handshake className="w-6 h-6 text-brand-primary m-auto " />,
   ];
 
+  const outcomeTitle = [
+    "Mission-Critical Integration",
+    "Upgraded Scope, Expanded Value",
+    "Enterprise Architecture",
+    "Successful $165M+ Acquisition",
+  ];
+
   return (
     <div className="min-h-screen bg-white relative  bg-[#fff] bg-no-repeat">
       {/* SEO Structured Data */}
@@ -215,7 +222,7 @@ const PivotCaseStudy = () => {
 
             {/* Overview Section */}
             <section
-              className={`p-8 bg-background relative overflow-hidden rounded-tl-2xl rounded-tr-2xl ${styles.middleCardBg2}`}
+              className={`p-8 mb-4 bg-background relative overflow-hidden rounded-2xl  ${styles.middleCardBg2}`}
             >
               <div className=" relative z-10">
                 <div className="max-w-6xl mx-auto">
@@ -233,38 +240,13 @@ const PivotCaseStudy = () => {
                         to evolve from a passive reporting tool into an active,
                         enterprise-grade management platform.
                       </p>
-                      <div className="grid grid-cols md:grid-cols-2  gap-6 ">
-                        {[
-                          "Mission-Critical Integration: Evolved the product from a supplemental visibility tool into an indispensable, action-oriented, core operational system for enterprise customers.",
-                          "Upgraded Scope, Expanded Value: By transforming the product into a comprehensive Identity Governance and Administration (IGA) platform, it could provide an IGA solution to a broader range of enterprise customers, expanding its total addressable market.",
-                          "Enterprise Architecture: By delivering a robust, secure, and scalable platform, the client could now meet the rigorous technical and compliance standards of its expanded customer base as well as the acquisition standards of a publicly traded company.",
-                          "Successful $165M+ Acquisition: The pivot directly enabled Zilla's acquisition by, a global leader in identity security.",
-                        ].map((outcome, index) => (
-                          <div
-                            key={index}
-                            className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff25] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full"
-                          >
-                            <div className="flex items-center space-x-3 mb-3">
-                              <div className="mr-2">
-                                <span className="flex w-14 h-14 rounded-full bg-[#2E348233] ">
-                                  <ArrowRightLeft className="w-6 h-6 text-white m-auto" />
-                                </span>
-                              </div>
-                              Passive → Active
-                            </div>
-                            <div className="text-foreground-muted text-sm">
-                              {outcome}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
             <section
-              className={`p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl ${styles.middleCardBg2}`}
+              className={`p-8 mb-12 bg-background relative overflow-hidden rounded-2xl  ${styles.middleCardBg2}`}
             >
               <div className=" relative z-10">
                 <div className="max-w-6xl mx-auto">
@@ -317,13 +299,41 @@ const PivotCaseStudy = () => {
                         </div>
                         <a id="challange2" className="absolute mt-[100px]"></a>
                       </div>
+                      <h3 className="text-lg font-semibold text-white mb-4 mt-8 font-montserrat">
+                        Key Outcomes
+                      </h3>
+                      <div className="grid grid-cols md:grid-cols-2  gap-6 ">
+                        {[
+                          "Evolved the product from a supplemental visibility tool into an indispensable, action-oriented, core operational system for enterprise customers.",
+                          "By transforming the product into a comprehensive Identity Governance and Administration (IGA) platform, it could provide an IGA solution to a broader range of enterprise customers, expanding its total addressable market.",
+                          "By delivering a robust, secure, and scalable platform, the client could now meet the rigorous technical and compliance standards of its expanded customer base as well as the acquisition standards of a publicly traded company.",
+                          "The pivot directly enabled Zilla's acquisition by, a global leader in identity security.",
+                        ].map((outcome, index) => (
+                          <div
+                            key={index}
+                            className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff25] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full"
+                          >
+                            <div className="flex items-center space-x-3 mb-3">
+                              <div className="mr-2">
+                                <span className="flex w-14 h-14 rounded-full bg-[#2E348233] ">
+                                  <ArrowRightLeft className="w-6 h-6 text-white m-auto" />
+                                </span>
+                              </div>
+                              {outcomeTitle[index]}
+                            </div>
+                            <div className="text-foreground text-sm">
+                              {outcome}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
             {/* Challenge Section */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative mb-4 rounded-2xl shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
                   <h3 className="text-lg font-semibold text-brand-primary-dark  mb-4 font-montserrat">
@@ -401,7 +411,7 @@ const PivotCaseStudy = () => {
             </section>
 
             {/* Solution Section */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl mb-12 shadow-inner shadow-white shadow-4xl">
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-2xl  mb-12 shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
                   <h3 className="text-lg font-semibold text-brand-primary-dark  mb-4 font-montserrat">
