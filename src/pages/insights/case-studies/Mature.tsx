@@ -323,23 +323,33 @@ const MatureCaseStudy = () => {
               </div>
             </section>
 
-            {/* Technical Implementation Section */}
+            {/* Challenge Section */}
             <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
                   <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Technical Implementation
+                    Challenge
                   </h3>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                    Event-Driven Architecture for Enterprise Scale
+                    A Platform on the Brink of Collapse
                   </h2>
 
+                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
+                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
+                      <img src={CaseInrImg} className="w-full h-full" />
+                    </div>
+                  </div>
+
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The modernization strategy centered on implementing event-driven architecture with Apache Kafka as the backbone for real-time data streaming. This approach enabled gradual migration of services while maintaining system integrity and allowing new microservices to coexist with legacy components during the transition.
+                    For thousands of merchants across India, Genesys's platform was their lifeline to the world of e-commerce. The platform was an integration engine, connecting sellers on platforms like Amazon, Myntra, and Flipkart, and managing a constant flow of inventory updates, orders, and transactions. The problem? The engine was over 16 years old, built on legacy PHP, and was bursting at the seams.
                   </p>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    Each legacy component was carefully extracted into microservices using domain-driven design principles, with comprehensive API gateways and service mesh architecture ensuring secure, scalable communication between services while maintaining backwards compatibility with existing integrations.
+                    The platform's core architectural flaw was a tightly-coupled, monolithic design. With 178 different e-commerce integrations, the system was incredibly fragile. Every time one of those partners made a change to their API—an almost daily occurrence—it sent a shockwave through the entire system, causing it to crash.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The challenge was compounded by the need to maintain 100% uptime while completely rebuilding the architecture. Any downtime would directly impact thousands of merchants' livelihoods and damage trust built over 16 years of operation.
                   </p>
                   <a id="results" className="absolute mt-[100px]"></a>
                 </div>
@@ -395,7 +405,7 @@ const MatureCaseStudy = () => {
                   <div>
                     <div className="flex items-center gap-3 mb-4">
                       <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <Workflow className="w-5 h-5 text-brand-primary m-auto" />
+                        <Boxes className="w-5 h-5 text-brand-primary m-auto" />
                       </div>
                       <h4 className="text-xl font-bold text-foreground font-montserrat">
                         Phased Migration Strategy
@@ -408,7 +418,7 @@ const MatureCaseStudy = () => {
                   <div>
                     <div className="flex items-center gap-3 mb-4">
                       <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <ArrowRightLeft className="w-5 h-5 text-brand-primary m-auto" />
+                        <Rocket className="w-5 h-5 text-brand-primary m-auto" />
                       </div>
                       <h4 className="text-xl font-bold text-foreground font-montserrat">
                         Event-Driven Architecture
@@ -421,7 +431,7 @@ const MatureCaseStudy = () => {
                   <div>
                     <div className="flex items-center gap-3 mb-4">
                       <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <Shield className="w-5 h-5 text-brand-primary m-auto" />
+                        <Workflow className="w-5 h-5 text-brand-primary m-auto" />
                       </div>
                       <h4 className="text-xl font-bold text-foreground font-montserrat">
                         Risk Mitigation Framework
@@ -434,7 +444,7 @@ const MatureCaseStudy = () => {
                   <div>
                     <div className="flex items-center gap-3 mb-4">
                       <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <CheckCircle className="w-5 h-5 text-brand-primary m-auto" />
+                        <Handshake className="w-5 h-5 text-brand-primary m-auto" />
                       </div>
                       <h4 className="text-xl font-bold text-foreground font-montserrat">
                         Integration Preservation
@@ -442,125 +452,6 @@ const MatureCaseStudy = () => {
                     </div>
                     <p className="text-foreground-muted leading-relaxed mb-6">
                       Advanced API gateway and service mesh architecture maintained full backward compatibility while enabling modern microservices patterns and improved performance.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section
-              className={`p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl ${styles.middleCardBg2}`}
-            >
-              <div className="relative z-10">
-                <div className="max-w-6xl mx-auto">
-                  <div>
-                    <h3 className="text-lg font-semibold text-white mb-4 font-montserrat">
-                      Solution
-                    </h3>
-                    <p className="text-white mb-6">
-                      A comprehensive platform modernization using event-driven architecture, asynchronous message queues, and a canonical data model to create a resilient, scalable system with zero-downtime migration.
-                    </p>
-                    <div className="grid grid-cols md:grid-cols-4 gap-6">
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                        <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Workflow className="w-5 h-5 text-white m-auto" />
-                          </span>
-                          <span className="text-white">Event-Driven</span>
-                        </div>
-                      </div>
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                        <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Settings className="w-5 h-5 text-white m-auto" />
-                          </span>
-                          <span className="text-white">Microservices</span>
-                        </div>
-                      </div>
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                        <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Shield className="w-5 h-5 text-white m-auto" />
-                          </span>
-                          <span className="text-white">Zero-Downtime</span>
-                        </div>
-                      </div>
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                        <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Scale className="w-5 h-5 text-white m-auto" />
-                          </span>
-                          <span className="text-white">Scalable</span>
-                        </div>
-                      </div>
-                      <a id="solution1" className="absolute mt-[100px]"></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Challenge Section */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
-              <div className="mx-auto relative z-10">
-                <div className="max-w-8xl mx-auto">
-                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Challenge
-                  </h3>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                    A Platform on the Brink of Collapse
-                  </h2>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    For thousands of merchants across India, Genesys's platform was their lifeline to the world of e-commerce. The platform was an integration engine, connecting sellers on platforms like Amazon, Myntra, and Flipkart, and managing a constant flow of inventory updates, orders, and transactions. The problem? The engine was over 16 years old, built on legacy PHP, and was bursting at the seams.
-                  </p>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The platform's core architectural flaw was a tightly-coupled, monolithic design. With 178 different e-commerce integrations, the system was incredibly fragile. Every time one of those partners made a change to their API—an almost daily occurrence—it sent a shockwave through the entire system, causing it to crash.
-                  </p>
-                  <a id="results" className="absolute mt-[100px]"></a>
-                </div>
-              </div>
-            </section>
-
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
-              <div className="mx-auto relative z-10">
-                <div className="max-w-8xl mx-auto">
-                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Results & Impact
-                  </h3>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                    Transforming a Mission-Critical Platform
-                  </h2>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The modernized platform achieved 100% uptime and successfully migrated all 178 integrations without service interruption. The event-driven architecture eliminated system fragility and positioned Genesys for sustainable growth and continued market leadership.
-                  </p>
-                  <a id="whyWorked" className="absolute mt-[100px]"></a>
-                </div>
-              </div>
-            </section>
-
-            <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl p-8 shadow-glass border border-glass-border backdrop-blur-xl">
-              <div className="relative z-10">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                  Why It Worked
-                </h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h4 className="text-xl font-bold text-foreground mb-4 font-montserrat">
-                      Architectural Expertise
-                    </h4>
-                    <p className="text-foreground-muted leading-relaxed mb-6">
-                      Our deep understanding of event-driven architecture and microservices enabled us to design a resilient system that could handle the complexity of 178 integrations.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-foreground mb-4 font-montserrat">
-                      Disciplined De-risking
-                    </h4>
-                    <p className="text-foreground-muted leading-relaxed mb-6">
-                      Our methodical approach to zero-downtime migration ensured business continuity while completely transforming the underlying architecture.
                     </p>
                   </div>
                 </div>
