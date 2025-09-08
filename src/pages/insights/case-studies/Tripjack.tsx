@@ -240,39 +240,244 @@ const TripjackCaseStudy = () => {
               </div>
             </section>
 
-            {/* Extended content sections would continue here... */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
+            {/* Challenge Section */}
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
                   <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Results & Impact
+                    Challenge
                   </h3>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                    Accelerated B2B2C Market Expansion
+                    Pioneering Travel Technology Innovation
                   </h2>
 
-                  <div className="grid md:grid-cols-3 gap-8 mb-8">
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">75%</div>
-                      <div className="text-sm text-foreground-muted">Time-to-Market Reduction</div>
-                      <div className="text-xs text-foreground-muted mt-2">Faster integrations</div>
-                    </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">50+</div>
-                      <div className="text-sm text-foreground-muted">New B2B2C Partners</div>
-                      <div className="text-xs text-foreground-muted mt-2">Revenue channel expansion</div>
-                    </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">300%</div>
-                      <div className="text-sm text-foreground-muted">Platform Scalability</div>
-                      <div className="text-xs text-foreground-muted mt-2">Performance improvement</div>
+                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
+                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
+                      <img src={CaseInrImg} className="w-full h-full" />
                     </div>
                   </div>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    TripJack successfully modernized their platform and launched new B2B2C revenue streams, reducing integration time-to-market by 75% while improving system performance by 300%. The modern architecture enabled rapid partner onboarding and scalable growth.
+                    TripJack faced the challenge of modernizing their legacy travel technology platform while expanding into B2B2C markets. The existing system's monolithic architecture created integration bottlenecks that prevented rapid partner onboarding and limited their ability to capture new revenue opportunities in the evolving travel ecosystem.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    With travel technology rapidly evolving toward NDC protocols and direct airline integrations, TripJack needed to reduce their integration time-to-market by 75% while maintaining platform reliability for existing customers. The challenge was compounded by the need to support both legacy GDS systems and modern API-first integrations simultaneously.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The transformation required building a scalable microservices architecture that could handle the complexity of travel inventory management while enabling rapid deployment of new features and partner integrations across multiple revenue channels.
+                  </p>
+                  <a id="results" className="absolute mt-[100px]"></a>
+                </div>
+              </div>
+            </section>
+
+            {/* Results Section */}
+            <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
+              <div className="container mx-auto px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto">
+                  <h2 className="text-2xl font-bold text-foreground-dark mb-12 text-center font-montserrat">
+                    Accelerated B2B2C Market Expansion
+                  </h2>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">75%</h3>
+                      <p className="text-foreground text-xs mb-0">Time-to-Market Reduction</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
+                    </div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">50+</h3>
+                      <p className="text-foreground text-xs mb-0">New B2B2C Partners</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
+                    </div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">300%</h3>
+                      <p className="text-foreground text-xs mb-0">Platform Scalability</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
+                    </div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">NDC</h3>
+                      <p className="text-foreground text-xs mb-0">Protocol Ready</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
+                    </div>
+                  </div>
+                  <div className={`p-8 bg-background relative md:mr-[-6rem] rounded-xl mb-6 ${styles.middleCardBg2}`}>
+                    <p className="text-lg text-foreground text-center font-medium">
+                      TripJack successfully modernized their platform and launched new B2B2C revenue streams, reducing integration time-to-market by 75% while improving system performance by 300% and enabling rapid partner onboarding.
+                    </p>
+                    <a id="whyWorked"></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Why It Worked Section */}
+            <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
+              <div className="container mx-auto px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto">
+                  <div className="mb-0">
+                    <h3 className="text-xl font-bold text-foreground-dark mb-6 font-montserrat text-center">
+                      Why It Worked
+                      <br />
+                      <span className="inline-block w-24 h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50"></span>
+                    </h3>
+                    <p className="text-md text-foreground-dark-muted text-center mb-8">
+                      The TripJack transformation showcases our expertise in travel technology modernization and B2B2C platform expansion.
+                    </p>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {[
+                        "Microservices Architecture: Event-driven microservices enabled rapid integration development and deployment, reducing time-to-market for new travel supplier partnerships by 75%.",
+                        "NDC Protocol Integration: Native support for modern airline NDC protocols positioned TripJack at the forefront of travel technology innovation while maintaining backward compatibility.",
+                        "B2B2C Platform Strategy: Purpose-built B2B2C capabilities enabled TripJack to capture new revenue streams and expand their total addressable market significantly.",
+                        "Scalable Integration Hub: The modern integration platform supports 10x more concurrent partner connections while maintaining sub-100ms response times for real-time inventory queries."
+                      ].map((result, index) => (
+                        <div key={index} className="mb-4">
+                          <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50 mb-2"></span>
+                          <div className="flex flex-col text-center">
+                            <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
+                              <CheckCircle className="w-5 h-5 text-[#8389DC] m-auto" />
+                            </span>
+                            <span className="text-foreground-dark">{result}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
+        <div className="container mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+            <span className="leading-[1.4]">
+              Ready to Transform Your Travel Platform?
+            </span>
+          </h2>
+          <p className="text-xl text-foreground/80 mb-8 max-w-3xl mx-auto font-montserrat">
+            Modernize your travel technology stack and expand into new revenue channels. Let's build the platform that powers your next phase of growth.
+          </p>
+          <p className="text-lg text-foreground/70 mb-12 max-w-xl mx-auto font-montserrat">
+            Ready to accelerate your B2B2C expansion? Let's discuss your platform modernization strategy.
+          </p>
+          <Button variant="btnSecondary" size="lg">
+            Get Started
+          </Button>
+        </div>
+      </section>
+      <div className="bg-background">
+        <Footer />
+      </div>
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
+              <div className="mx-auto relative z-10">
+                <div className="max-w-8xl mx-auto">
+                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
+                    Challenge
+                  </h3>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                    Pioneering Travel Technology Innovation
+                  </h2>
+
+                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
+                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
+                      <img src={CaseInrImg} className="w-full h-full" />
+                    </div>
+                  </div>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    TripJack faced the challenge of modernizing their legacy travel technology platform while expanding into B2B2C markets. The existing system's monolithic architecture created integration bottlenecks that prevented rapid partner onboarding and limited their ability to capture new revenue opportunities in the evolving travel ecosystem.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    With travel technology rapidly evolving toward NDC protocols and direct airline integrations, TripJack needed to reduce their integration time-to-market by 75% while maintaining platform reliability for existing customers. The challenge was compounded by the need to support both legacy GDS systems and modern API-first integrations simultaneously.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The transformation required building a scalable microservices architecture that could handle the complexity of travel inventory management while enabling rapid deployment of new features and partner integrations across multiple revenue channels.
                   </p>
                   <a id="whyWorked" className="absolute mt-[100px]"></a>
+                </div>
+              </div>
+            </section>
+
+            {/* Results Section */}
+            <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
+              <div className="container mx-auto px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto">
+                  <h2 className="text-2xl font-bold text-foreground-dark mb-12 text-center font-montserrat">
+                    Accelerated B2B2C Market Expansion
+                  </h2>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">75%</h3>
+                      <p className="text-foreground text-xs mb-0">Time-to-Market Reduction</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
+                    </div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">50+</h3>
+                      <p className="text-foreground text-xs mb-0">New B2B2C Partners</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
+                    </div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">300%</h3>
+                      <p className="text-foreground text-xs mb-0">Platform Scalability</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
+                    </div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">NDC</h3>
+                      <p className="text-foreground text-xs mb-0">Protocol Ready</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
+                    </div>
+                  </div>
+                  <div className={`p-8 bg-background relative md:mr-[-6rem] rounded-xl mb-6 ${styles.middleCardBg2}`}>
+                    <p className="text-lg text-foreground text-center font-medium">
+                      TripJack successfully modernized their platform and launched new B2B2C revenue streams, reducing integration time-to-market by 75% while improving system performance by 300% and enabling rapid partner onboarding.
+                    </p>
+                    <a id="whyWorked"></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Why It Worked Section */}
+            <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
+              <div className="container mx-auto px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto">
+                  <div className="mb-0">
+                    <h3 className="text-xl font-bold text-foreground-dark mb-6 font-montserrat text-center">
+                      Why It Worked
+                      <br />
+                      <span className="inline-block w-24 h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50"></span>
+                    </h3>
+                    <p className="text-md text-foreground-dark-muted text-center mb-8">
+                      The TripJack transformation showcases our expertise in travel technology modernization and B2B2C platform expansion.
+                    </p>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {[
+                        "Microservices Architecture: Event-driven microservices enabled rapid integration development and deployment, reducing time-to-market for new travel supplier partnerships by 75%.",
+                        "NDC Protocol Integration: Native support for modern airline NDC protocols positioned TripJack at the forefront of travel technology innovation while maintaining backward compatibility.",
+                        "B2B2C Platform Strategy: Purpose-built B2B2C capabilities enabled TripJack to capture new revenue streams and expand their total addressable market significantly.",
+                        "Scalable Integration Hub: The modern integration platform supports 10x more concurrent partner connections while maintaining sub-100ms response times for real-time inventory queries."
+                      ].map((result, index) => (
+                        <div key={index} className="mb-4">
+                          <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50 mb-2"></span>
+                          <div className="flex flex-col text-center">
+                            <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
+                              <CheckCircle className="w-5 h-5 text-[#8389DC] m-auto" />
+                            </span>
+                            <span className="text-foreground-dark">{result}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
@@ -406,12 +611,25 @@ const TripjackCaseStudy = () => {
               <Button size="lg" variant="secondary" className="text-brand-primary">
                 Get Started
               </Button>
-            </section>
-          </div>
+      {/* CTA Section */}
+      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
+        <div className="container mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+            <span className="leading-[1.4]">
+              Ready to Transform Your Travel Platform?
+            </span>
+          </h2>
+          <p className="text-xl text-foreground/80 mb-8 max-w-3xl mx-auto font-montserrat">
+            Modernize your travel technology stack and expand into new revenue channels.
+          </p>
+          <Button variant="btnSecondary" size="lg">
+            Get Started
+          </Button>
         </div>
+      </section>
+      <div className="bg-background">
+        <Footer />
       </div>
-      
-      <Footer />
     </div>
   );
 };

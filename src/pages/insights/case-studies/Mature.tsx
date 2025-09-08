@@ -238,39 +238,6 @@ const MatureCaseStudy = () => {
               </div>
             </section>
 
-            {/* Detailed Challenge Section */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
-              <div className="mx-auto relative z-10">
-                <div className="max-w-8xl mx-auto">
-                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Challenge
-                  </h3>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                    Mission-Critical Legacy System Modernization
-                  </h2>
-
-                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
-                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
-                      <img src={CaseInrImg} className="w-full h-full" />
-                    </div>
-                  </div>
-                  
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    Genesys operated a 16-year-old e-commerce platform built on legacy PHP architecture that had grown organically over time, accumulating technical debt and performance limitations. The platform processed millions of dollars in transactions monthly and supported a complex ecosystem of 178 third-party integrations, making any modernization effort extremely high-risk.
-                  </p>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The legacy system's monolithic architecture created scalability bottlenecks, made feature development increasingly difficult, and posed significant security risks. However, the platform was mission-critical to thousands of merchants who depended on it for their daily operations, requiring zero-downtime migration and seamless user experience throughout the transformation.
-                  </p>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The challenge was compounded by the need to maintain full backward compatibility with existing integrations while implementing modern event-driven architecture, microservices patterns, and cloud-native infrastructure to support future growth and innovation.
-                  </p>
-                  <a id="solution1" className="absolute mt-[100px]"></a>
-                </div>
-              </div>
-            </section>
-
             <section
               className={`p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl ${styles.middleCardBg2}`}
             >
@@ -356,124 +323,107 @@ const MatureCaseStudy = () => {
               </div>
             </section>
 
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
-              <div className="mx-auto relative z-10">
-                <div className="max-w-8xl mx-auto">
-                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Results & Impact
-                  </h3>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+            {/* Results Section */}
+            <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
+              <div className="container mx-auto px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto">
+                  <h2 className="text-2xl font-bold text-foreground-dark mb-12 text-center font-montserrat">
                     Zero-Downtime Transformation Success
                   </h2>
-
-                  <div className="grid md:grid-cols-3 gap-8 mb-8">
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">100%</div>
-                      <div className="text-sm text-foreground-muted">Uptime Maintained</div>
-                      <div className="text-xs text-foreground-muted mt-2">Throughout migration</div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">100%</h3>
+                      <p className="text-foreground text-xs mb-0">Uptime Maintained</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">178</div>
-                      <div className="text-sm text-foreground-muted">Integrations Preserved</div>
-                      <div className="text-xs text-foreground-muted mt-2">Zero integration failures</div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">178</h3>
+                      <p className="text-foreground text-xs mb-0">Integrations Preserved</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">300%</div>
-                      <div className="text-sm text-foreground-muted">Performance Improvement</div>
-                      <div className="text-xs text-foreground-muted mt-2">Faster response times</div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">300%</h3>
+                      <p className="text-foreground text-xs mb-0">Performance Boost</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
+                    </div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">Zero</h3>
+                      <p className="text-foreground text-xs mb-0">Downtime Events</p>
+                      <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
                     </div>
                   </div>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The modernization was completed with 100% uptime maintained throughout the entire migration process. All 178 existing integrations were preserved and enhanced, with no service disruptions experienced by merchants or end users. The new architecture delivered 300% improvement in system performance and response times.
-                  </p>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The event-driven architecture positioned Genesys for future innovation, enabling rapid feature deployment, improved scalability, and enhanced security. The modernized platform now supports 10x the transaction volume with improved reliability and maintainability.
-                  </p>
-                  <a id="whyWorked" className="absolute mt-[100px]"></a>
-                </div>
-              </div>
-            </section>
-
-            <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl p-8 shadow-glass border border-glass-border backdrop-blur-xl mb-12">
-              <div className="relative z-10">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                  Why It Worked
-                </h2>
-                <div className="grid md:grid-cols-2 gap-8 mb-8">
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <Boxes className="w-5 h-5 text-brand-primary m-auto" />
-                      </div>
-                      <h4 className="text-xl font-bold text-foreground font-montserrat">
-                        Phased Migration Strategy
-                      </h4>
-                    </div>
-                    <p className="text-foreground-muted leading-relaxed mb-6">
-                      The gradual, service-by-service migration approach minimized risk while enabling continuous improvement and validation at each phase of the transformation.
+                  <div className={`p-8 bg-background relative md:mr-[-6rem] rounded-xl mb-6 ${styles.middleCardBg2}`}>
+                    <p className="text-lg text-foreground text-center font-medium">
+                      The modernization was completed with 100% uptime maintained throughout the entire migration process. The event-driven architecture positioned Genesys for future innovation, enabling rapid feature deployment and 10x transaction volume capacity.
                     </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <Rocket className="w-5 h-5 text-brand-primary m-auto" />
-                      </div>
-                      <h4 className="text-xl font-bold text-foreground font-montserrat">
-                        Event-Driven Architecture
-                      </h4>
-                    </div>
-                    <p className="text-foreground-muted leading-relaxed mb-6">
-                      Apache Kafka-based event streaming enabled seamless communication between legacy and modern components during the transition while providing scalability for future growth.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <Workflow className="w-5 h-5 text-brand-primary m-auto" />
-                      </div>
-                      <h4 className="text-xl font-bold text-foreground font-montserrat">
-                        Risk Mitigation Framework
-                      </h4>
-                    </div>
-                    <p className="text-foreground-muted leading-relaxed mb-6">
-                      Comprehensive testing, monitoring, and rollback procedures ensured zero-downtime migration with full confidence in system stability throughout the process.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <Handshake className="w-5 h-5 text-brand-primary m-auto" />
-                      </div>
-                      <h4 className="text-xl font-bold text-foreground font-montserrat">
-                        Integration Preservation
-                      </h4>
-                    </div>
-                    <p className="text-foreground-muted leading-relaxed mb-6">
-                      Advanced API gateway and service mesh architecture maintained full backward compatibility while enabling modern microservices patterns and improved performance.
-                    </p>
+                    <a id="whyWorked"></a>
                   </div>
                 </div>
               </div>
             </section>
 
-            <section className="bg-gradient-to-br from-brand-primary via-brand-primary-dark to-brand-purple rounded-3xl p-8 mt-12 text-center shadow-2xl">
-              <h2 className="text-3xl font-bold text-white mb-4 font-montserrat">
-                Ready to Modernize Your Platform?
-              </h2>
-              <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-                Transform your legacy systems with confidence. Let's build the foundation for your next decade of growth.
-              </p>
-              <Button size="lg" variant="secondary" className="text-brand-primary">
-                Get Started
-              </Button>
+            {/* Why It Worked Section */}
+            <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
+              <div className="container mx-auto px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto">
+                  <div className="mb-0">
+                    <h3 className="text-xl font-bold text-foreground-dark mb-6 font-montserrat text-center">
+                      Why It Worked
+                      <br />
+                      <span className="inline-block w-24 h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50"></span>
+                    </h3>
+                    <p className="text-md text-foreground-dark-muted text-center mb-8">
+                      The Genesys platform modernization showcases our expertise in mission-critical system transformation.
+                    </p>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {[
+                        "Phased Migration Strategy: The gradual, service-by-service migration approach minimized risk while enabling continuous improvement and validation at each phase of the transformation.",
+                        "Event-Driven Architecture: Apache Kafka-based event streaming enabled seamless communication between legacy and modern components during the transition while providing scalability for future growth.",
+                        "Risk Mitigation Framework: Comprehensive testing, monitoring, and rollback procedures ensured zero-downtime migration with full confidence in system stability throughout the process.",
+                        "Integration Preservation: Advanced API gateway and service mesh architecture maintained full backward compatibility while enabling modern microservices patterns and improved performance."
+                      ].map((result, index) => (
+                        <div key={index} className="mb-4">
+                          <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50 mb-2"></span>
+                          <div className="flex flex-col text-center">
+                            <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
+                              <CheckCircle className="w-5 h-5 text-[#8389DC] m-auto" />
+                            </span>
+                            <span className="text-foreground-dark">{result}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
           </div>
         </div>
       </div>
-      
-      <Footer />
+
+      {/* CTA Section */}
+      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
+        <div className="container mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+            <span className="leading-[1.4]">
+              Ready to Modernize Your Platform?
+            </span>
+          </h2>
+          <p className="text-xl text-foreground/80 mb-8 max-w-3xl mx-auto font-montserrat">
+            Transform your legacy systems with confidence. Let's build the foundation for your next decade of growth with zero-downtime migration and enterprise-grade architecture.
+          </p>
+          <p className="text-lg text-foreground/70 mb-12 max-w-xl mx-auto font-montserrat">
+            Ready to modernize your mission-critical platform? Let's discuss your transformation strategy.
+          </p>
+          <Button variant="btnSecondary" size="lg">
+            Get Started
+          </Button>
+        </div>
+      </section>
+      <div className="bg-background">
+        <Footer />
+      </div>
     </div>
   );
 };
