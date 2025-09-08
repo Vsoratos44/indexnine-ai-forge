@@ -289,7 +289,7 @@ const TripjackCaseStudy = () => {
                     <p className="text-white mb-6">
                       A strategic "Grow" and "Product Modernization" engagement. Indexnine architected and built a modern, event-driven, microservices-based integration hub to streamline supplier onboarding. In parallel, we developed their new flagship B2B2C platform, enabling them to enter the direct-to-consumer market for the first time.
                     </p>
-                    <div className="grid grid-cols md:grid-cols-4 gap-6">
+                    <div className="grid md:grid-cols-4 gap-6">
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
                           <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">

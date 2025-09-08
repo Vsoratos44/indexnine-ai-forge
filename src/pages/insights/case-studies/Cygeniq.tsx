@@ -273,7 +273,9 @@ const CygeniqCaseStudy = () => {
               </div>
             </section>
 
-            <section className="p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl" style={{backgroundImage: `url(${BlogDetailsBg})`}}>
+            <section
+              className={`p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl ${styles.middleCardBg2}`}
+            >
               <div className="relative z-10">
                 <div className="max-w-6xl mx-auto">
                   <div>
