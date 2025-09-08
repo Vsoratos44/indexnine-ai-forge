@@ -31,7 +31,7 @@ import {
 import { Link } from "react-router-dom";
 import styles from "../../../assets/css/stylesheet.module.css";
 import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
-import CaseImg from "@/assets/images/case-img.webp";
+
 import CaseInrImg from "@/assets/images/case-details-img.webp";
 
 const leftNavLinks = [
@@ -165,12 +165,7 @@ const PivotCaseStudy = () => {
             </div>
           </div>
           <div className="col-span-2">
-            <section
-              className="min-h-[1024px] bg-[#fff] relative  bg-[#fff] bg-contain bg-top bg-no-repeat rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl bg-fixed"
-              style={{
-                backgroundImage: `url(${CaseImg})`,
-              }}
-            >
+            <section className="min-h-[400px] bg-gradient-to-br from-background via-background-alternate to-background rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden">
               {/* <LivingVoidBackground /> */}
 
               <div className="mt-auto p-8">
