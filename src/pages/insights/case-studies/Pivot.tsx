@@ -165,7 +165,7 @@ const PivotCaseStudy = () => {
             </div>
           </div>
           <div className="col-span-2">
-            <section className="min-h-[400px] bg-gradient-to-br from-background via-background-alternate to-background rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden">
+            <section className="min-h-[100px] bg-gradient-to-br from-background via-background-alternate to-background rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden">
               {/* <LivingVoidBackground /> */}
 
               <div className="mt-auto p-8">
