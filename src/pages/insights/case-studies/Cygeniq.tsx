@@ -198,33 +198,251 @@ const CygeniqCaseStudy = () => {
                       Challenge
                     </h3>
                     <p className="text-white mb-6">
-                      Visionary founders needed to move from a validated idea to a functional, high-fidelity prototype to secure their next round of funding and begin development. This required a strategic partner who could deliver enterprise-grade design and engineering with extreme velocity.
+                      CygenIQ needed to rapidly develop a first-of-its-kind AI security platform that could provide CISOs with comprehensive visibility and control over AI implementations across their organizations, moving from concept to fundable prototype in just six weeks.
                     </p>
-                    <div className="grid grid-cols md:grid-cols-2 gap-6">
-                      {[
-                        "Accelerated Seed Funding: The high-fidelity prototype and technical validation enabled CygenIQ to close their seed round months ahead of schedule.",
-                        "6-Week MVP Delivery: From concept to interactive prototype in just six weeks, demonstrating the power of our integrated studio approach.",
-                        "First-Mover Market Position: CygenIQ established themselves as the pioneer in AI security platforms, securing a significant competitive advantage.",
-                        "Enterprise-Ready Foundation: The platform was architected from day one to meet enterprise security and compliance requirements."
-                      ].map((outcome, index) => (
-                        <div
-                          key={index}
-                          className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff25] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full"
-                        >
-                          <div className="flex items-center space-x-3 mb-3">
-                            <div className="mr-2">
-                              <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                                <Shield className="w-5 h-5 text-white m-auto" />
-                              </span>
-                            </div>
-                            Security Innovation
-                          </div>
-                          <div className="text-foreground-muted text-sm">
-                            {outcome}
-                          </div>
+                    
+                    <div className="grid md:grid-cols-4 gap-6">
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Brain className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">AI Security</span>
                         </div>
-                      ))}
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Rocket className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Rapid Prototype</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Shield className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">CISO Platform</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Zap className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">First-Mover</span>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Detailed Challenge Section */}
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
+              <div className="mx-auto relative z-10">
+                <div className="max-w-8xl mx-auto">
+                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
+                    Challenge
+                  </h3>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                    Pioneering AI Security in Uncharted Territory
+                  </h2>
+
+                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
+                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
+                      <img src={CaseInrImg} className="w-full h-full" />
+                    </div>
+                  </div>
+                  
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    As generative AI adoption exploded across enterprises, CygenIQ identified a critical security gap that no existing solutions addressed. Organizations were rapidly deploying AI tools without proper visibility, governance, or security controls, creating unprecedented risk exposure that traditional cybersecurity platforms couldn't manage.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The challenge was to create the first comprehensive AI security platform that could discover, monitor, and secure AI implementations across an enterprise's entire technology stack. This required developing entirely new security frameworks, detection methods, and governance models for AI-specific threats and vulnerabilities.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    With limited time to capture the first-mover advantage in this emerging market, CygenIQ needed to move from conceptual vision to a fundable, interactive prototype that could demonstrate real value to enterprise CISOs and secure seed funding to accelerate development.
+                  </p>
+                  <a id="solution1" className="absolute mt-[100px]"></a>
+                </div>
+              </div>
+            </section>
+
+            <section className="p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl" style={{backgroundImage: `url(${BlogDetailsBg})`}}>
+              <div className="relative z-10">
+                <div className="max-w-6xl mx-auto">
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-4 font-montserrat">
+                      Solution
+                    </h3>
+                    <p className="text-white mb-6">
+                      Indexnine implemented Sprint Zero methodology followed by rapid MVP development, creating a comprehensive AI security platform with discovery, monitoring, and governance capabilities specifically designed for enterprise CISO requirements.
+                    </p>
+                    
+                    <div className="grid md:grid-cols-4 gap-6">
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Rocket className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Sprint Zero</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Brain className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">AI Engine</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Shield className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Security Framework</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Settings className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Interactive Prototype</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Technical Implementation Section */}
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
+              <div className="mx-auto relative z-10">
+                <div className="max-w-8xl mx-auto">
+                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
+                    Technical Implementation
+                  </h3>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                    Building the First AI Security Platform
+                  </h2>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The platform architecture combined advanced AI discovery algorithms with real-time monitoring capabilities, creating comprehensive visibility into AI tool usage, data flows, and potential security vulnerabilities across enterprise environments. The system could automatically detect shadow AI implementations and assess their risk profiles.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The CISO-focused interface provided executive dashboards, risk assessment frameworks, and governance tools specifically designed for AI security management, enabling security leaders to implement policies and controls for AI adoption while maintaining organizational innovation velocity.
+                  </p>
+                  <a id="results" className="absolute mt-[100px]"></a>
+                </div>
+              </div>
+            </section>
+
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
+              <div className="mx-auto relative z-10">
+                <div className="max-w-8xl mx-auto">
+                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
+                    Results & Impact
+                  </h3>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                    Securing First-Mover Market Position
+                  </h2>
+
+                  <div className="grid md:grid-cols-3 gap-8 mb-8">
+                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
+                      <div className="text-4xl font-bold text-brand-primary mb-2">6</div>
+                      <div className="text-sm text-foreground-muted">Weeks to Prototype</div>
+                      <div className="text-xs text-foreground-muted mt-2">Concept to fundable MVP</div>
+                    </div>
+                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
+                      <div className="text-4xl font-bold text-brand-primary mb-2">100%</div>
+                      <div className="text-sm text-foreground-muted">First-to-Market</div>
+                      <div className="text-xs text-foreground-muted mt-2">AI security platform category</div>
+                    </div>
+                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
+                      <div className="text-4xl font-bold text-brand-primary mb-2">$2M+</div>
+                      <div className="text-sm text-foreground-muted">Seed Funding Secured</div>
+                      <div className="text-xs text-foreground-muted mt-2">Accelerated development</div>
+                    </div>
+                  </div>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    CygenIQ successfully launched as the first comprehensive AI security platform, establishing market leadership in a rapidly growing category. The interactive prototype enabled successful seed funding of over $2M, validating the market need and accelerating product development.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The platform became the go-to solution for enterprise CISOs looking to implement AI governance and security controls, establishing CygenIQ as the definitive leader in AI security management and positioning them for significant growth in the expanding AI security market.
+                  </p>
+                  <a id="whyWorked" className="absolute mt-[100px]"></a>
+                </div>
+              </div>
+            </section>
+
+            <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl p-8 shadow-glass border border-glass-border backdrop-blur-xl mb-12">
+              <div className="relative z-10">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                  Why It Worked
+                </h2>
+                <div className="grid md:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        <Rocket className="w-5 h-5 text-brand-primary m-auto" />
+                      </div>
+                      <h4 className="text-xl font-bold text-foreground font-montserrat">
+                        Sprint Zero Framework
+                      </h4>
+                    </div>
+                    <p className="text-foreground-muted leading-relaxed mb-6">
+                      Our disciplined Sprint Zero process validated market needs, defined technical requirements, and de-risked development before coding began, ensuring efficient use of limited time and resources.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        <Brain className="w-5 h-5 text-brand-primary m-auto" />
+                      </div>
+                      <h4 className="text-xl font-bold text-foreground font-montserrat">
+                        Integrated Studio Model
+                      </h4>
+                    </div>
+                    <p className="text-foreground-muted leading-relaxed mb-6">
+                      Cross-functional expertise in AI, security, and enterprise platforms enabled rapid development of a sophisticated solution that addressed complex technical and market requirements.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        <Shield className="w-5 h-5 text-brand-primary m-auto" />
+                      </div>
+                      <h4 className="text-xl font-bold text-foreground font-montserrat">
+                        Market-First Approach
+                      </h4>
+                    </div>
+                    <p className="text-foreground-muted leading-relaxed mb-6">
+                      Direct engagement with enterprise CISOs during development ensured the platform addressed real security challenges rather than theoretical problems, creating immediate market fit.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        <Zap className="w-5 h-5 text-brand-primary m-auto" />
+                      </div>
+                      <h4 className="text-xl font-bold text-foreground font-montserrat">
+                        Rapid Execution
+                      </h4>
+                    </div>
+                    <p className="text-foreground-muted leading-relaxed mb-6">
+                      Agile development practices and focused scope enabled delivery of a high-fidelity, interactive prototype in just six weeks, capturing first-mover advantage in an emerging market.
+                    </p>
                   </div>
                 </div>
               </div>

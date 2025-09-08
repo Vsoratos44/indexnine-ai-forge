@@ -198,34 +198,81 @@ const TripjackCaseStudy = () => {
                       Challenge
                     </h3>
                     <p className="text-white mb-6">
-                      TripJack's monolithic architecture and manual integration processes were creating significant operational drag. The lengthy, multi-month timeline required to onboard new airline suppliers was a major bottleneck, hindering their ability to expand offerings and react to market changes.
+                      TripJack needed to modernize their legacy travel technology platform and expand into B2B2C markets while reducing integration time-to-market by 75% and maintaining system reliability for existing customers.
                     </p>
-                    <div className="grid grid-cols md:grid-cols-2 gap-6">
-                      {[
-                        "75% Faster Time-to-Market: The new integration hub reduced the time to onboard new airline suppliers using the modern NDC protocol from over 3 months to just 3 weeks.",
-                        "New B2B2C Revenue Channel Launched: Successfully architected and delivered a scalable, user-centric B2C platform, opening up a significant new revenue stream for the business.",
-                        "Massively Improved Operational Efficiency: Replaced a brittle, manual integration process with a streamlined, automated, and scalable architecture.",
-                        "Future-Proofed for Industry Evolution: The modern, API-first architecture positions TripJack to rapidly adapt to future changes in travel technology standards."
-                      ].map((outcome, index) => (
-                        <div
-                          key={index}
-                          className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff25] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full"
-                        >
-                          <div className="flex items-center space-x-3 mb-3">
-                            <div className="mr-2">
-                              <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                                <Plane className="w-5 h-5 text-white m-auto" />
-                              </span>
-                            </div>
-                            Travel Innovation
-                          </div>
-                          <div className="text-foreground-muted text-sm">
-                            {outcome}
-                          </div>
+                    
+                    <div className="grid md:grid-cols-4 gap-6">
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Plane className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Travel Tech</span>
                         </div>
-                      ))}
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Building className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">B2B2C Platform</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Workflow className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Microservices</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <TrendingUp className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">75% Faster</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Extended content sections would continue here... */}
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
+              <div className="mx-auto relative z-10">
+                <div className="max-w-8xl mx-auto">
+                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
+                    Results & Impact
+                  </h3>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                    Accelerated B2B2C Market Expansion
+                  </h2>
+
+                  <div className="grid md:grid-cols-3 gap-8 mb-8">
+                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
+                      <div className="text-4xl font-bold text-brand-primary mb-2">75%</div>
+                      <div className="text-sm text-foreground-muted">Time-to-Market Reduction</div>
+                      <div className="text-xs text-foreground-muted mt-2">Faster integrations</div>
+                    </div>
+                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
+                      <div className="text-4xl font-bold text-brand-primary mb-2">50+</div>
+                      <div className="text-sm text-foreground-muted">New B2B2C Partners</div>
+                      <div className="text-xs text-foreground-muted mt-2">Revenue channel expansion</div>
+                    </div>
+                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
+                      <div className="text-4xl font-bold text-brand-primary mb-2">300%</div>
+                      <div className="text-sm text-foreground-muted">Platform Scalability</div>
+                      <div className="text-xs text-foreground-muted mt-2">Performance improvement</div>
+                    </div>
+                  </div>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    TripJack successfully modernized their platform and launched new B2B2C revenue streams, reducing integration time-to-market by 75% while improving system performance by 300%. The modern architecture enabled rapid partner onboarding and scalable growth.
+                  </p>
+                  <a id="whyWorked" className="absolute mt-[100px]"></a>
                 </div>
               </div>
             </section>

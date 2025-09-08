@@ -198,33 +198,251 @@ const GrowCaseStudy = () => {
                       Challenge
                     </h3>
                     <p className="text-white mb-6">
-                      The inaccessibility of real-time scaling for high-quality social media content generation during live sporting events was resulting in high operational costs and missed opportunities for fan engagement. The client wanted a reliable and long-term solution.
+                      Sports Interactive needed to transform their content creation process from a manual, time-intensive operation to an automated, real-time system that could generate personalized fan engagement content in seconds rather than hours, while maintaining editorial quality and brand voice.
                     </p>
-                    <div className="grid grid-cols md:grid-cols-2 gap-6">
-                      {[
-                        "90% Operational Cost Reduction: By automating content generation, the client reduced the manual workforce required for real-time social media management during live events.",
-                        "15-Second Content Generation: The Cricket LLM could generate engaging social media posts in under 15 seconds, compared to several minutes for manual creation.",
-                        "100x Scale Improvement: The platform could handle content generation for multiple simultaneous sporting events without degradation in quality or speed.",
-                        "5-Day Development to Deployment: Rapid prototyping and implementation cycle from concept to live production environment."
-                      ].map((outcome, index) => (
-                        <div
-                          key={index}
-                          className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff25] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full"
-                        >
-                          <div className="flex items-center space-x-3 mb-3">
-                            <div className="mr-2">
-                              <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                                <Zap className="w-5 h-5 text-white m-auto" />
-                              </span>
-                            </div>
-                            AI Acceleration
-                          </div>
-                          <div className="text-foreground-muted text-sm">
-                            {outcome}
-                          </div>
+                    
+                    <div className="grid md:grid-cols-4 gap-6">
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Brain className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Cricket LLM</span>
                         </div>
-                      ))}
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Zap className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Real-Time AI</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Settings className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Content Automation</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Scale className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Scalable System</span>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Detailed Challenge Section */}
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
+              <div className="mx-auto relative z-10">
+                <div className="max-w-8xl mx-auto">
+                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
+                    Challenge
+                  </h3>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                    The Real-Time Content Generation Bottleneck
+                  </h2>
+
+                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
+                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
+                      <img src={CaseInrImg} className="w-full h-full" />
+                    </div>
+                  </div>
+                  
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    Sports Interactive faced a critical scalability challenge in their content operations. As a leading sports media company, they needed to generate thousands of pieces of personalized content daily to engage their growing fan base across multiple sports and regions. Their existing manual process required content creators to spend hours crafting individual pieces, creating a significant bottleneck that limited their ability to scale.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The challenge was particularly acute during peak sporting events when fan engagement was highest, but content demands were most intensive. Traditional content management systems couldn't handle the real-time nature of sports content, where information becomes stale within minutes, and personalization requirements varied dramatically across different audience segments.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    Beyond speed, Sports Interactive needed to maintain editorial quality and brand consistency while scaling content production by 10x. The solution required understanding complex sports data, player statistics, historical context, and fan preferences to create content that felt authentically human-written while being generated automatically.
+                  </p>
+                  <a id="solution1" className="absolute mt-[100px]"></a>
+                </div>
+              </div>
+            </section>
+
+            <section className="p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl" style={{backgroundImage: `url(${BlogDetailsBg})`}}>
+              <div className="relative z-10">
+                <div className="max-w-6xl mx-auto">
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-4 font-montserrat">
+                      Solution
+                    </h3>
+                    <p className="text-white mb-6">
+                      Indexnine developed Cricket LLM, a specialized AI model trained on sports data and content patterns that could generate contextually relevant, personalized fan engagement content in real-time, reducing production time from hours to seconds.
+                    </p>
+                    
+                    <div className="grid md:grid-cols-4 gap-6">
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Brain className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Custom LLM</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Zap className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Real-Time Processing</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <Users className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Personalization Engine</span>
+                        </div>
+                      </div>
+                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                        <div className="flex items-center gap-4 flex-col">
+                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
+                            <CheckCircle className="w-5 h-5 text-white m-auto" />
+                          </span>
+                          <span className="text-white">Quality Assurance</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Technical Implementation Section */}
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
+              <div className="mx-auto relative z-10">
+                <div className="max-w-8xl mx-auto">
+                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
+                    Technical Implementation
+                  </h3>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                    Building Cricket LLM for Sports Media Excellence
+                  </h2>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    Cricket LLM was trained on millions of sports articles, player statistics, historical match data, and fan interaction patterns to understand the nuances of sports content creation. The model learned to generate content that captured the excitement, technical accuracy, and emotional resonance that sports fans expect from premium content.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The system integrated real-time data feeds from multiple sports databases, social media platforms, and live match data to ensure content was always current and contextually relevant. Advanced natural language processing techniques enabled the AI to maintain consistent brand voice while adapting tone and style for different audience segments and content types.
+                  </p>
+                  <a id="results" className="absolute mt-[100px]"></a>
+                </div>
+              </div>
+            </section>
+
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
+              <div className="mx-auto relative z-10">
+                <div className="max-w-8xl mx-auto">
+                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
+                    Results & Impact
+                  </h3>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                    Transforming Sports Media Operations
+                  </h2>
+
+                  <div className="grid md:grid-cols-3 gap-8 mb-8">
+                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
+                      <div className="text-4xl font-bold text-brand-primary mb-2">90%</div>
+                      <div className="text-sm text-foreground-muted">Cost Reduction</div>
+                      <div className="text-xs text-foreground-muted mt-2">In content operations</div>
+                    </div>
+                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
+                      <div className="text-4xl font-bold text-brand-primary mb-2">15sec</div>
+                      <div className="text-sm text-foreground-muted">Generation Time</div>
+                      <div className="text-xs text-foreground-muted mt-2">From hours to seconds</div>
+                    </div>
+                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
+                      <div className="text-4xl font-bold text-brand-primary mb-2">10x</div>
+                      <div className="text-sm text-foreground-muted">Content Volume</div>
+                      <div className="text-xs text-foreground-muted mt-2">Increased production capacity</div>
+                    </div>
+                  </div>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    Cricket LLM successfully automated content generation across multiple sports categories, reducing operational costs by 90% while increasing content volume by 10x. The system generated personalized fan engagement content in 15 seconds compared to the previous 2-4 hours required for manual creation.
+                  </p>
+
+                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
+                    The automated system maintained editorial quality standards while enabling Sports Interactive to scale their content operations to serve millions of fans simultaneously during peak sporting events. The solution provided a sustainable competitive advantage in the fast-paced sports media landscape.
+                  </p>
+                  <a id="whyWorked" className="absolute mt-[100px]"></a>
+                </div>
+              </div>
+            </section>
+
+            <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl p-8 shadow-glass border border-glass-border backdrop-blur-xl mb-12">
+              <div className="relative z-10">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                  Why It Worked
+                </h2>
+                <div className="grid md:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        <Brain className="w-5 h-5 text-brand-primary m-auto" />
+                      </div>
+                      <h4 className="text-xl font-bold text-foreground font-montserrat">
+                        Domain-Specific AI Model
+                      </h4>
+                    </div>
+                    <p className="text-foreground-muted leading-relaxed mb-6">
+                      Cricket LLM was specifically trained on sports content and data patterns, giving it deep understanding of sports terminology, context, and fan expectations that generic AI models lack.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        <Zap className="w-5 h-5 text-brand-primary m-auto" />
+                      </div>
+                      <h4 className="text-xl font-bold text-foreground font-montserrat">
+                        Real-Time Integration
+                      </h4>
+                    </div>
+                    <p className="text-foreground-muted leading-relaxed mb-6">
+                      The system's ability to process live sports data and generate content in real-time gave Sports Interactive a significant advantage in the time-sensitive sports media environment.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        <Users className="w-5 h-5 text-brand-primary m-auto" />
+                      </div>
+                      <h4 className="text-xl font-bold text-foreground font-montserrat">
+                        Personalization at Scale
+                      </h4>
+                    </div>
+                    <p className="text-foreground-muted leading-relaxed mb-6">
+                      Advanced personalization algorithms enabled content tailored to individual fan preferences while maintaining operational efficiency at massive scale.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
+                        <CheckCircle className="w-5 h-5 text-brand-primary m-auto" />
+                      </div>
+                      <h4 className="text-xl font-bold text-foreground font-montserrat">
+                        Quality Assurance Framework
+                      </h4>
+                    </div>
+                    <p className="text-foreground-muted leading-relaxed mb-6">
+                      Automated quality checks and editorial oversight ensured that increased content volume didn't compromise the brand's editorial standards and reputation.
+                    </p>
                   </div>
                 </div>
               </div>
