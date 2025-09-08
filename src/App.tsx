@@ -58,8 +58,6 @@ const PivotCaseStudy = lazy(() => import("./pages/insights/case-studies/Pivot"))
 const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/Grow"));
 const MatureCaseStudy = lazy(() => import("./pages/insights/case-studies/Mature"));
 const CygeniqCaseStudy = lazy(() => import("./pages/insights/case-studies/Cygeniq"));
-const EdTechPivotCaseStudy = lazy(() => import("./pages/insights/case-studies/EdTechPivot"));
-const EnterpriseSaasOptimizationCaseStudy = lazy(() => import("./pages/insights/case-studies/EnterpriseSaasOptimization"));
 const TripjackCaseStudy = lazy(() => import("./pages/insights/case-studies/Tripjack"));
 
 // About Pages - Lazy loaded
@@ -141,7 +139,7 @@ const App = () => {
               <Route path="/insights/blogs/robot-framework-vs-playwright-automation" element={<RobotFrameworkVsPlaywright />} />
               <Route path="/insights/blogs/ai-change-management-playbook" element={<AiChangeManagementPlaybook />} />
               <Route path="/insights/blogs/agentic-ai-enterprise-future" element={<AgenticAiEnterpriseFuture />} />
-              <Route path="/insights/blog/ai-assisted-software-engineering-cursor" element={<BlogPost />} />
+              <Route path="/insights/blogs/ai-assisted-software-engineering-cursor" element={<BlogPost />} />
               <Route path="/insights/blog/microservices-vs-monolith-decision-guide" element={<BlogPost />} />
               <Route path="/insights/blog/modern-data-platforms-enterprise-guide" element={<BlogPost />} />
               <Route path="/insights/blog/security-first-development-practices" element={<BlogPost />} />
@@ -152,10 +150,8 @@ const App = () => {
                <Route path="/insights/case-studies/pivot" element={<PivotCaseStudy />} />
                <Route path="/insights/case-studies/grow" element={<GrowCaseStudy />} />
                <Route path="/insights/case-studies/mature" element={<MatureCaseStudy />} />
-               <Route path="/insights/case-studies/cygeniq" element={<CygeniqCaseStudy />} />
-               <Route path="/insights/case-studies/edtech-pivot" element={<EdTechPivotCaseStudy />} />
-               <Route path="/insights/case-studies/enterprise-saas-optimization" element={<EnterpriseSaasOptimizationCaseStudy />} />
-               <Route path="/insights/case-studies/tripjack" element={<TripjackCaseStudy />} />
+                <Route path="/insights/case-studies/cygeniq" element={<CygeniqCaseStudy />} />
+                <Route path="/insights/case-studies/tripjack" element={<TripjackCaseStudy />} />
                <Route path="/insights/case-study/genesys-modernization" element={<GenesysModernization />} />
               
               {/* Legacy case study redirects */}
