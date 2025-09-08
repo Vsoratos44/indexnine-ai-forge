@@ -296,7 +296,7 @@ const LaunchCaseStudy = () => {
                             </div>
                             {outcomeTitle[index]}
                           </div>
-                          <div className="text-foreground-muted text-sm">
+                          <div className="text-foreground text-sm">
                             {outcome}
                           </div>
                         </div>
@@ -771,7 +771,6 @@ const LaunchCaseStudy = () => {
                     the "Launch" phase and build the enduring products of
                     tomorrow.
                   </p>
-                  <a id="whyWorked"></a>
                 </div>
               </div>
             </section>
