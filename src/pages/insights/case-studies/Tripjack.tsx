@@ -611,6 +611,11 @@ const TripjackCaseStudy = () => {
               <Button size="lg" variant="secondary" className="text-brand-primary">
                 Get Started
               </Button>
+            </section>
+          </div>
+        </div>
+      </div>
+
       {/* CTA Section */}
       <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
