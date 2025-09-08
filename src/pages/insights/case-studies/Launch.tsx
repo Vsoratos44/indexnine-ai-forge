@@ -227,10 +227,10 @@ const LaunchCaseStudy = () => {
                           <div className="flex items-center space-x-3 mb-3">
                             <div className="mr-2">
                               <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
-                                <Rocket className="w-6 h-6 text-white m-auto" />
+                                <ArrowRightLeft className="w-6 h-6 text-white m-auto" />
                               </span>
                             </div>
-                            Launch Success
+                            Passive → Active
                           </div>
                           <div className="text-foreground-muted text-sm">
                             {outcome}
