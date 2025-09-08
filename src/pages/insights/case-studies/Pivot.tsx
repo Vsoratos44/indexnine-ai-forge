@@ -82,10 +82,10 @@ const PivotCaseStudy = () => {
   }, []);
 
   const exlnceIcons = [
-    <Boxes className="w-5 h-5 text-brand-primary m-auto " />,
-    <Rocket className="w-5 h-5 text-brand-primary m-auto " />,
-    <Workflow className="w-5 h-5 text-brand-primary m-auto " />,
-    <Handshake className="w-5 h-5 text-brand-primary m-auto " />,
+    <Boxes className="w-6 h-6 text-brand-primary m-auto " />,
+    <Rocket className="w-6 h-6 text-brand-primary m-auto " />,
+    <Workflow className="w-6 h-6 text-brand-primary m-auto " />,
+    <Handshake className="w-6 h-6 text-brand-primary m-auto " />,
   ];
 
   return (
@@ -166,7 +166,7 @@ const PivotCaseStudy = () => {
           </div>
           <div className="col-span-2">
             <section
-              className="min-h-[1024px] bg-[#fff] relative  bg-[#fff] bg-contain bg-top bg-no-repeat rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl bg-fixed"
+              className="min-h-[720px] bg-[#fff] relative  bg-[#fff] bg-contain bg-top bg-no-repeat rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl bg-fixed"
               style={{
                 backgroundImage: `url(${CaseImg})`,
               }}
@@ -251,8 +251,8 @@ const PivotCaseStudy = () => {
                           >
                             <div className="flex items-center space-x-3 mb-3">
                               <div className="mr-2">
-                                <span className="flex w-12 h-12 rounded-full bg-[#2E348233] ">
-                                  <ArrowRightLeft className="w-5 h-5 text-white m-auto" />
+                                <span className="flex w-14 h-14 rounded-full bg-[#2E348233] ">
+                                  <ArrowRightLeft className="w-6 h-6 text-white m-auto" />
                                 </span>
                               </div>
                               Passive → Active
@@ -288,24 +288,24 @@ const PivotCaseStudy = () => {
                       <div className="grid grid-cols md:grid-cols-4  gap-6 ">
                         <div className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full ">
                           <div className="flex items-center gap-4 flex-col">
-                            <span className="flex w-12 h-12 rounded-full bg-[#2E348233] ">
-                              <Lock className="w-5 h-5 text-white m-auto" />
+                            <span className="flex w-14 h-14 rounded-full bg-[#2E348233] ">
+                              <Lock className="w-6 h-6 text-white m-auto" />
                             </span>
                             <span className="text-white">Secure</span>
                           </div>
                         </div>
                         <div className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full ">
                           <div className="flex items-center gap-4 flex-col">
-                            <span className="flex w-12 h-12 rounded-full bg-[#2E348233] ">
-                              <Scale className="w-5 h-5 text-white m-auto" />
+                            <span className="flex w-14 h-14 rounded-full bg-[#2E348233] ">
+                              <Scale className="w-6 h-6 text-white m-auto" />
                             </span>
                             <span className="text-white">Scalable</span>
                           </div>
                         </div>
                         <div className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full ">
                           <div className="flex items-center gap-4 flex-col">
-                            <span className="flex w-12 h-12 rounded-full bg-[#2E348233] ">
-                              <Settings className="w-5 h-5 text-white m-auto" />
+                            <span className="flex w-14 h-14 rounded-full bg-[#2E348233] ">
+                              <Settings className="w-6 h-6 text-white m-auto" />
                             </span>
                             <span className="text-white">
                               Provisioning Engine
@@ -314,8 +314,8 @@ const PivotCaseStudy = () => {
                         </div>
                         <div className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full ">
                           <div className="flex items-center gap-4 flex-col">
-                            <span className="flex w-12 h-12 rounded-full bg-[#2E348233] ">
-                              <RefreshCcw className="w-5 h-5 text-white m-auto" />
+                            <span className="flex w-14 h-14 rounded-full bg-[#2E348233] ">
+                              <RefreshCcw className="w-6 h-6 text-white m-auto" />
                             </span>
                             <span className="text-white">Modernization</span>
                           </div>
@@ -338,10 +338,8 @@ const PivotCaseStudy = () => {
                     The Paradox of Visibility in a Sprawling Digital Estate
                   </h2>
 
-                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
-                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
-                      <img src={CaseInrImg} className="w-full h-full" />
-                    </div>
+                  <div className=" my-8 flex">
+                    <img src={CaseInrImg} className="w-full h-full" />
                   </div>
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
                     The IT landscape is a chaotic one; applications and data are
@@ -664,7 +662,7 @@ const PivotCaseStudy = () => {
                             key={index}
                             className="flex flex-col text-center"
                           >
-                            <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
+                            <span className="mx-auto flex w-14 h-14 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
                               {exlnceIcons[index]}
                             </span>
                             <span className="text-foreground-dark">
@@ -676,7 +674,7 @@ const PivotCaseStudy = () => {
                     </div>
                   </div>
                   <div
-                    className={`p-8 bg-background relative md:mr-[-6rem] rounded-xl mb-6 ${styles.middleCardBg2}`}
+                    className={`p-8 bg-background relative rounded-xl mb-6 ${styles.middleCardBg2}`}
                   >
                     <p className="text-lg text-foreground text-center font-medium">
                       Our partnership with Zilla Security exemplifies how
@@ -719,8 +717,8 @@ const PivotCaseStudy = () => {
                             key={index}
                             className="flex flex-col text-center"
                           >
-                            <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
-                              <CheckCircle className="w-5 h-5 text-[#8389DC] m-auto " />
+                            <span className="mx-auto flex w-14 h-14 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
+                              <CheckCircle className="w-6 h-6 text-[#8389DC] m-auto " />
                             </span>
                             <span className="text-foreground-dark">
                               {result}
