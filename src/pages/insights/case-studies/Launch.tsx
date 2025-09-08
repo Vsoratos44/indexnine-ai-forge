@@ -363,147 +363,220 @@ const LaunchCaseStudy = () => {
               </div>
             </section>
 
-            {/* Additional Solution Detail */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
+            {/* Solution Section with Detailed Phases */}
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl mb-12 shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
                   <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Technical Implementation
+                    Our Solution
                   </h3>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                    Building the AI-Powered Research Engine
+                    From Vision to Market-Ready Platform
                   </h2>
 
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The technical architecture centered around a sophisticated RAG (Retrieval-Augmented Generation) system that could ingest, process, and synthesize information from multiple data sources. Our AI research agents were trained to understand the nuances of philanthropic analysis, including financial health indicators, governance structures, and impact measurement methodologies.
+                  <p className="text-lg text-foreground-dark leading-relaxed mb-12">
+                    The client's challenge was a perfect match for Indexnine's core capabilities. This wasn't just about building software; it was about engineering a market disruptor that could democratize access to critical philanthropic intelligence through advanced AI and data processing.
                   </p>
 
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The platform's AI engine was designed to handle the complexity of evaluating charitable organizations across different sectors, from healthcare and education to environmental and social justice causes. Each analysis included comprehensive financial analysis, leadership assessment, program effectiveness evaluation, and risk assessment—all delivered in a fraction of the time required by traditional consultants.
-                  </p>
-                  <a id="results" className="absolute mt-[100px]"></a>
+                  <div className="space-y-12">
+                    {/* Phase 1 */}
+                    <div className="grid md:grid-cols-12 gap-8 items-start">
+                      <div className="md:col-span-1">
+                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
+                          <span className="font-bold text-foreground m-auto">1</span>
+                        </span>
+                      </div>
+                      <div className="md:col-span-11 backdrop-blur-xl bg-[#ffffff] border border-glass-border rounded-2xl p-6">
+                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                          Phase 1: Sprint Zero Framework
+                        </h3>
+                        <p className="text-foreground-dark-muted leading-relaxed">
+                          Our engagement began with comprehensive Sprint Zero workshops to validate the market opportunity and technical feasibility. We worked closely with Annotate's leadership to understand the philanthropic research landscape, identify key data sources, and define the MVP scope that would deliver maximum market impact with optimal resource efficiency.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Phase 2 */}
+                    <div className="grid md:grid-cols-12 gap-8 items-start">
+                      <div className="md:col-span-1">
+                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
+                          <span className="font-bold text-foreground m-auto">2</span>
+                        </span>
+                      </div>
+                      <div className="md:col-span-11 backdrop-blur-xl bg-glass-bg/10 border border-glass-border rounded-2xl p-6">
+                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                          Phase 2: RAG Architecture & AI Research Engine
+                        </h3>
+                        <p className="text-foreground-dark leading-relaxed mb-6">
+                          Building a system that could analyze charitable organizations required sophisticated AI capabilities that could process heterogeneous data from multiple sources and synthesize actionable insights. We architected and implemented:
+                        </p>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Advanced RAG Architecture
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Implemented retrieval-augmented generation system that could ingest and process IRS filings, financial statements, news articles, and social media data to create comprehensive organizational profiles.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              AI Research Agents
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Developed specialized AI agents trained on philanthropic analysis patterns that could evaluate organizational effectiveness, financial health, and impact measurement with consultant-level accuracy.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Data Pipeline Engineering
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Built scalable data processing infrastructure that could handle real-time analysis of hundreds of data sources while maintaining data quality and consistency across all organizational assessments.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Quality Assurance Framework
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Implemented comprehensive validation systems that ensured AI-generated reports met the quality standards expected by high-net-worth donors and their advisors.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Phase 3 */}
+                    <div className="grid md:grid-cols-12 gap-8 items-start">
+                      <div className="md:col-span-1">
+                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
+                          <span className="font-bold text-foreground m-auto">3</span>
+                        </span>
+                      </div>
+                      <div className="md:col-span-11 backdrop-blur-xl bg-glass-bg/10 border border-glass-border rounded-2xl p-6">
+                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                          Phase 3: Platform Launch & Market Validation
+                        </h3>
+                        <p className="text-foreground-dark-muted leading-relaxed mb-6">
+                          With the core platform developed, we focused on market launch strategy and continuous refinement based on real user feedback. This phase included comprehensive testing, user onboarding optimization, and performance tuning to ensure market readiness.
+                        </p>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              User Experience Optimization
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Refined the platform interface based on beta user feedback to ensure intuitive navigation and clear presentation of complex analytical insights for non-technical users.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Performance & Scalability
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Optimized system architecture to handle increasing user demand while maintaining sub-minute report generation times, ensuring consistent user experience as the platform scales.
+                            </p>
+                          </div>
+                        </div>
+                        <a id="results"></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
 
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
-              <div className="mx-auto relative z-10">
-                <div className="max-w-8xl mx-auto">
-                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Results & Impact
-                  </h3>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+            {/* Results Section */}
+            <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
+              <div className="container mx-auto px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto">
+                  <h2 className="text-2xl font-bold text-foreground-dark mb-12 text-center font-montserrat">
                     Delivering Exponential Value Through AI Innovation
                   </h2>
-
-                  <div className="grid md:grid-cols-3 gap-8 mb-8">
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">99%</div>
-                      <div className="text-sm text-foreground-muted">Cost Reduction</div>
-                      <div className="text-xs text-foreground-muted mt-2">From $50K to $500 per report</div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">99%</h3>
+                      <p className="text-foreground text-xs mb-0">Cost Reduction</p>
                     </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">6</div>
-                      <div className="text-sm text-foreground-muted">Week Delivery</div>
-                      <div className="text-xs text-foreground-muted mt-2">From concept to MVP</div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">$500</h3>
+                      <p className="text-foreground text-xs mb-0">Per Report Cost</p>
                     </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">100+</div>
-                      <div className="text-sm text-foreground-muted">Data Sources</div>
-                      <div className="text-xs text-foreground-muted mt-2">Automated analysis integration</div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">6</h3>
+                      <p className="text-foreground text-xs mb-0">Week Delivery</p>
+                    </div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">100+</h3>
+                      <p className="text-foreground text-xs mb-0">Data Sources</p>
                     </div>
                   </div>
 
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The result was a fully functional AI-powered platform that could analyze charitable organizations with unprecedented speed and accuracy. The platform successfully reduced research costs by 99%, democratizing access to critical philanthropic intelligence while maintaining the quality and depth of analysis that high-net-worth individuals and their advisors required.
-                  </p>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    Beyond cost reduction, the platform enabled real-time analysis capabilities that were previously impossible. Donors could now access up-to-date insights on organizational performance, impact metrics, and risk assessments, enabling more informed and strategic philanthropic decisions.
-                  </p>
-                  <a id="whyWorked" className="absolute mt-[100px]"></a>
+                  <div className="text-center mb-8">
+                    <p className="text-foreground-dark leading-relaxed mb-6">
+                      The platform successfully delivered a 99% cost reduction in philanthropic research, reducing report costs from $50,000 to $500 while maintaining consultant-level quality. The AI-powered system democratized access to critical philanthropic intelligence for donors of all sizes.
+                    </p>
+                    <a id="whyWorked"></a>
+                  </div>
                 </div>
               </div>
             </section>
 
+            {/* Why It Worked Section - Enhanced */}
             <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl p-8 shadow-glass border border-glass-border backdrop-blur-xl mb-12">
               <div className="relative z-10">
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
                   Why It Worked
                 </h2>
-                <div className="grid md:grid-cols-2 gap-8 mb-8">
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <Rocket className="w-5 h-5 text-brand-primary m-auto" />
+                <p className="text-foreground-dark leading-relaxed mb-8">
+                  The success of this project was a reflection of our core values and differentiators in action.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  {[
+                    "Disciplined Launch Process: Our Sprint Zero framework de-risked the vision and ensured alignment between technical feasibility and market need before development began, preventing costly pivots and scope creep.",
+                    "Deep AI & Data Expertise: Our Agentic AI Pod brought specialized knowledge in RAG architecture and complex data processing to solve challenges that traditional approaches couldn't handle.",
+                    "Market-Focused Development: Every feature was developed with direct input from philanthropic wealth management experts, ensuring the platform met real market needs rather than theoretical requirements.",
+                    "Scalable Architecture Foundation: The platform was built with growth in mind, featuring modular architecture that could scale to handle increasing data volumes and user demands as the business expanded.",
+                  ].map((result, index) => (
+                    <div key={index} className="mb-4">
+                      <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50 mb-2"></span>
+                      <div className="flex flex-col text-center">
+                        <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
+                          <CheckCircle className="w-5 h-5 text-[#8389DC] m-auto" />
+                        </span>
+                        <span className="text-foreground-dark">{result}</span>
                       </div>
-                      <h4 className="text-xl font-bold text-foreground font-montserrat">
-                        Disciplined Launch Process
-                      </h4>
                     </div>
-                    <p className="text-foreground-muted leading-relaxed mb-6">
-                      Our Sprint Zero framework de-risked the vision and ensured alignment between technical feasibility and market need before development began. This disciplined approach prevented scope creep and maintained focus on core value propositions.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <Brain className="w-5 h-5 text-brand-primary m-auto" />
-                      </div>
-                      <h4 className="text-xl font-bold text-foreground font-montserrat">
-                        Deep AI & Data Expertise
-                      </h4>
-                    </div>
-                    <p className="text-foreground-muted leading-relaxed mb-6">
-                      Our Agentic AI Pod brought specialized knowledge in RAG architecture and complex data processing to solve the heterogeneous data challenge that traditional approaches couldn't handle.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <Target className="w-5 h-5 text-brand-primary m-auto" />
-                      </div>
-                      <h4 className="text-xl font-bold text-foreground font-montserrat">
-                        Market-Focused Development
-                      </h4>
-                    </div>
-                    <p className="text-foreground-muted leading-relaxed mb-6">
-                      Every feature was developed with direct input from philanthropic wealth management experts, ensuring the platform met real market needs rather than theoretical requirements.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex w-10 h-10 rounded-full bg-brand-primary/10 border border-brand-primary/20">
-                        <Scale className="w-5 h-5 text-brand-primary m-auto" />
-                      </div>
-                      <h4 className="text-xl font-bold text-foreground font-montserrat">
-                        Scalable Architecture
-                      </h4>
-                    </div>
-                    <p className="text-foreground-muted leading-relaxed mb-6">
-                      The platform was built with growth in mind, featuring modular architecture that could scale to handle increasing data volumes and user demands as the business expanded.
-                    </p>
-                  </div>
+                  ))}
                 </div>
               </div>
-            </section>
-
-            <section className="bg-gradient-to-br from-brand-primary via-brand-primary-dark to-brand-purple rounded-3xl p-8 mt-12 text-center shadow-2xl">
-              <h2 className="text-3xl font-bold text-white mb-4 font-montserrat">
-                Ready to Launch Your Vision?
-              </h2>
-              <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-                Partner with Indexnine to transform your innovative idea into a market-ready platform that creates real impact.
-              </p>
-              <Button size="lg" variant="secondary" className="text-brand-primary">
-                Get Started
-              </Button>
             </section>
           </div>
         </div>
       </div>
-      
-      <Footer />
+
+      {/* CTA Section */}
+      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
+        <div className="container mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+            <span className="leading-[1.4]">Ready to Launch Your Vision?</span>
+          </h2>
+          <p className="text-xl text-foreground/80 mb-8 max-w-3xl mx-auto font-montserrat">
+            Partner with Indexnine to transform your innovative idea into a market-ready platform that creates real impact. Our proven Sprint Zero framework and AI expertise ensure your launch delivers maximum value.
+          </p>
+          <p className="text-lg text-foreground/70 mb-12 max-w-xl mx-auto font-montserrat">
+            Want to disrupt your industry with AI? So do we. Set up a free consultation with Indexnine today.
+          </p>
+          <Button variant="btnSecondary" size="lg">Get Started</Button>
+        </div>
+      </section>
+      <div className="bg-background">
+        <Footer />
+      </div>
     </div>
   );
 };

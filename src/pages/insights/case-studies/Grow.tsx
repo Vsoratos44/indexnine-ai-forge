@@ -323,65 +323,164 @@ const GrowCaseStudy = () => {
               </div>
             </section>
 
-            {/* Technical Implementation Section */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
+            {/* Technical Implementation Section - Replace with detailed phases */}
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl mb-12 shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
                   <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Technical Implementation
+                    Our Solution
                   </h3>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                    Building Cricket LLM for Sports Media Excellence
+                    Transforming Sports Media Through AI Innovation
                   </h2>
 
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    Cricket LLM was trained on millions of sports articles, player statistics, historical match data, and fan interaction patterns to understand the nuances of sports content creation. The model learned to generate content that captured the excitement, technical accuracy, and emotional resonance that sports fans expect from premium content.
+                  <p className="text-lg text-foreground-dark leading-relaxed mb-12">
+                    Sports Interactive's challenge required a complete transformation of their content operations. This was about creating an AI system that could understand the nuances of sports content while generating personalized fan engagement at unprecedented scale and speed.
                   </p>
 
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The system integrated real-time data feeds from multiple sports databases, social media platforms, and live match data to ensure content was always current and contextually relevant. Advanced natural language processing techniques enabled the AI to maintain consistent brand voice while adapting tone and style for different audience segments and content types.
-                  </p>
-                  <a id="results" className="absolute mt-[100px]"></a>
+                  <div className="space-y-12">
+                    {/* Phase 1 */}
+                    <div className="grid md:grid-cols-12 gap-8 items-start">
+                      <div className="md:col-span-1">
+                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
+                          <span className="font-bold text-foreground m-auto">1</span>
+                        </span>
+                      </div>
+                      <div className="md:col-span-11 backdrop-blur-xl bg-[#ffffff] border border-glass-border rounded-2xl p-6">
+                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                          Phase 1: Sports Data Analysis & Model Training
+                        </h3>
+                        <p className="text-foreground-dark-muted leading-relaxed">
+                          We began by analyzing Sports Interactive's existing content patterns, fan engagement data, and sports databases to understand the complex relationships between sports events, player statistics, and fan preferences. This foundational research informed the design of Cricket LLM's training datasets and content generation algorithms.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Phase 2 */}
+                    <div className="grid md:grid-cols-12 gap-8 items-start">
+                      <div className="md:col-span-1">
+                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
+                          <span className="font-bold text-foreground m-auto">2</span>
+                        </span>
+                      </div>
+                      <div className="md:col-span-11 backdrop-blur-xl bg-glass-bg/10 border border-glass-border rounded-2xl p-6">
+                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                          Phase 2: Cricket LLM Development & Real-Time Integration
+                        </h3>
+                        <p className="text-foreground-dark leading-relaxed mb-6">
+                          The core of the solution was developing Cricket LLM, a specialized language model trained specifically on sports content, terminology, and fan engagement patterns. We engineered:
+                        </p>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Custom Sports LLM
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Trained Cricket LLM on millions of sports articles, match reports, and fan interactions to understand sports context, terminology, and the emotional language that resonates with different fan segments.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Real-Time Data Integration
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Built robust data pipelines that could ingest live match data, player statistics, and social media sentiment in real-time to ensure generated content was always current and contextually relevant.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Personalization Engine
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Developed algorithms that could adapt content tone, complexity, and focus based on individual fan preferences, team loyalties, and engagement history to maximize relevance and engagement.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Quality Assurance System
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Implemented multi-layer quality checks including factual accuracy validation, brand voice consistency, and automated editorial review to maintain Sports Interactive's content standards at scale.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Phase 3 */}
+                    <div className="grid md:grid-cols-12 gap-8 items-start">
+                      <div className="md:col-span-1">
+                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD]">
+                          <span className="font-bold text-foreground m-auto">3</span>
+                        </span>
+                      </div>
+                      <div className="md:col-span-11 backdrop-blur-xl bg-glass-bg/10 border border-glass-border rounded-2xl p-6">
+                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                          Phase 3: Deployment & Operational Scaling
+                        </h3>
+                        <p className="text-foreground-dark-muted leading-relaxed mb-6">
+                          The final phase focused on deploying Cricket LLM into Sports Interactive's production environment and optimizing for massive scale during peak sporting events when fan engagement reaches its highest levels.
+                        </p>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Load Testing & Optimization
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Conducted extensive load testing to ensure the system could handle millions of simultaneous content generation requests during peak events like World Cup matches without performance degradation.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Continuous Learning Implementation
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Established feedback loops that allowed Cricket LLM to continuously improve based on fan engagement metrics, ensuring the system became more effective over time.
+                            </p>
+                          </div>
+                        </div>
+                        <a id="results"></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
 
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
-              <div className="mx-auto relative z-10">
-                <div className="max-w-8xl mx-auto">
-                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-                    Results & Impact
-                  </h3>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+            {/* Results Section */}
+            <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
+              <div className="container mx-auto px-6 lg:px-8">
+                <div className="max-w-5xl mx-auto">
+                  <h2 className="text-2xl font-bold text-foreground-dark mb-12 text-center font-montserrat">
                     Transforming Sports Media Operations
                   </h2>
-
-                  <div className="grid md:grid-cols-3 gap-8 mb-8">
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">90%</div>
-                      <div className="text-sm text-foreground-muted">Cost Reduction</div>
-                      <div className="text-xs text-foreground-muted mt-2">In content operations</div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">90%</h3>
+                      <p className="text-foreground text-xs mb-0">Cost Reduction</p>
                     </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">15sec</div>
-                      <div className="text-sm text-foreground-muted">Generation Time</div>
-                      <div className="text-xs text-foreground-muted mt-2">From hours to seconds</div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">15sec</h3>
+                      <p className="text-foreground text-xs mb-0">Generation Time</p>
                     </div>
-                    <div className="text-center p-6 bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 rounded-2xl border border-brand-primary/20">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">10x</div>
-                      <div className="text-sm text-foreground-muted">Content Volume</div>
-                      <div className="text-xs text-foreground-muted mt-2">Increased production capacity</div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">10x</h3>
+                      <p className="text-foreground text-xs mb-0">Content Volume</p>
+                    </div>
+                    <div className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}>
+                      <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">24/7</h3>
+                      <p className="text-foreground text-xs mb-0">Real-Time Operations</p>
                     </div>
                   </div>
 
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    Cricket LLM successfully automated content generation across multiple sports categories, reducing operational costs by 90% while increasing content volume by 10x. The system generated personalized fan engagement content in 15 seconds compared to the previous 2-4 hours required for manual creation.
-                  </p>
-
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The automated system maintained editorial quality standards while enabling Sports Interactive to scale their content operations to serve millions of fans simultaneously during peak sporting events. The solution provided a sustainable competitive advantage in the fast-paced sports media landscape.
-                  </p>
-                  <a id="whyWorked" className="absolute mt-[100px]"></a>
+                  <div className="text-center mb-8">
+                    <p className="text-foreground-dark leading-relaxed mb-6">
+                      Cricket LLM successfully automated content generation across multiple sports categories, reducing operational costs by 90% while increasing content volume by 10x. The system generated personalized fan engagement content in 15 seconds compared to the previous 2-4 hours required for manual creation.
+                    </p>
+                    <a id="whyWorked"></a>
+                  </div>
                 </div>
               </div>
             </section>
