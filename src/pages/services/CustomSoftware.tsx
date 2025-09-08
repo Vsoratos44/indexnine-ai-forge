@@ -25,6 +25,9 @@ import {
   CheckCircle,
   ChevronDown,
   ChevronUp,
+  Trophy,
+  ShieldCheck,
+  Brain,
 } from "lucide-react";
 import styles from "../../assets/css/stylesheet.module.css";
 
@@ -215,7 +218,10 @@ const CustomSoftware = () => {
                 <div key={index} className="relative group">
                   <div className="relative overflow-hidden bg-gradient-card-light border border-[#00039] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full bg-[#ffffff75] backdrop-blur-md">
                     <div className="flex items-center mb-6">
-                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <div
+                        className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        {" "}
                         <step.icon className="w-8 h-8 text-brand-primary" />
                       </div>
                       {/* <span className="text-3xl font-bold text-brand-primary/60">
@@ -292,7 +298,9 @@ const CustomSoftware = () => {
                   className="relative overflow-hidden bg-gradient-card-light border border-[#00039] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full bg-[#ffffff75] "
                   key={index}
                 >
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                  <div
+                    className={`relative w-20 h-20 flex items-center justify-center transition-all mb-6 ${styles.icnBg}`}
+                  >
                     <service.icon className="w-8 h-8 text-brand-primary" />
                   </div>
                   <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
@@ -360,7 +368,7 @@ const CustomSoftware = () => {
                       <p className="text-sm text-foreground/60 uppercase tracking-wide mb-2 font-montserrat">
                         Investment
                       </p>
-                      <p className="text-3xl font-semibold text-brand-primary font-montserrat">
+                      <p className="text-3xl font-semibold text-white font-montserrat">
                         Starting at $10,000
                       </p>
                     </div>
@@ -375,13 +383,13 @@ const CustomSoftware = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="pb-24 lg:pb-32 bg-transparent">
+        <section className=" bg-transparent">
           <div className="container mx-auto px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-12 text-foreground-dark text-center">
               Your Custom Software Questions, Answered
             </h2>
             <div className="grid md:grid-cols-2 gap-12">
-              <div className="max-w-4xl bg-[#fcfcfc] shadow-glass-lg  p-8 rounded-3xl">
+              <div className="max-w-4xl bg-[#fcfcfc] shadow-glass  p-8 rounded-3xl">
                 <div className="space-y-0">
                   {faqData.map((faq, index) => (
                     <div
@@ -423,8 +431,10 @@ const CustomSoftware = () => {
                     className="py-4 border-b flex gap-6 rounded-0 hover:bg-[#fcfcfc] transition-all bg backdrop-blur-xl"
                   >
                     <div className="w-20">
-                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                        <Zap className="w-8 h-8 text-brand-primary" />
+                      <div
+                        className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        <Brain className="w-8 h-8 text-brand-primary" />
                       </div>
                     </div>
                     <div>
@@ -442,8 +452,10 @@ const CustomSoftware = () => {
                     className="py-4 border-b flex gap-6 rounded-0 hover:bg-[#fcfcfc] transition-all bg backdrop-blur-xl"
                   >
                     <div className="w-20">
-                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                        <Zap className="w-8 h-8 text-brand-primary" />
+                      <div
+                        className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        <ShieldCheck className="w-8 h-8 text-brand-primary" />
                       </div>
                     </div>
                     <div>
@@ -461,8 +473,10 @@ const CustomSoftware = () => {
                     className="py-4 flex gap-6 rounded-0 hover:bg-[#fcfcfc] transition-all bg backdrop-blur-xl"
                   >
                     <div className="w-20">
-                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                        <Zap className="w-8 h-8 text-brand-primary" />
+                      <div
+                        className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        <Trophy className="w-8 h-8 text-brand-primary" />
                       </div>
                     </div>
                     <div>

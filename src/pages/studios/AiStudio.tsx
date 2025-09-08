@@ -22,6 +22,14 @@ import {
   CheckCircle,
   ChevronDown,
   ChevronUp,
+  Lightbulb,
+  ShieldAlert,
+  Handshake,
+  ChartSpline,
+  Rocket,
+  ShieldHalf,
+  Database,
+  Grid2x2Check,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -31,11 +39,14 @@ import CasesCarousel from "@/components/CasesCarousel";
 const AiStudio = () => {
   // Implement comprehensive SEO for AI Studio page
   useSEO({
-    title: "AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine",
-    description: "Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services.",
+    title:
+      "AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine",
+    description:
+      "Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services.",
     canonicalUrl: "https://www.indexnine.com/studios/ai",
-    keywords: "AI consulting services, machine learning solutions, enterprise AI implementation, AI strategy consulting, custom AI development, generative AI solutions, AI change management, ML engineering, artificial intelligence consulting, AI transformation services, enterprise machine learning, AI implementation framework, legacy system AI integration, conversational AI development, AI automation solutions",
-    ogImage: "https://www.indexnine.com/images/og-ai-studio.png"
+    keywords:
+      "AI consulting services, machine learning solutions, enterprise AI implementation, AI strategy consulting, custom AI development, generative AI solutions, AI change management, ML engineering, artificial intelligence consulting, AI transformation services, enterprise machine learning, AI implementation framework, legacy system AI integration, conversational AI development, AI automation solutions",
+    ogImage: "https://www.indexnine.com/images/og-ai-studio.png",
   });
 
   return (
@@ -156,8 +167,10 @@ const AiStudio = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative w-20 h-20 mb-6">
-                  <img src={VelocityIcon} alt="" />
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
+                  <Lightbulb className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="relative text-xl font-semibold mb-4 text-foreground-dark">
                   Strategy First, Technology Second
@@ -171,8 +184,10 @@ const AiStudio = () => {
 
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative w-20 h-20 mb-6">
-                  <img src={VelocityIcon} />
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
+                  <ShieldAlert className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="relative text-xl font-semibold mb-4 text-foreground-dark">
                   De-Risk Through Discovery
@@ -186,8 +201,10 @@ const AiStudio = () => {
 
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative w-20 h-20 mb-6">
-                  <img src={VelocityIcon} />
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
+                  <Handshake className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="relative text-xl font-semibold mb-4 text-foreground-dark">
                   Measurable Business Impact
@@ -226,7 +243,12 @@ const AiStudio = () => {
               <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
                 <CardContent className="p-0 h-full">
                   <div className="flex items-center gap-4 mb-6">
-                    <img className="relative w-12 h-12" src={StdAudit} alt="" />
+                    <div
+                      className={`relative w-12 h-12 rounded-sm flex items-center justify-center bg-gradient-to-r from-brand-purple to-[#505CFD]`}
+                    >
+                      <ChartSpline className="w-5 h-5 text-white" />
+                    </div>
+
                     <div className="backdrop-blur-md px-3 py-1 rounded-full text-sm font-medium border border-black-500 ml-auto">
                       4 Weeks
                     </div>
@@ -294,7 +316,11 @@ const AiStudio = () => {
               <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative flex flex-col">
                 <CardContent className="p-0 h-full">
                   <div className="flex items-center gap-4 mb-6">
-                    <img className="relative w-12 h-12" src={ProAudit} alt="" />
+                    <div
+                      className={`relative w-12 h-12 rounded-sm flex items-center justify-center bg-gradient-to-r from-brand-purple to-[#505CFD]`}
+                    >
+                      <Rocket className="w-5 h-5 text-white" />
+                    </div>
                     <div className="backdrop-blur-md px-3 py-1 rounded-full text-sm font-medium border border-black-500 ml-auto">
                       8 Weeks
                     </div>
@@ -396,7 +422,9 @@ const AiStudio = () => {
                   {/* Frosted Glass Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
 
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                  <div
+                    className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                  >
                     <Target className="h-8 w-8 text-brand-primary" />
                   </div>
                   <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
@@ -417,7 +445,9 @@ const AiStudio = () => {
                   {/* Frosted Glass Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
 
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                  <div
+                    className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                  >
                     <Brain className="h-8 w-8 text-brand-primary" />
                   </div>
                   <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
@@ -438,7 +468,9 @@ const AiStudio = () => {
                   {/* Frosted Glass Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
 
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                  <div
+                    className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                  >
                     <Shield className="h-8 w-8 text-brand-primary" />
                   </div>
                   <h3 className="relative text-xl font-semibold mb-4 text-foreground-white">
@@ -476,50 +508,52 @@ const AiStudio = () => {
               <div className="grid md:grid-cols-5 gap-6">
                 {[
                   {
-                    step: "01",
+                    step: <Target className="w-6 h-6 text-white" />,
                     title: "Business Context & Strategy",
                     description:
                       "Understanding your business goals, challenges, and strategic priorities.",
                   },
                   {
-                    step: "02",
+                    step: <Database className="w-6 h-6 text-white" />,
                     title: "Build Business Asset Inventory",
                     description:
                       "Cataloging your data assets, systems, and existing capabilities.",
                   },
                   {
-                    step: "03",
+                    step: <Grid2x2Check className="w-6 h-6 text-white" />,
                     title: "Identify & Prioritize Opportunities",
                     description:
                       "Mapping AI opportunities to business value and feasibility.",
                   },
                   {
-                    step: "04",
+                    step: <Rocket className="w-6 h-6 text-white" />,
                     title: "Roadmap Creation",
                     description:
                       "Developing a phased implementation plan with clear milestones.",
                   },
                   {
-                    step: "05",
+                    step: <ShieldHalf className="w-6 h-6 text-white" />,
                     title: "Governance & Sustainability",
                     description:
                       "Establishing frameworks for ethical AI and long-term success.",
                   },
                 ].map((item) => (
-                  <div key={item.step} className="text-center">
-                    <div className="w-16 h-16 bg-brand-primary rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
-                      <span className="text-white font-bold text-lg">
+                  <div key={item.title} className="text-center">
+                    <div className="w-16 h-16 bg-gradient-to-b from-brand-purple to-[#505CFD] rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
+                      <div
+                        className={`relative w-16 h-16 rounded-sm flex items-center justify-center mt-[-0.5rem] mr-[-0.5rem] bg-gradient-to-r from-[#727AF2] to-[#535DE1]  border border-white/25`}
+                      >
                         {item.step}
-                      </span>
+                      </div>
                     </div>
                     <div
-                      className={`bg-brand-purple/20 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 h-full rounded-tl-2xl rounded-tr-2xl`}
+                      className={`bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19]  bg-clip-padding backdrop-filter backdrop-blur-lg h-full rounded-2xl`}
                     >
-                      <div className={`p-3 pt-10 bg-transparent`}>
+                      <div className={`px-3 pt-10 bg-transparent`}>
                         <h3 className="text-lg font-medium mb-3 text-foreground">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-foreground/80">
+                        <p className="text-sm text-foreground/80 mb-0">
                           {item.description}
                         </p>
                       </div>
@@ -540,20 +574,20 @@ const AiStudio = () => {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
                 Our Applied AI Development Services
               </h2>
-              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
+              <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto mb-0">
                 From strategic advisory to full-stack implementation, our
                 services cover the entire AI lifecycle. We specialize in
                 building robust, scalable, and secure AI solutions.
               </p>
             </div>
             <CasesCarousel />
-            <div className="grid md:grid-cols-3 gap-8">
+            {/* <div className="grid md:grid-cols-3 gap-8">
               <div className="relative overflow-hidden bg-[#ffffff39] border border-[#ffffff55] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group">
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="mb-6">
-                  <img 
-                    src={aiChangeManagementImg} 
-                    alt="AI change management and digital transformation" 
+                  <img
+                    src={aiChangeManagementImg}
+                    alt="AI change management and digital transformation"
                     className="w-full h-40 object-cover rounded-lg"
                   />
                 </div>
@@ -561,13 +595,20 @@ const AiStudio = () => {
                   AI Change Management
                 </h3>
                 <p className="relative text-foreground-dark mb-4">
-                  Strategic frameworks for legacy organizations to navigate AI adoption. We transform resistance into enthusiasm through purposeful modernization.
+                  Strategic frameworks for legacy organizations to navigate AI
+                  adoption. We transform resistance into enthusiasm through
+                  purposeful modernization.
                 </p>
                 <p className="relative text-sm text-brand-primary font-medium mb-4">
-                  Use Cases: Legacy System Modernization, Change Management, AI Enablement Framework
+                  Use Cases: Legacy System Modernization, Change Management, AI
+                  Enablement Framework
                 </p>
                 <Link to="/insights/blogs/ai-change-management-playbook">
-                  <Button variant="btnLink" size="sm" className="p-0 h-auto text-brand-primary font-medium">
+                  <Button
+                    variant="btnLink"
+                    size="sm"
+                    className="p-0 h-auto text-brand-primary font-medium"
+                  >
                     Read Our AI Change Management Playbook →
                   </Button>
                 </Link>
@@ -647,7 +688,7 @@ const AiStudio = () => {
                   Change Management
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

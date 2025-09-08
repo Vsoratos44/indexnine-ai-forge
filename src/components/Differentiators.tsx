@@ -78,7 +78,9 @@ const Differentiators = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
 
               {/* Icon Container with Enhanced Glass Effect */}
-              <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+              <div
+                className={`relative w-20 h-20 flex items-center justify-center mb-8 ${styles.icnBg}`}
+              >
                 <diff.icon className="w-10 h-10 text-brand-primary group-hover:text-brand-primary-dark transition-colors duration-300" />
               </div>
 

@@ -131,6 +131,12 @@ header .fixed.inset-0 {
   background-size: cover;
   background-attachment: fixed;
 }
+.icnBg {
+  background-image: url(./../images/icn-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .bord-rb,
 .bordRb {
