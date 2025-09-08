@@ -297,7 +297,6 @@ const PivotCaseStudy = () => {
                             <span className="text-white">Modernization</span>
                           </div>
                         </div>
-                        <a id="challange2" className="absolute mt-[100px]"></a>
                       </div>
                       <h3 className="text-lg font-semibold text-white mb-4 mt-8 font-montserrat">
                         Key Outcomes
@@ -327,6 +326,7 @@ const PivotCaseStudy = () => {
                           </div>
                         ))}
                       </div>
+                      <a id="challange2" className="absolute mt-[-40px]"></a>
                     </div>
                   </div>
                 </div>
