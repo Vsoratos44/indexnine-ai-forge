@@ -236,46 +236,6 @@ const CaseStudies = () => {
       },
     },
     {
-      id: "edtech-pivot",
-      title: "EdTech Platform - Strategic Pivot to Success",
-      subtitle:
-        "How we helped an EdTech platform quickly adapt to market feedback and evolve their product strategy with data-driven insights.",
-      client: "EdTech Platform (K-12 Education)",
-      industry: "Education Technology, K-12 Learning",
-      challenge:
-        "An EdTech platform struggling with low user engagement and changing market demands following the shift to remote learning.",
-      solution:
-        "Data-driven pivot strategy including user behavior analysis, product repositioning, and rapid feature development to meet new market needs.",
-      results: [
-        "300% Increase in User Engagement: Dramatically improved platform adoption and daily active users",
-        "Market Leadership Position: Became the go-to solution for hybrid learning environments",
-        "Secured $15M Funding: Successful Series A round based on improved metrics and market fit",
-        "6-Month Time to Market: Rapid development and deployment of new core features",
-      ],
-      duration: "6 months",
-      teamSize: "8 engineers",
-      category: "pivot",
-      serviceType: "Custom Software",
-      homePageLink: "/#pivot",
-      serviceLink: "/services/custom-software",
-      detailedContent: {
-        challenge:
-          "The EdTech platform had been successful in traditional classroom settings, but the sudden shift to remote and hybrid learning exposed critical gaps in their product offering. User engagement was declining, and competitors were rapidly capturing market share.",
-        approach: [
-          "User Behavior Analysis and Market Research",
-          "Data-Driven Product Repositioning",
-          "Rapid Feature Development and Testing",
-        ],
-        technicalDetails:
-          "Implemented comprehensive analytics tracking, A/B testing framework, and rapid development cycles to quickly adapt to changing market needs and user feedback.",
-        whyItWorked: [
-          "Data-Driven Decision Making with comprehensive user research",
-          "Agile Development Process with rapid iteration cycles",
-          "Strategic Product Expertise in education technology",
-        ],
-      },
-    },
-    {
       id: "tripjack",
       title:
         "Tripjack - Enabling Velocity for a High-Growth B2B Travel Platform",
@@ -314,46 +274,6 @@ const CaseStudies = () => {
           "Deep Quality Engineering Expertise in travel domain",
           "Modern Test Automation Frameworks with AI assistance",
           "Collaborative Partnership Approach with embedded QE team",
-        ],
-      },
-    },
-    {
-      id: "enterprise-saas-optimization",
-      title: "Enterprise SaaS - Mission-Critical Optimization",
-      subtitle:
-        "How we optimized performance, security, and reliability for an enterprise SaaS platform serving Fortune 500 companies.",
-      client: "Enterprise SaaS Platform Provider (Fortune 500)",
-      industry: "Enterprise Software, Cloud Services",
-      challenge:
-        "An enterprise SaaS platform experiencing performance bottlenecks, security vulnerabilities, and scalability issues that threatened their Fortune 500 client relationships.",
-      solution:
-        "Comprehensive platform optimization including performance tuning, security hardening, and architectural improvements to meet enterprise-grade requirements.",
-      results: [
-        "99.99% Uptime Achieved: Eliminated service interruptions and delivered enterprise-grade reliability",
-        "400% Performance Improvement: Dramatically reduced response times and increased throughput",
-        "Zero Security Incidents: Implemented comprehensive security measures with continuous monitoring",
-        "SOC 2 Certification: Successfully achieved compliance with enterprise security standards",
-      ],
-      duration: "12 months",
-      teamSize: "15 engineers",
-      category: "optimization",
-      serviceType: "Custom Software",
-      homePageLink: "/#optimization",
-      serviceLink: "/services/custom-software",
-      detailedContent: {
-        challenge:
-          "The client's SaaS platform had grown rapidly but was struggling to meet the stringent requirements of enterprise customers. Performance issues, security concerns, and compliance gaps were threatening their most valuable client relationships.",
-        approach: [
-          "Performance Optimization and Database Tuning",
-          "Security Hardening and Compliance Implementation",
-          "Infrastructure Scaling and Monitoring",
-        ],
-        technicalDetails:
-          "Implemented comprehensive optimization strategy including database query optimization, Redis caching, security audits, and enterprise-grade monitoring systems.",
-        whyItWorked: [
-          "Deep Enterprise Expertise in scalable architectures",
-          "Comprehensive Security Knowledge with compliance experience",
-          "Performance Engineering Specialization",
         ],
       },
     },
