@@ -157,20 +157,20 @@ const CaseStudies = () => {
     {
       id: "mature",
       title:
-        "Genesys - A Mission-Critical Modernization of a Legacy E-commerce Platform",
+        "Mission-Critical Modernization: Genesys E-commerce Platform",
       subtitle:
-        "How Indexnine's Expertise in Product Modernization and Event-Driven Architecture Rescued a Mission-Critical Integration Hub from Collapse.",
+        "Product modernization and event-driven architecture transformation for a mature e-commerce platform serving thousands of merchants.",
       client: "Genesys",
-      industry: "E-commerce Technology, SaaS",
+      industry: "E-commerce",
       challenge:
-        "A 16-year-old, mission-critical e-commerce integration platform, written in legacy PHP, was experiencing daily failures. Its monolithic architecture could not handle the complexity of its 178 real-time integrations, threatening catastrophic business disruption.",
+        "For thousands of merchants across India, Genesys's platform was their lifeline to e-commerce. The 16-year-old legacy PHP system with 178 integrations was incredibly fragile, causing daily crashes and threatening business continuity.",
       solution:
-        "A strategic Product Modernization/Refresh engagement. Indexnine architected and implemented a modern, event-driven integration hub to decouple the legacy core from its volatile external dependencies, followed by a phased and meticulous migration of all 178 integrations.",
+        "A comprehensive platform modernization using event-driven architecture, asynchronous message queues, and a canonical data model to create a resilient, scalable system with zero-downtime migration.",
       results: [
-        "Averted Business Collapse: Rescued a failing, mission-critical system, ensuring operational stability",
-        "Achieved Near-100% Uptime: The new event-driven architecture eliminated daily crashes",
-        "Future-Proofed the Platform: Replaced brittle monolithic structure with scalable, modern architecture",
-        "Executed Zero-Downtime Migration: Successfully modernized core infrastructure without business disruption",
+        "100% Uptime Achievement: After modernization, the platform achieved perfect uptime, eliminating the daily crashes that plagued the legacy system.",
+        "Zero-Downtime Migration: Successfully migrated all 178 integrations without service interruption, maintaining business continuity throughout the transformation.",
+        "Improved System Reliability: Event-driven architecture eliminated the fragility of the monolithic system, making it resilient to partner API changes.",
+        "Enhanced Scalability: Modern architecture positioned the platform to handle future growth and feature expansion with confidence.",
       ],
       duration: "18 months",
       teamSize: "12 engineers",
@@ -180,37 +180,37 @@ const CaseStudies = () => {
       serviceLink: "/services/custom-software",
       detailedContent: {
         challenge:
-          "For thousands of merchants across India, Genesys's platform was their lifeline to the world of e-commerce. The platform was an integration engine, connecting sellers on platforms like Amazon, Myntra, and Flipkart. The problem? This mission-critical engine was 16 years old, built on legacy PHP, and experiencing daily crashes during peak inventory update periods.",
+          "For thousands of merchants across India, Genesys's platform was their lifeline to the world of e-commerce. The platform was an integration engine, connecting sellers on platforms like Amazon, Myntra, and Flipkart, and managing a constant flow of inventory updates, orders, and transactions. The problem? The engine was over 16 years old, built on legacy PHP, and was bursting at the seams.",
         approach: [
           "Architectural Strategy - The Event-Driven Approach",
-          "Technical Execution - Building a Resilient, Scalable Hub",
+          "Technical Execution - Building a Resilient, Scalable Hub", 
           "Phased, Zero-Downtime Rollout Strategy",
         ],
         technicalDetails:
           "Built an event-driven integration hub with asynchronous message queues, standardized canonical data model, and microservices for transformation. Each integration was migrated channel-by-channel to ensure zero business disruption.",
         whyItWorked: [
-          "Deep Architectural Expertise in event-driven systems",
-          "Disciplined, Risk-Averse Process with phased migration",
+          "Architectural Expertise in event-driven systems and microservices",
+          "Disciplined, Risk-Averse Process with phased migration approach",
           "True Partnership Approach with embedded team collaboration",
         ],
       },
     },
     {
       id: "cygeniq",
-      title: "CygenIQ - Engineering a First-Mover Advantage in AI Security",
+      title: "CygenIQ: Engineering a First-Mover Advantage in AI Security",
       subtitle:
         "A strategic MVP launch for a visionary startup, engineering a first-of-its-kind platform and delivering a fundable, high-fidelity interactive prototype in record time.",
       client: "CygenIQ",
-      industry: "Cybersecurity (AI Security)",
+      industry: "AI Security",
       challenge:
         "Visionary founders needed to move from a validated idea to a functional, high-fidelity prototype to secure their next round of funding and begin development. This required a strategic partner who could deliver enterprise-grade design and engineering with extreme velocity.",
       solution:
         "A comprehensive Launch engagement, beginning with our proprietary Sprint Zero framework to de-risk the vision, followed by the rapid, parallel development of the core AI engine by our Agentic AI Pod and a CISO-centric interactive prototype by our Design Studio.",
       results: [
-        "Market-Ready MVP Delivered: Successfully launched a fully functional, enterprise-grade platform, enabling CygenIQ to engage with early adopters",
-        "Accelerated Seed Funding by 25%: High-fidelity interactive prototype delivered in just six weeks provided clear, buildable plan",
-        "First-Mover Advantage Secured: Accelerated process allowed CygenIQ to get to market faster than competitors",
-        "Zero Ambiguity in Developer Handoff: Detailed blueprint eliminated uncertainty, allowing engineering team to execute with precision",
+        "Accelerated Seed Funding: The high-fidelity prototype and technical validation enabled CygenIQ to close their seed round months ahead of schedule.",
+        "6-Week MVP Delivery: From concept to interactive prototype in just six weeks, demonstrating the power of our integrated studio approach.",
+        "First-Mover Market Position: CygenIQ established themselves as the pioneer in AI security platforms, securing a significant competitive advantage.",
+        "Enterprise-Ready Foundation: The platform was architected from day one to meet enterprise security and compliance requirements.",
       ],
       duration: "6 weeks",
       teamSize: "5 engineers",
@@ -220,10 +220,10 @@ const CaseStudies = () => {
       serviceLink: "/services/custom-software",
       detailedContent: {
         challenge:
-          "The proliferation of generative AI in the enterprise has created a paradigm shift, unlocking unprecedented productivity. However, it has also opened a new, insidious, and largely undefended attack surface. Traditional cybersecurity tools are fundamentally blind to the threats posed by Large Language Models (LLMs). CySecurity founders saw this as a market-defining opportunity to build a first-of-its-kind platform that could effectively 'police other AIs'.",
+          "The rapid adoption of generative AI in enterprise environments created an entirely new attack surface that traditional cybersecurity tools weren't designed to address. CygenIQ's founders, seasoned cybersecurity experts, recognized this gap and envisioned a first-of-its-kind platform specifically designed to secure AI systems and data flows.",
         approach: [
           "Sprint Zero - De-Risking the Vision and Charting the Course",
-          "Design Studio - Engineering Clarity for the CISO",
+          "Design Studio - Engineering Clarity for the CISO", 
           "Agentic AI Pod - Engineering the Core Security Engine",
         ],
         technicalDetails:
@@ -239,42 +239,42 @@ const CaseStudies = () => {
     {
       id: "tripjack",
       title:
-        "Tripjack - Enabling Velocity for a High-Growth B2B Travel Platform",
+        "TripJack: Engineering the Platform for Next-Generation Travel",
       subtitle:
-        "How IndexNine's Quality Engineering delivered 97% faster testing and transformed release velocity.",
-      client: "Tripjack",
-      industry: "Travel Technology, B2B Platform",
+        "How Indexnine's Expertise in Microservices and API Integration Reduced Time-to-Market by 75%, Powering TripJack's Expansion into New B2B2C Revenue Streams.",
+      client: "TripJack",
+      industry: "Travel Technology",
       challenge:
-        "A rapidly scaling B2B Travel Platform was crippled by a 5-day manual regression testing cycle, blocking their ability to release new features and respond to market demands.",
+        "TripJack's monolithic architecture and manual integration processes were creating significant operational drag. The lengthy, multi-month timeline required to onboard new airline suppliers was a major bottleneck, hindering their ability to expand offerings and react to market changes.",
       solution:
-        "IndexNine implemented a comprehensive test automation suite using Robot Framework, tied to a 100% success-fee engagement model focused on measurable outcomes.",
+        "A strategic \"Grow\" and \"Product Modernization\" engagement. Indexnine architected and built a modern, event-driven, microservices-based integration hub to streamline supplier onboarding. In parallel, we developed their new flagship B2B2C platform, enabling them to enter the direct-to-consumer market for the first time.",
       results: [
-        "97% Reduction in Testing Time: From 5 days to 30 minutes for regression testing",
-        "100% Success Fee Achieved: Delivered on all measurable quality metrics",
-        "Zero Production Incidents: Comprehensive test coverage prevented critical bugs",
-        "Accelerated Release Velocity: Enabled weekly releases vs. monthly cycles",
+        "75% Faster Time-to-Market: The new integration hub reduced the time to onboard new airline suppliers using the modern NDC protocol from over 3 months to just 3 weeks.",
+        "New B2B2C Revenue Channel Launched: Successfully architected and delivered a scalable, user-centric B2C platform, opening up a significant new revenue stream for the business.",
+        "Massively Improved Operational Efficiency: Replaced a brittle, manual integration process with a streamlined, automated, and scalable architecture.",
+        "Future-Proofed for Industry Evolution: The modern, API-first architecture positions TripJack to rapidly adapt to future changes in travel technology standards.",
       ],
-      duration: "4 months",
-      teamSize: "6 engineers",
-      category: "quality-engineering",
-      serviceType: "Quality Engineering",
-      homePageLink: "/#quality",
-      serviceLink: "/studios/quality-engineering",
+      duration: "18 months",
+      teamSize: "12 engineers",
+      category: "grow",
+      serviceType: "Custom Software",
+      homePageLink: "/#grow",
+      serviceLink: "/services/custom-software",
       detailedContent: {
         challenge:
-          "Tripjack's rapid growth was being constrained by their manual testing processes. Every release required a 5-day regression testing cycle that involved multiple team members manually testing core travel booking flows. This bottleneck was preventing them from responding quickly to market opportunities and customer feedback.",
+          "TripJack had firmly established itself as a dominant force in India's B2B travel market. Their platform served as the critical technology backbone for thousands of travel agents, providing them with real-time access to a vast inventory of flights, hotels, and other travel products. However, their monolithic architecture was struggling to keep pace with their business ambitions.",
         approach: [
-          "Comprehensive Test Strategy Assessment",
-          "Robot Framework Implementation with AI-Assisted Test Generation",
-          "CI/CD Pipeline Integration and Optimization",
+          "Modern Integration Hub Architecture",
+          "Microservices-Based Platform Development",
+          "B2B2C Platform Launch Strategy",
         ],
         technicalDetails:
-          "Built a comprehensive test automation suite using Robot Framework with intelligent test selection, parallel execution capabilities, and integrated reporting dashboards for real-time quality insights.",
+          "Built a modern, event-driven, microservices-based integration hub with NDC protocol support and automated supplier onboarding processes. Simultaneously developed a scalable B2B2C platform for direct consumer access.",
         whyItWorked: [
-          "Outcome-Driven Engagement Model with success-fee alignment",
-          "Deep Quality Engineering Expertise in travel domain",
-          "Modern Test Automation Frameworks with AI assistance",
-          "Collaborative Partnership Approach with embedded QE team",
+          "Domain Expertise in travel technology and NDC protocol",
+          "Modern Architecture Patterns with microservices and event-driven design",
+          "Parallel Development Strategy for multiple platform initiatives",
+          "Strategic Partnership Approach with long-term platform vision",
         ],
       },
     },
