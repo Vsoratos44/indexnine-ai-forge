@@ -423,8 +423,8 @@ const PivotCaseStudy = () => {
                     {/* Phase 1 */}
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
-                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD] ">
-                          <span className="font-bold text-foreground m-auto">
+                        <span className="flex w-12 h-12 rounded-full bg-[#505DFD] ">
+                          <span className="font-light text-xl text-foreground m-auto">
                             1
                           </span>
                         </span>
@@ -450,8 +450,8 @@ const PivotCaseStudy = () => {
                     {/* Phase 2 */}
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
-                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD] ">
-                          <span className="font-bold text-foreground m-auto">
+                        <span className="flex w-12 h-12 rounded-full bg-[#505DFD] ">
+                          <span className="font-light text-xl text-foreground m-auto">
                             2
                           </span>
                         </span>
@@ -526,8 +526,8 @@ const PivotCaseStudy = () => {
                     {/* Phase 3 */}
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                       <div className="md:col-span-1">
-                        <span className="flex w-10 h-10 rounded-full bg-[#505DFD] ">
-                          <span className="font-bold text-foreground m-auto">
+                        <span className="flex w-12 h-12 rounded-full bg-[#505DFD] ">
+                          <span className="font-light text-xl text-foreground m-auto">
                             3
                           </span>
                         </span>
