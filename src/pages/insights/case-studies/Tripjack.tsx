@@ -37,9 +37,16 @@ import CaseInrImg from "@/assets/images/case-details-img.webp";
 const leftNavLinks = [
   { href: "#intro1", label: "Introduction" },
   { href: "#challenge1", label: "Integration Bottleneck" },
-  { href: "#solution1", label: "Modern Architecture" },
+  { href: "#challenge2", label: "Modern Architecture" },
   { href: "#results", label: "Results & Impact" },
   { href: "#whyWorked", label: "Why It Worked" },
+];
+
+const outcomeTitle = [
+  "75% Faster Time-to-Market",
+  "New B2B2C Revenue Channel Launched",
+  "Massively Improved Operational Efficiency",
+  "Future-Proofed for Industry Evolution",
 ];
 
 const TripjackCaseStudy = () => {
@@ -160,7 +167,7 @@ const TripjackCaseStudy = () => {
             </div>
           </div>
           <div className="col-span-2">
-            <section className="min-h-[400px] bg-gradient-to-br from-background via-background-alternate to-background rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden">
+            <section className="min-h-[300px] bg-gradient-to-br from-background via-background-alternate to-background rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden">
               <div className="mt-auto p-8">
                 <div className="max-w-8xl mx-auto">
                   <div className="mb-6">
@@ -174,21 +181,21 @@ const TripjackCaseStudy = () => {
                       <span className="text-brand-primary text-xs mr-2">
                         Industry
                       </span>{" "}
-                      Travel Technology
+                      Travel & Tourism, E-commerce, SaaS
                     </span>
                   </div>
 
                   <div className="inline-block p-8 bg-black/20 shadow-md text-white rounded-xl text-sm font-medium border border-white/30 backdrop-blur-sm">
-                    <h1 className="text-4xl sm:text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat md:flex gap-4 items-center">
+                    <h1 className="text-4xl sm:text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat md:flex gap-4 items-start">
                       <span className="leading-[1.05]">TripJack:</span>
                       <span className="bg-gradient-primary bg-clip-text text-[#505cfd] leading-[1.05]">
                         Engineering the Platform for Next-Generation Travel
                       </span>
                     </h1>
                     <p className="text-xl sm:text-lg text-foreground/100 mb-0 max-w-4xl leading-relaxed font-regular animate-slide-up font-montserrat">
-                      How Indexnine's Expertise in Microservices and API
+                      How Indexnine’s Expertise in Microservices and API
                       Integration Reduced Time-to-Market by 75%, Powering
-                      TripJack's Expansion into New B2B2C Revenue Streams.
+                      TripJack’s Expansion into New B2B2C Revenue Streams.
                     </p>
                     <a id="challenge1"></a>
                   </div>
@@ -198,7 +205,7 @@ const TripjackCaseStudy = () => {
 
             {/* Overview Section */}
             <section
-              className={`p-8 bg-background relative overflow-hidden rounded-tl-2xl rounded-tr-2xl ${styles.middleCardBg2}`}
+              className={`p-8 bg-background relative overflow-hidden rounded-2xl mb-4 ${styles.middleCardBg2}`}
             >
               <div className="relative z-10">
                 <div className="max-w-6xl mx-auto">
@@ -207,94 +214,418 @@ const TripjackCaseStudy = () => {
                       Challenge
                     </h3>
                     <p className="text-white mb-6">
-                      TripJack needed to modernize their legacy travel
-                      technology platform and expand into B2B2C markets while
-                      reducing integration time-to-market by 75% and maintaining
-                      system reliability for existing customers.
+                      As a high-growth platform, TripJack’s monolithic
+                      architecture and manual integration processes were
+                      creating significant operational drag. The lengthy,
+                      multi-month timeline required to onboard new airline
+                      suppliers was a major bottleneck, hindering their ability
+                      to expand their product offerings and react to market
+                      changes.
                     </p>
-
-                    <div className="grid md:grid-cols-4 gap-6">
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                        <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Plane className="w-5 h-5 text-white m-auto" />
-                          </span>
-                          <span className="text-white">Travel Tech</span>
-                        </div>
-                      </div>
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                        <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Building className="w-5 h-5 text-white m-auto" />
-                          </span>
-                          <span className="text-white">B2B2C Platform</span>
-                        </div>
-                      </div>
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                        <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <Workflow className="w-5 h-5 text-white m-auto" />
-                          </span>
-                          <span className="text-white">Microservices</span>
-                        </div>
-                      </div>
-                      <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                        <div className="flex items-center gap-4 flex-col">
-                          <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                            <TrendingUp className="w-5 h-5 text-white m-auto" />
-                          </span>
-                          <span className="text-white">75% Faster</span>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </section>
+            <section
+              className={`p-8 mb-12 bg-background relative overflow-hidden rounded-2xl  ${styles.middleCardBg2}`}
+            >
+              <div className=" relative z-10">
+                <div className="max-w-6xl mx-auto">
+                  <div className="">
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-4 font-montserrat">
+                        Solution
+                      </h3>
+                      <p className="text-white mb-6">
+                        A strategic "Grow" and "Product Modernization"
+                        engagement. Indexnine architected and built a modern,
+                        event-driven, microservices-based integration hub to
+                        streamline supplier onboarding. In parallel, we
+                        developed their new flagship B2B2C platform, enabling
+                        them to enter the direct-to-consumer market for the
+                        first time.
+                      </p>
 
+                      <div className="grid md:grid-cols-4 gap-6">
+                        <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                          <div className="flex items-center gap-4 flex-col">
+                            <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                              <Plane className="w-6 h-6 text-white m-auto" />
+                            </span>
+                            <span className="text-white">Travel Tech</span>
+                          </div>
+                        </div>
+                        <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                          <div className="flex items-center gap-4 flex-col">
+                            <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                              <Building className="w-6 h-6 text-white m-auto" />
+                            </span>
+                            <span className="text-white">B2B2C Platform</span>
+                          </div>
+                        </div>
+                        <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                          <div className="flex items-center gap-4 flex-col">
+                            <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                              <Workflow className="w-6 h-6 text-white m-auto" />
+                            </span>
+                            <span className="text-white">Microservices</span>
+                          </div>
+                        </div>
+                        <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                          <div className="flex items-center gap-4 flex-col">
+                            <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
+                              <TrendingUp className="w-6 h-6 text-white m-auto" />
+                            </span>
+                            <span className="text-white">75% Faster</span>
+                          </div>
+                        </div>
+                      </div>
+                      <h3 className="text-lg font-semibold text-white mb-4 mt-8 font-montserrat">
+                        Key Outcomes
+                      </h3>
+                      <div className="grid grid-cols md:grid-cols-2  gap-6 ">
+                        {[
+                          "The new integration hub reduced the time to onboard new airline suppliers using the modern NDC protocol from over 3 months to just 3 weeks.",
+                          "Successfully architected and delivered a scalable, user-centric B2C platform, opening up a significant new revenue stream for the business.",
+                          "Replaced a brittle, manual integration process with a streamlined, automated, and scalable architecture, freeing up valuable engineering resources to focus on innovation.",
+                          "The modern, API-first architecture positions TripJack to rapidly adapt to future changes in travel technology standards and onboard new partners with unprecedented speed.",
+                        ].map((outcome, index) => (
+                          <div
+                            key={index}
+                            className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff25] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full"
+                          >
+                            <div className="flex items-center space-x-3 mb-3">
+                              <div className="mr-2">
+                                <span className="flex w-14 h-14 rounded-full bg-[#2E348233] ">
+                                  <ArrowRightLeft className="w-6 h-6 text-white m-auto" />
+                                </span>
+                              </div>
+                              {outcomeTitle[index]}
+                            </div>
+                            <div className="text-foreground text-sm">
+                              {outcome}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <a id="challange2" className="absolute mt-[-40px]"></a>
+                    </div>
+                  </div>
+                  <a id="challenge2" className="absolute mt-[-40px]"></a>
+                </div>
+              </div>
+            </section>
             {/* Challenge Section */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-2xl mb-4 shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
                   <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
                     Challenge
                   </h3>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-                    Pioneering Travel Technology Innovation
+                    The Growing Pains of a Market Leader
                   </h2>
 
-                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
-                    <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
-                      <img src={CaseInrImg} className="w-full h-full" />
-                    </div>
+                  <div className="bg-[#4A2424] my-8 flex">
+                    <img src={CaseInrImg} className="w-full h-full" />
                   </div>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    TripJack faced the challenge of modernizing their legacy
-                    travel technology platform while expanding into B2B2C
-                    markets. The existing system's monolithic architecture
-                    created integration bottlenecks that prevented rapid partner
-                    onboarding and limited their ability to capture new revenue
-                    opportunities in the evolving travel ecosystem.
+                    TripJack had firmly established itself as a dominant force
+                    in India's B2B travel market. Their platform served as the
+                    critical technology backbone for thousands of travel agents,
+                    providing them with real-time access to a vast inventory of
+                    flights, hotels, and other travel products. They had
+                    successfully navigated the "Launch" and "Pivot" phases and
+                    were in a period of rapid growth.
                   </p>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    With travel technology rapidly evolving toward NDC protocols
-                    and direct airline integrations, TripJack needed to reduce
-                    their integration time-to-market by 75% while maintaining
-                    platform reliability for existing customers. The challenge
-                    was compounded by the need to support both legacy GDS
-                    systems and modern API-first integrations simultaneously.
+                    However, this very success was exposing critical weaknesses
+                    in their underlying technology. Their platform, built on a
+                    traditional monolithic architecture, was struggling to keep
+                    pace with their business ambitions. They faced two primary
+                    challenges that were hindering their ability to execute on
+                    the "Grow" phase of their lifecycle:
+                  </p>
+                  <ol className="my-2 list-decimal">
+                    <li className="mx-6 my-2 text-foreground-dark leading-relaxed">
+                      <span className="font-medium">
+                        The Integration Bottleneck:{" "}
+                      </span>
+                      The travel industry is a complex web of integrations with
+                      Global Distribution Systems (GDS) and, increasingly,
+                      direct connections to airlines via the New Distribution
+                      Capability (NDC) protocol. For TripJack, onboarding a new
+                      NDC airline was a painful, manual, and time-consuming
+                      process, often taking three to four months of dedicated
+                      engineering effort. [cite: Illuminate Session 2
+                      Transcript] This slow pace meant they were slow to add new
+                      products to their platform and were at risk of falling
+                      behind more agile competitors.
+                    </li>
+                    <li className="mx-6 my-2 text-foreground-dark leading-relaxed">
+                      <span className="font-medium">The B2C Ambition: </span>
+                      TripJack's leadership had a clear strategic vision for
+                      growth: to expand beyond their B2B roots and launch a
+                      direct-to-consumer (B2C) platform. [cite: Illuminate
+                      Session 1 Transcript] This would allow them to capture
+                      higher margins and build a direct relationship with
+                      travelers. However, their existing B2B-focused platform
+                      was not architected to handle the user experience demands,
+                      scalability requirements, or payment processing
+                      complexities of a consumer-facing product.
+                    </li>
+                  </ol>
+                  <p className="text-md text-foreground-dark leading-relaxed mb-0">
+                    They needed a technology partner who could solve their
+                    immediate integration problem while simultaneously building
+                    the foundation for their future B2C business. This required
+                    a deep understanding of both complex, enterprise-grade
+                    integration and modern, user-centric product development.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Solution Section */}
+            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-2xl  mb-12 shadow-inner shadow-white shadow-4xl">
+              <div className="mx-auto relative z-10">
+                <div className="max-w-8xl mx-auto">
+                  <h3 className="text-lg font-semibold text-brand-primary-dark  mb-4 font-montserrat">
+                    Our Solution
+                  </h3>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                    A Dual-Pronged Strategy for Growth and Efficiency
+                  </h2>
+
+                  <p className="text-lg text-foreground-dark leading-relaxed mb-12">
+                    This engagement was a perfect showcase for Indexnine's
+                    ability to execute on multiple strategic fronts
+                    simultaneously. We deployed our engineering pods to tackle
+                    both challenges in parallel, architecting solutions that
+                    were not only effective but also interconnected.
                   </p>
 
-                  <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    The transformation required building a scalable
-                    microservices architecture that could handle the complexity
-                    of travel inventory management while enabling rapid
-                    deployment of new features and partner integrations across
-                    multiple revenue channels.
-                  </p>
-                  <a id="results" className="absolute mt-[100px]"></a>
+                  <div className="space-y-12">
+                    {/* Phase 1 */}
+                    <div className="grid md:grid-cols-12 gap-8 items-start">
+                      <div className="md:col-span-1">
+                        <span className="flex w-12 h-12 rounded-full bg-[#505DFD] ">
+                          <span className="font-light text-xl text-foreground m-auto">
+                            1
+                          </span>
+                        </span>
+                      </div>
+                      <div className="md:col-span-11 backdrop-blur-xl bg-[#ffffff] border border-glass-border rounded-2xl p-6">
+                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                          Phase 1: Modernizing the Core with an Event-Driven
+                          Integration Hub
+                        </h3>
+                        <p className="text-foreground-dark-muted leading-relaxed mb-6">
+                          To solve the integration bottleneck, our Engineering
+                          Studio recognized that a series of one-off fixes would
+                          not suffice. The problem was architectural. We
+                          designed and built a new, modern integration hub based
+                          on a microservices and event-driven architecture.
+                        </p>
+                        <p className="text-foreground-dark-muted leading-relaxed mb-2">
+                          From a technical perspective, this new hub
+                          fundamentally changed how TripJack interacts with its
+                          airline partners:
+                        </p>
+                        <ol className="my-2 list-decimal mb-6">
+                          <li className="mx-6 my-2 text-foreground-dark leading-relaxed">
+                            <span className="font-medium">
+                              Decoupled Supplier-Specific Microservices:
+                            </span>
+                            Instead of a single, monolithic block of code trying
+                            to handle dozens of different airline APIs, we built
+                            a collection of small, independent microservices.
+                            Each microservice was responsible for communicating
+                            with a single airline's NDC API. This meant that the
+                            complexities and unique quirks of one airline's
+                            integration were completely isolated from all
+                            others, dramatically reducing system fragility.
+                          </li>
+                          <li className="mx-6 my-2 text-foreground-dark leading-relaxed">
+                            <span className="font-medium">
+                              A Canonical Data Model for Travel:
+                            </span>
+                            We worked with TripJack to define a single,
+                            standardized "canonical" data model for all core
+                            travel concepts (e.g., a "flight segment," a
+                            "passenger record," a "fare"). The job of each
+                            microservice was to translate the airline's unique
+                            API response into this standard format.
+                          </li>
+                          <li className="mx-6 my-2 text-foreground-dark leading-relaxed">
+                            <span className="font-medium">
+                              Asynchronous Processing with Message Queues:
+                            </span>
+                            The hub was built on an asynchronous message queue.
+                            When a travel agent searches for a flight, the
+                            request is published as an event. Multiple airline
+                            microservices can then pick up this event, process
+                            the request in parallel, and publish their results
+                            back to the queue. This asynchronous, parallel
+                            processing model is far more scalable and performant
+                            than a traditional, synchronous request-response
+                            model, especially when dealing with dozens of slow,
+                            third-party APIs.
+                          </li>
+                        </ol>
+                        <p className="text-foreground-dark-muted leading-relaxed">
+                          <span className="font-medium">
+                            The Business Impact of this Architecture:
+                          </span>{" "}
+                          The new integration hub was a game-changer for
+                          TripJack's operational efficiency. By creating a
+                          standardized, plug-and-play model for integrations, we
+                          reduced the time to onboard a new NDC airline from
+                          over three months to just three weeks. [cite:
+                          Illuminate Session 2 Transcript] This 75% reduction in
+                          time-to-market gave them a massive competitive
+                          advantage, allowing them to expand their flight
+                          inventory and product offerings faster than ever
+                          before.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Phase 2 */}
+                    <div className="grid md:grid-cols-12 gap-8 items-start">
+                      <div className="md:col-span-1">
+                        <span className="flex w-12 h-12 rounded-full bg-[#505DFD] ">
+                          <span className="font-light text-xl text-foreground m-auto">
+                            2
+                          </span>
+                        </span>
+                      </div>
+                      <div className="md:col-span-11 backdrop-blur-xl bg-glass-bg/10 border border-glass-border rounded-2xl p-6">
+                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                          Phase 2: Building the B2B2C Platform for a New Revenue
+                          Stream
+                        </h3>
+                        <p className="text-foreground-dark leading-relaxed mb-6">
+                          While one team was modernizing the core, another was
+                          focused on building the future. Our product
+                          engineering pod worked to develop TripJack's new B2C
+                          travel booking platform. This was a classic "Grow"
+                          initiative, designed to create an entirely new revenue
+                          channel.
+                        </p>
+                        <p className="text-foreground-dark leading-relaxed mb-6">
+                          Our team handled the end-to-end development, focusing
+                          on the key requirements for a successful consumer
+                          product:
+                        </p>
+
+                        <div className="grid md:grid-cols-2 gap-6 mb-6">
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6 ">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              A Modern, User-Centric UI/UX:
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              Our Design Studio created an intuitive,
+                              responsive, and engaging user interface designed
+                              to make the complex process of booking travel
+                              simple and seamless for consumers.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6 ">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Scalable Cloud-Native Architecture:
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              The platform was built on a scalable, cloud-native
+                              architecture designed to handle the unpredictable
+                              traffic patterns of a consumer-facing website.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6 col-span-2">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Secure and Reliable Payment Gateway Integration:
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              We integrated multiple secure payment gateways,
+                              ensuring a smooth and trustworthy checkout
+                              experience for customers.
+                            </p>
+                          </div>
+                        </div>
+                        <p className="text-foreground-dark leading-relaxed">
+                          Crucially, the new B2C platform was designed to
+                          consume data from the new, modern integration hub.
+                          This created a powerful synergy: the modernization
+                          work being done to improve the B2B business was
+                          simultaneously providing the clean, standardized data
+                          needed to power the new B2C growth engine.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Phase 3 */}
+                    <div className="grid md:grid-cols-12 gap-8 items-start">
+                      <div className="md:col-span-1">
+                        <span className="flex w-12 h-12 rounded-full bg-[#505DFD] ">
+                          <span className="font-light text-xl text-foreground m-auto">
+                            3
+                          </span>
+                        </span>
+                      </div>
+                      <div className="md:col-span-11 backdrop-blur-xl bg-glass-bg/10 border border-glass-border rounded-2xl p-6">
+                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                          Phase 3: Accelerating Growth and Unlocking New Markets
+                        </h3>
+                        <p className="text-foreground-dark-muted leading-relaxed mb-6">
+                          Our multi-faceted partnership with TripJack delivered
+                          significant, measurable results that directly impacted
+                          both their top and bottom lines.
+                        </p>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Dramatically Accelerated Product Expansion:
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              By slashing the supplier integration timeline by
+                              75%, we gave TripJack the ability to rapidly
+                              expand its product offerings and respond to market
+                              opportunities with unprecedented agility.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Successful Launch of a New Revenue Engine:
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              We successfully delivered a robust and scalable
+                              B2C platform, enabling TripJack to enter the
+                              high-margin direct-to-consumer market and
+                              diversify its revenue streams.
+                            </p>
+                          </div>
+                          <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6 col-span-2">
+                            <h4 className="font-semibold text-foreground-dark mb-2">
+                              Foundation for Future Innovation:
+                            </h4>
+                            <p className="text-sm text-foreground-dark-muted">
+                              The modern, microservices-based architecture we
+                              implemented has not only solved their immediate
+                              problems but has also provided them with a
+                              flexible and future-proof platform. They are now
+                              positioned to easily add new types of travel
+                              products, integrate with new partners, and
+                              continue to innovate at speed.
+                            </p>
+                          </div>
+                        </div>
+                        <a id="results" className="absolute mt-[-20px]"></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
@@ -303,9 +634,9 @@ const TripjackCaseStudy = () => {
             <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
               <div className="container mx-auto px-6 lg:px-8">
                 <div className="max-w-5xl mx-auto">
-                  <h2 className="text-2xl font-bold text-foreground-dark mb-12 text-center font-montserrat">
+                  <h3 className="text-xl font-bold text-foreground-dark mb-6 font-montserrat text-center">
                     Accelerated B2B2C Market Expansion
-                  </h2>
+                  </h3>
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                     <div
                       className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
@@ -353,13 +684,16 @@ const TripjackCaseStudy = () => {
                     </div>
                   </div>
                   <div
-                    className={`p-8 bg-background relative md:mr-[-6rem] rounded-xl mb-6 ${styles.middleCardBg2}`}
+                    className={`p-8 bg-background relative rounded-xl mb-6 ${styles.middleCardBg2}`}
                   >
                     <p className="text-lg text-foreground text-center font-medium">
-                      TripJack successfully modernized their platform and
-                      launched new B2B2C revenue streams, reducing integration
-                      time-to-market by 75% while improving system performance
-                      by 300% and enabling rapid partner onboarding.
+                      For any established e-commerce or travel technology
+                      company looking to break through growth plateaus, the
+                      TripJack story provides a clear roadmap. It demonstrates
+                      that by partnering with Indexnine to modernize core
+                      technology and streamline operations, companies can unlock
+                      new efficiencies and create powerful new engines for
+                      revenue growth.
                     </p>
                     <a id="whyWorked"></a>
                   </div>
@@ -374,27 +708,24 @@ const TripjackCaseStudy = () => {
                   <div className="mb-0">
                     <h3 className="text-xl font-bold text-foreground-dark mb-6 font-montserrat text-center">
                       Why It Worked
-                      <br />
-                      <span className="inline-block w-24 h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50"></span>
                     </h3>
                     <p className="text-md text-foreground-dark-muted text-center mb-8">
-                      The TripJack transformation showcases our expertise in
-                      travel technology modernization and B2B2C platform
-                      expansion.
+                      The TripJack engagement is a powerful example of how
+                      Indexnine helps successful companies navigate the complex
+                      "Grow" phase of their lifecycle.
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-6">
                       {[
-                        "Microservices Architecture: Event-driven microservices enabled rapid integration development and deployment, reducing time-to-market for new travel supplier partnerships by 75%.",
-                        "NDC Protocol Integration: Native support for modern airline NDC protocols positioned TripJack at the forefront of travel technology innovation while maintaining backward compatibility.",
-                        "B2B2C Platform Strategy: Purpose-built B2B2C capabilities enabled TripJack to capture new revenue streams and expand their total addressable market significantly.",
-                        "Scalable Integration Hub: The modern integration platform supports 10x more concurrent partner connections while maintaining sub-100ms response times for real-time inventory queries.",
+                        "Deep Domain and Technical Expertise: This project required a deep understanding of the travel technology domain (NDC, GDS) combined with elite expertise in modern software architecture (microservices, event-driven systems). Our ability to bring both to the table was a key differentiator.",
+                        "Strategic, Outcome-Centric Approach: We didn't just focus on the tactical request ('build a B2C app'). We understood the client's broader strategic goals and recognized that solving their core integration bottleneck was a prerequisite for successful growth.",
+                        "Parallel Execution for Maximum Velocity: Our ability to deploy multiple, coordinated engineering pods allowed us to tackle both the core modernization and the new product development in parallel, delivering value on multiple fronts simultaneously and maximizing the client's speed to market.",
                       ].map((result, index) => (
-                        <div key={index} className="mb-4">
+                        <div key={index} className="mb-4 last:col-span-full">
                           <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50 mb-2"></span>
                           <div className="flex flex-col text-center">
-                            <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
-                              <CheckCircle className="w-5 h-5 text-[#8389DC] m-auto" />
+                            <span className="mx-auto flex w-14 h-14 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
+                              <CheckCircle className="w-6 h-6 text-[#8389DC] m-auto" />
                             </span>
                             <span className="text-foreground-dark">
                               {result}
@@ -436,306 +767,6 @@ const TripjackCaseStudy = () => {
       <div className="bg-background">
         <Footer />
       </div>
-      {/* <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
-        <div className="mx-auto relative z-10">
-          <div className="max-w-8xl mx-auto">
-            <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-              Challenge
-            </h3>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-              Pioneering Travel Technology Innovation
-            </h2>
-
-            <div className="bg-[#4A2424] mt-12 mb-8 flex">
-              <div className="md:mr-[-4rem] md:pl-[4rem] md:pb-[1.5rem] md:mt-[-1.5rem]">
-                <img src={CaseInrImg} className="w-full h-full" />
-              </div>
-            </div>
-
-            <p className="text-md text-foreground-dark leading-relaxed mb-8">
-              TripJack faced the challenge of modernizing their legacy travel
-              technology platform while expanding into B2B2C markets. The
-              existing system's monolithic architecture created integration
-              bottlenecks that prevented rapid partner onboarding and limited
-              their ability to capture new revenue opportunities in the evolving
-              travel ecosystem.
-            </p>
-
-            <p className="text-md text-foreground-dark leading-relaxed mb-8">
-              With travel technology rapidly evolving toward NDC protocols and
-              direct airline integrations, TripJack needed to reduce their
-              integration time-to-market by 75% while maintaining platform
-              reliability for existing customers. The challenge was compounded
-              by the need to support both legacy GDS systems and modern
-              API-first integrations simultaneously.
-            </p>
-
-            <p className="text-md text-foreground-dark leading-relaxed mb-8">
-              The transformation required building a scalable microservices
-              architecture that could handle the complexity of travel inventory
-              management while enabling rapid deployment of new features and
-              partner integrations across multiple revenue channels.
-            </p>
-            <a id="whyWorked" className="absolute mt-[100px]"></a>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-foreground-dark mb-12 text-center font-montserrat">
-              Accelerated B2B2C Market Expansion
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-              <div
-                className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
-              >
-                <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
-                  75%
-                </h3>
-                <p className="text-foreground text-xs mb-0">
-                  Time-to-Market Reduction
-                </p>
-                <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
-              </div>
-              <div
-                className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
-              >
-                <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
-                  50+
-                </h3>
-                <p className="text-foreground text-xs mb-0">
-                  New B2B2C Partners
-                </p>
-                <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
-              </div>
-              <div
-                className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
-              >
-                <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
-                  300%
-                </h3>
-                <p className="text-foreground text-xs mb-0">
-                  Platform Scalability
-                </p>
-                <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
-              </div>
-              <div
-                className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
-              >
-                <h3 className="text-3xl font-bold text-white mb-2 font-montserrat">
-                  NDC
-                </h3>
-                <p className="text-foreground text-xs mb-0">Protocol Ready</p>
-                <span className="inline-block w-12 h-1 rounded-sm bg-[#ffffff75]"></span>
-              </div>
-            </div>
-            <div
-              className={`p-8 bg-background relative md:mr-[-6rem] rounded-xl mb-6 ${styles.middleCardBg2}`}
-            >
-              <p className="text-lg text-foreground text-center font-medium">
-                TripJack successfully modernized their platform and launched new
-                B2B2C revenue streams, reducing integration time-to-market by
-                75% while improving system performance by 300% and enabling
-                rapid partner onboarding.
-              </p>
-              <a id="whyWorked"></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gradient-to-r from-[#fff] to-[#899CFF10] shadow-xl rounded-2xl border border-[#00000025] p-8 mb-12">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <div className="mb-0">
-              <h3 className="text-xl font-bold text-foreground-dark mb-6 font-montserrat text-center">
-                Why It Worked
-                <br />
-                <span className="inline-block w-24 h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50"></span>
-              </h3>
-              <p className="text-md text-foreground-dark-muted text-center mb-8">
-                The TripJack transformation showcases our expertise in travel
-                technology modernization and B2B2C platform expansion.
-              </p>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  "Microservices Architecture: Event-driven microservices enabled rapid integration development and deployment, reducing time-to-market for new travel supplier partnerships by 75%.",
-                  "NDC Protocol Integration: Native support for modern airline NDC protocols positioned TripJack at the forefront of travel technology innovation while maintaining backward compatibility.",
-                  "B2B2C Platform Strategy: Purpose-built B2B2C capabilities enabled TripJack to capture new revenue streams and expand their total addressable market significantly.",
-                  "Scalable Integration Hub: The modern integration platform supports 10x more concurrent partner connections while maintaining sub-100ms response times for real-time inventory queries.",
-                ].map((result, index) => (
-                  <div key={index} className="mb-4">
-                    <span className="inline-block w-full h-1 rounded-sm bg-gradient-to-r from-brand-purple/50 via-[#505CFD] to-brand-purple/50 mb-2"></span>
-                    <div className="flex flex-col text-center">
-                      <span className="mx-auto flex w-12 h-12 rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 mb-2">
-                        <CheckCircle className="w-5 h-5 text-[#8389DC] m-auto" />
-                      </span>
-                      <span className="text-foreground-dark">{result}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        className={`p-8 mb-12 bg-background relative overflow-hidden rounded-bl-2xl rounded-br-2xl ${styles.middleCardBg2}`}
-      >
-        <div className="relative z-10">
-          <div className="max-w-6xl mx-auto">
-            <div>
-              <h3 className="text-lg font-semibold text-white mb-4 font-montserrat">
-                Solution
-              </h3>
-              <p className="text-white mb-6">
-                A strategic "Grow" and "Product Modernization" engagement.
-                Indexnine architected and built a modern, event-driven,
-                microservices-based integration hub to streamline supplier
-                onboarding. In parallel, we developed their new flagship B2B2C
-                platform, enabling them to enter the direct-to-consumer market
-                for the first time.
-              </p>
-              <div className="grid md:grid-cols-4 gap-6">
-                <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                  <div className="flex items-center gap-4 flex-col">
-                    <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                      <Workflow className="w-5 h-5 text-white m-auto" />
-                    </span>
-                    <span className="text-white">Integration Hub</span>
-                  </div>
-                </div>
-                <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                  <div className="flex items-center gap-4 flex-col">
-                    <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                      <Settings className="w-5 h-5 text-white m-auto" />
-                    </span>
-                    <span className="text-white">Microservices</span>
-                  </div>
-                </div>
-                <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl px-2 py-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                  <div className="flex items-center gap-4 flex-col">
-                    <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                      <Building className="w-5 h-5 text-white m-auto" />
-                    </span>
-                    <span className="text-white">B2B2C Platform</span>
-                  </div>
-                </div>
-                <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                  <div className="flex items-center gap-4 flex-col">
-                    <span className="flex w-12 h-12 rounded-full bg-[#2E348233]">
-                      <TrendingUp className="w-5 h-5 text-white m-auto" />
-                    </span>
-                    <span className="text-white">NDC Protocol</span>
-                  </div>
-                </div>
-                <a id="solution1" className="absolute mt-[100px]"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-tl-2xl rounded-tr-2xl shadow-inner shadow-white shadow-4xl">
-        <div className="mx-auto relative z-10">
-          <div className="max-w-8xl mx-auto">
-            <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-              Challenge
-            </h3>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-              The Growing Pains of a Market Leader
-            </h2>
-
-            <p className="text-md text-foreground-dark leading-relaxed mb-8">
-              TripJack had firmly established itself as a dominant force in
-              India's B2B travel market. Their platform served as the critical
-              technology backbone for thousands of travel agents, providing them
-              with real-time access to a vast inventory of flights, hotels, and
-              other travel products. They had successfully navigated the
-              "Launch" and "Pivot" phases and were in a period of rapid growth.
-            </p>
-
-            <p className="text-md text-foreground-dark leading-relaxed mb-8">
-              However, this very success was exposing critical weaknesses in
-              their underlying technology. Their platform, built on a
-              traditional monolithic architecture, was struggling to keep pace
-              with their business ambitions. They faced two primary challenges
-              that were hindering their ability to execute on the "Grow" phase
-              of their lifecycle.
-            </p>
-            <a id="results" className="absolute mt-[100px]"></a>
-          </div>
-        </div>
-      </section>
-
-      <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative rounded-bl-2xl rounded-br-2xl shadow-inner shadow-white shadow-4xl mb-12">
-        <div className="mx-auto relative z-10">
-          <div className="max-w-8xl mx-auto">
-            <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
-              Results & Impact
-            </h3>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-              Accelerating Growth Through Modern Architecture
-            </h2>
-
-            <p className="text-md text-foreground-dark leading-relaxed mb-8">
-              The transformation delivered remarkable results: 75% faster
-              time-to-market for new airline integrations and the successful
-              launch of a new B2B2C revenue channel. TripJack's modern
-              architecture positioned them to rapidly adapt to industry changes
-              and scale their operations efficiently.
-            </p>
-            <a id="whyWorked" className="absolute mt-[100px]"></a>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-3xl p-8 shadow-glass border border-glass-border backdrop-blur-xl">
-        <div className="relative z-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
-            Why It Worked
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h4 className="text-xl font-bold text-foreground mb-4 font-montserrat">
-                Domain Expertise
-              </h4>
-              <p className="text-foreground-muted leading-relaxed mb-6">
-                Our deep understanding of travel technology standards like NDC
-                protocol and airline integration patterns enabled rapid,
-                effective solutions.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-xl font-bold text-foreground mb-4 font-montserrat">
-                Parallel Execution
-              </h4>
-              <p className="text-foreground-muted leading-relaxed mb-6">
-                Our ability to simultaneously modernize the core platform while
-                building new B2B2C capabilities maximized time efficiency and
-                business impact.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gradient-to-br from-brand-primary via-brand-primary-dark to-brand-purple rounded-3xl p-8 mt-12 text-center shadow-2xl">
-        <h2 className="text-3xl font-bold text-white mb-4 font-montserrat">
-          Ready to Scale Your Travel Platform?
-        </h2>
-        <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-          Transform your architecture for rapid growth. Let's build the
-          foundation for your next expansion.
-        </p>
-        <Button size="lg" variant="secondary" className="text-brand-primary">
-          Get Started
-        </Button>
-      </section> */}
     </div>
   );
 };
