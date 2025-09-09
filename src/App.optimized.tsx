@@ -163,7 +163,7 @@ const App = () => (
               {/* Insights Routes - Lazy loaded */}
               <Route path="/insights/case-studies" element={<CaseStudies />} />
               <Route path="/insights" element={<Blogs />} />
-              <Route path="/resources/ebooks" element={<Ebooks />} />
+              <Route path="/insights/ebooks" element={<Ebooks />} />
 
               {/* Individual Blog Post Routes - Lazy loaded */}
               <Route
