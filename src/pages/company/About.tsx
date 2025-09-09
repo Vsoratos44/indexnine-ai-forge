@@ -9,7 +9,7 @@ import {
 } from "@/components/SEOStructuredData";
 import { BrainCircuit, BrickWall, Sparkles } from "lucide-react";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
-import styles from "../assets/css/stylesheet.module.css";
+import styles from "../../assets/css/stylesheet.module.css";
 
 const About = () => {
   return (
@@ -87,8 +87,8 @@ const About = () => {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto">
-              <div className="relative overflow-hidden backdrop-blur-lg bg-glass-bg border border-glass-border rounded-2xl p-8 shadow-glass hover:shadow-glass-lg transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in">
+            <div className="grid md:grid-cols-3 gap-6 max-w-8xl mx-auto">
+              <div className="relative overflow-hidden backdrop-blur-lg bg-glass-bg border border-glass-border rounded-2xl p-8 shadow-glass hover:shadow-glass-lg transition-all duration-500 transform hover:scale-105">
                 <div
                   className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
                 >

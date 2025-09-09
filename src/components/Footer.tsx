@@ -133,14 +133,15 @@ const Footer = () => {
         <div className="border-t border-white/10 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-foreground-white/60 text-sm">
-              © 2025 IndexNine. All rights reserved. | Privacy Policy | Terms of
+              © 2025 IndexNine. All rights reserved.
+              {/* | Privacy Policy | Terms of
               Service |{" "}
               <a
                 href="/test/homepage"
                 className="hover:text-brand-primary transition-colors"
               >
                 Homepage Test
-              </a>
+              </a> */}
             </p>
           </div>
         </div>

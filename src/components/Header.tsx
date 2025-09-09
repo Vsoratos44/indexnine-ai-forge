@@ -246,6 +246,34 @@ const Header = () => {
                   </div>
                 </div>
 
+                <div className="relative group">
+                  <button
+                    className={`flex items-center space-x-1 transition-colors duration-300 ${
+                      isLightSection
+                        ? "text-gray-900 hover:text-brand-primary"
+                        : "text-foreground hover:text-brand-primary"
+                    }`}
+                  >
+                    <span>Company</span>
+                    <ChevronDown className="w-4 h-4" />
+                  </button>
+                  {/* Backdrop overlay */}
+                  {/* <div className="fixed inset-0 bg-black/60 backdrop-blur-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[90]"></div> */}
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+                    <div className="px-5 py-4">
+                      <Link to="/company/about" className={`${styles.navLink}`}>
+                        About us
+                      </Link>
+                      <Link
+                        to="/company/careers"
+                        className={`${styles.navLink}`}
+                      >
+                        Careers
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
                 {/* <div className="relative group">
                   <button
                     className={`flex items-center space-x-1 transition-colors duration-300 ${
@@ -272,7 +300,7 @@ const Header = () => {
                   </div>
                 </div> */}
 
-                <Link
+                {/* <Link
                   to="/about"
                   className={`transition-colors duration-300 ${
                     isLightSection
@@ -281,7 +309,7 @@ const Header = () => {
                   }`}
                 >
                   About Us
-                </Link>
+                </Link> */}
               </nav>
 
               {/* Mobile Menu Button */}
@@ -333,10 +361,7 @@ const Header = () => {
             className="flex items-center space-x-2"
             onClick={toggleMobileMenu}
           >
-            <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center">
-              <div className="w-4 h-4 bg-white rounded-sm"></div>
-            </div>
-            <span className="text-xl font-bold text-white">INDEXNINE</span>
+            <img src={LogoWhite} alt="IndexNine" className="h-6" />
           </Link>
           <button
             onClick={() => {
@@ -453,6 +478,13 @@ const Header = () => {
                   >
                     Project-Based Engagements
                   </Link>
+                  <Link
+                    to="/engagement/outcome-based"
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    Outcome-Based Engagements
+                  </Link>
                 </div>
               )}
             </div>
@@ -495,6 +527,77 @@ const Header = () => {
                   </Link>
                 </div>
               )}
+
+              {openDropdown === "company" && (
+                <div className="pl-4 space-y-3 border-l-2 border-brand-primary/30">
+                  <Link
+                    to="/company/about"
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    About Us
+                  </Link>
+                  <Link
+                    to="/company/careers"
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    Careers
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Company */}
+            <div className="space-y-4">
+              <button
+                onClick={() => toggleDropdown("company")}
+                className="flex items-center justify-between w-full text-left text-lg font-semibold text-white hover:text-brand-primary transition-colors"
+              >
+                <span>Company</span>
+                <ChevronDown
+                  className={`w-5 h-5 transition-transform ${
+                    openDropdown === "insights" ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {openDropdown === "company" && (
+                <div className="pl-4 space-y-3 border-l-2 border-brand-primary/30">
+                  <Link
+                    to="/company/about"
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    About us
+                  </Link>
+                  <Link
+                    to="/company/careers"
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    Careers
+                  </Link>
+                </div>
+              )}
+
+              {openDropdown === "company" && (
+                <div className="pl-4 space-y-3 border-l-2 border-brand-primary/30">
+                  <Link
+                    to="/company/about"
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    About Us
+                  </Link>
+                  <Link
+                    to="/company/careers"
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    Careers
+                  </Link>
+                </div>
+              )}
             </div>
 
             {/* Events */}
@@ -529,21 +632,12 @@ const Header = () => {
                 </div>
               )}
             </div> */}
-
-            {/* About Us */}
-            <Link
-              to="/about"
-              className="block text-lg font-semibold text-white hover:text-brand-primary transition-colors py-2"
-              onClick={toggleMobileMenu}
-            >
-              About Us
-            </Link>
           </nav>
 
           {/* Mobile CTA */}
           <div className="mt-8 pt-6 border-t border-white/20">
             <Button
-              variant="hero"
+              variant="btnSecondary"
               size="default"
               className="w-full text-lg py-4"
               onClick={toggleMobileMenu}
