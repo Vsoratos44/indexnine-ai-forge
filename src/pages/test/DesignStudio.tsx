@@ -138,10 +138,8 @@ const DesignStudio = () => {
               </span>
             </h2>
             <p className="text-lg text-foreground-dark-muted mb-12 max-w-6xl mb-0 mx-auto">
-              Great products are born from great design, but the path is filled with disconnects. Traditional design 
-              studios often lack deep engineering context, delivering beautiful mockups that are difficult to build. 
-              Internal teams can be too close to the product, missing the forest for the trees. This gap between 
-              vision and feasible execution is where products stall and technical debt begins.{" "}
+              Traditional design studios often lack deep engineering context, delivering beautiful mockups that are difficult to build. 
+              This gap between vision and feasible execution is where products stall and tech debt begins.{" "}
               <strong>We were founded to eliminate that gap.</strong>
             </p>
           </div>
