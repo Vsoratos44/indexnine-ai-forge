@@ -406,7 +406,7 @@ const MatureCaseStudy = () => {
                           format it could safely handle. This decoupled
                           architecture would act as a protective buffer,
                           absorbing the shock of any external API changes and
-                          ensuring the legacy core remained stable. k
+                          ensuring the legacy core remained stable.
                         </p>
                       </div>
                     </div>
