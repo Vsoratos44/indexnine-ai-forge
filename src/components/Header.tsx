@@ -135,17 +135,17 @@ const Header = () => {
                       >
                         Custom Software Development
                       </Link>
-                      <Link to="/studios/ai" className={`${styles.navLink}`}>
+                      <Link to="/services/ai" className={`${styles.navLink}`}>
                         AI & ML Development
                       </Link>
                       <Link
-                        to="/studios/data-engineering"
+                        to="/services/data-engineering"
                         className={`${styles.navLink}`}
                       >
                         Data Engineering
                       </Link>
                       <Link
-                        to="/studios/quality-engineering"
+                        to="/services/quality-engineering"
                         className={`${styles.navLink}`}
                       >
                         Quality Assurance Engineering
@@ -198,6 +198,12 @@ const Header = () => {
                         className={`${styles.navLink}`}
                       >
                         Project-Based Engagements
+                      </Link>
+                      <Link
+                        to="/engagement/outcome-based"
+                        className={`${styles.navLink}`}
+                      >
+                        Outcome-Based Engagements
                       </Link>
                     </div>
                   </div>
