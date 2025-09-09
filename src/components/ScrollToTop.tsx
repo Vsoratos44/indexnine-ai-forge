@@ -2,33 +2,44 @@ import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
-  const lastPathnameRef = useRef<string>('');
+  const location = useLocation();
+  const isBackNavigationRef = useRef(false);
 
   useEffect(() => {
-    const currentPathname = pathname;
-    const lastPathname = lastPathnameRef.current;
+    // Store current scroll position for this route
+    const storeScrollPosition = () => {
+      sessionStorage.setItem(`scroll-${location.pathname}`, window.scrollY.toString());
+    };
 
-    // Store current scroll position before navigating
-    if (lastPathname) {
-      sessionStorage.setItem(`scroll-${lastPathname}`, window.scrollY.toString());
-    }
+    // Handle popstate event (back/forward button)
+    const handlePopState = () => {
+      isBackNavigationRef.current = true;
+    };
 
-    // Check if this is a back navigation by comparing with stored positions
-    const storedPosition = sessionStorage.getItem(`scroll-${currentPathname}`);
-    
-    if (storedPosition && window.history.state?.idx !== undefined) {
-      // This is likely a back navigation, restore scroll position
-      setTimeout(() => {
-        window.scrollTo(0, parseInt(storedPosition, 10));
-      }, 0);
+    // Store scroll position before user navigates away
+    window.addEventListener('beforeunload', storeScrollPosition);
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      storeScrollPosition();
+      window.removeEventListener('beforeunload', storeScrollPosition);
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (isBackNavigationRef.current) {
+      // This is back navigation, restore scroll position
+      const savedPosition = sessionStorage.getItem(`scroll-${location.pathname}`);
+      if (savedPosition) {
+        window.scrollTo(0, parseInt(savedPosition, 10));
+      }
+      isBackNavigationRef.current = false;
     } else {
       // This is forward navigation, scroll to top
       window.scrollTo(0, 0);
     }
-
-    lastPathnameRef.current = currentPathname;
-  }, [pathname]);
+  }, [location.pathname]);
 
   return null;
 };
