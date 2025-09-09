@@ -15,11 +15,98 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
+import { useSEO } from "@/hooks/useSEO";
+import { SEOStructuredData, ServiceSchema, OrganizationSchema } from "@/components/SEOStructuredData";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const InnovationLab = () => {
+  // SEO Configuration
+  useSEO({
+    title: "Innovation Lab - Rapid MVP Development | IndexNine",
+    description: "Transform your vision into a market-ready MVP with unprecedented speed. Our Innovation Lab combines specialized studios, proprietary accelerators, and expert talent for rapid product development.",
+    keywords: "innovation lab, MVP development, rapid prototyping, product development, startup accelerator, AI studio, design studio, discovery studio, AWS deployment, GCP deployment, Azure deployment",
+    canonicalUrl: "https://indexnine.com/engagement/innovation-lab",
+    ogImage: "https://indexnine.com/images/innovation-lab-og.jpg",
+    ogType: "website"
+  });
+
   return (
     <div className="min-h-screen bg-background">
+      {/* Structured Data */}
+      <SEOStructuredData
+        type="Service"
+        data={{
+          name: "Innovation Lab - Rapid MVP Development",
+          description: "Accelerated product development engine that transforms groundbreaking ideas into market-ready MVPs with unprecedented speed and precision using specialized studios and proprietary accelerators.",
+          serviceType: "Software Development",
+          areaServed: "Global",
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Innovation Lab Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Discovery Studio",
+                  description: "De-risk your vision with product roadmapping, feature prioritization, market feasibility analysis, and MVP scoping."
+                }
+              },
+              {
+                "@type": "Offer", 
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Design Studio",
+                  description: "Craft intuitive user experiences with UI/UX design, interactive prototyping, user journey mapping, and design system creation."
+                }
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service", 
+                  name: "AI Studio",
+                  description: "Build competitive advantage with custom AI development, generative AI solutions, RAG implementations, and machine learning models."
+                }
+              }
+            ]
+          }
+        }}
+      />
+      
+      <SEOStructuredData
+        type="Organization"
+        data={{
+          name: "IndexNine Technologies",
+          url: "https://indexnine.com",
+          logo: "https://indexnine.com/images/logo.png",
+          description: "Innovation Lab specializing in rapid MVP development, AI solutions, and accelerated product development for startups and enterprises.",
+          address: {
+            "@type": "PostalAddress",
+            addressCountry: "US"
+          },
+          contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "customer service"
+          },
+          knowsAbout: [
+            "MVP Development",
+            "Product Strategy", 
+            "AI Development",
+            "UI/UX Design",
+            "Cloud Infrastructure",
+            "Startup Acceleration"
+          ],
+          makesOffer: {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Innovation Lab Services",
+              description: "Complete product development ecosystem from discovery to deployment"
+            }
+          }
+        }}
+      />
+
       <Header />
 
       {/* Hero Section */}
