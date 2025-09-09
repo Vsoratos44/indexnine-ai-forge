@@ -89,9 +89,9 @@ const TripjackCaseStudy = lazy(
 );
 
 // About Pages - Lazy loaded
-const About = lazy(() => import("./pages/About"));
-const WhoWeAre = lazy(() => import("./pages/about/WhoWeAre"));
-const Careers = lazy(() => import("./pages/about/Careers"));
+const About = lazy(() => import("./pages/company/About"));
+const WhoWeAre = lazy(() => import("./pages/company/WhoWeAre"));
+const Careers = lazy(() => import("./pages/company/Careers"));
 
 // Events Platform Pages - Lazy loaded
 const Events = lazy(() => import("./pages/events/Events"));
@@ -158,6 +158,10 @@ const App = () => {
                   path="/services/consulting"
                   element={<ConsultingStrategy />}
                 />
+
+                <Route path="/company/about" element={<About />} />
+
+                <Route path="/company/careers" element={<Careers />} />
 
                 {/* Studio Routes - Lazy loaded */}
                 {/* <Route path="/studios/ai" element={<AiStudio />} />
