@@ -120,7 +120,7 @@ const OutcomeBased = () => {
                 >
                   <advantage.icon className="w-8 h-8 text-brand-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground-dark mb-4">
+                <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                   {advantage.title}
                 </h3>
                 <p className="text-foreground-dark-muted mb-6">

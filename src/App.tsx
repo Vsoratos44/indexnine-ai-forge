@@ -36,13 +36,13 @@ const ConsultingStrategy = lazy(
 );
 
 // Studio Pages - Lazy loaded
-const AiStudio = lazy(() => import("./pages/studios/AiStudio"));
-const DataEngineeringStudio = lazy(
-  () => import("./pages/studios/DataEngineering")
-);
-const QualityEngineeringStudio = lazy(
-  () => import("./pages/studios/QualityEngineering")
-);
+// const AiStudio = lazy(() => import("./pages/studios/AiStudio"));
+// const DataEngineeringStudio = lazy(
+//   () => import("./pages/studios/DataEngineering")
+// );
+// const QualityEngineeringStudio = lazy(
+//   () => import("./pages/studios/QualityEngineering")
+// );
 
 // Engagement Pages - Lazy loaded
 const Enterprise = lazy(() => import("./pages/engagement/Enterprise"));
@@ -160,7 +160,7 @@ const App = () => {
                 />
 
                 {/* Studio Routes - Lazy loaded */}
-                <Route path="/studios/ai" element={<AiStudio />} />
+                {/* <Route path="/studios/ai" element={<AiStudio />} />
                 <Route
                   path="/studios/data-engineering"
                   element={<DataEngineeringStudio />}
@@ -168,7 +168,7 @@ const App = () => {
                 <Route
                   path="/studios/quality-engineering"
                   element={<QualityEngineeringStudio />}
-                />
+                /> */}
 
                 {/* Engagement Model Routes - Lazy loaded */}
                 <Route path="/engagement/enterprise" element={<Enterprise />} />
@@ -196,7 +196,7 @@ const App = () => {
                 />
                 <Route path="/insights" element={<Blogs />} />
                 <Route path="/insights/blogs" element={<Blogs />} />
-                <Route path="/resources/ebooks" element={<Ebooks />} />
+                <Route path="/insights/ebooks" element={<Ebooks />} />
 
                 {/* Individual Blog Post Routes - Lazy loaded */}
                 <Route
