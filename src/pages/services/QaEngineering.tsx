@@ -13,6 +13,11 @@ import {
   ArrowRight,
   ChevronDown,
   ChevronUp,
+  Sparkles,
+  Repeat2,
+  LandPlot,
+  NotepadText,
+  CalendarCheck2,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -85,7 +90,10 @@ const QualityEngineering = () => {
   return (
     <div className="min-h-screen bg-background-dark">
       {/* SEO Head Elements */}
-      <title>Quality Engineering Services & Test Automation Solutions | Enterprise QA Testing | IndexNine</title>
+      <title>
+        Quality Engineering Services & Test Automation Solutions | Enterprise QA
+        Testing | IndexNine
+      </title>
       <meta
         name="description"
         content="Leading quality engineering and test automation services for enterprises. Strategic QA testing, automated testing solutions, performance testing, and quality assurance consulting. Transform your software testing with outcome-driven quality engineering."
@@ -238,36 +246,37 @@ const QualityEngineering = () => {
                 <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                   {[
                     {
-                      step: "01",
+                      step: <Sparkles className="w-8 h-8 text-brand-primary" />,
                       title: "BUILD an AI-Assisted Foundation",
                       description:
                         "We establish a scalable, low-maintenance test automation framework using modern tools and AI-powered test generation, creating a resilient foundation that grows with your product.",
                     },
                     {
-                      step: "02",
+                      step: <Repeat2 className="w-8 h-8 text-brand-primary" />,
                       title: "ADOPT Shift-Left Principles",
                       description:
                         "We integrate quality checks early in the development lifecycle ('shifting left'), enabling your developers to catch and fix bugs faster, reducing downstream costs and delays.",
                     },
                     {
-                      step: "03",
+                      step: <LandPlot className="w-8 h-8 text-brand-primary" />,
                       title: "DEPLOY Smart & Efficiently",
                       description:
                         "We implement intelligent test selection and parallel execution strategies, ensuring fast, targeted feedback from your CI/CD pipeline so you can deploy to production with confidence.",
                     },
                   ].map((item) => (
                     <div
-                      key={item.step}
+                      key={item.title}
                       className="relative overflow-hidden bg-gradient-card-light border border-[#00000019] bg-[#ffffff59] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left"
                     >
                       <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                      <div className="relative w-20 h-20 border border-brand-purple rounded-xl flex items-center justify-center ml-0 mb-6">
-                        <span className="text-brand-purple font-bold text-2xl">
-                          {item.step}
-                        </span>
+                      <div
+                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        {item.step}
                       </div>
+
                       <h3 className="relative text-xl font-bold mb-4 text-foreground-dark">
                         {item.title}
                       </h3>
@@ -390,7 +399,10 @@ const QualityEngineering = () => {
               <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
                 <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                   <CardContent className="p-0">
-                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                    <div
+                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
+                      {" "}
                       <Zap className="h-8 w-8 text-brand-purple" />
                     </div>
                     <h4 className="text-2xl font-semibold mb-4 text-foreground-light">
@@ -426,7 +438,10 @@ const QualityEngineering = () => {
 
                 <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                   <CardContent className="p-0">
-                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                    <div
+                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
+                      {" "}
                       <Target className="h-8 w-8 text-brand-purple" />
                     </div>
                     <h4 className="text-2xl font-semibold mb-4 text-foreground-light">
@@ -827,8 +842,10 @@ const QualityEngineering = () => {
             <div className="grid md:grid-cols-3 gap-6 ">
               <Card className="relative  bg-gradient-card-light border border-[#00039] rounded-2xl p-6 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
                 <CardContent className="p-0 text-left">
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                    <Zap className="h-8 w-8 text-brand-purple" />
+                  <div
+                    className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                  >
+                    <NotepadText className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h4 className="text-2xl font-semibold mb-4 text-foreground-dark">
                     Strategize
@@ -841,8 +858,10 @@ const QualityEngineering = () => {
               </Card>
               <Card className="relative  bg-gradient-card-light border border-[#00039] rounded-2xl p-6 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
                 <CardContent className="p-0 text-left">
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                    <Zap className="h-8 w-8 text-brand-purple" />
+                  <div
+                    className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                  >
+                    <CalendarCheck2 className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h4 className="text-2xl font-semibold mb-4 text-foreground-dark">
                     Execute
@@ -856,7 +875,10 @@ const QualityEngineering = () => {
               </Card>
               <Card className="relative  bg-gradient-card-light border border-[#00039] rounded-2xl p-6 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group ">
                 <CardContent className="p-0 text-left">
-                  <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                  <div
+                    className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                  >
+                    {" "}
                     <Zap className="h-8 w-8 text-brand-purple" />
                   </div>
                   <h4 className="text-2xl font-semibold mb-4 text-foreground-dark">

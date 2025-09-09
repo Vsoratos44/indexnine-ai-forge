@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Database, Cloud, Shield, BarChart3, CheckCircle } from "lucide-react";
+import { MonitorCog, PackageCheck, CheckCircle, HandCoins } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
@@ -152,10 +152,11 @@ const DataEngineering = () => {
                   <div className="relative overflow-hidden bg-[#ffffff75] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
                     <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
-                    <div className="relative w-20 h-20 ml-0 mb-6">
-                      <img src={VelocityIcon} alt="" />
+                    <div
+                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
+                      <MonitorCog className="w-8 h-8 text-brand-primary" />
                     </div>
-                    {/* <MonitorCog /> */}
                     <h3 className="relative text-xl font-semibold mb-4 text-foreground-dark">
                       Build a Unified Data Foundation
                     </h3>
@@ -169,8 +170,10 @@ const DataEngineering = () => {
                   <div className="relative overflow-hidden bg-[#ffffff75] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
                     <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
-                    <div className="relative w-20 h-20 ml-0 mb-6">
-                      <img src={VelocityIcon} alt="" />
+                    <div
+                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
+                      <PackageCheck className="w-8 h-8 text-brand-primary" />
                     </div>
                     <h3 className="relative text-xl font-semibold mb-4 text-foreground-dark">
                       Enhance Data Quality & Context
@@ -186,7 +189,11 @@ const DataEngineering = () => {
                     <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
                     <div className="relative w-20 h-20 ml-0 mb-6">
-                      <img src={VelocityIcon} alt="" />
+                      <div
+                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        <HandCoins className="w-8 h-8 text-brand-primary" />
+                      </div>
                     </div>
                     <h3 className="relative text-xl font-semibold mb-4 text-foreground-dark">
                       Establish Robust Governance

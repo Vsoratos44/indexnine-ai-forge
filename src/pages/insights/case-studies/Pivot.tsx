@@ -172,7 +172,9 @@ const PivotCaseStudy = () => {
             </div>
           </div>
           <div className="col-span-2">
-            <section className="min-h-[100px] bg-gradient-to-br from-background via-background-alternate to-background rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden">
+            <section
+              className={`min-h-[100px] rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden ${styles.caseTitle} `}
+            >
               {/* <LivingVoidBackground /> */}
 
               <div className="mt-auto p-8">
@@ -187,13 +189,11 @@ const PivotCaseStudy = () => {
 
                   <div className="mb-6">
                     <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
-                      <span className="text-brand-primary text-xs mr-2">
-                        Client
-                      </span>{" "}
+                      <span className="text-white/50 text-xs mr-2">Client</span>{" "}
                       Zilla
                     </span>
                     <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
-                      <span className="text-brand-primary text-xs mr-2">
+                      <span className="text-white/50 text-xs mr-2">
                         Industry
                       </span>{" "}
                       Cybersecurity
@@ -205,7 +205,7 @@ const PivotCaseStudy = () => {
                       <span className="leading-[1.05]">
                         Zilla&nbsp;Security:
                       </span>
-                      <span className="bg-gradient-primary bg-clip-text text-[#505cfd] leading-[1.05]">
+                      <span className="bg-gradient-primary bg-clip-text text-transparent leading-[1.05]">
                         Engineering the Perfect Pivot
                       </span>
                     </h1>

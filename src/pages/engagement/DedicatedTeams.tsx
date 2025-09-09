@@ -103,7 +103,9 @@ const DedicatedTeams = () => {
               },
             ].map((benefit, index) => (
               <CardGlass className="p-8" key={index}>
-                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
                   <benefit.icon className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground-dark mb-4">

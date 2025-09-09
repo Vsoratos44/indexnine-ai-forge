@@ -139,19 +139,26 @@ const ProjectBased = () => {
               <CardGlass className="p-8">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Target className="w-5 h-5 text-brand-primary" />
+                    {" "}
+                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-2 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Target className="w-6 h-6 text-brand-primary" />
+                    </div>
                     <span className="font-medium text-foreground-dark">
                       End-to-end project delivery
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Users className="w-5 h-5 text-brand-primary" />
+                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-2 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Users className="w-6 h-6 text-brand-primary" />
+                    </div>
                     <span className="font-medium text-foreground-dark">
                       Dedicated expert team
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Shield className="w-5 h-5 text-brand-primary" />
+                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-2 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Shield className="w-6 h-6 text-brand-primary" />
+                    </div>
                     <span className="font-medium text-foreground-dark">
                       Full lifecycle management
                     </span>
@@ -265,7 +272,9 @@ const ProjectBased = () => {
                 <Link to="/insights/case-studies/launch" className="block">
                   <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
-                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <div
+                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                      >
                         <Zap className="w-8 h-8 text-brand-primary" />
                       </div>
                       <div className="flex-1">
@@ -307,7 +316,9 @@ const ProjectBased = () => {
                 <Link to="/insights/case-studies/mature" className="block">
                   <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
-                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <div
+                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                      >
                         <TrendingUp className="w-8 h-8 text-brand-primary" />
                       </div>
                       <div className="flex-1">
@@ -350,7 +361,9 @@ const ProjectBased = () => {
                 <Link to="#." className="block">
                   <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
-                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <div
+                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                      >
                         <Target className="w-8 h-8 text-brand-primary" />
                       </div>
                       <div className="flex-1">
@@ -453,7 +466,10 @@ const ProjectBased = () => {
                     key={index}
                     className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 group text-left"
                   >
-                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                    <div
+                      className={`relative w-16 h-16 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
+                      {" "}
                       <step.icon className="w-6 h-6 text-brand-primary" />
                     </div>
                     <h3 className="text-lg font-semibold text-foreground-dark mb-3 font-montserrat">

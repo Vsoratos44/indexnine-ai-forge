@@ -105,6 +105,12 @@ header .fixed.inset-0 {
   background-position: center top;
   background-size: 100%;
 }
+.casesBg {
+  background-image: url(./../images/cases-main-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+}
 .strBg1 {
   background-image: url(./../images/str-section-bg.webp);
   background-repeat: no-repeat;
@@ -274,6 +280,12 @@ header .fixed.inset-0 {
   background-image: url(./../images/cta-bg.webp);
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
+}
+.caseTitle {
+  background-image: url(./../images/case-title-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 

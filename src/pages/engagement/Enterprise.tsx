@@ -101,7 +101,9 @@ const Enterprise = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <CardGlass className="group p-6 sm:p-8">
-              <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+              <div
+                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+              >
                 <RefreshCw className="w-8 h-8 text-brand-primary" />
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
@@ -127,7 +129,9 @@ const Enterprise = () => {
             </CardGlass>
 
             <CardGlass className="group p-6 sm:p-8">
-              <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+              <div
+                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+              >
                 <Shield className="w-8 h-8 text-brand-primary" />
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
@@ -154,7 +158,9 @@ const Enterprise = () => {
             </CardGlass>
 
             <CardGlass className="group p-6 sm:p-8">
-              <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+              <div
+                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+              >
                 <Eye className="w-8 h-8 text-brand-primary" />
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
@@ -233,7 +239,9 @@ const Enterprise = () => {
 
             <div className="grid md:grid-cols-3 gap-6">
               <CardGlass className="group">
-                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
                   <RefreshCw className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground-dark mb-4">
@@ -252,7 +260,9 @@ const Enterprise = () => {
               </CardGlass>
 
               <CardGlass className="group">
-                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
                   <Shield className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground-dark mb-4">
@@ -270,7 +280,9 @@ const Enterprise = () => {
               </CardGlass>
 
               <CardGlass className="group">
-                <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-4 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
                   <Eye className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground-dark mb-4">

@@ -156,8 +156,7 @@ const CaseStudies = () => {
     },
     {
       id: "mature",
-      title:
-        "Mission-Critical Modernization: Genesys E-commerce Platform",
+      title: "Mission-Critical Modernization: Genesys E-commerce Platform",
       subtitle:
         "Product modernization and event-driven architecture transformation for a mature e-commerce platform serving thousands of merchants.",
       client: "Genesys",
@@ -183,7 +182,7 @@ const CaseStudies = () => {
           "For thousands of merchants across India, Genesys's platform was their lifeline to the world of e-commerce. The platform was an integration engine, connecting sellers on platforms like Amazon, Myntra, and Flipkart, and managing a constant flow of inventory updates, orders, and transactions. The problem? The engine was over 16 years old, built on legacy PHP, and was bursting at the seams.",
         approach: [
           "Architectural Strategy - The Event-Driven Approach",
-          "Technical Execution - Building a Resilient, Scalable Hub", 
+          "Technical Execution - Building a Resilient, Scalable Hub",
           "Phased, Zero-Downtime Rollout Strategy",
         ],
         technicalDetails:
@@ -223,7 +222,7 @@ const CaseStudies = () => {
           "The rapid adoption of generative AI in enterprise environments created an entirely new attack surface that traditional cybersecurity tools weren't designed to address. CygenIQ's founders, seasoned cybersecurity experts, recognized this gap and envisioned a first-of-its-kind platform specifically designed to secure AI systems and data flows.",
         approach: [
           "Sprint Zero - De-Risking the Vision and Charting the Course",
-          "Design Studio - Engineering Clarity for the CISO", 
+          "Design Studio - Engineering Clarity for the CISO",
           "Agentic AI Pod - Engineering the Core Security Engine",
         ],
         technicalDetails:
@@ -238,8 +237,7 @@ const CaseStudies = () => {
     },
     {
       id: "tripjack",
-      title:
-        "TripJack: Engineering the Platform for Next-Generation Travel",
+      title: "TripJack: Engineering the Platform for Next-Generation Travel",
       subtitle:
         "How Indexnine's Expertise in Microservices and API Integration Reduced Time-to-Market by 75%, Powering TripJack's Expansion into New B2B2C Revenue Streams.",
       client: "TripJack",
@@ -247,7 +245,7 @@ const CaseStudies = () => {
       challenge:
         "TripJack's monolithic architecture and manual integration processes were creating significant operational drag. The lengthy, multi-month timeline required to onboard new airline suppliers was a major bottleneck, hindering their ability to expand offerings and react to market changes.",
       solution:
-        "A strategic \"Grow\" and \"Product Modernization\" engagement. Indexnine architected and built a modern, event-driven, microservices-based integration hub to streamline supplier onboarding. In parallel, we developed their new flagship B2B2C platform, enabling them to enter the direct-to-consumer market for the first time.",
+        'A strategic "Grow" and "Product Modernization" engagement. Indexnine architected and built a modern, event-driven, microservices-based integration hub to streamline supplier onboarding. In parallel, we developed their new flagship B2B2C platform, enabling them to enter the direct-to-consumer market for the first time.',
       results: [
         "75% Faster Time-to-Market: The new integration hub reduced the time to onboard new airline suppliers using the modern NDC protocol from over 3 months to just 3 weeks.",
         "New B2B2C Revenue Channel Launched: Successfully architected and delivered a scalable, user-centric B2C platform, opening up a significant new revenue stream for the business.",
@@ -324,11 +322,14 @@ const CaseStudies = () => {
 
   // Implement comprehensive SEO for Case Studies page
   useSEO({
-    title: "Enterprise Software Development Case Studies | Product Engineering Success Stories | IndexNine",
-    description: "Real-world case studies showcasing enterprise software development, product engineering, AI implementation, and digital transformation success stories. Proven results in custom software development, quality engineering, and data modernization projects.",
+    title:
+      "Enterprise Software Development Case Studies | Product Engineering Success Stories | IndexNine",
+    description:
+      "Real-world case studies showcasing enterprise software development, product engineering, AI implementation, and digital transformation success stories. Proven results in custom software development, quality engineering, and data modernization projects.",
     canonicalUrl: "https://www.indexnine.com/insights/case-studies",
-    keywords: "enterprise software development case studies, product engineering success stories, AI implementation case studies, digital transformation projects, custom software development examples, quality engineering case studies, data modernization success stories, legacy system modernization cases, enterprise AI consulting results, B2B software development case studies, product lifecycle engineering examples, test automation success stories",
-    ogImage: "https://www.indexnine.com/images/case-studies-og.jpg"
+    keywords:
+      "enterprise software development case studies, product engineering success stories, AI implementation case studies, digital transformation projects, custom software development examples, quality engineering case studies, data modernization success stories, legacy system modernization cases, enterprise AI consulting results, B2B software development case studies, product lifecycle engineering examples, test automation success stories",
+    ogImage: "https://www.indexnine.com/images/case-studies-og.jpg",
   });
 
   return (
@@ -374,7 +375,7 @@ const CaseStudies = () => {
               product engineering.
             </p>
             <div className="flex flex-wrap justify-start gap-4">
-              <Link to="/#launch">
+              {/* <Link to="/#launch">
                 <Button variant="btnSecondary">View Launch Projects</Button>
               </Link>
               <Link to="/#pivot">
@@ -382,13 +383,13 @@ const CaseStudies = () => {
               </Link>
               <Link to="/services/data-engineering">
                 <Button variant="btnSecondary">Data Engineering</Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
       </section>
 
-      <div className={` relative bg-[#fff] overflow-hidden ${styles.blogBg}`}>
+      <div className={` relative bg-[#fff] overflow-hidden ${styles.casesBg} `}>
         {/* Case Studies Grid */}
         <section className="max-w-6xl mx-auto lg:pt-32 bg-transparent">
           <div className="container mx-auto px-6 lg:px-8">

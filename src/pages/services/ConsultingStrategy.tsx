@@ -451,8 +451,8 @@ const ConsultingStrategy = () => {
                     <Card className=" text-left bg-transpoarent border-0">
                       <CardContent className="p-0">
                         <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center">
-                          <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center mr-4 border border-white/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                            <CheckCircle className="h-8 w-8 text-white mt-0.5 flex-shrink-0" />
+                          <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                            <CheckCircle className="h-6 w-6 text-white mt-0.5 flex-shrink-0" />
                           </div>{" "}
                           Practitioner-Led Insights
                         </h3>
@@ -466,8 +466,8 @@ const ConsultingStrategy = () => {
                     <Card className=" text-left bg-transpoarent border-0">
                       <CardContent className="p-0">
                         <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center">
-                          <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center mr-4 border border-white/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                            <CheckCircle className="h-8 w-8 text-white mt-0.5 flex-shrink-0" />
+                          <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                            <CheckCircle className="h-6 w-6 text-white mt-0.5 flex-shrink-0" />
                           </div>{" "}
                           Implementation Ready
                         </h3>
@@ -481,8 +481,8 @@ const ConsultingStrategy = () => {
                     <Card className=" text-left bg-transpoarent border-0">
                       <CardContent className="p-0">
                         <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center">
-                          <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center mr-4 border border-white/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                            <CheckCircle className="h-8 w-8 text-white mt-0.5 flex-shrink-0" />
+                          <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                            <CheckCircle className="h-6 w-6 text-white mt-0.5 flex-shrink-0" />
                           </div>{" "}
                           ROI-Focused Approach
                         </h3>
@@ -496,8 +496,8 @@ const ConsultingStrategy = () => {
                     <Card className=" text-left bg-transpoarent border-0">
                       <CardContent className="p-0">
                         <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center">
-                          <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center mr-4 border border-white/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                            <CheckCircle className="h-8 w-8 text-white mt-0.5 flex-shrink-0" />
+                          <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                            <CheckCircle className="h-6 w-6 text-white mt-0.5 flex-shrink-0" />
                           </div>{" "}
                           Future-Proof Solutions
                         </h3>
