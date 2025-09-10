@@ -23,6 +23,10 @@ import ServiceVideoBackground from "@/components/ServiceVideoBackground";
 import styles from "../../assets/css/stylesheet.module.css";
 import introImg from "@/assets/images/str-section-img.png";
 import blogImg from "@/assets/images/blog-img2.webp";
+import csDigital from "@/assets/images/cs-digital.webp";
+import csAi from "@/assets/images/cs-ai.webp";
+import csTech from "@/assets/images/cs-technology.webp";
+import csProd from "@/assets/images/cs-product.webp";
 
 const ConsultingStrategy = () => {
   return (
@@ -206,9 +210,9 @@ const ConsultingStrategy = () => {
                 <CardContent className="p-0">
                   <div className="text-left">
                     <img
-                      src={blogImg}
+                      src={csDigital}
                       alt="Blogs"
-                      className="w-full h-auto max-w-md mb-4"
+                      className="w-full h-auto max-w-md mb-4 max-h-64 object-fill rounded-xl"
                     />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
@@ -246,9 +250,9 @@ const ConsultingStrategy = () => {
                 <CardContent className="p-0">
                   <div className="text-left">
                     <img
-                      src={blogImg}
+                      src={csAi}
                       alt="Blogs"
-                      className="w-full h-auto max-w-md mb-4"
+                      className="w-full h-auto max-w-md mb-4 max-h-64 object-fill rounded-xl"
                     />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
@@ -286,9 +290,9 @@ const ConsultingStrategy = () => {
                 <CardContent className="p-0">
                   <div className="text-left">
                     <img
-                      src={blogImg}
+                      src={csTech}
                       alt="Blogs"
-                      className="w-full h-auto max-w-md mb-4"
+                      className="w-full h-auto max-w-md mb-4 max-h-64 object-fill rounded-xl"
                     />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
@@ -326,9 +330,9 @@ const ConsultingStrategy = () => {
                 <CardContent className="p-0">
                   <div className="text-left">
                     <img
-                      src={blogImg}
+                      src={csProd}
                       alt="Blogs"
-                      className="w-full h-auto max-w-md mb-4"
+                      className="w-full h-auto max-w-md mb-4 max-h-64 object-fill rounded-xl"
                     />
                   </div>
                   <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
