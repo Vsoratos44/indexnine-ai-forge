@@ -205,6 +205,7 @@ const InnovationLab = () => {
                   "_blank"
                 );
               }}
+              className="text-primary"
             >
               Schedule an Innovation Strategy Session
             </CtaButton>
@@ -361,7 +362,7 @@ const InnovationLab = () => {
                   the foundational risk.
                 </p>
                 <div className="flex justify-center">
-                  <CtaButton>
+                  <CtaButton className="text-primary">
                     Learn More About Snap.MVP
                   </CtaButton>
                 </div>
