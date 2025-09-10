@@ -7,21 +7,16 @@ import Logo from "../assets/images/i9logo-logo-wht.svg";
 const Footer = () => {
   useEffect(() => {
     const script = document.createElement("script");
+    script.type = "text/javascript";
     script.src = "https://widget.clutch.co/static/js/widget.js";
     script.async = true;
-
-    // Append the script AFTER widget placeholder is in DOM
-    script.onload = () => {
-      if ((window as any).Clutch) {
-        // Sometimes Clutch attaches init to window
-        (window as any).Clutch.init?.();
-      }
-    };
 
     document.body.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
 
@@ -120,8 +115,7 @@ const Footer = () => {
                   data-height="50"
                   data-nofollow="false"
                   data-expandifr="true"
-                  data-primary-color="#505dfd"
-                  data-header-color="#00010a"
+                  data-scale="100"
                   data-clutchcompany-id="2249150"
                 ></div>
               </div>
