@@ -199,13 +199,13 @@ const InnovationLab = () => {
           </div>
           <div className="flex justify-center">
             <CtaButton
+              variant="secondary"
               onClick={() => {
                 window.open(
                   "https://calendly.com/vaughn-soratos-indexnine",
                   "_blank"
                 );
               }}
-              className="text-primary"
             >
               Schedule an Innovation Strategy Session
             </CtaButton>
@@ -362,7 +362,7 @@ const InnovationLab = () => {
                   the foundational risk.
                 </p>
                 <div className="flex justify-center">
-                  <CtaButton className="text-primary">
+                  <CtaButton variant="secondary">
                     Learn More About Snap.MVP
                   </CtaButton>
                 </div>
