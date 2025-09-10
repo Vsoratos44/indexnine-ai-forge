@@ -54,18 +54,18 @@ const RobotFrameworkVsPlaywright = lazy(
 );
 
 // Case Study Pages - Lazy loaded
-const GenesysModernization = lazy(
-  () => import("./pages/insights/case-study/GenesysModernization")
-);
+// const GenesysModernization = lazy(
+//   () => import("./pages/insights/case-study/GenesysModernization")
+// );
 const LaunchCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/annotate")
+  () => import("./pages/insights/case-studies/Annotate")
 );
 const PivotCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/zilla")
+  () => import("./pages/insights/case-studies/Zilla")
 );
-const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/si"));
+const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/Si"));
 const MatureCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/genesys")
+  () => import("./pages/insights/case-studies/Genesys")
 );
 const CygeniqCaseStudy = lazy(
   () => import("./pages/insights/case-studies/Cygeniq")
@@ -192,10 +192,10 @@ const App = () => (
                 path="/insights/case-studies/cygeniq"
                 element={<CygeniqCaseStudy />}
               />
-              <Route
+              {/* <Route
                 path="/insights/case-study/genesys-modernization"
                 element={<GenesysModernization />}
-              />
+              /> */}
 
               {/* Legacy case study redirects */}
               <Route path="/case-studies" element={<CaseStudies />} />
