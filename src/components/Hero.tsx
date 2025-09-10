@@ -32,7 +32,10 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-            <a href="#home-contact">
+            <a
+              href="https://calendly.com/vaughn-soratos-indexnine"
+              target="_blank"
+            >
               <Button
                 variant="btnPrimary"
                 size="xl"
