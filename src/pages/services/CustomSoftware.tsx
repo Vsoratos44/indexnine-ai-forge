@@ -469,7 +469,7 @@ const CustomSoftware = () => {
                     </div>
                   </Link>
                   <Link
-                    to="/insights/case-study/genesys-modernization"
+                    to="/insights/case-studies"
                     className="py-4 flex gap-6 rounded-0 hover:bg-[#fcfcfc] transition-all bg backdrop-blur-xl"
                   >
                     <div className="w-20">

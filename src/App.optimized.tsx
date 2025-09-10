@@ -54,9 +54,6 @@ const RobotFrameworkVsPlaywright = lazy(
 );
 
 // Case Study Pages - Lazy loaded
-const GenesysModernization = lazy(
-  () => import("./pages/insights/case-study/GenesysModernization")
-);
 const LaunchCaseStudy = lazy(
   () => import("./pages/insights/case-studies/Launch")
 );
@@ -191,10 +188,6 @@ const App = () => (
               <Route
                 path="/insights/case-studies/cygeniq"
                 element={<CygeniqCaseStudy />}
-              />
-              <Route
-                path="/insights/case-study/genesys-modernization"
-                element={<GenesysModernization />}
               />
 
               {/* Legacy case study redirects */}

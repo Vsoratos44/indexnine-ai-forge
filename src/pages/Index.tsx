@@ -5,11 +5,13 @@ import Footer from "@/components/Footer";
 import CTABanner from "@/components/CTABanner";
 import { Button } from "@/components/ui/button";
 import { useContent } from "@/hooks/useContent";
+import { useSEO } from "@/hooks/useSEO";
 import {
   OrganizationSchema,
   WebPageSchema,
   LocalBusinessSchema,
   VideoObjectSchema,
+  FAQSchema,
 } from "@/components/SEOStructuredData";
 
 // Lazy load heavy components that are below the fold
@@ -35,6 +37,17 @@ const Index = () => {
   console.log("Index page loading...");
   const { content, loading } = useContent();
   const [useDynamicContent, setUseDynamicContent] = useState(false);
+
+  // Homepage SEO - Critical for search visibility and AI referencing
+  useSEO({
+    title: "Enterprise Product Engineering & AI Consulting Services | Custom Software Development | IndexNine",
+    description: "Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions. Transform your legacy systems with expert product lifecycle engineering.",
+    canonicalUrl: "https://www.indexnine.com/",
+    keywords: "product engineering services, AI consulting services, custom software development, enterprise software solutions, digital transformation consulting, legacy system modernization, data engineering services, quality engineering, AI implementation, product lifecycle management, enterprise product development, software engineering consulting, technology consulting services, digital product engineering",
+    ogImage: "https://www.indexnine.com/images/og-homepage.png",
+    ogType: "website",
+    schemaType: "WebPage"
+  });
 
   // Check if we should use dynamic content
   useEffect(() => {
@@ -63,7 +76,25 @@ const Index = () => {
       <WebPageSchema
         title="Enterprise Product Engineering & AI Consulting Services | Custom Software Development | IndexNine"
         description="Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions. Transform your legacy systems with expert product lifecycle engineering."
-        url="https://yoursite.lovable.app/"
+        url="https://www.indexnine.com/"
+      />
+      
+      {/* FAQ Schema for common enterprise questions */}
+      <FAQSchema
+        faqItems={[
+          {
+            question: "What product engineering services does IndexNine offer?",
+            answer: "IndexNine provides comprehensive product engineering services including custom software development, AI/ML consulting, data engineering, quality engineering, and enterprise digital transformation solutions."
+          },
+          {
+            question: "How does IndexNine help with AI implementation for enterprises?",
+            answer: "We provide end-to-end AI consulting from strategy and readiness assessment to implementation and deployment. Our AI Studio helps enterprises navigate from AI potential to measurable business outcomes with our P2R (Potential to Reality) framework."
+          },
+          {
+            question: "What makes IndexNine different from other software development companies?",
+            answer: "IndexNine focuses on outcome-driven engineering with radical transparency, founder mindset, and accelerated velocity. We combine strategic consulting with hands-on development to deliver measurable business results."
+          }
+        ]}
       />
       <LocalBusinessSchema />
       {/* VideoObject schema helps AI understand our hero video content for multimedia responses */}

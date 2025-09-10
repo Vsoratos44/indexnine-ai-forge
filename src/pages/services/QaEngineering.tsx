@@ -25,12 +25,14 @@ import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ServiceVideoBackground from "@/components/ServiceVideoBackground";
+import { useSEO } from "@/hooks/useSEO";
 import {
   SEOStructuredData,
   OrganizationSchema,
   WebPageSchema,
   ServiceSchema,
   BreadcrumbSchema,
+  FAQSchema,
 } from "@/components/SEOStructuredData";
 import QuoteIcon from "../../assets/images/quote.svg";
 import styles from "../../assets/css/stylesheet.module.css";
@@ -41,6 +43,16 @@ const QualityEngineering = () => {
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? null : index);
   };
+
+  // Quality Engineering SEO - Enterprise-focused keywords
+  useSEO({
+    title: "Quality Engineering Services & Test Automation Solutions | Enterprise QA Testing | IndexNine",
+    description: "Leading quality engineering and test automation services for enterprises. Strategic QA testing, automated testing solutions, performance testing, and quality assurance consulting. Transform your software testing with outcome-driven quality engineering.",
+    canonicalUrl: "https://www.indexnine.com/services/quality-engineering",
+    keywords: "quality engineering services, test automation solutions, enterprise QA testing, automated testing services, performance testing, quality assurance consulting, software testing automation, QE consulting, continuous testing, test strategy consulting, quality engineering framework, enterprise testing solutions, QA automation services, test automation framework development, software quality assurance",
+    ogImage: "https://www.indexnine.com/images/og-quality-engineering.png",
+    schemaType: "WebPage"
+  });
 
   const faqData = [
     {
@@ -89,59 +101,7 @@ const QualityEngineering = () => {
 
   return (
     <div className="min-h-screen bg-background-dark">
-      {/* SEO Head Elements */}
-      <title>
-        Quality Engineering Services & Test Automation Solutions | Enterprise QA
-        Testing | IndexNine
-      </title>
-      <meta
-        name="description"
-        content="Leading quality engineering and test automation services for enterprises. Strategic QA testing, automated testing solutions, performance testing, and quality assurance consulting. Transform your software testing with outcome-driven quality engineering."
-      />
-      <meta
-        name="keywords"
-        content="quality engineering services, test automation solutions, enterprise QA testing, automated testing services, performance testing, quality assurance consulting, software testing automation, QE consulting, continuous testing, test strategy consulting, quality engineering framework, enterprise testing solutions, QA automation services, test automation framework development, software quality assurance"
-      />
-      <link
-        rel="canonical"
-        href="https://www.indexnine.com/studios/quality-engineering"
-      />
-
-      {/* Open Graph Meta Tags */}
-      <meta
-        property="og:title"
-        content="Enterprise Quality Engineering Services & Test Automation Solutions | IndexNine"
-      />
-      <meta
-        property="og:description"
-        content="Transform your software testing with strategic quality engineering, test automation solutions, and outcome-driven QA services for mission-critical enterprise software."
-      />
-      <meta
-        property="og:image"
-        content="https://www.indexnine.com/images/og-quality-engineering.png"
-      />
-      <meta
-        property="og:url"
-        content="https://www.indexnine.com/studios/quality-engineering"
-      />
-      <meta property="og:type" content="website" />
-
-      {/* Twitter Meta Tags */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="Quality Engineering Services & Test Automation Solutions | IndexNine"
-      />
-      <meta
-        name="twitter:description"
-        content="Enterprise quality engineering and test automation services for reliable, mission-critical software development and deployment."
-      />
-      <meta
-        name="twitter:image"
-        content="https://www.indexnine.com/images/twitter-quality-engineering.png"
-      />
-
-      {/* Structured Data */}
+      {/* Structured Data for Quality Engineering */}
       <ServiceSchema
         name="Enterprise Quality Engineering and Test Automation"
         description="IndexNine's Quality Engineering Studio provides strategic services including test automation, performance testing, and Agile Product Quality (APQ) roadmaps to ensure the reliability of mission-critical software."
@@ -150,12 +110,20 @@ const QualityEngineering = () => {
 
       <BreadcrumbSchema
         items={[
-          { name: "Studios", url: "https://www.indexnine.com/studios" },
+          { name: "Services", url: "https://www.indexnine.com/services" },
           {
             name: "Quality Engineering",
-            url: "https://www.indexnine.com/studios/quality-engineering",
+            url: "https://www.indexnine.com/services/quality-engineering",
           },
         ]}
+      />
+
+      {/* FAQ Schema for Quality Engineering */}
+      <FAQSchema
+        faqItems={faqData.map(item => ({
+          question: item.question,
+          answer: item.answer
+        }))}
       />
 
       <Header />

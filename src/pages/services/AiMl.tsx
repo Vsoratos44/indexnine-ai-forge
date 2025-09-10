@@ -43,7 +43,7 @@ const AiStudio = () => {
       "AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine",
     description:
       "Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services.",
-    canonicalUrl: "https://www.indexnine.com/studios/ai",
+    canonicalUrl: "https://www.indexnine.com/services/ai",
     keywords:
       "AI consulting services, machine learning solutions, enterprise AI implementation, AI strategy consulting, custom AI development, generative AI solutions, AI change management, ML engineering, artificial intelligence consulting, AI transformation services, enterprise machine learning, AI implementation framework, legacy system AI integration, conversational AI development, AI automation solutions",
     ogImage: "https://www.indexnine.com/images/og-ai-studio.png",
@@ -59,14 +59,14 @@ const AiStudio = () => {
       <WebPageSchema
         title="AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine"
         description="Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services."
-        url="https://indexnine.com/studios/ai"
+        url="https://www.indexnine.com/services/ai"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Studios", url: "https://indexnine.com/studios" },
+          { name: "Services", url: "https://www.indexnine.com/services" },
           {
-            name: "AI Studio",
-            url: "https://indexnine.com/studios/ai",
+            name: "AI & ML Services",
+            url: "https://www.indexnine.com/services/ai",
           },
         ]}
       />
