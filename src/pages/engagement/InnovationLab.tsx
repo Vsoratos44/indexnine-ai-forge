@@ -141,7 +141,7 @@ const InnovationLab = () => {
               into a market-ready MVP with unprecedented speed and precision.
               Stop dreaming, start building.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-scale-in">
               <CtaButton
                 onClick={() => {
                   window.open(
@@ -155,7 +155,7 @@ const InnovationLab = () => {
               <Button
                 variant="btnLink"
                 size="xl"
-                className="min-w-[280px] text-foreground/80 hover:text-foreground"
+                className="min-w-[280px] text-foreground/80 hover:text-foreground h-auto"
               >
                 See how we launched an MVP in 8 weeks{" "}
                 <ArrowRight className="ml-2 h-4 w-4" />
