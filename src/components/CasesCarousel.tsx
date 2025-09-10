@@ -162,13 +162,13 @@ const CasesCarousel = () => {
               loop: true,
             }}
           >
-            <CarouselContent className="ml-2">
+            <CarouselContent className="ml-3 mr-2">
               {carouselItems.map((item) => {
                 const IconComponent = getIcon(item.type);
                 return (
                   <CarouselItem
                     key={item.id}
-                    className="px-3 py-10 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                    className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
                   >
                     <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
                       <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
