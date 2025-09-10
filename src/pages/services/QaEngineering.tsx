@@ -24,7 +24,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import LivingVoidBackground from "@/components/LivingVoidBackground";
+import ServiceVideoBackground from "@/components/ServiceVideoBackground";
 import {
   SEOStructuredData,
   OrganizationSchema,
@@ -162,8 +162,8 @@ const QualityEngineering = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[780px] overflow-hidden bg-black">
-        {/* Three.js Living Void Background */}
-        <LivingVoidBackground />
+        {/* Service Video Background */}
+        <ServiceVideoBackground />
 
         {/* Content - Precisely positioned */}
         <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
