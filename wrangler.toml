@@ -1,0 +1,20 @@
+name = "indexnine-ai-forge"
+compatibility_date = "2024-09-10"
+
+[assets]
+directory = "./dist"
+# Specify which files to include/exclude
+# include = ["**/*"]
+# exclude = []
+
+# For SPA routing - ensure all routes serve index.html
+[[assets.bindings]]
+name = "ASSETS"
+
+# Environment variables (if needed for Functions later)
+[vars]
+ENVIRONMENT = "production"
+
+# If you want to add Functions later for SSR
+# [build]
+# command = "npm run build"
