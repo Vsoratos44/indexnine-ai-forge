@@ -68,9 +68,9 @@ const AgenticAiEnterpriseFuture = lazy(
 const BlogPost = lazy(() => import("./pages/insights/blog/BlogPost"));
 
 // Case Study Pages - Lazy loaded
-const GenesysModernization = lazy(
-  () => import("./pages/insights/case-study/GenesysModernization")
-);
+// const GenesysModernization = lazy(
+//   () => import("./pages/insights/case-study/GenesysModernization")
+// );
 const LaunchCaseStudy = lazy(
   () => import("./pages/insights/case-studies/Launch")
 );
@@ -258,10 +258,10 @@ const App = () => {
                   path="/insights/case-studies/tripjack"
                   element={<TripjackCaseStudy />}
                 />
-                <Route
+                {/* <Route
                   path="/insights/case-study/genesys-modernization"
                   element={<GenesysModernization />}
-                />
+                /> */}
 
                 {/* Legacy case study redirects */}
                 <Route path="/case-studies" element={<CaseStudies />} />

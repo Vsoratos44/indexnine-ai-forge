@@ -105,32 +105,35 @@ const InsightsCarousel = () => {
           style={{ animationDelay: "2s" }}
         ></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-accent/5 rounded-full blur-2xl animate-pulse-slow"></div>
-
-      /* Enhanced Grid Pattern with animation */
-      <div
-        className="absolute inset-0 opacity-8"
-        style={{
-          backgroundImage: `radial-gradient(circle at 50% 50%, hsl(262 83% 58%) 1px, transparent 1px)`,
-          backgroundSize: "80px 80px",
-          animation: "mesh-shift 30s linear infinite"
-        }}
-      ></div>
+        /* Enhanced Grid Pattern with animation */
+        <div
+          className="absolute inset-0 opacity-8"
+          style={{
+            backgroundImage: `radial-gradient(circle at 50% 50%, hsl(262 83% 58%) 1px, transparent 1px)`,
+            backgroundSize: "80px 80px",
+            animation: "mesh-shift 30s linear infinite",
+          }}
+        ></div>
       </div>
 
       <div className="container mx-auto px-0 lg:px-0 relative z-10">
         <div className="container text-center mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-purple mb-8 leading-tight tracking-tight font-montserrat">
-            Dispatches from the <span className="test-neon-cyan">Forefront</span>.
+            Dispatches from the{" "}
+            <span className="test-neon-cyan">Forefront</span>.
           </h2>
           <p className="text-xl text-foreground-dark max-w-3xl mx-auto font-light font-montserrat mb-8">
-            The best guides have navigated the terrain before. We share our learnings from the forefront of product engineering and AI to help you better understand the landscape ahead. Explore our thought leadership for actionable insights to inform your journey.
+            The best guides have navigated the terrain before. We share our
+            learnings from the forefront of product engineering and AI to help
+            you better understand the landscape ahead. Explore our thought
+            leadership for actionable insights to inform your journey.
           </p>
           <div className="flex justify-center">
             <CtaButton>Sharpen Your Edge</CtaButton>
           </div>
         </div>
 
-      {/* Enhanced Glassmorphism Carousel Container */}
+        {/* Enhanced Glassmorphism Carousel Container */}
         <div className="relative w-full mx-auto">
           <Carousel
             className="w-full"
