@@ -7,9 +7,6 @@ directory = "./dist"
 # include = ["**/*"]
 # exclude = []
 
-# For SPA routing - ensure all routes serve index.html
-[[assets.bindings]]
-name = "ASSETS"
 
 # Environment variables (if needed for Functions later)
 [vars]
