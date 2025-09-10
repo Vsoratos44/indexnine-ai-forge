@@ -183,15 +183,12 @@ const InnovationLab = () => {
             <p>
               Every disruptive product starts with a "what if?"{" "}
               <br className="hidden sm:block" />
-              The journey from idea to production code is fraught with risk, delays, and budget overruns, even in the age of AI.{" "}
-              <br className="hidden sm:block" />
-              The traditional development and old school service providers process is too slow for today's market.
+              The journey from idea to production code is fraught with risk, delays, and budget overruns, even in the age of AI. Traditional development processes and old school service providers are too slow for today's market.
             </p>
             <p>
               The Innovation Lab was created to solve this.
             </p>
             <p>
-              <br className="hidden sm:block" />
               It's not a service; It's built on an ecosystem of specialized studios,
               proprietary accelerators, and expert talent, all integrated to
               de-risk your investment and maximize your velocity to market. We build
