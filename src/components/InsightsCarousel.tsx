@@ -10,6 +10,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, FileText, Target } from "lucide-react";
 import styles from "../assets/css/stylesheet.module.css";
 
+import carlImgEbkCXO from "../assets/images/carsl-img-ebook-cxo.webp";
+import carlImgBlogQa from "../assets/images/carsl-img-blog-qa.webp";
+import carlImgBlogData from "../assets/images/carsl-img-blog-data.webp";
+import { Link } from "react-router-dom";
+
 interface CarouselItem {
   id: string;
   type: "eBooks" | "Blogs" | "Case Studies";
@@ -34,8 +39,8 @@ const InsightsCarousel = () => {
       date: "January 15, 2025",
       readTime: "45 min read",
       category: "AI Strategy",
-      image: "/api/placeholder/400/300",
-      link: "/ebooks/cxo-guide-ai-products",
+      image: carlImgEbkCXO,
+      link: "/insights/ebooks",
     },
     {
       id: "2",
@@ -47,8 +52,8 @@ const InsightsCarousel = () => {
       date: "January 12, 2025",
       readTime: "12 min read",
       category: "Data Strategy",
-      image: "/api/placeholder/400/300",
-      link: "/blog/modern-analytics-platform",
+      image: carlImgBlogQa,
+      link: "insights/blogs/modern-data-platforms-enterprise-guide",
     },
     {
       id: "3",
@@ -59,23 +64,10 @@ const InsightsCarousel = () => {
       date: "January 10, 2025",
       readTime: "10 min read",
       category: "Quality Engineering",
-      image: "/api/placeholder/400/300",
-      link: "/blog/beyond-testing-quality-engineering",
+      image: carlImgBlogData,
+      link: "/insights/blogs/robot-framework-vs-playwright-automation",
     },
   ];
-
-  const getIcon = (type: string) => {
-    switch (type) {
-      case "eBooks":
-        return BookOpen;
-      case "Blogs":
-        return FileText;
-      case "Case Studies":
-        return Target;
-      default:
-        return FileText;
-    }
-  };
 
   const getTypeColor = (type: string) => {
     switch (type) {
@@ -96,23 +88,6 @@ const InsightsCarousel = () => {
       className="pb-4 pt-24 lg:pt-32 bg-[#fff] relative overflow-hidden"
     >
       {/* Enhanced Background Effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>
-        <div
-          className="absolute bottom-1/4 right-1/6 w-80 h-80 bg-brand-purple/6 rounded-full blur-3xl animate-float"
-          style={{ animationDelay: "2s" }}
-        ></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-accent/5 rounded-full blur-2xl animate-pulse-slow"></div>
-
-        {/* Animated Grid Pattern */}
-        <div
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: `radial-gradient(circle at 50% 50%, hsl(239 84% 67%) 1px, transparent 1px)`,
-            backgroundSize: "80px 80px",
-          }}
-        ></div>
-      </div>
 
       <div className="container mx-auto px-0 lg:px-0 relative z-10">
         <div className="container text-center mb-20">
@@ -139,23 +114,16 @@ const InsightsCarousel = () => {
               loop: true,
             }}
           >
-            <CarouselContent className="ml-2">
-              {carouselItems.map((item) => {
-                const IconComponent = getIcon(item.type);
+            <CarouselContent className="ml-4 mr-4">
+              {carouselItems.map((item, index) => {
                 return (
                   <CarouselItem
                     key={item.id}
-                    className="px-3 py-10 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                    className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
                   >
-                    <div className="relative group h-full">
+                    <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
                       {/* Enhanced Glassmorphism Card */}
-                      <div className="relative overflow-hidden  bg-[#fff] border-[.75rem] border-glass-border rounded-3xl p-6  hover:shadow-glow transition-all duration-500 transform group-hover:scale-101 group-hover:-translate-y-2 h-full flex flex-col">
-                        {/* Frosted Glass Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-brand-primary/5 rounded-2xl opacity-50"></div>
-
-                        {/* Dynamic Glow Effect */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
+                      <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
                         {/* Content Header */}
                         <div className="relative flex items-start justify-between mb-6">
                           <div
@@ -163,7 +131,6 @@ const InsightsCarousel = () => {
                               item.type
                             )}`}
                           >
-                            <IconComponent className="w-4 h-4" />
                             {item.type}
                           </div>
                           <div className="text-sm text-foreground-dark-muted font-montserrat">
@@ -171,11 +138,12 @@ const InsightsCarousel = () => {
                           </div>
                         </div>
 
-                        {/* Image Placeholder with Glassmorphism */}
-                        <div className="relative mb-6 rounded-2xl overflow-hidden bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 backdrop-blur-md border border-glass-border h-48 flex items-center justify-center">
-                          <div className="text-foreground-dark-muted text-4xl">
-                            <IconComponent className="w-16 h-16" />
-                          </div>
+                        {/* Image with Glassmorphism */}
+                        <div className="relative mb-6 rounded-xl overflow-hidden bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 backdrop-blur-md border border-glass-border h-48 flex items-center justify-center">
+                          <img
+                            src={item.image}
+                            className="w-full h-full object-cover rounded-xl"
+                          />
                           {/* CMS Image Overlay - Dynamic */}
                           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
@@ -203,11 +171,15 @@ const InsightsCarousel = () => {
                             )}
                           </div>
 
-                          {/* CTA Button */}
                           <div className="text-left">
                             <Button variant="btnLink" size="link">
-                              Read More{" "}
-                              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                              <Link
+                                className="flex items-center pr-2"
+                                to={item.link}
+                              >
+                                Read More{" "}
+                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                              </Link>
                             </Button>
                           </div>
                         </div>
