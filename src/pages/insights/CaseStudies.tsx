@@ -31,7 +31,7 @@ const CaseStudies = () => {
    */
   const caseStudies = [
     {
-      id: "launch",
+      id: "annotate",
       title:
         "Annotate - Launching AI-Powered Disruption in Philanthropic Finance",
       subtitle:
@@ -73,7 +73,7 @@ const CaseStudies = () => {
       },
     },
     {
-      id: "pivot",
+      id: "zilla",
       title: "Zilla Security - Engineering the Perfect Pivot",
       subtitle:
         "Indexnine's strategic product engineering transformed a niche auditing tool into a mission-critical identity platform.",
@@ -114,7 +114,7 @@ const CaseStudies = () => {
       },
     },
     {
-      id: "grow",
+      id: "si",
       title: "Sports Interactive - AI-Powered Fan Engagement in Real Time",
       subtitle:
         "Unlocking a new level of scalability and solving a technical Gordian knot through automated content creation with Cricket LLM.",
@@ -155,7 +155,7 @@ const CaseStudies = () => {
       },
     },
     {
-      id: "mature",
+      id: "genesys",
       title: "Mission-Critical Modernization: Genesys E-commerce Platform",
       subtitle:
         "Product modernization and event-driven architecture transformation for a mature e-commerce platform serving thousands of merchants.",

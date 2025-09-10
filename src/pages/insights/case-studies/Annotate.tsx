@@ -59,7 +59,7 @@ const LaunchCaseStudy = () => {
       "Discover how Indexnine launched Annotate's AI-powered platform that disrupted philanthropic finance research, reducing costs by 99% from $50K to $500 per report through strategic MVP development.",
     keywords:
       "fintech launch, AI platform development, philanthropic finance, MVP development, cost reduction, startup launch strategy, RAG architecture, AI research agent",
-    canonicalUrl: "https://indexnine.ai/insights/case-studies/launch",
+    canonicalUrl: "https://indexnine.ai/insights/case-studies/annotate",
     ogImage: "https://indexnine.ai/images/case-studies/launch-og.jpg",
     ogType: "article",
   });
@@ -98,13 +98,13 @@ const LaunchCaseStudy = () => {
         datePublished="2024-01-15"
         dateModified="2024-01-15"
         image="https://indexnine.ai/images/case-studies/launch-hero.jpg"
-        url="https://indexnine.ai/insights/case-studies/launch"
+        url="https://indexnine.ai/insights/case-studies/annotate"
       />
 
       <WebPageSchema
         title="Launch Case Study: Annotate FinTech Platform"
         description="Strategic product launch case study showcasing AI-powered disruption in philanthropic finance research"
-        url="https://indexnine.ai/insights/case-studies/launch"
+        url="https://indexnine.ai/insights/case-studies/annotate"
       />
 
       <BreadcrumbSchema
@@ -117,7 +117,7 @@ const LaunchCaseStudy = () => {
           },
           {
             name: "Launch Phase",
-            url: "https://indexnine.ai/insights/case-studies/launch",
+            url: "https://indexnine.ai/insights/case-studies/annotate",
           },
         ]}
       />
