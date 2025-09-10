@@ -516,10 +516,19 @@ const CaseStudies = () => {
             business with Indexnine's strategic product engineering.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button variant="btnSecondary" size="lg">
+            <Button
+              variant="btnSecondary"
+              size="lg"
+              onClick={() => {
+                window.open(
+                  "https://calendly.com/vaughn-soratos-indexnine",
+                  "_blank"
+                );
+              }}
+            >
               Schedule Free Consultation
             </Button>
-            <Link to="/about/who-we-are">
+            <Link to="/company/about">
               <Button variant="btnSecondary" size="lg">
                 Learn About Our Team
               </Button>

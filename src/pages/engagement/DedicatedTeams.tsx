@@ -35,7 +35,17 @@ const DedicatedTeams = () => {
               integrate seamlessly with your existing processes and culture.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button variant="btnPrimary" size="xl" className="min-w-[280px]">
+              <Button
+                variant="btnPrimary"
+                size="xl"
+                className="min-w-[280px]"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
                 Build Your Team
               </Button>
               <Button
@@ -133,7 +143,16 @@ const DedicatedTeams = () => {
             Let's discuss how our dedicated teams can accelerate your
             development goals and deliver exceptional results.
           </p>
-          <Button variant="btnSecondary" size="lg">
+          <Button
+            variant="btnSecondary"
+            size="lg"
+            onClick={() => {
+              window.open(
+                "https://calendly.com/vaughn-soratos-indexnine",
+                "_blank"
+              );
+            }}
+          >
             Get Your Team
           </Button>
         </div>

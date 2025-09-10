@@ -14,6 +14,7 @@ import {
   CheckCircle,
   Users,
   TrendingUp,
+  Download,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -74,7 +75,17 @@ const ConsultingStrategy = () => {
               drives measurable value and competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button variant="btnPrimary" size="lg" className="min-w-[220px]">
+              <Button
+                variant="btnPrimary"
+                size="lg"
+                className="min-w-[220px]"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
                 Book a Consultation
               </Button>
               <Button
@@ -82,6 +93,7 @@ const ConsultingStrategy = () => {
                 size="lg"
                 className="min-w-[200px]"
               >
+                <Download className="w-6 h-6 mr-2" />
                 Download Strategy Guide
               </Button>
             </div>
@@ -527,7 +539,17 @@ const ConsultingStrategy = () => {
               Let's discuss how our strategic consulting can accelerate your
               digital transformation and competitive advantage.
             </p>
-            <Button variant="btnSecondary" size="lg" className="min-w-[220px]">
+            <Button
+              variant="btnSecondary"
+              size="lg"
+              className="min-w-[220px]"
+              onClick={() => {
+                window.open(
+                  "https://calendly.com/vaughn-soratos-indexnine",
+                  "_blank"
+                );
+              }}
+            >
               Book a Consultation
             </Button>
           </div>

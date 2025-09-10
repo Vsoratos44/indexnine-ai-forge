@@ -58,6 +58,12 @@ const ProjectBased = () => {
                 variant="btnSecondary"
                 size="xl"
                 className="min-w-[280px]"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
               >
                 Schedule a Strategy Session
               </Button>
@@ -501,7 +507,16 @@ const ProjectBased = () => {
             <Button variant="btnSecondary" size="lg">
               Contact Us
             </Button>
-            <Button variant="btnSecondary" size="lg">
+            <Button
+              variant="btnSecondary"
+              size="lg"
+              onClick={() => {
+                window.open(
+                  "https://calendly.com/vaughn-soratos-indexnine",
+                  "_blank"
+                );
+              }}
+            >
               Schedule a Strategy Session
             </Button>
           </div>

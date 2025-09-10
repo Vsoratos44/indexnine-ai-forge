@@ -117,25 +117,24 @@ const CustomSoftware = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button
-                variant="btnPrimary"
-                size="xl"
-                className="min-w-[280px]"
-                onClick={() =>
-                  document
-                    .getElementById("scoping-session")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Scope Your Project
-              </Button>
-              <Button
-                variant="btnSecondary"
-                size="xl"
-                className="min-w-[240px]"
-              >
-                View Our Work
-              </Button>
+              <a href="#cta">
+                <Button
+                  variant="btnPrimary"
+                  size="xl"
+                  className="min-w-[280px]"
+                >
+                  Scope Your Project
+                </Button>
+              </a>
+              <a href="/insights/case-studies">
+                <Button
+                  variant="btnSecondary"
+                  size="xl"
+                  className="min-w-[240px]"
+                >
+                  View Our Work
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -372,7 +371,16 @@ const CustomSoftware = () => {
                         Starting at $10,000
                       </p>
                     </div>
-                    <Button variant="btnSecondary" className="rounded-full">
+                    <Button
+                      variant="btnSecondary"
+                      className="rounded-full"
+                      onClick={() => {
+                        window.open(
+                          "https://calendly.com/vaughn-soratos-indexnine",
+                          "_blank"
+                        );
+                      }}
+                    >
                       Plan Your Scoping Session
                     </Button>
                   </div>
@@ -427,7 +435,7 @@ const CustomSoftware = () => {
                 </h3>
                 <div className="grid md:grid-rows-3 gap-4">
                   <Link
-                    to="/studios/ai"
+                    to="/services/ai"
                     className="py-4 border-b flex gap-6 rounded-0 hover:bg-[#fcfcfc] transition-all bg backdrop-blur-xl"
                   >
                     <div className="w-20">
@@ -448,7 +456,7 @@ const CustomSoftware = () => {
                     </div>
                   </Link>
                   <Link
-                    to="/studios/quality-engineering"
+                    to="/services/quality-engineering"
                     className="py-4 border-b flex gap-6 rounded-0 hover:bg-[#fcfcfc] transition-all bg backdrop-blur-xl"
                   >
                     <div className="w-20">
@@ -469,7 +477,7 @@ const CustomSoftware = () => {
                     </div>
                   </Link>
                   <Link
-                    to="/insights/case-studies"
+                    to="/insights/case-studies/genesys"
                     className="py-4 flex gap-6 rounded-0 hover:bg-[#fcfcfc] transition-all bg backdrop-blur-xl"
                   >
                     <div className="w-20">
@@ -496,6 +504,7 @@ const CustomSoftware = () => {
         </section>
       </section>
       {/* Final CTA Section */}
+      <a id="cta" className="absolute mt-[-110px]"></a>
       <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
         <div className="container max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

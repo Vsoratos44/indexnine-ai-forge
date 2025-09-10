@@ -46,16 +46,24 @@ const OutcomeBased = () => {
                   variant="btnPrimary"
                   size="xl"
                   className="min-w-[280px]"
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
                 >
                   Explore Partnership
                 </Button>
-                <Button
-                  variant="btnSecondary"
-                  size="xl"
-                  className="min-w-[280px]"
-                >
-                  Success Stories
-                </Button>
+                <a href="/insights/case-studies">
+                  <Button
+                    variant="btnSecondary"
+                    size="xl"
+                    className="min-w-[280px]"
+                  >
+                    Success Stories
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -142,7 +150,16 @@ const OutcomeBased = () => {
             Let's discuss how our outcome-based model can drive exceptional
             results for your business.
           </p>
-          <Button variant="btnSecondary" size="xl">
+          <Button
+            variant="btnSecondary"
+            size="xl"
+            onClick={() => {
+              window.open(
+                "https://calendly.com/vaughn-soratos-indexnine",
+                "_blank"
+              );
+            }}
+          >
             Start Partnership
           </Button>
         </div>

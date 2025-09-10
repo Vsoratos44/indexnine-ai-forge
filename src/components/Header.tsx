@@ -335,6 +335,12 @@ const Header = () => {
                   variant="btnPrimary"
                   size="default"
                   className="rounded-full"
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
                 >
                   Scope a Project
                 </Button>
@@ -640,7 +646,12 @@ const Header = () => {
               variant="btnSecondary"
               size="default"
               className="w-full text-lg py-4"
-              onClick={toggleMobileMenu}
+              onClick={() => {
+                window.open(
+                  "https://calendly.com/vaughn-soratos-indexnine",
+                  "_blank"
+                );
+              }}
             >
               Scope a Project
             </Button>

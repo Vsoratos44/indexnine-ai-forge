@@ -10,6 +10,7 @@ import {
   Users,
   Settings,
   Clock,
+  Download,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -39,7 +40,17 @@ const Enterprise = () => {
               engineering excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button variant="btnPrimary" size="xl" className="min-w-[280px]">
+              <Button
+                variant="btnPrimary"
+                size="xl"
+                className="min-w-[280px]"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
                 Schedule a Modernization Assessment
               </Button>
               <Button
@@ -294,8 +305,7 @@ const Enterprise = () => {
                   the enterprise.
                 </p>
                 <Button variant="btnLink" size="link">
-                  Download the Whitepaper{" "}
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  Download the Whitepaper <Download className="w-5 h-5 ml-1" />
                 </Button>
               </CardGlass>
             </div>
@@ -316,7 +326,16 @@ const Enterprise = () => {
             greatest competitive advantage. Schedule a complimentary,
             no-obligation assessment with our enterprise architects today.
           </p>
-          <Button variant="btnSecondary" size="lg">
+          <Button
+            variant="btnSecondary"
+            size="lg"
+            onClick={() => {
+              window.open(
+                "https://calendly.com/vaughn-soratos-indexnine",
+                "_blank"
+              );
+            }}
+          >
             Schedule Your Modernization Assessment
           </Button>
         </div>

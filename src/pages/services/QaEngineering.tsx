@@ -46,12 +46,15 @@ const QualityEngineering = () => {
 
   // Quality Engineering SEO - Enterprise-focused keywords
   useSEO({
-    title: "Quality Engineering Services & Test Automation Solutions | Enterprise QA Testing | IndexNine",
-    description: "Leading quality engineering and test automation services for enterprises. Strategic QA testing, automated testing solutions, performance testing, and quality assurance consulting. Transform your software testing with outcome-driven quality engineering.",
+    title:
+      "Quality Engineering Services & Test Automation Solutions | Enterprise QA Testing | IndexNine",
+    description:
+      "Leading quality engineering and test automation services for enterprises. Strategic QA testing, automated testing solutions, performance testing, and quality assurance consulting. Transform your software testing with outcome-driven quality engineering.",
     canonicalUrl: "https://www.indexnine.com/services/quality-engineering",
-    keywords: "quality engineering services, test automation solutions, enterprise QA testing, automated testing services, performance testing, quality assurance consulting, software testing automation, QE consulting, continuous testing, test strategy consulting, quality engineering framework, enterprise testing solutions, QA automation services, test automation framework development, software quality assurance",
+    keywords:
+      "quality engineering services, test automation solutions, enterprise QA testing, automated testing services, performance testing, quality assurance consulting, software testing automation, QE consulting, continuous testing, test strategy consulting, quality engineering framework, enterprise testing solutions, QA automation services, test automation framework development, software quality assurance",
     ogImage: "https://www.indexnine.com/images/og-quality-engineering.png",
-    schemaType: "WebPage"
+    schemaType: "WebPage",
   });
 
   const faqData = [
@@ -120,9 +123,9 @@ const QualityEngineering = () => {
 
       {/* FAQ Schema for Quality Engineering */}
       <FAQSchema
-        faqItems={faqData.map(item => ({
+        faqItems={faqData.map((item) => ({
           question: item.question,
-          answer: item.answer
+          answer: item.answer,
         }))}
       />
 
@@ -155,16 +158,28 @@ const QualityEngineering = () => {
               reliable products faster and with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button variant="btnPrimary" size="xl" className="min-w-[280px] ">
+              <Button
+                variant="btnPrimary"
+                size="xl"
+                className="min-w-[280px] "
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
                 Get Your APQ Roadmap
               </Button>
-              <Button
-                variant="btnSecondary"
-                size="xl"
-                className="min-w-[240px]  "
-              >
-                See Our Impact
-              </Button>
+              <a href="/insights/case-studies">
+                <Button
+                  variant="btnSecondary"
+                  size="xl"
+                  className="min-w-[240px]  "
+                >
+                  See Our Impact
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -591,7 +606,16 @@ const QualityEngineering = () => {
                     Investment: Starting at $15,000
                   </div>
                 </CardContent>
-                <Button className="w-full" variant="btnPrimary">
+                <Button
+                  className="w-full"
+                  variant="btnPrimary"
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
+                >
                   Kickstart Your Automation
                 </Button>
               </Card>
@@ -639,7 +663,16 @@ const QualityEngineering = () => {
                     Investment: Starting at $30,000
                   </div>
                 </CardContent>
-                <Button className="w-full " variant="btnSecondary">
+                <Button
+                  className="w-full "
+                  variant="btnSecondary"
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
+                >
                   Build My APQ Roadmap
                 </Button>
               </Card>

@@ -78,7 +78,17 @@ const DataEngineering = () => {
               valuable asset.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button variant="btnPrimary" size="xl" className="min-w-[280px]">
+              <Button
+                variant="btnPrimary"
+                size="xl"
+                className="min-w-[280px]"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
                 Build Your Data Roadmap
               </Button>
               <Button
@@ -225,6 +235,12 @@ const DataEngineering = () => {
                   variant="btnPrimary"
                   size="lg"
                   className="min-w-[280px] mb-4"
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
                 >
                   Scope Your Roadmap
                 </Button>

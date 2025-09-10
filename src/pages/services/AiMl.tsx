@@ -102,11 +102,12 @@ const AiStudio = () => {
                 variant="btnPrimary"
                 size="xl"
                 className={`min-w-[280px]`}
-                onClick={() =>
-                  document
-                    .getElementById("contact")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
               >
                 Book Your AI Strategy Call
               </Button>
@@ -303,11 +304,12 @@ const AiStudio = () => {
                 <Button
                   variant="btnPrimary"
                   className="w-full"
-                  onClick={() =>
-                    document
-                      .getElementById("contact")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
                 >
                   Scope Your Audit
                 </Button>
@@ -376,11 +378,12 @@ const AiStudio = () => {
                 <Button
                   variant="btnSecondary"
                   className="w-full rounded-full"
-                  onClick={() =>
-                    document
-                      .getElementById("contact")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
                 >
                   Start Your Deep-Dive
                 </Button>
@@ -809,19 +812,19 @@ const AiStudio = () => {
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-brand-primary" />
+                    <CheckCircle className="w-5 h-5 text-white/50" />
                     <span className="text-foreground-white/80">
                       No-obligation initial consultation
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-brand-primary" />
+                    <CheckCircle className="w-5 h-5 text-white/50" />
                     <span className="text-foreground-white/80">
                       Senior AI consultant, not a sales rep
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-brand-primary" />
+                    <CheckCircle className="w-5 h-5 text-white/50" />
                     <span className="text-foreground-white/80">
                       Response within one business day
                     </span>
