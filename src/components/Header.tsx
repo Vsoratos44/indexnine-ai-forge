@@ -533,25 +533,6 @@ const Header = () => {
                   </Link>
                 </div>
               )}
-
-              {openDropdown === "company" && (
-                <div className="pl-4 space-y-3 border-l-2 border-brand-primary/30">
-                  <Link
-                    to="/company/about"
-                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
-                    onClick={toggleMobileMenu}
-                  >
-                    About Us
-                  </Link>
-                  <Link
-                    to="/company/careers"
-                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
-                    onClick={toggleMobileMenu}
-                  >
-                    Careers
-                  </Link>
-                </div>
-              )}
             </div>
 
             {/* Company */}
@@ -575,25 +556,6 @@ const Header = () => {
                     onClick={toggleMobileMenu}
                   >
                     About us
-                  </Link>
-                  <Link
-                    to="/company/careers"
-                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
-                    onClick={toggleMobileMenu}
-                  >
-                    Careers
-                  </Link>
-                </div>
-              )}
-
-              {openDropdown === "company" && (
-                <div className="pl-4 space-y-3 border-l-2 border-brand-primary/30">
-                  <Link
-                    to="/company/about"
-                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
-                    onClick={toggleMobileMenu}
-                  >
-                    About Us
                   </Link>
                   <Link
                     to="/company/careers"
