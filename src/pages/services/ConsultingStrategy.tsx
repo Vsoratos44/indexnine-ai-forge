@@ -58,31 +58,31 @@ const ConsultingStrategy = () => {
       </div> */}
 
       {/* Hero Section */}
-      <section className="relative min-h-[780px] overflow-hidden bg-black">
+      <section className="relative min-h-[100vh] sm:min-h-[780px] overflow-hidden bg-black">
         <ServiceVideoBackground />
-        <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
-          <div className="max-w-6xl mx-auto text-center lg:text-left ml-0">
-            <div className="mb-6">
-              <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-32 sm:pt-48 pb-16 sm:pb-24">
+          <div className="max-w-6xl mx-auto text-center lg:text-left">
+            <div className="mb-4 sm:mb-6">
+              <span className="inline-block px-4 py-2 sm:px-6 sm:py-3 bg-brand-primary/10 text-brand-primary rounded-full text-xs sm:text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
                 Strategy & Consulting
               </span>
             </div>
-            <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25]  animate-fade-in font-montserrat">
+            <h1 className="text-3xl sm:text-[2.5rem] md:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-4 sm:mb-6 leading-[1.2] animate-fade-in font-montserrat">
               Strategic Technology &{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 AI Consulting
               </span>
             </h1>
-            <p className="text-xl text-foreground/85 mb-8 max-w-3xl ml-0 font-montserrat">
+            <p className="text-lg sm:text-xl text-foreground/85 mb-6 sm:mb-8 max-w-3xl mx-auto lg:mx-0 font-montserrat px-4 sm:px-0">
               We provide expert consulting to align your technology and AI
               strategy with business objectives, ensuring every investment
               drives measurable value and competitive advantage.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-scale-in px-4 sm:px-0">
               <Button
                 variant="btnPrimary"
                 size="lg"
-                className="min-w-[220px]"
+                className="w-full sm:w-auto min-w-[220px] h-12 sm:h-14"
                 onClick={() => {
                   window.open(
                     "https://calendly.com/vaughn-soratos-indexnine",
@@ -95,10 +95,10 @@ const ConsultingStrategy = () => {
               <Button
                 variant="btnSecondary"
                 size="lg"
-                className="min-w-[200px]"
+                className="w-full sm:w-auto min-w-[200px] h-12 sm:h-14"
               >
-                <Download className="w-6 h-6 mr-2" />
-                Download Strategy Guide
+                <Download className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />
+                <span className="text-sm sm:text-base">Download Strategy Guide</span>
               </Button>
             </div>
           </div>
@@ -106,79 +106,78 @@ const ConsultingStrategy = () => {
       </section>
 
       {/* Overview Section */}
-      <section className={` ${styles.strBg1} pt-24 lg:pt-32 bg-[#fff]`}>
-        <div className="container mx-auto px-6">
-          <div className="max-w-8xl mx-auto grid grid-cols-6">
-            <div className="text-left mb-12 col-span-4">
-              <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 font-montserrat">
-                From Strategy to Execution
-              </h2>
-              <p className="text-lg text-foreground-dark-muted  mx-auto font-montserrat pr-16">
-                Our consulting services bridge the gap between business vision
-                and technical implementation. We help you make informed
-                decisions about technology investments, AI adoption, and digital
-                transformation initiatives.
-              </p>
-              <img
-                src={introImg}
-                alt=""
-                className="max-w-[75%] -my-16  -mx-16"
-              />
-            </div>
+      <section className={` ${styles.strBg1} pt-16 sm:pt-24 lg:pt-32 bg-[#fff]`}>
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="max-w-8xl mx-auto">
+            
+            {/* Mobile-first layout */}
+            <div className="block lg:hidden">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                  From Strategy to Execution
+                </h2>
+                <p className="text-base sm:text-lg text-foreground-dark-muted font-montserrat">
+                  Our consulting services bridge the gap between business vision
+                  and technical implementation. We help you make informed
+                  decisions about technology investments, AI adoption, and digital
+                  transformation initiatives.
+                </p>
+              </div>
+              
+              <div className="mb-8">
+                <img
+                  src={introImg}
+                  alt="Strategy execution visualization"
+                  className="w-full max-w-md mx-auto"
+                />
+              </div>
 
-            <div className="ml-8 col-span-2 mt-16">
-              <div className="grid md:grid-rows-3 gap-16">
-                <div className="text flex">
-                  <div>
-                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                      <Lightbulb className="h-8 w-8 text-brand-purple" />
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center border border-brand-primary/30">
+                      <Lightbulb className="h-6 w-6 text-brand-purple" />
                     </div>
                   </div>
-                  <div className="pl-4">
-                    <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2 text-foreground-dark">
                       Strategic Planning
                     </h3>
-                    <p className="text-foreground-dark-muted font-montserrat">
+                    <p className="text-foreground-dark-muted font-montserrat text-sm">
                       Develop comprehensive technology roadmaps aligned with
                       your business goals and market opportunities.
                     </p>
                   </div>
                 </div>
 
-                <div className="text flex">
-                  {/* Icon Section */}
-                  <div>
-                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                      <Target className="h-8 w-8 text-brand-purple" />
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center border border-brand-primary/30">
+                      <Target className="h-6 w-6 text-brand-purple" />
                     </div>
                   </div>
-
-                  {/* Text Section */}
-                  <div className="pl-4">
-                    <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2 text-foreground-dark">
                       Risk Assessment
                     </h3>
-                    <p className="text-foreground-dark-muted font-montserrat">
+                    <p className="text-foreground-dark-muted font-montserrat text-sm">
                       Identify and mitigate technical, operational, and
                       strategic risks before they impact your business.
                     </p>
                   </div>
                 </div>
 
-                <div className="text flex">
-                  {/* Icon Section */}
-                  <div>
-                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                      <Rocket className="h-8 w-8 text-brand-purple" />
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center border border-brand-primary/30">
+                      <Rocket className="h-6 w-6 text-brand-purple" />
                     </div>
                   </div>
-
-                  {/* Text Section */}
-                  <div className="pl-4">
-                    <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2 text-foreground-dark">
                       Implementation Support
                     </h3>
-                    <p className="text-foreground-dark-muted font-montserrat">
+                    <p className="text-foreground-dark-muted font-montserrat text-sm">
                       Guide execution with hands-on support, ensuring strategies
                       translate into successful outcomes.
                     </p>
@@ -186,13 +185,88 @@ const ConsultingStrategy = () => {
                 </div>
               </div>
             </div>
+
+            {/* Desktop layout */}
+            <div className="hidden lg:grid lg:grid-cols-6">
+              <div className="text-left mb-12 col-span-4">
+                <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 font-montserrat">
+                  From Strategy to Execution
+                </h2>
+                <p className="text-lg text-foreground-dark-muted mx-auto font-montserrat pr-16">
+                  Our consulting services bridge the gap between business vision
+                  and technical implementation. We help you make informed
+                  decisions about technology investments, AI adoption, and digital
+                  transformation initiatives.
+                </p>
+                <img
+                  src={introImg}
+                  alt="Strategy execution visualization"
+                  className="max-w-[75%] -my-16 -mx-16"
+                />
+              </div>
+
+              <div className="ml-8 col-span-2 mt-16">
+                <div className="grid md:grid-rows-3 gap-16">
+                  <div className="text flex">
+                    <div>
+                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                        <Lightbulb className="h-8 w-8 text-brand-purple" />
+                      </div>
+                    </div>
+                    <div className="pl-4">
+                      <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
+                        Strategic Planning
+                      </h3>
+                      <p className="text-foreground-dark-muted font-montserrat">
+                        Develop comprehensive technology roadmaps aligned with
+                        your business goals and market opportunities.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="text flex">
+                    <div>
+                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                        <Target className="h-8 w-8 text-brand-purple" />
+                      </div>
+                    </div>
+                    <div className="pl-4">
+                      <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
+                        Risk Assessment
+                      </h3>
+                      <p className="text-foreground-dark-muted font-montserrat">
+                        Identify and mitigate technical, operational, and
+                        strategic risks before they impact your business.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="text flex">
+                    <div>
+                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                        <Rocket className="h-8 w-8 text-brand-purple" />
+                      </div>
+                    </div>
+                    <div className="pl-4">
+                      <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
+                        Implementation Support
+                      </h3>
+                      <p className="text-foreground-dark-muted font-montserrat">
+                        Guide execution with hands-on support, ensuring strategies
+                        translate into successful outcomes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="text-center pt-24 lg:pt-32">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+        <div className="text-center pt-16 sm:pt-24 lg:pt-32 px-4 sm:px-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 text-foreground-dark">
             Our Consulting Services
           </h2>
-          <p className="text-lg text-foreground-dark-muted max-w-6xl mx-auto font-montserrat">
+          <p className="text-base sm:text-lg text-foreground-dark-muted max-w-6xl mx-auto font-montserrat px-4 sm:px-0">
             Comprehensive consulting across all aspects of technology strategy
             and implementation.
           </p>
@@ -201,24 +275,24 @@ const ConsultingStrategy = () => {
 
       {/* Consulting Services Section */}
       <section
-        className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden ${styles.strBg2}`}
+        className={`pb-16 sm:pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden ${styles.strBg2}`}
       >
-        <div className="container mx-auto pt-24">
-          <div className="max-w-6xl mx-auto rounded-tl-3xl  rounded-tr-3xl  bg-[#fff] p-8 mx-auto">
-            <div className="grid lg:grid-cols-2 gap-y-16 gap-x-8">
+        <div className="container mx-auto pt-16 sm:pt-24 px-4 sm:px-6">
+          <div className="max-w-6xl mx-auto rounded-tl-3xl rounded-tr-3xl bg-[#fff] p-4 sm:p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 sm:gap-y-16 lg:gap-x-8">
               <Card className="border-0 shadow-none bg-[#ffffff]">
                 <CardContent className="p-0">
                   <div className="text-left">
                     <img
                       src={csDigital}
-                      alt="Blogs"
-                      className="w-full h-auto max-w-md mb-4 max-h-64 object-fill rounded-xl"
+                      alt="Digital transformation strategy visualization"
+                      className="w-full h-auto max-w-md mb-4 max-h-48 sm:max-h-64 object-cover rounded-xl"
                     />
                   </div>
-                  <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
+                  <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-foreground-dark">
                     Digital Transformation Strategy
                   </h3>
-                  <p className="text-foreground-dark-muted mb-6 font-montserrat">
+                  <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 font-montserrat">
                     Develop comprehensive digital transformation roadmaps that
                     modernize your operations, enhance customer experience, and
                     create new revenue streams.
@@ -388,60 +462,60 @@ const ConsultingStrategy = () => {
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6">
-                  <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
-                    <CardContent className="p-0  h-full">
-                      <h3 className="text-xl font-semibold mb-4 text-foreground-dark">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+                  <Card className="p-4 sm:p-6 lg:p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
+                    <CardContent className="p-0 h-full">
+                      <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-foreground-dark">
                         Strategy Sprint
                       </h3>
-                      <p className="text-3xl font-semibold text-brand-purple mb-4">
+                      <p className="text-2xl sm:text-3xl font-semibold text-brand-purple mb-3 sm:mb-4">
                         2-4 Weeks
                       </p>
-                      <p className="text-foreground-dark-muted mb-6 font-montserrat">
+                      <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 font-montserrat">
                         Rapid strategic assessment and roadmap development for
                         specific initiatives or challenges.
                       </p>
                     </CardContent>
-                    <Button variant="btnPrimary" className="w-full">
+                    <Button variant="btnPrimary" className="w-full mt-auto">
                       Learn More
                     </Button>
                   </Card>
 
-                  <Card className="p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative flex flex-col">
+                  <Card className="p-4 sm:p-6 lg:p-8 bg-[#000000] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative flex flex-col">
                     <CardContent className="p-0 h-full">
-                      <div className="inline-block px-3 py-1 bg-brand-purple text-white text-sm rounded-full mb-4">
+                      <div className="inline-block px-2 sm:px-3 py-1 bg-brand-purple text-white text-xs sm:text-sm rounded-full mb-3 sm:mb-4">
                         Most Popular
                       </div>
-                      <h3 className="text-xl font-semibold mb-4 text-foreground">
+                      <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-foreground">
                         Strategic Partnership
                       </h3>
-                      <p className="text-3xl font-semibold text-brand-purple mb-4">
+                      <p className="text-2xl sm:text-3xl font-semibold text-brand-purple mb-3 sm:mb-4">
                         3-6 Months
                       </p>
-                      <p className="text-foreground-muted mb-6 font-montserrat">
+                      <p className="text-sm sm:text-base text-foreground-muted mb-4 sm:mb-6 font-montserrat">
                         Comprehensive consulting engagement with hands-on
                         implementation support and ongoing guidance.
                       </p>
                     </CardContent>
-                    <Button className="w-full" variant="btnSecondary">
+                    <Button className="w-full mt-auto" variant="btnSecondary">
                       Get Started
                     </Button>
                   </Card>
 
-                  <Card className="p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
+                  <Card className="p-4 sm:p-6 lg:p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
                     <CardContent className="p-0 h-full">
-                      <h3 className="text-xl font-semibold mb-4 text-foreground-dark">
+                      <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-foreground-dark">
                         Advisory Retainer
                       </h3>
-                      <p className="text-3xl font-semibold text-brand-purple mb-4">
+                      <p className="text-2xl sm:text-3xl font-semibold text-brand-purple mb-3 sm:mb-4">
                         Ongoing
                       </p>
-                      <p className="text-foreground-dark-muted mb-6 font-montserrat">
+                      <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 font-montserrat">
                         Continuous strategic guidance and support as your
                         trusted technology advisor.
                       </p>
                     </CardContent>
-                    <Button variant="btnPrimary" className="w-full">
+                    <Button variant="btnPrimary" className="w-full mt-auto">
                       Learn More
                     </Button>
                   </Card>
@@ -451,19 +525,18 @@ const ConsultingStrategy = () => {
           </section>
 
           {/* Why Choose Our Consulting Section */}
-          <section className="pb-24 lg:pb-32">
-            <div className="container mx-auto px-6">
+          <section className="pb-16 sm:pb-24 lg:pb-32">
+            <div className="container mx-auto px-4 sm:px-6">
               <div className="max-w-6xl mx-auto text-center">
-                <div className={`p-12 rounded-3xl ${styles.middleCardBg}`}>
-                  {" "}
-                  <h2 className="text-3xl lg:text-4xl font-semibold text-foreground mb-6 font-montserrat">
+                <div className={`p-6 sm:p-8 lg:p-12 rounded-3xl ${styles.middleCardBg}`}>
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-4 sm:mb-6 font-montserrat">
                     Why Choose IndexNine Consulting?
                   </h2>
-                  <p className="text-lg text-foreground-muted mb-12 max-w-3xl mx-auto font-montserrat">
+                  <p className="text-base sm:text-lg text-foreground-muted mb-8 sm:mb-12 max-w-3xl mx-auto font-montserrat px-4 sm:px-0">
                     We combine deep technical expertise with business acumen to
                     deliver consulting that drives real results.
                   </p>
-                  <div className="grid md:grid-cols-2 gap-16">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
                     <Card className=" text-left bg-transpoarent border-0">
                       <CardContent className="p-0">
                         <h3 className="text-lg font-semibold mb-3 text-foreground flex items-center">
@@ -531,22 +604,22 @@ const ConsultingStrategy = () => {
         </div>
       </div>
       {/* CTA Banner */}
-      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
-        <div className="container mx-auto px-6">
+      <section className={`py-16 sm:py-24 lg:py-32 ${styles.ctaBg}`}>
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-              <span className="leading-[1.4]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 text-foreground-white px-4 sm:px-0">
+              <span className="leading-[1.3] sm:leading-[1.4]">
                 Ready to Transform Your Technology Strategy?
               </span>
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90 px-4 sm:px-0">
               Let's discuss how our strategic consulting can accelerate your
               digital transformation and competitive advantage.
             </p>
             <Button
               variant="btnSecondary"
               size="lg"
-              className="min-w-[220px]"
+              className="w-full sm:w-auto min-w-[220px] h-12 sm:h-14"
               onClick={() => {
                 window.open(
                   "https://calendly.com/vaughn-soratos-indexnine",
