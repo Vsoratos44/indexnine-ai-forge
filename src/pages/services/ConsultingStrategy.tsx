@@ -32,11 +32,14 @@ import csProd from "@/assets/images/cs-product.webp";
 const ConsultingStrategy = () => {
   // SEO optimization
   useSEO({
-    title: "Technology Consulting & Digital Strategy Services | Enterprise AI Consulting | IndexNine",
-    description: "Leading technology consulting and digital transformation strategy services. AI strategy consulting, technology roadmaps, and expert guidance for enterprise digital transformation initiatives.",
-    keywords: "technology consulting services, digital transformation strategy, AI strategy consulting, enterprise consulting, technology roadmap planning, digital strategy services, business technology consulting, strategic technology planning",
+    title:
+      "Technology Consulting & Digital Strategy Services | Enterprise AI Consulting | IndexNine",
+    description:
+      "Leading technology consulting and digital transformation strategy services. AI strategy consulting, technology roadmaps, and expert guidance for enterprise digital transformation initiatives.",
+    keywords:
+      "technology consulting services, digital transformation strategy, AI strategy consulting, enterprise consulting, technology roadmap planning, digital strategy services, business technology consulting, strategic technology planning",
     canonicalUrl: "https://indexnine.com/services/consulting-strategy",
-    schemaType: "WebPage"
+    schemaType: "WebPage",
   });
 
   return (
@@ -71,9 +74,9 @@ const ConsultingStrategy = () => {
       <section className="relative min-h-[100vh] sm:min-h-[780px] overflow-hidden bg-black">
         <ServiceVideoBackground />
         <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-32 sm:pt-48 pb-16 sm:pb-24">
-          <div className="max-w-6xl mx-auto text-center lg:text-left">
+          <div className="max-w-8xl mx-auto text-center lg:text-left">
             <div className="mb-4 sm:mb-6">
-              <span className="inline-block px-4 py-2 sm:px-6 sm:py-3 bg-brand-primary/10 text-brand-primary rounded-full text-xs sm:text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
+              <span className="inline-block px-4 py-2 sm:px-6 sm:py-3 bg-brand-primary/10 text-brand-primary rounded-full text-xs sm:text-sm font-medium border border-brand-primary/50 backdrop-blur-sm">
                 Strategy & Consulting
               </span>
             </div>
@@ -108,7 +111,9 @@ const ConsultingStrategy = () => {
                 className="w-full sm:w-auto min-w-[200px] h-12 sm:h-14"
               >
                 <Download className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />
-                <span className="text-sm sm:text-base">Download Strategy Guide</span>
+                <span className="text-sm sm:text-base">
+                  Download Strategy Guide
+                </span>
               </Button>
             </div>
           </div>
@@ -116,10 +121,11 @@ const ConsultingStrategy = () => {
       </section>
 
       {/* Overview Section */}
-      <section className={` ${styles.strBg1} pt-16 sm:pt-24 lg:pt-32 bg-[#fff]`}>
+      <section
+        className={` ${styles.strBg1} pt-16 sm:pt-24 lg:pt-32 bg-[#fff]`}
+      >
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-8xl mx-auto">
-            
             {/* Mobile-first layout */}
             <div className="block lg:hidden">
               <div className="text-center mb-8">
@@ -129,11 +135,11 @@ const ConsultingStrategy = () => {
                 <p className="text-base sm:text-lg text-foreground-dark-muted font-montserrat">
                   Our consulting services bridge the gap between business vision
                   and technical implementation. We help you make informed
-                  decisions about technology investments, AI adoption, and digital
-                  transformation initiatives.
+                  decisions about technology investments, AI adoption, and
+                  digital transformation initiatives.
                 </p>
               </div>
-              
+
               <div className="mb-8">
                 <img
                   src={introImg}
@@ -205,8 +211,8 @@ const ConsultingStrategy = () => {
                 <p className="text-lg text-foreground-dark-muted mx-auto font-montserrat pr-16">
                   Our consulting services bridge the gap between business vision
                   and technical implementation. We help you make informed
-                  decisions about technology investments, AI adoption, and digital
-                  transformation initiatives.
+                  decisions about technology investments, AI adoption, and
+                  digital transformation initiatives.
                 </p>
                 <img
                   src={introImg}
@@ -262,8 +268,8 @@ const ConsultingStrategy = () => {
                         Implementation Support
                       </h3>
                       <p className="text-foreground-dark-muted font-montserrat">
-                        Guide execution with hands-on support, ensuring strategies
-                        translate into successful outcomes.
+                        Guide execution with hands-on support, ensuring
+                        strategies translate into successful outcomes.
                       </p>
                     </div>
                   </div>
@@ -538,7 +544,9 @@ const ConsultingStrategy = () => {
           <section className="pb-16 sm:pb-24 lg:pb-32">
             <div className="container mx-auto px-4 sm:px-6">
               <div className="max-w-6xl mx-auto text-center">
-                <div className={`p-6 sm:p-8 lg:p-12 rounded-3xl ${styles.middleCardBg}`}>
+                <div
+                  className={`p-6 sm:p-8 lg:p-12 rounded-3xl ${styles.middleCardBg}`}
+                >
                   <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground mb-4 sm:mb-6 font-montserrat">
                     Why Choose IndexNine Consulting?
                   </h2>

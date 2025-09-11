@@ -5,8 +5,17 @@ import { Button } from "@/components/ui/button";
 import { CardGlass } from "@/components/ui/CardGlass";
 import { Users, Clock, Shield, Target, Zap, CheckCircle } from "lucide-react";
 import styles from "../../assets/css/stylesheet.module.css";
+import { useSEO } from "@/hooks/useSEO";
 
 const DedicatedTeams = () => {
+  useSEO({
+    title: "Indexnine Dedicated Team | Get the best of both worlds",
+    description: "",
+    keywords: "",
+    canonicalUrl: "",
+    ogImage: "",
+    ogType: "website",
+  });
   return (
     <div className="min-h-screen bg-background">
       <Header />

@@ -16,8 +16,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
 import styles from "../../assets/css/stylesheet.module.css";
+import { useSEO } from "@/hooks/useSEO";
 
 const Enterprise = () => {
+  useSEO({
+    title: "Indexnine Enterprise Studio | For Enterprise SMBs and F1000",
+    description: "",
+    keywords: "",
+    canonicalUrl: "",
+    ogImage: "",
+    ogType: "website",
+  });
   return (
     <div className="min-h-screen bg-background">
       <Header />

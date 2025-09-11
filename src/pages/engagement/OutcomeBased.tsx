@@ -12,8 +12,17 @@ import {
   CheckCircle,
 } from "lucide-react";
 import styles from "../../assets/css/stylesheet.module.css";
+import { useSEO } from "@/hooks/useSEO";
 
 const OutcomeBased = () => {
+  useSEO({
+    title: "Indexnine Outcome-Based Advantages | Partnership models ",
+    description: "",
+    keywords: "",
+    canonicalUrl: "",
+    ogImage: "",
+    ogType: "website",
+  });
   return (
     <div className="min-h-screen bg-background">
       <Header />

@@ -19,8 +19,17 @@ import {
   Shield,
 } from "lucide-react";
 import styles from "../../assets/css/stylesheet.module.css";
+import { useSEO } from "@/hooks/useSEO";
 
 const ProjectBased = () => {
+  useSEO({
+    title: "Indexnine Project-Based Team | Handle the entire lifecycle",
+    description: "",
+    keywords: "",
+    canonicalUrl: "",
+    ogImage: "",
+    ogType: "website",
+  });
   return (
     <div className="min-h-screen bg-background">
       <Header />
