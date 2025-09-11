@@ -24,13 +24,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import LivingVoidBackground from "@/components/LivingVoidBackground";
+import ServiceVideoBackground from "@/components/ServiceVideoBackground";
+import { useSEO } from "@/hooks/useSEO";
 import {
   SEOStructuredData,
   OrganizationSchema,
   WebPageSchema,
   ServiceSchema,
   BreadcrumbSchema,
+  FAQSchema,
 } from "@/components/SEOStructuredData";
 import QuoteIcon from "../../assets/images/quote.svg";
 import styles from "../../assets/css/stylesheet.module.css";
@@ -41,6 +43,19 @@ const QualityEngineering = () => {
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? null : index);
   };
+
+  // Quality Engineering SEO - Enterprise-focused keywords
+  useSEO({
+    title:
+      "Quality Engineering Services & Test Automation Solutions | Enterprise QA Testing | IndexNine",
+    description:
+      "Leading quality engineering and test automation services for enterprises. Strategic QA testing, automated testing solutions, performance testing, and quality assurance consulting. Transform your software testing with outcome-driven quality engineering.",
+    canonicalUrl: "https://www.indexnine.com/services/quality-engineering",
+    keywords:
+      "quality engineering services, test automation solutions, enterprise QA testing, automated testing services, performance testing, quality assurance consulting, software testing automation, QE consulting, continuous testing, test strategy consulting, quality engineering framework, enterprise testing solutions, QA automation services, test automation framework development, software quality assurance",
+    ogImage: "https://www.indexnine.com/images/og-quality-engineering.png",
+    schemaType: "WebPage",
+  });
 
   const faqData = [
     {
@@ -89,59 +104,7 @@ const QualityEngineering = () => {
 
   return (
     <div className="min-h-screen bg-background-dark">
-      {/* SEO Head Elements */}
-      <title>
-        Quality Engineering Services & Test Automation Solutions | Enterprise QA
-        Testing | IndexNine
-      </title>
-      <meta
-        name="description"
-        content="Leading quality engineering and test automation services for enterprises. Strategic QA testing, automated testing solutions, performance testing, and quality assurance consulting. Transform your software testing with outcome-driven quality engineering."
-      />
-      <meta
-        name="keywords"
-        content="quality engineering services, test automation solutions, enterprise QA testing, automated testing services, performance testing, quality assurance consulting, software testing automation, QE consulting, continuous testing, test strategy consulting, quality engineering framework, enterprise testing solutions, QA automation services, test automation framework development, software quality assurance"
-      />
-      <link
-        rel="canonical"
-        href="https://www.indexnine.com/studios/quality-engineering"
-      />
-
-      {/* Open Graph Meta Tags */}
-      <meta
-        property="og:title"
-        content="Enterprise Quality Engineering Services & Test Automation Solutions | IndexNine"
-      />
-      <meta
-        property="og:description"
-        content="Transform your software testing with strategic quality engineering, test automation solutions, and outcome-driven QA services for mission-critical enterprise software."
-      />
-      <meta
-        property="og:image"
-        content="https://www.indexnine.com/images/og-quality-engineering.png"
-      />
-      <meta
-        property="og:url"
-        content="https://www.indexnine.com/studios/quality-engineering"
-      />
-      <meta property="og:type" content="website" />
-
-      {/* Twitter Meta Tags */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="Quality Engineering Services & Test Automation Solutions | IndexNine"
-      />
-      <meta
-        name="twitter:description"
-        content="Enterprise quality engineering and test automation services for reliable, mission-critical software development and deployment."
-      />
-      <meta
-        name="twitter:image"
-        content="https://www.indexnine.com/images/twitter-quality-engineering.png"
-      />
-
-      {/* Structured Data */}
+      {/* Structured Data for Quality Engineering */}
       <ServiceSchema
         name="Enterprise Quality Engineering and Test Automation"
         description="IndexNine's Quality Engineering Studio provides strategic services including test automation, performance testing, and Agile Product Quality (APQ) roadmaps to ensure the reliability of mission-critical software."
@@ -150,20 +113,28 @@ const QualityEngineering = () => {
 
       <BreadcrumbSchema
         items={[
-          { name: "Studios", url: "https://www.indexnine.com/studios" },
+          { name: "Services", url: "https://www.indexnine.com/services" },
           {
             name: "Quality Engineering",
-            url: "https://www.indexnine.com/studios/quality-engineering",
+            url: "https://www.indexnine.com/services/quality-engineering",
           },
         ]}
+      />
+
+      {/* FAQ Schema for Quality Engineering */}
+      <FAQSchema
+        faqItems={faqData.map((item) => ({
+          question: item.question,
+          answer: item.answer,
+        }))}
       />
 
       <Header />
 
       {/* Hero Section */}
       <section className="relative min-h-[780px] overflow-hidden bg-black">
-        {/* Three.js Living Void Background */}
-        <LivingVoidBackground />
+        {/* Service Video Background */}
+        <ServiceVideoBackground />
 
         {/* Content - Precisely positioned */}
         <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
@@ -187,16 +158,28 @@ const QualityEngineering = () => {
               reliable products faster and with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button variant="btnPrimary" size="xl" className="min-w-[280px] ">
+              <Button
+                variant="btnPrimary"
+                size="xl"
+                className="min-w-[280px] "
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
                 Get Your APQ Roadmap
               </Button>
-              <Button
-                variant="btnSecondary"
-                size="xl"
-                className="min-w-[240px]  "
-              >
-                See Our Impact
-              </Button>
+              <a href="/insights/case-studies">
+                <Button
+                  variant="btnSecondary"
+                  size="xl"
+                  className="min-w-[240px]  "
+                >
+                  See Our Impact
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -623,7 +606,16 @@ const QualityEngineering = () => {
                     Investment: Starting at $15,000
                   </div>
                 </CardContent>
-                <Button className="w-full" variant="btnPrimary">
+                <Button
+                  className="w-full"
+                  variant="btnPrimary"
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
+                >
                   Kickstart Your Automation
                 </Button>
               </Card>
@@ -671,7 +663,16 @@ const QualityEngineering = () => {
                     Investment: Starting at $30,000
                   </div>
                 </CardContent>
-                <Button className="w-full " variant="btnSecondary">
+                <Button
+                  className="w-full "
+                  variant="btnSecondary"
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
+                >
                   Build My APQ Roadmap
                 </Button>
               </Card>

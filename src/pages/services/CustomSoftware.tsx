@@ -10,6 +10,7 @@ import {
   WebPageSchema,
   BreadcrumbSchema,
 } from "@/components/SEOStructuredData";
+import { useSEO } from "@/hooks/useSEO";
 import ServiceVideoBackground from "@/components/ServiceVideoBackground";
 import {
   Code,
@@ -61,6 +62,15 @@ const CustomSoftware = () => {
     },
   ];
 
+  // SEO optimization
+  useSEO({
+    title: "Custom Software Development Services | Enterprise Web & Mobile Apps | IndexNine",
+    description: "Leading custom software development services for enterprises. Full-stack web development, mobile app development, and scalable software solutions. Expert software engineering for mission-critical applications.",
+    keywords: "custom software development, enterprise software solutions, web application development, mobile app development, full-stack development, software engineering services, scalable software solutions, custom web development",
+    canonicalUrl: "https://indexnine.com/services/custom-software",
+    schemaType: "WebPage"
+  });
+
   return (
     <div className="min-h-screen bg-background">
       <ServiceSchema
@@ -69,17 +79,17 @@ const CustomSoftware = () => {
         serviceType="Software Development"
       />
       <WebPageSchema
-        title="Custom Software Development Services | IndexNine"
-        description="We architect, build, and scale mission-critical web and mobile applications. Our end-to-end software development services focus on delivering secure, scalable, and high-performance solutions that drive business outcomes."
-        url="https://yoursite.lovable.app/services/custom-software"
+        title="Custom Software Development Services | Enterprise Web & Mobile Apps | IndexNine"
+        description="Leading custom software development services for enterprises. Full-stack web development, mobile app development, and scalable software solutions. Expert software engineering for mission-critical applications."
+        url="https://indexnine.com/services/custom-software"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app/" },
-          { name: "Services", url: "https://yoursite.lovable.app/services" },
+          { name: "Home", url: "https://indexnine.com/" },
+          { name: "Services", url: "https://indexnine.com/services" },
           {
             name: "Custom Software Development",
-            url: "https://yoursite.lovable.app/services/custom-software",
+            url: "https://indexnine.com/services/custom-software",
           },
         ]}
       />
@@ -117,25 +127,24 @@ const CustomSoftware = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button
-                variant="btnPrimary"
-                size="xl"
-                className="min-w-[280px]"
-                onClick={() =>
-                  document
-                    .getElementById("scoping-session")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Scope Your Project
-              </Button>
-              <Button
-                variant="btnSecondary"
-                size="xl"
-                className="min-w-[240px]"
-              >
-                View Our Work
-              </Button>
+              <a href="#cta">
+                <Button
+                  variant="btnPrimary"
+                  size="xl"
+                  className="min-w-[280px]"
+                >
+                  Scope Your Project
+                </Button>
+              </a>
+              <a href="/insights/case-studies">
+                <Button
+                  variant="btnSecondary"
+                  size="xl"
+                  className="min-w-[240px]"
+                >
+                  View Our Work
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -372,7 +381,16 @@ const CustomSoftware = () => {
                         Starting at $10,000
                       </p>
                     </div>
-                    <Button variant="btnSecondary" className="rounded-full">
+                    <Button
+                      variant="btnSecondary"
+                      className="rounded-full"
+                      onClick={() => {
+                        window.open(
+                          "https://calendly.com/vaughn-soratos-indexnine",
+                          "_blank"
+                        );
+                      }}
+                    >
                       Plan Your Scoping Session
                     </Button>
                   </div>
@@ -427,7 +445,7 @@ const CustomSoftware = () => {
                 </h3>
                 <div className="grid md:grid-rows-3 gap-4">
                   <Link
-                    to="/studios/ai"
+                    to="/services/ai"
                     className="py-4 border-b flex gap-6 rounded-0 hover:bg-[#fcfcfc] transition-all bg backdrop-blur-xl"
                   >
                     <div className="w-20">
@@ -448,7 +466,7 @@ const CustomSoftware = () => {
                     </div>
                   </Link>
                   <Link
-                    to="/studios/quality-engineering"
+                    to="/services/quality-engineering"
                     className="py-4 border-b flex gap-6 rounded-0 hover:bg-[#fcfcfc] transition-all bg backdrop-blur-xl"
                   >
                     <div className="w-20">
@@ -469,7 +487,7 @@ const CustomSoftware = () => {
                     </div>
                   </Link>
                   <Link
-                    to="/insights/case-study/genesys-modernization"
+                    to="/insights/case-studies/genesys"
                     className="py-4 flex gap-6 rounded-0 hover:bg-[#fcfcfc] transition-all bg backdrop-blur-xl"
                   >
                     <div className="w-20">
@@ -496,6 +514,7 @@ const CustomSoftware = () => {
         </section>
       </section>
       {/* Final CTA Section */}
+      <a id="cta" className="absolute mt-[-110px]"></a>
       <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
         <div className="container max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

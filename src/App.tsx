@@ -68,24 +68,25 @@ const AgenticAiEnterpriseFuture = lazy(
 const BlogPost = lazy(() => import("./pages/insights/blog/BlogPost"));
 
 // Case Study Pages - Lazy loaded
-const GenesysModernization = lazy(
-  () => import("./pages/insights/case-study/GenesysModernization")
-);
-const LaunchCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/Launch")
-);
-const PivotCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/Pivot")
-);
-const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/Grow"));
-const MatureCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/Mature")
-);
+// const GenesysModernization = lazy(
+//   () => import("./pages/insights/case-study/GenesysModernization")
+// );
+
 const CygeniqCaseStudy = lazy(
   () => import("./pages/insights/case-studies/Cygeniq")
 );
 const TripjackCaseStudy = lazy(
   () => import("./pages/insights/case-studies/Tripjack")
+);
+const LaunchCaseStudy = lazy(
+  () => import("./pages/insights/case-studies/Annotate")
+);
+const PivotCaseStudy = lazy(
+  () => import("./pages/insights/case-studies/Zilla")
+);
+const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/Si"));
+const MatureCaseStudy = lazy(
+  () => import("./pages/insights/case-studies/Genesys")
 );
 
 // About Pages - Lazy loaded
@@ -235,19 +236,19 @@ const App = () => {
 
                 {/* Individual Case Study Routes - Lazy loaded */}
                 <Route
-                  path="/insights/case-studies/launch"
+                  path="/insights/case-studies/annotate"
                   element={<LaunchCaseStudy />}
                 />
                 <Route
-                  path="/insights/case-studies/pivot"
+                  path="/insights/case-studies/zilla"
                   element={<PivotCaseStudy />}
                 />
                 <Route
-                  path="/insights/case-studies/grow"
+                  path="/insights/case-studies/si"
                   element={<GrowCaseStudy />}
                 />
                 <Route
-                  path="/insights/case-studies/mature"
+                  path="/insights/case-studies/genesys"
                   element={<MatureCaseStudy />}
                 />
                 <Route
@@ -258,24 +259,24 @@ const App = () => {
                   path="/insights/case-studies/tripjack"
                   element={<TripjackCaseStudy />}
                 />
-                <Route
+                {/* <Route
                   path="/insights/case-study/genesys-modernization"
                   element={<GenesysModernization />}
-                />
+                /> */}
 
                 {/* Legacy case study redirects */}
                 <Route path="/case-studies" element={<CaseStudies />} />
                 <Route
-                  path="/case-studies/launch"
+                  path="/case-studies/annotate"
                   element={<LaunchCaseStudy />}
                 />
                 <Route
-                  path="/case-studies/pivot"
+                  path="/case-studies/zilla"
                   element={<PivotCaseStudy />}
                 />
-                <Route path="/case-studies/grow" element={<GrowCaseStudy />} />
+                <Route path="/case-studies/si" element={<GrowCaseStudy />} />
                 <Route
-                  path="/case-studies/mature"
+                  path="/case-studies/genesys"
                   element={<MatureCaseStudy />}
                 />
 

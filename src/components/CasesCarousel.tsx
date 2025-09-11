@@ -17,6 +17,13 @@ import {
 
 import styles from "../assets/css/stylesheet.module.css";
 
+import ai1 from "@/assets/images/aiml-1.webp";
+import ai2 from "@/assets/images/aiml-2.webp";
+import ai3 from "@/assets/images/aiml-3.webp";
+import ai4 from "@/assets/images/aiml-4.webp";
+import ai5 from "@/assets/images/aiml-5.webp";
+import ai6 from "@/assets/images/aiml-6.webp";
+
 // ✅ Renamed to avoid any conflict with CarouselItem (component)
 interface CaseCarouselData {
   id: string;
@@ -53,7 +60,7 @@ const CasesCarousel = () => {
         "We build custom LLM applications, content automation engines, and intelligent chatbots that enhance creativity and efficiency.",
       usecase:
         "Use Cases: Automated Content Creation, Code Generation, Advanced Customer Support",
-      image: "/api/placeholder/400/300",
+      image: ai6,
       link: "#",
     },
     {
@@ -64,7 +71,7 @@ const CasesCarousel = () => {
         "Custom image recognition, video analysis, and real-time monitoring systems for operational excellence and safety.",
       usecase:
         "Use Cases: Quality Control, Security Monitoring, Process Automation",
-      image: "/api/placeholder/400/300",
+      image: ai5,
       link: "#",
     },
     {
@@ -75,7 +82,7 @@ const CasesCarousel = () => {
         "Machine learning models for forecasting, risk assessment, and intelligent decision-making systems.",
       usecase:
         "Use Cases: Demand Forecasting, Risk Management, Personalization",
-      image: "/api/placeholder/400/300",
+      image: ai4,
       link: "#",
     },
     {
@@ -86,7 +93,7 @@ const CasesCarousel = () => {
         "Text analysis, sentiment monitoring, and intelligent document processing to unlock insights from unstructured data.",
       usecase:
         "Use Cases: Document Intelligence, Sentiment Analysis, Knowledge Extraction",
-      image: "/api/placeholder/400/300",
+      image: ai3,
       link: "#",
     },
     {
@@ -97,7 +104,7 @@ const CasesCarousel = () => {
         "AI-powered workflow automation that adapts to changing conditions and makes intelligent decisions.",
       usecase:
         "Use Cases: Process Optimization, Intelligent Routing, Adaptive Systems",
-      image: "/api/placeholder/400/300",
+      image: ai2,
       link: "#",
     },
     {
@@ -108,7 +115,7 @@ const CasesCarousel = () => {
         "Strategic guidance, technology roadmaps, and organizational change management for successful AI adoption.",
       usecase:
         "Use Cases: AI Readiness Assessment, Technology Selection, Change Management",
-      image: "/api/placeholder/400/300",
+      image: ai1,
       link: "#",
     },
   ];
@@ -155,27 +162,27 @@ const CasesCarousel = () => {
               loop: true,
             }}
           >
-            <CarouselContent className="ml-2">
+            <CarouselContent className="ml-3 mr-2">
               {carouselItems.map((item) => {
                 const IconComponent = getIcon(item.type);
                 return (
                   <CarouselItem
                     key={item.id}
-                    className="px-3 py-10 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                    className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
                   >
-                    <div className="relative group h-full">
-                      <div className="relative overflow-hidden bg-[#fff] border-[.75rem] border-glass-border rounded-3xl p-6 hover:shadow-glow transition-all duration-500 transform group-hover:scale-101 group-hover:-translate-y-2 h-full flex flex-col">
-                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-brand-primary/5 rounded-2xl opacity-50"></div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
+                    <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
+                      <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
                         {/* Image Placeholder */}
                         <div className="relative mb-6 rounded-2xl overflow-hidden bg-gradient-to-br from-brand-primary/10 to-brand-purple/10 backdrop-blur-md border border-glass-border h-48 flex items-center justify-center">
                           <div className="text-foreground-dark-muted text-4xl">
-                            <IconComponent className="w-16 h-16" />
+                            {/* <IconComponent className="w-16 h-16" /> */}
+                            <img
+                              src={item.image}
+                              className="w-full h-full object-cover rounded-xl"
+                            />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
-
                         {/* Content */}
                         <div className="relative flex-1 flex flex-col">
                           <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
@@ -189,8 +196,11 @@ const CasesCarousel = () => {
                           </p>
 
                           <div className="text-left">
-                            {" "}
-                            <Button variant="btnLink" size="link">
+                            <Button
+                              variant="btnLink"
+                              size="link"
+                              className="pr-2"
+                            >
                               Read More{" "}
                               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                             </Button>

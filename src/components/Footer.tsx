@@ -7,21 +7,16 @@ import Logo from "../assets/images/i9logo-logo-wht.svg";
 const Footer = () => {
   useEffect(() => {
     const script = document.createElement("script");
+    script.type = "text/javascript";
     script.src = "https://widget.clutch.co/static/js/widget.js";
     script.async = true;
-
-    // Append the script AFTER widget placeholder is in DOM
-    script.onload = () => {
-      if ((window as any).Clutch) {
-        // Sometimes Clutch attaches init to window
-        (window as any).Clutch.init?.();
-      }
-    };
 
     document.body.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
 
@@ -47,11 +42,15 @@ const Footer = () => {
               AI to drive positive business outcomes.
             </p>
             <div className="flex space-x-4">
-              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-primary transition-colors duration-300 cursor-pointer">
+              <a
+                href="https://www.linkedin.com/company/indexnine-technologies"
+                target="_blank"
+                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-primary transition-colors duration-300 cursor-pointer"
+              >
                 <span className="text-foreground-white text-sm font-semibold">
                   in
                 </span>
-              </div>
+              </a>
               <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-primary transition-colors duration-300 cursor-pointer">
                 <span className="text-foreground-white text-sm font-semibold">
                   𝕏
@@ -67,16 +66,24 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3 text-foreground-white/80">
               <li className="hover:text-brand-primary transition-colors cursor-pointer">
-                Custom Software Development
+                <a href="/services/custom-software">
+                  Custom Software Development
+                </a>
               </li>
               <li className="hover:text-brand-primary transition-colors cursor-pointer">
-                AI & ML Development
+                <a href="/services/ai">AI & ML Development</a>
               </li>
               <li className="hover:text-brand-primary transition-colors cursor-pointer">
-                Data Engineering
+                <a href="/services/data-engineering">Data Engineering</a>
               </li>
               <li className="hover:text-brand-primary transition-colors cursor-pointer">
-                Quality Assurance Engineering
+                <a href="/services/quality-engineering">
+                  {" "}
+                  Quality Assurance Engineering
+                </a>
+              </li>
+              <li className="hover:text-brand-primary transition-colors cursor-pointer">
+                <a href="/services/consulting">Consulting & Strategy</a>
               </li>
             </ul>
           </div>
@@ -91,9 +98,9 @@ const Footer = () => {
                 12th Floor, Sadanand Business Center, Pashan Hwy Side Rd,
                 Mahalunge, Pune, Maharashtra 411045
               </p>
-              <p className="hover:text-brand-primary transition-colors cursor-pointer">
+              {/* <p className="hover:text-brand-primary transition-colors cursor-pointer">
                 +91 00000 00000
-              </p>
+              </p> */}
               <p className="hover:text-brand-primary transition-colors cursor-pointer">
                 <a href="mailto:sales@indexnine.com">sales@indexnine.com</a>
               </p>
@@ -106,7 +113,10 @@ const Footer = () => {
               Partners
             </h4>
             <div className="space-y-4">
-              <a href="https://www.greatplacetowork.in/great/company/indexnine-technologies-private-limited">
+              <a
+                href="https://www.greatplacetowork.in/great/company/indexnine-technologies-private-limited"
+                target="_blank"
+              >
                 <img src={Gptw} alt="GPTW" className="h-16" />
               </a>
               <a href="https://indexnine.com/careers/">
@@ -120,8 +130,7 @@ const Footer = () => {
                   data-height="50"
                   data-nofollow="false"
                   data-expandifr="true"
-                  data-primary-color="#505dfd"
-                  data-header-color="#00010a"
+                  data-scale="100"
                   data-clutchcompany-id="2249150"
                 ></div>
               </div>

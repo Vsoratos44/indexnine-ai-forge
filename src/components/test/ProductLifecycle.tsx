@@ -20,7 +20,7 @@ const ProductLifecycle = () => {
         "We help founders turn bold ambition into market-ready products.",
       example:
         "For an AI research agent disrupting philanthropic consulting, we built the foundation for a scalable platform, charting a course for high-value ROI from the start.",
-      caseStudyLink: "/insights/case-studies/launch",
+      caseStudyLink: "/insights/case-studies/annotate",
       borderStyle: "bord-rb",
     },
     {
@@ -31,7 +31,7 @@ const ProductLifecycle = () => {
         "When the market speaks, a great partner helps you listen. At critical inflection points, we turn data into direction.",
       example:
         "We helped a security client pivot from a simple tool to a full-fledged provisioning product.",
-      caseStudyLink: "/insights/case-studies/pivot",
+      caseStudyLink: "/insights/case-studies/zilla",
       borderStyle: "bord-lb",
     },
     {
@@ -42,24 +42,23 @@ const ProductLifecycle = () => {
         "We help successful products evolve into dominant platforms.",
       example:
         "For a gaming client, we developed Cricket LLM, an AI agent that opened a nimble and scalable new revenue stream, expanding their reach from the top.",
-      caseStudyLink: "/insights/case-studies/grow",
+      caseStudyLink: "/insights/case-studies/si",
       borderStyle: "bord-rt",
     },
     {
       type: "mature" as const,
       title: "Mature",
       subtitle: "Fortifying the Pinnacle",
-      description:
-        "Technical debt can erode a market leader's position.",
+      description: "Technical debt can erode a market leader's position.",
       example:
         "We re-architected a 16-year-old mission-critical system for an e-commerce client, ensuring their foundation was strong enough for future growth and continued dominance.",
-      caseStudyLink: "/insights/case-studies/mature",
+      caseStudyLink: "/insights/case-studies/genesys",
       borderStyle: "bord-lt",
     },
   ];
 
   return (
-    <LivingGradientBackground 
+    <LivingGradientBackground
       variant="cosmic"
       className="py-24 lg:py-32 relative overflow-hidden noise-overlay"
     >
@@ -71,7 +70,10 @@ const ProductLifecycle = () => {
         {/* Enhanced Electric Background Effects */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-1/6 w-96 h-96 bg-gradient-to-r from-transparent via-purple-500/8 to-transparent rounded-full blur-3xl animate-cosmic-pulse"></div>
-          <div className="absolute bottom-20 right-1/6 w-80 h-80 bg-gradient-to-r from-transparent via-cyan-500/6 to-transparent rounded-full blur-3xl animate-cosmic-pulse" style={{ animationDelay: "3s" }}></div>
+          <div
+            className="absolute bottom-20 right-1/6 w-80 h-80 bg-gradient-to-r from-transparent via-cyan-500/6 to-transparent rounded-full blur-3xl animate-cosmic-pulse"
+            style={{ animationDelay: "3s" }}
+          ></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-transparent via-green-500/5 to-transparent rounded-full blur-2xl animate-data-matrix"></div>
         </div>
       </AngularSection>
@@ -80,10 +82,16 @@ const ProductLifecycle = () => {
         <ScrollTrigger>
           <div className="text-center mb-16 lg:mb-20">
             <h2 className="heading-h2 text-brand-cyan mb-6 leading-[1.3]">
-              A Partner for Every Stage of the <span className="test-electric-text">Ascent</span>.
+              A Partner for Every Stage of the{" "}
+              <span className="test-electric-text">Ascent</span>.
             </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground-light leading-relaxed font-light max-w-4xl mx-auto px-4 mb-8">
-              Your path to the pinnacle isn't a single leap; it's a journey with distinct stages. We provide the <span className="test-electric-glow">specialized engineering and strategic guidance</span> you need at every critical waypoint.
+              Your path to the pinnacle isn't a single leap; it's a journey with
+              distinct stages. We provide the{" "}
+              <span className="test-electric-glow">
+                specialized engineering and strategic guidance
+              </span>{" "}
+              you need at every critical waypoint.
             </p>
             <div className="flex justify-center">
               <CtaButton>View Our Victories</CtaButton>
@@ -100,14 +108,20 @@ const ProductLifecycle = () => {
                   Navigate Every Stage
                 </h3>
                 <p className="text-lg text-foreground/80 leading-relaxed font-light mb-8">
-                  From initial launch to market dominance, we're your trusted partner at every waypoint of the journey.
+                  From initial launch to market dominance, we're your trusted
+                  partner at every waypoint of the journey.
                 </p>
                 <div className="w-full h-64 glass-card rounded-2xl flex items-center justify-center border border-green-500/20 animate-glow-pulse">
                   <div className="text-center">
                     <div className="w-20 h-20 mx-auto mb-4 glass-card rounded-xl flex items-center justify-center border border-cyan-500/30">
-                      <AbstractLifecycleVisual type="launch" className="w-16 h-16" />
+                      <AbstractLifecycleVisual
+                        type="launch"
+                        className="w-16 h-16"
+                      />
                     </div>
-                    <p className="text-sm text-foreground/70 test-data-text">Guidance at Every Phase</p>
+                    <p className="text-sm text-foreground/70 test-data-text">
+                      Guidance at Every Phase
+                    </p>
                   </div>
                 </div>
               </EnhancedScrollReveal>
@@ -120,7 +134,9 @@ const ProductLifecycle = () => {
                   key={index}
                   direction="up"
                   delay={index * 100}
-                  className={`relative glass-card-light glass-hover rounded-3xl p-1 group ${styles[phase.borderStyle]} noise-overlay border border-green-500/10`}
+                  className={`relative glass-card-light glass-hover rounded-3xl p-1 group ${
+                    styles[phase.borderStyle]
+                  } noise-overlay border border-green-500/10`}
                 >
                   {/* Enhanced Electric Glow Effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-green-500/4 via-transparent to-cyan-500/4 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
@@ -129,7 +145,10 @@ const ProductLifecycle = () => {
                     {/* Enhanced Icon and Title Section */}
                     <div className="flex items-start space-x-6 mb-6">
                       <div className="relative w-20 h-20 flex items-center justify-center glass-card rounded-2xl group-hover:animate-glow-pulse border border-purple-500/20">
-                        <AbstractLifecycleVisual type={phase.type} className="w-16 h-16" />
+                        <AbstractLifecycleVisual
+                          type={phase.type}
+                          className="w-16 h-16"
+                        />
                       </div>
 
                       <div className="flex-1 min-w-0">

@@ -21,7 +21,7 @@ const ValueProposition = () => {
             for the AI Era.
           </h2>
 
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <p className="text-lg text-foreground-dark-muted leading-relaxed font-light">
               Indexnine was founded not just to achieve excellence, but to model
               it. For years, the industry has been plagued by a perception

@@ -58,6 +58,12 @@ const ProjectBased = () => {
                 variant="btnSecondary"
                 size="xl"
                 className="min-w-[280px]"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
               >
                 Schedule a Strategy Session
               </Button>
@@ -269,7 +275,7 @@ const ProjectBased = () => {
 
               <div className="space-y-6">
                 {/* Sports Interactive Case Study */}
-                <Link to="/insights/case-studies/launch" className="block">
+                <Link to="/insights/case-studies/annotate" className="block">
                   <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
                       <div
@@ -313,7 +319,7 @@ const ProjectBased = () => {
                 </Link>
 
                 {/* Genesis Case Study */}
-                <Link to="/insights/case-studies/mature" className="block">
+                <Link to="/insights/case-studies/genesys" className="block">
                   <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
                       <div
@@ -501,7 +507,16 @@ const ProjectBased = () => {
             <Button variant="btnSecondary" size="lg">
               Contact Us
             </Button>
-            <Button variant="btnSecondary" size="lg">
+            <Button
+              variant="btnSecondary"
+              size="lg"
+              onClick={() => {
+                window.open(
+                  "https://calendly.com/vaughn-soratos-indexnine",
+                  "_blank"
+                );
+              }}
+            >
               Schedule a Strategy Session
             </Button>
           </div>

@@ -24,7 +24,7 @@ const DataEngineering = () => {
       "Data Engineering Services & Platform Modernization | Enterprise Data Solutions | IndexNine",
     description:
       "Leading data engineering services for enterprises. Platform modernization, data infrastructure solutions, AI-ready data platforms, ETL pipelines, and legacy system data modernization. Transform your data architecture with expert data engineering consulting.",
-    canonicalUrl: "https://www.indexnine.com/studios/data-engineering",
+    canonicalUrl: "https://www.indexnine.com/services/data-engineering",
     keywords:
       "data engineering services, platform modernization, enterprise data solutions, data infrastructure consulting, AI-ready data platforms, ETL pipeline development, data warehouse modernization, legacy system modernization, data architecture services, cloud data migration, big data engineering, data analytics platform, enterprise data strategy, data pipeline automation, modern data stack",
     ogImage: "https://www.indexnine.com/images/og-data-engineering.png",
@@ -40,15 +40,14 @@ const DataEngineering = () => {
       <WebPageSchema
         title="Data Engineering & Platform Modernization | IndexNine Data Studio"
         description="Build an AI-ready data foundation. We design and implement modern data platforms using Snowflake and more to unlock analytics, drive efficiency, and prepare your data for what's next."
-        url="https://yoursite.lovable.app/studios/data-engineering"
+        url="https://www.indexnine.com/services/data-engineering"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app/" },
-          { name: "Studios", url: "https://yoursite.lovable.app/studios" },
+          { name: "Services", url: "https://www.indexnine.com/services" },
           {
             name: "Data Engineering",
-            url: "https://yoursite.lovable.app/studios/data-engineering",
+            url: "https://www.indexnine.com/services/data-engineering",
           },
         ]}
       />
@@ -79,7 +78,17 @@ const DataEngineering = () => {
               valuable asset.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
-              <Button variant="btnPrimary" size="xl" className="min-w-[280px]">
+              <Button
+                variant="btnPrimary"
+                size="xl"
+                className="min-w-[280px]"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
                 Build Your Data Roadmap
               </Button>
               <Button
@@ -226,6 +235,12 @@ const DataEngineering = () => {
                   variant="btnPrimary"
                   size="lg"
                   className="min-w-[280px] mb-4"
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
                 >
                   Scope Your Roadmap
                 </Button>

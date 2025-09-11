@@ -59,7 +59,7 @@ const MatureCaseStudy = () => {
       "Learn how Indexnine modernized Genesys's 16-year-old legacy e-commerce platform, achieving 100% uptime and zero-downtime migration of 178 integrations through event-driven architecture.",
     keywords:
       "platform modernization, legacy system migration, event-driven architecture, e-commerce platform, zero-downtime migration, system reliability, enterprise modernization, PHP modernization",
-    canonicalUrl: "https://indexnine.ai/insights/case-studies/mature",
+    canonicalUrl: "https://indexnine.ai/insights/case-studies/genesys",
     ogImage: "https://indexnine.ai/images/case-studies/mature-og.jpg",
     ogType: "article",
   });
@@ -98,13 +98,13 @@ const MatureCaseStudy = () => {
         datePublished="2024-01-30"
         dateModified="2024-01-30"
         image="https://indexnine.ai/images/case-studies/mature-hero.jpg"
-        url="https://indexnine.ai/insights/case-studies/mature"
+        url="https://indexnine.ai/insights/case-studies/genesys"
       />
 
       <WebPageSchema
         title="Mature Case Study: Genesys Platform Modernization"
         description="Legacy platform modernization case study showcasing event-driven architecture and zero-downtime migration success"
-        url="https://indexnine.ai/insights/case-studies/mature"
+        url="https://indexnine.ai/insights/case-studies/genesys"
       />
 
       <BreadcrumbSchema
@@ -117,7 +117,7 @@ const MatureCaseStudy = () => {
           },
           {
             name: "Mature Phase",
-            url: "https://indexnine.ai/insights/case-studies/mature",
+            url: "https://indexnine.ai/insights/case-studies/genesys",
           },
         ]}
       />

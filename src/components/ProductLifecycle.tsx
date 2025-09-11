@@ -19,7 +19,7 @@ const ProductLifecycle = () => {
         "We help founders and innovators turn bold ideas into viable, market-ready products.",
       example:
         "We built a complex AI research agent to disrupt the high-cost philanthropic consulting market. We didn't just build an MVP; we built the foundation for a scalable platform by prioritizing high-value ROI from the start.",
-      caseStudyLink: "/insights/case-studies/launch",
+      caseStudyLink: "/insights/case-studies/annotate",
       borderStyle: "bord-rb",
     },
     {
@@ -30,7 +30,7 @@ const ProductLifecycle = () => {
         "When the market speaks, we listen. We partner with companies to provide data-backed insights at critical inflection points and turn potential roadblocks into opportunities.",
       example:
         "We helped a security client pivot from a simple auditing tool to a full-fledged provisioning product.",
-      caseStudyLink: "/insights/case-studies/pivot",
+      caseStudyLink: "/insights/case-studies/zilla",
       borderStyle: "bord-lb",
     },
     {
@@ -41,7 +41,7 @@ const ProductLifecycle = () => {
         "We help successful products evolve into dominant platforms. By leveraging custom AI models, we identify new opportunities in your existing assets. Industry veterans lead our AI consulting services with the rare expertise needed to identify where AI can enhance your operations.",
       example:
         "For a gaming industry client, we developed Cricket LLM, an AI agent designed to deliver a nimble and scalable revenue stream.",
-      caseStudyLink: "/insights/case-studies/grow",
+      caseStudyLink: "/insights/case-studies/si",
       borderStyle: "bord-rt",
     },
     {
@@ -52,7 +52,7 @@ const ProductLifecycle = () => {
         "Technical debt is an issue that even industry-leading companies can struggle with. We specialize in the complex challenge of legacy system modernization.",
       example:
         "Our client needed a complete re-architecture of a 16-year-old, mission-critical system that was actively integrated with 178 e-commerce platforms. By ensuring scalable, efficient, and reliable growth, we delivered long-term cost savings and enabled our client to avoid short-term obstacles.",
-      caseStudyLink: "/insights/case-studies/mature",
+      caseStudyLink: "/insights/case-studies/genesys",
       borderStyle: "bord-lt",
     },
   ];

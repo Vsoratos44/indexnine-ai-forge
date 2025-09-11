@@ -54,18 +54,15 @@ const RobotFrameworkVsPlaywright = lazy(
 );
 
 // Case Study Pages - Lazy loaded
-const GenesysModernization = lazy(
-  () => import("./pages/insights/case-study/GenesysModernization")
-);
 const LaunchCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/Launch")
+  () => import("./pages/insights/case-studies/Annotate")
 );
 const PivotCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/Pivot")
+  () => import("./pages/insights/case-studies/Zilla")
 );
-const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/Grow"));
+const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/Si"));
 const MatureCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/Mature")
+  () => import("./pages/insights/case-studies/Genesys")
 );
 const CygeniqCaseStudy = lazy(
   () => import("./pages/insights/case-studies/Cygeniq")
@@ -173,40 +170,36 @@ const App = () => (
 
               {/* Individual Case Study Routes - Lazy loaded */}
               <Route
-                path="/insights/case-studies/launch"
+                path="/insights/case-studies/annotate"
                 element={<LaunchCaseStudy />}
               />
               <Route
-                path="/insights/case-studies/pivot"
+                path="/insights/case-studies/zilla"
                 element={<PivotCaseStudy />}
               />
               <Route
-                path="/insights/case-studies/grow"
+                path="/insights/case-studies/si"
                 element={<GrowCaseStudy />}
               />
               <Route
-                path="/insights/case-studies/mature"
+                path="/insights/case-studies/genesys"
                 element={<MatureCaseStudy />}
               />
               <Route
                 path="/insights/case-studies/cygeniq"
                 element={<CygeniqCaseStudy />}
               />
-              <Route
-                path="/insights/case-study/genesys-modernization"
-                element={<GenesysModernization />}
-              />
 
               {/* Legacy case study redirects */}
               <Route path="/case-studies" element={<CaseStudies />} />
               <Route
-                path="/case-studies/launch"
+                path="/case-studies/annotate"
                 element={<LaunchCaseStudy />}
               />
-              <Route path="/case-studies/pivot" element={<PivotCaseStudy />} />
-              <Route path="/case-studies/grow" element={<GrowCaseStudy />} />
+              <Route path="/case-studies/zilla" element={<PivotCaseStudy />} />
+              <Route path="/case-studies/si" element={<GrowCaseStudy />} />
               <Route
-                path="/case-studies/mature"
+                path="/case-studies/genesys"
                 element={<MatureCaseStudy />}
               />
 

@@ -43,7 +43,7 @@ const AiStudio = () => {
       "AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine",
     description:
       "Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services.",
-    canonicalUrl: "https://www.indexnine.com/studios/ai",
+    canonicalUrl: "https://www.indexnine.com/services/ai",
     keywords:
       "AI consulting services, machine learning solutions, enterprise AI implementation, AI strategy consulting, custom AI development, generative AI solutions, AI change management, ML engineering, artificial intelligence consulting, AI transformation services, enterprise machine learning, AI implementation framework, legacy system AI integration, conversational AI development, AI automation solutions",
     ogImage: "https://www.indexnine.com/images/og-ai-studio.png",
@@ -59,14 +59,14 @@ const AiStudio = () => {
       <WebPageSchema
         title="AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine"
         description="Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services."
-        url="https://indexnine.com/studios/ai"
+        url="https://www.indexnine.com/services/ai"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Studios", url: "https://indexnine.com/studios" },
+          { name: "Services", url: "https://www.indexnine.com/services" },
           {
-            name: "AI Studio",
-            url: "https://indexnine.com/studios/ai",
+            name: "AI & ML Services",
+            url: "https://www.indexnine.com/services/ai",
           },
         ]}
       />
@@ -102,11 +102,12 @@ const AiStudio = () => {
                 variant="btnPrimary"
                 size="xl"
                 className={`min-w-[280px]`}
-                onClick={() =>
-                  document
-                    .getElementById("contact")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
               >
                 Book Your AI Strategy Call
               </Button>
@@ -137,7 +138,7 @@ const AiStudio = () => {
                 Bridging Potential and Profitability
               </span>
             </h2>
-            <p className="text-lg text-foreground-dark-muted mb-12 max-w-6xl mb-0 mx-auto">
+            <p className="text-lg text-foreground-dark-muted max-w-6xl mb-0 mx-auto">
               AI promises to revolutionize industries, yet Gartner reports over
               65% of AI projects fail to deliver their intended ROI. This isn't
               a technology problem; it's a strategy problem. The gap between
@@ -303,11 +304,12 @@ const AiStudio = () => {
                 <Button
                   variant="btnPrimary"
                   className="w-full"
-                  onClick={() =>
-                    document
-                      .getElementById("contact")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
                 >
                   Scope Your Audit
                 </Button>
@@ -376,11 +378,12 @@ const AiStudio = () => {
                 <Button
                   variant="btnSecondary"
                   className="w-full rounded-full"
-                  onClick={() =>
-                    document
-                      .getElementById("contact")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
                 >
                   Start Your Deep-Dive
                 </Button>
@@ -809,19 +812,19 @@ const AiStudio = () => {
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-brand-primary" />
+                    <CheckCircle className="w-5 h-5 text-white/50" />
                     <span className="text-foreground-white/80">
                       No-obligation initial consultation
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-brand-primary" />
+                    <CheckCircle className="w-5 h-5 text-white/50" />
                     <span className="text-foreground-white/80">
                       Senior AI consultant, not a sales rep
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-brand-primary" />
+                    <CheckCircle className="w-5 h-5 text-white/50" />
                     <span className="text-foreground-white/80">
                       Response within one business day
                     </span>
