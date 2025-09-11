@@ -10,6 +10,7 @@ import {
   WebPageSchema,
   BreadcrumbSchema,
 } from "@/components/SEOStructuredData";
+import { useSEO } from "@/hooks/useSEO";
 import ServiceVideoBackground from "@/components/ServiceVideoBackground";
 import {
   Code,
@@ -61,6 +62,15 @@ const CustomSoftware = () => {
     },
   ];
 
+  // SEO optimization
+  useSEO({
+    title: "Custom Software Development Services | Enterprise Web & Mobile Apps | IndexNine",
+    description: "Leading custom software development services for enterprises. Full-stack web development, mobile app development, and scalable software solutions. Expert software engineering for mission-critical applications.",
+    keywords: "custom software development, enterprise software solutions, web application development, mobile app development, full-stack development, software engineering services, scalable software solutions, custom web development",
+    canonicalUrl: "https://indexnine.com/services/custom-software",
+    schemaType: "WebPage"
+  });
+
   return (
     <div className="min-h-screen bg-background">
       <ServiceSchema
@@ -69,17 +79,17 @@ const CustomSoftware = () => {
         serviceType="Software Development"
       />
       <WebPageSchema
-        title="Custom Software Development Services | IndexNine"
-        description="We architect, build, and scale mission-critical web and mobile applications. Our end-to-end software development services focus on delivering secure, scalable, and high-performance solutions that drive business outcomes."
-        url="https://yoursite.lovable.app/services/custom-software"
+        title="Custom Software Development Services | Enterprise Web & Mobile Apps | IndexNine"
+        description="Leading custom software development services for enterprises. Full-stack web development, mobile app development, and scalable software solutions. Expert software engineering for mission-critical applications."
+        url="https://indexnine.com/services/custom-software"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app/" },
-          { name: "Services", url: "https://yoursite.lovable.app/services" },
+          { name: "Home", url: "https://indexnine.com/" },
+          { name: "Services", url: "https://indexnine.com/services" },
           {
             name: "Custom Software Development",
-            url: "https://yoursite.lovable.app/services/custom-software",
+            url: "https://indexnine.com/services/custom-software",
           },
         ]}
       />

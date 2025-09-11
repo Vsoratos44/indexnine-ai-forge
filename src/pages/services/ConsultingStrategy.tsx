@@ -7,6 +7,7 @@ import {
   WebPageSchema,
   BreadcrumbSchema,
 } from "@/components/SEOStructuredData";
+import { useSEO } from "@/hooks/useSEO";
 import {
   Lightbulb,
   Target,
@@ -29,6 +30,15 @@ import csTech from "@/assets/images/cs-technology.webp";
 import csProd from "@/assets/images/cs-product.webp";
 
 const ConsultingStrategy = () => {
+  // SEO optimization
+  useSEO({
+    title: "Technology Consulting & Digital Strategy Services | Enterprise AI Consulting | IndexNine",
+    description: "Leading technology consulting and digital transformation strategy services. AI strategy consulting, technology roadmaps, and expert guidance for enterprise digital transformation initiatives.",
+    keywords: "technology consulting services, digital transformation strategy, AI strategy consulting, enterprise consulting, technology roadmap planning, digital strategy services, business technology consulting, strategic technology planning",
+    canonicalUrl: "https://indexnine.com/services/consulting-strategy",
+    schemaType: "WebPage"
+  });
+
   return (
     <div className="min-h-screen bg-background">
       <ServiceSchema
@@ -37,17 +47,17 @@ const ConsultingStrategy = () => {
         serviceType="Technology Consulting"
       />
       <WebPageSchema
-        title="Technology Consulting & Strategy Services - Drive Digital Transformation"
-        description="Accelerate your digital transformation with our strategic technology consulting services. Expert guidance for technology roadmaps and business growth"
-        url="https://yoursite.lovable.app/services/consulting-strategy"
+        title="Technology Consulting & Digital Strategy Services | Enterprise AI Consulting | IndexNine"
+        description="Leading technology consulting and digital transformation strategy services. AI strategy consulting, technology roadmaps, and expert guidance for enterprise digital transformation initiatives."
+        url="https://indexnine.com/services/consulting-strategy"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app/" },
-          { name: "Services", url: "https://yoursite.lovable.app/services" },
+          { name: "Home", url: "https://indexnine.com/" },
+          { name: "Services", url: "https://indexnine.com/services" },
           {
             name: "Consulting & Strategy",
-            url: "https://yoursite.lovable.app/services/consulting-strategy",
+            url: "https://indexnine.com/services/consulting-strategy",
           },
         ]}
       />
