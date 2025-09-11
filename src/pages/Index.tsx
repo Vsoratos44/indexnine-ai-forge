@@ -16,7 +16,6 @@ import {
 
 // Lazy load heavy components that are below the fold
 const ValueProposition = lazy(() => import("@/components/ValueProposition"));
-const CaseStudyShowcase = lazy(() => import("@/components/CaseStudyShowcase"));
 const SocialProof = lazy(() => import("@/components/SocialProof"));
 const ClientExperience = lazy(() => import("@/components/ClientExperience"));
 const ProductLifecycle = lazy(() => import("@/components/ProductLifecycle"));
@@ -122,10 +121,6 @@ const Index = () => {
           {/* Below-the-fold static content - lazy loaded */}
           <Suspense fallback={<SectionLoader />}>
             <ValueProposition />
-          </Suspense>
-
-          <Suspense fallback={<SectionLoader />}>
-            <CaseStudyShowcase />
           </Suspense>
 
           <Suspense fallback={<SectionLoader />}>
