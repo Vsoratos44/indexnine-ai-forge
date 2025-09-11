@@ -72,26 +72,23 @@ export const OrganizationSchema = () => (
   <SEOStructuredData
     type="Organization"
     data={{
-      name: 'Your Company',
-      url: 'https://yoursite.lovable.app',
-      logo: 'https://yoursite.lovable.app/logo.png',
-      description: 'Leading technology consulting and software development company',
+      name: 'IndexNine Technologies',
+      url: 'https://indexnine.com',
+      logo: 'https://indexnine.com/images/logo.png',
+      description: 'Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions.',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Your Street Address',
-        addressLocality: 'Your City',
-        addressRegion: 'Your State',
-        postalCode: 'Your ZIP',
+        addressLocality: 'San Francisco',
+        addressRegion: 'CA',
         addressCountry: 'US'
       },
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+1-xxx-xxx-xxxx',
         contactType: 'customer service'
       },
       sameAs: [
-        'https://linkedin.com/company/yourcompany',
-        'https://twitter.com/yourcompany'
+        'https://www.linkedin.com/company/indexnine',
+        'https://twitter.com/IndexNineTech'
       ]
     }}
   />

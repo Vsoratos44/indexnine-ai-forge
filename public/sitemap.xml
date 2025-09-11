@@ -2,222 +2,260 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://yoursite.lovable.app/</loc>
-    <lastmod>2025-08-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- Services -->
+  <!-- Main Pages -->
   <url>
-    <loc>https://yoursite.lovable.app/services/ai-ml</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/about</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/services</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/services/custom-software</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Service pages -->
+  <url>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/services/ai-ml</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/services/qa-engineering</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/services/custom-software</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/services/consulting-strategy</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/services/qa-engineering</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/services/data-engineering</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/services/consulting-strategy</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/services/data-engineering</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Studios -->
   <url>
-    <loc>https://yoursite.lovable.app/studios/ai-studio</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/studios/ai-studio</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/studios/data-engineering</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/studios/data-engineering</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/studios/quality-engineering</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/studios/quality-engineering</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Engagement Models -->
   <url>
-    <loc>https://yoursite.lovable.app/engagement/project-based</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/engagement/project-based</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/engagement/outcome-based</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/engagement/outcome-based</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/engagement/dedicated-teams</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/engagement/dedicated-teams</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/engagement/innovation-lab</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/engagement/innovation-lab</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/engagement/enterprise</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/engagement/enterprise</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Insights -->
   <url>
-    <loc>https://yoursite.lovable.app/insights/blogs</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/blogs</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/insights/case-studies</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/case-studies</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/insights/ebooks</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/ebooks</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Blog Posts -->
   <url>
-    <loc>https://yoursite.lovable.app/insights/blog/robot-framework-vs-playwright</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/blog/robot-framework-vs-playwright</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/blog/agentic-ai-enterprise-future</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/blog/ai-change-management-playbook</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- Case Studies -->
   <url>
-    <loc>https://yoursite.lovable.app/insights/case-study/genesys-modernization</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/case-studies/genesys</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/case-studies/launch</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/case-studies/cygeniq</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/case-studies/grow</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/case-studies/tripjack</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/case-studies/mature</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/case-studies/annotate</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/case-studies/pivot</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/case-studies/si</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/insights/case-studies/zilla</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- About -->
   <url>
-    <loc>https://yoursite.lovable.app/about</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/company/about</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/about/who-we-are</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/company/who-we-are</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/about/careers</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/company/careers</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- Events -->
   <url>
-    <loc>https://yoursite.lovable.app/events</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/events</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/events/platform</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/events/platform</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/events/admin-console</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/events/admin-console</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/events/features/registration-ticketing</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/events/mobile-app</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/events/features/website-branding</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/events/features/guest-management</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/events/features/guest-management</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/events/features/website-branding</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/events/features/onsite-experience</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://yoursite.lovable.app/events/features/onsite-experience</loc>
-    <lastmod>2025-01-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://yoursite.lovable.app/events/features/analytics-integrations</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://indexnine-website-v1.vaughn-soratos.workers.dev/events/features/analytics-integrations</loc>
+    <lastmod>2025-01-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

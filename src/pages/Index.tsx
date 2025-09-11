@@ -42,9 +42,9 @@ const Index = () => {
   useSEO({
     title: "Enterprise Product Engineering & AI Consulting Services | Custom Software Development | IndexNine",
     description: "Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions. Transform your legacy systems with expert product lifecycle engineering.",
-    canonicalUrl: "https://www.indexnine.com/",
+    canonicalUrl: "https://indexnine.com/",
     keywords: "product engineering services, AI consulting services, custom software development, enterprise software solutions, digital transformation consulting, legacy system modernization, data engineering services, quality engineering, AI implementation, product lifecycle management, enterprise product development, software engineering consulting, technology consulting services, digital product engineering",
-    ogImage: "https://www.indexnine.com/images/og-homepage.png",
+    ogImage: "https://indexnine.com/images/og-homepage.png",
     ogType: "website",
     schemaType: "WebPage"
   });
@@ -76,7 +76,7 @@ const Index = () => {
       <WebPageSchema
         title="Enterprise Product Engineering & AI Consulting Services | Custom Software Development | IndexNine"
         description="Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions. Transform your legacy systems with expert product lifecycle engineering."
-        url="https://www.indexnine.com/"
+        url="https://indexnine.com/"
       />
       
       {/* FAQ Schema for common enterprise questions */}
@@ -101,10 +101,10 @@ const Index = () => {
       <VideoObjectSchema
         name="IndexNine Technologies Hero Video"
         description="Discover how IndexNine Technologies delivers exceptional product engineering and AI consulting services"
-        thumbnailUrl="https://yoursite.lovable.app/video-thumbnails/hero-thumbnail.jpg"
+        thumbnailUrl="https://indexnine.com/video-thumbnails/hero-thumbnail.jpg"
         uploadDate="2024-01-01T00:00:00Z"
         duration="60"
-        contentUrl="https://yoursite.lovable.app/videos/intro.mp4"
+        contentUrl="https://indexnine.com/videos/intro.mp4"
       />
 
       {/* Above-the-fold content - always load immediately */}
