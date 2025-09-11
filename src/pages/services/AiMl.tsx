@@ -138,7 +138,7 @@ const AiStudio = () => {
                 Bridging Potential and Profitability
               </span>
             </h2>
-            <p className="text-lg text-foreground-dark-muted mb-12 max-w-6xl mb-0 mx-auto">
+            <p className="text-lg text-foreground-dark-muted max-w-6xl mb-0 mx-auto">
               AI promises to revolutionize industries, yet Gartner reports over
               65% of AI projects fail to deliver their intended ROI. This isn't
               a technology problem; it's a strategy problem. The gap between

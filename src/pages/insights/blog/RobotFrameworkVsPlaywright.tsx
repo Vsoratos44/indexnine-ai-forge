@@ -16,6 +16,8 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
+import BlogContBg from "@/assets/images/blog-content-bg.webp";
+
 import blogImg2 from "@/assets/images/blog-img2.webp";
 import styles from "../../../assets/css/stylesheet.module.css";
 
@@ -35,11 +37,16 @@ const RobotFrameworkVsPlaywright = () => {
 
   // Implement comprehensive SEO optimization
   useSEO({
-    title: "Robot Framework vs Playwright: Test Automation Framework Comparison Guide | Enterprise QA Strategy",
-    description: "A comprehensive comparison of Robot Framework vs Playwright for enterprise test automation. Discover which framework best fits your business stage, team structure, and quality engineering goals with expert analysis and implementation strategies.",
-    canonicalUrl: "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright-automation", 
-    keywords: "Robot Framework vs Playwright, test automation frameworks, enterprise QA testing, automated testing comparison, quality engineering services, test automation strategy, continuous testing, QA process optimization, software testing frameworks, test automation tools comparison",
-    ogImage: "https://www.indexnine.com/images/robot-framework-vs-playwright-og.jpg"
+    title:
+      "Robot Framework vs Playwright: Test Automation Framework Comparison Guide | Enterprise QA Strategy",
+    description:
+      "A comprehensive comparison of Robot Framework vs Playwright for enterprise test automation. Discover which framework best fits your business stage, team structure, and quality engineering goals with expert analysis and implementation strategies.",
+    canonicalUrl:
+      "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright-automation",
+    keywords:
+      "Robot Framework vs Playwright, test automation frameworks, enterprise QA testing, automated testing comparison, quality engineering services, test automation strategy, continuous testing, QA process optimization, software testing frameworks, test automation tools comparison",
+    ogImage:
+      "https://www.indexnine.com/images/robot-framework-vs-playwright-og.jpg",
   });
 
   const toggleFAQ = (index: number) => {
@@ -71,7 +78,10 @@ const RobotFrameworkVsPlaywright = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div
+      className="min-h-screen bg-contain bg-top bg-no-repeat bg-white"
+      style={{ backgroundImage: `url(${BlogDetailsBg})` }}
+    >
       <Header />
 
       {/* Enhanced SEO Schema */}
@@ -81,8 +91,10 @@ const RobotFrameworkVsPlaywright = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Robot Framework vs Playwright: Test Automation Framework Comparison Guide",
-            description: "A comprehensive comparison of Robot Framework vs Playwright for enterprise test automation. Expert analysis and implementation strategies for quality engineering success.",
+            headline:
+              "Robot Framework vs Playwright: Test Automation Framework Comparison Guide",
+            description:
+              "A comprehensive comparison of Robot Framework vs Playwright for enterprise test automation. Expert analysis and implementation strategies for quality engineering success.",
             url: "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright-automation",
             datePublished: "2025-01-20T00:00:00Z",
             dateModified: "2025-01-20T00:00:00Z",
@@ -91,7 +103,7 @@ const RobotFrameworkVsPlaywright = () => {
               name: "IndexNine QA Engineering Team",
             },
             publisher: {
-              "@type": "Organization", 
+              "@type": "Organization",
               name: "IndexNine Technologies",
               logo: {
                 "@type": "ImageObject",
@@ -100,17 +112,24 @@ const RobotFrameworkVsPlaywright = () => {
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright-automation",
+              "@id":
+                "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright-automation",
             },
             image: {
               "@type": "ImageObject",
               url: "https://www.indexnine.com/images/robot-framework-vs-playwright.jpg",
               width: 1200,
-              height: 630
+              height: 630,
             },
             wordCount: 2500,
             articleSection: "Quality Engineering",
-            keywords: ["Robot Framework", "Playwright", "Test Automation", "Quality Engineering", "Enterprise QA"]
+            keywords: [
+              "Robot Framework",
+              "Playwright",
+              "Test Automation",
+              "Quality Engineering",
+              "Enterprise QA",
+            ],
           }),
         }}
       />
@@ -130,7 +149,7 @@ const RobotFrameworkVsPlaywright = () => {
                 },
               },
               {
-                "@type": "Question", 
+                "@type": "Question",
                 name: "Is Playwright better than Robot Framework for enterprise QA?",
                 acceptedAnswer: {
                   "@type": "Answer",
@@ -139,7 +158,7 @@ const RobotFrameworkVsPlaywright = () => {
               },
               {
                 "@type": "Question",
-                name: "What are the main differences between Robot Framework and Playwright?", 
+                name: "What are the main differences between Robot Framework and Playwright?",
                 acceptedAnswer: {
                   "@type": "Answer",
                   text: "The main differences are in their philosophy and primary user. Robot Framework uses a keyword-driven syntax designed for accessibility and collaboration. Playwright is a developer-first tool with a traditional coding syntax in multiple languages, built for maximum speed and efficiency within engineering workflows.",
@@ -149,7 +168,7 @@ const RobotFrameworkVsPlaywright = () => {
                 "@type": "Question",
                 name: "How should I choose between Robot Framework and Playwright for my team?",
                 acceptedAnswer: {
-                  "@type": "Answer", 
+                  "@type": "Answer",
                   text: "Consider your team size, technical expertise, project complexity, and growth stage. Robot Framework suits smaller teams and startups needing broad testing capabilities. Playwright excels for scale-ups with complex web applications requiring high-velocity parallel execution.",
                 },
               },
@@ -162,7 +181,7 @@ const RobotFrameworkVsPlaywright = () => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "BreadcrumbList", 
+            "@type": "BreadcrumbList",
             itemListElement: [
               {
                 "@type": "ListItem",
@@ -173,7 +192,7 @@ const RobotFrameworkVsPlaywright = () => {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "Insights", 
+                name: "Insights",
                 item: "https://www.indexnine.com/insights",
               },
               {
@@ -199,26 +218,25 @@ const RobotFrameworkVsPlaywright = () => {
             "@context": "https://schema.org",
             "@type": "Service",
             name: "Enterprise Quality Engineering and Test Automation Services",
-            description: "Professional test automation services using Robot Framework, Playwright, and other modern testing frameworks. Strategic QA consulting and implementation for enterprise teams.",
+            description:
+              "Professional test automation services using Robot Framework, Playwright, and other modern testing frameworks. Strategic QA consulting and implementation for enterprise teams.",
             provider: {
               "@type": "Organization",
-              name: "IndexNine Technologies"
+              name: "IndexNine Technologies",
             },
             serviceType: "Quality Engineering",
             areaServed: "Global",
             offers: {
-              "@type": "Offer", 
-              description: "Comprehensive test automation strategy, framework selection, and implementation services"
-            }
+              "@type": "Offer",
+              description:
+                "Comprehensive test automation strategy, framework selection, and implementation services",
+            },
           }),
         }}
       />
 
       {/* Hero Section */}
-      <section
-        className="relative  overflow-hidden bg-[#fff] bg-cover bg-center"
-        style={{ backgroundImage: `url(${BlogDetailsBg})` }}
-      >
+      <section className="relative  overflow-hidden bg-[#ffffff00]">
         {/* <LivingVoidBackground /> */}
         {/* <img src={BlogDetsilsBg} alt="" className="absolute left-0" /> */}
 
@@ -262,15 +280,18 @@ const RobotFrameworkVsPlaywright = () => {
               </div>
               <span className="font-montserrat">January 20, 2025</span>
             </div>
-            <div className="pt-8">
+            {/* <div className="pt-8">
               <img src={blogImg2} className="w-full" alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
-      <div className="bg-gradient-to-b from-white via-white to-[#F0F4FF]">
+      <div className="bg-[#ffffff00] pt-8">
         <a id="intro"></a>
-        <div className="container grid md:grid-cols-3 gap-12 bg-transparent pt-24">
+        <div
+          className="container grid md:grid-cols-3 gap-12 bg-transparent pt-12 rounded-tl-3xl rounded-tr-3xl bg-gradient-to-b from-white via-white to-[#F0F4FF] bg-contain bg-no-repeat"
+          style={{ backgroundImage: `url(${BlogContBg})` }}
+        >
           <div className="text-foreground-dark">
             <div className="sticky top-[120px] pb-8">
               <ul className="space-y-2">
@@ -352,10 +373,16 @@ const RobotFrameworkVsPlaywright = () => {
 
                   <Button type="submit" size="lg" variant="btnPrimary">
                     <Download className="w-4 h-4 mr-2" />
-                    Download Our Comprehensive QA Automation Framework Guide (PDF)
+                    Download Our Comprehensive QA Automation Framework Guide
+                    (PDF)
                   </Button>
                   <div className="mt-6">
-                    <Button type="submit" size="lg" variant="btnSecondary" asChild>
+                    <Button
+                      type="submit"
+                      size="lg"
+                      variant="btnSecondary"
+                      asChild
+                    >
                       <Link to="/studios/quality-engineering">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Explore Our Quality Engineering Services
@@ -369,7 +396,7 @@ const RobotFrameworkVsPlaywright = () => {
             {/* Comparison Table Section */}
             <a id="hiddenCost"></a>
 
-            <section className="pt-24 pb-16 relative overflow-hidden">
+            <section className="pt-12 pb-0 relative overflow-hidden">
               <div className="container text-lg text-foreground-dark-muted leading-relaxed ">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
@@ -405,7 +432,7 @@ const RobotFrameworkVsPlaywright = () => {
                       they do use.{" "}
                     </p>
 
-                    <div className="bg-foreground-dark/5 p-8 text-md ">
+                    <div className="bg-foreground-dark/5 p-8 text-md rounded-lg">
                       Businesses found themselves managing their tools instead
                       of growing their companies.
                     </div>
@@ -711,11 +738,18 @@ const RobotFrameworkVsPlaywright = () => {
 
                     <div className="mt-8 pt-8 border-t border-glass-border-light">
                       <div className="bg-gradient-to-r from-brand-primary/5 to-brand-purple/5 border-l-4 border-brand-primary p-6 rounded-r-lg">
-                        <h4 className="text-lg font-semibold text-foreground-dark mb-3">Ready to Transform Your QA Strategy?</h4>
-                        <p className="text-foreground-dark-muted mb-4">Don't let testing bottlenecks slow down your release cycles. Our QA experts help you choose and implement the right automation framework.</p>
+                        <h4 className="text-lg font-semibold text-foreground-dark mb-3">
+                          Ready to Transform Your QA Strategy?
+                        </h4>
+                        <p className="text-foreground-dark-muted mb-4">
+                          Don't let testing bottlenecks slow down your release
+                          cycles. Our QA experts help you choose and implement
+                          the right automation framework.
+                        </p>
                         <Button variant="btnPrimary" className="w-full" asChild>
                           <Link to="/studios/quality-engineering">
-                            Book a Free QA Consulting Session to Build Your Automation Strategy
+                            Book a Free QA Consulting Session to Build Your
+                            Automation Strategy
                             <ExternalLink className="w-4 h-4 ml-2" />
                           </Link>
                         </Button>
@@ -735,40 +769,52 @@ const RobotFrameworkVsPlaywright = () => {
                     Frequently Asked Questions About Test Automation Frameworks
                   </h4>
 
-                  <div className="space-y-4">
+                  <div className="space-y-2">
                     {[
                       {
-                        question: "Can you use Robot Framework and Playwright together?",
-                        answer: "Yes. Robot Framework can use Playwright's engine directly through its modern Browser library. This is a popular and powerful combination that offers Robot's simple syntax with Playwright's speed and reliability.",
+                        question:
+                          "Can you use Robot Framework and Playwright together?",
+                        answer:
+                          "Yes. Robot Framework can use Playwright's engine directly through its modern Browser library. This is a popular and powerful combination that offers Robot's simple syntax with Playwright's speed and reliability.",
                       },
                       {
-                        question: "Is Playwright better than Robot Framework for enterprise QA?",
-                        answer: "Playwright is often preferred for larger, developer-heavy enterprise teams due to its raw speed, native multi-language support, and advanced debugging features. However, Robot Framework's readability and extensibility make it a highly viable and scalable enterprise solution as well, especially in Python-centric environments.",
+                        question:
+                          "Is Playwright better than Robot Framework for enterprise QA?",
+                        answer:
+                          "Playwright is often preferred for larger, developer-heavy enterprise teams due to its raw speed, native multi-language support, and advanced debugging features. However, Robot Framework's readability and extensibility make it a highly viable and scalable enterprise solution as well, especially in Python-centric environments.",
                       },
                       {
-                        question: "What are the main differences between Robot Framework and Playwright?",
-                        answer: "The main differences are in their philosophy and primary user. Robot Framework uses a keyword-driven syntax designed for accessibility and collaboration. Playwright is a developer-first tool with a traditional coding syntax in multiple languages, built for maximum speed and efficiency within engineering workflows.",
+                        question:
+                          "What are the main differences between Robot Framework and Playwright?",
+                        answer:
+                          "The main differences are in their philosophy and primary user. Robot Framework uses a keyword-driven syntax designed for accessibility and collaboration. Playwright is a developer-first tool with a traditional coding syntax in multiple languages, built for maximum speed and efficiency within engineering workflows.",
                       },
                       {
-                        question: "Can you integrate Robot Framework with Playwright for hybrid testing?",
-                        answer: "Absolutely. Integrating Robot Framework with the Playwright-based Browser library is an advanced strategy for hybrid testing. It allows you to write simple, maintainable test cases that are executed by Playwright's powerful and reliable automation engine.",
+                        question:
+                          "Can you integrate Robot Framework with Playwright for hybrid testing?",
+                        answer:
+                          "Absolutely. Integrating Robot Framework with the Playwright-based Browser library is an advanced strategy for hybrid testing. It allows you to write simple, maintainable test cases that are executed by Playwright's powerful and reliable automation engine.",
                       },
                       {
-                        question: "How should I choose between Robot Framework and Playwright for my team?",
-                        answer: "Consider your team size, technical expertise, project complexity, and growth stage. Robot Framework suits smaller teams and startups needing broad testing capabilities. Playwright excels for scale-ups with complex web applications requiring high-velocity parallel execution.",
+                        question:
+                          "How should I choose between Robot Framework and Playwright for my team?",
+                        answer:
+                          "Consider your team size, technical expertise, project complexity, and growth stage. Robot Framework suits smaller teams and startups needing broad testing capabilities. Playwright excels for scale-ups with complex web applications requiring high-velocity parallel execution.",
                       },
                       {
-                        question: "What's the typical ROI timeline for test automation implementation?",
-                        answer: "Most organizations see initial ROI within 3-6 months as automated tests accumulate saved hours and prevent costly production bugs. The break-even point typically occurs when automation saves more time than it took to implement and maintain.",
+                        question:
+                          "What's the typical ROI timeline for test automation implementation?",
+                        answer:
+                          "Most organizations see initial ROI within 3-6 months as automated tests accumulate saved hours and prevent costly production bugs. The break-even point typically occurs when automation saves more time than it took to implement and maintain.",
                       },
                     ].map((faq, index) => (
                       <div
                         key={index}
-                        className="border border-border rounded-lg overflow-hidden"
+                        className="border border-border rounded-[.5rem] overflow-hidden"
                       >
                         <button
                           onClick={() => toggleFAQ(index)}
-                          className="w-full px-6 py-4 text-left bg-background-light hover:bg-background transition-colors flex items-center justify-between"
+                          className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
                         >
                           <span className="font-medium text-foreground-dark pr-4">
                             {faq.question}
@@ -796,7 +842,9 @@ const RobotFrameworkVsPlaywright = () => {
                       Still Have Questions About Test Automation?
                     </h3>
                     <p className="text-foreground-dark-muted mb-6 max-w-2xl mx-auto">
-                      Our QA experts are here to help you navigate framework selection, implementation strategy, and automation best practices tailored to your specific needs.
+                      Our QA experts are here to help you navigate framework
+                      selection, implementation strategy, and automation best
+                      practices tailored to your specific needs.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Button variant="btnPrimary" size="lg" asChild>
@@ -822,10 +870,14 @@ const RobotFrameworkVsPlaywright = () => {
       <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-            <span className="leading-[1.4]">Transform Your QA Strategy Today</span>
+            <span className="leading-[1.4]">
+              Transform Your QA Strategy Today
+            </span>
           </h2>
           <p className="text-xl text-foreground-white/80 mb-12 font-montserrat max-w-3xl mx-auto">
-            Don't let testing bottlenecks slow your development velocity. Partner with our quality engineering experts to implement the right automation framework and achieve measurable QA improvements.
+            Don't let testing bottlenecks slow your development velocity.
+            Partner with our quality engineering experts to implement the right
+            automation framework and achieve measurable QA improvements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="btnSecondary" size="lg" asChild>
@@ -834,39 +886,59 @@ const RobotFrameworkVsPlaywright = () => {
                 <ExternalLink className="h-4 w-4 ml-2" />
               </Link>
             </Button>
-            <Button variant="btnSecondary" size="lg" className="bg-white/10 hover:bg-white/20 border-white/20">
+            <Button
+              variant="btnSecondary"
+              size="lg"
+              className="bg-white/10 hover:bg-white/20 border-white/20"
+            >
               <Download className="h-4 w-4 mr-2" />
               Download Framework Comparison Guide
             </Button>
           </div>
-          
+
           <div className="mt-16 grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Expert Framework Selection</h3>
-              <p className="text-white/80 text-sm">Choose the right automation framework based on your team, technology stack, and business objectives.</p>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Expert Framework Selection
+              </h3>
+              <p className="text-white/80 text-sm">
+                Choose the right automation framework based on your team,
+                technology stack, and business objectives.
+              </p>
             </div>
             <div className="text-center">
               <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Download className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Rapid Implementation</h3>
-              <p className="text-white/80 text-sm">Get your automation suite up and running with our Sprint 0 approach and proven methodologies.</p>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Rapid Implementation
+              </h3>
+              <p className="text-white/80 text-sm">
+                Get your automation suite up and running with our Sprint 0
+                approach and proven methodologies.
+              </p>
             </div>
             <div className="text-center">
               <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <ExternalLink className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Ongoing Support</h3>
-              <p className="text-white/80 text-sm">Ensure long-term success with training, maintenance strategies, and continuous optimization.</p>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Ongoing Support
+              </h3>
+              <p className="text-white/80 text-sm">
+                Ensure long-term success with training, maintenance strategies,
+                and continuous optimization.
+              </p>
             </div>
           </div>
         </div>
       </section>
-
-      <Footer />
+      <div className="bg-background">
+        <Footer />
+      </div>
     </div>
   );
 };
