@@ -14,6 +14,8 @@ import {
   Zap,
   Shield,
   AlertTriangle,
+  ChevronUp,
+  ChevronDown,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
@@ -32,6 +34,11 @@ const leftNavLinks = [
 
 const AgenticAiEnterpriseFuture = () => {
   const [selected, setSelected] = useState("#intro");
+  const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setExpandedFAQ(expandedFAQ === index ? null : index);
+  };
 
   useEffect(() => {
     const sections = leftNavLinks.map((link) =>
@@ -103,6 +110,7 @@ const AgenticAiEnterpriseFuture = () => {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
+
             "@type": "FAQPage",
             mainEntity: [
               {
@@ -684,64 +692,59 @@ const AgenticAiEnterpriseFuture = () => {
                     Frequently Asked Questions About Agentic AI
                   </h4>
 
-                  <div className="space-y-6">
-                    <div className="bg-white p-8 rounded-lg border border-border">
-                      <h5 className="font-semibold text-lg text-foreground-dark mb-4">
-                        What makes enterprise-grade agentic AI different from
-                        standard chatbots?
-                      </h5>
-                      <p className="text-foreground-dark-muted">
-                        Enterprise-grade agentic AI systems go beyond
-                        conversation. They can autonomously perceive
-                        environments, reason about complex data, plan multi-step
-                        actions, and execute tasks using various digital tools
-                        and APIs. They're workflow automation engines with
-                        decision-making capabilities, not just interactive
-                        interfaces.
-                      </p>
-                    </div>
-
-                    <div className="bg-white p-8 rounded-lg border border-border">
-                      <h5 className="font-semibold text-lg text-foreground-dark mb-4">
-                        How does AWS AgentCore change the agentic AI landscape?
-                      </h5>
-                      <p className="text-foreground-dark-muted">
-                        AWS AgentCore provides essential infrastructure like
-                        memory management, observability, and service
-                        integration. It's model-agnostic and reduces development
-                        complexity, allowing teams to focus on building
-                        domain-specific intelligence rather than foundational
-                        plumbing.
-                      </p>
-                    </div>
-
-                    <div className="bg-white p-8 rounded-lg border border-border">
-                      <h5 className="font-semibold text-lg text-foreground-dark mb-4">
-                        What are the key risks of implementing autonomous AI
-                        agents?
-                      </h5>
-                      <p className="text-foreground-dark-muted">
-                        Primary risks include data leakage, biased
-                        decision-making, operational failures, compliance
-                        violations, and lack of audit trails. These systems
-                        require robust guardrails, human-in-the-loop workflows,
-                        and comprehensive monitoring to operate safely.
-                      </p>
-                    </div>
-
-                    <div className="bg-white p-8 rounded-lg border border-border">
-                      <h5 className="font-semibold text-lg text-foreground-dark mb-4">
-                        How should enterprises assess their readiness for
-                        agentic AI?
-                      </h5>
-                      <p className="text-foreground-dark-muted">
-                        Start with an AI & Data Audit that evaluates three key
-                        areas: process mapping to identify high-ROI
-                        opportunities, data infrastructure readiness, and
-                        systems security/compliance posture. This provides a
-                        pragmatic roadmap for implementation.
-                      </p>
-                    </div>
+                  <div className="space-y-2">
+                    {[
+                      {
+                        question:
+                          "What makes enterprise-grade agentic AI different from standard chatbots?",
+                        answer:
+                          "Enterprise-grade agentic AI systems go beyond conversation. They can autonomously perceive environments, reason about complex data, plan multi-step actions, and execute tasks using various digital tools and APIs. They're workflow automation engines with decision-making capabilities, not just interactive interfaces.",
+                      },
+                      {
+                        question:
+                          "How does AWS AgentCore change the agentic AI landscape?",
+                        answer:
+                          "AWS AgentCore provides essential infrastructure like memory management, observability, and service integration. It's model-agnostic and reduces development complexity, allowing teams to focus on building domain-specific intelligence rather than foundational plumbing.",
+                      },
+                      {
+                        question:
+                          "What are the key risks of implementing autonomous AI agents?",
+                        answer:
+                          "Primary risks include data leakage, biased decision-making, operational failures, compliance violations, and lack of audit trails. These systems require robust guardrails, human-in-the-loop workflows, and comprehensive monitoring to operate safely.",
+                      },
+                      {
+                        question:
+                          "How should enterprises assess their readiness for agentic AI?",
+                        answer:
+                          "Start with an AI & Data Audit that evaluates three key areas: process mapping to identify high-ROI opportunities, data infrastructure readiness, and systems security/compliance posture. This provides a pragmatic roadmap for implementation.",
+                      },
+                    ].map((faq, index) => (
+                      <div
+                        key={index}
+                        className="border border-border rounded-[.5rem] overflow-hidden"
+                      >
+                        <button
+                          onClick={() => toggleFAQ(index)}
+                          className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
+                        >
+                          <span className="font-medium text-foreground-dark pr-4">
+                            {faq.question}
+                          </span>
+                          {expandedFAQ === index ? (
+                            <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                          ) : (
+                            <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                          )}
+                        </button>
+                        {expandedFAQ === index && (
+                          <div className="px-6 py-4 bg-white border-t border-border">
+                            <p className="text-foreground-dark-muted leading-relaxed">
+                              {faq.answer}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
