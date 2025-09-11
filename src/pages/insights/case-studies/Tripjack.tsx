@@ -32,7 +32,7 @@ import {
 import { Link } from "react-router-dom";
 import styles from "../../../assets/css/stylesheet.module.css";
 import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
-import CaseInrImg from "@/assets/images/case-details-img.webp";
+import CaseInrImg from "@/assets/images/img-cursor.webp";
 
 const leftNavLinks = [
   { href: "#intro1", label: "Introduction" },
@@ -127,7 +127,7 @@ const TripjackCaseStudy = () => {
       {/* Hero Section */}
       <a id="intro1"></a>
       <div className={`bg-transparent pt-32 ${styles.sectionBgCase}`}>
-        <div className="container grid md:grid-cols-3 gap-12">
+        <div className="container grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-12">
           <div className="text-foreground-dark">
             <div className="sticky top-[128px] pb-8">
               <ul className="space-y-2">
@@ -167,28 +167,30 @@ const TripjackCaseStudy = () => {
             </div>
           </div>
           <div className="col-span-2">
-            <section className="min-h-[300px] bg-gradient-to-br from-background via-background-alternate to-background rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden">
+            <section
+              className={`min-h-[100px] rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden ${styles.caseTitle}`}
+            >
               <div className="mt-auto p-8">
                 <div className="max-w-8xl mx-auto">
                   <div className="mb-6">
                     <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
-                      <span className="text-brand-primary text-xs mr-2">
+                      <span className="text-white/50  text-xs mr-2">
                         Client
                       </span>{" "}
                       TripJack
                     </span>
                     <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
-                      <span className="text-brand-primary text-xs mr-2">
+                      <span className="text-white/50  text-xs mr-2">
                         Industry
                       </span>{" "}
                       Travel & Tourism, E-commerce, SaaS
                     </span>
                   </div>
 
-                  <div className="inline-block p-8 bg-black/20 shadow-md text-white rounded-xl text-sm font-medium border border-white/30 backdrop-blur-sm">
-                    <h1 className="text-4xl sm:text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat md:flex gap-4 items-start">
+                  <div className="inline-block p-4 md:p-8  bg-black/20 shadow-md text-white rounded-xl text-sm font-medium border border-white/30 backdrop-blur-sm">
+                    <h1 className="text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat flex flex-wrap md:flex-nowrap   gap-4 items-start">
                       <span className="leading-[1.05]">TripJack:</span>
-                      <span className="bg-gradient-primary bg-clip-text text-[#505cfd] leading-[1.05]">
+                      <span className="bg-gradient-primary bg-clip-text text-transparent leading-[1.05]">
                         Engineering the Platform for Next-Generation Travel
                       </span>
                     </h1>
@@ -327,7 +329,10 @@ const TripjackCaseStudy = () => {
                   </h2>
 
                   <div className="bg-[#4A2424] my-8 flex">
-                    <img src={CaseInrImg} className="w-full h-full" />
+                    <img
+                      src={CaseInrImg}
+                      className="w-full h-96 object-cover"
+                    />
                   </div>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
@@ -521,7 +526,7 @@ const TripjackCaseStudy = () => {
                           product:
                         </p>
 
-                        <div className="grid md:grid-cols-2 gap-6 mb-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                           <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6 ">
                             <h4 className="font-semibold text-foreground-dark mb-2">
                               A Modern, User-Centric UI/UX:
@@ -584,7 +589,7 @@ const TripjackCaseStudy = () => {
                           both their top and bottom lines.
                         </p>
 
-                        <div className="grid md:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           <div className="backdrop-blur-xl bg-[#fff] border border-glass-border rounded-2xl p-6">
                             <h4 className="font-semibold text-foreground-dark mb-2">
                               Dramatically Accelerated Product Expansion:

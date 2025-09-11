@@ -132,8 +132,8 @@ const PivotCaseStudy = () => {
       {/* Hero Section */}
       <a id="intro1"></a>
       <div className={`bg-transparent pt-32 ${styles.sectionBgCase} `}>
-        <div className="container grid md:grid-cols-3 gap-12">
-          <div className="text-foreground-dark">
+        <div className="container grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-12">
+          <div className="text-foreground-dark col-span-1">
             <div className="sticky top-[128px] pb-8">
               <ul className="space-y-2">
                 {leftNavLinks.map((link) => (
@@ -156,7 +156,7 @@ const PivotCaseStudy = () => {
                 ))}
               </ul>
               <div
-                className={`px-8 mt-8 mb-4 py-12 text-center rounded-2xl text-white ${styles.sideCardBg}`}
+                className={`px-8 mt-8 mb-4 py-12 text-center rounded-2xl w-full text-white ${styles.sideCardBg}`}
               >
                 <h3 className="text-3xl font-bold">
                   Want to Share Your Insights?
@@ -173,20 +173,10 @@ const PivotCaseStudy = () => {
           </div>
           <div className="col-span-2">
             <section
-              className={`min-h-[100px] rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden ${styles.caseTitle} `}
+              className={`min-h-[100px] rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden ${styles.caseTitle}`}
             >
-              {/* <LivingVoidBackground /> */}
-
-              <div className="mt-auto p-8">
+              <div className="mt-auto p-4 md:p-8">
                 <div className="max-w-8xl mx-auto">
-                  {/* <Link
-                  to="/"
-                  className="inline-flex items-center text-brand-primary hover:text-brand-primary-dark transition-colors mb-8"
-                >
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back to Homepage
-                </Link> */}
-
                   <div className="mb-6">
                     <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
                       <span className="text-white/50 text-xs mr-2">Client</span>{" "}
@@ -200,11 +190,9 @@ const PivotCaseStudy = () => {
                     </span>
                   </div>
 
-                  <div className="inline-block p-8 bg-black/20 shadow-md text-white rounded-xl text-sm font-medium border border-white/30 backdrop-blur-sm">
-                    <h1 className="text-4xl sm:text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat md:flex gap-4 items-start">
-                      <span className="leading-[1.05]">
-                        Zilla&nbsp;Security:
-                      </span>
+                  <div className="inline-block p-4 md:p-8  bg-black/20 shadow-md text-white rounded-xl text-sm font-medium border border-white/30 backdrop-blur-sm">
+                    <h1 className="text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat flex flex-wrap md:flex-nowrap   gap-4 items-start">
+                      <span className="leading-[1.05]">Zilla Security:</span>
                       <span className="bg-gradient-primary bg-clip-text text-transparent leading-[1.05]">
                         Engineering the Perfect Pivot
                       </span>
@@ -344,7 +332,10 @@ const PivotCaseStudy = () => {
                   </h2>
 
                   <div className=" my-8 flex">
-                    <img src={CaseInrImg} className="w-full h-full" />
+                    <img
+                      src={CaseInrImg}
+                      className="w-full h-96 object-cover"
+                    />
                   </div>
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
                     The IT landscape is a chaotic one; applications and data are

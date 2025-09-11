@@ -9,7 +9,8 @@ export interface CardGlassProps extends React.HTMLAttributes<HTMLDivElement> {
 const base = "rounded-3xl border shadow-glass backdrop-blur-xl transition-all duration-300"
 const variants: Record<NonNullable<CardGlassProps["variant"]>, string> = {
   dark: "bg-glass-bg border-glass-border hover:shadow-glass-lg hover:border-brand-primary/30",
-  light: "bg-glass-bg-light border-glass-border hover:shadow-glass-lg hover:border-brand-primary/30",
+  light: "
+  ",
 }
 
 const CardGlass = React.forwardRef<HTMLDivElement, CardGlassProps>(
