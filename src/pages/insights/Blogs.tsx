@@ -22,6 +22,46 @@ const Blogs = () => {
    */
   const blogPosts = [
     {
+      id: "modern-analytics-platform-data-strategy-blueprint",
+      img: blogImg2,
+      title:
+        "The Modern Analytics Platform: A Blueprint for Your Data Strategy",
+      excerpt:
+        "Don't let your data strategy fail. Discover a pragmatic blueprint for building a modern, cloud-native analytics platform that powers business intelligence and drives real ROI from your AI investments.",
+      author: "Data Engineering Team",
+      publishDate: "January 28, 2025",
+      readTime: "15 min read",
+      category: "Data Engineering",
+      featured: true,
+      metaTitle:
+        "The Modern Analytics Platform: An Enterprise Blueprint for Your Data Strategy",
+      metaDescription:
+        "Don't let your data strategy fail. Discover a pragmatic blueprint for building a modern, cloud-native analytics platform that powers business intelligence and drives real ROI from your AI investments.",
+      tags: [
+        "Modern Analytics Platform",
+        "Data Strategy",
+        "Enterprise Data Architecture",
+        "Data Modernization",
+        "Business Intelligence",
+        "AI-Ready Infrastructure",
+      ],
+      content: {
+        summary:
+          "Comprehensive blueprint for building modern analytics platforms that transform data assets into strategic resources for AI and business intelligence success.",
+        sections: [
+          "The Readiness Reality Check: Why Most Data & AI Initiatives Fail",
+          "Assessing Your Data Maturity: The AGILE Framework", 
+          "The Blueprint for a Modern Analytics Platform: A Four-Step Journey",
+          "Case Study in Transformation: Modernizing Parking Management for the Cloud Era",
+          "Frequently Asked Questions (FAQ)",
+        ],
+        cta: {
+          primary: "Schedule a Data Readiness Assessment with Our Experts",
+          secondary: "Download Data Strategy Blueprint Guide (PDF)",
+        },
+      },
+    },
+    {
       id: "ai-change-management-playbook",
       img: blogImg2,
       title:
@@ -32,7 +72,7 @@ const Blogs = () => {
       publishDate: "January 25, 2025",
       readTime: "12 min read",
       category: "AI Strategy",
-      featured: true,
+      featured: false,
       metaTitle:
         "The AI Change Management Playbook: Modernizing Legacy Systems with Purpose",
       metaDescription:

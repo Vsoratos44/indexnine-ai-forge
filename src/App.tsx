@@ -65,6 +65,9 @@ const AiChangeManagementPlaybook = lazy(
 const AgenticAiEnterpriseFuture = lazy(
   () => import("./pages/insights/blog/AgenticAiEnterpriseFuture")
 );
+const ModernAnalyticsPlatformDataStrategy = lazy(
+  () => import("./pages/insights/blog/ModernAnalyticsPlatformDataStrategy")
+);
 const BlogPost = lazy(() => import("./pages/insights/blog/BlogPost"));
 
 // Case Study Pages - Lazy loaded
@@ -218,6 +221,10 @@ const App = () => {
                 <Route
                   path="/insights/blogs/agentic-ai-enterprise-future"
                   element={<AgenticAiEnterpriseFuture />}
+                />
+                <Route
+                  path="/insights/blogs/modern-analytics-platform-data-strategy-blueprint"
+                  element={<ModernAnalyticsPlatformDataStrategy />}
                 />
                 <Route
                   path="/insights/blogs/ai-assisted-software-engineering-cursor"
