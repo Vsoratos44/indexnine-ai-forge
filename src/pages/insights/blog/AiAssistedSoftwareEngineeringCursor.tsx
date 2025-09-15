@@ -234,20 +234,20 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                     </p>
 
                     <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                      <h3 className="text-xl font-bold text-foreground-dark mb-4">
+                      <h3 className="text-xl font-bold text-foreground mb-4">
                         For teams working with complex frameworks like React, Cursor is a game-changer
                       </h3>
-                      <p className="text-foreground-dark-muted mb-6">
+                      <p className="text-foreground-muted mb-6">
                         Instead of generic advice, developers get intelligent, codebase-aware support for tasks like:
                       </p>
                       <div className="space-y-4">
                         <div className="flex items-start gap-3">
                           <Code className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <div>
-                            <h4 className="font-semibold text-foreground-dark mb-2">
+                            <h4 className="font-semibold text-foreground mb-2">
                               Rapid Component Generation
                             </h4>
-                            <p className="text-foreground-dark-muted text-sm">
+                            <p className="text-foreground-muted text-sm">
                               Creating new React components with associated CSS modules and test files from a single, natural language prompt.
                             </p>
                           </div>
@@ -255,10 +255,10 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                         <div className="flex items-start gap-3">
                           <Wrench className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <div>
-                            <h4 className="font-semibold text-foreground-dark mb-2">
+                            <h4 className="font-semibold text-foreground mb-2">
                               Automated Refactoring
                             </h4>
-                            <p className="text-foreground-dark-muted text-sm">
+                            <p className="text-foreground-muted text-sm">
                               Highlighting a block of code and asking the AI to refactor it for better performance or readability based on established best practices.
                             </p>
                           </div>
@@ -266,10 +266,10 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                         <div className="flex items-start gap-3">
                           <CheckCircle className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <div>
-                            <h4 className="font-semibold text-foreground-dark mb-2">
+                            <h4 className="font-semibold text-foreground mb-2">
                               In-line Documentation
                             </h4>
-                            <p className="text-foreground-dark-muted text-sm">
+                            <p className="text-foreground-muted text-sm">
                               Generating comments and documentation that are aware of the code's logic and purpose.
                             </p>
                           </div>
@@ -299,7 +299,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                     </p>
 
                     <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                      <h3 className="text-xl font-bold text-foreground-dark mb-4">
+                      <h3 className="text-xl font-bold text-foreground mb-4">
                         The outcomes? Exciting and full of potential — with just a bit of room to grow!
                       </h3>
                     </div>
@@ -366,20 +366,20 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                     </p>
 
                     <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                      <h3 className="text-xl font-bold text-foreground-dark mb-4">
+                      <h3 className="text-xl font-bold text-foreground mb-4">
                         These aren't simple prompts. They are curated instruction sets that teach the AI to understand our specific architectural patterns, coding styles, and testing methodologies.
                       </h3>
-                      <p className="text-foreground-dark-muted mb-6">
+                      <p className="text-foreground-muted mb-6">
                         For React development, this means we can:
                       </p>
                       <div className="space-y-4">
                         <div className="flex items-start gap-3">
                           <Target className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <div>
-                            <h4 className="font-semibold text-foreground-dark mb-2">
+                            <h4 className="font-semibold text-foreground mb-2">
                               Generate Entire Component Structures
                             </h4>
-                            <p className="text-foreground-dark-muted text-sm">
+                            <p className="text-foreground-muted text-sm">
                               Create new, complex React components complete with CSS modules, Storybook files, and unit tests from a single, expertly crafted command.
                             </p>
                           </div>
@@ -387,10 +387,10 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                         <div className="flex items-start gap-3">
                           <Zap className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <div>
-                            <h4 className="font-semibold text-foreground-dark mb-2">
+                            <h4 className="font-semibold text-foreground mb-2">
                               Execute Codebase-Aware Refactoring
                             </h4>
-                            <p className="text-foreground-dark-muted text-sm">
+                            <p className="text-foreground-muted text-sm">
                               Apply our specific performance and readability best practices across the entire application, ensuring consistency and reducing technical debt.
                             </p>
                           </div>
@@ -398,10 +398,10 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                         <div className="flex items-start gap-3">
                           <CheckCircle className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <div>
-                            <h4 className="font-semibold text-foreground-dark mb-2">
+                            <h4 className="font-semibold text-foreground mb-2">
                               Enforce Quality with Precision
                             </h4>
-                            <p className="text-foreground-dark-muted text-sm">
+                            <p className="text-foreground-muted text-sm">
                               Go beyond generic linting to document and enhance code with a deep understanding of the project's unique context.
                             </p>
                           </div>
@@ -562,10 +562,10 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
                     <div className="grid md:grid-cols-2 gap-8">
                       <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                        <h3 className="text-xl font-bold text-foreground-dark mb-4">
+                        <h3 className="text-xl font-bold text-foreground mb-4">
                           For the Startup Builder & Technical Founder
                         </h3>
-                        <p className="text-foreground-dark-muted mb-6">
+                        <p className="text-foreground-muted mb-6">
                           You want to build, and you want to do it fast. Our framework provides a direct path to mastery. We teach you not just what the tool does, but how to develop your own "secret sauce" to accelerate your MVP.
                         </p>
                         <Button variant="btnPrimary" size="sm" asChild>
@@ -576,10 +576,10 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       </div>
 
                       <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                        <h3 className="text-xl font-bold text-foreground-dark mb-4">
+                        <h3 className="text-xl font-bold text-foreground mb-4">
                           For the Enterprise & Growth-Stage Leader
                         </h3>
-                        <p className="text-foreground-dark-muted mb-6">
+                        <p className="text-foreground-muted mb-6">
                           You need to modernize your tech stack and accelerate outcomes without disrupting operations. We offer our AI Pods and AI Enablement services as your R&D and innovation partner.
                         </p>
                         <Button variant="btnPrimary" size="sm" asChild>
