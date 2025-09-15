@@ -68,6 +68,9 @@ const AgenticAiEnterpriseFuture = lazy(
 const ModernAnalyticsPlatformDataStrategy = lazy(
   () => import("./pages/insights/blog/ModernAnalyticsPlatformDataStrategy")
 );
+const AiAssistedSoftwareEngineeringCursor = lazy(
+  () => import("./pages/insights/blog/AiAssistedSoftwareEngineeringCursor")
+);
 const BlogPost = lazy(() => import("./pages/insights/blog/BlogPost"));
 
 // Case Study Pages - Lazy loaded
@@ -228,7 +231,7 @@ const App = () => {
                 />
                 <Route
                   path="/insights/blogs/ai-assisted-software-engineering-cursor"
-                  element={<BlogPost />}
+                  element={<AiAssistedSoftwareEngineeringCursor />}
                 />
                 <Route
                   path="/insights/blog/microservices-vs-monolith-decision-guide"
