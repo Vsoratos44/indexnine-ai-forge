@@ -214,7 +214,7 @@ const App = () => {
 
                 {/* Individual Blog Post Routes - Lazy loaded */}
                 <Route
-                  path="/insights/blogs/robot-framework-vs-playwright-automation"
+                  path="/insights/blogs/robot-framework-vs-playwright"
                   element={<RobotFrameworkVsPlaywright />}
                 />
                 <Route
@@ -226,23 +226,23 @@ const App = () => {
                   element={<AgenticAiEnterpriseFuture />}
                 />
                 <Route
-                  path="/insights/blogs/modern-analytics-platform-data-strategy-blueprint"
+                  path="/insights/blogs/modern-analytics-platform"
                   element={<ModernAnalyticsPlatformDataStrategy />}
                 />
                 <Route
-                  path="/insights/blogs/ai-assisted-software-engineering-cursor"
+                  path="/insights/blogs/ai-assisted-software-engineering"
                   element={<AiAssistedSoftwareEngineeringCursor />}
                 />
                 <Route
-                  path="/insights/blog/microservices-vs-monolith-decision-guide"
+                  path="/insights/blogs/microservices-vs-monolith"
                   element={<BlogPost />}
                 />
                 <Route
-                  path="/insights/blog/modern-data-platforms-enterprise-guide"
+                  path="/insights/blogs/modern-data-platforms"
                   element={<BlogPost />}
                 />
                 <Route
-                  path="/insights/blog/security-first-development-practices"
+                  path="/insights/blogs/security-first-development"
                   element={<BlogPost />}
                 />
                 <Route path="/insights/blogs/:slug" element={<BlogPost />} />

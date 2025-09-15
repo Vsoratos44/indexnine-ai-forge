@@ -773,7 +773,7 @@ const QualityEngineering = () => {
             <div className="text-center mt-8">
               <Button variant="btnPrimary" asChild>
                 <a
-                  href="/insights/blogs/robot-framework-vs-playwright-automation"
+                  href="/insights/blogs/robot-framework-vs-playwright"
                   className="no-underline"
                 >
                   Read Full Comparison Blog

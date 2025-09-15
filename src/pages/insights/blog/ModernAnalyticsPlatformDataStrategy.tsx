@@ -43,7 +43,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
     description:
       "Don't let your data strategy fail. Discover a pragmatic blueprint for building a modern, cloud-native analytics platform that powers business intelligence and drives real ROI from your AI investments.",
     canonicalUrl:
-      "https://www.indexnine.com/insights/blogs/modern-analytics-platform-data-strategy-blueprint",
+      "https://www.indexnine.com/insights/blogs/modern-analytics-platform",
     keywords:
       "modern analytics platform, data strategy, enterprise data blueprint, AI-ready infrastructure, data modernization, business intelligence, data quality, cloud analytics, data governance",
     ogImage:
@@ -96,7 +96,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
               "The Modern Analytics Platform: An Enterprise Blueprint for Your Data Strategy",
             description:
               "A comprehensive blueprint for building modern, cloud-native analytics platforms that transform data assets into strategic resources for AI and business intelligence.",
-            url: "https://www.indexnine.com/insights/blogs/modern-analytics-platform-data-strategy-blueprint",
+            url: "https://www.indexnine.com/insights/blogs/modern-analytics-platform",
             datePublished: "2025-01-28T00:00:00Z",
             dateModified: "2025-01-28T00:00:00Z",
             author: {
@@ -114,7 +114,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
             mainEntityOfPage: {
               "@type": "WebPage",
               "@id":
-                "https://www.indexnine.com/insights/blogs/modern-analytics-platform-data-strategy-blueprint",
+                "https://www.indexnine.com/insights/blogs/modern-analytics-platform",
             },
             image: {
               "@type": "ImageObject",
@@ -207,7 +207,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                 "@type": "ListItem",
                 position: 4,
                 name: "Modern Analytics Platform Blueprint",
-                item: "https://www.indexnine.com/insights/blogs/modern-analytics-platform-data-strategy-blueprint",
+                item: "https://www.indexnine.com/insights/blogs/modern-analytics-platform",
               },
             ],
           }),

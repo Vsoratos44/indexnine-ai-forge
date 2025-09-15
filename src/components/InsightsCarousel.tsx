@@ -53,7 +53,7 @@ const InsightsCarousel = () => {
       readTime: "12 min read",
       category: "Data Strategy",
       image: carlImgBlogQa,
-      link: "insights/blogs/modern-data-platforms-enterprise-guide",
+      link: "insights/blogs/modern-data-platforms",
     },
     {
       id: "3",
@@ -65,7 +65,7 @@ const InsightsCarousel = () => {
       readTime: "10 min read",
       category: "Quality Engineering",
       image: carlImgBlogData,
-      link: "/insights/blogs/robot-framework-vs-playwright-automation",
+      link: "/insights/blogs/robot-framework-vs-playwright",
     },
   ];
 

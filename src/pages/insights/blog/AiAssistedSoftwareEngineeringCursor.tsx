@@ -41,7 +41,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
   useSEO({
     title: "AI-Assisted Software Engineering: Boosting Developer Productivity with Cursor AI | IndexNine",
     description: "Explore how to leverage AI code generation tools like Cursor AI to accelerate React development. Learn how AI-assisted software engineering can boost startup velocity and code quality.",
-    canonicalUrl: "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering-cursor",
+    canonicalUrl: "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering",
     keywords: "AI-assisted software engineering, Cursor AI, React development, developer productivity, AI code generation, software development tools",
     ogImage: "https://www.indexnine.com/images/cursor-ai-og.jpg",
   });
@@ -90,7 +90,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
             "@type": "Article",
             headline: "Beyond Autocomplete: When AI Meets UI to Supercharge Software Engineering with Cursor AI",
             description: "Explore how to leverage AI code generation tools like Cursor AI to accelerate React development. Learn how AI-assisted software engineering can boost startup velocity and code quality.",
-            url: "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering-cursor",
+            url: "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering",
             datePublished: "2025-01-12T00:00:00Z",
             dateModified: "2025-01-12T00:00:00Z",
             author: {
@@ -107,7 +107,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering-cursor",
+              "@id": "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering",
             },
           }),
         }}

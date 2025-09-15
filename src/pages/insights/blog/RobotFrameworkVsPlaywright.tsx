@@ -42,7 +42,7 @@ const RobotFrameworkVsPlaywright = () => {
     description:
       "A comprehensive comparison of Robot Framework vs Playwright for enterprise test automation. Discover which framework best fits your business stage, team structure, and quality engineering goals with expert analysis and implementation strategies.",
     canonicalUrl:
-      "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright-automation",
+      "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright",
     keywords:
       "Robot Framework vs Playwright, test automation frameworks, enterprise QA testing, automated testing comparison, quality engineering services, test automation strategy, continuous testing, QA process optimization, software testing frameworks, test automation tools comparison",
     ogImage:
@@ -95,7 +95,7 @@ const RobotFrameworkVsPlaywright = () => {
               "Robot Framework vs Playwright: Test Automation Framework Comparison Guide",
             description:
               "A comprehensive comparison of Robot Framework vs Playwright for enterprise test automation. Expert analysis and implementation strategies for quality engineering success.",
-            url: "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright-automation",
+            url: "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright",
             datePublished: "2025-01-20T00:00:00Z",
             dateModified: "2025-01-20T00:00:00Z",
             author: {
@@ -113,7 +113,7 @@ const RobotFrameworkVsPlaywright = () => {
             mainEntityOfPage: {
               "@type": "WebPage",
               "@id":
-                "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright-automation",
+                "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright",
             },
             image: {
               "@type": "ImageObject",
@@ -205,7 +205,7 @@ const RobotFrameworkVsPlaywright = () => {
                 "@type": "ListItem",
                 position: 4,
                 name: "Robot Framework vs Playwright",
-                item: "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright-automation",
+                item: "https://www.indexnine.com/insights/blogs/robot-framework-vs-playwright",
               },
             ],
           }),

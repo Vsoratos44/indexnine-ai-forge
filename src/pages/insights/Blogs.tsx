@@ -22,7 +22,7 @@ const Blogs = () => {
    */
   const blogPosts = [
     {
-      id: "modern-analytics-platform-data-strategy-blueprint",
+      id: "modern-analytics-platform",
       img: blogImg2,
       title:
         "The Modern Analytics Platform: A Blueprint for Your Data Strategy",
@@ -101,7 +101,7 @@ const Blogs = () => {
       },
     },
     {
-      id: "robot-framework-vs-playwright-automation",
+      id: "robot-framework-vs-playwright",
       img: blogImg2,
       title:
         "Robot Framework vs. Playwright: The Test Automation Showdown Your Business Can't Ignore",
@@ -167,7 +167,7 @@ const Blogs = () => {
       },
     },
     {
-      id: "ai-assisted-software-engineering-cursor",
+      id: "ai-assisted-software-engineering",
       img: blogImg2,
       title:
         "Beyond Autocomplete: When AI Meets UI to Supercharge Software Engineering with Cursor AI",
@@ -195,7 +195,7 @@ const Blogs = () => {
       },
     },
     {
-      id: "microservices-vs-monolith-decision-guide",
+      id: "microservices-vs-monolith",
       img: blogImg2,
       title:
         "Microservices vs Monolith: Making the Right Architectural Choice for Scale",
@@ -218,7 +218,7 @@ const Blogs = () => {
       },
     },
     {
-      id: "modern-data-platforms-enterprise-guide",
+      id: "modern-data-platforms",
       img: blogImg2,
       title: "Building Modern Data Platforms: An Enterprise Architecture Guide",
       excerpt:
@@ -240,7 +240,7 @@ const Blogs = () => {
       },
     },
     {
-      id: "security-first-development-practices",
+      id: "security-first-development",
       img: blogImg2,
       title: "Security-First Development: Integrating DevSecOps from Day One",
       excerpt:

@@ -12,6 +12,90 @@ const BlogPost = () => {
 
   // Blog posts data - this should eventually come from CMS
   const blogPosts = {
+    "microservices-vs-monolith": {
+      id: "microservices-vs-monolith",
+      title: "Microservices vs Monolith: Making the Right Architectural Choice for Scale",
+      content: `
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-foreground-muted mb-8 leading-relaxed">Choosing the right architecture isn't just about technology—it's about aligning your system design with business objectives, team capabilities, and growth trajectory.</p>
+          
+          <h2 class="text-3xl font-bold text-foreground mt-12 mb-6">The Architecture Decision Framework</h2>
+          <p class="text-foreground-muted mb-6">Before diving into technical comparisons, successful architecture decisions require understanding your business context, team structure, and scalability requirements.</p>
+          
+          <div class="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border mb-8">
+            <h3 class="text-2xl font-bold text-foreground mb-4">Key Decision Factors</h3>
+            <ul class="space-y-3 text-foreground-muted">
+              <li>• <strong>Team size and experience:</strong> Monoliths work better for smaller, less experienced teams</li>
+              <li>• <strong>Business complexity:</strong> Complex domains benefit from service boundaries</li>
+              <li>• <strong>Scalability requirements:</strong> Different scaling needs favor different approaches</li>
+              <li>• <strong>Deployment frequency:</strong> Independent deployments require microservices</li>
+            </ul>
+          </div>
+        </div>
+      `,
+      author: "Architecture Team",
+      publishDate: "January 10, 2025",
+      readTime: "11 min read",
+      category: "Architecture",
+      excerpt: "A comprehensive guide to choosing between microservices and monolithic architecture based on your business stage, team size, and technical requirements.",
+      tags: ["Architecture", "Microservices", "Monolith", "Scalability"],
+    },
+    "modern-data-platforms": {
+      id: "modern-data-platforms",
+      title: "Building Modern Data Platforms: An Enterprise Architecture Guide",
+      content: `
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-foreground-muted mb-8 leading-relaxed">Modern data platforms are the backbone of data-driven organizations. Learn how to architect scalable, secure, and efficient data ecosystems.</p>
+          
+          <h2 class="text-3xl font-bold text-foreground mt-12 mb-6">Platform Architecture Fundamentals</h2>
+          <p class="text-foreground-muted mb-6">A well-designed data platform balances performance, scalability, and governance while enabling self-service analytics capabilities.</p>
+          
+          <div class="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border mb-8">
+            <h3 class="text-2xl font-bold text-foreground mb-4">Core Platform Components</h3>
+            <ul class="space-y-3 text-foreground-muted">
+              <li>• <strong>Data ingestion:</strong> Real-time and batch processing pipelines</li>
+              <li>• <strong>Storage layer:</strong> Data lakes, warehouses, and feature stores</li>
+              <li>• <strong>Processing engine:</strong> Distributed computing for transformation</li>
+              <li>• <strong>Governance:</strong> Data quality, lineage, and access controls</li>
+            </ul>
+          </div>
+        </div>
+      `,
+      author: "Data Engineering Team", 
+      publishDate: "January 8, 2025",
+      readTime: "15 min read",
+      category: "Data Engineering",
+      excerpt: "Best practices for designing and implementing scalable data platforms that drive business intelligence and enable data-driven decision making.",
+      tags: ["Data Engineering", "Analytics", "Cloud Architecture"],
+    },
+    "security-first-development": {
+      id: "security-first-development", 
+      title: "Security-First Development: Integrating DevSecOps from Day One",
+      content: `
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-foreground-muted mb-8 leading-relaxed">Security can't be an afterthought. Learn how to embed security practices throughout your development lifecycle for robust, compliant applications.</p>
+          
+          <h2 class="text-3xl font-bold text-foreground mt-12 mb-6">The DevSecOps Philosophy</h2>
+          <p class="text-foreground-muted mb-6">DevSecOps transforms security from a gatekeeper into an enabler, allowing teams to move fast while maintaining security standards.</p>
+          
+          <div class="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border mb-8">
+            <h3 class="text-2xl font-bold text-foreground mb-4">Security Integration Points</h3>
+            <ul class="space-y-3 text-foreground-muted">
+              <li>• <strong>Code analysis:</strong> Static and dynamic security scanning</li>
+              <li>• <strong>Dependencies:</strong> Vulnerability scanning and management</li>
+              <li>• <strong>Infrastructure:</strong> Infrastructure as Code security policies</li>
+              <li>• <strong>Runtime:</strong> Continuous monitoring and threat detection</li>
+            </ul>
+          </div>
+        </div>
+      `,
+      author: "Security Engineering Team",
+      publishDate: "January 5, 2025", 
+      readTime: "9 min read",
+      category: "Security",
+      excerpt: "How to integrate security considerations into every stage of the software development lifecycle, from initial architecture to production deployment.",
+      tags: ["DevSecOps", "Security", "Development"],
+    },
     "robot-framework-vs-playwright-automation": {
       id: "robot-framework-vs-playwright-automation",
       title:
@@ -151,7 +235,7 @@ const BlogPost = () => {
     { name: "Home", url: "/" },
     { name: "Insights", url: "/insights" },
     { name: "Blogs", url: "/insights/blogs" },
-    { name: currentPost.title, url: `/insights/blog/${slug}` }
+    { name: currentPost.title, url: `/insights/blogs/${slug}` }
   ];
 
   return (
@@ -159,7 +243,7 @@ const BlogPost = () => {
       title={currentPost.title}
       description={currentPost.excerpt}
       keywords={currentPost.tags.join(", ")}
-      canonicalUrl={`https://indexnine.com/insights/blog/${slug}`}
+      canonicalUrl={`https://indexnine.com/insights/blogs/${slug}`}
       ogImage="https://indexnine.com/images/blog-og.jpg"
       author={currentPost.author}
       publishedDate={new Date(currentPost.publishDate).toISOString()}
