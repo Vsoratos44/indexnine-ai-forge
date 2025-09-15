@@ -39,7 +39,9 @@ export default {
 					DEFAULT: 'hsl(var(--foreground))',
 					muted: 'hsl(var(--foreground-muted))',
 					dark: 'hsl(var(--foreground-dark))',
-					'dark-muted': 'hsl(var(--foreground-dark-muted))'
+					'dark-muted': 'hsl(var(--foreground-dark-muted))',
+					white: 'hsl(var(--foreground-white))',
+					light: 'hsl(var(--foreground-light))'
 				},
 				brand: {
 					primary: 'hsl(var(--brand-primary))',

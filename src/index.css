@@ -61,6 +61,8 @@
     --foreground-muted: 0 0% 75%; /* Muted light text */
     --foreground-dark: 234 65% 8%; /* High contrast dark text for light backgrounds */
     --foreground-dark-muted: 234 50% 25%; /* High contrast muted dark text */
+    --foreground-white: 0 0% 100%; /* Pure white text for dark backgrounds */
+    --foreground-light: 0 0% 95%; /* Light text alias */
 
     /* Card System - Consistent Dark Theme */
     --card: 234 45% 20%;
