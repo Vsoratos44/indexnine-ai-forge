@@ -93,6 +93,7 @@ const MatureCaseStudy = lazy(
 const About = lazy(() => import("./pages/company/About"));
 const WhoWeAre = lazy(() => import("./pages/company/WhoWeAre"));
 const Careers = lazy(() => import("./pages/company/Careers"));
+const Contact = lazy(() => import("./pages/company/Contact"));
 
 // Events Platform Pages - Lazy loaded
 const Events = lazy(() => import("./pages/events/Events"));
@@ -163,6 +164,8 @@ const App = () => {
                 <Route path="/company/about" element={<About />} />
 
                 <Route path="/company/careers" element={<Careers />} />
+
+                <Route path="/company/contact" element={<Contact />} />
 
                 {/* Studio Routes - Lazy loaded */}
                 {/* <Route path="/studios/ai" element={<AiStudio />} />
@@ -281,9 +284,10 @@ const App = () => {
                 />
 
                 {/* About Routes - Lazy loaded */}
-                <Route path="/about" element={<About />} />
-                <Route path="/about/who-we-are" element={<WhoWeAre />} />
-                <Route path="/about/careers" element={<Careers />} />
+                <Route path="/company/about" element={<About />} />
+                <Route path="/company/who-we-are" element={<WhoWeAre />} />
+                <Route path="/company/careers" element={<Careers />} />
+                <Route path="/company/contact" element={<Contact />} />
 
                 {/* Events Platform Routes - Lazy loaded */}
                 <Route path="/events" element={<Events />} />

@@ -270,6 +270,12 @@ const Header = () => {
                       >
                         Careers
                       </Link>
+                      <Link
+                        to="/company/contact"
+                        className={`${styles.navLink}`}
+                      >
+                        Contact us
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -563,6 +569,13 @@ const Header = () => {
                     onClick={toggleMobileMenu}
                   >
                     Careers
+                  </Link>
+                  <Link
+                    to="/company/contact"
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    Contact us
                   </Link>
                 </div>
               )}
