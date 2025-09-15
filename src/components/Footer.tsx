@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import Gptw from "../assets/images/gptw.webp";
 import Iso from "../assets/images/iso.svg";
 import Logo from "../assets/images/i9logo-logo-wht.svg";
+import styles from "../assets/css/stylesheet.module.css";
 
 const Footer = () => {
   useEffect(() => {
@@ -10,6 +11,12 @@ const Footer = () => {
     script.type = "text/javascript";
     script.src = "https://widget.clutch.co/static/js/widget.js";
     script.async = true;
+    script.onload = () => {
+      // Widget script loaded successfully
+    };
+    script.onerror = () => {
+      console.warn("Failed to load Clutch widget script");
+    };
 
     document.body.appendChild(script);
 
@@ -119,9 +126,9 @@ const Footer = () => {
               >
                 <img src={Gptw} alt="GPTW" className="h-16" />
               </a>
-              <a href="https://indexnine.com/careers/">
+              {/* <a href="https://indexnine.com/careers/">
                 <img src={Iso} alt="ISO" className="h-10" />
-              </a>
+              </a> */}
               <div className="min-w-[200px] min-h-[50px]">
                 <div
                   className="clutch-widget"
