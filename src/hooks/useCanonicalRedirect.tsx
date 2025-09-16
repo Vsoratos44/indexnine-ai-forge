@@ -20,6 +20,13 @@ interface CanonicalRedirectOptions {
 }
 
 export const useCanonicalRedirect = (options: CanonicalRedirectOptions = {}) => {
+  // Completely disable on Pages dev URLs
+  if (typeof window !== 'undefined' && 
+      window.location.hostname.includes('.pages.dev')) {
+    console.log('Canonical redirect disabled on Pages dev URL');
+    return;
+  }
+
   const {
     canonicalDomain = 'www.indexnine.com',
     enabled = true
