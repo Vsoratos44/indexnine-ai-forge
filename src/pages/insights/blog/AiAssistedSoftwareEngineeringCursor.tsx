@@ -656,7 +656,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           your own "secret sauce" to accelerate your MVP.
                         </p>
                         <Button variant="btnPrimary" size="sm" asChild>
-                          <Link to="/services/ai-enablement">
+                          <Link to="/services/ai">
                             Learn the Framework
                           </Link>
                         </Button>
@@ -673,7 +673,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           innovation partner.
                         </p>
                         <Button variant="btnPrimary" size="sm" asChild>
-                          <Link to="/services/ai-pods">Explore AI Pods</Link>
+                          <Link to="/services/ai">Explore AI Pods</Link>
                         </Button>
                       </div>
                     </div>

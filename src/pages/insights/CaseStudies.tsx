@@ -135,7 +135,7 @@ const CaseStudies = () => {
       category: "grow",
       serviceType: "Custom Software",
       homePageLink: "/#grow", // Links to grow section on homepage
-      serviceLink: "/services/ai-ml",
+      serviceLink: "/services/ai",
       detailedContent: {
         challenge:
           "Sports Interactive had built a successful B2B platform providing content solutions to sports media companies. However, they faced a critical scaling challenge: generating high-quality, contextually relevant social media content during live sporting events required significant manual effort and couldn't scale to handle multiple simultaneous events.",

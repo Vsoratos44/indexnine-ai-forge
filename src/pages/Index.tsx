@@ -42,9 +42,9 @@ const Index = () => {
   useSEO({
     title: "Enterprise Product Engineering & AI Consulting Services | Custom Software Development | IndexNine",
     description: "Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions. Transform your legacy systems with expert product lifecycle engineering.",
-    canonicalUrl: "https://indexnine.com/",
+    canonicalUrl: "https://www.indexnine.com/",
     keywords: "product engineering services, AI consulting services, custom software development, enterprise software solutions, digital transformation consulting, legacy system modernization, data engineering services, quality engineering, AI implementation, product lifecycle management, enterprise product development, software engineering consulting, technology consulting services, digital product engineering",
-    ogImage: "https://indexnine.com/images/og-homepage.png",
+    ogImage: "https://www.indexnine.com/images/og-homepage.png",
     ogType: "website",
     schemaType: "WebPage"
   });

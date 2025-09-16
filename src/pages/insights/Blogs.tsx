@@ -269,10 +269,10 @@ const Blogs = () => {
     title: "Technology Insights & Engineering Blog | IndexNine",
     description:
       "Read the latest insights on product engineering, AI development, quality assurance, and technology trends from IndexNine's expert team",
-    canonicalUrl: "https://indexnine.com/insights/blogs",
+    canonicalUrl: "https://www.indexnine.com/insights/blogs",
     keywords:
       "technology blog, product engineering, AI development, quality assurance, software engineering insights, tech trends",
-    ogImage: "https://indexnine.com/images/blog-og.jpg",
+    ogImage: "https://www.indexnine.com/images/blog-og.jpg",
   });
 
   return (

@@ -164,7 +164,7 @@ export const useSEO = ({
           name: 'IndexNine Technologies',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://indexnine.com/logo.png'
+            url: 'https://www.indexnine.com/logo.png'
           }
         },
         mainEntityOfPage: {

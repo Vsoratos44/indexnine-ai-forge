@@ -117,7 +117,7 @@ const CloudInfrastructureAutomationTerraform = () => {
             name: "IndexNine Technologies",
             logo: {
               "@type": "ImageObject",
-              url: "https://indexnine.com/logo.png",
+              url: "https://www.indexnine.com/logo.png",
             },
           },
           datePublished: "2025-01-30",
@@ -125,10 +125,10 @@ const CloudInfrastructureAutomationTerraform = () => {
           mainEntityOfPage: {
             "@type": "WebPage",
             "@id":
-              "https://indexnine.com/insights/blogs/cloud-infrastructure-automation-terraform",
+              "https://www.indexnine.com/insights/blogs/cloud-infrastructure-automation-terraform",
           },
           image:
-            "https://indexnine.com/images/cloud-infrastructure-automation-og.jpg",
+            "https://www.indexnine.com/images/cloud-infrastructure-automation-og.jpg",
           articleSection: "Cloud Infrastructure",
           keywords: [
             "cloud infrastructure automation",
@@ -253,31 +253,31 @@ const CloudInfrastructureAutomationTerraform = () => {
               "@type": "ListItem",
               position: 1,
               name: "Home",
-              item: "https://indexnine.com/",
+              item: "https://www.indexnine.com/",
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "Insights",
-              item: "https://indexnine.com/insights",
+              item: "https://www.indexnine.com/insights",
             },
             {
               "@type": "ListItem",
               position: 3,
               name: "Blog",
-              item: "https://indexnine.com/insights/blogs",
+              item: "https://www.indexnine.com/insights/blogs",
             },
             {
               "@type": "ListItem",
               position: 4,
               name: "Cloud Infrastructure",
-              item: "https://indexnine.com/insights/blogs?category=cloud-infrastructure",
+              item: "https://www.indexnine.com/insights/blogs?category=cloud-infrastructure",
             },
             {
               "@type": "ListItem",
               position: 5,
               name: "Cloud Infrastructure Automation with Terraform",
-              item: "https://indexnine.com/insights/blogs/cloud-infrastructure-automation-terraform",
+              item: "https://www.indexnine.com/insights/blogs/cloud-infrastructure-automation-terraform",
             },
           ],
         })}

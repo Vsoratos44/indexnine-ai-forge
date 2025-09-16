@@ -81,7 +81,7 @@ const CustomSoftware = () => {
     title: "Custom Software Development Services | Pragmatic Engineering for Ventures & Enterprises | Indexnine",
     description: "Indexnine engineers mission-critical software. Our integrated studios deliver full-stack web, mobile, and enterprise applications using a Pragmatic AI Engineering approach to ensure scalability, security, and measurable business outcomes.",
     keywords: "custom software development services, enterprise application development, saas development services, full-stack development company, pragmatic engineering, product modernization, cloud-native development, integrated software teams, mobile application development, web application services",
-    canonicalUrl: "https://indexnine.com/services/custom-software",
+    canonicalUrl: "https://www.indexnine.com/services/custom-software",
   });
 
   return (
@@ -94,15 +94,15 @@ const CustomSoftware = () => {
       <WebPageSchema
         title="Custom Software Development Services | Pragmatic Engineering for Ventures & Enterprises | Indexnine"
         description="Indexnine engineers mission-critical software. Our integrated studios deliver full-stack web, mobile, and enterprise applications using a Pragmatic AI Engineering approach to ensure scalability, security, and measurable business outcomes."
-        url="https://indexnine.com/services/custom-software"
+        url="https://www.indexnine.com/services/custom-software"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://indexnine.com/" },
-          { name: "Services", url: "https://indexnine.com/services" },
+          { name: "Home", url: "https://www.indexnine.com/" },
+          { name: "Services", url: "https://www.indexnine.com/services" },
           {
             name: "Custom Software Development",
-            url: "https://indexnine.com/services/custom-software",
+            url: "https://www.indexnine.com/services/custom-software",
           },
         ]}
       />

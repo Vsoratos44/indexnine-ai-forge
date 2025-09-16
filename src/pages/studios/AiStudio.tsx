@@ -59,14 +59,14 @@ const AiStudio = () => {
       <WebPageSchema
         title="AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine"
         description="Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services."
-        url="https://indexnine.com/studios/ai"
+        url="https://www.indexnine.com/studios/ai"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Studios", url: "https://indexnine.com/studios" },
+          { name: "Studios", url: "https://www.indexnine.com/studios" },
           {
             name: "AI Studio",
-            url: "https://indexnine.com/studios/ai",
+            url: "https://www.indexnine.com/studios/ai",
           },
         ]}
       />

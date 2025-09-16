@@ -658,7 +658,7 @@ const AiChangeManagementPlaybook = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="btnPrimary" size="lg" asChild>
-                  <Link to="/services/ai-enablement">
+                  <Link to="/services/consulting">
                     Schedule an AI Enablement Strategy Session
                     <ExternalLink className="h-4 w-4 ml-2" />
                   </Link>

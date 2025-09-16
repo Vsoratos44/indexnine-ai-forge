@@ -125,7 +125,7 @@ const App = () => (
                 element={<DataEngineering />}
               />
               <Route
-                path="/services/qa-engineering"
+                path="/services/quality-engineering"
                 element={<QaEngineering />}
               />
               <Route
