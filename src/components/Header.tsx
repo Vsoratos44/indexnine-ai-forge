@@ -90,7 +90,7 @@ const Header = () => {
     ${
       scrolledHeaderToVh
         ? "bg-[#00000050] backdrop-blur-md border-border/40 shadow-lg"
-        : "bg-[#00000050] border-transparent backdrop-blur-md border-border/40 shadow-md"
+        : "bg-transparent backdrop-blur-md border-transparent"
     }`}
           >
             <div className="flex items-center justify-between h-12">
