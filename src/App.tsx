@@ -71,7 +71,15 @@ const ModernAnalyticsPlatformDataStrategy = lazy(
 const AiAssistedSoftwareEngineeringCursor = lazy(
   () => import("./pages/insights/blog/AiAssistedSoftwareEngineeringCursor")
 );
-const BlogPost = lazy(() => import("./pages/insights/blog/BlogPost"));
+const MicroservicesVsMonolith = lazy(
+  () => import("./pages/insights/blog/MicroservicesVsMonolith")
+);
+const ModernDataPlatforms = lazy(
+  () => import("./pages/insights/blog/ModernDataPlatforms")
+);
+const SecurityFirstDevelopment = lazy(
+  () => import("./pages/insights/blog/SecurityFirstDevelopment")
+);
 
 // Case Study Pages - Lazy loaded
 // const GenesysModernization = lazy(
@@ -250,17 +258,16 @@ const App = () => {
                 />
                 <Route
                   path="/insights/blogs/microservices-vs-monolith"
-                  element={<BlogPost />}
+                  element={<MicroservicesVsMonolith />}
                 />
                 <Route
                   path="/insights/blogs/modern-data-platforms"
-                  element={<BlogPost />}
+                  element={<ModernDataPlatforms />}
                 />
                 <Route
                   path="/insights/blogs/security-first-development"
-                  element={<BlogPost />}
+                  element={<SecurityFirstDevelopment />}
                 />
-                <Route path="/insights/blogs/:slug" element={<BlogPost />} />
 
                 {/* Individual Case Study Routes - Lazy loaded */}
                 <Route
