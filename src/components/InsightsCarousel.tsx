@@ -45,19 +45,6 @@ const InsightsCarousel = () => {
     {
       id: "2",
       type: "Blogs",
-      title:
-        "The Modern Analytics Platform: A Blueprint for Your Data Strategy",
-      description:
-        "Essential patterns and architecture for building scalable, modern analytics platforms that drive business value.",
-      date: "January 12, 2025",
-      readTime: "12 min read",
-      category: "Data Strategy",
-      image: carlImgBlogQa,
-      link: "insights/blogs/modern-data-platforms",
-    },
-    {
-      id: "3",
-      type: "Blogs",
       title: "Beyond Testing: A Leader's Guide to True Quality Engineering",
       description:
         "How modern QE practices go beyond traditional testing to embed quality throughout the product development lifecycle.",

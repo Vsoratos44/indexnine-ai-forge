@@ -217,50 +217,6 @@ const Blogs = () => {
           "Strategic framework for architectural decision-making, covering when to choose microservices vs monoliths, migration strategies, and business impact considerations.",
       },
     },
-    {
-      id: "modern-data-platforms",
-      img: blogImg2,
-      title: "Building Modern Data Platforms: An Enterprise Architecture Guide",
-      excerpt:
-        "Best practices for designing and implementing scalable data platforms that drive business intelligence and enable data-driven decision making across your organization.",
-      author: "Data Engineering Team",
-      publishDate: "January 8, 2025",
-      readTime: "15 min read",
-      category: "Data Engineering",
-      featured: false,
-      tags: [
-        "Data Platforms",
-        "Cloud Architecture",
-        "Business Intelligence",
-        "Analytics",
-      ],
-      content: {
-        summary:
-          "Complete guide to modern data platform architecture, covering cloud-native solutions, real-time processing, and enterprise security implementations.",
-      },
-    },
-    {
-      id: "security-first-development",
-      img: blogImg2,
-      title: "Security-First Development: Integrating DevSecOps from Day One",
-      excerpt:
-        "How to integrate security considerations into every stage of the software development lifecycle, from initial architecture to production deployment.",
-      author: "Security Engineering Team",
-      publishDate: "January 5, 2025",
-      readTime: "9 min read",
-      category: "Security",
-      featured: false,
-      tags: [
-        "DevSecOps",
-        "Application Security",
-        "Secure Development",
-        "Compliance",
-      ],
-      content: {
-        summary:
-          "Practical guide to implementing security-first development practices, including automated security testing, threat modeling, and compliance frameworks.",
-      },
-    },
   ];
 
   // Implement comprehensive SEO for Blog listing page
