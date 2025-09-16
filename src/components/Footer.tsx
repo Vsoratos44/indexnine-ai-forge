@@ -128,9 +128,8 @@ const Footer = () => {
               >
                 <img src={Gptw} alt="GPTW" className="h-16" />
               </a>
-              {/* <a href="https://indexnine.com/careers/">
-                <img src={Iso} alt="ISO" className="h-10" />
-              </a> */}
+              <img src={Iso} alt="ISO" className="h-10" />
+
               <div className="min-w-[200px] min-h-[50px]">
                 <div
                   className="clutch-widget"
@@ -139,7 +138,8 @@ const Footer = () => {
                   data-height="50"
                   data-nofollow="false"
                   data-expandifr="true"
-                  data-scale="100"
+                  data-primary-color="#505dfd"
+                  data-header-color="#00010a"
                   data-clutchcompany-id="2249150"
                 ></div>
               </div>
