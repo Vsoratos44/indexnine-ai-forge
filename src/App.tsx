@@ -74,8 +74,8 @@ const AiAssistedSoftwareEngineeringCursor = lazy(
 const MicroservicesVsMonolith = lazy(
   () => import("./pages/insights/blog/MicroservicesVsMonolith")
 );
-const SnapMvpCloudInfrastructureAccelerator = lazy(
-  () => import("./pages/insights/blog/SnapMvpCloudInfrastructureAccelerator")
+const CloudInfrastructureAutomationTerraform = lazy(
+  () => import("./pages/insights/blog/CloudInfrastructureAutomationTerraform")
 );
 
 // Case Study Pages - Lazy loaded
@@ -258,8 +258,13 @@ const App = () => {
                   element={<MicroservicesVsMonolith />}
                 />
                 <Route
+                  path="/insights/blogs/cloud-infrastructure-automation-terraform"
+                  element={<CloudInfrastructureAutomationTerraform />}
+                />
+                {/* Legacy redirect for old snap-mvp URL */}
+                <Route
                   path="/insights/blogs/snap-mvp-cloud-infrastructure-accelerator"
-                  element={<SnapMvpCloudInfrastructureAccelerator />}
+                  element={<CloudInfrastructureAutomationTerraform />}
                 />
 
                 {/* Individual Case Study Routes - Lazy loaded */}

@@ -22,44 +22,47 @@ const Blogs = () => {
    */
   const blogPosts = [
     {
-      id: "snap-mvp-cloud-infrastructure-accelerator",
+      id: "cloud-infrastructure-automation-terraform",
       img: blogImg2,
       title:
-        "The Startup Dilemma Is a Myth: You Don't Have to Choose Between Speed and Technical Debt",
+        "Cloud Infrastructure Automation: Deploy Production-Ready AWS Environments in Minutes",
       excerpt:
-        "Manual cloud setup is slow, risky, and expensive. Discover Snap.MVP, the Indexnine accelerator that deploys secure, scalable infrastructure on AWS, GCP, or Azure in minutes using Terraform.",
+        "Skip weeks of manual cloud setup. Deploy production-ready AWS, GCP, or Azure infrastructure in 10 minutes with Terraform automation. Get secure, scalable environments instantly.",
       author: "Cloud Architecture Team",
       publishDate: "January 30, 2025",
       readTime: "15 min read",
       category: "Cloud Infrastructure",
       featured: true,
       metaTitle:
-        "Weeks to Minutes: Deploying Production-Ready Cloud Infrastructure with Snap.MVP",
+        "Cloud Infrastructure Automation: Deploy AWS with Terraform in Minutes | Snap.MVP",
       metaDescription:
-        "Manual cloud setup is slow, risky, and expensive. Discover Snap.MVP, the Indexnine accelerator that deploys secure, scalable infrastructure on AWS, GCP, or Azure in minutes using Terraform.",
+        "Skip weeks of manual cloud setup. Deploy production-ready AWS, GCP, or Azure infrastructure in 10 minutes with Terraform automation. Get secure, scalable environments instantly.",
       tags: [
         "cloud infrastructure automation",
-        "Infrastructure as Code", 
-        "Terraform",
-        "AWS Well-Architected Framework",
-        "MVP deployment",
-        "startup infrastructure",
-        "Sprint Zero",
-        "cloud cost optimization"
+        "terraform aws deployment", 
+        "infrastructure as code tutorial",
+        "aws well-architected framework",
+        "cloud deployment automation",
+        "production ready infrastructure",
+        "terraform vs manual cloud configuration",
+        "aws infrastructure deployment best practices"
       ],
       content: {
         summary:
-          "Comprehensive guide to rapid cloud infrastructure deployment using Snap.MVP, covering the Iron Triangle solution, Terraform automation, and production-ready architecture patterns.",
+          "Comprehensive guide to cloud infrastructure automation using Terraform, covering deployment strategies, cost optimization, and AWS Well-Architected Framework implementation.",
         sections: [
+          "Executive Summary: Key Takeaways",
+          "Manual vs Automated Infrastructure Deployment",
           "What is Snap.MVP? An Accelerator for a Production-Ready Foundation",
-          "The Four Pillars of Accelerated Deployment: How Snap.MVP Solves the Iron Triangle",
+          "How to Deploy Cloud Infrastructure in 10 Minutes",
+          "The Four Pillars of Accelerated Deployment",
           "Under the Hood: The Five Layers of a Well-Architected Cloud Environment",
           "How Our Clients Leverage Snap.MVP for a Strategic Advantage",
           "Frequently Asked Questions (FAQ)",
         ],
         cta: {
-          primary: "Schedule Infrastructure Assessment",
-          secondary: "Download Framework Guide (PDF)",
+          primary: "Book a Product Launch Assessment Today",
+          secondary: "Download Infrastructure Guide (PDF)",
         },
       },
     },
