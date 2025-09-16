@@ -39,10 +39,14 @@ const AiAssistedSoftwareEngineeringCursor = () => {
   const [expandedFAQ, setExpandedFAQ] = useState(null);
 
   useSEO({
-    title: "AI-Assisted Software Engineering: Boosting Developer Productivity with Cursor AI | IndexNine",
-    description: "Explore how to leverage AI code generation tools like Cursor AI to accelerate React development. Learn how AI-assisted software engineering can boost startup velocity and code quality.",
-    canonicalUrl: "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering",
-    keywords: "AI-assisted software engineering, Cursor AI, React development, developer productivity, AI code generation, software development tools",
+    title:
+      "AI-Assisted Software Engineering: Boosting Developer Productivity with Cursor AI | IndexNine",
+    description:
+      "Explore how to leverage AI code generation tools like Cursor AI to accelerate React development. Learn how AI-assisted software engineering can boost startup velocity and code quality.",
+    canonicalUrl:
+      "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering",
+    keywords:
+      "AI-assisted software engineering, Cursor AI, React development, developer productivity, AI code generation, software development tools",
     ogImage: "https://www.indexnine.com/images/cursor-ai-og.jpg",
   });
 
@@ -88,8 +92,10 @@ const AiAssistedSoftwareEngineeringCursor = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Beyond Autocomplete: When AI Meets UI to Supercharge Software Engineering with Cursor AI",
-            description: "Explore how to leverage AI code generation tools like Cursor AI to accelerate React development. Learn how AI-assisted software engineering can boost startup velocity and code quality.",
+            headline:
+              "Beyond Autocomplete: When AI Meets UI to Supercharge Software Engineering with Cursor AI",
+            description:
+              "Explore how to leverage AI code generation tools like Cursor AI to accelerate React development. Learn how AI-assisted software engineering can boost startup velocity and code quality.",
             url: "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering",
             datePublished: "2025-01-12T00:00:00Z",
             dateModified: "2025-01-12T00:00:00Z",
@@ -107,7 +113,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering",
+              "@id":
+                "https://www.indexnine.com/insights/blogs/ai-assisted-software-engineering",
             },
           }),
         }}
@@ -176,16 +183,16 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                   </li>
                 ))}
               </ul>
-              
-              <div className={`px-8 py-12 rounded-2xl my-8 text-center text-white ${styles.sideCardBg}`}>
-                <h3 className="text-3xl font-bold">AI Enablement</h3>
+
+              {/* <div className={`px-8 py-12 rounded-2xl my-8 text-center text-white ${styles.sideCardBg}`}>
+                <h3 className="text-3xl font-semibold">AI Enablement</h3>
                 <p className="text-xl py-8">
                   Ready to unlock your team's potential with AI-assisted development? Get expert guidance on implementation.
                 </p>
                 <Button type="submit" size="lg" variant="btnSecondary">
                   Get Started
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -197,17 +204,29 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                 <div className="max-w-5xl mx-auto pb-8">
                   <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed mb-8">
                     <h4 className="font-semibold text-xl">
-                      Developer productivity isn't just a metric; it's the engine of your company's growth. Every hour saved on boilerplate code is an hour invested in your product's competitive edge.
+                      Developer productivity isn't just a metric; it's the
+                      engine of your company's growth. Every hour saved on
+                      boilerplate code is an hour invested in your product's
+                      competitive edge.
                     </h4>
                     <p>
-                      The rise of AI code generation tools promises a revolution in efficiency, but the landscape can be noisy. We've all seen demos suggesting AI is a magic button for creating perfect code overnight. Yet, for many tech leaders, the reality is a frustrating cycle of failed experiments.
+                      The rise of AI code generation tools promises a revolution
+                      in efficiency, but the landscape can be noisy. We've all
+                      seen demos suggesting AI is a magic button for creating
+                      perfect code overnight. Yet, for many tech leaders, the
+                      reality is a frustrating cycle of failed experiments.
                     </p>
                     <p>
-                      The truth is, scaling an engineering team requires more than just giving developers a new tool. It requires a strategic framework where context-aware AI becomes a true partner in the development lifecycle.
+                      The truth is, scaling an engineering team requires more
+                      than just giving developers a new tool. It requires a
+                      strategic framework where context-aware AI becomes a true
+                      partner in the development lifecycle.
                     </p>
                     <div className="bg-gradient-to-r from-brand-primary/5 to-brand-purple/5 border-l-4 border-brand-primary p-6 rounded-r-lg my-8">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                        TL;DR - Is Cursor perfect? Not quite. Is it valuable in our day to day? Without a doubt, the lessons we gained were worth every stumble.
+                        TL;DR - Is Cursor perfect? Not quite. Is it valuable in
+                        our day to day? Without a doubt, the lessons we gained
+                        were worth every stumble.
                       </h3>
                     </div>
                   </div>
@@ -230,15 +249,20 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       Can AI Really Help Build UI?
                     </h4>
                     <p>
-                      We started with a question every modern frontend team is asking: Can AI help turn Figma or existing designs into production-ready React components? Cursor AI promised just that—and we were curious (and skeptical).
+                      We started with a question every modern frontend team is
+                      asking: Can AI help turn Figma or existing designs into
+                      production-ready React components? Cursor AI promised just
+                      that—and we were curious (and skeptical).
                     </p>
 
                     <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                      <h3 className="text-xl font-bold text-foreground mb-4">
-                        For teams working with complex frameworks like React, Cursor is a game-changer
+                      <h3 className="text-xl font-semibold text-foreground mb-4">
+                        For teams working with complex frameworks like React,
+                        Cursor is a game-changer
                       </h3>
                       <p className="text-foreground-muted mb-6">
-                        Instead of generic advice, developers get intelligent, codebase-aware support for tasks like:
+                        Instead of generic advice, developers get intelligent,
+                        codebase-aware support for tasks like:
                       </p>
                       <div className="space-y-4">
                         <div className="flex items-start gap-3">
@@ -248,7 +272,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                               Rapid Component Generation
                             </h4>
                             <p className="text-foreground-muted text-sm">
-                              Creating new React components with associated CSS modules and test files from a single, natural language prompt.
+                              Creating new React components with associated CSS
+                              modules and test files from a single, natural
+                              language prompt.
                             </p>
                           </div>
                         </div>
@@ -259,7 +285,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                               Automated Refactoring
                             </h4>
                             <p className="text-foreground-muted text-sm">
-                              Highlighting a block of code and asking the AI to refactor it for better performance or readability based on established best practices.
+                              Highlighting a block of code and asking the AI to
+                              refactor it for better performance or readability
+                              based on established best practices.
                             </p>
                           </div>
                         </div>
@@ -270,7 +298,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                               In-line Documentation
                             </h4>
                             <p className="text-foreground-muted text-sm">
-                              Generating comments and documentation that are aware of the code's logic and purpose.
+                              Generating comments and documentation that are
+                              aware of the code's logic and purpose.
                             </p>
                           </div>
                         </div>
@@ -278,7 +307,10 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                     </div>
 
                     <p>
-                      The core advantage is the reduction in context switching. Developers can ask questions, generate code, and fix errors within the editor, creating a seamless and highly productive workflow.
+                      The core advantage is the reduction in context switching.
+                      Developers can ask questions, generate code, and fix
+                      errors within the editor, creating a seamless and highly
+                      productive workflow.
                     </p>
                   </div>
                 </div>
@@ -295,12 +327,16 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       The Good, the Glitchy, and the Fixable
                     </h4>
                     <p>
-                      To put it to the test, we picked a moderately complex dashboard design. It contains charts, tables, cards, icons, and a lot of visual nuance. Then, we asked Cursor to generate components straight from that design.
+                      To put it to the test, we picked a moderately complex
+                      dashboard design. It contains charts, tables, cards,
+                      icons, and a lot of visual nuance. Then, we asked Cursor
+                      to generate components straight from that design.
                     </p>
 
                     <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                      <h3 className="text-xl font-bold text-foreground mb-4">
-                        The outcomes? Exciting and full of potential — with just a bit of room to grow!
+                      <h3 className="text-xl font-semibold text-foreground mb-4">
+                        The outcomes? Exciting and full of potential — with just
+                        a bit of room to grow!
                       </h3>
                     </div>
 
@@ -312,16 +348,30 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                         </h4>
                         <ul className="space-y-3 text-foreground-dark-muted">
                           <li>
-                            <strong>Quickly generate a lot of code:</strong> For the UI screen, Cursor generated 8 components & around 1000 lines of code. This would be great if everything was perfect—but it invariably misses small things (like redundant icons or unnecessary props), making large generations buggy.
+                            <strong>Quickly generate a lot of code:</strong> For
+                            the UI screen, Cursor generated 8 components &
+                            around 1000 lines of code. This would be great if
+                            everything was perfect—but it invariably misses
+                            small things (like redundant icons or unnecessary
+                            props), making large generations buggy.
                           </li>
                           <li>
-                            <strong>It doesn't reuse components:</strong> Unless you explicitly tell it to, Cursor might create yet another version of a button or badge—even if you already have a perfect one in your codebase.
+                            <strong>It doesn't reuse components:</strong> Unless
+                            you explicitly tell it to, Cursor might create yet
+                            another version of a button or badge—even if you
+                            already have a perfect one in your codebase.
                           </li>
                           <li>
-                            <strong>Repetitive HTML Patterns:</strong> Cursor can occasionally generate repetitive HTML across different components without identifying shared patterns.
+                            <strong>Repetitive HTML Patterns:</strong> Cursor
+                            can occasionally generate repetitive HTML across
+                            different components without identifying shared
+                            patterns.
                           </li>
                           <li>
-                            <strong>Styling often needs finesse:</strong> Cursor gets about 80–85% of the way there. It sometimes missed exact spacing or color matching from Figma, but a second pass usually nailed it.
+                            <strong>Styling often needs finesse:</strong> Cursor
+                            gets about 80–85% of the way there. It sometimes
+                            missed exact spacing or color matching from Figma,
+                            but a second pass usually nailed it.
                           </li>
                         </ul>
                       </div>
@@ -333,16 +383,21 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                         </h4>
                         <ul className="space-y-3 text-foreground-dark-muted">
                           <li>
-                            <strong>Rapid prototyping:</strong> Getting from design to working component in minutes rather than hours
+                            <strong>Rapid prototyping:</strong> Getting from
+                            design to working component in minutes rather than
+                            hours
                           </li>
                           <li>
-                            <strong>Context awareness:</strong> Understanding existing codebase patterns and conventions
+                            <strong>Context awareness:</strong> Understanding
+                            existing codebase patterns and conventions
                           </li>
                           <li>
-                            <strong>Framework expertise:</strong> Deep knowledge of React best practices and modern patterns
+                            <strong>Framework expertise:</strong> Deep knowledge
+                            of React best practices and modern patterns
                           </li>
                           <li>
-                            <strong>Iteration speed:</strong> Quick refinements and adjustments based on feedback
+                            <strong>Iteration speed:</strong> Quick refinements
+                            and adjustments based on feedback
                           </li>
                         </ul>
                       </div>
@@ -362,12 +417,21 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       Beyond the Hype: It's Not the Tool, It's the Technique
                     </h4>
                     <p>
-                      Anyone can download Cursor AI. The real advantage comes from good prompt engineering. After weeks of rigorous experimentation, our UI architects have developed proprietary libraries of instructions—our "secret sauce"—that guide Cursor to generate sophisticated, high-quality code that aligns with our production standards.
+                      Anyone can download Cursor AI. The real advantage comes
+                      from good prompt engineering. After weeks of rigorous
+                      experimentation, our UI architects have developed
+                      proprietary libraries of instructions—our "secret
+                      sauce"—that guide Cursor to generate sophisticated,
+                      high-quality code that aligns with our production
+                      standards.
                     </p>
 
                     <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                      <h3 className="text-xl font-bold text-foreground mb-4">
-                        These aren't simple prompts. They are curated instruction sets that teach the AI to understand our specific architectural patterns, coding styles, and testing methodologies.
+                      <h3 className="text-xl font-semibold text-foreground mb-4">
+                        These aren't simple prompts. They are curated
+                        instruction sets that teach the AI to understand our
+                        specific architectural patterns, coding styles, and
+                        testing methodologies.
                       </h3>
                       <p className="text-foreground-muted mb-6">
                         For React development, this means we can:
@@ -380,7 +444,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                               Generate Entire Component Structures
                             </h4>
                             <p className="text-foreground-muted text-sm">
-                              Create new, complex React components complete with CSS modules, Storybook files, and unit tests from a single, expertly crafted command.
+                              Create new, complex React components complete with
+                              CSS modules, Storybook files, and unit tests from
+                              a single, expertly crafted command.
                             </p>
                           </div>
                         </div>
@@ -391,7 +457,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                               Execute Codebase-Aware Refactoring
                             </h4>
                             <p className="text-foreground-muted text-sm">
-                              Apply our specific performance and readability best practices across the entire application, ensuring consistency and reducing technical debt.
+                              Apply our specific performance and readability
+                              best practices across the entire application,
+                              ensuring consistency and reducing technical debt.
                             </p>
                           </div>
                         </div>
@@ -402,7 +470,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                               Enforce Quality with Precision
                             </h4>
                             <p className="text-foreground-muted text-sm">
-                              Go beyond generic linting to document and enhance code with a deep understanding of the project's unique context.
+                              Go beyond generic linting to document and enhance
+                              code with a deep understanding of the project's
+                              unique context.
                             </p>
                           </div>
                         </div>
@@ -423,14 +493,16 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       Turning AI Tools into Tangible Business Velocity
                     </h4>
                     <p>
-                      It's about guiding the AI thoughtfully through a structured, developer-centric process. Here's our strategic framework for success:
+                      It's about guiding the AI thoughtfully through a
+                      structured, developer-centric process. Here's our
+                      strategic framework for success:
                     </p>
 
                     <div className="space-y-8">
                       {/* Step 1 */}
                       <div className="bg-gradient-to-r from-blue-500/5 to-transparent border border-blue-500/20 rounded-xl p-8">
-                        <h3 className="text-xl font-bold text-foreground-dark mb-4 flex items-center gap-3">
-                          <span className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
+                          <span className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                             1
                           </span>
                           Start With a Solid Foundation
@@ -452,7 +524,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                               Component Registry
                             </h4>
                             <p className="text-sm text-foreground-dark-muted">
-                              We introduced a components_registry.json—a simple file that keeps track of all existing shared components to prevent duplication.
+                              We introduced a components_registry.json—a simple
+                              file that keeps track of all existing shared
+                              components to prevent duplication.
                             </p>
                           </div>
                         </div>
@@ -460,29 +534,32 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
                       {/* Step 2 */}
                       <div className="bg-gradient-to-r from-green-500/5 to-transparent border border-green-500/20 rounded-xl p-8">
-                        <h3 className="text-xl font-bold text-foreground-dark mb-4 flex items-center gap-3">
-                          <span className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
+                          <span className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                             2
                           </span>
                           Break Down the Design First
                         </h3>
                         <p className="text-foreground-dark-muted mb-6">
-                          Instead of throwing the full Figma screen into Cursor, we manually identified layout vs. reusable components and created base components first.
+                          Instead of throwing the full Figma screen into Cursor,
+                          we manually identified layout vs. reusable components
+                          and created base components first.
                         </p>
                         <div className="bg-white p-6 rounded-lg border border-border">
                           <h4 className="font-semibold text-foreground-dark mb-3">
                             Our Prompt
                           </h4>
                           <p className="text-sm text-foreground-dark-muted italic">
-                            "Analyze the attached design. Identify & list all the reusable & common components from that."
+                            "Analyze the attached design. Identify & list all
+                            the reusable & common components from that."
                           </p>
                         </div>
                       </div>
 
                       {/* Step 3 */}
                       <div className="bg-gradient-to-r from-purple-500/5 to-transparent border border-purple-500/20 rounded-xl p-8">
-                        <h3 className="text-xl font-bold text-foreground-dark mb-4 flex items-center gap-3">
-                          <span className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
+                          <span className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                             3
                           </span>
                           Build Bottom-Up
@@ -495,7 +572,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                                 Start Small
                               </h4>
                               <p className="text-foreground-dark-muted text-sm">
-                                Feed Cursor isolated designs—a single card, chart, or stat block—one at a time.
+                                Feed Cursor isolated designs—a single card,
+                                chart, or stat block—one at a time.
                               </p>
                             </div>
                           </div>
@@ -506,7 +584,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                                 Go Generic, Stay Reusable
                               </h4>
                               <p className="text-foreground-dark-muted text-sm">
-                                Instruct Cursor to keep components generic and flexible for reuse across different pages.
+                                Instruct Cursor to keep components generic and
+                                flexible for reuse across different pages.
                               </p>
                             </div>
                           </div>
@@ -517,7 +596,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                                 Test in Isolation
                               </h4>
                               <p className="text-foreground-dark-muted text-sm">
-                                Each component was tested independently using Storybook to spot visual bugs early.
+                                Each component was tested independently using
+                                Storybook to spot visual bugs early.
                               </p>
                             </div>
                           </div>
@@ -526,21 +606,25 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
                       {/* Step 4 */}
                       <div className="bg-gradient-to-r from-orange-500/5 to-transparent border border-orange-500/20 rounded-xl p-8">
-                        <h3 className="text-xl font-bold text-foreground-dark mb-4 flex items-center gap-3">
-                          <span className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
+                          <span className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                             4
                           </span>
                           Treat AI Like a Junior Dev
                         </h3>
                         <p className="text-foreground-dark-muted mb-6">
-                          NEVER take its output at face value. Every line of code was reviewed with a critical eye, looking for redundant markup, missed abstractions, and accessibility gaps.
+                          NEVER take its output at face value. Every line of
+                          code was reviewed with a critical eye, looking for
+                          redundant markup, missed abstractions, and
+                          accessibility gaps.
                         </p>
                         <div className="bg-white p-6 rounded-lg border border-border">
                           <h4 className="font-semibold text-foreground-dark mb-3">
                             Before Calling It "Done"
                           </h4>
                           <p className="text-sm text-foreground-dark-muted italic">
-                            "Refactor the component to make it faster & more efficient."
+                            "Refactor the component to make it faster & more
+                            efficient."
                           </p>
                         </div>
                       </div>
@@ -562,11 +646,14 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
                     <div className="grid md:grid-cols-2 gap-8">
                       <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                        <h3 className="text-xl font-bold text-foreground mb-4">
+                        <h3 className="text-xl font-semibold text-foreground mb-4">
                           For the Startup Builder & Technical Founder
                         </h3>
                         <p className="text-foreground-muted mb-6">
-                          You want to build, and you want to do it fast. Our framework provides a direct path to mastery. We teach you not just what the tool does, but how to develop your own "secret sauce" to accelerate your MVP.
+                          You want to build, and you want to do it fast. Our
+                          framework provides a direct path to mastery. We teach
+                          you not just what the tool does, but how to develop
+                          your own "secret sauce" to accelerate your MVP.
                         </p>
                         <Button variant="btnPrimary" size="sm" asChild>
                           <Link to="/services/ai-enablement">
@@ -576,26 +663,33 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       </div>
 
                       <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                        <h3 className="text-xl font-bold text-foreground mb-4">
+                        <h3 className="text-xl font-semibold text-foreground mb-4">
                           For the Enterprise & Growth-Stage Leader
                         </h3>
                         <p className="text-foreground-muted mb-6">
-                          You need to modernize your tech stack and accelerate outcomes without disrupting operations. We offer our AI Pods and AI Enablement services as your R&D and innovation partner.
+                          You need to modernize your tech stack and accelerate
+                          outcomes without disrupting operations. We offer our
+                          AI Pods and AI Enablement services as your R&D and
+                          innovation partner.
                         </p>
                         <Button variant="btnPrimary" size="sm" asChild>
-                          <Link to="/services/ai-pods">
-                            Explore AI Pods
-                          </Link>
+                          <Link to="/services/ai-pods">Explore AI Pods</Link>
                         </Button>
                       </div>
                     </div>
 
-                    <div className={`text-white rounded-2xl p-8 ${styles.middleCardBg2}`}>
+                    <div
+                      className={`text-white rounded-2xl p-8 ${styles.middleCardBg2}`}
+                    >
                       <h2 className="text-2xl font-semibold mb-4">
                         The Indexnine AI Enablement Framework
                       </h2>
                       <p className="text-lg leading-relaxed mb-6">
-                        We leverage a simple, four-step framework: Assess your current development lifecycle and business goals. Strategize by developing a tailored AI Roadmap. Integrate the tool seamlessly into your workflow. Amplify with ongoing support and advanced training.
+                        We leverage a simple, four-step framework: Assess your
+                        current development lifecycle and business goals.
+                        Strategize by developing a tailored AI Roadmap.
+                        Integrate the tool seamlessly into your workflow.
+                        Amplify with ongoing support and advanced training.
                       </p>
                       <div className="flex flex-col sm:flex-row gap-4">
                         <Button variant="btnSecondary" asChild>
@@ -603,7 +697,10 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                             Book an AI Assessment
                           </Link>
                         </Button>
-                        <Button variant="btnSecondary" className="bg-white/10 hover:bg-white/20">
+                        <Button
+                          variant="btnSecondary"
+                          className="bg-white/10 hover:bg-white/20"
+                        >
                           Apply for 1-on-1 Coaching
                         </Button>
                       </div>
@@ -626,15 +723,20 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                     {[
                       {
                         question: "Is Cursor AI just a wrapper around ChatGPT?",
-                        answer: "No. While Cursor uses models from OpenAI (like GPT-4) and Anthropic, its core value is its deep integration with the code editor. It indexes your entire local codebase, enabling it to provide context-aware answers, generate code based on your existing files, and perform actions across your project—capabilities that a standard web-based chatbot cannot offer.",
+                        answer:
+                          "No. While Cursor uses models from OpenAI (like GPT-4) and Anthropic, its core value is its deep integration with the code editor. It indexes your entire local codebase, enabling it to provide context-aware answers, generate code based on your existing files, and perform actions across your project—capabilities that a standard web-based chatbot cannot offer.",
                       },
                       {
-                        question: "How does Cursor AI handle security and privacy with my codebase?",
-                        answer: "Cursor offers a 'Privacy Mode' that does not store or train on your code snippets. For enterprise-level security, they recommend using your own API keys from providers like Azure OpenAI, which ensures your data is handled according to your organization's security protocols. This is a key part of the integration strategy we define in our AI Roadmap service.",
+                        question:
+                          "How does Cursor AI handle security and privacy with my codebase?",
+                        answer:
+                          "Cursor offers a 'Privacy Mode' that does not store or train on your code snippets. For enterprise-level security, they recommend using your own API keys from providers like Azure OpenAI, which ensures your data is handled according to your organization's security protocols. This is a key part of the integration strategy we define in our AI Roadmap service.",
                       },
                       {
-                        question: "Can Cursor AI replace the need for senior developers?",
-                        answer: "No. AI-assisted software engineering tools are designed to augment, not replace, developer expertise. They are powerful assistants that handle repetitive tasks and provide suggestions, but they still require the critical thinking, architectural vision, and oversight of experienced engineers to build robust and scalable applications. Their primary benefit is amplifying the productivity of your entire team.",
+                        question:
+                          "Can Cursor AI replace the need for senior developers?",
+                        answer:
+                          "No. AI-assisted software engineering tools are designed to augment, not replace, developer expertise. They are powerful assistants that handle repetitive tasks and provide suggestions, but they still require the critical thinking, architectural vision, and oversight of experienced engineers to build robust and scalable applications. Their primary benefit is amplifying the productivity of your entire team.",
                       },
                     ].map((faq, index) => (
                       <div
@@ -677,21 +779,24 @@ const AiAssistedSoftwareEngineeringCursor = () => {
           <div className="max-w-5xl mx-auto">
             <div className="p-8 text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-                <span className="leading-[1.4]">Ready to Move Beyond Autocomplete?</span>
+                <span className="leading-[1.4]">
+                  The Indexnine AI Enablement Framework
+                </span>
               </h2>
               <p className="text-xl text-foreground-white/80 mb-12 font-montserrat max-w-3xl mx-auto">
-                Don't let AI tools become just another experiment. Get expert guidance on building a strategic framework for AI-assisted development that delivers real business value.
+                We leverage a simple, four-step framework: Assess your current
+                development lifecycle and business goals. Strategize by
+                developing a tailored AI Roadmap. Integrate the tool seamlessly
+                into your workflow. Amplify with ongoing support and advanced
+                training.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="btnPrimary" size="lg" asChild>
-                  <Link to="/services/ai-enablement">
-                    Book an AI Enablement Assessment
-                    <ExternalLink className="h-4 w-4 ml-2" />
-                  </Link>
+                <Button variant="btnSecondary" size="lg" asChild>
+                  <Link to="/services/ai">Book an AI Assessment</Link>
                 </Button>
                 <Button variant="btnSecondary" size="lg">
-                  <Download className="h-4 w-4 mr-2" />
-                  Download AI Tool Cheatsheet
+                  {" "}
+                  <Link to="/services/ai">Apply for 1-on-1 Coaching</Link>
                 </Button>
               </div>
             </div>
