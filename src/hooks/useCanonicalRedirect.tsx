@@ -26,17 +26,26 @@ export const useCanonicalRedirect = (options: CanonicalRedirectOptions = {}) => 
   } = options;
 
   useEffect(() => {
-    // Skip redirect if disabled or in development
-    if (!enabled || process.env.NODE_ENV !== 'production') {
+    // Skip redirects on Cloudflare Pages dev URLs
+    if (window.location.hostname.includes('.pages.dev')) {
+      return; // Don't redirect on Pages dev URLs
+    }
+    
+    // Skip in development
+    if (process.env.NODE_ENV === 'development' || 
+        window.location.hostname === 'localhost') {
       return;
     }
 
-    const currentLocation = window.location;
-    const currentHost = currentLocation.hostname;
+    // Skip redirect if disabled
+    if (!enabled) {
+      return;
+    }
+
+    const currentHost = window.location.hostname;
     
-    // Skip redirect for localhost and development domains
+    // Skip redirect for development domains
     if (
-      currentHost === 'localhost' ||
       currentHost.includes('127.0.0.1') ||
       currentHost.includes('.local') ||
       currentHost.includes('lovable.app') ||
@@ -45,14 +54,18 @@ export const useCanonicalRedirect = (options: CanonicalRedirectOptions = {}) => 
       return;
     }
 
-    // Construct canonical URL preserving path, search, and hash
-    const canonicalUrl = new URL(currentLocation.href);
-    canonicalUrl.hostname = canonicalDomain;
-    canonicalUrl.protocol = 'https:';
+    // Only redirect from actual domains, not Pages dev URLs
+    const validDomains = ['indexnine.com', 'www.indexnine.com'];
+    if (validDomains.includes(currentHost)) {
+      // Construct canonical URL preserving path, search, and hash
+      const canonicalUrl = new URL(window.location.href);
+      canonicalUrl.hostname = canonicalDomain;
+      canonicalUrl.protocol = 'https:';
 
-    // Perform redirect
-    console.log(`[SEO] Redirecting to canonical domain: ${canonicalUrl.href}`);
-    window.location.replace(canonicalUrl.href);
+      // Perform redirect
+      console.log(`[SEO] Redirecting to canonical domain: ${canonicalUrl.href}`);
+      window.location.replace(canonicalUrl.href);
+    }
   }, [canonicalDomain, enabled]);
 };
 
