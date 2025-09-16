@@ -677,34 +677,6 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                         </Button>
                       </div>
                     </div>
-
-                    <div
-                      className={`text-white rounded-2xl p-8 ${styles.middleCardBg2}`}
-                    >
-                      <h2 className="text-2xl font-semibold mb-4">
-                        The Indexnine AI Enablement Framework
-                      </h2>
-                      <p className="text-lg leading-relaxed mb-6">
-                        We leverage a simple, four-step framework: Assess your
-                        current development lifecycle and business goals.
-                        Strategize by developing a tailored AI Roadmap.
-                        Integrate the tool seamlessly into your workflow.
-                        Amplify with ongoing support and advanced training.
-                      </p>
-                      <div className="flex flex-col sm:flex-row gap-4">
-                        <Button variant="btnSecondary" asChild>
-                          <Link to="/services/ai-enablement">
-                            Book an AI Assessment
-                          </Link>
-                        </Button>
-                        <Button
-                          variant="btnSecondary"
-                          className="bg-white/10 hover:bg-white/20"
-                        >
-                          Apply for 1-on-1 Coaching
-                        </Button>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
