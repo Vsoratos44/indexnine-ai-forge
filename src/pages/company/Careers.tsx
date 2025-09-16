@@ -6,7 +6,11 @@ import {
   JobPostingSchema,
   BreadcrumbSchema,
   WebPageSchema,
+  FAQSchema,
 } from "@/components/SEOStructuredData";
+import ServiceAreaSchema from "@/components/seo/ServiceAreaSchema";
+import PerformanceOptimizer from "@/components/seo/PerformanceOptimizer";
+import SEOAnalytics from "@/components/seo/SEOAnalytics";
 import { MapPin, Clock, Users, Zap, Heart, Award } from "lucide-react";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
 import { Link } from "react-router-dom";
@@ -87,24 +91,62 @@ const Careers = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Enhanced SEO: JobPosting schema for job search engines and AI career assistants */}
-      <WebPageSchema
-        title="Careers at IndexNine Technologies - Join Our Team"
-        description="Explore exciting career opportunities at IndexNine Technologies. Join our team of engineers and innovators building the future of technology."
-        url="https://www.indexnine.com/company/careers"
-      />
-      <BreadcrumbSchema
-        items={[
-          { name: "Home", url: "https://www.indexnine.com/" },
-          { name: "About", url: "https://www.indexnine.com/company/about" },
-          {
-            name: "Careers",
-            url: "https://www.indexnine.com/company/careers",
-          },
-        ]}
-      />
-      {/* JobPosting schema helps AI career assistants and job search engines understand our openings */}
+    <PerformanceOptimizer enableOptimizations={true} reportToAnalytics={true}>
+      <div className="min-h-screen bg-background">
+        <SEOAnalytics 
+          pageTitle="Careers at IndexNine Technologies - Join Our Team"
+          pageUrl="https://www.indexnine.com/company/careers"
+          category="Careers"
+          enableSearchConsole={true}
+          enableGTM={true}
+          trackingId="GTM-XXXXXXX"
+        />
+        {/* Enhanced SEO: JobPosting schema for job search engines and AI career assistants */}
+        <WebPageSchema
+          title="Careers at IndexNine Technologies - Join Our Team"
+          description="Explore exciting career opportunities at IndexNine Technologies. Join our team of engineers and innovators building the future of technology."
+          url="https://www.indexnine.com/company/careers"
+        />
+        <BreadcrumbSchema
+          items={[
+            { name: "Home", url: "https://www.indexnine.com/" },
+            { name: "About", url: "https://www.indexnine.com/company/about" },
+            {
+              name: "Careers",
+              url: "https://www.indexnine.com/company/careers",
+            },
+          ]}
+        />
+        <ServiceAreaSchema
+          serviceName="Technology Career Opportunities"
+          serviceType="Employment Services"
+        />
+        {/* FAQ Schema for career-related questions */}
+        <FAQSchema
+          faqItems={[
+            {
+              question: "What is the hiring process at IndexNine Technologies?",
+              answer: "Our hiring process typically involves an initial application review, phone screening with HR, technical interview with team members, cultural fit assessment, and final interview with leadership. The entire process usually takes 2-3 weeks and we provide feedback at every stage to ensure a transparent and respectful experience."
+            },
+            {
+              question: "Do you offer remote work opportunities?",
+              answer: "Yes, we offer flexible remote work arrangements for most positions. We believe in work-life balance and trust our team members to be productive whether they're in our offices in San Francisco, Austin, New York, London, or working remotely. Some positions may require occasional travel or on-site collaboration."
+            },
+            {
+              question: "What benefits and compensation do you offer?",
+              answer: "We provide comprehensive benefits including health, dental, and vision insurance, unlimited PTO, flexible working hours, professional development opportunities, conference attendance, competitive salaries, equity participation, and performance-based bonuses. We believe in investing in our people's growth and well-being."
+            },
+            {
+              question: "What technologies and methodologies does your team use?",
+              answer: "Our technology stack varies by project but commonly includes React, Node.js, Python, cloud platforms (AWS, Azure, GCP), Snowflake, modern data engineering tools, AI/ML frameworks, and DevOps practices. We encourage learning new technologies and provide resources for continuous skill development."
+            },
+            {
+              question: "How does IndexNine support career growth and development?",
+              answer: "We provide mentorship programs, learning stipends, conference attendance, internal training sessions, and clear career progression paths. We believe in promoting from within and regularly discuss career goals during performance reviews. Many of our senior team members started in junior roles and grew with the company."
+            }
+          ]}
+        />
+        {/* JobPosting schema helps AI career assistants and job search engines understand our openings */}
       {openPositions.map((job, index) => (
         <JobPostingSchema
           key={index}
@@ -284,7 +326,8 @@ const Careers = () => {
       </section>
 
       <Footer />
-    </div>
+      </div>
+    </PerformanceOptimizer>
   );
 };
 

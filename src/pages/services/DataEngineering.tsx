@@ -15,7 +15,11 @@ import {
   ServiceSchema,
   WebPageSchema,
   BreadcrumbSchema,
+  FAQSchema,
 } from "@/components/SEOStructuredData";
+import ServiceAreaSchema from "@/components/seo/ServiceAreaSchema";
+import PerformanceOptimizer from "@/components/seo/PerformanceOptimizer";
+import SEOAnalytics from "@/components/seo/SEOAnalytics";
 
 const DataEngineering = () => {
   // Implement SEO for Data Engineering page
@@ -31,12 +35,25 @@ const DataEngineering = () => {
   });
 
   return (
-    <div className="min-h-screen bg-background-dark">
-      <ServiceSchema
-        name="Data Engineering & Platform Modernization"
-        description="Build an AI-ready data foundation. We design and implement modern data platforms using Snowflake and more to unlock analytics, drive efficiency, and prepare your data for what's next."
-        serviceType="Data Engineering"
-      />
+    <PerformanceOptimizer enableOptimizations={true} reportToAnalytics={true}>
+      <div className="min-h-screen bg-background-dark">
+        <SEOAnalytics 
+          pageTitle="Data Engineering Services & Platform Modernization | Enterprise Data Solutions | IndexNine"
+          pageUrl="https://www.indexnine.com/services/data-engineering"
+          category="Data Engineering Services"
+          enableSearchConsole={true}
+          enableGTM={true}
+          trackingId="GTM-XXXXXXX" // Replace with actual GTM ID
+        />
+        <ServiceSchema
+          name="Data Engineering & Platform Modernization"
+          description="Build an AI-ready data foundation. We design and implement modern data platforms using Snowflake and more to unlock analytics, drive efficiency, and prepare your data for what's next."
+          serviceType="Data Engineering"
+        />
+        <ServiceAreaSchema
+          serviceName="Enterprise Data Engineering & Platform Modernization"
+          serviceType="Data Engineering"
+        />
       <WebPageSchema
         title="Data Engineering & Platform Modernization | IndexNine Data Studio"
         description="Build an AI-ready data foundation. We design and implement modern data platforms using Snowflake and more to unlock analytics, drive efficiency, and prepare your data for what's next."
@@ -49,6 +66,31 @@ const DataEngineering = () => {
             name: "Data Engineering",
             url: "https://www.indexnine.com/services/data-engineering",
           },
+        ]}
+      />
+      {/* FAQ Schema for Data Engineering services */}
+      <FAQSchema
+        faqItems={[
+          {
+            question: "What makes a data platform 'AI-ready' and why is it important?",
+            answer: "An AI-ready data platform has clean, consistent, and accessible data with proper governance, real-time processing capabilities, and scalable architecture. It's crucial because 85% of AI projects fail due to inadequate data quality and infrastructure. Our platforms ensure your data is structured, governed, and optimized for machine learning and analytics workloads."
+          },
+          {
+            question: "How long does a typical data platform modernization take?",
+            answer: "Our Data Foundation Roadmap provides a comprehensive plan in 4-6 weeks for $30K+. Full implementation typically ranges from 3-9 months depending on complexity and scope. We use phased approaches to deliver value incrementally, often showing improvements in data accessibility and quality within the first month."
+          },
+          {
+            question: "Can you migrate our data without disrupting business operations?",
+            answer: "Yes, we specialize in zero-downtime migrations using proven strategies including parallel processing, incremental data sync, and rollback capabilities. Our approach includes comprehensive testing, stakeholder communication, and contingency planning to ensure business continuity throughout the modernization process."
+          },
+          {
+            question: "What cloud platforms do you work with for data engineering?",
+            answer: "We're platform-agnostic and work with AWS, Azure, Google Cloud, and Snowflake. Our vendor-neutral approach means we recommend the best fit for your specific requirements, existing infrastructure, and business goals rather than pushing a particular platform. We can also design hybrid and multi-cloud solutions."
+          },
+          {
+            question: "How do you ensure data quality and governance in modern platforms?",
+            answer: "We implement comprehensive data governance frameworks including automated data quality checks, lineage tracking, access controls, and compliance monitoring. Our approach includes data cataloging, quality scorecards, automated testing, and governance workflows that scale with your organization's needs while maintaining security and regulatory compliance."
+          }
         ]}
       />
       <Header />
@@ -431,7 +473,8 @@ const DataEngineering = () => {
       </section>
 
       <Footer />
-    </div>
+      </div>
+    </PerformanceOptimizer>
   );
 };
 
