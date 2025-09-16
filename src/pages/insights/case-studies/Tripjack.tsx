@@ -32,7 +32,7 @@ import {
 import { Link } from "react-router-dom";
 import styles from "../../../assets/css/stylesheet.module.css";
 import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
-import CaseInrImg from "@/assets/images/img-cursor.webp";
+import CaseInrImg from "@/assets/images/case-img.webp";
 
 const leftNavLinks = [
   { href: "#intro1", label: "Introduction" },

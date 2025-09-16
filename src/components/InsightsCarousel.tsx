@@ -10,14 +10,16 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, FileText, Target } from "lucide-react";
 import styles from "../assets/css/stylesheet.module.css";
 
-import carlImgEbkCXO from "../assets/images/carsl-img-ebook-cxo.webp";
-import carlImgBlogQa from "../assets/images/carsl-img-blog-qa.webp";
+import carlImg1 from "../assets/images/blog-ai-mgmt.webp";
+import carlImg2 from "../assets/images/case-img.webp";
+import carlImg3 from "../assets/images/blog-micros-monolth.webp";
+
 import carlImgBlogData from "../assets/images/carsl-img-blog-data.webp";
 import { Link } from "react-router-dom";
 
 interface CarouselItem {
   id: string;
-  type: "eBooks" | "Blogs" | "Case Studies";
+  type: "eBooks" | "Blogs" | "Case Study";
   title: string;
   description: string;
   date: string;
@@ -32,27 +34,40 @@ const InsightsCarousel = () => {
   const carouselItems: CarouselItem[] = [
     {
       id: "1",
-      type: "eBooks",
-      title: "The CXO's Guide to Building AI Products",
+      type: "Blogs",
+      title: "The AI Change Management Playbook: Modernizing Legacy Systems",
       description:
-        "A comprehensive guide for executive leaders on strategic AI product development and implementation.",
+        "AI adoption is more than a technical challenge. Discover a strategic framework for change management, data modernization, and identifying high-impact AI initiatives in legacy organizations.",
       date: "January 15, 2025",
-      readTime: "45 min read",
+      readTime: "15 min read",
       category: "AI Strategy",
-      image: carlImgEbkCXO,
-      link: "/insights/ebooks",
+      image: carlImg1,
+      link: "/insights/blogs/ai-change-management-playbook",
     },
     {
       id: "2",
-      type: "Blogs",
-      title: "Beyond Testing: A Leader's Guide to True Quality Engineering",
+      type: "Case Study",
+      title: "TripJack: Engineering the Platform for Next-Generation Travel",
       description:
-        "How modern QE practices go beyond traditional testing to embed quality throughout the product development lifecycle.",
+        "How Indexnine's Expertise in Microservices and API Integration Reduced Time-to-Market by 75%, Powering TripJack's Expansion into New B2B2C Revenue Streams.",
       date: "January 10, 2025",
-      readTime: "10 min read",
-      category: "Quality Engineering",
-      image: carlImgBlogData,
-      link: "/insights/blogs/robot-framework-vs-playwright",
+      readTime: "18 min read",
+      category: "Travel Technology",
+      image: carlImg2,
+      link: "/insights/case-studies/tripjack",
+    },
+    {
+      id: "3",
+      type: "Blogs",
+      title:
+        "Microservices vs Monolith: Making the Right Architectural Choice for Scale",
+      description:
+        "A comprehensive guide to choosing between microservices and monolithic architecture based on your business stage, team size, and technical requirements.",
+      date: "January 10, 2025",
+      readTime: "11 min read",
+      category: "Architecture Team",
+      image: carlImg3,
+      link: "/insights/blogs/microservices-vs-monolith",
     },
   ];
 
@@ -120,9 +135,9 @@ const InsightsCarousel = () => {
                           >
                             {item.type}
                           </div>
-                          <div className="text-sm text-foreground-dark-muted font-montserrat">
+                          {/* <div className="text-sm text-foreground-dark-muted font-montserrat">
                             {item.date}
-                          </div>
+                          </div> */}
                         </div>
 
                         {/* Image with Glassmorphism */}
