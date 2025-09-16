@@ -74,6 +74,9 @@ const AiAssistedSoftwareEngineeringCursor = lazy(
 const MicroservicesVsMonolith = lazy(
   () => import("./pages/insights/blog/MicroservicesVsMonolith")
 );
+const SnapMvpCloudInfrastructureAccelerator = lazy(
+  () => import("./pages/insights/blog/SnapMvpCloudInfrastructureAccelerator")
+);
 
 // Case Study Pages - Lazy loaded
 // const GenesysModernization = lazy(
@@ -253,6 +256,10 @@ const App = () => {
                 <Route
                   path="/insights/blogs/microservices-vs-monolith"
                   element={<MicroservicesVsMonolith />}
+                />
+                <Route
+                  path="/insights/blogs/snap-mvp-cloud-infrastructure-accelerator"
+                  element={<SnapMvpCloudInfrastructureAccelerator />}
                 />
 
                 {/* Individual Case Study Routes - Lazy loaded */}
