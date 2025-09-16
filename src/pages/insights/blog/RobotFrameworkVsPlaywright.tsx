@@ -314,10 +314,10 @@ const RobotFrameworkVsPlaywright = () => {
                   </li>
                 ))}
               </ul>
-              <div
+              {/* <div
                 className={`px-8 py-12 rounded-2xl my-8 text-center text-white ${styles.sideCardBg}`}
               >
-                <h3 className="text-3xl font-bold">
+                <h3 className="text-3xl font-semibold">
                   Want to Share Your Insights?
                 </h3>
                 <p className="text-xl py-8">
@@ -327,7 +327,7 @@ const RobotFrameworkVsPlaywright = () => {
                 <Button type="submit" size="lg" variant="btnSecondary">
                   Continue
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -837,29 +837,6 @@ const RobotFrameworkVsPlaywright = () => {
                   </div>
 
                   {/* Strategic CTA within FAQ Section */}
-                  <div className="mt-12 bg-gradient-card-light border border-glass-border rounded-2xl p-8 text-center">
-                    <h3 className="text-2xl font-bold text-foreground-dark mb-4">
-                      Still Have Questions About Test Automation?
-                    </h3>
-                    <p className="text-foreground-dark-muted mb-6 max-w-2xl mx-auto">
-                      Our QA experts are here to help you navigate framework
-                      selection, implementation strategy, and automation best
-                      practices tailored to your specific needs.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                      <Button variant="btnPrimary" size="lg" asChild>
-                        <Link to="/studios/quality-engineering">
-                          Schedule Expert QA Consultation
-                          <ExternalLink className="h-4 w-4 ml-2" />
-                        </Link>
-                      </Button>
-                      <Button variant="btnSecondary" size="lg" asChild>
-                        <Link to="/insights/case-studies">
-                          View QA Success Stories
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
                 </div>
               </div>
             </section>
@@ -871,28 +848,23 @@ const RobotFrameworkVsPlaywright = () => {
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
             <span className="leading-[1.4]">
-              Transform Your QA Strategy Today
+              Still Have Questions About Test Automation?
             </span>
           </h2>
           <p className="text-xl text-foreground-white/80 mb-12 font-montserrat max-w-3xl mx-auto">
-            Don't let testing bottlenecks slow your development velocity.
-            Partner with our quality engineering experts to implement the right
-            automation framework and achieve measurable QA improvements.
+            Our QA experts are here to help you navigate framework selection,
+            implementation strategy, and automation best practices tailored to
+            your specific needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="btnSecondary" size="lg" asChild>
-              <Link to="/studios/quality-engineering">
-                Start Your QA Transformation
-                <ExternalLink className="h-4 w-4 ml-2" />
+              <Link to="/services/quality-engineering">
+                Schedule Expert QA Consultation
+                {/* <ExternalLink className="h-4 w-4 ml-2" /> */}
               </Link>
             </Button>
-            <Button
-              variant="btnSecondary"
-              size="lg"
-              className="bg-white/10 hover:bg-white/20 border-white/20"
-            >
-              <Download className="h-4 w-4 mr-2" />
-              Download Framework Comparison Guide
+            <Button variant="btnSecondary" size="lg" asChild>
+              <Link to="/insights/case-studies">View QA Success Stories</Link>
             </Button>
           </div>
 

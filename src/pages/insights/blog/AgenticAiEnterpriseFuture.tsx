@@ -237,10 +237,12 @@ const AgenticAiEnterpriseFuture = () => {
                   </li>
                 ))}
               </ul>
-              <div
+              {/* <div
                 className={`px-8 py-12 rounded-2xl my-8 text-center text-white ${styles.sideCardBg}`}
               >
-                <h3 className="text-3xl font-bold">Ready for AI Strategy?</h3>
+                <h3 className="text-3xl font-semibold">
+                  Ready for AI Strategy?
+                </h3>
                 <p className="text-xl py-8">
                   Get your comprehensive AI readiness assessment and strategic
                   roadmap for successful agentic AI implementation.
@@ -248,7 +250,7 @@ const AgenticAiEnterpriseFuture = () => {
                 <Button type="submit" size="lg" variant="btnSecondary">
                   Get Assessment
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-span-2 w-full">
@@ -508,8 +510,8 @@ const AgenticAiEnterpriseFuture = () => {
 
                     {/* Step 1 */}
                     <div className="bg-gradient-to-r from-brand-primary/5 to-transparent border border-brand-primary/20 rounded-xl p-8">
-                      <h3 className="text-xl font-bold text-foreground-dark mb-4 flex items-center gap-3">
-                        <span className="bg-brand-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                      <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
+                        <span className="bg-brand-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                           1
                         </span>
                         Clarity Before Complexity - The AI & Data Audit
@@ -557,8 +559,8 @@ const AgenticAiEnterpriseFuture = () => {
 
                     {/* Step 2 */}
                     <div className="bg-gradient-to-r from-brand-purple/5 to-transparent border border-brand-purple/20 rounded-xl p-8">
-                      <h3 className="text-xl font-bold text-foreground-dark mb-4 flex items-center gap-3">
-                        <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                      <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
+                        <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                           2
                         </span>
                         Engineering Autonomy - Our "Built Differently" Execution
@@ -602,8 +604,8 @@ const AgenticAiEnterpriseFuture = () => {
 
                     {/* Step 3 */}
                     <div className="bg-gradient-to-r from-red-500/5 to-transparent border border-red-500/20 rounded-xl p-8">
-                      <h3 className="text-xl font-bold text-foreground-dark mb-4 flex items-center gap-3">
-                        <span className="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                      <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
+                        <span className="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                           3
                         </span>
                         The Cautionary Layer - Our AI Risk & Governance Practice
@@ -768,10 +770,10 @@ const AgenticAiEnterpriseFuture = () => {
                 and a roadmap for safe, successful implementation.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="btnPrimary" size="lg" asChild>
+                <Button variant="btnSecondary" size="lg" asChild>
                   <Link to="/services/ai">
                     Schedule Your AI Strategy Session
-                    <ExternalLink className="h-4 w-4 ml-2" />
+                    {/* <ExternalLink className="h-4 w-4 ml-2" /> */}
                   </Link>
                 </Button>
                 <Button variant="btnSecondary" size="lg" asChild>
