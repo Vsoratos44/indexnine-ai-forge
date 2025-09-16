@@ -119,6 +119,7 @@ const Contact = () => {
                   <a
                     href="https://www.linkedin.com/company/indexnine-technologies"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center bg-black/10 hover:bg-brand-primary text-brand-primary hover:text-white transition-colors duration-300 cursor-pointer"
                   >
                     <span className="text-sm font-semibold">in</span>

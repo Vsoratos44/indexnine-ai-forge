@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import Gptw from "../assets/images/gptw.webp";
 import Iso from "../assets/images/iso.svg";
@@ -52,6 +53,7 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/company/indexnine-technologies"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-primary transition-colors duration-300 cursor-pointer"
               >
                 <span className="text-foreground-white text-sm font-semibold">
@@ -73,24 +75,23 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3 text-foreground-white/80">
               <li className="hover:text-brand-primary transition-colors cursor-pointer">
-                <a href="/services/custom-software">
+                <Link to="/services/custom-software">
                   Custom Software Development
-                </a>
+                </Link>
               </li>
               <li className="hover:text-brand-primary transition-colors cursor-pointer">
-                <a href="/services/ai">AI & ML Development</a>
+                <Link to="/services/ai">AI & ML Development</Link>
               </li>
               <li className="hover:text-brand-primary transition-colors cursor-pointer">
-                <a href="/services/data-engineering">Data Engineering</a>
+                <Link to="/services/data-engineering">Data Engineering</Link>
               </li>
               <li className="hover:text-brand-primary transition-colors cursor-pointer">
-                <a href="/services/quality-engineering">
-                  {" "}
+                <Link to="/services/quality-engineering">
                   Quality Assurance Engineering
-                </a>
+                </Link>
               </li>
               <li className="hover:text-brand-primary transition-colors cursor-pointer">
-                <a href="/services/consulting">Consulting & Strategy</a>
+                <Link to="/services/consulting">Consulting & Strategy</Link>
               </li>
             </ul>
           </div>
@@ -123,6 +124,7 @@ const Footer = () => {
               <a
                 href="https://www.greatplacetowork.in/great/company/indexnine-technologies-private-limited"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img src={Gptw} alt="GPTW" className="h-16" />
               </a>

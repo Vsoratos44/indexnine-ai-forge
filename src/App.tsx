@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import { AuthProvider } from "./hooks/useAuth";
+import useCanonicalRedirect from "./hooks/useCanonicalRedirect";
 import Index from "./pages/Index"; // Keep homepage immediate
 import NotFound from "./pages/NotFound"; // Keep 404 immediate
 
@@ -140,6 +141,13 @@ const queryClient = new QueryClient({
 
 const App = () => {
   console.log("App component rendering...");
+
+  // Initialize canonical URL redirect for SEO
+  useCanonicalRedirect({
+    canonicalDomain: 'www.indexnine.com',
+    enabled: true
+  });
+
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
