@@ -1,24 +1,2 @@
-# Domain canonicalization - Redirect to www (preserves link equity)
-https://indexnine.com/*    https://www.indexnine.com/:splat  301!
-
-# Clean URLs - Remove .html extensions (SEO-friendly URLs)
-/about.html     /about      301!
-/services.html  /services   301!
-/contact.html   /contact    301!
-/blog.html      /blog       301!
-
-# Handle index files (avoid duplicate content)
-/index.html     /           301!
-/index          /           301!
-
-# Trailing slash normalization for directories
-/blog/          /blog       301!
-/services/      /services   301!
-/case-studies/  /case-studies  301!
-
-# Legacy URL redirects (if you had old URLs)
-/home           /           301!
-/home/          /           301!
-
-# SPA routing - Must be last (200 status preserves URLs for client-side routing)
-/*              /index.html 200
+# Redirect all routes to index.html for client-side routing
+/*    /index.html   200
