@@ -280,13 +280,13 @@ const Blogs = () => {
       <WebPageSchema
         title="Technology Insights & Engineering Blog | IndexNine"
         description="Read the latest insights on product engineering, AI development, quality assurance, and technology trends from IndexNine's expert team"
-        url="https://yoursite.lovable.app/insights/blogs"
+        url="https://www.indexnine.com/insights/blogs"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app/" },
-          { name: "Insights", url: "https://yoursite.lovable.app/insights" },
-          { name: "Blog", url: "https://yoursite.lovable.app/insights/blogs" },
+          { name: "Home", url: "https://www.indexnine.com/" },
+          { name: "Insights", url: "https://www.indexnine.com/insights" },
+          { name: "Blog", url: "https://www.indexnine.com/insights/blogs" },
         ]}
       />
       <Header />

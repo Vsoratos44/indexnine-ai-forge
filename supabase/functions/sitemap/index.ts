@@ -23,11 +23,11 @@ serve(async (req) => {
       { url: '/contact', lastmod: currentDate, priority: '0.7', changefreq: 'monthly' },
       
       // Service pages
-      { url: '/services/ai-ml', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
+      { url: '/services/ai', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
       { url: '/services/data-engineering', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
-      { url: '/services/qa-engineering', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
+      { url: '/services/quality-engineering', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
       { url: '/services/custom-software', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
-      { url: '/services/consulting-strategy', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
+      { url: '/services/consulting', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
       
       // Studios
       { url: '/studios/ai-studio', lastmod: currentDate, priority: '0.8', changefreq: 'weekly' },
@@ -61,6 +61,10 @@ serve(async (req) => {
       { url: '/insights/blog/robot-framework-vs-playwright', lastmod: currentDate, priority: '0.6', changefreq: 'monthly' },
       { url: '/insights/blog/agentic-ai-enterprise-future', lastmod: currentDate, priority: '0.6', changefreq: 'monthly' },
       { url: '/insights/blog/ai-change-management-playbook', lastmod: currentDate, priority: '0.6', changefreq: 'monthly' },
+      { url: '/insights/blog/ai-assisted-software-engineering', lastmod: currentDate, priority: '0.6', changefreq: 'monthly' },
+      { url: '/insights/blog/microservices-vs-monolith', lastmod: currentDate, priority: '0.6', changefreq: 'monthly' },
+      { url: '/insights/blog/modern-analytics-platform', lastmod: currentDate, priority: '0.6', changefreq: 'monthly' },
+      { url: '/insights/blog/cloud-infrastructure-automation-terraform', lastmod: currentDate, priority: '0.6', changefreq: 'monthly' },
       
       // Case Studies
       { url: '/insights/case-studies/genesys', lastmod: currentDate, priority: '0.6', changefreq: 'monthly' },

@@ -92,15 +92,15 @@ const Careers = () => {
       <WebPageSchema
         title="Careers at IndexNine Technologies - Join Our Team"
         description="Explore exciting career opportunities at IndexNine Technologies. Join our team of engineers and innovators building the future of technology."
-        url="https://yoursite.lovable.app/about/careers"
+        url="https://www.indexnine.com/company/careers"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app/" },
-          { name: "About", url: "https://yoursite.lovable.app/about" },
+          { name: "Home", url: "https://www.indexnine.com/" },
+          { name: "About", url: "https://www.indexnine.com/company/about" },
           {
             name: "Careers",
-            url: "https://yoursite.lovable.app/about/careers",
+            url: "https://www.indexnine.com/company/careers",
           },
         ]}
       />

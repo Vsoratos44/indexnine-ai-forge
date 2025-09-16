@@ -59,8 +59,8 @@ const CygeniqCaseStudy = () => {
       "Discover how Indexnine partnered with cybersecurity startup CygenIQ to launch a first-of-its-kind AI security platform, moving from concept to a fundable, interactive prototype in just six weeks.",
     keywords:
       "AI security platform, cybersecurity startup, MVP development, first-mover advantage, CISO platform, generative AI security, seed funding acceleration, interactive prototype",
-    canonicalUrl: "https://indexnine.ai/insights/case-studies/cygeniq",
-    ogImage: "https://indexnine.ai/images/case-studies/cygeniq-og.jpg",
+    canonicalUrl: "https://www.indexnine.com/insights/case-studies/cygeniq",
+    ogImage: "https://www.indexnine.com/images/case-studies/cygeniq-og.jpg",
     ogType: "article",
   });
 
@@ -97,8 +97,8 @@ const CygeniqCaseStudy = () => {
         author="Indexnine"
         datePublished="2024-01-15"
         dateModified="2024-01-15"
-        image="https://indexnine.ai/images/case-studies/cygeniq-hero.jpg"
-        url="https://indexnine.ai/insights/case-studies/cygeniq"
+        image="https://www.indexnine.com/images/case-studies/cygeniq-hero.jpg"
+        url="https://www.indexnine.com/insights/case-studies/cygeniq"
       />
 
       <WebPageSchema

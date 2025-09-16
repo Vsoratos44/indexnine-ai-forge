@@ -34,8 +34,8 @@ const InnovationLab = () => {
       "Bring your vision to life with the Indexnine Innovation Lab. We combine rapid product discovery, expert UI/UX design, and custom AI development to launch your MVP faster and smarter.",
     keywords:
       "innovation lab, MVP development, rapid prototyping, product development, startup accelerator, AI studio, design studio, discovery studio, Snap.MVP, AWS deployment, GCP deployment, Azure deployment, idea to MVP, product discovery, UI/UX design, custom AI development",
-    canonicalUrl: "https://indexnine.com/engagement/innovation-lab",
-    ogImage: "https://indexnine.com/images/innovation-lab-og.jpg",
+    canonicalUrl: "https://www.indexnine.com/engagement/innovation-lab",
+    ogImage: "https://www.indexnine.com/images/innovation-lab-og.jpg",
     ogType: "website",
   });
 
@@ -90,8 +90,8 @@ const InnovationLab = () => {
         type="Organization"
         data={{
           name: "IndexNine Technologies",
-          url: "https://indexnine.com",
-          logo: "https://indexnine.com/images/logo.png",
+          url: "https://www.indexnine.com",
+          logo: "https://www.indexnine.com/images/logo.png",
           description:
             "Innovation Lab specializing in rapid MVP development, AI solutions, and accelerated product development for startups and enterprises.",
           address: {

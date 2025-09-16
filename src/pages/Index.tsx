@@ -76,7 +76,7 @@ const Index = () => {
       <WebPageSchema
         title="Enterprise Product Engineering & AI Consulting Services | Custom Software Development | IndexNine"
         description="Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions. Transform your legacy systems with expert product lifecycle engineering."
-        url="https://indexnine.com/"
+        url="https://www.indexnine.com/"
       />
       
       {/* FAQ Schema for common enterprise questions */}
@@ -101,10 +101,10 @@ const Index = () => {
       <VideoObjectSchema
         name="IndexNine Technologies Hero Video"
         description="Discover how IndexNine Technologies delivers exceptional product engineering and AI consulting services"
-        thumbnailUrl="https://indexnine.com/video-thumbnails/hero-thumbnail.jpg"
+        thumbnailUrl="https://www.indexnine.com/video-thumbnails/hero-thumbnail.jpg"
         uploadDate="2024-01-01T00:00:00Z"
         duration="60"
-        contentUrl="https://indexnine.com/videos/intro.mp4"
+        contentUrl="https://www.indexnine.com/videos/intro.mp4"
       />
 
       {/* Above-the-fold content - always load immediately */}

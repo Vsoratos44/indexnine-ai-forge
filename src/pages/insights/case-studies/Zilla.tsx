@@ -53,8 +53,8 @@ const PivotCaseStudy = () => {
       "Learn how Indexnine transformed Zilla Security from a passive auditing tool into a mission-critical IGA platform, enabling a successful $165M+ acquisition through strategic product pivoting.",
     keywords:
       "product pivot, identity governance, cybersecurity platform, enterprise software, IGA solution, product transformation, acquisition success, security automation",
-    canonicalUrl: "https://indexnine.ai/insights/case-studies/zilla",
-    ogImage: "https://indexnine.ai/images/case-studies/pivot-og.jpg",
+    canonicalUrl: "https://www.indexnine.com/insights/case-studies/zilla",
+    ogImage: "https://www.indexnine.com/images/case-studies/pivot-og.jpg",
     ogType: "article",
   });
   useEffect(() => {
@@ -104,8 +104,8 @@ const PivotCaseStudy = () => {
         author="Indexnine"
         datePublished="2024-01-20"
         dateModified="2024-01-20"
-        image="https://indexnine.ai/images/case-studies/pivot-hero.jpg"
-        url="https://indexnine.ai/insights/case-studies/zilla"
+        image="https://www.indexnine.com/images/case-studies/pivot-hero.jpg"
+        url="https://www.indexnine.com/insights/case-studies/zilla"
       />
 
       <WebPageSchema

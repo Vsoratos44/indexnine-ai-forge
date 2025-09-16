@@ -38,7 +38,7 @@ const ConsultingStrategy = () => {
       "Leading technology consulting and digital transformation strategy services. AI strategy consulting, technology roadmaps, and expert guidance for enterprise digital transformation initiatives.",
     keywords:
       "technology consulting services, digital transformation strategy, AI strategy consulting, enterprise consulting, technology roadmap planning, digital strategy services, business technology consulting, strategic technology planning",
-    canonicalUrl: "https://indexnine.com/services/consulting-strategy",
+    canonicalUrl: "https://www.indexnine.com/services/consulting",
     schemaType: "WebPage",
   });
 
@@ -52,15 +52,15 @@ const ConsultingStrategy = () => {
       <WebPageSchema
         title="Technology Consulting & Digital Strategy Services | Enterprise AI Consulting | IndexNine"
         description="Leading technology consulting and digital transformation strategy services. AI strategy consulting, technology roadmaps, and expert guidance for enterprise digital transformation initiatives."
-        url="https://indexnine.com/services/consulting-strategy"
+        url="https://www.indexnine.com/services/consulting"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://indexnine.com/" },
-          { name: "Services", url: "https://indexnine.com/services" },
+          { name: "Home", url: "https://www.indexnine.com/" },
+          { name: "Services", url: "https://www.indexnine.com/services" },
           {
             name: "Consulting & Strategy",
-            url: "https://indexnine.com/services/consulting-strategy",
+            url: "https://www.indexnine.com/services/consulting",
           },
         ]}
       />

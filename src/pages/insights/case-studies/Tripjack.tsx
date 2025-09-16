@@ -60,8 +60,8 @@ const TripjackCaseStudy = () => {
       "Discover how Indexnine reduced TripJack's time-to-market by 75% through modern microservices architecture and launched their new B2B2C revenue channel.",
     keywords:
       "travel technology, B2B2C platform, microservices architecture, NDC protocol, airline integrations, platform modernization, time-to-market reduction",
-    canonicalUrl: "https://indexnine.ai/insights/case-studies/tripjack",
-    ogImage: "https://indexnine.ai/images/case-studies/tripjack-og.jpg",
+    canonicalUrl: "https://www.indexnine.com/insights/case-studies/tripjack",
+    ogImage: "https://www.indexnine.com/images/case-studies/tripjack-og.jpg",
     ogType: "article",
   });
 
@@ -98,8 +98,8 @@ const TripjackCaseStudy = () => {
         author="Indexnine"
         datePublished="2024-01-20"
         dateModified="2024-01-20"
-        image="https://indexnine.ai/images/case-studies/tripjack-hero.jpg"
-        url="https://indexnine.ai/insights/case-studies/tripjack"
+        image="https://www.indexnine.com/images/case-studies/tripjack-hero.jpg"
+        url="https://www.indexnine.com/insights/case-studies/tripjack"
       />
 
       <WebPageSchema

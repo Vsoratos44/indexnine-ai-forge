@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://yoursite.lovable.app/sitemap.xml
+Sitemap: https://www.indexnine.com/sitemap.xml
 
 # Disallow CMS admin areas
 Disallow: /cms/

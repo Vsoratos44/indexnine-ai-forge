@@ -337,15 +337,15 @@ const CaseStudies = () => {
       <WebPageSchema
         title="Client Success Stories & Case Studies | IndexNine"
         description="Explore real-world examples of how IndexNine transforms businesses through innovative product engineering and AI solutions"
-        url="https://yoursite.lovable.app/insights/case-studies"
+        url="https://www.indexnine.com/insights/case-studies"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app/" },
-          { name: "Insights", url: "https://yoursite.lovable.app/insights" },
+          { name: "Home", url: "https://www.indexnine.com/" },
+          { name: "Insights", url: "https://www.indexnine.com/insights" },
           {
             name: "Case Studies",
-            url: "https://yoursite.lovable.app/insights/case-studies",
+            url: "https://www.indexnine.com/insights/case-studies",
           },
         ]}
       />

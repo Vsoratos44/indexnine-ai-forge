@@ -50,7 +50,7 @@ export const SEOStructuredData: React.FC<StructuredDataProps> = ({ type, data })
       baseData.provider = {
         '@type': 'Organization',
         name: 'IndexNine Technologies',
-        url: 'https://yoursite.lovable.app'
+        url: 'https://www.indexnine.com'
       };
     }
     
@@ -73,8 +73,8 @@ export const OrganizationSchema = () => (
     type="Organization"
     data={{
       name: 'IndexNine Technologies',
-      url: 'https://indexnine.com',
-      logo: 'https://indexnine.com/images/logo.png',
+      url: 'https://www.indexnine.com',
+      logo: 'https://www.indexnine.com/images/logo.png',
       description: 'Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions.',
       address: {
         '@type': 'PostalAddress',
@@ -187,7 +187,7 @@ export const ArticleSchema = ({
         name: 'IndexNine Technologies',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://yoursite.lovable.app/logo.png'
+          url: 'https://www.indexnine.com/images/logo.png'
         }
       },
       mainEntityOfPage: {
@@ -275,7 +275,7 @@ export const JobPostingSchema = ({
       hiringOrganization: {
         '@type': 'Organization',
         name: 'IndexNine Technologies',
-        sameAs: 'https://yoursite.lovable.app'
+        sameAs: 'https://www.indexnine.com'
       },
       jobLocation: {
         '@type': 'Place',
@@ -368,9 +368,9 @@ export const LocalBusinessSchema = () => (
     data={{
       '@type': 'ProfessionalService',
       name: 'IndexNine Technologies',
-      image: 'https://yoursite.lovable.app/logo.png',
-      '@id': 'https://yoursite.lovable.app',
-      url: 'https://yoursite.lovable.app',
+      image: 'https://www.indexnine.com/images/logo.png',
+      '@id': 'https://www.indexnine.com',
+      url: 'https://www.indexnine.com',
       telephone: '+1-xxx-xxx-xxxx',
       address: {
         '@type': 'PostalAddress',

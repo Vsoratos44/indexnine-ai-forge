@@ -19,12 +19,12 @@ const Contact = () => {
       <WebPageSchema
         title="About IndexNine Technologies - Our Story & Mission"
         description="Learn about IndexNine Technologies, our mission to deliver exceptional product engineering solutions, and our commitment to excellence in AI and software development"
-        url="https://yoursite.lovable.app/about"
+        url="https://www.indexnine.com/company/contact"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app/" },
-          { name: "About", url: "https://yoursite.lovable.app/about" },
+          { name: "Home", url: "https://www.indexnine.com/" },
+          { name: "Contact", url: "https://www.indexnine.com/company/contact" },
         ]}
       />
       <LocalBusinessSchema />

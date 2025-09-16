@@ -63,17 +63,17 @@ const HomepageTest = () => {
       <WebPageSchema
         title="Product Engineering & AI that Charts Your Path to Market Leadership | IndexNine - Test"
         description="You have the ambition. We provide the path. IndexNine transforms complexity into performance with elite product engineering, custom software, and AI solutions that define market leaders."
-        url="https://yoursite.lovable.app/test/homepage"
+        url="https://www.indexnine.com/test/homepage"
       />
       <LocalBusinessSchema />
       {/* VideoObject schema helps AI understand our hero video content for multimedia responses */}
       <VideoObjectSchema
         name="IndexNine Technologies Hero Video"
         description="Discover how IndexNine Technologies delivers exceptional product engineering and AI consulting services"
-        thumbnailUrl="https://yoursite.lovable.app/video-thumbnails/hero-thumbnail.jpg"
+        thumbnailUrl="https://www.indexnine.com/video-thumbnails/hero-thumbnail.jpg"
         uploadDate="2024-01-01T00:00:00Z"
         duration="60"
-        contentUrl="https://yoursite.lovable.app/videos/intro.mp4"
+        contentUrl="https://www.indexnine.com/videos/intro.mp4"
       />
 
       {/* Above-the-fold content - always load immediately */}

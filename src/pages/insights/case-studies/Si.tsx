@@ -59,8 +59,8 @@ const GrowCaseStudy = () => {
       "Discover how Indexnine's Cricket LLM transformed Sports Interactive's operations, automating content generation in 15 seconds and reducing operational costs by 90% through AI-powered fan engagement.",
     keywords:
       "AI automation, sports media technology, real-time content generation, fan engagement, Cricket LLM, operational cost reduction, scalable AI solutions, sports technology",
-    canonicalUrl: "https://indexnine.ai/insights/case-studies/si",
-    ogImage: "https://indexnine.ai/images/case-studies/grow-og.jpg",
+    canonicalUrl: "https://www.indexnine.com/insights/case-studies/si",
+    ogImage: "https://www.indexnine.com/images/case-studies/grow-og.jpg",
     ogType: "article",
   });
 
@@ -97,8 +97,8 @@ const GrowCaseStudy = () => {
         author="Indexnine"
         datePublished="2024-01-25"
         dateModified="2024-01-25"
-        image="https://indexnine.ai/images/case-studies/grow-hero.jpg"
-        url="https://indexnine.ai/insights/case-studies/si"
+        image="https://www.indexnine.com/images/case-studies/grow-hero.jpg"
+        url="https://www.indexnine.com/insights/case-studies/si"
       />
 
       <WebPageSchema

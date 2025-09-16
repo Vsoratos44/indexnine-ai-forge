@@ -37,15 +37,15 @@ const DataEngineering = () => {
       <WebPageSchema
         title="Data Engineering & Platform Modernization | IndexNine Data Studio"
         description="Build an AI-ready data foundation. We design and implement modern data platforms using Snowflake and more to unlock analytics, drive efficiency, and prepare your data for what's next."
-        url="https://yoursite.lovable.app/studios/data-engineering"
+        url="https://www.indexnine.com/studios/data-engineering"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app/" },
-          { name: "Studios", url: "https://yoursite.lovable.app/studios" },
+          { name: "Home", url: "https://www.indexnine.com/" },
+          { name: "Studios", url: "https://www.indexnine.com/studios" },
           {
             name: "Data Engineering",
-            url: "https://yoursite.lovable.app/studios/data-engineering",
+            url: "https://www.indexnine.com/studios/data-engineering",
           },
         ]}
       />

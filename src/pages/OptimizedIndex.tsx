@@ -27,7 +27,7 @@ const OptimizedIndex = () => {
       <WebPageSchema 
         title="Leading Technology Consulting & Software Development"
         description="Transform your ideas into enduring reality with our AI-forward engineering excellence and product mindset"
-        url="https://yoursite.lovable.app/"
+        url="https://www.indexnine.com/"
       />
       
       {/* Above-the-fold content - loaded immediately */}

@@ -39,9 +39,9 @@ const DesignStudio = () => {
   useSEO({
     title: "Design Studio - Accelerating Visual Engineering | IndexNine",
     description: "Our senior UI/UX experts leverage modern AI systems to move at unmatched speed—taking unrealized concepts to functional products. Accelerate your design sprint today.",
-    canonicalUrl: "https://yoursite.lovable.app/test/studios/design",
+    canonicalUrl: "https://www.indexnine.com/test/studios/design",
     keywords: "UI/UX design, visual engineering, design sprint, AI design, product design, startup design, MVP design",
-    ogImage: "https://yoursite.lovable.app/images/design-studio-og.jpg",
+    ogImage: "https://www.indexnine.com/images/design-studio-og.jpg",
   });
 
   return (
@@ -50,14 +50,14 @@ const DesignStudio = () => {
       <WebPageSchema
         title="Design Studio - Accelerating Visual Engineering | IndexNine"
         description="Our senior UI/UX experts leverage modern AI systems to move at unmatched speed—taking unrealized concepts to functional products."
-        url="https://yoursite.lovable.app/test/studios/design"
+        url="https://www.indexnine.com/test/studios/design"
       />
       
       <BreadcrumbSchema
         items={[
-          { name: "Home", url: "https://yoursite.lovable.app" },
-          { name: "Studios", url: "https://yoursite.lovable.app/studios" },
-          { name: "Design Studio", url: "https://yoursite.lovable.app/test/studios/design" }
+          { name: "Home", url: "https://www.indexnine.com" },
+          { name: "Studios", url: "https://www.indexnine.com/studios" },
+          { name: "Design Studio", url: "https://www.indexnine.com/test/studios/design" }
         ]}
       />
 
