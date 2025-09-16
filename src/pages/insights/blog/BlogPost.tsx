@@ -10,6 +10,16 @@ import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
 const BlogPost = () => {
   const { slug } = useParams();
 
+  // Legacy URL mappings
+  const legacyRedirects: Record<string, string> = {
+    "robot-framework-vs-playwright-automation": "robot-framework-vs-playwright",
+    "modern-analytics-platform-data-strategy-blueprint": "modern-analytics-platform", 
+    "ai-assisted-software-engineering-cursor": "ai-assisted-software-engineering"
+  };
+
+  // Get the actual slug (handle redirects)
+  const actualSlug = legacyRedirects[slug || ""] || slug;
+
   // Blog posts data - this should eventually come from CMS
   const blogPosts = {
     "microservices-vs-monolith": {
@@ -96,8 +106,8 @@ const BlogPost = () => {
       excerpt: "How to integrate security considerations into every stage of the software development lifecycle, from initial architecture to production deployment.",
       tags: ["DevSecOps", "Security", "Development"],
     },
-    "robot-framework-vs-playwright-automation": {
-      id: "robot-framework-vs-playwright-automation",
+    "robot-framework-vs-playwright": {
+      id: "robot-framework-vs-playwright",
       title:
         "Robot Framework vs. Playwright: The Test Automation Showdown Your Business Can't Ignore",
       content: `
@@ -211,7 +221,7 @@ const BlogPost = () => {
     }
   };
 
-  const currentPost = blogPosts[slug as keyof typeof blogPosts];
+  const currentPost = blogPosts[actualSlug as keyof typeof blogPosts];
 
   if (!currentPost) {
     return (
@@ -235,7 +245,7 @@ const BlogPost = () => {
     { name: "Home", url: "/" },
     { name: "Insights", url: "/insights" },
     { name: "Blogs", url: "/insights/blogs" },
-    { name: currentPost.title, url: `/insights/blogs/${slug}` }
+    { name: currentPost.title, url: `/insights/blogs/${actualSlug}` }
   ];
 
   return (
@@ -243,7 +253,7 @@ const BlogPost = () => {
       title={currentPost.title}
       description={currentPost.excerpt}
       keywords={currentPost.tags.join(", ")}
-      canonicalUrl={`https://indexnine.com/insights/blogs/${slug}`}
+      canonicalUrl={`https://indexnine.com/insights/blogs/${actualSlug}`}
       ogImage="https://indexnine.com/images/blog-og.jpg"
       author={currentPost.author}
       publishedDate={new Date(currentPost.publishDate).toISOString()}
@@ -319,7 +329,6 @@ const BlogPost = () => {
                 width={1200}
                 height={630}
                 className="w-full rounded-2xl shadow-2xl"
-                priority={true}
               />
             </div>
           </div>
@@ -327,54 +336,46 @@ const BlogPost = () => {
       </section>
 
       {/* Article Content */}
-      <article className="container mx-auto py-12">
-        <div className="max-w-4xl mx-auto">
-          <div
-            className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-a:text-primary hover:prose-a:text-primary/80"
-            dangerouslySetInnerHTML={{ __html: currentPost.content }}
-          />
+      <section className="py-12 bg-background">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <article className="prose prose-lg max-w-none">
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: currentPost.content,
+                }}
+              />
+            </article>
 
-          {/* Article Footer */}
-          <footer className="mt-16 pt-8 border-t">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Share this article</h3>
-                <div className="flex gap-4">
-                  <Button variant="outline" size="sm">
-                    Twitter
+            {/* Article Footer */}
+            <footer className="mt-16 pt-8 border-t border-border">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex-1">
+                  <p className="text-sm text-muted-foreground mb-1">Written by</p>
+                  <p className="font-semibold">{currentPost.author}</p>
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  <span>{currentPost.publishDate}</span> • <span>{currentPost.readTime}</span>
+                </div>
+              </div>
+
+              {/* Call to Action */}
+              <div className="bg-gradient-subtle rounded-2xl p-8 text-center">
+                <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
+                <p className="text-muted-foreground mb-6">
+                  Let's discuss how we can help transform your ideas into reality.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button size="lg" asChild>
+                    <Link to="/company/contact">Get in Touch</Link>
                   </Button>
-                  <Button variant="outline" size="sm">
-                    LinkedIn
-                  </Button>
-                  <Button variant="outline" size="sm">
-                    Facebook
+                  <Button variant="outline" size="lg" asChild>
+                    <Link to="/insights/blogs">More Insights</Link>
                   </Button>
                 </div>
               </div>
-              
-              <div className="text-right">
-                <p className="text-sm text-muted-foreground mb-2">
-                  Published by {currentPost.author}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {currentPost.publishDate} • {currentPost.readTime}
-                </p>
-              </div>
-            </div>
-          </footer>
-        </div>
-      </article>
-
-      {/* Related Articles CTA */}
-      <section className="bg-secondary/50 py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Explore More Insights</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Discover more articles on AI, technology trends, and digital transformation strategies.
-          </p>
-          <Button asChild size="lg">
-            <Link to="/insights/blogs">View All Blog Posts</Link>
-          </Button>
+            </footer>
+          </div>
         </div>
       </section>
     </SEOOptimizedLayout>

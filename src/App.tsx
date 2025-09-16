@@ -217,6 +217,11 @@ const App = () => {
                   path="/insights/blogs/robot-framework-vs-playwright"
                   element={<RobotFrameworkVsPlaywright />}
                 />
+                {/* Legacy redirect for old robot framework URL */}
+                <Route
+                  path="/insights/blogs/robot-framework-vs-playwright-automation"
+                  element={<RobotFrameworkVsPlaywright />}
+                />
                 <Route
                   path="/insights/blogs/ai-change-management-playbook"
                   element={<AiChangeManagementPlaybook />}
@@ -229,8 +234,18 @@ const App = () => {
                   path="/insights/blogs/modern-analytics-platform"
                   element={<ModernAnalyticsPlatformDataStrategy />}
                 />
+                {/* Legacy redirect for old analytics platform URL */}
+                <Route
+                  path="/insights/blogs/modern-analytics-platform-data-strategy-blueprint"
+                  element={<ModernAnalyticsPlatformDataStrategy />}
+                />
                 <Route
                   path="/insights/blogs/ai-assisted-software-engineering"
+                  element={<AiAssistedSoftwareEngineeringCursor />}
+                />
+                {/* Legacy redirect for old AI cursor URL */}
+                <Route
+                  path="/insights/blogs/ai-assisted-software-engineering-cursor"
                   element={<AiAssistedSoftwareEngineeringCursor />}
                 />
                 <Route
