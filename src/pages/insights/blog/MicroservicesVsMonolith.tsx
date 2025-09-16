@@ -40,11 +40,16 @@ const MicroservicesVsMonolith = () => {
 
   // Implement comprehensive SEO optimization
   useSEO({
-    title: "Microservices vs Monolith: An Enterprise Architect's Guide to Scalable Systems | IndexNine",
-    description: "The most critical architectural decision you'll make. Discover a strategic framework for choosing between monolithic and microservices architecture to ensure long-term scalability, resilience, and team velocity.",
-    canonicalUrl: "https://www.indexnine.com/insights/blogs/microservices-vs-monolith-architecture-guide",
-    keywords: "microservices vs monolith, enterprise architecture, scalable systems, software architecture, distributed systems, monolithic architecture, architectural decision framework",
-    ogImage: "https://www.indexnine.com/images/microservices-vs-monolith-og.jpg",
+    title:
+      "Microservices vs Monolith: An Enterprise Architect's Guide to Scalable Systems | IndexNine",
+    description:
+      "The most critical architectural decision you'll make. Discover a strategic framework for choosing between monolithic and microservices architecture to ensure long-term scalability, resilience, and team velocity.",
+    canonicalUrl:
+      "https://www.indexnine.com/insights/blogs/microservices-vs-monolith-architecture-guide",
+    keywords:
+      "microservices vs monolith, enterprise architecture, scalable systems, software architecture, distributed systems, monolithic architecture, architectural decision framework",
+    ogImage:
+      "https://www.indexnine.com/images/microservices-vs-monolith-og.jpg",
   });
 
   const toggleFAQ = (index: number) => {
@@ -89,8 +94,10 @@ const MicroservicesVsMonolith = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Microservices vs Monolith: An Enterprise Architect's Guide to Scalable Systems",
-            description: "The most critical architectural decision you'll make. Discover a strategic framework for choosing between monolithic and microservices architecture to ensure long-term scalability, resilience, and team velocity.",
+            headline:
+              "Microservices vs Monolith: An Enterprise Architect's Guide to Scalable Systems",
+            description:
+              "The most critical architectural decision you'll make. Discover a strategic framework for choosing between monolithic and microservices architecture to ensure long-term scalability, resilience, and team velocity.",
             url: "https://www.indexnine.com/insights/blogs/microservices-vs-monolith-architecture-guide",
             datePublished: "2025-01-10T00:00:00Z",
             dateModified: "2025-01-10T00:00:00Z",
@@ -108,7 +115,8 @@ const MicroservicesVsMonolith = () => {
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://www.indexnine.com/insights/blogs/microservices-vs-monolith-architecture-guide",
+              "@id":
+                "https://www.indexnine.com/insights/blogs/microservices-vs-monolith-architecture-guide",
             },
             image: [
               {
@@ -119,7 +127,8 @@ const MicroservicesVsMonolith = () => {
               },
             ],
             articleSection: "Enterprise Architecture",
-            keywords: "microservices vs monolith, enterprise architecture, scalable systems, software architecture, distributed systems, monolithic architecture, architectural decision framework",
+            keywords:
+              "microservices vs monolith, enterprise architecture, scalable systems, software architecture, distributed systems, monolithic architecture, architectural decision framework",
           }),
         }}
       />
@@ -141,7 +150,7 @@ const MicroservicesVsMonolith = () => {
                 },
               },
               {
-                "@type": "Question", 
+                "@type": "Question",
                 name: "What is a message queue and why is it so important for microservices?",
                 acceptedAnswer: {
                   "@type": "Answer",
@@ -152,7 +161,7 @@ const MicroservicesVsMonolith = () => {
                 "@type": "Question",
                 name: "Doesn't a microservices architecture just create more operational complexity?",
                 acceptedAnswer: {
-                  "@type": "Answer", 
+                  "@type": "Answer",
                   text: "Yes, it does. Managing a distributed system is inherently more complex than managing a single application. It requires mature practices around automated deployments (CI/CD), container orchestration (like Kubernetes), centralized logging, and distributed monitoring. This is a key reason why it's not the right choice for every team or every stage of a company's lifecycle.",
                 },
               },
@@ -199,524 +208,738 @@ const MicroservicesVsMonolith = () => {
       />
 
       {/* Hero Section */}
-      <section className={`${styles.blogHeroSection} relative py-24`}>
-        <div className="container mx-auto relative z-10">
-          <div className="max-w-4xl">
+      <section className="relative overflow-hidden bg-[#ffffff00]">
+        <div className="relative z-10 container mx-auto pt-36">
+          <div className="max-w-7xl mx-auto text-center lg:text-left ml-0">
+            {/* <div className="flex items-center"> */}
             <Link
               to="/insights/blogs"
-              className={`${styles.breadcrumbLink} inline-flex items-center text-gray-600 hover:text-brand-primary transition-colors mb-6 text-sm`}
+              className="inline-flex items-center text-foreground-muted hover:text-brand-primary-dark transition-colors mb-6 mr-6"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Blogs
             </Link>
-            
+
             <div className="mb-8">
               <h1 className="text-[1.5rem] sm:text-[2rem] lg:text-[2.5rem] font-semibold text-foreground leading-tight mb-6">
-                Microservices vs Monolith: Making the Right Architectural Choice for Scale
+                Microservices vs Monolith: Making the Right Architectural Choice
+                for Scale
               </h1>
-              
-              <p className="text-lg text-foreground-dark-muted leading-relaxed mb-8">
-                Every successful digital product eventually arrives at a critical, company-defining crossroads. The choice of your application's architecture is a fundamental business decision that will directly impact your team's velocity, your product's resilience, your ability to innovate, and your long-term cost of ownership.
-              </p>
 
               <div className="flex flex-wrap items-center gap-6 text-sm text-foreground/80 mb-6">
                 <div className="flex items-center gap-2">
                   <User className="h-4 w-4" />
-                  <span>IndexNine Architecture Team</span>
+                  <span>Enterprise Architecture</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
-                  <span>12 min read</span>
+                  <span>Scalable Systems</span>
                 </div>
-              </div>
-
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-brand-purple/10 text-brand-purple rounded-full text-xs font-medium">
-                  Enterprise Architecture
-                </span>
-                <span className="px-3 py-1 bg-brand-purple/10 text-brand-purple rounded-full text-xs font-medium">
-                  Scalable Systems
-                </span>
-                <span className="px-3 py-1 bg-brand-purple/10 text-brand-purple rounded-full text-xs font-medium">
-                  Software Architecture
-                </span>
+                <div className="flex items-center gap-2">
+                  <span>Software Architecture</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <section
-        className="py-16 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${BlogContBg})` }}
-      >
-        <div className="container mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-            {/* Left Navigation */}
-            <div className="lg:col-span-1">
-              <div className="sticky top-24">
-                <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-sm border border-gray-100">
-                  <h3 className="font-semibold text-foreground-dark mb-4">
-                    Table of Contents
-                  </h3>
-                  <nav className="space-y-2">
-                    {leftNavLinks.map((link) => (
-                      <a
-                        key={link.href}
-                        href={link.href}
-                        className={`block py-2 px-3 rounded-xl text-sm transition-colors ${
-                          selected === link.href
-                            ? "bg-brand-primary text-white"
-                            : "text-foreground-dark-muted hover:text-foreground-dark hover:bg-gray-50"
-                        }`}
-                      >
-                        {link.label}
-                      </a>
-                    ))}
-                  </nav>
-                </div>
-              </div>
-            </div>
+      <div className="bg-[#ffffff00]">
+        {/* Main Content */}
 
-            {/* Main Content */}
-            <div className="lg:col-span-3">
-              <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-sm border border-gray-100">
-                <article>
-                  {/* Introduction */}
-                  <section id="intro" className="mb-12">
-                    <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
-                      <p>
-                        This is the classic scaling dilemma, and at its heart lies the most critical technical and strategic decision a growing organization will face: <strong className="text-foreground-dark">Monolith vs. Microservices</strong>.
-                      </p>
-                      <p>
-                        This is not merely a technical debate for engineers. The choice of your application's architecture is a fundamental business decision that will directly impact your team's velocity, your product's resilience, your ability to innovate, and your long-term cost of ownership. Choosing the right path requires moving beyond the hype and applying a disciplined, strategic framework that aligns your architecture with your business stage, team structure, and future ambitions.
-                      </p>
-                      <div className="p-6 rounded-2xl bg-brand-primary/5 border border-brand-primary/20">
-                        <p className="text-foreground-dark font-semibold mb-2">
-                          <Target className="h-5 w-5 inline-block mr-2 text-brand-primary" />
-                          At IndexNine, we have guided countless organizations through this complex decision-making process.
+        <div
+          className="container grid md:grid-cols-3 gap-12 bg-transparent pt-12 rounded-tl-3xl rounded-tr-3xl bg-gradient-to-b from-white via-white to-[#F0F4FF] bg-contain bg-no-repeat"
+          style={{ backgroundImage: `url(${BlogContBg})` }}
+        >
+          {" "}
+          {/* Left Navigation */}
+          <div className="text-foreground-dark">
+            <div className="sticky top-[120px] pb-8">
+              <ul className="space-y-2">
+                {leftNavLinks.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      className={`inline-block py-2 rounded transition 
+                        ${
+                          selected === link.href
+                            ? "text-brand-purple font-semibold"
+                            : "text-gray-700"
+                        }
+                        hover:text-brand-purple
+                      `}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          {/* Main Content */}
+          <div className="col-span-2 w-full">
+            <article>
+              {/* Introduction */}
+              <section id="intro" className="mb-12">
+                <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
+                  <p className="text-lg text-foreground-dark-muted leading-relaxed mb-8">
+                    Every successful digital product eventually arrives at a
+                    critical, company-defining crossroads. The choice of your
+                    application's architecture is a fundamental business
+                    decision that will directly impact your team's velocity,
+                    your product's resilience, your ability to innovate, and
+                    your long-term cost of ownership.
+                  </p>
+                  <p>
+                    This is the classic scaling dilemma, and at its heart lies
+                    the most critical technical and strategic decision a growing
+                    organization will face:{" "}
+                    <strong className="text-foreground-dark">
+                      Monolith vs. Microservices
+                    </strong>
+                    .
+                  </p>
+                  <p>
+                    This is not merely a technical debate for engineers. The
+                    choice of your application's architecture is a fundamental
+                    business decision that will directly impact your team's
+                    velocity, your product's resilience, your ability to
+                    innovate, and your long-term cost of ownership. Choosing the
+                    right path requires moving beyond the hype and applying a
+                    disciplined, strategic framework that aligns your
+                    architecture with your business stage, team structure, and
+                    future ambitions.
+                  </p>
+                  <div className="p-6 rounded-2xl bg-brand-primary/5 border border-brand-primary/20">
+                    <p className="text-foreground-dark font-semibold mb-2">
+                      <Target className="h-5 w-5 inline-block mr-2 text-brand-primary" />
+                      At IndexNine, we have guided countless organizations
+                      through this complex decision-making process.
+                    </p>
+                    <p className="text-foreground-dark-muted">
+                      This is our blueprint for understanding the trade-offs and
+                      making the right architectural choice—not just for the
+                      product you have today, but for the market-leading
+                      platform you intend to build.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* The Architect's Crossroads */}
+              <section id="crossroads" className="mb-12">
+                <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
+                  The Architect's Crossroads: When Simplicity Meets Complexity
+                </h2>
+                <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
+                  <p>
+                    The simple, unified application that carried you through the
+                    MVP stage and secured your initial market traction—the one
+                    built for speed and simplicity—is now showing signs of
+                    strain. Development cycles are slowing down, deployments
+                    have become high-risk, "all-or-nothing" events, and a single
+                    bug in a minor feature can bring the entire system to a
+                    grinding halt.
+                  </p>
+
+                  <div className="grid md:grid-cols-2 gap-6 my-8">
+                    <div className="p-6 rounded-2xl bg-red-50 border border-red-200">
+                      <AlertTriangle className="h-6 w-6 text-red-500 mb-3" />
+                      <h3 className="font-semibold text-foreground-dark mb-3">
+                        Warning Signs
+                      </h3>
+                      <ul className="text-sm text-foreground-dark-muted space-y-2">
+                        <li>• Declining development velocity</li>
+                        <li>• High-risk deployment events</li>
+                        <li>• Single points of failure</li>
+                        <li>• Inefficient scaling patterns</li>
+                      </ul>
+                    </div>
+                    <div className="p-6 rounded-2xl bg-green-50 border border-green-200">
+                      <CheckCircle className="h-6 w-6 text-green-500 mb-3" />
+                      <h3 className="font-semibold text-foreground-dark mb-3">
+                        Growth Indicators
+                      </h3>
+                      <ul className="text-sm text-foreground-dark-muted space-y-2">
+                        <li>• Product-market fit achieved</li>
+                        <li>• Multiple development teams</li>
+                        <li>• Complex business domains</li>
+                        <li>• Scaling requirements vary</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Understanding Monolithic Architecture */}
+              <section id="monolithic" className="mb-12">
+                <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
+                  Understanding the Monolithic Architecture: The Power and Peril
+                  of Simplicity
+                </h2>
+                <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
+                  <p>
+                    A monolithic architecture is the traditional and most
+                    straightforward way to build an application. The entire
+                    application—from the user interface to the business logic to
+                    the data access layer—is developed and deployed as a single,
+                    unified unit.
+                  </p>
+
+                  <div className="p-8 rounded-3xl bg-foreground-dark/5">
+                    <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                      The Strategic Advantages of a Monolith:
+                    </h3>
+                    <p className="text-foreground-dark-muted mb-6">
+                      For early-stage startups and products with a well-defined,
+                      limited scope, the monolithic approach offers compelling
+                      advantages.
+                    </p>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <h4 className="font-semibold text-foreground-dark mb-2 flex items-center">
+                          <Zap className="h-5 w-5 text-brand-primary mr-2" />
+                          Initial Velocity
+                        </h4>
+                        <p className="text-sm text-foreground-dark-muted mb-4">
+                          With a single codebase and no distributed system
+                          complexity, a small team can develop and launch an MVP
+                          incredibly quickly.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground-dark mb-2 flex items-center">
+                          <Shield className="h-5 w-5 text-brand-primary mr-2" />
+                          Simplified Development
+                        </h4>
+                        <p className="text-sm text-foreground-dark-muted mb-4">
+                          When all components reside in one codebase, it's
+                          easier to implement cross-cutting concerns like
+                          logging and security.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-8 rounded-3xl bg-red-50 border border-red-200">
+                    <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                      The Inevitable Scaling Challenges:
+                    </h3>
+                    <p className="text-foreground-dark-muted mb-6">
+                      The very simplicity that makes a monolith attractive in
+                      the beginning becomes its greatest liability as the
+                      application and the organization grow.
+                    </p>
+
+                    <div className="space-y-4">
+                      <div className="flex items-start gap-3">
+                        <AlertTriangle className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-foreground-dark mb-1">
+                            Declining Development Velocity
+                          </h4>
+                          <p className="text-sm text-foreground-dark-muted">
+                            As the codebase swells, it becomes increasingly
+                            complex and difficult for developers to understand.
+                            A single change can have unintended consequences
+                            across the entire system.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <AlertTriangle className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-foreground-dark mb-1">
+                            High-Risk Deployments
+                          </h4>
+                          <p className="text-sm text-foreground-dark-muted">
+                            Since the entire application is a single unit, a
+                            small change requires a full redeployment of the
+                            entire system, making deployments infrequent,
+                            high-risk events.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <AlertTriangle className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-foreground-dark mb-1">
+                            Lack of Fault Tolerance
+                          </h4>
+                          <p className="text-sm text-foreground-dark-muted">
+                            A monolithic architecture creates a single point of
+                            failure. A memory leak in a non-critical feature can
+                            crash the entire application, taking
+                            mission-critical functions down with it.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Microservices Architecture */}
+              <section id="microservices" className="mb-12">
+                <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
+                  The Microservices Architecture: Engineering for Resilience and
+                  Velocity
+                </h2>
+                <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
+                  <p>
+                    A microservices architecture takes the opposite approach.
+                    Instead of a single, unified block of code, the application
+                    is broken down into a collection of small, independent, and
+                    loosely coupled services, each responsible for a single
+                    business function (e.g., a "payment service," a "user
+                    profile service," a "notification service").
+                  </p>
+
+                  <div className="p-6 rounded-2xl bg-blue-50 border border-blue-200">
+                    <h4 className="font-semibold text-foreground-dark mb-2">
+                      Key Concept: Message Queues
+                    </h4>
+                    <p className="text-sm text-foreground-dark-muted">
+                      These services communicate with each other asynchronously,
+                      often using a message queue that acts as a "post office"
+                      or buffer between them. This decoupling is the key to
+                      unlocking the immense strategic advantages of this modern
+                      architectural pattern.
+                    </p>
+                  </div>
+
+                  <div className="p-8 rounded-3xl bg-green-50 border border-green-200">
+                    <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                      The Strategic Advantages of Microservices:
+                    </h3>
+                    <p className="text-foreground-dark-muted mb-6">
+                      For organizations that have achieved product-market fit
+                      and are focused on scale, resilience, and team agility,
+                      microservices offer a powerful solution to the limitations
+                      of the monolith.
+                    </p>
+
+                    <div className="space-y-4">
+                      <div className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-foreground-dark mb-1">
+                            Team Autonomy and Accelerated Velocity
+                          </h4>
+                          <p className="text-sm text-foreground-dark-muted">
+                            The architecture allows you to structure your
+                            organization into small, autonomous teams, each
+                            owning one or more services. These teams can
+                            develop, test, and deploy their services
+                            independently and simultaneously.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-foreground-dark mb-1">
+                            Enhanced Resilience and Fault Isolation
+                          </h4>
+                          <p className="text-sm text-foreground-dark-muted">
+                            Because the services are independent, a failure in
+                            one non-critical service does not cascade to the
+                            entire application. If the payment service fails,
+                            users can still browse products, manage their
+                            profiles, and receive notifications.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-foreground-dark mb-1">
+                            Targeted, Cost-Effective Scaling
+                          </h4>
+                          <p className="text-sm text-foreground-dark-muted">
+                            Microservices allow for granular, efficient scaling.
+                            If the "search" service is under heavy load, you can
+                            horizontally scale only that service by adding more
+                            instances.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-semibold text-foreground-dark mb-1">
+                            Technological Flexibility
+                          </h4>
+                          <p className="text-sm text-foreground-dark-muted">
+                            Each microservice can be built with the technology
+                            stack best suited for its specific task. You can
+                            have a user profile service written in Python, a
+                            real-time notification service in Node.js, and a
+                            data-processing service in Java.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Decision Framework */}
+              <section id="decision-framework" className="mb-12">
+                <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
+                  The Decision Framework: How to Choose the Right Path
+                </h2>
+                <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
+                  <p>
+                    The choice between a monolith and microservices is not about
+                    which is "better" in the absolute; it's about which is the
+                    right strategic fit for your specific context. Here is a
+                    framework for making that decision based on key business and
+                    technical drivers:
+                  </p>
+
+                  <div className="overflow-x-auto">
+                    <table className="w-full border-collapse bg-white rounded-2xl shadow-sm border border-gray-200">
+                      <thead>
+                        <tr className="bg-gray-50">
+                          <th className="p-4 text-left font-semibold text-foreground-dark border-b border-gray-200">
+                            Driver
+                          </th>
+                          <th className="p-4 text-left font-semibold text-foreground-dark border-b border-gray-200">
+                            Lean Towards Monolith When...
+                          </th>
+                          <th className="p-4 text-left font-semibold text-foreground-dark border-b border-gray-200">
+                            Lean Towards Microservices When...
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td className="p-4 font-medium text-foreground-dark border-b border-gray-100">
+                            Business Stage
+                          </td>
+                          <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">
+                            You are at the pre-product-market-fit or MVP stage.
+                            Your primary goal is speed of learning and
+                            iteration.
+                          </td>
+                          <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">
+                            You have achieved product-market-fit and are
+                            entering a high-growth, scaling phase.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-foreground-dark border-b border-gray-100">
+                            Team Structure
+                          </td>
+                          <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">
+                            You have a single, small, co-located development
+                            team.
+                          </td>
+                          <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">
+                            You have multiple development teams that need to
+                            work autonomously and in parallel.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-foreground-dark border-b border-gray-100">
+                            Application Complexity
+                          </td>
+                          <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">
+                            The application has a single, well-defined domain
+                            and a limited number of features.
+                          </td>
+                          <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">
+                            The application is a complex, multi-domain platform
+                            with numerous, distinct business capabilities.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-foreground-dark border-b border-gray-100">
+                            Scalability Needs
+                          </td>
+                          <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">
+                            Your user growth is predictable, and the entire
+                            application scales uniformly.
+                          </td>
+                          <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">
+                            You have unpredictable, high-growth potential, or
+                            different parts of your application have vastly
+                            different scaling requirements.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="p-4 font-medium text-foreground-dark">
+                            DevOps Maturity
+                          </td>
+                          <td className="p-4 text-sm text-foreground-dark-muted">
+                            Your team has limited experience with CI/CD,
+                            containerization (Docker, Kubernetes), and
+                            distributed systems monitoring.
+                          </td>
+                          <td className="p-4 text-sm text-foreground-dark-muted">
+                            Your team has a mature DevOps culture and the
+                            expertise to manage the operational complexity of a
+                            distributed system.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+
+              {/* Case Study */}
+              <section id="case-study" className="mb-12">
+                <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
+                  A Case Study in Modernization: From Monolithic Failure to
+                  Microservices Resilience
+                </h2>
+                <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
+                  <p>
+                    Our engagement with{" "}
+                    <Link
+                      to="/insights/case-studies/genesys"
+                      className="text-brand-primary hover:underline font-semibold"
+                    >
+                      Genesys
+                    </Link>
+                    , an e-commerce technology giant, is the quintessential
+                    example of an organization hitting the scaling limits of a
+                    monolith and making a strategic pivot to microservices.
+                  </p>
+
+                  <div className="p-8 rounded-3xl bg-foreground-dark/5 border border-gray-200">
+                    <div className="grid md:grid-cols-2 gap-8">
+                      <div>
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center">
+                          <AlertTriangle className="h-6 w-6 text-red-500 mr-3" />
+                          The Challenge
+                        </h3>
+                        <p className="text-foreground-dark-muted mb-4">
+                          Their mission-critical integration platform, a
+                          16-year-old monolith, was on the verge of collapse. It
+                          was responsible for processing millions of real-time
+                          transactions from 178 different e-commerce partners.
                         </p>
                         <p className="text-foreground-dark-muted">
-                          This is our blueprint for understanding the trade-offs and making the right architectural choice—not just for the product you have today, but for the market-leading platform you intend to build.
+                          The tightly coupled nature of the monolithic
+                          architecture meant that a change from a single partner
+                          could send a shockwave through the entire system,
+                          causing daily crashes.
                         </p>
                       </div>
-                    </div>
-                  </section>
 
-                  {/* The Architect's Crossroads */}
-                  <section id="crossroads" className="mb-12">
-                    <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
-                      The Architect's Crossroads: When Simplicity Meets Complexity
-                    </h2>
-                    <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
-                      <p>
-                        The simple, unified application that carried you through the MVP stage and secured your initial market traction—the one built for speed and simplicity—is now showing signs of strain. Development cycles are slowing down, deployments have become high-risk, "all-or-nothing" events, and a single bug in a minor feature can bring the entire system to a grinding halt.
-                      </p>
-                      
-                      <div className="grid md:grid-cols-2 gap-6 my-8">
-                        <div className="p-6 rounded-2xl bg-red-50 border border-red-200">
-                          <AlertTriangle className="h-6 w-6 text-red-500 mb-3" />
-                          <h3 className="font-semibold text-foreground-dark mb-3">Warning Signs</h3>
-                          <ul className="text-sm text-foreground-dark-muted space-y-2">
-                            <li>• Declining development velocity</li>
-                            <li>• High-risk deployment events</li>
-                            <li>• Single points of failure</li>
-                            <li>• Inefficient scaling patterns</li>
-                          </ul>
-                        </div>
-                        <div className="p-6 rounded-2xl bg-green-50 border border-green-200">
-                          <CheckCircle className="h-6 w-6 text-green-500 mb-3" />
-                          <h3 className="font-semibold text-foreground-dark mb-3">Growth Indicators</h3>
-                          <ul className="text-sm text-foreground-dark-muted space-y-2">
-                            <li>• Product-market fit achieved</li>
-                            <li>• Multiple development teams</li>
-                            <li>• Complex business domains</li>
-                            <li>• Scaling requirements vary</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-
-                  {/* Understanding Monolithic Architecture */}
-                  <section id="monolithic" className="mb-12">
-                    <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
-                      Understanding the Monolithic Architecture: The Power and Peril of Simplicity
-                    </h2>
-                    <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
-                      <p>
-                        A monolithic architecture is the traditional and most straightforward way to build an application. The entire application—from the user interface to the business logic to the data access layer—is developed and deployed as a single, unified unit.
-                      </p>
-                      
-                      <div className="p-8 rounded-3xl bg-foreground-dark/5">
-                        <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                          The Strategic Advantages of a Monolith:
+                      <div>
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center">
+                          <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
+                          The Solution
                         </h3>
-                        <p className="text-foreground-dark-muted mb-6">
-                          For early-stage startups and products with a well-defined, limited scope, the monolithic approach offers compelling advantages.
+                        <p className="text-foreground-dark-muted mb-4">
+                          Our solution was a ground-up modernization effort. We
+                          methodically re-architected their failing monolithic
+                          hub into a collection of decoupled microservices, each
+                          responsible for handling a specific partner
+                          integration.
                         </p>
-                        
-                        <div className="grid md:grid-cols-2 gap-6">
-                          <div>
-                            <h4 className="font-semibold text-foreground-dark mb-2 flex items-center">
-                              <Zap className="h-5 w-5 text-brand-primary mr-2" />
-                              Initial Velocity
-                            </h4>
-                            <p className="text-sm text-foreground-dark-muted mb-4">
-                              With a single codebase and no distributed system complexity, a small team can develop and launch an MVP incredibly quickly.
-                            </p>
-                          </div>
-                          <div>
-                            <h4 className="font-semibold text-foreground-dark mb-2 flex items-center">
-                              <Shield className="h-5 w-5 text-brand-primary mr-2" />
-                              Simplified Development
-                            </h4>
-                            <p className="text-sm text-foreground-dark-muted mb-4">
-                              When all components reside in one codebase, it's easier to implement cross-cutting concerns like logging and security.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="p-8 rounded-3xl bg-red-50 border border-red-200">
-                        <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                          The Inevitable Scaling Challenges:
-                        </h3>
-                        <p className="text-foreground-dark-muted mb-6">
-                          The very simplicity that makes a monolith attractive in the beginning becomes its greatest liability as the application and the organization grow.
-                        </p>
-                        
-                        <div className="space-y-4">
-                          <div className="flex items-start gap-3">
-                            <AlertTriangle className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
-                            <div>
-                              <h4 className="font-semibold text-foreground-dark mb-1">Declining Development Velocity</h4>
-                              <p className="text-sm text-foreground-dark-muted">
-                                As the codebase swells, it becomes increasingly complex and difficult for developers to understand. A single change can have unintended consequences across the entire system.
-                              </p>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-3">
-                            <AlertTriangle className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
-                            <div>
-                              <h4 className="font-semibold text-foreground-dark mb-1">High-Risk Deployments</h4>
-                              <p className="text-sm text-foreground-dark-muted">
-                                Since the entire application is a single unit, a small change requires a full redeployment of the entire system, making deployments infrequent, high-risk events.
-                              </p>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-3">
-                            <AlertTriangle className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
-                            <div>
-                              <h4 className="font-semibold text-foreground-dark mb-1">Lack of Fault Tolerance</h4>
-                              <p className="text-sm text-foreground-dark-muted">
-                                A monolithic architecture creates a single point of failure. A memory leak in a non-critical feature can crash the entire application, taking mission-critical functions down with it.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-
-                  {/* Microservices Architecture */}
-                  <section id="microservices" className="mb-12">
-                    <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
-                      The Microservices Architecture: Engineering for Resilience and Velocity
-                    </h2>
-                    <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
-                      <p>
-                        A microservices architecture takes the opposite approach. Instead of a single, unified block of code, the application is broken down into a collection of small, independent, and loosely coupled services, each responsible for a single business function (e.g., a "payment service," a "user profile service," a "notification service").
-                      </p>
-
-                      <div className="p-6 rounded-2xl bg-blue-50 border border-blue-200">
-                        <h4 className="font-semibold text-foreground-dark mb-2">Key Concept: Message Queues</h4>
-                        <p className="text-sm text-foreground-dark-muted">
-                          These services communicate with each other asynchronously, often using a message queue that acts as a "post office" or buffer between them. This decoupling is the key to unlocking the immense strategic advantages of this modern architectural pattern.
+                        <p className="text-foreground-dark-muted">
+                          These services communicated asynchronously via an
+                          event-driven message queue.
                         </p>
                       </div>
-                      
-                      <div className="p-8 rounded-3xl bg-green-50 border border-green-200">
-                        <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                          The Strategic Advantages of Microservices:
-                        </h3>
-                        <p className="text-foreground-dark-muted mb-6">
-                          For organizations that have achieved product-market fit and are focused on scale, resilience, and team agility, microservices offer a powerful solution to the limitations of the monolith.
-                        </p>
-                        
-                        <div className="space-y-4">
-                          <div className="flex items-start gap-3">
-                            <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                            <div>
-                              <h4 className="font-semibold text-foreground-dark mb-1">Team Autonomy and Accelerated Velocity</h4>
-                              <p className="text-sm text-foreground-dark-muted">
-                                The architecture allows you to structure your organization into small, autonomous teams, each owning one or more services. These teams can develop, test, and deploy their services independently and simultaneously.
-                              </p>
-                            </div>
+                    </div>
+
+                    <div className="mt-8 pt-8 border-t border-gray-200">
+                      <h4 className="font-semibold text-foreground-dark mb-4">
+                        The Results:
+                      </h4>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="text-center p-4 bg-white rounded-xl">
+                          <div className="text-2xl font-semibold text-brand-primary mb-1">
+                            99.9%
                           </div>
-                          <div className="flex items-start gap-3">
-                            <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                            <div>
-                              <h4 className="font-semibold text-foreground-dark mb-1">Enhanced Resilience and Fault Isolation</h4>
-                              <p className="text-sm text-foreground-dark-muted">
-                                Because the services are independent, a failure in one non-critical service does not cascade to the entire application. If the payment service fails, users can still browse products, manage their profiles, and receive notifications.
-                              </p>
-                            </div>
+                          <div className="text-sm text-foreground-dark-muted">
+                            System Uptime
                           </div>
-                          <div className="flex items-start gap-3">
-                            <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                            <div>
-                              <h4 className="font-semibold text-foreground-dark mb-1">Targeted, Cost-Effective Scaling</h4>
-                              <p className="text-sm text-foreground-dark-muted">
-                                Microservices allow for granular, efficient scaling. If the "search" service is under heavy load, you can horizontally scale only that service by adding more instances.
-                              </p>
-                            </div>
+                        </div>
+                        <div className="text-center p-4 bg-white rounded-xl">
+                          <div className="text-2xl font-semibold text-brand-primary mb-1">
+                            50%
                           </div>
-                          <div className="flex items-start gap-3">
-                            <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
-                            <div>
-                              <h4 className="font-semibold text-foreground-dark mb-1">Technological Flexibility</h4>
-                              <p className="text-sm text-foreground-dark-muted">
-                                Each microservice can be built with the technology stack best suited for its specific task. You can have a user profile service written in Python, a real-time notification service in Node.js, and a data-processing service in Java.
-                              </p>
-                            </div>
+                          <div className="text-sm text-foreground-dark-muted">
+                            Faster Partner Onboarding
+                          </div>
+                        </div>
+                        <div className="text-center p-4 bg-white rounded-xl">
+                          <div className="text-2xl font-semibold text-brand-primary mb-1">
+                            Zero
+                          </div>
+                          <div className="text-sm text-foreground-dark-muted">
+                            System-Wide Outages
                           </div>
                         </div>
                       </div>
                     </div>
-                  </section>
+                  </div>
+                </div>
+              </section>
 
-                  {/* Decision Framework */}
-                  <section id="decision-framework" className="mb-12">
-                    <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
-                      The Decision Framework: How to Choose the Right Path
-                    </h2>
-                    <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
-                      <p>
-                        The choice between a monolith and microservices is not about which is "better" in the absolute; it's about which is the right strategic fit for your specific context. Here is a framework for making that decision based on key business and technical drivers:
+              {/* Industry Perspectives */}
+              <section id="industry-perspectives" className="mb-12">
+                <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
+                  Industry Perspectives: Best Practices from Cloud Leaders
+                </h2>
+                <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
+                  <p>
+                    Our approach is deeply aligned with the best practices
+                    championed by the world's leading cloud providers, who have
+                    built their own global-scale systems on these principles.
+                  </p>
+
+                  <div className="space-y-6">
+                    <div className="p-6 rounded-2xl border border-gray-200 bg-white">
+                      <h4 className="font-semibold text-foreground-dark mb-3">
+                        Amazon Web Services (AWS)
+                      </h4>
+                      <p className="text-sm text-foreground-dark-muted italic mb-2">
+                        "A best practice is to build systems using a
+                        microservices architecture. Architect your workload to
+                        use small, independent services that communicate over
+                        well-defined APIs. This approach decouples your
+                        components and avoids single points of failure."
                       </p>
-                      
-                      <div className="overflow-x-auto">
-                        <table className="w-full border-collapse bg-white rounded-2xl shadow-sm border border-gray-200">
-                          <thead>
-                            <tr className="bg-gray-50">
-                              <th className="p-4 text-left font-semibold text-foreground-dark border-b border-gray-200">Driver</th>
-                              <th className="p-4 text-left font-semibold text-foreground-dark border-b border-gray-200">Lean Towards Monolith When...</th>
-                              <th className="p-4 text-left font-semibold text-foreground-dark border-b border-gray-200">Lean Towards Microservices When...</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td className="p-4 font-medium text-foreground-dark border-b border-gray-100">Business Stage</td>
-                              <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">You are at the pre-product-market-fit or MVP stage. Your primary goal is speed of learning and iteration.</td>
-                              <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">You have achieved product-market-fit and are entering a high-growth, scaling phase.</td>
-                            </tr>
-                            <tr>
-                              <td className="p-4 font-medium text-foreground-dark border-b border-gray-100">Team Structure</td>
-                              <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">You have a single, small, co-located development team.</td>
-                              <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">You have multiple development teams that need to work autonomously and in parallel.</td>
-                            </tr>
-                            <tr>
-                              <td className="p-4 font-medium text-foreground-dark border-b border-gray-100">Application Complexity</td>
-                              <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">The application has a single, well-defined domain and a limited number of features.</td>
-                              <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">The application is a complex, multi-domain platform with numerous, distinct business capabilities.</td>
-                            </tr>
-                            <tr>
-                              <td className="p-4 font-medium text-foreground-dark border-b border-gray-100">Scalability Needs</td>
-                              <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">Your user growth is predictable, and the entire application scales uniformly.</td>
-                              <td className="p-4 text-sm text-foreground-dark-muted border-b border-gray-100">You have unpredictable, high-growth potential, or different parts of your application have vastly different scaling requirements.</td>
-                            </tr>
-                            <tr>
-                              <td className="p-4 font-medium text-foreground-dark">DevOps Maturity</td>
-                              <td className="p-4 text-sm text-foreground-dark-muted">Your team has limited experience with CI/CD, containerization (Docker, Kubernetes), and distributed systems monitoring.</td>
-                              <td className="p-4 text-sm text-foreground-dark-muted">Your team has a mature DevOps culture and the expertise to manage the operational complexity of a distributed system.</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </section>
-
-                  {/* Case Study */}
-                  <section id="case-study" className="mb-12">
-                    <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
-                      A Case Study in Modernization: From Monolithic Failure to Microservices Resilience
-                    </h2>
-                    <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
-                      <p>
-                        Our engagement with{" "}
-                        <Link 
-                          to="/insights/case-studies/genesys" 
-                          className="text-brand-primary hover:underline font-semibold"
-                        >
-                          Genesys
-                        </Link>
-                        , an e-commerce technology giant, is the quintessential example of an organization hitting the scaling limits of a monolith and making a strategic pivot to microservices.
+                      <p className="text-xs text-foreground-dark-muted">
+                        — AWS Well-Architected Framework
                       </p>
-                      
-                      <div className="p-8 rounded-3xl bg-foreground-dark/5 border border-gray-200">
-                        <div className="grid md:grid-cols-2 gap-8">
-                          <div>
-                            <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center">
-                              <AlertTriangle className="h-6 w-6 text-red-500 mr-3" />
-                              The Challenge
-                            </h3>
-                            <p className="text-foreground-dark-muted mb-4">
-                              Their mission-critical integration platform, a 16-year-old monolith, was on the verge of collapse. It was responsible for processing millions of real-time transactions from 178 different e-commerce partners.
-                            </p>
-                            <p className="text-foreground-dark-muted">
-                              The tightly coupled nature of the monolithic architecture meant that a change from a single partner could send a shockwave through the entire system, causing daily crashes.
-                            </p>
-                          </div>
-                          
-                          <div>
-                            <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center">
-                              <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
-                              The Solution
-                            </h3>
-                            <p className="text-foreground-dark-muted mb-4">
-                              Our solution was a ground-up modernization effort. We methodically re-architected their failing monolithic hub into a collection of decoupled microservices, each responsible for handling a specific partner integration.
-                            </p>
-                            <p className="text-foreground-dark-muted">
-                              These services communicated asynchronously via an event-driven message queue.
-                            </p>
-                          </div>
-                        </div>
-                        
-                        <div className="mt-8 pt-8 border-t border-gray-200">
-                          <h4 className="font-semibold text-foreground-dark mb-4">The Results:</h4>
-                          <div className="grid md:grid-cols-3 gap-4">
-                            <div className="text-center p-4 bg-white rounded-xl">
-                              <div className="text-2xl font-bold text-brand-primary mb-1">99.9%</div>
-                              <div className="text-sm text-foreground-dark-muted">System Uptime</div>
-                            </div>
-                            <div className="text-center p-4 bg-white rounded-xl">
-                              <div className="text-2xl font-bold text-brand-primary mb-1">50%</div>
-                              <div className="text-sm text-foreground-dark-muted">Faster Partner Onboarding</div>
-                            </div>
-                            <div className="text-center p-4 bg-white rounded-xl">
-                              <div className="text-2xl font-bold text-brand-primary mb-1">Zero</div>
-                              <div className="text-sm text-foreground-dark-muted">System-Wide Outages</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </section>
 
-                  {/* Industry Perspectives */}
-                  <section id="industry-perspectives" className="mb-12">
-                    <h2 className="text-2xl font-semibold text-foreground-dark mb-6">
-                      Industry Perspectives: Best Practices from Cloud Leaders
-                    </h2>
-                    <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed">
-                      <p>
-                        Our approach is deeply aligned with the best practices championed by the world's leading cloud providers, who have built their own global-scale systems on these principles.
+                    <div className="p-6 rounded-2xl border border-gray-200 bg-white">
+                      <h4 className="font-semibold text-foreground-dark mb-3">
+                        Google Cloud
+                      </h4>
+                      <p className="text-sm text-foreground-dark-muted italic mb-2">
+                        "Microservices are an approach to application
+                        development in which a large application is built as a
+                        suite of modular services. Each module supports a
+                        specific business goal and uses a simple, well-defined
+                        interface to communicate with other sets of services."
                       </p>
-                      
-                      <div className="space-y-6">
-                        <div className="p-6 rounded-2xl border border-gray-200 bg-white">
-                          <h4 className="font-semibold text-foreground-dark mb-3">Amazon Web Services (AWS)</h4>
-                          <p className="text-sm text-foreground-dark-muted italic mb-2">
-                            "A best practice is to build systems using a microservices architecture. Architect your workload to use small, independent services that communicate over well-defined APIs. This approach decouples your components and avoids single points of failure."
-                          </p>
-                          <p className="text-xs text-foreground-dark-muted">— AWS Well-Architected Framework</p>
-                        </div>
-                        
-                        <div className="p-6 rounded-2xl border border-gray-200 bg-white">
-                          <h4 className="font-semibold text-foreground-dark mb-3">Google Cloud</h4>
-                          <p className="text-sm text-foreground-dark-muted italic mb-2">
-                            "Microservices are an approach to application development in which a large application is built as a suite of modular services. Each module supports a specific business goal and uses a simple, well-defined interface to communicate with other sets of services."
-                          </p>
-                          <p className="text-xs text-foreground-dark-muted">— Google Cloud Architecture Center</p>
-                        </div>
-                        
-                        <div className="p-6 rounded-2xl border border-gray-200 bg-white">
-                          <h4 className="font-semibold text-foreground-dark mb-3">Microsoft Azure</h4>
-                          <p className="text-sm text-foreground-dark-muted italic mb-2">
-                            "Because microservices are deployed independently, it's easier to manage bug fixes and feature releases... This approach enables a continuous integration and continuous delivery (CI/CD) practice for trying out new ideas and for rolling back if something doesn't work."
-                          </p>
-                          <p className="text-xs text-foreground-dark-muted">— Azure Architecture Center</p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-
-                  {/* FAQ Section */}
-                  <section id="faqs" className="mb-12">
-                    <h2 className="text-2xl font-semibold text-foreground-dark mb-8">
-                      Frequently Asked Questions
-                    </h2>
-                    
-                    <div className="space-y-4">
-                      {[
-                        {
-                          question: "Is a monolith always a bad choice for a new product?",
-                          answer: "Not at all. For most startups building an MVP, a monolith is often the superior choice. It allows for maximum development speed with a small team, enabling you to get to market and validate your core business idea as quickly as possible. The key is to build it with clean internal boundaries so that it can be more easily broken apart into microservices later, once you've achieved product-market fit."
-                        },
-                        {
-                          question: "What is a \"message queue\" and why is it so important for microservices?",
-                          answer: "A message queue is an intermediary service that acts as a buffer or \"post office\" for messages sent between different microservices. Instead of Service A calling Service B directly (a tight coupling), Service A places a message in the queue, and Service B retrieves it when it's ready. This decoupling is critical because it means Service B can be down for maintenance without causing Service A to fail. It's the foundational technology that enables the resilience and asynchronicity of a microservices architecture."
-                        },
-                        {
-                          question: "Doesn't a microservices architecture just create more operational complexity?",
-                          answer: "Yes, it does. Managing a distributed system is inherently more complex than managing a single application. It requires mature practices around automated deployments (CI/CD), container orchestration (like Kubernetes), centralized logging, and distributed monitoring. This is a key reason why it's not the right choice for every team or every stage of a company's lifecycle. The trade-off is accepting this operational complexity in exchange for greater scalability, resilience, and development velocity."
-                        }
-                      ].map((faq, index) => (
-                        <div key={index} className="border border-gray-200 rounded-2xl bg-white">
-                          <button
-                            onClick={() => toggleFAQ(index)}
-                            className="w-full text-left p-6 flex justify-between items-start hover:bg-gray-50 transition-colors rounded-2xl"
-                          >
-                            <span className="font-semibold text-foreground-dark pr-4">
-                              {faq.question}
-                            </span>
-                            {expandedFAQ === index ? (
-                              <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0 mt-1" />
-                            ) : (
-                              <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0 mt-1" />
-                            )}
-                          </button>
-                          {expandedFAQ === index && (
-                            <div className="px-6 pb-6 text-foreground-dark-muted leading-relaxed">
-                              {faq.answer}
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </section>
-
-                  {/* Strategic CTA */}
-                  <section className="mb-8">
-                    <div className="p-8 rounded-3xl bg-gradient-to-r from-brand-primary to-brand-purple text-white text-center">
-                      <h3 className="text-2xl font-bold mb-4">
-                        The choice of your architecture will define your company's ability to scale.
-                      </h3>
-                      <p className="text-lg mb-6 opacity-90">
-                        Are you building for today, or architecting for tomorrow?
+                      <p className="text-xs text-foreground-dark-muted">
+                        — Google Cloud Architecture Center
                       </p>
-                      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button className="bg-white text-brand-primary hover:bg-gray-100 font-semibold px-8 py-3">
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          Schedule an Architectural Strategy Session
-                        </Button>
-                        <Button variant="outline" className="border-white text-white hover:bg-white/10 font-semibold px-8 py-3">
-                          <Download className="h-4 w-4 mr-2" />
-                          Download Architecture Framework
-                        </Button>
-                      </div>
                     </div>
-                  </section>
-                </article>
+
+                    <div className="p-6 rounded-2xl border border-gray-200 bg-white">
+                      <h4 className="font-semibold text-foreground-dark mb-3">
+                        Microsoft Azure
+                      </h4>
+                      <p className="text-sm text-foreground-dark-muted italic mb-2">
+                        "Because microservices are deployed independently, it's
+                        easier to manage bug fixes and feature releases... This
+                        approach enables a continuous integration and continuous
+                        delivery (CI/CD) practice for trying out new ideas and
+                        for rolling back if something doesn't work."
+                      </p>
+                      <p className="text-xs text-foreground-dark-muted">
+                        — Azure Architecture Center
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* FAQ Section */}
+              <section id="faqs" className="mb-12">
+                <h2 className="text-2xl font-semibold text-foreground-dark mb-8">
+                  Frequently Asked Questions
+                </h2>
+
+                <div className="space-y-4">
+                  {[
+                    {
+                      question:
+                        "Is a monolith always a bad choice for a new product?",
+                      answer:
+                        "Not at all. For most startups building an MVP, a monolith is often the superior choice. It allows for maximum development speed with a small team, enabling you to get to market and validate your core business idea as quickly as possible. The key is to build it with clean internal boundaries so that it can be more easily broken apart into microservices later, once you've achieved product-market fit.",
+                    },
+                    {
+                      question:
+                        'What is a "message queue" and why is it so important for microservices?',
+                      answer:
+                        "A message queue is an intermediary service that acts as a buffer or \"post office\" for messages sent between different microservices. Instead of Service A calling Service B directly (a tight coupling), Service A places a message in the queue, and Service B retrieves it when it's ready. This decoupling is critical because it means Service B can be down for maintenance without causing Service A to fail. It's the foundational technology that enables the resilience and asynchronicity of a microservices architecture.",
+                    },
+                    {
+                      question:
+                        "Doesn't a microservices architecture just create more operational complexity?",
+                      answer:
+                        "Yes, it does. Managing a distributed system is inherently more complex than managing a single application. It requires mature practices around automated deployments (CI/CD), container orchestration (like Kubernetes), centralized logging, and distributed monitoring. This is a key reason why it's not the right choice for every team or every stage of a company's lifecycle. The trade-off is accepting this operational complexity in exchange for greater scalability, resilience, and development velocity.",
+                    },
+                  ].map((faq, index) => (
+                    <div
+                      key={index}
+                      className="border border-gray-200 rounded-2xl bg-white"
+                    >
+                      <button
+                        onClick={() => toggleFAQ(index)}
+                        className="w-full text-left p-6 flex justify-between items-start hover:bg-gray-50 transition-colors rounded-2xl"
+                      >
+                        <span className="font-semibold text-foreground-dark pr-4">
+                          {faq.question}
+                        </span>
+                        {expandedFAQ === index ? (
+                          <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0 mt-1" />
+                        ) : (
+                          <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0 mt-1" />
+                        )}
+                      </button>
+                      {expandedFAQ === index && (
+                        <div className="px-6 pb-6 text-foreground-dark-muted leading-relaxed">
+                          {faq.answer}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="p-8 text-center">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                <span className="leading-[1.4]">
+                  The choice of your architecture will define your company's
+                  ability to scale
+                </span>
+              </h2>
+              <p className="text-xl text-foreground-white/80 mb-12 font-montserrat max-w-3xl mx-auto">
+                Are you building for today, or architecting for tomorrow?
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button variant="btnSecondary" size="lg">
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  Schedule an Architectural Strategy Session
+                </Button>
+                <Button variant="btnSecondary" size="lg">
+                  <Download className="h-4 w-4 mr-2" />
+                  Download Architecture Framework
+                </Button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <Footer />
+      <div className="bg-black">
+        <Footer />
+      </div>
     </div>
   );
 };
