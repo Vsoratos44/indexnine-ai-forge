@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import PipedriveForm from "@/components/PipedriveForm";
 import { useSEO } from "@/hooks/useSEO";
 import {
   WebPageSchema,
@@ -12,6 +14,14 @@ import { BookOpen, Download, Clock, Star } from "lucide-react";
 import styles from "../../assets/css/stylesheet.module.css";
 
 const Ebooks = () => {
+  const [showForm, setShowForm] = useState(false);
+  const [selectedEbook, setSelectedEbook] = useState<string | null>(null);
+
+  const handleDownload = (ebookTitle: string) => {
+    setSelectedEbook(ebookTitle);
+    setShowForm(true);
+  };
+
   const ebooks = [
     {
       title: "The Complete Guide to AI-Driven Development",
@@ -177,6 +187,7 @@ const Ebooks = () => {
                           variant="btnSecondary"
                           size="lg"
                           className="w-full lg:w-auto"
+                          onClick={() => handleDownload(ebook.title)}
                         >
                           <Download className="w-5 h-5 mr-2" />
                           Download Free eBook
@@ -254,7 +265,11 @@ const Ebooks = () => {
                       </div>
                     </div>
 
-                    <Button variant="btnPrimary" className="w-full">
+                    <Button 
+                      variant="btnPrimary" 
+                      className="w-full"
+                      onClick={() => handleDownload(ebook.title)}
+                    >
                       <Download className="w-4 h-4 mr-2" />
                       Download
                     </Button>
@@ -287,6 +302,26 @@ const Ebooks = () => {
       </section>
 
       <Footer />
+
+      {/* Download Form Modal */}
+      <Dialog open={showForm} onOpenChange={setShowForm}>
+        <DialogContent className="sm:max-w-[600px] max-h-[80vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-xl font-semibold mb-4">
+              Download: {selectedEbook}
+            </DialogTitle>
+          </DialogHeader>
+          <div className="mt-4">
+            <p className="text-muted-foreground mb-6">
+              Please fill out this quick form to download your free eBook. We'll send it directly to your email.
+            </p>
+            <PipedriveForm 
+              formUrl="https://webforms.pipedrive.com/f/5VQORZJbPm5aW8F3Iak8hudQJDwGUSF0Q58icnRJ6ixHFsdwkyoU7ogoLOci6S5HnZ"
+              className="w-full"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

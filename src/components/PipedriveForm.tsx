@@ -2,9 +2,13 @@ import React, { useEffect } from 'react';
 
 interface PipedriveFormProps {
   className?: string;
+  formUrl?: string;
 }
 
-const PipedriveForm: React.FC<PipedriveFormProps> = ({ className = '' }) => {
+const PipedriveForm: React.FC<PipedriveFormProps> = ({ 
+  className = '', 
+  formUrl = "https://webforms.pipedrive.com/f/6iJKYx7GXkP1sfQnzIq6XAmhH7GDCWRXAfrcML1rxQOZ05Wu8LPXWKkbls6Ch4p3Dt"
+}) => {
   useEffect(() => {
     // Load Pipedrive script if not already loaded
     const existingScript = document.querySelector('script[src="https://webforms.pipedrive.com/f/loader"]');
@@ -20,7 +24,7 @@ const PipedriveForm: React.FC<PipedriveFormProps> = ({ className = '' }) => {
     <div className={className}>
       <div 
         className="pipedriveWebForms" 
-        data-pd-webforms="https://webforms.pipedrive.com/f/6iJKYx7GXkP1sfQnzIq6XAmhH7GDCWRXAfrcML1rxQOZ05Wu8LPXWKkbls6Ch4p3Dt"
+        data-pd-webforms={formUrl}
       />
     </div>
   );
