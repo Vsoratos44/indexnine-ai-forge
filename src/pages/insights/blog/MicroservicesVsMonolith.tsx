@@ -16,6 +16,7 @@ import {
   Zap,
   Shield,
   AlertTriangle,
+  QuoteIcon,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
@@ -244,7 +245,7 @@ const MicroservicesVsMonolith = () => {
         </div>
       </section>
 
-      <div className="bg-[#ffffff00]">
+      <div className="bg-[#ffffff00] pt-8">
         {/* Main Content */}
 
         <div
@@ -261,7 +262,7 @@ const MicroservicesVsMonolith = () => {
                     <a
                       key={link.href}
                       href={link.href}
-                      className={`inline-block py-2 rounded transition 
+                      className={`inline-block rounded transition 
                         ${
                           selected === link.href
                             ? "text-brand-purple font-semibold"
@@ -311,7 +312,7 @@ const MicroservicesVsMonolith = () => {
                     architecture with your business stage, team structure, and
                     future ambitions.
                   </p>
-                  <div className="p-6 rounded-2xl bg-brand-primary/5 border border-brand-primary/20">
+                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
                     <p className="text-foreground-dark font-semibold mb-2">
                       <Target className="h-5 w-5 inline-block mr-2 text-brand-primary" />
                       At IndexNine, we have guided countless organizations
@@ -344,7 +345,7 @@ const MicroservicesVsMonolith = () => {
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-6 my-8">
-                    <div className="p-6 rounded-2xl bg-red-50 border border-red-200">
+                    <div className="bg-black/5 rounded-lg p-6 rounded-r-lg">
                       <AlertTriangle className="h-6 w-6 text-red-500 mb-3" />
                       <h3 className="font-semibold text-foreground-dark mb-3">
                         Warning Signs
@@ -356,7 +357,7 @@ const MicroservicesVsMonolith = () => {
                         <li>• Inefficient scaling patterns</li>
                       </ul>
                     </div>
-                    <div className="p-6 rounded-2xl bg-green-50 border border-green-200">
+                    <div className="bg-black/5 rounded-lg p-6 rounded-r-lg">
                       <CheckCircle className="h-6 w-6 text-green-500 mb-3" />
                       <h3 className="font-semibold text-foreground-dark mb-3">
                         Growth Indicators
@@ -387,7 +388,7 @@ const MicroservicesVsMonolith = () => {
                     unified unit.
                   </p>
 
-                  <div className="p-8 rounded-3xl bg-foreground-dark/5">
+                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
                     <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                       The Strategic Advantages of a Monolith:
                     </h3>
@@ -423,7 +424,7 @@ const MicroservicesVsMonolith = () => {
                     </div>
                   </div>
 
-                  <div className="p-8 rounded-3xl bg-red-50 border border-red-200">
+                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
                     <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                       The Inevitable Scaling Challenges:
                     </h3>
@@ -497,7 +498,7 @@ const MicroservicesVsMonolith = () => {
                     profile service," a "notification service").
                   </p>
 
-                  <div className="p-6 rounded-2xl bg-blue-50 border border-blue-200">
+                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
                     <h4 className="font-semibold text-foreground-dark mb-2">
                       Key Concept: Message Queues
                     </h4>
@@ -510,7 +511,7 @@ const MicroservicesVsMonolith = () => {
                     </p>
                   </div>
 
-                  <div className="p-8 rounded-3xl bg-green-50 border border-green-200">
+                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
                     <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                       The Strategic Advantages of Microservices:
                     </h3>
@@ -711,7 +712,7 @@ const MicroservicesVsMonolith = () => {
                     monolith and making a strategic pivot to microservices.
                   </p>
 
-                  <div className="p-8 rounded-3xl bg-foreground-dark/5 border border-gray-200">
+                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
                     <div className="grid md:grid-cols-2 gap-8">
                       <div>
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center">
@@ -757,7 +758,7 @@ const MicroservicesVsMonolith = () => {
                       </h4>
                       <div className="grid md:grid-cols-3 gap-4">
                         <div className="text-center p-4 bg-white rounded-xl">
-                          <div className="text-2xl font-semibold text-brand-primary mb-1">
+                          <div className="text-2xl font-bold text-brand-primary mb-1">
                             99.9%
                           </div>
                           <div className="text-sm text-foreground-dark-muted">
@@ -765,7 +766,7 @@ const MicroservicesVsMonolith = () => {
                           </div>
                         </div>
                         <div className="text-center p-4 bg-white rounded-xl">
-                          <div className="text-2xl font-semibold text-brand-primary mb-1">
+                          <div className="text-2xl font-bold text-brand-primary mb-1">
                             50%
                           </div>
                           <div className="text-sm text-foreground-dark-muted">
@@ -773,7 +774,7 @@ const MicroservicesVsMonolith = () => {
                           </div>
                         </div>
                         <div className="text-center p-4 bg-white rounded-xl">
-                          <div className="text-2xl font-semibold text-brand-primary mb-1">
+                          <div className="text-2xl font-bold text-brand-primary mb-1">
                             Zero
                           </div>
                           <div className="text-sm text-foreground-dark-muted">
@@ -797,52 +798,57 @@ const MicroservicesVsMonolith = () => {
                     championed by the world's leading cloud providers, who have
                     built their own global-scale systems on these principles.
                   </p>
-
                   <div className="space-y-6">
-                    <div className="p-6 rounded-2xl border border-gray-200 bg-white">
-                      <h4 className="font-semibold text-foreground-dark mb-3">
+                    <div
+                      className={`p-8 bg-background relative  rounded-xl mb-6 ${styles.middleCardBg2}`}
+                    >
+                      <h4 className="font-semibold text-foreground mb-3">
                         Amazon Web Services (AWS)
                       </h4>
-                      <p className="text-sm text-foreground-dark-muted italic mb-2">
+                      <p className="text-lg text-foreground leading-relaxed italic">
                         "A best practice is to build systems using a
                         microservices architecture. Architect your workload to
                         use small, independent services that communicate over
                         well-defined APIs. This approach decouples your
                         components and avoids single points of failure."
                       </p>
-                      <p className="text-xs text-foreground-dark-muted">
+                      <p className="text-sm text-right text-foreground/60 mt-2">
                         — AWS Well-Architected Framework
                       </p>
                     </div>
 
-                    <div className="p-6 rounded-2xl border border-gray-200 bg-white">
-                      <h4 className="font-semibold text-foreground-dark mb-3">
+                    <div
+                      className={`p-8 bg-background relative  rounded-xl mb-6 ${styles.middleCardBg2}`}
+                    >
+                      <h4 className="font-semibold text-foreground mb-3">
                         Google Cloud
                       </h4>
-                      <p className="text-sm text-foreground-dark-muted italic mb-2">
+                      <p className="text-lg text-foreground leading-relaxed italic">
                         "Microservices are an approach to application
                         development in which a large application is built as a
                         suite of modular services. Each module supports a
                         specific business goal and uses a simple, well-defined
                         interface to communicate with other sets of services."
                       </p>
-                      <p className="text-xs text-foreground-dark-muted">
+                      <p className="text-sm text-right text-foreground/60 mt-2">
                         — Google Cloud Architecture Center
                       </p>
                     </div>
 
-                    <div className="p-6 rounded-2xl border border-gray-200 bg-white">
-                      <h4 className="font-semibold text-foreground-dark mb-3">
+                    <div
+                      className={`p-8 bg-background relative  rounded-xl mb-6 ${styles.middleCardBg2}`}
+                    >
+                      <h4 className="font-semibold text-foreground mb-3">
                         Microsoft Azure
                       </h4>
-                      <p className="text-sm text-foreground-dark-muted italic mb-2">
+                      <p className="text-lg text-foreground leading-relaxed italic">
                         "Because microservices are deployed independently, it's
                         easier to manage bug fixes and feature releases... This
                         approach enables a continuous integration and continuous
                         delivery (CI/CD) practice for trying out new ideas and
                         for rolling back if something doesn't work."
                       </p>
-                      <p className="text-xs text-foreground-dark-muted">
+                      <p className="text-sm text-right text-foreground/60 mt-2">
                         — Azure Architecture Center
                       </p>
                     </div>
@@ -879,13 +885,13 @@ const MicroservicesVsMonolith = () => {
                   ].map((faq, index) => (
                     <div
                       key={index}
-                      className="border border-gray-200 rounded-2xl bg-white"
+                      className="border border-border rounded-[.5rem] overflow-hidden"
                     >
                       <button
                         onClick={() => toggleFAQ(index)}
-                        className="w-full text-left p-6 flex justify-between items-start hover:bg-gray-50 transition-colors rounded-2xl"
+                        className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
                       >
-                        <span className="font-semibold text-foreground-dark pr-4">
+                        <span className="font-medium text-foreground-dark pr-4">
                           {faq.question}
                         </span>
                         {expandedFAQ === index ? (
@@ -895,8 +901,10 @@ const MicroservicesVsMonolith = () => {
                         )}
                       </button>
                       {expandedFAQ === index && (
-                        <div className="px-6 pb-6 text-foreground-dark-muted leading-relaxed">
-                          {faq.answer}
+                        <div className="px-6 py-4 bg-white border-t border-border">
+                          <p className="text-foreground-dark-muted leading-relaxed">
+                            {faq.answer}
+                          </p>
                         </div>
                       )}
                     </div>

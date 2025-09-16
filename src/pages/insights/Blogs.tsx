@@ -11,8 +11,16 @@ import {
 import { Clock, User, ArrowRight } from "lucide-react";
 import styles from "../../assets/css/stylesheet.module.css";
 
-import blogImg from "@/assets/images/blog-img.webp";
-import blogImg2 from "@/assets/images/blog-img2.webp";
+// import blogImg from "@/assets/images/blog-img.webp";
+// import blogImg2 from "@/assets/images/blog-img2.webp";
+
+import blogAgentic from "@/assets/images/blog-agentic.webp";
+import blogAimgmt from "@/assets/images/blog-ai-mgmt.webp";
+import blogAutocomplete from "@/assets/images/blog-autocomplete.webp";
+import blogMicrosMonolth from "@/assets/images/blog-micros-monolth.webp";
+import blogModenrnAnltcs from "@/assets/images/blog-modern-analytics.webp";
+import blogRobot from "@/assets/images/blog-robot.webp";
+import blogCloudInfra from "@/assets/images/blog-cloud-infra.webp";
 
 const Blogs = () => {
   /**
@@ -23,7 +31,7 @@ const Blogs = () => {
   const blogPosts = [
     {
       id: "cloud-infrastructure-automation-terraform",
-      img: blogImg2,
+      img: blogCloudInfra,
       title:
         "Cloud Infrastructure Automation: Deploy Production-Ready AWS Environments in Minutes",
       excerpt:
@@ -39,13 +47,13 @@ const Blogs = () => {
         "Skip weeks of manual cloud setup. Deploy production-ready AWS, GCP, or Azure infrastructure in 10 minutes with Terraform automation. Get secure, scalable environments instantly.",
       tags: [
         "cloud infrastructure automation",
-        "terraform aws deployment", 
+        "terraform aws deployment",
         "infrastructure as code tutorial",
         "aws well-architected framework",
         "cloud deployment automation",
         "production ready infrastructure",
         "terraform vs manual cloud configuration",
-        "aws infrastructure deployment best practices"
+        "aws infrastructure deployment best practices",
       ],
       content: {
         summary:
@@ -68,7 +76,7 @@ const Blogs = () => {
     },
     {
       id: "modern-analytics-platform",
-      img: blogImg2,
+      img: blogModenrnAnltcs,
       title:
         "The Modern Analytics Platform: A Blueprint for Your Data Strategy",
       excerpt:
@@ -95,7 +103,7 @@ const Blogs = () => {
           "Comprehensive blueprint for building modern analytics platforms that transform data assets into strategic resources for AI and business intelligence success.",
         sections: [
           "The Readiness Reality Check: Why Most Data & AI Initiatives Fail",
-          "Assessing Your Data Maturity: The AGILE Framework", 
+          "Assessing Your Data Maturity: The AGILE Framework",
           "The Blueprint for a Modern Analytics Platform: A Four-Step Journey",
           "Case Study in Transformation: Modernizing Parking Management for the Cloud Era",
           "Frequently Asked Questions (FAQ)",
@@ -108,7 +116,7 @@ const Blogs = () => {
     },
     {
       id: "ai-change-management-playbook",
-      img: blogImg2,
+      img: blogAimgmt,
       title:
         "The AI Change Management Playbook: Modernizing Legacy Systems with Purpose",
       excerpt:
@@ -147,7 +155,7 @@ const Blogs = () => {
     },
     {
       id: "robot-framework-vs-playwright",
-      img: blogImg2,
+      img: blogRobot,
       title:
         "Robot Framework vs. Playwright: The Test Automation Showdown Your Business Can't Ignore",
       excerpt:
@@ -185,7 +193,7 @@ const Blogs = () => {
     },
     {
       id: "agentic-ai-enterprise-future",
-      img: blogImg2,
+      img: blogAgentic,
       title:
         "The Future Is Agentic. Is Your Enterprise Ready for What Comes Next?",
       excerpt:
@@ -213,7 +221,7 @@ const Blogs = () => {
     },
     {
       id: "ai-assisted-software-engineering",
-      img: blogImg2,
+      img: blogAutocomplete,
       title:
         "Beyond Autocomplete: When AI Meets UI to Supercharge Software Engineering with Cursor AI",
       excerpt:
@@ -241,7 +249,7 @@ const Blogs = () => {
     },
     {
       id: "microservices-vs-monolith",
-      img: blogImg2,
+      img: blogMicrosMonolth,
       title:
         "Microservices vs Monolith: Making the Right Architectural Choice for Scale",
       excerpt:
@@ -319,12 +327,12 @@ const Blogs = () => {
       <div
         className={`pb-24 lg:pb-32 relative bg-[#fff] overflow-hidden ${styles.blogBg}`}
       >
-        <div className="bg-glass-light border-glass backdrop-blur-md">
+        <div className="bg-glass-light border-glass">
           {/* Featured Post */}
           {blogPosts
             .filter((post) => post.featured)
             .map((post, index) => (
-              <section key={index} className="py-24 lg:py-32 ">
+              <section key={index} className="pt-24 lg:pt-32 ">
                 <div className="container">
                   <div className="max-w-8xl mx-auto grid md:grid-cols-3 gap-12">
                     <div className="col-span-2">
@@ -365,9 +373,9 @@ const Blogs = () => {
                     </div>
                     <div className=" w-auto">
                       <img
-                        src={blogImg}
+                        src={blogCloudInfra}
                         alt="Blogs"
-                        className="w-full h-auto max-w-md mx-auto"
+                        className="w-full rounded-xl h-[480px] object-cover"
                       />
                     </div>
                   </div>
@@ -380,24 +388,24 @@ const Blogs = () => {
         <section className="max-w-6xl mx-auto lg:pt-32 bg-transparent">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.4]">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 font-montserrat leading-[1.4]">
                 Latest Posts
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {blogPosts
                 .filter((post) => !post.featured)
                 .map((post, index) => (
                   <div
                     key={index}
-                    className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105"
+                    className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 flex flex-col"
                   >
                     <div className="mb-4">
                       <img
                         src={post.img}
                         alt={post.id}
-                        className="rounded-lg w-full"
+                        className="rounded-lg w-full h-64 object-cover"
                       />
                     </div>
                     <div className="mb-4">
@@ -424,8 +432,8 @@ const Blogs = () => {
                       </div>
                     </div>
 
-                    <Link to={`/insights/blogs/${post.id}`}>
-                      <Button variant="btnLink" size="link">
+                    <Link to={`/insights/blogs/${post.id}`} className="mt-auto">
+                      <Button variant="btnLink" size="lg">
                         Read More <ArrowRight className="w-4 h-4 ml-2" />
                       </Button>
                     </Link>

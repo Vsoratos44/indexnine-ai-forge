@@ -265,7 +265,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                     <a
                       href={link.href}
                       onClick={() => setSelected(link.href)}
-                      className={`inline-block py-2 rounded transition 
+                      className={`inline-block  rounded transition 
                               ${
                                 selected === link.href
                                   ? "text-brand-purple font-semibold"
@@ -393,14 +393,13 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                       provides a quantifiable "Data Readiness Scorecard."
                     </p>
 
-                    <div className="bg-gradient-to-r from-brand-primary/5 to-brand-purple/5 border-l-4 border-brand-primary p-6 rounded-r-lg my-8">
+                    <div className="bg-black/5 p-6 rounded-lg my-8">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         Answer these questions honestly to understand your
                         starting point:
                       </h3>
                       <ul className="space-y-4 text-foreground-dark-muted">
                         <li className="flex items-start gap-3">
-                          <Database className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <span>
                             <strong>(A) Accessibility:</strong> Can authorized
                             users easily retrieve relevant data across
@@ -408,7 +407,6 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <Shield className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <span>
                             <strong>(G) Governance:</strong> Are there
                             established policies and controls to ensure data
@@ -416,7 +414,6 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <Layers className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <span>
                             <strong>(I) Integration:</strong> Are your systems
                             interoperable, enabling seamless data flow, or is
@@ -424,7 +421,6 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <User className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <span>
                             <strong>(L) Literacy:</strong> Does your team
                             understand how to work with data to derive insights,
@@ -433,7 +429,6 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
                           <span>
                             <strong>(E) Excellence (Quality):</strong> Is your
                             data consistently accurate, complete, and
@@ -458,7 +453,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
             {/* AGILE Framework Section */}
             <a id="agile-framework"></a>
             <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+              <div className="container text-lg text-foreground-dark/5 leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h2 className="font-semibold text-2xl text-foreground-dark">
@@ -562,7 +557,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                     </p>
 
                     {/* Step 1 */}
-                    <div className="border-l-4 border-brand-primary pl-6 my-8">
+                    <div className="bg-black/5 p-6 rounded-lg my-8">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         Step 1: Build a Unified Data Foundation
                       </h3>
@@ -598,7 +593,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                     </div>
 
                     {/* Step 2 */}
-                    <div className="border-l-4 border-brand-purple pl-6 my-8">
+                    <div className="bg-black/5 p-6 rounded-lg my-8">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         Step 2: Enhance Data Quality and Context for AI
                         Consumption
@@ -629,7 +624,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                     </div>
 
                     {/* Step 3 */}
-                    <div className="border-l-4 border-emerald-500 pl-6 my-8">
+                    <div className="bg-black/5 p-6 rounded-lg my-8">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         Step 3: Establish Enterprise-Grade Governance and
                         Operational Excellence
@@ -662,7 +657,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                     </div>
 
                     {/* Step 4 */}
-                    <div className="border-l-4 border-orange-500 pl-6 my-8">
+                    <div className="bg-black/5 p-6 rounded-lg my-8">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         Step 4: Activate Insights & Drive Business Outcomes
                       </h3>
@@ -708,12 +703,12 @@ const ModernAnalyticsPlatformDataStrategy = () => {
             <section className="pt-12 pb-0 relative overflow-hidden">
               <div className="container text-lg text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
-                  <div className="space-y-6">
-                    <h2 className="font-semibold text-2xl text-foreground-dark">
+                  <div className="">
+                    <h2 className="font-semibold text-2xl text-foreground-dark mb-6">
                       Case Study in Transformation: Modernizing Parking
                       Management for the Cloud Era
                     </h2>
-                    <p>
+                    <p className="mb-8">
                       This four-step blueprint is not theoretical. We executed
                       this exact strategy for a{" "}
                       <strong>leading provider of parking services</strong>,
@@ -721,7 +716,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                       data-driven market leader.
                     </p>
 
-                    <div className="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 p-6 rounded-r-lg my-8">
+                    <div className="bg-black/5 p-6 rounded-t-lg">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         The Challenge
                       </h3>
@@ -737,7 +732,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                       </p>
                     </div>
 
-                    <div className="bg-gradient-to-r from-emerald-50 to-green-50 border-l-4 border-emerald-500 p-6 rounded-r-lg my-8">
+                    <div className="bg-black/5 p-6">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         Our Solution: A Blueprint-Driven Modernization
                       </h3>
@@ -797,7 +792,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                       </div>
                     </div>
 
-                    <div className="bg-gradient-to-r from-brand-primary/5 to-brand-purple/5 border-l-4 border-brand-primary p-6 rounded-r-lg my-8">
+                    <div className="bg-black/5 p-6 rounded-b-lg">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         The Results
                       </h3>
@@ -821,7 +816,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
             {/* FAQ Section */}
             <a id="faqs"></a>
             <section className="pt-12 pb-12 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+              <div className="container text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <h2 className="font-semibold text-2xl text-foreground-dark mb-8">
                     Frequently Asked Questions (FAQ)

@@ -16,6 +16,7 @@ import {
   Target,
   Zap,
   Shield,
+  QuoteIcon,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
@@ -161,7 +162,7 @@ const AiChangeManagementPlaybook = () => {
           {/* Left Navigation Sidebar */}
           <div className="text-foreground-dark">
             <div className="sticky top-[120px] pb-8">
-              <ul className="space-y-2">
+              <ul className="">
                 {leftNavLinks.map((link) => (
                   <li key={link.href}>
                     <a
@@ -222,16 +223,25 @@ const AiChangeManagementPlaybook = () => {
                       promising proof-of-concepts. This chaos is amplified by
                       constant reports of 85%+ AI implementations failing.
                     </p>
-                    <div className="bg-gradient-to-r from-brand-primary/5 to-brand-purple/5 border-l-4 border-brand-primary p-6 rounded-r-lg my-8">
-                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+
+                    <div
+                      className={`p-8 bg-background relative  rounded-xl mb-6 ${styles.middleCardBg2}`}
+                    >
+                      <div className=" absolute transform rotate-180 -left-[1rem] -top-[1rem]">
+                        <QuoteIcon
+                          className="w-12 h-12 text-brand-purple/50"
+                          strokeWidth={1}
+                        />
+                      </div>
+                      <p className="text-lg text-foreground leading-relaxed italic">
                         "Adopting AI isn't just about rolling out a new model.
                         It's about helping people adapt, rethinking how work
                         gets done, and making sure your data tells the right
                         story. At its core, AI adoption is really about your
                         people, your processes, and your data—technology is only
                         the enabler."
-                      </h3>
-                      <p className="text-sm text-foreground-dark-muted">
+                      </p>
+                      <p className="text-sm text-right text-foreground/60 mt-2">
                         - Aashish Singla, CTO IndexNine Technologies
                       </p>
                     </div>
@@ -262,39 +272,39 @@ const AiChangeManagementPlaybook = () => {
                     </p>
 
                     <div className="space-y-8">
-                      <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                        <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-3">
+                      <div className="bg-black/5 rounded-2xl p-8">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
                           <Brain className="h-6 w-6 text-brand-primary" />
                           1. The Human Element: Resistance to Change and Loss of
                           Context
                         </h3>
-                        <p className="text-foreground-muted mb-4">
+                        <p className="text-foreground-dark-muted mb-4">
                           At its core, AI adoption is a massive exercise in
                           context transfer. It seeks to codify and automate
                           knowledge that is deeply tribal and has been built up
                           over years. Without thoughtful change management, this
                           is perceived as a threat rather than enhancement.
                         </p>
-                        <p className="text-foreground-muted">
+                        <p className="text-foreground-dark-muted">
                           The most sophisticated algorithm is useless if it
                           doesn't understand the eccentricities and unwritten
                           rules of your specific business.
                         </p>
                       </div>
 
-                      <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                        <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-3">
+                      <div className="bg-black/5 rounded-2xl p-8">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
                           <Target className="h-6 w-6 text-brand-primary" />
                           2. The Data Foundation: A Cracked and Fragmented
                           Ecosystem
                         </h3>
-                        <p className="text-foreground-muted mb-4">
+                        <p className="text-foreground-dark-muted mb-4">
                           An AI system is only as intelligent as the data it can
                           access. Most established organizations are sitting on
                           a tangled web of legacy systems, siloed data
                           pipelines, and inconsistent data structures.
                         </p>
-                        <p className="text-foreground-muted">
+                        <p className="text-foreground-dark-muted">
                           Before any high-impact POC can be scaled, there must
                           be a concerted effort to modernize the underlying data
                           sources, build robust data engineering mechanisms, and
@@ -302,19 +312,19 @@ const AiChangeManagementPlaybook = () => {
                         </p>
                       </div>
 
-                      <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                        <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-3">
+                      <div className="bg-black/5 rounded-2xl p-8">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
                           <Shield className="h-6 w-6 text-brand-primary" />
                           3. AI as a Black Box: Lack of Observability
                         </h3>
-                        <p className="text-foreground-muted mb-4">
+                        <p className="text-foreground-dark-muted mb-4">
                           AI models suffer from lack of observability and
                           interpretability. Without proper observability,
                           business leaders can't answer critical questions: Why
                           did the model make this decision? Can it be trusted
                           again? How do we know it hasn't drifted?
                         </p>
-                        <p className="text-foreground-muted">
+                        <p className="text-foreground-dark-muted">
                           Effective AI requires observability into model
                           behavior, systematic evaluation frameworks, and
                           interpretability mechanisms that help teams understand
@@ -346,7 +356,7 @@ const AiChangeManagementPlaybook = () => {
 
                     <div className="space-y-8">
                       {/* Step 1 */}
-                      <div className="bg-gradient-to-r from-brand-primary/5 to-transparent border border-brand-primary/20 rounded-xl p-8">
+                      <div className="bg-black/5 rounded-2xl p-8">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
                           <span className="bg-brand-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                             1
@@ -361,7 +371,7 @@ const AiChangeManagementPlaybook = () => {
                         </p>
 
                         <div className="grid md:grid-cols-3 gap-6">
-                          <div className="bg-white p-6 rounded-lg border border-border">
+                          <div className="bg-white p-6 rounded-lg ">
                             <h4 className="font-semibold text-foreground-dark mb-3">
                               Process & Workflow Mapping
                             </h4>
@@ -370,7 +380,7 @@ const AiChangeManagementPlaybook = () => {
                               bottlenecks where AI can deliver measurable ROI.
                             </p>
                           </div>
-                          <div className="bg-white p-6 rounded-lg border border-border">
+                          <div className="bg-white p-6 rounded-lg ">
                             <h4 className="font-semibold text-foreground-dark mb-3">
                               Data Ecosystem Analysis
                             </h4>
@@ -379,7 +389,7 @@ const AiChangeManagementPlaybook = () => {
                               your data to power advanced AI models.
                             </p>
                           </div>
-                          <div className="bg-white p-6 rounded-lg border border-border">
+                          <div className="bg-white p-6 rounded-lg ">
                             <h4 className="font-semibold text-foreground-dark mb-3">
                               Prioritizing High-Impact Initiatives
                             </h4>
@@ -393,9 +403,9 @@ const AiChangeManagementPlaybook = () => {
                       </div>
 
                       {/* Step 2 */}
-                      <div className="bg-gradient-to-r from-brand-purple/5 to-transparent border border-brand-purple/20 rounded-xl p-8">
+                      <div className="bg-black/5 rounded-2xl p-8">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                          <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
+                          <span className="bg-brand-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                             2
                           </span>
                           Building Enthusiasm and Trust (Strategic Change
@@ -436,9 +446,9 @@ const AiChangeManagementPlaybook = () => {
                       </div>
 
                       {/* Step 3 */}
-                      <div className="bg-gradient-to-r from-green-500/5 to-transparent border border-green-500/20 rounded-xl p-8">
+                      <div className="bg-black/5 rounded-2xl p-8">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                          <span className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
+                          <span className="bg-brand-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
                             3
                           </span>
                           Purposeful Modernization and Execution
@@ -478,19 +488,19 @@ const AiChangeManagementPlaybook = () => {
                       new technologies.
                     </p>
 
-                    <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-8 border border-glass-border">
-                      <h3 className="text-xl font-semibold text-foreground mb-4">
+                    <div className="bg-black/5 rounded-2xl p-8">
+                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         The Transformation Process
                       </h3>
                       <div className="space-y-4">
-                        <p className="text-foreground-muted">
+                        <p className="text-foreground-dark-muted">
                           Through our AI Enablement engagement, we performed a
                           deep strategic assessment to identify promising use
                           cases while building executive consensus. We worked
                           closely with teams to design internal adoption
                           processes that demonstrated immediate value.
                         </p>
-                        <p className="text-foreground-muted">
+                        <p className="text-foreground-dark-muted">
                           With teams aligned, we modernized relevant data
                           pipelines and built high-impact solutions, including a
                           sales copilot and sports content LLM for social media
@@ -529,44 +539,44 @@ const AiChangeManagementPlaybook = () => {
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-6">
-                      <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-6 border border-glass-border">
-                        <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-3">
+                      <div className="bg-black/5 rounded-2xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground-dark mb-3 flex items-center gap-3">
                           <Shield className="h-5 w-5 text-brand-primary" />
                           De-Risked AI Investment
                         </h3>
-                        <p className="text-foreground-muted text-sm">
+                        <p className="text-foreground-dark-muted text-sm">
                           Strategic audits ensure capital is deployed on
                           high-impact, feasible projects, avoiding costly
                           failures and maximizing ROI.
                         </p>
                       </div>
-                      <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-6 border border-glass-border">
-                        <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-3">
+                      <div className="bg-black/5 rounded-2xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground-dark mb-3 flex items-center gap-3">
                           <Zap className="h-5 w-5 text-brand-primary" />
                           Increased Adoption
                         </h3>
-                        <p className="text-foreground-muted text-sm">
+                        <p className="text-foreground-dark-muted text-sm">
                           Thoughtful change management transforms employee
                           skepticism into advocacy, ensuring tools are actually
                           used and embraced.
                         </p>
                       </div>
-                      <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-6 border border-glass-border">
-                        <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-3">
+                      <div className="bg-black/5 rounded-2xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground-dark mb-3 flex items-center gap-3">
                           <Target className="h-5 w-5 text-brand-primary" />
                           Innovation Foundation
                         </h3>
-                        <p className="text-foreground-muted text-sm">
+                        <p className="text-foreground-dark-muted text-sm">
                           Purposeful data modernization creates robust, scalable
                           ecosystems supporting future AI initiatives.
                         </p>
                       </div>
-                      <div className="bg-gradient-card backdrop-blur-xl rounded-2xl p-6 border border-glass-border">
-                        <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-3">
+                      <div className="bg-black/5 rounded-2xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground-dark mb-3 flex items-center gap-3">
                           <Brain className="h-5 w-5 text-brand-primary" />
                           Sustainable Capability
                         </h3>
-                        <p className="text-foreground-muted text-sm">
+                        <p className="text-foreground-dark-muted text-sm">
                           Framework and knowledge transfer empower organizations
                           to build and manage their AI-powered future.
                         </p>
@@ -579,8 +589,8 @@ const AiChangeManagementPlaybook = () => {
 
             {/* FAQ Section */}
             <a id="faqs"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden mb-16">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow-hidden">
+              <div className="container mx-auto px-6 lg:px-8 relative z-10">
                 <div className="max-w-5xl mx-auto">
                   <h4 className="font-semibold text-2xl text-foreground-dark mb-8">
                     Frequently Asked Questions

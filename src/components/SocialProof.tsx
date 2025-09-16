@@ -9,7 +9,7 @@ const SocialProof = () => {
     { value: 220, suffix: "+", label: "Engineers and Designers" },
     { value: 95, suffix: "+", label: "Customers" },
     { value: 6, suffix: "", label: "Core Studios" },
-    { value: 92, suffix: "%", label: "Client Retention" },
+    { value: 92, suffix: "%", label: "Client Satisfaction" },
   ];
 
   const chartData = [110, 112, 125, 130, 150, 140, 160, 211];

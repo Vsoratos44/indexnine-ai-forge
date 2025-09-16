@@ -15,7 +15,7 @@ const StickyScrollLayout: React.FC<StickyScrollLayoutProps> = ({
   stickyClassName = "",
   scrollingClassName = "",
   containerClassName = "",
-  stickyPosition = "100px",
+  stickyPosition = "120px",
 }) => {
   return (
     <div

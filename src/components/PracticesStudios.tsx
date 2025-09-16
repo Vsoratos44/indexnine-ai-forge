@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
+import entrp from "@/assets/images/enterprise-studio.webp";
+import innov from "@/assets/images/inno-lab.webp";
+
 const PracticesStudios = () => {
   const [activeStudio, setActiveStudio] = useState<"innovation" | "enterprise">(
     "innovation"
@@ -129,11 +132,7 @@ const PracticesStudios = () => {
               className="rounded-xl overflow-hidden border border-border bg-muted"
             >
               <img
-                src={
-                  activeStudio === "innovation"
-                    ? "/lovable-uploads/3952bffe-50fc-4c11-a811-0bf718975cbf.png"
-                    : "/lovable-uploads/49fd4939-c61d-43cb-9754-ebf56d833667.png"
-                }
+                src={activeStudio === "innovation" ? innov : entrp}
                 alt={
                   activeStudio === "innovation"
                     ? "Innovation Lab visual - Indexnine"

@@ -169,7 +169,7 @@ const AgenticAiEnterpriseFuture = () => {
         }}
       />
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#ffffff00]">
+      <section className="relative overflow-hidden bg-[#ffffff00] ">
         <div className="relative z-10 container mx-auto pt-36">
           <div className="max-w-7xl mx-auto text-center lg:text-left ml-0">
             <div className="flex items-center">
@@ -198,17 +198,10 @@ const AgenticAiEnterpriseFuture = () => {
               </div>
               <span className="font-montserrat">January 15, 2025</span>
             </div>
-            {/* <div className="pt-8">
-              <img
-                src={blogImg2}
-                className="w-full"
-                alt="Agentic AI Enterprise Strategy"
-              />
-            </div> */}
           </div>
         </div>
       </section>
-      <div className="bg-[#ffffff00]">
+      <div className="bg-[#ffffff00] pt-8">
         <a id="intro"></a>
         <div
           className="container grid md:grid-cols-3 gap-12 bg-transparent pt-12 rounded-tl-3xl rounded-tr-3xl bg-gradient-to-b from-white via-white to-[#F0F4FF] bg-contain bg-no-repeat"
@@ -223,7 +216,7 @@ const AgenticAiEnterpriseFuture = () => {
                     <a
                       href={link.href}
                       onClick={() => setSelected(link.href)}
-                      className={`inline-block py-2 rounded transition 
+                      className={`inline-block rounded transition 
                               ${
                                 selected === link.href
                                   ? "text-brand-purple font-semibold"

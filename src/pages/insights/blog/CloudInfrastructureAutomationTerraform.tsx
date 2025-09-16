@@ -76,23 +76,34 @@ const CloudInfrastructureAutomationTerraform = () => {
   });
 
   // Intersection Observer for scroll-based navigation
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setSelectedNav(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.3, rootMargin: "-20% 0px -70% 0px" }
-    );
 
-    const sections = document.querySelectorAll("section[id]");
-    sections.forEach((section) => observer.observe(section));
+  useEffect(() => {
+    const options: IntersectionObserverInit = {
+      root: null,
+      threshold: 0,
+      rootMargin: "-120px 0px -70% 0px", // adjust for sticky header height
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      const visibleEntries = entries.filter((e) => e.isIntersecting);
+      if (visibleEntries.length === 0) return;
+
+      // choose the most visible section; alternatively sort by top
+      const best = visibleEntries.reduce((prev, curr) =>
+        prev.intersectionRatio > curr.intersectionRatio ? prev : curr
+      );
+
+      const id = (best.target as HTMLElement).id;
+      if (id) setSelectedNav(id);
+    }, options);
+
+    const sections = Array.from(
+      document.querySelectorAll<HTMLElement>("section[id]")
+    );
+    sections.forEach((s) => observer.observe(s));
 
     return () => observer.disconnect();
-  }, []);
+  }, []); 
 
   return (
     <div
@@ -400,7 +411,7 @@ const CloudInfrastructureAutomationTerraform = () => {
       </section> */}
 
       {/* Main Content with Sticky Navigation */}
-      <div className="bg-[#ffffff00]">
+      <div className="bg-[#ffffff00] pt-8">
         <div
           className="container from-white via-white to-[#F0F4FF] bg-contain bg-no-repeat pt-12 rounded-tl-3xl rounded-tr-3xl bg-gradient-to-b"
           style={{ backgroundImage: `url(${BlogContBg})` }}
@@ -416,10 +427,11 @@ const CloudInfrastructureAutomationTerraform = () => {
                       <a
                         key={link.id}
                         href={`#${link.id}`}
-                        className={`flex items-center gap-3 px-3 py-2  rounded-lg transition-colors ${
+                        onClick={() => setSelectedNav(link.id)}
+                        className={`flex items-center gap-3 rounded-lg transition-colors ${
                           selectedNav === link.id
-                            ? "bg-primary text-primary-foreground"
-                            : "text-primary hover:text-foreground-dark hover:bg-muted"
+                            ? "text-primary font-semibold"
+                            : "text-foreground-dark hover:text-foreground-dark hover:bg-muted"
                         }`}
                       >
                         <IconComponent className="w-4 h-4" />
@@ -811,9 +823,9 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </p>
                   </EnhancedScrollReveal>
 
-                  <div className="grid md:grid-cols-2 gap-8 mb-12">
+                  <div className="grid md:grid-cols-2 gap-6 mb-12">
                     <EnhancedScrollReveal direction="left" delay={200}>
-                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass">
+                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass h-full">
                         <div className="flex items-center gap-4 mb-6">
                           <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center">
                             <Zap className="w-6 h-6 text-yellow-500" />
@@ -838,7 +850,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="right" delay={400}>
-                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass">
+                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass h-full">
                         <div className="flex items-center gap-4 mb-6">
                           <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center">
                             <Shield className="w-6 h-6 text-blue-500" />
@@ -862,7 +874,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="left" delay={600}>
-                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass">
+                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass h-full">
                         <div className="flex items-center gap-4 mb-6">
                           <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center">
                             <DollarSign className="w-6 h-6 text-green-500" />
@@ -887,7 +899,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="right" delay={800}>
-                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass">
+                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass h-full">
                         <div className="flex items-center gap-4 mb-6">
                           <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center">
                             <Settings className="w-6 h-6 text-purple-500" />
@@ -927,7 +939,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </p>
                   </EnhancedScrollReveal>
 
-                  <div className="space-y-8">
+                  <div className="space-y-6">
                     <EnhancedScrollReveal direction="up" delay={200}>
                       <div className="bg-card rounded-2xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
@@ -1052,7 +1064,7 @@ const CloudInfrastructureAutomationTerraform = () => {
 
                   <div className="grid md:grid-cols-3 gap-6">
                     <EnhancedScrollReveal direction="up" delay={200}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass">
+                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass h-full">
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                           <Rocket className="w-6 h-6 text-primary" />
                         </div>
@@ -1069,7 +1081,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="up" delay={400}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass">
+                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass h-full">
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                           <Target className="w-6 h-6 text-primary" />
                         </div>
@@ -1086,7 +1098,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="up" delay={600}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass">
+                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass h-full">
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                           <DollarSign className="w-6 h-6 text-primary" />
                         </div>
