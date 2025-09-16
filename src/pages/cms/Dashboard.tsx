@@ -29,6 +29,13 @@ const Dashboard = () => {
   const [activeSection, setActiveSection] = useState('overview')
 
   const handleSignOut = async () => {
+    // Skip redirect on Pages dev URLs
+    if (typeof window !== 'undefined' && 
+        window.location.hostname.includes('.pages.dev')) {
+      console.log('Sign out redirect disabled on Pages dev URL');
+      return;
+    }
+
     // await signOut() // Disabled for now
     // toast.success('Signed out successfully')
     window.location.href = '/' // Temporary redirect to home

@@ -75,7 +75,14 @@ export default function Auth() {
     
     try {
       const { supabase } = await import('@/integrations/supabase/client');
-      const redirectUrl = `${window.location.origin}/cms/dashboard`;
+      
+      // Use current domain for redirect, but handle Pages dev URLs
+      let redirectDomain = window.location.origin;
+      if (window.location.hostname.includes('.pages.dev')) {
+        // Keep Pages dev URL for redirect during development
+        console.log('Using Pages dev URL for auth redirect');
+      }
+      const redirectUrl = `${redirectDomain}/cms/dashboard`;
       
       const { error } = await supabase.auth.signUp({
         email: signupData.email,
