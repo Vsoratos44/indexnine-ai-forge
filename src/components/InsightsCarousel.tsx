@@ -12,7 +12,7 @@ import styles from "../assets/css/stylesheet.module.css";
 
 import carlImg1 from "../assets/images/blog-ai-mgmt.webp";
 import carlImg2 from "../assets/images/case-img.webp";
-import carlImg3 from "../assets/images/blog-micros-monolth.webp";
+import carlImg3 from "../assets/images/blog-agentic.webp";
 
 import carlImgBlogData from "../assets/images/carsl-img-blog-data.webp";
 import { Link } from "react-router-dom";
@@ -35,14 +35,15 @@ const InsightsCarousel = () => {
     {
       id: "1",
       type: "Blog",
-      title: "The AI Change Management Playbook: Modernizing Legacy Systems",
+      title:
+        "The Future Is Agentic. Is Your Enterprise Ready for What Comes Next?",
       description:
-        "AI adoption is more than a technical challenge. Discover a strategic framework for change management, data modernization, and identifying high-impact AI initiatives in legacy organizations.",
-      date: "January 15, 2025",
-      readTime: "15 min read",
-      category: "AI Strategy",
-      image: carlImg1,
-      link: "/insights/blogs/ai-change-management-playbook",
+        "The enterprise technology landscape is buzzing with AI agents. Amazon's AgentCore toolkit signals a seismic shift toward autonomous systems. Learn strategic adoption with extreme caution.",
+      date: "January 10, 2025",
+      readTime: "8 min read",
+      category: "AI Strategy Team",
+      image: carlImg3,
+      link: "/insights/blogs/agentic-ai-enterprise-future",
     },
     {
       id: "2",
@@ -59,15 +60,14 @@ const InsightsCarousel = () => {
     {
       id: "3",
       type: "Blog",
-      title:
-        "Microservices vs Monolith: Making the Right Architectural Choice for Scale",
+      title: "The AI Change Management Playbook: Modernizing Legacy Systems",
       description:
-        "A comprehensive guide to choosing between microservices and monolithic architecture based on your business stage, team size, and technical requirements.",
-      date: "January 10, 2025",
-      readTime: "11 min read",
-      category: "Architecture Team",
-      image: carlImg3,
-      link: "/insights/blogs/microservices-vs-monolith",
+        "AI adoption is more than a technical challenge. Discover a strategic framework for change management, data modernization, and identifying high-impact AI initiatives in legacy organizations.",
+      date: "January 15, 2025",
+      readTime: "15 min read",
+      category: "AI Strategy",
+      image: carlImg1,
+      link: "/insights/blogs/ai-change-management-playbook",
     },
   ];
 
