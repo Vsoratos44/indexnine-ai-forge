@@ -27,30 +27,30 @@ const About = () => {
       />
       <LocalBusinessSchema />
       <Header />
+
+      {/* Hero Section */}
+      <section className="relative min-h-[480px] overflow-hidden bg-black">
+        <LivingVoidBackground />
+
+        <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
+          <div className="max-w-4xl mx-auto text-center lg:text-left ml-0">
+            <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25]  animate-fade-in font-montserrat">
+              About{" "}
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                IndexNine
+              </span>
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
+              We are a private-equity backed software product engineering
+              solutions company that partners with businesses to transform bold
+              ideas into market-leading products.
+            </p>
+          </div>
+        </div>
+      </section>
       <div
         className={`relative max-w-8xl bg-white mx-auto ${styles.sectionBgAbout}`}
       >
-        {/* Hero Section */}
-        <section className="relative min-h-[480px] overflow-hidden bg-black">
-          <LivingVoidBackground />
-
-          <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
-            <div className="max-w-4xl mx-auto text-center lg:text-left ml-0">
-              <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25]  animate-fade-in font-montserrat">
-                About{" "}
-                <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  IndexNine
-                </span>
-              </h1>
-              <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
-                We are a private-equity backed software product engineering
-                solutions company that partners with businesses to transform
-                bold ideas into market-leading products.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <div
           className={`relative max-w-8xl bg-white mx-auto ${styles.sectionBgAbout}`}
         >
