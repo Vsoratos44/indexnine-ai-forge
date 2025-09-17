@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 
 interface CarouselItem {
   id: string;
-  type: "eBooks" | "Blogs" | "Case Study";
+  type: "eBooks" | "Blog" | "Case Study";
   title: string;
   description: string;
   date: string;
@@ -34,7 +34,7 @@ const InsightsCarousel = () => {
   const carouselItems: CarouselItem[] = [
     {
       id: "1",
-      type: "Blogs",
+      type: "Blog",
       title: "The AI Change Management Playbook: Modernizing Legacy Systems",
       description:
         "AI adoption is more than a technical challenge. Discover a strategic framework for change management, data modernization, and identifying high-impact AI initiatives in legacy organizations.",
@@ -58,7 +58,7 @@ const InsightsCarousel = () => {
     },
     {
       id: "3",
-      type: "Blogs",
+      type: "Blog",
       title:
         "Microservices vs Monolith: Making the Right Architectural Choice for Scale",
       description:
