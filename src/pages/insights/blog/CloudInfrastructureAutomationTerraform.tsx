@@ -103,7 +103,7 @@ const CloudInfrastructureAutomationTerraform = () => {
     sections.forEach((s) => observer.observe(s));
 
     return () => observer.disconnect();
-  }, []); 
+  }, []);
 
   return (
     <div
@@ -1132,86 +1132,6 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </div>
                   </EnhancedScrollReveal>
                 </section>
-
-                {/* Enhanced FAQ */}
-                <section id="faq" className="mb-16">
-                  <EnhancedScrollReveal direction="up">
-                    <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
-                      <FileText className="w-8 h-8 text-primary" />
-                      Frequently Asked Questions
-                    </h2>
-                  </EnhancedScrollReveal>
-
-                  <div className="space-y-4">
-                    {[
-                      {
-                        question:
-                          "How much does cloud infrastructure automation cost compared to manual setup?",
-                        answer:
-                          "Cloud infrastructure automation with Terraform eliminates the need for dedicated DevOps teams (saving $150K+ annually) and prevents costly misconfigurations that can lead to $4.88M+ in security breach damages. The ROI is immediate through reduced operational overhead and optimized resource allocation.",
-                      },
-                      {
-                        question:
-                          "Do I need to know Terraform to use automated cloud infrastructure deployment?",
-                        answer:
-                          "No. When you partner with IndexNine, our teams handle the entire process using our Snap.MVP accelerator. The Terraform templates are pre-built and automated by our experts. You get production-ready environments without needing deep DevOps expertise.",
-                      },
-                      {
-                        question:
-                          "How customizable is automated cloud infrastructure?",
-                        answer:
-                          "Highly customizable through modular Terraform design. We can adjust server counts, database types, storage classes, and deploy to different geographic regions by modifying variables, often without application downtime.",
-                      },
-                      {
-                        question:
-                          "Is automated infrastructure truly production-ready for enterprise workloads?",
-                        answer:
-                          "Yes. All deployments follow AWS Well-Architected Framework principles—the industry standard. This includes high availability, disaster recovery, security, and enterprise-scale capabilities from day one.",
-                      },
-                      {
-                        question:
-                          "Can cloud infrastructure automation work with different cloud providers?",
-                        answer:
-                          "Yes. Our Snap.MVP accelerator is cloud-agnostic and deploys across AWS, Google Cloud, and Azure using modular Terraform templates for each provider.",
-                      },
-                      {
-                        question:
-                          "How long does it take to deploy production-ready cloud infrastructure?",
-                        answer:
-                          "With our automated Terraform templates, complete production-ready infrastructure deploys in approximately 10 minutes, compared to weeks or months with manual setup.",
-                      },
-                    ].map((faq, index) => (
-                      <EnhancedScrollReveal
-                        key={index}
-                        direction="up"
-                        delay={index * 100}
-                      >
-                        <div className="bg-card rounded-2xl shadow-glass border-glass overflow-hidden">
-                          <button
-                            onClick={() => toggleFAQ(index)}
-                            className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
-                          >
-                            <span className="font-medium text-card-foreground pr-4">
-                              {faq.question}
-                            </span>
-                            {expandedFAQ === index ? (
-                              <ChevronUp className="w-5 h-5 text-muted-foreground flex-shrink-0" />
-                            ) : (
-                              <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0" />
-                            )}
-                          </button>
-                          {expandedFAQ === index && (
-                            <div className="px-6 pb-4">
-                              <p className="text-muted-foreground leading-relaxed">
-                                {faq.answer}
-                              </p>
-                            </div>
-                          )}
-                        </div>
-                      </EnhancedScrollReveal>
-                    ))}
-                  </div>
-                </section>
               </div>
             }
           />
@@ -1247,6 +1167,85 @@ const CloudInfrastructureAutomationTerraform = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Enhanced FAQ */}
+      <section id="faq" className="container max-w-6xl my-16">
+        <EnhancedScrollReveal direction="up">
+          <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
+            <FileText className="w-8 h-8 text-primary" />
+            Frequently Asked Questions
+          </h2>
+        </EnhancedScrollReveal>
+
+        <div className="space-y-4">
+          {[
+            {
+              question:
+                "How much does cloud infrastructure automation cost compared to manual setup?",
+              answer:
+                "Cloud infrastructure automation with Terraform eliminates the need for dedicated DevOps teams (saving $150K+ annually) and prevents costly misconfigurations that can lead to $4.88M+ in security breach damages. The ROI is immediate through reduced operational overhead and optimized resource allocation.",
+            },
+            {
+              question:
+                "Do I need to know Terraform to use automated cloud infrastructure deployment?",
+              answer:
+                "No. When you partner with IndexNine, our teams handle the entire process using our Snap.MVP accelerator. The Terraform templates are pre-built and automated by our experts. You get production-ready environments without needing deep DevOps expertise.",
+            },
+            {
+              question: "How customizable is automated cloud infrastructure?",
+              answer:
+                "Highly customizable through modular Terraform design. We can adjust server counts, database types, storage classes, and deploy to different geographic regions by modifying variables, often without application downtime.",
+            },
+            {
+              question:
+                "Is automated infrastructure truly production-ready for enterprise workloads?",
+              answer:
+                "Yes. All deployments follow AWS Well-Architected Framework principles—the industry standard. This includes high availability, disaster recovery, security, and enterprise-scale capabilities from day one.",
+            },
+            {
+              question:
+                "Can cloud infrastructure automation work with different cloud providers?",
+              answer:
+                "Yes. Our Snap.MVP accelerator is cloud-agnostic and deploys across AWS, Google Cloud, and Azure using modular Terraform templates for each provider.",
+            },
+            {
+              question:
+                "How long does it take to deploy production-ready cloud infrastructure?",
+              answer:
+                "With our automated Terraform templates, complete production-ready infrastructure deploys in approximately 10 minutes, compared to weeks or months with manual setup.",
+            },
+          ].map((faq, index) => (
+            <EnhancedScrollReveal
+              key={index}
+              direction="up"
+              delay={index * 100}
+            >
+              <div className="bg-card rounded-2xl shadow-glass border-glass overflow-hidden">
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
+                >
+                  <span className="font-medium text-card-foreground pr-4">
+                    {faq.question}
+                  </span>
+                  {expandedFAQ === index ? (
+                    <ChevronUp className="w-5 h-5 text-muted-foreground flex-shrink-0" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0" />
+                  )}
+                </button>
+                {expandedFAQ === index && (
+                  <div className="px-6 pb-4">
+                    <p className="text-muted-foreground leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </EnhancedScrollReveal>
+          ))}
         </div>
       </section>
 

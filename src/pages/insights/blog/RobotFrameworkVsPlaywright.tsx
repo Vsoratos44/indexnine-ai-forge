@@ -383,7 +383,7 @@ const RobotFrameworkVsPlaywright = () => {
                       variant="btnSecondary"
                       asChild
                     >
-                      <Link to="/studios/quality-engineering">
+                      <Link to="/services/quality-engineering">
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Explore Our Quality Engineering Services
                       </Link>
@@ -746,12 +746,19 @@ const RobotFrameworkVsPlaywright = () => {
                           cycles. Our QA experts help you choose and implement
                           the right automation framework.
                         </p>
-                        <Button variant="btnPrimary" className="w-full" asChild>
-                          <Link to="/studios/quality-engineering">
-                            Book a Free QA Consulting Session to Build Your
-                            Automation Strategy
-                            <ExternalLink className="w-4 h-4 ml-2" />
-                          </Link>
+                        <Button
+                          variant="btnPrimary"
+                          className="w-full"
+                          onClick={() => {
+                            window.open(
+                              "https://calendly.com/vaughn-soratos-indexnine",
+                              "_blank"
+                            );
+                          }}
+                        >
+                          Book a Free QA Consulting Session to Build Your
+                          Automation Strategy
+                          <ExternalLink className="w-4 h-4 ml-2" />
                         </Button>
                       </div>
                     </div>
@@ -857,11 +864,18 @@ const RobotFrameworkVsPlaywright = () => {
             your specific needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="btnSecondary" size="lg" asChild>
-              <Link to="/services/quality-engineering">
-                Schedule Expert QA Consultation
-                {/* <ExternalLink className="h-4 w-4 ml-2" /> */}
-              </Link>
+            <Button
+              variant="btnSecondary"
+              size="lg"
+              onClick={() => {
+                window.open(
+                  "https://calendly.com/vaughn-soratos-indexnine",
+                  "_blank"
+                );
+              }}
+            >
+              Schedule Expert QA Consultation
+              {/* <ExternalLink className="h-4 w-4 ml-2" /> */}
             </Button>
             <Button variant="btnSecondary" size="lg" asChild>
               <Link to="/insights/case-studies">View QA Success Stories</Link>

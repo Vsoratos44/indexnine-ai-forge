@@ -40,9 +40,11 @@ const OutcomeBased = () => {
   // Comprehensive SEO implementation
   useSEO({
     title: "Outcome-Based Engagements & Success Fee Models | IndexNine",
-    description: "Align your success with ours. IndexNine's outcome-based and success fee models de-risk your investment and guarantee ROI by tying our success directly to your business KPIs.",
+    description:
+      "Align your success with ours. IndexNine's outcome-based and success fee models de-risk your investment and guarantee ROI by tying our success directly to your business KPIs.",
     canonicalUrl: "https://www.indexnine.com/engagement/outcome-based",
-    keywords: "outcome-based engagement, success fee model, performance-based pricing, technology partnership agreement, shared-risk model, engineering partner, guaranteed ROI, KPI-driven development, software development partner, value-based pricing",
+    keywords:
+      "outcome-based engagement, success fee model, performance-based pricing, technology partnership agreement, shared-risk model, engineering partner, guaranteed ROI, KPI-driven development, software development partner, value-based pricing",
     ogImage: "https://www.indexnine.com/images/og-outcome-based.png",
   });
 
@@ -60,7 +62,10 @@ const OutcomeBased = () => {
       />
       <BreadcrumbSchema
         items={[
-          { name: "Engagement Models", url: "https://www.indexnine.com/engagement" },
+          {
+            name: "Engagement Models",
+            url: "https://www.indexnine.com/engagement",
+          },
           {
             name: "Outcome-Based Partnerships",
             url: "https://www.indexnine.com/engagement/outcome-based",
@@ -73,40 +78,40 @@ const OutcomeBased = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          "mainEntity": [
+          mainEntity: [
             {
               "@type": "Question",
-              "name": "Is this model more expensive than a traditional contract?",
-              "acceptedAnswer": {
+              name: "Is this model more expensive than a traditional contract?",
+              acceptedAnswer: {
                 "@type": "Answer",
-                "text": "Potentially, yes—and that's a good thing. If we significantly exceed your goals and generate massive value for your business, our success fee will reflect that. However, the foundational cost is often lower, and you are protected from paying the full amount for a project that doesn't meet its objectives. You only pay for exceptional results when you get them."
-              }
+                text: "Potentially, yes—and that's a good thing. If we significantly exceed your goals and generate massive value for your business, our success fee will reflect that. However, the foundational cost is often lower, and you are protected from paying the full amount for a project that doesn't meet its objectives. You only pay for exceptional results when you get them.",
+              },
             },
             {
               "@type": "Question",
-              "name": "How do you handle factors outside of your control that might affect the KPIs?",
-              "acceptedAnswer": {
+              name: "How do you handle factors outside of your control that might affect the KPIs?",
+              acceptedAnswer: {
                 "@type": "Answer",
-                "text": "This is a key part of the initial 'Define Success' workshop. We work with you to identify external dependencies (e.g., marketing spend, sales team performance) and build them into the agreement. The goal is to isolate the impact of our engineering and product work as precisely as possible."
-              }
+                text: "This is a key part of the initial 'Define Success' workshop. We work with you to identify external dependencies (e.g., marketing spend, sales team performance) and build them into the agreement. The goal is to isolate the impact of our engineering and product work as precisely as possible.",
+              },
             },
             {
               "@type": "Question",
-              "name": "What if our business goals or KPIs need to change mid-project?",
-              "acceptedAnswer": {
+              name: "What if our business goals or KPIs need to change mid-project?",
+              acceptedAnswer: {
                 "@type": "Answer",
-                "text": "We understand that markets evolve. Our agreements are designed to be agile. We have a clear change-control process that allows us to revisit and adjust the target KPIs and success fees if there is a significant pivot in business strategy, ensuring the partnership remains aligned."
-              }
+                text: "We understand that markets evolve. Our agreements are designed to be agile. We have a clear change-control process that allows us to revisit and adjust the target KPIs and success fees if there is a significant pivot in business strategy, ensuring the partnership remains aligned.",
+              },
             },
             {
               "@type": "Question",
-              "name": "What's the 'catch'?",
-              "acceptedAnswer": {
+              name: "What's the 'catch'?",
+              acceptedAnswer: {
                 "@type": "Answer",
-                "text": "The only 'catch' is that this model requires a higher degree of upfront collaboration and trust. It's not a transactional, 'throw it over the wall' relationship. It requires both parties to be deeply invested in the process and committed to radical transparency. We are selective about the partners we engage with in this model to ensure a high probability of mutual success."
-              }
-            }
-          ]
+                text: "The only 'catch' is that this model requires a higher degree of upfront collaboration and trust. It's not a transactional, 'throw it over the wall' relationship. It requires both parties to be deeply invested in the process and committed to radical transparency. We are selective about the partners we engage with in this model to ensure a high probability of mutual success.",
+              },
+            },
+          ],
         })}
       </script>
 
@@ -119,7 +124,7 @@ const OutcomeBased = () => {
 
         {/* Content - Precisely positioned */}
         <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
-          <div className="max-w-5xl mx-auto text-center lg:text-left ml-0">
+          <div className="max-w-6xl mx-auto text-center lg:text-left ml-0">
             <div className="mb-6">
               <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
                 Outcome-Based Partnership Model
@@ -132,7 +137,10 @@ const OutcomeBased = () => {
               </span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat">
-              Stop paying for hours and start investing in outcomes. We're so confident in our ability to deliver measurable results that we put our own skin in the game—our success is contractually tied to yours.
+              Stop paying for hours and start investing in outcomes. We're so
+              confident in our ability to deliver measurable results that we put
+              our own skin in the game—our success is contractually tied to
+              yours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
               <Button
@@ -176,10 +184,21 @@ const OutcomeBased = () => {
               </span>
             </h2>
             <p className="text-lg text-foreground-dark-muted max-w-6xl mb-8 mx-auto">
-              The standard time-and-materials contract creates an inherent conflict of interest. It incentivizes inefficiency and penalizes velocity. The longer a project takes, the more the vendor makes. This vendor-client divide means you're constantly managing budgets and timelines instead of collaborating on strategy and innovation.
+              The standard time-and-materials contract creates an inherent
+              conflict of interest. It incentivizes inefficiency and penalizes
+              velocity. The longer a project takes, the more the vendor makes.
+              This vendor-client divide means you're constantly managing budgets
+              and timelines instead of collaborating on strategy and innovation.
             </p>
             <p className="text-lg text-foreground-dark-muted max-w-6xl mb-0 mx-auto">
-              <strong>It's like paying a personal trainer by the hour, regardless of whether you ever get in shape.</strong> We were founded to bridge that gap. We believe the ultimate measure of our work is its tangible impact on your business—increased revenue, improved user adoption, reduced operational costs, or faster market entry.
+              <strong>
+                It's like paying a personal trainer by the hour, regardless of
+                whether you ever get in shape.
+              </strong>{" "}
+              We were founded to bridge that gap. We believe the ultimate
+              measure of our work is its tangible impact on your
+              business—increased revenue, improved user adoption, reduced
+              operational costs, or faster market entry.
             </p>
           </div>
         </div>
@@ -194,7 +213,9 @@ const OutcomeBased = () => {
                 The IndexNine Partnership Principle: Our Success is Your Success
               </h2>
               <p className="text-lg text-foreground-dark/80 max-w-4xl mx-auto">
-                Our outcome-based model is the purest expression of our core values. It transforms the client-vendor dynamic into a true, unified partnership where risk and reward are shared.
+                Our outcome-based model is the purest expression of our core
+                values. It transforms the client-vendor dynamic into a true,
+                unified partnership where risk and reward are shared.
               </p>
             </div>
 
@@ -210,7 +231,9 @@ const OutcomeBased = () => {
                   Aligned Incentives
                 </h3>
                 <p className="relative text-foreground-dark/80">
-                  We shift the conversation from "How much will this cost?" to "What business result are we trying to achieve, and how do we get there together?"
+                  We shift the conversation from "How much will this cost?" to
+                  "What business result are we trying to achieve, and how do we
+                  get there together?"
                 </p>
               </div>
 
@@ -225,7 +248,9 @@ const OutcomeBased = () => {
                   True Partnership
                 </h3>
                 <p className="relative text-foreground-dark/80">
-                  This model requires a higher level of trust, transparency, and collaboration from day one, ensuring every decision is laser-focused on moving your most important needles.
+                  This model requires a higher level of trust, transparency, and
+                  collaboration from day one, ensuring every decision is
+                  laser-focused on moving your most important needles.
                 </p>
               </div>
 
@@ -240,7 +265,9 @@ const OutcomeBased = () => {
                   Measurable Impact
                 </h3>
                 <p className="relative text-foreground-dark/80">
-                  Every decision our team makes is focused on driving concrete, measurable business outcomes that directly impact your bottom line.
+                  Every decision our team makes is focused on driving concrete,
+                  measurable business outcomes that directly impact your bottom
+                  line.
                 </p>
               </div>
             </div>
@@ -257,10 +284,12 @@ const OutcomeBased = () => {
           <div className="max-w-8xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-                How Our Outcome-Based Engagements Work: A 3-Step Framework for Alignment
+                How Our Outcome-Based Engagements Work: A 3-Step Framework for
+                Alignment
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
-                Our process is designed for clarity and mutual understanding, ensuring we build the partnership on a rock-solid foundation.
+                Our process is designed for clarity and mutual understanding,
+                ensuring we build the partnership on a rock-solid foundation.
               </p>
             </div>
 
@@ -282,22 +311,29 @@ const OutcomeBased = () => {
                         </h3>
                       </div>
                       <p className="text-foreground-dark/80 mb-4">
-                        We begin with a series of intensive, data-driven workshops to define what success looks like in concrete, measurable terms. We work with your leadership to establish the exact Key Performance Indicators (KPIs) that matter.
+                        We begin with a series of intensive, data-driven
+                        workshops to define what success looks like in concrete,
+                        measurable terms. We work with your leadership to
+                        establish the exact Key Performance Indicators (KPIs)
+                        that matter.
                       </p>
                       <div className="bg-muted/50 rounded-lg p-4">
-                        <h4 className="font-semibold text-foreground-dark mb-3">Example KPIs:</h4>
+                        <h4 className="font-semibold text-foreground-dark mb-3">
+                          Example KPIs:
+                        </h4>
                         <ul className="space-y-2 text-sm text-foreground-dark/80">
                           <li className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-green-500" />
-                            A 20% increase in user conversion rates
+                            <CheckCircle className="w-4 h-4 text-green-500" />A
+                            20% increase in user conversion rates
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <CheckCircle className="w-4 h-4 text-green-500" />A
+                            15% reduction in customer support tickets
                           </li>
                           <li className="flex items-center gap-2">
                             <CheckCircle className="w-4 h-4 text-green-500" />
-                            A 15% reduction in customer support tickets
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-green-500" />
-                            Achieving 50,000 monthly active users within six months
+                            Achieving 50,000 monthly active users within six
+                            months
                           </li>
                           <li className="flex items-center gap-2">
                             <CheckCircle className="w-4 h-4 text-green-500" />
@@ -327,7 +363,9 @@ const OutcomeBased = () => {
                         </h3>
                       </div>
                       <p className="text-foreground/80 mb-4">
-                        Once the KPIs are defined, we structure a hybrid engagement model that balances operational security with performance incentives.
+                        Once the KPIs are defined, we structure a hybrid
+                        engagement model that balances operational security with
+                        performance incentives.
                       </p>
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="bg-white/5 rounded-lg p-4">
@@ -336,7 +374,9 @@ const OutcomeBased = () => {
                             Foundational Fee
                           </h4>
                           <p className="text-foreground/70 text-sm">
-                            Covers our core team's operational costs, ensuring we have a dedicated, world-class team focused on your project.
+                            Covers our core team's operational costs, ensuring
+                            we have a dedicated, world-class team focused on
+                            your project.
                           </p>
                         </div>
                         <div className="bg-white/5 rounded-lg p-4">
@@ -345,7 +385,9 @@ const OutcomeBased = () => {
                             Success Fee
                           </h4>
                           <p className="text-foreground/70 text-sm">
-                            A significant, performance-based bonus paid out only when—and to the degree that—we meet or exceed the pre-defined KPIs.
+                            A significant, performance-based bonus paid out only
+                            when—and to the degree that—we meet or exceed the
+                            pre-defined KPIs.
                           </p>
                         </div>
                       </div>
@@ -371,12 +413,18 @@ const OutcomeBased = () => {
                         </h3>
                       </div>
                       <p className="text-foreground-dark/80 mb-4">
-                        With the agreement in place, our team executes with the discipline and rigor of a true stakeholder. We provide complete transparency throughout the engagement with real-time dashboards and regular progress reports against our shared KPIs.
+                        With the agreement in place, our team executes with the
+                        discipline and rigor of a true stakeholder. We provide
+                        complete transparency throughout the engagement with
+                        real-time dashboards and regular progress reports
+                        against our shared KPIs.
                       </p>
                       <div className="flex items-center gap-4 p-4 bg-green-50 rounded-lg border border-green-200">
                         <CheckCircle className="w-6 h-6 text-green-600" />
                         <p className="text-green-800 font-medium">
-                          Our success is inextricably linked to yours, motivating our team to innovate, solve problems creatively, and deliver extraordinary value.
+                          Our success is inextricably linked to yours,
+                          motivating our team to innovate, solve problems
+                          creatively, and deliver extraordinary value.
                         </p>
                       </div>
                     </CardContent>
@@ -394,7 +442,8 @@ const OutcomeBased = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-                The Four Pillars of a True Partnership: The Advantages of Our Model
+                The Four Pillars of a True Partnership: The Advantages of Our
+                Model
               </h2>
             </div>
 
@@ -402,8 +451,12 @@ const OutcomeBased = () => {
               <table className="w-full bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
                 <thead className="bg-gradient-to-r from-brand-primary to-brand-purple text-white">
                   <tr>
-                    <th className="px-8 py-6 text-left font-semibold text-xl">Pillar</th>
-                    <th className="px-8 py-6 text-left font-semibold text-xl">Advantage</th>
+                    <th className="px-8 py-6 text-left font-semibold text-xl">
+                      Pillar
+                    </th>
+                    <th className="px-8 py-6 text-left font-semibold text-xl">
+                      Advantage
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-100">
@@ -419,7 +472,9 @@ const OutcomeBased = () => {
                       </div>
                     </td>
                     <td className="px-8 py-6 text-foreground-dark/80">
-                      You're no longer shouldering 100% of the financial risk. We share the burden, significantly lowering the barrier to undertaking ambitious, transformational projects.
+                      You're no longer shouldering 100% of the financial risk.
+                      We share the burden, significantly lowering the barrier to
+                      undertaking ambitious, transformational projects.
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
@@ -434,7 +489,10 @@ const OutcomeBased = () => {
                       </div>
                     </td>
                     <td className="px-8 py-6 text-foreground-dark/80">
-                      Our team is motivated by the same goals you are. This eliminates adversarial negotiations over scope and hours, fostering a culture of trust and collaborative problem-solving.
+                      Our team is motivated by the same goals you are. This
+                      eliminates adversarial negotiations over scope and hours,
+                      fostering a culture of trust and collaborative
+                      problem-solving.
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
@@ -449,7 +507,10 @@ const OutcomeBased = () => {
                       </div>
                     </td>
                     <td className="px-8 py-6 text-foreground-dark/80">
-                      The entire engagement is reverse-engineered from your desired business outcome. We don't get fully paid unless we deliver tangible, measurable value, ensuring a positive return on your investment.
+                      The entire engagement is reverse-engineered from your
+                      desired business outcome. We don't get fully paid unless
+                      we deliver tangible, measurable value, ensuring a positive
+                      return on your investment.
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
@@ -464,7 +525,10 @@ const OutcomeBased = () => {
                       </div>
                     </td>
                     <td className="px-8 py-6 text-foreground-dark/80">
-                      We move beyond the role of a service provider to become an integral part of your strategic team, offering proactive insights and innovative solutions to help you win your market.
+                      We move beyond the role of a service provider to become an
+                      integral part of your strategic team, offering proactive
+                      insights and innovative solutions to help you win your
+                      market.
                     </td>
                   </tr>
                 </tbody>
@@ -482,7 +546,8 @@ const OutcomeBased = () => {
               Is an Outcome-Based Partnership Right for You?
             </h2>
             <p className="text-lg text-foreground-dark/80 mb-12">
-              This model is designed for ambitious, forward-thinking organizations and is most effective when:
+              This model is designed for ambitious, forward-thinking
+              organizations and is most effective when:
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -490,9 +555,13 @@ const OutcomeBased = () => {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <CheckCircle className="w-8 h-8 text-green-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground-dark mb-4">Clear Business Objectives</h3>
+                <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                  Clear Business Objectives
+                </h3>
                 <p className="text-foreground-dark/70">
-                  You have a clear business objective that can be measured with concrete KPIs and direct impact on revenue, growth, or efficiency.
+                  You have a clear business objective that can be measured with
+                  concrete KPIs and direct impact on revenue, growth, or
+                  efficiency.
                 </p>
               </div>
 
@@ -500,9 +569,12 @@ const OutcomeBased = () => {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Handshake className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground-dark mb-4">Long-Term Partnership</h3>
+                <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                  Long-Term Partnership
+                </h3>
                 <p className="text-foreground-dark/70">
-                  You are looking for a long-term, strategic partner, not a short-term code-for-hire vendor who disappears after delivery.
+                  You are looking for a long-term, strategic partner, not a
+                  short-term code-for-hire vendor who disappears after delivery.
                 </p>
               </div>
 
@@ -510,9 +582,13 @@ const OutcomeBased = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <TrendingUp className="w-8 h-8 text-purple-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground-dark mb-4">Measurable Impact</h3>
+                <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                  Measurable Impact
+                </h3>
                 <p className="text-foreground-dark/70">
-                  Your project has a direct and measurable impact on revenue, user growth, or operational efficiency that can be tracked and attributed.
+                  Your project has a direct and measurable impact on revenue,
+                  user growth, or operational efficiency that can be tracked and
+                  attributed.
                 </p>
               </div>
 
@@ -520,9 +596,13 @@ const OutcomeBased = () => {
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Users className="w-8 h-8 text-orange-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground-dark mb-4">Collaborative Culture</h3>
+                <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                  Collaborative Culture
+                </h3>
                 <p className="text-foreground-dark/70">
-                  You value deep collaboration and are prepared to build a transparent, trust-based relationship with shared accountability.
+                  You value deep collaboration and are prepared to build a
+                  transparent, trust-based relationship with shared
+                  accountability.
                 </p>
               </div>
             </div>
@@ -543,23 +623,33 @@ const OutcomeBased = () => {
             <div className="space-y-4">
               {[
                 {
-                  question: "Is this model more expensive than a traditional contract?",
-                  answer: "Potentially, yes—and that's a good thing. If we significantly exceed your goals and generate massive value for your business, our success fee will reflect that. However, the foundational cost is often lower, and you are protected from paying the full amount for a project that doesn't meet its objectives. You only pay for exceptional results when you get them."
+                  question:
+                    "Is this model more expensive than a traditional contract?",
+                  answer:
+                    "Potentially, yes—and that's a good thing. If we significantly exceed your goals and generate massive value for your business, our success fee will reflect that. However, the foundational cost is often lower, and you are protected from paying the full amount for a project that doesn't meet its objectives. You only pay for exceptional results when you get them.",
                 },
                 {
-                  question: "How do you handle factors outside of your control that might affect the KPIs?",
-                  answer: "This is a key part of the initial \"Define Success\" workshop. We work with you to identify external dependencies (e.g., marketing spend, sales team performance) and build them into the agreement. The goal is to isolate the impact of our engineering and product work as precisely as possible."
+                  question:
+                    "How do you handle factors outside of your control that might affect the KPIs?",
+                  answer:
+                    'This is a key part of the initial "Define Success" workshop. We work with you to identify external dependencies (e.g., marketing spend, sales team performance) and build them into the agreement. The goal is to isolate the impact of our engineering and product work as precisely as possible.',
                 },
                 {
-                  question: "What if our business goals or KPIs need to change mid-project?",
-                  answer: "We understand that markets evolve. Our agreements are designed to be agile. We have a clear change-control process that allows us to revisit and adjust the target KPIs and success fees if there is a significant pivot in business strategy, ensuring the partnership remains aligned."
+                  question:
+                    "What if our business goals or KPIs need to change mid-project?",
+                  answer:
+                    "We understand that markets evolve. Our agreements are designed to be agile. We have a clear change-control process that allows us to revisit and adjust the target KPIs and success fees if there is a significant pivot in business strategy, ensuring the partnership remains aligned.",
                 },
                 {
-                  question: "What's the \"catch\"?",
-                  answer: "The only \"catch\" is that this model requires a higher degree of upfront collaboration and trust. It's not a transactional, \"throw it over the wall\" relationship. It requires both parties to be deeply invested in the process and committed to radical transparency. We are selective about the partners we engage with in this model to ensure a high probability of mutual success."
-                }
+                  question: 'What\'s the "catch"?',
+                  answer:
+                    'The only "catch" is that this model requires a higher degree of upfront collaboration and trust. It\'s not a transactional, "throw it over the wall" relationship. It requires both parties to be deeply invested in the process and committed to radical transparency. We are selective about the partners we engage with in this model to ensure a high probability of mutual success.',
+                },
               ].map((faq, index) => (
-                <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden"
+                >
                   <button
                     onClick={() => toggleFAQ(index)}
                     className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
@@ -591,10 +681,13 @@ const OutcomeBased = () => {
       <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center max-w-6xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-            <span className="leading-[1.4]">Ready for a Different Kind of Partnership?</span>
+            <span className="leading-[1.4]">
+              Ready for a Different Kind of Partnership?
+            </span>
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Stop paying for hours and start investing in outcomes. Let's build a partnership where our success is the product of yours.
+            Stop paying for hours and start investing in outcomes. Let's build a
+            partnership where our success is the product of yours.
           </p>
           <Button
             variant="btnSecondary"

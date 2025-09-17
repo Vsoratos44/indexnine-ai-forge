@@ -931,13 +931,18 @@ const MicroservicesVsMonolith = () => {
                 Are you building for today, or architecting for tomorrow?
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="btnSecondary" size="lg">
+                <Button
+                  variant="btnSecondary"
+                  size="lg"
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
+                >
                   <ExternalLink className="h-4 w-4 mr-2" />
                   Schedule an Architectural Strategy Session
-                </Button>
-                <Button variant="btnSecondary" size="lg">
-                  <Download className="h-4 w-4 mr-2" />
-                  Download Architecture Framework
                 </Button>
               </div>
             </div>

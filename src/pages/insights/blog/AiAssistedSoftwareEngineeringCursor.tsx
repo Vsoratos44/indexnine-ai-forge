@@ -761,12 +761,17 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                 training.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="btnSecondary" size="lg" asChild>
-                  <Link to="/services/ai">Book an AI Assessment</Link>
-                </Button>
-                <Button variant="btnSecondary" size="lg">
-                  {" "}
-                  <Link to="/services/ai">Apply for 1-on-1 Coaching</Link>
+                <Button
+                  variant="btnSecondary"
+                  size="lg"
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/vaughn-soratos-indexnine",
+                      "_blank"
+                    );
+                  }}
+                >
+                  Book an AI Assessment
                 </Button>
               </div>
             </div>
