@@ -191,7 +191,7 @@ const GrowCaseStudy = () => {
                       <span className="leading-[1.05]">
                         Sports Interactive:
                       </span>
-                      <span className="bg-gradient-primary bg-clip-text text-transparent leading-[1.05]">
+                      <span className="text-[#505dfd] leading-[1.05]">
                         AI-Powered Fan Engagement in Real Time
                       </span>
                     </h1>
@@ -332,7 +332,7 @@ const GrowCaseStudy = () => {
                   <div className="bg-[#4A2424] mt-12 mb-8 flex">
                     <img
                       src={CaseInrImg}
-                      className="w-full h-96 object-cover"
+                      className="w-full h-120 object-cover"
                     />
                   </div>
 

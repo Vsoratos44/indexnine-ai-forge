@@ -191,7 +191,7 @@ const MatureCaseStudy = () => {
                       <span className="leading-[1.05]">
                         Mission-Critical Modernization :
                       </span>
-                      <span className="bg-gradient-primary bg-clip-text text-transparent leading-[1.05]">
+                      <span className="text-[#505dfd] leading-[1.05]">
                         Genesys E-commerce Platform
                       </span>
                     </h1>
@@ -332,7 +332,7 @@ const MatureCaseStudy = () => {
                   <div className="bg-[#4A2424] my-8 flex">
                     <img
                       src={CaseInrImg}
-                      className="w-full h-96 object-cover"
+                      className="w-full h-120 object-cover"
                     />
                   </div>
 

@@ -187,7 +187,7 @@ const LaunchCaseStudy = () => {
                   <div className="inline-block p-4 md:p-8  bg-black/20 shadow-md text-white rounded-xl text-sm font-medium border border-white/30 backdrop-blur-sm">
                     <h1 className="text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat flex flex-wrap md:flex-nowrap   gap-4 items-start">
                       <span className="leading-[1.05]">Annotate:</span>
-                      <span className="bg-gradient-primary bg-clip-text text-transparent leading-[1.05]">
+                      <span className="text-[#505dfd] leading-[1.05]">
                         Launching AI-Powered Disruption in Philanthropic Finance
                       </span>
                     </h1>
@@ -322,7 +322,7 @@ const LaunchCaseStudy = () => {
                   <div className="bg-[#4A2424] mt-12 mb-8 flex">
                     <img
                       src={CaseInrImg}
-                      className="w-full h-96 object-cover"
+                      className="w-full h-120 object-cover"
                     />
                   </div>
 
