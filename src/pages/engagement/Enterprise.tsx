@@ -16,7 +16,6 @@ import {
   ChevronUp,
   Brain,
 } from "lucide-react";
-import CtaButton from "@/components/test/CtaButton";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
@@ -38,28 +37,38 @@ const Enterprise = () => {
 
   const faqData = [
     {
-      question: "What is 'technical debt' and why is it a problem for my enterprise?",
-      answer: "Technical debt is the implied cost of rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer. It slows down future development, increases bugs, creates security vulnerabilities, and makes it difficult to scale or add new features, ultimately hindering innovation and growth.",
+      question:
+        "What is 'technical debt' and why is it a problem for my enterprise?",
+      answer:
+        "Technical debt is the implied cost of rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer. It slows down future development, increases bugs, creates security vulnerabilities, and makes it difficult to scale or add new features, ultimately hindering innovation and growth.",
     },
     {
-      question: "Our legacy system is business-critical. How do you modernize it without disrupting our operations?",
-      answer: "We specialize in minimizing disruption. Our approach involves a phased migration strategy, often using patterns like the 'strangler fig' to incrementally replace parts of the old system with new microservices. We build in parallel, run extensive tests, and ensure a seamless transition for your users and data.",
+      question:
+        "Our legacy system is business-critical. How do you modernize it without disrupting our operations?",
+      answer:
+        "We specialize in minimizing disruption. Our approach involves a phased migration strategy, often using patterns like the 'strangler fig' to incrementally replace parts of the old system with new microservices. We build in parallel, run extensive tests, and ensure a seamless transition for your users and data.",
     },
     {
-      question: "How is IndexNine's approach different from a large, traditional consulting firm?",
-      answer: "Our key difference is our 'practitioner-led' philosophy. Our strategists and architects are active builders, not just theorists. We combine high-level strategic planning with deep, hands-on engineering expertise. This ensures our recommendations are not only visionary but also practical, actionable, and ready for implementation by our integrated teams.",
+      question:
+        "How is IndexNine's approach different from a large, traditional consulting firm?",
+      answer:
+        "Our key difference is our 'practitioner-led' philosophy. Our strategists and architects are active builders, not just theorists. We combine high-level strategic planning with deep, hands-on engineering expertise. This ensures our recommendations are not only visionary but also practical, actionable, and ready for implementation by our integrated teams.",
     },
     {
       question: "How do you measure the ROI of a modernization project?",
-      answer: "ROI is measured against the specific business goals we establish in the initial assessment. Metrics often include: reduction in operational/maintenance costs, increased developer velocity (faster time-to-market for new features), improved system uptime and performance, and the enablement of new revenue streams that were previously impossible.",
+      answer:
+        "ROI is measured against the specific business goals we establish in the initial assessment. Metrics often include: reduction in operational/maintenance costs, increased developer velocity (faster time-to-market for new features), improved system uptime and performance, and the enablement of new revenue streams that were previously impossible.",
     },
   ];
 
   // Comprehensive SEO implementation
   useSEO({
-    title: "Enterprise Transformation Services | Product Modernization & AI Strategy | IndexNine",
-    description: "IndexNine's Enterprise Studio helps businesses modernize legacy systems, eliminate technical debt, and implement robust AI and QA strategies. Engineer resilience and scale with confidence.",
-    keywords: "enterprise transformation services, product modernization, legacy system modernization, technical debt, enterprise AI strategy, quality assurance engineering, test automation services, AI risk management",
+    title:
+      "Enterprise Transformation Services | Product Modernization & AI Strategy | IndexNine",
+    description:
+      "IndexNine's Enterprise Studio helps businesses modernize legacy systems, eliminate technical debt, and implement robust AI and QA strategies. Engineer resilience and scale with confidence.",
+    keywords:
+      "enterprise transformation services, product modernization, legacy system modernization, technical debt, enterprise AI strategy, quality assurance engineering, test automation services, AI risk management",
     canonicalUrl: "https://www.indexnine.com/engagement/enterprise",
     ogImage: "https://www.indexnine.com/images/og-enterprise-studio.png",
     ogType: "website",
@@ -81,8 +90,14 @@ const Enterprise = () => {
       <BreadcrumbSchema
         items={[
           { name: "Home", url: "https://www.indexnine.com" },
-          { name: "Engagement Models", url: "https://www.indexnine.com/engagement" },
-          { name: "Enterprise Studio", url: "https://www.indexnine.com/engagement/enterprise" },
+          {
+            name: "Engagement Models",
+            url: "https://www.indexnine.com/engagement",
+          },
+          {
+            name: "Enterprise Studio",
+            url: "https://www.indexnine.com/engagement/enterprise",
+          },
         ]}
       />
       <FAQSchema faqItems={faqData} />
@@ -101,10 +116,15 @@ const Enterprise = () => {
               </span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
-              The IndexNine Enterprise Studio is your strategic partner for transforming mission-critical systems. We help you eliminate technical debt, scale with confidence, and embed a culture of engineering excellence to future-proof your business.
+              The IndexNine Enterprise Studio is your strategic partner for
+              transforming mission-critical systems. We help you eliminate
+              technical debt, scale with confidence, and embed a culture of
+              engineering excellence to future-proof your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-scale-in">
-              <CtaButton
+              <Button
+                variant="btnPrimary"
+                size="xl"
                 onClick={() => {
                   window.open(
                     "https://calendly.com/vaughn-soratos-indexnine",
@@ -113,15 +133,18 @@ const Enterprise = () => {
                 }}
               >
                 Schedule a Modernization Assessment
-              </CtaButton>
+              </Button>
               <Button
-                variant="btnLink"
+                variant="btnSecondary"
                 size="xl"
                 className="min-w-[280px] text-foreground/80 hover:text-foreground h-auto"
-                onClick={() => document.getElementById("ai-audit")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() =>
+                  document
+                    .getElementById("ai-audit")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
               >
-                Explore AI Risk Audits{" "}
-                <ArrowRight className="ml-2 h-4 w-4" />
+                Explore AI Risk Audits <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
@@ -135,23 +158,30 @@ const Enterprise = () => {
       >
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-            Your Technology is Your Business.{" "}
-            <br className="hidden sm:block" />
+            Your Technology is Your Business. <br className="hidden sm:block" />
             <span className="text-brand-primary leading-[1.35]">
               Is It Ready for the Future?
             </span>
           </h2>
           <div className="text-base sm:text-lg text-foreground-dark-muted leading-relaxed space-y-4 sm:space-y-6 mb-8">
             <p>
-              In the enterprise world, the very systems that brought you success can become the anchors that hold you back. Technical debt slows innovation, legacy platforms create security risks, and inefficient processes burn resources, preventing you from competing effectively.
+              In the enterprise world, the very systems that brought you success
+              can become the anchors that hold you back. Technical debt slows
+              innovation, legacy platforms create security risks, and
+              inefficient processes burn resources, preventing you from
+              competing effectively.
             </p>
             <p>
-              The Enterprise Studio was designed to solve these challenges head-on. We provide the strategic consulting, deep technical expertise, and battle-tested frameworks to modernize your technology, optimize your processes, and transform your engineering organization into a powerful engine for growth.
+              The Enterprise Studio was designed to solve these challenges
+              head-on. We provide the strategic consulting, deep technical
+              expertise, and battle-tested frameworks to modernize your
+              technology, optimize your processes, and transform your
+              engineering organization into a powerful engine for growth.
             </p>
           </div>
           <div className="flex justify-center">
-            <CtaButton
-              variant="secondary"
+            <Button
+              variant="btnPrimary"
               onClick={() => {
                 window.open(
                   "https://calendly.com/vaughn-soratos-indexnine",
@@ -160,7 +190,7 @@ const Enterprise = () => {
               }}
             >
               Schedule an Enterprise Assessment
-            </CtaButton>
+            </Button>
           </div>
         </div>
       </Section>
@@ -176,7 +206,8 @@ const Enterprise = () => {
               </span>
             </h2>
             <p className="text-lg sm:text-xl text-foreground-dark-muted max-w-4xl mx-auto px-4">
-              We offer a suite of services designed to address the most critical challenges facing modern enterprises.
+              We offer a suite of services designed to address the most critical
+              challenges facing modern enterprises.
             </p>
           </div>
 
@@ -191,7 +222,10 @@ const Enterprise = () => {
                 Product Modernization
               </h3>
               <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                Transform your monolithic applications into scalable, cloud-native architectures. We meticulously analyze your existing systems, devise phased migration strategies, and execute with minimal business disruption.
+                Transform your monolithic applications into scalable,
+                cloud-native architectures. We meticulously analyze your
+                existing systems, devise phased migration strategies, and
+                execute with minimal business disruption.
               </p>
               <div className="space-y-2 mb-6">
                 <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
@@ -205,9 +239,9 @@ const Enterprise = () => {
                 </ul>
               </div>
               <div className="flex justify-center">
-                <CtaButton variant="secondary">
+                <Button variant="btnPrimary">
                   Explore Product Modernization
-                </CtaButton>
+                </Button>
               </div>
             </CardGlass>
 
@@ -221,7 +255,10 @@ const Enterprise = () => {
                 QAE & Test Automation
               </h3>
               <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                Enterprise-grade quality assurance that goes beyond testing. We embed quality into every development stage, implementing comprehensive automation frameworks and performance testing protocols.
+                Enterprise-grade quality assurance that goes beyond testing. We
+                embed quality into every development stage, implementing
+                comprehensive automation frameworks and performance testing
+                protocols.
               </p>
               <div className="space-y-2 mb-6">
                 <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
@@ -235,9 +272,7 @@ const Enterprise = () => {
                 </ul>
               </div>
               <div className="flex justify-center">
-                <CtaButton variant="secondary">
-                  Explore QA Engineering
-                </CtaButton>
+                <Button variant="btnPrimary">Explore QA Engineering</Button>
               </div>
             </CardGlass>
 
@@ -251,7 +286,10 @@ const Enterprise = () => {
                 AI Audit & Risk Management
               </h3>
               <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                Strategic AI implementation with proper governance. Our comprehensive AI audits assess viability, security, and ethical implications, ensuring your AI initiatives deliver measurable ROI.
+                Strategic AI implementation with proper governance. Our
+                comprehensive AI audits assess viability, security, and ethical
+                implications, ensuring your AI initiatives deliver measurable
+                ROI.
               </p>
               <div className="space-y-2 mb-6">
                 <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
@@ -265,9 +303,7 @@ const Enterprise = () => {
                 </ul>
               </div>
               <div className="flex justify-center">
-                <CtaButton variant="secondary">
-                  Start Your AI Audit
-                </CtaButton>
+                <Button variant="btnPrimary">Start Your AI Audit</Button>
               </div>
             </CardGlass>
           </div>
@@ -290,12 +326,15 @@ const Enterprise = () => {
               <CardGlass variant="light" className="mb-8">
                 <Settings className="w-16 h-16 text-brand-primary mx-auto mb-6" />
                 <p className="text-lg text-foreground-dark-muted leading-relaxed mb-8">
-                  Our key differentiator is our 'practitioner-led' philosophy. Our strategists and architects are active builders, not just theorists. We establish clear communication cadences, robust project management frameworks, and risk mitigation strategies to ensure predictable outcomes, transparent collaboration, and continuous improvement across your organization.
+                  Our key differentiator is our 'practitioner-led' philosophy.
+                  Our strategists and architects are active builders, not just
+                  theorists. We establish clear communication cadences, robust
+                  project management frameworks, and risk mitigation strategies
+                  to ensure predictable outcomes, transparent collaboration, and
+                  continuous improvement across your organization.
                 </p>
                 <div className="flex justify-center">
-                  <CtaButton variant="secondary">
-                    Learn About Our Process
-                  </CtaButton>
+                  <Button variant="btnPrimary">Learn About Our Process</Button>
                 </div>
               </CardGlass>
             </div>
@@ -323,10 +362,13 @@ const Enterprise = () => {
                   <RefreshCw className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground-dark mb-4">
-                  From Monolith to Market Leader: Modernizing an Enterprise Insurance Platform
+                  From Monolith to Market Leader: Modernizing an Enterprise
+                  Insurance Platform
                 </h3>
                 <p className="text-foreground-dark-muted mb-6">
-                  Learn how we re-architected a critical legacy system, reducing latency by 60% and enabling the rapid launch of new product lines.
+                  Learn how we re-architected a critical legacy system, reducing
+                  latency by 60% and enabling the rapid launch of new product
+                  lines.
                 </p>
                 <Button variant="btnLink" size="link">
                   Read the Case Study{" "}
@@ -344,7 +386,9 @@ const Enterprise = () => {
                   Achieving 95% Test Automation for a Global Logistics Provider
                 </h3>
                 <p className="text-foreground-dark-muted mb-6">
-                  Discover our process for building a comprehensive QA automation suite that cut regression testing time from two weeks to four hours.
+                  Discover our process for building a comprehensive QA
+                  automation suite that cut regression testing time from two
+                  weeks to four hours.
                 </p>
                 <Button variant="btnLink" size="link">
                   Read the Case Study{" "}
@@ -362,7 +406,9 @@ const Enterprise = () => {
                   The CTO's Guide to AI Risk Management
                 </h3>
                 <p className="text-foreground-dark-muted mb-6">
-                  A comprehensive framework for assessing and mitigating the technical, operational, and ethical risks of implementing AI solutions in the enterprise.
+                  A comprehensive framework for assessing and mitigating the
+                  technical, operational, and ethical risks of implementing AI
+                  solutions in the enterprise.
                 </p>
                 <Button variant="btnLink" size="link">
                   Download the Whitepaper <Download className="w-5 h-5 ml-1" />
@@ -374,19 +420,24 @@ const Enterprise = () => {
       </div>
 
       {/* FAQ Section */}
-      <section className="py-24 lg:py-32 bg-[#fff]">
+      <section className="pb-24 lg:pb-32 bg-[#fff]">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-12 text-foreground-dark text-center">
             Your Enterprise Questions, Answered
           </h2>
           <div className="space-y-4">
             {faqData.map((faq, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+              <div
+                key={index}
+                className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+              >
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                 >
-                  <h3 className="text-lg font-semibold text-foreground-dark">{faq.question}</h3>
+                  <h3 className="text-lg font-semibold text-foreground-dark">
+                    {faq.question}
+                  </h3>
                   {expandedFAQ === index ? (
                     <ChevronUp className="w-6 h-6 text-brand-primary" />
                   ) : (
@@ -395,7 +446,9 @@ const Enterprise = () => {
                 </button>
                 {expandedFAQ === index && (
                   <div className="px-6 pb-6 border-t border-gray-100">
-                    <p className="text-foreground-dark/80 leading-relaxed pt-4">{faq.answer}</p>
+                    <p className="text-foreground-dark/80 leading-relaxed pt-4">
+                      {faq.answer}
+                    </p>
                   </div>
                 )}
               </div>
@@ -413,9 +466,11 @@ const Enterprise = () => {
             </span>
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Let's transform your technology from a cost center into your greatest competitive advantage. Schedule a complimentary assessment with our enterprise architects today.
+            Let's transform your technology from a cost center into your
+            greatest competitive advantage. Schedule a complimentary assessment
+            with our enterprise architects today.
           </p>
-          <CtaButton
+          <Button
             onClick={() => {
               window.open(
                 "https://calendly.com/vaughn-soratos-indexnine",
@@ -424,7 +479,7 @@ const Enterprise = () => {
             }}
           >
             Schedule Your Modernization Assessment
-          </CtaButton>
+          </Button>
         </div>
       </section>
 
