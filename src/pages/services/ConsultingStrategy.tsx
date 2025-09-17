@@ -94,7 +94,7 @@ const ConsultingStrategy = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-scale-in px-4 sm:px-0">
               <Button
                 variant="btnPrimary"
-                size="lg"
+                size="xl"
                 className="w-full sm:w-auto min-w-[220px] h-12 sm:h-14"
                 onClick={() => {
                   window.open(
@@ -104,16 +104,6 @@ const ConsultingStrategy = () => {
                 }}
               >
                 Book a Consultation
-              </Button>
-              <Button
-                variant="btnSecondary"
-                size="lg"
-                className="w-full sm:w-auto min-w-[200px] h-12 sm:h-14"
-              >
-                <Download className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />
-                <span className="text-sm sm:text-base">
-                  Download Strategy Guide
-                </span>
               </Button>
             </div>
           </div>

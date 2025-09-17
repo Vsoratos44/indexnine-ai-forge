@@ -14,7 +14,6 @@ import {
   Search,
   PenTool,
 } from "lucide-react";
-import CtaButton from "@/components/test/CtaButton";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
@@ -142,7 +141,9 @@ const InnovationLab = () => {
               Stop dreaming, start building.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-scale-in">
-              <CtaButton
+              <Button
+                variant="btnPrimary"
+                size="xl"
                 onClick={() => {
                   window.open(
                     "https://calendly.com/vaughn-soratos-indexnine",
@@ -151,14 +152,11 @@ const InnovationLab = () => {
                 }}
               >
                 Bring Your Vision to Life
-              </CtaButton>
-              <Button
-                variant="btnLink"
-                size="xl"
-                className="min-w-[280px] text-foreground/80 hover:text-foreground h-auto"
-              >
-                See how we launched an MVP in 8 weeks{" "}
-                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+              <Button variant="btnSecondary" size="xl">
+                <Link to="/insights/case-studies/cygeniq">
+                  See how we launched an MVP in 8 weeks
+                </Link>
               </Button>
             </div>
           </div>
@@ -172,8 +170,7 @@ const InnovationLab = () => {
       >
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-            You Have the Vision.{" "}
-            <br className="hidden sm:block" />
+            You Have the Vision. <br className="hidden sm:block" />
             We Have the{" "}
             <span className="text-brand-primary leading-[1.35]">
               Blueprint for Reality
@@ -183,23 +180,24 @@ const InnovationLab = () => {
             <p>
               Every disruptive product starts with a "what if?"{" "}
               <br className="hidden sm:block" />
-              The journey from idea to production code is fraught with risk, delays, and budget overruns, even in the age of AI. Traditional development processes and old school service providers are too slow for today's market.
+              The journey from idea to production code is fraught with risk,
+              delays, and budget overruns, even in the age of AI. Traditional
+              development processes and old school service providers are too
+              slow for today's market.
             </p>
+            <p>The Innovation Lab was created to solve this.</p>
             <p>
-              The Innovation Lab was created to solve this.
-            </p>
-            <p>
-              It's not a service; It's built on an ecosystem of specialized studios,
-              proprietary accelerators, and expert talent, all integrated to
-              de-risk your investment and maximize your velocity to market. We build
-              alongside you as a true engineering partner, making business centric,
-              architectural decisions from day one so you can launch with
-              confidence and scale without limits.
+              It's not a service; It's built on an ecosystem of specialized
+              studios, proprietary accelerators, and expert talent, all
+              integrated to de-risk your investment and maximize your velocity
+              to market. We build alongside you as a true engineering partner,
+              making business centric, architectural decisions from day one so
+              you can launch with confidence and scale without limits.
             </p>
           </div>
           <div className="flex justify-center">
-            <CtaButton
-              variant="secondary"
+            <Button
+              variant="btnPrimary"
               onClick={() => {
                 window.open(
                   "https://calendly.com/vaughn-soratos-indexnine",
@@ -208,7 +206,7 @@ const InnovationLab = () => {
               }}
             >
               Schedule an Innovation Strategy Session
-            </CtaButton>
+            </Button>
           </div>
         </div>
       </Section>
@@ -242,10 +240,11 @@ const InnovationLab = () => {
               <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
                 Great products aren't just built; they're validated. Our
                 Discovery Studio is a structured, intensive process—our Sprint
-                0—where we map your business goals to a technical strategy.
-                We define your core user journeys, prioritize features for a
-                Minimum Viable Product, and create a comprehensive product roadmap.
-                This is where we ensure what we build is what your customers will love.
+                0—where we map your business goals to a technical strategy. We
+                define your core user journeys, prioritize features for a
+                Minimum Viable Product, and create a comprehensive product
+                roadmap. This is where we ensure what we build is what your
+                customers will love.
               </p>
               <div className="space-y-2 mb-6">
                 <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
@@ -259,9 +258,9 @@ const InnovationLab = () => {
                 </ul>
               </div>
               <div className="flex justify-center">
-                <CtaButton variant="secondary">
+                <Button variant="btnPrimary">
                   Explore our Discovery Process
-                </CtaButton>
+                </Button>
               </div>
             </CardGlass>
 
@@ -278,9 +277,9 @@ const InnovationLab = () => {
                 A brilliant idea deserves a brilliant user experience. Our
                 Design Studio translates your vision into intuitive, engaging,
                 and beautiful interfaces. We move from low-fidelity wireframes
-                to high-fidelity, market ready MVPs with unmatched speed.
-                Our design-led product mindset means we build products that
-                aren't just functional, but memorable.
+                to high-fidelity, market ready MVPs with unmatched speed. Our
+                design-led product mindset means we build products that aren't
+                just functional, but memorable.
               </p>
               <div className="space-y-2 mb-6">
                 <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
@@ -293,9 +292,7 @@ const InnovationLab = () => {
                 </ul>
               </div>
               <div className="flex justify-center">
-                <CtaButton variant="secondary">
-                  Explore our Design Studio
-                </CtaButton>
+                <Button variant="btnPrimary">Explore our Design Studio</Button>
               </div>
             </CardGlass>
 
@@ -309,12 +306,14 @@ const InnovationLab = () => {
                 The AI Studio: Building Your Competitive Edge
               </h3>
               <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                In today's business climate, AI is no longer an afterthought, or a differentiator.
-                Leveraging AI in digital products is table stakes. Our AI Studio specializes in
-                building custom AI solutions that give your product unique and differentiated
-                advantages against the competition. From Generative AI applications, Large Language
-                Model (LLM), and Small Language Model development, we accelerate feature creation
-                and embed intelligent user experiences into the heart of your product.
+                In today's business climate, AI is no longer an afterthought, or
+                a differentiator. Leveraging AI in digital products is table
+                stakes. Our AI Studio specializes in building custom AI
+                solutions that give your product unique and differentiated
+                advantages against the competition. From Generative AI
+                applications, Large Language Model (LLM), and Small Language
+                Model development, we accelerate feature creation and embed
+                intelligent user experiences into the heart of your product.
               </p>
               <div className="space-y-2 mb-6">
                 <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
@@ -327,9 +326,9 @@ const InnovationLab = () => {
                 </ul>
               </div>
               <div className="flex justify-center">
-                <CtaButton variant="secondary">
-                  Innovate with our AI Studio
-                </CtaButton>
+                <Button variant="btnPrimary">
+                  <Link to="/services/ai">Innovate with our AI Studio</Link>
+                </Button>
               </div>
             </CardGlass>
           </div>
@@ -353,18 +352,21 @@ const InnovationLab = () => {
                 <p className="text-lg text-foreground-dark-muted leading-relaxed mb-8">
                   How do we launch so fast? We've automated the foundation.
                   <br className="hidden sm:block" />
-                  Snap.MVP is our proprietary accelerator that
-                  deploys a secure, scalable, and production-ready cloud
-                  environment on AWS, GCP, or Azure in about 10 minutes. While
-                  others spend weeks on manual setup, we've built in best practices and security into an automation platform so we spend the first weeks of
-                  our engagement building real products. This single
-                  accelerator dramatically reduces time-to-market and eliminates
-                  the foundational risk.
+                  Snap.MVP is our proprietary accelerator that deploys a secure,
+                  scalable, and production-ready cloud environment on AWS, GCP,
+                  or Azure in about 10 minutes. While others spend weeks on
+                  manual setup, we've built in best practices and security into
+                  an automation platform so we spend the first weeks of our
+                  engagement building real products. This single accelerator
+                  dramatically reduces time-to-market and eliminates the
+                  foundational risk.
                 </p>
                 <div className="flex justify-center">
-                  <CtaButton variant="secondary">
-                    Learn More About Snap.MVP
-                  </CtaButton>
+                  <Button variant="btnPrimary">
+                    <Link to="/insights/blogs/cloud-infrastructure-automation-terraform">
+                      Learn More About Snap.MVP
+                    </Link>
+                  </Button>
                 </div>
               </CardGlass>
             </div>
@@ -400,8 +402,10 @@ const InnovationLab = () => {
                   ready for its seed round.
                 </p>
                 <Button variant="btnLink" size="link">
-                  Read the Case Study{" "}
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <Link to="/insights/case-studies/zilla">
+                    Read the Case Study{" "}
+                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  </Link>
                 </Button>
               </CardGlass>
 
@@ -420,8 +424,10 @@ const InnovationLab = () => {
                   game-changing deployment accelerator.
                 </p>
                 <Button variant="btnLink" size="link">
-                  Read the Blog Post{" "}
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <Link to="/insights/blogs/cloud-infrastructure-automation-terraform">
+                    Read the Blog Post{" "}
+                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  </Link>
                 </Button>
               </CardGlass>
 
@@ -432,15 +438,18 @@ const InnovationLab = () => {
                   <Brain className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground-dark mb-4">
-                  AI-Assisted React Development: From Design to Dashboard with Cursor AI
+                  AI-Assisted React Development: From Design to Dashboard with
+                  Cursor AI
                 </h3>
                 <p className="text-foreground-dark-muted mb-6">
                   Explore how our UI architects leverage AI tools to build
                   complex interfaces with incredible speed and quality.
                 </p>
                 <Button variant="btnLink" size="link">
-                  Read the Blog Post{" "}
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <Link to="/insights/blogs/ai-assisted-software-engineering">
+                    Read the Blog Post{" "}
+                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  </Link>
                 </Button>
               </CardGlass>
             </div>
@@ -461,7 +470,9 @@ const InnovationLab = () => {
             dedicated engineering partner obsessed with turning your idea into a
             market-defining success.
           </p>
-          <CtaButton
+          <Button
+            variant="btnSecondary"
+            size="lg"
             onClick={() => {
               window.open(
                 "https://calendly.com/vaughn-soratos-indexnine",
@@ -470,7 +481,7 @@ const InnovationLab = () => {
             }}
           >
             Book Your Free Discovery Session
-          </CtaButton>
+          </Button>
         </div>
       </section>
 

@@ -215,7 +215,7 @@ const CustomSoftware = () => {
       </section>
 
       {/* Philosophy Section */}
-      <section className="pb-24 lg:pb-32 bg-[#fff]">
+      <section className="bg-[#fff]">
         <div className="container mx-auto px-6">
           <div className="max-w-8xl mx-auto">
             <div className="text-center mb-12">
@@ -516,7 +516,7 @@ const CustomSoftware = () => {
               ].map((service, index) => (
                 <div
                   key={index}
-                  className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left"
+                  className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left mt-12"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div
@@ -535,70 +535,70 @@ const CustomSoftware = () => {
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Why Indexnine Differentiators Section */}
-      <section className={`py-24 lg:py-32 ${styles.strBg1}`}>
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-              The Indexnine Difference:{" "}
-              <span className="text-brand-primary">Why Partner With Us?</span>
-            </h2>
-            <p className="text-xl text-foreground-dark/80 max-w-3xl mx-auto">
-              We're not just another development shop. We're your strategic
-              technology partner, committed to your long-term success.
-            </p>
-          </div>
+        {/* Why Indexnine Differentiators Section */}
+        <section className={`pt-24 lg:pt-32 bg-transparent`}>
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+                The Indexnine Difference:{" "}
+                <span className="text-brand-primary">Why Partner With Us?</span>
+              </h2>
+              <p className="text-xl text-foreground-dark/80 max-w-3xl mx-auto">
+                We're not just another development shop. We're your strategic
+                technology partner, committed to your long-term success.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                icon: Brain,
-                title: "Integrated Studio Model",
-                description:
-                  "Your project benefits from our full ecosystem of specialists—AI engineers, data scientists, QE experts, and designers—all working in harmony.",
-              },
-              {
-                icon: Target,
-                title: "Business-First Approach",
-                description:
-                  "Every technical decision we make is aligned with your business objectives. We solve problems, not just implement features.",
-              },
-              {
-                icon: ShieldCheck,
-                title: "Enterprise-Grade Security",
-                description:
-                  "Built-in security from day one, with comprehensive testing, compliance frameworks, and robust architecture patterns.",
-              },
-              {
-                icon: TrendingUp,
-                title: "Future-Proof Architecture",
-                description:
-                  "We architect for scale and change, ensuring your software can evolve with your business needs and market conditions.",
-              },
-            ].map((differentiator, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden bg-[#ffffff75] backdrop-blur-md border border-[#00000019] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group"
-              >
-                <div className="flex items-center mb-6">
-                  <div
-                    className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
-                  >
-                    <differentiator.icon className="w-8 h-8 text-brand-primary" />
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {[
+                {
+                  icon: Brain,
+                  title: "Integrated Studio Model",
+                  description:
+                    "Your project benefits from our full ecosystem of specialists—AI engineers, data scientists, QE experts, and designers—all working in harmony.",
+                },
+                {
+                  icon: Target,
+                  title: "Business-First Approach",
+                  description:
+                    "Every technical decision we make is aligned with your business objectives. We solve problems, not just implement features.",
+                },
+                {
+                  icon: ShieldCheck,
+                  title: "Enterprise-Grade Security",
+                  description:
+                    "Built-in security from day one, with comprehensive testing, compliance frameworks, and robust architecture patterns.",
+                },
+                {
+                  icon: TrendingUp,
+                  title: "Future-Proof Architecture",
+                  description:
+                    "We architect for scale and change, ensuring your software can evolve with your business needs and market conditions.",
+                },
+              ].map((differentiator, index) => (
+                <div
+                  key={index}
+                  className="relative overflow-hidden bg-[#ffffff75] backdrop-blur-md border border-[#00000019] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group"
+                >
+                  <div className="flex items-center mb-6">
+                    <div
+                      className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
+                    >
+                      <differentiator.icon className="w-8 h-8 text-brand-primary" />
+                    </div>
                   </div>
+                  <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                    {differentiator.title}
+                  </h3>
+                  <p className="text-foreground-dark/70 leading-relaxed font-montserrat">
+                    {differentiator.description}
+                  </p>
                 </div>
-                <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
-                  {differentiator.title}
-                </h3>
-                <p className="text-foreground-dark/70 leading-relaxed font-montserrat">
-                  {differentiator.description}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        </section>
       </section>
 
       <div className={`${styles.pageDarkBg}`}>
