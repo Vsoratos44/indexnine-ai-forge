@@ -208,7 +208,7 @@ const OutcomeBased = () => {
       <section className="pb-24 lg:pb-32 bg-[#fff]">
         <div className="container mx-auto px-6">
           <div className="max-w-8xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center max-w-6xl mx-auto mb-12">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
                 The IndexNine Partnership Principle: Our Success is Your Success
               </h2>
@@ -278,14 +278,16 @@ const OutcomeBased = () => {
       {/* 3-Step Framework Section */}
       <section
         id="partnership-framework"
-        className={`pb-24 lg:pb-32 relative bg-[#fff] overflow-hidden ${styles.sectionBgAI}`}
+        className={` relative bg-[#fff] overflow-hidden ${styles.sectionBgAI}`}
       >
         <div className="container mx-auto px-6">
           <div className="max-w-8xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-                How Our Outcome-Based Engagements Work: A 3-Step Framework for
-                Alignment
+            <div className="text-center mb-12 max-w-6xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                <span className="leading-[1.25]">
+                  How Our Outcome-Based Engagements Work: A 3-Step Framework for
+                  Alignment
+                </span>
               </h2>
               <p className="text-lg text-foreground-dark-muted max-w-3xl mx-auto">
                 Our process is designed for clarity and mutual understanding,
@@ -295,19 +297,19 @@ const OutcomeBased = () => {
 
             <div className="space-y-12">
               {/* Step 1 */}
-              <div className="grid md:grid-cols-12 gap-8 items-center">
-                <div className="md:col-span-2 flex justify-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-brand-primary to-brand-purple rounded-full flex items-center justify-center text-white text-2xl font-bold">
+              <div className="grid md:grid-cols-12 gap-6 items-start">
+                <div className="md:col-span-1 flex justify-center">
+                  <div className="w-20 h-20 bg-gradient-to-r from-brand-primary to-brand-purple rounded-full flex items-center justify-center text-white text-2xl font-light">
                     1
                   </div>
                 </div>
-                <div className="md:col-span-10">
+                <div className="md:col-span-11">
                   <Card className="p-8 bg-[#fff] border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="flex items-center gap-4 mb-4">
                         <Target className="w-8 h-8 text-brand-primary" />
                         <h3 className="text-2xl font-semibold text-foreground-dark">
-                          🎯 Collaboratively Define Success
+                          Collaboratively Define Success
                         </h3>
                       </div>
                       <p className="text-foreground-dark/80 mb-4">
@@ -317,7 +319,7 @@ const OutcomeBased = () => {
                         establish the exact Key Performance Indicators (KPIs)
                         that matter.
                       </p>
-                      <div className="bg-muted/50 rounded-lg p-4">
+                      <div className="bg-muted/50 rounded-lg ">
                         <h4 className="font-semibold text-foreground-dark mb-3">
                           Example KPIs:
                         </h4>
@@ -347,44 +349,44 @@ const OutcomeBased = () => {
               </div>
 
               {/* Step 2 */}
-              <div className="grid md:grid-cols-12 gap-8 items-center">
-                <div className="md:col-span-2 flex justify-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-brand-primary to-brand-purple rounded-full flex items-center justify-center text-white text-2xl font-bold">
+              <div className="grid md:grid-cols-12 gap-8 items-start">
+                <div className="md:col-span-1 flex justify-center">
+                  <div className="w-20 h-20 bg-gradient-to-r from-brand-primary to-brand-purple rounded-full flex items-center justify-center text-white text-2xl font-light">
                     2
                   </div>
                 </div>
-                <div className="md:col-span-10">
-                  <Card className="p-8 bg-[#000000] border-card-border shadow-lg">
+                <div className="md:col-span-11">
+                  <Card className="p-8 bg-[#fff] border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="flex items-center gap-4 mb-4">
                         <Handshake className="w-8 h-8 text-brand-primary" />
-                        <h3 className="text-2xl font-semibold text-foreground">
-                          🤝 Structure the Shared-Risk Partnership
+                        <h3 className="text-2xl font-semibold text-foreground-dark">
+                          Structure the Shared-Risk Partnership
                         </h3>
                       </div>
-                      <p className="text-foreground/80 mb-4">
+                      <p className="text-foreground-dark/80 mb-4">
                         Once the KPIs are defined, we structure a hybrid
                         engagement model that balances operational security with
                         performance incentives.
                       </p>
                       <div className="grid md:grid-cols-2 gap-6">
-                        <div className="bg-white/5 rounded-lg p-4">
-                          <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                        <div className="bg-white/5 rounded-lg ">
+                          <h4 className="font-semibold text-foreground-dark mb-2 flex items-center gap-2">
                             <Shield className="w-5 h-5 text-brand-primary" />
                             Foundational Fee
                           </h4>
-                          <p className="text-foreground/70 text-sm">
+                          <p className="text-foreground-dark/70 text-sm">
                             Covers our core team's operational costs, ensuring
                             we have a dedicated, world-class team focused on
                             your project.
                           </p>
                         </div>
                         <div className="bg-white/5 rounded-lg p-4">
-                          <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                          <h4 className="font-semibold text-foreground-dark mb-2 flex items-center gap-2">
                             <TrendingUp className="w-5 h-5 text-brand-primary" />
                             Success Fee
                           </h4>
-                          <p className="text-foreground/70 text-sm">
+                          <p className="text-foreground-dark/70 text-sm">
                             A significant, performance-based bonus paid out only
                             when—and to the degree that—we meet or exceed the
                             pre-defined KPIs.
@@ -397,19 +399,19 @@ const OutcomeBased = () => {
               </div>
 
               {/* Step 3 */}
-              <div className="grid md:grid-cols-12 gap-8 items-center">
-                <div className="md:col-span-2 flex justify-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-brand-primary to-brand-purple rounded-full flex items-center justify-center text-white text-2xl font-bold">
+              <div className="grid md:grid-cols-12 gap-8 items-start">
+                <div className="md:col-span-1 flex justify-center">
+                  <div className="w-20 h-20 bg-gradient-to-r from-brand-primary to-brand-purple rounded-full flex items-center justify-center text-white text-2xl font-light">
                     3
                   </div>
                 </div>
-                <div className="md:col-span-10">
+                <div className="md:col-span-11">
                   <Card className="p-8 bg-[#fff] border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="flex items-center gap-4 mb-4">
                         <BarChart3 className="w-8 h-8 text-brand-primary" />
                         <h3 className="text-2xl font-semibold text-foreground-dark">
-                          🚀 Execute, Measure, and Win Together
+                          Execute, Measure, and Win Together
                         </h3>
                       </div>
                       <p className="text-foreground-dark/80 mb-4">
@@ -442,14 +444,16 @@ const OutcomeBased = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-                The Four Pillars of a True Partnership: The Advantages of Our
-                Model
+                <span className="leading-[1.25]">
+                  The Four Pillars of a True Partnership: The Advantages of Our
+                  Model
+                </span>
               </h2>
             </div>
 
             <div className="overflow-x-auto">
               <table className="w-full bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-                <thead className="bg-gradient-to-r from-brand-primary to-brand-purple text-white">
+                <thead className="bg-black/5 text-black">
                   <tr>
                     <th className="px-8 py-6 text-left font-semibold text-xl">
                       Pillar
@@ -463,11 +467,9 @@ const OutcomeBased = () => {
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-8 py-6">
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                          <Shield className="w-6 h-6 text-red-600" />
-                        </div>
+                        <Shield className="w-8 h-8 text-red-600" />
                         <span className="font-semibold text-lg text-foreground-dark">
-                          🛡️ De-Risked Investment
+                          De-Risked Investment
                         </span>
                       </div>
                     </td>
@@ -480,11 +482,9 @@ const OutcomeBased = () => {
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-8 py-6">
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                          <Target className="w-6 h-6 text-blue-600" />
-                        </div>
+                        <Target className="w-8 h-8 text-blue-600" />
                         <span className="font-semibold text-lg text-foreground-dark">
-                          🔗 Fully Aligned Incentives
+                          Fully Aligned Incentives
                         </span>
                       </div>
                     </td>
@@ -498,11 +498,9 @@ const OutcomeBased = () => {
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-8 py-6">
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                          <TrendingUp className="w-6 h-6 text-green-600" />
-                        </div>
+                        <TrendingUp className="w-8 h-8 text-green-600" />
                         <span className="font-semibold text-lg text-foreground-dark">
-                          📈 Guaranteed ROI Focus
+                          Guaranteed ROI Focus
                         </span>
                       </div>
                     </td>
@@ -516,11 +514,9 @@ const OutcomeBased = () => {
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-8 py-6">
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                          <Users className="w-6 h-6 text-purple-600" />
-                        </div>
+                        <Users className="w-8 h-8 text-purple-600" />
                         <span className="font-semibold text-lg text-foreground-dark">
-                          🤝 A True Strategic Partner
+                          A True Strategic Partner
                         </span>
                       </div>
                     </td>
@@ -539,18 +535,20 @@ const OutcomeBased = () => {
       </section>
 
       {/* Is This Right For You Section */}
-      <section className="py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="pb-24 lg:pb-32 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-8 text-foreground-dark">
-              Is an Outcome-Based Partnership Right for You?
+              <span className="leading-[1.25]">
+                Is an Outcome-Based Partnership Right for You?
+              </span>
             </h2>
             <p className="text-lg text-foreground-dark/80 mb-12">
               This model is designed for ambitious, forward-thinking
               organizations and is most effective when:
             </p>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <CheckCircle className="w-8 h-8 text-green-600" />
@@ -611,7 +609,7 @@ const OutcomeBased = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 lg:py-32 bg-[#fff]">
+      <section className="pb-24 lg:pb-32 bg-[#fff]">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
