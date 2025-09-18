@@ -6,6 +6,11 @@ import Iso from "../assets/images/iso.svg";
 import Logo from "../assets/images/i9logo-logo-wht.svg";
 import styles from "../assets/css/stylesheet.module.css";
 
+import { SocialIcon } from "react-social-icons/component";
+import "react-social-icons/reddit";
+import "react-social-icons/instagram";
+import "react-social-icons/linkedin";
+
 const Footer = () => {
   useEffect(() => {
     const script = document.createElement("script");
@@ -49,22 +54,32 @@ const Footer = () => {
               build innovative products, modernize legacy systems, and leverage
               AI to drive positive business outcomes.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 gap-2">
               <a
-                href="https://www.linkedin.com/company/indexnine-technologies"
+                href="#."
                 target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-primary transition-colors duration-300 cursor-pointer"
+                className="w-10 h-10  cursor-pointer "
               >
-                <span className="text-foreground-white text-sm font-semibold">
-                  in
-                </span>
+                <SocialIcon url="https://www.reddit.com" target="_blank" />
               </a>
-              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-primary transition-colors duration-300 cursor-pointer">
-                <span className="text-foreground-white text-sm font-semibold">
-                  𝕏
-                </span>
-              </div>
+
+              <a
+                href="#."
+                target="_blank"
+                className="w-10 h-10  cursor-pointer "
+              >
+                <SocialIcon
+                  url="https://www.linkedin.com/company/indexnine-technologies"
+                  target="_blank"
+                />
+              </a>
+              <a
+                href="#."
+                target="_blank"
+                className="w-10 h-10  cursor-pointer"
+              >
+                <SocialIcon url="https://www.instagram.com" target="_blank" />
+              </a>
             </div>
           </div>
 

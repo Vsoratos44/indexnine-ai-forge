@@ -191,20 +191,20 @@ const CasesCarousel = () => {
                           <p className="text-foreground-dark-muted leading-relaxed mb-6 flex-1 font-montserrat">
                             {item.description}
                           </p>
-                          <p className="text-foreground-dark-muted leading-relaxed mb-6 flex-1 font-montserrat text-sm">
+                          <p className="text-foreground-dark-muted leading-relaxed mb-0 flex-1 font-montserrat text-sm">
                             {item.usecase}
                           </p>
 
-                          <div className="text-left">
+                          {/* <div className="text-left">
                             <Button
                               variant="btnLink"
                               size="link"
                               className="pr-2"
                             >
-                              Read More{" "}
+                              Read More
                               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                             </Button>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
