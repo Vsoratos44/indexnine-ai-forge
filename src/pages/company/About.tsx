@@ -10,6 +10,8 @@ import {
 import { BrainCircuit, BrickWall, Sparkles } from "lucide-react";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
 import styles from "../../assets/css/stylesheet.module.css";
+import AboutImg from "../../assets/images/about.webp";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 const About = () => {
   return (
@@ -55,27 +57,36 @@ const About = () => {
           className={`relative max-w-8xl bg-white mx-auto ${styles.sectionBgAbout}`}
         >
           {/* Mission Section */}
-          <section className="py-24 lg:py-32 bg-glass-light border-glass backdrop-blur-sm shadow shadow-inner shadow-xl shadow-white">
+          <section className="pt-24 lg:pt-32 bg-glass-light border-glass backdrop-blur-sm">
             <div className="absolute inset-0">
               <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
               <div className="absolute bottom-20 right-1/6 w-96 h-96 bg-brand-purple/6 rounded-full blur-3xl"></div>
             </div>
 
             <div className="container mx-auto px-6 lg:px-8 relative z-10">
-              <div className="max-w-5xl mx-auto text-center">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-                  Our Mission
-                </h2>
-                <p className="text-base sm:text-lg text-foreground-dark-muted leading-relaxed space-y-4 sm:space-y-6">
-                  In a market often defined by reactive order-takers, we were
-                  founded on a refusal to be just another vendor. Our mission is
-                  to permanently challenge that stigma. We prove every day that
-                  a globally-recognized, product-first engineering powerhouse
-                  can be built in India. We don't just take orders; we challenge
-                  assumptions, contribute to your product strategy, and build
-                  enduring value. We are the high-value, strategic partner you
-                  thought you couldn't find.
-                </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-16">
+                <div className="max-w-4xl mx-auto  col-span-2">
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                    Our Mission
+                  </h2>
+                  <p className="text-base sm:text-lg text-foreground-dark-muted leading-relaxed space-y-4 sm:space-y-6 max-w-2xl">
+                    In a market often defined by reactive order-takers, we were
+                    founded on a refusal to be just another vendor. Our mission
+                    is to permanently challenge that stigma. We prove every day
+                    that a globally-recognized, product-first engineering
+                    powerhouse can be built in India. We don't just take orders;
+                    we challenge assumptions, contribute to your product
+                    strategy, and build enduring value. We are the high-value,
+                    strategic partner you thought you couldn't find.
+                  </p>
+                </div>
+                <div className="">
+                  <img
+                    src={AboutImg}
+                    alt="About"
+                    className="rounded-sm shadow shadow-lg w-[300px]"
+                  />
+                </div>
               </div>
             </div>
           </section>
@@ -83,8 +94,8 @@ const About = () => {
           {/* Values Section */}
           <section className="py-24 lg:py-32 bg-transparent">
             <div className="container mx-auto px-6 lg:px-8">
-              <div className="text-center mb-20">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold  text-foreground-dark ">
                   Our Values
                 </h2>
               </div>
@@ -138,6 +149,22 @@ const About = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </section>
+
+          {/* Values Section */}
+          <section className="pb-24 lg:pb-32 bg-transparent">
+            <div className="container mx-auto px-6 lg:px-8">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold  text-foreground-dark ">
+                  Testimonials
+                </h2>
+                <h4 className="font-semibold  text-foreground-dark ">
+                  "We Value the stories shared by our clients"
+                </h4>
+              </div>
+
+              <TestimonialsCarousel />
             </div>
           </section>
         </div>
