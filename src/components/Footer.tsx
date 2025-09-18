@@ -60,7 +60,10 @@ const Footer = () => {
                 target="_blank"
                 className="w-10 h-10  cursor-pointer "
               >
-                <SocialIcon url="https://www.reddit.com" target="_blank" />
+                <SocialIcon
+                  url="https://www.reddit.com/user/indexnine_/"
+                  target="_blank"
+                />
               </a>
 
               <a
@@ -78,7 +81,10 @@ const Footer = () => {
                 target="_blank"
                 className="w-10 h-10  cursor-pointer"
               >
-                <SocialIcon url="https://www.instagram.com" target="_blank" />
+                <SocialIcon
+                  url="https://www.instagram.com/indexnine_/"
+                  target="_blank"
+                />
               </a>
             </div>
           </div>
