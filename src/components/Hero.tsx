@@ -25,9 +25,12 @@ const Hero = () => {
           </h1>
 
           <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat">
-            The industry leader in infrastructure modernization, launching
-            digital revenue streams, and AI integration. We don't just build
-            software; we engineer products, platforms, and AI-powered solutions
+            The industry leader in human centric, AI accelerated, digital product engineering. We don't just code…<br />
+            We build products users love.<br />
+            We help Launch new digital revenue streams<br />
+            We visually engineer with humans for humans<br />
+            We leverage AI responsibly & securely<br />
+            We engineer AI integrated solutions 
             that define market leaders.
           </p>
 
