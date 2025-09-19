@@ -677,6 +677,72 @@ const AgenticAiEnterpriseFuture = () => {
                 </div>
               </div>
             </section>
+            {/* FAQ Section */}
+            <a id="faqs"></a>
+            <section className="pt-12 pb-0 relative overflow-hidden mb-16">
+              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+                <div className="max-w-5xl mx-auto">
+                  <h4 className="font-semibold text-2xl text-foreground-dark mb-8">
+                    Frequently Asked Questions About Agentic AI
+                  </h4>
+
+                  <div className="space-y-2">
+                    {[
+                      {
+                        question:
+                          "What makes enterprise-grade agentic AI different from standard chatbots?",
+                        answer:
+                          "Enterprise-grade agentic AI systems go beyond conversation. They can autonomously perceive environments, reason about complex data, plan multi-step actions, and execute tasks using various digital tools and APIs. They're workflow automation engines with decision-making capabilities, not just interactive interfaces.",
+                      },
+                      {
+                        question:
+                          "How does AWS AgentCore change the agentic AI landscape?",
+                        answer:
+                          "AWS AgentCore provides essential infrastructure like memory management, observability, and service integration. It's model-agnostic and reduces development complexity, allowing teams to focus on building domain-specific intelligence rather than foundational plumbing.",
+                      },
+                      {
+                        question:
+                          "What are the key risks of implementing autonomous AI agents?",
+                        answer:
+                          "Primary risks include data leakage, biased decision-making, operational failures, compliance violations, and lack of audit trails. These systems require robust guardrails, human-in-the-loop workflows, and comprehensive monitoring to operate safely.",
+                      },
+                      {
+                        question:
+                          "How should enterprises assess their readiness for agentic AI?",
+                        answer:
+                          "Start with an AI & Data Audit that evaluates three key areas: process mapping to identify high-ROI opportunities, data infrastructure readiness, and systems security/compliance posture. This provides a pragmatic roadmap for implementation.",
+                      },
+                    ].map((faq, index) => (
+                      <div
+                        key={index}
+                        className="border border-border rounded-[.5rem] overflow-hidden"
+                      >
+                        <button
+                          onClick={() => toggleFAQ(index)}
+                          className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
+                        >
+                          <span className="font-medium text-foreground-dark pr-4">
+                            {faq.question}
+                          </span>
+                          {expandedFAQ === index ? (
+                            <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                          ) : (
+                            <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                          )}
+                        </button>
+                        {expandedFAQ === index && (
+                          <div className="px-6 py-4 bg-white border-t border-border">
+                            <p className="text-foreground-dark-muted leading-relaxed">
+                              {faq.answer}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -713,72 +779,6 @@ const AgenticAiEnterpriseFuture = () => {
                   <Link to="/services/ai">Explore Our AI & ML Services</Link>
                 </Button>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* FAQ Section */}
-      <a id="faqs"></a>
-      <section className="pt-12 pb-0 relative overflow-hidden mb-16">
-        <div className="container text-lg text-foreground-dark-muted leading-relaxed">
-          <div className="max-w-5xl mx-auto">
-            <h4 className="font-semibold text-2xl text-foreground-dark mb-8">
-              Frequently Asked Questions About Agentic AI
-            </h4>
-
-            <div className="space-y-2">
-              {[
-                {
-                  question:
-                    "What makes enterprise-grade agentic AI different from standard chatbots?",
-                  answer:
-                    "Enterprise-grade agentic AI systems go beyond conversation. They can autonomously perceive environments, reason about complex data, plan multi-step actions, and execute tasks using various digital tools and APIs. They're workflow automation engines with decision-making capabilities, not just interactive interfaces.",
-                },
-                {
-                  question:
-                    "How does AWS AgentCore change the agentic AI landscape?",
-                  answer:
-                    "AWS AgentCore provides essential infrastructure like memory management, observability, and service integration. It's model-agnostic and reduces development complexity, allowing teams to focus on building domain-specific intelligence rather than foundational plumbing.",
-                },
-                {
-                  question:
-                    "What are the key risks of implementing autonomous AI agents?",
-                  answer:
-                    "Primary risks include data leakage, biased decision-making, operational failures, compliance violations, and lack of audit trails. These systems require robust guardrails, human-in-the-loop workflows, and comprehensive monitoring to operate safely.",
-                },
-                {
-                  question:
-                    "How should enterprises assess their readiness for agentic AI?",
-                  answer:
-                    "Start with an AI & Data Audit that evaluates three key areas: process mapping to identify high-ROI opportunities, data infrastructure readiness, and systems security/compliance posture. This provides a pragmatic roadmap for implementation.",
-                },
-              ].map((faq, index) => (
-                <div
-                  key={index}
-                  className="border border-border rounded-[.5rem] overflow-hidden"
-                >
-                  <button
-                    onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
-                  >
-                    <span className="font-medium text-foreground-dark pr-4">
-                      {faq.question}
-                    </span>
-                    {expandedFAQ === index ? (
-                      <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0" />
-                    ) : (
-                      <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0" />
-                    )}
-                  </button>
-                  {expandedFAQ === index && (
-                    <div className="px-6 py-4 bg-white border-t border-border">
-                      <p className="text-foreground-dark-muted leading-relaxed">
-                        {faq.answer}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
             </div>
           </div>
         </div>

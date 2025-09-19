@@ -300,7 +300,7 @@ const DataEngineering = () => {
                   >
                     Scope Your Roadmap
                   </Button>
-                  <div className="text-lg font-medium text-foreground-dark mb-8">
+                  <div className="text-lg font-medium text-foreground-dark mb-0">
                     Investment: Starting at $30,000
                   </div>
                 </div>

@@ -194,7 +194,7 @@ const ProjectBased = () => {
               </p>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
                   <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
                     Sprint Zero Engagement
                   </h4>
@@ -208,7 +208,7 @@ const ProjectBased = () => {
                   </p>
                 </div>
 
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
                   <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
                     AI Audit
                   </h4>
@@ -222,7 +222,7 @@ const ProjectBased = () => {
                   </p>
                 </div>
 
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
                   <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
                     AI Audit Pro
                   </h4>
@@ -236,7 +236,7 @@ const ProjectBased = () => {
                   </p>
                 </div>
 
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
                   <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
                     AI Assessment, Roadmap & Enablement
                   </h4>
@@ -247,7 +247,7 @@ const ProjectBased = () => {
                   </p>
                 </div>
 
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 md:col-span-2">
+                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
                   <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
                     Tech Strategy & Testing Strategy (APQR)
                   </h4>
@@ -285,7 +285,7 @@ const ProjectBased = () => {
               <div className="space-y-6">
                 {/* Sports Interactive Case Study */}
                 <Link to="/insights/case-studies/annotate" className="block">
-                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
+                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
                       <div
                         className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
@@ -329,7 +329,7 @@ const ProjectBased = () => {
 
                 {/* Genesis Case Study */}
                 <Link to="/insights/case-studies/genesys" className="block">
-                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
+                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
                       <div
                         className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
@@ -374,7 +374,7 @@ const ProjectBased = () => {
 
                 {/* GPTW Case Study */}
                 <Link to="#." className="block">
-                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
+                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
                       <div
                         className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
@@ -479,7 +479,7 @@ const ProjectBased = () => {
                 ].map((step, index) => (
                   <div
                     key={index}
-                    className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 group text-left"
+                    className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 group text-left"
                   >
                     <div
                       className={`relative w-16 h-16 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}

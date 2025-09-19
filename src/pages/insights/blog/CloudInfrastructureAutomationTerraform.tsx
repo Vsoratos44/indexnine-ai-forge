@@ -420,7 +420,7 @@ const CloudInfrastructureAutomationTerraform = () => {
             containerClassName=" bg-transparent  "
             stickyContent={
               <div className="mb-12">
-                <nav className="space-y-2">
+                <nav className="">
                   {navigationLinks.map((link) => {
                     const IconComponent = link.icon;
                     return (
@@ -428,16 +428,14 @@ const CloudInfrastructureAutomationTerraform = () => {
                         key={link.id}
                         href={`#${link.id}`}
                         onClick={() => setSelectedNav(link.id)}
-                        className={`flex items-center gap-3 rounded-lg transition-colors ${
+                        className={`flex items-center gap-3 my-2 rounded-lg transition-colors ${
                           selectedNav === link.id
                             ? "text-primary font-semibold"
                             : "text-foreground-dark hover:text-foreground-dark hover:bg-muted"
                         }`}
                       >
-                        <IconComponent className="w-4 h-4" />
-                        <span className="text-sm font-medium">
-                          {link.label}
-                        </span>
+                        {/* <IconComponent className="w-4 h-4" /> */}
+                        <span className="">{link.label}</span>
                       </a>
                     );
                   })}
@@ -495,11 +493,11 @@ const CloudInfrastructureAutomationTerraform = () => {
                 <section id="executive-summary" className="mb-16">
                   <EnhancedScrollReveal direction="up">
                     <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
-                      <FileText className="w-8 h-8 text-primary" />
+                      {/* <FileText className="w-8 h-8 text-primary" /> */}
                       Executive Summary: Key Takeaways
                     </h2>
-                    <div className="bg-card rounded-2xl p-8 shadow-glass border-glass mb-8">
-                      <ul className="space-y-4 text-lg text-muted-foreground">
+                    <div className="bg-white rounded-2xl p-8 shadow-glass border-glass mb-8">
+                      <ul className="space-y-4 text-lg text-foreground-dark-muted">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-6 h-6 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
@@ -548,11 +546,11 @@ const CloudInfrastructureAutomationTerraform = () => {
                 <section id="comparison" className="mb-16">
                   <EnhancedScrollReveal direction="up">
                     <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
-                      <BarChart3 className="w-8 h-8 text-primary" />
+                      {/* <BarChart3 className="w-8 h-8 text-primary" /> */}
                       Manual vs Automated Infrastructure Deployment
                     </h2>
                     <div className="overflow-x-auto mb-8">
-                      <table className="w-full bg-card rounded-2xl shadow-glass border-glass overflow-hidden">
+                      <table className="w-full bg-white rounded-2xl shadow-glass border-glass overflow-hidden">
                         <thead className="bg-primary text-primary-foreground">
                           <tr>
                             <th className="px-6 py-4 text-left font-semibold">
@@ -568,7 +566,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         </thead>
                         <tbody className="divide-y divide-border">
                           <tr>
-                            <td className="px-6 py-4 font-medium text-card-foreground">
+                            <td className="px-6 py-4 font-medium text-foreground-dark-muted">
                               Deployment Time
                             </td>
                             <td className="px-6 py-4 text-red-500 flex items-center gap-2">
@@ -581,7 +579,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                             </td>
                           </tr>
                           <tr>
-                            <td className="px-6 py-4 font-medium text-card-foreground">
+                            <td className="px-6 py-4 font-medium text-foreground-dark-muted">
                               Initial Cost
                             </td>
                             <td className="px-6 py-4 text-red-500">
@@ -592,7 +590,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                             </td>
                           </tr>
                           <tr>
-                            <td className="px-6 py-4 font-medium text-card-foreground">
+                            <td className="px-6 py-4 font-medium text-foreground-dark-muted">
                               Error Risk
                             </td>
                             <td className="px-6 py-4 text-red-500">
@@ -603,7 +601,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                             </td>
                           </tr>
                           <tr>
-                            <td className="px-6 py-4 font-medium text-card-foreground">
+                            <td className="px-6 py-4 font-medium text-foreground-dark-muted">
                               Consistency
                             </td>
                             <td className="px-6 py-4 text-red-500">Variable</td>
@@ -612,7 +610,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                             </td>
                           </tr>
                           <tr>
-                            <td className="px-6 py-4 font-medium text-card-foreground">
+                            <td className="px-6 py-4 font-medium text-foreground-dark-muted">
                               Security Compliance
                             </td>
                             <td className="px-6 py-4 text-red-500">
@@ -623,7 +621,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                             </td>
                           </tr>
                           <tr>
-                            <td className="px-6 py-4 font-medium text-card-foreground">
+                            <td className="px-6 py-4 font-medium text-foreground-dark-muted">
                               Scalability
                             </td>
                             <td className="px-6 py-4 text-red-500">
@@ -643,7 +641,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                 <section id="what-is-snap-mvp" className="mb-16">
                   <EnhancedScrollReveal direction="up">
                     <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
-                      <Cloud className="w-8 h-8 text-primary" />
+                      {/* <Cloud className="w-8 h-8 text-primary" /> */}
                       What is Snap.MVP? An Accelerator for a Production-Ready
                       Foundation
                     </h2>
@@ -700,7 +698,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                 <section id="step-by-step" className="mb-16">
                   <EnhancedScrollReveal direction="up">
                     <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
-                      <Rocket className="w-8 h-8 text-primary" />
+                      {/* <Rocket className="w-8 h-8 text-primary" /> */}
                       How to Deploy Cloud Infrastructure in 10 Minutes
                     </h2>
                     <p className="text-lg text-foreground-dark leading-relaxed mb-8">
@@ -710,7 +708,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </p>
                     <div className="space-y-8">
                       <div className="flex gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-light text-lg">
                           1
                         </div>
                         <div>
@@ -727,7 +725,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         </div>
                       </div>
                       <div className="flex gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-light text-lg">
                           2
                         </div>
                         <div>
@@ -747,7 +745,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         </div>
                       </div>
                       <div className="flex gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-light text-lg">
                           3
                         </div>
                         <div>
@@ -767,7 +765,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         </div>
                       </div>
                       <div className="flex gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-light text-lg">
                           4
                         </div>
                         <div>
@@ -787,7 +785,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         </div>
                       </div>
                       <div className="flex gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-semibold text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-light text-lg">
                           5
                         </div>
                         <div>
@@ -810,7 +808,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                 <section id="four-pillars" className="mb-16">
                   <EnhancedScrollReveal direction="up">
                     <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
-                      <Layers className="w-8 h-8 text-primary" />
+                      {/* <Layers className="w-8 h-8 text-primary" /> */}
                       The Four Pillars of Accelerated Deployment: How Snap.MVP
                       Solves the Iron Triangle
                     </h2>
@@ -825,16 +823,18 @@ const CloudInfrastructureAutomationTerraform = () => {
 
                   <div className="grid md:grid-cols-2 gap-6 mb-12">
                     <EnhancedScrollReveal direction="left" delay={200}>
-                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass h-full">
+                      <div className="bg-white rounded-2xl p-8 shadow-glass border-glass h-full">
                         <div className="flex items-center gap-4 mb-6">
-                          <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center">
-                            <Zap className="w-6 h-6 text-yellow-500" />
-                          </div>
-                          <h3 className="text-xl font-semibold text-card-foreground font-montserrat">
-                            ⚡ Radical Speed (Delivering "Fast")
+                          <span>
+                            <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center">
+                              <Zap className="w-6 h-6 text-yellow-500" />
+                            </div>
+                          </span>
+                          <h3 className="text-xl font-semibold text-foreground-dark-muted font-montserrat">
+                            Radical Speed (Delivering "Fast")
                           </h3>
                         </div>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-foreground-dark-muted leading-relaxed">
                           In today's market, speed is revenue. While a manual
                           infrastructure deployment can take even a
                           high-performing team up to a week (and low-performers
@@ -850,16 +850,18 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="right" delay={400}>
-                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass h-full">
+                      <div className="bg-white rounded-2xl p-8 shadow-glass border-glass h-full">
                         <div className="flex items-center gap-4 mb-6">
-                          <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center">
-                            <Shield className="w-6 h-6 text-blue-500" />
-                          </div>
-                          <h3 className="text-xl font-semibold text-card-foreground font-montserrat">
-                            🏗️ Fortress-Like Architecture (Delivering "Good")
+                          <span>
+                            <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center">
+                              <Shield className="w-6 h-6 text-blue-500" />
+                            </div>
+                          </span>
+                          <h3 className="text-xl font-semibold text-foreground-dark-muted font-montserrat">
+                            Fortress-Like Architecture (Delivering "Good")
                           </h3>
                         </div>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-foreground-dark-muted leading-relaxed">
                           Manual configurations are a leading cause of security
                           vulnerabilities and system instability. A single
                           misconfiguration can lead to data breaches costing an
@@ -874,17 +876,18 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="left" delay={600}>
-                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass h-full">
+                      <div className="bg-white rounded-2xl p-8 shadow-glass border-glass h-full">
                         <div className="flex items-center gap-4 mb-6">
-                          <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center">
-                            <DollarSign className="w-6 h-6 text-green-500" />
-                          </div>
-                          <h3 className="text-xl font-semibold text-card-foreground font-montserrat">
-                            💰 Built-in Cost Optimization (Delivering on
-                            "Cheap")
+                          <span>
+                            <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center">
+                              <DollarSign className="w-6 h-6 text-green-500" />
+                            </div>
+                          </span>
+                          <h3 className="text-xl font-semibold text-foreground-dark-muted font-montserrat">
+                            Built-in Cost Optimization (Delivering on "Cheap")
                           </h3>
                         </div>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-foreground-dark-muted leading-relaxed">
                           DevOps is expensive, and cloud misconfigurations can
                           lead to massive, unexpected cost overruns. Snap.MVP
                           provides immediate ROI by automating the work of a
@@ -899,16 +902,18 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="right" delay={800}>
-                      <div className="bg-card rounded-2xl p-8 shadow-glass border-glass h-full">
+                      <div className="bg-white rounded-2xl p-8 shadow-glass border-glass h-full">
                         <div className="flex items-center gap-4 mb-6">
-                          <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center">
-                            <Settings className="w-6 h-6 text-purple-500" />
-                          </div>
-                          <h3 className="text-xl font-semibold text-card-foreground font-montserrat">
-                            🔧 Flexible to the Core (Built with Terraform)
+                          <span>
+                            <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center">
+                              <Settings className="w-6 h-6 text-purple-500" />
+                            </div>
+                          </span>
+                          <h3 className="text-xl font-semibold text-foreground-dark-muted font-montserrat">
+                            Flexible to the Core (Built with Terraform)
                           </h3>
                         </div>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-foreground-dark-muted leading-relaxed">
                           We built Snap.MVP using Terraform for a deliberate,
                           strategic reason. As the industry's most widely
                           adopted IaC tool, its declarative, provider-agnostic
@@ -927,7 +932,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                 <section id="architecture" className="mb-16">
                   <EnhancedScrollReveal direction="up">
                     <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
-                      <Settings className="w-8 h-8 text-primary" />
+                      {/* <Settings className="w-8 h-8 text-primary" /> */}
                       Under the Hood: The Five Layers of a Well-Architected
                       Cloud Environment
                     </h2>
@@ -941,16 +946,16 @@ const CloudInfrastructureAutomationTerraform = () => {
 
                   <div className="space-y-6">
                     <EnhancedScrollReveal direction="up" delay={200}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass">
+                      <div className="bg-white rounded-2xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
                           <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center">
                             <Cloud className="w-5 h-5 text-blue-500" />
                           </div>
-                          <h3 className="text-xl font-semibold text-card-foreground">
+                          <h3 className="text-xl font-semibold text-foreground-dark-muted">
                             Network Layer
                           </h3>
                         </div>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-foreground-dark-muted leading-relaxed">
                           A logically isolated Virtual Private Cloud (VPC)
                           serves as your own private office within the public
                           cloud, with public/private subnets, internet gateways,
@@ -961,16 +966,16 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="up" delay={300}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass">
+                      <div className="bg-white rounded-2xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
                           <div className="w-10 h-10 bg-green-500/10 rounded-full flex items-center justify-center">
                             <TrendingUp className="w-5 h-5 text-green-500" />
                           </div>
-                          <h3 className="text-xl font-semibold text-card-foreground">
+                          <h3 className="text-xl font-semibold text-foreground-dark-muted">
                             Compute Layer
                           </h3>
                         </div>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-foreground-dark-muted leading-relaxed">
                           Resizable compute capacity with Auto-Scaling Groups
                           using EC2, ECS (Containers), or EKS (Kubernetes). This
                           enables horizontal scaling ("scaling out"), the
@@ -983,16 +988,16 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="up" delay={400}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass">
+                      <div className="bg-white rounded-2xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
                           <div className="w-10 h-10 bg-red-500/10 rounded-full flex items-center justify-center">
                             <Lock className="w-5 h-5 text-red-500" />
                           </div>
-                          <h3 className="text-xl font-semibold text-card-foreground">
+                          <h3 className="text-xl font-semibold text-foreground-dark-muted">
                             Security Layer
                           </h3>
                         </div>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-foreground-dark-muted leading-relaxed">
                           Comprehensive security begins with AWS Secrets Manager
                           to encrypt secrets at rest and rotate them
                           automatically, preventing the dangerous practice of
@@ -1005,16 +1010,16 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="up" delay={500}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass">
+                      <div className="bg-white rounded-2xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
                           <div className="w-10 h-10 bg-purple-500/10 rounded-full flex items-center justify-center">
                             <Database className="w-5 h-5 text-purple-500" />
                           </div>
-                          <h3 className="text-xl font-semibold text-card-foreground">
+                          <h3 className="text-xl font-semibold text-foreground-dark-muted">
                             Storage Layer
                           </h3>
                         </div>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-foreground-dark-muted leading-relaxed">
                           Encrypted and policy-managed S3 object storage for
                           unstructured data like media files and logs, alongside
                           high-availability RDS instances for your relational
@@ -1024,16 +1029,16 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="up" delay={600}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass">
+                      <div className="bg-white rounded-2xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
                           <div className="w-10 h-10 bg-yellow-500/10 rounded-full flex items-center justify-center">
                             <BarChart3 className="w-5 h-5 text-yellow-500" />
                           </div>
-                          <h3 className="text-xl font-semibold text-card-foreground">
+                          <h3 className="text-xl font-semibold text-foreground-dark-muted">
                             Monitoring Layer
                           </h3>
                         </div>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-foreground-dark-muted leading-relaxed">
                           Centralized resource monitoring and logging via
                           CloudWatch and CloudTrail, providing complete,
                           real-time visibility into your environment's health,
@@ -1048,7 +1053,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                 <section id="client-advantage" className="mb-16">
                   <EnhancedScrollReveal direction="up">
                     <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
-                      <Users className="w-8 h-8 text-primary" />
+                      {/* <Users className="w-8 h-8 text-primary" /> */}
                       How Our Clients Leverage Snap.MVP for a Strategic
                       Advantage
                     </h2>
@@ -1064,14 +1069,14 @@ const CloudInfrastructureAutomationTerraform = () => {
 
                   <div className="grid md:grid-cols-3 gap-6">
                     <EnhancedScrollReveal direction="up" delay={200}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass h-full">
+                      <div className="bg-white rounded-2xl p-6 shadow-glass border-glass h-full">
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                           <Rocket className="w-6 h-6 text-primary" />
                         </div>
-                        <h3 className="text-lg font-semibold text-card-foreground mb-3">
+                        <h3 className="text-lg font-semibold text-foreground-dark-muted mb-3">
                           An Accelerated Sprint 0
                         </h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
+                        <p className="text-foreground-dark-muted text-sm leading-relaxed">
                           We build your entire production-ready infrastructure
                           while we are still collaboratively defining your
                           product roadmap, ensuring you are ready to deploy code
@@ -1081,14 +1086,14 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="up" delay={400}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass h-full">
+                      <div className="bg-white rounded-2xl p-6 shadow-glass border-glass h-full">
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                           <Target className="w-6 h-6 text-primary" />
                         </div>
-                        <h3 className="text-lg font-semibold text-card-foreground mb-3">
+                        <h3 className="text-lg font-semibold text-foreground-dark-muted mb-3">
                           A Battle-Tested Launchpad
                         </h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
+                        <p className="text-foreground-dark-muted text-sm leading-relaxed">
                           Your MVP is built on an architecture that is already
                           prepared for production traffic and scale. You avoid
                           the costly and time-consuming process of
@@ -1098,14 +1103,14 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </EnhancedScrollReveal>
 
                     <EnhancedScrollReveal direction="up" delay={600}>
-                      <div className="bg-card rounded-2xl p-6 shadow-glass border-glass h-full">
+                      <div className="bg-white rounded-2xl p-6 shadow-glass border-glass h-full">
                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                           <DollarSign className="w-6 h-6 text-primary" />
                         </div>
-                        <h3 className="text-lg font-semibold text-card-foreground mb-3">
+                        <h3 className="text-lg font-semibold text-foreground-dark-muted mb-3">
                           Reduced Operational Overhead
                         </h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
+                        <p className="text-foreground-dark-muted text-sm leading-relaxed">
                           You can focus your valuable resources on product
                           development and market strategy, not DevOps. We handle
                           the complexities of cloud management for you.
@@ -1131,6 +1136,85 @@ const CloudInfrastructureAutomationTerraform = () => {
                       </p>
                     </div>
                   </EnhancedScrollReveal>
+                </section>
+                {/* Enhanced FAQ */}
+                <section id="faq" className="max-w-6xl my-16">
+                  <EnhancedScrollReveal direction="up">
+                    <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
+                      {/* <FileText className="w-8 h-8 text-primary" /> */}
+                      Frequently Asked Questions
+                    </h2>
+                  </EnhancedScrollReveal>
+
+                  <div className="space-y-4">
+                    {[
+                      {
+                        question:
+                          "How much does cloud infrastructure automation cost compared to manual setup?",
+                        answer:
+                          "Cloud infrastructure automation with Terraform eliminates the need for dedicated DevOps teams (saving $150K+ annually) and prevents costly misconfigurations that can lead to $4.88M+ in security breach damages. The ROI is immediate through reduced operational overhead and optimized resource allocation.",
+                      },
+                      {
+                        question:
+                          "Do I need to know Terraform to use automated cloud infrastructure deployment?",
+                        answer:
+                          "No. When you partner with IndexNine, our teams handle the entire process using our Snap.MVP accelerator. The Terraform templates are pre-built and automated by our experts. You get production-ready environments without needing deep DevOps expertise.",
+                      },
+                      {
+                        question:
+                          "How customizable is automated cloud infrastructure?",
+                        answer:
+                          "Highly customizable through modular Terraform design. We can adjust server counts, database types, storage classes, and deploy to different geographic regions by modifying variables, often without application downtime.",
+                      },
+                      {
+                        question:
+                          "Is automated infrastructure truly production-ready for enterprise workloads?",
+                        answer:
+                          "Yes. All deployments follow AWS Well-Architected Framework principles—the industry standard. This includes high availability, disaster recovery, security, and enterprise-scale capabilities from day one.",
+                      },
+                      {
+                        question:
+                          "Can cloud infrastructure automation work with different cloud providers?",
+                        answer:
+                          "Yes. Our Snap.MVP accelerator is cloud-agnostic and deploys across AWS, Google Cloud, and Azure using modular Terraform templates for each provider.",
+                      },
+                      {
+                        question:
+                          "How long does it take to deploy production-ready cloud infrastructure?",
+                        answer:
+                          "With our automated Terraform templates, complete production-ready infrastructure deploys in approximately 10 minutes, compared to weeks or months with manual setup.",
+                      },
+                    ].map((faq, index) => (
+                      <EnhancedScrollReveal
+                        key={index}
+                        direction="up"
+                        delay={index * 100}
+                      >
+                        <div className="bg-white rounded-xl border border-glass overflow-hidden">
+                          <button
+                            onClick={() => toggleFAQ(index)}
+                            className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
+                          >
+                            <span className="font-medium text-foreground-dark-muted pr-4">
+                              {faq.question}
+                            </span>
+                            {expandedFAQ === index ? (
+                              <ChevronUp className="w-5 h-5 text-foreground-dark-muted flex-shrink-0" />
+                            ) : (
+                              <ChevronDown className="w-5 h-5 text-foreground-dark-muted flex-shrink-0" />
+                            )}
+                          </button>
+                          {expandedFAQ === index && (
+                            <div className="px-6 pb-4">
+                              <p className="text-foreground-dark-muted leading-relaxed">
+                                {faq.answer}
+                              </p>
+                            </div>
+                          )}
+                        </div>
+                      </EnhancedScrollReveal>
+                    ))}
+                  </div>
                 </section>
               </div>
             }
@@ -1167,85 +1251,6 @@ const CloudInfrastructureAutomationTerraform = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Enhanced FAQ */}
-      <section id="faq" className="container max-w-6xl my-16">
-        <EnhancedScrollReveal direction="up">
-          <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
-            <FileText className="w-8 h-8 text-primary" />
-            Frequently Asked Questions
-          </h2>
-        </EnhancedScrollReveal>
-
-        <div className="space-y-4">
-          {[
-            {
-              question:
-                "How much does cloud infrastructure automation cost compared to manual setup?",
-              answer:
-                "Cloud infrastructure automation with Terraform eliminates the need for dedicated DevOps teams (saving $150K+ annually) and prevents costly misconfigurations that can lead to $4.88M+ in security breach damages. The ROI is immediate through reduced operational overhead and optimized resource allocation.",
-            },
-            {
-              question:
-                "Do I need to know Terraform to use automated cloud infrastructure deployment?",
-              answer:
-                "No. When you partner with IndexNine, our teams handle the entire process using our Snap.MVP accelerator. The Terraform templates are pre-built and automated by our experts. You get production-ready environments without needing deep DevOps expertise.",
-            },
-            {
-              question: "How customizable is automated cloud infrastructure?",
-              answer:
-                "Highly customizable through modular Terraform design. We can adjust server counts, database types, storage classes, and deploy to different geographic regions by modifying variables, often without application downtime.",
-            },
-            {
-              question:
-                "Is automated infrastructure truly production-ready for enterprise workloads?",
-              answer:
-                "Yes. All deployments follow AWS Well-Architected Framework principles—the industry standard. This includes high availability, disaster recovery, security, and enterprise-scale capabilities from day one.",
-            },
-            {
-              question:
-                "Can cloud infrastructure automation work with different cloud providers?",
-              answer:
-                "Yes. Our Snap.MVP accelerator is cloud-agnostic and deploys across AWS, Google Cloud, and Azure using modular Terraform templates for each provider.",
-            },
-            {
-              question:
-                "How long does it take to deploy production-ready cloud infrastructure?",
-              answer:
-                "With our automated Terraform templates, complete production-ready infrastructure deploys in approximately 10 minutes, compared to weeks or months with manual setup.",
-            },
-          ].map((faq, index) => (
-            <EnhancedScrollReveal
-              key={index}
-              direction="up"
-              delay={index * 100}
-            >
-              <div className="bg-card rounded-2xl shadow-glass border-glass overflow-hidden">
-                <button
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
-                >
-                  <span className="font-medium text-card-foreground pr-4">
-                    {faq.question}
-                  </span>
-                  {expandedFAQ === index ? (
-                    <ChevronUp className="w-5 h-5 text-muted-foreground flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0" />
-                  )}
-                </button>
-                {expandedFAQ === index && (
-                  <div className="px-6 pb-4">
-                    <p className="text-muted-foreground leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </div>
-                )}
-              </div>
-            </EnhancedScrollReveal>
-          ))}
         </div>
       </section>
 

@@ -586,6 +586,67 @@ const AiChangeManagementPlaybook = () => {
                 </div>
               </div>
             </section>
+
+            {/* FAQ Section */}
+            <a id="faqs"></a>
+            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow-hidden">
+              <div className="container mx-auto px-6 lg:px-8 relative z-10">
+                <div className="max-w-5xl mx-auto">
+                  <h4 className="font-semibold text-2xl text-foreground-dark mb-8">
+                    Frequently Asked Questions
+                  </h4>
+
+                  <div className="space-y-2">
+                    {[
+                      {
+                        question:
+                          "Our data is a mess and stored in old systems. Can we still pursue an AI strategy?",
+                        answer:
+                          "Absolutely. This is the most common starting point for legacy organizations. Our AI Enablement process is specifically designed to address this. We don't require you to boil the ocean; instead, we identify a high-value use case first and then focus on modernizing only the data sources required for that specific initiative, delivering value incrementally.",
+                      },
+                      {
+                        question:
+                          "How do you handle resistance from employees who are comfortable with the current way of doing things?",
+                        answer:
+                          "Our change management strategy is centered on demonstrating value and building trust. We actively involve key employees in the process, ensuring their domain expertise is respected and integrated. By focusing on metrics that matter to them, we reframe AI as a tool that augments their capabilities, rather than replaces them.",
+                      },
+                      {
+                        question:
+                          "Is this purely a consulting service, or do you also build the solutions?",
+                        answer:
+                          "It's a complete, end-to-end service. The initial phase is strategic consulting - the audit and change management planning. Following that, our engineering teams execute on the plan, performing the data modernization and building the custom AI applications that drive the desired business outcomes.",
+                      },
+                    ].map((faq, index) => (
+                      <div
+                        key={index}
+                        className="border border-border rounded-[.5rem] overflow-hidden"
+                      >
+                        <button
+                          onClick={() => toggleFAQ(index)}
+                          className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
+                        >
+                          <span className="font-medium text-foreground-dark pr-4">
+                            {faq.question}
+                          </span>
+                          {expandedFAQ === index ? (
+                            <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                          ) : (
+                            <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                          )}
+                        </button>
+                        {expandedFAQ === index && (
+                          <div className="px-6 py-4 bg-white border-t border-border">
+                            <p className="text-foreground-dark-muted leading-relaxed">
+                              {faq.answer}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -629,66 +690,7 @@ const AiChangeManagementPlaybook = () => {
           </div>
         </div>
       </section>
-      {/* FAQ Section */}
-      <a id="faqs"></a>
-      <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow-hidden">
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-5xl mx-auto">
-            <h4 className="font-semibold text-2xl text-foreground-dark mb-8">
-              Frequently Asked Questions
-            </h4>
 
-            <div className="space-y-2">
-              {[
-                {
-                  question:
-                    "Our data is a mess and stored in old systems. Can we still pursue an AI strategy?",
-                  answer:
-                    "Absolutely. This is the most common starting point for legacy organizations. Our AI Enablement process is specifically designed to address this. We don't require you to boil the ocean; instead, we identify a high-value use case first and then focus on modernizing only the data sources required for that specific initiative, delivering value incrementally.",
-                },
-                {
-                  question:
-                    "How do you handle resistance from employees who are comfortable with the current way of doing things?",
-                  answer:
-                    "Our change management strategy is centered on demonstrating value and building trust. We actively involve key employees in the process, ensuring their domain expertise is respected and integrated. By focusing on metrics that matter to them, we reframe AI as a tool that augments their capabilities, rather than replaces them.",
-                },
-                {
-                  question:
-                    "Is this purely a consulting service, or do you also build the solutions?",
-                  answer:
-                    "It's a complete, end-to-end service. The initial phase is strategic consulting - the audit and change management planning. Following that, our engineering teams execute on the plan, performing the data modernization and building the custom AI applications that drive the desired business outcomes.",
-                },
-              ].map((faq, index) => (
-                <div
-                  key={index}
-                  className="border border-border rounded-[.5rem] overflow-hidden"
-                >
-                  <button
-                    onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
-                  >
-                    <span className="font-medium text-foreground-dark pr-4">
-                      {faq.question}
-                    </span>
-                    {expandedFAQ === index ? (
-                      <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0" />
-                    ) : (
-                      <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0" />
-                    )}
-                  </button>
-                  {expandedFAQ === index && (
-                    <div className="px-6 py-4 bg-white border-t border-border">
-                      <p className="text-foreground-dark-muted leading-relaxed">
-                        {faq.answer}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
       <div className="bg-background">
         <Footer />
       </div>

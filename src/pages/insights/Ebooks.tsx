@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import PipedriveForm from "@/components/PipedriveForm";
 import { useSEO } from "@/hooks/useSEO";
 import {
@@ -24,15 +29,15 @@ const Ebooks = () => {
 
   const ebooks = [
     {
-      title: "The Complete Guide to AI-Driven Development",
+      title: "RAG: Retrieval-Augmented Generation, Geared for Production",
       description:
-        "A comprehensive 120-page guide covering everything from AI strategy to implementation best practices for modern software development.",
+        "This white paper is your blueprint to build scalable, reliable, and business-aligned RAG systems. Distilled from Indexnine AI Studio's real-world implementations, it equips CTOs, AI Leads, and Product Owners with actionable insights to operationalize Retrieval-Augmented Generation for measurable performance and ROI.",
       pages: "120 pages",
       readTime: "45 min read",
       category: "AI & Machine Learning",
       featured: true,
       rating: 4.9,
-      downloads: "5.2K",
+      downloads: "3.2K",
     },
     {
       title: "Digital Transformation Playbook for Enterprises",
@@ -143,7 +148,7 @@ const Ebooks = () => {
           .map((ebook, index) => (
             <section key={index} className="py-24 lg:py-32 bg-transparent">
               <div className="container mx-auto px-6 lg:px-8">
-                <div className="max-w-5xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                   <div
                     className={`backdrop-blur-xl rounded-3xl shadow-glass-lg  overflow-hidden   ${styles.middleCardBg2}`}
                   >
@@ -175,12 +180,12 @@ const Ebooks = () => {
                               {ebook.readTime}
                             </span>
                           </div>
-                          <div className="flex items-center gap-2">
+                          {/* <div className="flex items-center gap-2">
                             <Star className="w-4 h-4 text-yellow-400" />
                             <span className="font-montserrat">
                               {ebook.rating}
                             </span>
-                          </div>
+                          </div> */}
                         </div>
 
                         <Button
@@ -218,13 +223,13 @@ const Ebooks = () => {
           className={`pb-24 lg:pb-32 relative overflow-hidden bg-transparent`}
         >
           <div className="container mx-auto px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-semibold text-foreground-dark mb-4 font-montserrat">
-                More eBooks
+            <div className="text-center mb-8">
+              <h2 className="text-4xl font-semibold text-foreground-dark font-montserrat">
+                Upcoming eBooks
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-8xl mx-auto">
               {ebooks
                 .filter((ebook) => !ebook.featured)
                 .map((ebook, index) => (
@@ -252,27 +257,27 @@ const Ebooks = () => {
                       {ebook.description}
                     </p>
 
-                    <div className="flex items-center justify-between mb-6 text-sm text-foreground-dark-muted/50">
+                    <div className="flex items-center justify-between  text-sm text-foreground-dark-muted/50">
                       <div className="flex items-center gap-2">
                         <Clock className="w-4 h-4" />
                         <span className="font-montserrat">
                           {ebook.readTime}
                         </span>
                       </div>
-                      <div className="flex items-center gap-2">
+                      {/* <div className="flex items-center gap-2">
                         <Star className="w-4 h-4 text-yellow-400" />
                         <span className="font-montserrat">{ebook.rating}</span>
-                      </div>
+                      </div> */}
                     </div>
 
-                    <Button 
-                      variant="btnPrimary" 
+                    {/* <Button
+                      variant="btnPrimary"
                       className="w-full"
                       onClick={() => handleDownload(ebook.title)}
                     >
                       <Download className="w-4 h-4 mr-2" />
                       Download
-                    </Button>
+                    </Button> */}
                   </div>
                 ))}
             </div>
@@ -313,9 +318,10 @@ const Ebooks = () => {
           </DialogHeader>
           <div className="mt-4">
             <p className="text-muted-foreground mb-6">
-              Please fill out this quick form to download your free eBook. We'll send it directly to your email.
+              Please fill out this quick form to download your free eBook. We'll
+              send it directly to your email.
             </p>
-            <PipedriveForm 
+            <PipedriveForm
               formUrl="https://webforms.pipedrive.com/f/5VQORZJbPm5aW8F3Iak8hudQJDwGUSF0Q58icnRJ6ixHFsdwkyoU7ogoLOci6S5HnZ"
               className="w-full"
             />

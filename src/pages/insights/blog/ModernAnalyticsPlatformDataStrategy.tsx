@@ -812,7 +812,68 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                 </div>
               </div>
             </section>
+            {/* FAQ Section */}
+            <a id="faqs"></a>
+            <section className="pt-12 pb-12 relative overflow-hidden">
+              <div className="container text-foreground-dark-muted leading-relaxed">
+                <div className="max-w-5xl mx-auto">
+                  <h2 className="font-semibold text-2xl text-foreground-dark mb-8">
+                    Frequently Asked Questions (FAQ)
+                  </h2>
 
+                  {[
+                    {
+                      question:
+                        "What's the difference between a Data Fabric and a Data Mesh?",
+                      answer:
+                        "Both are advanced architectural patterns for large enterprises. A Data Fabric focuses on creating a unified data management layer across distributed environments using metadata and automation. A Data Mesh is a decentralized approach that treats data as a product, empowering individual domain teams to own and share their data assets responsibly. The choice depends on an organization's culture and structure.",
+                    },
+                    {
+                      question:
+                        "Our data is extremely siloed. Where do we even begin?",
+                      answer:
+                        "This is the most common starting point. The journey begins with our AI/Data Readiness Assessment. We don't try to boil the ocean. We identify the single most critical business problem that is constrained by data silos and focus on building a modern 'data slice' to solve that problem first. This delivers a rapid win and creates a repeatable blueprint for modernizing other domains.",
+                    },
+                    {
+                      question:
+                        "How do we justify the investment in a modern analytics platform?",
+                      answer:
+                        "The business case is built on both cost savings and value creation. The Parking Management case study is a perfect example: the 35% reduction in infrastructure costs provided a hard ROI, while the 72% increase in booking efficiency and the new data monetization stream demonstrated immense value creation. A proper readiness assessment will help you build a similar business case tailored to your organization.",
+                    },
+                    {
+                      question:
+                        "What is the difference between Business Intelligence (BI) and Decision Intelligence (DI)?",
+                      answer:
+                        "BI is primarily descriptive; it uses historical data to answer the question, 'What happened?' DI is prescriptive; it combines data, domain knowledge, and predictive models to answer the question, 'What should I do?' A modern analytics platform should support both, providing dashboards for historical analysis and enabling the embedded, AI-powered recommendations that define DI.",
+                    },
+                  ].map((faq, index) => (
+                    <div
+                      key={index}
+                      className="border border-border rounded-[.5rem] overflow-hidden mt-2"
+                    >
+                      <button
+                        onClick={() => toggleFAQ(index)}
+                        className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
+                      >
+                        <span className="font-medium  text-foreground-dark pr-4">
+                          {faq.question}
+                        </span>
+                        {expandedFAQ === index ? (
+                          <ChevronUp className="w-6 h-6 text-brand-primary flex-shrink-0" />
+                        ) : (
+                          <ChevronDown className="w-6 h-6 text-brand-primary flex-shrink-0" />
+                        )}
+                      </button>
+                      {expandedFAQ === index && (
+                        <div className="px-6 py-4 bg-white border-t border-border">
+                          <p>{faq.answer}</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
             {/* Call to Action */}
           </div>
         </div>
@@ -843,69 +904,6 @@ const ModernAnalyticsPlatformDataStrategy = () => {
             >
               Schedule a Data Readiness Assessment with Our Experts
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <a id="faqs"></a>
-      <section className="pt-12 pb-12 relative overflow-hidden">
-        <div className="container text-foreground-dark-muted leading-relaxed">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="font-semibold text-2xl text-foreground-dark mb-8">
-              Frequently Asked Questions (FAQ)
-            </h2>
-
-            {[
-              {
-                question:
-                  "What's the difference between a Data Fabric and a Data Mesh?",
-                answer:
-                  "Both are advanced architectural patterns for large enterprises. A Data Fabric focuses on creating a unified data management layer across distributed environments using metadata and automation. A Data Mesh is a decentralized approach that treats data as a product, empowering individual domain teams to own and share their data assets responsibly. The choice depends on an organization's culture and structure.",
-              },
-              {
-                question:
-                  "Our data is extremely siloed. Where do we even begin?",
-                answer:
-                  "This is the most common starting point. The journey begins with our AI/Data Readiness Assessment. We don't try to boil the ocean. We identify the single most critical business problem that is constrained by data silos and focus on building a modern 'data slice' to solve that problem first. This delivers a rapid win and creates a repeatable blueprint for modernizing other domains.",
-              },
-              {
-                question:
-                  "How do we justify the investment in a modern analytics platform?",
-                answer:
-                  "The business case is built on both cost savings and value creation. The Parking Management case study is a perfect example: the 35% reduction in infrastructure costs provided a hard ROI, while the 72% increase in booking efficiency and the new data monetization stream demonstrated immense value creation. A proper readiness assessment will help you build a similar business case tailored to your organization.",
-              },
-              {
-                question:
-                  "What is the difference between Business Intelligence (BI) and Decision Intelligence (DI)?",
-                answer:
-                  "BI is primarily descriptive; it uses historical data to answer the question, 'What happened?' DI is prescriptive; it combines data, domain knowledge, and predictive models to answer the question, 'What should I do?' A modern analytics platform should support both, providing dashboards for historical analysis and enabling the embedded, AI-powered recommendations that define DI.",
-              },
-            ].map((faq, index) => (
-              <div
-                key={index}
-                className="border border-border rounded-[.5rem] overflow-hidden mt-2"
-              >
-                <button
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
-                >
-                  <span className="font-medium  text-foreground-dark pr-4">
-                    {faq.question}
-                  </span>
-                  {expandedFAQ === index ? (
-                    <ChevronUp className="w-6 h-6 text-brand-primary flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="w-6 h-6 text-brand-primary flex-shrink-0" />
-                  )}
-                </button>
-                {expandedFAQ === index && (
-                  <div className="px-6 py-4 bg-white border-t border-border">
-                    <p>{faq.answer}</p>
-                  </div>
-                )}
-              </div>
-            ))}
           </div>
         </div>
       </section>

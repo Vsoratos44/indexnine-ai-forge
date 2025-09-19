@@ -895,32 +895,6 @@ const QualityEngineering = () => {
           </div>
         </div>
       </div>
-      {/* Final CTA Section with Form */}
-      <section
-        id="contact"
-        className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}
-      >
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-                <span className="leading-[1.4]">
-                  Ready to Transform Your QA Process?
-                </span>
-              </h2>
-              <p className="text-lg text-foreground-white/80 mb-8 leading-relaxed max-w-4xl mx-auto">
-                Let's discuss your quality challenges and build a value-driven
-                roadmap to accelerate your releases and build more reliable
-                software. Schedule a complimentary, no-obligation call with a
-                senior QE architect today.
-              </p>
-              <Button type="submit" size="lg" variant="btnSecondary">
-                Book My APQ Roadmap Session
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ Section */}
       <section className="py-16 lg:py-24 bg-white">
@@ -963,6 +937,33 @@ const QualityEngineering = () => {
                   )}
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section with Form */}
+      <section
+        id="contact"
+        className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}
+      >
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                <span className="leading-[1.4]">
+                  Ready to Transform Your QA Process?
+                </span>
+              </h2>
+              <p className="text-lg text-foreground-white/80 mb-8 leading-relaxed max-w-4xl mx-auto">
+                Let's discuss your quality challenges and build a value-driven
+                roadmap to accelerate your releases and build more reliable
+                software. Schedule a complimentary, no-obligation call with a
+                senior QE architect today.
+              </p>
+              <Button type="submit" size="lg" variant="btnSecondary">
+                Book My APQ Roadmap Session
+              </Button>
             </div>
           </div>
         </div>

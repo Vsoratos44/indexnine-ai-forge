@@ -137,7 +137,7 @@ const Enterprise = () => {
               <Button
                 variant="btnSecondary"
                 size="xl"
-                className="min-w-[280px] text-foreground/80 hover:text-foreground h-auto"
+                className="min-w-[280px]"
                 onClick={() =>
                   document
                     .getElementById("ai-audit")
