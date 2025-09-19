@@ -38,51 +38,66 @@ const SectionLoader = () => (
 const enterpriseClients = [
   { 
     id: 1, 
-    name: 'Microsoft', 
-    src: '/images/clients/microsoft-logo.png', 
-    url: 'https://microsoft.com' 
+    name: 'CyberArk',
+    description: 'The leader in identity security and privileged access management, securing enterprises worldwide',
+    src: '/images/clients/cyberark-logo.png',
+    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=CyberArk',
+    url: 'https://www.cyberark.com',
+    industry: 'Cybersecurity'
   },
   { 
     id: 2, 
-    name: 'Google', 
-    src: '/images/clients/google-logo.png', 
-    url: 'https://google.com' 
+    name: 'Ginesys',
+    description: 'Cloud-based retail ERP system built for the retail value chain with omnichannel capabilities',
+    src: '/images/clients/ginesys-logo.png',
+    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=Ginesys',
+    url: 'https://www.ginesys.com',
+    industry: 'Retail Technology'
   },
   { 
     id: 3, 
-    name: 'Amazon', 
-    src: '/images/clients/amazon-logo.png', 
-    url: 'https://amazon.com' 
+    name: 'Great Place to Work',
+    description: 'The global authority on workplace culture, helping organizations build better workplaces',
+    src: '/images/clients/gptw-logo.png',
+    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=GPTW',
+    url: 'https://www.greatplacetowork.com',
+    industry: 'HR & Culture'
   },
   { 
     id: 4, 
-    name: 'Tesla', 
-    src: '/images/clients/tesla-logo.png', 
-    url: 'https://tesla.com' 
+    name: 'Sensable',
+    description: 'Advanced haptic technology solutions enabling touch and force feedback in digital environments',
+    src: '/images/clients/sensable-logo.png',
+    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=Sensable',
+    url: 'https://sensable.com',
+    industry: 'Haptic Technology'
   },
   { 
     id: 5, 
-    name: 'Netflix', 
-    src: '/images/clients/netflix-logo.png', 
-    url: 'https://netflix.com' 
+    name: 'Equifax',
+    description: 'Global data, analytics and technology company providing consumer credit reporting and insights',
+    src: '/images/clients/equifax-logo.png',
+    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=Equifax',
+    url: 'https://www.equifax.com',
+    industry: 'Financial Services'
   },
   { 
     id: 6, 
-    name: 'Meta', 
-    src: '/images/clients/meta-logo.png', 
-    url: 'https://meta.com' 
+    name: 'DocuPhase',
+    description: 'Intelligent process automation platform streamlining business operations with document management',
+    src: '/images/clients/docuphase-logo.png',
+    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=DocuPhase',
+    url: 'https://www.docuphase.com',
+    industry: 'Process Automation'
   },
   { 
     id: 7, 
-    name: 'Stripe', 
-    src: '/images/clients/stripe-logo.png', 
-    url: 'https://stripe.com' 
-  },
-  { 
-    id: 8, 
-    name: 'Spotify', 
-    src: '/images/clients/spotify-logo.png', 
-    url: 'https://spotify.com' 
+    name: 'Cygeniq',
+    description: 'AI-powered cybersecurity solutions securing digital ecosystems with adaptive threat defense',
+    src: '/images/clients/cygeniq-logo.png',
+    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=Cygeniq',
+    url: 'https://cygeniq.com',
+    industry: 'AI Cybersecurity'
   }
 ];
 
