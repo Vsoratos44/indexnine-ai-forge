@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { openPositions } from "./Jobs";
+
 import { Button } from "@/components/ui/button";
 import {
   JobPostingSchema,
@@ -21,41 +23,6 @@ const Careers = () => {
   const validThrough = new Date(
     Date.now() + 90 * 24 * 60 * 60 * 1000
   ).toISOString(); // 90 days from now
-
-  const openPositions = [
-    {
-      title: "Senior Full-Stack Developer",
-      department: "Engineering",
-      location: "Remote / San Francisco",
-      type: "Full-time",
-      description:
-        "Join our engineering team to build cutting-edge web applications using modern technologies.",
-    },
-    {
-      title: "AI/ML Engineer",
-      department: "Innovation Lab",
-      location: "Remote / New York",
-      type: "Full-time",
-      description:
-        "Develop and deploy machine learning models to solve complex business problems.",
-    },
-    {
-      title: "DevOps Engineer",
-      department: "Infrastructure",
-      location: "Remote / Austin",
-      type: "Full-time",
-      description:
-        "Design and maintain scalable cloud infrastructure and deployment pipelines.",
-    },
-    {
-      title: "Product Manager",
-      department: "Product",
-      location: "Remote / London",
-      type: "Full-time",
-      description:
-        "Drive product strategy and execution for our innovative software solutions.",
-    },
-  ];
 
   const benefits = [
     {
@@ -306,7 +273,9 @@ const Careers = () => {
                       </div>
 
                       <div className="lg:ml-8">
-                        <Button variant="btnSecondary">Apply Now</Button>
+                        <Link to={`/careers/${index}`}>
+                          <Button variant="btnPrimary">View Details</Button>
+                        </Link>
                       </div>
                     </div>
                   </div>

@@ -10,6 +10,8 @@ import useCanonicalRedirect from "./hooks/useCanonicalRedirect";
 import Index from "./pages/Index"; // Keep homepage immediate
 import NotFound from "./pages/NotFound"; // Keep 404 immediate
 
+import JobDetails from "./pages/company/JobDetails";
+
 console.log("App.tsx loading...");
 
 // Lazy load all other pages to reduce initial bundle size
@@ -144,8 +146,8 @@ const App = () => {
 
   // Initialize canonical URL redirect for SEO
   useCanonicalRedirect({
-    canonicalDomain: 'www.indexnine.com',
-    enabled: true
+    canonicalDomain: "www.indexnine.com",
+    enabled: true,
   });
 
   return (
@@ -183,6 +185,8 @@ const App = () => {
                 <Route path="/company/about" element={<About />} />
 
                 <Route path="/company/careers" element={<Careers />} />
+
+                <Route path="/careers/:jobId" element={<JobDetails />} />
 
                 <Route path="/company/contact" element={<Contact />} />
 

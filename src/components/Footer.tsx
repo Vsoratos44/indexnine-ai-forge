@@ -34,7 +34,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-background-dark py-28 lg:py-32 relative overflow-hidden border-t border-white/10">
+    <footer className="bg-background py-16 lg:py-24 relative overflow-hidden border-t border-white/10">
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-brand-purple/5 rounded-full blur-3xl"></div>
@@ -63,6 +63,8 @@ const Footer = () => {
                 <SocialIcon
                   url="https://www.reddit.com/user/indexnine_/"
                   target="_blank"
+                  fgColor="white"
+                  bgColor="black"
                 />
               </a>
 
@@ -74,6 +76,8 @@ const Footer = () => {
                 <SocialIcon
                   url="https://www.linkedin.com/company/indexnine-technologies"
                   target="_blank"
+                  fgColor="white"
+                  bgColor="black"
                 />
               </a>
               <a
@@ -84,6 +88,8 @@ const Footer = () => {
                 <SocialIcon
                   url="https://www.instagram.com/indexnine_/"
                   target="_blank"
+                  fgColor="white"
+                  bgColor="black"
                 />
               </a>
             </div>
