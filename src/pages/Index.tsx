@@ -6,6 +6,7 @@ import CTABanner from "@/components/CTABanner";
 import { Button } from "@/components/ui/button";
 import { useContent } from "@/hooks/useContent";
 import { useSEO } from "@/hooks/useSEO";
+import IndexNineInfiniteCarousel from "@/components/sections/IndexNineInfiniteCarousel";
 import {
   OrganizationSchema,
   WebPageSchema,
@@ -32,6 +33,58 @@ const SectionLoader = () => (
     <div className="animate-pulse bg-gradient-hero/20 rounded-lg h-32 w-full"></div>
   </div>
 );
+
+// Enterprise client logos data
+const enterpriseClients = [
+  { 
+    id: 1, 
+    name: 'Microsoft', 
+    src: '/images/clients/microsoft-logo.png', 
+    url: 'https://microsoft.com' 
+  },
+  { 
+    id: 2, 
+    name: 'Google', 
+    src: '/images/clients/google-logo.png', 
+    url: 'https://google.com' 
+  },
+  { 
+    id: 3, 
+    name: 'Amazon', 
+    src: '/images/clients/amazon-logo.png', 
+    url: 'https://amazon.com' 
+  },
+  { 
+    id: 4, 
+    name: 'Tesla', 
+    src: '/images/clients/tesla-logo.png', 
+    url: 'https://tesla.com' 
+  },
+  { 
+    id: 5, 
+    name: 'Netflix', 
+    src: '/images/clients/netflix-logo.png', 
+    url: 'https://netflix.com' 
+  },
+  { 
+    id: 6, 
+    name: 'Meta', 
+    src: '/images/clients/meta-logo.png', 
+    url: 'https://meta.com' 
+  },
+  { 
+    id: 7, 
+    name: 'Stripe', 
+    src: '/images/clients/stripe-logo.png', 
+    url: 'https://stripe.com' 
+  },
+  { 
+    id: 8, 
+    name: 'Spotify', 
+    src: '/images/clients/spotify-logo.png', 
+    url: 'https://spotify.com' 
+  }
+];
 
 const Index = () => {
   console.log("Index page loading...");
@@ -122,6 +175,16 @@ const Index = () => {
           <Suspense fallback={<SectionLoader />}>
             <ValueProposition />
           </Suspense>
+
+          {/* IndexNine Infinite Client Carousel */}
+          <IndexNineInfiniteCarousel 
+            logos={enterpriseClients}
+            title="Trusted by Fortune 500 Leaders"
+            subtitle="Join enterprises who've accelerated their digital transformation and AI adoption with IndexNine's proven methodologies"
+            showStats={true}
+            speed={30}
+            pauseOnHover={true}
+          />
 
           <Suspense fallback={<SectionLoader />}>
             <SocialProof />
