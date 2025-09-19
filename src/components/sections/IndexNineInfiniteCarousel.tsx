@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import _ from 'lodash';
 
 // Client logos data - replace with your actual client logos
 const indexNineClients = [
@@ -42,7 +41,7 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Create seamless infinite scroll with proper logo distribution
-  const duplicatedLogos = _.flatten(Array(4).fill(logos));
+  const duplicatedLogos = Array(4).fill(logos).flat();
 
   // Handle logo interaction
   const handleLogoClick = (logo: ClientLogo) => {
