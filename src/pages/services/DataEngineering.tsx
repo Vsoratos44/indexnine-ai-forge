@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MonitorCog, PackageCheck, CheckCircle, HandCoins } from "lucide-react";
@@ -23,6 +23,10 @@ import SEOAnalytics from "@/components/seo/SEOAnalytics";
 
 const DataEngineering = () => {
   // Implement SEO for Data Engineering page
+  const [activeSection, setActiveSection] = useState<"legacy" | "aiReady">(
+    "legacy"
+  );
+
   useSEO({
     title:
       "Data Engineering Services & Platform Modernization | Enterprise Data Solutions | IndexNine",
@@ -332,7 +336,7 @@ const DataEngineering = () => {
         {/* Data Solutions in Action Section */}
         <section
           id="data-solutions"
-          className="pb-24 lg:pb-32 bg-gradient-to-t from-[#fff] to-[#fcfcfc] relative overflow-hidden"
+          className="bg-gradient-to-t from-[#fff] to-[#fcfcfc] relative overflow-hidden"
         >
           <div className="absolute inset-0">
             <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>
@@ -344,7 +348,7 @@ const DataEngineering = () => {
 
           <div className="container mx-auto px-6 lg:px-8 relative z-10">
             <div
-              className={`relative max-w-8xl mx-auto ${styles.sectionBgData2}`}
+              className={`relative max-w-8xl mx-auto ${styles.sectionBgData2} pb-24 lg:pb-32 `}
             >
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
@@ -353,21 +357,42 @@ const DataEngineering = () => {
                     in Action
                   </span>
                 </h2>
-                <p className="text-xl text-foreground-dark/80 mb-24 leading-relaxed font-montserrat">
+                <p className="text-xl text-foreground-dark/80 mb-16 pb-2 leading-relaxed font-montserrat">
                   Real-world applications delivering measurable results across
                   diverse industries.
                 </p>
               </div>
-              <div className="bg-[#fff] rounded-3xl p-6 lg:p-8 max-w-3xl mx-auto">
-                <div className="mb-12">
-                  {/* Legacy Modernization */}
 
+              <div className="bg-[#fff] rounded-3xl p-6 lg:p-8 max-w-3xl mx-auto">
+                {/* Toggle Buttons */}
+                <div className="flex justify-start space-x-4 mb-12">
+                  <button
+                    className={`px-6 py-3 rounded-full w-[50%] text-sm font-medium border ${
+                      activeSection === "legacy"
+                        ? "bg-brand-primary text-white border-brand-primary"
+                        : "bg-transparent text-brand-primary border-brand-primary/40"
+                    }`}
+                    onClick={() => setActiveSection("legacy")}
+                    aria-pressed={activeSection === "legacy"}
+                  >
+                    LEGACY SYSTEM MODERNIZATION
+                  </button>
+                  <button
+                    className={`px-6 py-3 rounded-full w-[50%] text-sm font-medium border ${
+                      activeSection === "aiReady"
+                        ? "bg-brand-primary text-white border-brand-primary"
+                        : "bg-transparent text-brand-primary border-brand-primary/40"
+                    }`}
+                    onClick={() => setActiveSection("aiReady")}
+                    aria-pressed={activeSection === "aiReady"}
+                  >
+                    AI-READY DATA LAKES
+                  </button>
+                </div>
+
+                {/* Content Sections */}
+                {activeSection === "legacy" && (
                   <div className="space-y-6">
-                    <div className="mt-0">
-                      <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
-                        LEGACY SYSTEM MODERNIZATION
-                      </span>
-                    </div>
                     <h3 className="text-2xl font-semibold text-foreground-dark">
                       From Legacy Chaos to Cloud-Native Clarity
                     </h3>
@@ -402,7 +427,7 @@ const DataEngineering = () => {
                     </div>
 
                     <blockquote className="bg-[#F1F2FF] flex rounded-xl">
-                      <div className="relative w-24 h-24 md:w-36 md:h-36  mx-6">
+                      <div className="relative w-24 h-24 md:w-36 md:h-36 mx-6">
                         <img src={QuoteIcon} alt="" />
                       </div>
                       <div className="p-8">
@@ -418,15 +443,10 @@ const DataEngineering = () => {
                       </div>
                     </blockquote>
                   </div>
-                </div>
+                )}
 
-                <div className="mt-16">
+                {activeSection === "aiReady" && (
                   <div className="space-y-6 lg:order-2">
-                    <div className="mb-6">
-                      <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
-                        AI-READY DATA LAKES
-                      </span>
-                    </div>
                     <h3 className="text-2xl font-semibold text-foreground-dark">
                       From Scattered Silos to a Single Source of Truth
                     </h3>
@@ -461,7 +481,7 @@ const DataEngineering = () => {
                     </div>
 
                     <blockquote className="bg-[#F1F2FF] flex rounded-xl">
-                      <div className="relative w-24 h-24 md:w-36 md:h-36  mx-6">
+                      <div className="relative w-24 h-24 md:w-36 md:h-36 mx-6">
                         <img src={QuoteIcon} alt="" />
                       </div>
                       <div className="p-8">
@@ -476,7 +496,7 @@ const DataEngineering = () => {
                       </div>
                     </blockquote>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </div>
