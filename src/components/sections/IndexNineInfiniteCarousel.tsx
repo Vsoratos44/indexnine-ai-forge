@@ -1,13 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// IndexNine Strategic Clients - Real Partnership Data
+// IndexNine Strategic Clients - Enhanced with SVG-based reliable logos
 const indexNineStrategicClients = [
   { 
     id: 1, 
     name: 'CyberArk', 
     description: 'The leader in identity security and privileged access management, securing enterprises worldwide',
-    src: 'https://logos-world.net/wp-content/uploads/2021/02/CyberArk-Logo.png',
-    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=CyberArk',
+    src: `data:image/svg+xml;base64,${btoa(`
+      <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
+        <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">CyberArk</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10">Identity Security</text>
+      </svg>
+    `)}`,
+    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+Q3liZXJBcms8L3RleHQ+PC9zdmc+',
     url: 'https://www.cyberark.com',
     industry: 'Cybersecurity'
   },
@@ -15,8 +21,14 @@ const indexNineStrategicClients = [
     id: 2, 
     name: 'Ginesys', 
     description: 'Cloud-based retail ERP system built for the retail value chain with omnichannel capabilities',
-    src: 'https://www.ginesys.com/wp-content/uploads/2023/03/Ginesys-Logo-White.svg',
-    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=Ginesys',
+    src: `data:image/svg+xml;base64,${btoa(`
+      <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
+        <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Ginesys</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10">Retail Technology</text>
+      </svg>
+    `)}`,
+    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+R2luZXN5czwvdGV4dD48L3N2Zz4=',
     url: 'https://www.ginesys.com',
     industry: 'Retail Technology'
   },
@@ -24,8 +36,15 @@ const indexNineStrategicClients = [
     id: 3, 
     name: 'Great Place to Work', 
     description: 'The global authority on workplace culture, helping organizations build better workplaces',
-    src: 'https://www.greatplacetowork.com/images/gptw-logo-white.svg',
-    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=GPTW',
+    src: `data:image/svg+xml;base64,${btoa(`
+      <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
+        <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <text x="80" y="28" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Great Place</text>
+        <text x="80" y="42" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">to Work</text>
+        <text x="80" y="55" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="9">HR & Culture</text>
+      </svg>
+    `)}`,
+    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCI+R1BUVzwvdGV4dD48L3N2Zz4=',
     url: 'https://www.greatplacetowork.com',
     industry: 'HR & Culture'
   },
@@ -33,8 +52,14 @@ const indexNineStrategicClients = [
     id: 4, 
     name: 'Sensable', 
     description: 'Advanced haptic technology solutions enabling touch and force feedback in digital environments',
-    src: 'https://sensable.com/wp-content/uploads/2023/01/sensable-logo-white.png',
-    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=Sensable',
+    src: `data:image/svg+xml;base64,${btoa(`
+      <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
+        <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Sensable</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10">Haptic Technology</text>
+      </svg>
+    `)}`,
+    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+U2Vuc2FibGU8L3RleHQ+PC9zdmc+',
     url: 'https://sensable.com',
     industry: 'Haptic Technology'
   },
@@ -42,8 +67,14 @@ const indexNineStrategicClients = [
     id: 5, 
     name: 'Equifax', 
     description: 'Global data, analytics and technology company providing consumer credit reporting and insights',
-    src: 'https://logos-world.net/wp-content/uploads/2021/02/Equifax-Logo.png',
-    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=Equifax',
+    src: `data:image/svg+xml;base64,${btoa(`
+      <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
+        <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Equifax</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10">Financial Services</text>
+      </svg>
+    `)}`,
+    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+RXF1aWZheDwvdGV4dD48L3N2Zz4=',
     url: 'https://www.equifax.com',
     industry: 'Financial Services'
   },
@@ -51,8 +82,14 @@ const indexNineStrategicClients = [
     id: 6, 
     name: 'DocuPhase', 
     description: 'Intelligent process automation platform streamlining business operations with document management',
-    src: 'https://www.docuphase.com/wp-content/uploads/2023/02/docuphase-logo-white.svg',
-    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=DocuPhase',
+    src: `data:image/svg+xml;base64,${btoa(`
+      <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
+        <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">DocuPhase</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="9">Process Automation</text>
+      </svg>
+    `)}`,
+    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCI+RG9jdVBoYXNlPC90ZXh0Pjwvc3ZnPg==',
     url: 'https://www.docuphase.com',
     industry: 'Process Automation'
   },
@@ -60,8 +97,14 @@ const indexNineStrategicClients = [
     id: 7, 
     name: 'Cygeniq', 
     description: 'AI-powered cybersecurity solutions securing digital ecosystems with adaptive threat defense',
-    src: 'https://cygeniq.com/wp-content/uploads/2023/01/cygeniq-logo-white.png',
-    fallbackSrc: 'https://via.placeholder.com/160x70/ffffff/505dfd?text=Cygeniq',
+    src: `data:image/svg+xml;base64,${btoa(`
+      <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
+        <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Cygeniq</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10">AI Cybersecurity</text>
+      </svg>
+    `)}`,
+    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+Q3lnZW5pcTwvdGV4dD48L3N2Zz4=',
     url: 'https://cygeniq.com',
     industry: 'AI Cybersecurity'
   }
@@ -111,11 +154,20 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
     }
   };
 
-  // Handle logo image error with fallback
+  // Enhanced logo image error handling with immediate fallback
   const handleImageError = (event: React.SyntheticEvent<HTMLImageElement>, logo: ClientLogo) => {
     const img = event.currentTarget;
+    // Immediately switch to fallback if main src fails
     if (img.src !== logo.fallbackSrc) {
       img.src = logo.fallbackSrc;
+    } else {
+      // If even fallback fails, create a simple text-based SVG
+      img.src = `data:image/svg+xml;base64,${btoa(`
+        <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
+          <rect width="160" height="70" rx="8" fill="rgba(100,116,139,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+          <text x="80" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">${logo.name}</text>
+        </svg>
+      `)}`;
     }
   };
 
@@ -299,15 +351,14 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       maxWidth: '100%',
       maxHeight: '80px',
       objectFit: 'contain' as const,
-      filter: 'brightness(0) invert(1) opacity(0.8)',
-      transition: 'all 0.5s ease',
+      transition: 'all 0.3s ease',
       position: 'relative' as const,
-      zIndex: 2
+      zIndex: 2,
+      imageRendering: 'crisp-edges' as const
     },
 
     logoImageHover: {
-      filter: 'brightness(0) invert(1) opacity(1)',
-      transform: 'scale(1.1)'
+      transform: 'scale(1.05)'
     },
 
     tooltip: {
@@ -502,16 +553,20 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
                     }} 
                   />
                   
-                  {/* Logo image */}
+                  {/* Logo image with optimized loading */}
                   <img
                     src={logo.src}
                     alt={`${logo.name} - ${logo.industry} solutions partner`}
-                    loading="lazy"
+                    loading="eager"
+                    decoding="sync"
                     style={{
                       ...styles.logoImage,
                       ...(isHovered ? styles.logoImageHover : {})
                     }}
                     onError={(e) => handleImageError(e, logo)}
+                    onLoad={() => {
+                      // Optional: Add loading success analytics
+                    }}
                   />
                 </div>
               );
@@ -552,16 +607,20 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
                     }} 
                   />
                   
-                  {/* Logo image */}
+                  {/* Logo image with optimized loading */}
                   <img
                     src={logo.src}
                     alt={`${logo.name} - ${logo.industry} solutions partner`}
-                    loading="lazy"
+                    loading="eager"
+                    decoding="sync"
                     style={{
                       ...styles.logoImage,
                       ...(isHovered ? styles.logoImageHover : {})
                     }}
                     onError={(e) => handleImageError(e, logo)}
+                    onLoad={() => {
+                      // Optional: Add loading success analytics
+                    }}
                   />
                 </div>
               );
