@@ -30,11 +30,10 @@ const ValueProposition = () => {
               <br />
               <br />
               When the stakes are high and you need best-in-class delivery,
-              we're there. We don't churn out solutions; we offer full cycle
-              product development that doesn't compromise on speed or quality.
-              Whether you're working on minimum viable product development or
-              navigating a digital transformation, we can create a solution
-              tailored to you.
+              we're there.
+              <br />
+              <br />
+              We don't churn out code; we offer full cycle digital product engineering that doesn't compromise on speed or quality. Whether you're building MVP, navigating a full digital transformation, or looking to assimilate AI into your platform, Indexnine can engineer the digital solution tailored to your users.
             </p>
           </div>
         </div>
