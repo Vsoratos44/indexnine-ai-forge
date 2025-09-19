@@ -1,113 +1,127 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 
 // IndexNine Strategic Clients - Enhanced with SVG-based reliable logos
 const indexNineStrategicClients = [
-  { 
-    id: 1, 
-    name: 'CyberArk', 
-    description: 'The leader in identity security and privileged access management, securing enterprises worldwide',
+  {
+    id: 1,
+    name: "CyberArk",
+    description:
+      "The leader in identity security and privileged access management, securing enterprises worldwide",
     src: `data:image/svg+xml;base64,${btoa(`
       <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
         <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">CyberArk</text>
-        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10">Identity Security</text>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="bold">CyberArk</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="10">Identity Security</text>
       </svg>
     `)}`,
-    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+Q3liZXJBcms8L3RleHQ+PC9zdmc+',
-    url: 'https://www.cyberark.com',
-    industry: 'Cybersecurity'
+    fallbackSrc:
+      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+Q3liZXJBcms8L3RleHQ+PC9zdmc+",
+    url: "https://www.cyberark.com",
+    industry: "Cybersecurity",
   },
-  { 
-    id: 2, 
-    name: 'Ginesys', 
-    description: 'Cloud-based retail ERP system built for the retail value chain with omnichannel capabilities',
+  {
+    id: 2,
+    name: "Ginesys",
+    description:
+      "Cloud-based retail ERP system built for the retail value chain with omnichannel capabilities",
     src: `data:image/svg+xml;base64,${btoa(`
       <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
         <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Ginesys</text>
-        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10">Retail Technology</text>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="bold">Ginesys</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="10">Retail Technology</text>
       </svg>
     `)}`,
-    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+R2luZXN5czwvdGV4dD48L3N2Zz4=',
-    url: 'https://www.ginesys.com',
-    industry: 'Retail Technology'
+    fallbackSrc:
+      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+R2luZXN5czwvdGV4dD48L3N2Zz4=",
+    url: "https://www.ginesys.com",
+    industry: "Retail Technology",
   },
-  { 
-    id: 3, 
-    name: 'Great Place to Work', 
-    description: 'The global authority on workplace culture, helping organizations build better workplaces',
+  {
+    id: 3,
+    name: "Great Place to Work",
+    description:
+      "The global authority on workplace culture, helping organizations build better workplaces",
     src: `data:image/svg+xml;base64,${btoa(`
       <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
         <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-        <text x="80" y="28" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Great Place</text>
-        <text x="80" y="42" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="bold">to Work</text>
-        <text x="80" y="55" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="9">HR & Culture</text>
+        <text x="80" y="28" text-anchor="middle" fill="white" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="bold">Great Place</text>
+        <text x="80" y="42" text-anchor="middle" fill="white" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="bold">to Work</text>
+        <text x="80" y="55" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="9">HR & Culture</text>
       </svg>
     `)}`,
-    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCI+R1BUVzwvdGV4dD48L3N2Zz4=',
-    url: 'https://www.greatplacetowork.com',
-    industry: 'HR & Culture'
+    fallbackSrc:
+      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCI+R1BUVzwvdGV4dD48L3N2Zz4=",
+    url: "https://www.greatplacetowork.com",
+    industry: "HR & Culture",
   },
-  { 
-    id: 4, 
-    name: 'Sensable', 
-    description: 'Advanced haptic technology solutions enabling touch and force feedback in digital environments',
+  {
+    id: 4,
+    name: "Sensable",
+    description:
+      "Advanced haptic technology solutions enabling touch and force feedback in digital environments",
     src: `data:image/svg+xml;base64,${btoa(`
       <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
         <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Sensable</text>
-        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10">Haptic Technology</text>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="bold">Sensable</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="10">Haptic Technology</text>
       </svg>
     `)}`,
-    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+U2Vuc2FibGU8L3RleHQ+PC9zdmc+',
-    url: 'https://sensable.com',
-    industry: 'Haptic Technology'
+    fallbackSrc:
+      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+U2Vuc2FibGU8L3RleHQ+PC9zdmc+",
+    url: "https://sensable.com",
+    industry: "Haptic Technology",
   },
-  { 
-    id: 5, 
-    name: 'Equifax', 
-    description: 'Global data, analytics and technology company providing consumer credit reporting and insights',
+  {
+    id: 5,
+    name: "Equifax",
+    description:
+      "Global data, analytics and technology company providing consumer credit reporting and insights",
     src: `data:image/svg+xml;base64,${btoa(`
       <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
         <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Equifax</text>
-        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10">Financial Services</text>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="bold">Equifax</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="10">Financial Services</text>
       </svg>
     `)}`,
-    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+RXF1aWZheDwvdGV4dD48L3N2Zz4=',
-    url: 'https://www.equifax.com',
-    industry: 'Financial Services'
+    fallbackSrc:
+      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+RXF1aWZheDwvdGV4dD48L3N2Zz4=",
+    url: "https://www.equifax.com",
+    industry: "Financial Services",
   },
-  { 
-    id: 6, 
-    name: 'DocuPhase', 
-    description: 'Intelligent process automation platform streamlining business operations with document management',
+  {
+    id: 6,
+    name: "DocuPhase",
+    description:
+      "Intelligent process automation platform streamlining business operations with document management",
     src: `data:image/svg+xml;base64,${btoa(`
       <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
         <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">DocuPhase</text>
-        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="9">Process Automation</text>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="bold">DocuPhase</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="9">Process Automation</text>
       </svg>
     `)}`,
-    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCI+RG9jdVBoYXNlPC90ZXh0Pjwvc3ZnPg==',
-    url: 'https://www.docuphase.com',
-    industry: 'Process Automation'
+    fallbackSrc:
+      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCI+RG9jdVBoYXNlPC90ZXh0Pjwvc3ZnPg==",
+    url: "https://www.docuphase.com",
+    industry: "Process Automation",
   },
-  { 
-    id: 7, 
-    name: 'Cygeniq', 
-    description: 'AI-powered cybersecurity solutions securing digital ecosystems with adaptive threat defense',
+  {
+    id: 7,
+    name: "Cygeniq",
+    description:
+      "AI-powered cybersecurity solutions securing digital ecosystems with adaptive threat defense",
     src: `data:image/svg+xml;base64,${btoa(`
       <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
         <rect width="160" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Cygeniq</text>
-        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-size="10">AI Cybersecurity</text>
+        <text x="80" y="30" text-anchor="middle" fill="white" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="bold">Cygeniq</text>
+        <text x="80" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="10">AI Cybersecurity</text>
       </svg>
     `)}`,
-    fallbackSrc: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+Q3lnZW5pcTwvdGV4dD48L3N2Zz4=',
-    url: 'https://cygeniq.com',
-    industry: 'AI Cybersecurity'
-  }
+    fallbackSrc:
+      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjcwIiB2aWV3Qm94PSIwIDAgMTYwIDcwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHRleHQgeD0iODAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCI+Q3lnZW5pcTwvdGV4dD48L3N2Zz4=",
+    url: "https://cygeniq.com",
+    industry: "AI Cybersecurity",
+  },
 ];
 
 interface ClientLogo {
@@ -137,11 +151,14 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
   speed = 35,
   pauseOnHover = true,
   showTooltips = true,
-  className = ""
+  className = "",
 }) => {
   const [isPaused, setIsPaused] = useState(false);
   const [hoveredLogo, setHoveredLogo] = useState<string | null>(null);
-  const [tooltipData, setTooltipData] = useState<{ client: ClientLogo; position: { x: number; y: number } } | null>(null);
+  const [tooltipData, setTooltipData] = useState<{
+    client: ClientLogo;
+    position: { x: number; y: number };
+  } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Create seamless infinite scroll with proper logo distribution
@@ -149,13 +166,16 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
 
   // Handle logo interaction with enhanced tooltip support
   const handleLogoClick = (logo: ClientLogo) => {
-    if (logo.url && logo.url !== '#') {
-      window.open(logo.url, '_blank', 'noopener,noreferrer');
+    if (logo.url && logo.url !== "#") {
+      window.open(logo.url, "_blank", "noopener,noreferrer");
     }
   };
 
   // Enhanced logo image error handling with immediate fallback
-  const handleImageError = (event: React.SyntheticEvent<HTMLImageElement>, logo: ClientLogo) => {
+  const handleImageError = (
+    event: React.SyntheticEvent<HTMLImageElement>,
+    logo: ClientLogo
+  ) => {
     const img = event.currentTarget;
     // Immediately switch to fallback if main src fails
     if (img.src !== logo.fallbackSrc) {
@@ -165,14 +185,18 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       img.src = `data:image/svg+xml;base64,${btoa(`
         <svg width="160" height="70" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
           <rect width="160" height="70" rx="8" fill="rgba(100,116,139,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-          <text x="80" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">${logo.name}</text>
+          <text x="80" y="40" text-anchor="middle" fill="white" font-family="Montserrat, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="bold">${logo.name}</text>
         </svg>
       `)}`;
     }
   };
 
   // Handle tooltip display
-  const handleLogoHover = (logoKey: string, event: React.MouseEvent, logo: ClientLogo) => {
+  const handleLogoHover = (
+    logoKey: string,
+    event: React.MouseEvent,
+    logo: ClientLogo
+  ) => {
     setHoveredLogo(logoKey);
     if (showTooltips) {
       const rect = event.currentTarget.getBoundingClientRect();
@@ -180,8 +204,8 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
         client: logo,
         position: {
           x: rect.left + rect.width / 2,
-          y: rect.top - 10
-        }
+          y: rect.top - 10,
+        },
       });
     }
   };
@@ -201,22 +225,24 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
   };
 
   // Get unique industries for display
-  const uniqueIndustries = Array.from(new Set(logos.map(logo => logo.industry)));
+  const uniqueIndustries = Array.from(
+    new Set(logos.map((logo) => logo.industry))
+  );
 
   // Enhanced IndexNine brand-specific styles with tooltip support
   const styles = {
     sectionContainer: {
-      position: 'relative' as const,
-      background: 'hsl(234 50% 15%)', // --brand-dark
-      borderTop: '1px solid hsl(262 83% 58% / 0.2)', // --brand-purple with opacity
-      borderBottom: '1px solid hsl(262 83% 58% / 0.2)',
-      overflow: 'hidden' as const,
-      padding: '5rem 0',
-      minHeight: '500px'
+      position: "relative" as const,
+      background: "hsl(234 50% 15%)", // --brand-dark
+      borderTop: "1px solid hsl(262 83% 58% / 0.2)", // --brand-purple with opacity
+      borderBottom: "1px solid hsl(262 83% 58% / 0.2)",
+      overflow: "hidden" as const,
+      padding: "5rem 0",
+      minHeight: "500px",
     },
 
     neuralBackground: {
-      position: 'absolute' as const,
+      position: "absolute" as const,
       top: 0,
       left: 0,
       right: 0,
@@ -226,189 +252,197 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
         radial-gradient(ellipse at 80% 70%, hsl(180 100% 60% / 0.1) 0%, transparent 60%),
         radial-gradient(circle at 50% 50%, hsl(262 83% 58% / 0.05) 0%, transparent 80%)
       `,
-      animation: 'neural-pulse 12s ease-in-out infinite',
-      pointerEvents: 'none' as const
+      animation: "neural-pulse 12s ease-in-out infinite",
+      pointerEvents: "none" as const,
     },
 
     container: {
-      maxWidth: '1400px',
-      margin: '0 auto',
-      padding: '0 1.5rem',
-      position: 'relative' as const,
-      zIndex: 2
+      maxWidth: "1400px",
+      margin: "0 auto",
+      padding: "0 1.5rem",
+      position: "relative" as const,
+      zIndex: 2,
     },
 
     header: {
-      textAlign: 'center' as const,
-      marginBottom: '4rem',
-      position: 'relative' as const
+      textAlign: "center" as const,
+      marginBottom: "4rem",
+      position: "relative" as const,
     },
 
     title: {
-      fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-      fontWeight: '700',
-      background: 'linear-gradient(135deg, hsl(262 83% 58%), hsl(180 100% 60%), hsl(262 83% 70%), hsl(180 100% 50%))',
-      backgroundSize: '400% 400%',
-      backgroundClip: 'text',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      marginBottom: '1.5rem',
-      lineHeight: '1.1',
-      letterSpacing: '-0.025em',
-      animation: 'gradient-flow 8s ease-in-out infinite'
+      fontSize: "clamp(2.5rem, 5vw, 4rem)",
+      fontWeight: "700",
+      background:
+        "linear-gradient(135deg, hsl(262 83% 58%), hsl(180 100% 60%), hsl(262 83% 70%), hsl(180 100% 50%))",
+      backgroundSize: "400% 400%",
+      backgroundClip: "text",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+      marginBottom: "1.5rem",
+      lineHeight: "1.1",
+      letterSpacing: "-0.025em",
+      animation: "gradient-flow 8s ease-in-out infinite",
     },
 
     subtitle: {
-      fontSize: 'clamp(1.125rem, 2vw, 1.375rem)',
-      color: 'hsl(0 0% 100% / 0.85)',
-      fontWeight: '400',
-      lineHeight: '1.7',
-      maxWidth: '800px',
-      margin: '0 auto'
+      fontSize: "clamp(1.125rem, 2vw, 1.375rem)",
+      color: "hsl(0 0% 100% / 0.85)",
+      fontWeight: "400",
+      lineHeight: "1.7",
+      maxWidth: "800px",
+      margin: "0 auto",
     },
 
     industryGrid: {
-      display: 'flex',
-      justifyContent: 'center',
-      gap: '1rem',
-      marginTop: '2rem',
-      flexWrap: 'wrap' as const
+      display: "flex",
+      justifyContent: "center",
+      gap: "1rem",
+      marginTop: "2rem",
+      flexWrap: "wrap" as const,
     },
 
     industryTag: {
-      padding: '0.5rem 1rem',
-      background: 'hsl(262 83% 58% / 0.1)',
-      border: '1px solid hsl(262 83% 58% / 0.3)',
-      borderRadius: '20px',
-      fontSize: '0.875rem',
-      color: 'hsl(180 100% 60%)',
-      fontWeight: '500'
+      padding: "0.5rem 1rem",
+      background: "hsl(262 83% 58% / 0.1)",
+      border: "1px solid hsl(262 83% 58% / 0.3)",
+      borderRadius: "20px",
+      fontSize: "0.875rem",
+      // color: "hsl(180 100% 60%)",
+      color: "#00000075",
+      fontWeight: "500",
     },
 
     carouselContainer: {
-      position: 'relative' as const,
-      overflow: 'hidden' as const,
-      padding: '3rem 0',
-      maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)'
+      position: "relative" as const,
+      overflow: "hidden" as const,
+      padding: "3rem 0",
+      maskImage:
+        "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
     },
 
     track: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '4rem',
+      display: "flex",
+      alignItems: "center",
+      gap: "4rem",
       animation: `scrollLeft ${speed}s linear infinite`,
-      animationPlayState: isPaused ? 'paused' as const : 'running' as const,
-      marginBottom: '3rem'
+      animationPlayState: isPaused ? ("paused" as const) : ("running" as const),
+      marginBottom: "3rem",
     },
 
     trackReverse: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '4rem',
+      display: "flex",
+      alignItems: "center",
+      gap: "4rem",
       animation: `scrollRight ${speed + 18}s linear infinite`,
-      animationPlayState: isPaused ? 'paused' as const : 'running' as const,
+      animationPlayState: isPaused ? ("paused" as const) : ("running" as const),
     },
 
     logoCard: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      minWidth: '240px',
-      height: '120px',
-      padding: '2rem',
-      background: 'hsl(234 50% 15% / 0.95)',
-      border: '1px solid hsl(262 83% 58% / 0.25)',
-      borderRadius: '16px',
-      boxShadow: '0 10px 40px 0 hsl(262 83% 58% / 0.12)',
-      backdropFilter: 'blur(20px)',
-      cursor: 'pointer',
-      transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      minWidth: "240px",
+      height: "120px",
+      padding: "2rem",
+      background: "hsl(234 50% 15% / 0.95)",
+      border: "1px solid hsl(262 83% 58% / 0.25)",
+      borderRadius: "16px",
+      boxShadow: "0 10px 40px 0 hsl(262 83% 58% / 0.12)",
+      backdropFilter: "blur(20px)",
+      cursor: "pointer",
+      transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
       flexShrink: 0,
-      position: 'relative' as const,
-      overflow: 'hidden' as const
+      position: "relative" as const,
+      overflow: "hidden" as const,
     },
 
     logoCardHover: {
-      transform: 'translateY(-12px) scale(1.05)',
-      boxShadow: '0 25px 60px 0 hsl(262 83% 58% / 0.35), 0 0 0 1px hsl(262 83% 58% / 0.6)',
-      borderColor: 'hsl(262 83% 58% / 0.7)'
+      transform: "translateY(-12px) scale(1.05)",
+      boxShadow:
+        "0 25px 60px 0 hsl(262 83% 58% / 0.35), 0 0 0 1px hsl(262 83% 58% / 0.6)",
+      borderColor: "hsl(262 83% 58% / 0.7)",
     },
 
     logoCardGlow: {
-      position: 'absolute' as const,
+      position: "absolute" as const,
       inset: 0,
-      background: 'linear-gradient(135deg, hsl(262 83% 58% / 0.15), hsl(180 100% 60% / 0.1))',
+      background:
+        "linear-gradient(135deg, hsl(262 83% 58% / 0.15), hsl(180 100% 60% / 0.1))",
       opacity: 0,
-      transition: 'opacity 0.5s ease',
-      borderRadius: '16px'
+      transition: "opacity 0.5s ease",
+      borderRadius: "16px",
     },
 
     logoCardGlowHover: {
-      opacity: 1
+      opacity: 1,
     },
 
     logoImage: {
-      maxWidth: '100%',
-      maxHeight: '80px',
-      objectFit: 'contain' as const,
-      transition: 'all 0.3s ease',
-      position: 'relative' as const,
+      maxWidth: "100%",
+      maxHeight: "80px",
+      objectFit: "contain" as const,
+      transition: "all 0.3s ease",
+      position: "relative" as const,
       zIndex: 2,
-      imageRendering: 'crisp-edges' as const
+      imageRendering: "crisp-edges" as const,
+      // backgroundColor: "#fff",
     },
 
     logoImageHover: {
-      transform: 'scale(1.05)'
+      transform: "scale(1.05)",
     },
 
     tooltip: {
-      position: 'fixed' as const,
+      position: "fixed" as const,
       zIndex: 1000,
-      background: 'hsl(234 50% 8% / 0.98)',
-      border: '1px solid hsl(262 83% 58% / 0.4)',
-      borderRadius: '12px',
-      padding: '1.5rem',
-      maxWidth: '320px',
-      boxShadow: '0 20px 60px 0 hsl(262 83% 58% / 0.3)',
-      backdropFilter: 'blur(24px)',
-      transform: 'translateX(-50%) translateY(-100%)',
-      marginTop: '-10px',
-      animation: 'tooltip-appear 0.3s ease-out'
+      background: "hsl(234 50% 8% / 0.98)",
+      border: "1px solid hsl(262 83% 58% / 0.4)",
+      borderRadius: "12px",
+      padding: "1.5rem",
+      maxWidth: "320px",
+      boxShadow: "0 20px 60px 0 hsl(262 83% 58% / 0.3)",
+      backdropFilter: "blur(24px)",
+      transform: "translateX(-50%) translateY(-100%)",
+      marginTop: "-10px",
+      animation: "tooltip-appear 0.3s ease-out",
     },
 
     tooltipTitle: {
-      fontSize: '1.125rem',
-      fontWeight: '600',
-      color: 'hsl(0 0% 100%)',
-      marginBottom: '0.5rem',
-      background: 'linear-gradient(135deg, hsl(262 83% 58%), hsl(180 100% 60%))',
-      backgroundClip: 'text',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent'
+      fontSize: "1.125rem",
+      fontWeight: "600",
+      color: "hsl(0 0% 100%)",
+      marginBottom: "0.5rem",
+      background:
+        "linear-gradient(135deg, hsl(262 83% 58%), hsl(180 100% 60%))",
+      backgroundClip: "text",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
     },
 
     tooltipDescription: {
-      fontSize: '0.925rem',
-      color: 'hsl(0 0% 100% / 0.8)',
-      lineHeight: '1.5',
-      marginBottom: '1rem'
+      fontSize: "0.925rem",
+      color: "hsl(0 0% 100% / 0.8)",
+      lineHeight: "1.5",
+      marginBottom: "1rem",
     },
 
     tooltipIndustry: {
-      display: 'inline-block',
-      padding: '0.375rem 0.75rem',
-      background: 'hsl(262 83% 58% / 0.2)',
-      border: '1px solid hsl(262 83% 58% / 0.4)',
-      borderRadius: '16px',
-      fontSize: '0.8rem',
-      color: 'hsl(180 100% 60%)',
-      fontWeight: '500'
-    }
+      display: "inline-block",
+      padding: "0.375rem 0.75rem",
+      background: "hsl(262 83% 58% / 0.2)",
+      border: "1px solid hsl(262 83% 58% / 0.4)",
+      borderRadius: "16px",
+      fontSize: "0.8rem",
+      // color: "hsl(180 100% 60%)",
+      color: "#ffffff95",
+      fontWeight: "500",
+    },
   };
 
   // Create enhanced neural animation keyframes
   useEffect(() => {
-    const styleSheet = document.createElement('style');
+    const styleSheet = document.createElement("style");
     styleSheet.textContent = `
       @keyframes scrollLeft {
         0% { transform: translateX(0); }
@@ -462,8 +496,8 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
 
   return (
     <section
-      className={`indexnine-carousel-section ${className}`}
-      style={styles.sectionContainer}
+      className={`bg-white ${className} `}
+      // style={styles.sectionContainer}
       aria-label="Strategic client partnerships and company information"
     >
       {/* Neural background animation */}
@@ -472,13 +506,17 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       <div style={styles.container}>
         {/* Header */}
         <header style={styles.header}>
-          <h2 style={styles.title}>
+          {/* <h2 style={styles.title}>{title}</h2> */}
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.4]">
             {title}
           </h2>
-          <p style={styles.subtitle}>
+          <p
+            // style={styles.subtitle}
+            className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto"
+          >
             {subtitle}
           </p>
-          
+
           {/* Industry diversity showcase */}
           <div style={styles.industryGrid}>
             {uniqueIndustries.slice(0, 4).map((industry) => (
@@ -495,12 +533,10 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
             style={{
               ...styles.tooltip,
               left: tooltipData.position.x,
-              top: tooltipData.position.y
+              top: tooltipData.position.y,
             }}
           >
-            <div style={styles.tooltipTitle}>
-              {tooltipData.client.name}
-            </div>
+            <div style={styles.tooltipTitle}>{tooltipData.client.name}</div>
             <div style={styles.tooltipDescription}>
               {tooltipData.client.description}
             </div>
@@ -524,13 +560,13 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
             {duplicatedLogos.map((logo, index) => {
               const logoKey = `track1-${logo.id}-${index}`;
               const isHovered = hoveredLogo === logoKey;
-              
+
               return (
                 <div
                   key={logoKey}
                   style={{
                     ...styles.logoCard,
-                    ...(isHovered ? styles.logoCardHover : {})
+                    ...(isHovered ? styles.logoCardHover : {}),
                   }}
                   onClick={() => handleLogoClick(logo)}
                   onMouseEnter={(e) => handleLogoHover(logoKey, e, logo)}
@@ -539,20 +575,20 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
                   tabIndex={0}
                   aria-label={`Visit ${logo.name} website - ${logo.industry} leader`}
                   onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
+                    if (e.key === "Enter" || e.key === " ") {
                       e.preventDefault();
                       handleLogoClick(logo);
                     }
                   }}
                 >
                   {/* Glow effect */}
-                  <div 
+                  <div
                     style={{
                       ...styles.logoCardGlow,
-                      ...(isHovered ? styles.logoCardGlowHover : {})
-                    }} 
+                      ...(isHovered ? styles.logoCardGlowHover : {}),
+                    }}
                   />
-                  
+
                   {/* Logo image with optimized loading */}
                   <img
                     src={logo.src}
@@ -561,7 +597,7 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
                     decoding="sync"
                     style={{
                       ...styles.logoImage,
-                      ...(isHovered ? styles.logoImageHover : {})
+                      ...(isHovered ? styles.logoImageHover : {}),
                     }}
                     onError={(e) => handleImageError(e, logo)}
                     onLoad={() => {
@@ -575,56 +611,59 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
 
           {/* Second track - right scroll */}
           <div style={styles.trackReverse}>
-            {duplicatedLogos.slice().reverse().map((logo, index) => {
-              const logoKey = `track2-${logo.id}-${index}`;
-              const isHovered = hoveredLogo === logoKey;
-              
-              return (
-                <div
-                  key={logoKey}
-                  style={{
-                    ...styles.logoCard,
-                    ...(isHovered ? styles.logoCardHover : {})
-                  }}
-                  onClick={() => handleLogoClick(logo)}
-                  onMouseEnter={(e) => handleLogoHover(logoKey, e, logo)}
-                  onMouseLeave={handleLogoLeave}
-                  role="button"
-                  tabIndex={0}
-                  aria-label={`Visit ${logo.name} website - ${logo.industry} leader`}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      handleLogoClick(logo);
-                    }
-                  }}
-                >
-                  {/* Glow effect */}
-                  <div 
+            {duplicatedLogos
+              .slice()
+              .reverse()
+              .map((logo, index) => {
+                const logoKey = `track2-${logo.id}-${index}`;
+                const isHovered = hoveredLogo === logoKey;
+
+                return (
+                  <div
+                    key={logoKey}
                     style={{
-                      ...styles.logoCardGlow,
-                      ...(isHovered ? styles.logoCardGlowHover : {})
-                    }} 
-                  />
-                  
-                  {/* Logo image with optimized loading */}
-                  <img
-                    src={logo.src}
-                    alt={`${logo.name} - ${logo.industry} solutions partner`}
-                    loading="eager"
-                    decoding="sync"
-                    style={{
-                      ...styles.logoImage,
-                      ...(isHovered ? styles.logoImageHover : {})
+                      ...styles.logoCard,
+                      ...(isHovered ? styles.logoCardHover : {}),
                     }}
-                    onError={(e) => handleImageError(e, logo)}
-                    onLoad={() => {
-                      // Optional: Add loading success analytics
+                    onClick={() => handleLogoClick(logo)}
+                    onMouseEnter={(e) => handleLogoHover(logoKey, e, logo)}
+                    onMouseLeave={handleLogoLeave}
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`Visit ${logo.name} website - ${logo.industry} leader`}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        handleLogoClick(logo);
+                      }
                     }}
-                  />
-                </div>
-              );
-            })}
+                  >
+                    {/* Glow effect */}
+                    <div
+                      style={{
+                        ...styles.logoCardGlow,
+                        ...(isHovered ? styles.logoCardGlowHover : {}),
+                      }}
+                    />
+
+                    {/* Logo image with optimized loading */}
+                    <img
+                      src={logo.src}
+                      alt={`${logo.name} - ${logo.industry} solutions partner`}
+                      loading="eager"
+                      decoding="sync"
+                      style={{
+                        ...styles.logoImage,
+                        ...(isHovered ? styles.logoImageHover : {}),
+                      }}
+                      onError={(e) => handleImageError(e, logo)}
+                      onLoad={() => {
+                        // Optional: Add loading success analytics
+                      }}
+                    />
+                  </div>
+                );
+              })}
           </div>
         </div>
       </div>

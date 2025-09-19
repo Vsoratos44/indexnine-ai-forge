@@ -4,7 +4,7 @@ const ValueProposition = () => {
   return (
     <section
       data-section="value-proposition"
-      className="pt-24 lg:pt-32 relative overflow-hidden bg-[#fff] border-t border-border/20"
+      className="py-24 lg:py-32 relative overflow-hidden bg-[#fff] border-t border-border/20"
     >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-30">
@@ -33,7 +33,11 @@ const ValueProposition = () => {
               we're there.
               <br />
               <br />
-              We don't churn out code; we offer full cycle digital product engineering that doesn't compromise on speed or quality. Whether you're building MVP, navigating a full digital transformation, or looking to assimilate AI into your platform, Indexnine can engineer the digital solution tailored to your users.
+              We don't churn out code; we offer full cycle digital product
+              engineering that doesn't compromise on speed or quality. Whether
+              you're building MVP, navigating a full digital transformation, or
+              looking to assimilate AI into your platform, Indexnine can
+              engineer the digital solution tailored to your users.
             </p>
           </div>
         </div>
