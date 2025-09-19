@@ -1,4 +1,17 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import _ from 'lodash';
+
+// Client logos data - replace with your actual client logos
+const indexNineClients = [
+  { id: 1, name: 'Microsoft', src: 'https://via.placeholder.com/140x50/ffffff/505dfd?text=Microsoft', url: '#' },
+  { id: 2, name: 'Google', src: 'https://via.placeholder.com/140x50/ffffff/505dfd?text=Google', url: '#' },
+  { id: 3, name: 'Amazon', src: 'https://via.placeholder.com/140x50/ffffff/505dfd?text=Amazon', url: '#' },
+  { id: 4, name: 'Meta', src: 'https://via.placeholder.com/140x50/ffffff/505dfd?text=Meta', url: '#' },
+  { id: 5, name: 'Tesla', src: 'https://via.placeholder.com/140x50/ffffff/505dfd?text=Tesla', url: '#' },
+  { id: 6, name: 'Netflix', src: 'https://via.placeholder.com/140x50/ffffff/505dfd?text=Netflix', url: '#' },
+  { id: 7, name: 'Spotify', src: 'https://via.placeholder.com/140x50/ffffff/505dfd?text=Spotify', url: '#' },
+  { id: 8, name: 'Stripe', src: 'https://via.placeholder.com/140x50/ffffff/505dfd?text=Stripe', url: '#' },
+];
 
 interface ClientLogo {
   id: number;
@@ -8,198 +21,359 @@ interface ClientLogo {
 }
 
 interface IndexNineInfiniteCarouselProps {
-  logos: ClientLogo[];
+  logos?: ClientLogo[];
   title?: string;
   subtitle?: string;
-  showStats?: boolean;
   speed?: number;
   pauseOnHover?: boolean;
   className?: string;
 }
 
 const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
-  logos,
-  title = "Trusted by Fortune 500 Leaders",
-  subtitle = "Join enterprises who've accelerated their digital transformation and AI adoption with IndexNine's proven methodologies",
-  showStats = true,
-  speed = 30,
+  logos = indexNineClients,
+  title = "Trusted by Industry Leaders",
+  subtitle = "Join enterprises who've accelerated their digital transformation with IndexNine",
+  speed = 35,
   pauseOnHover = true,
   className = ""
 }) => {
-  const trackRef1 = useRef<HTMLDivElement>(null);
-  const trackRef2 = useRef<HTMLDivElement>(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const [hoveredLogo, setHoveredLogo] = useState<string | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  // Enterprise statistics
-  const enterpriseStats = [
-    { value: "150+", label: "Enterprise Clients" },
-    { value: "98%", label: "Client Retention" },
-    { value: "500+", label: "Products Delivered" },
-    { value: "15+", label: "Industries Served" }
-  ];
+  // Create seamless infinite scroll with proper logo distribution
+  const duplicatedLogos = _.flatten(Array(4).fill(logos));
 
-  // Duplicate logos for seamless infinite scroll
-  const duplicatedLogos = [...logos, ...logos];
+  // Handle logo interaction
+  const handleLogoClick = (logo: ClientLogo) => {
+    if (logo.url && logo.url !== '#') {
+      window.open(logo.url, '_blank', 'noopener,noreferrer');
+    }
+  };
 
+  // IndexNine brand-specific styles matching your design system
+  const styles = {
+    sectionContainer: {
+      position: 'relative' as const,
+      background: 'hsl(234 50% 15%)', // --brand-dark
+      borderTop: '1px solid hsl(262 83% 58% / 0.2)', // --brand-purple with opacity
+      borderBottom: '1px solid hsl(262 83% 58% / 0.2)',
+      overflow: 'hidden' as const,
+      padding: '4rem 0',
+      minHeight: '400px'
+    },
+
+    neuralBackground: {
+      position: 'absolute' as const,
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      background: `
+        radial-gradient(ellipse at top, hsl(262 83% 58% / 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom, hsl(180 100% 60% / 0.05) 0%, transparent 50%)
+      `,
+      animation: 'neural-pulse 8s ease-in-out infinite',
+      pointerEvents: 'none' as const
+    },
+
+    container: {
+      maxWidth: '1200px',
+      margin: '0 auto',
+      padding: '0 1rem',
+      position: 'relative' as const,
+      zIndex: 2
+    },
+
+    header: {
+      textAlign: 'center' as const,
+      marginBottom: '3rem',
+      position: 'relative' as const
+    },
+
+    title: {
+      fontSize: 'clamp(2rem, 4vw, 3rem)', // Matching your text-h2 scale
+      fontWeight: '700',
+      background: 'linear-gradient(135deg, hsl(262 83% 58%), hsl(180 100% 60%), hsl(262 83% 58%))',
+      backgroundClip: 'text',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      marginBottom: '1rem',
+      lineHeight: '1.2',
+      letterSpacing: '-0.025em'
+    },
+
+    subtitle: {
+      fontSize: '1.125rem',
+      color: 'hsl(0 0% 100% / 0.8)',
+      fontWeight: '400',
+      lineHeight: '1.6',
+      maxWidth: '600px',
+      margin: '0 auto'
+    },
+
+    carouselContainer: {
+      position: 'relative' as const,
+      overflow: 'hidden' as const,
+      padding: '2rem 0',
+      maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)'
+    },
+
+    track: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '3rem',
+      animation: `scrollLeft ${speed}s linear infinite`,
+      animationPlayState: isPaused ? 'paused' as const : 'running' as const,
+      marginBottom: '2rem'
+    },
+
+    trackReverse: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '3rem',
+      animation: `scrollRight ${speed + 15}s linear infinite`,
+      animationPlayState: isPaused ? 'paused' as const : 'running' as const,
+    },
+
+    logoCard: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      minWidth: '200px',
+      height: '100px',
+      padding: '1.5rem',
+      background: 'hsl(234 50% 15% / 0.95)', // --glass-bg
+      border: '1px solid hsl(262 83% 58% / 0.3)', // --glass-border
+      borderRadius: '12px',
+      boxShadow: '0 8px 32px 0 hsl(262 83% 58% / 0.15)', // --glass-shadow variant
+      backdropFilter: 'blur(16px)',
+      cursor: 'pointer',
+      transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+      flexShrink: 0,
+      position: 'relative' as const,
+      overflow: 'hidden' as const
+    },
+
+    logoCardHover: {
+      transform: 'translateY(-8px) scale(1.02)',
+      boxShadow: '0 20px 40px 0 hsl(262 83% 58% / 0.3)',
+      borderColor: 'hsl(262 83% 58% / 0.6)'
+    },
+
+    logoCardGlow: {
+      position: 'absolute' as const,
+      inset: 0,
+      background: 'linear-gradient(135deg, hsl(262 83% 58% / 0.1), hsl(180 100% 60% / 0.1))',
+      opacity: 0,
+      transition: 'opacity 0.4s ease',
+      borderRadius: '12px'
+    },
+
+    logoCardGlowHover: {
+      opacity: 1
+    },
+
+    logoImage: {
+      maxWidth: '100%',
+      maxHeight: '60px',
+      objectFit: 'contain' as const,
+      filter: 'brightness(0) invert(1) opacity(0.7)', // White logo effect
+      transition: 'all 0.4s ease',
+      position: 'relative' as const,
+      zIndex: 2
+    },
+
+    logoImageHover: {
+      filter: 'brightness(0) invert(1) opacity(1)',
+      transform: 'scale(1.05)'
+    }
+  };
+
+  // Create neural animation keyframes
   useEffect(() => {
-    const tracks = [trackRef1.current, trackRef2.current];
-    
-    tracks.forEach((track, index) => {
-      if (track) {
-        const direction = index === 0 ? -1 : 1;
-        track.style.animation = `scroll-${index === 0 ? 'left' : 'right'} ${speed}s linear infinite`;
-      }
-    });
-
-    // Add CSS animations dynamically
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes scroll-left {
+    const styleSheet = document.createElement('style');
+    styleSheet.textContent = `
+      @keyframes scrollLeft {
         0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
+        100% { transform: translateX(-100%); }
       }
-      @keyframes scroll-right {
-        0% { transform: translateX(-50%); }
+      
+      @keyframes scrollRight {
+        0% { transform: translateX(-100%); }
         100% { transform: translateX(0); }
       }
+      
+      @keyframes neural-pulse {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.6; transform: scale(1.02); }
+      }
+      
+      @keyframes glow-pulse {
+        0%, 100% { box-shadow: 0 0 20px hsl(262 83% 58% / 0.3); }
+        50% { box-shadow: 0 0 40px hsl(262 83% 58% / 0.6), 0 0 60px hsl(180 100% 60% / 0.3); }
+      }
+      
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
     `;
-    document.head.appendChild(style);
+    document.head.appendChild(styleSheet);
 
     return () => {
-      document.head.removeChild(style);
+      if (document.head.contains(styleSheet)) {
+        document.head.removeChild(styleSheet);
+      }
     };
-  }, [speed]);
+  }, []);
+
+  // Handle hover interactions
+  const handleContainerMouseEnter = () => {
+    if (pauseOnHover) setIsPaused(true);
+  };
+
+  const handleContainerMouseLeave = () => {
+    if (pauseOnHover) setIsPaused(false);
+  };
+
+  const handleLogoHover = (logoKey: string) => {
+    setHoveredLogo(logoKey);
+  };
+
+  const handleLogoLeave = () => {
+    setHoveredLogo(null);
+  };
 
   return (
-    <section 
-      className={`relative py-20 lg:py-28 overflow-hidden bg-gradient-to-br from-brand-dark via-brand-dark/95 to-brand-dark/90 ${className}`}
-      aria-labelledby="client-carousel-title"
+    <section
+      className={`indexnine-carousel-section ${className}`}
+      style={styles.sectionContainer}
+      aria-label="Client logos and company statistics"
     >
-      {/* Neural pulse background effect */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0 bg-gradient-radial from-brand-purple/20 via-transparent to-transparent animate-pulse"></div>
-        <div className="absolute inset-0 bg-gradient-conic from-brand-cyan/10 via-transparent to-brand-purple/10 animate-spin-slow"></div>
-      </div>
+      {/* Neural background animation */}
+      <div style={styles.neuralBackground} />
 
-      {/* Glassmorphism container */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Header Section */}
-        <div className="text-center mb-16 lg:mb-20">
-          <h2 
-            id="client-carousel-title"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-brand-cyan to-brand-purple bg-clip-text text-transparent tracking-tight leading-tight"
-            style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', letterSpacing: '-0.025em' }}
-          >
+      <div style={styles.container}>
+        {/* Header */}
+        <header style={styles.header}>
+          <h2 style={styles.title}>
             {title}
           </h2>
-          <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+          <p style={styles.subtitle}>
             {subtitle}
           </p>
-        </div>
+        </header>
 
-        {/* Statistics Section */}
-        {showStats && (
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16 lg:mb-20">
-            {enterpriseStats.map((stat, index) => (
-              <div 
-                key={index}
-                className="text-center p-6 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 hover:border-brand-purple/30 transition-all duration-300 group"
-              >
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-2 group-hover:text-brand-cyan transition-colors duration-300">
-                  {stat.value}
+        {/* Carousel */}
+        <div
+          ref={containerRef}
+          style={styles.carouselContainer}
+          onMouseEnter={handleContainerMouseEnter}
+          onMouseLeave={handleContainerMouseLeave}
+          role="region"
+          aria-label="Client company logos"
+        >
+          {/* First track - left scroll */}
+          <div style={styles.track}>
+            {duplicatedLogos.map((logo, index) => {
+              const logoKey = `track1-${logo.id}-${index}`;
+              const isHovered = hoveredLogo === logoKey;
+              
+              return (
+                <div
+                  key={logoKey}
+                  style={{
+                    ...styles.logoCard,
+                    ...(isHovered ? styles.logoCardHover : {})
+                  }}
+                  onClick={() => handleLogoClick(logo)}
+                  onMouseEnter={() => handleLogoHover(logoKey)}
+                  onMouseLeave={handleLogoLeave}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`Visit ${logo.name} website`}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      handleLogoClick(logo);
+                    }
+                  }}
+                >
+                  {/* Glow effect */}
+                  <div 
+                    style={{
+                      ...styles.logoCardGlow,
+                      ...(isHovered ? styles.logoCardGlowHover : {})
+                    }} 
+                  />
+                  
+                  {/* Logo image */}
+                  <img
+                    src={logo.src}
+                    alt={`${logo.name} logo`}
+                    loading="lazy"
+                    style={{
+                      ...styles.logoImage,
+                      ...(isHovered ? styles.logoImageHover : {})
+                    }}
+                  />
                 </div>
-                <div className="text-sm sm:text-base text-white/70 font-medium">
-                  {stat.label}
+              );
+            })}
+          </div>
+
+          {/* Second track - right scroll */}
+          <div style={styles.trackReverse}>
+            {duplicatedLogos.slice().reverse().map((logo, index) => {
+              const logoKey = `track2-${logo.id}-${index}`;
+              const isHovered = hoveredLogo === logoKey;
+              
+              return (
+                <div
+                  key={logoKey}
+                  style={{
+                    ...styles.logoCard,
+                    ...(isHovered ? styles.logoCardHover : {})
+                  }}
+                  onClick={() => handleLogoClick(logo)}
+                  onMouseEnter={() => handleLogoHover(logoKey)}
+                  onMouseLeave={handleLogoLeave}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`Visit ${logo.name} website`}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      handleLogoClick(logo);
+                    }
+                  }}
+                >
+                  {/* Glow effect */}
+                  <div 
+                    style={{
+                      ...styles.logoCardGlow,
+                      ...(isHovered ? styles.logoCardGlowHover : {})
+                    }} 
+                  />
+                  
+                  {/* Logo image */}
+                  <img
+                    src={logo.src}
+                    alt={`${logo.name} logo`}
+                    loading="lazy"
+                    style={{
+                      ...styles.logoImage,
+                      ...(isHovered ? styles.logoImageHover : {})
+                    }}
+                  />
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
-        )}
-
-        {/* Infinite Carousel */}
-        <div className="relative">
-          {/* Gradient masks for smooth edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-brand-dark to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-brand-dark to-transparent z-10"></div>
-          
-          {/* Carousel container */}
-          <div 
-            className={`overflow-hidden ${pauseOnHover ? 'hover:[&>*]:animation-play-state-paused' : ''}`}
-            style={{ 
-              maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
-              WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'
-            }}
-          >
-            
-            {/* First track - moving left */}
-            <div 
-              ref={trackRef1}
-              className="flex gap-12 mb-8 will-change-transform"
-              style={{ width: 'fit-content' }}
-            >
-              {duplicatedLogos.map((logo, index) => (
-                <LogoCard key={`track1-${logo.id}-${index}`} logo={logo} />
-              ))}
-            </div>
-
-            {/* Second track - moving right */}
-            <div 
-              ref={trackRef2}
-              className="flex gap-12 will-change-transform"
-              style={{ width: 'fit-content' }}
-            >
-              {duplicatedLogos.map((logo, index) => (
-                <LogoCard key={`track2-${logo.id}-${index}`} logo={logo} />
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Call-to-action */}
-        <div className="text-center mt-16 lg:mt-20">
-          <p className="text-white/60 mb-6 text-lg">
-            Ready to join these industry leaders?
-          </p>
-          <button className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-brand-purple to-brand-cyan text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-brand-purple/25 transition-all duration-300 transform hover:scale-105">
-            Start Your Transformation
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </button>
         </div>
       </div>
     </section>
-  );
-};
-
-// Logo Card Component
-const LogoCard: React.FC<{ logo: ClientLogo }> = ({ logo }) => {
-  return (
-    <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-brand-purple/30 hover:shadow-lg hover:shadow-brand-purple/20 transition-all duration-300 group">
-      <a 
-        href={logo.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-full h-full flex items-center justify-center"
-        aria-label={`Visit ${logo.name} website`}
-      >
-        <img
-          src={logo.src}
-          alt={`${logo.name} logo`}
-          className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0"
-          loading="lazy"
-          onError={(e) => {
-            // Fallback to text if image fails to load
-            const target = e.target as HTMLImageElement;
-            target.style.display = 'none';
-            const textElement = document.createElement('div');
-            textElement.textContent = logo.name;
-            textElement.className = 'text-white/80 font-medium text-sm text-center';
-            target.parentNode?.appendChild(textElement);
-          }}
-        />
-      </a>
-    </div>
   );
 };
 

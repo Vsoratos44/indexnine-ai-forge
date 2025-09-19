@@ -181,7 +181,6 @@ const Index = () => {
             logos={enterpriseClients}
             title="Trusted by Fortune 500 Leaders"
             subtitle="Join enterprises who've accelerated their digital transformation and AI adoption with IndexNine's proven methodologies"
-            showStats={true}
             speed={30}
             pauseOnHover={true}
           />
