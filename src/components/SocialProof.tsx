@@ -17,7 +17,7 @@ const SocialProof = () => {
   return (
     <section
       data-section="social-proof"
-      className="pt-24 lg:pt-32 bg-[#fff] relative overflow-hidden"
+      className="pt-8 lg:pt-16 bg-[#fff] relative overflow-hidden"
     >
       {/* Background blur elements */}
       <div className="absolute inset-0 ">
