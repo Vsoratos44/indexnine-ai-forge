@@ -471,6 +471,8 @@ const Enterprise = () => {
             with our enterprise architects today.
           </p>
           <Button
+            variant="btnSecondary"
+            size="lg"
             onClick={() => {
               window.open(
                 "https://calendly.com/vaughn-soratos-indexnine",
