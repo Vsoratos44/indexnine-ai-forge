@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -14,6 +14,26 @@ import { Input, Textarea } from "@/components/atoms";
 import { Label } from "@/components/ui/label";
 
 const Contact = () => {
+  const formRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Create script element
+    const script = document.createElement("script");
+    script.src = "https://webforms.pipedrive.com/f/loader";
+    script.async = true;
+
+    // Append script inside the div or document body
+    if (formRef.current) {
+      formRef.current.appendChild(script);
+    }
+
+    // Cleanup: Remove script when component unmounts
+    return () => {
+      if (formRef.current && script.parentNode === formRef.current) {
+        formRef.current.removeChild(script);
+      }
+    };
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <WebPageSchema
@@ -131,7 +151,7 @@ const Contact = () => {
               </div>
 
               <div className="relative overflow-hidden backdrop-blur-lg bg-glass-bg border border-glass-border rounded-2xl p-8 shadow-glass hover:shadow-glass-lg transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in">
-                <form
+                {/* <form
                   className="space-y-6"
                   action="/submit-qe-lead"
                   method="POST"
@@ -186,7 +206,12 @@ const Contact = () => {
                   <Button type="submit" size="lg" variant="btnSecondary">
                     Submit
                   </Button>
-                </form>
+                </form> */}
+                <div
+                  ref={formRef}
+                  className="pipedriveWebForms"
+                  data-pd-webforms="https://webforms.pipedrive.com/f/czPwmg107NiqeB4e4Uk1RpjpoM2hmR7XEDrNLOyeIT4EM0EKMQFP68ODIrplODHjr5"
+                />
               </div>
             </div>
           </div>
