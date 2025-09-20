@@ -62,6 +62,9 @@ const Ebooks = lazy(() => import("./pages/insights/Ebooks"));
 const RobotFrameworkVsPlaywright = lazy(
   () => import("./pages/insights/blog/RobotFrameworkVsPlaywright")
 );
+const QualityEngineeringPlatform = lazy(
+  () => import("./pages/insights/blog/QualityEngineeringPlatform")
+);
 const AiChangeManagementPlaybook = lazy(
   () => import("./pages/insights/blog/AiChangeManagementPlaybook")
 );
@@ -233,6 +236,10 @@ const App = () => {
                 <Route
                   path="/insights/blogs/robot-framework-vs-playwright"
                   element={<RobotFrameworkVsPlaywright />}
+                />
+                <Route
+                  path="/insights/blogs/quality-engineering-platform"
+                  element={<QualityEngineeringPlatform />}
                 />
                 {/* Legacy redirect for old robot framework URL */}
                 <Route
