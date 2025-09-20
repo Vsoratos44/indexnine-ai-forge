@@ -140,7 +140,7 @@ const Contact = () => {
                     sales@indexnine.com
                   </a>
                 </p>
-                <div className="flex space-x-4 gap-2">
+                <div className="flex space-x-4 gap-2 mt-8">
                   <a
                     href="#."
                     target="_blank"
