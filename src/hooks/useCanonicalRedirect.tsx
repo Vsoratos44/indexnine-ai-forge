@@ -26,51 +26,38 @@ export const useCanonicalRedirect = (options: CanonicalRedirectOptions = {}) => 
   } = options;
 
   useEffect(() => {
-    // Completely disable on Pages dev URLs
-    if (typeof window !== 'undefined' && 
-        window.location.hostname.includes('.pages.dev')) {
-      console.log('Canonical redirect disabled on Pages dev URL');
-      return;
-    }
-    // Skip redirects on Cloudflare Pages dev URLs
-    if (window.location.hostname.includes('.pages.dev')) {
-      return; // Don't redirect on Pages dev URLs
-    }
-    
-    // Skip in development
-    if (process.env.NODE_ENV === 'development' || 
-        window.location.hostname === 'localhost') {
+    // Skip if window is not available (SSR)
+    if (typeof window === 'undefined') {
       return;
     }
 
-    // Skip redirect if disabled
-    if (!enabled) {
-      return;
-    }
-
+    // Skip redirects on development domains
     const currentHost = window.location.hostname;
-    
-    // Skip redirect for development domains
     if (
+      currentHost.includes('.pages.dev') ||
       currentHost.includes('127.0.0.1') ||
       currentHost.includes('.local') ||
+      currentHost.includes('localhost') ||
       currentHost.includes('lovable.app') ||
+      process.env.NODE_ENV === 'development' ||
+      !enabled ||
       currentHost === canonicalDomain
     ) {
       return;
     }
 
-    // Only redirect from actual domains, not Pages dev URLs
+    // Only redirect from actual production domains
     const validDomains = ['indexnine.com', 'www.indexnine.com'];
     if (validDomains.includes(currentHost)) {
-      // Construct canonical URL preserving path, search, and hash
-      const canonicalUrl = new URL(window.location.href);
-      canonicalUrl.hostname = canonicalDomain;
-      canonicalUrl.protocol = 'https:';
-
-      // Perform redirect
-      console.log(`[SEO] Redirecting to canonical domain: ${canonicalUrl.href}`);
-      window.location.replace(canonicalUrl.href);
+      // Use setTimeout to avoid interfering with React's initial render
+      setTimeout(() => {
+        const canonicalUrl = new URL(window.location.href);
+        canonicalUrl.hostname = canonicalDomain;
+        canonicalUrl.protocol = 'https:';
+        
+        console.log(`[SEO] Redirecting to canonical domain: ${canonicalUrl.href}`);
+        window.location.replace(canonicalUrl.href);
+      }, 100);
     }
   }, [canonicalDomain, enabled]);
 };
