@@ -13,6 +13,11 @@ import styles from "../../assets/css/stylesheet.module.css";
 import { Input, Textarea } from "@/components/atoms";
 import { Label } from "@/components/ui/label";
 
+import { SocialIcon } from "react-social-icons/component";
+import "react-social-icons/reddit";
+import "react-social-icons/instagram";
+import "react-social-icons/linkedin";
+
 const Contact = () => {
   const formRef = useRef<HTMLDivElement>(null);
 
@@ -135,18 +140,44 @@ const Contact = () => {
                     sales@indexnine.com
                   </a>
                 </p>
-                <div className="flex space-x-4 mt-3">
+                <div className="flex space-x-4 gap-2">
                   <a
-                    href="https://www.linkedin.com/company/indexnine-technologies"
+                    href="#."
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center bg-black/10 hover:bg-brand-primary text-brand-primary hover:text-white transition-colors duration-300 cursor-pointer"
+                    className="w-10 h-10  cursor-pointer "
                   >
-                    <span className="text-sm font-semibold">in</span>
+                    <SocialIcon
+                      url="https://www.reddit.com/user/indexnine_/"
+                      target="_blank"
+                      fgColor="black"
+                      bgColor="white"
+                    />
                   </a>
-                  <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center bg-black/10 hover:bg-brand-primary text-brand-primary hover:text-white transition-colors duration-300 cursor-pointer">
-                    <span className=" text-sm font-semibold">𝕏</span>
-                  </div>
+
+                  <a
+                    href="#."
+                    target="_blank"
+                    className="w-10 h-10  cursor-pointer "
+                  >
+                    <SocialIcon
+                      url="https://www.linkedin.com/company/indexnine-technologies"
+                      target="_blank"
+                      fgColor="black"
+                      bgColor="white"
+                    />
+                  </a>
+                  <a
+                    href="#."
+                    target="_blank"
+                    className="w-10 h-10  cursor-pointer"
+                  >
+                    <SocialIcon
+                      url="https://www.instagram.com/indexnine_/"
+                      target="_blank"
+                      fgColor="black"
+                      bgColor="white"
+                    />
+                  </a>
                 </div>
               </div>
 
