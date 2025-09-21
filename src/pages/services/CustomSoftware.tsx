@@ -232,7 +232,7 @@ const CustomSoftware = () => {
                 {
                   icon: <Cloud className="w-6 h-6 text-brand-primary" />,
                   title: "Cloud Platforms",
-                  techs: ["AWS", "Azure", "GCP", "Managed Kubernetes (EKS,GKE, etc)", "Docker", "CI/CD", "Terraform"],
+                  techs: ["AWS", "Azure", "GCP", "EKS", "GKE", "Docker", "CI/CD", "Terraform"],
                 },
                 {
                   icon: <Settings className="w-6 h-6 text-brand-primary" />,
