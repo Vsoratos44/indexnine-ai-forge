@@ -54,10 +54,11 @@ const buttonVariants = cva(
         btnLink: "p-0 text-brand-purple hover:text-[#000]",
       },
       size: {
-        default: "h-12 px-6 py-3 text-sm",
-        sm: "h-10 px-4 py-2 text-xs",
-        lg: "h-14 px-8 py-4 text-base",
-        xl: "h-16 px-10 py-5 text-lg font-semibold",
+        default:
+          "h-12 px-6 py-3 text-sm text-center leading-[1.25] whitespace-break-spaces",
+        sm: "h-10 px-4 py-2 text-xs text-center leading-[1.25] whitespace-break-spaces",
+        lg: "h-14 px-6 py-4 text-base md:px-8 text-center leading-[1.25] whitespace-break-spaces",
+        xl: "h-16 px-8 py-5 text-lg font-semibold md:px-10 text-center leading-[1.25] whitespace-break-spaces",
         link: "p-0 text-md",
         icon: "h-12 w-12",
         "icon-sm": "h-8 w-8",
