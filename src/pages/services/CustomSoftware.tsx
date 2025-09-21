@@ -251,25 +251,44 @@ const CustomSoftware = () => {
         </div>
       </section>
 
-      {/* The Software Development Dilemma Section */}
+      {/* Problem Statement Section */}
       <section className="py-24 lg:py-32 bg-[#fff]">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
-              The Software Development Dilemma:{" "}
+              The Modern Engineering Dilemma:{" "}
               <span className="text-brand-primary leading-[1.25]">
-                Speed vs. Quality vs. Scale
+                The Iron Triangle of Speed, Quality, and Cost
               </span>
             </h2>
-            <p className="text-lg text-foreground-dark-muted max-w-6xl mb-0 mx-auto">
-              In today's market, you can't afford a false choice between speed
-              and quality. A fragile MVP creates technical debt that cripples
-              growth, while a slow, over-engineered system misses the market
-              window entirely. Our <strong>Pragmatic Engineering</strong>{" "}
-              philosophy solves this dilemma. We combine startup velocity with
-              enterprise-grade discipline to build software that is not only
-              fast to market but is also secure, scalable, and built to last.
+            <p className="text-lg text-foreground-dark-muted max-w-6xl mb-8 mx-auto">
+              In today's market, you cannot afford a false choice. The pressure to innovate forces a constant battle against the "Iron Triangle" of engineering: Good, Fast, or Cheap—pick any two. A fragile MVP, built fast and cheap, creates crippling technical debt. A slow, over-engineered system, built "good" but without velocity, misses the market window entirely.
             </p>
+            <p className="text-lg text-foreground-dark-muted max-w-6xl mb-8 mx-auto">
+              We combine startup velocity with the enterprise-grade discipline required for mission-critical systems. By leveraging an AI-first mindset and codified accelerators, we build software that is not only fast to market but is also secure, scalable, and engineered to last.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                variant="btnPrimary"
+                size="lg"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
+                Launch Together
+              </Button>
+              <Link to="/insights/case-studies">
+                <Button
+                  variant="btnSecondary"
+                  size="lg"
+                >
+                  Launch Case Studies
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
