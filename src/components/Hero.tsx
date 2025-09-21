@@ -26,12 +26,11 @@ const Hero = () => {
 
           <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat">
             The industry leader in human centric, AI accelerated, digital product engineering. We don't just code…<br />
-            We build products users love ♥️<br />
-            We help Launch new digital revenue streams 🚀<br />
-            We visually engineer with humans for humans 👩🏻‍💻👨🏽‍💻<br />
-            We leverage AI responsibly & securely 🔐<br />
-            We engineer AI integrated solutions 
-            that define market leaders 💰
+            We build products users love<br />
+            We help Launch new digital revenue streams<br />
+            We visually engineer with humans for humans<br />
+            We leverage AI responsibly & securely<br />
+            We engineer AI integrated solutions that define market leaders
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
