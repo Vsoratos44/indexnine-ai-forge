@@ -40,7 +40,7 @@ import Footer from "@/components/Footer";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
 import CasesCarousel from "@/components/CasesCarousel";
 
-const AiStudio = () => {
+const AiMl = () => {
   // Implement comprehensive SEO for AI Studio page
   useSEO({
     title:
@@ -979,4 +979,4 @@ const AiStudio = () => {
   );
 };
 
-export default AiStudio;
+export default AiMl;
