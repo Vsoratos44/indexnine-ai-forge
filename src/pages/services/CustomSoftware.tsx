@@ -173,43 +173,122 @@ const CustomSoftware = () => {
         </div>
       </section>
 
-      {/* Social Proof: Trusted by Section */}
-      <section className="py-12 bg-[#fff]">
+
+      {/* Technology Stack Section */}
+      <section
+        id="tech-stack"
+        className={`py-24 lg:py-32 relative overflow-hidden ${styles.strBg1}`}
+      >
         <div className="container mx-auto px-6">
-          <div className="text-center">
-            <p className="text-sm font-semibold text-foreground-dark/60 uppercase tracking-wider mb-8">
-              Trusted by Industry Leaders and High-Growth Startups
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-60">
-              <div className="h-8 w-24 bg-foreground-dark/20 rounded"></div>
-              <div className="h-8 w-24 bg-foreground-dark/20 rounded"></div>
-              <div className="h-8 w-24 bg-foreground-dark/20 rounded"></div>
-              <div className="h-8 w-24 bg-foreground-dark/20 rounded"></div>
-              <div className="h-8 w-24 bg-foreground-dark/20 rounded"></div>
+          <div className="max-w-8xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+                <span className="leading-[1.4]">
+                  Our Modern Technology Stack
+                </span>
+              </h2>
+              <p className="text-lg text-foreground-dark/80 max-w-3xl mx-auto">
+                We leverage cutting-edge technologies and proven frameworks to
+                build robust, scalable, and maintainable applications that
+                stand the test of time.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-4 gap-6">
+              {[
+                {
+                  icon: <Code className="w-6 h-6 text-brand-primary" />,
+                  title: "Frontend & Client",
+                  techs: ["React", "Next.js", "Electron", "TypeScript", "Vue.JS"],
+                },
+                {
+                  icon: <Database className="w-6 h-6 text-brand-primary" />,
+                  title: "Backend & Database",
+                  techs: ["Python/FastAPI", "Node.js", "Java", "PHP", "PostgreSQL", "Redis", "MongoDB"],
+                },
+                {
+                  icon: <Cloud className="w-6 h-6 text-brand-primary" />,
+                  title: "Cloud Platforms",
+                  techs: ["AWS", "Azure", "GCP", "EKS", "GKE", "Docker", "CI/CD", "Terraform"],
+                },
+                {
+                  icon: <Settings className="w-6 h-6 text-brand-primary" />,
+                  title: "AI & DevOps",
+                  techs: ["Multi-LLM (Gemini, GPT-4o)", "Google ADK", "Custom SLMs", "Snowflake", "Neo4j", "Weaviate"],
+                },
+              ].map((item, index) => (
+                <div key={item.title} className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-b from-brand-purple to-[#505CFD] rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
+                    <div
+                      className={`relative w-16 h-16 rounded-sm flex items-center justify-center mt-[-0.5rem] mr-[-0.5rem] bg-gradient-to-r from-[#727AF2] to-[#535DE1] border border-white/25`}
+                    >
+                      {item.icon}
+                    </div>
+                  </div>
+                  <div
+                    className={`bg-gradient-to-tr from-[#ffffff75] via-[#ffffff85] to-[#ffffff90] border border-[#00000019] bg-clip-padding backdrop-filter backdrop-blur-lg h-full rounded-2xl`}
+                  >
+                    <div className={`px-3 pt-10 pb-6 bg-transparent`}>
+                      <h3 className="text-lg font-medium mb-6 text-foreground-dark">
+                        {item.title}
+                      </h3>
+                      <div className="flex flex-wrap gap-1 justify-center">
+                        {item.techs.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="text-xs px-2 py-1 bg-foreground-dark/10 rounded-full text-foreground-dark/70"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Software Development Dilemma Section */}
+      {/* Problem Statement Section */}
       <section className="py-24 lg:py-32 bg-[#fff]">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
-              The Software Development Dilemma:{" "}
+              The Modern Engineering Dilemma:{" "}
               <span className="text-brand-primary leading-[1.25]">
-                Speed vs. Quality vs. Scale
+                The Iron Triangle of Speed, Quality, and Cost
               </span>
             </h2>
-            <p className="text-lg text-foreground-dark-muted max-w-6xl mb-0 mx-auto">
-              In today's market, you can't afford a false choice between speed
-              and quality. A fragile MVP creates technical debt that cripples
-              growth, while a slow, over-engineered system misses the market
-              window entirely. Our <strong>Pragmatic Engineering</strong>{" "}
-              philosophy solves this dilemma. We combine startup velocity with
-              enterprise-grade discipline to build software that is not only
-              fast to market but is also secure, scalable, and built to last.
+            <p className="text-lg text-foreground-dark-muted max-w-6xl mb-8 mx-auto">
+              In today's market, you cannot afford a false choice. The pressure to innovate forces a constant battle against the "Iron Triangle" of engineering: Good, Fast, or Cheap—pick any two. A fragile MVP, built fast and cheap, creates crippling technical debt. A slow, over-engineered system, built "good" but without velocity, misses the market window entirely.
             </p>
+            <p className="text-lg text-foreground-dark-muted max-w-6xl mb-8 mx-auto">
+              We combine startup velocity with the enterprise-grade discipline required for mission-critical systems. By leveraging an AI-first mindset and codified accelerators, we build software that is not only fast to market but is also secure, scalable, and engineered to last.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                variant="btnPrimary"
+                size="lg"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
+                Launch Together
+              </Button>
+              <Link to="/insights/case-studies">
+                <Button
+                  variant="btnSecondary"
+                  size="lg"
+                >
+                  Launch Case Studies
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -286,67 +365,87 @@ const CustomSoftware = () => {
       </section>
 
       {/* Full-Lifecycle Process Section */}
-      <section className={`py-24 lg:py-32 ${styles.strBg1}`}>
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-              Our Full-Lifecycle Development Process
-            </h2>
-            <p className="text-xl text-foreground-dark/80 max-w-3xl mx-auto">
-              From initial idea to enterprise scale, we provide an end-to-end
-              partnership that ensures quality and strategic alignment at every
-              step.
-            </p>
-          </div>
+      <div className={`${styles.pageDarkBg}`}>
+        <section className={`py-24 lg:py-32 bg-transparent`}>
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                Our Full-Lifecycle Development Process: A Blueprint for Certainty
+              </h2>
+              <p className="text-xl text-foreground-white/80 max-w-3xl mx-auto">
+                From a visionary idea to an enterprise-scale platform, we provide an end-to-end
+                partnership that ensures quality, velocity, and strategic alignment at every stage
+                of the Software Development Lifecycle (SDLC).
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
-            {[
-              {
-                icon: Lightbulb,
-                title: "Sprint Zero: Strategy & Discovery",
-                description:
-                  "We begin with our Sprint Zero sessions to validate assumptions, define user personas, map functionality, and create a strategic roadmap with a clear business case.",
-              },
-              {
-                icon: PenTool,
-                title: "Architect: UI/UX & System Design",
-                description:
-                  "Our experts create intuitive user interfaces and architect a robust, scalable, and secure technical foundation built for future growth and easy maintenance.",
-              },
-              {
-                icon: Rocket,
-                title: "Engineer: Development & Testing",
-                description:
-                  "Our full-stack engineers build your solution using modern technologies and best practices, with comprehensive testing at every stage.",
-              },
-              {
-                icon: Settings,
-                title: "Deploy: Launch & Scale",
-                description:
-                  "We deploy your application to production with robust monitoring, security, and scaling capabilities to support your growth.",
-              },
-            ].map((step, index) => (
-              <div key={index} className="relative group">
-                <div className="relative overflow-hidden bg-[#ffffff75] backdrop-blur-md border border-[#00000019] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                  <div className="flex items-center mb-6">
-                    <div
-                      className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
-                    >
-                      <step.icon className="w-8 h-8 text-brand-primary" />
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+              {[
+                {
+                  icon: Lightbulb,
+                  title: "Strategic Discovery",
+                  description:
+                    "Together we validate assumptions, define user personas, map functionality, and produce a de-risked strategic roadmap. We deliver an architectural blueprint, an interactive prototype, a tightly scoped budget, and a guaranteed timeline to produce v1.",
+                  cta: "Explore Consulting Services",
+                  link: "/services/consulting",
+                },
+                {
+                  icon: PenTool,
+                  title: "Design & Architect",
+                  description:
+                    "Our senior architects and visual engineers translate the blueprint into a robust technical MVP implementation. We create intuitive, data-rich user interfaces and architect a secure, scalable, and resilient technical foundation.",
+                  cta: "Explore our Innovation Lab",
+                  link: "/engagement/innovation-lab",
+                },
+                {
+                  icon: Rocket,
+                  title: "AI Augmented Dev & Test",
+                  description:
+                    "Our full-stack engineers and specialized pods build your solution using our spec-driven, AI-first methodology. We leverage AI accelerators to improve throughput, while our QE studio uses proprietary platforms like Test.Author to generate structured, risk-based test cases, ensuring quality is engineered in, not bolted on.",
+                  cta: "Explore Quality Services",
+                  link: "/services/quality-engineering",
+                },
+                {
+                  icon: Settings,
+                  title: "Launch & Scale",
+                  description:
+                    "We deploy your application into a production-ready cloud environment on AWS, Azure, or GCP, often provisioned in minutes using our Snap.MVP accelerator. We establish CI/CD pipelines, robust monitoring and observability, and auto-scaling to ensure your platform grows seamlessly with your user base.",
+                  cta: "The Enterprise Studio",
+                  link: "/engagement/enterprise",
+                },
+              ].map((step, index) => (
+                <div key={index} className="relative group">
+                  <div className="relative overflow-hidden bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] backdrop-blur-md rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full flex flex-col">
+                    <div className="flex items-center mb-6">
+                      <div
+                        className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        <step.icon className="w-8 h-8 text-brand-primary" />
+                      </div>
                     </div>
+                    <h3 className="text-xl font-semibold text-foreground-white mb-4 font-montserrat">
+                      {step.title}
+                    </h3>
+                    <p className="text-foreground-white/70 leading-relaxed font-montserrat mb-6 flex-grow">
+                      {step.description}
+                    </p>
+                    <Link to={step.link}>
+                      <Button
+                        variant="btnSecondary"
+                        size="default"
+                        className="w-full mt-auto"
+                      >
+                        {step.cta}
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground-dark mb-4 font-montserrat">
-                    {step.title}
-                  </h3>
-                  <p className="text-foreground-dark/70 leading-relaxed font-montserrat">
-                    {step.description}
-                  </p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Custom Software Development Services Section */}
       <section
@@ -601,95 +700,6 @@ const CustomSoftware = () => {
         </section>
       </section>
 
-      <div className={`${styles.pageDarkBg}`}>
-        {/* Technology Stack Section */}
-        <section
-          id="tech-stack"
-          className={`py-24 lg:py-32 relative overflow-hidden bg-transparent`}
-        >
-          <div className="container mx-auto px-6">
-            <div className="max-w-8xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-                  <span className="leading-[1.4]">
-                    Our Modern Technology Stack
-                  </span>
-                </h2>
-                <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
-                  We leverage cutting-edge technologies and proven frameworks to
-                  build robust, scalable, and maintainable applications that
-                  stand the test of time.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-4 gap-6">
-                {[
-                  {
-                    icon: <Code className="w-6 h-6 text-white" />,
-                    title: "Frontend Technologies",
-                    description:
-                      "Modern frameworks for exceptional user experiences.",
-                    techs: ["React", "Next.js", "Vue.js", "TypeScript"],
-                  },
-                  {
-                    icon: <Database className="w-6 h-6 text-white" />,
-                    title: "Backend & Database",
-                    description:
-                      "Scalable server architecture and data management.",
-                    techs: ["Node.js", "Python", "PostgreSQL", "MongoDB"],
-                  },
-                  {
-                    icon: <Cloud className="w-6 h-6 text-white" />,
-                    title: "Cloud Platforms",
-                    description:
-                      "Enterprise-grade cloud infrastructure and services.",
-                    techs: ["AWS", "Azure", "GCP", "Kubernetes"],
-                  },
-                  {
-                    icon: <Settings className="w-6 h-6 text-white" />,
-                    title: "DevOps & Tools",
-                    description:
-                      "Automated deployment and continuous integration.",
-                    techs: ["Docker", "CI/CD", "Terraform", "Monitoring"],
-                  },
-                ].map((item, index) => (
-                  <div key={item.title} className="text-center">
-                    <div className="w-16 h-16 bg-gradient-to-b from-brand-purple to-[#505CFD] rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
-                      <div
-                        className={`relative w-16 h-16 rounded-sm flex items-center justify-center mt-[-0.5rem] mr-[-0.5rem] bg-gradient-to-r from-[#727AF2] to-[#535DE1] border border-white/25`}
-                      >
-                        {item.icon}
-                      </div>
-                    </div>
-                    <div
-                      className={`bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg h-full rounded-2xl`}
-                    >
-                      <div className={`px-3 pt-10 pb-6 bg-transparent`}>
-                        <h3 className="text-lg font-medium mb-3 text-foreground">
-                          {item.title}
-                        </h3>
-                        <p className="text-sm text-foreground/80 mb-4">
-                          {item.description}
-                        </p>
-                        <div className="flex flex-wrap gap-1 justify-center">
-                          {item.techs.map((tech, techIndex) => (
-                            <span
-                              key={techIndex}
-                              className="text-xs px-2 py-1 bg-white/10 rounded-full text-foreground/70"
-                            >
-                              {tech}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
 
       {/* FAQ Section */}
       <section className="py-24 lg:py-32 bg-[#efeff6]">
