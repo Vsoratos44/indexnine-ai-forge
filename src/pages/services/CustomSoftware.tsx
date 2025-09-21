@@ -173,23 +173,6 @@ const CustomSoftware = () => {
         </div>
       </section>
 
-      {/* Social Proof: Trusted by Section */}
-      <section className="py-12 bg-[#fff]">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <p className="text-sm font-semibold text-foreground-dark/60 uppercase tracking-wider mb-8">
-              Trusted by Industry Leaders and High-Growth Startups
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-60">
-              <div className="h-8 w-24 bg-foreground-dark/20 rounded"></div>
-              <div className="h-8 w-24 bg-foreground-dark/20 rounded"></div>
-              <div className="h-8 w-24 bg-foreground-dark/20 rounded"></div>
-              <div className="h-8 w-24 bg-foreground-dark/20 rounded"></div>
-              <div className="h-8 w-24 bg-foreground-dark/20 rounded"></div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* The Software Development Dilemma Section */}
       <section className="py-24 lg:py-32 bg-[#fff]">
