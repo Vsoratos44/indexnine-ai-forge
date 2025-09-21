@@ -222,31 +222,23 @@ const CustomSoftware = () => {
                 {[
                   {
                     icon: <Code className="w-6 h-6 text-white" />,
-                    title: "Frontend Technologies",
-                    description:
-                      "Modern frameworks for exceptional user experiences.",
-                    techs: ["React", "Next.js", "Vue.js", "TypeScript"],
+                    title: "Frontend & Client",
+                    techs: ["React", "Next.js", "Electron", "TypeScript", "Vue.JS"],
                   },
                   {
                     icon: <Database className="w-6 h-6 text-white" />,
                     title: "Backend & Database",
-                    description:
-                      "Scalable server architecture and data management.",
-                    techs: ["Node.js", "Python", "PostgreSQL", "MongoDB"],
+                    techs: ["Python/FastAPI", "Node.js", "Java", "PHP", "PostgreSQL", "Redis", "MongoDB"],
                   },
                   {
                     icon: <Cloud className="w-6 h-6 text-white" />,
                     title: "Cloud Platforms",
-                    description:
-                      "Enterprise-grade cloud infrastructure and services.",
-                    techs: ["AWS", "Azure", "GCP", "Kubernetes"],
+                    techs: ["AWS", "Azure", "GCP", "Managed Kubernetes (EKS,GKE, etc)", "Docker", "CI/CD", "Terraform"],
                   },
                   {
                     icon: <Settings className="w-6 h-6 text-white" />,
-                    title: "DevOps & Tools",
-                    description:
-                      "Automated deployment and continuous integration.",
-                    techs: ["Docker", "CI/CD", "Terraform", "Monitoring"],
+                    title: "AI & DevOps",
+                    techs: ["Multi-LLM (Gemini, GPT-4o)", "Google ADK", "Custom SLMs", "Snowflake", "Neo4j", "Weaviate"],
                   },
                 ].map((item, index) => (
                   <div key={item.title} className="text-center">
@@ -261,12 +253,9 @@ const CustomSoftware = () => {
                       className={`bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg h-full rounded-2xl`}
                     >
                       <div className={`px-3 pt-10 pb-6 bg-transparent`}>
-                        <h3 className="text-lg font-medium mb-3 text-foreground">
+                        <h3 className="text-lg font-medium mb-6 text-foreground">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-foreground/80 mb-4">
-                          {item.description}
-                        </p>
                         <div className="flex flex-wrap gap-1 justify-center">
                           {item.techs.map((tech, techIndex) => (
                             <span
