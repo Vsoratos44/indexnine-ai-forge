@@ -351,12 +351,12 @@ const CustomSoftware = () => {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-                Our Full-Lifecycle Development Process
+                Our Full-Lifecycle Development Process: A Blueprint for Certainty
               </h2>
               <p className="text-xl text-foreground-white/80 max-w-3xl mx-auto">
-                From initial idea to enterprise scale, we provide an end-to-end
-                partnership that ensures quality and strategic alignment at every
-                step.
+                From a visionary idea to an enterprise-scale platform, we provide an end-to-end
+                partnership that ensures quality, velocity, and strategic alignment at every stage
+                of the Software Development Lifecycle (SDLC).
               </p>
             </div>
 
@@ -364,31 +364,39 @@ const CustomSoftware = () => {
               {[
                 {
                   icon: Lightbulb,
-                  title: "Sprint Zero: Strategy & Discovery",
+                  title: "Strategic Discovery",
                   description:
-                    "We begin with our Sprint Zero sessions to validate assumptions, define user personas, map functionality, and create a strategic roadmap with a clear business case.",
+                    "Together we validate assumptions, define user personas, map functionality, and produce a de-risked strategic roadmap. We deliver an architectural blueprint, an interactive prototype, a tightly scoped budget, and a guaranteed timeline to produce v1.",
+                  cta: "Explore Consulting Services",
+                  link: "/services/consulting",
                 },
                 {
                   icon: PenTool,
-                  title: "Architect: UI/UX & System Design",
+                  title: "Design & Architect",
                   description:
-                    "Our experts create intuitive user interfaces and architect a robust, scalable, and secure technical foundation built for future growth and easy maintenance.",
+                    "Our senior architects and visual engineers translate the blueprint into a robust technical MVP implementation. We create intuitive, data-rich user interfaces and architect a secure, scalable, and resilient technical foundation.",
+                  cta: "Explore our Innovation Lab",
+                  link: "/engagement/innovation-lab",
                 },
                 {
                   icon: Rocket,
-                  title: "Engineer: Development & Testing",
+                  title: "AI Augmented Dev & Test",
                   description:
-                    "Our full-stack engineers build your solution using modern technologies and best practices, with comprehensive testing at every stage.",
+                    "Our full-stack engineers and specialized pods build your solution using our spec-driven, AI-first methodology. We leverage AI accelerators to improve throughput, while our QE studio uses proprietary platforms like Test.Author to generate structured, risk-based test cases, ensuring quality is engineered in, not bolted on.",
+                  cta: "Explore Quality Services",
+                  link: "/services/quality-engineering",
                 },
                 {
                   icon: Settings,
-                  title: "Deploy: Launch & Scale",
+                  title: "Launch & Scale",
                   description:
-                    "We deploy your application to production with robust monitoring, security, and scaling capabilities to support your growth.",
+                    "We deploy your application into a production-ready cloud environment on AWS, Azure, or GCP, often provisioned in minutes using our Snap.MVP accelerator. We establish CI/CD pipelines, robust monitoring and observability, and auto-scaling to ensure your platform grows seamlessly with your user base.",
+                  cta: "The Enterprise Studio",
+                  link: "/engagement/enterprise",
                 },
               ].map((step, index) => (
                 <div key={index} className="relative group">
-                  <div className="relative overflow-hidden bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] backdrop-blur-md rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                  <div className="relative overflow-hidden bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] backdrop-blur-md rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full flex flex-col">
                     <div className="flex items-center mb-6">
                       <div
                         className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
@@ -399,9 +407,19 @@ const CustomSoftware = () => {
                     <h3 className="text-xl font-semibold text-foreground-white mb-4 font-montserrat">
                       {step.title}
                     </h3>
-                    <p className="text-foreground-white/70 leading-relaxed font-montserrat">
+                    <p className="text-foreground-white/70 leading-relaxed font-montserrat mb-6 flex-grow">
                       {step.description}
                     </p>
+                    <Link to={step.link}>
+                      <Button
+                        variant="btnSecondary"
+                        size="default"
+                        className="w-full mt-auto"
+                      >
+                        {step.cta}
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               ))}
