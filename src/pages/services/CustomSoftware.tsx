@@ -198,83 +198,81 @@ const CustomSoftware = () => {
       </section>
 
       {/* Technology Stack Section */}
-      <div className={`${styles.pageDarkBg}`}>
-        <section
-          id="tech-stack"
-          className={`py-24 lg:py-32 relative overflow-hidden bg-transparent`}
-        >
-          <div className="container mx-auto px-6">
-            <div className="max-w-8xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-                  <span className="leading-[1.4]">
-                    Our Modern Technology Stack
-                  </span>
-                </h2>
-                <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
-                  We leverage cutting-edge technologies and proven frameworks to
-                  build robust, scalable, and maintainable applications that
-                  stand the test of time.
-                </p>
-              </div>
+      <section
+        id="tech-stack"
+        className={`py-24 lg:py-32 relative overflow-hidden ${styles.strBg1}`}
+      >
+        <div className="container mx-auto px-6">
+          <div className="max-w-8xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+                <span className="leading-[1.4]">
+                  Our Modern Technology Stack
+                </span>
+              </h2>
+              <p className="text-lg text-foreground-dark/80 max-w-3xl mx-auto">
+                We leverage cutting-edge technologies and proven frameworks to
+                build robust, scalable, and maintainable applications that
+                stand the test of time.
+              </p>
+            </div>
 
-              <div className="grid md:grid-cols-4 gap-6">
-                {[
-                  {
-                    icon: <Code className="w-6 h-6 text-white" />,
-                    title: "Frontend & Client",
-                    techs: ["React", "Next.js", "Electron", "TypeScript", "Vue.JS"],
-                  },
-                  {
-                    icon: <Database className="w-6 h-6 text-white" />,
-                    title: "Backend & Database",
-                    techs: ["Python/FastAPI", "Node.js", "Java", "PHP", "PostgreSQL", "Redis", "MongoDB"],
-                  },
-                  {
-                    icon: <Cloud className="w-6 h-6 text-white" />,
-                    title: "Cloud Platforms",
-                    techs: ["AWS", "Azure", "GCP", "Managed Kubernetes (EKS,GKE, etc)", "Docker", "CI/CD", "Terraform"],
-                  },
-                  {
-                    icon: <Settings className="w-6 h-6 text-white" />,
-                    title: "AI & DevOps",
-                    techs: ["Multi-LLM (Gemini, GPT-4o)", "Google ADK", "Custom SLMs", "Snowflake", "Neo4j", "Weaviate"],
-                  },
-                ].map((item, index) => (
-                  <div key={item.title} className="text-center">
-                    <div className="w-16 h-16 bg-gradient-to-b from-brand-purple to-[#505CFD] rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
-                      <div
-                        className={`relative w-16 h-16 rounded-sm flex items-center justify-center mt-[-0.5rem] mr-[-0.5rem] bg-gradient-to-r from-[#727AF2] to-[#535DE1] border border-white/25`}
-                      >
-                        {item.icon}
-                      </div>
-                    </div>
+            <div className="grid md:grid-cols-4 gap-6">
+              {[
+                {
+                  icon: <Code className="w-6 h-6 text-brand-primary" />,
+                  title: "Frontend & Client",
+                  techs: ["React", "Next.js", "Electron", "TypeScript", "Vue.JS"],
+                },
+                {
+                  icon: <Database className="w-6 h-6 text-brand-primary" />,
+                  title: "Backend & Database",
+                  techs: ["Python/FastAPI", "Node.js", "Java", "PHP", "PostgreSQL", "Redis", "MongoDB"],
+                },
+                {
+                  icon: <Cloud className="w-6 h-6 text-brand-primary" />,
+                  title: "Cloud Platforms",
+                  techs: ["AWS", "Azure", "GCP", "Managed Kubernetes (EKS,GKE, etc)", "Docker", "CI/CD", "Terraform"],
+                },
+                {
+                  icon: <Settings className="w-6 h-6 text-brand-primary" />,
+                  title: "AI & DevOps",
+                  techs: ["Multi-LLM (Gemini, GPT-4o)", "Google ADK", "Custom SLMs", "Snowflake", "Neo4j", "Weaviate"],
+                },
+              ].map((item, index) => (
+                <div key={item.title} className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-b from-brand-purple to-[#505CFD] rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
                     <div
-                      className={`bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg h-full rounded-2xl`}
+                      className={`relative w-16 h-16 rounded-sm flex items-center justify-center mt-[-0.5rem] mr-[-0.5rem] bg-gradient-to-r from-[#727AF2] to-[#535DE1] border border-white/25`}
                     >
-                      <div className={`px-3 pt-10 pb-6 bg-transparent`}>
-                        <h3 className="text-lg font-medium mb-6 text-foreground">
-                          {item.title}
-                        </h3>
-                        <div className="flex flex-wrap gap-1 justify-center">
-                          {item.techs.map((tech, techIndex) => (
-                            <span
-                              key={techIndex}
-                              className="text-xs px-2 py-1 bg-white/10 rounded-full text-foreground/70"
-                            >
-                              {tech}
-                            </span>
-                          ))}
-                        </div>
+                      {item.icon}
+                    </div>
+                  </div>
+                  <div
+                    className={`bg-gradient-to-tr from-[#ffffff75] via-[#ffffff85] to-[#ffffff90] border border-[#00000019] bg-clip-padding backdrop-filter backdrop-blur-lg h-full rounded-2xl`}
+                  >
+                    <div className={`px-3 pt-10 pb-6 bg-transparent`}>
+                      <h3 className="text-lg font-medium mb-6 text-foreground-dark">
+                        {item.title}
+                      </h3>
+                      <div className="flex flex-wrap gap-1 justify-center">
+                        {item.techs.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="text-xs px-2 py-1 bg-foreground-dark/10 rounded-full text-foreground-dark/70"
+                          >
+                            {tech}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       {/* Philosophy Section */}
       <section className="bg-[#fff]">
@@ -348,67 +346,69 @@ const CustomSoftware = () => {
       </section>
 
       {/* Full-Lifecycle Process Section */}
-      <section className={`py-24 lg:py-32 ${styles.strBg1}`}>
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
-              Our Full-Lifecycle Development Process
-            </h2>
-            <p className="text-xl text-foreground-dark/80 max-w-3xl mx-auto">
-              From initial idea to enterprise scale, we provide an end-to-end
-              partnership that ensures quality and strategic alignment at every
-              step.
-            </p>
-          </div>
+      <div className={`${styles.pageDarkBg}`}>
+        <section className={`py-24 lg:py-32 bg-transparent`}>
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                Our Full-Lifecycle Development Process
+              </h2>
+              <p className="text-xl text-foreground-white/80 max-w-3xl mx-auto">
+                From initial idea to enterprise scale, we provide an end-to-end
+                partnership that ensures quality and strategic alignment at every
+                step.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
-            {[
-              {
-                icon: Lightbulb,
-                title: "Sprint Zero: Strategy & Discovery",
-                description:
-                  "We begin with our Sprint Zero sessions to validate assumptions, define user personas, map functionality, and create a strategic roadmap with a clear business case.",
-              },
-              {
-                icon: PenTool,
-                title: "Architect: UI/UX & System Design",
-                description:
-                  "Our experts create intuitive user interfaces and architect a robust, scalable, and secure technical foundation built for future growth and easy maintenance.",
-              },
-              {
-                icon: Rocket,
-                title: "Engineer: Development & Testing",
-                description:
-                  "Our full-stack engineers build your solution using modern technologies and best practices, with comprehensive testing at every stage.",
-              },
-              {
-                icon: Settings,
-                title: "Deploy: Launch & Scale",
-                description:
-                  "We deploy your application to production with robust monitoring, security, and scaling capabilities to support your growth.",
-              },
-            ].map((step, index) => (
-              <div key={index} className="relative group">
-                <div className="relative overflow-hidden bg-[#ffffff75] backdrop-blur-md border border-[#00000019] rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
-                  <div className="flex items-center mb-6">
-                    <div
-                      className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
-                    >
-                      <step.icon className="w-8 h-8 text-brand-primary" />
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+              {[
+                {
+                  icon: Lightbulb,
+                  title: "Sprint Zero: Strategy & Discovery",
+                  description:
+                    "We begin with our Sprint Zero sessions to validate assumptions, define user personas, map functionality, and create a strategic roadmap with a clear business case.",
+                },
+                {
+                  icon: PenTool,
+                  title: "Architect: UI/UX & System Design",
+                  description:
+                    "Our experts create intuitive user interfaces and architect a robust, scalable, and secure technical foundation built for future growth and easy maintenance.",
+                },
+                {
+                  icon: Rocket,
+                  title: "Engineer: Development & Testing",
+                  description:
+                    "Our full-stack engineers build your solution using modern technologies and best practices, with comprehensive testing at every stage.",
+                },
+                {
+                  icon: Settings,
+                  title: "Deploy: Launch & Scale",
+                  description:
+                    "We deploy your application to production with robust monitoring, security, and scaling capabilities to support your growth.",
+                },
+              ].map((step, index) => (
+                <div key={index} className="relative group">
+                  <div className="relative overflow-hidden bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] backdrop-blur-md rounded-2xl p-8 lg:p-10 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
+                    <div className="flex items-center mb-6">
+                      <div
+                        className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        <step.icon className="w-8 h-8 text-brand-primary" />
+                      </div>
                     </div>
+                    <h3 className="text-xl font-semibold text-foreground-white mb-4 font-montserrat">
+                      {step.title}
+                    </h3>
+                    <p className="text-foreground-white/70 leading-relaxed font-montserrat">
+                      {step.description}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground-dark mb-4 font-montserrat">
-                    {step.title}
-                  </h3>
-                  <p className="text-foreground-dark/70 leading-relaxed font-montserrat">
-                    {step.description}
-                  </p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Custom Software Development Services Section */}
       <section
