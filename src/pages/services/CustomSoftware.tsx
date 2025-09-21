@@ -174,29 +174,6 @@ const CustomSoftware = () => {
       </section>
 
 
-      {/* The Software Development Dilemma Section */}
-      <section className="py-24 lg:py-32 bg-[#fff]">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
-              The Software Development Dilemma:{" "}
-              <span className="text-brand-primary leading-[1.25]">
-                Speed vs. Quality vs. Scale
-              </span>
-            </h2>
-            <p className="text-lg text-foreground-dark-muted max-w-6xl mb-0 mx-auto">
-              In today's market, you can't afford a false choice between speed
-              and quality. A fragile MVP creates technical debt that cripples
-              growth, while a slow, over-engineered system misses the market
-              window entirely. Our <strong>Pragmatic Engineering</strong>{" "}
-              philosophy solves this dilemma. We combine startup velocity with
-              enterprise-grade discipline to build software that is not only
-              fast to market but is also secure, scalable, and built to last.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Technology Stack Section */}
       <section
         id="tech-stack"
@@ -270,6 +247,29 @@ const CustomSoftware = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Software Development Dilemma Section */}
+      <section className="py-24 lg:py-32 bg-[#fff]">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
+              The Software Development Dilemma:{" "}
+              <span className="text-brand-primary leading-[1.25]">
+                Speed vs. Quality vs. Scale
+              </span>
+            </h2>
+            <p className="text-lg text-foreground-dark-muted max-w-6xl mb-0 mx-auto">
+              In today's market, you can't afford a false choice between speed
+              and quality. A fragile MVP creates technical debt that cripples
+              growth, while a slow, over-engineered system misses the market
+              window entirely. Our <strong>Pragmatic Engineering</strong>{" "}
+              philosophy solves this dilemma. We combine startup velocity with
+              enterprise-grade discipline to build software that is not only
+              fast to market but is also secure, scalable, and built to last.
+            </p>
           </div>
         </div>
       </section>
