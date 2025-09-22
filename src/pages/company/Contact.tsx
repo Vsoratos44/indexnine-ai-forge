@@ -7,7 +7,13 @@ import {
   BreadcrumbSchema,
   LocalBusinessSchema,
 } from "@/components/SEOStructuredData";
-import { BrainCircuit, BrickWall, Sparkles, SquareUser } from "lucide-react";
+import {
+  BrainCircuit,
+  BrickWall,
+  Headset,
+  Sparkles,
+  SquareUser,
+} from "lucide-react";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
 import styles from "../../assets/css/stylesheet.module.css";
 import { Input, Textarea } from "@/components/atoms";
@@ -17,6 +23,10 @@ import { SocialIcon } from "react-social-icons/component";
 import "react-social-icons/reddit";
 import "react-social-icons/instagram";
 import "react-social-icons/linkedin";
+import "react-social-icons/mailto";
+
+import IndiaFlag from "../../assets/images/ind.svg";
+import UsFlag from "../../assets/images/usa.svg";
 
 const Contact = () => {
   const formRef = useRef<HTMLDivElement>(null);
@@ -80,7 +90,7 @@ const Contact = () => {
         className={`relative max-w-8xl bg-white mx-auto ${styles.sectionBgData}`}
       >
         {/* Mission Section */}
-        <section className="py-24 lg:py-32 bg-glass-light border-glass backdrop-blur-sm shadow shadow-inner shadow-xl shadow-white">
+        <section className="py-24 lg:py-32 bg-glass-light border-glass backdrop-blur-sm ">
           <div className="absolute inset-0">
             <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
             <div className="absolute bottom-20 right-1/6 w-96 h-96 bg-brand-purple/6 rounded-full blur-3xl"></div>
@@ -101,46 +111,51 @@ const Contact = () => {
         </section>
         <a id="contactForm"></a>
         {/* Values Section */}
-        <section className="py-24 lg:py-32 bg-transparent">
+        <section className="pb-24 lg:pb-32 bg-transparent">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-                Start your Project
+                Get in touch
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 max-w-8xl mx-auto">
-              <div className="relative overflow-hidden backdrop-blur-lg bg-glass-bg border border-glass-border rounded-2xl p-8 shadow-glass hover:shadow-glass-lg transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in">
-                <div className="flex items-center gap-4">
-                  <div
-                    className={`relative w-16 h-16 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                  >
-                    <SquareUser className="w-6 h-6 text-brand-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground-dark mb-6 leading-tight font-montserrat">
-                    Contact
-                  </h3>
+            <div className="grid md:grid-cols-2 max-w-6xl mx-auto">
+              <div className="relative overflow-hidden backdrop-blur-lg bg-glass-bg border border-glass-border rounded-l-2xl p-8 shadow-glass hover:shadow-glass-lg transition-all duration-500 transform animate-fade-in items-center flex flex-col gap-8">
+                <span className="mt-auto">
+                  <Headset className="w-32 h-32 text-brand-purple mx-auto mb-4 opacity-80" />
+                </span>
+                <div className="md:grid-cols-2 grid gap-6">
+                  <p className="text-foreground-dark-muted font-montserrat text-center">
+                    <span className="mb-2 flex justify-center">
+                      <img src={IndiaFlag} alt="India" width={32} height={32} />
+                    </span>
+                    12<sup>th</sup> Floor,
+                    <br />
+                    Sadanand Business Center,
+                    <br />
+                    Pashan Hwy Side Rd,
+                    <br />
+                    Mahalunge, Pune,
+                    <br />
+                    Maharashtra 411045
+                  </p>
+                  <p className="text-foreground-dark-muted font-montserrat text-center">
+                    <span className="mb-2 flex justify-center">
+                      <img src={UsFlag} alt="USA" width={32} height={32} />
+                    </span>
+                    1007 N Orange St.,
+                    <br />
+                    4th Floor Suite #3868,
+                    <br />
+                    Wilmington,
+                    <br />
+                    DE 19801
+                    <br />
+                    +1-408-786-5659
+                  </p>
                 </div>
-                <p className="text-foreground-dark-muted font-montserrat">
-                  12th Floor,
-                  <br />
-                  Sadanand Business Center,
-                  <br />
-                  Pashan Hwy Side Rd,
-                  <br />
-                  Mahalunge, Pune,
-                  <br />
-                  Maharashtra 411045
-                </p>
-                <p className="mt-3">
-                  <a
-                    className="text-foreground-dark-muted font-montserrat"
-                    href="mailto:sales@indexnine.com"
-                  >
-                    sales@indexnine.com
-                  </a>
-                </p>
-                <div className="flex space-x-4 gap-2 mt-8">
+
+                <div className="flex space-x-4 gap-2 justify-center mb-auto">
                   <a
                     href="#."
                     target="_blank"
@@ -151,6 +166,8 @@ const Contact = () => {
                       target="_blank"
                       fgColor="black"
                       bgColor="white"
+                      className="mt-1"
+                      style={{ height: 40, width: 40 }}
                     />
                   </a>
 
@@ -178,10 +195,22 @@ const Contact = () => {
                       bgColor="white"
                     />
                   </a>
+                  <a
+                    href="#."
+                    target="_blank"
+                    className="w-10 h-10  cursor-pointer"
+                  >
+                    <SocialIcon
+                      url="mailto:sales@indexnine.com"
+                      target="_blank"
+                      fgColor="black"
+                      bgColor="white"
+                    />
+                  </a>
                 </div>
               </div>
 
-              <div className="relative overflow-hidden backdrop-blur-lg bg-glass-bg border border-glass-border rounded-2xl p-8 shadow-glass hover:shadow-glass-lg transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 animate-fade-in">
+              <div className="relative overflow-hidden backdrop-blur-lg bg-glass-bg border border-glass-border rounded-r-2xl p-8 shadow-glass hover:shadow-glass-lg transition-all duration-500 transform  animate-fade-in">
                 {/* <form
                   className="space-y-6"
                   action="/submit-qe-lead"

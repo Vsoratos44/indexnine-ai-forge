@@ -65,6 +65,8 @@ const Footer = () => {
                   target="_blank"
                   fgColor="white"
                   bgColor="black"
+                  className="mt-1"
+                  style={{ height: 40, width: 40 }}
                 />
               </a>
 
@@ -133,9 +135,7 @@ const Footer = () => {
                 12th Floor, Sadanand Business Center, Pashan Hwy Side Rd,
                 Mahalunge, Pune, Maharashtra 411045
               </p>
-              {/* <p className="hover:text-brand-primary transition-colors cursor-pointer">
-                +91 00000 00000
-              </p> */}
+              <p className="">+1-408-786-5659</p>
               <p className="hover:text-brand-primary transition-colors cursor-pointer">
                 <a href="mailto:sales@indexnine.com">sales@indexnine.com</a>
               </p>
