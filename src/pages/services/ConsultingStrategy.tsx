@@ -609,11 +609,12 @@ const ConsultingStrategy = () => {
               </div>
             </div>
           </section>
-
+        </div>
+        <div className={`${styles.pageDarkBg}`}>
           {/* AI Transformation Roadmap Section */}
           <section
             id="transformation-roadmap"
-            className="py-24 lg:py-32 relative overflow-hidden bg-black"
+            className="py-24 lg:py-32 relative overflow-hidden bg-transparent"
           >
             <div className="container mx-auto px-6">
               <div className="max-w-8xl mx-auto">
