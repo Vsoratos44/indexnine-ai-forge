@@ -613,7 +613,7 @@ const ConsultingStrategy = () => {
           {/* AI Transformation Roadmap Section */}
           <section
             id="transformation-roadmap"
-            className="py-24 lg:py-32 relative overflow-hidden bg-background-dark"
+            className="py-24 lg:py-32 relative overflow-hidden bg-black"
           >
             <div className="container mx-auto px-6">
               <div className="max-w-8xl mx-auto">
