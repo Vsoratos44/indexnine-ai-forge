@@ -141,7 +141,9 @@ const ConsultingStrategy = () => {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center border border-brand-primary/30">
+                    <div
+                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
                       <Lightbulb className="h-6 w-6 text-brand-purple" />
                     </div>
                   </div>
@@ -158,7 +160,9 @@ const ConsultingStrategy = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center border border-brand-primary/30">
+                    <div
+                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
                       <Target className="h-6 w-6 text-brand-purple" />
                     </div>
                   </div>
@@ -175,7 +179,9 @@ const ConsultingStrategy = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-16 h-16 flex items-center justify-center border border-brand-primary/30">
+                    <div
+                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
                       <Rocket className="h-6 w-6 text-brand-purple" />
                     </div>
                   </div>
@@ -215,7 +221,9 @@ const ConsultingStrategy = () => {
                 <div className="grid md:grid-rows-3 gap-16">
                   <div className="text flex">
                     <div>
-                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center mb-8 border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <div
+                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                      >
                         <Lightbulb className="h-8 w-8 text-brand-purple" />
                       </div>
                     </div>
@@ -232,7 +240,9 @@ const ConsultingStrategy = () => {
 
                   <div className="text flex">
                     <div>
-                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <div
+                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                      >
                         <Target className="h-8 w-8 text-brand-purple" />
                       </div>
                     </div>
@@ -249,7 +259,9 @@ const ConsultingStrategy = () => {
 
                   <div className="text flex">
                     <div>
-                      <div className="relative bg-gradient-to-br from-brand-primary/20 via-brand-primary/10 to-brand-purple/20 backdrop-blur-md rounded-2xl w-20 h-20 flex items-center justify-center border border-brand-primary/30 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <div
+                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                      >
                         <Rocket className="h-8 w-8 text-brand-purple" />
                       </div>
                     </div>
