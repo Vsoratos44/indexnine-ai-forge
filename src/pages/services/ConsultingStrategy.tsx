@@ -87,9 +87,7 @@ const ConsultingStrategy = () => {
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-foreground/85 mb-6 sm:mb-8 max-w-3xl mx-auto lg:mx-0 font-montserrat px-4 sm:px-0">
-              We provide expert consulting to align your technology and AI
-              strategy with business objectives, ensuring every investment
-              drives measurable value and competitive advantage.
+              Expert product lifecycle consulting to align technology and AI strategy with tangible business outcomes.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-scale-in px-4 sm:px-0">
               <Button
@@ -123,10 +121,7 @@ const ConsultingStrategy = () => {
                   From Strategy to Execution
                 </h2>
                 <p className="text-base sm:text-lg text-foreground-dark-muted font-montserrat">
-                  Our consulting services bridge the gap between business vision
-                  and technical implementation. We help you make informed
-                  decisions about technology investments, AI adoption, and
-                  digital transformation initiatives.
+                  Bridge gap between business vision and technical implementation
                 </p>
               </div>
 
@@ -150,8 +145,7 @@ const ConsultingStrategy = () => {
                       Strategic Planning
                     </h3>
                     <p className="text-foreground-dark-muted font-montserrat text-sm">
-                      Develop comprehensive technology roadmaps aligned with
-                      your business goals and market opportunities.
+                      Technology roadmaps aligned with business goals
                     </p>
                   </div>
                 </div>
@@ -164,11 +158,10 @@ const ConsultingStrategy = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2 text-foreground-dark">
-                      Risk Assessment
+                      Product Management
                     </h3>
                     <p className="text-foreground-dark-muted font-montserrat text-sm">
-                      Identify and mitigate technical, operational, and
-                      strategic risks before they impact your business.
+                      Identify and mitigate technical/operational risks
                     </p>
                   </div>
                 </div>
@@ -181,11 +174,10 @@ const ConsultingStrategy = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2 text-foreground-dark">
-                      Implementation Support
+                      Implementation Execution
                     </h3>
                     <p className="text-foreground-dark-muted font-montserrat text-sm">
-                      Guide execution with hands-on support, ensuring strategies
-                      translate into successful outcomes.
+                      Hands-on execution guidance
                     </p>
                   </div>
                 </div>
@@ -199,10 +191,7 @@ const ConsultingStrategy = () => {
                   From Strategy to Execution
                 </h2>
                 <p className="text-lg text-foreground-dark-muted mx-auto font-montserrat pr-16">
-                  Our consulting services bridge the gap between business vision
-                  and technical implementation. We help you make informed
-                  decisions about technology investments, AI adoption, and
-                  digital transformation initiatives.
+                  Bridge gap between business vision and technical implementation
                 </p>
                 <img
                   src={introImg}
@@ -224,8 +213,7 @@ const ConsultingStrategy = () => {
                         Strategic Planning
                       </h3>
                       <p className="text-foreground-dark-muted font-montserrat">
-                        Develop comprehensive technology roadmaps aligned with
-                        your business goals and market opportunities.
+                        Technology roadmaps aligned with business goals
                       </p>
                     </div>
                   </div>
@@ -238,11 +226,10 @@ const ConsultingStrategy = () => {
                     </div>
                     <div className="pl-4">
                       <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
-                        Risk Assessment
+                        Product Management
                       </h3>
                       <p className="text-foreground-dark-muted font-montserrat">
-                        Identify and mitigate technical, operational, and
-                        strategic risks before they impact your business.
+                        Identify and mitigate technical/operational risks
                       </p>
                     </div>
                   </div>
@@ -255,11 +242,10 @@ const ConsultingStrategy = () => {
                     </div>
                     <div className="pl-4">
                       <h3 className="text-xl font-semibold mb-2 text-foreground-dark">
-                        Implementation Support
+                        Implementation Execution
                       </h3>
                       <p className="text-foreground-dark-muted font-montserrat">
-                        Guide execution with hands-on support, ensuring
-                        strategies translate into successful outcomes.
+                        Hands-on execution guidance
                       </p>
                     </div>
                   </div>
@@ -475,11 +461,10 @@ const ConsultingStrategy = () => {
                         Strategy Sprint
                       </h3>
                       <p className="text-2xl sm:text-3xl font-semibold text-brand-purple mb-3 sm:mb-4">
-                        2-4 Weeks
+                        4-6 Weeks
                       </p>
                       <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 font-montserrat">
-                        Rapid strategic assessment and roadmap development for
-                        specific initiatives or challenges.
+                        Rapid strategic assessment
                       </p>
                     </CardContent>
                     <Button variant="btnPrimary" className="w-full mt-auto">
@@ -499,8 +484,7 @@ const ConsultingStrategy = () => {
                         3-6 Months
                       </p>
                       <p className="text-sm sm:text-base text-foreground-muted mb-4 sm:mb-6 font-montserrat">
-                        Comprehensive consulting engagement with hands-on
-                        implementation support and ongoing guidance.
+                        Comprehensive consulting
                       </p>
                     </CardContent>
                     <Button className="w-full mt-auto" variant="btnSecondary">
@@ -517,8 +501,7 @@ const ConsultingStrategy = () => {
                         Ongoing
                       </p>
                       <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 font-montserrat">
-                        Continuous strategic guidance and support as your
-                        trusted technology advisor.
+                        Continuous strategic guidance
                       </p>
                     </CardContent>
                     <Button variant="btnPrimary" className="w-full mt-auto">
