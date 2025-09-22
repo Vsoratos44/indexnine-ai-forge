@@ -81,7 +81,7 @@ const ConsultingStrategy = () => {
               </span>
             </div>
             <h1 className="text-3xl sm:text-[2.5rem] md:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-4 sm:mb-6 leading-[1.2] animate-fade-in font-montserrat">
-              Strategic Technology &{" "}
+              Strategic Technology &<br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 AI Consulting
               </span>

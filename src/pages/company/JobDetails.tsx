@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import styles from "../../assets/css/stylesheet.module.css";
 
 const JobDetails = () => {
   const { jobId } = useParams();
@@ -15,12 +16,12 @@ const JobDetails = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className={`min-h-screen ${styles.sectionBgData} bg-white`}>
       <Header />
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl relative z-10 pt-32 pb-12">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl relative z-10 pt-32 pb-12 text-foreground-dark">
         <Link
           to="/company/careers#openPos"
-          className="inline-flex items-center text-foreground-muted hover:text-brand-primary-dark transition-colors mb-6 mr-6"
+          className="inline-flex items-center text-foreground-dark-muted hover:text-brand-primary-dark transition-colors mb-6 mr-6"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Jobs
