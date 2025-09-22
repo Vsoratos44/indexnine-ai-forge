@@ -609,6 +609,131 @@ const ConsultingStrategy = () => {
               </div>
             </div>
           </section>
+
+          {/* AI Transformation Roadmap Section */}
+          <section
+            id="transformation-roadmap"
+            className="py-24 lg:py-32 relative overflow-hidden bg-background-dark"
+          >
+            <div className="container mx-auto px-6">
+              <div className="max-w-8xl mx-auto">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                    <span className="leading-[1.4]">
+                      AI Transformation Roadmap
+                    </span>
+                  </h2>
+                  <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
+                    We help clients figure out their transformation journey using our Outcome-First Consulting approach:
+                  </p>
+                </div>
+
+                {/* 5-Step Process */}
+                <div className="grid md:grid-cols-5 gap-6 mb-16">
+                  {[
+                    {
+                      step: "1",
+                      title: "Align Value & Goals",
+                      description: "Co-define the business outcomes to move—so every choice traces back to value.",
+                    },
+                    {
+                      step: "2", 
+                      title: "Discover Opportunities & Readiness",
+                      description: "Identify AI opportunities and evaluate Potential/ Readiness/ Risk and define a focused candidate list.",
+                    },
+                    {
+                      step: "3",
+                      title: "Define Solutions & Choose Bets", 
+                      description: "Shape solutions for the priority opportunities; classify Tactical vs Strategic bets.",
+                    },
+                    {
+                      step: "4",
+                      title: "Outcome Roadmap",
+                      description: "Create an outcome-oriented roadmap, with owners, dependencies, experiments to de-risk scale.",
+                    },
+                    {
+                      step: "5",
+                      title: "Enable Teams & Governance",
+                      description: "Recommend team shape, governance model, adoption practices, to execute roadmap with confidence.",
+                    },
+                  ].map((item) => (
+                    <div key={item.step} className="text-center">
+                      <div className="w-16 h-16 bg-gradient-to-b from-brand-purple to-[#505CFD] rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
+                        <div className="relative w-12 h-12 rounded-sm flex items-center justify-center bg-gradient-to-r from-[#727AF2] to-[#535DE1] border border-white/25">
+                          <span className="text-white font-semibold">{item.step}</span>
+                        </div>
+                      </div>
+                      <div className="bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg h-full rounded-2xl">
+                        <div className="px-4 pt-10 pb-6 bg-transparent">
+                          <h3 className="text-lg font-medium mb-3 text-foreground-white">
+                            {item.title}
+                          </h3>
+                          <p className="text-sm text-foreground-white/80">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Two-Section Framework */}
+                <div className="grid md:grid-cols-2 gap-8 mb-12">
+                  {/* Where to Play */}
+                  <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
+                    <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                    
+                    <div className="relative">
+                      <h3 className="text-xl font-semibold mb-4 text-foreground-white">
+                        Where to Play (The "WHAT" part of transformation)
+                      </h3>
+                      <p className="text-foreground-white/80 mb-4">
+                        Quick Wins | Strategic Bets | Early Experiments
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* How to Win */}
+                  <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
+                    <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
+                    
+                    <div className="relative">
+                      <h3 className="text-xl font-semibold mb-4 text-foreground-white">
+                        How to Win (The "HOW" part of transformation)
+                      </h3>
+                      <p className="text-foreground-white/80 mb-4">
+                        Outcome-oriented Roadmap | Operating-Model
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Outcomes Bar */}
+                <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-2xl p-6">
+                  <div className="grid grid-cols-4 gap-8 text-center">
+                    <div>
+                      <h4 className="font-semibold text-foreground-white mb-2">Outcomes</h4>
+                      <p className="text-sm text-foreground-white/70">What you get</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground-white mb-2">Clarity</h4>
+                      <p className="text-sm text-foreground-white/70">First bets & what to ship first</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground-white mb-2">Confidence</h4>
+                      <p className="text-sm text-foreground-white/70">Quick, low-risk proofs & feasibility signals</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground-white mb-2">Momentum</h4>
+                      <p className="text-sm text-foreground-white/70">Sequenced plan, owners & decisions</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
       {/* CTA Banner */}
