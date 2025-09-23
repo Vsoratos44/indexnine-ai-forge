@@ -10,9 +10,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, FileText, Target } from "lucide-react";
 import styles from "../assets/css/stylesheet.module.css";
 
-import carlImg1 from "../assets/images/blog-ai-mgmt.webp";
-import carlImg2 from "../assets/images/case-img.webp";
-import carlImg3 from "../assets/images/blog-agentic.webp";
+import avatar1 from "../assets/images/avatar1.svg";
+import avatar2 from "../assets/images/avatar2.svg";
 
 import carlImgBlogData from "../assets/images/carsl-img-blog-data.webp";
 import { Link } from "react-router-dom";
@@ -30,35 +29,51 @@ const TestimonialsCarousel = () => {
   const carouselItems: CarouselItem[] = [
     {
       id: "1",
-      title: "Cloud/Android/iOS Customer",
+      title: "Fintech Fortune 500 customer",
       description:
-        "We have successfully built multiple modules with Indexnine over the past year ranging from web applications to Android and iOS components. Strongly recommend Indexnine as a technical partner.",
-      category: "CTO",
-      image: carlImg3,
+        "Our experience with Indexnine has been stellar. From understanding the requirements to delivering results, the team worked hard to acheive stringent timelines and quality needs. Indexnine is now our vendor of choice.",
+      category: "AVP Products",
+      image: avatar2,
     },
     {
       id: "2",
-      title: "Cloud/Android/iOS Customer",
+      title: "Sid Yenamandra",
       description:
-        "We have successfully built multiple modules with Indexnine over the past year ranging from web applications to Android and iOS components. Strongly recommend Indexnine as a technical partner.",
-      category: "CTO",
-      image: carlImg3,
+        "We partnered with Indexnine to build our offshore technology team. Over the years, Indexnine has transformed our product and allowed us to focus on business while they handle the technology. Their cloud architectural expertise and technical team were instrumental in scaling the product and providing a stable platform to grow.  I would highly recommend Indexnine as a technical partner.",
+      category: "Former CEO, Entreda",
+      image: avatar1,
     },
     {
       id: "3",
-      title: "Cloud/Android/iOS Customer",
+      title: "Anurag Maunder",
       description:
-        "We have successfully built multiple modules with Indexnine over the past year ranging from web applications to Android and iOS components. Strongly recommend Indexnine as a technical partner.",
-      category: "CTO",
-      image: carlImg3,
+        "Indexnine not only created a beautiful enterprise UI , they worked with us to address our enterprise customer’s unique security needs. They helped solve complex mathematical transforms to provide a sophisticated computer vision experience. They are not just an ordinary offshore team.  They will help solve challenging issues that are unique to the problem at hand. ",
+      category: "CEO, Sensable",
+      image: avatar1,
     },
     {
       id: "4",
+      title: "Enterprise Mobility Customer",
+      description:
+        "We chose Indexnine to build our enterprise mobile application. Their commitment to quality and deliverables is excellent. I would recommend Indexnine as technical partners to businesses who are quality and performance concious.",
+      category: "CEO",
+      image: avatar1,
+    },
+    {
+      id: "5",
       title: "Cloud/Android/iOS Customer",
       description:
         "We have successfully built multiple modules with Indexnine over the past year ranging from web applications to Android and iOS components. Strongly recommend Indexnine as a technical partner.",
       category: "CTO",
-      image: carlImg3,
+      image: avatar2,
+    },
+    {
+      id: "6",
+      title: "Cloud Architecture Customer",
+      description:
+        "I recommend Indexnine as a technical partner. Their understanding of cloud technologies and architectural ability to identify the right solution has been very valuable to our business.",
+      category: "Product Manager",
+      image: avatar1,
     },
   ];
 
