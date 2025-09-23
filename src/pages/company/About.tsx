@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -10,10 +10,39 @@ import {
 import { BrainCircuit, BrickWall, Sparkles } from "lucide-react";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
 import styles from "../../assets/css/stylesheet.module.css";
-import AboutImg from "../../assets/images/about.webp";
+import AboutImg1 from "../../assets/images/about.webp";
+import AboutImg2 from "../../assets/images/about2.webp";
+import AboutImg3 from "../../assets/images/about3.webp";
+import AboutImg4 from "../../assets/images/about4.webp";
+import AboutImg5 from "../../assets/images/about5.webp";
+import AboutImg6 from "../../assets/images/about6.webp";
+
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
+const images = [
+  AboutImg1,
+  AboutImg2,
+  AboutImg3,
+  AboutImg4,
+  AboutImg5,
+  AboutImg6,
+];
+
 const About = () => {
+  const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % images.length);
+        setFade(true);
+      }, 500);
+    }, 2000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <WebPageSchema
@@ -64,8 +93,8 @@ const About = () => {
             </div>
 
             <div className="container mx-auto px-6 lg:px-8 relative z-10">
-              <div className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-16">
-                <div className="max-w-4xl mx-auto  col-span-2">
+              <div className="grid grid-cols-1 md:grid-cols-5 max-w-5xl mx-auto gap-16">
+                <div className="max-w-4xl mx-auto  md:col-span-3">
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
                     Our Mission
                   </h2>
@@ -80,11 +109,11 @@ const About = () => {
                     strategic partner you thought you couldn't find.
                   </p>
                 </div>
-                <div className="">
+                <div className="md:col-span-2">
                   <img
-                    src={AboutImg}
-                    alt="About"
-                    className="rounded-sm shadow shadow-lg w-[300px]"
+                    src={images[index]}
+                    alt={`slider-${index}`}
+                    className="rounded-sm shadow shadow-lg w-[320px]"
                   />
                 </div>
               </div>

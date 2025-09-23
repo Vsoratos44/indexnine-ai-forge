@@ -21,6 +21,7 @@ import blogMicrosMonolth from "@/assets/images/blog-micros-monolth.webp";
 import blogModenrnAnltcs from "@/assets/images/blog-modern-analytics.webp";
 import blogRobot from "@/assets/images/blog-robot.webp";
 import blogCloudInfra from "@/assets/images/blog-cloud-infra.webp";
+import blogSnapTest from "@/assets/images/blog-snap-test.webp";
 
 const Blogs = () => {
   /**
@@ -31,19 +32,21 @@ const Blogs = () => {
   const blogPosts = [
     {
       id: "quality-engineering-platform",
-      img: blogRobot,
+      img: blogSnapTest,
       title: "Snap.TestAuthor: Stop Guessing, Start Engineering Quality",
-      excerpt: "Empower your non-technical teams with Snap.TestAuthor. Our platform uses the TMap® methodology to generate risk-driven test cases from your existing documents, ensuring you build the right product, right from the start.",
+      excerpt:
+        "Empower your non-technical teams with Snap.TestAuthor. Our platform uses the TMap® methodology to generate risk-driven test cases from your existing documents, ensuring you build the right product, right from the start.",
       author: "QA Engineering Team",
       publishDate: "February 15, 2025",
       readTime: "12 min read",
       category: "Quality Engineering",
       featured: false,
       metaTitle: "Snap.TestAuthor: Stop Guessing, Start Engineering Quality",
-      metaDescription: "Empower your non-technical teams with Snap.TestAuthor. Our platform uses the TMap® methodology to generate risk-driven test cases from your existing documents, ensuring you build the right product, right from the start.",
+      metaDescription:
+        "Empower your non-technical teams with Snap.TestAuthor. Our platform uses the TMap® methodology to generate risk-driven test cases from your existing documents, ensuring you build the right product, right from the start.",
       tags: [
         "test case generation",
-        "product owner testing", 
+        "product owner testing",
         "quality engineering",
         "TMap methodology",
         "agile QA",
@@ -51,22 +54,23 @@ const Blogs = () => {
         "Jira test automation",
         "QA consulting",
         "test automation",
-        "shift-left testing"
+        "shift-left testing",
       ],
       content: {
-        summary: "Strategic guide to intelligent test case generation using TMap methodology, empowering non-technical teams to build quality into products from the start.",
+        summary:
+          "Strategic guide to intelligent test case generation using TMap methodology, empowering non-technical teams to build quality into products from the start.",
         sections: [
           "The Product Owner's Testing Dilemma",
           "The Shift to Intelligent, Outcome-Driven Quality",
           "From Raw Requirements to Actionable Insights in Four Steps",
           "The Future is Automated, Self-Healing, and Intelligent",
-          "Frequently Asked Questions"
+          "Frequently Asked Questions",
         ],
         cta: {
           primary: "Schedule Your Live Demo",
-          secondary: "Talk to a QA Strategist"
-        }
-      }
+          secondary: "Talk to a QA Strategist",
+        },
+      },
     },
     {
       id: "cloud-infrastructure-automation-terraform",
