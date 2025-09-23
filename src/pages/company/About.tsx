@@ -30,16 +30,11 @@ const images = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  const [fade, setFade] = useState(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setFade(false);
-      setTimeout(() => {
-        setIndex((prev) => (prev + 1) % images.length);
-        setFade(true);
-      }, 500);
-    }, 2000);
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
     return () => clearInterval(timer);
   }, []);
 
@@ -110,11 +105,26 @@ const About = () => {
                   </p>
                 </div>
                 <div className="md:col-span-2">
-                  <img
+                  <div className="w-full max-w-xl mx-auto overflow-hidden h-[420px] relative">
+                    <div
+                      className="flex transition-transform duration-700 h-[400px]"
+                      style={{ transform: `translateX(-${index * 100}%)` }}
+                    >
+                      {images.map((src, i) => (
+                        <img
+                          key={i}
+                          src={src}
+                          alt={`slide-${i}`}
+                          className="w-[320px] h-[400px] object-cover shrink-0 grow-0 basis-full rounded-sm"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  {/* <img
                     src={images[index]}
                     alt={`slider-${index}`}
                     className="rounded-sm shadow shadow-lg w-[320px]"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
