@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { openPositions } from "./Jobs";
@@ -17,8 +17,18 @@ import { MapPin, Clock, Users, Zap, Heart, Award } from "lucide-react";
 import LivingVoidBackground from "@/components/LivingVoidBackground";
 import { Link } from "react-router-dom";
 import styles from "../../assets/css/stylesheet.module.css";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import CareersForm from "@/components/CareersForm";
 
 const Careers = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
   const currentDate = new Date().toISOString();
   const validThrough = new Date(
     Date.now() + 90 * 24 * 60 * 60 * 1000
@@ -295,9 +305,20 @@ const Careers = () => {
               We're always looking for exceptional talent. Send us your resume
               and let us know how you'd like to contribute to our mission.
             </p>
-            <Button variant="btnSecondary" size="lg">
-              Send Your Resume
-            </Button>
+
+            <Dialog open={isFormOpen} onOpenChange={setIsFormOpen}>
+              <DialogTrigger asChild>
+                <Button variant="btnSecondary" size="lg">
+                  Send Your Resume
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl min-h-[400px] h-[80vh] overflow-y-auto">
+                <CareersForm
+                  className="mt-4"
+                  formUrl="https://webforms.pipedrive.com/f/6GYcaOrG7FWBY6qO8j3aJ2oVVqPKzMUnOZkxfQWaEV8hSenWhty6Hpj9iLmdp7x57B"
+                />
+              </DialogContent>
+            </Dialog>
           </div>
         </section>
 

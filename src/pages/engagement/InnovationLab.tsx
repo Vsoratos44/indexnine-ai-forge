@@ -228,104 +228,110 @@ const InnovationLab = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <CardGlass className="group p-6 sm:p-8">
-              <div
-                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-              >
-                <Search className="w-8 h-8 text-brand-primary" />
+            <CardGlass className="group p-6 sm:p-8 flex flex-col">
+              <div>
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
+                  <Search className="w-8 h-8 text-brand-primary" />
+                </div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
+                  The Discovery Studio: De-Risking Your Vision
+                </h3>
+                <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
+                  Great products aren't just built; they're validated. Our
+                  Discovery Studio is a structured, intensive process—our Sprint
+                  0—where we map your business goals to a technical strategy. We
+                  define your core user journeys, prioritize features for a
+                  Minimum Viable Product, and create a comprehensive product
+                  roadmap. This is where we ensure what we build is what your
+                  customers will love.
+                </p>
+                <div className="space-y-2 mb-6">
+                  <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
+                    Offerings:
+                  </h4>
+                  <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
+                    <li>• Product Roadmapping</li>
+                    <li>• Feature Prioritization</li>
+                    <li>• Market & Technical Feasibility</li>
+                    <li>• MVP Scoping</li>
+                  </ul>
+                </div>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
-                The Discovery Studio: De-Risking Your Vision
-              </h3>
-              <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                Great products aren't just built; they're validated. Our
-                Discovery Studio is a structured, intensive process—our Sprint
-                0—where we map your business goals to a technical strategy. We
-                define your core user journeys, prioritize features for a
-                Minimum Viable Product, and create a comprehensive product
-                roadmap. This is where we ensure what we build is what your
-                customers will love.
-              </p>
-              <div className="space-y-2 mb-6">
-                <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
-                  Offerings:
-                </h4>
-                <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
-                  <li>• Product Roadmapping</li>
-                  <li>• Feature Prioritization</li>
-                  <li>• Market & Technical Feasibility</li>
-                  <li>• MVP Scoping</li>
-                </ul>
-              </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center mt-auto">
                 <Button variant="btnPrimary">
                   Explore our Discovery Process
                 </Button>
               </div>
             </CardGlass>
 
-            <CardGlass className="group p-6 sm:p-8">
-              <div
-                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-              >
-                <PenTool className="w-8 h-8 text-brand-primary" />
+            <CardGlass className="group p-6 sm:p-8 flex flex-col">
+              <div>
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
+                  <PenTool className="w-8 h-8 text-brand-primary" />
+                </div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
+                  The Design Studio: Crafting Intuitive Experiences
+                </h3>
+                <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
+                  A brilliant idea deserves a brilliant user experience. Our
+                  Design Studio translates your vision into intuitive, engaging,
+                  and beautiful interfaces. We move from low-fidelity wireframes
+                  to high-fidelity, market ready MVPs with unmatched speed. Our
+                  design-led product mindset means we build products that aren't
+                  just functional, but memorable.
+                </p>
+                <div className="space-y-2 mb-6">
+                  <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
+                    Offerings:
+                  </h4>
+                  <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
+                    <li>• UI/UX Design</li>
+                    <li>• Interactive Prototyping</li>
+                    <li>• Enterprise Design Refresh</li>
+                  </ul>
+                </div>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
-                The Design Studio: Crafting Intuitive Experiences
-              </h3>
-              <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                A brilliant idea deserves a brilliant user experience. Our
-                Design Studio translates your vision into intuitive, engaging,
-                and beautiful interfaces. We move from low-fidelity wireframes
-                to high-fidelity, market ready MVPs with unmatched speed. Our
-                design-led product mindset means we build products that aren't
-                just functional, but memorable.
-              </p>
-              <div className="space-y-2 mb-6">
-                <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
-                  Offerings:
-                </h4>
-                <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
-                  <li>• UI/UX Design</li>
-                  <li>• Interactive Prototyping</li>
-                  <li>• Enterprise Design Refresh</li>
-                </ul>
-              </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center mt-auto">
                 <Button variant="btnPrimary">Explore our Design Studio</Button>
               </div>
             </CardGlass>
 
-            <CardGlass className="group p-6 sm:p-8">
-              <div
-                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-              >
-                <Brain className="w-8 h-8 text-brand-primary" />
+            <CardGlass className="group p-6 sm:p-8 flex flex-col">
+              <div>
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
+                  <Brain className="w-8 h-8 text-brand-primary" />
+                </div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
+                  The AI Studio: Building Your Competitive Edge
+                </h3>
+                <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
+                  In today's business climate, AI is no longer an afterthought,
+                  or a differentiator. Leveraging AI in digital products is
+                  table stakes. Our AI Studio specializes in building custom AI
+                  solutions that give your product unique and differentiated
+                  advantages against the competition. From Generative AI
+                  applications, Large Language Model (LLM), and Small Language
+                  Model development, we accelerate feature creation and embed
+                  intelligent user experiences into the heart of your product.
+                </p>
+                <div className="space-y-2 mb-6">
+                  <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
+                    Offerings:
+                  </h4>
+                  <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
+                    <li>• Custom AI Development</li>
+                    <li>• Generative AI & RAG Solutions</li>
+                    <li>• Small Language Model Development</li>
+                  </ul>
+                </div>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
-                The AI Studio: Building Your Competitive Edge
-              </h3>
-              <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                In today's business climate, AI is no longer an afterthought, or
-                a differentiator. Leveraging AI in digital products is table
-                stakes. Our AI Studio specializes in building custom AI
-                solutions that give your product unique and differentiated
-                advantages against the competition. From Generative AI
-                applications, Large Language Model (LLM), and Small Language
-                Model development, we accelerate feature creation and embed
-                intelligent user experiences into the heart of your product.
-              </p>
-              <div className="space-y-2 mb-6">
-                <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
-                  Offerings:
-                </h4>
-                <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
-                  <li>• Custom AI Development</li>
-                  <li>• Generative AI & RAG Solutions</li>
-                  <li>• Small Language Model Development</li>
-                </ul>
-              </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center mt-auto">
                 <Button variant="btnPrimary">
                   <Link to="/services/ai">Innovate with our AI Studio</Link>
                 </Button>
@@ -394,15 +400,18 @@ const InnovationLab = () => {
                   <Rocket className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground-dark mb-4">
-                  FinTech Startup Launches Secure MVP in 8 Weeks
+                  From Audit to Action: Engineering a $165M+ Cybersecurity Exit
                 </h3>
                 <p className="text-foreground-dark-muted mb-6">
-                  See how we partnered with a visionary founder to go from a
-                  napkin sketch to a fully functional, secure FinTech platform,
-                  ready for its seed round.
+                  See how our strategic partnership transformed a niche auditing
+                  tool into a mission-critical identity platform, directly
+                  enabling a $165M+ acquisition.
                 </p>
                 <Button variant="btnLink" size="link">
-                  <Link to="/insights/case-studies/zilla">
+                  <Link
+                    to="/insights/case-studies/zilla"
+                    className="flex items-center"
+                  >
                     Read the Case Study{" "}
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
@@ -424,7 +433,10 @@ const InnovationLab = () => {
                   game-changing deployment accelerator.
                 </p>
                 <Button variant="btnLink" size="link">
-                  <Link to="/insights/blogs/cloud-infrastructure-automation-terraform">
+                  <Link
+                    to="/insights/blogs/cloud-infrastructure-automation-terraform"
+                    className="flex items-center"
+                  >
                     Read the Blog Post{" "}
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
@@ -446,7 +458,10 @@ const InnovationLab = () => {
                   complex interfaces with incredible speed and quality.
                 </p>
                 <Button variant="btnLink" size="link">
-                  <Link to="/insights/blogs/ai-assisted-software-engineering">
+                  <Link
+                    to="/insights/blogs/ai-assisted-software-engineering"
+                    className="flex items-center"
+                  >
                     Read the Blog Post{" "}
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
