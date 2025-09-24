@@ -81,7 +81,7 @@ const Differentiators = () => {
               <div
                 className={`relative w-20 h-20 flex items-center justify-center mb-8 ${styles.icnBg}`}
               >
-                <diff.icon className="w-10 h-10 text-brand-primary group-hover:text-brand-primary-dark transition-colors duration-300" />
+                <diff.icon className="w-8 h-8 text-brand-primary  transition-colors duration-300" />
               </div>
 
               {/* Content */}
