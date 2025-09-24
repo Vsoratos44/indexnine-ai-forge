@@ -220,8 +220,8 @@ const OutcomeBased = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div
                   className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
                 >
@@ -237,8 +237,8 @@ const OutcomeBased = () => {
                 </p>
               </div>
 
-              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div
                   className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
                 >
@@ -254,8 +254,8 @@ const OutcomeBased = () => {
                 </p>
               </div>
 
-              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative overflow-hidden bg-[#ffffff39] border border-[#00000019] rounded-xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div
                   className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
                 >
@@ -325,20 +325,20 @@ const OutcomeBased = () => {
                         </h4>
                         <ul className="space-y-2 text-sm text-foreground-dark/80">
                           <li className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-green-500" />A
-                            20% increase in user conversion rates
+                            <CheckCircle className="w-4 h-4 text-brand-purple" />
+                            A 20% increase in user conversion rates
                           </li>
                           <li className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-green-500" />A
-                            15% reduction in customer support tickets
+                            <CheckCircle className="w-4 h-4 text-brand-purple" />
+                            A 15% reduction in customer support tickets
                           </li>
                           <li className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-green-500" />
+                            <CheckCircle className="w-4 h-4 text-brand-purple" />
                             Achieving 50,000 monthly active users within six
                             months
                           </li>
                           <li className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-green-500" />
+                            <CheckCircle className="w-4 h-4 text-brand-purple" />
                             Reducing cloud infrastructure costs by 25%
                           </li>
                         </ul>
@@ -421,9 +421,9 @@ const OutcomeBased = () => {
                         real-time dashboards and regular progress reports
                         against our shared KPIs.
                       </p>
-                      <div className="flex items-center gap-4 p-4 bg-green-50 rounded-lg border border-green-200">
-                        <CheckCircle className="w-6 h-6 text-green-600" />
-                        <p className="text-green-800 font-medium">
+                      <div className="flex items-center gap-4 ">
+                        <CheckCircle className="w-6 h-6 text-brand-purple" />
+                        <p className="text-foreground-dark-muted font-medium">
                           Our success is inextricably linked to yours,
                           motivating our team to innovate, solve problems
                           creatively, and deliver extraordinary value.
@@ -452,7 +452,7 @@ const OutcomeBased = () => {
             </div>
 
             <div className="overflow-x-auto">
-              <table className="w-full bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+              <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
                 <thead className="bg-black/5 text-black">
                   <tr>
                     <th className="px-8 py-6 text-left font-semibold text-xl">
@@ -467,7 +467,7 @@ const OutcomeBased = () => {
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-8 py-6">
                       <div className="flex items-center gap-4">
-                        <Shield className="w-8 h-8 text-red-600" />
+                        <Shield className="w-8 h-8 text-blue-600" />
                         <span className="font-semibold text-lg text-foreground-dark">
                           De-Risked Investment
                         </span>
@@ -498,7 +498,7 @@ const OutcomeBased = () => {
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-8 py-6">
                       <div className="flex items-center gap-4">
-                        <TrendingUp className="w-8 h-8 text-green-600" />
+                        <TrendingUp className="w-8 h-8 text-brand-purple" />
                         <span className="font-semibold text-lg text-foreground-dark">
                           Guaranteed ROI Focus
                         </span>
@@ -549,9 +549,9 @@ const OutcomeBased = () => {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle className="w-8 h-8 text-green-600" />
+              <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+                <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <CheckCircle className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                   Clear Business Objectives
@@ -563,9 +563,9 @@ const OutcomeBased = () => {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Handshake className="w-8 h-8 text-blue-600" />
+              <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+                <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Handshake className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                   Long-Term Partnership
@@ -576,8 +576,8 @@ const OutcomeBased = () => {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+                <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <TrendingUp className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground-dark mb-4">
@@ -590,9 +590,9 @@ const OutcomeBased = () => {
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Users className="w-8 h-8 text-orange-600" />
+              <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+                <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Users className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                   Collaborative Culture
@@ -618,7 +618,7 @@ const OutcomeBased = () => {
               </h2>
             </div>
 
-            <div className="space-y-4">
+            <div className="bg-white rounded-xl shadow-lg border-t border-[#00000010] px-6">
               {[
                 {
                   question:
@@ -646,23 +646,23 @@ const OutcomeBased = () => {
               ].map((faq, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden"
+                  className="overflow-hidden border-b last:border-b-0"
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                    className="w-full py-6 text-left flex items-center justify-between "
                   >
-                    <span className="font-semibold text-foreground-dark pr-4 text-lg">
+                    <span className="font-semibold text-foreground-dark pr-4">
                       {faq.question}
                     </span>
                     {expandedFAQ === index ? (
-                      <ChevronUp className="w-6 h-6 text-muted-foreground flex-shrink-0" />
+                      <ChevronUp className="w-6 h-6 text-foreground-dark-muted flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-6 h-6 text-muted-foreground flex-shrink-0" />
+                      <ChevronDown className="w-6 h-6 text-foreground-dark-muted flex-shrink-0" />
                     )}
                   </button>
                   {expandedFAQ === index && (
-                    <div className="px-8 pb-6 border-t border-gray-100">
+                    <div className=" pb-6 border-t border-gray-100">
                       <p className="text-foreground-dark/80 leading-relaxed pt-4">
                         {faq.answer}
                       </p>
