@@ -637,7 +637,8 @@ const ConsultingStrategy = () => {
                     </span>
                   </h2>
                   <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
-                    We help clients figure out their transformation journey using our Outcome-First Consulting approach:
+                    We help clients figure out their transformation journey
+                    using our Outcome-First Consulting approach:
                   </p>
                 </div>
 
@@ -647,33 +648,42 @@ const ConsultingStrategy = () => {
                     {
                       step: "1",
                       title: "Align Value & Goals",
-                      description: "Co-define the business outcomes to move—so every choice traces back to value.",
+                      description:
+                        "Co-define the business outcomes to move—so every choice traces back to value.",
                     },
                     {
-                      step: "2", 
+                      step: "2",
                       title: "Discover Opportunities & Readiness",
-                      description: "Identify AI opportunities and evaluate Potential/ Readiness/ Risk and define a focused candidate list.",
+                      description:
+                        "Identify AI opportunities and evaluate Potential/ Readiness/ Risk and define a focused candidate list.",
                     },
                     {
                       step: "3",
-                      title: "Define Solutions & Choose Bets", 
-                      description: "Shape solutions for the priority opportunities; classify Tactical vs Strategic bets.",
+                      title: "Define Solutions & Choose Bets",
+                      description:
+                        "Shape solutions for the priority opportunities; classify Tactical vs Strategic bets.",
                     },
                     {
                       step: "4",
                       title: "Outcome Roadmap",
-                      description: "Create an outcome-oriented roadmap, with owners, dependencies, experiments to de-risk scale.",
+                      description:
+                        "Create an outcome-oriented roadmap, with owners, dependencies, experiments to de-risk scale.",
                     },
                     {
                       step: "5",
                       title: "Enable Teams & Governance",
-                      description: "Recommend team shape, governance model, adoption practices, to execute roadmap with confidence.",
+                      description:
+                        "Recommend team shape, governance model, adoption practices, to execute roadmap with confidence.",
                     },
                   ].map((item) => (
                     <div key={item.step} className="text-center">
                       <div className="w-16 h-16 bg-gradient-to-b from-brand-purple to-[#505CFD] rounded-xl flex items-center justify-center mx-auto mb-[-2rem] relative z-[10]">
-                        <div className="relative w-12 h-12 rounded-sm flex items-center justify-center bg-gradient-to-r from-[#727AF2] to-[#535DE1] border border-white/25">
-                          <span className="text-white font-semibold">{item.step}</span>
+                        <div
+                          className={`relative w-16 h-16 rounded-sm flex items-center justify-center mt-[-0.5rem] mr-[-0.5rem] bg-gradient-to-r from-[#727AF2] to-[#535DE1] border border-white/25`}
+                        >
+                          <span className="text-white text-2xl font-light">
+                            {item.step}
+                          </span>
                         </div>
                       </div>
                       <div className="bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg h-full rounded-2xl">
@@ -696,7 +706,7 @@ const ConsultingStrategy = () => {
                   <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                     <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
-                    
+
                     <div className="relative">
                       <h3 className="text-xl font-semibold mb-4 text-foreground-white">
                         Where to Play (The "WHAT" part of transformation)
@@ -711,7 +721,7 @@ const ConsultingStrategy = () => {
                   <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
                     <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
-                    
+
                     <div className="relative">
                       <h3 className="text-xl font-semibold mb-4 text-foreground-white">
                         How to Win (The "HOW" part of transformation)
@@ -727,20 +737,36 @@ const ConsultingStrategy = () => {
                 <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-2xl p-6">
                   <div className="grid grid-cols-4 gap-8 text-center">
                     <div>
-                      <h4 className="font-semibold text-foreground-white mb-2">Outcomes</h4>
-                      <p className="text-sm text-foreground-white/70">What you get</p>
+                      <h4 className="font-semibold text-foreground-white mb-2">
+                        Outcomes
+                      </h4>
+                      <p className="text-sm text-foreground-white/70">
+                        What you get
+                      </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground-white mb-2">Clarity</h4>
-                      <p className="text-sm text-foreground-white/70">First bets & what to ship first</p>
+                      <h4 className="font-semibold text-foreground-white mb-2">
+                        Clarity
+                      </h4>
+                      <p className="text-sm text-foreground-white/70">
+                        First bets & what to ship first
+                      </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground-white mb-2">Confidence</h4>
-                      <p className="text-sm text-foreground-white/70">Quick, low-risk proofs & feasibility signals</p>
+                      <h4 className="font-semibold text-foreground-white mb-2">
+                        Confidence
+                      </h4>
+                      <p className="text-sm text-foreground-white/70">
+                        Quick, low-risk proofs & feasibility signals
+                      </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground-white mb-2">Momentum</h4>
-                      <p className="text-sm text-foreground-white/70">Sequenced plan, owners & decisions</p>
+                      <h4 className="font-semibold text-foreground-white mb-2">
+                        Momentum
+                      </h4>
+                      <p className="text-sm text-foreground-white/70">
+                        Sequenced plan, owners & decisions
+                      </p>
                     </div>
                   </div>
                 </div>
