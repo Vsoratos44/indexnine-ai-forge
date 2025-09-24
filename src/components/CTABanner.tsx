@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import PipedriveForm from "./PipedriveForm";
 import styles from "../assets/css/stylesheet.module.css";
 
@@ -22,17 +28,17 @@ const CTABanner = () => {
             Let's discuss how we can help you build innovative products and
             scale your engineering capabilities.
           </p>
-          
+
           <Dialog open={isFormOpen} onOpenChange={setIsFormOpen}>
             <DialogTrigger asChild>
               <Button variant="btnPrimary" size="lg">
                 Start Your Project Today
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
-              <DialogHeader>
+            <DialogContent className="max-w-2xl min-h-[400px] h-[80vh] overflow-y-auto">
+              {/* <DialogHeader>
                 <DialogTitle>Start Your Project</DialogTitle>
-              </DialogHeader>
+              </DialogHeader> */}
               <PipedriveForm className="mt-4" />
             </DialogContent>
           </Dialog>

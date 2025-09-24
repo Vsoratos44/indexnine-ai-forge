@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { openPositions } from "./Jobs";
 import Header from "@/components/Header";
@@ -6,8 +6,18 @@ import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import styles from "../../assets/css/stylesheet.module.css";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import CareersForm from "@/components/CareersForm";
 
 const JobDetails = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
   const { jobId } = useParams();
   const job = openPositions[jobId];
 
@@ -32,12 +42,22 @@ const JobDetails = () => {
         <p>Location: {job.location}</p>
         <p>Type: {job.type}</p>
         <p className="mb-8">Department: {job.department}</p>
-        <Link to={`mailto:careers@indexnine.com`}>
-          <Button variant="btnPrimary" size="lg">
-            Apply Now
-          </Button>
-        </Link>
+
+        <Dialog open={isFormOpen} onOpenChange={setIsFormOpen}>
+          <DialogTrigger asChild>
+            <Button variant="btnPrimary" size="lg">
+              Apply Now
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="max-w-2xl min-h-[400px] h-[80vh] overflow-y-auto">
+            <CareersForm
+              className="mt-4"
+              formUrl="https://webforms.pipedrive.com/f/6GYcaOrG7FWBY6qO8j3aJ2oVVqPKzMUnOZkxfQWaEV8hSenWhty6Hpj9iLmdp7x57B"
+            />
+          </DialogContent>
+        </Dialog>
       </div>
+
       <Footer />
     </div>
   );
