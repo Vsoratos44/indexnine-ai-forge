@@ -551,7 +551,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </h2>
                     <div className="overflow-x-auto mb-8 rounded-xl border">
                       <table className="w-full bg-white  border-0 overflow-hidden">
-                        <thead className="bg-primary text-primary-foreground">
+                        <thead className="bg-black/10 text-foreground-dark">
                           <tr>
                             <th className="px-6 py-4 text-left font-semibold">
                               Factor
