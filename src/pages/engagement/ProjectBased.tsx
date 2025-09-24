@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import styles from "../../assets/css/stylesheet.module.css";
 import { useSEO } from "@/hooks/useSEO";
+import { Card, CardContent } from "@/components/ui/card";
 
 const ProjectBased = () => {
   useSEO({
@@ -193,50 +194,58 @@ const ProjectBased = () => {
                 initiatives:
               </p>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
-                  <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
-                    Sprint Zero Engagement
-                  </h4>
-                  <p className="text-brand-primary font-semibold mb-3 text-lg">
-                    $25,000
-                  </p>
-                  <p className="text-foreground-dark-muted font-montserrat">
-                    A foundational planning and discovery sprint to de-risk your
-                    project, define scope, and create a clear roadmap before you
-                    commit to a full build.
-                  </p>
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+                <Card className="p-4 sm:p-6 lg:p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
+                  <CardContent className="p-0 h-full">
+                    <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-foreground-dark">
+                      Sprint Zero Engagement
+                    </h3>
+                    <p className="text-2xl sm:text-3xl font-semibold text-brand-purple mb-3 sm:mb-4">
+                      $25,000
+                    </p>
+                    <p className="text-sm sm:text-base text-foreground-dark-muted m-0 font-montserrat">
+                      A foundational planning and discovery sprint to de-risk
+                      your project, define scope, and create a clear roadmap
+                      before you commit to a full build.
+                    </p>
+                  </CardContent>
+                </Card>
 
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
-                  <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
-                    AI Audit
-                  </h4>
-                  <p className="text-brand-primary font-semibold mb-3 text-lg">
-                    $35,000
-                  </p>
-                  <p className="text-foreground-dark-muted font-montserrat">
-                    A comprehensive assessment of your current systems and data
-                    to identify high-impact opportunities for leveraging
-                    artificial intelligence.
-                  </p>
-                </div>
+                <Card className="p-4 sm:p-6 lg:p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
+                  <CardContent className="p-0 h-full">
+                    <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-foreground-dark">
+                      AI Audit
+                    </h3>
+                    <p className="text-2xl sm:text-3xl font-semibold text-brand-purple mb-3 sm:mb-4">
+                      $35,000
+                    </p>
+                    <p className="text-sm sm:text-base text-foreground-dark-muted m-0 font-montserrat">
+                      A comprehensive assessment of your current systems and
+                      data to identify high-impact opportunities for leveraging
+                      artificial intelligence.
+                    </p>
+                  </CardContent>
+                </Card>
 
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
-                  <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
-                    AI Audit Pro
-                  </h4>
-                  <p className="text-brand-primary font-semibold mb-3 text-lg">
-                    $42,500
-                  </p>
-                  <p className="text-foreground-dark-muted font-montserrat">
-                    An advanced, in-depth audit that includes strategic
-                    roadmapping and a detailed implementation plan for your AI
-                    initiatives.
-                  </p>
-                </div>
+                <Card className="p-4 sm:p-6 lg:p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
+                  <CardContent className="p-0 h-full">
+                    <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-foreground-dark">
+                      AI Audit Pro
+                    </h3>
+                    <p className="text-2xl sm:text-3xl font-semibold text-brand-purple mb-3 sm:mb-4">
+                      $42,500
+                    </p>
+                    <p className="text-sm sm:text-base text-foreground-dark-muted m-0 font-montserrat">
+                      An advanced, in-depth audit that includes strategic
+                      roadmapping and a detailed implementation plan for your AI
+                      initiatives.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
 
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+              <div className="grid md:grid-cols-2  gap-6 mt-8">
+                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
                   <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
                     AI Assessment, Roadmap & Enablement
                   </h4>
@@ -247,7 +256,7 @@ const ProjectBased = () => {
                   </p>
                 </div>
 
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
+                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
                   <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
                     Tech Strategy & Testing Strategy (APQR)
                   </h4>
@@ -285,7 +294,7 @@ const ProjectBased = () => {
               <div className="space-y-6">
                 {/* Sports Interactive Case Study */}
                 <Link to="/insights/case-studies/annotate" className="block">
-                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
+                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
                       <div
                         className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
@@ -329,7 +338,7 @@ const ProjectBased = () => {
 
                 {/* Genesis Case Study */}
                 <Link to="/insights/case-studies/genesys" className="block">
-                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
+                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
                       <div
                         className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
@@ -374,7 +383,7 @@ const ProjectBased = () => {
 
                 {/* GPTW Case Study */}
                 <Link to="#." className="block">
-                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
+                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
                       <div
                         className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
@@ -479,7 +488,7 @@ const ProjectBased = () => {
                 ].map((step, index) => (
                   <div
                     key={index}
-                    className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 group text-left"
+                    className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 group text-left"
                   >
                     <div
                       className={`relative w-16 h-16 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}

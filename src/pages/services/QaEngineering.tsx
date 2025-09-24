@@ -894,53 +894,52 @@ const QualityEngineering = () => {
             </div>
           </div>
         </div>
-      </div>
+        {/* FAQ Section */}
+        <section className="pt-16 lg:pt-24 bg-transparent">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-6xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                  <span className="leading-[1.25]">
+                    Your Quality Engineering Questions, Answered
+                  </span>
+                </h2>
+              </div>
 
-      {/* FAQ Section */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-6xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-                <span className="leading-[1.25]">
-                  Your Quality Engineering Questions, Answered
-                </span>
-              </h2>
-            </div>
-
-            <div className="space-y-0 rounded-3xl bg-[#fff] px-8 py-4">
-              {faqData.map((faq, index) => (
-                <div
-                  key={index}
-                  className="border-b border-border last:border-b-0 bg-background-card-light"
-                >
-                  <button
-                    onClick={() => toggleFAQ(index)}
-                    className="w-full  py-4 text-left flex justify-between items-center hover:bg-muted/20  transition-colors"
-                    aria-expanded={openFAQ === index}
+              <div className="space-y-0 rounded-3xl bg-[#fff] px-8 py-4">
+                {faqData.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="border-b border-border last:border-b-0 bg-background-card-light"
                   >
-                    <span className="font-semibold text-foreground-dark pr-4">
-                      {faq.question}
-                    </span>
-                    {openFAQ === index ? (
-                      <ChevronUp className="h-5 w-5 text-[#000] flex-shrink-0" />
-                    ) : (
-                      <ChevronDown className="h-5 w-5 text-[#000] flex-shrink-0" />
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full  py-4 text-left flex justify-between items-center hover:bg-muted/20  transition-colors"
+                      aria-expanded={openFAQ === index}
+                    >
+                      <span className="font-semibold text-foreground-dark pr-4">
+                        {faq.question}
+                      </span>
+                      {openFAQ === index ? (
+                        <ChevronUp className="h-5 w-5 text-[#000] flex-shrink-0" />
+                      ) : (
+                        <ChevronDown className="h-5 w-5 text-[#000] flex-shrink-0" />
+                      )}
+                    </button>
+                    {openFAQ === index && (
+                      <div className="pb-4">
+                        <p className="text-foreground-dark-muted leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
                     )}
-                  </button>
-                  {openFAQ === index && (
-                    <div className="pb-4">
-                      <p className="text-foreground-dark-muted leading-relaxed">
-                        {faq.answer}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Final CTA Section with Form */}
       <section

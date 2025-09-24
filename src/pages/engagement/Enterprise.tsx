@@ -425,17 +425,17 @@ const Enterprise = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-12 text-foreground-dark text-center">
             Your Enterprise Questions, Answered
           </h2>
-          <div className="space-y-4">
+          <div className="space-y-0 bg-white rounded-lg shadow-lg border-t border-[#00000010] px-6">
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+                className="overflow-hidden border-b last:border-b-0"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full py-6 text-left flex items-center justify-between"
                 >
-                  <h3 className="text-lg font-semibold text-foreground-dark">
+                  <h3 className=" font-semibold text-foreground-dark">
                     {faq.question}
                   </h3>
                   {expandedFAQ === index ? (
@@ -445,8 +445,8 @@ const Enterprise = () => {
                   )}
                 </button>
                 {expandedFAQ === index && (
-                  <div className="px-6 pb-6 border-t border-gray-100">
-                    <p className="text-foreground-dark/80 leading-relaxed pt-4">
+                  <div className=" pb-6 ">
+                    <p className="text-foreground-dark/80 leading-relaxed pt-0">
                       {faq.answer}
                     </p>
                   </div>
