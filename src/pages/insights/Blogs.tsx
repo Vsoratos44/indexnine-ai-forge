@@ -476,7 +476,11 @@ const Blogs = () => {
                     </div>
 
                     <Link to={`/insights/blogs/${post.id}`} className="mt-auto">
-                      <Button variant="btnLink" size="lg" className="p-0">
+                      <Button
+                        variant="btnLink"
+                        size="lg"
+                        className="p-0 md:px-0"
+                      >
                         Read More <ArrowRight className="w-4 h-4 ml-2" />
                       </Button>
                     </Link>
