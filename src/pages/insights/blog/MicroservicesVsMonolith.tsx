@@ -313,9 +313,11 @@ const MicroservicesVsMonolith = () => {
                     architecture with your business stage, team structure, and
                     future ambitions.
                   </p>
-                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
-                    <p className="text-foreground-dark font-semibold mb-2">
-                      <Target className="h-5 w-5 inline-block mr-2 text-brand-primary" />
+                  <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
+                    <p className="text-foreground-dark font-semibold mb-2 flex gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                        <Target className="h-5 w-5 inline-block text-brand-primary" />
+                      </div>
                       At IndexNine, we have guided countless organizations
                       through this complex decision-making process.
                     </p>
@@ -346,9 +348,11 @@ const MicroservicesVsMonolith = () => {
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-6 my-8">
-                    <div className="bg-black/5 rounded-lg p-6 rounded-r-lg">
-                      <AlertTriangle className="h-6 w-6 text-red-500 mb-3" />
-                      <h3 className="font-semibold text-foreground-dark mb-3">
+                    <div className="bg-white rounded-xl p-6 shadow-glass border-glass h-full">
+                      <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                        <AlertTriangle className="h-6 w-6 text-blue-500" />
+                      </div>
+                      <h3 className="font-semibold text-foreground-dark my-3">
                         Warning Signs
                       </h3>
                       <ul className="text-sm text-foreground-dark-muted space-y-2">
@@ -358,9 +362,11 @@ const MicroservicesVsMonolith = () => {
                         <li>• Inefficient scaling patterns</li>
                       </ul>
                     </div>
-                    <div className="bg-black/5 rounded-lg p-6 rounded-r-lg">
-                      <CheckCircle className="h-6 w-6 text-green-500 mb-3" />
-                      <h3 className="font-semibold text-foreground-dark mb-3">
+                    <div className="bg-white rounded-xl p-6 shadow-glass border-glass h-full">
+                      <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                        <CheckCircle className="h-6 w-6 text-blue-500" />
+                      </div>
+                      <h3 className="font-semibold text-foreground-dark my-3">
                         Growth Indicators
                       </h3>
                       <ul className="text-sm text-foreground-dark-muted space-y-2">
@@ -389,7 +395,7 @@ const MicroservicesVsMonolith = () => {
                     unified unit.
                   </p>
 
-                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                  <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                     <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                       The Strategic Advantages of a Monolith:
                     </h3>
@@ -402,7 +408,9 @@ const MicroservicesVsMonolith = () => {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-semibold text-foreground-dark mb-2 flex items-center">
-                          <Zap className="h-5 w-5 text-brand-primary mr-2" />
+                          <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Zap className="h-5 w-5 text-brand-primary " />
+                          </div>
                           Initial Velocity
                         </h4>
                         <p className="text-sm text-foreground-dark-muted mb-4">
@@ -413,7 +421,9 @@ const MicroservicesVsMonolith = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground-dark mb-2 flex items-center">
-                          <Shield className="h-5 w-5 text-brand-primary mr-2" />
+                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Shield className="h-5 w-5 text-brand-primary " />
+                          </div>
                           Simplified Development
                         </h4>
                         <p className="text-sm text-foreground-dark-muted mb-4">
@@ -425,7 +435,7 @@ const MicroservicesVsMonolith = () => {
                     </div>
                   </div>
 
-                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                  <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                     <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                       The Inevitable Scaling Challenges:
                     </h3>
@@ -437,9 +447,11 @@ const MicroservicesVsMonolith = () => {
 
                     <div className="space-y-4">
                       <div className="flex items-start gap-3">
-                        <AlertTriangle className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
+                        <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                          <AlertTriangle className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                        </div>
                         <div>
-                          <h4 className="font-semibold text-foreground-dark mb-1">
+                          <h4 className="font-semibold text-foreground-dark">
                             Declining Development Velocity
                           </h4>
                           <p className="text-sm text-foreground-dark-muted">
@@ -451,7 +463,9 @@ const MicroservicesVsMonolith = () => {
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <AlertTriangle className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
+                        <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                          <AlertTriangle className="h-5 w-5 text-blue-500  flex-shrink-0" />
+                        </div>
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
                             High-Risk Deployments
@@ -465,7 +479,10 @@ const MicroservicesVsMonolith = () => {
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <AlertTriangle className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
+                        {" "}
+                        <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                          <AlertTriangle className="h-5 w-5 text-blue-500  flex-shrink-0" />
+                        </div>
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
                             Lack of Fault Tolerance
@@ -499,7 +516,7 @@ const MicroservicesVsMonolith = () => {
                     profile service," a "notification service").
                   </p>
 
-                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                  <div className="bg-white rounded-xl p-6 shadow-glass border-glass h-full">
                     <h4 className="font-semibold text-foreground-dark mb-2">
                       Key Concept: Message Queues
                     </h4>
@@ -512,7 +529,7 @@ const MicroservicesVsMonolith = () => {
                     </p>
                   </div>
 
-                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                  <div className="bg-white rounded-xl p-6 shadow-glass border-glass h-full">
                     <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                       The Strategic Advantages of Microservices:
                     </h3>
@@ -525,7 +542,7 @@ const MicroservicesVsMonolith = () => {
 
                     <div className="space-y-4">
                       <div className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
                             Team Autonomy and Accelerated Velocity
@@ -540,7 +557,7 @@ const MicroservicesVsMonolith = () => {
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
                             Enhanced Resilience and Fault Isolation
@@ -555,7 +572,7 @@ const MicroservicesVsMonolith = () => {
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
                             Targeted, Cost-Effective Scaling
@@ -569,7 +586,7 @@ const MicroservicesVsMonolith = () => {
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
                             Technological Flexibility
@@ -602,8 +619,8 @@ const MicroservicesVsMonolith = () => {
                     technical drivers:
                   </p>
 
-                  <div className="overflow-x-auto">
-                    <table className="w-full border-collapse bg-white rounded-2xl shadow-sm border border-gray-200">
+                  <div className="overflow-x-auto rounded-xl border-collapse bg-white  shadow-sm border border-gray-200">
+                    <table className="w-full ">
                       <thead>
                         <tr className="bg-gray-50">
                           <th className="p-4 text-left font-semibold text-foreground-dark border-b border-gray-200">
@@ -713,11 +730,11 @@ const MicroservicesVsMonolith = () => {
                     monolith and making a strategic pivot to microservices.
                   </p>
 
-                  <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                  <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                     <div className="grid md:grid-cols-2 gap-8">
                       <div>
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center">
-                          <AlertTriangle className="h-6 w-6 text-red-500 mr-3" />
+                          <AlertTriangle className="h-6 w-6 text-blue-500 mr-3" />
                           The Challenge
                         </h3>
                         <p className="text-foreground-dark-muted mb-4">
@@ -736,7 +753,7 @@ const MicroservicesVsMonolith = () => {
 
                       <div>
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center">
-                          <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
+                          <CheckCircle className="h-6 w-6 text-blue-500 mr-3" />
                           The Solution
                         </h3>
                         <p className="text-foreground-dark-muted mb-4">
@@ -753,12 +770,12 @@ const MicroservicesVsMonolith = () => {
                       </div>
                     </div>
 
-                    <div className="mt-8 pt-8 border-t border-gray-200">
+                    <div className="mt-8 ">
                       <h4 className="font-semibold text-foreground-dark mb-4">
                         The Results:
                       </h4>
                       <div className="grid md:grid-cols-3 gap-4">
-                        <div className="text-center p-4 bg-white rounded-xl">
+                        <div className="text-center p-4 bg-black/5 rounded-xl">
                           <div className="text-2xl font-bold text-brand-primary mb-1">
                             99.9%
                           </div>
@@ -766,7 +783,7 @@ const MicroservicesVsMonolith = () => {
                             System Uptime
                           </div>
                         </div>
-                        <div className="text-center p-4 bg-white rounded-xl">
+                        <div className="text-center p-4 bg-black/5 rounded-xl">
                           <div className="text-2xl font-bold text-brand-primary mb-1">
                             50%
                           </div>
@@ -774,7 +791,7 @@ const MicroservicesVsMonolith = () => {
                             Faster Partner Onboarding
                           </div>
                         </div>
-                        <div className="text-center p-4 bg-white rounded-xl">
+                        <div className="text-center p-4 bg-black/5 rounded-xl">
                           <div className="text-2xl font-bold text-brand-primary mb-1">
                             Zero
                           </div>
@@ -859,11 +876,14 @@ const MicroservicesVsMonolith = () => {
 
               {/* FAQ Section */}
               <section id="faqs" className="mb-12">
-                <h2 className="text-2xl font-semibold text-foreground-dark mb-8">
-                  Frequently Asked Questions
-                </h2>
+                <EnhancedScrollReveal direction="up">
+                  <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
+                    {/* <FileText className="w-8 h-8 text-primary" /> */}
+                    Frequently Asked Questions
+                  </h2>
+                </EnhancedScrollReveal>
 
-                <div className="space-y-4">
+                <div className="space-y-0 bg-white rounded-xl border border-glass px-6">
                   {[
                     {
                       question:
@@ -884,31 +904,34 @@ const MicroservicesVsMonolith = () => {
                         "Yes, it does. Managing a distributed system is inherently more complex than managing a single application. It requires mature practices around automated deployments (CI/CD), container orchestration (like Kubernetes), centralized logging, and distributed monitoring. This is a key reason why it's not the right choice for every team or every stage of a company's lifecycle. The trade-off is accepting this operational complexity in exchange for greater scalability, resilience, and development velocity.",
                     },
                   ].map((faq, index) => (
-                    <div
+                    <EnhancedScrollReveal
                       key={index}
-                      className="border border-border rounded-[.5rem] overflow-hidden"
+                      direction="up"
+                      delay={index * 100}
                     >
-                      <button
-                        onClick={() => toggleFAQ(index)}
-                        className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
-                      >
-                        <span className="font-medium text-foreground-dark pr-4">
-                          {faq.question}
-                        </span>
-                        {expandedFAQ === index ? (
-                          <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0 mt-1" />
-                        ) : (
-                          <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0 mt-1" />
+                      <div className=" overflow-hidden py-6 border-b last:border-b -mb-[1px]">
+                        <button
+                          onClick={() => toggleFAQ(index)}
+                          className="w-full text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
+                        >
+                          <span className="font-medium text-foreground-dark-muted pr-4">
+                            {faq.question}
+                          </span>
+                          {expandedFAQ === index ? (
+                            <ChevronUp className="w-5 h-5 text-foreground-dark-muted flex-shrink-0" />
+                          ) : (
+                            <ChevronDown className="w-5 h-5 text-foreground-dark-muted flex-shrink-0" />
+                          )}
+                        </button>
+                        {expandedFAQ === index && (
+                          <div className=" py-4">
+                            <p className="text-foreground-dark-muted leading-relaxed">
+                              {faq.answer}
+                            </p>
+                          </div>
                         )}
-                      </button>
-                      {expandedFAQ === index && (
-                        <div className="px-6 py-4 bg-white border-t border-border">
-                          <p className="text-foreground-dark-muted leading-relaxed">
-                            {faq.answer}
-                          </p>
-                        </div>
-                      )}
-                    </div>
+                      </div>
+                    </EnhancedScrollReveal>
                   ))}
                 </div>
               </section>

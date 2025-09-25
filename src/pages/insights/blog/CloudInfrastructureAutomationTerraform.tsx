@@ -1237,7 +1237,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                           <Link to="/company/contact">
-                            <Button variant="btnSecondary" size="lg">
+                            <Button variant="btnSecondary">
                               Book a Product Launch Assessment Today
                             </Button>
                           </Link>

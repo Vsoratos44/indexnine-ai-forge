@@ -868,7 +868,6 @@ const RobotFrameworkVsPlaywright = () => {
                           <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button
                               variant="btnSecondary"
-                              size="lg"
                               onClick={() => {
                                 window.open(
                                   "https://calendly.com/vaughn-soratos-indexnine",
@@ -879,7 +878,7 @@ const RobotFrameworkVsPlaywright = () => {
                               Schedule Expert QA Consultation
                               {/* <ExternalLink className="h-4 w-4 ml-2" /> */}
                             </Button>
-                            <Button variant="btnSecondary" size="lg" asChild>
+                            <Button variant="btnSecondary" asChild>
                               <Link to="/insights/case-studies">
                                 View QA Success Stories
                               </Link>
@@ -887,8 +886,8 @@ const RobotFrameworkVsPlaywright = () => {
                           </div>
                           <div className="mt-16 grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                             <div className="text-center">
-                              <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                                <CheckCircle className="h-8 w-8 text-white" />
+                              <div className="bg-white/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                                <CheckCircle className="h-6 w-6 text-white" />
                               </div>
                               <h3 className="text font-semibold text-white mb-2">
                                 Expert Framework Selection
@@ -900,8 +899,8 @@ const RobotFrameworkVsPlaywright = () => {
                               </p>
                             </div>
                             <div className="text-center">
-                              <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                                <Download className="h-8 w-8 text-white" />
+                              <div className="bg-white/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                                <Download className="h-6 w-6 text-white" />
                               </div>
                               <h3 className="text font-semibold text-white mb-2">
                                 Rapid Implementation
@@ -912,8 +911,8 @@ const RobotFrameworkVsPlaywright = () => {
                               </p>
                             </div>
                             <div className="text-center">
-                              <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                                <ExternalLink className="h-8 w-8 text-white" />
+                              <div className="bg-white/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                                <ExternalLink className="h-6 w-6 text-white" />
                               </div>
                               <h3 className="text font-semibold text-white mb-2">
                                 Ongoing Support
@@ -935,78 +934,7 @@ const RobotFrameworkVsPlaywright = () => {
           </div>
         </div>
       </div>
-      {/* Enhanced CTA Section */}
-      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
-        <div className="container mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-            <span className="leading-[1.4]">
-              Still Have Questions About Test Automation?
-            </span>
-          </h2>
-          <p className="text-xl text-foreground-white/80 mb-12 font-montserrat max-w-3xl mx-auto">
-            Our QA experts are here to help you navigate framework selection,
-            implementation strategy, and automation best practices tailored to
-            your specific needs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              variant="btnSecondary"
-              size="lg"
-              onClick={() => {
-                window.open(
-                  "https://calendly.com/vaughn-soratos-indexnine",
-                  "_blank"
-                );
-              }}
-            >
-              Schedule Expert QA Consultation
-              {/* <ExternalLink className="h-4 w-4 ml-2" /> */}
-            </Button>
-            <Button variant="btnSecondary" size="lg" asChild>
-              <Link to="/insights/case-studies">View QA Success Stories</Link>
-            </Button>
-          </div>
 
-          <div className="mt-16 grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-white mb-2">
-                Expert Framework Selection
-              </h3>
-              <p className="text-white/80 text-sm">
-                Choose the right automation framework based on your team,
-                technology stack, and business objectives.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Download className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-white mb-2">
-                Rapid Implementation
-              </h3>
-              <p className="text-white/80 text-sm">
-                Get your automation suite up and running with our Sprint 0
-                approach and proven methodologies.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <ExternalLink className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-white mb-2">
-                Ongoing Support
-              </h3>
-              <p className="text-white/80 text-sm">
-                Ensure long-term success with training, maintenance strategies,
-                and continuous optimization.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
       <div className="bg-background">
         <Footer />
       </div>

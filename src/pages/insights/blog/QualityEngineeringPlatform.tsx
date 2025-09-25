@@ -662,10 +662,10 @@ const QualityEngineeringPlatform = () => {
                       insights to build better, faster.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                      <Button variant="btnSecondary" size="lg">
+                      <Button variant="btnSecondary">
                         Schedule Your Live Demo
                       </Button>
-                      <Button variant="btnSecondary" size="lg">
+                      <Button variant="btnSecondary">
                         Talk to a QA Strategist
                       </Button>
                     </div>
