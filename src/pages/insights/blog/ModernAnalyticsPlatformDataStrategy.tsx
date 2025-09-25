@@ -22,6 +22,7 @@ import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
 import BlogContBg from "@/assets/images/blog-content-bg.webp";
 import blogImg2 from "@/assets/images/blog-img2.webp";
 import styles from "../../../assets/css/stylesheet.module.css";
+import EnhancedScrollReveal from "@/components/test/effects/EnhancedScrollReveal";
 
 const leftNavLinks = [
   { href: "#intro", label: "Introduction" },
@@ -218,7 +219,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#ffffff00]">
+      <section className="relative  bg-[#ffffff00]">
         <div className="relative z-10 container mx-auto pt-36">
           <div className="max-w-7xl mx-auto text-center lg:text-left ml-0">
             <div className="flex items-center">
@@ -298,251 +299,305 @@ const ModernAnalyticsPlatformDataStrategy = () => {
 
           <div className="col-span-2 w-full">
             {/* Introduction Section */}
-            <section className="relative overflow-hidden">
-              <div className="container relative z-10">
-                <div className="max-w-5xl mx-auto pb-8">
-                  <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed mb-8">
-                    <h4 className="font-semibold text-xl">
-                      Don't let your data strategy fail. Discover a pragmatic
-                      blueprint for building a modern, cloud-native analytics
-                      platform that powers business intelligence and drives real
-                      ROI from your AI investments.
-                    </h4>
-                    <p>
-                      <strong>
-                        The enterprise is in the midst of a data paradox.
-                      </strong>{" "}
-                      According to McKinsey, a staggering 92% of businesses are
-                      increasing their investment in Artificial Intelligence,
-                      yet only 22% are realizing significant business value from
-                      these initiatives. This enormous gap between investment
-                      and impact is not born from flawed algorithms or a lack of
-                      ambition. It stems from a single, foundational, and
-                      often-overlooked challenge: a lack of readiness in the
-                      underlying data infrastructure.
-                    </p>
-                    <p>
-                      Organizations, eager to capitalize on the promise of AI,
-                      often rush into complex projects without first preparing
-                      their data systems. This leads to a predictable and costly
-                      cycle of failure. Gartner reports that 85% of AI projects
-                      fail to deliver their expected outcomes, primarily because
-                      of unprepared and poorly governed data. The consequences
-                      are severe: AI teams spend 60-80% of their time on
-                      low-value data preparation instead of high-value analysis,
-                      and each failed project can represent a sunk cost of
-                      $300,000 to $500,000, not including the immense cost of
-                      missed market opportunities.
-                    </p>
-                    <p>
-                      To move from aspiration to activation, leaders need a
-                      practical, business-oriented blueprint for creating an
-                      AI-ready data foundation. This isn't about chasing the
-                      latest technology; it's about architecting a cohesive,
-                      scalable, and governed analytics platform that transforms
-                      fragmented data assets into a powerful strategic resource.
-                      At Indexnine, our <strong>Data Studio</strong> specializes
-                      in guiding enterprises through this journey, ensuring that
-                      every data initiative is directly aligned with business
-                      goals, budgets, and organizational maturity.
-                    </p>
-                    <p>
-                      This is our blueprint for building the modern analytics
-                      platforms that don't just store data but unlock its full
-                      potential.
-                    </p>
-                  </div>
+            <section className="relative ">
+              <div className=" relative z-10">
+                <EnhancedScrollReveal direction="up">
+                  <div className="max-w-5xl mx-auto pb-8">
+                    <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed mb-8">
+                      <h4 className="font-semibold text-xl">
+                        Don't let your data strategy fail. Discover a pragmatic
+                        blueprint for building a modern, cloud-native analytics
+                        platform that powers business intelligence and drives
+                        real ROI from your AI investments.
+                      </h4>
+                      <p>
+                        <strong className="font-semibold">
+                          The enterprise is in the midst of a data paradox.
+                        </strong>{" "}
+                        According to McKinsey, a staggering 92% of businesses
+                        are increasing their investment in Artificial
+                        Intelligence, yet only 22% are realizing significant
+                        business value from these initiatives. This enormous gap
+                        between investment and impact is not born from flawed
+                        algorithms or a lack of ambition. It stems from a
+                        single, foundational, and often-overlooked challenge: a
+                        lack of readiness in the underlying data infrastructure.
+                      </p>
+                      <p>
+                        Organizations, eager to capitalize on the promise of AI,
+                        often rush into complex projects without first preparing
+                        their data systems. This leads to a predictable and
+                        costly cycle of failure. Gartner reports that 85% of AI
+                        projects fail to deliver their expected outcomes,
+                        primarily because of unprepared and poorly governed
+                        data. The consequences are severe: AI teams spend 60-80%
+                        of their time on low-value data preparation instead of
+                        high-value analysis, and each failed project can
+                        represent a sunk cost of $300,000 to $500,000, not
+                        including the immense cost of missed market
+                        opportunities.
+                      </p>
+                      <p>
+                        To move from aspiration to activation, leaders need a
+                        practical, business-oriented blueprint for creating an
+                        AI-ready data foundation. This isn't about chasing the
+                        latest technology; it's about architecting a cohesive,
+                        scalable, and governed analytics platform that
+                        transforms fragmented data assets into a powerful
+                        strategic resource. At Indexnine, our{" "}
+                        <strong className="font-semibold">Data Studio</strong>{" "}
+                        specializes in guiding enterprises through this journey,
+                        ensuring that every data initiative is directly aligned
+                        with business goals, budgets, and organizational
+                        maturity.
+                      </p>
+                      <p>
+                        This is our blueprint for building the modern analytics
+                        platforms that don't just store data but unlock its full
+                        potential.
+                      </p>
+                    </div>
 
-                  <Button type="submit" size="lg" variant="btnPrimary">
-                    <Download className="w-4 h-4 mr-2" />
-                    Download Our Data Strategy Blueprint Guide (PDF)
-                  </Button>
-                  <div className="mt-6">
-                    <Button
-                      type="submit"
-                      size="lg"
-                      variant="btnSecondary"
-                      asChild
-                    >
-                      <Link to="/services/data-engineering">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Explore Our Data Engineering Services
-                      </Link>
+                    <Button type="submit" size="lg" variant="btnPrimary">
+                      <Download className="w-4 h-4 mr-2" />
+                      Download Our Data Strategy Blueprint Guide (PDF)
                     </Button>
+                    <div className="mt-6">
+                      <Button
+                        type="submit"
+                        size="lg"
+                        variant="btnSecondary"
+                        asChild
+                      >
+                        <Link to="/services/data-engineering">
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          Explore Our Data Engineering Services
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
-                </div>
+                </EnhancedScrollReveal>
               </div>
             </section>
 
             {/* Readiness Check Section */}
             <a id="readiness-check"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
-                <div className="max-w-5xl mx-auto">
-                  <div className="space-y-6">
-                    <h2 className="font-semibold text-2xl text-foreground-dark">
-                      The Readiness Reality Check: Why Most Data & AI
-                      Initiatives Fail
-                    </h2>
-                    <p>
-                      Before embarking on a significant data modernization
-                      journey, leaders need a clear-eyed view of their
-                      organization's current state. To facilitate this, we've
-                      developed the <strong>AGILE Framework</strong>, a
-                      structured assessment across five critical dimensions that
-                      provides a quantifiable "Data Readiness Scorecard."
-                    </p>
+            <section className="pt-12 pb-0 relative ">
+              <EnhancedScrollReveal direction="up">
+                <div className=" text-lg text-foreground-dark-muted leading-relaxed">
+                  <div className="max-w-5xl mx-auto">
+                    <div className="space-y-6">
+                      <h2 className="font-semibold text-2xl text-foreground-dark">
+                        The Readiness Reality Check: Why Most Data & AI
+                        Initiatives Fail
+                      </h2>
+                      <p>
+                        Before embarking on a significant data modernization
+                        journey, leaders need a clear-eyed view of their
+                        organization's current state. To facilitate this, we've
+                        developed the{" "}
+                        <strong className="font-semibold">
+                          AGILE Framework
+                        </strong>
+                        , a structured assessment across five critical
+                        dimensions that provides a quantifiable "Data Readiness
+                        Scorecard."
+                      </p>
 
-                    <div className="bg-black/5 p-6 rounded-lg my-8">
-                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                        Answer these questions honestly to understand your
-                        starting point:
-                      </h3>
-                      <ul className="space-y-4 text-foreground-dark-muted">
-                        <li className="flex items-start gap-3">
-                          <span>
-                            <strong>(A) Accessibility:</strong> Can authorized
-                            users easily retrieve relevant data across
-                            departments, or is data locked in silos?
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span>
-                            <strong>(G) Governance:</strong> Are there
-                            established policies and controls to ensure data
-                            security, privacy, and compliance?
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span>
-                            <strong>(I) Integration:</strong> Are your systems
-                            interoperable, enabling seamless data flow, or is
-                            every integration a custom, brittle project?
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span>
-                            <strong>(L) Literacy:</strong> Does your team
-                            understand how to work with data to derive insights,
-                            or is data analysis confined to a small group of
-                            specialists?
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span>
-                            <strong>(E) Excellence (Quality):</strong> Is your
-                            data consistently accurate, complete, and
-                            trustworthy enough for high-stakes decision-making?
-                          </span>
-                        </li>
-                      </ul>
+                      <div className=" my-8">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                          Answer these questions honestly to understand your
+                          starting point:
+                        </h3>
+                        <ul className="space-y-4 text-foreground-dark-muted">
+                          <li className="flex items-start gap-3">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              A
+                            </div>
+                            <span>
+                              <strong className="font-semibold">
+                                Accessibility:
+                              </strong>{" "}
+                              Can authorized users easily retrieve relevant data
+                              across departments, or is data locked in silos?
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              G
+                            </div>
+                            <span>
+                              <strong className="font-semibold">
+                                {" "}
+                                Governance:
+                              </strong>{" "}
+                              Are there established policies and controls to
+                              ensure data security, privacy, and compliance?
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              I
+                            </div>
+                            <span>
+                              <strong className="font-semibold">
+                                {" "}
+                                Integration:
+                              </strong>{" "}
+                              Are your systems interoperable, enabling seamless
+                              data flow, or is every integration a custom,
+                              brittle project?
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              L
+                            </div>
+                            <span>
+                              <strong className="font-semibold">
+                                Literacy:
+                              </strong>{" "}
+                              Does your team understand how to work with data to
+                              derive insights, or is data analysis confined to a
+                              small group of specialists?
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              E
+                            </div>
+                            <span>
+                              <strong className="font-semibold">
+                                E Excellence (Quality):
+                              </strong>{" "}
+                              Is your data consistently accurate, complete, and
+                              trustworthy enough for high-stakes
+                              decision-making?
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <p>
+                        Scoring each dimension on a scale of 1-5 provides a
+                        total AGILE Score out of 25. This isn't just a number;
+                        it's a roadmap. A score below 15 indicates that
+                        foundational work is required before any large-scale AI
+                        investment can be expected to yield meaningful returns.
+                      </p>
                     </div>
-
-                    <p>
-                      Scoring each dimension on a scale of 1-5 provides a total
-                      AGILE Score out of 25. This isn't just a number; it's a
-                      roadmap. A score below 15 indicates that foundational work
-                      is required before any large-scale AI investment can be
-                      expected to yield meaningful returns.
-                    </p>
                   </div>
                 </div>
-              </div>
+              </EnhancedScrollReveal>
             </section>
 
             {/* AGILE Framework Section */}
             <a id="agile-framework"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark/5 leading-relaxed">
-                <div className="max-w-5xl mx-auto">
-                  <div className="space-y-6">
-                    <h2 className="font-semibold text-2xl text-foreground-dark">
-                      Assessing Your Data Maturity: The AGILE Framework
-                    </h2>
+            <section className="pt-12 pb-0 relative ">
+              <EnhancedScrollReveal direction="up">
+                <div className=" text-lg text-foreground-dark/5 leading-relaxed">
+                  <div className="max-w-6xl mx-auto">
+                    <div className="space-y-6">
+                      <h2 className="font-semibold text-2xl text-foreground-dark">
+                        Assessing Your Data Maturity: The AGILE Framework
+                      </h2>
 
-                    <div className="bg-foreground-dark/5 p-8 rounded-lg">
-                      <div className="grid md:grid-cols-2 gap-6">
-                        <div className="space-y-4">
-                          <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white font-semibold">
-                              A
+                      <div className="">
+                        <div className="flex flex-col gap-6">
+                          <div className="space-y-4">
+                            <div className="flex items-center gap-3">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                                A
+                              </div>
+                              <div>
+                                <h4 className="font-semibold text-foreground-dark">
+                                  Accessibility
+                                </h4>
+                                <p className="text-sm text-foreground-dark-muted ">
+                                  Data availability across departments and user
+                                  roles
+                                </p>
+                              </div>
                             </div>
-                            <h4 className="font-semibold text-foreground-dark">
-                              Accessibility
-                            </h4>
                           </div>
-                          <p className="text-sm text-foreground-dark-muted ml-11">
-                            Data availability across departments and user roles
-                          </p>
-                        </div>
 
-                        <div className="space-y-4">
-                          <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white font-semibold">
-                              G
+                          <div className="space-y-4">
+                            <div className="flex items-center gap-3">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                                G
+                              </div>
+                              <div>
+                                <h4 className="font-semibold text-foreground-dark">
+                                  Governance
+                                </h4>
+                                <p className="text-sm text-foreground-dark-muted">
+                                  Security, privacy, and compliance frameworks
+                                </p>
+                              </div>
                             </div>
-                            <h4 className="font-semibold text-foreground-dark">
-                              Governance
-                            </h4>
                           </div>
-                          <p className="text-sm text-foreground-dark-muted ml-11">
-                            Security, privacy, and compliance frameworks
-                          </p>
-                        </div>
 
-                        <div className="space-y-4">
-                          <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white font-semibold">
-                              I
+                          <div className="space-y-4">
+                            <div className="flex items-center gap-3">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                                I
+                              </div>
+                              <div>
+                                <h4 className="font-semibold text-foreground-dark">
+                                  Integration
+                                </h4>
+                                <p className="text-sm text-foreground-dark-muted">
+                                  System interoperability and data flow
+                                  automation
+                                </p>
+                              </div>
                             </div>
-                            <h4 className="font-semibold text-foreground-dark">
-                              Integration
-                            </h4>
                           </div>
-                          <p className="text-sm text-foreground-dark-muted ml-11">
-                            System interoperability and data flow automation
-                          </p>
-                        </div>
 
-                        <div className="space-y-4">
-                          <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white font-semibold">
-                              L
+                          <div className="space-y-4">
+                            <div className="flex items-center gap-3">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                                L
+                              </div>
+                              <div>
+                                <h4 className="font-semibold text-foreground-dark">
+                                  Literacy
+                                </h4>
+                                <p className="text-sm text-foreground-dark-muted">
+                                  Team capability to analyze and derive insights
+                                </p>
+                              </div>
                             </div>
-                            <h4 className="font-semibold text-foreground-dark">
-                              Literacy
-                            </h4>
                           </div>
-                          <p className="text-sm text-foreground-dark-muted ml-11">
-                            Team capability to analyze and derive insights
-                          </p>
-                        </div>
 
-                        <div className="space-y-4 md:col-span-2">
-                          <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white font-semibold">
-                              E
+                          <div className="space-y-4 md:col-span-2">
+                            <div className="flex items-center gap-3">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                                E
+                              </div>
+                              <div>
+                                <h4 className="font-semibold text-foreground-dark">
+                                  Excellence (Quality)
+                                </h4>
+                                <p className="text-sm text-foreground-dark-muted">
+                                  Data accuracy, completeness, and
+                                  trustworthiness for decision-making
+                                </p>
+                              </div>
                             </div>
-                            <h4 className="font-semibold text-foreground-dark">
-                              Excellence (Quality)
-                            </h4>
                           </div>
-                          <p className="text-sm text-foreground-dark-muted ml-11">
-                            Data accuracy, completeness, and trustworthiness for
-                            decision-making
-                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </EnhancedScrollReveal>
             </section>
 
             {/* Blueprint Section */}
             <a id="blueprint"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative ">
+              <div className=" text-lg text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h2 className="font-semibold text-2xl text-foreground-dark">
@@ -555,144 +610,189 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                       agile, scalable, and trusted asset. The journey follows
                       four strategic steps.
                     </p>
+                    <EnhancedScrollReveal direction="up">
+                      {/* Step 1 */}
+                      <div className="flex rounded-lg my-8 gap-6">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                          1
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                            Step 1: Build a Unified Data Foundation
+                          </h3>
+                          <p className="mb-4">
+                            The cornerstone of any successful data strategy is a
+                            unified and accessible data foundation. This
+                            involves strategically choosing scalable platforms,
+                            consolidating disparate sources, and standardizing
+                            how data flows into your environment.
+                          </p>
+                          <ul className="space-y-3 ml-4">
+                            <li className="list-disc">
+                              <strong className="font-semibold">
+                                Platform Selection:
+                              </strong>{" "}
+                              The era of the monolithic, on-premises data
+                              warehouse built only for structured data is over.
+                              Today, over 80% of enterprise data is
+                              semi-structured or unstructured. Your choice will
+                              depend on your maturity, from a cloud data
+                              warehouse (like Snowflake or BigQuery) for
+                              startups, to a flexible Lakehouse (like
+                              Databricks) for mid-size firms, to a sophisticated
+                              Data Fabric or Data Mesh for large enterprises.
+                            </li>
+                            <li className="list-disc">
+                              <strong className="font-semibold">
+                                Data Consolidation & Ingestion:
+                              </strong>{" "}
+                              The goal is to break down data silos. This
+                              requires robust ingestion pipelines that can
+                              handle both batch ingestion (for scheduled,
+                              periodic loads) and streaming ingestion (for
+                              real-time events, logs, and user interactions)
+                              from dozens of sources, including legacy systems,
+                              SaaS apps, and IoT feeds.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </EnhancedScrollReveal>
+                    <EnhancedScrollReveal direction="up">
+                      {/* Step 2 */}
+                      <div className="flex rounded-lg my-8 gap-6">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                          2
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                            Step 2: Enhance Data Quality and Context for AI
+                            Consumption
+                          </h3>
+                          <p className="mb-4">
+                            Once data is centralized, the focus shifts to making
+                            it trustworthy and intelligent. Poor data quality
+                            costs organizations an average of $12.9 million
+                            annually. This step is about transforming raw data
+                            into a reliable, context-rich asset.
+                          </p>
+                          <ul className="space-y-3 ml-4">
+                            <li className="list-disc">
+                              <strong className="font-semibold">
+                                Data Quality & Observability:
+                              </strong>{" "}
+                              This involves implementing frameworks to monitor
+                              and enforce data quality across key dimensions
+                              like accuracy, completeness, consistency, and
+                              timeliness.
+                            </li>
+                            <li className="list-disc">
+                              <strong className="font-semibold">
+                                Enriching with Business Semantics:
+                              </strong>{" "}
+                              Raw data lacks business meaning. This phase
+                              involves implementing a semantic layer and
+                              metadata management tools (like dbt or Atlan) to
+                              add business glossaries, definitions, and
+                              ownership to your data, making it understandable
+                              and usable for a broader audience.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </EnhancedScrollReveal>
+                    <EnhancedScrollReveal direction="up">
+                      {/* Step 3 */}
+                      <div className="flex rounded-lg my-8 gap-6">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                          3
+                        </div>
 
-                    {/* Step 1 */}
-                    <div className="bg-black/5 p-6 rounded-lg my-8">
-                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                        Step 1: Build a Unified Data Foundation
-                      </h3>
-                      <p className="mb-4">
-                        The cornerstone of any successful data strategy is a
-                        unified and accessible data foundation. This involves
-                        strategically choosing scalable platforms, consolidating
-                        disparate sources, and standardizing how data flows into
-                        your environment.
-                      </p>
-                      <ul className="space-y-3 ml-4">
-                        <li className="list-disc">
-                          <strong>Platform Selection:</strong> The era of the
-                          monolithic, on-premises data warehouse built only for
-                          structured data is over. Today, over 80% of enterprise
-                          data is semi-structured or unstructured. Your choice
-                          will depend on your maturity, from a cloud data
-                          warehouse (like Snowflake or BigQuery) for startups,
-                          to a flexible Lakehouse (like Databricks) for mid-size
-                          firms, to a sophisticated Data Fabric or Data Mesh for
-                          large enterprises.
-                        </li>
-                        <li className="list-disc">
-                          <strong>Data Consolidation & Ingestion:</strong> The
-                          goal is to break down data silos. This requires robust
-                          ingestion pipelines that can handle both batch
-                          ingestion (for scheduled, periodic loads) and
-                          streaming ingestion (for real-time events, logs, and
-                          user interactions) from dozens of sources, including
-                          legacy systems, SaaS apps, and IoT feeds.
-                        </li>
-                      </ul>
-                    </div>
-
-                    {/* Step 2 */}
-                    <div className="bg-black/5 p-6 rounded-lg my-8">
-                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                        Step 2: Enhance Data Quality and Context for AI
-                        Consumption
-                      </h3>
-                      <p className="mb-4">
-                        Once data is centralized, the focus shifts to making it
-                        trustworthy and intelligent. Poor data quality costs
-                        organizations an average of $12.9 million annually. This
-                        step is about transforming raw data into a reliable,
-                        context-rich asset.
-                      </p>
-                      <ul className="space-y-3 ml-4">
-                        <li className="list-disc">
-                          <strong>Data Quality & Observability:</strong> This
-                          involves implementing frameworks to monitor and
-                          enforce data quality across key dimensions like
-                          accuracy, completeness, consistency, and timeliness.
-                        </li>
-                        <li className="list-disc">
-                          <strong>Enriching with Business Semantics:</strong>{" "}
-                          Raw data lacks business meaning. This phase involves
-                          implementing a semantic layer and metadata management
-                          tools (like dbt or Atlan) to add business glossaries,
-                          definitions, and ownership to your data, making it
-                          understandable and usable for a broader audience.
-                        </li>
-                      </ul>
-                    </div>
-
-                    {/* Step 3 */}
-                    <div className="bg-black/5 p-6 rounded-lg my-8">
-                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                        Step 3: Establish Enterprise-Grade Governance and
-                        Operational Excellence
-                      </h3>
-                      <p className="mb-4">
-                        A modern data platform must be governed, secure, and
-                        operationally reliable at scale. This involves:
-                      </p>
-                      <ul className="space-y-3 ml-4">
-                        <li className="list-disc">
-                          <strong>Defining Roles & Responsibilities:</strong>{" "}
-                          Establishing clear accountability with roles like Data
-                          Owners and Data Stewards.
-                        </li>
-                        <li className="list-disc">
-                          <strong>
-                            Implementing Policy-Driven Governance:
-                          </strong>{" "}
-                          Automating governance with policy-as-code for data
-                          classification, access management (RBAC), and
-                          retention.
-                        </li>
-                        <li className="list-disc">
-                          <strong>Driving Operational Efficiency:</strong>{" "}
-                          Ensuring the platform is scalable and cost-effective
-                          through comprehensive monitoring, FinOps practices,
-                          and CI/CD for data pipelines.
-                        </li>
-                      </ul>
-                    </div>
-
-                    {/* Step 4 */}
-                    <div className="bg-black/5 p-6 rounded-lg my-8">
-                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                        Step 4: Activate Insights & Drive Business Outcomes
-                      </h3>
-                      <p className="mb-4">
-                        The ultimate goal of a modern analytics platform is to
-                        activate data in ways that deliver tangible business
-                        value.
-                      </p>
-                      <ul className="space-y-3 ml-4">
-                        <li className="list-disc">
-                          <strong>Output & Activation Channels:</strong> Making
-                          data accessible through the right channels, including
-                          BI dashboards (Power BI, Tableau), Reverse ETL
-                          pipelines into business tools (Salesforce, HubSpot),
-                          and APIs for applications.
-                        </li>
-                        <li className="list-disc">
-                          <strong>
-                            Moving from BI to Decision Intelligence (DI):
-                          </strong>{" "}
-                          While Business Intelligence (BI) answers "What
-                          happened?", Decision Intelligence (DI) suggests "What
-                          should I do?" This involves embedding predictive
-                          models and prescriptive recommendations directly into
-                          business workflows.
-                        </li>
-                        <li className="list-disc">
-                          <strong>Data Monetization:</strong> As data maturity
-                          grows, organizations can turn their curated data
-                          assets into new revenue streams, such as by licensing
-                          anonymized insights or selling industry benchmark
-                          reports.
-                        </li>
-                      </ul>
-                    </div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                            Step 3: Establish Enterprise-Grade Governance and
+                            Operational Excellence
+                          </h3>
+                          <p className="mb-4">
+                            A modern data platform must be governed, secure, and
+                            operationally reliable at scale. This involves:
+                          </p>
+                          <ul className="space-y-3 ml-4">
+                            <li className="list-disc">
+                              <strong className="font-semibold">
+                                Defining Roles & Responsibilities:
+                              </strong>{" "}
+                              Establishing clear accountability with roles like
+                              Data Owners and Data Stewards.
+                            </li>
+                            <li className="list-disc">
+                              <strong className="font-semibold">
+                                Implementing Policy-Driven Governance:
+                              </strong>{" "}
+                              Automating governance with policy-as-code for data
+                              classification, access management (RBAC), and
+                              retention.
+                            </li>
+                            <li className="list-disc">
+                              <strong className="font-semibold">
+                                Driving Operational Efficiency:
+                              </strong>{" "}
+                              Ensuring the platform is scalable and
+                              cost-effective through comprehensive monitoring,
+                              FinOps practices, and CI/CD for data pipelines.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </EnhancedScrollReveal>
+                    <EnhancedScrollReveal direction="up">
+                      {/* Step 4 */}
+                      <div className="flex rounded-lg my-8 gap-6">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                          4
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                            Step 4: Activate Insights & Drive Business Outcomes
+                          </h3>
+                          <p className="mb-4">
+                            The ultimate goal of a modern analytics platform is
+                            to activate data in ways that deliver tangible
+                            business value.
+                          </p>
+                          <ul className="space-y-3 ml-4">
+                            <li className="list-disc">
+                              <strong className="font-semibold">
+                                Output & Activation Channels:
+                              </strong>{" "}
+                              Making data accessible through the right channels,
+                              including BI dashboards (Power BI, Tableau),
+                              Reverse ETL pipelines into business tools
+                              (Salesforce, HubSpot), and APIs for applications.
+                            </li>
+                            <li className="list-disc">
+                              <strong className="font-semibold">
+                                Moving from BI to Decision Intelligence (DI):
+                              </strong>{" "}
+                              While Business Intelligence (BI) answers "What
+                              happened?", Decision Intelligence (DI) suggests
+                              "What should I do?" This involves embedding
+                              predictive models and prescriptive recommendations
+                              directly into business workflows.
+                            </li>
+                            <li className="list-disc">
+                              <strong className="font-semibold">
+                                Data Monetization:
+                              </strong>{" "}
+                              As data maturity grows, organizations can turn
+                              their curated data assets into new revenue
+                              streams, such as by licensing anonymized insights
+                              or selling industry benchmark reports.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </EnhancedScrollReveal>
                   </div>
                 </div>
               </div>
@@ -700,8 +800,8 @@ const ModernAnalyticsPlatformDataStrategy = () => {
 
             {/* Case Study Section */}
             <a id="case-study"></a>
-            <section className="pt-12 pb-12 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-12 relative ">
+              <div className=" text-lg text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <div className="">
                     <h2 className="font-semibold text-2xl text-foreground-dark mb-6">
@@ -711,175 +811,259 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                     <p className="mb-8">
                       This four-step blueprint is not theoretical. We executed
                       this exact strategy for a{" "}
-                      <strong>leading provider of parking services</strong>,
-                      transforming their legacy-bound operation into a
+                      <strong className="font-semibold">
+                        leading provider of parking services
+                      </strong>
+                      , transforming their legacy-bound operation into a
                       data-driven market leader.
                     </p>
-
-                    <div className="bg-black/5 p-6 rounded-t-lg">
-                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                        The Challenge
-                      </h3>
-                      <p>
-                        The client was trapped by a high-cost, on-premises IBM
-                        system (DB2) and outdated data ingestion tools. Their
-                        data was fragmented, making it impossible to get
-                        real-time insights from over{" "}
-                        <strong>15 billion annual records</strong>. Revenue
-                        reconciliation took a full week, vendor onboarding was a
-                        slow, manual process, and infrastructure costs were
-                        spiraling.
-                      </p>
-                    </div>
-
-                    <div className="bg-black/5 p-6">
-                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                        Our Solution: A Blueprint-Driven Modernization
-                      </h3>
-                      <div className="space-y-4">
-                        <div>
-                          <h4 className="font-semibold mb-2">
-                            1. Unified Foundation:
-                          </h4>
-                          <p>
-                            We executed a phased migration of their legacy DB2
-                            data warehouse to a modern, cloud-native
-                            architecture on <strong>AWS and Snowflake</strong>.
-                            We replaced brittle ETL scripts with a unified,
-                            vendor-agnostic ingestion pipeline using AWS Kinesis
-                            for real-time streaming and AWS Lambda for
-                            serverless processing.
-                          </p>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-2">
-                            2. Data Quality & Context:
-                          </h4>
-                          <p>
-                            By consolidating all operational systems into a{" "}
-                            <strong>Snowflake-powered central data mart</strong>
-                            , we created a single source of truth. We
-                            implemented automated data validation rules within
-                            Snowflake to ensure data quality and consistency.
-                          </p>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-2">
-                            3. Governance & Operations:
-                          </h4>
-                          <p>
-                            The new platform was built with enterprise-grade
-                            governance, including role-based access control and
-                            data masking in Snowflake. The shift to a serverless
-                            architecture dramatically improved operational
-                            efficiency and reduced costs.
-                          </p>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-2">
-                            4. Activated Insights:
-                          </h4>
-                          <p>
-                            We enabled near real-time dashboards that allowed
-                            parking operators to view lot occupancy data within
-                            minutes instead of hours. The automated validation
-                            workflow slashed revenue reconciliation time from{" "}
-                            <strong>7 days to just 2 days</strong>. This
-                            real-time data also empowered a new dynamic pricing
-                            capability, a key driver of business growth.
-                          </p>
+                    <EnhancedScrollReveal direction="up">
+                      <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full mb-6">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                          The Challenge
+                        </h3>
+                        <p>
+                          The client was trapped by a high-cost, on-premises IBM
+                          system (DB2) and outdated data ingestion tools. Their
+                          data was fragmented, making it impossible to get
+                          real-time insights from over{" "}
+                          <strong className="font-semibold">
+                            15 billion annual records
+                          </strong>
+                          . Revenue reconciliation took a full week, vendor
+                          onboarding was a slow, manual process, and
+                          infrastructure costs were spiraling.
+                        </p>
+                      </div>
+                    </EnhancedScrollReveal>{" "}
+                    <EnhancedScrollReveal direction="up">
+                      <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full mb-6">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                          Our Solution: A Blueprint-Driven Modernization
+                        </h3>
+                        <div className="space-y-4">
+                          <div className="flex gap-6">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              1
+                            </div>
+                            <div>
+                              <h4 className="font-semibold mb-2">
+                                Unified Foundation:
+                              </h4>
+                              <p>
+                                We executed a phased migration of their legacy
+                                DB2 data warehouse to a modern, cloud-native
+                                architecture on{" "}
+                                <strong className="font-semibold">
+                                  AWS and Snowflake
+                                </strong>
+                                . We replaced brittle ETL scripts with a
+                                unified, vendor-agnostic ingestion pipeline
+                                using AWS Kinesis for real-time streaming and
+                                AWS Lambda for serverless processing.
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex gap-6">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              2
+                            </div>
+                            <div>
+                              <h4 className="font-semibold mb-2">
+                                Data Quality & Context:
+                              </h4>
+                              <p>
+                                By consolidating all operational systems into a{" "}
+                                <strong className="font-semibold">
+                                  Snowflake-powered central data mart
+                                </strong>
+                                , we created a single source of truth. We
+                                implemented automated data validation rules
+                                within Snowflake to ensure data quality and
+                                consistency.
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex gap-6">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              3
+                            </div>
+                            <div>
+                              <h4 className="font-semibold mb-2">
+                                Governance & Operations:
+                              </h4>
+                              <p>
+                                The new platform was built with enterprise-grade
+                                governance, including role-based access control
+                                and data masking in Snowflake. The shift to a
+                                serverless architecture dramatically improved
+                                operational efficiency and reduced costs.
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex gap-6">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              4
+                            </div>
+                            <div>
+                              <h4 className="font-semibold mb-2">
+                                Activated Insights:
+                              </h4>
+                              <p>
+                                We enabled near real-time dashboards that
+                                allowed parking operators to view lot occupancy
+                                data within minutes instead of hours. The
+                                automated validation workflow slashed revenue
+                                reconciliation time from{" "}
+                                <strong className="font-semibold">
+                                  7 days to just 2 days
+                                </strong>
+                                . This real-time data also empowered a new
+                                dynamic pricing capability, a key driver of
+                                business growth.
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div className="bg-black/5 p-6 rounded-b-lg">
-                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
-                        The Results
-                      </h3>
-                      <p>
-                        The business impact was transformative. The client
-                        achieved a <strong>35% annual savings</strong> in
-                        infrastructure costs, a{" "}
-                        <strong>72% increase in booking efficiency</strong>, and
-                        even unlocked a <strong>new revenue stream</strong> by
-                        providing parking insights as a data product. This
-                        project is a testament to how executing a disciplined
-                        data modernization blueprint can turn a legacy cost
-                        center into a strategic, revenue-generating asset.
-                      </p>
-                    </div>
+                    </EnhancedScrollReveal>
+                    <EnhancedScrollReveal direction="up">
+                      <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
+                        <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                          The Results
+                        </h3>
+                        <p>
+                          The business impact was transformative. The client
+                          achieved a{" "}
+                          <strong className="font-semibold">
+                            35% annual savings
+                          </strong>{" "}
+                          in infrastructure costs, a{" "}
+                          <strong className="font-semibold">
+                            72% increase in booking efficiency
+                          </strong>
+                          , and even unlocked a{" "}
+                          <strong className="font-semibold">
+                            new revenue stream
+                          </strong>{" "}
+                          by providing parking insights as a data product. This
+                          project is a testament to how executing a disciplined
+                          data modernization blueprint can turn a legacy cost
+                          center into a strategic, revenue-generating asset.
+                        </p>
+                      </div>
+                    </EnhancedScrollReveal>
                   </div>
                 </div>
               </div>
             </section>
             {/* FAQ Section */}
             <a id="faqs"></a>
-            <section className="pt-12 pb-12 relative overflow-hidden">
-              <div className="container text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-12 relative ">
+              <div className=" text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
-                  <h2 className="font-semibold text-2xl text-foreground-dark mb-8">
-                    Frequently Asked Questions (FAQ)
-                  </h2>
-
-                  {[
-                    {
-                      question:
-                        "What's the difference between a Data Fabric and a Data Mesh?",
-                      answer:
-                        "Both are advanced architectural patterns for large enterprises. A Data Fabric focuses on creating a unified data management layer across distributed environments using metadata and automation. A Data Mesh is a decentralized approach that treats data as a product, empowering individual domain teams to own and share their data assets responsibly. The choice depends on an organization's culture and structure.",
-                    },
-                    {
-                      question:
-                        "Our data is extremely siloed. Where do we even begin?",
-                      answer:
-                        "This is the most common starting point. The journey begins with our AI/Data Readiness Assessment. We don't try to boil the ocean. We identify the single most critical business problem that is constrained by data silos and focus on building a modern 'data slice' to solve that problem first. This delivers a rapid win and creates a repeatable blueprint for modernizing other domains.",
-                    },
-                    {
-                      question:
-                        "How do we justify the investment in a modern analytics platform?",
-                      answer:
-                        "The business case is built on both cost savings and value creation. The Parking Management case study is a perfect example: the 35% reduction in infrastructure costs provided a hard ROI, while the 72% increase in booking efficiency and the new data monetization stream demonstrated immense value creation. A proper readiness assessment will help you build a similar business case tailored to your organization.",
-                    },
-                    {
-                      question:
-                        "What is the difference between Business Intelligence (BI) and Decision Intelligence (DI)?",
-                      answer:
-                        "BI is primarily descriptive; it uses historical data to answer the question, 'What happened?' DI is prescriptive; it combines data, domain knowledge, and predictive models to answer the question, 'What should I do?' A modern analytics platform should support both, providing dashboards for historical analysis and enabling the embedded, AI-powered recommendations that define DI.",
-                    },
-                  ].map((faq, index) => (
-                    <div
-                      key={index}
-                      className="border border-border rounded-[.5rem] overflow-hidden mt-2"
-                    >
-                      <button
-                        onClick={() => toggleFAQ(index)}
-                        className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
+                  <EnhancedScrollReveal direction="up">
+                    <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
+                      {/* <FileText className="w-8 h-8 text-primary" /> */}
+                      Frequently Asked Questions
+                    </h2>
+                  </EnhancedScrollReveal>
+                  <div className="space-y-0 bg-white rounded-xl border border-glass px-6">
+                    {[
+                      {
+                        question:
+                          "What's the difference between a Data Fabric and a Data Mesh?",
+                        answer:
+                          "Both are advanced architectural patterns for large enterprises. A Data Fabric focuses on creating a unified data management layer across distributed environments using metadata and automation. A Data Mesh is a decentralized approach that treats data as a product, empowering individual domain teams to own and share their data assets responsibly. The choice depends on an organization's culture and structure.",
+                      },
+                      {
+                        question:
+                          "Our data is extremely siloed. Where do we even begin?",
+                        answer:
+                          "This is the most common starting point. The journey begins with our AI/Data Readiness Assessment. We don't try to boil the ocean. We identify the single most critical business problem that is constrained by data silos and focus on building a modern 'data slice' to solve that problem first. This delivers a rapid win and creates a repeatable blueprint for modernizing other domains.",
+                      },
+                      {
+                        question:
+                          "How do we justify the investment in a modern analytics platform?",
+                        answer:
+                          "The business case is built on both cost savings and value creation. The Parking Management case study is a perfect example: the 35% reduction in infrastructure costs provided a hard ROI, while the 72% increase in booking efficiency and the new data monetization stream demonstrated immense value creation. A proper readiness assessment will help you build a similar business case tailored to your organization.",
+                      },
+                      {
+                        question:
+                          "What is the difference between Business Intelligence (BI) and Decision Intelligence (DI)?",
+                        answer:
+                          "BI is primarily descriptive; it uses historical data to answer the question, 'What happened?' DI is prescriptive; it combines data, domain knowledge, and predictive models to answer the question, 'What should I do?' A modern analytics platform should support both, providing dashboards for historical analysis and enabling the embedded, AI-powered recommendations that define DI.",
+                      },
+                    ].map((faq, index) => (
+                      <EnhancedScrollReveal
+                        key={index}
+                        direction="up"
+                        delay={index * 100}
                       >
-                        <span className="font-medium  text-foreground-dark pr-4">
-                          {faq.question}
-                        </span>
-                        {expandedFAQ === index ? (
-                          <ChevronUp className="w-6 h-6 text-brand-primary flex-shrink-0" />
-                        ) : (
-                          <ChevronDown className="w-6 h-6 text-brand-primary flex-shrink-0" />
-                        )}
-                      </button>
-                      {expandedFAQ === index && (
-                        <div className="px-6 py-4 bg-white border-t border-border">
-                          <p>{faq.answer}</p>
+                        <div className="  py-6 border-b last:border-b -mb-[1px]">
+                          <button
+                            onClick={() => toggleFAQ(index)}
+                            className="w-full text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
+                          >
+                            <span className="font-medium  text-foreground-dark pr-4">
+                              {faq.question}
+                            </span>
+                            {expandedFAQ === index ? (
+                              <ChevronUp className="w-6 h-6 text-brand-primary flex-shrink-0" />
+                            ) : (
+                              <ChevronDown className="w-6 h-6 text-brand-primary flex-shrink-0" />
+                            )}
+                          </button>
+                          {expandedFAQ === index && (
+                            <div className=" py-4">
+                              <p className="text-foreground-dark-muted leading-relaxed">
+                                {faq.answer}
+                              </p>
+                            </div>
+                          )}
                         </div>
-                      )}
-                    </div>
-                  ))}
+                      </EnhancedScrollReveal>
+                    ))}
+                  </div>
                 </div>
               </div>
             </section>
             {/* Call to Action */}
+            {/* Final CTA Section */}
+            <section className="pt-8 pb-12 relative overflow-hidden">
+              <EnhancedScrollReveal direction="up">
+                <div className="max-w-6xl">
+                  <div className="bg-gradient-primary rounded-xl p-8 text-center text-white">
+                    <h2 className="text-3xl font-semibold mb-4">
+                      Ready to move from a data swamp to a strategic data asset?
+                    </h2>
+                    <p className="text-xl mb-8 opacity-90">
+                      Transform your data infrastructure with our proven
+                      blueprint and expert guidance.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <Button
+                        variant="btnSecondary"
+                        size="lg"
+                        onClick={() => {
+                          window.open(
+                            "https://calendly.com/vaughn-soratos-indexnine",
+                            "_blank"
+                          );
+                        }}
+                      >
+                        Schedule a Data Readiness Assessment with Our Experts
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </EnhancedScrollReveal>
+            </section>
           </div>
         </div>
       </div>
       {/* Final CTA Section */}
-      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
+      {/* <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white max-w-4xl m-auto">
             <span className="leading-[1.4]">
@@ -906,7 +1090,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="bg-black">
         <Footer />
