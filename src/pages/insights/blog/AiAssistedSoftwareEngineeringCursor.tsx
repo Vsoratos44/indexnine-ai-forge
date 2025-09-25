@@ -200,8 +200,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
           {/* Main Content Area */}
           <div className="col-span-2 w-full">
             {/* Introduction Section */}
-            <section className="relative overflow-hidden">
-              <div className="container relative z-10">
+            <section className="relative overflow-">
+              <div className=" relative z-10">
                 <div className="max-w-5xl mx-auto pb-8">
                   <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed mb-8">
                     <h4 className="font-semibold text-xl">
@@ -223,7 +223,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       strategic framework where context-aware AI becomes a true
                       partner in the development lifecycle.
                     </p>
-                    <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                    <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                       <h3 className="text-xl font-semibold text-foreground-dark">
                         TL;DR - Is Cursor perfect? Not quite. Is it valuable in
                         our day to day? Without a doubt, the lessons we gained
@@ -242,21 +242,21 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
             {/* Can AI Help Section */}
             <a id="can-ai-help"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow">
+              <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h4 className="font-semibold text-2xl text-foreground-dark">
                       Can AI Really Help Build UI?
                     </h4>
-                    <p>
+                    <p className="text-foreground-dark-muted">
                       We started with a question every modern frontend team is
                       asking: Can AI help turn Figma or existing designs into
                       production-ready React components? Cursor AI promised just
                       that—and we were curious (and skeptical).
                     </p>
 
-                    <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                    <div className=" my-8">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         For teams working with complex frameworks like React,
                         Cursor is a game-changer
@@ -267,7 +267,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       </p>
                       <div className="space-y-4">
                         <div className="flex items-start gap-3">
-                          <Code className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Code className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                          </div>
                           <div>
                             <h4 className="font-semibold text-foreground-dark mb-2">
                               Rapid Component Generation
@@ -280,7 +282,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
-                          <Wrench className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Wrench className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                          </div>
                           <div>
                             <h4 className="font-semibold text-foreground-dark mb-2">
                               Automated Refactoring
@@ -293,7 +297,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <CheckCircle className="h-5 w-5 text-brand-primary  flex-shrink-0" />
+                          </div>
                           <div>
                             <h4 className="font-semibold text-foreground-dark mb-2">
                               In-line Documentation
@@ -307,7 +313,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       </div>
                     </div>
 
-                    <p>
+                    <p className="text-foreground-dark-muted text">
                       The core advantage is the reduction in context switching.
                       Developers can ask questions, generate code, and fix
                       errors within the editor, creating a seamless and highly
@@ -320,8 +326,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
             {/* Experiment Section */}
             <a id="experiment"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow">
+              <div className=" text-lg text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h4 className="font-semibold text-2xl text-foreground-dark">
@@ -334,71 +340,93 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       to generate components straight from that design.
                     </p>
 
-                    <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
-                      <h3 className="text-xl font-semibold text-foreground-dark mb-4">
+                    <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
+                      <h3 className="text-xl font-semibold text-foreground-dark ">
                         The outcomes? Exciting and full of potential — with just
                         a bit of room to grow!
                       </h3>
                     </div>
 
                     <div className="space-y-0">
-                      <div className="bg-black/5 rounded-t-lg p-6">
+                      <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                         <h4 className="font-semibold text-foreground-dark mb-3 flex items-center gap-2">
-                          <AlertTriangle className="h-5 w-5 text-red-500" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <AlertTriangle className="h-5 w-5 text-blue-500" />
+                          </div>
                           The Challenges
                         </h4>
                         <ul className="space-y-3 text-foreground-dark-muted">
                           <li>
-                            <strong>Quickly generate a lot of code:</strong> For
-                            the UI screen, Cursor generated 8 components &
+                            <strong className="font-semibold">
+                              Quickly generate a lot of code:
+                            </strong>{" "}
+                            For the UI screen, Cursor generated 8 components &
                             around 1000 lines of code. This would be great if
                             everything was perfect—but it invariably misses
                             small things (like redundant icons or unnecessary
                             props), making large generations buggy.
                           </li>
                           <li>
-                            <strong>It doesn't reuse components:</strong> Unless
-                            you explicitly tell it to, Cursor might create yet
-                            another version of a button or badge—even if you
-                            already have a perfect one in your codebase.
+                            <strong className="font-semibold">
+                              It doesn't reuse components:
+                            </strong>{" "}
+                            Unless you explicitly tell it to, Cursor might
+                            create yet another version of a button or badge—even
+                            if you already have a perfect one in your codebase.
                           </li>
                           <li>
-                            <strong>Repetitive HTML Patterns:</strong> Cursor
-                            can occasionally generate repetitive HTML across
-                            different components without identifying shared
-                            patterns.
+                            <strong className="font-semibold">
+                              Repetitive HTML Patterns:
+                            </strong>{" "}
+                            Cursor can occasionally generate repetitive HTML
+                            across different components without identifying
+                            shared patterns.
                           </li>
                           <li>
-                            <strong>Styling often needs finesse:</strong> Cursor
-                            gets about 80–85% of the way there. It sometimes
-                            missed exact spacing or color matching from Figma,
-                            but a second pass usually nailed it.
+                            <strong className="font-semibold">
+                              Styling often needs finesse:
+                            </strong>{" "}
+                            Cursor gets about 80–85% of the way there. It
+                            sometimes missed exact spacing or color matching
+                            from Figma, but a second pass usually nailed it.
                           </li>
                         </ul>
                       </div>
 
-                      <div className="bg-black/5 rounded-b-lg p-6">
+                      <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                         <h4 className="font-semibold text-foreground-dark mb-3 flex items-center gap-2">
-                          <CheckCircle className="h-5 w-5 text-green-500" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <CheckCircle className="h-5 w-5 text-blue-500" />
+                          </div>
                           What Worked Well
                         </h4>
                         <ul className="space-y-3 text-foreground-dark-muted">
                           <li>
-                            <strong>Rapid prototyping:</strong> Getting from
-                            design to working component in minutes rather than
-                            hours
+                            <strong className="font-semibold">
+                              Rapid prototyping:
+                            </strong>{" "}
+                            Getting from design to working component in minutes
+                            rather than hours
                           </li>
                           <li>
-                            <strong>Context awareness:</strong> Understanding
-                            existing codebase patterns and conventions
+                            <strong className="font-semibold">
+                              Context awareness:
+                            </strong>{" "}
+                            Understanding existing codebase patterns and
+                            conventions
                           </li>
                           <li>
-                            <strong>Framework expertise:</strong> Deep knowledge
-                            of React best practices and modern patterns
+                            <strong className="font-semibold">
+                              Framework expertise:
+                            </strong>{" "}
+                            Deep knowledge of React best practices and modern
+                            patterns
                           </li>
                           <li>
-                            <strong>Iteration speed:</strong> Quick refinements
-                            and adjustments based on feedback
+                            <strong className="font-semibold">
+                              Iteration speed:
+                            </strong>{" "}
+                            Quick refinements and adjustments based on feedback
                           </li>
                         </ul>
                       </div>
@@ -410,8 +438,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
             {/* Beyond the Hype Section */}
             <a id="beyond-hype"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow">
+              <div className=" text-lg text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h4 className="font-semibold text-2xl text-foreground-dark">
@@ -427,7 +455,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       standards.
                     </p>
 
-                    <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                    <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         These aren't simple prompts. They are curated
                         instruction sets that teach the AI to understand our
@@ -439,7 +467,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       </p>
                       <div className="space-y-4">
                         <div className="flex items-start gap-3">
-                          <Target className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Target className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                          </div>
                           <div>
                             <h4 className="font-semibold text-foreground-dark mb-2">
                               Generate Entire Component Structures
@@ -452,7 +482,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
-                          <Zap className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Zap className="h-5 w-5 text-brand-primary  flex-shrink-0" />
+                          </div>
                           <div>
                             <h4 className="font-semibold text-foreground-dark mb-2">
                               Execute Codebase-Aware Refactoring
@@ -465,7 +497,9 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <CheckCircle className="h-5 w-5 text-brand-primary  flex-shrink-0" />
+                          </div>
                           <div>
                             <h4 className="font-semibold text-foreground-dark mb-2">
                               Enforce Quality with Precision
@@ -486,8 +520,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
             {/* Business Velocity Section */}
             <a id="business-velocity"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow">
+              <div className=" text-lg text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h4 className="font-semibold text-2xl text-foreground-dark">
@@ -501,15 +535,15 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
                     <div className="space-y-8">
                       {/* Step 1 */}
-                      <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                      <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                          <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
                             1
-                          </span>
+                          </div>
                           Start With a Solid Foundation
                         </h3>
                         <div className="grid md:grid-cols-2 gap-6">
-                          <div className="bg-white p-5 rounded-lg ">
+                          <div className="bg-black/5 p-5 rounded-lg ">
                             <h4 className="font-semibold text-foreground-dark mb-3">
                               Project Setup
                             </h4>
@@ -520,7 +554,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                               <li>• Predefined folder structure for clarity</li>
                             </ul>
                           </div>
-                          <div className="bg-white p-5 rounded-lg">
+                          <div className="bg-black/5 p-5 rounded-lg">
                             <h4 className="font-semibold text-foreground-dark mb-3">
                               Component Registry
                             </h4>
@@ -534,11 +568,11 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       </div>
 
                       {/* Step 2 */}
-                      <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                      <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                          <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
                             2
-                          </span>
+                          </div>
                           Break Down the Design First
                         </h3>
                         <p className="text-foreground-dark-muted mb-6">
@@ -546,7 +580,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           we manually identified layout vs. reusable components
                           and created base components first.
                         </p>
-                        <div className="bg-white p-6 rounded-lg">
+                        <div className="bg-black/5 p-6 rounded-lg">
                           <h4 className="font-semibold text-foreground-dark mb-3">
                             Our Prompt
                           </h4>
@@ -558,16 +592,16 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       </div>
 
                       {/* Step 3 */}
-                      <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                      <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                          <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
                             3
-                          </span>
+                          </div>
                           Build Bottom-Up
                         </h3>
                         <div className="space-y-4">
                           <div className="flex items-start gap-3">
-                            <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                            <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
                             <div>
                               <h4 className="font-semibold text-foreground-dark mb-2">
                                 Start Small
@@ -579,7 +613,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
-                            <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                            <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
                             <div>
                               <h4 className="font-semibold text-foreground-dark mb-2">
                                 Go Generic, Stay Reusable
@@ -591,7 +625,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
-                            <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                            <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
                             <div>
                               <h4 className="font-semibold text-foreground-dark mb-2">
                                 Test in Isolation
@@ -606,11 +640,11 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       </div>
 
                       {/* Step 4 */}
-                      <div className="bg-black/5 rounded-lg p-6 rounded-r-lg my-8">
+                      <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                          <span className="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
                             4
-                          </span>
+                          </div>
                           Treat AI Like a Junior Dev
                         </h3>
                         <p className="text-foreground-dark-muted mb-6">
@@ -619,7 +653,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           redundant markup, missed abstractions, and
                           accessibility gaps.
                         </p>
-                        <div className="bg-white p-5 rounded-lg ">
+                        <div className="bg-black/5 p-5 rounded-lg ">
                           <h4 className="font-semibold text-foreground-dark mb-3">
                             Before Calling It "Done"
                           </h4>
@@ -637,8 +671,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
             {/* Dual Approach Section */}
             <a id="dual-approach"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow">
+              <div className=" text-lg text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h4 className="font-semibold text-2xl text-foreground-dark">
@@ -646,7 +680,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                     </h4>
 
                     <div className="grid md:grid-cols-2 gap-6">
-                      <div className="bg-black/5 rounded-lg p-6 rounded-r-lg">
+                      <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                           For the Startup Builder & Technical Founder
                         </h3>
@@ -661,7 +695,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                         </Button>
                       </div>
 
-                      <div className="bg-black/5 rounded-lg p-6 rounded-r-lg">
+                      <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                           For the Enterprise & Growth-Stage Leader
                         </h3>
@@ -683,14 +717,17 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
             {/* FAQ Section */}
             <a id="faqs"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden mb-16">
-              <div className="container  text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow mb-8">
+              <div className="  text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
-                  <h4 className="font-semibold text-2xl text-foreground-dark mb-8">
-                    Frequently Asked Questions
-                  </h4>
+                  <EnhancedScrollReveal direction="up">
+                    <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
+                      {/* <FileText className="w-8 h-8 text-primary" /> */}
+                      Frequently Asked Questions
+                    </h2>
+                  </EnhancedScrollReveal>
 
-                  <div className="space-y-2">
+                  <div className="space-y-0 bg-white rounded-xl border border-glass px-6">
                     {[
                       {
                         question: "Is Cursor AI just a wrapper around ChatGPT?",
@@ -710,31 +747,34 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           "No. AI-assisted software engineering tools are designed to augment, not replace, developer expertise. They are powerful assistants that handle repetitive tasks and provide suggestions, but they still require the critical thinking, architectural vision, and oversight of experienced engineers to build robust and scalable applications. Their primary benefit is amplifying the productivity of your entire team.",
                       },
                     ].map((faq, index) => (
-                      <div
+                      <EnhancedScrollReveal
                         key={index}
-                        className="border border-border rounded-[.5rem] overflow-hidden"
+                        direction="up"
+                        delay={index * 100}
                       >
-                        <button
-                          onClick={() => toggleFAQ(index)}
-                          className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
-                        >
-                          <span className="font-medium text-foreground-dark pr-4">
-                            {faq.question}
-                          </span>
-                          {expandedFAQ === index ? (
-                            <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0" />
-                          ) : (
-                            <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                        <div className=" overflow-hidden py-6 border-b last:border-b -mb-[1px]">
+                          <button
+                            onClick={() => toggleFAQ(index)}
+                            className="w-full text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
+                          >
+                            <span className="font-medium text-foreground-dark-muted pr-4">
+                              {faq.question}
+                            </span>
+                            {expandedFAQ === index ? (
+                              <ChevronUp className="w-5 h-5 text-foreground-dark-muted flex-shrink-0" />
+                            ) : (
+                              <ChevronDown className="w-5 h-5 text-foreground-dark-muted flex-shrink-0" />
+                            )}
+                          </button>
+                          {expandedFAQ === index && (
+                            <div className=" py-4">
+                              <p className="text-foreground-dark-muted leading-relaxed">
+                                {faq.answer}
+                              </p>
+                            </div>
                           )}
-                        </button>
-                        {expandedFAQ === index && (
-                          <div className="px-6 py-4 bg-white border-t border-border">
-                            <p className="text-foreground-dark-muted leading-relaxed">
-                              {faq.answer}
-                            </p>
-                          </div>
-                        )}
-                      </div>
+                        </div>
+                      </EnhancedScrollReveal>
                     ))}
                   </div>
                 </div>
