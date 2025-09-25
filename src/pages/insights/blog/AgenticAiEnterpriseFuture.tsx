@@ -22,6 +22,7 @@ import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
 import BlogContBg from "@/assets/images/blog-content-bg.webp";
 import blogImg2 from "@/assets/images/blog-img2.webp";
 import styles from "../../../assets/css/stylesheet.module.css";
+import EnhancedScrollReveal from "@/components/test/effects/EnhancedScrollReveal";
 
 const leftNavLinks = [
   { href: "#intro", label: "Introduction" },
@@ -175,7 +176,7 @@ const AgenticAiEnterpriseFuture = () => {
             <div className="flex items-center">
               <Link
                 to="/insights/blogs"
-                className="inline-flex items-center text-foreground-muted hover:text-brand-primary-dark transition-colors mb-6 mr-6"
+                className="inline-flex items-center text-foreground-muted hover:text-blue-500-dark transition-colors mb-6 mr-6"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Blogs
@@ -248,8 +249,8 @@ const AgenticAiEnterpriseFuture = () => {
           </div>
           <div className="col-span-2 w-full">
             {/* Introduction Section */}
-            <section className="relative overflow-hidden">
-              <div className="container relative z-10">
+            <section className="relative overflow">
+              <div className=" relative z-10">
                 <div className="max-w-5xl mx-auto pb-8">
                   <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed mb-8">
                     <h4 className="font-semibold text-xl">
@@ -304,8 +305,8 @@ const AgenticAiEnterpriseFuture = () => {
 
             {/* Enterprise AI Section */}
             <a id="enterprise-ai"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow">
+              <div className=" text-lg text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h4 className="font-semibold text-2xl text-foreground-dark">
@@ -322,35 +323,45 @@ const AgenticAiEnterpriseFuture = () => {
                       system rolled into one.
                     </p>
 
-                    <div className="bg-gradient-to-r from-brand-primary/5 to-brand-purple/5 border-l-4 border-brand-primary p-6 rounded-r-lg my-8">
+                    <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                         A true Agentic AI system can be defined as an autonomous
                         system that can:
                       </h3>
                       <ul className="space-y-3 text-foreground-dark-muted">
-                        <li className="flex items-start gap-3">
-                          <Brain className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
+                        <li className="flex items-center gap-3 ">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Brain className="h-5 w-5 text-blue-500  flex-shrink-0" />
+                          </div>
                           <span>
                             <strong>Perceive</strong> its environment and ingest
                             data from multiple sources.
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <Target className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
+                        <li className="flex items-center gap-3">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Target className="h-5 w-5 text-blue-500  flex-shrink-0" />
+                          </div>
                           <span>
                             <strong>Reason</strong> about that data and a given
                             objective.
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <Zap className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
+                        <li className="flex items-center gap-3">
+                          {" "}
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Zap className="h-5 w-5 text-blue-500  flex-shrink-0" />
+                          </div>
                           <span>
                             <strong>Plan</strong> a multi-step sequence of
                             actions to achieve that objective.
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-brand-primary mt-1 flex-shrink-0" />
+                        <li className="flex items-center gap-3">
+                          {" "}
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <CheckCircle className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                          </div>
                           <span>
                             <strong>Execute</strong> those actions by
                             autonomously using a variety of digital tools (APIs,
@@ -386,7 +397,7 @@ const AgenticAiEnterpriseFuture = () => {
                       </li>
                     </ul>
 
-                    <div className="bg-foreground-dark/5 p-8 text-md">
+                    <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                       These are not simple chatbot implementations. They are
                       complex systems that require a deep understanding of data
                       engineering, cloud architecture, and the specific business
@@ -399,8 +410,8 @@ const AgenticAiEnterpriseFuture = () => {
 
             {/* AWS AgentCore Section */}
             <a id="aws-agentcore"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow">
+              <div className=" text-lg text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h4 className="font-semibold text-2xl text-foreground-dark">
@@ -427,19 +438,21 @@ const AgenticAiEnterpriseFuture = () => {
                       agents.
                     </p>
 
-                    <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-lg my-8">
+                    <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                       <div className="flex items-start gap-3">
-                        <AlertTriangle className="h-6 w-6 text-yellow-600 mt-1 flex-shrink-0" />
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                          <AlertTriangle className="h-6 w-6 text-blue-500 flex-shrink-0" />
+                        </div>
                         <div>
-                          <h3 className="text-lg font-semibold text-yellow-800 mb-3">
+                          <h3 className="text-lg font-semibold text-black-800 mb-3">
                             However, a powerful toolkit is only as good as the
                             architect wielding it.
                           </h3>
-                          <p className="text-yellow-700 mb-4">
+                          <p className="text-black-500 mb-4">
                             AgentCore alone doesn't solve the most critical
                             enterprise challenges:
                           </p>
-                          <ul className="space-y-2 text-yellow-700">
+                          <ul className="space-y-2 text-black-500">
                             <li>
                               <strong>The Data Foundation:</strong> An AI agent
                               is only as intelligent as the data it can access.
@@ -469,8 +482,8 @@ const AgenticAiEnterpriseFuture = () => {
 
             {/* Indexnine Framework Section */}
             <a id="indexnine-framework"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow">
+              <div className=" text-lg text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h4 className="font-semibold text-2xl text-foreground-dark">
@@ -492,21 +505,21 @@ const AgenticAiEnterpriseFuture = () => {
 
             {/* Implementation Steps Section */}
             <a id="implementation"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow">
+              <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                 <div className="max-w-5xl mx-auto">
-                  <div className="space-y-12 mb-12">
+                  <div className="space-y-12">
                     <h4 className="font-semibold text-2xl text-foreground-dark">
                       Implementation Framework: Strategic Steps to Agentic AI
                       Success
                     </h4>
 
                     {/* Step 1 */}
-                    <div className="bg-gradient-to-r from-brand-primary/5 to-transparent border border-brand-primary/20 rounded-xl p-8">
+                    <div>
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                        <span className="bg-brand-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
                           1
-                        </span>
+                        </div>
                         Clarity Before Complexity - The AI & Data Audit
                       </h3>
                       <p className="text-foreground-dark-muted mb-6">
@@ -516,9 +529,8 @@ const AgenticAiEnterpriseFuture = () => {
                         our proprietary AI P2R (Potential-to-Reality) Assessment
                         Framework to provide a data-driven, strategic roadmap.
                       </p>
-
                       <div className="grid md:grid-cols-3 gap-6">
-                        <div className="bg-white p-6 rounded-lg border border-border">
+                        <div className="bg-black/5 p-6 rounded-lg ">
                           <h4 className="font-semibold text-foreground-dark mb-3">
                             Process Mapping & Potential Score
                           </h4>
@@ -528,7 +540,7 @@ const AgenticAiEnterpriseFuture = () => {
                             AI agent could deliver the highest ROI.
                           </p>
                         </div>
-                        <div className="bg-white p-6 rounded-lg border border-border">
+                        <div className="bg-black/5 p-6 rounded-lg ">
                           <h4 className="font-semibold text-foreground-dark mb-3">
                             Data Landscape Review & Readiness Score
                           </h4>
@@ -537,7 +549,7 @@ const AgenticAiEnterpriseFuture = () => {
                             to assess your true readiness to execute.
                           </p>
                         </div>
-                        <div className="bg-white p-6 rounded-lg border border-border">
+                        <div className="bg-black/5 p-6 rounded-lg ">
                           <h4 className="font-semibold text-foreground-dark mb-3">
                             Systems Review & Risk Score
                           </h4>
@@ -551,11 +563,11 @@ const AgenticAiEnterpriseFuture = () => {
                     </div>
 
                     {/* Step 2 */}
-                    <div className="bg-gradient-to-r from-brand-purple/5 to-transparent border border-brand-purple/20 rounded-xl p-8">
+                    <div>
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                        <span className="bg-brand-purple text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
                           2
-                        </span>
+                        </div>
                         Engineering Autonomy - Our "Built Differently" Execution
                       </h3>
                       <p className="text-foreground-dark-muted mb-6">
@@ -569,7 +581,9 @@ const AgenticAiEnterpriseFuture = () => {
 
                       <ul className="space-y-3 text-foreground-dark-muted">
                         <li className="flex items-start gap-3">
-                          <Zap className="h-5 w-5 text-brand-purple mt-1 flex-shrink-0" />
+                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Zap className="h-5 w-5 text-blue-500  flex-shrink-0" />
+                          </div>
                           <span>
                             <strong>Launch:</strong> For a FinTech startup like
                             Annotate, we architected a complex RAG-based AI
@@ -577,7 +591,9 @@ const AgenticAiEnterpriseFuture = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <Target className="h-5 w-5 text-brand-purple mt-1 flex-shrink-0" />
+                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <Target className="h-5 w-5 text-blue-500  flex-shrink-0" />
+                          </div>
                           <span>
                             <strong>Pivot:</strong> For Zilla Security, we
                             helped transform a simple auditing tool into a
@@ -585,7 +601,9 @@ const AgenticAiEnterpriseFuture = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-brand-purple mt-1 flex-shrink-0" />
+                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <CheckCircle className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                          </div>
                           <span>
                             <strong>Grow:</strong> For a client like TripJack,
                             we modernize their core integration architecture to
@@ -596,11 +614,11 @@ const AgenticAiEnterpriseFuture = () => {
                     </div>
 
                     {/* Step 3 */}
-                    <div className="bg-gradient-to-r from-red-500/5 to-transparent border border-red-500/20 rounded-xl p-8">
+                    <div>
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                        <span className="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
                           3
-                        </span>
+                        </div>
                         The Cautionary Layer - Our AI Risk & Governance Practice
                       </h3>
                       <p className="text-foreground-dark-muted mb-6">
@@ -611,9 +629,11 @@ const AgenticAiEnterpriseFuture = () => {
                       </p>
 
                       <div className="grid md:grid-cols-3 gap-6">
-                        <div className="bg-white p-6 rounded-lg border border-red-200">
+                        <div className="bg-white p-6 rounded-lg border border-black/5">
                           <div className="flex items-center gap-3 mb-3">
-                            <Shield className="h-5 w-5 text-red-500" />
+                            <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              <Shield className="h-5 w-5 text-blue-500" />
+                            </div>
                             <h4 className="font-semibold text-foreground-dark">
                               Robust Guardrails
                             </h4>
@@ -624,9 +644,11 @@ const AgenticAiEnterpriseFuture = () => {
                             within predefined ethical and safety boundaries.
                           </p>
                         </div>
-                        <div className="bg-white p-6 rounded-lg border border-red-200">
+                        <div className="bg-white p-6 rounded-lg border border-black/5">
                           <div className="flex items-center gap-3 mb-3">
-                            <Target className="h-5 w-5 text-red-500" />
+                            <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              <Target className="h-5 w-5 text-blue-500" />
+                            </div>
                             <h4 className="font-semibold text-foreground-dark">
                               Human-in-the-Loop (HITL)
                             </h4>
@@ -637,9 +659,11 @@ const AgenticAiEnterpriseFuture = () => {
                             speed with human judgment.
                           </p>
                         </div>
-                        <div className="bg-white p-6 rounded-lg border border-red-200">
+                        <div className="bg-white p-6 rounded-lg border border-black/5">
                           <div className="flex items-center gap-3 mb-3">
-                            <CheckCircle className="h-5 w-5 text-red-500" />
+                            <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              <CheckCircle className="h-5 w-5 text-blue-500" />
+                            </div>
                             <h4 className="font-semibold text-foreground-dark">
                               Comprehensive Monitoring
                             </h4>
@@ -654,7 +678,7 @@ const AgenticAiEnterpriseFuture = () => {
                     </div>
 
                     <div
-                      className={`text-white rounded-2xl p-8 mb-12 ${styles.middleCardBg2}`}
+                      className={`text-white rounded-2xl p-8  ${styles.middleCardBg2}`}
                     >
                       <h2 className="text-2xl font-semibold mb-4">
                         The Future is Agentic - But Approach With Strategic
@@ -679,14 +703,17 @@ const AgenticAiEnterpriseFuture = () => {
             </section>
             {/* FAQ Section */}
             <a id="faqs"></a>
-            <section className="pt-12 pb-0 relative overflow-hidden mb-16">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed">
+            <section className="pt-12 pb-0 relative overflow mb-16">
+              <div className=" text text-foreground-dark-muted leading-relaxed">
                 <div className="max-w-5xl mx-auto">
-                  <h4 className="font-semibold text-2xl text-foreground-dark mb-8">
-                    Frequently Asked Questions About Agentic AI
-                  </h4>
+                  <EnhancedScrollReveal direction="up">
+                    <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
+                      {/* <FileText className="w-8 h-8 text-primary" /> */}
+                      Frequently Asked Questions About Agentic AI
+                    </h2>
+                  </EnhancedScrollReveal>
 
-                  <div className="space-y-2">
+                  <div className="space-y-0 bg-white rounded-xl border border-glass px-6">
                     {[
                       {
                         question:
@@ -713,76 +740,82 @@ const AgenticAiEnterpriseFuture = () => {
                           "Start with an AI & Data Audit that evaluates three key areas: process mapping to identify high-ROI opportunities, data infrastructure readiness, and systems security/compliance posture. This provides a pragmatic roadmap for implementation.",
                       },
                     ].map((faq, index) => (
-                      <div
+                      <EnhancedScrollReveal
                         key={index}
-                        className="border border-border rounded-[.5rem] overflow-hidden"
+                        direction="up"
+                        delay={index * 100}
                       >
-                        <button
-                          onClick={() => toggleFAQ(index)}
-                          className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
-                        >
-                          <span className="font-medium text-foreground-dark pr-4">
-                            {faq.question}
-                          </span>
-                          {expandedFAQ === index ? (
-                            <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0" />
-                          ) : (
-                            <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                        <div className=" overflow-hidden py-6 border-b last:border-b -mb-[1px]">
+                          <button
+                            onClick={() => toggleFAQ(index)}
+                            className="w-full text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
+                          >
+                            <span className="font-medium text-foreground-dark-muted pr-4">
+                              {faq.question}
+                            </span>
+                            {expandedFAQ === index ? (
+                              <ChevronUp className="w-5 h-5 text-foreground-dark-muted flex-shrink-0" />
+                            ) : (
+                              <ChevronDown className="w-5 h-5 text-foreground-dark-muted flex-shrink-0" />
+                            )}
+                          </button>
+                          {expandedFAQ === index && (
+                            <div className=" py-4">
+                              <p className="text-foreground-dark-muted leading-relaxed">
+                                {faq.answer}
+                              </p>
+                            </div>
                           )}
-                        </button>
-                        {expandedFAQ === index && (
-                          <div className="px-6 py-4 bg-white border-t border-border">
-                            <p className="text-foreground-dark-muted leading-relaxed">
-                              {faq.answer}
-                            </p>
-                          </div>
-                        )}
-                      </div>
+                        </div>
+                      </EnhancedScrollReveal>
                     ))}
                   </div>
                 </div>
               </div>
             </section>
+
+            {/* Final CTA Section */}
+            <section className="pt-12 pb-12 relative overflow-hidden">
+              <EnhancedScrollReveal direction="up">
+                <div className="max-w-6xl">
+                  <div className="bg-gradient-primary rounded-xl p-8 text-center text-white">
+                    <h2 className="text-3xl font-semibold mb-4">
+                      Ready to Navigate the Agentic AI Future?
+                    </h2>
+                    <p className="text-xl mb-8 opacity-90">
+                      Don't let the complexity of agentic AI overwhelm your
+                      enterprise transformation. Get a strategic assessment of
+                      your AI readiness and a roadmap for safe, successful
+                      implementation.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <Button
+                        variant="btnSecondary"
+                        onClick={() => {
+                          window.open(
+                            "https://calendly.com/vaughn-soratos-indexnine",
+                            "_blank"
+                          );
+                        }}
+                      >
+                        Schedule Your AI Strategy Session
+                        <ExternalLink className="h-4 w-4 ml-2" />
+                      </Button>
+                      <Button variant="btnSecondary" size="lg" asChild>
+                        <Link to="/services/ai">
+                          Explore Our AI & ML Services
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </EnhancedScrollReveal>
+            </section>
           </div>
         </div>
       </div>
       {/* CTA Section */}
-      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <div className=" p-8 text-center">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-                <span className="leading-[1.4]">
-                  Ready to Navigate the Agentic AI Future?
-                </span>
-              </h2>
-              <p className="text-xl text-foreground-white/80 mb-12 font-montserrat max-w-3xl mx-auto">
-                Don't let the complexity of agentic AI overwhelm your enterprise
-                transformation. Get a strategic assessment of your AI readiness
-                and a roadmap for safe, successful implementation.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  variant="btnSecondary"
-                  size="lg"
-                  onClick={() => {
-                    window.open(
-                      "https://calendly.com/vaughn-soratos-indexnine",
-                      "_blank"
-                    );
-                  }}
-                >
-                  Schedule Your AI Strategy Session
-                  <ExternalLink className="h-4 w-4 ml-2" />
-                </Button>
-                <Button variant="btnSecondary" size="lg" asChild>
-                  <Link to="/services/ai">Explore Our AI & ML Services</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/*  */}
       <div className="bg-background">
         <Footer />
       </div>

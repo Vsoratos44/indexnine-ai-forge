@@ -23,6 +23,7 @@ import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
 import BlogContBg from "@/assets/images/blog-content-bg.webp";
 import blogImg2 from "@/assets/images/blog-img2.webp";
 import styles from "../../../assets/css/stylesheet.module.css";
+import EnhancedScrollReveal from "@/components/test/effects/EnhancedScrollReveal";
 
 const leftNavLinks = [
   { href: "#intro", label: "Introduction" },
@@ -739,45 +740,42 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                 </div>
               </div>
             </section>
+
+            {/* Final CTA Section */}
+            <section className="pt-12 pb-12 relative overflow-hidden">
+              <EnhancedScrollReveal direction="up">
+                <div className="max-w-6xl">
+                  <div className="bg-gradient-primary rounded-xl p-8 text-center text-white">
+                    <h2 className="text-3xl font-semibold mb-4">
+                      The Indexnine AI Enablement Framework
+                    </h2>
+                    <p className="text-xl mb-8 opacity-90">
+                      We leverage a simple, four-step framework: Assess your
+                      current development lifecycle and business goals.
+                      Strategize by developing a tailored AI Roadmap. Integrate
+                      the tool seamlessly into your workflow. Amplify with
+                      ongoing support and advanced training.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <Button
+                        variant="btnSecondary"
+                        onClick={() => {
+                          window.open(
+                            "https://calendly.com/vaughn-soratos-indexnine",
+                            "_blank"
+                          );
+                        }}
+                      >
+                        Book an AI Assessment
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </EnhancedScrollReveal>
+            </section>
           </div>
         </div>
       </div>
-
-      {/* CTA Section */}
-      <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <div className="p-8 text-center">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-                <span className="leading-[1.4]">
-                  The Indexnine AI Enablement Framework
-                </span>
-              </h2>
-              <p className="text-xl text-foreground-white/80 mb-12 font-montserrat max-w-3xl mx-auto">
-                We leverage a simple, four-step framework: Assess your current
-                development lifecycle and business goals. Strategize by
-                developing a tailored AI Roadmap. Integrate the tool seamlessly
-                into your workflow. Amplify with ongoing support and advanced
-                training.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  variant="btnSecondary"
-                  size="lg"
-                  onClick={() => {
-                    window.open(
-                      "https://calendly.com/vaughn-soratos-indexnine",
-                      "_blank"
-                    );
-                  }}
-                >
-                  Book an AI Assessment
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <div className="bg-background">
         <Footer />
