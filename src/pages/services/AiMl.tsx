@@ -41,49 +41,16 @@ import LivingVoidBackground from "@/components/LivingVoidBackground";
 import CasesCarousel from "@/components/CasesCarousel";
 
 const AiMl = () => {
-  // FAQ state management following template pattern
-  const [expandedFAQ, setExpandedFAQ] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setExpandedFAQ(expandedFAQ === index ? null : index);
-  };
-
-  // FAQ data matching schema - following template structure
-  const faqData = [
-    {
-      question: "What is the P2R Score and why is it important for AI implementation?",
-      answer: "The P2R (Potential to Reality) Score is our proprietary assessment framework that evaluates your organization's AI readiness across data quality, infrastructure, team capabilities, and business alignment. It helps identify gaps and prioritize investments for successful AI implementation, reducing the 65% failure rate of AI projects by ensuring proper preparation before development begins."
-    },
-    {
-      question: "How long does it take to see ROI from AI implementation?",
-      answer: "With our structured approach, most clients see initial ROI within 3-6 months for focused AI solutions. Our Pro AI Audit includes a working proof-of-concept that demonstrates value immediately, while comprehensive AI transformations typically show measurable business impact within 6-12 months. We establish clear KPIs and track progress from day one."
-    },
-    {
-      question: "What's the difference between your Standard and Pro AI Audits?",
-      answer: "The Standard AI Audit (4 weeks, $25K+) provides business context analysis, data inventory, and prioritized roadmap with ROI projections - ideal for validating concepts and securing buy-in. The Pro AI Audit (8 weeks, $55K+) includes everything in Standard plus a working proof-of-concept, detailed technical architecture, and comprehensive implementation plans for organizations ready to commit to transformation."
-    },
-    {
-      question: "Can you integrate AI with our existing legacy systems?",
-      answer: "Yes, we specialize in legacy system integration and modernization. Our approach includes comprehensive system analysis, API development for seamless integration, and phased migration strategies that minimize disruption while maximizing AI benefits. We've successfully integrated AI solutions with systems ranging from mainframes to modern cloud architectures."
-    },
-    {
-      question: "What industries do you serve for AI implementation?",
-      answer: "We serve enterprises across all industries, with particular expertise in financial services, healthcare, manufacturing, retail, and technology. Our industry-agnostic methodology adapts to sector-specific regulations, compliance requirements, and business models while leveraging cross-industry best practices for optimal results."
-    }
-  ];
-// Implement comprehensive SEO for AI Studio page
+  // Implement comprehensive SEO for AI Studio page
   useSEO({
-    title: "AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine",
-    description: "Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services.",
+    title:
+      "AI Consulting Services & Machine Learning Solutions | Enterprise AI Implementation | IndexNine",
+    description:
+      "Leading AI consulting services for enterprises. Custom machine learning solutions, AI implementation strategies, generative AI development, and AI change management. Transform legacy systems with expert AI consulting and ML engineering services.",
     canonicalUrl: "https://www.indexnine.com/services/ai",
-    keywords: "AI consulting services, machine learning solutions, enterprise AI implementation, AI strategy consulting, custom AI development, generative AI solutions, AI change management, ML engineering, artificial intelligence consulting, AI transformation services, enterprise machine learning, AI implementation framework, legacy system AI integration, conversational AI development, AI automation solutions",
+    keywords:
+      "AI consulting services, machine learning solutions, enterprise AI implementation, AI strategy consulting, custom AI development, generative AI solutions, AI change management, ML engineering, artificial intelligence consulting, AI transformation services, enterprise machine learning, AI implementation framework, legacy system AI integration, conversational AI development, AI automation solutions",
     ogImage: "https://www.indexnine.com/images/og-ai-studio.png",
-    ogType: "website",
-    schemaType: "WebPage",
-    robots: "index, follow",
-    author: "IndexNine",
-    publisher: "IndexNine",
-    hreflang: "en-US"
   });
 
   return (
@@ -113,12 +80,47 @@ const AiMl = () => {
         />
         <BreadcrumbSchema
           items={[
-            { name: "Home", url: "https://www.indexnine.com" },
             { name: "Services", url: "https://www.indexnine.com/services" },
-            { name: "AI & ML Services", url: "https://www.indexnine.com/services/ai" }
+            {
+              name: "AI & ML Services",
+              url: "https://www.indexnine.com/services/ai",
+            },
           ]}
         />
-        <FAQSchema faqItems={faqData} />
+        {/* FAQ Schema for AI services - helps with featured snippets and AI Q&A */}
+        <FAQSchema
+          faqItems={[
+            {
+              question:
+                "What is the P2R Score and why is it important for AI implementation?",
+              answer:
+                "The P2R (Potential to Reality) Score is our proprietary assessment framework that evaluates your organization's AI readiness across data quality, infrastructure, team capabilities, and business alignment. It helps identify gaps and prioritize investments for successful AI implementation, reducing the 65% failure rate of AI projects by ensuring proper preparation before development begins.",
+            },
+            {
+              question:
+                "How long does it take to see ROI from AI implementation?",
+              answer:
+                "With our structured approach, most clients see initial ROI within 3-6 months for focused AI solutions. Our Pro AI Audit includes a working proof-of-concept that demonstrates value immediately, while comprehensive AI transformations typically show measurable business impact within 6-12 months. We establish clear KPIs and track progress from day one.",
+            },
+            {
+              question:
+                "What's the difference between your Standard and Pro AI Audits?",
+              answer:
+                "The Standard AI Audit (4 weeks, $25K+) provides business context analysis, data inventory, and prioritized roadmap with ROI projections - ideal for validating concepts and securing buy-in. The Pro AI Audit (8 weeks, $55K+) includes everything in Standard plus a working proof-of-concept, detailed technical architecture, and comprehensive implementation plans for organizations ready to commit to transformation.",
+            },
+            {
+              question:
+                "Can you integrate AI with our existing legacy systems?",
+              answer:
+                "Yes, we specialize in legacy system integration and modernization. Our approach includes comprehensive system analysis, API development for seamless integration, and phased migration strategies that minimize disruption while maximizing AI benefits. We've successfully integrated AI solutions with systems ranging from mainframes to modern cloud architectures.",
+            },
+            {
+              question: "What industries do you serve for AI implementation?",
+              answer:
+                "We serve enterprises across all industries, with particular expertise in financial services, healthcare, manufacturing, retail, and technology. Our industry-agnostic methodology adapts to sector-specific regulations, compliance requirements, and business models while leveraging cross-industry best practices for optimal results.",
+            },
+          ]}
+        />
         <Header />
 
         {/* Hero Section */}
