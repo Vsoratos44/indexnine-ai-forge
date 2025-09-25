@@ -20,6 +20,7 @@ import BlogContBg from "@/assets/images/blog-content-bg.webp";
 
 import blogImg2 from "@/assets/images/blog-img2.webp";
 import styles from "../../../assets/css/stylesheet.module.css";
+import EnhancedScrollReveal from "@/components/test/effects/EnhancedScrollReveal";
 
 const leftNavLinks = [
   { href: "#intro", label: "Introduction" },
@@ -334,7 +335,7 @@ const RobotFrameworkVsPlaywright = () => {
           <div className="col-span-2 w-full">
             {/* Introduction Section */}
             <section className="relative overflow-hidden">
-              <div className="container relative z-10">
+              <div className=" relative z-10">
                 <div className="max-w-5xl mx-auto pb-8 ">
                   <div className="space-y-6 text-lg text-foreground-dark-muted leading-relaxed mb-8">
                     <h4 className="font-semibold text-xl ">
@@ -396,8 +397,8 @@ const RobotFrameworkVsPlaywright = () => {
             {/* Comparison Table Section */}
             <a id="hiddenCost"></a>
 
-            <section className="pt-12 pb-0 relative overflow-hidden">
-              <div className="container text-lg text-foreground-dark-muted leading-relaxed ">
+            <section className="pt-12 pb-0 relative overflow">
+              <div className=" text-lg text-foreground-dark-muted leading-relaxed ">
                 <div className="max-w-5xl mx-auto">
                   <div className="space-y-6">
                     <h4 className="font-semibold text-2xl text-foreground-dark">
@@ -432,7 +433,7 @@ const RobotFrameworkVsPlaywright = () => {
                       they do use.{" "}
                     </p>
 
-                    <div className="bg-foreground-dark/5 p-8 text-md rounded-lg">
+                    <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                       Businesses found themselves managing their tools instead
                       of growing their companies.
                     </div>
@@ -443,8 +444,8 @@ const RobotFrameworkVsPlaywright = () => {
                       At a Glance: Robot Framework vs. Playwright Comparison
                     </h4>
                   </div>
-                  <div className="overflow-x-auto bg-[#fff]">
-                    <table className="w-full border border-glass-border rounded-3xl overflow-hidden bg-glass-bg/50 backdrop-blur-xl ">
+                  <div className="overflow-x-auto bg-[#fff] border border-black/5 rounded-xl">
+                    <table className="w-full  rounded-xl overflow-hidden bg-glass-bg/50 backdrop-blur-xl ">
                       <thead className="bg-foreground-dark/5">
                         <tr>
                           <th className="text-left p-6 font-montserrat text-foreground-dark font-semibold">
@@ -526,8 +527,8 @@ const RobotFrameworkVsPlaywright = () => {
             </section>
 
             {/* Robot Framework Section */}
-            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow-hidden">
-              <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow">
+              <div className=" mx-auto  relative z-10">
                 <div className="max-w-5xl mx-auto">
                   <h4 className="font-semibold text-2xl mb-6">
                     Robot Framework: The Startup's Secret Weapon for Agile
@@ -549,12 +550,12 @@ const RobotFrameworkVsPlaywright = () => {
                     every release.
                   </p>
 
-                  <div className="p-8 rounded-3xl bg-foreground-dark/5">
+                  <div className="bg-white rounded-xl p-8 shadow-glass  border-glass">
                     <h4 className="font-semibold text-xl mb-6">
                       Why Robot Framework is a Founder's Best Friend
                     </h4>
                     <div className="space-y-6">
-                      <div className="relative overflow-hidden backdrop-blur-xl bg-[#fff] rounded-3xl p-6">
+                      <div className="relative overflow-hidden backdrop-blur-xl bg-black/5 rounded-xl p-6">
                         <h4 className="text-lg font-medium text-foreground-dark mb-4 font-montserrat">
                           Human-Readable Syntax
                         </h4>
@@ -565,7 +566,7 @@ const RobotFrameworkVsPlaywright = () => {
                           fostering collaboration.
                         </p>
                       </div>
-                      <div className="relative overflow-hidden backdrop-blur-xl bg-[#fff] rounded-3xl p-6">
+                      <div className="relative overflow-hidden backdrop-blur-xl bg-black/5 rounded-xl p-6">
                         <h4 className="text-lg font-medium text-foreground-dark mb-4 font-montserrat">
                           Powerful & Extensible Ecosystem
                         </h4>
@@ -576,7 +577,7 @@ const RobotFrameworkVsPlaywright = () => {
                           one tool.
                         </p>
                       </div>
-                      <div className="relative overflow-hidden backdrop-blur-xl bg-[#fff] rounded-3xl p-6">
+                      <div className="relative overflow-hidden backdrop-blur-xl bg-black/5 rounded-xl p-6">
                         <h4 className="text-lg font-medium text-foreground-dark mb-4 font-montserrat">
                           Cost-Effective & Quick to Ramp Up
                         </h4>
@@ -596,8 +597,8 @@ const RobotFrameworkVsPlaywright = () => {
 
             {/* Playwright Section */}
 
-            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow-hidden">
-              <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow">
+              <div className=" mx-auto relative z-10">
                 <div className="max-w-5xl mx-auto">
                   <h4 className="font-semibold text-2xl mb-6">
                     Playwright: The Enterprise Powerhouse for High-Velocity
@@ -619,12 +620,12 @@ const RobotFrameworkVsPlaywright = () => {
                     weeks to hours—and gives stakeholders the confidence to
                     release features more frequently.
                   </p>
-                  <div className="p-8 rounded-3xl bg-foreground-dark/5">
+                  <div className="bg-white rounded-xl p-8 shadow-glass  border-glass ">
                     <h4 className="font-semibold text-xl mb-6">
                       Why Playwright is the Go-To for Scaling Enterprises
                     </h4>
                     <div className="space-y-6">
-                      <div className="relative overflow-hidden backdrop-blur-xl bg-[#fff] rounded-3xl p-6">
+                      <div className="relative overflow-hidden backdrop-blur-xl bg-black/5 rounded-xl p-6">
                         <h4 className="text-lg font-medium text-foreground-dark mb-4 font-montserrat">
                           Blazing Speed & Ironclad Reliability
                         </h4>
@@ -636,7 +637,7 @@ const RobotFrameworkVsPlaywright = () => {
                           execution speed.
                         </p>
                       </div>
-                      <div className="relative overflow-hidden backdrop-blur-xl bg-[#fff] rounded-3xl p-6">
+                      <div className="relative overflow-hidden backdrop-blur-xl bg-black/5 rounded-xl p-6">
                         <h4 className="text-lg font-medium text-foreground-dark mb-4 font-montserrat">
                           True Cross-Browser Mastery
                         </h4>
@@ -646,7 +647,7 @@ const RobotFrameworkVsPlaywright = () => {
                           critical for ensuring a consistent user experience.
                         </p>
                       </div>
-                      <div className="relative overflow-hidden backdrop-blur-xl bg-[#fff] rounded-3xl p-6">
+                      <div className="relative overflow-hidden backdrop-blur-xl bg-black/5 rounded-xl p-6">
                         <h4 className="text-lg font-medium text-foreground-dark mb-4 font-montserrat">
                           Developer-Centric Features
                         </h4>
@@ -667,8 +668,8 @@ const RobotFrameworkVsPlaywright = () => {
             </section>
 
             {/* Quality Engineering Partnership Section */}
-            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow-hidden">
-              <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow">
+              <div className=" mx-auto  relative z-10">
                 <div className="max-w-5xl mx-auto">
                   <h4 className="font-semibold text-2xl mb-6">
                     Don't Settle for "Good Enough": A Partner in Quality
@@ -691,7 +692,7 @@ const RobotFrameworkVsPlaywright = () => {
                     </p>
                   </div>
 
-                  <div className="p-8 rounded-3xl bg-foreground-dark/5">
+                  <div className="bg-white rounded-xl p-8 shadow-glass  border-glass">
                     <h4 className="font-semibold text-xl mb-6">
                       This is how we execute:
                     </h4>
@@ -736,8 +737,8 @@ const RobotFrameworkVsPlaywright = () => {
                       </div>
                     </div>
 
-                    <div className="mt-8 pt-8 border-t border-glass-border-light">
-                      <div className="bg-gradient-to-r from-brand-primary/5 to-brand-purple/5 border-l-4 border-brand-primary p-6 rounded-r-lg">
+                    <div className="mt-8 ">
+                      <div className="bg-blue-500/5 p-6 rounded-lg">
                         <h4 className="text-lg font-semibold text-foreground-dark mb-3">
                           Ready to Transform Your QA Strategy?
                         </h4>
@@ -769,14 +770,18 @@ const RobotFrameworkVsPlaywright = () => {
             </section>
 
             {/* Interactive FAQ Section */}
-            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow-hidden">
-              <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow">
+              <div className=" mx-auto relative z-10">
                 <div className="max-w-5xl mx-auto">
-                  <h4 className="font-semibold text-2xl mb-8">
-                    Frequently Asked Questions About Test Automation Frameworks
-                  </h4>
+                  <EnhancedScrollReveal direction="up">
+                    <h2 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat flex items-center gap-3">
+                      {/* <FileText className="w-8 h-8 text-primary" /> */}
+                      Frequently Asked Questions About Test Automation
+                      Frameworks
+                    </h2>
+                  </EnhancedScrollReveal>
 
-                  <div className="space-y-2">
+                  <div className="space-y-0 bg-white rounded-xl border border-glass px-6">
                     {[
                       {
                         question:
@@ -815,35 +820,115 @@ const RobotFrameworkVsPlaywright = () => {
                           "Most organizations see initial ROI within 3-6 months as automated tests accumulate saved hours and prevent costly production bugs. The break-even point typically occurs when automation saves more time than it took to implement and maintain.",
                       },
                     ].map((faq, index) => (
-                      <div
+                      <EnhancedScrollReveal
                         key={index}
-                        className="border border-border rounded-[.5rem] overflow-hidden"
+                        direction="up"
+                        delay={index * 100}
                       >
-                        <button
-                          onClick={() => toggleFAQ(index)}
-                          className="w-full px-6 py-4 text-left bg-background-light hover:bg-background/5 transition-colors flex items-center justify-between"
-                        >
-                          <span className="font-medium text-foreground-dark pr-4">
-                            {faq.question}
-                          </span>
-                          {expandedFAQ === index ? (
-                            <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0" />
-                          ) : (
-                            <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                        <div className=" overflow-hidden py-6 border-b last:border-b -mb-[1px]">
+                          <button
+                            onClick={() => toggleFAQ(index)}
+                            className="w-full text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
+                          >
+                            <span className="font-medium text-foreground-dark pr-4">
+                              {faq.question}
+                            </span>
+                            {expandedFAQ === index ? (
+                              <ChevronUp className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                            ) : (
+                              <ChevronDown className="h-5 w-5 text-brand-primary flex-shrink-0" />
+                            )}
+                          </button>
+                          {expandedFAQ === index && (
+                            <div className=" py-4">
+                              <p className="text-foreground-dark-muted leading-relaxed">
+                                {faq.answer}
+                              </p>
+                            </div>
                           )}
-                        </button>
-                        {expandedFAQ === index && (
-                          <div className="px-6 py-4 bg-white border-t border-border">
-                            <p className="text-foreground-dark-muted leading-relaxed">
-                              {faq.answer}
-                            </p>
-                          </div>
-                        )}
-                      </div>
+                        </div>
+                      </EnhancedScrollReveal>
                     ))}
                   </div>
 
                   {/* Strategic CTA within FAQ Section */}
+                  <section className="pt-12 pb-12 relative overflow-hidden">
+                    <EnhancedScrollReveal direction="up">
+                      <div className="max-w-6xl">
+                        <div className="bg-gradient-primary rounded-xl p-8 text-center text-white">
+                          <h2 className="text-3xl font-semibold mb-4">
+                            Still Have Questions About Test Automation?
+                          </h2>
+                          <p className="text-xl mb-8 opacity-90">
+                            Our QA experts are here to help you navigate
+                            framework selection, implementation strategy, and
+                            automation best practices tailored to your specific
+                            needs.
+                          </p>
+                          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Button
+                              variant="btnSecondary"
+                              size="lg"
+                              onClick={() => {
+                                window.open(
+                                  "https://calendly.com/vaughn-soratos-indexnine",
+                                  "_blank"
+                                );
+                              }}
+                            >
+                              Schedule Expert QA Consultation
+                              {/* <ExternalLink className="h-4 w-4 ml-2" /> */}
+                            </Button>
+                            <Button variant="btnSecondary" size="lg" asChild>
+                              <Link to="/insights/case-studies">
+                                View QA Success Stories
+                              </Link>
+                            </Button>
+                          </div>
+                          <div className="mt-16 grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                            <div className="text-center">
+                              <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <CheckCircle className="h-8 w-8 text-white" />
+                              </div>
+                              <h3 className="text font-semibold text-white mb-2">
+                                Expert Framework Selection
+                              </h3>
+                              <p className="text-white/80 text-sm">
+                                Choose the right automation framework based on
+                                your team, technology stack, and business
+                                objectives.
+                              </p>
+                            </div>
+                            <div className="text-center">
+                              <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <Download className="h-8 w-8 text-white" />
+                              </div>
+                              <h3 className="text font-semibold text-white mb-2">
+                                Rapid Implementation
+                              </h3>
+                              <p className="text-white/80 text-sm">
+                                Get your automation suite up and running with
+                                our Sprint 0 approach and proven methodologies.
+                              </p>
+                            </div>
+                            <div className="text-center">
+                              <div className="bg-white/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <ExternalLink className="h-8 w-8 text-white" />
+                              </div>
+                              <h3 className="text font-semibold text-white mb-2">
+                                Ongoing Support
+                              </h3>
+                              <p className="text-white/80 text-sm">
+                                Ensure long-term success with training,
+                                maintenance strategies, and continuous
+                                optimization.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </EnhancedScrollReveal>
+                  </section>
                 </div>
               </div>
             </section>

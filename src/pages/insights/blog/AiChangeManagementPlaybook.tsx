@@ -384,7 +384,7 @@ const AiChangeManagementPlaybook = () => {
                           </p>
 
                           <div className="grid md:grid-cols-3 gap-6">
-                            <div className="bg-white p-6 rounded-lg ">
+                            <div className="bg-blue-500/5 p-6 rounded-lg ">
                               <h4 className="font-semibold text-foreground-dark mb-3">
                                 Process & Workflow Mapping
                               </h4>
@@ -393,7 +393,7 @@ const AiChangeManagementPlaybook = () => {
                                 bottlenecks where AI can deliver measurable ROI.
                               </p>
                             </div>
-                            <div className="bg-white p-6 rounded-lg ">
+                            <div className="bg-blue-500/5 p-6 rounded-lg ">
                               <h4 className="font-semibold text-foreground-dark mb-3">
                                 Data Ecosystem Analysis
                               </h4>
@@ -402,7 +402,7 @@ const AiChangeManagementPlaybook = () => {
                                 of your data to power advanced AI models.
                               </p>
                             </div>
-                            <div className="bg-white p-6 rounded-lg ">
+                            <div className="bg-blue-500/5 p-6 rounded-lg ">
                               <h4 className="font-semibold text-foreground-dark mb-3">
                                 Prioritizing High-Impact Initiatives
                               </h4>
@@ -630,7 +630,7 @@ const AiChangeManagementPlaybook = () => {
 
             {/* FAQ Section */}
             <a id="faqs"></a>
-            <section className="pt-8 pb-16 bg-[#fff] text-foreground-dark relative overflow-">
+            <section className="pt-8 pb-12 bg-[#fff] text-foreground-dark relative overflow-">
               <div className=" relative z-10">
                 <div className="max-w-6xl mx-auto">
                   <EnhancedScrollReveal direction="up">
@@ -666,10 +666,7 @@ const AiChangeManagementPlaybook = () => {
                         direction="up"
                         delay={index * 100}
                       >
-                        <div
-                          key={index}
-                          className=" overflow-hidden py-6 border-b last:border-b -mb-[1px]"
-                        >
+                        <div className=" overflow-hidden py-6 border-b last:border-b -mb-[1px]">
                           <button
                             onClick={() => toggleFAQ(index)}
                             className="w-full text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
