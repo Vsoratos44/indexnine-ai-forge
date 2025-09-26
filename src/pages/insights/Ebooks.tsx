@@ -18,6 +18,8 @@ import {
 import { BookOpen, Download, Clock, Star } from "lucide-react";
 import styles from "../../assets/css/stylesheet.module.css";
 
+import rag from "../../assets/downloads/RAG-i9ebook.pdf";
+
 const Ebooks = () => {
   const [showForm, setShowForm] = useState(false);
   const [selectedEbook, setSelectedEbook] = useState<string | null>(null);
@@ -316,7 +318,7 @@ const Ebooks = () => {
               Download: {selectedEbook}
             </DialogTitle>
           </DialogHeader>
-          <div className="mt-4">
+          <div className="mt-0">
             <p className="text-muted-foreground mb-6">
               Please fill out this quick form to download your free eBook. We'll
               send it directly to your email.
