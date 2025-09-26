@@ -15,19 +15,19 @@ import JobDetails from "./pages/company/JobDetails";
 console.log("App.tsx loading...");
 
 // Lazy load all other pages to reduce initial bundle size
-const CMSAuth = lazy(() => import("./pages/cms/Auth"));
-const CMSDashboard = lazy(() => import("./pages/cms/Dashboard"));
-const ContentEditor = lazy(() => import("./pages/cms/ContentEditor"));
-const CMSArticles = lazy(() => import("./pages/cms/Articles"));
-const CMSUsers = lazy(() => import("./pages/cms/Users"));
-const MediaLibrary = lazy(() => import("./pages/cms/MediaLibrary"));
-const Categories = lazy(() => import("./pages/cms/Categories"));
-// Fix EventManagement import - it's a named export
-const EventManagement = lazy(() =>
-  import("./pages/cms/EventManagement").then((m) => ({
-    default: m.EventManagement,
-  }))
-);
+// const CMSAuth = lazy(() => import("./pages/cms/Auth"));
+// const CMSDashboard = lazy(() => import("./pages/cms/Dashboard"));
+// const ContentEditor = lazy(() => import("./pages/cms/ContentEditor"));
+// const CMSArticles = lazy(() => import("./pages/cms/Articles"));
+// const CMSUsers = lazy(() => import("./pages/cms/Users"));
+// const MediaLibrary = lazy(() => import("./pages/cms/MediaLibrary"));
+// const Categories = lazy(() => import("./pages/cms/Categories"));
+// // Fix EventManagement import - it's a named export
+// const EventManagement = lazy(() =>
+//   import("./pages/cms/EventManagement").then((m) => ({
+//     default: m.EventManagement,
+//   }))
+// );
 
 // Service Pages - Lazy loaded
 const CustomSoftware = lazy(() => import("./pages/services/CustomSoftware"));
@@ -119,8 +119,8 @@ const OnSiteExperience = lazy(
 );
 
 // Test Pages - Lazy loaded
-const HomepageTest = lazy(() => import("./pages/test/HomepageTest"));
-const DesignStudio = lazy(() => import("./pages/test/DesignStudio"));
+// const HomepageTest = lazy(() => import("./pages/test/HomepageTest"));
+// const DesignStudio = lazy(() => import("./pages/test/DesignStudio"));
 
 // Optimized loading component
 const PageLoader = () => (
@@ -350,7 +350,7 @@ const App = () => {
                 />
 
                 {/* CMS Routes - Lazy loaded */}
-                <Route path="/cms/auth" element={<CMSAuth />} />
+                {/* <Route path="/cms/auth" element={<CMSAuth />} />
                 <Route path="/cms/dashboard" element={<CMSDashboard />} />
                 <Route path="/cms/articles" element={<CMSArticles />} />
                 <Route path="/cms/users" element={<CMSUsers />} />
@@ -364,11 +364,11 @@ const App = () => {
                 <Route
                   path="/cms/content/edit/:id"
                   element={<ContentEditor />}
-                />
+                /> */}
 
                 {/* Test Routes - Lazy loaded */}
-                <Route path="/test/homepage" element={<HomepageTest />} />
-                <Route path="/test/studios/design" element={<DesignStudio />} />
+                {/* <Route path="/test/homepage" element={<HomepageTest />} /> */}
+                {/* <Route path="/test/studios/design" element={<DesignStudio />} /> */}
 
                 {/* 404 - Load immediately */}
                 <Route path="*" element={<NotFound />} />
