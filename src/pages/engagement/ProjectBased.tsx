@@ -141,8 +141,11 @@ const ProjectBased = () => {
             {/* Project-Based Teams */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-3xl font-semibold text-foreground-dark mb-6 font-montserrat">
-                  1. Project-Based Teams
+                <h3 className="text-3xl font-semibold text-foreground-dark mb-6 font-montserrat flex items-center justify-start gap-6">
+                  <div className="w-16 h-16 bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 text-blue-500 font-light rounded-full flex items-center justify-center">
+                    1
+                  </div>
+                  Project-Based Teams
                 </h3>
                 <p className="text-lg text-foreground-dark-muted leading-relaxed font-montserrat">
                   Our core offering provides you with a dedicated team of
@@ -185,8 +188,11 @@ const ProjectBased = () => {
 
             {/* Specialty Services */}
             <div>
-              <h3 className="text-3xl font-semibold text-foreground-dark mb-8 font-montserrat">
-                2. Specialty Services & Consulting Engagements
+              <h3 className="text-3xl font-semibold text-foreground-dark mb-6 font-montserrat flex items-center justify-start gap-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#505CFD19] to-brand-purple/20  text-blue-500 font-light rounded-full flex items-center justify-center">
+                  2
+                </div>
+                Specialty Services & Consulting Engagements
               </h3>
               <p className="text-lg text-foreground-dark-muted mb-12 max-w-4xl font-montserrat">
                 For more targeted needs, we offer a suite of specialty services

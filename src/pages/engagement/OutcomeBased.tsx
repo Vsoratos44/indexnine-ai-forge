@@ -278,7 +278,7 @@ const OutcomeBased = () => {
       {/* 3-Step Framework Section */}
       <section
         id="partnership-framework"
-        className={` relative bg-[#fff] overflow-hidden ${styles.sectionBgAI}`}
+        className={` relative bg-[#fff] overflow ${styles.sectionBgAI}`}
       >
         <div className="container mx-auto px-6">
           <div className="max-w-8xl mx-auto">
@@ -295,19 +295,18 @@ const OutcomeBased = () => {
               </p>
             </div>
 
-            <div className="space-y-12">
+            <div className="space-y-8 max-w-6xl mx-auto">
               {/* Step 1 */}
               <div className="grid md:grid-cols-12 gap-6 items-start">
-                <div className="md:col-span-1 flex justify-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-brand-primary to-brand-purple rounded-full flex items-center justify-center text-white text-2xl font-light">
-                    1
-                  </div>
-                </div>
-                <div className="md:col-span-11">
+                <div className="md:col-span-12">
                   <Card className="p-8 bg-[#fff] border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="flex items-center gap-4 mb-4">
-                        <Target className="w-8 h-8 text-brand-primary" />
+                        <div
+                          className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
+                        >
+                          <Target className="w-8 h-8 text-brand-primary" />
+                        </div>
                         <h3 className="text-2xl font-semibold text-foreground-dark">
                           Collaboratively Define Success
                         </h3>
@@ -325,20 +324,20 @@ const OutcomeBased = () => {
                         </h4>
                         <ul className="space-y-2 text-sm text-foreground-dark/80">
                           <li className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-brand-purple" />
-                            A 20% increase in user conversion rates
+                            <CheckCircle className="w-4 h-4 text-blue-500" />A
+                            20% increase in user conversion rates
                           </li>
                           <li className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-brand-purple" />
-                            A 15% reduction in customer support tickets
+                            <CheckCircle className="w-4 h-4 text-blue-500" />A
+                            15% reduction in customer support tickets
                           </li>
                           <li className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-brand-purple" />
+                            <CheckCircle className="w-4 h-4 text-blue-500" />
                             Achieving 50,000 monthly active users within six
                             months
                           </li>
                           <li className="flex items-center gap-2">
-                            <CheckCircle className="w-4 h-4 text-brand-purple" />
+                            <CheckCircle className="w-4 h-4 text-blue-500" />
                             Reducing cloud infrastructure costs by 25%
                           </li>
                         </ul>
@@ -349,17 +348,16 @@ const OutcomeBased = () => {
               </div>
 
               {/* Step 2 */}
-              <div className="grid md:grid-cols-12 gap-8 items-start">
-                <div className="md:col-span-1 flex justify-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-brand-primary to-brand-purple rounded-full flex items-center justify-center text-white text-2xl font-light">
-                    2
-                  </div>
-                </div>
-                <div className="md:col-span-11">
+              <div className="grid md:grid-cols-12 gap-6 items-start">
+                <div className="md:col-span-12">
                   <Card className="p-8 bg-[#fff] border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="flex items-center gap-4 mb-4">
-                        <Handshake className="w-8 h-8 text-brand-primary" />
+                        <div
+                          className={`relative w-20 h-20 flex items-center justify-center transition-all ${styles.icnBg}`}
+                        >
+                          <Handshake className="w-8 h-8 text-brand-primary" />
+                        </div>
                         <h3 className="text-2xl font-semibold text-foreground-dark">
                           Structure the Shared-Risk Partnership
                         </h3>
@@ -399,17 +397,16 @@ const OutcomeBased = () => {
               </div>
 
               {/* Step 3 */}
-              <div className="grid md:grid-cols-12 gap-8 items-start">
-                <div className="md:col-span-1 flex justify-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-brand-primary to-brand-purple rounded-full flex items-center justify-center text-white text-2xl font-light">
-                    3
-                  </div>
-                </div>
-                <div className="md:col-span-11">
+              <div className="grid md:grid-cols-12 gap-6 items-start">
+                <div className="md:col-span-12">
                   <Card className="p-8 bg-[#fff] border-card-border shadow-lg">
                     <CardContent className="p-0">
                       <div className="flex items-center gap-4 mb-4">
-                        <BarChart3 className="w-8 h-8 text-brand-primary" />
+                        <div
+                          className={`relative w-20 h-20 flex  items-center justify-center transition-all ${styles.icnBg}`}
+                        >
+                          <BarChart3 className="w-8 h-8 text-brand-primary" />
+                        </div>
                         <h3 className="text-2xl font-semibold text-foreground-dark">
                           Execute, Measure, and Win Together
                         </h3>
@@ -422,7 +419,7 @@ const OutcomeBased = () => {
                         against our shared KPIs.
                       </p>
                       <div className="flex items-center gap-4 ">
-                        <CheckCircle className="w-6 h-6 text-brand-purple" />
+                        <CheckCircle className="w-6 h-6 text-blue-500" />
                         <p className="text-foreground-dark-muted font-medium">
                           Our success is inextricably linked to yours,
                           motivating our team to innovate, solve problems
@@ -451,8 +448,8 @@ const OutcomeBased = () => {
               </h2>
             </div>
 
-            <div className="overflow-x-auto">
-              <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div className="overflow-x-auto border rounded-xl border-gray-200">
+              <table className="w-full bg-white  shadow-lg overflow-hidden">
                 <thead className="bg-black/5 text-black">
                   <tr>
                     <th className="px-8 py-6 text-left font-semibold text-xl">
@@ -498,7 +495,7 @@ const OutcomeBased = () => {
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-8 py-6">
                       <div className="flex items-center gap-4">
-                        <TrendingUp className="w-8 h-8 text-brand-purple" />
+                        <TrendingUp className="w-8 h-8 text-blue-500" />
                         <span className="font-semibold text-lg text-foreground-dark">
                           Guaranteed ROI Focus
                         </span>
@@ -514,7 +511,7 @@ const OutcomeBased = () => {
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-8 py-6">
                       <div className="flex items-center gap-4">
-                        <Users className="w-8 h-8 text-purple-600" />
+                        <Users className="w-8 h-8 text-blue-500" />
                         <span className="font-semibold text-lg text-foreground-dark">
                           A True Strategic Partner
                         </span>
@@ -551,7 +548,7 @@ const OutcomeBased = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
                 <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle className="w-8 h-8 text-purple-600" />
+                  <CheckCircle className="w-8 h-8 text-blue-500" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                   Clear Business Objectives
@@ -565,7 +562,7 @@ const OutcomeBased = () => {
 
               <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
                 <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Handshake className="w-8 h-8 text-purple-600" />
+                  <Handshake className="w-8 h-8 text-blue-500" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                   Long-Term Partnership
@@ -578,7 +575,7 @@ const OutcomeBased = () => {
 
               <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
                 <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <TrendingUp className="w-8 h-8 text-purple-600" />
+                  <TrendingUp className="w-8 h-8 text-blue-500" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                   Measurable Impact
@@ -592,7 +589,7 @@ const OutcomeBased = () => {
 
               <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
                 <div className="w-16 h-16 bg-brand-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Users className="w-8 h-8 text-purple-600" />
+                  <Users className="w-8 h-8 text-blue-500" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground-dark mb-4">
                   Collaborative Culture

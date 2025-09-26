@@ -122,7 +122,7 @@ const Contact = () => {
             <div className="grid md:grid-cols-2 max-w-6xl mx-auto">
               <div className="relative overflow-hidden backdrop-blur-lg bg-glass-bg border border-glass-border rounded-l-2xl p-8 shadow-glass hover:shadow-glass-lg transition-all duration-500 transform animate-fade-in items-center flex flex-col gap-8">
                 <span className="mt-auto">
-                  <Headset className="w-32 h-32 text-brand-purple mx-auto mb-4 opacity-80" />
+                  <Headset className="w-32 h-32 text-brand-primary mx-auto mb-4 opacity-80" />
                 </span>
                 <div className="md:grid-cols-2 grid gap-6">
                   <p className="text-foreground-dark-muted font-montserrat text-center">
