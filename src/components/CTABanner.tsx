@@ -11,6 +11,8 @@ import {
 import PipedriveForm from "./PipedriveForm";
 import styles from "../assets/css/stylesheet.module.css";
 
+import { Link } from "react-router-dom";
+
 const CTABanner = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
 
@@ -29,19 +31,23 @@ const CTABanner = () => {
             scale your engineering capabilities.
           </p>
 
-          <Dialog open={isFormOpen} onOpenChange={setIsFormOpen}>
+          {/* <Dialog open={isFormOpen} onOpenChange={setIsFormOpen}>
             <DialogTrigger asChild>
               <Button variant="btnPrimary" size="lg">
                 Start Your Project Today
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl min-h-[400px] h-[80vh] overflow-y-auto">
-              {/* <DialogHeader>
+              <DialogHeader>
                 <DialogTitle>Start Your Project</DialogTitle>
-              </DialogHeader> */}
+              </DialogHeader>
               <PipedriveForm className="mt-4" />
             </DialogContent>
-          </Dialog>
+          </Dialog> */}
+
+          <Button variant="btnPrimary" size="lg">
+            <Link to="/company/contact#cta">Start Your Project Today</Link>
+          </Button>
         </div>
       </div>
     </Section>
