@@ -92,7 +92,7 @@ const InsightsCarousel = () => {
       {/* Enhanced Background Effects */}
 
       <div className="container mx-auto px-0 lg:px-0 relative z-10">
-        <div className="container text-center mb-20">
+        <div className="container text-center mb-8">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 leading-tight tracking-tight font-montserrat">
             <span className="text-brand-primary">
               Insights That Shape Products
@@ -198,7 +198,7 @@ const InsightsCarousel = () => {
           </Carousel>
 
           {/* View All CTA */}
-          <div className="text-center mt-16">
+          <div className="text-center mt-4">
             <Link to="/insights/case-studies">
               <Button variant="btnPrimary" size="lg">
                 Explore All Our Insights <ArrowRight className="w-5 h-5 ml-2" />
