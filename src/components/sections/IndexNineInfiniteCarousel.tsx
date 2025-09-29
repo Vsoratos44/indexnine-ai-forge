@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+
 import SensableLogo from "../../assets/images/clients/sensable-logo.png";
 import EquifaxLogo from "../../assets/images/clients/equifax-logo.png";
 import GinsysLogo from "../../assets/images/clients/ginesys-logo.png";
@@ -7,8 +8,24 @@ import CyberarkLogo from "../../assets/images/clients/cyberark-logo.png";
 import DocuphaseLogo from "../../assets/images/clients/docuphase-logo.png";
 import CygeniqLogo from "../../assets/images/clients/cygeniq-logo.png";
 
+import AnnotateLogo from "../../assets/images/clients/annotate-logo.png";
+import BreezLogo from "../../assets/images/clients/breez-logo.png";
+import CanaLogo from "../../assets/images/clients/cana-logo.png";
+import DwellinLogo from "../../assets/images/clients/dwellin-logo.png";
+import EzrgbLogo from "../../assets/images/clients/ezrgb-logo.png";
+import IsanaLogo from "../../assets/images/clients/isanasystems-logo.png";
+import KpitLogo from "../../assets/images/clients/kpit-logo.png";
+import NivaLogo from "../../assets/images/clients/niva-logo.png";
+import OzoneLogo from "../../assets/images/clients/ozoneapi-logo.png";
+import Platfotm9Logo from "../../assets/images/clients/platform9-logo.png";
+import QuanfluenceLogo from "../../assets/images/clients/quanfluence-logo.png";
+import QuichhealLogo from "../../assets/images/clients/quickheal-logo.png";
+import SharedstudiosLogo from "../../assets/images/clients/sharedstudios-logo.png";
+import SiLogo from "../../assets/images/clients/si-logo.png";
+import SurgeventuresLogo from "../../assets/images/clients/surgeventures-logo.png";
+
 // IndexNine Strategic Clients - Enhanced with SVG-based reliable logos
-const indexNineStrategicClients = [
+export const indexNineStrategicClients = [
   {
     id: 1,
     name: "CyberArk",
@@ -31,13 +48,12 @@ const indexNineStrategicClients = [
   },
   {
     id: 3,
-    name: "Great Place to Work",
-    description:
-      "The global authority on workplace culture, helping organizations build better workplaces",
-    src: GptwLogo,
-    fallbackSrc: GptwLogo,
-    url: "https://www.greatplacetowork.com",
-    industry: "HR & Culture",
+    name: "Niva",
+    description: "",
+    src: NivaLogo,
+    fallbackSrc: NivaLogo,
+    url: "#.",
+    industry: "Fintech",
   },
   {
     id: 4,
@@ -78,7 +94,125 @@ const indexNineStrategicClients = [
     url: "https://cygeniq.com",
     industry: "AI Cybersecurity",
   },
+  {
+    id: 8,
+    name: "Annotate",
+    description: "...",
+    src: AnnotateLogo,
+    fallbackSrc: AnnotateLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 9,
+    name: "Breez",
+    description: "...",
+    src: BreezLogo,
+    fallbackSrc: BreezLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 10,
+    name: "Cana",
+    description: "...",
+    src: CanaLogo,
+    fallbackSrc: CanaLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 11,
+    name: "Dwellin",
+    description: "...",
+    src: DwellinLogo,
+    fallbackSrc: DwellinLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 12,
+    name: "Ezrgb",
+    description: "...",
+    src: EzrgbLogo,
+    fallbackSrc: EzrgbLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 13,
+    name: "Isana",
+    description: "...",
+    src: IsanaLogo,
+    fallbackSrc: IsanaLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 15,
+    name: "Ozone API",
+    description: "...",
+    src: OzoneLogo,
+    fallbackSrc: OzoneLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 16,
+    name: "Platfotm 9",
+    description: "...",
+    src: Platfotm9Logo,
+    fallbackSrc: Platfotm9Logo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 17,
+    name: "Quanfluence",
+    description: "...",
+    src: QuanfluenceLogo,
+    fallbackSrc: QuanfluenceLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 18,
+    name: "Quichheal",
+    description: "...",
+    src: QuichhealLogo,
+    fallbackSrc: QuichhealLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 19,
+    name: "Sharedstudios",
+    description: "...",
+    src: SharedstudiosLogo,
+    fallbackSrc: SharedstudiosLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 20,
+    name: "Sports Intractive",
+    description: "...",
+    src: SiLogo,
+    fallbackSrc: SiLogo,
+    url: "#.",
+    industry: "Industry",
+  },
+  {
+    id: 21,
+    name: "Surge Ventures",
+    description: "...",
+    src: SurgeventuresLogo,
+    fallbackSrc: SurgeventuresLogo,
+    url: "#.",
+    industry: "Industry",
+  },
 ];
+SurgeventuresLogo;
 
 interface ClientLogo {
   id: number;
@@ -86,7 +220,7 @@ interface ClientLogo {
   description: string;
   src: string;
   fallbackSrc: string;
-  url: string;
+  url?: string;
   industry: string;
 }
 
@@ -283,7 +417,7 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       padding: "2rem",
       // background: "hsl(234 50% 15% / 0.95)",
       background: "#fff",
-      border: "1px solid hsl(262 83% 58% / 0.25)",
+      border: "1px solid #00000010",
       borderRadius: "12px",
       boxShadow: "0 10px 40px 0 hsl(262 83% 58% / 0.12)",
       backdropFilter: "blur(20px)",
@@ -457,13 +591,13 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
           </p>
 
           {/* Industry diversity showcase */}
-          <div style={styles.industryGrid}>
+          {/* <div style={styles.industryGrid}>
             {uniqueIndustries.slice(0, 4).map((industry) => (
               <div key={industry} style={styles.industryTag}>
                 {industry}
               </div>
             ))}
-          </div>
+          </div> */}
         </header>
 
         {/* Tooltip */}
