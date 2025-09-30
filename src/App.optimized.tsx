@@ -10,14 +10,11 @@ import Index from "./pages/Index"; // Keep homepage immediate
 import NotFound from "./pages/NotFound"; // Keep 404 immediate
 
 // Lazy load all other pages to reduce initial bundle size
-const CMSLogin = lazy(() => import("./pages/cms/Login"));
-const CMSDashboard = lazy(() => import("./pages/cms/Dashboard"));
-const ContentEditor = lazy(() => import("./pages/cms/ContentEditor"));
-const EventManagement = lazy(() =>
-  import("./pages/cms/EventManagement").then((module) => ({
-    default: module.EventManagement,
-  }))
-);
+// CMS pages temporarily disabled - to be implemented
+// const CMSLogin = lazy(() => import("./pages/cms/Login"));
+// const CMSDashboard = lazy(() => import("./pages/cms/Dashboard"));
+// const ContentEditor = lazy(() => import("./pages/cms/ContentEditor"));
+// const EventManagement = lazy(() => import("./pages/cms/EventManagement"));
 
 // Service Pages - Lazy loaded
 const CustomSoftware = lazy(() => import("./pages/services/CustomSoftware"));
@@ -216,15 +213,12 @@ const App = () => (
                 element={<OnSiteExperience />}
               />
 
-              {/* CMS Routes - Lazy loaded */}
-              <Route path="/cms/login" element={<CMSDashboard />} />
+              {/* CMS Routes - Temporarily disabled */}
+              {/* <Route path="/cms/login" element={<CMSDashboard />} />
               <Route path="/cms/dashboard" element={<CMSDashboard />} />
-              <Route
-                path="/cms/events/:eventId"
-                element={<EventManagement />}
-              />
+              <Route path="/cms/events/:eventId" element={<EventManagement />} />
               <Route path="/cms/content/new" element={<ContentEditor />} />
-              <Route path="/cms/content/edit/:id" element={<ContentEditor />} />
+              <Route path="/cms/content/edit/:id" element={<ContentEditor />} /> */}
 
               {/* 404 - Load immediately */}
               <Route path="*" element={<NotFound />} />
