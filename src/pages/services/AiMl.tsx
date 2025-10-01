@@ -8,9 +8,9 @@ import {
   BreadcrumbSchema,
   FAQSchema,
 } from "@/components/SEOStructuredData";
-import ServiceAreaSchema from "@/components/seo/ServiceAreaSchema";
-import PerformanceOptimizer from "@/components/seo/PerformanceOptimizer";
-import SEOAnalytics from "@/components/seo/SEOAnalytics";
+import { ServiceAreaSchema } from "@/components/seo/ServiceAreaSchema";
+import { PerformanceOptimizer } from "@/components/seo/PerformanceOptimizer";
+import { SEOAnalytics } from "@/components/seo/SEOAnalytics";
 
 // Section Components - New Narrative Flow
 import { HeroSection } from "../../components/AIStudio/sections/HeroSection";
