@@ -1,46 +1,11 @@
 import React from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { useSEO } from "@/hooks/useSEO";
-import {
-  ServiceSchema,
-  WebPageSchema,
-  BreadcrumbSchema,
-  FAQSchema,
-} from "@/components/SEOStructuredData";
-import { ServiceAreaSchema } from "@/components/seo/ServiceAreaSchema";
-import { PerformanceOptimizer } from "@/components/seo/PerformanceOptimizer";
-import { SEOAnalytics } from "@/components/seo/SEOAnalytics";
+import { FAQItem } from "../shared/FAQItem";
+import { useFAQ } from "../../../hooks/useFAQ";
 
-// Section Components
-import { HeroSection } from "../../components/CustomSoftware/sections/HeroSection";
-import { TechStackSection } from "../../components/CustomSoftware/sections/TechStackSection";
-import { EvolutionStorySection } from "../../components/CustomSoftware/sections/EvolutionStorySection";
-import { CoreOfferingsOverviewSection } from "../../components/CustomSoftware/sections/CoreOfferingsOverviewSection";
-import { ProductLaunchSection } from "../../components/CustomSoftware/sections/ProductLaunchSection";
-import { ProductModernizationSection } from "../../components/CustomSoftware/sections/ProductModernizationSection";
-import { EngineeringPodsSection } from "../../components/CustomSoftware/sections/EngineeringPodsSection";
-import { CrossLinkingSection } from "../../components/CustomSoftware/sections/CrossLinkingSection";
-import { CaseStudiesSection } from "../../components/CustomSoftware/sections/CaseStudiesSection";
-import { FAQSection } from "../../components/CustomSoftware/sections/FAQSection";
-import { FinalCTASection } from "../../components/CustomSoftware/sections/FinalCTASection";
+export const FAQSection: React.FC = () => {
+  const { openFAQ, toggleFAQ } = useFAQ();
 
-const CustomSoftware = () => {
-  // SEO Configuration
-  useSEO({
-    title:
-      "Custom Software Development Services | AI-Augmented Engineering | Pragmatic Engineering for Ventures & Enterprises | IndexNine",
-    description:
-      "IndexNine engineers mission-critical software through AI-augmented product engineering. Our integrated Engineering Studio delivers full-stack web, mobile, and enterprise applications with dedicated pods, Sprint Zero methodology, and proprietary accelerators (snap.mvp, snap.bluprint) to ensure scalability, security, and measurable business outcomes.",
-    canonicalUrl: "https://www.indexnine.com/services/custom-software",
-    keywords:
-      "custom software development services, AI-augmented engineering, enterprise application development, saas development services, full-stack development company, pragmatic engineering, product modernization, cloud-native development, dedicated engineering pods, legacy system modernization, MVP development services, Sprint Zero methodology, snap.mvp accelerator, mobile application development, web application services, outcome-based engineering, flexible engineering partner",
-    ogImage: "https://www.indexnine.com/images/og-custom-software.png",
-    schemaType: "WebPage",
-  });
-
-  // FAQ data for structured data
-  const faqItems = [
+  const faqData = [
     {
       question:
         "How is IndexNine different from a traditional staff augmentation firm?",
@@ -97,58 +62,34 @@ const CustomSoftware = () => {
   ];
 
   return (
-    <PerformanceOptimizer>
-      <div className="min-h-screen bg-background-dark">
-        {/* Structured Data for SEO */}
-        <ServiceSchema
-          name="Custom Software Development & AI-Augmented Engineering Services"
-          description="IndexNine's Engineering Studio provides comprehensive software development services including product launch, MVP development, legacy modernization, and dedicated engineering pods with proprietary AI-augmented accelerators for startups and enterprises."
-          serviceType="Software Development"
-        />
+    <section className="py-24 lg:py-32 bg-gradient-to-b from-[#efeff6] to-[#fff]">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+              Your Engineering{" "}
+              <span className="text-brand-primary">Questions, Answered</span>
+            </h2>
+            <p className="text-lg text-foreground-dark/80">
+              Get answers to common questions about our AI-augmented engineering
+              approach and flexible partnership model.
+            </p>
+          </div>
 
-        <ServiceAreaSchema
-          serviceName="Custom Software Development & AI-Augmented Engineering Services"
-          serviceType="Software Development"
-        />
-
-        <WebPageSchema
-          name="Custom Software Development Services | IndexNine"
-          description="AI-augmented engineering services for product launch and modernization with dedicated pods and proprietary accelerators."
-        />
-
-        <BreadcrumbSchema
-          items={[
-            { name: "Services", url: "https://www.indexnine.com/services" },
-            {
-              name: "Custom Software Development",
-              url: "https://www.indexnine.com/services/custom-software",
-            },
-          ]}
-        />
-
-        <FAQSchema faqItems={faqItems} />
-
-        <SEOAnalytics />
-
-        <Header />
-
-        {/* Page Sections - New Narrative Flow */}
-        <HeroSection />
-        <TechStackSection />
-        <EvolutionStorySection />
-        <CoreOfferingsOverviewSection />
-        <ProductLaunchSection />
-        <ProductModernizationSection />
-        <EngineeringPodsSection />
-        <CrossLinkingSection />
-        <CaseStudiesSection />
-        <FAQSection />
-        <FinalCTASection />
-
-        <Footer />
+          <div className="space-y-0 rounded-3xl bg-[#fff] px-8 py-4 shadow-lg">
+            {faqData.map((faq, index) => (
+              <FAQItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openFAQ === index}
+                onToggle={() => toggleFAQ(index)}
+                index={index}
+              />
+            ))}
+          </div>
+        </div>
       </div>
-    </PerformanceOptimizer>
+    </section>
   );
 };
-
-export default CustomSoftware;
