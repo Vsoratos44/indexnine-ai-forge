@@ -13,7 +13,7 @@ export const HeroSection: React.FC = () => {
     <section className="relative min-h-[780px] overflow-hidden bg-black">
       <ServiceVideoBackground />
 
-      <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-48 pb-24">
         <div className="max-w-6xl mx-auto text-center lg:text-left ml-0">
           <div className="mb-6">
             <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">

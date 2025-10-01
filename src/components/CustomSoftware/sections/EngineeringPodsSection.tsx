@@ -96,7 +96,7 @@ export const EngineeringPodsSection: React.FC = () => {
 
           {/* Pod Types */}
           <div className="mb-8">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {podTypes.map((pod, index) => {
                 const IconComponent = pod.icon;
                 return (
@@ -150,7 +150,7 @@ export const EngineeringPodsSection: React.FC = () => {
             <h3 className="text-lg sm:text-xl font-semibold text-center text-foreground-dark mb-4 font-montserrat">
               What Makes Our Pods Different
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
               {differentiators.map((item, index) => (
                 <Card
                   key={index}

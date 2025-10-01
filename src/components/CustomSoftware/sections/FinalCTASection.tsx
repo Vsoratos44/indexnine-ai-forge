@@ -13,7 +13,7 @@ export const FinalCTASection: React.FC = () => {
 
   return (
     <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
             Ready to Build With an{" "}
@@ -26,7 +26,7 @@ export const FinalCTASection: React.FC = () => {
             reality.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-10 max-w-3xl mx-auto px-4 sm:px-0">
             {trustSignals.map((signal, index) => (
               <div
                 key={index}

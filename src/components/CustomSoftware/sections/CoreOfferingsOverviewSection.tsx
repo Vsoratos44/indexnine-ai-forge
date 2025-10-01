@@ -39,7 +39,7 @@ export const CoreOfferingsOverviewSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-0">
             {offerings.map((offering, index) => {
               const IconComponent = offering.icon;
               return (

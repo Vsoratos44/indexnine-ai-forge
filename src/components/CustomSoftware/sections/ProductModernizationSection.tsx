@@ -138,7 +138,7 @@ export const ProductModernizationSection: React.FC = () => {
                     </h3>
                   </div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                   {challenges.map((challenge, index) => (
                     <div key={index} className="pl-20">
                       <h4 className="font-semibold text-foreground-light mb-1.5 text-sm font-montserrat">
@@ -159,7 +159,7 @@ export const ProductModernizationSection: React.FC = () => {
             <h3 className="text-lg sm:text-xl font-semibold text-foreground-light mb-4 text-center font-montserrat">
               Code Modernization
             </h3>
-            <div className="grid md:grid-cols-3 gap-4 lg:gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {codeModernization.map((item, index) => (
                 <Card
                   key={index}
@@ -191,7 +191,7 @@ export const ProductModernizationSection: React.FC = () => {
             <h3 className="text-lg sm:text-xl font-semibold text-foreground-light mb-4 text-center font-montserrat">
               Architectural Transformation
             </h3>
-            <div className="grid md:grid-cols-3 gap-4 lg:gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {architecturalTransformation.map((item, index) => (
                 <Card
                   key={index}
@@ -219,7 +219,7 @@ export const ProductModernizationSection: React.FC = () => {
               Our modernization practice is delivered through targeted,
               outcome-focused engagements that deliver measurable business value.
             </p>
-            <div className="grid md:grid-cols-3 gap-4 lg:gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {strategicEngagements.map((engagement, index) => (
                 <Card
                   key={index}
