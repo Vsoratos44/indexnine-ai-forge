@@ -15,8 +15,10 @@ import { SEOAnalytics } from "@/components/seo/SEOAnalytics";
 // Section Components
 import { HeroSection } from "../../components/CustomSoftware/sections/HeroSection";
 import { TechStackSection } from "../../components/CustomSoftware/sections/TechStackSection";
+import { PhilosophySection } from "../../components/CustomSoftware/sections/PhilosophySection";
 import { EvolutionStorySection } from "../../components/CustomSoftware/sections/EvolutionStorySection";
 import { CoreOfferingsOverviewSection } from "../../components/CustomSoftware/sections/CoreOfferingsOverviewSection";
+import { ServicesOverviewSection } from "../../components/CustomSoftware/sections/ServicesOverviewSection";
 import { ProductLaunchSection } from "../../components/CustomSoftware/sections/ProductLaunchSection";
 import { ProductModernizationSection } from "../../components/CustomSoftware/sections/ProductModernizationSection";
 import { EngineeringPodsSection } from "../../components/CustomSoftware/sections/EngineeringPodsSection";
@@ -134,16 +136,44 @@ const CustomSoftware = () => {
         <Header />
 
         {/* Page Sections - New Narrative Flow */}
+        
+        {/* 1. Hero Section */}
         <HeroSection />
+
+        {/* 2. Tech Stack Section */}
         <TechStackSection />
+
+        {/* 3. Philosophy Section */}
+        <PhilosophySection />
+
+        {/* 4. Evolution Story Section */}
         <EvolutionStorySection />
+
+        {/* 5. Core Offerings Overview (2 Pillars) */}
         <CoreOfferingsOverviewSection />
+
+        {/* 6. Services Overview Section */}
+        <ServicesOverviewSection />
+
+        {/* 7. Product Launch Deep Dive */}
         <ProductLaunchSection />
+
+        {/* 8. Product Modernization Deep Dive */}
         <ProductModernizationSection />
+
+        {/* 9. Engineering Pods Section */}
         <EngineeringPodsSection />
+
+        {/* 10. Cross-Linking Section */}
         <CrossLinkingSection />
+
+        {/* 11. Case Studies Section */}
         <CaseStudiesSection />
+
+        {/* 12. FAQ Section */}
         <FAQSection />
+
+        {/* 13. Final CTA */}
         <FinalCTASection />
 
         <Footer />
