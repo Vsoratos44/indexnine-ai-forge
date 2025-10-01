@@ -1,7 +1,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Rocket, AlertCircle } from "lucide-react";
+import { CheckCircle, Rocket, AlertCircle, Zap, Sparkles, Bot, TestTube2, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { CALENDLY_URL } from "../../../config/constants";
 import styles from "../../../assets/css/stylesheet.module.css";
 
@@ -42,24 +43,36 @@ export const ProductLaunchSection: React.FC = () => {
       description:
         "A batteries-included, multi-tenant SaaS starter kit that accelerates go-to-market by over 3 months.",
       impact: "3+ months faster",
+      icon: Zap,
+      color: "from-blue-500 to-cyan-500",
+      blogLink: "/insights/blogs/ai-assisted-software-engineering",
     },
     {
       name: "snap.bluprint",
       description:
         "An agentic workflow that automates the IndexNine design process to achieve over 50% faster design outcomes.",
       impact: "50% faster design",
+      icon: Sparkles,
+      color: "from-purple-500 to-pink-500",
+      blogLink: "/insights/blogs/ai-assisted-software-engineering",
     },
     {
       name: "snap.agents",
       description:
         "A self-service tool for rapidly prototyping and integrating agentic AI workflows into new or existing products.",
       impact: "Rapid AI integration",
+      icon: Bot,
+      color: "from-green-500 to-emerald-500",
+      blogLink: "/insights/blogs/agentic-ai-enterprise-future",
     },
     {
       name: "snap.automate",
       description:
         "A framework to accelerate QA automation, ensuring quality and reliability are built in, not bolted on.",
       impact: "Built-in quality",
+      icon: TestTube2,
+      color: "from-orange-500 to-red-500",
+      blogLink: "/insights/blogs/quality-engineering-platform",
     },
   ];
 
@@ -148,30 +161,45 @@ export const ProductLaunchSection: React.FC = () => {
 
           {/* Acceleration Platforms */}
           <div className="mb-16">
-            <h3 className="text-2xl font-semibold text-center text-foreground-dark mb-8">
+            <h3 className="text-2xl font-semibold text-center text-foreground-dark mb-8 font-montserrat">
               The Acceleration Engine: Our Proprietary Platforms
             </h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              {platforms.map((platform, index) => (
-                <Card
-                  key={index}
-                  className="bg-white border border-[#00000019] rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
-                >
-                  <CardContent className="p-0">
-                    <div className="flex items-start justify-between mb-4">
-                      <h4 className="text-xl font-bold text-foreground-dark">
-                        {platform.name}
-                      </h4>
-                      <span className="px-3 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold">
-                        {platform.impact}
-                      </span>
-                    </div>
-                    <p className="text-foreground-dark/70 leading-relaxed">
-                      {platform.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {platforms.map((platform, index) => {
+                const IconComponent = platform.icon;
+                return (
+                  <Link
+                    key={index}
+                    to={platform.blogLink}
+                    className="block group"
+                  >
+                    <Card className="bg-gradient-to-br from-[#F1F2FF] to-white border border-[#00000019] rounded-2xl p-5 hover:shadow-lg transition-all duration-300 h-full shadow-md group-hover:scale-105">
+                      <CardContent className="p-0 flex flex-col h-full">
+                        <div className="flex items-start justify-between mb-3">
+                          <div
+                            className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${platform.color} flex items-center justify-center shadow-md`}
+                          >
+                            <IconComponent className="w-6 h-6 text-white" />
+                          </div>
+                          <span className="px-2.5 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold whitespace-nowrap">
+                            {platform.impact}
+                          </span>
+                        </div>
+                        <h4 className="text-base font-bold text-foreground-dark mb-2 font-montserrat">
+                          {platform.name}
+                        </h4>
+                        <p className="text-sm text-foreground-dark/70 leading-relaxed mb-3 flex-1 font-montserrat">
+                          {platform.description}
+                        </p>
+                        <div className="flex items-center text-brand-primary text-xs font-semibold group-hover:gap-2 transition-all">
+                          Learn more
+                          <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
