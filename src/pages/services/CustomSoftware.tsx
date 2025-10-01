@@ -112,8 +112,9 @@ const CustomSoftware = () => {
         />
 
         <WebPageSchema
-          name="Custom Software Development Services | IndexNine"
+          title="Custom Software Development Services | IndexNine"
           description="AI-augmented engineering services for product launch and modernization with dedicated pods and proprietary accelerators."
+          url="https://www.indexnine.com/services/custom-software"
         />
 
         <BreadcrumbSchema
