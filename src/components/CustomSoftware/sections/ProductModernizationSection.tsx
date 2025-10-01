@@ -101,78 +101,82 @@ export const ProductModernizationSection: React.FC = () => {
   return (
     <section
       id="product-modernization"
-      className={`py-24 lg:py-32 ${styles.pageDarkBg}`}
+      className={`py-12 lg:py-16 ${styles.pageDarkBg}`}
     >
       <div className="container mx-auto px-6">
-        <div className="max-w-8xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 mb-6">
-              <RefreshCw className="w-6 h-6 text-brand-primary" />
-              <span className="text-sm font-semibold text-brand-primary uppercase tracking-wider">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 mb-3">
+              <RefreshCw className="w-5 h-5 text-brand-primary" />
+              <span className="text-xs font-semibold text-brand-primary uppercase tracking-wider">
                 Core Offering
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-3 text-foreground-white font-montserrat">
               Product Modernization:{" "}
               <span className="text-brand-primary">
                 From Technical Debt to Competitive Advantage
               </span>
             </h2>
-            <p className="text-lg text-foreground-light-muted max-w-4xl mx-auto">
+            <p className="text-sm sm:text-base text-foreground-light-muted max-w-3xl mx-auto font-montserrat">
               Transform legacy systems into modern, cloud-native platforms that
               unlock innovation and reduce operational costs.
             </p>
           </div>
 
           {/* The Drag of Technical Debt */}
-          <div className="mb-16">
-            <div className="bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] border border-[#ffffff20] rounded-3xl p-8 lg:p-12">
-              <div className="flex items-start gap-4 mb-6">
-                <AlertTriangle className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-2xl font-semibold text-foreground-light mb-6">
-                    The Drag of Technical Debt
-                  </h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    {challenges.map((challenge, index) => (
-                      <div key={index}>
-                        <h4 className="font-semibold text-foreground-light mb-2">
-                          {challenge.title}
-                        </h4>
-                        <p className="text-foreground-light-muted text-sm leading-relaxed">
-                          {challenge.description}
-                        </p>
-                      </div>
-                    ))}
+          <div className="mb-8">
+            <Card className="bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] border border-[#ffffff20] rounded-2xl p-6 shadow-md">
+              <CardContent className="p-0">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-500/20 to-orange-500/20 flex items-center justify-center flex-shrink-0">
+                    <AlertTriangle className="w-8 h-8 text-yellow-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground-light mb-3 font-montserrat">
+                      The Drag of Technical Debt
+                    </h3>
                   </div>
                 </div>
-              </div>
-            </div>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {challenges.map((challenge, index) => (
+                    <div key={index} className="pl-20">
+                      <h4 className="font-semibold text-foreground-light mb-1.5 text-sm font-montserrat">
+                        {challenge.title}
+                      </h4>
+                      <p className="text-foreground-light-muted text-xs leading-relaxed font-montserrat">
+                        {challenge.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Code Modernization */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-semibold text-foreground-light mb-8 text-center">
+          <div className="mb-8">
+            <h3 className="text-lg sm:text-xl font-semibold text-foreground-light mb-4 text-center font-montserrat">
               Code Modernization
             </h3>
-            <div className="grid lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-4 lg:gap-5">
               {codeModernization.map((item, index) => (
                 <Card
                   key={index}
-                  className="bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20"
+                  className="bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] border border-[#ffffff20] rounded-2xl p-5 hover:shadow-lg transition-all duration-300 shadow-md"
                 >
                   <CardContent className="p-0">
-                    <h4 className="text-xl font-semibold text-foreground-light mb-4">
+                    <h4 className="text-base font-semibold text-foreground-light mb-3 font-montserrat">
                       {item.category}
                     </h4>
-                    <ul className="space-y-3">
+                    <ul className="space-y-2">
                       {item.examples.map((example, idx) => (
                         <li
                           key={idx}
-                          className="flex items-start gap-3 text-foreground-light-muted"
+                          className="flex items-start gap-2 text-foreground-light-muted"
                         >
-                          <CheckCircle className="w-4 h-4 text-brand-primary mt-1 flex-shrink-0" />
-                          <span className="text-sm">{example}</span>
+                          <CheckCircle className="w-3.5 h-3.5 text-brand-primary mt-0.5 flex-shrink-0" />
+                          <span className="text-xs font-montserrat">{example}</span>
                         </li>
                       ))}
                     </ul>
@@ -183,21 +187,21 @@ export const ProductModernizationSection: React.FC = () => {
           </div>
 
           {/* Architectural Transformation */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-semibold text-foreground-light mb-8 text-center">
+          <div className="mb-8">
+            <h3 className="text-lg sm:text-xl font-semibold text-foreground-light mb-4 text-center font-montserrat">
               Architectural Transformation
             </h3>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-4 lg:gap-5">
               {architecturalTransformation.map((item, index) => (
                 <Card
                   key={index}
-                  className="bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] border border-[#ffffff20] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-300"
+                  className="bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] border border-[#ffffff20] rounded-2xl p-5 hover:shadow-lg transition-all duration-300 shadow-md"
                 >
                   <CardContent className="p-0">
-                    <h4 className="text-lg font-semibold text-foreground-light mb-3">
+                    <h4 className="text-base font-semibold text-foreground-light mb-2 font-montserrat">
                       {item.title}
                     </h4>
-                    <p className="text-foreground-light-muted leading-relaxed">
+                    <p className="text-xs text-foreground-light-muted leading-relaxed font-montserrat">
                       {item.description}
                     </p>
                   </CardContent>
@@ -207,40 +211,40 @@ export const ProductModernizationSection: React.FC = () => {
           </div>
 
           {/* Strategic Engagements */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-semibold text-foreground-light mb-8 text-center">
+          <div className="mb-6">
+            <h3 className="text-lg sm:text-xl font-semibold text-foreground-light mb-2 text-center font-montserrat">
               Our Strategic Engagements
             </h3>
-            <p className="text-center text-foreground-light-muted mb-8 max-w-3xl mx-auto">
+            <p className="text-center text-foreground-light-muted mb-4 max-w-3xl mx-auto text-xs font-montserrat">
               Our modernization practice is delivered through targeted,
               outcome-focused engagements that deliver measurable business value.
             </p>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-4 lg:gap-5">
               {strategicEngagements.map((engagement, index) => (
                 <Card
                   key={index}
-                  className="bg-white border-0 rounded-2xl p-8 flex flex-col"
+                  className="bg-white border-0 rounded-2xl p-5 flex flex-col shadow-md"
                 >
                   <CardContent className="p-0 flex-1">
-                    <div className="mb-4">
-                      <div className="text-2xl font-bold text-foreground-dark mb-1">
+                    <div className="mb-2.5">
+                      <div className="text-lg font-bold text-foreground-dark mb-0.5 font-montserrat">
                         {engagement.price}
                       </div>
-                      <div className="text-sm text-foreground-dark/60 mb-3">
+                      <div className="text-xs text-foreground-dark/60 mb-1.5 font-montserrat">
                         {engagement.duration}
                       </div>
-                      <h4 className="text-lg font-semibold text-foreground-dark">
+                      <h4 className="text-sm font-semibold text-foreground-dark font-montserrat">
                         {engagement.title}
                       </h4>
                     </div>
-                    <p className="text-foreground-dark/70 text-sm leading-relaxed">
+                    <p className="text-foreground-dark/70 text-xs leading-relaxed font-montserrat">
                       {engagement.description}
                     </p>
                   </CardContent>
                   <Button
                     variant="btnPrimary"
                     size="sm"
-                    className="w-full mt-6"
+                    className="w-full mt-3 h-9 text-xs"
                     onClick={() => window.open(CALENDLY_URL, "_blank")}
                   >
                     Learn More
@@ -251,11 +255,11 @@ export const ProductModernizationSection: React.FC = () => {
           </div>
 
           {/* CTA */}
-          <div className="text-center bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] border border-[#ffffff20] rounded-3xl p-8 lg:p-12">
-            <h3 className="text-2xl font-semibold text-foreground-light mb-4">
+          <div className="text-center bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] border border-[#ffffff20] rounded-2xl p-6 shadow-lg">
+            <h3 className="text-lg sm:text-xl font-semibold text-foreground-light mb-2 font-montserrat">
               Ready to Modernize Your Platform?
             </h3>
-            <p className="text-foreground-light-muted mb-6 max-w-2xl mx-auto">
+            <p className="text-foreground-light-muted mb-4 max-w-2xl mx-auto text-sm font-montserrat">
               Let's assess your current architecture and create a clear path to a
               modern, cloud-native platform.
             </p>
@@ -263,6 +267,7 @@ export const ProductModernizationSection: React.FC = () => {
               variant="btnSecondary"
               size="lg"
               onClick={() => window.open(CALENDLY_URL, "_blank")}
+              className="h-11 text-sm"
             >
               Schedule Modernization Assessment
             </Button>
