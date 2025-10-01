@@ -23,7 +23,6 @@ import { ServicesOverviewSection } from "../../components/CustomSoftware/section
 import { ProductLaunchSection } from "../../components/CustomSoftware/sections/ProductLaunchSection";
 import { ProductModernizationSection } from "../../components/CustomSoftware/sections/ProductModernizationSection";
 import { EngineeringPodsSection } from "../../components/CustomSoftware/sections/EngineeringPodsSection";
-import { CrossLinkingSection } from "../../components/CustomSoftware/sections/CrossLinkingSection";
 import { CaseStudiesSection } from "../../components/CustomSoftware/sections/CaseStudiesSection";
 import { FAQSection } from "../../components/CustomSoftware/sections/FAQSection";
 import { FinalCTASection } from "../../components/CustomSoftware/sections/FinalCTASection";
@@ -168,9 +167,6 @@ const CustomSoftware = () => {
         {/* WRAPPER FOR DATA SECTION BACKGROUND */}
         <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
           <div className={`${styles.sectionBgData}`}>
-            {/* 10. Cross-Linking Section */}
-            <CrossLinkingSection />
-
             {/* 11. Case Studies Section */}
             <CaseStudiesSection />
           </div>
