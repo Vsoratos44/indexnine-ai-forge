@@ -11,6 +11,7 @@ import {
 import { ServiceAreaSchema } from "@/components/seo/ServiceAreaSchema";
 import { PerformanceOptimizer } from "@/components/seo/PerformanceOptimizer";
 import { SEOAnalytics } from "@/components/seo/SEOAnalytics";
+import styles from "../../assets/css/stylesheet.module.css";
 
 // Section Components
 import { HeroSection } from "../../components/CustomSoftware/sections/HeroSection";
@@ -135,8 +136,6 @@ const CustomSoftware = () => {
 
         <Header />
 
-        {/* Page Sections - New Narrative Flow */}
-        
         {/* 1. Hero Section */}
         <HeroSection />
 
@@ -152,23 +151,33 @@ const CustomSoftware = () => {
         {/* 5. Core Offerings Overview (2 Pillars) */}
         <CoreOfferingsOverviewSection />
 
-        {/* 6. Services Overview Section */}
-        <ServicesOverviewSection />
+        {/* WRAPPER FOR DATA SECTION BACKGROUND */}
+        <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
+          <div className={`${styles.sectionBgData}`}>
+            {/* 6. Services Overview Section */}
+            <ServicesOverviewSection />
 
-        {/* 7. Product Launch Deep Dive */}
-        <ProductLaunchSection />
+            {/* 7. Product Launch Deep Dive */}
+            <ProductLaunchSection />
+          </div>
+        </div>
 
-        {/* 8. Product Modernization Deep Dive */}
+        {/* 8. Product Modernization Deep Dive (Dark Background) */}
         <ProductModernizationSection />
 
         {/* 9. Engineering Pods Section */}
         <EngineeringPodsSection />
 
-        {/* 10. Cross-Linking Section */}
-        <CrossLinkingSection />
+        {/* WRAPPER FOR DATA SECTION BACKGROUND */}
+        <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
+          <div className={`${styles.sectionBgData}`}>
+            {/* 10. Cross-Linking Section */}
+            <CrossLinkingSection />
 
-        {/* 11. Case Studies Section */}
-        <CaseStudiesSection />
+            {/* 11. Case Studies Section */}
+            <CaseStudiesSection />
+          </div>
+        </div>
 
         {/* 12. FAQ Section */}
         <FAQSection />

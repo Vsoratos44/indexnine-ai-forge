@@ -95,25 +95,24 @@ export const ServicesOverviewSection: React.FC = () => {
   ];
 
   return (
-    <section className={`py-24 lg:py-32 ${styles.pageDarkBg}`}>
-      <div className="container mx-auto px-6">
+    <section className="py-16 sm:py-24 lg:py-32 bg-transparent">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-8xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 text-foreground-dark font-montserrat px-4 sm:px-0">
               Our Custom Software{" "}
               <span className="text-brand-primary">Development Services</span>
             </h2>
-            <p className="text-lg text-foreground-light-muted max-w-4xl mx-auto">
+            <p className="text-base sm:text-lg text-foreground-dark/80 max-w-4xl mx-auto font-montserrat px-4 sm:px-0">
               We offer a comprehensive suite of services to build, modernize, and
               scale your mission-critical applications with enterprise-grade
               quality and startup velocity.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12 px-4 sm:px-0">
             {services.map((service, index) => {
               const IconComponent = service.icon;
-              const isLargeCard = service.featured;
 
               return (
                 <Card
@@ -121,14 +120,12 @@ export const ServicesOverviewSection: React.FC = () => {
                   className={`relative overflow-hidden ${
                     service.variant === "dark"
                       ? "bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] border-0"
-                      : "bg-gradient-card-light border border-[#ffffff39] bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20"
-                  } rounded-2xl p-8 hover:shadow-xl transition-all duration-500 flex flex-col ${
-                    isLargeCard ? "md:col-span-2 lg:col-span-1" : ""
-                  }`}
+                      : "bg-gradient-card-light border border-[#00000019] bg-white"
+                  } rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-all duration-500 flex flex-col`}
                 >
                   {service.featured && (
                     <div className="absolute -top-3 -right-3">
-                      <span className="bg-gradient-to-r from-brand-primary to-brand-purple text-white px-4 py-1 rounded-full text-xs font-semibold shadow-lg">
+                      <span className="bg-gradient-to-r from-brand-primary to-brand-purple text-white px-3 sm:px-4 py-1 rounded-full text-xs font-semibold shadow-lg">
                         Popular
                       </span>
                     </div>
@@ -148,14 +145,14 @@ export const ServicesOverviewSection: React.FC = () => {
                     </div>
 
                     <div
-                      className={`relative w-16 h-16 flex mb-6 items-center justify-center ${
+                      className={`relative w-14 h-14 sm:w-16 sm:h-16 flex mb-4 sm:mb-6 items-center justify-center ${
                         service.variant === "dark"
                           ? "bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 rounded-2xl"
                           : styles.icnBg
                       }`}
                     >
                       <IconComponent
-                        className={`w-8 h-8 ${
+                        className={`w-6 h-6 sm:w-8 sm:h-8 ${
                           service.variant === "dark"
                             ? "text-brand-primary"
                             : "text-brand-primary"
@@ -164,31 +161,31 @@ export const ServicesOverviewSection: React.FC = () => {
                     </div>
 
                     <h3
-                      className={`text-2xl font-semibold mb-3 ${
+                      className={`text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 font-montserrat ${
                         service.variant === "dark"
                           ? "text-foreground"
-                          : "text-foreground-light"
+                          : "text-foreground-dark"
                       }`}
                     >
                       {service.title}
                     </h3>
 
                     <p
-                      className={`mb-6 leading-relaxed ${
+                      className={`mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base font-montserrat ${
                         service.variant === "dark"
                           ? "text-foreground/80"
-                          : "text-foreground-light-muted"
+                          : "text-foreground-dark/70"
                       }`}
                     >
                       {service.description}
                     </p>
 
-                    <div className="mb-6">
+                    <div className="mb-4 sm:mb-6">
                       <h4
-                        className={`text-sm font-semibold mb-3 ${
+                        className={`text-xs sm:text-sm font-semibold mb-2 sm:mb-3 ${
                           service.variant === "dark"
                             ? "text-foreground"
-                            : "text-foreground-light"
+                            : "text-foreground-dark"
                         }`}
                       >
                         Capabilities:
@@ -197,38 +194,38 @@ export const ServicesOverviewSection: React.FC = () => {
                         {service.capabilities.map((capability, idx) => (
                           <li
                             key={idx}
-                            className={`flex items-start gap-2 text-sm ${
+                            className={`flex items-start gap-2 text-xs sm:text-sm ${
                               service.variant === "dark"
                                 ? "text-foreground/70"
-                                : "text-foreground-light-muted"
+                                : "text-foreground-dark/70"
                             }`}
                           >
-                            <CheckCircle className="w-4 h-4 text-brand-primary mt-0.5 flex-shrink-0" />
-                            {capability}
+                            <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-brand-primary mt-0.5 flex-shrink-0" />
+                            <span className="font-montserrat">{capability}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
                     <div
-                      className={`pt-4 border-t mb-6 ${
+                      className={`pt-4 border-t mb-4 sm:mb-6 ${
                         service.variant === "dark"
                           ? "border-foreground/20"
-                          : "border-foreground-light/20"
+                          : "border-foreground-dark/10"
                       }`}
                     >
                       <p
-                        className={`text-sm ${
+                        className={`text-xs sm:text-sm font-montserrat ${
                           service.variant === "dark"
                             ? "text-foreground/70"
-                            : "text-foreground-light-muted"
+                            : "text-foreground-dark/70"
                         }`}
                       >
                         <span
                           className={`font-semibold ${
                             service.variant === "dark"
                               ? "text-foreground"
-                              : "text-foreground-light"
+                              : "text-foreground-dark"
                           }`}
                         >
                           Ideal For:
@@ -241,7 +238,7 @@ export const ServicesOverviewSection: React.FC = () => {
                       variant={
                         service.variant === "dark" ? "btnSecondary" : "btnPrimary"
                       }
-                      className="w-full mt-auto"
+                      className="w-full mt-auto text-sm sm:text-base h-10 sm:h-12"
                       onClick={() => window.open(CALENDLY_URL, "_blank")}
                     >
                       {service.ctaText}
