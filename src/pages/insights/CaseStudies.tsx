@@ -352,7 +352,7 @@ const CaseStudies = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[480px] overflow-hidden bg-black">
+      <section className="relative min-h-[380px] sm:min-h-[480px] overflow-hidden bg-black">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-brand-primary/8 rounded-full blur-3xl animate-float"></div>
           <div
@@ -361,30 +361,19 @@ const CaseStudies = () => {
           ></div>
         </div>
 
-        <div className="relative z-10 container mx-auto pt-48 pb-24">
-          <div className="max-w-4xl mx-auto text-center lg:text-left ml-0">
-            <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25] animate-fade-in font-montserrat">
-              Case{" "}
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-20 sm:pt-32 lg:pt-48 pb-12 sm:pb-16 lg:pb-24">
+          <div className="max-w-6xl mx-auto text-center lg:text-left lg:ml-0">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-foreground mb-4 sm:mb-6 leading-[1.25] animate-fade-in font-montserrat">
+              Client{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Studies
+                Success Stories
               </span>
             </h1>
-            <p className="text-xl text-foreground-white/80 mb-12 leading-relaxed font-montserrat">
-              Real success stories showcasing how we've helped clients overcome
-              challenges and achieve exceptional results through strategic
-              product engineering.
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-foreground/85 mb-6 sm:mb-8 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
+              Real-world transformations across the product lifecycle. From
+              bold launches to strategic pivots, discover how we engineer
+              competitive advantage through product excellence.
             </p>
-            <div className="flex flex-wrap justify-start gap-4">
-              {/* <Link to="/#launch">
-                <Button variant="btnSecondary">View Launch Projects</Button>
-              </Link>
-              <Link to="/#pivot">
-                <Button variant="btnSecondary">See Pivot Stories</Button>
-              </Link>
-              <Link to="/services/data-engineering">
-                <Button variant="btnSecondary">Data Engineering</Button>
-              </Link> */}
-            </div>
           </div>
         </div>
       </section>

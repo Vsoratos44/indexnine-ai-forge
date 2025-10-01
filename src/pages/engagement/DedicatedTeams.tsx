@@ -112,30 +112,30 @@ const DedicatedTeams = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[780px] overflow-hidden bg-black">
+      <section className="relative min-h-[580px] sm:min-h-[680px] lg:min-h-[780px] overflow-hidden bg-black">
         <LivingVoidBackground />
-        <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
-          <div className="max-w-5xl mx-auto text-center lg:text-left ml-0">
-            <div className="mb-6">
-              <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-20 sm:pt-32 lg:pt-48 pb-12 sm:pb-16 lg:pb-24">
+          <div className="max-w-5xl mx-auto text-center lg:text-left lg:ml-0">
+            <div className="mb-4 sm:mb-6">
+              <span className="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-brand-primary/10 text-brand-primary rounded-full text-xs sm:text-sm font-medium border border-brand-primary/20 backdrop-blur-sm">
                 Dedicated Teams Engagement Model
               </span>
             </div>
-            <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] font-semibold text-foreground mb-6 leading-tight animate-fade-in font-montserrat">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground mb-4 sm:mb-6 leading-tight animate-fade-in font-montserrat">
               More Than a Dedicated Team.
-              <br />
+              <br className="hidden sm:block" />
               An{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Integrated Engineering Pod.
               </span>
             </h1>
-            <p className="text-lg text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
+            <p className="text-sm sm:text-base lg:text-lg text-foreground/85 mb-6 sm:mb-8 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
               Stop hiring isolated contractors. We provide cohesive, dedicated
               teams supercharged with on-demand access to our entire ecosystem
               of specialized studios. Build faster, smarter, and stronger with a
               partner invested in your success.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-scale-in">
               <Button
                 variant="btnPrimary"
                 size="xl"
