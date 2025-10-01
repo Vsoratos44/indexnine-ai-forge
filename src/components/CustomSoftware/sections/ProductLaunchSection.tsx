@@ -88,55 +88,61 @@ export const ProductLaunchSection: React.FC = () => {
 
           {/* The Founder's Dilemma */}
           <div className="mb-16">
-            <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-8 lg:p-12 border border-red-200">
-              <div className="flex items-start gap-4 mb-6">
-                <AlertCircle className="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
-                    The Founder's Dilemma
-                  </h3>
-                  <ul className="space-y-3">
-                    {dilemmas.map((dilemma, index) => (
-                      <li
-                        key={index}
-                        className="flex items-start gap-3 text-foreground-dark/80"
-                      >
-                        <div className="w-1.5 h-1.5 rounded-full bg-red-600 mt-2 flex-shrink-0" />
-                        <span>{dilemma}</span>
-                      </li>
-                    ))}
-                  </ul>
+            <Card className="bg-gradient-to-br from-[#F1F2FF] to-white border border-[#00000019] rounded-2xl p-8 shadow-md">
+              <CardContent className="p-0">
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 flex items-center justify-center flex-shrink-0">
+                    <AlertCircle className="w-8 h-8 text-brand-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-foreground-dark mb-4 font-montserrat">
+                      The Founder's Dilemma
+                    </h3>
+                    <ul className="space-y-3">
+                      {dilemmas.map((dilemma, index) => (
+                        <li
+                          key={index}
+                          className="text-sm text-foreground-dark/70 leading-relaxed font-montserrat"
+                        >
+                          <span className="font-semibold text-brand-primary">
+                            {dilemma.split(":")[0]}:
+                          </span>{" "}
+                          {dilemma.split(":")[1]}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Sprint Zero Blueprint */}
           <div className="mb-16">
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 lg:p-12 border border-blue-200">
-              <h3 className="text-2xl font-semibold text-foreground-dark mb-6 text-center">
-                Our Approach: The Sprint Zero Blueprint
-              </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {sprintZeroSteps.map((step, index) => (
-                  <Card
-                    key={index}
-                    className="bg-white border-0 rounded-xl p-6 shadow-md"
-                  >
-                    <CardContent className="p-0">
-                      <div className="w-10 h-10 rounded-full bg-brand-primary text-white flex items-center justify-center font-bold text-lg mb-4">
+            <h3 className="text-2xl font-semibold text-foreground-dark mb-8 text-center font-montserrat">
+              Our Approach: The Sprint Zero Blueprint
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {sprintZeroSteps.map((step, index) => (
+                <Card
+                  key={index}
+                  className="bg-gradient-to-br from-[#F1F2FF] to-white border border-[#00000019] rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
+                >
+                  <CardContent className="p-0">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 flex items-center justify-center mb-4">
+                      <span className="text-xl font-bold text-brand-primary">
                         {index + 1}
-                      </div>
-                      <h4 className="font-semibold text-foreground-dark mb-2">
-                        {step.title}
-                      </h4>
-                      <p className="text-sm text-foreground-dark/70 leading-relaxed">
-                        {step.description}
-                      </p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+                      </span>
+                    </div>
+                    <h4 className="text-base font-semibold text-foreground-dark mb-3 font-montserrat">
+                      {step.title}
+                    </h4>
+                    <p className="text-sm text-foreground-dark/70 leading-relaxed font-montserrat">
+                      {step.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
 
