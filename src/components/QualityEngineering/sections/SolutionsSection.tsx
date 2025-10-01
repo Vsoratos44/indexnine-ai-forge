@@ -9,14 +9,14 @@ export const SolutionsSection: React.FC = () => {
   return (
     <section
       id="qae-solutions"
-      className={`py-24 lg:py-32 relative overflow-hidden ${styles.pageDarkBg}`}
+      className="py-24 lg:py-32 relative overflow-hidden"
     >
       <div className="container mx-auto px-6">
         <div className="max-w-8xl mx-auto">
           <SectionHeading
             title="QAE Solutions in Action"
             description="Powered by our proprietary automation platforms, purpose-built internally to accelerate implementation and maximize ROI."
-            variant="dark"
+            variant="light"
           />
 
           {/* Proprietary Automation Platforms */}
@@ -40,7 +40,7 @@ export const SolutionsSection: React.FC = () => {
                   title={platform.title}
                   description={platform.description}
                   features={platform.features}
-                  variant="dark"
+                  variant="light"
                 />
               ))}
             </div>

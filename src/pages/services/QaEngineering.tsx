@@ -82,13 +82,11 @@ const QualityEngineering = () => {
       {/* Quality Dilemma Section */}
       <QualityDilemmaSection />
 
-      <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
-        <div className={` ${styles.sectionBgData}`}>
-          {/* QAE Solutions Section */}
-          <SolutionsSection />
+      {/* QAE Solutions Section */}
+      <SolutionsSection />
 
-          {/* QAE Case Study Section */}
-          <section id="qae-case-study" className="pb-24 lg:pb-32">
+      {/* QAE Case Study Section */}
+      <section id="qae-case-study" className="pb-24 lg:pb-32 bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
             <div className="container mx-auto">
               <div className="max-w-4xl bg-[#fff] p-8 rounded-3xl mx-auto">
                 <div className="mb-6">
@@ -159,8 +157,6 @@ const QualityEngineering = () => {
               </div>
             </div>
           </section>
-        </div>
-      </div>
 
       {/* QAE Consulting Section */}
       <section
@@ -283,12 +279,8 @@ const QualityEngineering = () => {
         </div>
       </section>
 
-      <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
-        <div className={` ${styles.sectionBgData}`}>
-          {/* QAE Blueprint Section - Methodology */}
-          <BlueprintSection />
-        </div>
-      </div>
+      {/* QAE Blueprint Section - Methodology */}
+      <BlueprintSection />
 
       {/* Frameworks Comparison Section */}
       <section
