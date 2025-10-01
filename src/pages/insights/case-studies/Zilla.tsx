@@ -131,9 +131,9 @@ const PivotCaseStudy = () => {
       <Header />
       {/* Hero Section */}
       <a id="intro1"></a>
-      <div className={`bg-transparent pt-32 ${styles.sectionBgCase} `}>
-        <div className="container grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-12">
-          <div className="text-foreground-dark col-span-1">
+      <div className={`bg-transparent pt-20 sm:pt-28 lg:pt-32 ${styles.sectionBgCase} `}>
+        <div className="container grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12">
+          <div className="text-foreground-dark col-span-1 hidden lg:block">
             <div className="sticky top-[128px] pb-8">
               <ul className="space-y-2">
                 {leftNavLinks.map((link) => (
@@ -171,11 +171,11 @@ const PivotCaseStudy = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 lg:col-span-2">
             <section
-              className={`min-h-[100px] rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden ${styles.caseTitle}`}
+              className={`min-h-[100px] rounded-2xl shadow-2xl flex mb-8 lg:mb-12 border backdrop-blur-xl relative overflow-hidden ${styles.caseTitle}`}
             >
-              <div className="mt-auto p-4 md:p-8">
+              <div className="mt-auto p-4 sm:p-6 lg:p-8">
                 <div className="max-w-8xl mx-auto">
                   <div className="mb-6">
                     <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
@@ -250,7 +250,7 @@ const PivotCaseStudy = () => {
                         engine from the ground up and a continuous product
                         modernization effort to meet enterprise demands.
                       </p>
-                      <div className="grid grid-cols md:grid-cols-4  gap-6 ">
+                      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                         <div className=" relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl p-6 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full ">
                           <div className="flex items-center gap-4 flex-col">
                             <span className="flex w-14 h-14 rounded-full bg-[#2E348233] ">
@@ -289,7 +289,7 @@ const PivotCaseStudy = () => {
                       <h3 className="text-lg font-semibold text-white mb-4 mt-8 font-montserrat">
                         Key Outcomes
                       </h3>
-                      <div className="grid grid-cols md:grid-cols-2  gap-6 ">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         {[
                           "Evolved the product from a supplemental visibility tool into an indispensable, action-oriented, core operational system for enterprise customers.",
                           "By transforming the product into a comprehensive Identity Governance and Administration (IGA) platform, it could provide an IGA solution to a broader range of enterprise customers, expanding its total addressable market.",
