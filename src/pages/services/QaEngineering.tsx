@@ -84,11 +84,8 @@ const QualityEngineering = () => {
 
       <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
         <div className={` ${styles.sectionBgData}`}>
-          {/* QAE Solutions Section - MOVED UP */}
+          {/* QAE Solutions Section */}
           <SolutionsSection />
-
-          {/* QAE Blueprint Section - MOVED DOWN */}
-          <BlueprintSection />
 
           {/* QAE Case Study Section */}
           <section id="qae-case-study" className="pb-24 lg:pb-32">
@@ -285,6 +282,13 @@ const QualityEngineering = () => {
           </div>
         </div>
       </section>
+
+      <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
+        <div className={` ${styles.sectionBgData}`}>
+          {/* QAE Blueprint Section - Methodology */}
+          <BlueprintSection />
+        </div>
+      </div>
 
       {/* Frameworks Comparison Section */}
       <section
