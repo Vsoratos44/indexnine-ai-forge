@@ -239,7 +239,7 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
   title = "Powering Enterprise Innovation Globally",
   subtitle = "From Fortune 500 leaders to cutting-edge startups, IndexNine delivers transformational results across industries",
   speed = 35,
-  pauseOnHover = true,
+  pauseOnHover = false,
   showTooltips = true,
   className = "",
 }) => {
@@ -331,7 +331,7 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       margin: "0 auto",
       padding: "0 1.5rem",
       position: "relative" as const,
-      zIndex: 2,
+      zIndex: 49,
     },
 
     header: {
@@ -468,16 +468,16 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
 
     tooltip: {
       position: "fixed" as const,
-      zIndex: 1000,
+      zIndex: 101,
       background: "hsl(234 50% 8% / 0.98)",
       border: "1px solid hsl(262 83% 58% / 0.4)",
       borderRadius: "12px",
       padding: "1.5rem",
-      maxWidth: "320px",
+      width: "320px",
       boxShadow: "0 20px 60px 0 hsl(262 83% 58% / 0.3)",
       backdropFilter: "blur(24px)",
       transform: "translateX(-50%) translateY(-100%)",
-      marginTop: "-10px",
+      marginTop: "-8px",
       animation: "tooltip-appear 0.3s ease-out",
     },
 
@@ -620,71 +620,18 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
         )}
 
         {/* Carousel */}
-        <div
-          ref={containerRef}
-          style={styles.carouselContainer}
-          onMouseEnter={handleContainerMouseEnter}
-          onMouseLeave={handleContainerMouseLeave}
-          role="region"
-          aria-label="Strategic client company logos"
-        >
-          {/* First track - left scroll */}
-          <div style={styles.track}>
-            {duplicatedLogos.map((logo, index) => {
-              const logoKey = `track1-${logo.id}-${index}`;
-              const isHovered = hoveredLogo === logoKey;
-
-              return (
-                <div
-                  key={logoKey}
-                  style={{
-                    ...styles.logoCard,
-                    ...(isHovered ? styles.logoCardHover : {}),
-                  }}
-                  onClick={() => handleLogoClick(logo)}
-                  onMouseEnter={(e) => handleLogoHover(logoKey, e, logo)}
-                  onMouseLeave={handleLogoLeave}
-                  role="button"
-                  tabIndex={0}
-                  aria-label={`Visit ${logo.name} website - ${logo.industry} leader`}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ") {
-                      e.preventDefault();
-                      handleLogoClick(logo);
-                    }
-                  }}
-                >
-                  {/* Glow effect */}
-                  <div
-                    style={{
-                      ...styles.logoCardGlow,
-                      ...(isHovered ? styles.logoCardGlowHover : {}),
-                    }}
-                  />
-
-                  {/* Logo image with optimized loading */}
-                  <img
-                    src={logo.src}
-                    alt={`${logo.name} - ${logo.industry} solutions partner`}
-                    loading="eager"
-                    decoding="sync"
-                    style={{
-                      ...styles.logoImage,
-                      ...(isHovered ? styles.logoImageHover : {}),
-                    }}
-                  />
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Second track - right scroll */}
-          <div style={styles.trackReverse}>
-            {duplicatedLogos
-              .slice()
-              .reverse()
-              .map((logo, index) => {
-                const logoKey = `track2-${logo.id}-${index}`;
+        <div style={styles.carouselContainer}>
+          <div
+            ref={containerRef}
+            onMouseEnter={handleContainerMouseEnter}
+            onMouseLeave={handleContainerMouseLeave}
+            role="region"
+            aria-label="Strategic client company logos"
+          >
+            {/* First track - left scroll */}
+            <div style={styles.track}>
+              {duplicatedLogos.map((logo, index) => {
+                const logoKey = `track1-${logo.id}-${index}`;
                 const isHovered = hoveredLogo === logoKey;
 
                 return (
@@ -729,6 +676,60 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
                   </div>
                 );
               })}
+            </div>
+
+            {/* Second track - right scroll */}
+            <div style={styles.trackReverse}>
+              {duplicatedLogos
+                .slice()
+                .reverse()
+                .map((logo, index) => {
+                  const logoKey = `track2-${logo.id}-${index}`;
+                  const isHovered = hoveredLogo === logoKey;
+
+                  return (
+                    <div
+                      key={logoKey}
+                      style={{
+                        ...styles.logoCard,
+                        ...(isHovered ? styles.logoCardHover : {}),
+                      }}
+                      onClick={() => handleLogoClick(logo)}
+                      onMouseEnter={(e) => handleLogoHover(logoKey, e, logo)}
+                      onMouseLeave={handleLogoLeave}
+                      role="button"
+                      tabIndex={0}
+                      aria-label={`Visit ${logo.name} website - ${logo.industry} leader`}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          handleLogoClick(logo);
+                        }
+                      }}
+                    >
+                      {/* Glow effect */}
+                      <div
+                        style={{
+                          ...styles.logoCardGlow,
+                          ...(isHovered ? styles.logoCardGlowHover : {}),
+                        }}
+                      />
+
+                      {/* Logo image with optimized loading */}
+                      <img
+                        src={logo.src}
+                        alt={`${logo.name} - ${logo.industry} solutions partner`}
+                        loading="eager"
+                        decoding="sync"
+                        style={{
+                          ...styles.logoImage,
+                          ...(isHovered ? styles.logoImageHover : {}),
+                        }}
+                      />
+                    </div>
+                  );
+                })}
+            </div>
           </div>
         </div>
       </div>
