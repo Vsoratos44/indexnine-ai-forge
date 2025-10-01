@@ -22,7 +22,6 @@ import { CoreOfferingsOverviewSection } from "../../components/CustomSoftware/se
 import { ServicesOverviewSection } from "../../components/CustomSoftware/sections/ServicesOverviewSection";
 import { ProductLaunchSection } from "../../components/CustomSoftware/sections/ProductLaunchSection";
 import { ProductModernizationSection } from "../../components/CustomSoftware/sections/ProductModernizationSection";
-import { EngineeringPodsSection } from "../../components/CustomSoftware/sections/EngineeringPodsSection";
 import { CaseStudiesSection } from "../../components/CustomSoftware/sections/CaseStudiesSection";
 import { FAQSection } from "../../components/CustomSoftware/sections/FAQSection";
 import { FinalCTASection } from "../../components/CustomSoftware/sections/FinalCTASection";
@@ -160,9 +159,6 @@ const CustomSoftware = () => {
 
         {/* 8. Product Modernization Deep Dive (Dark Background) */}
         <ProductModernizationSection />
-
-        {/* 9. Engineering Pods Section */}
-        <EngineeringPodsSection />
 
         {/* WRAPPER FOR DATA SECTION BACKGROUND */}
         <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
