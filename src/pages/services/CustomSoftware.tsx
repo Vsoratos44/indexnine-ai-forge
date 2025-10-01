@@ -154,10 +154,7 @@ const CustomSoftware = () => {
         {/* WRAPPER FOR DATA SECTION BACKGROUND */}
         <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
           <div className={`${styles.sectionBgData}`}>
-            {/* 6. Services Overview Section */}
-            <ServicesOverviewSection />
-
-            {/* 7. Product Launch Deep Dive */}
+            {/* 6. Product Launch Deep Dive */}
             <ProductLaunchSection />
           </div>
         </div>
@@ -179,10 +176,13 @@ const CustomSoftware = () => {
           </div>
         </div>
 
-        {/* 12. FAQ Section */}
+        {/* 12. Services Overview Section (Carousel) */}
+        <ServicesOverviewSection />
+
+        {/* 13. FAQ Section */}
         <FAQSection />
 
-        {/* 13. Final CTA */}
+        {/* 14. Final CTA */}
         <FinalCTASection />
 
         <Footer />

@@ -1,6 +1,13 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { Building2, Rocket, Smartphone, RefreshCw, Zap, CheckCircle } from "lucide-react";
 import { CALENDLY_URL } from "../../../config/constants";
 import styles from "../../../assets/css/stylesheet.module.css";
@@ -95,7 +102,7 @@ export const ServicesOverviewSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-24 lg:py-32 bg-transparent">
+    <section className="py-16 sm:py-24 lg:py-32 bg-[#fff]">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-8xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -110,143 +117,156 @@ export const ServicesOverviewSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12 px-4 sm:px-0">
-            {services.map((service, index) => {
-              const IconComponent = service.icon;
+          <div className="relative px-4 sm:px-12">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4">
+                {services.map((service, index) => {
+                  const IconComponent = service.icon;
 
-              return (
-                <Card
-                  key={index}
-                  className={`relative overflow-hidden ${
-                    service.variant === "dark"
-                      ? "bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] border-0"
-                      : "bg-gradient-card-light border border-[#00000019] bg-white"
-                  } rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-all duration-500 flex flex-col`}
-                >
-                  {service.featured && (
-                    <div className="absolute -top-3 -right-3">
-                      <span className="bg-gradient-to-r from-brand-primary to-brand-purple text-white px-3 sm:px-4 py-1 rounded-full text-xs font-semibold shadow-lg">
-                        Popular
-                      </span>
-                    </div>
-                  )}
-
-                  <CardContent className="p-0 flex-1 flex flex-col">
-                    <div className="mb-4">
-                      <span
-                        className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-4 ${
+                  return (
+                    <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                      <Card
+                        className={`relative overflow-hidden h-full ${
                           service.variant === "dark"
-                            ? "bg-brand-primary/20 text-brand-primary"
-                            : "bg-brand-primary/10 text-brand-primary"
-                        }`}
+                            ? "bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] border-0"
+                            : "bg-gradient-card-light border border-[#00000019] bg-white"
+                        } rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-all duration-500 flex flex-col`}
                       >
-                        {service.badge}
-                      </span>
-                    </div>
+                        {service.featured && (
+                          <div className="absolute -top-3 -right-3">
+                            <span className="bg-gradient-to-r from-brand-primary to-brand-purple text-white px-3 sm:px-4 py-1 rounded-full text-xs font-semibold shadow-lg">
+                              Popular
+                            </span>
+                          </div>
+                        )}
 
-                    <div
-                      className={`relative w-14 h-14 sm:w-16 sm:h-16 flex mb-4 sm:mb-6 items-center justify-center ${
-                        service.variant === "dark"
-                          ? "bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 rounded-2xl"
-                          : styles.icnBg
-                      }`}
-                    >
-                      <IconComponent
-                        className={`w-6 h-6 sm:w-8 sm:h-8 ${
-                          service.variant === "dark"
-                            ? "text-brand-primary"
-                            : "text-brand-primary"
-                        }`}
-                      />
-                    </div>
+                        <CardContent className="p-0 flex-1 flex flex-col">
+                          <div className="mb-4">
+                            <span
+                              className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-4 ${
+                                service.variant === "dark"
+                                  ? "bg-brand-primary/20 text-brand-primary"
+                                  : "bg-brand-primary/10 text-brand-primary"
+                              }`}
+                            >
+                              {service.badge}
+                            </span>
+                          </div>
 
-                    <h3
-                      className={`text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 font-montserrat ${
-                        service.variant === "dark"
-                          ? "text-foreground"
-                          : "text-foreground-dark"
-                      }`}
-                    >
-                      {service.title}
-                    </h3>
-
-                    <p
-                      className={`mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base font-montserrat ${
-                        service.variant === "dark"
-                          ? "text-foreground/80"
-                          : "text-foreground-dark/70"
-                      }`}
-                    >
-                      {service.description}
-                    </p>
-
-                    <div className="mb-4 sm:mb-6">
-                      <h4
-                        className={`text-xs sm:text-sm font-semibold mb-2 sm:mb-3 ${
-                          service.variant === "dark"
-                            ? "text-foreground"
-                            : "text-foreground-dark"
-                        }`}
-                      >
-                        Capabilities:
-                      </h4>
-                      <ul className="space-y-2">
-                        {service.capabilities.map((capability, idx) => (
-                          <li
-                            key={idx}
-                            className={`flex items-start gap-2 text-xs sm:text-sm ${
+                          <div
+                            className={`relative w-14 h-14 sm:w-16 sm:h-16 flex mb-4 sm:mb-6 items-center justify-center ${
                               service.variant === "dark"
-                                ? "text-foreground/70"
+                                ? "bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 rounded-2xl"
+                                : styles.icnBg
+                            }`}
+                          >
+                            <IconComponent
+                              className={`w-6 h-6 sm:w-8 sm:h-8 ${
+                                service.variant === "dark"
+                                  ? "text-brand-primary"
+                                  : "text-brand-primary"
+                              }`}
+                            />
+                          </div>
+
+                          <h3
+                            className={`text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 font-montserrat ${
+                              service.variant === "dark"
+                                ? "text-foreground"
+                                : "text-foreground-dark"
+                            }`}
+                          >
+                            {service.title}
+                          </h3>
+
+                          <p
+                            className={`mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base font-montserrat ${
+                              service.variant === "dark"
+                                ? "text-foreground/80"
                                 : "text-foreground-dark/70"
                             }`}
                           >
-                            <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-brand-primary mt-0.5 flex-shrink-0" />
-                            <span className="font-montserrat">{capability}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                            {service.description}
+                          </p>
 
-                    <div
-                      className={`pt-4 border-t mb-4 sm:mb-6 ${
-                        service.variant === "dark"
-                          ? "border-foreground/20"
-                          : "border-foreground-dark/10"
-                      }`}
-                    >
-                      <p
-                        className={`text-xs sm:text-sm font-montserrat ${
-                          service.variant === "dark"
-                            ? "text-foreground/70"
-                            : "text-foreground-dark/70"
-                        }`}
-                      >
-                        <span
-                          className={`font-semibold ${
-                            service.variant === "dark"
-                              ? "text-foreground"
-                              : "text-foreground-dark"
-                          }`}
-                        >
-                          Ideal For:
-                        </span>{" "}
-                        {service.idealFor}
-                      </p>
-                    </div>
+                          <div className="mb-4 sm:mb-6">
+                            <h4
+                              className={`text-xs sm:text-sm font-semibold mb-2 sm:mb-3 ${
+                                service.variant === "dark"
+                                  ? "text-foreground"
+                                  : "text-foreground-dark"
+                              }`}
+                            >
+                              Capabilities:
+                            </h4>
+                            <ul className="space-y-2">
+                              {service.capabilities.map((capability, idx) => (
+                                <li
+                                  key={idx}
+                                  className={`flex items-start gap-2 text-xs sm:text-sm ${
+                                    service.variant === "dark"
+                                      ? "text-foreground/70"
+                                      : "text-foreground-dark/70"
+                                  }`}
+                                >
+                                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-brand-primary mt-0.5 flex-shrink-0" />
+                                  <span className="font-montserrat">{capability}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
 
-                    <Button
-                      variant={
-                        service.variant === "dark" ? "btnSecondary" : "btnPrimary"
-                      }
-                      className="w-full mt-auto text-sm sm:text-base h-10 sm:h-12"
-                      onClick={() => window.open(CALENDLY_URL, "_blank")}
-                    >
-                      {service.ctaText}
-                    </Button>
-                  </CardContent>
-                </Card>
-              );
-            })}
+                          <div
+                            className={`pt-4 border-t mb-4 sm:mb-6 ${
+                              service.variant === "dark"
+                                ? "border-foreground/20"
+                                : "border-foreground-dark/10"
+                            }`}
+                          >
+                            <p
+                              className={`text-xs sm:text-sm font-montserrat ${
+                                service.variant === "dark"
+                                  ? "text-foreground/70"
+                                  : "text-foreground-dark/70"
+                              }`}
+                            >
+                              <span
+                                className={`font-semibold ${
+                                  service.variant === "dark"
+                                    ? "text-foreground"
+                                    : "text-foreground-dark"
+                                }`}
+                              >
+                                Ideal For:
+                              </span>{" "}
+                              {service.idealFor}
+                            </p>
+                          </div>
+
+                          <Button
+                            variant={
+                              service.variant === "dark" ? "btnSecondary" : "btnPrimary"
+                            }
+                            className="w-full mt-auto text-sm sm:text-base h-10 sm:h-12"
+                            onClick={() => window.open(CALENDLY_URL, "_blank")}
+                          >
+                            {service.ctaText}
+                          </Button>
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+              <CarouselPrevious className="hidden sm:flex -left-6" />
+              <CarouselNext className="hidden sm:flex -right-6" />
+            </Carousel>
           </div>
         </div>
       </div>
