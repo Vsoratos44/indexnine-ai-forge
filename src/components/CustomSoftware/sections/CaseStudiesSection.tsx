@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -48,49 +47,51 @@ export const CaseStudiesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-b from-[#fff] via-[#efeff6] to-[#efeff6]">
-      <div className="container mx-auto px-6">
+    <section className="py-16 sm:py-24 lg:py-32 bg-transparent">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-8xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 text-foreground-dark font-montserrat px-4 sm:px-0">
               Proof in Action:{" "}
               <span className="text-brand-primary">
                 Our Engineering Success Stories
               </span>
             </h2>
-            <p className="text-lg text-foreground-dark/80 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-foreground-dark/80 max-w-3xl mx-auto font-montserrat px-4 sm:px-0">
               Real-world results from organizations that partnered with us to
               build and modernize mission-critical software.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12 px-4 sm:px-0">
             {caseStudies.map((study, index) => (
-              <Card
+              <div
                 key={index}
-                className="bg-white border border-[#00000019] rounded-2xl p-8 hover:shadow-xl transition-all duration-500 flex flex-col"
+                className="relative overflow-hidden bg-gradient-card-light backdrop-blur-xl rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer group"
               >
-                <CardContent className="p-0 flex-1 flex flex-col">
-                  <div className="mb-4">
-                    <span className="inline-block px-3 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold mb-3">
+                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="relative">
+                  <div className="mb-3 sm:mb-4">
+                    <span className="inline-block px-2 sm:px-3 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold mb-3">
                       {study.industry}
                     </span>
-                    <h3 className="text-xl font-semibold text-foreground-dark mb-3">
+                    <h3 className="text-lg sm:text-xl font-semibold text-foreground-dark mb-2 sm:mb-3 font-montserrat">
                       {study.title}
                     </h3>
                   </div>
-                  <p className="text-foreground-dark/70 mb-4 leading-relaxed flex-1">
+                  <p className="text-sm sm:text-base text-foreground-dark/70 mb-4 leading-relaxed font-montserrat">
                     {study.description}
                   </p>
                   <div className="mb-4">
-                    <p className="text-sm font-semibold text-foreground-dark mb-2">
+                    <p className="text-xs sm:text-sm font-semibold text-foreground-dark mb-2">
                       Key Outcomes:
                     </p>
-                    <ul className="space-y-2">
+                    <ul className="space-y-1.5 sm:space-y-2">
                       {study.outcomes.map((outcome, idx) => (
                         <li
                           key={idx}
-                          className="text-sm text-foreground-dark/70 flex items-start gap-2"
+                          className="text-xs sm:text-sm text-foreground-dark/70 flex items-start gap-2 font-montserrat"
                         >
                           <div className="w-1.5 h-1.5 rounded-full bg-brand-primary mt-1.5 flex-shrink-0" />
                           {outcome}
@@ -110,18 +111,18 @@ export const CaseStudiesSection: React.FC = () => {
                   </div>
                   <Link
                     to={study.link}
-                    className="inline-flex items-center gap-2 text-brand-primary font-semibold hover:gap-3 transition-all duration-300 mt-auto"
+                    className="inline-flex items-center gap-2 text-brand-primary font-semibold hover:gap-3 transition-all duration-300 text-sm sm:text-base group-hover:underline"
                   >
                     Read Case Study
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                   </Link>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
           </div>
 
-          <div className="text-center">
-            <Button variant="btnPrimary" size="lg" asChild>
+          <div className="text-center px-4 sm:px-0">
+            <Button variant="btnPrimary" size="lg" asChild className="w-full sm:w-auto min-w-[240px] h-12 sm:h-14 text-sm sm:text-base">
               <Link to="/insights/case-studies">
                 Explore All Case Studies
                 <ArrowRight className="h-4 w-4 ml-2" />

@@ -62,21 +62,21 @@ export const FAQSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-b from-[#efeff6] to-[#fff]">
-      <div className="container mx-auto px-6">
+    <section className="py-16 sm:py-24 lg:py-32 bg-gradient-to-b from-[#efeff6] to-[#fff]">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 text-foreground-dark font-montserrat px-4 sm:px-0">
               Your Engineering{" "}
               <span className="text-brand-primary">Questions, Answered</span>
             </h2>
-            <p className="text-lg text-foreground-dark/80">
+            <p className="text-base sm:text-lg text-foreground-dark/80 font-montserrat px-4 sm:px-0">
               Get answers to common questions about our AI-augmented engineering
               approach and flexible partnership model.
             </p>
           </div>
 
-          <div className="space-y-0 rounded-3xl bg-[#fff] px-8 py-4 shadow-lg">
+          <div className="space-y-0 rounded-2xl sm:rounded-3xl bg-[#fff] px-4 sm:px-8 py-4 shadow-lg">
             {faqData.map((faq, index) => (
               <FAQItem
                 key={index}
