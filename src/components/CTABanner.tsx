@@ -44,10 +44,11 @@ const CTABanner = () => {
               <PipedriveForm className="mt-4" />
             </DialogContent>
           </Dialog> */}
-
-          <Button variant="btnPrimary" size="lg">
-            <Link to="/company/contact#cta">Start Your Project Today</Link>
-          </Button>
+          <Link to="/company/contact#cta">
+            <Button variant="btnPrimary" size="lg">
+              Start Your Project Today
+            </Button>
+          </Link>
         </div>
       </div>
     </Section>
