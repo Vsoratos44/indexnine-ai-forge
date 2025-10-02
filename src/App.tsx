@@ -53,12 +53,14 @@ const InnovationLab = lazy(() => import("./pages/engagement/InnovationLab"));
 const DedicatedTeams = lazy(() => import("./pages/engagement/DedicatedTeams"));
 const OutcomeBased = lazy(() => import("./pages/engagement/OutcomeBased"));
 const ProjectBased = lazy(() => import("./pages/engagement/ProjectBased"));
-const EventsMobileApp = lazy(() => import("./pages/events/EventsMobileApp"));
 
 // Insights Pages - Lazy loaded
 const CaseStudies = lazy(() => import("./pages/insights/CaseStudies"));
 const Blogs = lazy(() => import("./pages/insights/Blogs"));
 const Ebooks = lazy(() => import("./pages/insights/Ebooks"));
+const Events = lazy(() => import("./pages/insights/Events"));
+const EventDetails = lazy(() => import("./pages/insights/EventDetails"));
+
 const RobotFrameworkVsPlaywright = lazy(
   () => import("./pages/insights/blog/RobotFrameworkVsPlaywright")
 );
@@ -113,10 +115,10 @@ const Careers = lazy(() => import("./pages/company/Careers"));
 const Contact = lazy(() => import("./pages/company/Contact"));
 
 // Events Platform Pages - Lazy loaded
-const Events = lazy(() => import("./pages/events/Events"));
-const OnSiteExperience = lazy(
-  () => import("./pages/events/features/OnSiteExperience")
-);
+// const Events = lazy(() => import("./pages/insights/Events"));
+// const OnSiteExperience = lazy(
+//   () => import("./pages/events/features/OnSiteExperience")
+// );
 
 // Test Pages - Lazy loaded
 // const HomepageTest = lazy(() => import("./pages/test/HomepageTest"));
@@ -231,6 +233,11 @@ const App = () => {
                 <Route path="/insights" element={<Blogs />} />
                 <Route path="/insights/blogs" element={<Blogs />} />
                 <Route path="/insights/ebooks" element={<Ebooks />} />
+                <Route path="/insights/events" element={<Events />} />
+                <Route
+                  path="/insights/events/:eventId"
+                  element={<EventDetails />}
+                />
 
                 {/* Individual Blog Post Routes - Lazy loaded */}
                 <Route
@@ -339,15 +346,15 @@ const App = () => {
                 <Route path="/company/contact" element={<Contact />} />
 
                 {/* Events Platform Routes - Lazy loaded */}
-                <Route path="/events" element={<Events />} />
+                {/* <Route path="/events" element={<Events />} />
                 <Route
                   path="/events/mobile-app"
                   element={<EventsMobileApp />}
-                />
-                <Route
+                /> */}
+                {/* <Route
                   path="/events/features/on-site-experience"
                   element={<OnSiteExperience />}
-                />
+                /> */}
 
                 {/* CMS Routes - Lazy loaded */}
                 {/* <Route path="/cms/auth" element={<CMSAuth />} />

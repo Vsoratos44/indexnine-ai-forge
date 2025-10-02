@@ -242,6 +242,12 @@ const Header = () => {
                       >
                         eBooks
                       </Link>
+                      <Link
+                        to="/insights/events"
+                        className={`${styles.navLink}`}
+                      >
+                        Events
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -536,6 +542,13 @@ const Header = () => {
                     onClick={toggleMobileMenu}
                   >
                     eBooks
+                  </Link>
+                  <Link
+                    to="/insights/events"
+                    className="block py-2 text-white/80 hover:text-brand-primary transition-colors font-medium"
+                    onClick={toggleMobileMenu}
+                  >
+                    Events
                   </Link>
                 </div>
               )}
