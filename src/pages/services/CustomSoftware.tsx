@@ -27,7 +27,7 @@ import { FAQSection } from "../../components/CustomSoftware/sections/FAQSection"
 import { FinalCTASection } from "../../components/CustomSoftware/sections/FinalCTASection";
 
 const CustomSoftware = () => {
-  // SEO Configuration
+  // SEO Configuration for Custom Software Development page
   useSEO({
     title:
       "Custom Software Development Services | AI-Augmented Engineering | Pragmatic Engineering for Ventures & Enterprises | IndexNine",

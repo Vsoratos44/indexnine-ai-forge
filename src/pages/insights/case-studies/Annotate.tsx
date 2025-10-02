@@ -125,9 +125,9 @@ const LaunchCaseStudy = () => {
 
       {/* Hero Section */}
       <a id="intro1"></a>
-      <div className={`bg-transparent pt-32 ${styles.sectionBgCase}`}>
-        <div className="container grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-12">
-          <div className="text-foreground-dark">
+      <div className={`bg-transparent pt-20 sm:pt-28 lg:pt-32 ${styles.sectionBgCase}`}>
+        <div className="container grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12">
+          <div className="text-foreground-dark hidden lg:block">
             <div className="sticky top-[128px] pb-8">
               <ul className="space-y-2">
                 {leftNavLinks.map((link) => (
@@ -135,7 +135,7 @@ const LaunchCaseStudy = () => {
                     <a
                       href={link.href}
                       onClick={() => setSelected(link.href)}
-                      className={`inline-blockpy-2 rounded transition 
+                      className={`inline-block py-2 rounded transition 
                               ${
                                 selected === link.href
                                   ? "text-brand-purple font-semibold"
@@ -150,12 +150,12 @@ const LaunchCaseStudy = () => {
                 ))}
               </ul>
               <div
-                className={`px-8 mt-8 mb-4 py-12 text-center rounded-2xl text-white ${styles.sideCardBg}`}
+                className={`px-6 mt-8 mb-4 py-8 text-center rounded-2xl text-white ${styles.sideCardBg}`}
               >
-                <h3 className="text-3xl font-bold">
+                <h3 className="text-2xl font-bold">
                   Want to Share Your Insights?
                 </h3>
-                <p className="text-xl py-8">
+                <p className="text-lg py-6">
                   Join our community of thought leaders and share your expertise
                   with fellow technology professionals.
                 </p>
@@ -165,18 +165,18 @@ const LaunchCaseStudy = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-1 lg:col-span-2">
             <section
-              className={`min-h-[100px] rounded-2xl shadow-2xl flex mb-12 border backdrop-blur-xl relative overflow-hidden ${styles.caseTitle}`}
+              className={`min-h-[100px] rounded-2xl shadow-2xl flex mb-8 lg:mb-12 border backdrop-blur-xl relative overflow-hidden ${styles.caseTitle}`}
             >
-              <div className="mt-auto p-4 md:p-8">
+              <div className="mt-auto p-4 sm:p-6 lg:p-8">
                 <div className="max-w-8xl mx-auto">
-                  <div className="mb-6">
-                    <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
+                  <div className="mb-4 sm:mb-6 flex flex-wrap gap-2">
+                    <span className="inline-block px-4 sm:px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-xs sm:text-sm font-medium border border-white/30 backdrop-blur-sm">
                       <span className="text-white/50 text-xs mr-2">Client</span>{" "}
                       Annotate
                     </span>
-                    <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
+                    <span className="inline-block px-4 sm:px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-xs sm:text-sm font-medium border border-white/30 backdrop-blur-sm">
                       <span className="text-white/50 text-xs mr-2">
                         Industry
                       </span>{" "}
@@ -184,14 +184,14 @@ const LaunchCaseStudy = () => {
                     </span>
                   </div>
 
-                  <div className="inline-block p-4 md:p-8  bg-black/20 shadow-md text-white rounded-xl text-sm font-medium border border-white/30 backdrop-blur-sm">
-                    <h1 className="text-3xl lg:text-[2.75rem] font-bold text-foreground mb-8 animate-fade-in font-montserrat flex flex-wrap md:flex-nowrap   gap-4 items-start">
+                  <div className="inline-block p-4 sm:p-6 lg:p-8 bg-black/20 shadow-md text-white rounded-xl text-sm font-medium border border-white/30 backdrop-blur-sm w-full">
+                    <h1 className="text-2xl sm:text-3xl lg:text-[2.75rem] font-bold text-foreground mb-6 sm:mb-8 animate-fade-in font-montserrat flex flex-wrap gap-2 sm:gap-4 items-start">
                       <span className="leading-[1.05]">Annotate:</span>
                       <span className="text-[#505dfd] leading-[1.05]">
                         Launching AI-Powered Disruption in Philanthropic Finance
                       </span>
                     </h1>
-                    <p className="text-xl sm:text-lg text-foreground/100 mb-0 max-w-4xl leading-relaxed font-regular animate-slide-up font-montserrat">
+                    <p className="text-base sm:text-lg lg:text-xl text-foreground/100 mb-0 max-w-4xl leading-relaxed font-regular animate-slide-up font-montserrat">
                       Taking a bold idea of democratized financial research from
                       launch to market-ready MVP.
                     </p>
@@ -203,7 +203,7 @@ const LaunchCaseStudy = () => {
 
             {/* Overview Section */}
             <section
-              className={`p-8 bg-background relative overflow-hidden rounded-2xl mb-4 ${styles.middleCardBg2}`}
+              className={`p-4 sm:p-6 lg:p-8 bg-background relative overflow-hidden rounded-2xl mb-4 ${styles.middleCardBg2}`}
             >
               <div className="relative z-10">
                 <div className="max-w-6xl mx-auto">
@@ -225,22 +225,22 @@ const LaunchCaseStudy = () => {
             </section>
 
             <section
-              className={`p-8 mb-12 bg-background relative overflow-hidden rounded-2xl ${styles.middleCardBg2}`}
+              className={`p-4 sm:p-6 lg:p-8 mb-8 lg:mb-12 bg-background relative overflow-hidden rounded-2xl ${styles.middleCardBg2}`}
             >
               <div className="relative z-10">
                 <div className="max-w-6xl mx-auto">
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4 font-montserrat">
+                    <h3 className="text-base sm:text-lg font-semibold text-white mb-4 font-montserrat">
                       Solution
                     </h3>
-                    <p className="text-white mb-6">
+                    <p className="text-sm sm:text-base text-white mb-6">
                       A strategic engagement with Indexnine's Launch services,
                       starting with our proprietary Sprint Zero framework to
                       define the MVP, followed by the rapid development of a
                       sophisticated AI research agent built on
                       retrieval-augmented generation (RAG) architecture.
                     </p>
-                    <div className="grid grid-cols md:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                       <div className="relative overflow-hidden bg-[#ffffff09] border border-[#ffffff15] rounded-2xl py-6 px-2 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group h-full">
                         <div className="flex items-center gap-4 flex-col">
                           <span className="flex w-14 h-14 rounded-full bg-[#2E348233]">
@@ -274,10 +274,10 @@ const LaunchCaseStudy = () => {
                         </div>
                       </div>
                     </div>
-                    <h3 className="text-lg font-semibold text-white mb-4 mt-8 font-montserrat">
+                    <h3 className="text-base sm:text-lg font-semibold text-white mb-4 mt-6 sm:mt-8 font-montserrat">
                       Key Outcomes
                     </h3>
-                    <div className="grid grid-cols md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                       {[
                         "Successfully delivering a functional, AI-powered platform validated the core business model and enabled the client to execute on an aggressive GTM strategy.",
                         "The platform was designed to deliver research reports for approximately $500, a dramatic reduction from industry-standard consultant fees ranging from $20,000 to $50,000.",
@@ -309,20 +309,21 @@ const LaunchCaseStudy = () => {
             </section>
 
             {/* Detailed Challenge Section */}
-            <section className="p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative mb-4 rounded-2xl shadow-inner shadow-white shadow-4xl">
+            <section className="p-4 sm:p-6 lg:p-8 backdrop-blur-xl bg-[#00000010] border border-[#00000005] relative mb-4 rounded-2xl shadow-inner shadow-white shadow-4xl">
               <div className="mx-auto relative z-10">
                 <div className="max-w-8xl mx-auto">
-                  <h3 className="text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
+                  <h3 className="text-base sm:text-lg font-semibold text-brand-primary-dark mb-4 font-montserrat">
                     Challenge
                   </h3>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground-dark mb-8 font-montserrat">
+                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground-dark mb-6 sm:mb-8 font-montserrat">
                     A Market Ripe for Disruption
                   </h2>
 
-                  <div className="bg-[#4A2424] mt-12 mb-8 flex">
+                  <div className="bg-[#4A2424] mt-6 sm:mt-8 lg:mt-12 mb-6 sm:mb-8 flex rounded-lg overflow-hidden">
                     <img
                       src={CaseInrImg}
-                      className="w-full h-120 object-cover"
+                      className="w-full h-auto object-cover"
+                      alt="Annotate case study"
                     />
                   </div>
 

@@ -66,18 +66,18 @@ const Contact = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[480px] overflow-hidden bg-black">
+      <section className="relative min-h-[380px] sm:min-h-[480px] overflow-hidden bg-black">
         <LivingVoidBackground />
 
-        <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
-          <div className="max-w-4xl mx-auto text-center lg:text-left ml-0">
-            <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] xl:text-[4rem] font-semibold text-foreground mb-6 leading-[1.25]  animate-fade-in font-montserrat">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-20 sm:pt-32 lg:pt-48 pb-12 sm:pb-16 lg:pb-24">
+          <div className="max-w-4xl mx-auto text-center lg:text-left lg:ml-0">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-foreground mb-4 sm:mb-6 leading-[1.25] animate-fade-in font-montserrat">
               Contact{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Us
               </span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-foreground/85 mb-8 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-foreground/85 mb-6 sm:mb-8 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
               We are a strategic partner for modern businesses, helping them
               build innovative products, modernize legacy systems, and leverage
               AI to drive positive business outcomes.
@@ -90,13 +90,13 @@ const Contact = () => {
         className={`relative max-w-8xl bg-white mx-auto ${styles.sectionBgData}`}
       >
         {/* Mission Section */}
-        <section className="py-24 lg:py-32 bg-glass-light border-glass backdrop-blur-sm ">
+        <section className="py-12 sm:py-16 lg:py-24 xl:py-32 bg-glass-light border-glass backdrop-blur-sm">
           <div className="absolute inset-0">
             <div className="absolute top-20 left-1/6 w-80 h-80 bg-brand-primary/8 rounded-full blur-3xl"></div>
             <div className="absolute bottom-20 right-1/6 w-96 h-96 bg-brand-purple/6 rounded-full blur-3xl"></div>
           </div>
 
-          <div className="container mx-auto px-6 lg:px-8 relative z-10">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-5xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
                 Our Vision

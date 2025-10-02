@@ -145,7 +145,7 @@ const Careers = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative min-h-[480px] overflow-hidden bg-black">
+        <section className="relative min-h-[380px] sm:min-h-[480px] overflow-hidden bg-black">
           <LivingVoidBackground />
 
           <div className="relative z-10 container mx-auto px-6 pt-48 pb-24">
