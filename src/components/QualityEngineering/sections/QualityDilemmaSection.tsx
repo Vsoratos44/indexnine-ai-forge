@@ -5,7 +5,7 @@ export const QualityDilemmaSection: React.FC = () => {
   return (
     <section className="py-24 lg:py-32 bg-[#fff]">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center">
           <SectionHeading
             title="The Quality Dilemma:"
             highlight="Balancing Speed, Cost, and Reliability"
@@ -16,8 +16,8 @@ export const QualityDilemmaSection: React.FC = () => {
             Development teams are forced to move faster, but without a modern
             approach to quality, this leads to brittle tests, rising bug counts,
             and eroded customer trust. Manual testing can't keep up, and
-            traditional automation often creates more maintenance overhead than it
-            saves.
+            traditional automation often creates more maintenance overhead than
+            it saves.
           </p>
         </div>
       </div>

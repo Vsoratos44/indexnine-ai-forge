@@ -32,11 +32,11 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
       className={`relative overflow-hidden bg-gradient-card-light border ${
         variant === "dark" ? "border-[#ffffff39]" : "border-[#00000019]"
       } ${
-        variant === "dark" ? "bg-white-600" : "bg-[#ffffff59]"
+        variant === "dark" ? "bg-white-600" : "bg-[#ffffff9]"
       } rounded-2xl p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20`}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" /> */}
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-purple/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" /> */}
 
       <CardContent className="p-0 relative">
         <div

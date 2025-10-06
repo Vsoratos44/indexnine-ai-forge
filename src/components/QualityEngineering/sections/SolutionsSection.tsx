@@ -2,7 +2,10 @@ import React from "react";
 import { SectionHeading } from "../shared/SectionHeading";
 import { FeatureCard } from "../shared/FeatureCard";
 import { MetricCard } from "../shared/MetricCard";
-import { platformsData, applicationsData } from "../../../data/qualityEngineering/platforms";
+import {
+  platformsData,
+  applicationsData,
+} from "../../../data/qualityEngineering/platforms";
 import styles from "../../../assets/css/stylesheet.module.css";
 
 export const SolutionsSection: React.FC = () => {

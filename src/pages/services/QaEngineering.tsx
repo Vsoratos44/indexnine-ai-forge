@@ -88,7 +88,7 @@ const QualityEngineering = () => {
           <SolutionsSection />
 
           {/* QAE Case Study Section */}
-          <section id="qae-case-study" className="pb-24 lg:pb-32">
+          <section id="qae-case-study" className="pt-24 lg:pt-32">
             <div className="container mx-auto">
               <div className="max-w-4xl bg-[#fff] p-8 rounded-3xl mx-auto">
                 <div className="mb-6">
@@ -233,9 +233,9 @@ const QualityEngineering = () => {
                     Agile Product Quality (APQ) Roadmap
                   </h3>
                   <p className="text-foreground/80 mb-6">
-                    A 4-week strategic assessment to analyze your entire SDLC and
-                    deliver a comprehensive roadmap for achieving elite-level
-                    quality and velocity.
+                    A 4-week strategic assessment to analyze your entire SDLC
+                    and deliver a comprehensive roadmap for achieving
+                    elite-level quality and velocity.
                   </p>
                   <h4 className="font-semibold text-foreground mb-3">
                     Deliverables:
@@ -293,7 +293,7 @@ const QualityEngineering = () => {
       {/* Frameworks Comparison Section */}
       <section
         id="qae-frameworks"
-        className="pb-24 lg:pb-32 relative bg-[#fff] overflow-hidden"
+        className="py-24 lg:py-32 relative bg-[#fff] overflow-hidden"
       >
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
@@ -305,8 +305,8 @@ const QualityEngineering = () => {
             <p className="text-lg text-foreground-dark-muted max-w-6xl mx-auto text-center mb-4">
               In today's competitive landscape, the pressure to balance quality,
               velocity, and cost is relentless. Cutting corners on Quality
-              Assurance (QA) isn't an option when your product's reputation is on
-              the line, but slow release cycles and rising technical debt can
+              Assurance (QA) isn't an option when your product's reputation is
+              on the line, but slow release cycles and rising technical debt can
               sink you before you find product-market fit.
             </p>
             <p className="text-lg text-foreground-dark-muted max-w-6xl mx-auto text-center mb-12">
@@ -319,9 +319,9 @@ const QualityEngineering = () => {
             </p>
 
             <div className="overflow-x-auto">
-              <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl hover:shadow-glass-sm transition-all duration-500 animate-fade-in group">
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50" />
+              <div className="relative overflow-hidden bg-gradient-card-light border  border-brand-primary/10 rounded-2xl hover:shadow-glass-sm transition-all duration-500 animate-fade-in group">
+                {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" /> */}
+                {/* <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50" /> */}
                 <table className="relative w-full border-collapse rounded-lg overflow-hidden">
                   <thead>
                     <tr className="bg-brand-primary/10">
@@ -412,8 +412,8 @@ const QualityEngineering = () => {
           <p className="text-lg text-foreground-dark-muted mb-8 max-w-6xl mx-auto leading-relaxed">
             Before a single line of code is written, our Sprint 0 process lays
             the critical groundwork. We dive deep to understand your product,
-            workflows, and business goals to build an automation strategy that is
-            technically sound and perfectly aligned with your objectives.
+            workflows, and business goals to build an automation strategy that
+            is technically sound and perfectly aligned with your objectives.
           </p>
           <div className="max-w-6xl mx-auto mb-8">
             <h3 className="text-xl font-semibold mb-6 text-foreground-dark">
