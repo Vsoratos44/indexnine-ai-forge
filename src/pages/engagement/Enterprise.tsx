@@ -144,7 +144,7 @@ const Enterprise = () => {
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
               >
-                Explore AI Risk Audits <ArrowRight className="ml-2 h-4 w-4" />
+                Explore AI Risk Audits
               </Button>
             </div>
           </div>

@@ -209,7 +209,11 @@ const DedicatedTeams = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-left">
-              <Users2 className="w-10 h-10 text-brand-primary mb-4" />
+              <div
+                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+              >
+                <Users2 className="w-8 h-8 text-brand-primary" />
+              </div>
               <h3 className="text-xl font-semibold text-foreground-dark mb-2">
                 Cohesive Pods, Not Freelancers
               </h3>
@@ -220,7 +224,11 @@ const DedicatedTeams = () => {
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-left">
-              <Zap className="w-10 h-10 text-brand-primary mb-4" />
+              <div
+                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+              >
+                <Zap className="w-8 h-8 text-brand-primary" />
+              </div>
               <h3 className="text-xl font-semibold text-foreground-dark mb-2">
                 On-Demand Specialist Access
               </h3>
@@ -232,7 +240,11 @@ const DedicatedTeams = () => {
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-left">
-              <Target className="w-10 h-10 text-brand-primary mb-4" />
+              <div
+                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+              >
+                <Target className="w-8 h-8 text-brand-primary" />
+              </div>
               <h3 className="text-xl font-semibold text-foreground-dark mb-2">
                 Outcome-Focused Mindset
               </h3>
@@ -320,7 +332,7 @@ const DedicatedTeams = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Engineering Pods Section */}
       <section className="py-12 lg:py-16 bg-[#efeff6]">
         <div className="container mx-auto px-4 sm:px-6">
@@ -339,9 +351,10 @@ const DedicatedTeams = () => {
                 </span>
               </h2>
               <p className="text-sm sm:text-base text-foreground-dark/70 max-w-3xl mx-auto font-montserrat">
-                Beyond staff augmentation—we deploy integrated pods that operate as
-                a seamless extension of your team. Our pods combine senior architects, full-stack
-                engineers, and specialized talent with strategic context and proprietary tooling.
+                Beyond staff augmentation—we deploy integrated pods that operate
+                as a seamless extension of your team. Our pods combine senior
+                architects, full-stack engineers, and specialized talent with
+                strategic context and proprietary tooling.
               </p>
             </div>
 
@@ -370,7 +383,8 @@ const DedicatedTeams = () => {
                       "1-2 Specialized Engineers",
                       "1 QA Engineer",
                     ],
-                    bestFor: "Scaling existing products and adding major features",
+                    bestFor:
+                      "Scaling existing products and adding major features",
                     outcomes: "2-3x development velocity increase",
                   },
                   {
@@ -485,7 +499,12 @@ const DedicatedTeams = () => {
               <Button
                 variant="btnPrimary"
                 size="lg"
-                onClick={() => window.open("https://calendly.com/vaughn-soratos-indexnine", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  )
+                }
                 className="w-full sm:w-auto min-w-[200px] h-11 text-sm"
               >
                 Configure Your Pod
@@ -494,7 +513,7 @@ const DedicatedTeams = () => {
           </div>
         </div>
       </section>
-      
+
       <div className={`${styles.sectionBgAI} bg-white`}>
         {/* What Your Team Includes Section */}
         <section
