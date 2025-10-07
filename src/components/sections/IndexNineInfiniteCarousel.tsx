@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 
 import SensableLogo from "../../assets/images/clients/sensable-logo.png";
 import EquifaxLogo from "../../assets/images/clients/equifax-logo.png";
@@ -24,48 +24,71 @@ import SharedstudiosLogo from "../../assets/images/clients/sharedstudios-logo.pn
 import SiLogo from "../../assets/images/clients/si-logo.png";
 import SurgeventuresLogo from "../../assets/images/clients/surgeventures-logo.png";
 
+import TripjackLogo from "../../assets/images/clients/tripjack-logo.png";
+
 // IndexNine Strategic Clients - Enhanced with SVG-based reliable logos
 export const indexNineStrategicClients = [
   {
     id: 1,
+    name: "Annotate",
+    description:
+      "Enabling philanthropy advisors to scale-up and provide tailored support to each donor client",
+    src: AnnotateLogo,
+    fallbackSrc: AnnotateLogo,
+    url: "/insights/case-studies/annotate",
+    industry: "FinTech",
+  },
+  {
+    id: 2,
     name: "CyberArk",
     description:
       "The leader in identity security and privileged access management, securing enterprises worldwide",
     src: CyberarkLogo,
     fallbackSrc: CyberarkLogo,
-    url: "https://www.cyberark.com",
+    url: "/insights/case-studies/zilla",
     industry: "Cybersecurity",
   },
   {
-    id: 2,
+    id: 3,
+    name: "Sports Intractive",
+    description: "Helping 150+ sports organisations turn ideas into impact",
+    src: SiLogo,
+    fallbackSrc: SiLogo,
+    url: "/insights/case-studies/si",
+    industry: "Sports Media",
+  },
+  {
+    id: 4,
     name: "Ginesys",
     description:
       "Cloud-based retail ERP system built for the retail value chain with omnichannel capabilities",
     src: GinsysLogo,
     fallbackSrc: GinsysLogo,
-    url: "https://www.ginesys.com",
+    url: "/insights/case-studies/ginesys",
     industry: "Retail Technology",
   },
   {
-    id: 3,
-    name: "Niva",
-    description: "",
-    src: NivaLogo,
-    fallbackSrc: NivaLogo,
-    url: "#.",
-    industry: "Fintech",
-  },
-  {
-    id: 4,
-    name: "Sensable",
-    description:
-      "Advanced haptic technology solutions enabling touch and force feedback in digital environments",
-    src: SensableLogo,
-    fallbackSrc: SensableLogo,
-    industry: "Haptic Technology",
-  },
-  {
     id: 5,
+    name: "Cygeniq",
+    description:
+      "AI-powered cybersecurity solutions securing digital ecosystems with adaptive threat defense",
+    src: CygeniqLogo,
+    fallbackSrc: CygeniqLogo,
+    url: "/insights/case-studies/cygeniq",
+    industry: "AI Cybersecurity",
+  },
+  {
+    id: 6,
+    name: "TripJack",
+    description:
+      "How Indexnine’s Expertise in Microservices and API Integration Reduced Time-to-Market by 75%, Powering TripJack’s Expansion into New B2B2C Revenue Streams.",
+    src: TripjackLogo,
+    fallbackSrc: TripjackLogo,
+    url: "/insights/case-studies/tripjack",
+    industry: "Travel & Tourism",
+  },
+  {
+    id: 101,
     name: "Equifax",
     description:
       "Global data, analytics and technology company providing consumer credit reporting and insights",
@@ -75,7 +98,7 @@ export const indexNineStrategicClients = [
     industry: "Financial Services",
   },
   {
-    id: 6,
+    id: 102,
     name: "DocuPhase",
     description:
       "Intelligent process automation platform streamlining business operations with document management",
@@ -84,135 +107,137 @@ export const indexNineStrategicClients = [
     url: "https://www.docuphase.com",
     industry: "Process Automation",
   },
+
   {
-    id: 7,
-    name: "Cygeniq",
-    description:
-      "AI-powered cybersecurity solutions securing digital ecosystems with adaptive threat defense",
-    src: CygeniqLogo,
-    fallbackSrc: CygeniqLogo,
-    url: "https://cygeniq.com",
-    industry: "AI Cybersecurity",
-  },
-  {
-    id: 8,
-    name: "Annotate",
-    description: "...",
-    src: AnnotateLogo,
-    fallbackSrc: AnnotateLogo,
-    url: "#.",
-    industry: "Industry",
-  },
-  {
-    id: 9,
+    id: 103,
     name: "Breez",
-    description: "...",
+    description:
+      "Breez is the first runtime Identity Threat Detection, Investigation and Response Platform for SaaS apps, Clouds, and IdPs",
     src: BreezLogo,
     fallbackSrc: BreezLogo,
-    url: "#.",
-    industry: "Industry",
+    url: "https://breezsecurity.io/",
+    industry: "Cybersecurity",
   },
   {
-    id: 10,
+    id: 104,
     name: "Cana",
-    description: "...",
+    description:
+      "Cana eliminates the stuff that doesn't work: no more containers in landfills, on beaches, and in our oceans",
     src: CanaLogo,
     fallbackSrc: CanaLogo,
-    url: "#.",
-    industry: "Industry",
+    url: "https://www.cana.com/",
+    industry: "Technology",
   },
   {
-    id: 11,
+    id: 105,
     name: "Dwellin",
-    description: "...",
+    description:
+      "Empower your home with Dwellin. Seamlessly manage and keep track of all things home",
     src: DwellinLogo,
     fallbackSrc: DwellinLogo,
-    url: "#.",
-    industry: "Industry",
+    url: "https://www.dwellin.com/",
+    industry: "Digital Home Management",
   },
   {
-    id: 12,
+    id: 106,
     name: "Ezrgb",
-    description: "...",
+    description:
+      "Transform your space instantly with our plug-and-play props, featuring preinstalled pixels for an effortless, dazzling display",
     src: EzrgbLogo,
     fallbackSrc: EzrgbLogo,
-    url: "#.",
-    industry: "Industry",
+    url: "https://ezrgb.com/",
+    industry: "Ecommerce",
   },
   {
-    id: 13,
+    id: 107,
     name: "Isana",
-    description: "...",
+    description:
+      "An action-oriented team that focuses on customer deliverables with robust Quality assurance",
     src: IsanaLogo,
     fallbackSrc: IsanaLogo,
-    url: "#.",
-    industry: "Industry",
+    url: "https://www.isanasystems.com",
+    industry: "Technology",
   },
   {
-    id: 15,
+    id: 108,
     name: "Ozone API",
-    description: "...",
+    description:
+      "At Ozone API, we understand that every business is unique. That’s why our software is custom-built with unparalleled flexibility to match your specific needs.",
     src: OzoneLogo,
     fallbackSrc: OzoneLogo,
-    url: "#.",
-    industry: "Industry",
+    url: "https://ozoneapi.com/",
+    industry: "Data Analytics",
   },
   {
-    id: 16,
+    id: 109,
     name: "Platfotm 9",
-    description: "...",
+    description:
+      "Turn your existing infrastructure into a full-featured private cloud. Manage VMs and containers in a private, secure environment controlled by you",
     src: Platfotm9Logo,
     fallbackSrc: Platfotm9Logo,
-    url: "#.",
-    industry: "Industry",
+    url: "https://platform9.com/",
+    industry: "Cloud Computing",
   },
   {
-    id: 17,
+    id: 110,
     name: "Quanfluence",
-    description: "...",
+    description:
+      "Electronic multiply and accumulate and photonic non-linearities - our machine can efficiently explore a vast solution space, enabling it to handle problems",
     src: QuanfluenceLogo,
     fallbackSrc: QuanfluenceLogo,
-    url: "#.",
-    industry: "Industry",
+    url: "https://quanfluence.com/",
+    industry: "AIML",
   },
   {
-    id: 18,
+    id: 111,
     name: "Quichheal",
-    description: "...",
+    description: "",
     src: QuichhealLogo,
     fallbackSrc: QuichhealLogo,
-    url: "#.",
+    url: "https://www.quickheal.co.in",
     industry: "Industry",
   },
   {
-    id: 19,
+    id: 112,
     name: "Sharedstudios",
-    description: "...",
+    description:
+      "Shared Studios connects learning to the real world with our immersive, interconnected digital spaces, Portals",
     src: SharedstudiosLogo,
     fallbackSrc: SharedstudiosLogo,
-    url: "#.",
-    industry: "Industry",
+    url: "https://www.sharedstudios.com/",
+    industry: "Education",
   },
   {
-    id: 20,
-    name: "Sports Intractive",
-    description: "...",
-    src: SiLogo,
-    fallbackSrc: SiLogo,
-    url: "#.",
-    industry: "Industry",
-  },
-  {
-    id: 21,
+    id: 113,
     name: "Surge Ventures",
-    description: "...",
+    description:
+      "Backing and building the next generation of AI-first compliance platforms",
     src: SurgeventuresLogo,
     fallbackSrc: SurgeventuresLogo,
-    url: "#.",
-    industry: "Industry",
+    url: "https://www.surgeventures.com/",
+    industry: "FinTech",
+  },
+  {
+    id: 114,
+    name: "Sensable",
+    description:
+      "Advanced haptic technology solutions enabling touch and force feedback in digital environments",
+    src: SensableLogo,
+    fallbackSrc: SensableLogo,
+    url: "https://www.sensable.com",
+    industry: "Haptic Technology",
+  },
+  {
+    id: 115,
+    name: "Niva",
+    description:
+      "Always-on visibility into daily workforce interactions with machines and materials across all the shifts, in both standard and non-standard (unstructured) environments",
+    src: NivaLogo,
+    fallbackSrc: NivaLogo,
+    url: "https://www.nivabupa.com/",
+    industry: "Fintech",
   },
 ];
-SurgeventuresLogo;
 
 interface ClientLogo {
   id: number;
@@ -251,13 +276,27 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
   } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Create seamless infinite scroll with proper logo distribution
-  const duplicatedLogos = Array(4).fill(logos).flat();
+  const forwardTrackLogos = useMemo(() => {
+    const filteredLogos = logos.filter((logo) => logo.id <= 100);
+    return Array(4).fill(filteredLogos).flat();
+  }, [logos]);
+
+  const reverseTrackLogos = useMemo(() => {
+    const filteredLogos = logos.filter((logo) => logo.id > 101);
+    return Array(4).fill(filteredLogos).flat().reverse();
+  }, [logos]);
 
   // Handle logo interaction with enhanced tooltip support
   const handleLogoClick = (logo: ClientLogo) => {
-    if (logo.url && logo.url !== "#") {
+    if (logo.url && logo.url !== "#" && logo.url !== "#.") {
       window.open(logo.url, "_blank", "noopener,noreferrer");
+    }
+  };
+
+  // Handle logo interaction with enhanced tooltip support
+  const handleLogoClickCases = (logo: ClientLogo) => {
+    if (logo.url && logo.url !== "#" && logo.url !== "#.") {
+      window.open(logo.url, "_self", "noopener,noreferrer");
     }
   };
 
@@ -336,7 +375,6 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
 
     header: {
       textAlign: "center" as const,
-      // marginBottom: "4rem",
       position: "relative" as const,
     },
 
@@ -378,7 +416,6 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       border: "1px solid hsl(262 83% 58% / 0.3)",
       borderRadius: "20px",
       fontSize: "0.875rem",
-      // color: "hsl(180 100% 60%)",
       color: "#00000075",
       fontWeight: "500",
     },
@@ -395,7 +432,7 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       display: "flex",
       alignItems: "center",
       gap: "4rem",
-      animation: `scrollLeft ${speed}s linear infinite`,
+      animation: `scrollLeft ${speed + 18}s linear infinite`,
       animationPlayState: isPaused ? ("paused" as const) : ("running" as const),
       marginBottom: "3rem",
     },
@@ -404,7 +441,7 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       display: "flex",
       alignItems: "center",
       gap: "4rem",
-      animation: `scrollRight ${speed + 18}s linear infinite`,
+      animation: `scrollRight ${speed}s linear infinite`,
       animationPlayState: isPaused ? ("paused" as const) : ("running" as const),
     },
 
@@ -415,7 +452,6 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       minWidth: "240px",
       height: "120px",
       padding: "2rem",
-      // background: "hsl(234 50% 15% / 0.95)",
       background: "#fff",
       border: "1px solid #00000010",
       borderRadius: "12px",
@@ -439,8 +475,6 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
     logoCardGlow: {
       position: "absolute" as const,
       inset: 0,
-      // background:
-      // "linear-gradient(135deg, hsl(262 83% 58% / 0.15), hsl(180 100% 60% / 0.1))",
       opacity: 0,
       transition: "opacity 0.5s ease",
       borderRadius: "16px",
@@ -459,7 +493,6 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       position: "relative" as const,
       zIndex: 2,
       imageRendering: "crisp-edges" as const,
-      // backgroundColor: "#fff",
     },
 
     logoImageHover: {
@@ -507,7 +540,6 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       border: "1px solid hsl(262 83% 58% / 0.4)",
       borderRadius: "16px",
       fontSize: "0.8rem",
-      // color: "hsl(180 100% 60%)",
       color: "#ffffff95",
       fontWeight: "500",
     },
@@ -570,7 +602,6 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
   return (
     <section
       className={`bg-white ${className} `}
-      // style={styles.sectionContainer}
       aria-label="Strategic client partnerships and company information"
     >
       {/* Neural background animation */}
@@ -579,25 +610,12 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
       <div style={styles.container}>
         {/* Header */}
         <header style={styles.header}>
-          {/* <h2 style={styles.title}>{title}</h2> */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.4]">
             {title}
           </h2>
-          <p
-            // style={styles.subtitle}
-            className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto"
-          >
+          <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
             {subtitle}
           </p>
-
-          {/* Industry diversity showcase */}
-          {/* <div style={styles.industryGrid}>
-            {uniqueIndustries.slice(0, 4).map((industry) => (
-              <div key={industry} style={styles.industryTag}>
-                {industry}
-              </div>
-            ))}
-          </div> */}
         </header>
 
         {/* Tooltip */}
@@ -628,10 +646,60 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
             role="region"
             aria-label="Strategic client company logos"
           >
-            {/* First track - left scroll */}
+            {/* First track - left scroll using forwardTrackLogos */}
             <div style={styles.track}>
-              {duplicatedLogos.map((logo, index) => {
+              {forwardTrackLogos.map((logo, index) => {
                 const logoKey = `track1-${logo.id}-${index}`;
+                const isHovered = hoveredLogo === logoKey;
+
+                return (
+                  <div
+                    key={logoKey}
+                    style={{
+                      ...styles.logoCard,
+                      ...(isHovered ? styles.logoCardHover : {}),
+                    }}
+                    onClick={() => handleLogoClickCases(logo)}
+                    onMouseEnter={(e) => handleLogoHover(logoKey, e, logo)}
+                    onMouseLeave={handleLogoLeave}
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`Visit ${logo.name} website - ${logo.industry} leader`}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        handleLogoClickCases(logo);
+                      }
+                    }}
+                  >
+                    {/* Glow effect */}
+                    <div
+                      style={{
+                        ...styles.logoCardGlow,
+                        ...(isHovered ? styles.logoCardGlowHover : {}),
+                      }}
+                    />
+
+                    {/* Logo image with optimized loading */}
+                    <img
+                      src={logo.src}
+                      alt={`${logo.name} - ${logo.industry} solutions partner`}
+                      loading="eager"
+                      decoding="sync"
+                      style={{
+                        ...styles.logoImage,
+                        ...(isHovered ? styles.logoImageHover : {}),
+                      }}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Second track - right scroll using reverseTrackLogos */}
+            <div style={styles.trackReverse}>
+              {reverseTrackLogos.map((logo, index) => {
+                const logoKey = `track2-${logo.id}-${index}`;
                 const isHovered = hoveredLogo === logoKey;
 
                 return (
@@ -676,59 +744,6 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
                   </div>
                 );
               })}
-            </div>
-
-            {/* Second track - right scroll */}
-            <div style={styles.trackReverse}>
-              {duplicatedLogos
-                .slice()
-                .reverse()
-                .map((logo, index) => {
-                  const logoKey = `track2-${logo.id}-${index}`;
-                  const isHovered = hoveredLogo === logoKey;
-
-                  return (
-                    <div
-                      key={logoKey}
-                      style={{
-                        ...styles.logoCard,
-                        ...(isHovered ? styles.logoCardHover : {}),
-                      }}
-                      onClick={() => handleLogoClick(logo)}
-                      onMouseEnter={(e) => handleLogoHover(logoKey, e, logo)}
-                      onMouseLeave={handleLogoLeave}
-                      role="button"
-                      tabIndex={0}
-                      aria-label={`Visit ${logo.name} website - ${logo.industry} leader`}
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter" || e.key === " ") {
-                          e.preventDefault();
-                          handleLogoClick(logo);
-                        }
-                      }}
-                    >
-                      {/* Glow effect */}
-                      <div
-                        style={{
-                          ...styles.logoCardGlow,
-                          ...(isHovered ? styles.logoCardGlowHover : {}),
-                        }}
-                      />
-
-                      {/* Logo image with optimized loading */}
-                      <img
-                        src={logo.src}
-                        alt={`${logo.name} - ${logo.industry} solutions partner`}
-                        loading="eager"
-                        decoding="sync"
-                        style={{
-                          ...styles.logoImage,
-                          ...(isHovered ? styles.logoImageHover : {}),
-                        }}
-                      />
-                    </div>
-                  );
-                })}
             </div>
           </div>
         </div>

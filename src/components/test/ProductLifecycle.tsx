@@ -52,7 +52,7 @@ const ProductLifecycle = () => {
       description: "Technical debt can erode a market leader's position.",
       example:
         "We re-architected a 16-year-old mission-critical system for an e-commerce client, ensuring their foundation was strong enough for future growth and continued dominance.",
-      caseStudyLink: "/insights/case-studies/genesys",
+      caseStudyLink: "/insights/case-studies/ginesys",
       borderStyle: "bord-lt",
     },
   ];

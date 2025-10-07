@@ -31,7 +31,7 @@ import {
 import { Link } from "react-router-dom";
 import styles from "../../../assets/css/stylesheet.module.css";
 import BlogDetailsBg from "@/assets/images/blog-details-bg.webp";
-import CaseInrImg from "@/assets/images/img-genesys.webp";
+import CaseInrImg from "@/assets/images/img-ginesys.webp";
 
 const leftNavLinks = [
   { href: "#intro1", label: "Introduction" },
@@ -54,12 +54,12 @@ const MatureCaseStudy = () => {
   // SEO Configuration
   useSEO({
     title:
-      "Genesys E-commerce Platform Modernization Case Study - Mission-Critical System Transformation | Indexnine",
+      "ginesys E-commerce Platform Modernization Case Study - Mission-Critical System Transformation | Indexnine",
     description:
-      "Learn how Indexnine modernized Genesys's 16-year-old legacy e-commerce platform, achieving 100% uptime and zero-downtime migration of 178 integrations through event-driven architecture.",
+      "Learn how Indexnine modernized ginesys's 16-year-old legacy e-commerce platform, achieving 100% uptime and zero-downtime migration of 178 integrations through event-driven architecture.",
     keywords:
       "platform modernization, legacy system migration, event-driven architecture, e-commerce platform, zero-downtime migration, system reliability, enterprise modernization, PHP modernization",
-    canonicalUrl: "https://www.indexnine.com/insights/case-studies/genesys",
+    canonicalUrl: "https://www.indexnine.com/insights/case-studies/ginesys",
     ogImage: "https://www.indexnine.com/images/case-studies/mature-og.jpg",
     ogType: "article",
   });
@@ -92,19 +92,19 @@ const MatureCaseStudy = () => {
     <div className="min-h-screen bg-white relative bg-[#fff] bg-no-repeat">
       {/* SEO Structured Data */}
       <ArticleSchema
-        title="Mission-Critical Modernization: Genesys E-commerce Platform"
+        title="Mission-Critical Modernization: ginesys E-commerce Platform"
         description="Product modernization and event-driven architecture transformation for a mature e-commerce platform serving thousands of merchants."
         author="Indexnine"
         datePublished="2024-01-30"
         dateModified="2024-01-30"
         image="https://www.indexnine.com/images/case-studies/mature-hero.jpg"
-        url="https://www.indexnine.com/insights/case-studies/genesys"
+        url="https://www.indexnine.com/insights/case-studies/ginesys"
       />
 
       <WebPageSchema
-        title="Mature Case Study: Genesys Platform Modernization"
+        title="Mature Case Study: ginesys Platform Modernization"
         description="Legacy platform modernization case study showcasing event-driven architecture and zero-downtime migration success"
-        url="https://indexnine.ai/insights/case-studies/genesys"
+        url="https://indexnine.ai/insights/case-studies/ginesys"
       />
 
       <BreadcrumbSchema
@@ -117,7 +117,7 @@ const MatureCaseStudy = () => {
           },
           {
             name: "Mature Phase",
-            url: "https://indexnine.ai/insights/case-studies/genesys",
+            url: "https://indexnine.ai/insights/case-studies/ginesys",
           },
         ]}
       />
@@ -125,7 +125,9 @@ const MatureCaseStudy = () => {
 
       {/* Hero Section */}
       <a id="intro1"></a>
-      <div className={`bg-transparent pt-20 sm:pt-28 lg:pt-32 ${styles.sectionBgCase}`}>
+      <div
+        className={`bg-transparent pt-20 sm:pt-28 lg:pt-32 ${styles.sectionBgCase}`}
+      >
         <div className="container grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12">
           <div className="text-foreground-dark hidden lg:block">
             <div className="sticky top-[128px] pb-8">
@@ -176,7 +178,7 @@ const MatureCaseStudy = () => {
                       <span className="text-white/50  text-xs mr-2">
                         Client
                       </span>{" "}
-                      Genesys
+                      ginesys
                     </span>
                     <span className="inline-block px-6 py-2 bg-black/20 shadow-md text-white rounded-lg text-sm font-medium border border-white/30 backdrop-blur-sm mr-3">
                       <span className="text-white/50  text-xs mr-2">
@@ -192,7 +194,7 @@ const MatureCaseStudy = () => {
                         Mission-Critical Modernization :
                       </span>
                       <span className="text-[#505dfd] leading-[1.05]">
-                        Genesys E-commerce Platform
+                        ginesys E-commerce Platform
                       </span>
                     </h1>
                     <p className="text-xl sm:text-lg text-foreground/100 mb-0 max-w-4xl leading-relaxed font-regular animate-slide-up font-montserrat">
@@ -337,7 +339,7 @@ const MatureCaseStudy = () => {
                   </div>
 
                   <p className="text-md text-foreground-dark leading-relaxed mb-8">
-                    For thousands of merchants across India, Genesys's platform
+                    For thousands of merchants across India, ginesys's platform
                     was their lifeline to the world of e-commerce. The platform
                     was an integration engine, connecting sellers on platforms
                     like Amazon, Myntra, and Flipkart, and managing a constant
@@ -514,7 +516,7 @@ const MatureCaseStudy = () => {
                           Phase 3: A Foundation for Future Growth
                         </h3>
                         <p className="text-foreground-dark-muted leading-relaxed mb-6 col-span-2">
-                          Our engagement with Genesys pulled their most critical
+                          Our engagement with ginesys pulled their most critical
                           platform out of the tech-debt depths and repositioned
                           it for a stable, scalable future.
                         </p>
@@ -632,7 +634,7 @@ const MatureCaseStudy = () => {
                     className={`p-8 bg-background relative rounded-xl mb-6 ${styles.middleCardBg2}`}
                   >
                     <p className="text-lg text-foreground text-center font-medium">
-                      The Genesys story is a testament to our product
+                      The ginesys story is a testament to our product
                       modernization capabilities. We cultivate a deep bench of
                       industry-veteran expertise at every phase of the product
                       lifecycle. We don't just build new things; we have the
@@ -655,7 +657,7 @@ const MatureCaseStudy = () => {
                       Why It Worked
                     </h3>
                     <p className="text-md text-foreground-dark-muted text-center mb-8">
-                      The success of the Genesys engagement was a direct result
+                      The success of the ginesys engagement was a direct result
                       of our engineering practices and strategic mindset.
                     </p>
 

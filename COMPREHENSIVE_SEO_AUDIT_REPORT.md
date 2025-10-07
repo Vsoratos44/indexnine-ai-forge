@@ -18,29 +18,51 @@ This comprehensive audit reveals an enterprise-grade SEO implementation across t
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B2B Product Engineering and AI Consulting Services | IndexNine</title>
-    <meta name="description" content="Indexnine offers best-in-class product engineering and custom software development for startups and enterprises. Find out what we can do for you today." />
+    <title>
+      B2B Product Engineering and AI Consulting Services | IndexNine
+    </title>
+    <meta
+      name="description"
+      content="Indexnine offers best-in-class product engineering and custom software development for startups and enterprises. Find out what we can do for you today."
+    />
     <parameter name="author" content="IndexNine Technologies" />
-    
+
     <!-- Open Graph -->
-    <meta property="og:title" content="IndexNine | Product Innovation & Engineering Excellence" />
-    <meta property="og:description" content="IndexNine delivers product innovation and software engineering excellence..." />
+    <meta
+      property="og:title"
+      content="IndexNine | Product Innovation & Engineering Excellence"
+    />
+    <meta
+      property="og:description"
+      content="IndexNine delivers product innovation and software engineering excellence..."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
+    <meta
+      property="og:image"
+      content="https://lovable.dev/opengraph-image-p98pqg.png"
+    />
+
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@indexnine_tech" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
+    <meta
+      name="twitter:image"
+      content="https://lovable.dev/opengraph-image-p98pqg.png"
+    />
+
     <!-- Favicon & Analytics -->
     <link rel="icon" type="image/x-icon" href="/src/assets/images/fav-i9.png" />
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key="VEw1FN6d9iUdTopagdLEDw" async></script>
+    <script
+      src="https://analytics.ahrefs.com/analytics.js"
+      data-key="VEw1FN6d9iUdTopagdLEDw"
+      async
+    ></script>
   </head>
 </html>
 ```
 
 **SEO Benefits**:
+
 - Proper viewport for mobile-first indexing
 - Complete Open Graph implementation for social sharing
 - Twitter Card optimization
@@ -51,24 +73,28 @@ This comprehensive audit reveals an enterprise-grade SEO implementation across t
 **Implementation**: Advanced canonical redirect system in `src/hooks/useCanonicalRedirect.tsx`
 
 ```typescript
-export const useCanonicalRedirect = (options: CanonicalRedirectOptions = {}) => {
-  const { canonicalDomain = 'www.indexnine.com', enabled = true } = options;
+export const useCanonicalRedirect = (
+  options: CanonicalRedirectOptions = {}
+) => {
+  const { canonicalDomain = "www.indexnine.com", enabled = true } = options;
 
   useEffect(() => {
     // Skip in development or Cloudflare Pages
-    if (window.location.hostname.includes('.pages.dev') || 
-        process.env.NODE_ENV === 'development') {
+    if (
+      window.location.hostname.includes(".pages.dev") ||
+      process.env.NODE_ENV === "development"
+    ) {
       return;
     }
 
     const currentHost = window.location.hostname;
-    const validDomains = ['indexnine.com', 'www.indexnine.com'];
-    
+    const validDomains = ["indexnine.com", "www.indexnine.com"];
+
     if (validDomains.includes(currentHost) && currentHost !== canonicalDomain) {
       const canonicalUrl = new URL(window.location.href);
       canonicalUrl.hostname = canonicalDomain;
-      canonicalUrl.protocol = 'https:';
-      
+      canonicalUrl.protocol = "https:";
+
       window.location.replace(canonicalUrl.href);
     }
   }, [canonicalDomain, enabled]);
@@ -76,6 +102,7 @@ export const useCanonicalRedirect = (options: CanonicalRedirectOptions = {}) => 
 ```
 
 **SEO Benefits**:
+
 - Prevents duplicate content issues
 - Consolidates link equity to canonical domain
 - Preserves query parameters and fragments
@@ -86,32 +113,33 @@ export const useCanonicalRedirect = (options: CanonicalRedirectOptions = {}) => 
 **Implementation**: Centralized SEO utilities in `src/utils/seoUtils.ts`
 
 ```typescript
-export const CANONICAL_DOMAIN = 'www.indexnine.com';
-export const CANONICAL_PROTOCOL = 'https';
+export const CANONICAL_DOMAIN = "www.indexnine.com";
+export const CANONICAL_PROTOCOL = "https";
 
 export const generateCanonicalUrl = (path: string): string => {
-  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
   return `${CANONICAL_PROTOCOL}://${CANONICAL_DOMAIN}${cleanPath}`;
 };
 
 export const STANDARD_BREADCRUMBS = {
-  home: createBreadcrumbItem('/', 'Home'),
-  services: createBreadcrumbItem('/services', 'Services'),
-  insights: createBreadcrumbItem('/insights', 'Insights'),
-  studios: createBreadcrumbItem('/studios', 'Studios'),
+  home: createBreadcrumbItem("/", "Home"),
+  services: createBreadcrumbItem("/services", "Services"),
+  insights: createBreadcrumbItem("/insights", "Insights"),
+  studios: createBreadcrumbItem("/studios", "Studios"),
   // ... more breadcrumb items
 };
 
 export const SERVICE_ROUTES = {
-  ai: '/services/ai',
-  dataEngineering: '/services/data-engineering',
-  qualityEngineering: '/services/quality-engineering',
-  customSoftware: '/services/custom-software',
-  consulting: '/services/consulting'
+  ai: "/services/ai",
+  dataEngineering: "/services/data-engineering",
+  qualityEngineering: "/services/quality-engineering",
+  customSoftware: "/services/custom-software",
+  consulting: "/services/consulting",
 };
 ```
 
 **SEO Benefits**:
+
 - Consistent internal linking structure
 - Canonical URL generation for all pages
 - Centralized route management
@@ -127,101 +155,122 @@ export const SERVICE_ROUTES = {
 
 ```typescript
 export const useSEO = ({
-  title, description, canonicalUrl, keywords, ogImage, 
-  ogType = 'website', twitterCard = 'summary_large_image',
-  author, publishedDate, modifiedDate, articleSection,
-  readingTime, schemaType = 'WebPage'
+  title,
+  description,
+  canonicalUrl,
+  keywords,
+  ogImage,
+  ogType = "website",
+  twitterCard = "summary_large_image",
+  author,
+  publishedDate,
+  modifiedDate,
+  articleSection,
+  readingTime,
+  schemaType = "WebPage",
 }: SEOProps) => {
   useEffect(() => {
     // Dynamic title generation with brand consistency
-    const fullTitle = title.includes('IndexNine') ? title : `${title} | IndexNine Technologies`;
+    const fullTitle = title.includes("IndexNine")
+      ? title
+      : `${title} | IndexNine Technologies`;
     document.title = fullTitle;
 
     // Comprehensive meta tag management
     const setMetaTag = (name: string, content: string, property = false) => {
-      const attribute = property ? 'property' : 'name';
+      const attribute = property ? "property" : "name";
       let tag = document.querySelector(`meta[${attribute}="${name}"]`);
-      
+
       if (!tag) {
-        tag = document.createElement('meta');
+        tag = document.createElement("meta");
         tag.setAttribute(attribute, name);
         document.head.appendChild(tag);
       }
-      tag.setAttribute('content', content);
+      tag.setAttribute("content", content);
     };
 
     // SEO-optimized robots directive
-    setMetaTag('robots', 'index, follow, max-image-preview:large, max-snippet:-1');
-    
+    setMetaTag(
+      "robots",
+      "index, follow, max-image-preview:large, max-snippet:-1"
+    );
+
     // Mobile optimization meta tags
-    setMetaTag('format-detection', 'telephone=no');
-    setMetaTag('mobile-web-app-capable', 'yes');
-    setMetaTag('apple-mobile-web-app-capable', 'yes');
+    setMetaTag("format-detection", "telephone=no");
+    setMetaTag("mobile-web-app-capable", "yes");
+    setMetaTag("apple-mobile-web-app-capable", "yes");
 
     // Enhanced Open Graph implementation
-    setMetaTag('og:site_name', 'IndexNine Technologies', true);
-    setMetaTag('og:title', fullTitle, true);
-    setMetaTag('og:description', description, true);
-    setMetaTag('og:type', ogType, true);
-    setMetaTag('og:url', canonicalUrl || window.location.href, true);
-    setMetaTag('og:locale', 'en_US', true);
+    setMetaTag("og:site_name", "IndexNine Technologies", true);
+    setMetaTag("og:title", fullTitle, true);
+    setMetaTag("og:description", description, true);
+    setMetaTag("og:type", ogType, true);
+    setMetaTag("og:url", canonicalUrl || window.location.href, true);
+    setMetaTag("og:locale", "en_US", true);
 
     // Twitter Cards with proper attribution
-    setMetaTag('twitter:site', '@IndexNineTech');
-    setMetaTag('twitter:creator', '@IndexNineTech');
+    setMetaTag("twitter:site", "@IndexNineTech");
+    setMetaTag("twitter:creator", "@IndexNineTech");
 
     // Dynamic structured data for articles
-    if (schemaType === 'Article' || schemaType === 'BlogPosting') {
+    if (schemaType === "Article" || schemaType === "BlogPosting") {
       const structuredData = {
-        '@context': 'https://schema.org',
-        '@type': schemaType,
+        "@context": "https://schema.org",
+        "@type": schemaType,
         headline: title,
         description: description,
         url: canonicalUrl || window.location.href,
         datePublished: publishedDate,
         dateModified: modifiedDate || publishedDate,
         author: {
-          '@type': 'Organization',
-          name: author || 'IndexNine Technologies'
+          "@type": "Organization",
+          name: author || "IndexNine Technologies",
         },
         publisher: {
-          '@type': 'Organization',
-          name: 'IndexNine Technologies',
+          "@type": "Organization",
+          name: "IndexNine Technologies",
           logo: {
-            '@type': 'ImageObject',
-            url: 'https://www.indexnine.com/logo.png'
-          }
-        }
+            "@type": "ImageObject",
+            url: "https://www.indexnine.com/logo.png",
+          },
+        },
       };
 
       // Inject structured data
-      let structuredDataScript = document.querySelector('script[data-seo-structured-data]');
+      let structuredDataScript = document.querySelector(
+        "script[data-seo-structured-data]"
+      );
       if (!structuredDataScript) {
-        structuredDataScript = document.createElement('script');
-        structuredDataScript.setAttribute('type', 'application/ld+json');
-        structuredDataScript.setAttribute('data-seo-structured-data', 'true');
+        structuredDataScript = document.createElement("script");
+        structuredDataScript.setAttribute("type", "application/ld+json");
+        structuredDataScript.setAttribute("data-seo-structured-data", "true");
         document.head.appendChild(structuredDataScript);
       }
       structuredDataScript.textContent = JSON.stringify(structuredData);
     }
-  }, [title, description, canonicalUrl, /* ... other dependencies */]);
+  }, [title, description, canonicalUrl /* ... other dependencies */]);
 };
 ```
 
 **Usage Example from Homepage**:
+
 ```typescript
 // src/pages/Index.tsx
 useSEO({
-  title: "Enterprise Product Engineering & AI Consulting Services | Custom Software Development | IndexNine",
-  description: "Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions. Transform your legacy systems with expert product lifecycle engineering.",
-  keywords: "product engineering, AI consulting, custom software development, data engineering, quality engineering, enterprise software, legacy system modernization",
+  title:
+    "Enterprise Product Engineering & AI Consulting Services | Custom Software Development | IndexNine",
+  description:
+    "Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions. Transform your legacy systems with expert product lifecycle engineering.",
+  keywords:
+    "product engineering, AI consulting, custom software development, data engineering, quality engineering, enterprise software, legacy system modernization",
   canonicalUrl: "https://www.indexnine.com/",
   ogImage: "https://www.indexnine.com/images/og-homepage.jpg",
-  schemaType: 'WebPage'
+  schemaType: "WebPage",
 });
 ```
 
 **SEO Benefits**:
+
 - Dynamic meta tag management
 - Consistent brand naming
 - Mobile-optimized meta tags
@@ -242,7 +291,7 @@ The website implements a comprehensive schema markup system designed for both tr
 ```typescript
 /**
  * SEOStructuredData Component
- * 
+ *
  * Key Schema Types Implemented:
  * - Organization: Company information and branding for entity recognition
  * - WebPage: Page-level metadata and context for better content understanding
@@ -257,31 +306,40 @@ The website implements a comprehensive schema markup system designed for both tr
  * - BreadcrumbList: Navigation context for site architecture understanding
  */
 
-export const SEOStructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
+export const SEOStructuredData: React.FC<StructuredDataProps> = ({
+  type,
+  data,
+}) => {
   const generateStructuredData = () => {
     const baseData = {
-      '@context': 'https://schema.org',
-      '@type': type,
-      ...data
+      "@context": "https://schema.org",
+      "@type": type,
+      ...data,
     };
-    
+
     // Add common organization data for service/article types
-    if (type === 'Service' || type === 'Article' || type === 'FAQPage' || type === 'HowTo' || type === 'JobPosting') {
+    if (
+      type === "Service" ||
+      type === "Article" ||
+      type === "FAQPage" ||
+      type === "HowTo" ||
+      type === "JobPosting"
+    ) {
       baseData.provider = {
-        '@type': 'Organization',
-        name: 'IndexNine Technologies',
-        url: 'https://www.indexnine.com'
+        "@type": "Organization",
+        name: "IndexNine Technologies",
+        url: "https://www.indexnine.com",
       };
     }
-    
+
     return baseData;
   };
-  
+
   return (
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(generateStructuredData())
+        __html: JSON.stringify(generateStructuredData()),
       }}
     />
   );
@@ -295,24 +353,25 @@ export const OrganizationSchema = () => (
   <SEOStructuredData
     type="Organization"
     data={{
-      name: 'IndexNine Technologies',
-      url: 'https://www.indexnine.com',
-      logo: 'https://www.indexnine.com/images/logo.png',
-      description: 'Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions.',
+      name: "IndexNine Technologies",
+      url: "https://www.indexnine.com",
+      logo: "https://www.indexnine.com/images/logo.png",
+      description:
+        "Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions.",
       address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'San Francisco',
-        addressRegion: 'CA',
-        addressCountry: 'US'
+        "@type": "PostalAddress",
+        addressLocality: "San Francisco",
+        addressRegion: "CA",
+        addressCountry: "US",
       },
       contactPoint: {
-        '@type': 'ContactPoint',
-        contactType: 'customer service'
+        "@type": "ContactPoint",
+        contactType: "customer service",
       },
       sameAs: [
-        'https://www.linkedin.com/company/indexnine',
-        'https://twitter.com/IndexNineTech'
-      ]
+        "https://www.linkedin.com/company/indexnine",
+        "https://twitter.com/IndexNineTech",
+      ],
     }}
   />
 );
@@ -321,9 +380,16 @@ export const OrganizationSchema = () => (
 ### 3.3 Article Schema for Blog Posts
 
 ```typescript
-export const ArticleSchema = ({ 
-  title, description, url, datePublished, dateModified, 
-  author, wordCount, readingTime, image 
+export const ArticleSchema = ({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  author,
+  wordCount,
+  readingTime,
+  image,
 }: ArticleSchemaProps) => (
   <SEOStructuredData
     type="Article"
@@ -334,27 +400,31 @@ export const ArticleSchema = ({
       datePublished,
       dateModified: dateModified || datePublished,
       author: {
-        '@type': 'Person',
-        name: author || 'IndexNine Technologies'
+        "@type": "Person",
+        name: author || "IndexNine Technologies",
       },
       publisher: {
-        '@type': 'Organization',
-        name: 'IndexNine Technologies',
+        "@type": "Organization",
+        name: "IndexNine Technologies",
         logo: {
-          '@type': 'ImageObject',
-          url: 'https://www.indexnine.com/images/logo.png'
-        }
+          "@type": "ImageObject",
+          url: "https://www.indexnine.com/images/logo.png",
+        },
       },
       mainEntityOfPage: {
-        '@type': 'WebPage',
-        '@id': url
+        "@type": "WebPage",
+        "@id": url,
       },
-      image: image ? {
-        '@type': 'ImageObject',
-        url: image
-      } : undefined,
+      image: image
+        ? {
+            "@type": "ImageObject",
+            url: image,
+          }
+        : undefined,
       wordCount,
-      timeRequired: readingTime ? `PT${readingTime.replace(/\D/g, '')}M` : undefined
+      timeRequired: readingTime
+        ? `PT${readingTime.replace(/\D/g, "")}M`
+        : undefined,
     }}
   />
 );
@@ -363,36 +433,45 @@ export const ArticleSchema = ({
 ### 3.4 FAQ Schema Implementation
 
 ```typescript
-export const FAQSchema = ({ faqItems }: { faqItems: Array<{ question: string; answer: string }> }) => (
+export const FAQSchema = ({
+  faqItems,
+}: {
+  faqItems: Array<{ question: string; answer: string }>;
+}) => (
   <SEOStructuredData
     type="FAQPage"
     data={{
-      mainEntity: faqItems.map(item => ({
-        '@type': 'Question',
+      mainEntity: faqItems.map((item) => ({
+        "@type": "Question",
         name: item.question,
         acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.answer
-        }
-      }))
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
     }}
   />
 );
 ```
 
 **Usage in Service Pages**:
+
 ```typescript
 // Example from AI Services page
-<FAQSchema faqItems={[
-  {
-    question: "What AI services does IndexNine offer?",
-    answer: "IndexNine offers comprehensive AI consulting including machine learning model development, natural language processing, computer vision, predictive analytics, and AI strategy consulting for enterprise transformation."
-  },
-  {
-    question: "How long does an AI implementation project typically take?",
-    answer: "AI implementation timelines vary based on complexity, typically ranging from 3-12 months. We provide detailed project timelines after initial consultation and requirements analysis."
-  }
-]} />
+<FAQSchema
+  faqItems={[
+    {
+      question: "What AI services does IndexNine offer?",
+      answer:
+        "IndexNine offers comprehensive AI consulting including machine learning model development, natural language processing, computer vision, predictive analytics, and AI strategy consulting for enterprise transformation.",
+    },
+    {
+      question: "How long does an AI implementation project typically take?",
+      answer:
+        "AI implementation timelines vary based on complexity, typically ranging from 3-12 months. We provide detailed project timelines after initial consultation and requirements analysis.",
+    },
+  ]}
+/>
 ```
 
 ### 3.5 Service Area Schema for Local SEO
@@ -400,67 +479,68 @@ export const FAQSchema = ({ faqItems }: { faqItems: Array<{ question: string; an
 **Location**: `src/components/seo/ServiceAreaSchema.tsx`
 
 ```typescript
-export const ServiceAreaSchema: React.FC<ServiceAreaProps> = ({ 
+export const ServiceAreaSchema: React.FC<ServiceAreaProps> = ({
   serviceName = "Enterprise Technology Services",
-  serviceType = "Professional Services"
+  serviceType = "Professional Services",
 }) => (
   <SEOStructuredData
     type="Service"
     data={{
-      '@type': 'ProfessionalService',
+      "@type": "ProfessionalService",
       name: serviceName,
       serviceType,
       provider: {
-        '@type': 'Organization',
-        name: 'IndexNine Technologies',
-        url: 'https://www.indexnine.com'
+        "@type": "Organization",
+        name: "IndexNine Technologies",
+        url: "https://www.indexnine.com",
       },
       areaServed: [
         {
-          '@type': 'Country',
-          name: 'United States',
-          sameAs: 'https://en.wikipedia.org/wiki/United_States'
+          "@type": "Country",
+          name: "United States",
+          sameAs: "https://en.wikipedia.org/wiki/United_States",
         },
         {
-          '@type': 'Country', 
-          name: 'Canada',
-          sameAs: 'https://en.wikipedia.org/wiki/Canada'
+          "@type": "Country",
+          name: "Canada",
+          sameAs: "https://en.wikipedia.org/wiki/Canada",
         },
         {
-          '@type': 'Country',
-          name: 'United Kingdom', 
-          sameAs: 'https://en.wikipedia.org/wiki/United_Kingdom'
+          "@type": "Country",
+          name: "United Kingdom",
+          sameAs: "https://en.wikipedia.org/wiki/United_Kingdom",
         },
         {
-          '@type': 'AdministrativeArea',
-          name: 'European Union',
-          sameAs: 'https://en.wikipedia.org/wiki/European_Union'
-        }
+          "@type": "AdministrativeArea",
+          name: "European Union",
+          sameAs: "https://en.wikipedia.org/wiki/European_Union",
+        },
       ],
       availableChannel: [
         {
-          '@type': 'ServiceChannel',
-          serviceType: 'Remote Consulting',
-          availableLanguage: 'English'
+          "@type": "ServiceChannel",
+          serviceType: "Remote Consulting",
+          availableLanguage: "English",
         },
         {
-          '@type': 'ServiceChannel', 
-          serviceType: 'On-site Consulting',
-          availableLanguage: 'English'
-        }
+          "@type": "ServiceChannel",
+          serviceType: "On-site Consulting",
+          availableLanguage: "English",
+        },
       ],
       hoursAvailable: {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
-        closes: '18:00'
-      }
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "18:00",
+      },
     }}
   />
 );
 ```
 
 **SEO Benefits**:
+
 - Enhanced local search visibility
 - Geographic targeting for international markets
 - Service availability definition
@@ -476,28 +556,34 @@ export const ServiceAreaSchema: React.FC<ServiceAreaProps> = ({
 
 ```typescript
 export const PerformanceOptimizer: React.FC<PerformanceOptimizerProps> = ({
-  children, enableOptimizations = true, reportToAnalytics = true
+  children,
+  enableOptimizations = true,
+  reportToAnalytics = true,
 }) => {
   useEffect(() => {
     if (enableOptimizations) {
       // Core Web Vitals monitoring setup
       const startPerformanceMonitoring = () => {
-        if ('PerformanceObserver' in window) {
+        if ("PerformanceObserver" in window) {
           const observer = new PerformanceObserver((list) => {
             list.getEntries().forEach((entry) => {
               const value = (entry as any).value || entry.startTime;
               if (reportToAnalytics && window.gtag) {
-                window.gtag('event', 'core_web_vitals', {
+                window.gtag("event", "core_web_vitals", {
                   metric_name: entry.name,
                   metric_value: value,
-                  page_url: window.location.href
+                  page_url: window.location.href,
                 });
               }
             });
           });
-          
-          observer.observe({ 
-            entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] 
+
+          observer.observe({
+            entryTypes: [
+              "largest-contentful-paint",
+              "first-input",
+              "layout-shift",
+            ],
           });
         }
       };
@@ -506,17 +592,17 @@ export const PerformanceOptimizer: React.FC<PerformanceOptimizerProps> = ({
       const optimizations = {
         preloadCriticalAssets: () => {
           const criticalAssets = [
-            '/fonts/montserrat-variable.woff2',
-            '/images/logo.webp'
+            "/fonts/montserrat-variable.woff2",
+            "/images/logo.webp",
           ];
-          
-          criticalAssets.forEach(asset => {
-            const link = document.createElement('link');
-            link.rel = 'preload';
+
+          criticalAssets.forEach((asset) => {
+            const link = document.createElement("link");
+            link.rel = "preload";
             link.href = asset;
-            link.as = asset.includes('font') ? 'font' : 'image';
-            if (asset.includes('font')) {
-              link.crossOrigin = 'anonymous';
+            link.as = asset.includes("font") ? "font" : "image";
+            if (asset.includes("font")) {
+              link.crossOrigin = "anonymous";
             }
             document.head.appendChild(link);
           });
@@ -524,24 +610,30 @@ export const PerformanceOptimizer: React.FC<PerformanceOptimizerProps> = ({
 
         addResourceHints: () => {
           const hints = [
-            { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-            { rel: 'dns-prefetch', href: '//www.googletagmanager.com' },
-            { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true }
+            { rel: "dns-prefetch", href: "//fonts.googleapis.com" },
+            { rel: "dns-prefetch", href: "//www.googletagmanager.com" },
+            {
+              rel: "preconnect",
+              href: "https://fonts.gstatic.com",
+              crossorigin: true,
+            },
           ];
 
-          hints.forEach(hint => {
-            const existing = document.querySelector(`link[href="${hint.href}"]`);
+          hints.forEach((hint) => {
+            const existing = document.querySelector(
+              `link[href="${hint.href}"]`
+            );
             if (!existing) {
-              const link = document.createElement('link');
+              const link = document.createElement("link");
               link.rel = hint.rel;
               link.href = hint.href;
               if (hint.crossorigin) {
-                link.crossOrigin = 'anonymous';
+                link.crossOrigin = "anonymous";
               }
               document.head.appendChild(link);
             }
           });
-        }
+        },
       };
 
       optimizations.preloadCriticalAssets();
@@ -552,6 +644,7 @@ export const PerformanceOptimizer: React.FC<PerformanceOptimizerProps> = ({
 ```
 
 **SEO Benefits**:
+
 - Automatic Core Web Vitals tracking
 - Resource preloading for faster page loads
 - DNS prefetching for third-party resources
@@ -591,21 +684,28 @@ const criticalCSS = `
 
 ```typescript
 export const SEOAnalytics: React.FC<SEOAnalyticsProps> = ({
-  pageTitle, pageUrl, category = 'General',
-  enableSearchConsole = true, enableGTM = true, trackingId
+  pageTitle,
+  pageUrl,
+  category = "General",
+  enableSearchConsole = true,
+  enableGTM = true,
+  trackingId,
 }) => {
   useEffect(() => {
     if (enableSearchConsole) {
       // Track search-related events
-      const trackSearchEvent = (eventName: string, parameters: Record<string, any>) => {
+      const trackSearchEvent = (
+        eventName: string,
+        parameters: Record<string, any>
+      ) => {
         if (window.gtag) {
-          window.gtag('event', eventName, {
-            event_category: 'SEO',
+          window.gtag("event", eventName, {
+            event_category: "SEO",
             event_label: pageTitle || document.title,
             page_title: pageTitle,
             page_location: pageUrl || window.location.href,
             page_category: category,
-            ...parameters
+            ...parameters,
           });
         }
       };
@@ -613,12 +713,15 @@ export const SEOAnalytics: React.FC<SEOAnalyticsProps> = ({
       // Track scroll depth for engagement signals
       let maxScroll = 0;
       const trackScrollDepth = () => {
-        const scrolled = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        const scrolled = Math.round(
+          (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
+            100
+        );
         if (scrolled > maxScroll && scrolled % 25 === 0) {
           maxScroll = scrolled;
-          trackSearchEvent('scroll_depth', {
+          trackSearchEvent("scroll_depth", {
             scroll_percentage: scrolled,
-            page_category: category
+            page_category: category,
           });
         }
       };
@@ -628,21 +731,22 @@ export const SEOAnalytics: React.FC<SEOAnalyticsProps> = ({
       const trackTimeOnPage = () => {
         const timeSpent = Math.round((Date.now() - startTime) / 1000);
         if (timeSpent > 30) {
-          trackSearchEvent('engaged_session', {
+          trackSearchEvent("engaged_session", {
             engagement_time_msec: timeSpent * 1000,
-            page_category: category
+            page_category: category,
           });
         }
       };
 
-      window.addEventListener('scroll', trackScrollDepth, { passive: true });
-      window.addEventListener('beforeunload', trackTimeOnPage);
+      window.addEventListener("scroll", trackScrollDepth, { passive: true });
+      window.addEventListener("beforeunload", trackTimeOnPage);
     }
   }, [pageTitle, pageUrl, category, enableSearchConsole]);
 };
 ```
 
 **Tracked Metrics**:
+
 - Page views with SEO context
 - Scroll depth for engagement signals
 - Time on page for dwell time analysis
@@ -661,43 +765,75 @@ export const SEOAnalytics: React.FC<SEOAnalyticsProps> = ({
 serve(async (req) => {
   try {
     const currentDate = new Date().toISOString();
-    
+
     const pages = [
       // Main pages with high priority
-      { url: '/', lastmod: currentDate, priority: '1.0', changefreq: 'daily' },
-      { url: '/services', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
-      
+      { url: "/", lastmod: currentDate, priority: "1.0", changefreq: "daily" },
+      {
+        url: "/services",
+        lastmod: currentDate,
+        priority: "0.9",
+        changefreq: "weekly",
+      },
+
       // Service pages
-      { url: '/services/ai', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
-      { url: '/services/data-engineering', lastmod: currentDate, priority: '0.9', changefreq: 'weekly' },
-      
+      {
+        url: "/services/ai",
+        lastmod: currentDate,
+        priority: "0.9",
+        changefreq: "weekly",
+      },
+      {
+        url: "/services/data-engineering",
+        lastmod: currentDate,
+        priority: "0.9",
+        changefreq: "weekly",
+      },
+
       // Blog posts and case studies
-      { url: '/insights/blog/agentic-ai-enterprise-future', lastmod: currentDate, priority: '0.6', changefreq: 'monthly' },
-      { url: '/insights/case-studies/genesys', lastmod: currentDate, priority: '0.6', changefreq: 'monthly' },
+      {
+        url: "/insights/blog/agentic-ai-enterprise-future",
+        lastmod: currentDate,
+        priority: "0.6",
+        changefreq: "monthly",
+      },
+      {
+        url: "/insights/case-studies/ginesys",
+        lastmod: currentDate,
+        priority: "0.6",
+        changefreq: "monthly",
+      },
     ];
-    
+
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${pages.map(page => `  <url>
+  ${pages
+    .map(
+      (page) => `  <url>
     <loc>${baseUrl}${page.url}</loc>
     <lastmod>${page.lastmod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
-  </url>`).join('\n')}
+  </url>`
+    )
+    .join("\n")}
 </urlset>`;
-    
+
     return new Response(sitemap, {
       headers: {
-        'Content-Type': 'application/xml',
-        'Cache-Control': 'public, max-age=3600'
-      }
+        "Content-Type": "application/xml",
+        "Cache-Control": "public, max-age=3600",
+      },
     });
   } catch (error) {
-    console.error('Error generating sitemap:', error);
-    return new Response(JSON.stringify({ error: 'Failed to generate sitemap' }), { 
-      status: 500,
-      headers: { 'Content-Type': 'application/json' } 
-    });
+    console.error("Error generating sitemap:", error);
+    return new Response(
+      JSON.stringify({ error: "Failed to generate sitemap" }),
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
   }
 });
 ```
@@ -728,6 +864,7 @@ Allow: /events/
 ```
 
 **SEO Benefits**:
+
 - Clear crawling instructions for search engines
 - Protected admin areas from indexing
 - Sitemap location specification
@@ -743,15 +880,35 @@ Allow: /events/
 
 ```typescript
 export const SEOOptimizedLayout: React.FC<SEOOptimizedLayoutProps> = ({
-  children, title, description, keywords, canonicalUrl, ogImage, 
-  author, publishedDate, modifiedDate, articleSection, readingTime,
-  schemaType = 'WebPage', breadcrumbs = [], showHeader = true, showFooter = true
+  children,
+  title,
+  description,
+  keywords,
+  canonicalUrl,
+  ogImage,
+  author,
+  publishedDate,
+  modifiedDate,
+  articleSection,
+  readingTime,
+  schemaType = "WebPage",
+  breadcrumbs = [],
+  showHeader = true,
+  showFooter = true,
 }) => {
   // SEO optimization
   useSEO({
-    title, description, canonicalUrl, keywords, ogImage,
-    author, publishedDate, modifiedDate, articleSection, 
-    readingTime, schemaType
+    title,
+    description,
+    canonicalUrl,
+    keywords,
+    ogImage,
+    author,
+    publishedDate,
+    modifiedDate,
+    articleSection,
+    readingTime,
+    schemaType,
   });
 
   // Mobile and performance optimizations
@@ -761,19 +918,19 @@ export const SEOOptimizedLayout: React.FC<SEOOptimizedLayoutProps> = ({
   // Core Web Vitals monitoring
   useEffect(() => {
     const reportWebVitals = (metric: any) => {
-      console.log('Core Web Vital:', metric);
+      console.log("Core Web Vital:", metric);
       if (window.gtag) {
-        window.gtag('event', 'web_vital', {
-          event_category: 'Performance',
+        window.gtag("event", "web_vital", {
+          event_category: "Performance",
           event_label: metric.name,
           value: metric.value,
-          non_interaction: true
+          non_interaction: true,
         });
       }
     };
-    
+
     // Monitor performance metrics
-    if ('web-vitals' in window) {
+    if ("web-vitals" in window) {
       // Integration would go here for web-vitals library
     }
   }, []);
@@ -786,24 +943,25 @@ export const SEOOptimizedLayout: React.FC<SEOOptimizedLayoutProps> = ({
         description={description}
         url={canonicalUrl || window.location.href}
       />
-      {breadcrumbs.length > 0 && (
-        <BreadcrumbSchema items={breadcrumbs} />
-      )}
+      {breadcrumbs.length > 0 && <BreadcrumbSchema items={breadcrumbs} />}
 
       {/* Skip to main content for accessibility */}
-      <a 
-        href="#main-content" 
+      <a
+        href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-primary-foreground px-4 py-2 rounded z-50"
       >
         Skip to main content
       </a>
 
       {showHeader && <Header />}
-      
-      <main id="main-content" className={`flex-1 ${isOptimized ? 'optimized' : ''}`}>
+
+      <main
+        id="main-content"
+        className={`flex-1 ${isOptimized ? "optimized" : ""}`}
+      >
         {children}
       </main>
-      
+
       {showFooter && <Footer />}
     </div>
   );
@@ -861,15 +1019,15 @@ The design system includes SEO-optimized CSS variables and performance considera
 :root {
   --brand-primary: 237 98% 65%; /* #505dfd - Deep purple primary */
   --brand-primary-dark: 262 83% 58%; /* #8B5CF6 - Deep purple primary */
-  
+
   /* Performance-optimized gradients */
   --gradient-hero: var(--neural-dark);
   --gradient-primary: var(--neural-primary);
-  
+
   /* Advanced Animation System - Performance Optimized */
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fast: all 0.15s ease-out;
-  
+
   /* Typography Scale - Responsive */
   --text-hero: clamp(3rem, 8vw, 5rem);
   --text-h1: clamp(2.5rem, 6vw, 4rem);
@@ -889,12 +1047,13 @@ The design system includes SEO-optimized CSS variables and performance considera
 
 /* Font display optimization for SEO */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-display: swap; /* Prevents layout shift */
 }
 ```
 
 **SEO Benefits**:
+
 - `font-display: swap` prevents layout shift (CLS optimization)
 - Clamp functions for responsive typography without layout shifts
 - Performance-optimized CSS custom properties
@@ -911,33 +1070,44 @@ The design system includes SEO-optimized CSS variables and performance considera
 The website implements a comprehensive keyword strategy across:
 
 **Branded Keywords**:
+
 - "IndexNine Technologies"
 - "IndexNine product engineering"
 - "IndexNine AI consulting"
 
 **Short-tail Keywords**:
+
 - AI & ML: "artificial intelligence", "machine learning", "AI consulting"
 - Data Engineering: "data engineering", "analytics platform", "data pipeline"
 - Quality Engineering: "software testing", "QA automation", "test automation"
 
 **Long-tail Keywords**:
+
 - "enterprise AI consulting services"
 - "custom software development for startups"
 - "legacy system modernization"
 - "product engineering lifecycle management"
 
 **Implementation in Components**:
+
 ```typescript
 // Natural keyword integration in content
 const heroTitle = "Enterprise Product Engineering & AI Consulting Services";
-const heroDescription = "Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions.";
+const heroDescription =
+  "Leading product engineering and AI consulting services for enterprises. Custom software development, data engineering, quality engineering, and AI implementation solutions.";
 
 // Structured data keyword integration
 const serviceSchema = {
   name: "AI Consulting Services",
-  description: "Expert artificial intelligence consulting for enterprise digital transformation",
+  description:
+    "Expert artificial intelligence consulting for enterprise digital transformation",
   serviceType: "Technology Consulting",
-  keywords: ["AI consulting", "machine learning", "enterprise AI", "artificial intelligence services"]
+  keywords: [
+    "AI consulting",
+    "machine learning",
+    "enterprise AI",
+    "artificial intelligence services",
+  ],
 };
 ```
 
@@ -953,16 +1123,20 @@ const { isOptimized } = useMobileOptimization();
 useTouchOptimization();
 
 // Mobile-specific meta tags in useSEO hook
-setMetaTag('format-detection', 'telephone=no');
-setMetaTag('mobile-web-app-capable', 'yes');
-setMetaTag('apple-mobile-web-app-capable', 'yes');
-setMetaTag('apple-mobile-web-app-status-bar-style', 'default');
+setMetaTag("format-detection", "telephone=no");
+setMetaTag("mobile-web-app-capable", "yes");
+setMetaTag("apple-mobile-web-app-capable", "yes");
+setMetaTag("apple-mobile-web-app-status-bar-style", "default");
 
 // Viewport optimization
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+/>;
 ```
 
 **Mobile SEO Features**:
+
 - Responsive design with mobile-first approach
 - Touch optimization for mobile interactions
 - Progressive Web App capabilities
@@ -977,16 +1151,16 @@ setMetaTag('apple-mobile-web-app-status-bar-style', 'default');
 
 ```typescript
 // Language specification in meta tags
-setMetaTag('og:locale', 'en_US', true);
+setMetaTag("og:locale", "en_US", true);
 
 // Service area coverage for international SEO
 areaServed: [
-  { '@type': 'Country', name: 'United States' },
-  { '@type': 'Country', name: 'Canada' },
-  { '@type': 'Country', name: 'United Kingdom' },
-  { '@type': 'Country', name: 'Australia' },
-  { '@type': 'AdministrativeArea', name: 'European Union' }
-]
+  { "@type": "Country", name: "United States" },
+  { "@type": "Country", name: "Canada" },
+  { "@type": "Country", name: "United Kingdom" },
+  { "@type": "Country", name: "Australia" },
+  { "@type": "AdministrativeArea", name: "European Union" },
+];
 ```
 
 ---
@@ -996,24 +1170,26 @@ areaServed: [
 ### 12.1 Analytics Implementation
 
 **Third-party Integrations**:
+
 - Ahrefs Analytics: `data-key="VEw1FN6d9iUdTopagdLEDw"`
 - Google Tag Manager setup for comprehensive tracking
 - Search Console verification ready
 - Core Web Vitals monitoring
 
 **Custom Event Tracking**:
+
 ```typescript
 // SEO-specific event tracking
-window.gtag('event', 'core_web_vitals', {
+window.gtag("event", "core_web_vitals", {
   metric_name: entry.name,
   metric_value: value,
-  page_url: window.location.href
+  page_url: window.location.href,
 });
 
 // Engagement tracking
-window.gtag('event', 'engaged_session', {
+window.gtag("event", "engaged_session", {
   engagement_time_msec: timeSpent * 1000,
-  page_category: category
+  page_category: category,
 });
 ```
 
@@ -1026,25 +1202,25 @@ window.gtag('event', 'engaged_session', {
 **Location**: `src/components/InternalLinkAudit.tsx`
 
 ```typescript
-import { validateInternalLinks, SERVICE_ROUTES } from '@/utils/seoUtils';
+import { validateInternalLinks, SERVICE_ROUTES } from "@/utils/seoUtils";
 
 const InternalLinkAudit = () => {
   const auditResults = validateInternalLinks([
-    '/services/ai',
-    '/services/data-engineering',
-    '/insights/blogs',
-    '/company/about'
+    "/services/ai",
+    "/services/data-engineering",
+    "/insights/blogs",
+    "/company/about",
   ]);
 
   return (
     <div className="audit-results">
       <h2>Internal Link Audit</h2>
       <p>Canonical Domain: www.indexnine.com</p>
-      
-      {auditResults.map(result => (
+
+      {auditResults.map((result) => (
         <div key={result.path}>
           <p>Path: {result.path}</p>
-          <p>Valid: {result.isValid ? 'Yes' : 'No'}</p>
+          <p>Valid: {result.isValid ? "Yes" : "No"}</p>
           <p>Canonical URL: {result.canonicalUrl}</p>
           {result.suggestion && <p>Suggestion: {result.suggestion}</p>}
         </div>
@@ -1091,21 +1267,25 @@ const InternalLinkAudit = () => {
 ### 15.1 Phase 4 Enhancement Opportunities
 
 1. **Enhanced Video SEO**:
+
    - Implement VideoObject schema for homepage videos
    - Add video transcripts for accessibility and SEO
    - Video sitemap generation
 
 2. **Advanced Local SEO**:
+
    - Google My Business integration
    - Local business schema enhancements
    - Review schema implementation
 
 3. **AI Search Optimization**:
+
    - Speakable schema for voice search
    - QAPage schema for Q&A content
    - Enhanced entity linking
 
 4. **Technical SEO Enhancements**:
+
    - Image sitemap generation
    - AMP implementation consideration
    - Progressive Web App optimization
@@ -1122,6 +1302,7 @@ const InternalLinkAudit = () => {
 The IndexNine Technologies website demonstrates enterprise-grade SEO implementation with sophisticated technical architecture. The combination of dynamic SEO management, comprehensive structured data, performance optimization, and AI-ready markup positions the site excellently for both traditional search engines and emerging AI search systems.
 
 **Key Strengths**:
+
 - Scalable SEO architecture with reusable components
 - Comprehensive structured data implementation (11+ schema types)
 - Advanced performance optimization with Core Web Vitals monitoring

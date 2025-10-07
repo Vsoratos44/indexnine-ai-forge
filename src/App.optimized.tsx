@@ -59,7 +59,7 @@ const PivotCaseStudy = lazy(
 );
 const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/Si"));
 const MatureCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/Genesys")
+  () => import("./pages/insights/case-studies/Ginesys")
 );
 const CygeniqCaseStudy = lazy(
   () => import("./pages/insights/case-studies/Cygeniq")
@@ -179,7 +179,7 @@ const App = () => (
                 element={<GrowCaseStudy />}
               />
               <Route
-                path="/insights/case-studies/genesys"
+                path="/insights/case-studies/ginesys"
                 element={<MatureCaseStudy />}
               />
               <Route
@@ -196,7 +196,7 @@ const App = () => (
               <Route path="/case-studies/zilla" element={<PivotCaseStudy />} />
               <Route path="/case-studies/si" element={<GrowCaseStudy />} />
               <Route
-                path="/case-studies/genesys"
+                path="/case-studies/ginesys"
                 element={<MatureCaseStudy />}
               />
 

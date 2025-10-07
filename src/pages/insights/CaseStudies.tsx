@@ -155,14 +155,14 @@ const CaseStudies = () => {
       },
     },
     {
-      id: "genesys",
-      title: "Mission-Critical Modernization: Genesys E-commerce Platform",
+      id: "ginesys",
+      title: "Mission-Critical Modernization: ginesys E-commerce Platform",
       subtitle:
         "Product modernization and event-driven architecture transformation for a mature e-commerce platform serving thousands of merchants.",
-      client: "Genesys",
+      client: "ginesys",
       industry: "E-commerce",
       challenge:
-        "For thousands of merchants across India, Genesys's platform was their lifeline to e-commerce. The 16-year-old legacy PHP system with 178 integrations was incredibly fragile, causing daily crashes and threatening business continuity.",
+        "For thousands of merchants across India, ginesys's platform was their lifeline to e-commerce. The 16-year-old legacy PHP system with 178 integrations was incredibly fragile, causing daily crashes and threatening business continuity.",
       solution:
         "A comprehensive platform modernization using event-driven architecture, asynchronous message queues, and a canonical data model to create a resilient, scalable system with zero-downtime migration.",
       results: [
@@ -179,7 +179,7 @@ const CaseStudies = () => {
       serviceLink: "/services/custom-software",
       detailedContent: {
         challenge:
-          "For thousands of merchants across India, Genesys's platform was their lifeline to the world of e-commerce. The platform was an integration engine, connecting sellers on platforms like Amazon, Myntra, and Flipkart, and managing a constant flow of inventory updates, orders, and transactions. The problem? The engine was over 16 years old, built on legacy PHP, and was bursting at the seams.",
+          "For thousands of merchants across India, ginesys's platform was their lifeline to the world of e-commerce. The platform was an integration engine, connecting sellers on platforms like Amazon, Myntra, and Flipkart, and managing a constant flow of inventory updates, orders, and transactions. The problem? The engine was over 16 years old, built on legacy PHP, and was bursting at the seams.",
         approach: [
           "Architectural Strategy - The Event-Driven Approach",
           "Technical Execution - Building a Resilient, Scalable Hub",
@@ -370,9 +370,9 @@ const CaseStudies = () => {
               </span>
             </h1>
             <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-foreground/85 mb-6 sm:mb-8 leading-relaxed font-light animate-slide-up font-montserrat max-w-4xl">
-              Real-world transformations across the product lifecycle. From
-              bold launches to strategic pivots, discover how we engineer
-              competitive advantage through product excellence.
+              Real-world transformations across the product lifecycle. From bold
+              launches to strategic pivots, discover how we engineer competitive
+              advantage through product excellence.
             </p>
           </div>
         </div>

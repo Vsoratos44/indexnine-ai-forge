@@ -87,8 +87,8 @@ const CloudInfrastructureAutomationTerraform = lazy(
 );
 
 // Case Study Pages - Lazy loaded
-// const GenesysModernization = lazy(
-//   () => import("./pages/insights/case-study/GenesysModernization")
+// const ginesysModernization = lazy(
+//   () => import("./pages/insights/case-study/ginesysModernization")
 // );
 
 const CygeniqCaseStudy = lazy(
@@ -105,7 +105,7 @@ const PivotCaseStudy = lazy(
 );
 const GrowCaseStudy = lazy(() => import("./pages/insights/case-studies/Si"));
 const MatureCaseStudy = lazy(
-  () => import("./pages/insights/case-studies/Genesys")
+  () => import("./pages/insights/case-studies/Ginesys")
 );
 
 // About Pages - Lazy loaded
@@ -307,7 +307,7 @@ const App = () => {
                   element={<GrowCaseStudy />}
                 />
                 <Route
-                  path="/insights/case-studies/genesys"
+                  path="/insights/case-studies/ginesys"
                   element={<MatureCaseStudy />}
                 />
                 <Route
@@ -319,8 +319,8 @@ const App = () => {
                   element={<TripjackCaseStudy />}
                 />
                 {/* <Route
-                  path="/insights/case-study/genesys-modernization"
-                  element={<GenesysModernization />}
+                  path="/insights/case-study/ginesys-modernization"
+                  element={<ginesysModernization />}
                 /> */}
 
                 {/* Legacy case study redirects */}
@@ -335,7 +335,7 @@ const App = () => {
                 />
                 <Route path="/case-studies/si" element={<GrowCaseStudy />} />
                 <Route
-                  path="/case-studies/genesys"
+                  path="/case-studies/ginesys"
                   element={<MatureCaseStudy />}
                 />
 

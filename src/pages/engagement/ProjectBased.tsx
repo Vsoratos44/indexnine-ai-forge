@@ -343,7 +343,7 @@ const ProjectBased = () => {
                 </Link>
 
                 {/* Genesis Case Study */}
-                <Link to="/insights/case-studies/genesys" className="block">
+                <Link to="/insights/case-studies/ginesys" className="block">
                   <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
                       <div

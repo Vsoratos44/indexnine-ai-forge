@@ -720,10 +720,10 @@ const MicroservicesVsMonolith = () => {
                   <p>
                     Our engagement with{" "}
                     <Link
-                      to="/insights/case-studies/genesys"
+                      to="/insights/case-studies/ginesys"
                       className="text-brand-primary hover:underline font-semibold"
                     >
-                      Genesys
+                      ginesys
                     </Link>
                     , an e-commerce technology giant, is the quintessential
                     example of an organization hitting the scaling limits of a
