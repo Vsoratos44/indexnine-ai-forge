@@ -10,7 +10,7 @@ export const GrowthEngineIntroSection: React.FC = () => {
   };
 
   return (
-    <section id="growth-engine" className="pt-24 lg:pt-32 bg-[#fff]">
+    <section id="growth-engine" className="pt-24 lg:pt-32 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8">

@@ -3,37 +3,41 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export const CaseStudiesSection: React.FC = () => {
   const caseStudies = [
     {
       title: "Sportz Interactive - AI Transformation",
       outcome:
-        "Progressing towards a 65% gross margin through AI-driven operational efficiency.",
-      link: "/insights/case-studies/sportz-interactive",
+        "Key Outcome: Progressing towards a 65% gross margin through AI-driven operational efficiency.",
+      link: "/insights/case-studies/si",
       tag: "AI Transformation",
     },
     {
       title: "Surge Ventures - AI-Driven Compliance Automation",
       outcome:
-        "Saved 50 hours in audit prep time and achieved 35% faster regulatory reviews.",
-      link: "/insights/case-studies/surge-ventures",
+        "Key Outcome: Saved 50 hours in audit prep time and achieved 35% faster regulatory reviews.",
+      link: "#.",
       tag: "Compliance Automation",
     },
-  ];
-
-  const blogs = [
     {
       title: "The Future is Agentic. Is Your Enterprise Ready?",
-      excerpt:
+      outcome:
         "The enterprise technology landscape is buzzing with AI agents. Learn strategic adoption with extreme caution.",
-      link: "/insights/blogs/agentic-enterprise",
+      link: "/insights/blogs/agentic-ai-enterprise-future",
       tag: "Thought Leadership",
     },
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-b from-[#fff] via-[#efeff6] to-[#efeff6]">
+    <section className="pb-24 lg:pb-32 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="max-w-8xl mx-auto">
           <div className="text-center mb-16">
@@ -47,8 +51,69 @@ export const CaseStudiesSection: React.FC = () => {
             </p>
           </div>
 
+          <Carousel
+            className="w-full"
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
+            <CarouselContent className="ml-4 mr-4">
+              {caseStudies.map((item, index) => {
+                return (
+                  <CarouselItem
+                    key={index}
+                    className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                  >
+                    <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
+                      {/* Enhanced Glassmorphism Card */}
+
+                      <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
+                        <div>
+                          <span className="inline-block px-4 mb-4 py-2 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold">
+                            {item.tag}
+                          </span>
+                        </div>
+                        {/* Content Header */}
+
+                        {/* Image with Glassmorphism */}
+
+                        {/* Content Body */}
+                        <div className="relative flex-1 flex flex-col">
+                          <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
+                            {item.title}
+                          </h3>
+
+                          <div className="relative flex items-start justify-between mb-6 text-foreground-dark">
+                            {item.outcome}
+                          </div>
+
+                          <div className="text-left">
+                            <Button variant="btnLink" size="link">
+                              <Link
+                                className="flex items-center pr-2"
+                                to={item.link}
+                              >
+                                Read More{" "}
+                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                              </Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+
+            {/* Enhanced Glassmorphism Navigation */}
+            <CarouselPrevious className="left-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+            <CarouselNext className="right-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+          </Carousel>
+
           {/* Featured Case Studies */}
-          <div className="mb-16">
+          {/* <div className="mb-16">
             <h3 className="text-2xl font-semibold text-foreground-dark mb-8">
               Featured Case Studies
             </h3>
@@ -68,7 +133,7 @@ export const CaseStudiesSection: React.FC = () => {
                       {study.title}
                     </h4>
                     <p className="text-foreground-dark/80 mb-6 leading-relaxed">
-                      <span className="font-semibold">Key Outcome:</span>{" "}
+                      <span className="font-semibold"></span>{" "}
                       {study.outcome}
                     </p>
                     <Link
@@ -82,10 +147,10 @@ export const CaseStudiesSection: React.FC = () => {
                 </Card>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Latest Insights */}
-          <div className="mb-12">
+          {/* <div className="mb-12">
             <h3 className="text-2xl font-semibold text-foreground-dark mb-8">
               Latest Insights from Our Blog
             </h3>
@@ -118,15 +183,12 @@ export const CaseStudiesSection: React.FC = () => {
                 </Card>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* CTA */}
           <div className="text-center">
             <Button variant="btnPrimary" size="lg" asChild>
-              <Link to="/insights">
-                Explore All Insights
-                <ArrowRight className="h-4 w-4 ml-2" />
-              </Link>
+              <Link to="/insights/case-studies">Explore All Insights</Link>
             </Button>
           </div>
         </div>

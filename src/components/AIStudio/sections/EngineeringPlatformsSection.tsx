@@ -71,7 +71,7 @@ export const EngineeringPlatformsSection: React.FC = () => {
   ];
 
   return (
-    <section className={`py-24 lg:py-32 bg-[#fff] ${styles.sectionBgAI}`}>
+    <section className={`pb-24 lg:pb-32 bg-transparent`}>
       <div className="container mx-auto px-6">
         <div className="max-w-8xl mx-auto">
           <div className="text-center mb-16">
@@ -97,7 +97,9 @@ export const EngineeringPlatformsSection: React.FC = () => {
                   className="relative overflow-hidden bg-white border border-[#00000019] rounded-2xl p-8 hover:shadow-lg transition-all duration-500"
                 >
                   <CardContent className="p-0">
-                    <div className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}>
+                    <div
+                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
                       <IconComponent className="w-8 h-8 text-brand-primary" />
                     </div>
                     <h3 className="text-2xl font-semibold mb-6 text-foreground-dark">

@@ -26,6 +26,7 @@ import { EngineeringPlatformsSection } from "../../components/AIStudio/sections/
 import { CaseStudiesSection } from "../../components/AIStudio/sections/CaseStudiesSection";
 import { FAQSection } from "../../components/AIStudio/sections/FAQSection";
 import { FinalCTASection } from "../../components/AIStudio/sections/FinalCTASection";
+import styles from "../../assets/css/stylesheet.module.css";
 
 const AiMl = () => {
   // SEO Configuration
@@ -122,43 +123,46 @@ const AiMl = () => {
         <Header />
 
         {/* Page Sections - New Narrative Flow */}
-        
+
         {/* 1. Hero Section */}
         <HeroSection />
+        <div
+          className={`bg-white bg-fixed bg-top bg-cover ${styles.sectionBgAI}`}
+        >
+          {/* 2. Problem Statement: "The AI Dilemma" */}
+          <DilemmaSection />
 
-        {/* 2. Problem Statement: "The AI Dilemma" */}
-        <DilemmaSection />
+          {/* 3. NEW: The Solution - AI Growth Engine Introduction */}
+          <GrowthEngineIntroSection />
 
-        {/* 3. NEW: The Solution - AI Growth Engine Introduction */}
-        <GrowthEngineIntroSection />
+          {/* 4. NEW: Your On-Ramp - Assessment Section (includes Philosophy & Audit Offerings) */}
+          <AssessmentSection />
+          <div className={` ${styles.pageDarkBg}`}>
+            {/* 5. P2R Framework Section */}
+            <P2RFrameworkSection />
 
-        {/* 4. NEW: Your On-Ramp - Assessment Section (includes Philosophy & Audit Offerings) */}
-        <AssessmentSection />
+            {/* 6. Audit Process Section */}
+            <AuditProcessSection />
+          </div>
 
-        {/* 5. P2R Framework Section */}
-        <P2RFrameworkSection />
+          {/* 8. NEW: Phase 1 - LAUNCH (Engineering Pods & Agentic Workflows) */}
+          <LaunchPhaseSection />
 
-        {/* 6. Audit Process Section */}
-        <AuditProcessSection />
+          {/* 7. NEW: Phase 2 - VALIDATE (Eval-First Engineering) */}
+          <ValidatePhaseSection />
 
-        {/* 7. NEW: Phase 2 - VALIDATE (Eval-First Engineering) */}
-        <ValidatePhaseSection />
+          {/* 9. NEW: Phase 3 - SCALE (AI Center of Excellence & PRIME Framework) */}
+          <ScalePhaseSection />
 
-        {/* 8. NEW: Phase 1 - LAUNCH (Engineering Pods & Agentic Workflows) */}
-        <LaunchPhaseSection />
+          {/* 10. NEW: Engineering Platforms & Capabilities */}
+          <EngineeringPlatformsSection />
 
-        {/* 9. NEW: Phase 3 - SCALE (AI Center of Excellence & PRIME Framework) */}
-        <ScalePhaseSection />
+          {/* 11. NEW: Case Studies & Insights */}
+          <CaseStudiesSection />
 
-        {/* 10. NEW: Engineering Platforms & Capabilities */}
-        <EngineeringPlatformsSection />
-
-        {/* 11. NEW: Case Studies & Insights */}
-        <CaseStudiesSection />
-
-        {/* 12. FAQ Section */}
-        <FAQSection />
-
+          {/* 12. FAQ Section */}
+          <FAQSection />
+        </div>
         {/* 13. Final CTA */}
         <FinalCTASection />
 

@@ -26,10 +26,7 @@ export const P2RFrameworkSection: React.FC = () => {
   ];
 
   return (
-    <section
-      id="p2r-framework"
-      className={`py-24 lg:py-32 ${styles.pageDarkBg}`}
-    >
+    <section id="p2r-framework" className={`py-24 lg:py-32 bg-transparent`}>
       <div className="container mx-auto px-6">
         <div className="max-w-8xl mx-auto">
           <div className="text-center mb-16">
@@ -58,8 +55,10 @@ export const P2RFrameworkSection: React.FC = () => {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <CardContent className="p-0 relative">
-                    <div className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}>
-                      <IconComponent className="w-8 h-8 text-brand-primary" />
+                    <div
+                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
+                      <IconComponent className="w-8 h-8 text-white" />
                     </div>
                     <h3 className="text-2xl font-semibold mb-4 text-foreground-light">
                       {dimension.title}

@@ -42,7 +42,7 @@ export const FAQSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-b from-[#efeff6] to-[#fff]">
+    <section className="pb-24 lg:pb-32 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -56,7 +56,7 @@ export const FAQSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="space-y-0 rounded-3xl bg-[#fff] px-8 py-4 shadow-lg">
+          <div className="space-y-0 rounded-3xl bg-[#fff] px-8  shadow-lg">
             {faqData.map((faq, index) => (
               <FAQItem
                 key={index}

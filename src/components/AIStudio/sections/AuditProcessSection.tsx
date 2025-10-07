@@ -21,7 +21,8 @@ export const AuditProcessSection: React.FC = () => {
     {
       icon: "Map",
       title: "Roadmap Creation",
-      description: "Developing a phased implementation plan with clear milestones.",
+      description:
+        "Developing a phased implementation plan with clear milestones.",
     },
     {
       icon: "Shield",
@@ -32,7 +33,7 @@ export const AuditProcessSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-background-dark">
+    <section className="pb-24 lg:pb-32 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="max-w-8xl mx-auto">
           <div className="text-center mb-16">

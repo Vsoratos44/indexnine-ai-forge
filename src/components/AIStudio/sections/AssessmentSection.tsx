@@ -14,7 +14,7 @@ export const AssessmentSection: React.FC = () => {
   return (
     <section
       id="assessment-section"
-      className={`py-24 lg:py-32 bg-white ${styles.sectionBgAI}`}
+      className={`py-24 lg:py-32 bg-transparent`}
     >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
@@ -158,21 +158,26 @@ export const AssessmentSection: React.FC = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center bg-white rounded-3xl p-8 lg:p-12 shadow-lg max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
-              Ready to build your strategic AI roadmap?
-            </h3>
-            <p className="text-foreground-dark/80 mb-6">
-              Let's validate your AI opportunity and create a clear path to
-              measurable outcomes.
-            </p>
-            <Button
-              variant="btnPrimary"
-              size="lg"
-              onClick={() => window.open(CALENDLY_URL, "_blank")}
-            >
-              Start Your AI Assessment
-            </Button>
+          <div
+            className={`bg-gradient-subtle p-[5px]  text-center  ${styles["bord-lt-rb"]} rounded-[1.125rem]`}
+          >
+            {" "}
+            <div className="bg-[#fff] rounded-[1rem] p-12">
+              <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
+                Ready to build your strategic AI roadmap?
+              </h3>
+              <p className="text-foreground-dark/80 mb-6">
+                Let's validate your AI opportunity and create a clear path to
+                measurable outcomes.
+              </p>
+              <Button
+                variant="btnPrimary"
+                size="lg"
+                onClick={() => window.open(CALENDLY_URL, "_blank")}
+              >
+                Start Your AI Assessment
+              </Button>
+            </div>
           </div>
         </div>
       </div>

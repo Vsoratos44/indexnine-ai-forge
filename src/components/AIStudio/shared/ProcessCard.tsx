@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { getIconComponent } from "@/utils/iconMapper";
+import styles from "../../../assets/css/stylesheet.module.css";
 
 interface ProcessCardProps {
   icon: string;
@@ -18,13 +19,15 @@ export const ProcessCard: React.FC<ProcessCardProps> = ({
   const IconComponent = getIconComponent(icon);
 
   return (
-    <Card className="relative overflow-hidden bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] border border-[#ffffff20] rounded-xl p-6 text-center hover:border-brand-primary/40 transition-all duration-300">
+    <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
       <CardContent className="p-0">
-        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-brand-primary to-brand-purple flex items-center justify-center mx-auto mb-4 shadow-lg">
+        {/* <div className="w-12 h-12 rounded-full bg-gradient-to-br from-brand-primary to-brand-purple flex items-center justify-center mx-auto mb-4 shadow-lg">
           <span className="text-xl font-bold text-white">{step}</span>
-        </div>
-        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 flex items-center justify-center mx-auto mb-4">
-          <IconComponent className="w-8 h-8 text-brand-primary" />
+        </div> */}
+        <div
+          className={`relative w-16 h-16 flex mb-6 items-center justify-center mx-auto transition-all ${styles.icnBg}`}
+        >
+          <IconComponent className="w-6 h-6 text-white" />
         </div>
         <h4 className="text-lg font-semibold text-foreground-light mb-2">
           {title}

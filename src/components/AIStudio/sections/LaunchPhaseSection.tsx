@@ -7,7 +7,7 @@ import styles from "../../../assets/css/stylesheet.module.css";
 
 export const LaunchPhaseSection: React.FC = () => {
   return (
-    <section className="py-24 lg:py-32 bg-[#efeff6]">
+    <section className="py-24 lg:py-32 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -22,18 +22,20 @@ export const LaunchPhaseSection: React.FC = () => {
             </h2>
             <p className="text-lg text-foreground-dark/80 max-w-4xl mx-auto">
               Launching a successful AI platform requires more than just an
-              algorithm; it demands robust, full-stack engineering. We accelerate
-              your time-to-market by deploying our specialized teams and
-              proprietary architectural patterns.
+              algorithm; it demands robust, full-stack engineering. We
+              accelerate your time-to-market by deploying our specialized teams
+              and proprietary architectural patterns.
             </p>
           </div>
 
           {/* Two-Column Feature Grid */}
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
             {/* Feature 1 */}
-            <Card className="relative overflow-hidden bg-white border border-[#00000019] rounded-2xl p-8 hover:shadow-lg transition-all duration-500">
+            <Card className="relative flex flex-col overflow-hidden bg-white border border-[#00000019] rounded-2xl p-8 hover:shadow-lg transition-all duration-500">
               <CardContent className="p-0">
-                <div className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}>
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
                   <Users className="w-8 h-8 text-brand-primary" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
@@ -46,20 +48,24 @@ export const LaunchPhaseSection: React.FC = () => {
                   Product Mindset, ensuring every technical decision is aligned
                   with your business goals.
                 </p>
+              </CardContent>
+              <div className="mt-auto">
                 <Button
                   variant="btnPrimary"
                   onClick={() => window.open(CALENDLY_URL, "_blank")}
                 >
                   Assemble Your AI Pod
                 </Button>
-              </CardContent>
+              </div>
             </Card>
 
             {/* Feature 2 */}
-            <Card className="relative overflow-hidden bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] border border-[#ffffff19] rounded-2xl p-8 hover:shadow-lg transition-all duration-500">
+            <Card className="relative flex flex-col overflow-hidden bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] border border-[#ffffff19] rounded-2xl p-8 hover:shadow-lg transition-all duration-500">
               <CardContent className="p-0">
-                <div className="relative w-20 h-20 flex mb-6 items-center justify-center bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 rounded-2xl">
-                  <GitMerge className="w-8 h-8 text-brand-primary" />
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
+                  <GitMerge className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-4 text-foreground">
                   Engineer Sophisticated Agentic Workflows
@@ -71,32 +77,38 @@ export const LaunchPhaseSection: React.FC = () => {
                   reliable, predictable, and trustworthy AI systems that solve
                   real-world problems.
                 </p>
+              </CardContent>
+              <div className="mt-auto">
                 <Button
                   variant="btnSecondary"
                   onClick={() => window.open(CALENDLY_URL, "_blank")}
                 >
                   Ready to build your AI vision?
                 </Button>
-              </CardContent>
+              </div>
             </Card>
           </div>
 
           {/* Main CTA Section */}
-          <div className="text-center bg-white rounded-3xl p-8 lg:p-12 shadow-lg">
-            <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
-              Ready to build your AI vision?
-            </h3>
-            <p className="text-foreground-dark/80 mb-6 max-w-2xl mx-auto">
-              Let's deploy a dedicated engineering pod to transform your AI
-              ambitions into production-ready platforms.
-            </p>
-            <Button
-              variant="btnPrimary"
-              size="lg"
-              onClick={() => window.open(CALENDLY_URL, "_blank")}
-            >
-              Assemble Your AI Pod
-            </Button>
+          <div
+            className={`bg-gradient-subtle p-[5px]  text-center  ${styles["bord-lt-rb"]} rounded-[1.125rem]`}
+          >
+            <div className="bg-[#fff] rounded-[1rem] p-12">
+              <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
+                Ready to build your AI vision?
+              </h3>
+              <p className="text-foreground-dark/80 mb-6 max-w-2xl mx-auto">
+                Let's deploy a dedicated engineering pod to transform your AI
+                ambitions into production-ready platforms.
+              </p>
+              <Button
+                variant="btnPrimary"
+                size="lg"
+                onClick={() => window.open(CALENDLY_URL, "_blank")}
+              >
+                Assemble Your AI Pod
+              </Button>
+            </div>
           </div>
         </div>
       </div>

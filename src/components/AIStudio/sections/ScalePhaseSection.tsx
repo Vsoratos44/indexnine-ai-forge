@@ -7,47 +7,72 @@ import styles from "../../../assets/css/stylesheet.module.css";
 
 export const ScalePhaseSection: React.FC = () => {
   const primeSteps = [
-    { letter: "P", title: "Plan", description: "Define AI vision aligned with business OKRs." },
-    { letter: "R", title: "Recruit", description: "Establish the CoE, identify champions, and build governance." },
-    { letter: "I", title: "Inspire", description: "Deploy role-specific training, create sandboxes, and launch hackathons." },
-    { letter: "M", title: "Motivate", description: "Implement recognition systems and reward contributions." },
-    { letter: "E", title: "Evolve", description: "Track productivity gains and scale successful initiatives." },
+    {
+      letter: "P",
+      title: "Plan",
+      description: "Define AI vision aligned with business OKRs.",
+    },
+    {
+      letter: "R",
+      title: "Recruit",
+      description:
+        "Establish the CoE, identify champions, and build governance.",
+    },
+    {
+      letter: "I",
+      title: "Inspire",
+      description:
+        "Deploy role-specific training, create sandboxes, and launch hackathons.",
+    },
+    {
+      letter: "M",
+      title: "Motivate",
+      description: "Implement recognition systems and reward contributions.",
+    },
+    {
+      letter: "E",
+      title: "Evolve",
+      description: "Track productivity gains and scale successful initiatives.",
+    },
   ];
 
   return (
-    <section className={`py-24 lg:py-32 ${styles.pageDarkBg}`}>
+    <section className={`pb-24 lg:pb-32 bg-transparent`}>
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 mb-6">
               Phase 3: SCALE
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
               Building Your Internal{" "}
-              <span className="text-brand-primary">AI Center of Excellence</span>
+              <span className="text-brand-primary">
+                AI Center of Excellence
+              </span>
             </h2>
-            <p className="text-lg text-foreground-light-muted max-w-4xl mx-auto">
+            <p className="text-lg text-foreground-dark-muted max-w-4xl mx-auto">
               True transformation happens when AI capabilities are embedded into
               the DNA of your organization. We partner with you to scale your
               success by building a self-sustaining AI Center of Excellence
-              (CoE), turning your initial investment into a long-term competitive
-              advantage.
+              (CoE), turning your initial investment into a long-term
+              competitive advantage.
             </p>
           </div>
 
           {/* Two-Column Feature Grid */}
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {/* Feature 1 */}
-            <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 hover:opacity-100 transition-opacity duration-500" />
+            <Card className="relative overflow-hidden bg-gradient-card-light border border-[#00000019] backdrop-blur-sm rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 shadow-lg">
               <CardContent className="p-0 relative">
-                <div className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}>
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
                   <TrendingUp className="w-8 h-8 text-brand-primary" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 text-foreground-light">
+                <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
                   Evolve and Optimize Post-Launch
                 </h3>
-                <p className="text-foreground-light-muted leading-relaxed">
+                <p className="text-foreground-dark-muted leading-relaxed">
                   Post-launch, we provide active technical stewardship,
                   leveraging observability data to fine-tune models, optimize
                   performance, and manage costs. We specialize in enhancing
@@ -59,16 +84,17 @@ export const ScalePhaseSection: React.FC = () => {
             </Card>
 
             {/* Feature 2 */}
-            <Card className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 hover:opacity-100 transition-opacity duration-500" />
+            <Card className="relative overflow-hidden bg-gradient-card-light border border-[#00000019] backdrop-blur-sm rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 shadow-lg">
               <CardContent className="p-0 relative">
-                <div className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}>
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
                   <Star className="w-8 h-8 text-brand-primary" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 text-foreground-light">
+                <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
                   Build Your CoE with Our PRIME Framework
                 </h3>
-                <p className="text-foreground-light-muted leading-relaxed">
+                <p className="text-foreground-dark-muted leading-relaxed">
                   Our enterprise-proven PRIME framework provides a high-velocity
                   path to building an internal CoE that fosters innovation and
                   drives high adoption across your organization.
@@ -79,25 +105,22 @@ export const ScalePhaseSection: React.FC = () => {
 
           {/* PRIME Framework Visual Breakdown */}
           <div className="mb-12">
-            <h3 className="text-2xl font-semibold text-center text-foreground-light mb-8">
+            <h3 className="text-2xl font-semibold text-center text-foreground-dark mb-8">
               The PRIME Framework in Action
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {primeSteps.map((step, index) => (
-                <div
-                  key={index}
-                  className="relative group"
-                >
-                  <div className="bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] border border-[#ffffff20] rounded-xl p-6 text-center hover:border-brand-primary/40 transition-all duration-300">
+                <div key={index} className="relative group">
+                  <div className="bg-gradient-to-br from-[#00000010] to-[#00000005] border border-[#ffffff20] rounded-lg h-full p-6 text-center hover:border-brand-primary/40 transition-all duration-300">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-brand-primary to-brand-purple flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <span className="text-xl font-bold text-white">
                         {step.letter}
                       </span>
                     </div>
-                    <h4 className="text-lg font-semibold text-foreground-light mb-2">
+                    <h4 className="text-lg font-semibold text-foreground-dark mb-2">
                       {step.title}
                     </h4>
-                    <p className="text-sm text-foreground-light-muted leading-snug">
+                    <p className="text-sm text-foreground-dark-muted leading-snug">
                       {step.description}
                     </p>
                   </div>
@@ -107,21 +130,26 @@ export const ScalePhaseSection: React.FC = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center bg-gradient-to-br from-[#ffffff10] to-[#ffffff05] border border-[#ffffff20] rounded-3xl p-8 lg:p-12">
-            <h3 className="text-2xl font-semibold text-foreground-light mb-4">
-              Ready to scale your AI capabilities?
-            </h3>
-            <p className="text-foreground-light-muted mb-6 max-w-2xl mx-auto">
-              Transform your organization into an AI-first enterprise with a
-              sustainable Center of Excellence.
-            </p>
-            <Button
-              variant="btnSecondary"
-              size="lg"
-              onClick={() => window.open(CALENDLY_URL, "_blank")}
-            >
-              Build Your AI Center of Excellence
-            </Button>
+          <div
+            className={`bg-gradient-subtle p-[5px]  text-center  ${styles["bord-lt-rb"]} rounded-[1.125rem]`}
+          >
+            <div className="bg-[#fff] rounded-[1rem] p-12">
+              {" "}
+              <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
+                Ready to scale your AI capabilities?
+              </h3>
+              <p className="text-foreground-dark-muted mb-6 max-w-2xl mx-auto">
+                Transform your organization into an AI-first enterprise with a
+                sustainable Center of Excellence.
+              </p>
+              <Button
+                variant="btnSecondary"
+                size="lg"
+                onClick={() => window.open(CALENDLY_URL, "_blank")}
+              >
+                Build Your AI Center of Excellence
+              </Button>
+            </div>
           </div>
         </div>
       </div>

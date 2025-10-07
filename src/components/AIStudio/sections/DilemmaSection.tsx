@@ -4,7 +4,7 @@ import styles from "../../../assets/css/stylesheet.module.css";
 
 export const DilemmaSection: React.FC = () => {
   return (
-    <section className="pt-24 lg:pt-32 bg-gradient-to-b from-[#efeff6] to-[#fff]">
+    <section className="pt-24 lg:pt-32 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
