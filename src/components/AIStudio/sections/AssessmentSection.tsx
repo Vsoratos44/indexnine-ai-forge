@@ -3,7 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 import { CapabilityCard } from "../shared/CapabilityCard";
-import { updatedPhilosophyPrinciples, updatedAuditOfferings } from "../../../data/aiStudio/updatedContent";
+import {
+  updatedPhilosophyPrinciples,
+  updatedAuditOfferings,
+} from "../../../data/aiStudio/updatedContent";
 import { CALENDLY_URL } from "../../../config/constants";
 import styles from "../../../assets/css/stylesheet.module.css";
 
@@ -11,10 +14,10 @@ export const AssessmentSection: React.FC = () => {
   return (
     <section
       id="assessment-section"
-      className={`py-24 lg:py-32 ${styles.sectionBgAI}`}
+      className={`py-24 lg:py-32 bg-white ${styles.sectionBgAI}`}
     >
       <div className="container mx-auto px-6">
-        <div className="max-w-8xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
@@ -60,9 +63,7 @@ export const AssessmentSection: React.FC = () => {
                 <Card
                   key={index}
                   className={`p-8 ${
-                    offering.variant === "dark"
-                      ? "bg-[#000000]"
-                      : "bg-[#fff]"
+                    offering.variant === "dark" ? "bg-[#000000]" : "bg-[#fff]"
                   } border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative flex flex-col`}
                 >
                   {offering.featured && (

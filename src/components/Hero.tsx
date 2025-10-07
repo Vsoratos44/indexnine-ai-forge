@@ -28,14 +28,15 @@ const Hero = () => {
             The industry leader in human centric, AI accelerated, digital
             product engineering. We don't just code…
             <br />
-            &#9671; We build products users love &#9671; We help Launch new
-            digital revenue streams &#9671;
+            We build products users love
             <br />
-            &#9671; We visually engineer with humans for humans &#9671; We
-            leverage AI responsibly & securely &#9671;
+            We help Launch new digital revenue streams
             <br />
-            &#9671; We engineer AI integrated solutions that define market
-            leaders
+            We visually engineer with humans for humans
+            <br />
+            We leverage AI responsibly & securely
+            <br />
+            We engineer AI integrated solutions that define market leaders
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-scale-in">

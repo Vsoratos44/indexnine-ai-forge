@@ -191,11 +191,11 @@ export const indexNineStrategicClients = [
   {
     id: 111,
     name: "Quichheal",
-    description: "",
+    description: "Comprehensive Digital Protection for your devices",
     src: QuichhealLogo,
     fallbackSrc: QuichhealLogo,
     url: "https://www.quickheal.co.in",
-    industry: "Industry",
+    industry: "Cybersecurity",
   },
   {
     id: 112,

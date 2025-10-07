@@ -10,16 +10,16 @@ export const GrowthEngineIntroSection: React.FC = () => {
   };
 
   return (
-    <section id="growth-engine" className="py-24 lg:py-32 bg-[#fff]">
+    <section id="growth-engine" className="pt-24 lg:pt-32 bg-[#fff]">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 mb-6">
+            {/* <div className="inline-flex items-center gap-2 mb-6">
               <Rocket className="w-6 h-6 text-brand-primary" />
               <span className="text-sm font-semibold text-brand-primary uppercase tracking-wider">
                 The Solution
               </span>
-            </div>
+            </div> */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6">
               Our Solution:{" "}
               <span className="text-brand-primary">
@@ -32,7 +32,7 @@ export const GrowthEngineIntroSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-[#F1F2FF] to-white rounded-3xl p-8 lg:p-12 shadow-lg border border-[#00000019]">
+          <div className="text-center">
             <p className="text-lg text-foreground-dark leading-relaxed">
               At Indexnine, we've moved beyond the traditional project model.
               We've built an{" "}
@@ -48,11 +48,7 @@ export const GrowthEngineIntroSection: React.FC = () => {
           </div>
 
           <div className="text-center mt-8">
-            <Button
-              variant="btnPrimary"
-              size="lg"
-              onClick={scrollToAssessment}
-            >
+            <Button variant="btnPrimary" size="lg" onClick={scrollToAssessment}>
               Start Your AI Journey
             </Button>
           </div>
