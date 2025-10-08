@@ -12,23 +12,23 @@ export const SolutionsSection: React.FC = () => {
   return (
     <section
       id="qae-solutions"
-      className={`py-24 lg:py-32 relative overflow-hidden ${styles.pageDarkBg}`}
+      className={`pb-24 lg:pb-32 relative overflow-hidden`}
     >
       <div className="container mx-auto px-6">
         <div className="max-w-8xl mx-auto">
           <SectionHeading
             title="QAE Solutions in Action"
             description="Powered by our proprietary automation platforms, purpose-built internally to accelerate implementation and maximize ROI."
-            variant="dark"
+            variant="light"
           />
 
           {/* Proprietary Automation Platforms */}
           <div className="mb-16">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">
+              <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
                 Our Proprietary Automation Accelerators
               </h3>
-              <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
+              <p className="text-lg text-foreground-dark/80 max-w-2xl mx-auto">
                 We augment our strategic services with proprietary platforms
                 designed to accelerate results and provide unparalleled
                 visibility into your application's quality.
@@ -43,7 +43,7 @@ export const SolutionsSection: React.FC = () => {
                   title={platform.title}
                   description={platform.description}
                   features={platform.features}
-                  variant="dark"
+                  variant="light"
                 />
               ))}
             </div>
@@ -52,10 +52,10 @@ export const SolutionsSection: React.FC = () => {
           {/* Real-world Applications */}
           <div className="pt-8">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-semibold text-foreground my-4">
+              <h3 className="text-2xl font-semibold text-foreground-dark my-4">
                 Real-World Applications
               </h3>
-              <p className="text-lg text-foreground-muted max-w-2xl mx-auto">
+              <p className="text-lg text-foreground-dark-muted max-w-2xl mx-auto">
                 How our proprietary platforms deliver measurable results across
                 different scenarios.
               </p>

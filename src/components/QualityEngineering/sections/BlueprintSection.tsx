@@ -5,7 +5,7 @@ import { blueprintSteps } from "../../../data/qualityEngineering/blueprintSteps"
 
 export const BlueprintSection: React.FC = () => {
   return (
-    <section id="qae-solution" className="pb-16 lg:pb-24">
+    <section id="qae-solution" className="pb-24 lg:pb-32">
       <div className="container mx-auto px-6">
         <div className="max-w-8xl mx-auto">
           <SectionHeading

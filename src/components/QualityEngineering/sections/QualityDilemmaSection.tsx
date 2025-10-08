@@ -3,7 +3,7 @@ import { SectionHeading } from "../shared/SectionHeading";
 
 export const QualityDilemmaSection: React.FC = () => {
   return (
-    <section className="py-24 lg:py-32 bg-[#fff]">
+    <section className="py-24 lg:py-32 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto text-center">
           <SectionHeading
