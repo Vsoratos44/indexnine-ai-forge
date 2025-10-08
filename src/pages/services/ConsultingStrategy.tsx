@@ -16,6 +16,12 @@ import {
   Users,
   TrendingUp,
   Download,
+  Sprout,
+  HeartHandshake,
+  Wind,
+  Gauge,
+  Play,
+  Award,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -701,67 +707,81 @@ const ConsultingStrategy = () => {
                 </div>
 
                 {/* Two-Section Framework */}
-                <div className="grid md:grid-cols-2 gap-8 mb-12">
-                  {/* Where to Play */}
-                  <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
-                    <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
-
-                    <div className="relative">
-                      <h3 className="text-xl font-semibold mb-4 text-foreground-white">
+                <div className="sm:grid sm:grid-cols-2 gap-6">
+                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
+                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Play />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-lg text-foreground-white mb-2">
                         Where to Play (The "WHAT" part of transformation)
-                      </h3>
-                      <p className="text-foreground-white/80 mb-4">
+                      </h4>
+                      <p className="text-sm text-foreground-white/70">
                         Quick Wins | Strategic Bets | Early Experiments
                       </p>
                     </div>
                   </div>
-
-                  {/* How to Win */}
-                  <div className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff39] rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group bg-white-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20">
-                    <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-white/10 rounded-2xl opacity-50"></div>
-
-                    <div className="relative">
-                      <h3 className="text-xl font-semibold mb-4 text-foreground-white">
+                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
+                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Award />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-lg text-foreground-white mb-2">
                         How to Win (The "HOW" part of transformation)
-                      </h3>
-                      <p className="text-foreground-white/80 mb-4">
+                      </h4>
+                      <p className="text-sm text-foreground-white/70">
                         Outcome-oriented Roadmap | Operating-Model
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Bottom Outcomes Bar */}
-                <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-2xl p-6">
-                  <div className="grid grid-cols-4 gap-8 text-center">
+                <div className="sm:grid sm:grid-cols-4 gap-6">
+                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
+                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Sprout />
+                    </div>
                     <div>
-                      <h4 className="font-semibold text-foreground-white mb-2">
+                      <h4 className="font-semibold text-lg text-foreground-white mb-2">
                         Outcomes
                       </h4>
                       <p className="text-sm text-foreground-white/70">
                         What you get
                       </p>
                     </div>
+                  </div>
+                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
+                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <HeartHandshake />
+                    </div>
                     <div>
-                      <h4 className="font-semibold text-foreground-white mb-2">
+                      <h4 className="font-semibold text-lg text-foreground-white mb-2">
                         Clarity
                       </h4>
                       <p className="text-sm text-foreground-white/70">
                         First bets & what to ship first
                       </p>
                     </div>
+                  </div>
+                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
+                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Wind />
+                    </div>
                     <div>
-                      <h4 className="font-semibold text-foreground-white mb-2">
+                      <h4 className="font-semibold text-lg text-foreground-white mb-2">
                         Confidence
                       </h4>
                       <p className="text-sm text-foreground-white/70">
                         Quick, low-risk proofs & feasibility signals
                       </p>
                     </div>
+                  </div>
+                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
+                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                      <Gauge />
+                    </div>
                     <div>
-                      <h4 className="font-semibold text-foreground-white mb-2">
+                      <h4 className="font-semibold text-lg text-foreground-white mb-2">
                         Momentum
                       </h4>
                       <p className="text-sm text-foreground-white/70">
