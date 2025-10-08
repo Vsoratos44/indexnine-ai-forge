@@ -90,8 +90,7 @@ const CustomSoftware = () => {
         "Yes. Most clients transition from fixed-price MVP development to a dedicated Scale Pod for ongoing feature development, optimization, and support. We also offer maintenance-only engagements for clients who want to own development internally but need expert support for critical issues. Our goal is to be your long-term flexible engineering partner, adapting to your evolving needs.",
     },
     {
-      question:
-        "How does your Engineering Studio connect with your AI Studio?",
+      question: "How does your Engineering Studio connect with your AI Studio?",
       answer:
         "Our studios work together seamlessly. The AI Studio focuses on strategic AI consulting, agentic workflow development, and AI Center of Excellence buildout. The Engineering Studio handles full-stack product development, modernization, and dedicated engineering pods. Many clients engage both—using AI Studio for AI strategy (AI Audits, P2R scoring) and Engineering Studio for implementation (building the AI-powered platform). It's a comprehensive approach to modern software delivery.",
     },
@@ -136,47 +135,39 @@ const CustomSoftware = () => {
 
         {/* 1. Hero Section */}
         <HeroSection />
+        <div
+          className={`${styles.sectionBgAI} bg-white bg-fixed bg-cover bg-top`}
+        >
+          {/* 2. Tech Stack Section */}
+          <TechStackSection />
 
-        {/* 2. Tech Stack Section */}
-        <TechStackSection />
+          {/* 3. Philosophy Section */}
+          <PhilosophySection />
 
-        {/* 3. Philosophy Section */}
-        <PhilosophySection />
+          {/* 4. Evolution Story Section */}
+          <EvolutionStorySection />
 
-        {/* 4. Evolution Story Section */}
-        <EvolutionStorySection />
+          {/* 5. Core Offerings Overview (2 Pillars) */}
+          <CoreOfferingsOverviewSection />
 
-        {/* 5. Core Offerings Overview (2 Pillars) */}
-        <CoreOfferingsOverviewSection />
+          {/* 6. Product Launch Deep Dive */}
+          <ProductLaunchSection />
 
-        {/* WRAPPER FOR DATA SECTION BACKGROUND */}
-        <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
-          <div className={`${styles.sectionBgData}`}>
-            {/* 6. Product Launch Deep Dive */}
-            <ProductLaunchSection />
-          </div>
+          {/* 8. Product Modernization Deep Dive (Dark Background) */}
+          <ProductModernizationSection />
+
+          {/* 11. Case Studies Section */}
+          <CaseStudiesSection />
+
+          {/* 12. Services Overview Section (Carousel) */}
+          <ServicesOverviewSection />
+
+          {/* 13. FAQ Section */}
+          <FAQSection />
+
+          {/* 14. Final CTA */}
+          <FinalCTASection />
         </div>
-
-        {/* 8. Product Modernization Deep Dive (Dark Background) */}
-        <ProductModernizationSection />
-
-        {/* WRAPPER FOR DATA SECTION BACKGROUND */}
-        <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
-          <div className={`${styles.sectionBgData}`}>
-            {/* 11. Case Studies Section */}
-            <CaseStudiesSection />
-          </div>
-        </div>
-
-        {/* 12. Services Overview Section (Carousel) */}
-        <ServicesOverviewSection />
-
-        {/* 13. FAQ Section */}
-        <FAQSection />
-
-        {/* 14. Final CTA */}
-        <FinalCTASection />
-
         <Footer />
       </div>
     </PerformanceOptimizer>

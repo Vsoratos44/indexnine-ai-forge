@@ -1,7 +1,16 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Rocket, AlertCircle, Zap, Sparkles, Bot, TestTube2, ArrowRight } from "lucide-react";
+import {
+  CheckCircle,
+  Rocket,
+  AlertCircle,
+  Zap,
+  Sparkles,
+  Bot,
+  TestTube2,
+  ArrowRight,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import { CALENDLY_URL } from "../../../config/constants";
 import styles from "../../../assets/css/stylesheet.module.css";
@@ -77,16 +86,16 @@ export const ProductLaunchSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 lg:py-16 bg-[#efeff6]">
+    <section className="pb-24 lg:pb-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 mb-3">
+            {/* <div className="inline-flex items-center gap-2 mb-3">
               <Rocket className="w-5 h-5 text-brand-primary" />
               <span className="text-xs font-semibold text-brand-primary uppercase tracking-wider">
                 Core Offering
               </span>
-            </div>
+            </div> */}
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-3 text-foreground-dark font-montserrat">
               Product Launch:{" "}
               <span className="text-brand-primary">
@@ -101,49 +110,41 @@ export const ProductLaunchSection: React.FC = () => {
 
           {/* The Founder's Dilemma */}
           <div className="mb-8">
-            <Card className="bg-gradient-to-br from-[#F1F2FF] to-white border border-[#00000019] rounded-2xl p-6 shadow-md">
-              <CardContent className="p-0">
-                <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 flex items-center justify-center flex-shrink-0">
-                    <AlertCircle className="w-8 h-8 text-brand-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-foreground-dark mb-4 font-montserrat">
-                      The Founder's Dilemma
+            <div className="flex flex-col items-center text-center">
+              <h3 className="text-2xl lg:text-3xl font-semibold mb-6 text-foreground-dark">
+                The Founder's Dilemma
+              </h3>
+
+              <ul className="gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                {dilemmas.map((dilemma, index) => (
+                  <li
+                    key={index}
+                    className={`rounded-xl py-6 px-8 px-1 text-center border h-full border-[#505DFD] ${styles.middleCardBg2}`}
+                  >
+                    <h3 className="font-semibold text-white text-xl mb-4">
+                      {dilemma.split(":")[0]}:
                     </h3>
-                    <ul className="space-y-3">
-                      {dilemmas.map((dilemma, index) => (
-                        <li
-                          key={index}
-                          className="text-sm text-foreground-dark/70 leading-relaxed font-montserrat"
-                        >
-                          <span className="font-semibold text-brand-primary">
-                            {dilemma.split(":")[0]}:
-                          </span>{" "}
-                          {dilemma.split(":")[1]}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                    {dilemma.split(":")[1]}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Sprint Zero Blueprint */}
-          <div className="mb-8">
-            <h3 className="text-lg sm:text-xl font-semibold text-foreground-dark mb-4 text-center font-montserrat">
+          <div className="my-16">
+            <h3 className="text-2xl lg:text-3xl font-semibold mb-6 text-foreground-dark text-center">
               Our Approach: The Sprint Zero Blueprint
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
               {sprintZeroSteps.map((step, index) => (
                 <Card
                   key={index}
-                  className="bg-gradient-to-br from-[#F1F2FF] to-white border border-[#00000019] rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
+                  className="relative overflow-hidden bg-gradient-card-light border border-[#00000019] backdrop-blur-sm rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 shadow-lg"
                 >
                   <CardContent className="p-0">
-                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 flex items-center justify-center mb-4">
-                      <span className="text-xl font-bold text-brand-primary">
+                    <div className="w-14 h-14 rounded-full bg-brand-purple/10 flex items-center justify-center mb-4 mx-auto">
+                      <span className="text-xl font-medium text-blue-500">
                         {index + 1}
                       </span>
                     </div>
@@ -160,8 +161,8 @@ export const ProductLaunchSection: React.FC = () => {
           </div>
 
           {/* Acceleration Platforms */}
-          <div className="mb-8">
-            <h3 className="text-lg sm:text-xl font-semibold text-center text-foreground-dark mb-4 font-montserrat">
+          <div className="mb-16">
+            <h3 className="text-2xl lg:text-3xl font-semibold mb-6 text-foreground-dark text-center">
               The Acceleration Engine: Our Proprietary Platforms
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -177,9 +178,9 @@ export const ProductLaunchSection: React.FC = () => {
                       <CardContent className="p-0 flex flex-col h-full">
                         <div className="flex items-start justify-between mb-3">
                           <div
-                            className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${platform.color} flex items-center justify-center shadow-md`}
+                            className={`w-12 h-12 rounded-[.75rem]  ${styles.icnBg} flex items-center justify-center shadow-md`}
                           >
-                            <IconComponent className="w-6 h-6 text-white" />
+                            <IconComponent className="w-5 h-5 text-blue-500" />
                           </div>
                           <span className="px-2.5 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold whitespace-nowrap">
                             {platform.impact}
@@ -204,8 +205,8 @@ export const ProductLaunchSection: React.FC = () => {
           </div>
 
           {/* Pricing Cards */}
-          <div className="mb-6">
-            <h3 className="text-lg sm:text-xl font-semibold text-center text-foreground-dark mb-4 font-montserrat">
+          <div className="mb-16">
+            <h3 className="text-2xl lg:text-3xl font-semibold mb-8 text-foreground-dark text-center">
               Choose Your Entry Point
             </h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -267,9 +268,7 @@ export const ProductLaunchSection: React.FC = () => {
                     <div className="text-3xl font-bold text-foreground mb-2">
                       $75,000+
                     </div>
-                    <div className="text-sm text-foreground/60">
-                      8-12 weeks
-                    </div>
+                    <div className="text-sm text-foreground/60">8-12 weeks</div>
                   </div>
                   <p className="text-foreground/80 mb-6">
                     Complete MVP development using our snap.mvp accelerator for
@@ -305,21 +304,25 @@ export const ProductLaunchSection: React.FC = () => {
           </div>
 
           {/* CTA */}
-          <div className="text-center bg-white rounded-3xl p-8 lg:p-12 shadow-lg">
-            <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
-              Ready to Launch Your Product?
-            </h3>
-            <p className="text-foreground-dark/80 mb-6 max-w-2xl mx-auto">
-              Let's validate your vision and create a clear path from idea to
-              market-ready product.
-            </p>
-            <Button
-              variant="btnPrimary"
-              size="lg"
-              onClick={() => window.open(CALENDLY_URL, "_blank")}
-            >
-              Schedule Product Launch Consultation
-            </Button>
+          <div
+            className={`bg-gradient-subtle p-[5px]  text-center  ${styles["bord-lt-rb"]} rounded-[1.125rem]`}
+          >
+            <div className="bg-[#fff] rounded-[1rem] p-12">
+              <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
+                Ready to Launch Your Product?
+              </h3>
+              <p className="text-foreground-dark/80 mb-6 max-w-2xl mx-auto">
+                Let's validate your vision and create a clear path from idea to
+                market-ready product.
+              </p>
+              <Button
+                variant="btnPrimary"
+                size="lg"
+                onClick={() => window.open(CALENDLY_URL, "_blank")}
+              >
+                Schedule Product Launch Consultation
+              </Button>
+            </div>
           </div>
         </div>
       </div>

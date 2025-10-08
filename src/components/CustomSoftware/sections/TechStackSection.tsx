@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Database, Cloud, Settings } from "lucide-react";
+import styles from "../../../assets/css/stylesheet.module.css";
 
 export const TechStackSection: React.FC = () => {
   const techCategories = [
@@ -12,22 +13,46 @@ export const TechStackSection: React.FC = () => {
     {
       title: "Backend & Database",
       icon: Database,
-      technologies: ["Python/FastAPI", "Node.js", "Java", "PHP", "PostgreSQL", "Redis", "MongoDB"],
+      technologies: [
+        "Python/FastAPI",
+        "Node.js",
+        "Java",
+        "PHP",
+        "PostgreSQL",
+        "Redis",
+        "MongoDB",
+      ],
     },
     {
       title: "Cloud Platforms",
       icon: Cloud,
-      technologies: ["AWS", "Azure", "GCP", "EKS", "GKE", "Docker", "CI/CD", "Terraform"],
+      technologies: [
+        "AWS",
+        "Azure",
+        "GCP",
+        "EKS",
+        "GKE",
+        "Docker",
+        "CI/CD",
+        "Terraform",
+      ],
     },
     {
       title: "AI & DevOps",
       icon: Settings,
-      technologies: ["Multi-LLM (Gemini, GPT-4o)", "Google ADK", "Custom SLMs", "Snowflake", "Neo4j", "Weaviate"],
+      technologies: [
+        "Multi-LLM (Gemini, GPT-4o)",
+        "Google ADK",
+        "Custom SLMs",
+        "Snowflake",
+        "Neo4j",
+        "Weaviate",
+      ],
     },
   ];
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-[#fff]">
+    <section className="pt-24 lg:pt-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -35,7 +60,9 @@ export const TechStackSection: React.FC = () => {
               Our Modern Technology Stack
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-foreground-dark/70 max-w-4xl mx-auto font-montserrat px-4 sm:px-0">
-              We leverage cutting-edge technologies and proven frameworks to build robust, scalable, and maintainable applications that stand the test of time.
+              We leverage cutting-edge technologies and proven frameworks to
+              build robust, scalable, and maintainable applications that stand
+              the test of time.
             </p>
           </div>
 
@@ -45,11 +72,13 @@ export const TechStackSection: React.FC = () => {
               return (
                 <Card
                   key={index}
-                  className="bg-white border border-[#00000019] rounded-2xl p-6 sm:p-8 hover:shadow-lg transition-all duration-300 flex flex-col"
+                  className="relative overflow-hidden bg-gradient-card-light border border-[#00000019] bg-[#ffffff59] rounded-2xl p-6 sm:p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left"
                 >
                   <CardContent className="p-0 flex flex-col items-center text-center">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-brand-primary to-brand-purple flex items-center justify-center mb-4 sm:mb-6 shadow-md">
-                      <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                    <div
+                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                    >
+                      <IconComponent className="w-8 h-8  text-blue-500" />
                     </div>
                     <h3 className="text-lg sm:text-xl font-semibold text-foreground-dark mb-4 sm:mb-6 font-montserrat">
                       {category.title}

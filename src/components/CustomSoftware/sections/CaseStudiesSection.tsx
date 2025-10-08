@@ -47,9 +47,9 @@ export const CaseStudiesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-24 lg:py-32 bg-transparent">
+    <section className="pb-24 lg:pb-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-8xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 text-foreground-dark font-montserrat px-4 sm:px-0">
               Proof in Action:{" "}
@@ -70,48 +70,50 @@ export const CaseStudiesSection: React.FC = () => {
                 className="relative overflow-hidden bg-gradient-card-light backdrop-blur-xl rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer group"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                <div className="relative">
-                  <div className="mb-3 sm:mb-4">
-                    <span className="inline-block px-2 sm:px-3 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold mb-3">
-                      {study.industry}
-                    </span>
-                    <h3 className="text-lg sm:text-xl font-semibold text-foreground-dark mb-2 sm:mb-3 font-montserrat">
-                      {study.title}
-                    </h3>
-                  </div>
-                  <p className="text-sm sm:text-base text-foreground-dark/70 mb-4 leading-relaxed font-montserrat">
-                    {study.description}
-                  </p>
-                  <div className="mb-4">
-                    <p className="text-xs sm:text-sm font-semibold text-foreground-dark mb-2">
-                      Key Outcomes:
-                    </p>
-                    <ul className="space-y-1.5 sm:space-y-2">
-                      {study.outcomes.map((outcome, idx) => (
-                        <li
-                          key={idx}
-                          className="text-xs sm:text-sm text-foreground-dark/70 flex items-start gap-2 font-montserrat"
-                        >
-                          <div className="w-1.5 h-1.5 rounded-full bg-brand-primary mt-1.5 flex-shrink-0" />
-                          {outcome}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {study.tags.map((tag, idx) => (
-                      <span
-                        key={idx}
-                        className="px-2 py-1 bg-foreground-dark/5 text-foreground-dark/60 rounded text-xs"
-                      >
-                        {tag}
+
+                <div className="relative flex flex-col h-full">
+                  <div>
+                    <div className="mb-3 sm:mb-4">
+                      <span className="inline-block px-2 sm:px-3 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold mb-3">
+                        {study.industry}
                       </span>
-                    ))}
+                      <h3 className="text-lg sm:text-xl font-semibold text-foreground-dark mb-2 sm:mb-3 font-montserrat">
+                        {study.title}
+                      </h3>
+                    </div>
+                    <p className="text-sm sm:text-base text-foreground-dark/70 mb-4 leading-relaxed font-montserrat">
+                      {study.description}
+                    </p>
+                    <div className="mb-4">
+                      <p className="text-xs sm:text-sm font-semibold text-foreground-dark mb-2">
+                        Key Outcomes:
+                      </p>
+                      <ul className="space-y-1.5 sm:space-y-2">
+                        {study.outcomes.map((outcome, idx) => (
+                          <li
+                            key={idx}
+                            className="text-xs sm:text-sm text-foreground-dark/70 flex items-start gap-2 font-montserrat"
+                          >
+                            <div className="w-1.5 h-1.5 rounded-full bg-brand-primary mt-1.5 flex-shrink-0" />
+                            {outcome}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {study.tags.map((tag, idx) => (
+                        <span
+                          key={idx}
+                          className="px-2 py-1 bg-foreground-dark/5 text-foreground-dark/60 rounded text-xs"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                   <Link
                     to={study.link}
-                    className="inline-flex items-center gap-2 text-brand-primary font-semibold hover:gap-3 transition-all duration-300 text-sm sm:text-base group-hover:underline"
+                    className="inline-flex mt-auto items-center gap-2 text-brand-primary font-semibold hover:gap-3 transition-all duration-300 text-sm sm:text-base "
                   >
                     Read Case Study
                     <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -122,11 +124,13 @@ export const CaseStudiesSection: React.FC = () => {
           </div>
 
           <div className="text-center px-4 sm:px-0">
-            <Button variant="btnPrimary" size="lg" asChild className="w-full sm:w-auto min-w-[240px] h-12 sm:h-14 text-sm sm:text-base">
-              <Link to="/insights/case-studies">
-                Explore All Case Studies
-                <ArrowRight className="h-4 w-4 ml-2" />
-              </Link>
+            <Button
+              variant="btnPrimary"
+              size="lg"
+              asChild
+              className="w-full sm:w-auto min-w-[240px] h-12 sm:h-14 text-sm sm:text-base"
+            >
+              <Link to="/insights/case-studies">Explore All Case Studies</Link>
             </Button>
           </div>
         </div>

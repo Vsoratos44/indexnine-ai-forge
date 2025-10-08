@@ -26,7 +26,7 @@ export const PhilosophySection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-24 lg:py-32 bg-[#fff]">
+    <section className="py-16 sm:py-24 lg:py-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-8xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -58,7 +58,7 @@ export const PhilosophySection: React.FC = () => {
                     <div
                       className={`relative w-16 h-16 sm:w-20 sm:h-20 flex mb-4 sm:mb-6 items-center justify-center transition-all ${styles.icnBg}`}
                     >
-                      <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 text-brand-primary" />
+                      <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500" />
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-foreground-dark font-montserrat">
                       {principle.title}

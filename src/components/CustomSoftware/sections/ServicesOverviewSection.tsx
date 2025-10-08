@@ -8,7 +8,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Building2, Rocket, Smartphone, RefreshCw, Zap, CheckCircle } from "lucide-react";
+import {
+  Building2,
+  Rocket,
+  Smartphone,
+  RefreshCw,
+  Zap,
+  CheckCircle,
+} from "lucide-react";
 import { CALENDLY_URL } from "../../../config/constants";
 import styles from "../../../assets/css/stylesheet.module.css";
 
@@ -102,7 +109,7 @@ export const ServicesOverviewSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 sm:py-24 lg:py-32 bg-[#fff]">
+    <section className="pb-24 lg:pb-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-8xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -111,8 +118,8 @@ export const ServicesOverviewSection: React.FC = () => {
               <span className="text-brand-primary">Development Services</span>
             </h2>
             <p className="text-base sm:text-lg text-foreground-dark/80 max-w-4xl mx-auto font-montserrat px-4 sm:px-0">
-              We offer a comprehensive suite of services to build, modernize, and
-              scale your mission-critical applications with enterprise-grade
+              We offer a comprehensive suite of services to build, modernize,
+              and scale your mission-critical applications with enterprise-grade
               quality and startup velocity.
             </p>
           </div>
@@ -130,7 +137,10 @@ export const ServicesOverviewSection: React.FC = () => {
                   const IconComponent = service.icon;
 
                   return (
-                    <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem
+                      key={index}
+                      className="pl-4 md:basis-1/2 lg:basis-1/3"
+                    >
                       <Card
                         className={`relative overflow-hidden h-full ${
                           service.variant === "dark"
@@ -139,7 +149,7 @@ export const ServicesOverviewSection: React.FC = () => {
                         } rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-all duration-500 flex flex-col`}
                       >
                         {service.featured && (
-                          <div className="absolute -top-3 -right-3">
+                          <div className="absolute top-3 right-3">
                             <span className="bg-gradient-to-r from-brand-primary to-brand-purple text-white px-3 sm:px-4 py-1 rounded-full text-xs font-semibold shadow-lg">
                               Popular
                             </span>
@@ -216,7 +226,9 @@ export const ServicesOverviewSection: React.FC = () => {
                                   }`}
                                 >
                                   <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-brand-primary mt-0.5 flex-shrink-0" />
-                                  <span className="font-montserrat">{capability}</span>
+                                  <span className="font-montserrat">
+                                    {capability}
+                                  </span>
                                 </li>
                               ))}
                             </ul>
@@ -251,7 +263,9 @@ export const ServicesOverviewSection: React.FC = () => {
 
                           <Button
                             variant={
-                              service.variant === "dark" ? "btnSecondary" : "btnPrimary"
+                              service.variant === "dark"
+                                ? "btnSecondary"
+                                : "btnPrimary"
                             }
                             className="w-full mt-auto text-sm sm:text-base h-10 sm:h-12"
                             onClick={() => window.open(CALENDLY_URL, "_blank")}

@@ -17,7 +17,7 @@ export const FinalCTASection: React.FC = () => {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
             Ready to Build With an{" "}
-            <span className="text-brand-primary">AI-Augmented Partner?</span>
+            <span className="text-white">AI-Augmented Partner?</span>
           </h2>
           <p className="text-lg text-foreground-white/85 mb-8 leading-relaxed max-w-3xl mx-auto">
             Let's discuss your vision. Schedule a free, no-obligation
@@ -32,7 +32,7 @@ export const FinalCTASection: React.FC = () => {
                 key={index}
                 className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
               >
-                <CheckCircle className="w-5 h-5 text-brand-primary flex-shrink-0" />
+                <CheckCircle className="w-5 h-5 text-white flex-shrink-0" />
                 <span className="text-sm font-medium text-foreground-white">
                   {signal}
                 </span>
