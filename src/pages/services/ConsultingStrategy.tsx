@@ -708,7 +708,7 @@ const ConsultingStrategy = () => {
 
                 {/* Two-Section Framework */}
                 <div className="sm:grid sm:grid-cols-2 gap-6">
-                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
+                  <div className="bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg rounded-xl p-6 flex mb-6">
                     <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                       <Play />
                     </div>
@@ -721,7 +721,7 @@ const ConsultingStrategy = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
+                  <div className="bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg rounded-xl p-6 flex mb-6">
                     <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                       <Award />
                     </div>
@@ -737,10 +737,12 @@ const ConsultingStrategy = () => {
                 </div>
 
                 <div className="sm:grid sm:grid-cols-4 gap-6">
-                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
-                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                      <Sprout />
-                    </div>
+                  <div className="bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg rounded-xl p-6 flex">
+                    <span>
+                      <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                        <Sprout />
+                      </div>
+                    </span>
                     <div>
                       <h4 className="font-semibold text-lg text-foreground-white mb-2">
                         Outcomes
@@ -750,10 +752,12 @@ const ConsultingStrategy = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
-                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                      <HeartHandshake />
-                    </div>
+                  <div className="bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg rounded-xl p-6 flex">
+                    <span>
+                      <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                        <HeartHandshake />
+                      </div>
+                    </span>
                     <div>
                       <h4 className="font-semibold text-lg text-foreground-white mb-2">
                         Clarity
@@ -763,10 +767,12 @@ const ConsultingStrategy = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
-                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                      <Wind />
-                    </div>
+                  <div className="bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg rounded-xl p-6 flex">
+                    <span>
+                      <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                        <Wind />
+                      </div>
+                    </span>
                     <div>
                       <h4 className="font-semibold text-lg text-foreground-white mb-2">
                         Confidence
@@ -776,10 +782,12 @@ const ConsultingStrategy = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="bg-gradient-to-r from-white/10 to-white/5 border border-white/20 rounded-xl p-6 flex mb-4">
-                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                      <Gauge />
-                    </div>
+                  <div className="bg-gradient-to-tr from-[#ffffff01] via-[#ffffff10] to-[#ffffff05] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg rounded-xl p-6 flex">
+                    <span>
+                      <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-4 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+                        <Gauge />
+                      </div>
+                    </span>
                     <div>
                       <h4 className="font-semibold text-lg text-foreground-white mb-2">
                         Momentum

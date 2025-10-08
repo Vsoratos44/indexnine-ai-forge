@@ -17,13 +17,13 @@ export const FinalCTASection: React.FC = () => {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
             Ready to Transform Your Business with{" "}
-            <span className="text-brand-primary">AI?</span>
+            <span className="text-white">AI?</span>
           </h2>
           <p className="text-lg text-foreground-white/85 mb-8 leading-relaxed max-w-3xl mx-auto">
             Let's discuss your AI ambitions and map out a clear path to
             measurable outcomes. Whether you're just starting to explore AI or
-            looking to scale existing capabilities, our Growth Engine is designed
-            to meet you where you are.
+            looking to scale existing capabilities, our Growth Engine is
+            designed to meet you where you are.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">

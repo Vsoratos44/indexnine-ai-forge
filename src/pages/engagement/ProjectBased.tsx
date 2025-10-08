@@ -342,7 +342,7 @@ const ProjectBased = () => {
                   </div>
                 </Link>
 
-                {/* Genesis Case Study */}
+                {/* Ginesys Case Study */}
                 <Link to="/insights/case-studies/ginesys" className="block">
                   <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex items-start space-x-6">
@@ -353,7 +353,7 @@ const ProjectBased = () => {
                       </div>
                       <div className="flex-1">
                         <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
-                          Case Study Highlight 2: Genesis
+                          Case Study Highlight 2: Ginesys
                         </h3>
                         <div className="space-y-3 text-foreground-dark-muted font-montserrat">
                           <p>
