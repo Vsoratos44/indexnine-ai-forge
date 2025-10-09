@@ -71,7 +71,7 @@ export const EngineeringPlatformsSection: React.FC = () => {
   ];
 
   return (
-    <section className={`pb-24 lg:pb-32 bg-transparent`}>
+    <section className={`py-24 lg:pb-32 bg-transparent`}>
       <div className="container mx-auto px-6">
         <div className="max-w-8xl mx-auto">
           <div className="text-center mb-16">

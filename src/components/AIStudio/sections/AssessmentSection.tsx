@@ -15,10 +15,11 @@ export const AssessmentSection: React.FC = () => {
           </h2>
           <p className="text text-foreground-dark/80 mb-0 mx-auto">
             Every successful AI journey begins with a strategic, data-backed
-            plan. Our foundational philosophy of "Clarity Before Code" is
+            plan.
+            {/* Our foundational philosophy of "Clarity Before Code" is
             embodied in our Assessment & Roadmap offerings. This is the
             essential first step that de-risks your investment and provides the
-            blueprint for your journey with the AI Growth Engine.
+            blueprint for your journey with the AI Growth Engine. */}
           </p>
         </div>
 

@@ -29,8 +29,8 @@ export const StrategicOfferings: React.FC<StrategicOfferingsProps> = ({
   maxWidth = "max-w-5xl",
 }) => {
   return (
-    <div className="mb-16">
-      <h3 className="text-2xl font-semibold text-center text-foreground-dark mb-8">
+    <div className="">
+      <h3 className="text-3xl font-semibold text-center text-foreground-dark mb-8">
         {title}
       </h3>
       <div className={`grid md:grid-cols-2 gap-6 ${maxWidth} mx-auto`}>

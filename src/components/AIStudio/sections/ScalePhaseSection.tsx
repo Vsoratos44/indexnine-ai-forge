@@ -37,20 +37,21 @@ export const ScalePhaseSection: React.FC = () => {
   ];
 
   return (
-    <section className={`pb-24 lg:pb-32 bg-transparent`}>
+    <section
+      className={`py-24 lg:py-32 bg-transparent  ${styles.pageDarkBg} 
+    `}
+    >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 mb-6">
+            {/* <div className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20 mb-6">
               Phase 3: SCALE
-            </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+            </div> */}
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-white">
               Building Your Internal{" "}
-              <span className="text-brand-primary">
-                AI Center of Excellence
-              </span>
+              <span className="text">AI Center of Excellence</span>
             </h2>
-            <p className="text-lg text-foreground-dark-muted max-w-4xl mx-auto">
+            <p className="text-lg text-foreground-white-muted max-w-4xl mx-auto">
               True transformation happens when AI capabilities are embedded into
               the DNA of your organization. We partner with you to scale your
               success by building a self-sustaining AI Center of Excellence
@@ -62,17 +63,17 @@ export const ScalePhaseSection: React.FC = () => {
           {/* Two-Column Feature Grid */}
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {/* Feature 1 */}
-            <Card className="relative overflow-hidden bg-gradient-card-light border border-[#00000019] backdrop-blur-sm rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 shadow-lg">
+            <Card className="bg-[#fffff19] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg rounded-xl p-6 flex">
               <CardContent className="p-0 relative">
                 <div
                   className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
                 >
-                  <TrendingUp className="w-8 h-8 text-brand-primary" />
+                  <TrendingUp className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
+                <h3 className="text-2xl font-semibold mb-4 text-foreground">
                   Evolve and Optimize Post-Launch
                 </h3>
-                <p className="text-foreground-dark-muted leading-relaxed">
+                <p className="text-foreground-muted leading-relaxed">
                   Post-launch, we provide active technical stewardship,
                   leveraging observability data to fine-tune models, optimize
                   performance, and manage costs. We specialize in enhancing
@@ -84,17 +85,17 @@ export const ScalePhaseSection: React.FC = () => {
             </Card>
 
             {/* Feature 2 */}
-            <Card className="relative overflow-hidden bg-gradient-card-light border border-[#00000019] backdrop-blur-sm rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 shadow-lg">
+            <Card className="bg-[#fffff19] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg rounded-xl p-6 flex">
               <CardContent className="p-0 relative">
                 <div
                   className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
                 >
-                  <Star className="w-8 h-8 text-brand-primary" />
+                  <Star className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
+                <h3 className="text-2xl font-semibold mb-4 text-foreground">
                   Build Your CoE with Our PRIME Framework
                 </h3>
-                <p className="text-foreground-dark-muted leading-relaxed">
+                <p className="text-foreground-muted leading-relaxed">
                   Our enterprise-proven PRIME framework provides a high-velocity
                   path to building an internal CoE that fosters innovation and
                   drives high adoption across your organization.
@@ -104,23 +105,23 @@ export const ScalePhaseSection: React.FC = () => {
           </div>
 
           {/* PRIME Framework Visual Breakdown */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-semibold text-center text-foreground-dark mb-8">
+          <div className="">
+            <h3 className="text-2xl font-semibold text-center text-foreground mb-8">
               The PRIME Framework in Action
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {primeSteps.map((step, index) => (
                 <div key={index} className="relative group">
-                  <div className="bg-gradient-to-br from-[#00000010] to-[#00000005] border border-[#ffffff20] rounded-lg h-full p-6 text-center hover:border-brand-primary/40 transition-all duration-300">
+                  <div className="bg-[#fffff19] border border-[#ffffff19] bg-clip-padding backdrop-filter backdrop-blur-lg rounded-xl p-4 h-full text-center">
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-brand-primary to-brand-purple flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <span className="text-xl font-bold text-white">
                         {step.letter}
                       </span>
                     </div>
-                    <h4 className="text-lg font-semibold text-foreground-dark mb-2">
+                    <h4 className="text-lg font-semibold text-foreground mb-2">
                       {step.title}
                     </h4>
-                    <p className="text-sm text-foreground-dark-muted leading-snug">
+                    <p className="text-sm text-foreground-muted leading-snug">
                       {step.description}
                     </p>
                   </div>
@@ -130,7 +131,7 @@ export const ScalePhaseSection: React.FC = () => {
           </div>
 
           {/* CTA Section */}
-          <div
+          {/* <div
             className={`bg-gradient-subtle p-[5px]  text-center  ${styles["bord-lt-rb"]} rounded-[1.125rem]`}
           >
             <div className="bg-[#fff] rounded-[1rem] p-12">
@@ -150,7 +151,7 @@ export const ScalePhaseSection: React.FC = () => {
                 Build Your AI Center of Excellence
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

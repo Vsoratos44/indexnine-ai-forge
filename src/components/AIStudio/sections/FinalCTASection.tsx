@@ -32,7 +32,7 @@ export const FinalCTASection: React.FC = () => {
                 key={index}
                 className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
               >
-                <CheckCircle className="w-5 h-5 text-brand-primary flex-shrink-0" />
+                <CheckCircle className="w-5 h-5 text-white flex-shrink-0" />
                 <span className="text-sm font-medium text-foreground-white">
                   {signal}
                 </span>
