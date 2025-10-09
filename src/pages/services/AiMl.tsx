@@ -27,6 +27,12 @@ import { CaseStudiesSection } from "../../components/AIStudio/sections/CaseStudi
 import { FAQSection } from "../../components/AIStudio/sections/FAQSection";
 import { FinalCTASection } from "../../components/AIStudio/sections/FinalCTASection";
 import styles from "../../assets/css/stylesheet.module.css";
+import { StrategicOfferings } from "@/components/AIStudio/shared/StrategicOfferings";
+import {
+  updatedPhilosophyPrinciples,
+  updatedAuditOfferings,
+} from "../../data/aiStudio/updatedContent";
+import { CALENDLY_URL } from "../../config/constants";
 
 const AiMl = () => {
   // SEO Configuration
@@ -132,18 +138,27 @@ const AiMl = () => {
           {/* 2. Problem Statement: "The AI Dilemma" */}
           <DilemmaSection />
 
-          {/* 3. NEW: The Solution - AI Growth Engine Introduction */}
-          <GrowthEngineIntroSection />
+          <div className="grid grid-cols-2 container pt-24 lg:pt-32 bg-transparent gap-16">
+            {/* 3. NEW: The Solution - AI Growth Engine Introduction */}
+            <GrowthEngineIntroSection />
 
-          {/* 4. NEW: Your On-Ramp - Assessment Section (includes Philosophy & Audit Offerings) */}
-          <AssessmentSection />
+            {/* 4. NEW: Your On-Ramp - Assessment Section (includes Philosophy & Audit Offerings) */}
+            <AssessmentSection />
+          </div>
           <div className={` ${styles.pageDarkBg}`}>
             {/* 5. P2R Framework Section */}
-            <P2RFrameworkSection />
+            {/* <P2RFrameworkSection /> */}
 
             {/* 6. Audit Process Section */}
-            <AuditProcessSection />
+            {/* <AuditProcessSection /> */}
           </div>
+
+          <StrategicOfferings
+            title="Choose Your Strategic Entry Point"
+            offerings={updatedAuditOfferings}
+            calendlyUrl={CALENDLY_URL}
+            maxWidth="max-w-5xl"
+          />
 
           {/* 8. NEW: Phase 1 - LAUNCH (Engineering Pods & Agentic Workflows) */}
           <LaunchPhaseSection />

@@ -294,6 +294,36 @@ header .fixed.inset-0 {
   background-position: center;
   background-size: cover;
 }
+.cardBord1 {
+  position: relative;
+}
+.cardBord1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 3px solid #899cff;
+  border-right: 3px solid #899cff;
+  border-bottom: 3px solid #899cff;
+  border-radius: 0 0 1rem 1rem;
+  border-top: none;
+  /* Fade out at top corners */
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 20%,
+    #899cff 80%,
+    #899cff 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 20%,
+    black 80%,
+    black 100%
+  );
+  pointer-events: none;
+}
 
 @keyframes pulseArrow {
   0% {
