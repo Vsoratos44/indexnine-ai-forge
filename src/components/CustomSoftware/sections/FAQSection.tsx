@@ -63,7 +63,7 @@ export const FAQSection: React.FC = () => {
   return (
     <section className="pb-24 lg:pb-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 text-foreground-dark font-montserrat px-4 sm:px-0">
               Your Engineering{" "}
@@ -75,7 +75,7 @@ export const FAQSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="space-y-0 rounded-2xl sm:rounded-3xl bg-[#fff] px-4 sm:px-8 py-4 shadow-lg">
+          <div className="space-y-0 max-w-4xl  mx-auto rounded-2xl sm:rounded-3xl bg-[#fff] px-4 sm:px-8 py-4 shadow-lg">
             {faqData.map((faq, index) => (
               <FAQItem
                 key={index}

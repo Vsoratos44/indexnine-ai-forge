@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
@@ -96,6 +96,12 @@ const CustomSoftware = () => {
     },
   ];
 
+  const [activeTab, setActiveTab] = useState("tab1");
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
     <PerformanceOptimizer>
       <div className="min-h-screen bg-background-dark">
@@ -150,11 +156,44 @@ const CustomSoftware = () => {
           {/* 5. Core Offerings Overview (2 Pillars) */}
           <CoreOfferingsOverviewSection />
 
-          {/* 6. Product Launch Deep Dive */}
-          <ProductLaunchSection />
-
-          {/* 8. Product Modernization Deep Dive (Dark Background) */}
-          <ProductModernizationSection />
+          <div className="">
+            <div className="tab-buttons text-center mb-12">
+              <button
+                onClick={() => handleTabClick("tab1")}
+                className={`px-6 py-1.5 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
+                  activeTab === "tab1"
+                    ? "border-brand-primary text-brand-primary"
+                    : "border-foreground-dark/20 text-foreground-dark/40 hover:text-brand-primary"
+                }`}
+              >
+                Product Launch
+              </button>
+              <button
+                onClick={() => handleTabClick("tab2")}
+                className={`px-6 py-1.5 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
+                  activeTab === "tab2"
+                    ? "border-primary text-brand-primary"
+                    : "border-foreground-dark/20 text-foreground-dark/40 hover:text-brand-primary"
+                }`}
+              >
+                Product Modernisation
+              </button>
+            </div>
+            <div className="tab-content">
+              {activeTab === "tab1" && (
+                <>
+                  {/* 6. Product Launch Deep Dive */}
+                  <ProductLaunchSection />
+                </>
+              )}
+              {activeTab === "tab2" && (
+                <>
+                  {/* 8. Product Modernization Deep Dive (Dark Background) */}
+                  <ProductModernizationSection />
+                </>
+              )}
+            </div>
+          </div>
 
           {/* 11. Case Studies Section */}
           <CaseStudiesSection />

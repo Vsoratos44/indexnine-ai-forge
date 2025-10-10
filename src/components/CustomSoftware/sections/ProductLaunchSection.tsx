@@ -87,7 +87,7 @@ export const ProductLaunchSection: React.FC = () => {
 
   return (
     <section className="pb-24 lg:pb-32 bg-transparent">
-      <div className="grid grid-cols-2 container  bg-transparent gap-16 pb-12 lg:pb-16">
+      <div className="grid grid-cols-2 container px-4 sm:px-16  bg-transparent gap-16 pb-12 lg:pb-16">
         <div
           className={`bg-blue-500/5 rounded-2xl shadow shadow-glass backdrop-blur-md relative p-8 ${styles.cardBord1} `}
         >
@@ -227,7 +227,7 @@ export const ProductLaunchSection: React.FC = () => {
       </div>
       <div className="contanier pt-20">
         {/* Pricing Cards */}
-        <div className="mb-16">
+        <div className="mb">
           <h3 className="text-2xl lg:text-3xl font-semibold mb-8 text-foreground-dark text-center">
             Choose Your Entry Point
           </h3>

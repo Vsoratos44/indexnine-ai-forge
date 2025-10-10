@@ -61,7 +61,7 @@ const PracticesStudios = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 mb-12">
           <button
             onClick={() => setActiveStudio("innovation")}
-            className={`px-6 py-3 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
+            className={`px-6 py-1.5 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
               activeStudio === "innovation"
                 ? "border-brand-primary text-brand-primary"
                 : "border-foreground-dark/20 text-foreground-dark/40 hover:text-brand-primary"
@@ -71,7 +71,7 @@ const PracticesStudios = () => {
           </button>
           <button
             onClick={() => setActiveStudio("enterprise")}
-            className={`px-6 py-3 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
+            className={`px-6 py-1.5 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
               activeStudio === "enterprise"
                 ? "border-primary text-brand-primary"
                 : "border-foreground-dark/20 text-foreground-dark/40 hover:text-brand-primary"
