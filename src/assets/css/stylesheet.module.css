@@ -155,6 +155,12 @@ header .fixed.inset-0 {
   background-position: right -200px;
   background-size: cover;
 }
+.snapBg {
+  background-image: url(./../images/snap-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .bord-rb,
 .bordRb {

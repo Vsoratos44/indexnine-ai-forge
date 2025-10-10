@@ -87,242 +87,241 @@ export const ProductLaunchSection: React.FC = () => {
 
   return (
     <section className="pb-24 lg:pb-32 bg-transparent">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-8">
-            {/* <div className="inline-flex items-center gap-2 mb-3">
+      <div className="grid grid-cols-2 container  bg-transparent gap-16 pb-12 lg:pb-16">
+        <div
+          className={`bg-blue-500/5 rounded-2xl shadow shadow-glass backdrop-blur-md relative p-8 ${styles.cardBord1} `}
+        >
+          {/* <div className="inline-flex items-center gap-2 mb-3">
               <Rocket className="w-5 h-5 text-brand-primary" />
               <span className="text-xs font-semibold text-brand-primary uppercase tracking-wider">
                 Core Offering
               </span>
             </div> */}
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-3 text-foreground-dark font-montserrat">
-              Product Launch:{" "}
-              <span className="text-brand-primary">
-                From Visionary Idea to Market-Defining Product
-              </span>
-            </h2>
-            <p className="text-sm sm:text-base text-foreground-dark/70 max-w-3xl mx-auto font-montserrat">
-              Launch your product with confidence through our proven Sprint Zero
-              methodology and proprietary acceleration platforms.
-            </p>
-          </div>
+          <h2 className="text-2xl font-semibold mb-3 text-foreground-dark font-montserrat">
+            Product Launch:{" "}
+            <span className="text-brand-primary">
+              From Visionary Idea to Market-Defining Product
+            </span>
+          </h2>
+          <p className="text-sm sm:text-base text-foreground-dark/70 max-w-3xl mx-auto font-montserrat">
+            Launch your product with confidence through our proven Sprint Zero
+            methodology and proprietary acceleration platforms.
+          </p>
 
-          {/* The Founder's Dilemma */}
-          <div className="mb-8">
-            <div className="flex flex-col items-center text-center">
-              <h3 className="text-2xl lg:text-3xl font-semibold mb-6 text-foreground-dark">
-                The Founder's Dilemma
-              </h3>
+          <div className="">
+            <h3 className="text-2xl font-semibold mb-4 mt-8 text-foreground-dark">
+              The Founder's Dilemma
+            </h3>
 
-              <ul className="gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-                {dilemmas.map((dilemma, index) => (
-                  <li
-                    key={index}
-                    className={`rounded-xl py-6 px-8 px-1 text-center border h-full border-[#505DFD] ${styles.middleCardBg2}`}
-                  >
-                    <h3 className="font-semibold text-white text-xl mb-4">
+            <ul className="">
+              {dilemmas.map((dilemma, index) => (
+                <li
+                  key={index}
+                  className={`mb-2 text-foreground-dark flex items-start gap-2 mt-2`}
+                >
+                  <span>
+                    {" "}
+                    <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0 mt-1" />
+                  </span>
+                  <div>
+                    <h3 className="font-semibold text-lg">
                       {dilemma.split(":")[0]}:
                     </h3>
                     {dilemma.split(":")[1]}
-                  </li>
-                ))}
-              </ul>
-            </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
-
-          {/* Sprint Zero Blueprint */}
-          <div className="my-16">
-            <h3 className="text-2xl lg:text-3xl font-semibold mb-6 text-foreground-dark text-center">
-              Our Approach: The Sprint Zero Blueprint
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
-              {sprintZeroSteps.map((step, index) => (
-                <Card
-                  key={index}
-                  className="relative overflow-hidden bg-gradient-card-light border border-[#00000019] backdrop-blur-sm rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-500 transform hover:scale-102 shadow-lg"
-                >
-                  <CardContent className="p-0">
-                    <div className="w-14 h-14 rounded-full bg-brand-purple/10 flex items-center justify-center mb-4 mx-auto">
+        </div>
+        <div
+          className={`bg-blue-500/5 rounded-2xl shadow shadow-glass backdrop-blur-md relative p-8 ${styles.cardBord1} `}
+        >
+          {" "}
+          <h3 className="text-2xl  font-semibold mb-6 text-foreground-dark text-left">
+            Our Approach: The Sprint Zero Blueprint
+          </h3>
+          <div className="space-4">
+            {sprintZeroSteps.map((step, index) => (
+              <div key={index}>
+                <div className="p-0 flex gap-2 mt-2">
+                  {/* <div className="w-14 h-14 rounded-full bg-brand-purple/10 flex items-center justify-center mb-4 mx-auto">
                       <span className="text-xl font-medium text-blue-500">
                         {index + 1}
                       </span>
-                    </div>
-                    <h4 className="text-base font-semibold text-foreground-dark mb-3 font-montserrat">
+                    </div> */}
+                  <span>
+                    <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0 mt-1" />
+                  </span>
+                  <div>
+                    <h4 className="text-base font-semibold text-foreground-dark mb-1 font-montserrat">
                       {step.title}
                     </h4>
                     <p className="text-sm text-foreground-dark/70 leading-relaxed font-montserrat">
                       {step.description}
                     </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          {/* Acceleration Platforms */}
-          <div className="mb-16">
-            <h3 className="text-2xl lg:text-3xl font-semibold mb-6 text-foreground-dark text-center">
-              The Acceleration Engine: Our Proprietary Platforms
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {platforms.map((platform, index) => {
-                const IconComponent = platform.icon;
-                return (
-                  <Link
-                    key={index}
-                    to={platform.blogLink}
-                    className="block group"
-                  >
-                    <Card className="bg-gradient-to-br from-[#F1F2FF] to-white border border-[#00000019] rounded-2xl p-5 hover:shadow-lg transition-all duration-300 h-full shadow-md group-hover:scale-105">
-                      <CardContent className="p-0 flex flex-col h-full">
-                        <div className="flex items-start justify-between mb-3">
-                          <div
-                            className={`w-12 h-12 rounded-[.75rem]  ${styles.icnBg} flex items-center justify-center shadow-md`}
-                          >
-                            <IconComponent className="w-5 h-5 text-blue-500" />
-                          </div>
-                          <span className="px-2.5 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold whitespace-nowrap">
-                            {platform.impact}
-                          </span>
-                        </div>
-                        <h4 className="text-base font-bold text-foreground-dark mb-2 font-montserrat">
-                          {platform.name}
-                        </h4>
-                        <p className="text-sm text-foreground-dark/70 leading-relaxed mb-3 flex-1 font-montserrat">
-                          {platform.description}
-                        </p>
-                        <div className="flex items-center text-brand-primary text-xs font-semibold group-hover:gap-2 transition-all">
-                          Learn more
-                          <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Pricing Cards */}
-          <div className="mb-16">
-            <h3 className="text-2xl lg:text-3xl font-semibold mb-8 text-foreground-dark text-center">
-              Choose Your Entry Point
-            </h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              <Card className="bg-white border border-[#00000019] rounded-2xl p-8 flex flex-col">
-                <CardContent className="p-0 flex-1">
-                  <div className="mb-6">
-                    <div className="text-sm font-medium text-brand-primary mb-2">
-                      Sprint Zero
-                    </div>
-                    <div className="text-3xl font-bold text-foreground-dark mb-2">
-                      $25,000+
-                    </div>
-                    <div className="text-sm text-foreground-dark/60">
-                      2-4 weeks
-                    </div>
                   </div>
-                  <p className="text-foreground-dark/80 mb-6">
-                    Strategic validation and de-risked roadmap for your product
-                    launch.
-                  </p>
-                  <h5 className="font-semibold text-foreground-dark mb-3">
-                    Deliverables:
-                  </h5>
-                  <ul className="space-y-3 mb-6">
-                    {[
-                      "Strategic validation workshop",
-                      "Technical architecture blueprint",
-                      "High-fidelity interactive prototype",
-                      "De-risked roadmap with fixed-bid estimate",
-                      "Technology stack recommendations",
-                    ].map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                        <span className="text-foreground-dark/80">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <Button
-                  variant="btnPrimary"
-                  className="w-full"
-                  onClick={() => window.open(CALENDLY_URL, "_blank")}
-                >
-                  Start Sprint Zero
-                </Button>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] border-0 rounded-2xl p-8 flex flex-col relative">
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-brand-primary to-brand-purple text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
-                    Most Popular
-                  </span>
                 </div>
-                <CardContent className="p-0 flex-1">
-                  <div className="mb-6">
-                    <div className="text-sm font-medium text-brand-primary mb-2">
-                      MVP Development
-                    </div>
-                    <div className="text-3xl font-bold text-foreground mb-2">
-                      $75,000+
-                    </div>
-                    <div className="text-sm text-foreground/60">8-12 weeks</div>
-                  </div>
-                  <p className="text-foreground/80 mb-6">
-                    Complete MVP development using our snap.mvp accelerator for
-                    rapid market entry.
-                  </p>
-                  <h5 className="font-semibold text-foreground mb-3">
-                    Deliverables:
-                  </h5>
-                  <ul className="space-y-3 mb-6">
-                    {[
-                      "Everything in Sprint Zero",
-                      "Production-ready MVP using snap.mvp accelerator",
-                      "Full DevOps setup and CI/CD pipeline",
-                      "Automated testing suite",
-                      "Launch support and handoff",
-                    ].map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
-                        <span className="text-foreground/80">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <Button
-                  variant="btnSecondary"
-                  className="w-full"
-                  onClick={() => window.open(CALENDLY_URL, "_blank")}
-                >
-                  Launch Your MVP
-                </Button>
-              </Card>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className={`pt-12 pb-20 ${styles.snapBg} `}>
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="max-w-6xl mx-auto">
+            {/* Sprint Zero Blueprint */}
+
+            {/* Acceleration Platforms */}
+            <div className="mb-16">
+              <h3 className="text-2xl lg:text-3xl font-semibold mb-6 text-foreground-light text-center">
+                The Acceleration Engine: Our Proprietary Platforms
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
+                {platforms.map((platform, index) => {
+                  const IconComponent = platform.icon;
+                  return (
+                    <Link
+                      key={index}
+                      to={platform.blogLink}
+                      className="block group"
+                    >
+                      <Card className="bg-transparent border border-blue-500 border-dashed rounded-sm px-5  mt-20 hover:shadow-lg transition-all duration-300 h-full shadow-md ">
+                        <CardContent className="p-0 flex flex-col h-full">
+                          <div className="flex-1">
+                            <div className="flex items-start justify-between mb-3">
+                              <div
+                                className={`w-12 h-12 rounded-[.75rem] z-10 bg-white  flex items-center justify-center shadow-md mx-auto -mt-16`}
+                              >
+                                <IconComponent className="w-5 h-5 text-blue-500" />
+                              </div>
+                            </div>
+                            <div className="bg-blue-500 -mt-10 -mx-4 z-9 pt-4 pb-2 text-center rounded-sm">
+                              <h4 className="text-base font-semibold text-foreground-light  font-montserrat">
+                                {platform.name}
+                              </h4>
+                              <small>{platform.impact}</small>
+                            </div>
+                            <div className="text-sm text-foreground-light text-center p-8 leading-relaxed -mb-16">
+                              {platform.description}
+                            </div>
+                          </div>
+                          <div className="bg-blue-500/20 p-4 -mx-5 mt-auto">
+                            <Button
+                              variant="btnPrimary"
+                              size="sm"
+                              className="w-full"
+                            >
+                              Learn more
+                            </Button>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </div>
-
-          {/* CTA */}
-          <div
-            className={`bg-gradient-subtle p-[5px]  text-center  ${styles["bord-lt-rb"]} rounded-[1.125rem]`}
-          >
-            <div className="bg-[#fff] rounded-[1rem] p-12">
-              <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
-                Ready to Launch Your Product?
-              </h3>
-              <p className="text-foreground-dark/80 mb-6 max-w-2xl mx-auto">
-                Let's validate your vision and create a clear path from idea to
-                market-ready product.
-              </p>
+        </div>
+      </div>
+      <div className="contanier pt-20">
+        {/* Pricing Cards */}
+        <div className="mb-16">
+          <h3 className="text-2xl lg:text-3xl font-semibold mb-8 text-foreground-dark text-center">
+            Choose Your Entry Point
+          </h3>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <Card className="bg-white border border-[#00000019] rounded-2xl p-8 flex flex-col">
+              <CardContent className="p-0 flex-1">
+                <div className="mb-6">
+                  <div className="text-sm font-medium text-brand-primary mb-2">
+                    Sprint Zero
+                  </div>
+                  <div className="text-3xl font-bold text-foreground-dark mb-2">
+                    $25,000+
+                  </div>
+                  <div className="text-sm text-foreground-dark/60">
+                    2-4 weeks
+                  </div>
+                </div>
+                <p className="text-foreground-dark/80 mb-6">
+                  Strategic validation and de-risked roadmap for your product
+                  launch.
+                </p>
+                <h5 className="font-semibold text-foreground-dark mb-3">
+                  Deliverables:
+                </h5>
+                <ul className="space-y-3 mb-6">
+                  {[
+                    "Strategic validation workshop",
+                    "Technical architecture blueprint",
+                    "High-fidelity interactive prototype",
+                    "De-risked roadmap with fixed-bid estimate",
+                    "Technology stack recommendations",
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground-dark/80">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
               <Button
                 variant="btnPrimary"
-                size="lg"
+                className="w-full"
                 onClick={() => window.open(CALENDLY_URL, "_blank")}
               >
-                Schedule Product Launch Consultation
+                Start Sprint Zero
               </Button>
-            </div>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] border-0 rounded-2xl p-8 flex flex-col relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-gradient-to-r from-brand-primary to-brand-purple text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  Most Popular
+                </span>
+              </div>
+              <CardContent className="p-0 flex-1">
+                <div className="mb-6">
+                  <div className="text-sm font-medium text-brand-primary mb-2">
+                    MVP Development
+                  </div>
+                  <div className="text-3xl font-bold text-foreground mb-2">
+                    $75,000+
+                  </div>
+                  <div className="text-sm text-foreground/60">8-12 weeks</div>
+                </div>
+                <p className="text-foreground/80 mb-6">
+                  Complete MVP development using our snap.mvp accelerator for
+                  rapid market entry.
+                </p>
+                <h5 className="font-semibold text-foreground mb-3">
+                  Deliverables:
+                </h5>
+                <ul className="space-y-3 mb-6">
+                  {[
+                    "Everything in Sprint Zero",
+                    "Production-ready MVP using snap.mvp accelerator",
+                    "Full DevOps setup and CI/CD pipeline",
+                    "Automated testing suite",
+                    "Launch support and handoff",
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground/80">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+              <Button
+                variant="btnSecondary"
+                className="w-full"
+                onClick={() => window.open(CALENDLY_URL, "_blank")}
+              >
+                Launch Your MVP
+              </Button>
+            </Card>
           </div>
         </div>
       </div>
