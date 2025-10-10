@@ -149,6 +149,12 @@ header .fixed.inset-0 {
   background-position: center;
   background-size: cover;
 }
+.sectionBgCustSoft {
+  background-image: url(./../images/soft-page-bg.webp);
+  background-repeat: no-repeat;
+  background-position: right -200px;
+  background-size: cover;
+}
 
 .bord-rb,
 .bordRb {

@@ -136,7 +136,7 @@ const CustomSoftware = () => {
         {/* 1. Hero Section */}
         <HeroSection />
         <div
-          className={`${styles.sectionBgAI} bg-white bg-fixed bg-cover bg-top`}
+          className={`${styles.sectionBgCustSoft} bg-white bg-fixed bg-cover`}
         >
           {/* 2. Tech Stack Section */}
           <TechStackSection />

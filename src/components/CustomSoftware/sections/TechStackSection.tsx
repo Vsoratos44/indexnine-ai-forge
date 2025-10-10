@@ -52,7 +52,7 @@ export const TechStackSection: React.FC = () => {
   ];
 
   return (
-    <section className="pt-24 lg:pt-32 bg-transparent">
+    <section className="pt-24 lg:pt-32 bg-transparent bg-gradient-to-b from-blue-500/10 via-blue-500/5 to-blue-500/0">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -72,22 +72,22 @@ export const TechStackSection: React.FC = () => {
               return (
                 <Card
                   key={index}
-                  className="relative overflow-hidden bg-gradient-card-light border border-[#00000019] bg-[#ffffff59] rounded-2xl p-6 sm:p-8 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left"
+                  className="relative overflow-hidden bg-gradient-card-light border border-[#ffffff] bg-[#ffffff79] rounded-xl p-5 hover:shadow-glass-sm transition-all duration-500 transform hover:scale-102 hover:-translate-y-2 animate-fade-in group text-left"
                 >
-                  <CardContent className="p-0 flex flex-col items-center text-center">
+                  <CardContent className="p-0 flex flex-col">
                     <div
-                      className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                      className={`relative w-16 h-16 flex mb-2 items-center justify-center transition-all ${styles.icnBg}`}
                     >
-                      <IconComponent className="w-8 h-8  text-blue-500" />
+                      <IconComponent className="w-6 h-6  text-blue-500" />
                     </div>
-                    <h3 className="text-lg sm:text-xl font-semibold text-foreground-dark mb-4 sm:mb-6 font-montserrat">
+                    <h3 className="text-lg font-semibold text-foreground-dark mb-2 font-montserrat">
                       {category.title}
                     </h3>
-                    <div className="flex flex-wrap justify-center gap-2">
+                    <div className="flex flex-wrap gap-2">
                       {category.technologies.map((tech, idx) => (
                         <span
                           key={idx}
-                          className="px-3 py-1.5 bg-foreground-dark/5 text-foreground-dark/70 rounded-full text-xs sm:text-sm font-medium hover:bg-foreground-dark/10 transition-colors duration-200"
+                          className="px-2 py-1 bg-blue-500/10 text-foreground-dark/70 rounded-full text-xs font-medium hover:bg-foreground-dark/10 transition-colors duration-200"
                         >
                           {tech}
                         </span>
