@@ -14,39 +14,37 @@ export const SolutionsSection: React.FC = () => {
       id="qae-solutions"
       className={`pb-24 lg:pb-32 relative overflow-hidden`}
     >
-      <div className="container mx-auto px-6">
+      <div className="p-0">
         <div className="max-w-8xl mx-auto">
-          <SectionHeading
-            title="QAE Solutions in Action"
-            description="Powered by our proprietary automation platforms, purpose-built internally to accelerate implementation and maximize ROI."
-            variant="light"
-          />
-
-          {/* Proprietary Automation Platforms */}
           <div className="mb-16">
+            <SectionHeading
+              title="QAE Solutions in Action"
+              description="Powered by our proprietary automation platforms, purpose-built internally to accelerate implementation and maximize ROI."
+              variant="light"
+            />
             <div className="text-center mb-8">
               <h3 className="text-2xl font-semibold text-foreground-dark mb-4">
                 Our Proprietary Automation Accelerators
               </h3>
-              <p className="text-lg text-foreground-dark/80 max-w-2xl mx-auto">
+              <p className="text-lg text-foreground-dark/80 max-w-4xl mx-auto">
                 We augment our strategic services with proprietary platforms
                 designed to accelerate results and provide unparalleled
                 visibility into your application's quality.
               </p>
             </div>
+          </div>
 
-            <div className="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {platformsData.map((platform, index) => (
-                <FeatureCard
-                  key={index}
-                  icon={platform.icon}
-                  title={platform.title}
-                  description={platform.description}
-                  features={platform.features}
-                  variant="light"
-                />
-              ))}
-            </div>
+          <div className="grid lg:grid-cols-3 gap-6 max-w-8xl mt-4 mx-auto container">
+            {platformsData.map((platform, index) => (
+              <FeatureCard
+                key={index}
+                icon={platform.icon}
+                title={platform.title}
+                description={platform.description}
+                features={platform.features}
+                variant="light"
+              />
+            ))}
           </div>
 
           {/* Real-world Applications */}

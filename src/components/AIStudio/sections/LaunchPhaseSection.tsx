@@ -57,7 +57,7 @@ export const LaunchPhaseSection: React.FC = () => {
           </Card>
 
           {/* Feature 2 */}
-          <Card className="relative flex flex-col overflow-hidden bg-gradient-to-br from-[#1c1c1c] via-[#3a3a3a] to-[#4D4E4F] border border-[#ffffff19] rounded-2xl p-8 hover:shadow-lg transition-all duration-500">
+          <Card className="relative flex flex-col overflow-hidden bg-gradient-to-br from-[#222] via-[#111] to-[#000] border border-[#ffffff19] rounded-2xl p-8 hover:shadow-lg transition-all duration-500">
             <CardContent className="p-0">
               <div
                 className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}

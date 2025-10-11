@@ -22,7 +22,7 @@ export const DilemmaSection: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div
-              className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+              className={`rounded-xl pb-4 pt-6 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
             >
               <h3 className="text-4xl font-bold text-white mb-2 font-montserrat">
                 85%
@@ -34,7 +34,7 @@ export const DilemmaSection: React.FC = () => {
               </p>
             </div>
             <div
-              className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+              className={`rounded-xl pb-4 pt-6 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
             >
               <h3 className="text-4xl font-bold text-white mb-2 font-montserrat">
                 $7T
@@ -46,7 +46,7 @@ export const DilemmaSection: React.FC = () => {
               </p>
             </div>
             <div
-              className={`rounded-xl py-4 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
+              className={`rounded-xl pb-4 pt-6 px-1 text-center border border-[#505DFD] ${styles.middleCardBg2}`}
             >
               <h3 className="text-4xl font-bold text-white mb-2 font-montserrat">
                 3x

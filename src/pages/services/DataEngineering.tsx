@@ -161,32 +161,34 @@ const DataEngineering = () => {
 
         {/* Data Problem Section */}
         <section className="pt-24 lg:pt-32 bg-[#fff]">
-          <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-2xl lg:text-3xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25]">
-                  Is Your Data Working For You, or Against You?
-                </h2>
-                <p className="text-lg text-foreground-dark-muted">
-                  Siloed systems, unreliable reports, and slow queries don't
-                  just frustrate teams—they cripple innovation. A weak data
-                  foundation is the silent killer of transformation initiatives
-                  and the primary reason digital projects fail to deliver ROI.
-                </p>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="inline-block">
-                  <div className="text-8xl md:text-7xl font-semibold text-brand-primary mb-4">
-                    85%
+          <div className="container mx-auto max-w-6xl  grid md:grid-cols-2 gap-4">
+            <div>
+              <h2 className="text-2xl lg:text-3xl font-semibold text-foreground-dark mb-6 text-foreground-dark leading-[1.25] pt-6">
+                Is Your Data Working For You, or Against You?
+              </h2>
+              <p className="text-lg text-foreground-dark-muted">
+                Siloed systems, unreliable reports, and slow queries don't just
+                frustrate teams—they cripple innovation. A weak data foundation
+                is the silent killer of transformation initiatives and the
+                primary reason digital projects fail to deliver ROI.
+              </p>
+            </div>
+            <div className="text-center lg:text-left">
+              <div className={`rounded-2xl p-1 text-left ${styles.bordRb}`}>
+                <div className="bg-gradient-to-b from-[transparent] to-[#ffffff] rounded-2xl p-8  pt-0">
+                  <div className="inline-block">
+                    <div className="text-8xl font-semibold text-brand-primary mb-4">
+                      85%
+                    </div>
+                    <h3 className="text-2xl font-semibold text-foreground-dark mb-3">
+                      Of AI Projects Fail
+                    </h3>
+                    <p className="text-foreground-dark-muted">
+                      ...primarily due to inadequate data quality and
+                      infrastructure. Your AI strategy is only as strong as the
+                      data it's built on.
+                    </p>
                   </div>
-                  <h3 className="text-2xl font-semibold text-foreground-dark mb-3">
-                    Of AI Projects Fail
-                  </h3>
-                  <p className="text-foreground-dark-muted">
-                    ...primarily due to inadequate data quality and
-                    infrastructure. Your AI strategy is only as strong as the
-                    data it's built on.
-                  </p>
                 </div>
               </div>
             </div>

@@ -87,7 +87,7 @@ export const ProductLaunchSection: React.FC = () => {
 
   return (
     <section className="pb-24 lg:pb-32 bg-transparent">
-      <div className="grid grid-cols-2 container px-4 sm:px-16  bg-transparent gap-16 pb-12 lg:pb-16">
+      <div className="grid grid-cols-2 container px-4 sm:px-16  bg-transparent gap-16 pb-16 lg:pb-24">
         <div
           className={`bg-blue-500/5 rounded-2xl shadow shadow-glass backdrop-blur-md relative p-8 ${styles.cardBord1} `}
         >
@@ -167,7 +167,7 @@ export const ProductLaunchSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className={`pt-12 pb-20 ${styles.snapBg} `}>
+      <div className={`pt-24 pb-32 ${styles.snapBg} `}>
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             {/* Sprint Zero Blueprint */}
@@ -261,7 +261,7 @@ export const ProductLaunchSection: React.FC = () => {
                     "Technology stack recommendations",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-foreground-dark mt-0.5 flex-shrink-0" />
                       <span className="text-foreground-dark/80">{item}</span>
                     </li>
                   ))}
@@ -308,7 +308,7 @@ export const ProductLaunchSection: React.FC = () => {
                     "Launch support and handoff",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-brand-purple mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
                       <span className="text-foreground/80">{item}</span>
                     </li>
                   ))}
