@@ -24,6 +24,13 @@ import {
   OrganizationSchema,
 } from "@/components/SEOStructuredData";
 import styles from "../../assets/css/stylesheet.module.css";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const InnovationLab = () => {
   // SEO Configuration
@@ -37,6 +44,32 @@ const InnovationLab = () => {
     ogImage: "https://www.indexnine.com/images/innovation-lab-og.jpg",
     ogType: "website",
   });
+
+  const caseStudies = [
+    {
+      title: "From Audit to Action: Engineering a $165M+ Cybersecurity Exit",
+      outcome:
+        "See how our strategic partnership transformed a niche auditing tool into a mission-critical identity platform, directly enabling a $165M+ acquisition.",
+      link: "/insights/case-studies/zilla",
+      tag: "Cybersecurity",
+    },
+    {
+      title:
+        "Weeks to Minutes: How We Deploy Production-Ready Cloud Infrastructure with Snap.MVP",
+      outcome:
+        "A deep dive into the technology and philosophy behind our game-changing deployment accelerator.",
+      link: "/insights/blogs/cloud-infrastructure-automation-terraform",
+      tag: "MVP",
+    },
+    {
+      title:
+        "AI-Assisted React Development: From Design to Dashboard with Cursor AI",
+      outcome:
+        "Explore how our UI architects leverage AI tools to build complex interfaces with incredible speed and quality.",
+      link: "/insights/blogs/ai-assisted-software-engineering",
+      tag: "AI",
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -380,11 +413,11 @@ const InnovationLab = () => {
 
           <Section
             variant="alternate"
-            containerSize="6xl"
-            className="bg-transparent lg:pt-0 pt-0"
+            containerSize="full"
+            className="bg-transparent container lg:pt-0 pt-0"
           >
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+            <div className="text-center mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-0 text-foreground-dark ">
                 Proof, Not{" "}
                 <span className="text-brand-primary leading-[1.25]">
                   Promises
@@ -392,82 +425,65 @@ const InnovationLab = () => {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              <CardGlass className="group">
-                <div
-                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                >
-                  <Rocket className="w-8 h-8 text-brand-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground-dark mb-4">
-                  From Audit to Action: Engineering a $165M+ Cybersecurity Exit
-                </h3>
-                <p className="text-foreground-dark-muted mb-6">
-                  See how our strategic partnership transformed a niche auditing
-                  tool into a mission-critical identity platform, directly
-                  enabling a $165M+ acquisition.
-                </p>
-                <Button variant="btnLink" size="link">
-                  <Link
-                    to="/insights/case-studies/zilla"
-                    className="flex items-center"
-                  >
-                    Read the Case Study{" "}
-                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  </Link>
-                </Button>
-              </CardGlass>
+            <Carousel
+              className="w-full"
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+            >
+              <CarouselContent className="ml-4 mr-4">
+                {caseStudies.map((item, index) => {
+                  return (
+                    <CarouselItem
+                      key={index}
+                      className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                    >
+                      <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
+                        {/* Enhanced Glassmorphism Card */}
 
-              <CardGlass className="group">
-                <div
-                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                >
-                  <Zap className="w-8 h-8 text-brand-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground-dark mb-4">
-                  Weeks to Minutes: How We Deploy Production-Ready Cloud
-                  Infrastructure with Snap.MVP
-                </h3>
-                <p className="text-foreground-dark-muted mb-6">
-                  A deep dive into the technology and philosophy behind our
-                  game-changing deployment accelerator.
-                </p>
-                <Button variant="btnLink" size="link">
-                  <Link
-                    to="/insights/blogs/cloud-infrastructure-automation-terraform"
-                    className="flex items-center"
-                  >
-                    Read the Blog Post{" "}
-                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  </Link>
-                </Button>
-              </CardGlass>
+                        <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
+                          <div>
+                            <span className="inline-block px-4 mb-4 py-2 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold">
+                              {item.tag}
+                            </span>
+                          </div>
+                          {/* Content Header */}
 
-              <CardGlass className="group">
-                <div
-                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                >
-                  <Brain className="w-8 h-8 text-brand-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground-dark mb-4">
-                  AI-Assisted React Development: From Design to Dashboard with
-                  Cursor AI
-                </h3>
-                <p className="text-foreground-dark-muted mb-6">
-                  Explore how our UI architects leverage AI tools to build
-                  complex interfaces with incredible speed and quality.
-                </p>
-                <Button variant="btnLink" size="link">
-                  <Link
-                    to="/insights/blogs/ai-assisted-software-engineering"
-                    className="flex items-center"
-                  >
-                    Read the Blog Post{" "}
-                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  </Link>
-                </Button>
-              </CardGlass>
-            </div>
+                          {/* Image with Glassmorphism */}
+
+                          {/* Content Body */}
+                          <div className="relative flex-1 flex flex-col">
+                            <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
+                              {item.title}
+                            </h3>
+
+                            <div className="relative flex items-start justify-between mb-6 text-foreground-dark">
+                              {item.outcome}
+                            </div>
+                          </div>
+                          <div className="text-left">
+                            <Button variant="btnLink" size="link">
+                              <Link
+                                className="flex items-center pr-2"
+                                to={item.link}
+                              >
+                                Read More{" "}
+                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                              </Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+
+              {/* Enhanced Glassmorphism Navigation */}
+              <CarouselPrevious className="left-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+              <CarouselNext className="right-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+            </Carousel>
           </Section>
         </div>
       </div>

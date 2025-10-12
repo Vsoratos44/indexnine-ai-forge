@@ -27,6 +27,14 @@ import {
 } from "@/components/SEOStructuredData";
 import { useSEO } from "@/hooks/useSEO";
 import styles from "../../assets/css/stylesheet.module.css";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Link } from "react-router-dom";
 
 const Enterprise = () => {
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
@@ -74,6 +82,31 @@ const Enterprise = () => {
     ogType: "website",
     schemaType: "WebPage",
   });
+
+  const caseStudies = [
+    {
+      title:
+        "From Monolith to Market Leader: Modernizing an Enterprise Insurance Platform",
+      outcome:
+        "Learn how we re-architected a critical legacy system, reducing latency by 60% and enabling the rapid launch of new product lines.",
+      link: "/insights/case-studies",
+      tag: "Modernization",
+    },
+    {
+      title: "Achieving 95% Test Automation for a Global Logistics Provider",
+      outcome:
+        "Discover our process for building a comprehensive QA automation suite that cut regression testing time from two weeks to four hours.",
+      link: "/insights/case-studies",
+      tag: "Automation",
+    },
+    {
+      title: "The CTO's Guide to AI Risk Management",
+      outcome:
+        "A comprehensive framework for assessing and mitigating the technical, operational, and ethical risks of implementing AI solutions in the enterprise.",
+      link: "/insights/blogs/ai-assisted-software-engineering",
+      tag: "Whitepaper",
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -342,79 +375,85 @@ const Enterprise = () => {
 
           <Section
             variant="alternate"
-            containerSize="6xl"
-            className="bg-transparent lg:pt-0 pt-0"
+            containerSize="full"
+            className="bg-transparent container lg:pt-0 pt-0"
           >
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+            <div className="text-center mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark ">
                 Engineering Transformation{" "}
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   in Action
                 </span>
               </h2>
             </div>
+            <Carousel
+              className="w-full"
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+            >
+              <CarouselContent className="ml-4 mr-4">
+                {caseStudies.map((item, index) => {
+                  return (
+                    <CarouselItem
+                      key={index}
+                      className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                    >
+                      <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
+                        {/* Enhanced Glassmorphism Card */}
 
-            <div className="grid md:grid-cols-3 gap-6">
-              <CardGlass className="group">
-                <div
-                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                >
-                  <RefreshCw className="w-8 h-8 text-brand-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground-dark mb-4">
-                  From Monolith to Market Leader: Modernizing an Enterprise
-                  Insurance Platform
-                </h3>
-                <p className="text-foreground-dark-muted mb-6">
-                  Learn how we re-architected a critical legacy system, reducing
-                  latency by 60% and enabling the rapid launch of new product
-                  lines.
-                </p>
-                <Button variant="btnLink" size="link">
-                  Read the Case Study{" "}
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                </Button>
-              </CardGlass>
+                        <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
+                          <div>
+                            <span className="inline-block px-4 mb-4 py-2 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold">
+                              {item.tag}
+                            </span>
+                          </div>
+                          {/* Content Header */}
 
-              <CardGlass className="group">
-                <div
-                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                >
-                  <Shield className="w-8 h-8 text-brand-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground-dark mb-4">
-                  Achieving 95% Test Automation for a Global Logistics Provider
-                </h3>
-                <p className="text-foreground-dark-muted mb-6">
-                  Discover our process for building a comprehensive QA
-                  automation suite that cut regression testing time from two
-                  weeks to four hours.
-                </p>
-                <Button variant="btnLink" size="link">
-                  Read the Case Study{" "}
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                </Button>
-              </CardGlass>
+                          {/* Image with Glassmorphism */}
 
-              <CardGlass className="group">
-                <div
-                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                >
-                  <Brain className="w-8 h-8 text-brand-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground-dark mb-4">
-                  The CTO's Guide to AI Risk Management
-                </h3>
-                <p className="text-foreground-dark-muted mb-6">
-                  A comprehensive framework for assessing and mitigating the
-                  technical, operational, and ethical risks of implementing AI
-                  solutions in the enterprise.
-                </p>
-                <Button variant="btnLink" size="link">
-                  Download the Whitepaper <Download className="w-5 h-5 ml-1" />
-                </Button>
-              </CardGlass>
-            </div>
+                          {/* Content Body */}
+                          <div className="relative flex-1 flex flex-col">
+                            <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
+                              {item.title}
+                            </h3>
+
+                            <div className="relative flex items-start justify-between mb-6 text-foreground-dark">
+                              {item.outcome}
+                            </div>
+                          </div>
+                          <div className="text-left">
+                            <Button variant="btnLink" size="link">
+                              <Link
+                                className="flex items-center pr-2"
+                                to={item.link}
+                              >
+                                {index === 2 ? (
+                                  <>
+                                    Download{" "}
+                                    <Download className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                  </>
+                                ) : (
+                                  <>
+                                    Read More{" "}
+                                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                  </>
+                                )}
+                              </Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+
+              {/* Enhanced Glassmorphism Navigation */}
+              <CarouselPrevious className="left-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+              <CarouselNext className="right-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+            </Carousel>
           </Section>
         </div>
       </div>
