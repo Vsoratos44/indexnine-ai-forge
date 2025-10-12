@@ -17,10 +17,19 @@ import {
   Target,
   TrendingUp,
   Shield,
+  CircleCheckBig,
+  ArrowRight,
 } from "lucide-react";
 import styles from "../../assets/css/stylesheet.module.css";
 import { useSEO } from "@/hooks/useSEO";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const ProjectBased = () => {
   useSEO({
@@ -31,6 +40,96 @@ const ProjectBased = () => {
     ogImage: "",
     ogType: "website",
   });
+
+  const caseStudies = [
+    {
+      title: "Sports Interactive",
+      outcome: (
+        <div className="space-y-3 text-foreground-dark-muted font-montserrat">
+          <p>
+            <strong className="text-brand-primary font-medium">
+              Challenge:
+            </strong>{" "}
+            A top-tier sports media agency was struggling to automate real-time
+            fan engagement, a critical but costly and unscalable manual process.
+          </p>
+          <p>
+            <strong className="text-brand-primary font-medium">
+              Solution:
+            </strong>{" "}
+            We engineered a bespoke, low-latency AI engine that automated the
+            entire workflow, from data ingestion to content generation.
+          </p>
+          <p>
+            <strong className="text-brand-primary font-medium">Outcome:</strong>{" "}
+            Eliminated a six-person operations team, delivered live social media
+            content in under 15 seconds, and created a scalable platform for
+            future growth.
+          </p>
+        </div>
+      ),
+      link: "/insights/case-studies/si",
+      tag: "Case study",
+    },
+    {
+      title: "Ginesys",
+      outcome: (
+        <div className="space-y-3 text-foreground-dark-muted font-montserrat">
+          <p>
+            <strong className="text-brand-primary font-medium">
+              Challenge:
+            </strong>{" "}
+            An urgent client need required the rapid deployment of a skilled,
+            five-person team to accelerate a critical project timeline.
+          </p>
+          <p>
+            <strong className="text-brand-primary font-medium">
+              Solution:
+            </strong>{" "}
+            We sourced and deployed a full team immediately, bypassing the
+            lengthy hiring process that would have stalled the project.
+          </p>
+          <p>
+            <strong className="text-brand-primary font-medium">Outcome:</strong>{" "}
+            The project was accelerated, and the client was able to meet their
+            market deadlines, demonstrating our ability to deliver not just
+            technology, but also talent, at speed.
+          </p>
+        </div>
+      ),
+      link: "/insights/case-studies/ginesys",
+      tag: "Case study",
+    },
+    {
+      title: "GPTW",
+      outcome: (
+        <div className="space-y-3 text-foreground-dark-muted font-montserrat">
+          <p>
+            <strong className="text-brand-primary font-medium">
+              Challenge:
+            </strong>{" "}
+            A key client initiative was stalled due to a lack of a clear path
+            forward.
+          </p>
+          <p>
+            <strong className="text-brand-primary font-medium">
+              Solution:
+            </strong>{" "}
+            We delivered a comprehensive technology roadmap that provided
+            strategic clarity and a detailed, actionable plan.
+          </p>
+          <p>
+            <strong className="text-brand-primary font-medium">Outcome:</strong>{" "}
+            The client was able to move forward with confidence, with all
+            stakeholders aligned on the vision and the execution plan.
+          </p>
+        </div>
+      ),
+      link: "/insights/case-studies",
+      tag: "Case study",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -81,124 +180,164 @@ const ProjectBased = () => {
           </div>
         </div>
       </section>
-
-      {/* Philosophy Section */}
-      <section className="py-24 lg:py-32 bg-[#fff]">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-              Your Success is Our Success:{" "}
-              <span className="text-brand-primary leading-[1.35]">
-                The Outcome-Based Engagement Model
-              </span>
-            </h2>
-            <div className="max-w-4xl mx-auto space-y-6 text-lg text-foreground-dark-muted leading-relaxed font-montserrat">
-              <p>
-                For too long, the traditional consulting model has been broken.
-                You pay for effort, not for results. We're changing that. Our
-                engagement philosophy is built on a foundation of shared risk
-                and shared reward. We are so confident in our ability to deliver
-                that we predicate our fees on the successful outcomes we
-                generate for your business.
-              </p>
-              <p>
-                This isn't just a talking point; it's a core tenet of our
-                operational model. Whether it's through a{" "}
-                <strong className="text-brand-primary font-medium">
-                  success-fee structure
-                </strong>{" "}
-                tied to your KPIs or an{" "}
-                <strong className="text-brand-primary font-medium">
-                  outcome-based agreement
-                </strong>
-                , we are a partner in your venture, not just a vendor. This
-                ensures complete alignment and a relentless focus on what truly
-                matters: delivering value and driving your business forward.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Engagement Models Section */}
-      <section className="pb-24 lg:pb-32 bg-[#fff]">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-              Tailored Engagements for Your{" "}
-              <span className="text-brand-primary leading-[1.35]">
-                Unique Needs
-              </span>
-            </h2>
-            <p className="text-xl text-foreground-dark-muted max-w-4xl mx-auto font-montserrat">
-              We understand that every project is different. That's why we offer
-              a range of engagement models designed to provide the right level
-              of support at the right time.
-            </p>
-          </div>
-
-          <div className="space-y-20">
-            {/* Project-Based Teams */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-3xl font-semibold text-foreground-dark mb-6 font-montserrat flex items-center justify-start gap-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 text-blue-500 font-light rounded-full flex items-center justify-center">
-                    1
-                  </div>
-                  Project-Based Teams
-                </h3>
-                <p className="text-lg text-foreground-dark-muted leading-relaxed font-montserrat">
-                  Our core offering provides you with a dedicated team of
-                  experts to take your project from concept to completion. We
-                  handle the entire lifecycle, from discovery and design to
-                  development, testing, and deployment. This is the ideal model
-                  for complex, end-to-end software development projects.
+      <div className={` ${styles.sectionBgData} bg-white bg-fixed`}>
+        {/* Philosophy Section */}
+        <section className="py-24 lg:py-32 bg-transparent">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                Your Success is Our Success:{" "}
+                <span className="text-brand-primary leading-[1.35]">
+                  The Outcome-Based Engagement Model
+                </span>
+              </h2>
+              <div className="max-w-4xl mx-auto space-y-6 text-lg text-foreground-dark-muted leading-relaxed font-montserrat">
+                <p>
+                  For too long, the traditional consulting model has been
+                  broken. You pay for effort, not for results. We're changing
+                  that. Our engagement philosophy is built on a foundation of
+                  shared risk and shared reward. We are so confident in our
+                  ability to deliver that we predicate our fees on the
+                  successful outcomes we generate for your business.
+                </p>
+                <p>
+                  This isn't just a talking point; it's a core tenet of our
+                  operational model. Whether it's through a{" "}
+                  <strong className="text-brand-primary font-medium">
+                    success-fee structure
+                  </strong>{" "}
+                  tied to your KPIs or an{" "}
+                  <strong className="text-brand-primary font-medium">
+                    outcome-based agreement
+                  </strong>
+                  , we are a partner in your venture, not just a vendor. This
+                  ensures complete alignment and a relentless focus on what
+                  truly matters: delivering value and driving your business
+                  forward.
                 </p>
               </div>
-              <CardGlass className="p-8">
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    {" "}
-                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-2 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                      <Target className="w-6 h-6 text-brand-primary" />
-                    </div>
-                    <span className="font-medium text-foreground-dark">
-                      End-to-end project delivery
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-2 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                      <Users className="w-6 h-6 text-brand-primary" />
-                    </div>
-                    <span className="font-medium text-foreground-dark">
-                      Dedicated expert team
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="relative rounded-full bg-gradient-to-r from-[#505CFD19] to-brand-purple/20 w-14 h-14 flex items-center justify-center mr-2 border border-white/20 group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-                      <Shield className="w-6 h-6 text-brand-primary" />
-                    </div>
-                    <span className="font-medium text-foreground-dark">
-                      Full lifecycle management
-                    </span>
-                  </div>
-                </div>
-              </CardGlass>
+            </div>
+          </div>
+        </section>
+
+        {/* Engagement Models Section */}
+        <section className="pb-24 lg:pb-32 bg-transparent">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-20">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                Tailored Engagements for Your{" "}
+                <span className="text-brand-primary leading-[1.35]">
+                  Unique Needs
+                </span>
+              </h2>
+              <p className="text-xl text-foreground-dark-muted max-w-4xl mx-auto font-montserrat">
+                We understand that every project is different. That's why we
+                offer a range of engagement models designed to provide the right
+                level of support at the right time.
+              </p>
             </div>
 
-            {/* Specialty Services */}
-            <div>
-              <h3 className="text-3xl font-semibold text-foreground-dark mb-6 font-montserrat flex items-center justify-start gap-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-[#505CFD19] to-brand-purple/20  text-blue-500 font-light rounded-full flex items-center justify-center">
-                  2
+            <div className="space-y-20">
+              {/* Project-Based Teams */}
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h3 className="text-2xl  lg:text-3xl font-semibold text-left text-foreground-dark mb-6 font-montserrat">
+                    Project-Based Teams
+                  </h3>
+                  <p className="text-lg text-foreground-dark-muted leading-relaxed font-montserrat">
+                    Our core offering provides you with a dedicated team of
+                    experts to take your project from concept to completion. We
+                    handle the entire lifecycle, from discovery and design to
+                    development, testing, and deployment. This is the ideal
+                    model for complex, end-to-end software development projects.
+                  </p>
                 </div>
-                Specialty Services & Consulting Engagements
-              </h3>
-              <p className="text-lg text-foreground-dark-muted mb-12 max-w-4xl font-montserrat">
-                For more targeted needs, we offer a suite of specialty services
-                designed to provide strategic guidance and accelerate your
-                initiatives:
-              </p>
+                <div
+                  className={`bg-[#ffffff19] rounded-b-2xl backdrop-blur-md relative px-8 pb-8 ${styles.cardBord1}`}
+                >
+                  <div className="space-y-6">
+                    <div className="flex items-center space-x-3">
+                      <div
+                        className={`relative w-12 h-12 flex  items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        <Target className="w-5 h-5 text-brand-primary" />
+                      </div>
+                      <span className="font-medium text-xl text-foreground-dark">
+                        End-to-end project delivery
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div
+                        className={`relative w-12 h-12 flex  items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        <Users className="w-5 h-5 text-brand-primary" />
+                      </div>
+                      <span className="font-medium text-xl text-foreground-dark">
+                        Dedicated expert team
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div
+                        className={`relative w-12 h-12 flex  items-center justify-center transition-all ${styles.icnBg}`}
+                      >
+                        <Shield className="w-5 h-5 text-brand-primary" />
+                      </div>
+                      <span className="font-medium text-xl text-foreground-dark">
+                        Full lifecycle management
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Specialty Services */}
+              <div className="grid lg:grid-cols-2 gap-12 items">
+                <div>
+                  <h3 className="text-2xl  lg:text-3xl font-semibold text-left text-foreground-dark mb-6 font-montserrat">
+                    Specialty Services & Consulting Engagements
+                  </h3>
+                  <p className="text-lg text-foreground-dark-muted mb-12 max-w-4xl font-montserrat">
+                    For more targeted needs, we offer a suite of specialty
+                    services designed to provide strategic guidance and
+                    accelerate your initiatives:
+                  </p>
+                </div>
+                <div
+                  className={`bg-[#ffffff19] rounded-b-2xl backdrop-blur-md relative px-6 pb-8 ${styles.cardBord1}`}
+                >
+                  <div className="flex gap-2">
+                    <span>
+                      <CircleCheckBig className="text-foreground-dark w-10" />
+                    </span>
+                    <div>
+                      <h4 className="text-xl font-semibold text-foreground-dark mb-1 font-montserrat">
+                        AI Assessment, Roadmap & Enablement
+                      </h4>
+                      <p className="text-foreground-dark-muted font-montserrat">
+                        A full-service consulting offering to guide you through
+                        every stage of your AI journey, from initial assessment
+                        to building internal capabilities.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-2 mt-4">
+                    <span>
+                      <CircleCheckBig className="text-foreground-dark w-10" />
+                    </span>
+                    <div>
+                      <h4 className="text-xl font-semibold text-foreground-dark mb-1 font-montserrat">
+                        Tech Strategy & Testing Strategy (APQR)
+                      </h4>
+                      <p className="text-foreground-dark-muted font-montserrat">
+                        Strategic consulting to modernize your technology stack
+                        and implement a world-class quality and performance
+                        testing framework.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <Card className="p-4 sm:p-6 lg:p-8 bg-[#fff] border-card-border shadow-lg hover:shadow-xl transition-all duration-300 relative text-foreground-dark flex flex-col">
@@ -249,271 +388,170 @@ const ProjectBased = () => {
                   </CardContent>
                 </Card>
               </div>
+            </div>
+          </div>
+        </section>
 
-              <div className="grid md:grid-cols-2  gap-6 mt-8">
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
-                  <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
-                    AI Assessment, Roadmap & Enablement
-                  </h4>
-                  <p className="text-foreground-dark-muted font-montserrat">
-                    A full-service consulting offering to guide you through
-                    every stage of your AI journey, from initial assessment to
-                    building internal capabilities.
-                  </p>
-                </div>
+        <section className="pb-24 lg:pb-32 bg-transparent">
+          <div className="container mx-auto max-w-8xl">
+            <div className="text-center mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                From Complex Challenges to{" "}
+                <span className="text-brand-primary leading-[1.35]">
+                  Proven Success
+                </span>
+              </h2>
+              <p className="text-xl text-foreground-dark-muted max-w-4xl mx-auto font-montserrat">
+                We have a track record of delivering transformative results for
+                our clients. Here are just a few examples of the challenges
+                we've solved:
+              </p>
+            </div>
 
-                <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105">
-                  <h4 className="text-xl font-semibold text-foreground-dark mb-2 font-montserrat">
-                    Tech Strategy & Testing Strategy (APQR)
-                  </h4>
-                  <p className="text-foreground-dark-muted font-montserrat">
-                    Strategic consulting to modernize your technology stack and
-                    implement a world-class quality and performance testing
-                    framework.
-                  </p>
-                </div>
+            <Carousel
+              className="w-full"
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+            >
+              <CarouselContent className="ml-4 mr-4">
+                {caseStudies.map((item, index) => {
+                  return (
+                    <CarouselItem
+                      key={index}
+                      className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                    >
+                      <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
+                        {/* Enhanced Glassmorphism Card */}
+
+                        <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
+                          <div>
+                            <span className="inline-block px-4 mb-4 py-2 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold">
+                              {item.tag}
+                            </span>
+                          </div>
+                          {/* Content Header */}
+
+                          {/* Image with Glassmorphism */}
+
+                          {/* Content Body */}
+                          <div className="relative flex-1 flex flex-col">
+                            <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
+                              {item.title}
+                            </h3>
+
+                            <div className="relative flex items-start justify-between mb-6 text-foreground-dark">
+                              {item.outcome}
+                            </div>
+                          </div>
+                          <div className="text-left">
+                            <Button variant="btnLink" size="link">
+                              <Link
+                                className="flex items-center pr-2"
+                                to={item.link}
+                              >
+                                Read More{" "}
+                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                              </Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+
+              {/* Enhanced Glassmorphism Navigation */}
+              <CarouselPrevious className="left-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+              <CarouselNext className="right-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+            </Carousel>
+
+            <div className="space-y-6">
+              <div className="text-center pt-4">
+                <p className="text-foreground-dark-muted italic font-montserrat">
+                  (We have a deep backlog of case studies that further
+                  demonstrate our expertise in Product Engineering, Staff
+                  Augmentation, AI, and Tech Strategy with clients like Genysis,
+                  Airworks, Annotates, CygeniQ, JustTransform, and
+                  Onphase/Docuphase.)
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
-        <div className={` ${styles.sectionBgData}`}>
-          {/* Case Studies Section */}
-          <section className="pb-24 lg:pb-32 bg-transparent">
-            <div className="container mx-auto max-w-6xl">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-                  From Complex Challenges to{" "}
-                  <span className="text-brand-primary leading-[1.35]">
-                    Proven Success
-                  </span>
-                </h2>
-                <p className="text-xl text-foreground-dark-muted max-w-4xl mx-auto font-montserrat">
-                  We have a track record of delivering transformative results
-                  for our clients. Here are just a few examples of the
-                  challenges we've solved:
-                </p>
-              </div>
+        {/* Process Section */}
+        <section className="pb-24 lg:pb-32 bg-transparent">
+          <div className="container mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                A Disciplined Path from{" "}
+                <span className="text-brand-primary leading-[1.35]">
+                  Vision to Value
+                </span>
+              </h2>
+              <p className="text-xl text-foreground-dark-muted max-w-4xl mx-auto font-montserrat">
+                Our engagement process is designed to be transparent,
+                collaborative, and ruthlessly efficient.
+              </p>
+            </div>
 
-              <div className="space-y-6">
-                {/* Sports Interactive Case Study */}
-                <Link to="/insights/case-studies/annotate" className="block">
-                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
-                    <div className="flex items-start space-x-6">
-                      <div
-                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                      >
-                        <Zap className="w-8 h-8 text-brand-primary" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
-                          Case Study Highlight 1: Sports Interactive
-                        </h3>
-                        <div className="space-y-3 text-foreground-dark-muted font-montserrat">
-                          <p>
-                            <strong className="text-brand-primary font-medium">
-                              Challenge:
-                            </strong>{" "}
-                            A top-tier sports media agency was struggling to
-                            automate real-time fan engagement, a critical but
-                            costly and unscalable manual process.
-                          </p>
-                          <p>
-                            <strong className="text-brand-primary font-medium">
-                              Solution:
-                            </strong>{" "}
-                            We engineered a bespoke, low-latency AI engine that
-                            automated the entire workflow, from data ingestion
-                            to content generation.
-                          </p>
-                          <p>
-                            <strong className="text-brand-primary font-medium">
-                              Outcome:
-                            </strong>{" "}
-                            Eliminated a six-person operations team, delivered
-                            live social media content in under 15 seconds, and
-                            created a scalable platform for future growth.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+            <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+              {[
+                {
+                  icon: Target,
+                  title: "Discovery & Alignment",
+                  description:
+                    "We start by deeply understanding your business, your challenges, and your goals. We work with you to define what success looks like and ensure we are fully aligned on the desired outcomes.",
+                },
+                {
+                  icon: BarChart3,
+                  title: "Strategic Planning & Roadmapping",
+                  description:
+                    "We develop a detailed project plan and roadmap, outlining the key milestones, deliverables, and timelines.",
+                },
+                {
+                  icon: Rocket,
+                  title: "Agile Execution & Delivery",
+                  description:
+                    "Our teams operate in an agile, iterative manner, with regular check-ins and demos to ensure you have full visibility into our progress.",
+                },
+                {
+                  icon: Users,
+                  title: "Continuous Collaboration",
+                  description:
+                    "We believe in open communication and a true partnership. Your feedback is integral to our process, and we work closely with your stakeholders at every stage.",
+                },
+                {
+                  icon: Trophy,
+                  title: "Outcome Measurement & Optimization",
+                  description:
+                    "We don't disappear after deployment. We work with you to measure the impact of our work and identify opportunities for ongoing improvement and future collaboration.",
+                },
+              ].map((step, index) => (
+                <div
+                  key={index}
+                  className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 group text-left"
+                >
+                  <div
+                    className={`relative w-16 h-16 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                  >
+                    {" "}
+                    <step.icon className="w-6 h-6 text-brand-primary" />
                   </div>
-                </Link>
-
-                {/* Ginesys Case Study */}
-                <Link to="/insights/case-studies/ginesys" className="block">
-                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
-                    <div className="flex items-start space-x-6">
-                      <div
-                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                      >
-                        <TrendingUp className="w-8 h-8 text-brand-primary" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
-                          Case Study Highlight 2: Ginesys
-                        </h3>
-                        <div className="space-y-3 text-foreground-dark-muted font-montserrat">
-                          <p>
-                            <strong className="text-brand-primary font-medium">
-                              Challenge:
-                            </strong>{" "}
-                            An urgent client need required the rapid deployment
-                            of a skilled, five-person team to accelerate a
-                            critical project timeline.
-                          </p>
-                          <p>
-                            <strong className="text-brand-primary font-medium">
-                              Solution:
-                            </strong>{" "}
-                            We sourced and deployed a full team immediately,
-                            bypassing the lengthy hiring process that would have
-                            stalled the project.
-                          </p>
-                          <p>
-                            <strong className="text-brand-primary font-medium">
-                              Outcome:
-                            </strong>{" "}
-                            The project was accelerated, and the client was able
-                            to meet their market deadlines, demonstrating our
-                            ability to deliver not just technology, but also
-                            talent, at speed.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-
-                {/* GPTW Case Study */}
-                <Link to="#." className="block">
-                  <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
-                    <div className="flex items-start space-x-6">
-                      <div
-                        className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                      >
-                        <Target className="w-8 h-8 text-brand-primary" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-semibold text-foreground-dark mb-4 font-montserrat">
-                          Case Study Highlight 3: GPTW
-                        </h3>
-                        <div className="space-y-3 text-foreground-dark-muted font-montserrat">
-                          <p>
-                            <strong className="text-brand-primary font-medium">
-                              Challenge:
-                            </strong>{" "}
-                            A key client initiative was stalled due to a lack of
-                            a clear path forward.
-                          </p>
-                          <p>
-                            <strong className="text-brand-primary font-medium">
-                              Solution:
-                            </strong>{" "}
-                            We delivered a comprehensive technology roadmap that
-                            provided strategic clarity and a detailed,
-                            actionable plan.
-                          </p>
-                          <p>
-                            <strong className="text-brand-primary font-medium">
-                              Outcome:
-                            </strong>{" "}
-                            The client was able to move forward with confidence,
-                            with all stakeholders aligned on the vision and the
-                            execution plan.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-
-                <div className="text-center pt-12">
-                  <p className="text-foreground-dark-muted italic font-montserrat">
-                    (We have a deep backlog of case studies that further
-                    demonstrate our expertise in Product Engineering, Staff
-                    Augmentation, AI, and Tech Strategy with clients like
-                    Genysis, Airworks, Annotates, CygeniQ, JustTransform, and
-                    Onphase/Docuphase.)
+                  <h3 className="text-lg font-semibold text-foreground-dark mb-3 font-montserrat">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-foreground-dark-muted font-montserrat">
+                    {step.description}
                   </p>
                 </div>
-              </div>
+              ))}
             </div>
-          </section>
-
-          {/* Process Section */}
-          <section className="pb-24 lg:pb-32 bg-transparent">
-            <div className="container mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-                  A Disciplined Path from{" "}
-                  <span className="text-brand-primary leading-[1.35]">
-                    Vision to Value
-                  </span>
-                </h2>
-                <p className="text-xl text-foreground-dark-muted max-w-4xl mx-auto font-montserrat">
-                  Our engagement process is designed to be transparent,
-                  collaborative, and ruthlessly efficient.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
-                {[
-                  {
-                    icon: Target,
-                    title: "Discovery & Alignment",
-                    description:
-                      "We start by deeply understanding your business, your challenges, and your goals. We work with you to define what success looks like and ensure we are fully aligned on the desired outcomes.",
-                  },
-                  {
-                    icon: BarChart3,
-                    title: "Strategic Planning & Roadmapping",
-                    description:
-                      "We develop a detailed project plan and roadmap, outlining the key milestones, deliverables, and timelines.",
-                  },
-                  {
-                    icon: Rocket,
-                    title: "Agile Execution & Delivery",
-                    description:
-                      "Our teams operate in an agile, iterative manner, with regular check-ins and demos to ensure you have full visibility into our progress.",
-                  },
-                  {
-                    icon: Users,
-                    title: "Continuous Collaboration",
-                    description:
-                      "We believe in open communication and a true partnership. Your feedback is integral to our process, and we work closely with your stakeholders at every stage.",
-                  },
-                  {
-                    icon: Trophy,
-                    title: "Outcome Measurement & Optimization",
-                    description:
-                      "We don't disappear after deployment. We work with you to measure the impact of our work and identify opportunities for ongoing improvement and future collaboration.",
-                  },
-                ].map((step, index) => (
-                  <div
-                    key={index}
-                    className="relative bg-gradient-card-light backdrop-blur-xl rounded-xl p-6 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 group text-left"
-                  >
-                    <div
-                      className={`relative w-16 h-16 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                    >
-                      {" "}
-                      <step.icon className="w-6 h-6 text-brand-primary" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-foreground-dark mb-3 font-montserrat">
-                      {step.title}
-                    </h3>
-                    <p className="text-sm text-foreground-dark-muted font-montserrat">
-                      {step.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
       {/* CTA Section */}
       <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>

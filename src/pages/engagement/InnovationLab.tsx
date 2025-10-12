@@ -195,299 +195,309 @@ const InnovationLab = () => {
           </div>
         </div>
       </section>
-
-      <Section
-        variant="light"
-        containerSize="6xl"
-        className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden `}
-      >
-        <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-            You Have the Vision. <br className="hidden sm:block" />
-            We Have the{" "}
-            <span className="text-brand-primary leading-[1.35]">
-              Blueprint for Reality
-            </span>
-          </h2>
-          <div className="text-base sm:text-lg text-foreground-dark-muted leading-relaxed space-y-4 sm:space-y-6 mb-8">
-            <p>
-              Every disruptive product starts with a "what if?"{" "}
-              <br className="hidden sm:block" />
-              The journey from idea to production code is fraught with risk,
-              delays, and budget overruns, even in the age of AI. Traditional
-              development processes and old school service providers are too
-              slow for today's market.
-            </p>
-            <p>The Innovation Lab was created to solve this.</p>
-            <p>
-              It's not a service; It's built on an ecosystem of specialized
-              studios, proprietary accelerators, and expert talent, all
-              integrated to de-risk your investment and maximize your velocity
-              to market. We build alongside you as a true engineering partner,
-              making business centric, architectural decisions from day one so
-              you can launch with confidence and scale without limits.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <Button
-              variant="btnPrimary"
-              onClick={() => {
-                window.open(
-                  "https://calendly.com/vaughn-soratos-indexnine",
-                  "_blank"
-                );
-              }}
-            >
-              Schedule an Innovation Strategy Session
-            </Button>
-          </div>
-        </div>
-      </Section>
-
-      {/* Our Studios Section */}
-      <section className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden `}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+      <div className={` ${styles.sectionBgData} bg-white bg-fixed`}>
+        <Section
+          variant="light"
+          containerSize="6xl"
+          className={`pb-24 lg:pb-32 bg-transparent relative overflow-hidden `}
+        >
+          <div className="text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-              An Integrated Ecosystem for{" "}
+              You Have the Vision. <br className="hidden sm:block" />
+              We Have the{" "}
               <span className="text-brand-primary leading-[1.35]">
-                Rapid Innovation
+                Blueprint for Reality
               </span>
             </h2>
-            <p className="text-lg sm:text-xl text-foreground-dark-muted max-w-4xl mx-auto px-4">
-              Our three specialized studios work in concert, providing a
-              seamless path from initial strategy to a fully functional product.
-            </p>
+            <div className="text-base sm:text-lg text-foreground-dark-muted leading-relaxed space-y-4 sm:space-y-6 mb-8">
+              <p>
+                Every disruptive product starts with a "what if?"{" "}
+                <br className="hidden sm:block" />
+                The journey from idea to production code is fraught with risk,
+                delays, and budget overruns, even in the age of AI. Traditional
+                development processes and old school service providers are too
+                slow for today's market.
+              </p>
+              <p>The Innovation Lab was created to solve this.</p>
+              <p>
+                It's not a service; It's built on an ecosystem of specialized
+                studios, proprietary accelerators, and expert talent, all
+                integrated to de-risk your investment and maximize your velocity
+                to market. We build alongside you as a true engineering partner,
+                making business centric, architectural decisions from day one so
+                you can launch with confidence and scale without limits.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <Button
+                variant="btnPrimary"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
+                Schedule an Innovation Strategy Session
+              </Button>
+            </div>
           </div>
+        </Section>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <CardGlass className="group p-6 sm:p-8 flex flex-col">
-              <div>
-                <div
-                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                >
-                  <Search className="w-8 h-8 text-brand-primary" />
-                </div>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
-                  The Discovery Studio: De-Risking Your Vision
-                </h3>
-                <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                  Great products aren't just built; they're validated. Our
-                  Discovery Studio is a structured, intensive process—our Sprint
-                  0—where we map your business goals to a technical strategy. We
-                  define your core user journeys, prioritize features for a
-                  Minimum Viable Product, and create a comprehensive product
-                  roadmap. This is where we ensure what we build is what your
-                  customers will love.
-                </p>
-                <div className="space-y-2 mb-6">
-                  <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
-                    Offerings:
-                  </h4>
-                  <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
-                    <li>• Product Roadmapping</li>
-                    <li>• Feature Prioritization</li>
-                    <li>• Market & Technical Feasibility</li>
-                    <li>• MVP Scoping</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="flex justify-center mt-auto">
-                <Button variant="btnPrimary">
-                  Explore our Discovery Process
-                </Button>
-              </div>
-            </CardGlass>
-
-            <CardGlass className="group p-6 sm:p-8 flex flex-col">
-              <div>
-                <div
-                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                >
-                  <PenTool className="w-8 h-8 text-brand-primary" />
-                </div>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
-                  The Design Studio: Crafting Intuitive Experiences
-                </h3>
-                <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                  A brilliant idea deserves a brilliant user experience. Our
-                  Design Studio translates your vision into intuitive, engaging,
-                  and beautiful interfaces. We move from low-fidelity wireframes
-                  to high-fidelity, market ready MVPs with unmatched speed. Our
-                  design-led product mindset means we build products that aren't
-                  just functional, but memorable.
-                </p>
-                <div className="space-y-2 mb-6">
-                  <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
-                    Offerings:
-                  </h4>
-                  <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
-                    <li>• UI/UX Design</li>
-                    <li>• Interactive Prototyping</li>
-                    <li>• Enterprise Design Refresh</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="flex justify-center mt-auto">
-                <Button variant="btnPrimary">Explore our Design Studio</Button>
-              </div>
-            </CardGlass>
-
-            <CardGlass className="group p-6 sm:p-8 flex flex-col">
-              <div>
-                <div
-                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-                >
-                  <Brain className="w-8 h-8 text-brand-primary" />
-                </div>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
-                  The AI Studio: Building Your Competitive Edge
-                </h3>
-                <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                  In today's business climate, AI is no longer an afterthought,
-                  or a differentiator. Leveraging AI in digital products is
-                  table stakes. Our AI Studio specializes in building custom AI
-                  solutions that give your product unique and differentiated
-                  advantages against the competition. From Generative AI
-                  applications, Large Language Model (LLM), and Small Language
-                  Model development, we accelerate feature creation and embed
-                  intelligent user experiences into the heart of your product.
-                </p>
-                <div className="space-y-2 mb-6">
-                  <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
-                    Offerings:
-                  </h4>
-                  <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
-                    <li>• Custom AI Development</li>
-                    <li>• Generative AI & RAG Solutions</li>
-                    <li>• Small Language Model Development</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="flex justify-center mt-auto">
-                <Button variant="btnPrimary">
-                  <Link to="/services/ai">Innovate with our AI Studio</Link>
-                </Button>
-              </div>
-            </CardGlass>
-          </div>
-        </div>
-      </section>
-      <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
-        <div className={` ${styles.sectionBgData}`}>
-          <Section containerSize="6xl" className="bg-transparent  lg:pt-0 pt-0">
-            <div className="text-center mb-16">
+        {/* Our Studios Section */}
+        <section
+          className={`pb-24 lg:pb-32 bg-transparent relative overflow-hidden `}
+        >
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12 sm:mb-16 lg:mb-20">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-                Our Proprietary Accelerators Weapons:{" "}
+                An Integrated Ecosystem for{" "}
                 <span className="text-brand-primary leading-[1.35]">
-                  Snap.MVP
+                  Rapid Innovation
                 </span>
               </h2>
+              <p className="text-lg sm:text-xl text-foreground-dark-muted max-w-4xl mx-auto px-4">
+                Our three specialized studios work in concert, providing a
+                seamless path from initial strategy to a fully functional
+                product.
+              </p>
             </div>
 
-            <div className="max-w-4xl mx-auto text-center">
-              <CardGlass variant="light" className="mb-8">
-                <Zap className="w-16 h-16 text-brand-primary mx-auto mb-6" />
-                <p className="text-lg text-foreground-dark-muted leading-relaxed mb-8">
-                  How do we launch so fast? We've automated the foundation.
-                  <br className="hidden sm:block" />
-                  Snap.MVP is our proprietary accelerator that deploys a secure,
-                  scalable, and production-ready cloud environment on AWS, GCP,
-                  or Azure in about 10 minutes. While others spend weeks on
-                  manual setup, we've built in best practices and security into
-                  an automation platform so we spend the first weeks of our
-                  engagement building real products. This single accelerator
-                  dramatically reduces time-to-market and eliminates the
-                  foundational risk.
-                </p>
-                <div className="flex justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <CardGlass className="group p-6 sm:p-8 flex flex-col">
+                <div>
+                  <div
+                    className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                  >
+                    <Search className="w-8 h-8 text-brand-primary" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
+                    The Discovery Studio: De-Risking Your Vision
+                  </h3>
+                  <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
+                    Great products aren't just built; they're validated. Our
+                    Discovery Studio is a structured, intensive process—our
+                    Sprint 0—where we map your business goals to a technical
+                    strategy. We define your core user journeys, prioritize
+                    features for a Minimum Viable Product, and create a
+                    comprehensive product roadmap. This is where we ensure what
+                    we build is what your customers will love.
+                  </p>
+                  <div className="space-y-2 mb-6">
+                    <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
+                      Offerings:
+                    </h4>
+                    <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
+                      <li>• Product Roadmapping</li>
+                      <li>• Feature Prioritization</li>
+                      <li>• Market & Technical Feasibility</li>
+                      <li>• MVP Scoping</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex justify-center mt-auto">
                   <Button variant="btnPrimary">
-                    <Link to="/insights/blogs/cloud-infrastructure-automation-terraform">
-                      Learn More About Snap.MVP
-                    </Link>
+                    Explore our Discovery Process
+                  </Button>
+                </div>
+              </CardGlass>
+
+              <CardGlass className="group p-6 sm:p-8 flex flex-col">
+                <div>
+                  <div
+                    className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                  >
+                    <PenTool className="w-8 h-8 text-brand-primary" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
+                    The Design Studio: Crafting Intuitive Experiences
+                  </h3>
+                  <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
+                    A brilliant idea deserves a brilliant user experience. Our
+                    Design Studio translates your vision into intuitive,
+                    engaging, and beautiful interfaces. We move from
+                    low-fidelity wireframes to high-fidelity, market ready MVPs
+                    with unmatched speed. Our design-led product mindset means
+                    we build products that aren't just functional, but
+                    memorable.
+                  </p>
+                  <div className="space-y-2 mb-6">
+                    <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
+                      Offerings:
+                    </h4>
+                    <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
+                      <li>• UI/UX Design</li>
+                      <li>• Interactive Prototyping</li>
+                      <li>• Enterprise Design Refresh</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex justify-center mt-auto">
+                  <Button variant="btnPrimary">
+                    Explore our Design Studio
+                  </Button>
+                </div>
+              </CardGlass>
+
+              <CardGlass className="group p-6 sm:p-8 flex flex-col">
+                <div>
+                  <div
+                    className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                  >
+                    <Brain className="w-8 h-8 text-brand-primary" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
+                    The AI Studio: Building Your Competitive Edge
+                  </h3>
+                  <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
+                    In today's business climate, AI is no longer an
+                    afterthought, or a differentiator. Leveraging AI in digital
+                    products is table stakes. Our AI Studio specializes in
+                    building custom AI solutions that give your product unique
+                    and differentiated advantages against the competition. From
+                    Generative AI applications, Large Language Model (LLM), and
+                    Small Language Model development, we accelerate feature
+                    creation and embed intelligent user experiences into the
+                    heart of your product.
+                  </p>
+                  <div className="space-y-2 mb-6">
+                    <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
+                      Offerings:
+                    </h4>
+                    <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
+                      <li>• Custom AI Development</li>
+                      <li>• Generative AI & RAG Solutions</li>
+                      <li>• Small Language Model Development</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex justify-center mt-auto">
+                  <Button variant="btnPrimary">
+                    <Link to="/services/ai">Innovate with our AI Studio</Link>
                   </Button>
                 </div>
               </CardGlass>
             </div>
-          </Section>
-
-          <Section
-            variant="alternate"
-            containerSize="full"
-            className="bg-transparent container lg:pt-0 pt-0"
-          >
-            <div className="text-center mb-4">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-0 text-foreground-dark ">
-                Proof, Not{" "}
-                <span className="text-brand-primary leading-[1.25]">
-                  Promises
-                </span>
-              </h2>
-            </div>
-
-            <Carousel
-              className="w-full"
-              opts={{
-                align: "start",
-                loop: true,
-              }}
+          </div>
+        </section>
+        <div className="bg-transparent text-foreground">
+          <div className={` ${styles.sectionBgData}`}>
+            <Section
+              containerSize="6xl"
+              className="bg-transparent  lg:pt-0 pt-0"
             >
-              <CarouselContent className="ml-4 mr-4">
-                {caseStudies.map((item, index) => {
-                  return (
-                    <CarouselItem
-                      key={index}
-                      className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
-                    >
-                      <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
-                        {/* Enhanced Glassmorphism Card */}
+              <div className="text-center mb-16">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                  Our Proprietary Accelerators Weapons:{" "}
+                  <span className="text-brand-primary leading-[1.35]">
+                    Snap.MVP
+                  </span>
+                </h2>
+              </div>
 
-                        <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
-                          <div>
-                            <span className="inline-block px-4 mb-4 py-2 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold">
-                              {item.tag}
-                            </span>
-                          </div>
-                          {/* Content Header */}
+              <div className="max-w-4xl mx-auto text-center">
+                <CardGlass variant="light" className="mb-8">
+                  <Zap className="w-16 h-16 text-brand-primary mx-auto mb-6" />
+                  <p className="text-lg text-foreground-dark-muted leading-relaxed mb-8">
+                    How do we launch so fast? We've automated the foundation.
+                    <br className="hidden sm:block" />
+                    Snap.MVP is our proprietary accelerator that deploys a
+                    secure, scalable, and production-ready cloud environment on
+                    AWS, GCP, or Azure in about 10 minutes. While others spend
+                    weeks on manual setup, we've built in best practices and
+                    security into an automation platform so we spend the first
+                    weeks of our engagement building real products. This single
+                    accelerator dramatically reduces time-to-market and
+                    eliminates the foundational risk.
+                  </p>
+                  <div className="flex justify-center">
+                    <Button variant="btnPrimary">
+                      <Link to="/insights/blogs/cloud-infrastructure-automation-terraform">
+                        Learn More About Snap.MVP
+                      </Link>
+                    </Button>
+                  </div>
+                </CardGlass>
+              </div>
+            </Section>
 
-                          {/* Image with Glassmorphism */}
+            <Section
+              variant="alternate"
+              containerSize="full"
+              className="bg-transparent container lg:pt-0 pt-0"
+            >
+              <div className="text-center mb-4">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-0 text-foreground-dark ">
+                  Proof, Not{" "}
+                  <span className="text-brand-primary leading-[1.25]">
+                    Promises
+                  </span>
+                </h2>
+              </div>
 
-                          {/* Content Body */}
-                          <div className="relative flex-1 flex flex-col">
-                            <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
-                              {item.title}
-                            </h3>
+              <Carousel
+                className="w-full"
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+              >
+                <CarouselContent className="ml-4 mr-4">
+                  {caseStudies.map((item, index) => {
+                    return (
+                      <CarouselItem
+                        key={index}
+                        className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                      >
+                        <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
+                          {/* Enhanced Glassmorphism Card */}
 
-                            <div className="relative flex items-start justify-between mb-6 text-foreground-dark">
-                              {item.outcome}
+                          <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
+                            <div>
+                              <span className="inline-block px-4 mb-4 py-2 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold">
+                                {item.tag}
+                              </span>
+                            </div>
+                            {/* Content Header */}
+
+                            {/* Image with Glassmorphism */}
+
+                            {/* Content Body */}
+                            <div className="relative flex-1 flex flex-col">
+                              <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
+                                {item.title}
+                              </h3>
+
+                              <div className="relative flex items-start justify-between mb-6 text-foreground-dark">
+                                {item.outcome}
+                              </div>
+                            </div>
+                            <div className="text-left">
+                              <Button variant="btnLink" size="link">
+                                <Link
+                                  className="flex items-center pr-2"
+                                  to={item.link}
+                                >
+                                  Read More{" "}
+                                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                              </Button>
                             </div>
                           </div>
-                          <div className="text-left">
-                            <Button variant="btnLink" size="link">
-                              <Link
-                                className="flex items-center pr-2"
-                                to={item.link}
-                              >
-                                Read More{" "}
-                                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                              </Link>
-                            </Button>
-                          </div>
                         </div>
-                      </div>
-                    </CarouselItem>
-                  );
-                })}
-              </CarouselContent>
+                      </CarouselItem>
+                    );
+                  })}
+                </CarouselContent>
 
-              {/* Enhanced Glassmorphism Navigation */}
-              <CarouselPrevious className="left-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
-              <CarouselNext className="right-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
-            </Carousel>
-          </Section>
+                {/* Enhanced Glassmorphism Navigation */}
+                <CarouselPrevious className="left-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+                <CarouselNext className="right-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+              </Carousel>
+            </Section>
+          </div>
         </div>
       </div>
-
       {/* Final CTA Section */}
       <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">

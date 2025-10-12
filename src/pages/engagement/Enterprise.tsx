@@ -183,318 +183,328 @@ const Enterprise = () => {
           </div>
         </div>
       </section>
-
-      <Section
-        variant="light"
-        containerSize="6xl"
-        className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden `}
-      >
-        <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-            Your Technology is Your Business. <br className="hidden sm:block" />
-            <span className="text-brand-primary leading-[1.35]">
-              Is It Ready for the Future?
-            </span>
-          </h2>
-          <div className="text-base sm:text-lg text-foreground-dark-muted leading-relaxed space-y-4 sm:space-y-6 mb-8">
-            <p>
-              In the enterprise world, the very systems that brought you success
-              can become the anchors that hold you back. Technical debt slows
-              innovation, legacy platforms create security risks, and
-              inefficient processes burn resources, preventing you from
-              competing effectively.
-            </p>
-            <p>
-              The Enterprise Studio was designed to solve these challenges
-              head-on. We provide the strategic consulting, deep technical
-              expertise, and battle-tested frameworks to modernize your
-              technology, optimize your processes, and transform your
-              engineering organization into a powerful engine for growth.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <Button
-              variant="btnPrimary"
-              onClick={() => {
-                window.open(
-                  "https://calendly.com/vaughn-soratos-indexnine",
-                  "_blank"
-                );
-              }}
-            >
-              Schedule an Enterprise Assessment
-            </Button>
-          </div>
-        </div>
-      </Section>
-
-      {/* Our Enterprise Offerings Section */}
-      <section className={`pb-24 lg:pb-32 bg-[#fff] relative overflow-hidden `}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+      <div className={` ${styles.sectionBgData} bg-white bg-fixed`}>
+        <Section
+          variant="light"
+          containerSize="6xl"
+          className={`pb-24 lg:pb-32 bg-transparent relative overflow-hidden `}
+        >
+          <div className="text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-              A Full-Spectrum Partner for{" "}
+              Your Technology is Your Business.{" "}
+              <br className="hidden sm:block" />
               <span className="text-brand-primary leading-[1.35]">
-                Enterprise Transformation
+                Is It Ready for the Future?
               </span>
             </h2>
-            <p className="text-lg sm:text-xl text-foreground-dark-muted max-w-4xl mx-auto px-4">
-              We offer a suite of services designed to address the most critical
-              challenges facing modern enterprises.
-            </p>
+            <div className="text-base sm:text-lg text-foreground-dark-muted leading-relaxed space-y-4 sm:space-y-6 mb-8">
+              <p>
+                In the enterprise world, the very systems that brought you
+                success can become the anchors that hold you back. Technical
+                debt slows innovation, legacy platforms create security risks,
+                and inefficient processes burn resources, preventing you from
+                competing effectively.
+              </p>
+              <p>
+                The Enterprise Studio was designed to solve these challenges
+                head-on. We provide the strategic consulting, deep technical
+                expertise, and battle-tested frameworks to modernize your
+                technology, optimize your processes, and transform your
+                engineering organization into a powerful engine for growth.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <Button
+                variant="btnPrimary"
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/vaughn-soratos-indexnine",
+                    "_blank"
+                  );
+                }}
+              >
+                Schedule an Enterprise Assessment
+              </Button>
+            </div>
           </div>
+        </Section>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <CardGlass className="group p-6 sm:p-8">
-              <div
-                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-              >
-                <RefreshCw className="w-8 h-8 text-brand-primary" />
-              </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
-                Product Modernization
-              </h3>
-              <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                Transform your monolithic applications into scalable,
-                cloud-native architectures. We meticulously analyze your
-                existing systems, devise phased migration strategies, and
-                execute with minimal business disruption.
-              </p>
-              <div className="space-y-2 mb-6">
-                <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
-                  Offerings:
-                </h4>
-                <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
-                  <li>• Monolith to Microservices Migration</li>
-                  <li>• Cloud-Native Development</li>
-                  <li>• Technology Stack Upgrades</li>
-                  <li>• API-First Architecture Design</li>
-                </ul>
-              </div>
-              <div className="flex justify-center">
-                <Button variant="btnPrimary">
-                  Explore Product Modernization
-                </Button>
-              </div>
-            </CardGlass>
-
-            <CardGlass className="group p-6 sm:p-8">
-              <div
-                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-              >
-                <Shield className="w-8 h-8 text-brand-primary" />
-              </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
-                QAE & Test Automation
-              </h3>
-              <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                Enterprise-grade quality assurance that goes beyond testing. We
-                embed quality into every development stage, implementing
-                comprehensive automation frameworks and performance testing
-                protocols.
-              </p>
-              <div className="space-y-2 mb-6">
-                <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
-                  Offerings:
-                </h4>
-                <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
-                  <li>• End-to-End Test Automation</li>
-                  <li>• Performance & Load Testing</li>
-                  <li>• Security Testing & Compliance</li>
-                  <li>• QA Process Optimization</li>
-                </ul>
-              </div>
-              <div className="flex justify-center">
-                <Button variant="btnPrimary">Explore QA Engineering</Button>
-              </div>
-            </CardGlass>
-
-            <CardGlass className="group p-6 sm:p-8" id="ai-audit">
-              <div
-                className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
-              >
-                <Eye className="w-8 h-8 text-brand-primary" />
-              </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
-                AI Audit & Risk Management
-              </h3>
-              <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
-                Strategic AI implementation with proper governance. Our
-                comprehensive AI audits assess viability, security, and ethical
-                implications, ensuring your AI initiatives deliver measurable
-                ROI.
-              </p>
-              <div className="space-y-2 mb-6">
-                <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
-                  Offerings:
-                </h4>
-                <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
-                  <li>• AI Strategy & Roadmap Development</li>
-                  <li>• AI Readiness Assessment</li>
-                  <li>• AI Governance & Risk Audit</li>
-                  <li>• Ethical AI Implementation</li>
-                </ul>
-              </div>
-              <div className="flex justify-center">
-                <Button variant="btnPrimary">Start Your AI Audit</Button>
-              </div>
-            </CardGlass>
-          </div>
-        </div>
-      </section>
-
-      <div className="bg-gradient-to-t from-[#fff] via-[#fcfcfc] to-[#fff] text-foreground">
-        <div className={` ${styles.sectionBgData}`}>
-          <Section containerSize="6xl" className="bg-transparent  lg:pt-0 pt-0">
-            <div className="text-center mb-16">
+        {/* Our Enterprise Offerings Section */}
+        <section
+          className={`pb-24 lg:pb-32 bg-transparent relative overflow-hidden `}
+        >
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12 sm:mb-16 lg:mb-20">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
-                The IndexNine Difference:{" "}
+                A Full-Spectrum Partner for{" "}
                 <span className="text-brand-primary leading-[1.35]">
-                  Practitioner-Led Transformation
+                  Enterprise Transformation
                 </span>
               </h2>
+              <p className="text-lg sm:text-xl text-foreground-dark-muted max-w-4xl mx-auto px-4">
+                We offer a suite of services designed to address the most
+                critical challenges facing modern enterprises.
+              </p>
             </div>
 
-            <div className="max-w-4xl mx-auto text-center">
-              <CardGlass variant="light" className="mb-8">
-                <Settings className="w-16 h-16 text-brand-primary mx-auto mb-6" />
-                <p className="text-lg text-foreground-dark-muted leading-relaxed mb-8">
-                  Our key differentiator is our 'practitioner-led' philosophy.
-                  Our strategists and architects are active builders, not just
-                  theorists. We establish clear communication cadences, robust
-                  project management frameworks, and risk mitigation strategies
-                  to ensure predictable outcomes, transparent collaboration, and
-                  continuous improvement across your organization.
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <CardGlass className="group p-6 sm:p-8">
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
+                  <RefreshCw className="w-8 h-8 text-brand-primary" />
+                </div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
+                  Product Modernization
+                </h3>
+                <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
+                  Transform your monolithic applications into scalable,
+                  cloud-native architectures. We meticulously analyze your
+                  existing systems, devise phased migration strategies, and
+                  execute with minimal business disruption.
                 </p>
+                <div className="space-y-2 mb-6">
+                  <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
+                    Offerings:
+                  </h4>
+                  <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
+                    <li>• Monolith to Microservices Migration</li>
+                    <li>• Cloud-Native Development</li>
+                    <li>• Technology Stack Upgrades</li>
+                    <li>• API-First Architecture Design</li>
+                  </ul>
+                </div>
                 <div className="flex justify-center">
-                  <Button variant="btnPrimary">Learn About Our Process</Button>
+                  <Button variant="btnPrimary">
+                    Explore Product Modernization
+                  </Button>
+                </div>
+              </CardGlass>
+
+              <CardGlass className="group p-6 sm:p-8">
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
+                  <Shield className="w-8 h-8 text-brand-primary" />
+                </div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
+                  QAE & Test Automation
+                </h3>
+                <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
+                  Enterprise-grade quality assurance that goes beyond testing.
+                  We embed quality into every development stage, implementing
+                  comprehensive automation frameworks and performance testing
+                  protocols.
+                </p>
+                <div className="space-y-2 mb-6">
+                  <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
+                    Offerings:
+                  </h4>
+                  <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
+                    <li>• End-to-End Test Automation</li>
+                    <li>• Performance & Load Testing</li>
+                    <li>• Security Testing & Compliance</li>
+                    <li>• QA Process Optimization</li>
+                  </ul>
+                </div>
+                <div className="flex justify-center">
+                  <Button variant="btnPrimary">Explore QA Engineering</Button>
+                </div>
+              </CardGlass>
+
+              <CardGlass className="group p-6 sm:p-8" id="ai-audit">
+                <div
+                  className={`relative w-20 h-20 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
+                >
+                  <Eye className="w-8 h-8 text-brand-primary" />
+                </div>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground-dark mb-3 sm:mb-4 leading-tight">
+                  AI Audit & Risk Management
+                </h3>
+                <p className="text-sm sm:text-base text-foreground-dark-muted mb-4 sm:mb-6 leading-relaxed">
+                  Strategic AI implementation with proper governance. Our
+                  comprehensive AI audits assess viability, security, and
+                  ethical implications, ensuring your AI initiatives deliver
+                  measurable ROI.
+                </p>
+                <div className="space-y-2 mb-6">
+                  <h4 className="font-semibold text-foreground-dark text-sm sm:text-base">
+                    Offerings:
+                  </h4>
+                  <ul className="text-xs sm:text-sm text-foreground-dark-muted space-y-1">
+                    <li>• AI Strategy & Roadmap Development</li>
+                    <li>• AI Readiness Assessment</li>
+                    <li>• AI Governance & Risk Audit</li>
+                    <li>• Ethical AI Implementation</li>
+                  </ul>
+                </div>
+                <div className="flex justify-center">
+                  <Button variant="btnPrimary">Start Your AI Audit</Button>
                 </div>
               </CardGlass>
             </div>
-          </Section>
+          </div>
+        </section>
 
-          <Section
-            variant="alternate"
-            containerSize="full"
-            className="bg-transparent container lg:pt-0 pt-0"
-          >
-            <div className="text-center mb-4">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark ">
-                Engineering Transformation{" "}
-                <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  in Action
-                </span>
-              </h2>
-            </div>
-            <Carousel
-              className="w-full"
-              opts={{
-                align: "start",
-                loop: true,
-              }}
+        <div className="bg-transparent text-foreground">
+          <div>
+            <Section
+              containerSize="6xl"
+              className="bg-transparent  lg:pt-0 pt-0"
             >
-              <CarouselContent className="ml-4 mr-4">
-                {caseStudies.map((item, index) => {
-                  return (
-                    <CarouselItem
-                      key={index}
-                      className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
-                    >
-                      <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
-                        {/* Enhanced Glassmorphism Card */}
+              <div className="text-center mb-16">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark ">
+                  The IndexNine Difference:{" "}
+                  <span className="text-brand-primary leading-[1.35]">
+                    Practitioner-Led Transformation
+                  </span>
+                </h2>
+              </div>
 
-                        <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
-                          <div>
-                            <span className="inline-block px-4 mb-4 py-2 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold">
-                              {item.tag}
-                            </span>
-                          </div>
-                          {/* Content Header */}
+              <div className="max-w-4xl mx-auto text-center">
+                <CardGlass variant="light" className="mb-8">
+                  <Settings className="w-16 h-16 text-brand-primary mx-auto mb-6" />
+                  <p className="text-lg text-foreground-dark-muted leading-relaxed mb-8">
+                    Our key differentiator is our 'practitioner-led' philosophy.
+                    Our strategists and architects are active builders, not just
+                    theorists. We establish clear communication cadences, robust
+                    project management frameworks, and risk mitigation
+                    strategies to ensure predictable outcomes, transparent
+                    collaboration, and continuous improvement across your
+                    organization.
+                  </p>
+                  <div className="flex justify-center">
+                    <Button variant="btnPrimary">
+                      Learn About Our Process
+                    </Button>
+                  </div>
+                </CardGlass>
+              </div>
+            </Section>
 
-                          {/* Image with Glassmorphism */}
+            <Section
+              variant="alternate"
+              containerSize="full"
+              className="bg-transparent container lg:pt-0 pt-0"
+            >
+              <div className="text-center mb-4">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark ">
+                  Engineering Transformation{" "}
+                  <span className="bg-gradient-primary bg-clip-text text-transparent">
+                    in Action
+                  </span>
+                </h2>
+              </div>
+              <Carousel
+                className="w-full"
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+              >
+                <CarouselContent className="ml-4 mr-4">
+                  {caseStudies.map((item, index) => {
+                    return (
+                      <CarouselItem
+                        key={index}
+                        className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
+                      >
+                        <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
+                          {/* Enhanced Glassmorphism Card */}
 
-                          {/* Content Body */}
-                          <div className="relative flex-1 flex flex-col">
-                            <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
-                              {item.title}
-                            </h3>
+                          <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
+                            <div>
+                              <span className="inline-block px-4 mb-4 py-2 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold">
+                                {item.tag}
+                              </span>
+                            </div>
+                            {/* Content Header */}
 
-                            <div className="relative flex items-start justify-between mb-6 text-foreground-dark">
-                              {item.outcome}
+                            {/* Image with Glassmorphism */}
+
+                            {/* Content Body */}
+                            <div className="relative flex-1 flex flex-col">
+                              <h3 className="text-xl lg:text-2xl font-semibold text-foreground-dark mb-4 leading-tight font-montserrat group-hover:text-brand-primary transition-colors duration-300">
+                                {item.title}
+                              </h3>
+
+                              <div className="relative flex items-start justify-between mb-6 text-foreground-dark">
+                                {item.outcome}
+                              </div>
+                            </div>
+                            <div className="text-left">
+                              <Button variant="btnLink" size="link">
+                                <Link
+                                  className="flex items-center pr-2"
+                                  to={item.link}
+                                >
+                                  {index === 2 ? (
+                                    <>
+                                      Download{" "}
+                                      <Download className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                    </>
+                                  ) : (
+                                    <>
+                                      Read More{" "}
+                                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                    </>
+                                  )}
+                                </Link>
+                              </Button>
                             </div>
                           </div>
-                          <div className="text-left">
-                            <Button variant="btnLink" size="link">
-                              <Link
-                                className="flex items-center pr-2"
-                                to={item.link}
-                              >
-                                {index === 2 ? (
-                                  <>
-                                    Download{" "}
-                                    <Download className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                                  </>
-                                ) : (
-                                  <>
-                                    Read More{" "}
-                                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                                  </>
-                                )}
-                              </Link>
-                            </Button>
-                          </div>
                         </div>
-                      </div>
-                    </CarouselItem>
-                  );
-                })}
-              </CarouselContent>
+                      </CarouselItem>
+                    );
+                  })}
+                </CarouselContent>
 
-              {/* Enhanced Glassmorphism Navigation */}
-              <CarouselPrevious className="left-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
-              <CarouselNext className="right-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
-            </Carousel>
-          </Section>
-        </div>
-      </div>
-
-      {/* FAQ Section */}
-      <section className="pb-24 lg:pb-32 bg-[#fff]">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-12 text-foreground-dark text-center">
-            Your Enterprise Questions, Answered
-          </h2>
-          <div className="space-y-0 bg-white rounded-lg shadow-lg border-t border-[#00000010] px-6">
-            {faqData.map((faq, index) => (
-              <div
-                key={index}
-                className="overflow-hidden border-b last:border-b-0"
-              >
-                <button
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full py-6 text-left flex items-center justify-between"
-                >
-                  <h3 className=" font-semibold text-foreground-dark">
-                    {faq.question}
-                  </h3>
-                  {expandedFAQ === index ? (
-                    <ChevronUp className="w-6 h-6 text-brand-primary" />
-                  ) : (
-                    <ChevronDown className="w-6 h-6 text-gray-500" />
-                  )}
-                </button>
-                {expandedFAQ === index && (
-                  <div className=" pb-6 ">
-                    <p className="text-foreground-dark/80 leading-relaxed pt-0">
-                      {faq.answer}
-                    </p>
-                  </div>
-                )}
-              </div>
-            ))}
+                {/* Enhanced Glassmorphism Navigation */}
+                <CarouselPrevious className="left-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+                <CarouselNext className="right-4 backdrop-blur-md bg-brand-primary/10 border-brand-primary/20 text-foreground-dark hover:bg-brand-primary/20 hover:text-brand-primary transition-all duration-300" />
+              </Carousel>
+            </Section>
           </div>
         </div>
-      </section>
+
+        {/* FAQ Section */}
+        <section className="pb-24 lg:pb-32 bg-transparent">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-12 text-foreground-dark text-center">
+              Your Enterprise Questions, Answered
+            </h2>
+            <div className="space-y-0 bg-white rounded-lg shadow-lg border-t border-[#00000010] px-6">
+              {faqData.map((faq, index) => (
+                <div
+                  key={index}
+                  className="overflow-hidden border-b last:border-b-0"
+                >
+                  <button
+                    onClick={() => toggleFAQ(index)}
+                    className="w-full py-6 text-left flex items-center justify-between"
+                  >
+                    <h3 className=" font-semibold text-foreground-dark">
+                      {faq.question}
+                    </h3>
+                    {expandedFAQ === index ? (
+                      <ChevronUp className="w-6 h-6 text-brand-primary" />
+                    ) : (
+                      <ChevronDown className="w-6 h-6 text-gray-500" />
+                    )}
+                  </button>
+                  {expandedFAQ === index && (
+                    <div className=" pb-6 ">
+                      <p className="text-foreground-dark/80 leading-relaxed pt-0">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
 
       {/* Final CTA Section */}
       <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
