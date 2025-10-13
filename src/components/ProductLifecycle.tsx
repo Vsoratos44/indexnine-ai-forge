@@ -137,7 +137,11 @@ const ProductLifecycle = () => {
                   {/* Case Study Button */}
                   <div className="pt-2 mt-auto">
                     <Link to={phase.caseStudyLink}>
-                      <Button variant="btnLink" size="link">
+                      <Button
+                        variant="btnLink"
+                        size="link"
+                        className="text-sm md:text-base"
+                      >
                         Check out the full case study here{" "}
                         <ArrowRight className="w-5 h-5 ml-2" />
                       </Button>

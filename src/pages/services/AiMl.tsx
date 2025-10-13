@@ -139,7 +139,7 @@ const AiMl = () => {
           {/* 2. Problem Statement: "The AI Dilemma" */}
           <DilemmaSection />
 
-          <div className="grid grid-cols-2 container py-24 lg:py-32 bg-transparent gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 container py-24 lg:py-32 bg-transparent gap-16">
             {/* 3. NEW: The Solution - AI Growth Engine Introduction */}
             <GrowthEngineIntroSection />
 
@@ -155,7 +155,7 @@ const AiMl = () => {
           {/* <AuditProcessSection /> */}
           {/* </div> */}
 
-          <div className="pt-24 lg:pt-32">
+          <div className="pt-24 lg:pt-32 px-4 sm:px-0">
             <StrategicOfferings
               title="Choose Your Strategic Entry Point"
               offerings={updatedAuditOfferings}
@@ -164,7 +164,7 @@ const AiMl = () => {
             />
           </div>
 
-          <div className="grid grid-cols-2 container py-24 lg:py-32 bg-transparent gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 container py-24 lg:py-32 bg-transparent gap-16">
             {/* 8. NEW: Phase 1 - LAUNCH (Engineering Pods & Agentic Workflows) */}
             <LaunchPhaseSection />
 

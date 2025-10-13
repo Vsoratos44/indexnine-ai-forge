@@ -157,10 +157,10 @@ const CustomSoftware = () => {
           <CoreOfferingsOverviewSection />
 
           <div className="">
-            <div className="tab-buttons text-center mb-12">
+            <div className="tab-buttons text-left md:text-center px-8 mb-12">
               <button
                 onClick={() => handleTabClick("tab1")}
-                className={`px-6 py-1.5 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
+                className={`px-6 py-1.5 mb-4 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
                   activeTab === "tab1"
                     ? "border-brand-primary text-brand-primary"
                     : "border-foreground-dark/20 text-foreground-dark/40 hover:text-brand-primary"
@@ -170,7 +170,7 @@ const CustomSoftware = () => {
               </button>
               <button
                 onClick={() => handleTabClick("tab2")}
-                className={`px-6 py-1.5 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
+                className={`px-6 py-1.5 mb-4 text-lg sm:text-xl font-semibold transition-all duration-300 font-montserrat border-l-4 text-left ${
                   activeTab === "tab2"
                     ? "border-primary text-brand-primary"
                     : "border-foreground-dark/20 text-foreground-dark/40 hover:text-brand-primary"

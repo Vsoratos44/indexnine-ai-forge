@@ -87,7 +87,7 @@ export const ProductLaunchSection: React.FC = () => {
 
   return (
     <section className="pb-24 lg:pb-32 bg-transparent">
-      <div className="grid grid-cols-2 container px-4 sm:px-16  bg-transparent gap-16 pb-16 lg:pb-24">
+      <div className="grid gird-cols-1 sm:grid-cols-2 container px-4 sm:px-16  bg-transparent gap-16 pb-16 lg:pb-24">
         <div
           className={`bg-blue-500/5 rounded-2xl shadow shadow-glass backdrop-blur-md relative p-8 ${styles.cardBord1} `}
         >
@@ -167,7 +167,7 @@ export const ProductLaunchSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className={`pt-24 pb-32 ${styles.snapBg} `}>
+      <div className={`pt-24 pb-24 lg:pb-32 ${styles.snapBg} `}>
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             {/* Sprint Zero Blueprint */}
@@ -184,7 +184,7 @@ export const ProductLaunchSection: React.FC = () => {
                     <Link
                       key={index}
                       to={platform.blogLink}
-                      className="block group"
+                      className="block group pb-20 sm:pb-0"
                     >
                       <Card className="bg-transparent border border-blue-500 border-dashed rounded-sm px-5  mt-20 hover:shadow-lg transition-all duration-300 h-full shadow-md ">
                         <CardContent className="p-0 flex flex-col h-full">
@@ -231,7 +231,7 @@ export const ProductLaunchSection: React.FC = () => {
           <h3 className="text-2xl lg:text-3xl font-semibold mb-8 text-foreground-dark text-center">
             Choose Your Entry Point
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-4 md:mx-auto">
             <Card className="bg-white border border-[#00000019] rounded-2xl p-8 flex flex-col">
               <CardContent className="p-0 flex-1">
                 <div className="mb-6">
