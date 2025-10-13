@@ -365,11 +365,11 @@ const DataEngineering = () => {
                 </p>
               </div>
 
-              <div className="bg-[#fff] rounded-3xl p-6 lg:p-8 max-w-3xl mx-auto">
+              <div className="bg-[#fff] rounded-3xl p-0 sm:p-6 lg:p-8 max-w-3xl mx-auto">
                 {/* Toggle Buttons */}
                 <div className="flex justify-start space-x-4 mb-12">
                   <button
-                    className={`px-6 py-3 rounded-full w-[50%] text-sm font-medium border ${
+                    className={`px-6 py-3 rounded-full w-[50%] text-xs sm:text-sm font-medium border ${
                       activeSection === "legacy"
                         ? "bg-brand-primary text-white border-brand-primary"
                         : "bg-transparent text-brand-primary border-brand-primary/40"
@@ -380,7 +380,7 @@ const DataEngineering = () => {
                     LEGACY SYSTEM MODERNIZATION
                   </button>
                   <button
-                    className={`px-6 py-3 rounded-full w-[50%] text-sm font-medium border ${
+                    className={`px-6 py-3 rounded-full w-[50%] text-xs sm:text-sm font-medium border ${
                       activeSection === "aiReady"
                         ? "bg-brand-primary text-white border-brand-primary"
                         : "bg-transparent text-brand-primary border-brand-primary/40"

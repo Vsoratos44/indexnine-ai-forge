@@ -12,10 +12,10 @@ export const SolutionsSection: React.FC = () => {
   return (
     <section
       id="qae-solutions"
-      className={`pb-24 lg:pb-32 relative overflow-hidden`}
+      className={`pb-16 lg:pb-24 relative overflow-hidden`}
     >
       <div className="p-0">
-        <div className="max-w-8xl mx-auto">
+        <div className="max-w-8xl mx-4 sm:mx-auto">
           <div className="mb-16">
             <SectionHeading
               title="QAE Solutions in Action"
@@ -34,7 +34,7 @@ export const SolutionsSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-6 max-w-8xl mt-4 mx-auto container">
+          <div className="grid md:grid-cols-3 gap-6 max-w-8xl mt-4 mx-auto md:container">
             {platformsData.map((platform, index) => (
               <FeatureCard
                 key={index}
@@ -59,7 +59,7 @@ export const SolutionsSection: React.FC = () => {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {applicationsData.map((application, index) => (
                 <MetricCard
                   key={index}

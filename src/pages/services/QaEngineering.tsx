@@ -89,8 +89,8 @@ const QualityEngineering = () => {
 
         {/* QAE Case Study Section */}
         <section id="qae-case-study" className="pb-24 lg:pb-32">
-          <div className="container mx-auto">
-            <div className="max-w-4xl bg-[#fff] p-8 rounded-3xl mx-auto">
+          <div className="md:container mx-4 md:mx-auto">
+            <div className="max-w-4xl bg-[#fff] p-4 md:p-8 rounded-3xl mx-auto">
               <div className="mb-6">
                 <span className="inline-block px-6 py-3 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium border border-brand-primary/20">
                   Case Study: Outcome-Based Automation
@@ -380,7 +380,7 @@ const QualityEngineering = () => {
 
         <div className="pb-24 lg:pb-32 bg-transparent relative overflow-hidden">
           {/* Partner Section */}
-          <div className="text-center">
+          <div className="text-center px-4">
             <SectionHeading
               title="Don't Settle for 'Good Enough':"
               highlight="A Partner in Quality Engineering"
