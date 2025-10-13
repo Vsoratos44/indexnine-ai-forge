@@ -709,7 +709,7 @@ const IndexNineInfiniteCarousel: React.FC<IndexNineInfiniteCarouselProps> = ({
                       ...styles.logoCard,
                       ...(isHovered ? styles.logoCardHover : {}),
                     }}
-                    onClick={() => handleLogoClick(logo)}
+                    // onClick={() => handleLogoClick(logo)}
                     onMouseEnter={(e) => handleLogoHover(logoKey, e, logo)}
                     onMouseLeave={handleLogoLeave}
                     role="button"
