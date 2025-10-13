@@ -125,9 +125,7 @@ const MatureCaseStudy = () => {
 
       {/* Hero Section */}
       <a id="intro1"></a>
-      <div
-        className={`bg-transparent pt-20 sm:pt-28 lg:pt-32 ${styles.sectionBgCase}`}
-      >
+      <div className={`bg-transparent pt-28 lg:pt-32 ${styles.sectionBgCase}`}>
         <div className="container grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12">
           <div className="text-foreground-dark hidden lg:block">
             <div className="sticky top-[128px] pb-8">

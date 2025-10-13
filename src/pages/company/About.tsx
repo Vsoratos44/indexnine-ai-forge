@@ -58,7 +58,7 @@ const About = () => {
       <section className="relative min-h-[480px] overflow-hidden bg-black">
         <LivingVoidBackground />
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-20 sm:pt-32 lg:pt-48 pb-12 sm:pb-16 lg:pb-24">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-48 pb-12 sm:pb-16 lg:pb-24">
           <div className="max-w-4xl mx-auto text-center lg:text-left lg:ml-0">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-foreground mb-4 sm:mb-6 leading-[1.25] animate-fade-in font-montserrat">
               About{" "}

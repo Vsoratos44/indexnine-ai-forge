@@ -361,7 +361,7 @@ const CaseStudies = () => {
           ></div>
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-20 sm:pt-32 lg:pt-48 pb-12 sm:pb-16 lg:pb-24">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6  pt-32 lg:pt-48 pb-12 sm:pb-16 lg:pb-24">
           <div className="max-w-6xl mx-auto text-center lg:text-left lg:ml-0">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-foreground mb-4 sm:mb-6 leading-[1.25] animate-fade-in font-montserrat">
               Client{" "}
@@ -380,7 +380,7 @@ const CaseStudies = () => {
 
       <div className={` relative bg-[#fff] overflow-hidden ${styles.casesBg} `}>
         {/* Case Studies Grid */}
-        <section className="max-w-6xl mx-auto lg:pt-32 bg-transparent">
+        <section className="max-w-6xl mx-auto pt-16 lg:pt-32 bg-transparent">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.4]">

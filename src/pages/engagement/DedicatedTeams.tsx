@@ -460,7 +460,7 @@ const DedicatedTeams = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 container p-0 pt-8 bg-transparent gap-16">
+              <div className="grid grid-cols-1 sm:grid-cols-2 container p-0 pt-8 bg-transparent gap-16">
                 {/* Differentiators */}
                 <div className="mb-6">
                   <h3 className="text-2xl  lg:text-3xl font-semibold text-left text-foreground-dark mb-6 font-montserrat">
@@ -664,11 +664,13 @@ const DedicatedTeams = () => {
                       <h3 className=" font-semibold text-foreground-dark">
                         {faq.question}
                       </h3>
-                      {expandedFAQ === index ? (
-                        <ChevronUp className="w-6 h-6 text-brand-primary" />
-                      ) : (
-                        <ChevronDown className="w-6 h-6 text-gray-500" />
-                      )}
+                      <span>
+                        {expandedFAQ === index ? (
+                          <ChevronUp className="w-6 h-6 text-brand-primary" />
+                        ) : (
+                          <ChevronDown className="w-6 h-6 text-gray-500" />
+                        )}
+                      </span>
                     </button>
                     {expandedFAQ === index && (
                       <div className=" pb-6 ">

@@ -352,7 +352,7 @@ const Blogs = () => {
           ></div>
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-20 sm:pt-32 lg:pt-48 pb-12 sm:pb-16 lg:pb-24">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-32 lg:pt-48 pb-12 sm:pb-16 lg:pb-24">
           <div className="max-w-6xl mx-auto text-center lg:text-left lg:ml-0">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-foreground mb-4 sm:mb-6 leading-[1.25] animate-fade-in font-montserrat">
               Engineering{" "}
@@ -377,7 +377,7 @@ const Blogs = () => {
             .map((post, index) => (
               <section key={index} className="pt-24 lg:pt-32 ">
                 <div className="container">
-                  <div className="max-w-8xl mx-auto grid md:grid-cols-3 gap-12">
+                  <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-12">
                     <div className="col-span-2">
                       <div className="mb-4">
                         <span className="text-sm border border-brand-primary/40 text-brand-primary px-3 py-2 rounded-full font-montserrat">
@@ -393,11 +393,15 @@ const Blogs = () => {
 
                       <div className="flex items-center gap-6 mb-8 text-sm text-foreground-dark-muted/80">
                         <div className="flex items-center gap-2">
-                          <User className="w-4 h-4" />
+                          <span>
+                            <User className="w-4 h-4" />
+                          </span>
                           <span className="font-montserrat">{post.author}</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <Clock className="w-4 h-4" />
+                          <span>
+                            <Clock className="w-4 h-4" />
+                          </span>
                           <span className="font-montserrat">
                             {post.readTime}
                           </span>
@@ -428,7 +432,7 @@ const Blogs = () => {
         </div>
 
         {/* Blog Posts Grid */}
-        <section className="max-w-6xl mx-auto lg:pt-32 bg-transparent">
+        <section className="max-w-6xl mx-auto pt-16 lg:pt-32 bg-transparent">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 font-montserrat leading-[1.4]">

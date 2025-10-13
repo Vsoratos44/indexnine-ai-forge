@@ -84,7 +84,7 @@ const MicroservicesVsMonolith = () => {
 
   return (
     <div
-      className="min-h-screen bg-contain bg-top bg-no-repeat bg-white"
+      className="min-h-screen md:bg-contain bg-top bg-no-repeat bg-white"
       style={{ backgroundImage: `url(${BlogDetailsBg})` }}
     >
       <Header />
@@ -250,7 +250,7 @@ const MicroservicesVsMonolith = () => {
         {/* Main Content */}
 
         <div
-          className="container grid md:grid-cols-3 gap-12 bg-transparent pt-12 rounded-tl-3xl rounded-tr-3xl bg-gradient-to-b from-white via-white to-[#F0F4FF] bg-contain bg-no-repeat"
+          className="container grid md:grid-cols-3 gap-12 bg-transparent pt-12 rounded-tl-3xl rounded-tr-3xl bg-white bg-contain bg-no-repeat"
           style={{ backgroundImage: `url(${BlogContBg})` }}
         >
           {" "}

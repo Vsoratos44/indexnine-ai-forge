@@ -385,7 +385,7 @@ const Enterprise = () => {
             <Section
               variant="alternate"
               containerSize="full"
-              className="bg-transparent container lg:pt-0 pt-0"
+              className="bg-transparent container lg:pt-0 pt-0 px-0"
             >
               <div className="text-center mb-4">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark ">
