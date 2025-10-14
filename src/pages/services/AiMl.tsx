@@ -163,13 +163,25 @@ const AiMl = () => {
               maxWidth="max-w-5xl"
             />
           </div>
+          <div className="container py-24 lg:py-32 bg-transparent ">
+            <div className="text-center max-w-5xl mx-auto mb-12">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
+                From Ambitious Vision to Production-Ready Reality
+              </h2>
+              <p className="text-lg text-foreground-dark/80 max-w-4xl mx-auto">
+                Launching a successful AI platform requires more than just an
+                algorithm; it demands robust, full-stack engineering. We
+                accelerate your time-to-market by deploying our specialized
+                teams and proprietary architectural patterns.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
+              {/* 8. NEW: Phase 1 - LAUNCH (Engineering Pods & Agentic Workflows) */}
+              <LaunchPhaseSection />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 container py-24 lg:py-32 bg-transparent gap-16">
-            {/* 8. NEW: Phase 1 - LAUNCH (Engineering Pods & Agentic Workflows) */}
-            <LaunchPhaseSection />
-
-            {/* 7. NEW: Phase 2 - VALIDATE (Eval-First Engineering) */}
-            <ValidatePhaseSection />
+              {/* 7. NEW: Phase 2 - VALIDATE (Eval-First Engineering) */}
+              <ValidatePhaseSection />
+            </div>
           </div>
 
           {/* 9. NEW: Phase 3 - SCALE (AI Center of Excellence & PRIME Framework) */}
