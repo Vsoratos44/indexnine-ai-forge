@@ -176,7 +176,7 @@ const AgenticAiEnterpriseFuture = () => {
             <div className="flex items-center">
               <Link
                 to="/insights/blogs"
-                className="inline-flex items-center text-foreground-muted hover:text-[#505CFD]-dark transition-colors mb-6 mr-6"
+                className="inline-flex items-center text-foreground-muted hover:text-[#505CFD] -dark transition-colors mb-6 mr-6"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Blogs
@@ -330,8 +330,8 @@ const AgenticAiEnterpriseFuture = () => {
                       </h3>
                       <ul className="space-y-3 text-foreground-dark-muted">
                         <li className="flex items-center gap-3 ">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                            <Brain className="h-5 w-5 text-[#505CFD] flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                            <Brain className="h-5 w-5 text-[#505CFD]  flex-shrink-0" />
                           </div>
                           <span>
                             <strong>Perceive</strong> its environment and ingest
@@ -339,8 +339,8 @@ const AgenticAiEnterpriseFuture = () => {
                           </span>
                         </li>
                         <li className="flex items-center gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                            <Target className="h-5 w-5 text-[#505CFD] flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                            <Target className="h-5 w-5 text-[#505CFD]  flex-shrink-0" />
                           </div>
                           <span>
                             <strong>Reason</strong> about that data and a given
@@ -349,8 +349,8 @@ const AgenticAiEnterpriseFuture = () => {
                         </li>
                         <li className="flex items-center gap-3">
                           {" "}
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                            <Zap className="h-5 w-5 text-[#505CFD] flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                            <Zap className="h-5 w-5 text-[#505CFD]  flex-shrink-0" />
                           </div>
                           <span>
                             <strong>Plan</strong> a multi-step sequence of
@@ -359,8 +359,8 @@ const AgenticAiEnterpriseFuture = () => {
                         </li>
                         <li className="flex items-center gap-3">
                           {" "}
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                            <CheckCircle className="h-5 w-5 text-[#505CFD]flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                            <CheckCircle className="h-5 w-5 text-[#505CFD] flex-shrink-0" />
                           </div>
                           <span>
                             <strong>Execute</strong> those actions by
@@ -440,8 +440,8 @@ const AgenticAiEnterpriseFuture = () => {
 
                     <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                       <div className="flex items-start gap-3">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                          <AlertTriangle className="h-6 w-6 text-[#505CFD]flex-shrink-0" />
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                          <AlertTriangle className="h-6 w-6 text-[#505CFD] flex-shrink-0" />
                         </div>
                         <div>
                           <h3 className="text-lg font-semibold text-black-800 mb-3">
@@ -517,7 +517,7 @@ const AgenticAiEnterpriseFuture = () => {
                     {/* Step 1 */}
                     <div>
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                           1
                         </div>
                         Clarity Before Complexity - The AI & Data Audit
@@ -565,7 +565,7 @@ const AgenticAiEnterpriseFuture = () => {
                     {/* Step 2 */}
                     <div>
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                           2
                         </div>
                         Engineering Autonomy - Our "Built Differently" Execution
@@ -581,8 +581,8 @@ const AgenticAiEnterpriseFuture = () => {
 
                       <ul className="space-y-3 text-foreground-dark-muted">
                         <li className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                            <Zap className="h-5 w-5 text-[#505CFD] flex-shrink-0" />
+                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                            <Zap className="h-5 w-5 text-[#505CFD]  flex-shrink-0" />
                           </div>
                           <span>
                             <strong>Launch:</strong> For a FinTech startup like
@@ -591,8 +591,8 @@ const AgenticAiEnterpriseFuture = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                            <Target className="h-5 w-5 text-[#505CFD] flex-shrink-0" />
+                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                            <Target className="h-5 w-5 text-[#505CFD]  flex-shrink-0" />
                           </div>
                           <span>
                             <strong>Pivot:</strong> For Zilla Security, we
@@ -601,8 +601,8 @@ const AgenticAiEnterpriseFuture = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                            <CheckCircle className="h-5 w-5 text-[#505CFD]flex-shrink-0" />
+                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                            <CheckCircle className="h-5 w-5 text-[#505CFD] flex-shrink-0" />
                           </div>
                           <span>
                             <strong>Grow:</strong> For a client like TripJack,
@@ -616,7 +616,7 @@ const AgenticAiEnterpriseFuture = () => {
                     {/* Step 3 */}
                     <div>
                       <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                           3
                         </div>
                         The Cautionary Layer - Our AI Risk & Governance Practice
@@ -631,8 +631,8 @@ const AgenticAiEnterpriseFuture = () => {
                       <div className="grid md:grid-cols-3 gap-6">
                         <div className="bg-white p-6 rounded-lg border border-black/5">
                           <div className="flex items-center gap-3 mb-3">
-                            <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                              <Shield className="h-5 w-5 text-[#505CFD]" />
+                            <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                              <Shield className="h-5 w-5 text-[#505CFD] " />
                             </div>
                             <h4 className="font-semibold text-foreground-dark">
                               Robust Guardrails
@@ -646,8 +646,8 @@ const AgenticAiEnterpriseFuture = () => {
                         </div>
                         <div className="bg-white p-6 rounded-lg border border-black/5">
                           <div className="flex items-center gap-3 mb-3">
-                            <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                              <Target className="h-5 w-5 text-[#505CFD]" />
+                            <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                              <Target className="h-5 w-5 text-[#505CFD] " />
                             </div>
                             <h4 className="font-semibold text-foreground-dark">
                               Human-in-the-Loop (HITL)
@@ -661,8 +661,8 @@ const AgenticAiEnterpriseFuture = () => {
                         </div>
                         <div className="bg-white p-6 rounded-lg border border-black/5">
                           <div className="flex items-center gap-3 mb-3">
-                            <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                              <CheckCircle className="h-5 w-5 text-[#505CFD]" />
+                            <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                              <CheckCircle className="h-5 w-5 text-[#505CFD] " />
                             </div>
                             <h4 className="font-semibold text-foreground-dark">
                               Comprehensive Monitoring

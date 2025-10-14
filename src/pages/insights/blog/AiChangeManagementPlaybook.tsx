@@ -278,8 +278,8 @@ const AiChangeManagementPlaybook = () => {
                       <div className="space-y-8">
                         <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                           <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                              <Brain className="h-6 w-6 text-[#505CFD]" />
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                              <Brain className="h-6 w-6 text-[#505CFD] " />
                             </div>
                             The Human Element: Resistance to Change and Loss of
                             Context
@@ -301,7 +301,7 @@ const AiChangeManagementPlaybook = () => {
 
                         <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                           <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                               <Target className="h-6 w-6 text-brand-primary" />
                             </div>
                             The Data Foundation: A Cracked and Fragmented
@@ -323,7 +323,7 @@ const AiChangeManagementPlaybook = () => {
 
                         <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                           <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                               <Shield className="h-6 w-6 text-brand-primary" />
                             </div>
                             AI as a Black Box: Lack of Observability
@@ -371,7 +371,7 @@ const AiChangeManagementPlaybook = () => {
                         {/* Step 1 */}
                         <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                           <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                               1
                             </div>
                             Charting the Terrain (AI & Data Assessment)
@@ -418,7 +418,7 @@ const AiChangeManagementPlaybook = () => {
                         {/* Step 2 */}
                         <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                           <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                               2
                             </div>
                             Building Enthusiasm and Trust (Strategic Change
@@ -432,7 +432,7 @@ const AiChangeManagementPlaybook = () => {
 
                           <ul className="space-y-3 text-foreground-dark-muted">
                             <li className="flex items-start gap-3">
-                              <CheckCircle className="h-5 w-5 text-[#505CFD]mt-1 flex-shrink-0" />
+                              <CheckCircle className="h-5 w-5 text-[#505CFD] mt-1 flex-shrink-0" />
                               <span>
                                 <strong className="font-semibold">
                                   Stakeholder Workshops:
@@ -442,7 +442,7 @@ const AiChangeManagementPlaybook = () => {
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
-                              <CheckCircle className="h-5 w-5 text-[#505CFD]mt-1 flex-shrink-0" />
+                              <CheckCircle className="h-5 w-5 text-[#505CFD] mt-1 flex-shrink-0" />
                               <span>
                                 <strong className="font-semibold">
                                   Demonstrating Value:
@@ -453,7 +453,7 @@ const AiChangeManagementPlaybook = () => {
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
-                              <CheckCircle className="h-5 w-5 text-[#505CFD]mt-1 flex-shrink-0" />
+                              <CheckCircle className="h-5 w-5 text-[#505CFD] mt-1 flex-shrink-0" />
                               <span>
                                 <strong className="font-semibold">
                                   Internal AI Studio:
@@ -468,7 +468,7 @@ const AiChangeManagementPlaybook = () => {
                         {/* Step 3 */}
                         <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                           <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                               3
                             </div>
                             Purposeful Modernization and Execution
@@ -565,7 +565,7 @@ const AiChangeManagementPlaybook = () => {
                       <EnhancedScrollReveal direction="left" delay={200}>
                         <div className="bg-white rounded-xl p-6 shadow-glass h-full border-glass">
                           <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                               <Shield className="h-5 w-5 text-brand-primary" />
                             </div>
                             De-Risked AI Investment
@@ -580,7 +580,7 @@ const AiChangeManagementPlaybook = () => {
                       <EnhancedScrollReveal direction="right" delay={400}>
                         <div className="bg-white rounded-xl p-6 shadow-glass  h-full border-glass">
                           <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                               <Zap className="h-5 w-5 text-brand-primary" />
                             </div>
                             Increased Adoption
@@ -595,7 +595,7 @@ const AiChangeManagementPlaybook = () => {
                       <EnhancedScrollReveal direction="left" delay={600}>
                         <div className="bg-white rounded-xl p-6 shadow-glass  h-full border-glass ">
                           <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                               <Target className="h-5 w-5 text-brand-primary" />
                             </div>
                             Innovation Foundation
@@ -610,7 +610,7 @@ const AiChangeManagementPlaybook = () => {
                       <EnhancedScrollReveal direction="right" delay={800}>
                         <div className="bg-white rounded-xl p-6 shadow-glass  h-full border-glass ">
                           <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                               <Brain className="h-5 w-5 text-brand-primary" />
                             </div>
                             Sustainable Capability

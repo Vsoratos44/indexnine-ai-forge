@@ -267,7 +267,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       </p>
                       <div className="space-y-4">
                         <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                             <Code className="h-5 w-5 text-brand-primary flex-shrink-0" />
                           </div>
                           <div>
@@ -282,7 +282,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                             <Wrench className="h-5 w-5 text-brand-primary flex-shrink-0" />
                           </div>
                           <div>
@@ -297,7 +297,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                             <CheckCircle className="h-5 w-5 text-brand-primary  flex-shrink-0" />
                           </div>
                           <div>
@@ -350,8 +350,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                     <div className="space-y-0">
                       <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                         <h4 className="font-semibold text-foreground-dark mb-3 flex items-center gap-2">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                            <AlertTriangle className="h-5 w-5 text-[#505CFD]" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                            <AlertTriangle className="h-5 w-5 text-[#505CFD] " />
                           </div>
                           The Challenges
                         </h4>
@@ -395,8 +395,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
 
                       <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                         <h4 className="font-semibold text-foreground-dark mb-3 flex items-center gap-2">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                            <CheckCircle className="h-5 w-5 text-[#505CFD]" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                            <CheckCircle className="h-5 w-5 text-[#505CFD] " />
                           </div>
                           What Worked Well
                         </h4>
@@ -467,8 +467,8 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       </p>
                       <div className="space-y-4">
                         <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
-                            <Target className="h-5 w-5 text-[#505CFD]flex-shrink-0" />
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
+                            <Target className="h-5 w-5 text-[#505CFD] flex-shrink-0" />
                           </div>
                           <div>
                             <h4 className="font-semibold text-foreground-dark mb-2">
@@ -482,7 +482,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                             <Zap className="h-5 w-5 text-brand-primary  flex-shrink-0" />
                           </div>
                           <div>
@@ -497,7 +497,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                             <CheckCircle className="h-5 w-5 text-brand-primary  flex-shrink-0" />
                           </div>
                           <div>
@@ -537,7 +537,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       {/* Step 1 */}
                       <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                             1
                           </div>
                           Start With a Solid Foundation
@@ -570,7 +570,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       {/* Step 2 */}
                       <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                             2
                           </div>
                           Break Down the Design First
@@ -594,14 +594,14 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       {/* Step 3 */}
                       <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                             3
                           </div>
                           Build Bottom-Up
                         </h3>
                         <div className="space-y-4">
                           <div className="flex items-start gap-3">
-                            <CheckCircle className="h-5 w-5 text-[#505CFD]mt-1 flex-shrink-0" />
+                            <CheckCircle className="h-5 w-5 text-[#505CFD] mt-1 flex-shrink-0" />
                             <div>
                               <h4 className="font-semibold text-foreground-dark mb-2">
                                 Start Small
@@ -613,7 +613,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
-                            <CheckCircle className="h-5 w-5 text-[#505CFD]mt-1 flex-shrink-0" />
+                            <CheckCircle className="h-5 w-5 text-[#505CFD] mt-1 flex-shrink-0" />
                             <div>
                               <h4 className="font-semibold text-foreground-dark mb-2">
                                 Go Generic, Stay Reusable
@@ -625,7 +625,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                             </div>
                           </div>
                           <div className="flex items-start gap-3">
-                            <CheckCircle className="h-5 w-5 text-[#505CFD]mt-1 flex-shrink-0" />
+                            <CheckCircle className="h-5 w-5 text-[#505CFD] mt-1 flex-shrink-0" />
                             <div>
                               <h4 className="font-semibold text-foreground-dark mb-2">
                                 Test in Isolation
@@ -642,7 +642,7 @@ const AiAssistedSoftwareEngineeringCursor = () => {
                       {/* Step 4 */}
                       <div className="bg-white rounded-xl p-8 shadow-glass border-glass h-full">
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center gap-3">
-                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                             4
                           </div>
                           Treat AI Like a Junior Dev

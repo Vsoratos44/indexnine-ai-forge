@@ -499,7 +499,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                       <ul className="space-y-4 text-lg text-foreground-dark-muted">
                         <li className="flex items-start gap-3">
-                          <CheckCircle className="w-6 h-6 text-[#505CFD]mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-6 h-6 text-[#505CFD] mt-0.5 flex-shrink-0" />
                           <span>
                             <strong>Deploy in 10 minutes:</strong> Terraform
                             automation reduces infrastructure setup from weeks
@@ -507,7 +507,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <CheckCircle className="w-6 h-6 text-[#505CFD]mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-6 h-6 text-[#505CFD] mt-0.5 flex-shrink-0" />
                           <span>
                             <strong>Production-ready from day one:</strong> AWS
                             Well-Architected Framework ensures enterprise-grade
@@ -515,7 +515,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <CheckCircle className="w-6 h-6 text-[#505CFD]mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-6 h-6 text-[#505CFD] mt-0.5 flex-shrink-0" />
                           <span>
                             <strong>Eliminate DevOps costs:</strong> Save $150K+
                             annually by removing the need for dedicated
@@ -523,7 +523,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <CheckCircle className="w-6 h-6 text-[#505CFD]mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-6 h-6 text-[#505CFD] mt-0.5 flex-shrink-0" />
                           <span>
                             <strong>Multi-cloud ready:</strong> Deploy
                             consistently across AWS, Google Cloud, and Azure
@@ -531,7 +531,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <CheckCircle className="w-6 h-6 text-[#505CFD]mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-6 h-6 text-[#505CFD] mt-0.5 flex-shrink-0" />
                           <span>
                             <strong>Zero vendor lock-in:</strong> Infrastructure
                             as Code ensures portability and complete control
@@ -575,7 +575,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                                 2-8 weeks
                               </span>
                             </td>
-                            <td className="px-6 py-4 text-[#505CFD]">
+                            <td className="px-6 py-4 text-[#505CFD] ">
                               <span className="flex items-center gap-2">
                                 <CheckCircle className="w-4 h-4" />
                                 10 minutes
@@ -589,7 +589,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                             <td className="px-6 py-4 text-purple-500">
                               $150K+ DevOps team
                             </td>
-                            <td className="px-6 py-4 text-[#505CFD]">
+                            <td className="px-6 py-4 text-[#505CFD] ">
                               Included in service
                             </td>
                           </tr>
@@ -600,7 +600,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                             <td className="px-6 py-4 text-purple-500">
                               High - Human mistakes
                             </td>
-                            <td className="px-6 py-4 text-[#505CFD]">
+                            <td className="px-6 py-4 text-[#505CFD] ">
                               Low - Automated testing
                             </td>
                           </tr>
@@ -611,7 +611,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                             <td className="px-6 py-4 text-purple-500">
                               Variable
                             </td>
-                            <td className="px-6 py-4 text-[#505CFD]">
+                            <td className="px-6 py-4 text-[#505CFD] ">
                               100% Reproducible
                             </td>
                           </tr>
@@ -622,7 +622,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                             <td className="px-6 py-4 text-purple-500">
                               Manual audits required
                             </td>
-                            <td className="px-6 py-4 text-[#505CFD]">
+                            <td className="px-6 py-4 text-[#505CFD] ">
                               Built-in compliance
                             </td>
                           </tr>
@@ -633,7 +633,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                             <td className="px-6 py-4 text-purple-500">
                               Requires re-architecture
                             </td>
-                            <td className="px-6 py-4 text-[#505CFD]">
+                            <td className="px-6 py-4 text-[#505CFD] ">
                               Auto-scaling enabled
                             </td>
                           </tr>
@@ -714,7 +714,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     </p>
                     <div className="space-y-8">
                       <div className="flex gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                           1
                         </div>
                         <div>
@@ -731,7 +731,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         </div>
                       </div>
                       <div className="flex gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                           2
                         </div>
                         <div>
@@ -751,7 +751,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         </div>
                       </div>
                       <div className="flex gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                           3
                         </div>
                         <div>
@@ -771,7 +771,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         </div>
                       </div>
                       <div className="flex gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                           4
                         </div>
                         <div>
@@ -791,7 +791,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         </div>
                       </div>
                       <div className="flex gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD] rounded-full flex items-center justify-center font-medium text-lg">
                           5
                         </div>
                         <div>
@@ -833,7 +833,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         <div className="flex items-center gap-4 mb-6">
                           <span>
                             <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center">
-                              <Zap className="w-6 h-6 text-[#505CFD]" />
+                              <Zap className="w-6 h-6 text-[#505CFD] " />
                             </div>
                           </span>
                           <h3 className="text-xl font-semibold text-foreground-dark-muted font-montserrat">
@@ -860,7 +860,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         <div className="flex items-center gap-4 mb-6">
                           <span>
                             <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center">
-                              <Shield className="w-6 h-6 text-[#505CFD]" />
+                              <Shield className="w-6 h-6 text-[#505CFD] " />
                             </div>
                           </span>
                           <h3 className="text-xl font-semibold text-foreground-dark-muted font-montserrat">
@@ -886,7 +886,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         <div className="flex items-center gap-4 mb-6">
                           <span>
                             <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center">
-                              <DollarSign className="w-6 h-6 text-[#505CFD]" />
+                              <DollarSign className="w-6 h-6 text-[#505CFD] " />
                             </div>
                           </span>
                           <h3 className="text-xl font-semibold text-foreground-dark-muted font-montserrat">
@@ -912,7 +912,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                         <div className="flex items-center gap-4 mb-6">
                           <span>
                             <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center">
-                              <Settings className="w-6 h-6 text-[#505CFD]" />
+                              <Settings className="w-6 h-6 text-[#505CFD] " />
                             </div>
                           </span>
                           <h3 className="text-xl font-semibold text-foreground-dark-muted font-montserrat">
@@ -955,7 +955,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                       <div className="bg-white rounded-xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
                           <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center">
-                            <Cloud className="w-5 h-5 text-[#505CFD]" />
+                            <Cloud className="w-5 h-5 text-[#505CFD] " />
                           </div>
                           <h3 className="text-xl font-semibold text-foreground-dark-muted">
                             Network Layer
@@ -975,7 +975,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                       <div className="bg-white rounded-xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
                           <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center">
-                            <TrendingUp className="w-5 h-5 text-[#505CFD]" />
+                            <TrendingUp className="w-5 h-5 text-[#505CFD] " />
                           </div>
                           <h3 className="text-xl font-semibold text-foreground-dark-muted">
                             Compute Layer
@@ -997,7 +997,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                       <div className="bg-white rounded-xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
                           <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center">
-                            <Lock className="w-5 h-5 text-[#505CFD]" />
+                            <Lock className="w-5 h-5 text-[#505CFD] " />
                           </div>
                           <h3 className="text-xl font-semibold text-foreground-dark-muted">
                             Security Layer
@@ -1019,7 +1019,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                       <div className="bg-white rounded-xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
                           <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center">
-                            <Database className="w-5 h-5 text-[#505CFD]" />
+                            <Database className="w-5 h-5 text-[#505CFD] " />
                           </div>
                           <h3 className="text-xl font-semibold text-foreground-dark-muted">
                             Storage Layer
@@ -1038,7 +1038,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                       <div className="bg-white rounded-xl p-6 shadow-glass border-glass">
                         <div className="flex items-center gap-4 mb-4">
                           <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center">
-                            <BarChart3 className="w-5 h-5 text-[#505CFD]" />
+                            <BarChart3 className="w-5 h-5 text-[#505CFD] " />
                           </div>
                           <h3 className="text-xl font-semibold text-foreground-dark-muted">
                             Monitoring Layer
@@ -1077,7 +1077,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     <EnhancedScrollReveal direction="up" delay={200}>
                       <div className="bg-white rounded-xl p-6 shadow-glass border-glass h-full">
                         <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center mb-4">
-                          <Rocket className="w-6 h-6 text-[#505CFD]" />
+                          <Rocket className="w-6 h-6 text-[#505CFD] " />
                         </div>
                         <h3 className="text-lg font-semibold text-foreground-dark-muted mb-3">
                           An Accelerated Sprint 0
@@ -1094,7 +1094,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     <EnhancedScrollReveal direction="up" delay={400}>
                       <div className="bg-white rounded-xl p-6 shadow-glass border-glass h-full">
                         <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center mb-4">
-                          <Target className="w-6 h-6 text-[#505CFD]" />
+                          <Target className="w-6 h-6 text-[#505CFD] " />
                         </div>
                         <h3 className="text-lg font-semibold text-foreground-dark-muted mb-3">
                           A Battle-Tested Launchpad
@@ -1111,7 +1111,7 @@ const CloudInfrastructureAutomationTerraform = () => {
                     <EnhancedScrollReveal direction="up" delay={600}>
                       <div className="bg-white rounded-xl p-6 shadow-glass border-glass h-full">
                         <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center mb-4">
-                          <DollarSign className="w-6 h-6 text-[#505CFD]" />
+                          <DollarSign className="w-6 h-6 text-[#505CFD] " />
                         </div>
                         <h3 className="text-lg font-semibold text-foreground-dark-muted mb-3">
                           Reduced Operational Overhead

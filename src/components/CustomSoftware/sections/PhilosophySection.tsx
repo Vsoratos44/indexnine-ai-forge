@@ -58,7 +58,7 @@ export const PhilosophySection: React.FC = () => {
                     <div
                       className={`relative w-16 h-16 sm:w-20 sm:h-20 flex mb-4 sm:mb-6 items-center justify-center transition-all ${styles.icnBg}`}
                     >
-                      <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 text-[#505CFD]" />
+                      <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 text-[#505CFD] " />
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-foreground-dark font-montserrat">
                       {principle.title}

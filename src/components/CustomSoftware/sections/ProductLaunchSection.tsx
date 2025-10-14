@@ -121,7 +121,7 @@ export const ProductLaunchSection: React.FC = () => {
                 >
                   <span>
                     {" "}
-                    <CheckCircle className="h-5 w-5 text-[#505CFD]mt-0.5 flex-shrink-0 mt-1" />
+                    <CheckCircle className="h-5 w-5 text-[#505CFD] mt-0.5 flex-shrink-0 mt-1" />
                   </span>
                   <div>
                     <h3 className="font-semibold text-lg">
@@ -146,12 +146,12 @@ export const ProductLaunchSection: React.FC = () => {
               <div key={index}>
                 <div className="p-0 flex gap-2 mt-2">
                   {/* <div className="w-14 h-14 rounded-full bg-brand-purple/10 flex items-center justify-center mb-4 mx-auto">
-                      <span className="text-xl font-medium text-[#505CFD]">
+                      <span className="text-xl font-medium text-[#505CFD] ">
                         {index + 1}
                       </span>
                     </div> */}
                   <span>
-                    <CheckCircle className="h-5 w-5 text-[#505CFD]mt-0.5 flex-shrink-0 mt-1" />
+                    <CheckCircle className="h-5 w-5 text-[#505CFD] mt-0.5 flex-shrink-0 mt-1" />
                   </span>
                   <div>
                     <h4 className="text-base font-semibold text-foreground-dark mb-1 font-montserrat">
@@ -193,7 +193,7 @@ export const ProductLaunchSection: React.FC = () => {
                               <div
                                 className={`w-12 h-12 rounded-[.75rem] z-10 bg-white  flex items-center justify-center shadow-md mx-auto -mt-16`}
                               >
-                                <IconComponent className="w-5 h-5 text-[#505CFD]" />
+                                <IconComponent className="w-5 h-5 text-[#505CFD] " />
                               </div>
                             </div>
                             <div className="bg-blue-500 -mt-10 -mx-4 z-9 pt-4 pb-2 text-center rounded-sm">
