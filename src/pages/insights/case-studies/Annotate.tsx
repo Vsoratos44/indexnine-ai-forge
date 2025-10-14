@@ -786,7 +786,7 @@ const LaunchCaseStudy = () => {
       <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-            <span className="leading-[1.4]">Ready to Launch Your Vision?</span>
+            <span className="leading-[1.2]">Ready to Launch Your Vision?</span>
           </h2>
           <p className="text-xl text-foreground/80 mb-8 max-w-3xl mx-auto font-montserrat">
             So are we. Set up a free consultation with Indexnine today.

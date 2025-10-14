@@ -422,7 +422,7 @@ const ProjectBased = () => {
                       key={index}
                       className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
                     >
-                      <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
+                      <div className="relative group h-full bg-gradient-to-b from-brand-primary/40 via-brand-primary/5 to-brand-primary/5 border-glass-border rounded-[1.25rem] p-1 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1 backdrop-blur-lg">
                         {/* Enhanced Glassmorphism Card */}
 
                         <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
@@ -557,7 +557,7 @@ const ProjectBased = () => {
       <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-            <span className="leading-[1.4]">
+            <span className="leading-[1.2]">
               Let's Build the Future. Together.
             </span>
           </h2>

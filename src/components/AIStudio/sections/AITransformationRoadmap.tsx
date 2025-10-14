@@ -165,7 +165,7 @@ const AITransformationRoadmap: React.FC<AITransformationRoadmapProps> = ({
             {/* Header */}
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-                <span className="leading-[1.4]">AI Transformation Roadmap</span>
+                <span className="leading-[1.2]">AI Transformation Roadmap</span>
               </h2>
               <p className="text-lg text-foreground-white/80 max-w-3xl mx-auto">
                 We help clients figure out their transformation journey using

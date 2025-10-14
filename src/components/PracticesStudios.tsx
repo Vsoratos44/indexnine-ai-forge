@@ -44,9 +44,9 @@ const PracticesStudios = () => {
     <section className="pb-24 lg:pb-32 bg-[#fff] text-foreground-dark">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 font-montserrat leading-[1.4] max-w-[90%] mx-auto">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 font-montserrat leading-[1.2] max-w-[90%] mx-auto">
             Our Practices:{" "}
-            <span className="text-brand-primary leading-[1.4]">
+            <span className="text-brand-primary leading-[1.2]">
               The Innovation Lab & Enterprise Studio
             </span>
           </h2>

@@ -698,7 +698,7 @@ const GrowCaseStudy = () => {
       <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-            <span className="leading-[1.4]">Ready to Automate?</span>
+            <span className="leading-[1.2]">Ready to Automate?</span>
           </h2>
           <p className="text-xl text-foreground/80 mb-8 max-w-3xl mx-auto font-montserrat">
             Is your business looking at ways to automate, scale, and lead with

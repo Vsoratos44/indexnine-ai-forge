@@ -383,7 +383,7 @@ const CaseStudies = () => {
         <section className="max-w-6xl mx-auto pt-16 lg:pt-32 bg-transparent">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.4]">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.2]">
                 Featured Case Studies
               </h2>
             </div>
@@ -436,7 +436,7 @@ const CaseStudies = () => {
         <section className="py-24 lg:py-32 bg-gradient-subtle">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.4]">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.2]">
                 Ready to Start Your Success Story?
               </h2>
               <p className="text-xl text-foreground-dark-muted max-w-3xl mx-auto font-montserrat">
@@ -498,7 +498,7 @@ const CaseStudies = () => {
       <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-            <span className="leading-[1.4]">Let's Write Your Next Chapter</span>
+            <span className="leading-[1.2]">Let's Write Your Next Chapter</span>
           </h2>
           <p className="text-xl text-foreground-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
             Join the ranks of successful companies that have transformed their

@@ -18,12 +18,12 @@ const PracticesStudios = () => {
       buttonText: "Explore Innovation Lab",
       features: [
         "Rapid MVP development",
-        "AI/ML integration",  
+        "AI/ML integration",
         "Emerging tech exploration",
       ],
     },
     enterprise: {
-      title: "The Enterprise Studio", 
+      title: "The Enterprise Studio",
       subtitle: "For market leaders navigating at scale.",
       description:
         "Built for businesses requiring security, scale, and process excellence. We provide the mature, rigorous engineering needed for mission-critical transformations and enterprise platform development.",
@@ -42,11 +42,14 @@ const PracticesStudios = () => {
     <section className="pb-24 lg:pb-32 bg-[#fff] text-foreground-dark">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-purple mb-6 font-montserrat leading-[1.4] max-w-[90%] mx-auto">
-            Specialized Guides for Your <span className="text-brand-cyan">Unique Terrain</span>.
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-purple mb-6 font-montserrat leading-[1.2] max-w-[90%] mx-auto">
+            Specialized Guides for Your{" "}
+            <span className="text-brand-cyan">Unique Terrain</span>.
           </h2>
           <p className="text-lg sm:text-xl text-foreground-dark max-w-4xl mx-auto mb-8">
-            The path to the pinnacle looks different for every company. To provide the specialized expertise your journey demands, we've organized our teams into two dedicated practices.
+            The path to the pinnacle looks different for every company. To
+            provide the specialized expertise your journey demands, we've
+            organized our teams into two dedicated practices.
           </p>
           <div className="flex justify-center">
             <CtaButton>Find Your Fit</CtaButton>

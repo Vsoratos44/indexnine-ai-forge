@@ -265,7 +265,7 @@ header .fixed.inset-0 {
   /* NEW: Directly set the final transform state */
   transform: translateX(8px);
   padding-left: 16px;
-  color: #4e57fd;
+  color: #505cfd;
 }
 
 .navLink:hover::before {

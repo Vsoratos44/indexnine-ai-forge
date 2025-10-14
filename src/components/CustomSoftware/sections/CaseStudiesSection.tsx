@@ -67,11 +67,9 @@ export const CaseStudiesSection: React.FC = () => {
             {caseStudies.map((study, index) => (
               <div
                 key={index}
-                className="relative overflow-hidden bg-gradient-card-light backdrop-blur-xl rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer group"
+                className="relative group h-full bg-gradient-to-b from-brand-primary/40 via-brand-primary/5 to-brand-primary/5 border-glass-border rounded-[1.25rem] p-1 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1 backdrop-blur-lg"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-purple/8 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                <div className="relative flex flex-col h-full">
+                <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
                   <div>
                     <div className="mb-3 sm:mb-4">
                       <span className="inline-block px-2 sm:px-3 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-semibold mb-3">

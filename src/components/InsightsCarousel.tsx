@@ -123,7 +123,7 @@ const InsightsCarousel = () => {
                     key={item.id}
                     className="px-3 py-8 sm:basis-1/1 md:basis-1/2 lg:basis-1/3"
                   >
-                    <div className="relative group h-full bg-gradient-to-b from-black/50 via-black/5 to-black/5 border-glass-border rounded-3xl p-3 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1">
+                    <div className="relative group h-full bg-gradient-to-b from-brand-primary/40 via-brand-primary/5 to-brand-primary/5 border-glass-border rounded-[1.25rem] p-1 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1 backdrop-blur-lg">
                       {/* Enhanced Glassmorphism Card */}
                       <div className="relative overflow-hidden bg-white rounded-2xl p-6 h-full flex flex-col">
                         {/* Content Header */}

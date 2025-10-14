@@ -18,6 +18,7 @@ import AboutImg5 from "../../assets/images/about5.webp";
 import AboutImg6 from "../../assets/images/about6.webp";
 
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import CountUp from "@/components/CountUp";
 
 const images = [
   AboutImg1,
@@ -26,6 +27,14 @@ const images = [
   AboutImg4,
   AboutImg5,
   AboutImg6,
+];
+
+const stats = [
+  { value: 104, suffix: "+", label: "Solutions Delivered" },
+  { value: 220, suffix: "+", label: "Engineers and Designers" },
+  { value: 95, suffix: "+", label: "Customers" },
+  { value: 6, suffix: "", label: "Core Studios" },
+  { value: 92, suffix: "%", label: "Client Satisfaction" },
 ];
 
 const About = () => {
@@ -191,14 +200,50 @@ const About = () => {
             </div>
           </section>
 
+          <div className="container mx-auto px-6 lg:px-8 relative z-10">
+            <div className="text-center mb-8 lg:mb-12">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 font-montserrat leading-[1.2]">
+                Client Outcomes
+              </h2>
+              <p className="text-lg sm:text-xl lg:text-xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
+                Our success isn't measured by the volume of code written; our
+                success is measured in the value we create for our clients.
+              </p>
+            </div>
+
+            <div className="max-w-6xl mx-auto pb-24 lg:pb-32">
+              {/* Right side - Stats grid with glassmorphism */}
+              <div className="order-1">
+                <div className="md:grid md:grid-cols-5">
+                  {stats.map((stat, index) => (
+                    <div
+                      key={index}
+                      className="relative overflow-hidden  p-2 text-center group"
+                      style={{ animationDelay: `${index * 0.1}s` }}
+                    >
+                      <div className="relative z-10">
+                        <h3 className="text-3xl lg:text-4xl xl:text-5xl font-semibold text-foreground-dark mb-2 font-montserrat">
+                          <CountUp end={stat.value} suffix={stat.suffix} />
+                        </h3>
+                        <p className="text-foreground-dark-muted font-light font-montserrat">
+                          {stat.label}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Values Section */}
           <section className="pb-24 lg:pb-32 bg-transparent">
             <div className="container mx-auto px-6 lg:px-8">
               <div className="text-center mb-8">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold  text-foreground-dark ">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4  text-foreground-dark ">
                   Testimonials
                 </h2>
-                <h4 className="font-semibold  text-foreground-dark ">
+                <h4 className="font-light text-lg sm:text-xl lg:text-xl text-foreground-dark ">
                   "We Value the stories shared by our clients"
                 </h4>
               </div>
@@ -212,7 +257,7 @@ const About = () => {
         <section className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}>
           <div className="container mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-              <span className="leading-[1.4]">Ready to Partner with Us?</span>
+              <span className="leading-[1.2]">Ready to Partner with Us?</span>
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
               Let's discuss how our product mindset and AI-forward engineering

@@ -14,8 +14,8 @@ const ValueProposition = () => {
 
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-screen-xl relative z-10">
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-12 max-w-3xl mx-auto leading-[1.4]">
-            <span className="text-brand-primary leading-[1.4]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-12 max-w-3xl mx-auto leading-[1.2]">
+            <span className="text-brand-primary leading-[1.2]">
               Product Engineering Services
             </span>{" "}
             for the AI Era.

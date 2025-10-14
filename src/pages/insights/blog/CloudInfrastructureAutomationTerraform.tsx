@@ -1258,7 +1258,7 @@ const CloudInfrastructureAutomationTerraform = () => {
           <div className="max-w-5xl mx-auto">
             <div className="p-8 text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark-white">
-                <span className="leading-[1.4]">
+                <span className="leading-[1.2]">
                   Ready to Launch Your MVP in Record Time?
                 </span>
               </h2>

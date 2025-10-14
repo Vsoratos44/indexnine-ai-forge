@@ -204,7 +204,7 @@ const DataEngineering = () => {
                   <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
                       Our Blueprint for an AI-Ready Data Foundation{" "}
-                      <span className="text-brand-primary leading-[1.4]">
+                      <span className="text-brand-primary leading-[1.2]">
                         Answered
                       </span>
                     </h2>
@@ -355,7 +355,7 @@ const DataEngineering = () => {
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
                   Data Solutions{" "}
-                  <span className="text-brand-primary leading-[1.4]">
+                  <span className="text-brand-primary leading-[1.2]">
                     in Action
                   </span>
                 </h2>

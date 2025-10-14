@@ -435,7 +435,7 @@ const Blogs = () => {
         <section className="max-w-6xl mx-auto pt-16 lg:pt-32 bg-transparent">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 font-montserrat leading-[1.4]">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-8 font-montserrat leading-[1.2]">
                 Latest Posts
               </h2>
             </div>
@@ -498,7 +498,7 @@ const Blogs = () => {
       <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
-            <span className="leading-[1.4]">Want to Share Your Insights?</span>
+            <span className="leading-[1.2]">Want to Share Your Insights?</span>
           </h2>
           <p className="text-xl text-foreground-white/80 mb-12 font-montserrat">
             Join our community of thought leaders and share your expertise with

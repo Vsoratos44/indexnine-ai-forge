@@ -1065,7 +1065,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
       {/* <section className={`py-24 lg:py-32 ${styles.ctaBg}`}>
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white max-w-4xl m-auto">
-            <span className="leading-[1.4]">
+            <span className="leading-[1.2]">
               {" "}
               Ready to move from a data swamp to a strategic data asset?
             </span>

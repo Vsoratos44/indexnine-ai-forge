@@ -122,7 +122,7 @@ const ConsultingStrategy = () => {
         className={` ${styles.strBg1} pt-16 sm:pt-24 lg:pt-32 bg-[#fff]`}
       >
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-8xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             {/* Mobile-first layout */}
             <div className="block lg:hidden">
               <div className="text-center mb-8">
@@ -206,8 +206,8 @@ const ConsultingStrategy = () => {
             </div>
 
             {/* Desktop layout */}
-            <div className="hidden lg:grid lg:grid-cols-6">
-              <div className="text-left mb-12 col-span-4">
+            <div className="hidden lg:grid lg:grid-cols-8">
+              <div className="text-left mb-12 col-span-5">
                 <h2 className="text-3xl lg:text-4xl font-semibold text-foreground-dark mb-6 font-montserrat">
                   From Strategy to Execution
                 </h2>
@@ -224,7 +224,7 @@ const ConsultingStrategy = () => {
                 />
               </div>
 
-              <div className="ml-8 col-span-2 mt-16">
+              <div className="ml-8 col-span-3 mt-16">
                 <div className="grid md:grid-rows-3 gap-16">
                   <div className="text flex">
                     <div>
@@ -636,7 +636,7 @@ const ConsultingStrategy = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 text-foreground-white px-4 sm:px-0">
-              <span className="leading-[1.3] sm:leading-[1.4]">
+              <span className="leading-[1.3] sm:leading-[1.2]">
                 Ready to Transform Your Technology Strategy?
               </span>
             </h2>

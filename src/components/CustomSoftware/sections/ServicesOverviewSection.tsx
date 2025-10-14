@@ -172,14 +172,14 @@ export const ServicesOverviewSection: React.FC = () => {
                           <div
                             className={`relative w-14 h-14 sm:w-16 sm:h-16 flex mb-4 sm:mb-6 items-center justify-center ${
                               service.variant === "dark"
-                                ? "bg-gradient-to-br from-brand-primary/20 to-brand-purple/20 rounded-2xl"
+                                ? styles.icnBg
                                 : styles.icnBg
                             }`}
                           >
                             <IconComponent
                               className={`w-6 h-6 sm:w-8 sm:h-8 ${
                                 service.variant === "dark"
-                                  ? "text-brand-primary"
+                                  ? "text-white"
                                   : "text-brand-primary"
                               }`}
                             />

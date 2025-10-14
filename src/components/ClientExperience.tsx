@@ -54,9 +54,9 @@ const ClientExperience = () => {
         className={`container mx-auto px-6 lg:px-8 relative z-10  py-24 lg:py-32 ${styles["globe"]}`}
       >
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-[1.4]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground-dark mb-6 leading-[1.2]">
             A World-Class Client Experience: Working with
-            <span className="text-brand-primary leading-[1.4]"> Indexnine</span>
+            <span className="text-brand-primary leading-[1.2]"> Indexnine</span>
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-foreground-dark-muted leading-relaxed font-light max-w-4xl mx-auto">
             How we deliver is as important as what we deliver. Our engagement
