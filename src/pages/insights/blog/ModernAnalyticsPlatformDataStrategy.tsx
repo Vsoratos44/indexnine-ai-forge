@@ -411,7 +411,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                         </h3>
                         <ul className="space-y-4 text-foreground-dark-muted">
                           <li className="flex items-start gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                               A
                             </div>
                             <span>
@@ -423,7 +423,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                               G
                             </div>
                             <span>
@@ -436,7 +436,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                               I
                             </div>
                             <span>
@@ -450,7 +450,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                               L
                             </div>
                             <span>
@@ -463,7 +463,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                               E
                             </div>
                             <span>
@@ -506,7 +506,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                         <div className="flex flex-col gap-6">
                           <div className="space-y-4">
                             <div className="flex items-center gap-3">
-                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                                 A
                               </div>
                               <div>
@@ -523,7 +523,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
 
                           <div className="space-y-4">
                             <div className="flex items-center gap-3">
-                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                                 G
                               </div>
                               <div>
@@ -539,7 +539,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
 
                           <div className="space-y-4">
                             <div className="flex items-center gap-3">
-                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                                 I
                               </div>
                               <div>
@@ -556,7 +556,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
 
                           <div className="space-y-4">
                             <div className="flex items-center gap-3">
-                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                                 L
                               </div>
                               <div>
@@ -572,7 +572,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
 
                           <div className="space-y-4 md:col-span-2">
                             <div className="flex items-center gap-3">
-                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                                 E
                               </div>
                               <div>
@@ -613,7 +613,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                     <EnhancedScrollReveal direction="up">
                       {/* Step 1 */}
                       <div className="flex rounded-lg my-8 gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                           1
                         </div>
                         <div>
@@ -661,7 +661,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                     <EnhancedScrollReveal direction="up">
                       {/* Step 2 */}
                       <div className="flex rounded-lg my-8 gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                           2
                         </div>
                         <div>
@@ -704,7 +704,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                     <EnhancedScrollReveal direction="up">
                       {/* Step 3 */}
                       <div className="flex rounded-lg my-8 gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                           3
                         </div>
 
@@ -748,7 +748,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                     <EnhancedScrollReveal direction="up">
                       {/* Step 4 */}
                       <div className="flex rounded-lg my-8 gap-6">
-                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                           4
                         </div>
                         <div>
@@ -843,7 +843,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                         </h3>
                         <div className="space-y-4">
                           <div className="flex gap-6">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                               1
                             </div>
                             <div>
@@ -865,7 +865,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                             </div>
                           </div>
                           <div className="flex gap-6">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                               2
                             </div>
                             <div>
@@ -885,7 +885,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                             </div>
                           </div>
                           <div className="flex gap-6">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                               3
                             </div>
                             <div>
@@ -902,7 +902,7 @@ const ModernAnalyticsPlatformDataStrategy = () => {
                             </div>
                           </div>
                           <div className="flex gap-6">
-                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                            <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                               4
                             </div>
                             <div>

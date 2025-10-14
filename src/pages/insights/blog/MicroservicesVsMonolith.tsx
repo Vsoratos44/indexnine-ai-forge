@@ -315,7 +315,7 @@ const MicroservicesVsMonolith = () => {
                   </p>
                   <div className="bg-white rounded-xl p-8 shadow-glass  border-glass mb-8">
                     <p className="text-foreground-dark font-semibold mb-2 flex gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                      <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                         <Target className="h-5 w-5 inline-block text-brand-primary" />
                       </div>
                       At IndexNine, we have guided countless organizations
@@ -349,8 +349,8 @@ const MicroservicesVsMonolith = () => {
 
                   <div className="grid md:grid-cols-2 gap-6 my-8">
                     <div className="bg-white rounded-xl p-6 shadow-glass border-glass h-full">
-                      <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
-                        <AlertTriangle className="h-6 w-6 text-blue-500" />
+                      <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                        <AlertTriangle className="h-6 w-6 text-[#505CFD]" />
                       </div>
                       <h3 className="font-semibold text-foreground-dark my-3">
                         Warning Signs
@@ -363,8 +363,8 @@ const MicroservicesVsMonolith = () => {
                       </ul>
                     </div>
                     <div className="bg-white rounded-xl p-6 shadow-glass border-glass h-full">
-                      <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
-                        <CheckCircle className="h-6 w-6 text-blue-500" />
+                      <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                        <CheckCircle className="h-6 w-6 text-[#505CFD]" />
                       </div>
                       <h3 className="font-semibold text-foreground-dark my-3">
                         Growth Indicators
@@ -408,7 +408,7 @@ const MicroservicesVsMonolith = () => {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-semibold text-foreground-dark mb-2 flex items-center">
-                          <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                             <Zap className="h-5 w-5 text-brand-primary " />
                           </div>
                           Initial Velocity
@@ -421,7 +421,7 @@ const MicroservicesVsMonolith = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground-dark mb-2 flex items-center">
-                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
+                          <div className="flex-shrink-0 w-10 h-10 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
                             <Shield className="h-5 w-5 text-brand-primary " />
                           </div>
                           Simplified Development
@@ -447,8 +447,8 @@ const MicroservicesVsMonolith = () => {
 
                     <div className="space-y-4">
                       <div className="flex items-start gap-3">
-                        <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
-                          <AlertTriangle className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                        <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <AlertTriangle className="h-5 w-5 text-[#505CFD]flex-shrink-0" />
                         </div>
                         <div>
                           <h4 className="font-semibold text-foreground-dark">
@@ -463,8 +463,8 @@ const MicroservicesVsMonolith = () => {
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
-                          <AlertTriangle className="h-5 w-5 text-blue-500  flex-shrink-0" />
+                        <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <AlertTriangle className="h-5 w-5 text-[#505CFD] flex-shrink-0" />
                         </div>
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
@@ -480,8 +480,8 @@ const MicroservicesVsMonolith = () => {
                       </div>
                       <div className="flex items-start gap-3">
                         {" "}
-                        <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-blue-500 rounded-full flex items-center justify-center font-medium text-lg">
-                          <AlertTriangle className="h-5 w-5 text-blue-500  flex-shrink-0" />
+                        <div className="flex-shrink-0 w-10 h-10 mr-2 bg-blue-500/10 text-[#505CFD]rounded-full flex items-center justify-center font-medium text-lg">
+                          <AlertTriangle className="h-5 w-5 text-[#505CFD] flex-shrink-0" />
                         </div>
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
@@ -542,7 +542,7 @@ const MicroservicesVsMonolith = () => {
 
                     <div className="space-y-4">
                       <div className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-[#505CFD]mt-1 flex-shrink-0" />
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
                             Team Autonomy and Accelerated Velocity
@@ -557,7 +557,7 @@ const MicroservicesVsMonolith = () => {
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-[#505CFD]mt-1 flex-shrink-0" />
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
                             Enhanced Resilience and Fault Isolation
@@ -572,7 +572,7 @@ const MicroservicesVsMonolith = () => {
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-[#505CFD]mt-1 flex-shrink-0" />
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
                             Targeted, Cost-Effective Scaling
@@ -586,7 +586,7 @@ const MicroservicesVsMonolith = () => {
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <CheckCircle className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
+                        <CheckCircle className="h-5 w-5 text-[#505CFD]mt-1 flex-shrink-0" />
                         <div>
                           <h4 className="font-semibold text-foreground-dark mb-1">
                             Technological Flexibility
@@ -734,7 +734,7 @@ const MicroservicesVsMonolith = () => {
                     <div className="grid md:grid-cols-2 gap-8">
                       <div>
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center">
-                          <AlertTriangle className="h-6 w-6 text-blue-500 mr-3" />
+                          <AlertTriangle className="h-6 w-6 text-[#505CFD]mr-3" />
                           The Challenge
                         </h3>
                         <p className="text-foreground-dark-muted mb-4">
@@ -753,7 +753,7 @@ const MicroservicesVsMonolith = () => {
 
                       <div>
                         <h3 className="text-xl font-semibold text-foreground-dark mb-4 flex items-center">
-                          <CheckCircle className="h-6 w-6 text-blue-500 mr-3" />
+                          <CheckCircle className="h-6 w-6 text-[#505CFD]mr-3" />
                           The Solution
                         </h3>
                         <p className="text-foreground-dark-muted mb-4">

@@ -351,19 +351,19 @@ const OutcomeBased = () => {
                 >
                   <ul className="space-y-4 text text-foreground-dark">
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-500" />A 20%
+                      <CheckCircle className="w-5 h-5 text-[#505CFD]" />A 20%
                       increase in user conversion rates
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-500" />A 15%
+                      <CheckCircle className="w-5 h-5 text-[#505CFD]" />A 15%
                       reduction in customer support tickets
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-500" />
+                      <CheckCircle className="w-5 h-5 text-[#505CFD]" />
                       Achieving 50,000 monthly active users within six months
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-500" />
+                      <CheckCircle className="w-5 h-5 text-[#505CFD]" />
                       Reducing cloud infrastructure costs by 25%
                     </li>
                   </ul>
@@ -386,7 +386,7 @@ const OutcomeBased = () => {
                   <ul className="space-y-4 text text-foreground-dark">
                     <li className="flex gap-2">
                       <span>
-                        <CheckCircle className="w-5 h-5 text-blue-500" />{" "}
+                        <CheckCircle className="w-5 h-5 text-[#505CFD]" />{" "}
                       </span>
                       <div>
                         <span className="font-medium"> Foundational Fee</span>
@@ -398,7 +398,7 @@ const OutcomeBased = () => {
                     </li>
                     <li className="flex gap-2">
                       <span>
-                        <CheckCircle className="w-5 h-5 text-blue-500" />{" "}
+                        <CheckCircle className="w-5 h-5 text-[#505CFD]" />{" "}
                       </span>
                       <div>
                         <span className="font-medium"> Success Fee</span>
@@ -438,7 +438,7 @@ const OutcomeBased = () => {
                     </li>
                     <li className="flex gap-2">
                       <span>
-                        <CheckCircle className="w-5 h-5 text-blue-500" />{" "}
+                        <CheckCircle className="w-5 h-5 text-[#505CFD]" />{" "}
                       </span>
                       <div>
                         <span className="font-">Innovate</span>
@@ -446,7 +446,7 @@ const OutcomeBased = () => {
                     </li>
                     <li className="flex gap-2">
                       <span>
-                        <CheckCircle className="w-5 h-5 text-blue-500" />{" "}
+                        <CheckCircle className="w-5 h-5 text-[#505CFD]" />{" "}
                       </span>
                       <div>
                         <span className="font-">Solve problems creatively</span>
@@ -454,7 +454,7 @@ const OutcomeBased = () => {
                     </li>
                     <li className="flex gap-2">
                       <span>
-                        <CheckCircle className="w-5 h-5 text-blue-500" />{" "}
+                        <CheckCircle className="w-5 h-5 text-[#505CFD]" />{" "}
                       </span>
                       <div>
                         <span className="font-">

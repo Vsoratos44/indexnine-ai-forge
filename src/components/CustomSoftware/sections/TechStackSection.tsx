@@ -78,7 +78,7 @@ export const TechStackSection: React.FC = () => {
                     <div
                       className={`relative w-16 h-16 flex mb-2 items-center justify-center transition-all ${styles.icnBg}`}
                     >
-                      <IconComponent className="w-6 h-6  text-blue-500" />
+                      <IconComponent className="w-6 h-6  text-[#505CFD]" />
                     </div>
                     <h3 className="text-lg font-semibold text-foreground-dark mb-2 font-montserrat">
                       {category.title}

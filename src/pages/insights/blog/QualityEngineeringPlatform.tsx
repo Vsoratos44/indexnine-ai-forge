@@ -504,7 +504,7 @@ const QualityEngineeringPlatform = () => {
                         >
                           <EnhancedScrollReveal direction="up" delay={200}>
                             <div className="flex items-start gap-4">
-                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-500 font-medium text-lg">
+                              <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center text-[#505CFD]font-medium text-lg">
                                 {item.step}
                               </div>
                               <div>
@@ -575,7 +575,7 @@ const QualityEngineeringPlatform = () => {
                           <EnhancedScrollReveal direction="up" delay={200}>
                             <div className="flex items-start gap-4">
                               <div className="flex-shrink-0 w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center">
-                                <item.icon className="w-6 h-6 text-blue-500" />
+                                <item.icon className="w-6 h-6 text-[#505CFD]" />
                               </div>
                               <div>
                                 <h4 className="font-semibold text-foreground-dark mb-2">

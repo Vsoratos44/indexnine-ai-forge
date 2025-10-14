@@ -141,7 +141,7 @@ export const ProductModernizationSection: React.FC = () => {
                 >
                   <span>
                     {" "}
-                    <CheckCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0 mt-1" />
+                    <CheckCircle className="h-5 w-5 text-[#505CFD]mt-0.5 flex-shrink-0 mt-1" />
                   </span>
                   <div>
                     <h3 className="font-semibold text-lg">{challenge.title}</h3>

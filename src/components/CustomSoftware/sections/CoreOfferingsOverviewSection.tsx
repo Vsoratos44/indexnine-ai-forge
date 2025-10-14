@@ -51,7 +51,7 @@ export const CoreOfferingsOverviewSection: React.FC = () => {
                     <div
                       className={`relative w-16 h-16 sm:w-20 sm:h-20 flex mb-4 sm:mb-6 items-center justify-center ${styles.icnBg}`}
                     >
-                      <IconComponent className="w-8 h-8 text-blue-500" />
+                      <IconComponent className="w-8 h-8 text-[#505CFD]" />
                     </div>
                     <h3 className="text-xl sm:text-2xl font-bold text-foreground-dark mb-3 sm:mb-4 font-montserrat">
                       {offering.title}
