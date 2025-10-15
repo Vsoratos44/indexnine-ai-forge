@@ -7,7 +7,7 @@ export type Json =
   | Json[]
 
 export type Database = {
-  // Allows to automatically instanciate createClient with right options
+  // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
     PostgrestVersion: "12.2.12 (cd3cf9e)"
@@ -1008,6 +1008,27 @@ export type Database = {
         }
         Relationships: []
       }
+      user_roles: {
+        Row: {
+          created_at: string | null
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
       website_visitors: {
         Row: {
           browser: string | null
@@ -1080,18 +1101,25 @@ export type Database = {
     }
     Functions: {
       get_personalized_articles: {
-        Args: { user_role?: string; user_tags?: string[]; limit_count?: number }
+        Args: { limit_count?: number; user_role?: string; user_tags?: string[] }
         Returns: {
-          id: string
-          title: string
-          excerpt: string
-          category: string
           author: string
-          publish_date: string
-          views: number
+          category: string
+          excerpt: string
           featured: boolean
+          id: string
+          publish_date: string
           tags: string[]
+          title: string
+          views: number
         }[]
+      }
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
       }
       update_event_analytics: {
         Args: { event_uuid: string }
@@ -1099,7 +1127,7 @@ export type Database = {
       }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "event_admin" | "user"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -1226,6 +1254,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["event_admin", "user"],
+    },
   },
 } as const
