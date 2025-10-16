@@ -259,17 +259,19 @@ const Events = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
             <span className="leading-[1.2]">
               {" "}
-              Stay Updated with New Releases
+              Stay Updated with latest events
             </span>
           </h2>
           <p className="text-xl text-foreground-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
-            Get notified when we publish new Events and exclusive content to
+            Get notified when we publish new events and exclusive content to
             help you stay ahead in technology.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button variant="btnSecondary" size="lg">
-              Subscribe for Updates
-            </Button>
+            <Link to="/company/contact">
+              <Button variant="btnSecondary" size="lg">
+                Get in touch for Updates
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
