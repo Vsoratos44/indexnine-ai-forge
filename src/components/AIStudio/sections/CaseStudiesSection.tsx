@@ -40,7 +40,7 @@ export const CaseStudiesSection: React.FC = () => {
     <section className="pb-24 lg:pb-32 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="max-w-8xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-2">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-dark">
               See Our Engine in{" "}
               <span className="text-brand-primary">Action</span>
