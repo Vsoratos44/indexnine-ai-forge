@@ -20,6 +20,7 @@ import {
 import ServiceAreaSchema from "@/components/seo/ServiceAreaSchema";
 import PerformanceOptimizer from "@/components/seo/PerformanceOptimizer";
 import SEOAnalytics from "@/components/seo/SEOAnalytics";
+import { CALENDLY_URL } from "@/config/constants";
 
 const DataEngineering = () => {
   // Implement SEO for Data Engineering page
@@ -37,6 +38,10 @@ const DataEngineering = () => {
       "data engineering services, platform modernization, enterprise data solutions, data infrastructure consulting, AI-ready data platforms, ETL pipeline development, data warehouse modernization, legacy system modernization, data architecture services, cloud data migration, big data engineering, data analytics platform, enterprise data strategy, data pipeline automation, modern data stack",
     ogImage: "https://www.indexnine.com/images/og-data-engineering.png",
   });
+
+  const handleCalendlyClick = () => {
+    window.open(CALENDLY_URL, "_blank");
+  };
 
   return (
     <PerformanceOptimizer enableOptimizations={true} reportToAnalytics={true}>
@@ -503,7 +508,35 @@ const DataEngineering = () => {
             </div>
           </div>
         </section>
-
+        {/* Final CTA Section */}
+        <section
+          id="contact"
+          className={`py-24 lg:py-32 text-white ${styles.ctaBg}`}
+        >
+          <div className="container mx-auto px-6">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 text-foreground-white">
+                  <span className="leading-[1.2]">
+                    Unlock the power of data in real time
+                  </span>
+                </h2>
+                <p className="text-lg text-foreground-white/80 mb-8 leading-relaxed max-w-4xl mx-auto">
+                  Data is a key asset for growth when aligned with business
+                  goals and compliant with regulations.
+                </p>
+                <Button
+                  type="button"
+                  size="lg"
+                  variant="btnSecondary"
+                  onClick={handleCalendlyClick}
+                >
+                  Scope Your Roadmap
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
         <Footer />
       </div>
     </PerformanceOptimizer>
