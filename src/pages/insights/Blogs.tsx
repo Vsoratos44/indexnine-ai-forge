@@ -368,7 +368,7 @@ const Blogs = () => {
         </div>
       </section>
       <div
-        className={`pb-24 lg:pb-32 relative bg-[#fff] overflow-hidden ${styles.blogBg}`}
+        className={`pb-24 lg:pb-32 relative bg-[#fff] overflow-hidden ${styles.blogBg} bg-fixed`}
       >
         <div className="bg-glass-light border-glass">
           {/* Featured Post */}

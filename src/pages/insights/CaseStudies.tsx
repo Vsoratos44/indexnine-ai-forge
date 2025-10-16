@@ -378,7 +378,9 @@ const CaseStudies = () => {
         </div>
       </section>
 
-      <div className={` relative bg-[#fff] overflow-hidden ${styles.casesBg} `}>
+      <div
+        className={` relative bg-[#fff] overflow-hidden ${styles.casesBg} bg-fixed `}
+      >
         {/* Case Studies Grid */}
         <section className="max-w-6xl mx-auto pt-16 lg:pt-32 bg-transparent">
           <div className="container mx-auto px-6 lg:px-8">
