@@ -25,6 +25,10 @@ import SiLogo from "../../assets/images/clients/si-logo.png";
 import SurgeventuresLogo from "../../assets/images/clients/surgeventures-logo.png";
 
 import TripjackLogo from "../../assets/images/clients/tripjack-logo.png";
+import RupeetingLogo from "../../assets/images/clients/rupeeting-logo.png";
+import SpplusLogo from "../../assets/images/clients/spplus-logo.png";
+import MovanoLogo from "../../assets/images/clients/movano-logo.png";
+import AxleLogo from "../../assets/images/clients/axle-logo.png";
 
 // IndexNine Strategic Clients - Enhanced with SVG-based reliable logos
 export const indexNineStrategicClients = [
@@ -236,6 +240,45 @@ export const indexNineStrategicClients = [
     fallbackSrc: NivaLogo,
     url: "https://www.nivabupa.com/",
     industry: "Fintech",
+  },
+  {
+    id: 116,
+    name: "Axle",
+    description: "",
+    src: AxleLogo,
+    fallbackSrc: AxleLogo,
+    url: "",
+    industry: "Axle",
+  },
+  {
+    id: 117,
+    name: "Rupeeting",
+    description:
+      "Full-service investment advisor, with a happy customer base, which we intend to expand as we create wealth for more and more people",
+    src: RupeetingLogo,
+    fallbackSrc: RupeetingLogo,
+    url: "",
+    industry: "Fintech",
+  },
+  {
+    id: 118,
+    name: "SP+",
+    description:
+      "Ensuring that every interaction with clients, customers, and colleagues is helpful, stress-free, and enjoyable",
+    src: SpplusLogo,
+    fallbackSrc: SpplusLogo,
+    url: "",
+    industry: "Tech Solutions",
+  },
+  {
+    id: 119,
+    name: "Movano",
+    description:
+      "Industry-leading researcher to share the current state of health research related to biometrics and women’s health",
+    src: MovanoLogo,
+    fallbackSrc: MovanoLogo,
+    url: "",
+    industry: "Healthcare",
   },
 ];
 
