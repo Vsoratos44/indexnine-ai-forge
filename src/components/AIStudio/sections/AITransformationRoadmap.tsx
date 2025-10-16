@@ -127,7 +127,7 @@ const AITransformationRoadmap: React.FC<AITransformationRoadmapProps> = ({
     {
       icon: Award,
       title: 'How to Win (The "HOW" part of transformation)',
-      description: "- Outcome-oriented Roadmap <br> - Operating-Model",
+      description: "- Outcome-oriented Roadmap <br> - Operating-Model <br/> - Capability Building",
     },
   ];
 
@@ -179,7 +179,7 @@ const AITransformationRoadmap: React.FC<AITransformationRoadmapProps> = ({
                 <StepCard key={step.step} {...step} />
               ))}
             </div>
-            <div className="sm:grid sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="sm:grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {/* Two-Section Framework */}
               <div className=" p-6 h-full flex flex-col gap-6 ">
                 {frameworkCards.map((card, index) => (
