@@ -35,8 +35,8 @@ const Events = () => {
     {
       title: "Money 2020",
       description:
-        "The one exception to talk all things AI & FinTech might be Varun Ramanathan, PhD. It's not often services companies really live, breathe, and leverage AI the right way. Varun is leading the charge for us to continue to transform our org into masters of AI driven product engineering. We have so much talent in this house it's pretty wild to me. I could really feel the energy throughout all my meetings with our engineering teams in Pune.",
-      location: "Money 2020",
+        "The future of FinTech is being built on AI, but innovation is often stalled by the weight of technical debt and legacy platforms. We believe the smartest path forward isn't just adding AI, but engineering a solid foundation first. Our passion is modernizing core systems and architecting the AI-ready data platforms that turn ambitious ideas into market-defining products.",
+      location: "USA",
       featured: true,
       date: "26-29 Oct 2025",
       image: Event2020,
@@ -212,10 +212,11 @@ const Events = () => {
                   return (
                     <Link
                       key={idx}
-                      to={`/insights/events/${actualIndex}`}
+                      // to={`/insights/events/${actualIndex}`}
+                      to="#."
                       className="block"
                     >
-                      <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-105 cursor-pointer">
+                      <div className="relative bg-gradient-card-light backdrop-blur-xl rounded-3xl p-8 shadow-glass-lg border border-glass-border hover:shadow-glow transition-all duration-500 transform hover:scale-100 cursor-pointer">
                         {/* event Icon */}
                         <div
                           className={`relative w-16 h-16 flex mb-6 items-center justify-center transition-all ${styles.icnBg}`}
@@ -239,9 +240,9 @@ const Events = () => {
                           {event.description}
                         </p>
 
-                        <Button variant="btnSecondary" className="mt-2">
+                        {/* <Button variant="btnSecondary" className="mt-2">
                           View Details
-                        </Button>
+                        </Button> */}
                       </div>
                     </Link>
                   );

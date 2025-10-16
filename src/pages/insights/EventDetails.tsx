@@ -3,7 +3,14 @@ import { useParams, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, ArrowLeft, Users, Clock } from "lucide-react";
+import {
+  Calendar,
+  MapPin,
+  ArrowLeft,
+  Users,
+  Clock,
+  CheckCircle,
+} from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import {
   WebPageSchema,
@@ -21,8 +28,8 @@ const EventDetails = () => {
     {
       title: "Money 2020",
       description:
-        "The one exception to talk all things AI & FinTech might be Varun Ramanathan, PhD. It's not often services companies really live, breathe, and leverage AI the right way. Varun is leading the charge for us to continue to transform our org into masters of AI driven product engineering. We have so much talent in this house it's pretty wild to me. I could really feel the energy throughout all my meetings with our engineering teams in Pune.",
-      location: "Money 2020",
+        "Money20/20 is the global stage where the future of money is decided. While the industry buzzes with the promise of AI, the real conversations happen behind the scenes—tackling the technical debt and legacy platforms that hold FinTech innovation back. <br/><br/>Our leadership team is in Las Vegas not for the hype, but for substantive dialogue. We're here to share our practitioner-led insights on what it actually takes to build resilient, scalable, and intelligent financial products—from architecting the AI-ready data foundation to modernizing your core.",
+      location: "USA",
       featured: true,
       date: "26-29 Oct 2025",
       image: Event2020,
@@ -181,9 +188,10 @@ const EventDetails = () => {
                   <h2 className="text-3xl font-semibold text-foreground-dark mb-6 font-montserrat">
                     About This Event
                   </h2>
-                  <p className="text-foreground-dark-muted text-lg leading-relaxed font-montserrat mb-6">
-                    {event.description}
-                  </p>
+                  <div
+                    className="text-foreground-dark-muted text-lg leading-relaxed font-montserrat mb-6"
+                    dangerouslySetInnerHTML={{ __html: event.description }}
+                  />
                 </div>
 
                 {/* Event Highlights */}
@@ -194,56 +202,67 @@ const EventDetails = () => {
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="flex items-start gap-3 p-4 bg-gradient-card-light rounded-xl border border-glass-border">
                       <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Users className="w-5 h-5 text-brand-primary" />
+                        <CheckCircle className="w-5 h-5 text-brand-primary" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground-dark mb-1 font-montserrat">
-                          Networking
+                          Strategic Dialogue
                         </h4>
                         <p className="text-sm text-foreground-dark-muted font-montserrat">
-                          Connect with industry leaders and professionals
+                          Connect with our CEO Aftab Ullah, CBO Vaughn Soratos,
+                          and Lead AI Architect Varun Ramanathan for
+                          peer-to-peer conversations about the real challenges
+                          and opportunities in FinTech.
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3 p-4 bg-gradient-card-light rounded-xl border border-glass-border">
                       <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Clock className="w-5 h-5 text-brand-primary" />
+                        <CheckCircle className="w-5 h-5 text-brand-primary" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground-dark mb-1 font-montserrat">
-                          Latest Insights
+                          Practitioner-Led Insights
                         </h4>
                         <p className="text-sm text-foreground-dark-muted font-montserrat">
-                          Learn about emerging AI and technology trends
+                          Learn how we're solving for the "AI race" by moving
+                          beyond static rules to build agentic systems, context
+                          lakes, and AI Centers of Excellence that deliver real
+                          ROI .
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3 p-4 bg-gradient-card-light rounded-xl border border-glass-border">
                       <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Users className="w-5 h-5 text-brand-primary" />
+                        <CheckCircle className="w-5 h-5 text-brand-primary" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground-dark mb-1 font-montserrat">
-                          Workshops
+                          Proven Blueprints
                         </h4>
                         <p className="text-sm text-foreground-dark-muted font-montserrat">
-                          Interactive sessions and hands-on experiences
+                          Discuss our battle-tested frameworks for Product
+                          Modernization and de-risking new ventures with Sprint
+                          Zero, turning ambitious ideas into market-defining
+                          products .
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3 p-4 bg-gradient-card-light rounded-xl border border-glass-border">
                       <div className="w-10 h-10 rounded-full bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Clock className="w-5 h-5 text-brand-primary" />
+                        <CheckCircle className="w-5 h-5 text-brand-primary" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground-dark mb-1 font-montserrat">
-                          Demonstrations
+                          Real-World Success
                         </h4>
                         <p className="text-sm text-foreground-dark-muted font-montserrat">
-                          Access to cutting-edge product demos
+                          Explore our portfolio of success, from engineering a
+                          $165M+ FinTech exit to saving clients over $2M
+                          annually through cloud modernization.
                         </p>
                       </div>
                     </div>
@@ -259,21 +278,22 @@ const EventDetails = () => {
                     <li className="flex items-start gap-3">
                       <span className="text-brand-primary mt-1">✓</span>
                       <span className="text-foreground-dark-muted font-montserrat">
-                        Keynote presentations from thought leaders in AI and
-                        FinTech
+                        An honest assessment of the gap between AI hype and the
+                        reality of legacy infrastructure.
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-brand-primary mt-1">✓</span>
                       <span className="text-foreground-dark-muted font-montserrat">
-                        Panel discussions on the future of technology and
-                        innovation
+                        Actionable strategies for Product Modernization that
+                        turn technical debt into a competitive advantage.
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-brand-primary mt-1">✓</span>
                       <span className="text-foreground-dark-muted font-montserrat">
-                        Networking opportunities with peers and industry experts
+                        A blueprint for building a self-sustaining AI Center of
+                        Excellence without the 8-figure consulting bill.
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -285,8 +305,15 @@ const EventDetails = () => {
                     <li className="flex items-start gap-3">
                       <span className="text-brand-primary mt-1">✓</span>
                       <span className="text-foreground-dark-muted font-montserrat">
-                        Exclusive insights into emerging technologies and best
-                        practices
+                        Peer-to-peer dialogue on architecting AI-ready data
+                        platforms that fuel real innovation.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-brand-primary mt-1">✓</span>
+                      <span className="text-foreground-dark-muted font-montserrat">
+                        Exclusive insights into our Outcome-Based Partnership
+                        model, where we align our success directly with yours .
                       </span>
                     </li>
                   </ul>
@@ -341,7 +368,12 @@ const EventDetails = () => {
                   </div>
 
                   <Button variant="btnSecondary" className="w-full mb-4">
-                    Register Now
+                    <Link
+                      to="https://us.money2020.com/pass-picker"
+                      target="_blank"
+                    >
+                      Secure your pass
+                    </Link>
                   </Button>
 
                   {/* <Button
@@ -358,7 +390,7 @@ const EventDetails = () => {
       </section>
 
       {/* Related Events Section */}
-      <section className={`py-24 ${styles.sectionBgData} bg-white`}>
+      {/* <section className={`py-24 ${styles.sectionBgData} bg-white`}>
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-semibold text-foreground-dark font-montserrat">
@@ -395,7 +427,7 @@ const EventDetails = () => {
               })}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

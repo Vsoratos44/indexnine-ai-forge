@@ -1,9 +1,22 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { RefreshCw, AlertTriangle, CheckCircle } from "lucide-react";
+import {
+  RefreshCw,
+  AlertTriangle,
+  CheckCircle,
+  Rocket,
+  AlertCircle,
+  Zap,
+  Sparkles,
+  Bot,
+  TestTube2,
+  ArrowRight,
+} from "lucide-react";
 import { CALENDLY_URL } from "../../../config/constants";
 import styles from "../../../assets/css/stylesheet.module.css";
+import ProdModernz from "../../../assets/images/prod-modernz.svg";
+import { Link } from "react-router-dom";
 
 export const ProductModernizationSection: React.FC = () => {
   const challenges = [
@@ -98,38 +111,46 @@ export const ProductModernizationSection: React.FC = () => {
     },
   ];
 
+  const platforms = [
+    {
+      name: "SaaSify Your Product",
+      description:
+        "Migrate on-premise applications to the cloud to unlock scalability and new subscription-based revenue models.",
+      impact: "Scalability and Flexibility",
+      icon: Zap,
+      color: "from-blue-500 to-cyan-500",
+      blogLink: "/insights/blogs/",
+    },
+    {
+      name: "Build True Multi-Tenancy",
+      description:
+        "Re-architect systems to efficiently and securely serve multiple customers from a single, manageable instance.",
+      impact: "Enhanced Security and Isolation",
+      icon: Sparkles,
+      color: "from-purple-500 to-pink-500",
+      blogLink: "/insights/blogs/",
+    },
+    {
+      name: "Hybrid/Multi-Cloud",
+      description:
+        "Optimize for cost, performance, and data governance by leveraging the best of multiple cloud providers.",
+      impact: "Performance Enhancement",
+      icon: Bot,
+      color: "from-green-500 to-emerald-500",
+      blogLink: "/insights/blogs/",
+    },
+  ];
+
   return (
-    <section
-      id="product-modernization"
-      className="pb-24 lg:pb-32 bg-transparent"
-    >
+    <section id="product-modernization" className="pt-8 bg-transparent">
       <div className="grid grid-cols-2 container px-4 sm:px-16 bg-transparent gap-16 pb-12 lg:pb-16">
         <div
           className={`bg-blue-500/5 rounded-2xl shadow shadow-glass backdrop-blur-md relative p-8 ${styles.cardBord1} `}
         >
-          <div className="text-left mb-8">
-            {/* <div className="inline-flex items-center gap-2 mb-3">
-              <RefreshCw className="w-5 h-5 text-brand-primary" />
-              <span className="text-xs font-semibold text-brand-primary uppercase tracking-wider">
-                Core Offering
-              </span>
-            </div> */}
-            <h2 className="text-2xl font-semibold mb-3 text-foreground-dark font-montserrat">
-              Product Modernization:{" "}
-              <span className="text-brand-primary">
-                From Technical Debt to Competitive Advantage
-              </span>
-            </h2>
-            <p className="text-sm sm:text-base text-foreground-dark-muted max-w-3xl mx-auto font-montserrat">
-              Transform legacy systems into modern, cloud-native platforms that
-              unlock innovation and reduce operational costs.
-            </p>
-          </div>
-
           {/* The Drag of Technical Debt */}
           <div className="">
             <div>
-              <h3 className="text-2xl  font-semibold mb-6 text-foreground-dark text-left">
+              <h3 className="text-2xl  font-semibold mb-4 text-foreground-dark text-left">
                 The Drag of Technical Debt
               </h3>
             </div>
@@ -137,10 +158,9 @@ export const ProductModernizationSection: React.FC = () => {
               {challenges.map((challenge, index) => (
                 <div
                   key={index}
-                  className={`mb-2 text-foreground-dark flex items-start gap-2 mt-2`}
+                  className={`mb-2 text-foreground-dark flex items-start gap-4 mt-4`}
                 >
                   <span>
-                    {" "}
                     <CheckCircle className="h-5 w-5 text-[#505CFD] mt-0.5 flex-shrink-0 mt-1" />
                   </span>
                   <div>
@@ -152,62 +172,66 @@ export const ProductModernizationSection: React.FC = () => {
             </div>
           </div>
         </div>
-        <div
-          className={`bg-blue-500/5 rounded-2xl shadow shadow-glass backdrop-blur-md relative p-8 ${styles.cardBord1} `}
-        >
-          <div className="">
-            <h3 className="text-2xl font-semibold mb-4 text-foreground-dark text-left">
-              Code Modernization
-            </h3>
-            <div className="">
-              {codeModernization.map((item, index) => (
-                <div key={index}>
-                  <div className="p-0">
-                    <h3 className="font-medium text-foreground-dark text mb-2">
-                      {item.category}
-                    </h3>
-                    <ul className="space-y-2 mb-4">
-                      {item.examples.map((example, idx) => (
-                        <li
-                          key={idx}
-                          className="flex items-start justify-left gap-2 text-foreground-dark-muted"
-                        >
-                          <CheckCircle className="w-3.5 h-3.5 text-foreground-dark mt-0.5 flex-shrink-0" />
-                          <span className="text-sm font-montserrat">
-                            {example}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <h3 className="text-2xl font-semibold mb-4 text-foreground-dark text-left">
+        <div>
+          <img src={ProdModernz} alt="" className="w-full" />
+        </div>
+      </div>
+      <div className={` container px-4 sm:px-16`}>
+        <div className="max-w-8xl mx-auto relative group h-full bg-gradient-to-b from-brand-primary/50 via-brand-primary/5 to-white/50 border-glass-border rounded-[1.25rem] p-1 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1 backdrop-blur-lg">
+          {/* Acceleration Platforms */}
+          <div className=" bg-gradient-to-b from-brand-primary/5 to-brand-primary/5  relative overflow-hidden bg-white rounded-2xl p-8 pb-16 md:pb-32">
+            <h3 className="text-2xl font-semibold mb-2 text-foreground-dark text-center">
               Architectural Transformation
             </h3>
-            <div className="">
-              {architecturalTransformation.map((item, index) => (
-                <div key={index} className="flex gap-2">
-                  <span>
-                    <CheckCircle className="w-4 h-4 text-foreground-dark mt-0.5 flex-shrink-0" />
-                  </span>
-                  <div className="pb-2">
-                    <h3 className="font-semibold text text-foreground-dark mb-1">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-foreground-dark-muted">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
+              {platforms.map((platform, index) => {
+                const IconComponent = platform.icon;
+                return (
+                  <Link
+                    key={index}
+                    to={platform.blogLink}
+                    className="block group pb-20 sm:pb-0"
+                  >
+                    <Card className="bg-transparent border border-blue-500 border-dashed rounded-sm px-5  mt-20 hover:shadow-lg transition-all duration-300 h-full shadow-md ">
+                      <CardContent className="p-0 flex flex-col h-full">
+                        <div className="flex-1">
+                          <div className="flex items-start justify-between mb-3">
+                            <div
+                              className={`w-12 h-12 rounded-[.75rem] z-10 bg-gradient-to-r from-brand-primary/25 to-brand-primary/15 bg-white flex items-center justify-center shadow-md mx-auto -mt-16`}
+                            >
+                              <IconComponent className="w-5 h-5 text-[#505CFD] " />
+                            </div>
+                          </div>
+                          <div className="bg-blue-500 -mt-10 -mx-4 z-9 pt-4 pb-2 text-center rounded-sm">
+                            <h4 className="text-base font-semibold text-foreground-light  font-montserrat">
+                              {platform.name}
+                            </h4>
+                            <small>{platform.impact}</small>
+                          </div>
+                          <div className="text-sm text-foreground-dark text-center p-8 leading-relaxed -mb-16">
+                            {platform.description}
+                          </div>
+                        </div>
+                        <div className="bg-brand-primary/20 p-4 -mx-5 mt-auto">
+                          <Button
+                            variant="btnPrimary"
+                            size="sm"
+                            className="w-full"
+                          >
+                            Learn more
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-6">
-        <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto px-6 mt-12 mb-24 lg:mb-32">
+        <div className="max-w-6xl mx-auto">
           {/* Code Modernization */}
 
           {/* Strategic Engagements */}

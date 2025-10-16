@@ -319,8 +319,8 @@ header .fixed.inset-0 {
   border-left: 3px solid #899cff;
   border-right: 3px solid #899cff;
   border-bottom: 3px solid #899cff;
-  border-radius: 0 0 1rem 1rem;
-  border-top: none;
+  border-radius: 1rem;
+  border-top: 3px solid #fff;
   /* Fade out at top corners */
   mask-image: linear-gradient(
     to bottom,

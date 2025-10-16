@@ -49,8 +49,8 @@ export const CaseStudiesSection: React.FC = () => {
   return (
     <section className="pb-24 lg:pb-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
+        <div className="max-w-8xl mx-auto">
+          <div className="text-center max-w-6xl mx-auto mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 text-foreground-dark font-montserrat px-4 sm:px-0">
               Proof in Action:{" "}
               <span className="text-brand-primary">

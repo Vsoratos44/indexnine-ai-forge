@@ -14,6 +14,7 @@ import {
 import { Link } from "react-router-dom";
 import { CALENDLY_URL } from "../../../config/constants";
 import styles from "../../../assets/css/stylesheet.module.css";
+import ProdLaunch from "../../../assets/images/prod-launch.svg";
 
 export const ProductLaunchSection: React.FC = () => {
   const dilemmas = [
@@ -86,30 +87,13 @@ export const ProductLaunchSection: React.FC = () => {
   ];
 
   return (
-    <section className="pb-24 lg:pb-32 bg-transparent">
-      <div className="grid gird-cols-1 sm:grid-cols-2 container px-4 sm:px-16  bg-transparent gap-16 pb-16 lg:pb-24">
+    <section className="pb-0 lg:pb-0 bg-transparent pt-8">
+      <div className="grid gird-cols-1 sm:grid-cols-2 container px-4 sm:px-16  bg-transparent gap-16 pb-16">
         <div
           className={`bg-blue-500/5 rounded-2xl shadow shadow-glass backdrop-blur-md relative p-8 ${styles.cardBord1} `}
         >
-          {/* <div className="inline-flex items-center gap-2 mb-3">
-              <Rocket className="w-5 h-5 text-brand-primary" />
-              <span className="text-xs font-semibold text-brand-primary uppercase tracking-wider">
-                Core Offering
-              </span>
-            </div> */}
-          <h2 className="text-2xl font-semibold mb-3 text-foreground-dark font-montserrat">
-            Product Launch:{" "}
-            <span className="text-brand-primary">
-              From Visionary Idea to Market-Defining Product
-            </span>
-          </h2>
-          <p className="text-sm sm:text-base text-foreground-dark/70 max-w-3xl mx-auto font-montserrat">
-            Launch your product with confidence through our proven Sprint Zero
-            methodology and proprietary acceleration platforms.
-          </p>
-
           <div className="">
-            <h3 className="text-2xl font-semibold mb-4 mt-8 text-foreground-dark">
+            <h3 className="text-2xl font-semibold mb-4 text-foreground-dark">
               The Founder's Dilemma
             </h3>
 
@@ -117,7 +101,7 @@ export const ProductLaunchSection: React.FC = () => {
               {dilemmas.map((dilemma, index) => (
                 <li
                   key={index}
-                  className={`mb-2 text-foreground-dark flex items-start gap-2 mt-2`}
+                  className={`mb-2 text-foreground-dark flex items-start gap-4 mt-4`}
                 >
                   <span>
                     {" "}
@@ -134,93 +118,60 @@ export const ProductLaunchSection: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div
-          className={`bg-blue-500/5 rounded-2xl shadow shadow-glass backdrop-blur-md relative p-8 ${styles.cardBord1} `}
-        >
-          {" "}
-          <h3 className="text-2xl  font-semibold mb-6 text-foreground-dark text-left">
-            Our Approach: The Sprint Zero Blueprint
-          </h3>
-          <div className="space-4">
-            {sprintZeroSteps.map((step, index) => (
-              <div key={index}>
-                <div className="p-0 flex gap-2 mt-2">
-                  {/* <div className="w-14 h-14 rounded-full bg-brand-purple/10 flex items-center justify-center mb-4 mx-auto">
-                      <span className="text-xl font-medium text-[#505CFD] ">
-                        {index + 1}
-                      </span>
-                    </div> */}
-                  <span>
-                    <CheckCircle className="h-5 w-5 text-[#505CFD] mt-0.5 flex-shrink-0 mt-1" />
-                  </span>
-                  <div>
-                    <h4 className="text-base font-semibold text-foreground-dark mb-1 font-montserrat">
-                      {step.title}
-                    </h4>
-                    <p className="text-sm text-foreground-dark/70 leading-relaxed font-montserrat">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div>
+          <img src={ProdLaunch} alt="" className="w-full" />
         </div>
       </div>
-      <div className={`pt-24 pb-24 lg:pb-32 ${styles.snapBg} `}>
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-6xl mx-auto">
-            {/* Sprint Zero Blueprint */}
-
-            {/* Acceleration Platforms */}
-            <div className="mb-16">
-              <h3 className="text-2xl lg:text-3xl font-semibold mb-6 text-foreground-light text-center">
-                The Acceleration Engine: Our Proprietary Platforms
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
-                {platforms.map((platform, index) => {
-                  const IconComponent = platform.icon;
-                  return (
-                    <Link
-                      key={index}
-                      to={platform.blogLink}
-                      className="block group pb-20 sm:pb-0"
-                    >
-                      <Card className="bg-transparent border border-blue-500 border-dashed rounded-sm px-5  mt-20 hover:shadow-lg transition-all duration-300 h-full shadow-md ">
-                        <CardContent className="p-0 flex flex-col h-full">
-                          <div className="flex-1">
-                            <div className="flex items-start justify-between mb-3">
-                              <div
-                                className={`w-12 h-12 rounded-[.75rem] z-10 bg-white  flex items-center justify-center shadow-md mx-auto -mt-16`}
-                              >
-                                <IconComponent className="w-5 h-5 text-[#505CFD] " />
-                              </div>
-                            </div>
-                            <div className="bg-blue-500 -mt-10 -mx-4 z-9 pt-4 pb-2 text-center rounded-sm">
-                              <h4 className="text-base font-semibold text-foreground-light  font-montserrat">
-                                {platform.name}
-                              </h4>
-                              <small>{platform.impact}</small>
-                            </div>
-                            <div className="text-sm text-foreground-light text-center p-8 leading-relaxed -mb-16">
-                              {platform.description}
-                            </div>
-                          </div>
-                          <div className="bg-blue-500/20 p-4 -mx-5 mt-auto">
-                            <Button
-                              variant="btnPrimary"
-                              size="sm"
-                              className="w-full"
+      <div className={` container px-4 sm:px-16`}>
+        <div className="max-w-8xl mx-auto relative group h-full bg-gradient-to-b from-brand-primary/50 via-brand-primary/5 to-white/50 border-glass-border rounded-[1.25rem] p-1 hover:shadow-glow  transition-all duration-500 transform group-hover:-translate-y-1 backdrop-blur-lg">
+          {/* Acceleration Platforms */}
+          <div className=" bg-gradient-to-b from-brand-primary/5 to-brand-primary/5  relative overflow-hidden bg-white rounded-2xl p-8 pb-16 md:pb-32">
+            <h3 className="text-2xl font-semibold mb-2 text-foreground-dark text-center">
+              The Acceleration Engine: Our Proprietary Platforms
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
+              {platforms.map((platform, index) => {
+                const IconComponent = platform.icon;
+                return (
+                  <Link
+                    key={index}
+                    to={platform.blogLink}
+                    className="block group pb-20 sm:pb-0"
+                  >
+                    <Card className="bg-transparent border border-blue-500 border-dashed rounded-sm px-5  mt-20 hover:shadow-lg transition-all duration-300 h-full shadow-md ">
+                      <CardContent className="p-0 flex flex-col h-full">
+                        <div className="flex-1">
+                          <div className="flex items-start justify-between mb-3">
+                            <div
+                              className={`w-12 h-12 rounded-[.75rem] z-10 bg-gradient-to-r from-brand-primary/25 to-brand-primary/15 bg-white flex items-center justify-center shadow-md mx-auto -mt-16`}
                             >
-                              Learn more
-                            </Button>
+                              <IconComponent className="w-5 h-5 text-[#505CFD] " />
+                            </div>
                           </div>
-                        </CardContent>
-                      </Card>
-                    </Link>
-                  );
-                })}
-              </div>
+                          <div className="bg-blue-500 -mt-10 -mx-4 z-9 pt-4 pb-2 text-center rounded-sm">
+                            <h4 className="text-base font-semibold text-foreground-light  font-montserrat">
+                              {platform.name}
+                            </h4>
+                            <small>{platform.impact}</small>
+                          </div>
+                          <div className="text-sm text-foreground-dark text-center p-8 leading-relaxed -mb-16">
+                            {platform.description}
+                          </div>
+                        </div>
+                        <div className="bg-brand-primary/20 p-4 -mx-5 mt-auto">
+                          <Button
+                            variant="btnPrimary"
+                            size="sm"
+                            className="w-full"
+                          >
+                            Learn more
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>

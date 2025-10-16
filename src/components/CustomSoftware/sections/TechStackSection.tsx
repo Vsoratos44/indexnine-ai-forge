@@ -8,7 +8,14 @@ export const TechStackSection: React.FC = () => {
     {
       title: "Frontend & Client",
       icon: Code,
-      technologies: ["React", "Next.js", "Electron", "TypeScript", "Vue.JS"],
+      technologies: [
+        "React",
+        "Next.js",
+        "Electron",
+        "TypeScript",
+        "Vue.JS",
+        "Flutter Web",
+      ],
     },
     {
       title: "Backend & Database",
@@ -46,7 +53,7 @@ export const TechStackSection: React.FC = () => {
         "Custom SLMs",
         "Snowflake",
         "Neo4j",
-        "Weaviate",
+        // "Weaviate",
       ],
     },
   ];
@@ -66,7 +73,7 @@ export const TechStackSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto gap-4 sm:gap-6 px-4 sm:px-0">
             {techCategories.map((category, index) => {
               const IconComponent = category.icon;
               return (

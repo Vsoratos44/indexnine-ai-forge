@@ -181,16 +181,34 @@ const CustomSoftware = () => {
             </div>
             <div className="tab-content">
               {activeTab === "tab1" && (
-                <>
-                  {/* 6. Product Launch Deep Dive */}
+                <div className="max-w-8xl mx-auto">
+                  <div className="text-center">
+                    <h2 className="text-2xl lg:text-3xl font-semibold mb-3 text-foreground-dark font-montserrat">
+                      From Visionary Idea to Market-Defining Product
+                    </h2>
+                    <p className="text-sm sm:text-base text-foreground-dark/70 max-w-3xl mx-auto font-montserrat mb-6">
+                      Launch your product with confidence through our proven
+                      Sprint Zero methodology and proprietary acceleration
+                      platforms.
+                    </p>
+                  </div>
                   <ProductLaunchSection />
-                </>
+                </div>
               )}
               {activeTab === "tab2" && (
-                <>
-                  {/* 8. Product Modernization Deep Dive (Dark Background) */}
+                <div className="max-w-8xl mx-auto">
+                  <div className="text-center">
+                    <h2 className="text-2xl lg:text-3xl font-semibold mb-3 text-foreground-dark font-montserrat">
+                      From Technical Debt to Competitive Advantage
+                    </h2>
+                    <p className="text-sm sm:text-base text-foreground-dark/70 max-w-3xl mx-auto font-montserrat mb-6">
+                      Transform legacy systems into modern, cloud-native
+                      platforms that unlock innovation and reduce operational
+                      costs.
+                    </p>
+                  </div>
                   <ProductModernizationSection />
-                </>
+                </div>
               )}
             </div>
           </div>
