@@ -230,7 +230,7 @@ export const ProductModernizationSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-6 mt-12 mb-24 lg:mb-32">
+      <div className="container mx-auto px-6 mt-12 ">
         <div className="max-w-6xl mx-auto">
           {/* Code Modernization */}
 
